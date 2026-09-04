@@ -487,6 +487,19 @@ knowledge-needs:
         UPDATE statement in an ODC SQL node — including SET clause syntax, WHERE
         filtering, permissions, return behavior, and data source compatibility —
         so they can correctly modify data in external systems.
+    - name: Insert/upsert statement
+      id: insert-upsert-statement
+      description: Wants to create or update records in an external entity using
+        the ANSI-92 INSERT or UPSERT statement in an ODC SQL node — including
+        sourcing values via VALUES or SELECT, single versus multiple record
+        semantics, required permissions, and returned primary key behavior —
+        so they can correctly write data to external systems.
+    - name: Insert/upsert support
+      id: insert-upsert-support
+      description: Wants to know which external data sources supported by ODC support
+        single-record insert, multiple-record insert, upsert, and insert/upsert
+        from a SELECT in an ODC SQL node, so they can determine which operations
+        are available before writing a query against a given external system.
   - name: Compound data
     id: compound-data
   - name: Binary data actions
@@ -1210,6 +1223,25 @@ knowledge-needs:
       description: Wants to resume or discard an in-progress merge that was automatically
         saved by ODC Studio, so that they can continue resolving conflicts without
         losing earlier merge work or start fresh.
+    - name: Compare workflow versions
+      id: compare-workflow-versions
+      description: Wants to compare different versions of a workflow (a previous
+        revision, unpublished changes, or a conflicting published revision) in ODC,
+        using the revision history panel, the reopen-workflow dialog, or the
+        publish-conflict dialog, so that they can review differences before choosing
+        which version to keep or restore.
+    - name: Workflow diff color coding
+      id: workflow-diff-color-coding
+      description: Wants to interpret the color-coded highlights and property-level changes
+        shown in ODC's workflow comparison view, so that they can correctly
+        identify what was added, modified, deleted, or in conflict between two
+        workflow revisions.
+    - name: Publish with message
+      id: publish-with-message
+      description: Wants to add a custom message when publishing a workflow in ODC,
+        and see that message surface in the revision history and in merge-conflict
+        or open-workflow conflict dialogs, so that they and their team understand
+        the context behind each revision.
 - name: Consume UI
   guid: 349f50f2-cb79-41c7-9e8b-f113cbb3e965
   topics:
@@ -1252,6 +1284,19 @@ knowledge-needs:
       description: Wants to replace the default OutSystems favicon with a custom PNG
         or ICO image by changing the favicon resource in Service Studio, in a Reactive
         Web App for O11, so that the app displays a branded browser tab icon.
+    - name: Choose icon library
+      id: choose-icon-library
+      description: Wants to select and switch between the available icon libraries for an
+        app by setting the Icon Library property at the theme level, in ODC
+        Studio, so that icon rendering matches design needs and compatibility
+        with existing or new apps.
+    - name: Resolve icon library conflicts
+      id: resolve-icon-library-conflicts
+      description: Wants to resolve icon library mismatches when a referenced
+        block uses a different icon library than the app's theme, by updating
+        the producer library's icon setting or manually replacing icons flagged
+        with a TrueChange warning, in ODC Studio, so that referenced blocks
+        display correctly without visual inconsistency.
   - name: UI framework migration
     id: ui-framework-migration
     subtopics:
@@ -1330,6 +1375,11 @@ knowledge-needs:
         in Service Studio, including Number, Color, IsLight, and ExtendedClass,
         so that they can correctly configure a numerical notification badge in
         a Mobile App or Reactive Web App for OutSystems 11.
+    - name: Add icon widget
+      id: add-icon-widget
+      description: Wants to add an Icon widget to a screen and select the icon and weight,
+        adjusting its size, color, and styling, in ODC Studio, so that visual
+        cues are included in the app's UI.
     - name: Use Icon Badge pattern
       id: use-icon-badge-pattern
       description: Wants to add the Icon Badge UI Pattern to a screen and bind
@@ -2045,6 +2095,16 @@ knowledge-needs:
     - name: Implement semantic search
       id: implement-semantic-search
       description: Wants to implement semantic search in ODC by marking entity attributes as searchable and adding a Semantic Search element to a server action flow, so that the app can retrieve results ranked by meaning rather than exact keywords.
+  - name: Troubleshoot Context Service
+    id: troubleshoot-context-service
+    subtopics:
+    - name: Context Service errors
+      id: context-service-errors
+      description: Wants to locate and resolve ODC Context Service errors (OS-CTXS)
+        by finding the error code in the reference, understanding whether it's
+        caller-side or server-side, and following the recommended action, so
+        that they can resolve failures affecting agent harness requests to the
+        Enterprise Context Graph.
   - name: Troubleshoot Mentor Studio
     id: troubleshoot-mentor-studio
     subtopics:
@@ -2055,6 +2115,33 @@ knowledge-needs:
         and following the recommended action, so that they can continue
         working with Mentor Studio's conversational AI development flow in
         ODC Studio.
+  - name: Mentor Web prompts
+    id: mentor-web-prompts
+    subtopics:
+    - name: UI pattern prompts
+      id: ui-pattern-prompts
+      description: Wants to select and phrase prompts for Mentor Web to generate the right
+        UI pattern for a given dataset shape, using prompt progressions from
+        basic to detailed and respecting each pattern's entity and attribute
+        constraints, so that the generated screen matches the intended layout
+        and data density.
+    - name: Data model prompts
+      id: mentor-web-data-model-prompts
+      description: Wants to write prompts for Mentor Web to add or delete
+        entities, attributes, and static entity records, so that data model
+        changes are generated correctly during the blueprint phase.
+    - name: Authorization prompts
+      id: mentor-web-authorization-prompts
+      description: Wants to write prompts for Mentor Web to manage roles and
+        permissions, so that authorization changes are generated correctly
+        during the blueprint phase.
+    - name: Theme prompts
+      id: theme-prompts
+      description: Wants to apply, change, or request a theme, including a
+        dark theme via explicit request or primary color choice, through
+        prompts or requirement documents in Mentor Web, meeting theme
+        compatibility requirements, so that the generated app uses the
+        intended visual theme.
 - name: Integrating with Plugins
   guid: 1af9eece-e820-40ec-8483-b1243267b038
   topics:

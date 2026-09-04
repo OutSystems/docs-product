@@ -1,5 +1,5 @@
 ---
-summary: Manage roles effectively in OutSystems platform by understanding the differences between O11 and ODC and ensuring proper role configuration to avoid conversion issues.
+summary: "OutSystems Developer Cloud (ODC) supports public roles, eliminating code changes for the deprecated asset consuming a role pattern."
 locale: en-us
 guid: 4751d001-d519-4214-ae71-bec2e5b72f24
 app_type: traditional web apps, mobile apps, reactive web apps

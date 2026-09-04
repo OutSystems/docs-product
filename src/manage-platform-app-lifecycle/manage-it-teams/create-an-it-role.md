@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 tags: user management, security policy, it user permissions, roles and permissions, environment configuration
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - lifetime
 coverage-type:

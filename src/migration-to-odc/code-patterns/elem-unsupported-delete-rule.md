@@ -4,8 +4,9 @@ locale: en-us
 summary: Learn how to adjust your application logic to manually handle referential integrity between different apps when converting from OutSystems 11 to ODC.
 figma: 
 coverage-type:
-  - unblock
   - understand
+  - apply
+  - unblock
 topic: 
 app_type: mobile apps,reactive web apps
 platform-version: o11

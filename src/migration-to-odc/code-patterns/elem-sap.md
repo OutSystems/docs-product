@@ -4,8 +4,9 @@ locale: en-us
 summary: Learn how to handle SAP connections after converting from O11 to ODC.
 figma: 
 coverage-type:
-  - unblock
   - understand
+  - apply
+  - unblock
 topic: 
 app_type: reactive web apps,mobile apps
 platform-version: o11

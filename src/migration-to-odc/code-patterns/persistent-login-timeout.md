@@ -4,6 +4,7 @@ locale: en-us
 summary: Learn the recommendations for aligning the persistent login duration between O11 and ODC.
 figma:
 coverage-type:
+  - apply
   - unblock
 topic:
   - authentication-mechanisms

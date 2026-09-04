@@ -12,8 +12,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - unblock
   - understand
+  - apply
+  - unblock
 ---
 
 # Asset contains REST APIs using built-in OAuth 2.0 authentication flow

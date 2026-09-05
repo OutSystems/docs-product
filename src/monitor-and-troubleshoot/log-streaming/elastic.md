@@ -8,7 +8,6 @@ platform-version: o11
 figma:
 audience:
   - Platform administrator
-  - Developer
   - Tech lead
 outsystems-tools:
   - lifetime

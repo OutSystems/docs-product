@@ -1,5 +1,9 @@
 ---
-tags: mobile development, state management, dom manipulation, view management, screen lifecycle
+tags:
+  - Front-End
+  - JavaScript
+  - Mobile app
+  - Screens
 summary: Explore methods for managing view components and states in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: 5d68d556-eca2-4dad-a0e5-ba6decc5f22b

@@ -1,5 +1,8 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, chart creation, data visualization
+tags:
+  - Front-End
+  - UI
+  - Widgets
 summary: Learn how to create line and area charts with fixed or variable data points using OutSystems 11 (O11).
 locale: en-us
 guid: 2b5fe8d2-2a3d-4957-bd07-951d20a824d7

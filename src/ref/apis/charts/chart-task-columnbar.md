@@ -1,5 +1,8 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, chart visualization, data representation
+tags:
+  - Front-End
+  - UI
+  - Widgets
 summary: Explore how to create column and bar charts in OutSystems 11 (O11) using fixed or variable data points and multiple series.
 locale: en-us
 guid: 7115204b-9a1e-42f8-87f8-d1d771608667

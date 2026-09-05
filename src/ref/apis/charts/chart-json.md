@@ -1,5 +1,7 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, chart customization, highcharts api
+tags:
+  - Front-End
+  - Widgets
 summary: OutSystems 11 (O11) enables advanced chart customization through JSON snippets using the Highcharts API.
 locale: en-us
 guid: 92266737-d5de-4683-9446-57c1aff419f3

@@ -1,5 +1,9 @@
 ---
-tags: mobile app development, navigation management, user interface, back button handling, animation effects
+tags:
+  - Front-End
+  - JavaScript
+  - Mobile app
+  - Screens
 summary: OutSystems 11 (O11) enhances navigation in mobile and reactive web apps with custom back handlers and transition animations.
 locale: en-us
 guid: c274f0ef-e0b8-4093-bd87-049cda15248d

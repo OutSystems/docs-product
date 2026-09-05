@@ -1,6 +1,8 @@
 ---
 summary: Explore and extend email functionalities in OutSystems 11 (O11) using the Emails API to customize data models and generate reports.
-tags: email integration, data modeling, system entities, report generation, api
+tags:
+  - Data Model
+  - Entities
 locale: en-us
 guid: 7ae6fb7d-03dc-4f79-aaf5-3756bf26ecbe
 app_type: traditional web apps, reactive web apps

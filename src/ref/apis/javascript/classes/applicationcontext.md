@@ -1,5 +1,8 @@
 ---
-tags: context management, api reference, mobile app development, screen identification, outsystems platform
+tags:
+  - JavaScript
+  - Mobile app
+  - Screens
 summary: OutSystems 11 (O11) features ApplicationContext for contextual details on the current screen, module, and application.
 locale: en-us
 guid: 1441aa35-5b4b-44f1-81de-52be529e2583

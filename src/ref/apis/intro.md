@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) provides a range of APIs for application integration, extension, and system management.
-tags: api integration, system management, application development, business process management, client-side scripting
+tags:
+  - Business Processes
+  - Extensions
+  - JavaScript
+  - REST
 locale: en-us
 guid: f2cb6eb8-b4dc-437a-9838-0fca9cad116b
 app_type: traditional web apps, mobile apps, reactive web apps

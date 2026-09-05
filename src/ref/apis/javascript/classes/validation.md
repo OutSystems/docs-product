@@ -1,5 +1,8 @@
 ---
-tags: form validation, widget validation, client-side validation, error handling, conditional logic
+tags:
+  - Forms
+  - JavaScript
+  - Widgets
 summary: Explore validation methods for widgets in OutSystems 11 (O11), including checking validity and setting validation statuses.
 locale: en-us
 guid: 68b5f614-594d-4374-bde6-fc2f815c8b05

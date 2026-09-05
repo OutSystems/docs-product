@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error resolution, integration studio, application lifecycle management, debugging, application deployment
 audience:
-  - Front-end developer
   - Developer
-  - Platform administrator
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

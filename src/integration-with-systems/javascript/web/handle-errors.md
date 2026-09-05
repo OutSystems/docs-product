@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - remember
+topic:
+  - custom-js-error-handler
 ---
 
 # Handle JavaScript Errors

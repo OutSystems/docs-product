@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - margin-container-reference
+  - use-margin-container
 ---
 
 # Margin Container

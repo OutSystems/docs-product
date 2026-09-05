@@ -13,6 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - add-external-js-file-o11
+  - define-js-code-block-o11
+  - run-js-code-methods
 ---
 
 # Extend your Traditional Web App using JavaScript

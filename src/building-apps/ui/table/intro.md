@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - add-table-widget
+  - customize-table-columns
 ---
 
 # Creating and editing tables

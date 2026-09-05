@@ -14,6 +14,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - call-async-client-action
+  - define-async-client-action
 ---
 
 # Defining Asynchronous JavaScript Code

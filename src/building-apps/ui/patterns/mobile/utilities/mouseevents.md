@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - mouse-events-reference
+  - use-mouse-events-pattern
 ---
 
 # Mouse Events

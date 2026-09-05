@@ -14,6 +14,9 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - add-module-dependency
+  - manage-sample-data
 ---
 
 # Sample data

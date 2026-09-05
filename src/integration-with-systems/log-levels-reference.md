@@ -6,6 +6,8 @@ platform-version: o11
 figma:
 summary: OutSystems 11 (O11) provides three logging levels for REST APIs and SOAP Web Services - Default, Troubleshoot, and Full.
 tags: api logging, error handling, performance monitoring, security, documentation best practices
+topic:
+  - choose-log-level
 audience:
   - Developer
   - Platform administrator

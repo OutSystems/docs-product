@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - fix-theme-mismatch
 ---
 
 # Theme compatibility in Screen Templates

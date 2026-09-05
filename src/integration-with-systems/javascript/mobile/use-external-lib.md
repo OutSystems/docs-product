@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - add-external-js-library
+  - script-loading-order
 ---
 
 # Use JavaScript Code from an External Library

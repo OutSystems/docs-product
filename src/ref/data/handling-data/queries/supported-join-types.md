@@ -1,5 +1,8 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, data modeling, aggregates, entity relationships, database queries
+tags:
+  - Aggregates
+  - Data Model
+  - Entities
 locale: en-us
 guid: d2ac8884-a37b-423d-9655-b235291485cd
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - understand
 ---
 
 # How Data Model Changes are Handled

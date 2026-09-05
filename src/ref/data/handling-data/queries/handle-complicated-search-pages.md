@@ -11,7 +11,8 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - remember
+  - apply
+  - evaluate
 ---
 
 # How to handle complicated search pages with multiple search fields

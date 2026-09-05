@@ -1322,6 +1322,14 @@ knowledge-needs:
   - name: Consume webservices
     id: consume-webservices
     subtopics:
+    - name: Authenticate SOAP service
+      id: authenticate-soap-service
+      description: 'Wants to fix a 401 Unauthorized error when consuming an
+        authenticated SOAP web service in OutSystems 11 by saving the WSDL
+        locally and importing it from the file system, and by setting the
+        username and password with the EnhancedWebReferences extension''s
+        SetWebReferenceCredentials action, so that the web service can be
+        consumed successfully.'
     - name: Changing endpoints
       id: changing-endpoints
     - name: Consume and refresh methods
@@ -4562,6 +4570,16 @@ knowledge-needs:
         pressing SEND, so that developers can better understand reported
         issues, provided the feedback feature is activated in the
         environment.
+- name: Monitor and Troubleshoot (O11)
+  guid: efd7e36b-05ea-4fe3-bf72-80617a1557e8
+  topics:
+  - name: Debugging toolkit overview
+    id: debugging-toolkit-overview
+    description: Wants to understand what tools are available for debugging
+      and troubleshooting Mobile and Reactive Web apps in OutSystems 11,
+      including the Service Studio debugger, Service Center application
+      logs, and modern browser developer tools, so that they know where to
+      start when investigating unexpected application behavior.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:

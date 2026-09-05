@@ -88,6 +88,11 @@ knowledge-needs:
         action to the block's event and accessing the event input parameters, in ODC
         Studio, so that the screen can respond to user interactions happening inside
         the block.
+    - name: Trigger block event
+      id: trigger-block-event
+      description: Wants to create an event on a block and trigger it using a
+        Trigger Event node in a client action, in ODC Studio, so that the block
+        can notify its parent screen when something occurs inside it.
     - name: Block events O11
       id: block-events
       description: Wants to expose an event on a block and handle it on a screen by

@@ -256,6 +256,24 @@ knowledge-needs:
         (configuration overhead, performance overhead, security risks, lack of
         built-in product support), so they can choose the appropriate role
         model for their app.
+    - name: Hierarchical roles demo
+      id: hierarchical-roles-demo
+      description: Wants to implement the hierarchical roles authorization
+        approach in a demo sales application by restricting screen access
+        with Screen Roles, controlling displayed information with
+        HasAccessByFunctionId, and controlling available actions with
+        GetPermissionsByUserId, so they can apply the three authorization
+        scenarios (screen access, content visibility, action permissions)
+        using hierarchical roles in OutSystems 11.
+    - name: Implement hierarchical roles
+      id: hierarchical-roles-implementation
+      description: Wants to implement a hierarchical roles authorization solution in
+        OutSystems 11 by designing a supporting data model, structuring the app
+        architecture into layered modules, building BackOffice management
+        screens to manage functions and permissions, and creating server actions
+        for checking user permissions and function-level access, so they can
+        enforce granular, configurable authorization across their app without
+        relying on OutSystems' default static roles.
 - name: (Creating an Application) Architecture
   guid: 9ce4fe11-dcc9-4b0f-b3ea-545557accdec
   topics:
@@ -278,6 +296,13 @@ knowledge-needs:
       id: what-are-modules
     - name: Difference between applications and modules
       id: apps-vs-modules
+    - name: Clone a module
+      id: clone-a-module
+      description: 'Wants to clone a module and move it to another application
+        in OutSystems 11 Service Studio, using the Module menu''s Clone option
+        and the Independent Modules app''s Move action, so that a module built
+        in one app can be reused in another without recreating it from
+        scratch.'
   - name: Multi-tenant architecture
     id: multi-tenant-architecture
     description: Wants to understand what multi-tenancy is and how OutSystems 11
@@ -636,6 +661,13 @@ knowledge-needs:
         in client-side Screen Actions logic in Mobile Apps and Reactive Web Apps,
         so that they know when and why the platform automatically reduces the data
         sent to the client.
+    - name: Database query slowdown
+      id: database-query-slowdown
+      description: Wants to diagnose and fix database queries that slow down after
+        deleting or updating a significant number of rows, by checking and updating
+        outdated table statistics and checking and defragmenting the table in
+        Oracle or SQL Server, in OutSystems 11, so that the query optimizer builds
+        accurate access plans and performance recovers.
   - name: Indexes
     id: indexes
   - name: Enforcing data integrity
@@ -711,6 +743,12 @@ knowledge-needs:
         ensuring only one class implements the OSInterface-decorated interface
         in their C# external library project, so that they can successfully
         publish the external library.'
+    - name: Authenticate mTLS library
+      id: authenticate-mtls-library
+      description: 'Wants to implement mutual TLS (mTLS) authentication in an
+        external library''s HTTP client, by loading a client certificate and
+        validating the server certificate, so that an OutSystems Developer
+        Cloud (ODC) app can securely consume a mTLS-protected REST API.'
     - name: Parse XML XPath
       id: parse-xml-xpath
       description: Wants to extract filtered data from an XML file using XPath expressions
@@ -786,6 +824,16 @@ knowledge-needs:
       id: acls
     - name: Webservice authentication
       id: webservice-authentication
+    - name: Credential delegation
+      id: credential-delegation
+      description: Wants to enable Integrated Authentication credential delegation
+        from the browser through OutSystems to a consumed Web Reference, by setting
+        the Web Reference's Integrated Authentication property, ensuring
+        integrated-auth context in the calling screen/flow/block/action, and
+        configuring the OutSystems server as trusted for Kerberos delegation to the
+        Web Service server in Active Directory, in OutSystems 11, so that the Web
+        Service receives the client's actual domain credentials instead of the
+        application's service account.
     - name: Create API client
       id: create-api-client
       description: Wants to create an API client in the ODC portal, configuring its
@@ -798,6 +846,16 @@ knowledge-needs:
         API client immediately after creation, so they can configure them in their
         app to request an access token, since the credentials can't be retrieved
         again once the credentials page is left.
+    - name: Suspend API client
+      id: suspend-api-client
+      description: Wants to suspend access to an API client from the ODC portal,
+        so its secrets and access tokens immediately become invalid and can no
+        longer be used to access ODC REST APIs.
+    - name: Resume API client
+      id: resume-api-client
+      description: Wants to resume access to a suspended API client from the ODC
+        portal, so its secret and access token become valid again, or generate a
+        new secret if expired, restoring API access.
     - name: Edit API client permissions
       id: edit-api-client-permissions
       description: Wants to edit the permissions of an existing API client in the
@@ -1045,6 +1103,18 @@ knowledge-needs:
       id: config-app-after-deploy
     - name: App settings
       id: app-settings
+    - name: Configure app properties
+      id: configure-app-properties
+      description: Wants to configure an app, library, or mobile library's general
+        properties in ODC Studio, covering identity/branding details and
+        advanced behavior settings, so that the app looks and behaves as
+        intended.
+    - name: Customize validation messages
+      id: customize-validation-messages
+      description: Wants to customize the validation and upgrade messages shown to
+        end users of an app, library, or mobile library, by editing the Messages
+        settings page in ODC Studio, so that error and upgrade notifications match
+        the app's language, tone, or branding requirements.
     - name: Configure app settings before a deployment
       id: config-app-before-deploy
     - name: Factory Configuration overview
@@ -1517,6 +1587,12 @@ knowledge-needs:
         and handling structural changes introduced in O11 — so that a Silk-based
         Traditional Web App can be upgraded to the OutSystems 11 Web UI Framework
         without breaking existing screen behavior.
+    - name: Migrate CSS classes
+      id: migrate-css-classes
+      description: Wants to find the OutSystems Web UI CSS class equivalent for
+        each Silk Web UI CSS class (background colors, text colors, buttons, and
+        text styles), so that a Silk-based Traditional Web App keeps consistent
+        visual styling after migrating to the OutSystems 11 Web UI Framework.
 - name: Creating UI
   guid: a6b567df-2deb-4736-bd6d-cf144a9c6262
   topics:
@@ -1967,6 +2043,13 @@ knowledge-needs:
         HTTPRequestHandler API, in Service Studio for O11, so that they can
         trigger custom JavaScript behavior in response to events or during
         screen rendering.
+    - name: Set dynamic input value
+      id: set-dynamic-input-value
+      description: Wants to automatically update one input's value when another
+        input changes, using the On Change event, an Assign node, and an Ajax
+        Refresh, in Service Studio for OutSystems 11 Traditional Web Apps, so
+        that dependent form fields (for example, a date range) update without
+        requiring the user to manually re-enter data.
   - name: Using external JavaScript
     id: using-external-javascript
     subtopics:
@@ -2507,6 +2590,57 @@ knowledge-needs:
         type and serializing the structured data before storing it in the
         Store Memory node, so that the structured response can be persisted
         and later deserialized on the consumer side.
+    - name: Create evaluation dataset
+      id: create-evaluation-dataset
+      description: Wants to create and upload a dataset for an agentic app
+        evaluation in the ODC Portal, pairing it with the agentic app and
+        service action being evaluated, downloading the JSON template, and
+        uploading test case JSON matching the service action's inputs,
+        expected outputs, and expected tool calls, so that the service
+        action can be benchmarked with structured test cases.
+    - name: Design dataset test cases
+      id: design-dataset-test-cases
+      description: Wants to design effective test cases for an agent evaluation dataset,
+        covering real user scenarios, one intent per row, stable expected
+        outputs, and data dependencies, and structure them as JSON that pairs
+        inputs with expected responses, guidance notes, and expected tool calls,
+        matching the service action contract, so that evaluation results give
+        clear, reliable regression signal.
+    - name: Edit evaluation dataset test cases
+      id: edit-evaluation-dataset-test-cases
+      description: Wants to edit test cases in a saved agent evaluation
+        dataset in the ODC Portal, so that the dataset stays accurate as
+        prompts, expected responses, or tools change.
+    - name: Export evaluation dataset JSON
+      id: export-evaluation-dataset-json
+      description: Wants to export a saved agent evaluation dataset as JSON
+        from the ODC Portal for backup or version control, so that they can
+        track and restore dataset changes over time.
+    - name: Configure evaluation setup and teardown actions
+      id: configure-evaluation-setup-teardown-actions
+      description: Wants to configure setup and teardown service actions for
+        an agent evaluation in the ODC Portal, so that each run starts from
+        a known state and cleans up after execution.
+    - name: Run agent evaluation
+      id: run-agent-evaluation
+      description: Wants to create and save an agent evaluation in the ODC
+        Portal by selecting a dataset and judge criteria, then start a run
+        against the linked service action, so that test cases are scored
+        and results become available for review.
+    - name: Cancel evaluation run
+      id: cancel-evaluation-run
+      description: Wants to cancel an in-progress agent evaluation run in
+        the ODC Portal, understanding that setup is aborted, in-progress
+        test cases stop, teardown still executes, and no scores are
+        returned, so that they can stop a run started with the wrong
+        dataset or one taking too long.
+    - name: Review run results
+      id: review-run-results
+      description: Wants to review agent evaluation results in the ODC
+        Portal by checking run statuses, overall and judge criteria scores,
+        dataset versions across runs, and failure details for setup or
+        teardown stages, so that they can interpret run outcomes and know
+        where to investigate failures.
   - name: Semantic Search
     id: semantic-search
     subtopics:
@@ -2714,6 +2848,24 @@ knowledge-needs:
         with time deltas, lightweight local database design, and minimizing server
         requests — so that the app performs efficiently and remains error-tolerant
         under demanding synchronization scenarios.
+  - name: Extensibility configurations
+    id: extensibility-configurations
+    subtopics:
+    - name: App extensibility config
+      id: app-extensibility-use-cases
+      description: Wants to customize a mobile app's runtime and build-time behavior beyond
+        the Mobile tab defaults, using the app extensibility configurations JSON
+        schema, so that functionality not exposed by the Mobile tab UI can be
+        configured.
+    - name: Library plugin config
+      id: plugin-extensibility-use-cases
+      description: Wants to customize a mobile library's plugin runtime and
+        build-time behavior, such as specifying Cordova and Capacitor plugin
+        sources, setting plugin preferences and configurations, declaring
+        permissions and usage descriptions, defining installation variables,
+        copying resources, and running build actions, using the library
+        extensibility configurations JSON schema, so that Cordova and
+        Capacitor plugins can be wrapped and configured for mobile apps.
   - name: OTA upgrade troubleshooting
     id: ota-upgrade-troubleshooting
     subtopics:
@@ -2723,6 +2875,13 @@ knowledge-needs:
         not found" error that leaves a mobile app stuck on the splash screen
         during an OTA upgrade, by reloading the app or reinstalling it, so
         that the app upgrade completes successfully.'
+    - name: Fix corrupt cache manifest
+      id: cache-manifest-corrupt-error
+      description: 'Wants to resolve the "Cache manifest file is corrupt or
+        invalid" error that causes a mobile app to stop working or fail to
+        start, typically caused by insufficient device disk space corrupting
+        the on-device cache manifest file, by checking available storage and
+        reinstalling the app, so that the app works again.'
     - name: Fix local entity type error
       id: fix-local-entity-type-error
       description: 'Wants to resolve the "Upgrade failed - rolling back to
@@ -2731,6 +2890,54 @@ knowledge-needs:
         when the device already holds data for that entity, by rolling back
         the app and clearing the cache/data or reinstalling on affected
         devices, so that the OTA upgrade completes successfully.'
+    - name: Database close error
+      id: database-close-error
+      description: 'Wants to understand the informative "failed to close
+        database ... cannot be closed while a transaction is in progress"
+        error that occurs when a mobile app closes its database connection
+        on window unload while a transaction is still running, so that they
+        can confirm it''s safe to ignore since it has no impact on the app.'
+    - name: Resource not found error
+      id: resource-not-found-error
+      description: 'Wants to understand the informative "Unable to find
+        resource <Resource>" error, visible only in Mobile Device Logs and
+        accessible through ADB, that occurs when WebView requests a resource
+        outside a cached frame or a locally-served Cordova plugin resource,
+        so that they can confirm it''s safe to ignore since it has no impact
+        on the end user.'
+    - name: InputStream cache error
+      id: inputstream-cache-error
+      description: 'Wants to resolve the "Could not get InputStream while
+        trying to get cache resource" error caused by a mobile app''s
+        WebView requesting a file missing from the device file system,
+        often due to low storage, which triggers the healing mechanism and
+        may leave the app unusable if healing fails, by checking device
+        storage, reloading the app, or reinstalling it, so that the cache
+        resource loads and the app works again.'
+    - name: Fix cache version switch error
+      id: switch-cache-version-error
+      description: 'Wants to resolve the "Unable to switch to cache version"
+        error caused by a state mismatch between the client runtime and the
+        native side during an OTA cache upgrade, by reloading the app or
+        checking device storage and reinstalling it, so that the mobile app
+        upgrades successfully.'
+    - name: Fix OTA download timeout
+      id: fix-ota-download-timeout
+      description: Wants to resolve the "Aborting resources download... The request timed
+        out" / "Upgrade failed - rolling back to the previous application
+        version" error caused by a mobile device's poor network connection or
+        large OTA resources exceeding the fixed per-resource download timeout,
+        by reloading the app to retry the OTA upgrade or, if the new resources
+        consistently fail, generating and distributing a new full application
+        package, so that the OTA upgrade completes successfully.
+    - name: OTA rollback behavior
+      id: ota-rollback-behavior
+      description: 'Wants to understand why a mobile app''s OTA upgrade rolls
+        back to the previously cached version on failure and why
+        already-downloaded resources are preserved via a checkpoint
+        mechanism so the next OTA attempt doesn''t redownload everything,
+        so they can anticipate runtime issues (like server action
+        mismatches) after a failed OTA upgrade.'
   - name: Customize Mobile apps
     id: customize-mobile-apps
     subtopics:
@@ -3220,6 +3427,14 @@ knowledge-needs:
       id: idp-apple
     - name: External IDPs - OpenIDP
       id: idp-openidp
+    - name: External IDPs - Auth0
+      id: idp-auth0
+      description: Wants to integrate Auth0 as an external identity provider with
+        an OutSystems 11 (Traditional Web) application using the IdP Forge component
+        and the SAML protocol, including installing IdP, signing up for Auth0,
+        configuring the SAML connection and callback URL in Auth0, and mapping the
+        SAML configuration parameters between Auth0 and the IdP Configuration page,
+        so that end users can log in via Auth0 single sign-on.
     - name: Configure Okta IdP
       id: idp-okta
       description: Wants to register ODC as a trusted OIDC application in
@@ -3290,6 +3505,13 @@ knowledge-needs:
       id: deleting-users
     - name: Updating Users
       id: updating-users
+    - name: Activate deactivated user
+      id: activate-deactivated-user
+      description: Wants to reactivate a deactivated end-user account in ODC,
+        using either the ODC Portal's Management > Users page (Activate User)
+        or the ODC user management APIs, so that the user can resolve the
+        OS-IDCO-AUTH-40101 error and resume authenticating through the
+        external IdP.
     - name: Self Registration
       id: self-registration
     - name: Users and Licensing
@@ -3622,6 +3844,14 @@ knowledge-needs:
   - name: Redis in-memory sessions
     id: redis-in-memory-sessions
     subtopics:
+    - name: Redis session overview
+      id: redis-session-overview
+      description: Wants to understand why OutSystems supports Redis for in-memory
+        session storage in Traditional Web Apps on self-managed infrastructures
+        — including the drawbacks of storing sessions as a serialized column in
+        a relational database and the difference between a single Redis Server
+        and a Redis Cluster configuration — so they can decide whether this advanced
+        scenario fits their factory before setting it up.
     - name: Redis software prerequisites
       id: redis-software-prereqs
       description: Wants to know which Platform Server and Redis Server versions
@@ -3634,6 +3864,51 @@ knowledge-needs:
         Redis infrastructure — covering both non-productive and production (Redis
         Cluster) environments — so they can provision servers with the right CPU,
         RAM, storage, and network capacity before deploying Redis for OutSystems.
+  - name: Self-hosted cluster services
+    id: self-hosted-cluster-services
+    subtopics:
+    - name: Cluster services overview
+      id: cluster-services-overview
+      description: Wants to understand what services are installed in an ODC self-hosted
+        Kubernetes cluster and why each is necessary, so that they can
+        understand the platform's architecture and their own operational
+        responsibilities versus OutSystems'.
+  - name: Self-hosted inbound traffic configuration
+    id: self-hosted-inbound-traffic
+    subtopics:
+    - name: Configure self-hosted domains
+      id: configure-self-hosted-domains
+      description: Wants to create and manage DNS domains for each self-hosted ODC
+        application stage that resolve to the load balancer's public address, so
+        that user requests can reach the load balancer over HTTPS.
+    - name: Set up load balancer TLS
+      id: set-up-load-balancer-tls
+      description: Wants to set up a layer 7 load balancer to terminate TLS for
+        self-hosted ODC domains and forward traffic to the Gloo ingress gateway
+        over HTTP, so that HTTPS access to apps stays secure while TLS management
+        is offloaded from the cluster.
+    - name: Configure Gloo routing headers
+      id: configure-gloo-routing-headers
+      description: Wants to configure the X-Forwarded-Host and X-OSEnvironment HTTP
+        headers at the load balancer, or another upstream proxy, so that Gloo can
+        identify the target runtime stage and route each inbound request correctly
+        in a self-hosted ODC cluster.
+  - name: Self-hosted configurator
+    id: self-hosted-configurator
+    subtopics:
+    - name: Reopen self-hosted configurator
+      id: reopen-self-hosted-configurator
+      description: Wants to reopen the Self-hosted configurator on an already-bootstrapped
+        ODC cluster via the ODC Portal's Self-hosted tab and configurator command,
+        so that they can update APM tool, stage database connection, or container
+        registry settings without rerunning the full installation wizard.
+    - name: Redis HA architecture
+      id: redis-ha-architecture
+      description: Wants to understand the 3-node Master/Replica Redis Cluster
+        high-availability architecture for OutSystems 11 self-managed infrastructures,
+        including how crossed replica placement enables automatic failover to a
+        surviving server, so that they can reason about Redis Cluster resilience
+        before deploying it.
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:

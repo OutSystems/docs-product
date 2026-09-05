@@ -2411,6 +2411,12 @@ knowledge-needs:
         variables that track resource usage and iteration counts, so that an AI
         agent stops calling actions after reaching a defined limit and avoids
         infinite loops or excessive resource consumption.
+    - name: Action calling overview
+      id: action-calling-overview
+      description: Wants to understand how an AI agent decides which server
+        actions to call within an Agent Flow, based on the user's prompt, the
+        system prompt, and action metadata, so they can design actions that
+        fit into the agent's autonomous action-calling process.
     - name: Add structured output
       id: add-structured-output
       description: Wants to add a structured output to a Call Agent action in
@@ -2902,6 +2908,18 @@ knowledge-needs:
       description: Wants to understand how OutSystems Cloud system updates fulfill
         PCI DSS Requirement 6.2 for timely security patching, so that they can confirm
         their environment meets compliance obligations without taking manual action.
+    - name: Reschedule platform updates
+      id: reschedule-platform-updates
+      description: Wants to view upcoming ODC platform infrastructure updates in
+        the ODC Portal (Management > Maintain > Platform updates) and reschedule
+        any of them to a different date within the allowed time window, so that
+        they can prepare each tenant stage for the change at a convenient time.
+    - name: Platform update notifications
+      id: platform-update-notifications
+      description: Wants to know who receives email notifications about ODC platform
+        infrastructure updates and what permission determines that, so that they
+        can ensure the right people stay informed of scheduled and rescheduled
+        updates.
 - name: Production Recovery
   guid: e392931b-251f-4d43-8c0b-c85bbc97e02e
   topics:

@@ -1,6 +1,10 @@
 ---
 summary: Explore and extend process management capabilities in OutSystems 11 (O11) using the comprehensive Processes API.
-tags: process management, api integration, systems data model, custom reporting, process automation
+tags:
+  - Business Processes
+  - Data Model
+  - Entities
+  - Taskbox
 locale: en-us
 guid: 76b2e4f2-00b3-4c01-85a9-a00791998fdd
 app_type: traditional web apps, mobile apps, reactive web apps

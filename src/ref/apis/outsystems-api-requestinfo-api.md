@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) features a JavaScript API, outsystems.api.requestInfo, for accessing request and session information in Traditional Web Apps.
-tags: javascript api, session management, request handling, environment configuration, application management
+tags:
+  - Front-End
+  - JavaScript
+  - Traditional Web
 locale: en-us
 guid: fd316f0d-9003-4b26-a137-96c4b65afd08
 app_type: traditional web apps

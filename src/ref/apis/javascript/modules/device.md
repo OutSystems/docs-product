@@ -1,5 +1,9 @@
 ---
-tags: mobile development, cordova, device apis, javascript, event handling
+tags:
+  - Cordova
+  - Events
+  - JavaScript
+  - Mobile app
 summary: Explore device capabilities in OutSystems 11 (O11) with the `whenReady` function, ensuring native API readiness.
 locale: en-us
 guid: cb9a46ef-3b0c-48e2-9307-8fa4d00567e3

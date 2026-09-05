@@ -1,5 +1,7 @@
 ---
-tags: application lifecycle management, upgrade monitoring, loading process customization, javascript event handling, lifecycle event listeners
+tags:
+  - JavaScript
+  - Lifecycle
 summary: OutSystems 11 (O11) provides tools to manage the application lifecycle, including monitoring upgrades and customizing the loading process.
 locale: en-us
 guid: 90d5caaf-3d6a-4ddc-b2de-012bbec4c2f3

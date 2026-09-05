@@ -1,5 +1,9 @@
 ---
-tags: user interface, user feedback, javascript apis, message handling, ui components
+tags:
+  - Front-End
+  - JavaScript
+  - Mobile app
+  - UI
 summary: OutSystems 11 (O11) provides functions to display and manage feedback messages in Mobile and Reactive Web Apps.
 locale: en-us
 guid: 97a72928-f041-46ef-b4c9-2574f67d986e

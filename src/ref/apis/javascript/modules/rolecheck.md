@@ -1,5 +1,10 @@
 ---
-tags: client-side logic, role-based access control, ui element visibility, javascript integration, mobile app development
+tags:
+  - Authorization
+  - Front-End
+  - JavaScript
+  - Roles
+  - UI
 summary: Explore client-side role checks in OutSystems 11 (O11) for UI element visibility control, not for security purposes.
 locale: en-us
 guid: efe75497-2f0f-4bbe-9f97-e65c2b345210

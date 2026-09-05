@@ -1,6 +1,11 @@
 ---
 summary: OutSystems 11 (O11) includes a JavaScript API for prefetching static resources in Traditional Web Apps, though its use is discouraged.
-tags: javascript api, prefetching, cache optimization, performance improvement, legacy feature
+tags:
+  - Caching
+  - JavaScript
+  - Optimization
+  - Performance
+  - Traditional Web
 locale: en-us
 guid: 46d68360-ea42-4078-8bc7-b8f9286e09e6
 app_type: traditional web apps

@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) introduces the PerformanceMonitoring API, enabling REST API methods to retrieve and log request events for app performance analysis.
-tags: api, performance analysis, application monitoring, rest api, user experience
+tags:
+  - Events
+  - Logging
+  - Monitoring
+  - Performance
+  - REST
+  - UX
 locale: en-us
 guid: 0e09d502-6d81-4bdb-a2fa-1194ce483098
 app_type: traditional web apps, mobile apps, reactive web apps

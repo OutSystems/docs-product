@@ -2616,6 +2616,14 @@ knowledge-needs:
         calling the SendPushNotificationToAll action with the ApplicationCode, ApiAccessToken,
         Message, Badge, and Deeplink parameters — so that the app can broadcast
         notifications to all registered devices.
+    - name: Camera plugin v7 reference
+      id: camera-plugin-reference-v7
+      description: Wants to look up the Camera plugin version 7's client actions
+        (CheckCameraPlugin, RecordVideo, TakePicture, PlayVideo, EditURIPicture,
+        ChooseFromGallery, and their deprecated variants), web blocks, related data
+        structures (MediaResult, MediaMetadata) and static entities (MediaType), and
+        error codes, so that they can implement camera and gallery functionality in
+        an O11 mobile app using this legacy plugin version.
 - name: Lifecycle Independence
   guid: 4b3a44cd-2a86-462c-81b2-89a841284aab
   topics:
@@ -3470,6 +3478,42 @@ knowledge-needs:
         version, prior preparation steps, and unsupported scenarios (self-managed,
         hybrid, demo environments, ODC self-hosted) — so that they can confirm whether
         their environment is ready before starting the conversion process.
+  - name: Code Patterns
+    id: code-patterns
+    subtopics:
+    - name: Fix built-in function pattern
+      id: fix-built-in-function-pattern
+      description: Wants to manually replace O11 built-in functions that don't exist in ODC
+        with their ODC equivalents or manual workarounds after O11 to ODC code
+        conversion, so that migrated app logic keeps working under ODC's
+        architecture.
+    - name: Multipart REST pattern
+      id: multipart-rest-pattern
+      description: Wants to unblock an O11 to ODC code conversion when the app consumes
+        a REST API using a multipart/form-data request, by removing that REST call
+        in O11 before converting, since ODC doesn't yet support that request format.
+    - name: Incompatible built-in functions
+      id: incompatible-built-in-functions
+      description: Wants to identify O11 built-in functions incompatible with ODC
+        architecture, either restricted from use inside aggregates or removed
+        entirely, after O11 to ODC code conversion, so that they can rework the
+        affected logic instead of applying a direct fix.
+    - name: Traditional Web modules
+      id: trad-web-modules-pattern
+      description: Wants to convert Traditional Web modules to Service or Reactive
+        Web modules in O11 before starting O11 to ODC code conversion, since ODC
+        doesn't support Traditional Web apps, so that the app asset isn't blocked
+        from code conversion.
+    - name: Additional pipelines pattern
+      id: additional-pipelines-pattern
+      description: Wants to understand why O11 to ODC conversion isn't supported
+        yet for infrastructures with additional pipelines, so that they can focus
+        on preparing code and data for ODC instead of attempting conversion.
+    - name: Self-managed infra pattern
+      id: self-managed-infra-pattern
+      description: Wants to understand why O11 to ODC conversion isn't supported
+        yet for self-managed infrastructures, so that they can focus on preparing
+        code and data for ODC instead of attempting conversion.
   - name: Data Migration
     id: data-migration
     subtopics:
@@ -3510,6 +3554,25 @@ knowledge-needs:
         stop an O11 to ODC data migration — including missing entities or attributes,
         attribute property mismatches, and reference attribute mismatches — so that
         they can resolve the root cause and successfully retry the migration.
+  - name: Conversion Assessment
+    id: conversion-assessment
+    subtopics:
+    - name: Review assessment report
+      id: review-assessment-report
+      description: Wants to view and validate the ODC Conversion Assessment Tool's
+        report, including navigating to it via ODC Blueprint or a conversion plan,
+        and validating Code, Data, and Infrastructure pattern findings by reviewing
+        solutions and rerunning the assessment, so that they can plan the refactoring
+        effort needed before converting O11 apps to ODC.
+  - name: Preparation
+    id: preparation
+    subtopics:
+    - name: Prepare O11 for ODC
+      id: prepare-o11-for-odc
+      description: Wants to understand the high-level steps involved in preparing
+        an O11 app for ODC conversion, adjusting the app to be ODC-compatible,
+        deploying it to QA, and testing it, so that they know what is needed before
+        starting the code conversion process.
 - name: Infrastructure Setup
   guid: a1c2e3f4-5b6d-7e8f-9a0b-1c2d3e4f5a6b
   topics:
@@ -3782,6 +3845,25 @@ knowledge-needs:
         ServiceNow, Zendesk, Jira, or Opsgenie, send Slack messages, or integrate
         with any webservice-exposing external service, so that operational alerts
         reach the right external system.
+  - name: App Feedback
+    id: app-feedback
+    subtopics:
+    - name: Send mobile app feedback
+      id: send-mobile-app-feedback
+      description: Wants to send feedback from a screen in a mobile app by
+        long-pressing with two fingers, marking the area of concern, and
+        entering a text message or voice recording (which requires microphone
+        permission), so that end users can report issues or comments for
+        review in the App Feedback app, provided the device has network
+        access.
+    - name: Send web app feedback
+      id: send-web-app-feedback
+      description: Wants to send feedback in a Traditional Web App or Reactive
+        Web App by clicking the glowing circle indicator, typing a message,
+        optionally pointing to a specific screen area or element, and
+        pressing SEND, so that developers can better understand reported
+        issues, provided the feedback feature is activated in the
+        environment.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:

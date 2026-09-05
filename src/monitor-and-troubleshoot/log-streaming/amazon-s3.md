@@ -5,7 +5,10 @@ guid: af2b3f29-6c76-45f1-9d77-9dc20f774f9f
 app_type: traditional web apps, mobile apps, reactive web apps
 figma:
 platform-version: o11
-tags: cloud integration, aws s3, log management, opentelemetry, observability
+tags:
+  - Infrastructure
+  - Logging
+  - Monitoring
 audience:
   - Platform administrator
   - Developer

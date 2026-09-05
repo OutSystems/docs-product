@@ -1,6 +1,8 @@
 ---
 summary: Learn how to configure log streaming in LifeTime for OutSystems 11 (O11) using Elastic Cloud as the destination tool.
-tags: log management, configuration guides, cloud services, application monitoring, user permissions
+tags:
+  - Logging
+  - Monitoring
 locale: en-us
 guid: 172ac547-add4-4cc5-9adf-d72fbe379d35
 app_type: traditional web apps, mobile apps, reactive web apps

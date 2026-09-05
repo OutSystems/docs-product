@@ -1,6 +1,10 @@
 ---
 summary: Learn how to stream logs from OutSystems 11 (O11) to Datadog by setting up the OpenTelemetry Collector and configuring the log streaming service.
-tags: log management, application performance monitoring, opentelemetry, api integration, cloud infrastructure
+tags:
+  - Logging
+  - Monitoring
+  - Performance
+  - Troubleshooting
 locale: en-us
 guid: 2812b9bc-ca11-436f-ac4e-2fc596b9dd61
 app_type: traditional web apps, mobile apps, reactive web apps

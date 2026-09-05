@@ -1,6 +1,8 @@
 ---
 summary: Learn how to stream logs from OutSystems 11 (O11) applications to New Relic by setting up the necessary configurations and API integrations.
-tags: log management, application performance management (apm), api integration, cloud infrastructure, data ingestion
+tags:
+  - Logging
+  - Monitoring
 locale: en-us
 guid: 3155fa32-225e-4925-bf8e-95a0816f62b3
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,8 @@
 ---
 summary: This article details how to configure log streaming from OutSystems 11 (O11) to Dynatrace, including prerequisites and setup instructions.
-tags: application performance management, logging, configuration management, outsystems platform, cloud infrastructure
+tags:
+  - Logging
+  - Monitoring
 locale: en-us
 guid: 7e46389e-dc1f-42cc-9225-929bed3b82a1
 app_type: traditional web apps, mobile apps, reactive web apps

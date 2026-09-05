@@ -1,6 +1,10 @@
 ---
 summary: Explore how OutSystems 11 (O11) measures application performance using LifeTime Analytics to monitor end-user experiences and identify bottlenecks.
-tags: performance monitoring, lifetime analytics, application troubleshooting, end-user experience, request-response cycle
+tags:
+  - Monitoring
+  - Performance
+  - Traditional Web
+  - Troubleshooting
 locale: en-us
 guid: c9bafed1-f783-47d9-9f02-fa30a53c9ae6
 app_type: traditional web apps

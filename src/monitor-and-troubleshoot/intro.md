@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) offers comprehensive monitoring and troubleshooting tools for application performance and user experience.
-tags: application monitoring, environment metrics, user experience analytics, error logging, it user auditing
+tags:
+  - Logging
+  - Monitoring
+  - Performance
+  - Troubleshooting
 locale: en-us
 guid: 636a2bea-478d-4703-aaf8-e2f8ee514f2c
 app_type: traditional web apps, mobile apps, reactive web apps

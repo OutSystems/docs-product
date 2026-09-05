@@ -5,7 +5,10 @@ guid: 998774b6-35c3-4c5b-9284-590d998a302f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, data modeling, web development, outsystems best practices, software troubleshooting
+tags:
+  - Data Model
+  - Entities
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

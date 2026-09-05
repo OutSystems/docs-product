@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) requires changing the target directory of resources to non-system directories before deployment to avoid errors.
-tags: deployment errors, resource management, service studio, outsystems development, trouble shooting
+tags:
+  - Deploy
+  - Troubleshooting
 locale: en-us
 guid: 3be20de4-b979-43e3-89a4-c56d7b9ea6f1
 app_type: traditional web apps, mobile apps, reactive web apps

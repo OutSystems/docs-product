@@ -5,7 +5,9 @@ guid: e57cbb8d-0e91-4934-8226-59778a5f4b13
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, troubleshooting, permission issues, disk space, system administration
+tags:
+  - Extensions
+  - Troubleshooting
 audience:
   - Platform administrator
   - Developer

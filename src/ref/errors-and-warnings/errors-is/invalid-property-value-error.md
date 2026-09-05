@@ -5,7 +5,10 @@ guid: c89d62ae-9e81-430f-9c6a-7ced75e3d05a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: outsystems 11, error handling, record definitions, entity validation, data modeling
+tags:
+  - Data Model
+  - Entities
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

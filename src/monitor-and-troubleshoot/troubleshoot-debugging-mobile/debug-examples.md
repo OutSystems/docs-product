@@ -12,7 +12,6 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - evaluate
   - unblock
 ---
 

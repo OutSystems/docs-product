@@ -12,8 +12,9 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
-  - evaluate
+  - understand
   - apply
+  - evaluate
 ---
 
 # The troubleshooting, debugging and monitoring process

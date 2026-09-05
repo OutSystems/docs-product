@@ -13,8 +13,9 @@ outsystems-tools:
   - service studio
   - service center
 coverage-type:
-  - apply
   - remember
+  - apply
+  - unblock
 ---
 
 # Troubleshoot Service Actions Using Logs

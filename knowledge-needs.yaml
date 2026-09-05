@@ -267,6 +267,14 @@ knowledge-needs:
       implements it through user providers and tenants, so they can design applications
       that isolate data, end-users, and sessions for multiple customers on a single
       deployed application.
+    subtopics:
+    - name: Set Is Multi-tenant
+      id: set-is-multi-tenant
+      description: Wants to configure the Is Multi-tenant property on a module's
+        Entities, Site Properties, and Timers in OutSystems 11, deciding whether
+        each should isolate data per tenant or share it across tenants, so they
+        can correctly implement data segmentation when building a multi-tenant
+        application.
 - name: (Modeling, Consuming and Using) Data
   guid: 184681b2-96da-4711-9efd-53172730bbed
   topics:
@@ -541,6 +549,12 @@ knowledge-needs:
         UPDATE statement in an ODC SQL node — including SET clause syntax, WHERE
         filtering, permissions, return behavior, and data source compatibility —
         so they can correctly modify data in external systems.
+    - name: Delete SQL statement
+      id: delete-sql-statement
+      description: Wants to delete records in an external entity using the ANSI-92
+        DELETE statement in an ODC SQL node, including WHERE filtering,
+        required permissions, and data source compatibility, so they can
+        correctly remove data from external systems.
     - name: Insert/upsert statement
       id: insert-upsert-statement
       description: Wants to create or update records in an external entity using
@@ -639,6 +653,28 @@ knowledge-needs:
         security.
   - name: Integration Patterns
     id: integration-patterns
+    subtopics:
+    - name: Consume O11 entities
+      id: consume-o11-entities
+      description: Wants to understand how an O11 entity's exposure settings determine
+        which entity actions are available when the entity is consumed as an
+        external entity in ODC Studio, so that they can correctly use O11 data
+        in ODC apps.
+    - name: Set up interop DB access
+      id: setup-interop-db-access
+      description: Wants to set up the initial database access for O11-ODC
+        data interoperability in a self-managed infrastructure by creating a
+        dedicated database user and granting it read access to O11 system
+        tables (application, entity, module metadata, plus SQL Server or
+        Oracle-specific system tables), for each O11 environment mapped to
+        an ODC stage.
+    - name: Grant DB access on entity expose
+      id: grant-db-access-entity-expose
+      description: Wants to grant the interoperability database user
+        read/write access to the new database views and tables created when
+        an O11 application entity is exposed or promoted, and read access to
+        the views/tables for the User and Tenant system entities, so ODC can
+        consume the data.
   - name: Extensions
     id: extensions
     subtopics:
@@ -733,6 +769,23 @@ knowledge-needs:
       id: acls
     - name: Webservice authentication
       id: webservice-authentication
+    - name: Create API client
+      id: create-api-client
+      description: Wants to create an API client in the ODC portal, configuring its
+        identifying details, secret expiration and reminder settings, and per-
+        stage permissions, so that OAuth 2.0 client credentials are generated
+        for accessing ODC REST APIs and data.
+    - name: Copy API client credentials
+      id: copy-api-client-credentials
+      description: Wants to copy the client ID and client secret of a newly created
+        API client immediately after creation, so they can configure them in their
+        app to request an access token, since the credentials can't be retrieved
+        again once the credentials page is left.
+    - name: Edit API client permissions
+      id: edit-api-client-permissions
+      description: Wants to edit the permissions of an existing API client in the
+        ODC portal after it was created, so its access to ODC REST APIs and data
+        can be updated.
   - name: Injection attacks
     id: injection-attacks
     subtopics:
@@ -2255,6 +2308,28 @@ knowledge-needs:
   topics:
   - name: Chatbots
     id: chatbots
+  - name: Document Conversion
+    id: document-conversion
+    subtopics:
+    - name: Convert file to Markdown
+      id: convert-file-to-markdown
+      description: Wants to convert a binary file stored or received in their app to
+        Markdown using the OmniDoc2MD Forge component's
+        ConvertDocumentToMarkdown action, including installing the component and
+        configuring its parameters, so that document content is normalized for
+        downstream processing.
+    - name: Use Markdown in agent
+      id: use-markdown-in-agent
+      description: Wants to pass Markdown converted from a document into an AI
+        agent's context in Agent Workbench, by assigning it inside the GetGroundingData
+        or BuildMessages hooks, so that the agent's grounding data or prompt includes
+        the document's normalized text content.
+    - name: Add images to message
+      id: add-images-to-message
+      description: Wants to attach images extracted from a converted document, using
+        OmniDoc2MD's extractedImagesMetadata and imagesZipFile outputs with LoadZIP
+        and GetFiles, to the same user message that carries the Markdown, so that
+        a multimodal AI model receives both text and image content together.
   - name: Sentiment analysis
     id: sentiment-analisys
     subtopics:
@@ -2311,6 +2386,45 @@ knowledge-needs:
       description: Wants to understand the use cases, solutions, and customization options
         of the AI Agent Builder's sample apps, so they can pick a starting point
         matching their business scenario.
+    - name: Build agent flow
+      id: build-agent-flow
+      description: Wants to create an AI agent in ODC Studio by configuring an
+        AI model, defining grounding data and system messages, adding actions,
+        and building the AgentFlow server action, so that the agent can
+        autonomously orchestrate responses in an agentic app.
+    - name: Add additional agents
+      id: add-additional-agents
+      description: Wants to add more than one agent to an existing agentic app
+        in ODC Studio and wire each new agent into AgentFlow logic via the
+        Toolbox's Call Agent element or the Automations tab, so that the app
+        can serve multiple specialized purposes (for example, planning versus
+        fast execution).
+    - name: Configure action calling
+      id: configure-action-calling
+      description: Wants to expose server actions to an AI agent in ODC by
+        writing clear action and parameter descriptions and marking parameters
+        as Generated by AI, so that the agent can autonomously select and
+        invoke the right action with correct inputs.
+    - name: Set agent call condition
+      id: set-call-condition
+      description: Wants to define a call condition expression using ODC's internal
+        variables that track resource usage and iteration counts, so that an AI
+        agent stops calling actions after reaching a defined limit and avoids
+        infinite loops or excessive resource consumption.
+    - name: Add structured output
+      id: add-structured-output
+      description: Wants to add a structured output to a Call Agent action in
+        ODC Studio by selecting an existing structure or creating a new one in
+        the Structured output tab and setting the Call Agent's Response
+        parameter to that structure type, so that the agent returns a
+        predefined structured response instead of free text.
+    - name: Store structured output
+      id: store-structured-output
+      description: Wants to adapt an AgentFlow to work with a structured
+        output by updating the Response output parameter to the structure
+        type and serializing the structured data before storing it in the
+        Store Memory node, so that the structured response can be persisted
+        and later deserialized on the consumer side.
   - name: Semantic Search
     id: semantic-search
     subtopics:
@@ -2778,6 +2892,11 @@ knowledge-needs:
         system updates based on their infrastructure configuration (single front-end,
         multiple front-ends, load balancer), so that they can assess the impact on
         their production environment.
+    - name: Update lifecycle states
+      id: update-lifecycle-states
+      description: Wants to understand the states an ODC platform infrastructure update
+        moves through during its life cycle, so that they can track update
+        status and know what action, if any, is needed at each stage.
     - name: PCI DSS patching compliance
       id: pci-dss-patching-compliance
       description: Wants to understand how OutSystems Cloud system updates fulfill

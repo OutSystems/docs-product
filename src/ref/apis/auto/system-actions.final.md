@@ -1,6 +1,12 @@
 ---
 summary: Guide to System Actions in OutSystems 11 (O11). Use them for server and client-side operations.
-tags: server actions, client-side logic, system module, action management, expression editor
+tags:
+  - Authentication
+  - Business Processes
+  - Logging
+  - Mobile app
+  - Multi-Tenant
+  - Workflows
 locale: en-us
 guid: 15b8a38f-a4cc-4bb7-b496-520824990340
 app_type: traditional web apps, mobile apps, reactive web apps

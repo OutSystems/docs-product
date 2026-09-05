@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) Text API offers text manipulation functionalities such as search, replace, split, and join operations.
-tags: text manipulation, regular expressions, datetime formatting, dependency management, api documentation
+tags:
+  - Mobile app
+  - Traditional Web
 locale: en-us
 guid: 6892cbf0-85c1-4403-8d32-0e4a89ee1331
 app_type: traditional web apps, mobile apps, reactive web apps

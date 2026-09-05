@@ -1,6 +1,8 @@
 ---
 summary: Explore OutSystems 11's Sanitization API, designed to prevent code injection by sanitizing HTML, JavaScript, and SQL content.
-tags: security, code injection prevention, api, sql sanitization, html sanitization
+tags:
+  - Security
+  - SQL
 locale: en-us
 guid: 6193f89c-cf98-4f38-8308-6eb0eee24f86
 app_type: traditional web apps, mobile apps, reactive web apps

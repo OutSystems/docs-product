@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) provides a deprecated LifeTime Services API for managing infrastructure, roles, and user permissions, replaced by LifeTime API v2.
-tags: api, soap web services, infrastructure management, user permissions, authentication
+tags:
+  - Authentication
+  - Infrastructure
+  - IT Roles
+  - IT Teams
+  - IT Users
+  - SOAP
+  - Web services
 locale: en-us
 guid: 49b8897e-c856-4b34-b330-7e8337885450
 app_type: traditional web apps, mobile apps, reactive web apps

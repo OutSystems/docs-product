@@ -1,5 +1,8 @@
 ---
-tags: data visualization, chart configuration, ui components, widget usage, visual design
+tags:
+  - Front-End
+  - UI
+  - Widgets
 summary: Learn how to create and customize a Radar Chart in OutSystems 11 (O11) using fixed or variable data and series styling options.
 locale: en-us
 guid: C623895D-2A0A-4259-9B65-88C68142E2C9

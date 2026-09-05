@@ -1,6 +1,12 @@
 ---
 summary: Explore the capabilities of OutSystems 11 (O11) PlatformRuntime API for dynamic database connection switching and secure audit logging.
-tags: dynamic database connections, audit logging, api, secure storage, runtime
+tags:
+  - Authentication
+  - Data
+  - Extensions
+  - Logging
+  - Mobile app
+  - Security
 locale: en-us
 guid: 66bc7e5d-11fc-4670-a85e-4ac5e0defd1c
 app_type: traditional web apps, mobile apps, reactive web apps

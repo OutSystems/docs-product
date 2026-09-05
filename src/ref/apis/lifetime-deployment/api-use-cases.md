@@ -13,7 +13,7 @@ audience:
 outsystems-tools:
   - lifetime
 coverage-type:
-  - remember
+  - apply
 ---
 
 # LifeTime API Examples

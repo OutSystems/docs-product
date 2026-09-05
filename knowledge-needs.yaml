@@ -238,6 +238,12 @@ knowledge-needs:
       id: what-are-modules
     - name: Difference between applications and modules
       id: apps-vs-modules
+  - name: Multi-tenant architecture
+    id: multi-tenant-architecture
+    description: Wants to understand what multi-tenancy is and how OutSystems 11
+      implements it through user providers and tenants, so they can design applications
+      that isolate data, end-users, and sessions for multiple customers on a single
+      deployed application.
 - name: (Modeling, Consuming and Using) Data
   guid: 184681b2-96da-4711-9efd-53172730bbed
   topics:
@@ -263,6 +269,13 @@ knowledge-needs:
       description: Wants to implement user-triggered column sorting on a Table widget
         using a Dynamic Sort in an Aggregate, so that users can reorder displayed
         records by clicking header cells.
+    - name: Sort SQL-fed table
+      id: sql-table-sorting-setup
+      description: Wants to enable dynamic column sorting on a Table widget whose
+        data source is a raw SQL query (not an Aggregate), by setting up an OnSort
+        action with an attribute-encoding function in Reactive Web, or the List
+        Sort Column Rich Widget in Traditional Web, in OutSystems 11, so users can
+        reorder SQL-query-driven table results safely without SQL injection risk.
     - name: Customize table columns
       id: customize-table-columns
       description: Wants to customize the columns of a Table widget — adding, deleting,
@@ -970,6 +983,13 @@ knowledge-needs:
         successfully as a Library.
   - name: Validating your application architecture
     id: validate-app-architecture
+    subtopics:
+    - name: Reduce module size
+      id: reduce-module-size
+      description: Wants to reduce the size of an OutSystems 11 module by identifying
+        and fixing its main causes, monolithic single-module architecture, large
+        images, large resources, and numerous custom icons, so that the module
+        publishes, deploys, and runs efficiently.
   - name: Architecture Canvas
     id: architecture-canvas
   - name: Application composition
@@ -1049,6 +1069,13 @@ knowledge-needs:
         in asynchronous logic and consumer/producer module scenarios, and performance
         implications of storing large data — so that they can design session state
         usage correctly for their application.
+    - name: Configure tenant sessions
+      id: configure-tenant-sessions
+      description: Wants to configure how OutSystems 11 binds an end-user's session
+        to their tenant during login, including using the default Users application
+        versus a custom User Provider with the TenantSwitch system action, so that
+        queries and aggregates are automatically scoped to the correct tenant's
+        data.
 - name: Asynchronous processes
   guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
   topics:
@@ -1321,6 +1348,14 @@ knowledge-needs:
       id: customize-app-styles
     - name: Creating a theme
       id: creating-a-theme
+    - name: Make header scroll
+      id: make-header-scroll
+      description: Wants to make the London theme's fixed header scroll with the page
+        instead of staying pinned at the top, by overriding the .Header CSS
+        class's position and top properties to static and removing the .Content
+        class's top padding, in an OutSystems 11 web app's style sheet, so that
+        the header doesn't remain fixed in place and obscure content as users
+        scroll through longer pages.
     - name: Change app favicon
       id: change-app-favicon
       description: Wants to replace the default OutSystems favicon with a custom PNG
@@ -1539,6 +1574,13 @@ knowledge-needs:
         Prompt, and OptionalConfigs, so that they can correctly configure a
         searchable dropdown selector in OutSystems 11 mobile apps and reactive
         web apps.
+    - name: Style dropdown icons
+      id: style-dropdown-icons
+      description: Wants to override the default circular icon style of the
+        Dropdown Search widget with custom CSS (border-radius, height, width)
+        in Service Studio for OutSystems 11, so that flag or other custom
+        icons display without the default circular mask, in mobile apps and
+        reactive web apps.
     - name: Use Bottom Bar Item
       id: use-bottom-bar-item
       description: Wants to add the Bottom Bar Item UI Pattern to a screen and
@@ -3367,3 +3409,46 @@ knowledge-needs:
         entities using SQL queries in Service Center, so that they can
         identify actual field values and hybrid entity relationships before
         planning a BPT data migration.
+- name: Application Monitoring and Alerts
+  guid: 5a7f74cd-1f74-4499-a5db-c8761f47512f
+  topics:
+  - name: Custom alerts
+    id: custom-alerts
+    subtopics:
+    - name: Gather monitoring data
+      id: gather-monitoring-api-data
+      description: Wants to gather application operations data (request duration,
+        browser load time, server time, error counts) using the Monitoring API's
+        GET RequestEvents method or by querying log data, and optionally register
+        custom events via POST RequestEvents or LogMessage, so that they have the
+        raw data needed to build custom alerts.
+    - name: Define alert thresholds
+      id: define-alert-thresholds
+      description: Wants to consume Monitoring API data or log data and define custom
+        logic with thresholds that trigger alerts, using OutSystems logic or a
+        third-party application, so that they can detect when application metrics
+        cross acceptable limits.
+    - name: Integrate alerts ITSM
+      id: integrate-alerts-itsm
+      description: Wants to trigger email notifications or call webservices when
+        an alert threshold is met, to create tickets in ITSM tools such as
+        ServiceNow, Zendesk, Jira, or Opsgenie, send Slack messages, or integrate
+        with any webservice-exposing external service, so that operational alerts
+        reach the right external system.
+- name: Project Tracking and Collaboration
+  guid: ''
+  topics:
+  - name: OnTrack (O11)
+    id: ontrack-o11
+    subtopics:
+    - name: OnTrack overview
+      id: ontrack-overview
+      description: Wants to understand what OnTrack offers for backlog management,
+        project tracking, and continuous delivery collaboration in OutSystems 11,
+        so that they can decide whether to use it to define requirements, prioritize
+        work items, confirm user acceptance, and monitor project progress.
+    - name: Link feedback to OnTrack
+      id: link-feedback-to-ontrack
+      description: Wants to configure ECT_Client_Connector and map eSpaces/modules
+        between environments so that end-user feedback submitted through OutSystems
+        App Feedback is automatically synced into OnTrack as trackable work items.

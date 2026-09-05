@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3302-165&p=f&t=6JEFvDLV2HMS4mvv-0
 tags: scheduler service, timer configuration, performance optimization, infrastructure configuration, port settings
 audience:
-  - Platform administrator
   - Developer
-  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service center
 coverage-type:

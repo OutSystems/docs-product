@@ -7,7 +7,6 @@ platform-version: o11
 figma:
 tags: oracle database, database configuration, connection settings, user management, unicode support
 audience:
-  - Developer
   - Platform administrator
 outsystems-tools:
   - service studio

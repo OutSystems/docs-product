@@ -8,7 +8,6 @@ figma:
 tags: database configuration, oracle database, service studio configuration, database connection settings, unicode support
 audience:
   - Platform administrator
-  - Developer
   - Tech lead
 outsystems-tools:
   - service studio

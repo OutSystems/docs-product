@@ -8,7 +8,6 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=330
 tags: database configuration, service studio, outsystems platform, application deployment, platform management
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -729,6 +729,14 @@ knowledge-needs:
     subtopics:
     - name: Integrate using custom code
       id: custom-code-integration
+    - name: Fix invalid assembly
+      id: fix-invalid-assembly
+      description: 'Wants to fix the OS-ELG-MODL-05001 error ("File does not
+        contain a valid compiled external library, or the compiled assembly
+        was not built using a supported .NET version") by verifying their C#
+        project targets a supported .NET version and packaging the compiled
+        project into a ZIP correctly before uploading, so that they can
+        successfully publish the external library.'
     - name: Fix OSIgnore field error
       id: fix-osignore-field-error
       description: 'Wants to fix the OS-ELG-MODL-05012 error ("The property/field
@@ -2319,6 +2327,21 @@ knowledge-needs:
     - name: Forge overview
       id: forge-overview
       description: Wants to understand what Forge is, what types of reusable assets (apps, libraries, agentic apps) are available, and how the community-driven sharing model works in OutSystems.
+  - name: Submitting assets to Forge
+    id: submitting-assets-to-forge
+    subtopics:
+    - name: Submit asset to Forge
+      id: submit-asset-to-forge
+      description: Wants to submit a new software asset (app or library) built in their
+        organization to the Forge repository from ODC Portal, meeting the
+        submission prerequisites and completing the submission wizard, so that
+        the asset can be reviewed and made available for other users to install.
+    - name: Submit new Forge version
+      id: submit-new-forge-version
+      description: Wants to resubmit an updated version of an asset already
+        published to Forge, using the same asset name and updating the
+        description, images, release notes, license, and documentation as needed,
+        so that existing installers can update to the new version.
   - name: Troubleshoot Forge
     id: troubleshoot-forge
     subtopics:
@@ -2784,6 +2807,30 @@ knowledge-needs:
         structures (MediaResult, MediaMetadata) and static entities (MediaType), and
         error codes, so that they can implement camera and gallery functionality in
         an O11 mobile app using this legacy plugin version.
+    - name: Control device keyboard
+      id: control-device-keyboard
+      description: Wants to show or hide the device's keyboard programmatically
+        using the Keyboard plugin's Show and Hide client actions in ODC Studio,
+        including checking the plugin's availability with CheckKeyboardPlugin
+        and handling the Success and Error output parameters, so that the app
+        can control keyboard visibility on Android and iOS.
+    - name: Customize keyboard appearance
+      id: customize-keyboard-appearance
+      description: Wants to customize how the device's keyboard looks in a
+        mobile app, including setting the accessory bar visibility with
+        SetAccessoryBarVisible, changing the keyboard's light or dark style
+        with SetStyle, and configuring the KeyboardBackdropBehavior
+        extensibility setting to control the keyboard's background color on
+        iOS 26 and later, so that the keyboard's appearance matches the app's
+        design.
+    - name: Handle keyboard events
+      id: handle-keyboard-events
+      description: Wants to detect when the device's keyboard is about to
+        show, has shown, is about to hide, or has hidden, by adding the
+        KeyboardEvents block to a screen and creating handler client actions
+        for the OnKeyboardWillShow, OnKeyboardDidShow, OnKeyboardWillHide, and
+        OnKeyboardDidHide events, so that the app can react to keyboard
+        visibility changes.
 - name: Lifecycle Independence
   guid: 4b3a44cd-2a86-462c-81b2-89a841284aab
   topics:
@@ -3090,6 +3137,16 @@ knowledge-needs:
         dependency, including hooks dependencies declared in the plugin''s
         package.json for MABS 7 and later, so that the mobile app package
         generates successfully.'
+    - name: Incompatible plugin error
+      id: incompatible-plugin-error
+      description: 'Wants to resolve the OS-MABS-PRJ-40003 "One or more
+        Capacitor plugins aren''t compatible with <PackageManager>" error,
+        caused by the code project''s selected package manager (SPM or
+        CocoaPods) not supporting one or more required Capacitor plugins, by
+        checking the build logs to identify the incompatible plugins and
+        updating libraries, toggling the spmPreview configuration, or
+        removing the affected plugins/libraries, so that the iOS mobile app
+        package generates successfully.'
     - name: SSL Pinning domain error
       id: ssl-pinning-domain-error
       description: 'Wants to resolve the OS-MABS-RES-40001 "The configuration
@@ -3154,6 +3211,28 @@ knowledge-needs:
         case." error, by retrying the mobile compilation and escalating to
         OutSystems Support if the problem persists, so that the native
         mobile build completes successfully.'
+    - name: Branding image size error
+      id: branding-image-size-error
+      description: Wants to resolve the OS-MABS-PRJ-40001 "Branding image for <Screen> must
+        be a specific pixel size, but is <Actual>" error, by resizing the splash
+        screen branding image to match the required dimensions and updating the
+        app's splash screen configuration, so that the mobile app package
+        generates successfully.
+    - name: Branding image format error
+      id: branding-image-format-error
+      description: Wants to resolve the OS-MABS-PRJ-40002 "Branding image for <Screen>
+        couldn't be read. The file may be corrupted or in an unsupported
+        format." error, by opening the branding image in an image editor to
+        confirm it's valid, re-exporting it as a PNG in the required dimensions,
+        and updating the app's splash screen configuration, so that the mobile
+        app package generates successfully.
+    - name: Invalid project config error
+      id: invalid-project-config-error
+      description: 'Wants to resolve the OS-MABS-PRJ-50001 "The project
+        configuration is invalid. If the problem persists, open a support
+        case." error, by regenerating the app package or contacting
+        OutSystems Support if the problem persists, so that the mobile app
+        package generates successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -3206,6 +3285,51 @@ knowledge-needs:
         error, by checking the build logs for issues related to the Shield
         phase and escalating to OutSystems Support if the problem persists,
         so that the mobile app package generates successfully.'
+  - name: Custom plugin development
+    id: custom-plugin-development
+    subtopics:
+    - name: Implement Android plugin
+      id: android-plugin-implementation
+      description: Wants to implement the native Android layer of a custom
+        Capacitor plugin for an ODC mobile app, using Kotlin or Java to
+        define the plugin's "bridge" file with @PluginMethod-annotated
+        methods that receive a PluginCall parameter, so that they can
+        implement Android-specific functionality declared in the plugin's
+        web layer.
+    - name: Capacitor plugin layers
+      id: capacitor-plugin-layers
+      description: Wants to understand how a Capacitor plugin's code is
+        organized into web, Android, and iOS layers, and what each layer's
+        directory (src, android, ios) is responsible for, so they can locate
+        and modify the right layer when building or troubleshooting a
+        plugin.
+    - name: Capacitor bridge flow
+      id: capacitor-bridge-flow
+      description: Wants to understand how the Capacitor bridge routes a
+        plugin call from the JavaScript layer through window.CapacitorPlugins
+        to native Android or iOS code and back, in an ODC mobile app, so they
+        can reason about plugin call behavior end to end.
+    - name: Implement iOS plugin
+      id: ios-plugin-implementation
+      description: Wants to implement the native iOS layer of a custom
+        Capacitor plugin for an ODC mobile app, using Swift to define the
+        plugin's "bridge" file with @objc-annotated methods that receive a
+        CAPPluginCall parameter, so that they can implement iOS-specific
+        functionality declared in the plugin's web layer.
+    - name: Add SPM support
+      id: add-spm-support
+      description: Wants to add Swift Package Manager (SPM) support to a
+        custom Capacitor plugin by creating a Package.swift file declaring
+        the plugin as a library target with its native dependencies and
+        source path, so that the plugin builds correctly in ODC mobile apps
+        using the SPM toolchain instead of, or alongside, CocoaPods.
+    - name: Plugin privacy manifest
+      id: plugin-privacy-manifest
+      description: Wants to bundle a PrivacyInfo.xcprivacy file within a
+        custom Capacitor plugin's iOS Sources directory and reference it as
+        a resource bundle in the plugin's .podspec and Package.swift files,
+        so that the manifest is correctly discovered by Xcode without
+        colliding with the app's own privacy manifest.
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
 - name: Product security
@@ -3434,6 +3558,35 @@ knowledge-needs:
       id: lockout
     - name: Passwords
       id: passwords
+    - name: Automatic user creation
+      id: automatic-user-creation
+      description: Wants to resolve the OS-IDCO-CONF-40102 login error, caused
+        by the automatic user creation setting being disabled for an external
+        IdP configuration in ODC, by either enabling automatic user creation
+        or manually provisioning the user account, so that end users can log
+        in successfully.
+    - name: Username claim mapping
+      id: username-claim-mapping
+      description: Wants to resolve the OS-IDCO-CONF-40001 login error, caused
+        by a missing or misconfigured username claim mapping in the external
+        IdP, by verifying the IdP's claim mapping configuration and confirming
+        it matches the mapping configured in ODC, so that end users can
+        authenticate successfully.
+    - name: Duplicate IdP email conflict
+      id: duplicate-idp-email-conflict
+      description: Wants to resolve the OS-IDCO-CONF-40002 login error, caused
+        by an external IdP trying to update a user profile with an email
+        address already associated with a different existing user profile
+        from another IdP, by removing the conflicting duplicate profile and
+        reviewing IdP account-linking configuration, so that end users can
+        log in successfully.
+    - name: Email verified claim
+      id: email-verified-claim
+      description: Wants to resolve the OS-UAUC-60040 login error, caused by
+        a missing or invalid email_verified claim in the external IdP
+        configuration when using the Trust identity provider setting, by
+        verifying the IdP's claim mapping to ensure it sends the correct
+        data, so that end users can log in successfully.
     - name: External IDPs - User Mapping
       id: user-mapping
     - name: External IDPs - LinkedIn
@@ -3484,6 +3637,32 @@ knowledge-needs:
         — including setting timer schedules in Service Center and triggering on-demand
         synchronisation — in OutSystems 11, so that changes to Active Directory Groups
         are regularly propagated to OutSystems user roles without manual intervention.
+    - name: Map O11-ODC groups
+      id: map-o11-odc-groups
+      description: Wants to map existing O11 end-user groups to their corresponding
+        ODC end-user groups by creating an end-user group mapping for each ODC group,
+        including enabling the Include Groups Claim option when using the UsersIdP
+        component, after setting up single sign-on between O11 and ODC, so that end
+        users authenticating through O11 receive the correct permissions in their
+        ODC apps.
+    - name: Coordinate SSO sessions
+      id: coordinate-sso-sessions
+      description: Wants to implement coordinated logout pages on both O11 and
+        ODC sides (an O11 logout page redirecting to ODC, and an ODC logout
+        page redirecting back to O11), work around GetExternalLogoutURL's
+        automatic addition of the ODC stage domain to ReturnToURL by adding an
+        intermediate PostLogout ODC screen that then redirects to the O11
+        logout page, after setting up O11 and ODC single sign-on for external
+        authentication, so that terminating one platform's session properly
+        ends the shared IdP session instead of triggering an automatic
+        re-login, and so that the external IdP session terminates and both O11
+        and ODC sessions end correctly during external authentication SSO.
+    - name: Fix invalid email
+      id: fix-invalid-email
+      description: Wants to resolve the "User with invalid email" error that
+        appears when an end user authenticates via O11-ODC single sign-on
+        (UsersIdP) but lacks a valid email address configured in the O11
+        Users app.
   - name: Authorization
     id: authorization
     subtopics:
@@ -3515,6 +3694,11 @@ knowledge-needs:
       id: update-org-roles
     - name: Organizational Roles
       id: org-roles
+    - name: Fix ODC permissions
+      id: fix-odc-permissions
+      description: Wants to resolve the invalid permissions screen an end
+        user sees in an ODC app after O11-ODC SSO login, caused by a missing
+        or unassigned ODC app role for that end user.
   - name: Users in OutSystems
     id: users-in-os
     subtopics:

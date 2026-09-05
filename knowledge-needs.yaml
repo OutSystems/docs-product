@@ -1593,6 +1593,25 @@ knowledge-needs:
         each Silk Web UI CSS class (background colors, text colors, buttons, and
         text styles), so that a Silk-based Traditional Web App keeps consistent
         visual styling after migrating to the OutSystems 11 Web UI Framework.
+    - name: Migration rationale
+      id: migration-rationale
+      description: Wants to understand why they need to migrate a Silk UI Web
+        application to the OutSystems 11 Web UI Framework, including how it
+        affects Screen Template compatibility, so they can decide whether and
+        when to migrate their apps.
+    - name: Estimate migration effort
+      id: estimate-migration-effort
+      description: Wants to estimate the time and complexity of migrating a
+        Silk UI Web application to the OutSystems 11 Web UI Framework, based
+        on pattern complexity and whether the app uses a style guide, so they
+        can plan and scope the migration work realistically.
+    - name: Migrate app structure
+      id: migrate-app-structure
+      description: Wants to migrate the structural elements of a Silk Web
+        application (the Common folder, base theme, and layout blocks) to the
+        OutSystems 11 Web UI Framework, in Service Studio, so the
+        application's navigation, theming, and layout continue working
+        correctly after the UI framework upgrade.
 - name: Creating UI
   guid: a6b567df-2deb-4736-bd6d-cf144a9c6262
   topics:
@@ -3841,6 +3860,15 @@ knowledge-needs:
         reverse proxy to at least 30 seconds using the KeepAliveTimeout directive,
         so that OutSystems Mobile and Reactive Web apps do not encounter connection
         errors caused by the default 5-second timeout.
+    - name: Reverse proxy requirements
+      id: reverse-proxy-requirements
+      description: Wants to know the technical requirements to serve OutSystems
+        Traditional Web, Mobile, and Reactive Web apps through a reverse proxy,
+        including maintaining the original host header, using only default HTTP/HTTPS
+        ports, disabling the NEGOTIATE protocol, keeping URL paths unchanged, exposing
+        apps via their Service Center domain over HTTPS, and not caching Mobile/Reactive
+        App resources, so that the reverse proxy setup doesn't break URL generation,
+        authentication, or app functionality.
   - name: Redis in-memory sessions
     id: redis-in-memory-sessions
     subtopics:
@@ -3864,6 +3892,54 @@ knowledge-needs:
         Redis infrastructure — covering both non-productive and production (Redis
         Cluster) environments — so they can provision servers with the right CPU,
         RAM, storage, and network capacity before deploying Redis for OutSystems.
+    - name: Enable Redis SSL
+      id: enable-redis-ssl
+      description: Wants to configure Platform Server to connect to Redis over
+        SSL/TLS on self-managed O11 infrastructures, by setting the required
+        SERedis_* certificate environment variables on every front-end server,
+        enabling the Use SSL option in the Configuration Tool, and reapplying
+        settings or republishing the factory, so that session traffic between
+        Platform Server and Redis is encrypted.
+    - name: Scale Redis Cluster nodes
+      id: redis-cluster-scale-nodes
+      description: Wants to scale an existing Redis Cluster by adding a new pair
+        of server machines to it, by setting up their Master and Replica processes,
+        joining the new Master processes with redis-cli --cluster add-node,
+        resharding key slots across all Master processes, and joining the new
+        Replica processes with cross-replication to the paired new Master, so
+        that they can grow their self-managed O11 Redis Cluster's capacity while
+        preserving its high-availability architecture.
+    - name: Test Redis failover
+      id: redis-cluster-failover-test
+      description: Wants to verify that a Redis Cluster's failover configuration
+        works correctly by using redis-cli to simulate a Master process outage
+        and confirming that the associated Replica process on another server
+        promotes itself to Master, so they can validate their self-managed O11
+        Redis Cluster setup before relying on it in production.
+    - name: Set up non-prod Redis
+      id: redis-nonprod-setup
+      description: Wants to set up a single Redis server for OutSystems 11 non-productive
+        environments, including the recommended network deployment (a dedicated
+        subnet, inbound connections on port 6379/TCP) and installing and configuring
+        Redis Server on Ubuntu (commenting the bind directive, disabling protected-mode,
+        setting a password via requirepass, restarting the service), so that the
+        server is ready to accept connections from OutSystems front-end servers
+        for in-memory session storage.
+    - name: Configure Redis sessions
+      id: configure-redis-sessions
+      description: Wants to configure OutSystems 11 front-end servers to use Redis
+        for in-memory session storage via the Configuration Tool's Session tab,
+        including entering the Redis hosts, password, and optional SSL settings,
+        testing the connection, applying the change, and republishing modules,
+        so that their self-managed Platform Server environment stores sessions
+        in Redis instead of the database.
+    - name: Verify Redis sessions
+      id: verify-redis-sessions
+      description: Wants to confirm that Platform Server is storing sessions in
+        Redis after configuring in-memory session storage, by connecting to the
+        Redis Cluster or single Redis server with redis-cli and checking for the
+        expected _Data and _Internal session keys, so they can validate their
+        self-managed O11 Redis session configuration is working.
   - name: Self-hosted cluster services
     id: self-hosted-cluster-services
     subtopics:

@@ -3703,3 +3703,8 @@ knowledge-needs:
       description: Wants to configure ECT_Client_Connector and map eSpaces/modules
         between environments so that end-user feedback submitted through OutSystems
         App Feedback is automatically synced into OnTrack as trackable work items.
+    - name: OnTrack colour scheme
+      id: ontrack-work-item-color-scheme
+      description: Wants to interpret the color-coded notification icons on OnTrack work
+        items, so they can quickly tell whether a work item has an unread
+        update, was rejected, or was accepted.

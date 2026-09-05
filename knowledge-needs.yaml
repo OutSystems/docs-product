@@ -55,6 +55,22 @@ knowledge-needs:
         For Each logic node in OutSystems 11, including setting the Record
         List, Start Index, and Maximum Iterations properties, so that they
         can perform logic recursively on each list item.
+    - name: Define async action
+      id: define-async-client-action
+      description: Wants to make a client action asynchronous and signal its
+        completion or failure, by using the $resolve() and $reject() predefined
+        functions inside a JavaScript element, in OutSystems 11 Mobile Apps and
+        Reactive Web Apps, so that server calls or other async operations can
+        resolve or reject a returned promise instead of the client action
+        returning synchronously.
+    - name: Call async action
+      id: call-async-client-action
+      description: Wants to consume the promise returned by calling an
+        asynchronous client action, by chaining then(onFulfilled, onRejected)
+        or catch(onRejected) on the $actions.ActionName() call, in OutSystems 11
+        Mobile Apps and Reactive Web Apps, so that they can read the action's
+        output parameters and handle unhandled errors or $reject() calls once
+        the async action completes.
   - name: Using Events
     id: using-events
     subtopics:
@@ -94,6 +110,13 @@ knowledge-needs:
     subtopics:
     - name: How to handle Exceptions
       id: how-to-handle-exceptions
+    - name: Custom JS error handler
+      id: custom-js-error-handler
+      description: Wants to define and register a custom JavaScript error handler function,
+        using OsRegisterExceptionHandler and its predefined error codes, so they
+        can handle JavaScript errors that occur during an Ajax refresh of an
+        unescaped expression or during the RunJavaScript action of the
+        HTTPRequestHandler extension, in Traditional Web Apps (O11).
   - name: Using Expressions
     id: using-expressions
     subtopics:
@@ -318,6 +341,12 @@ knowledge-needs:
       id: bootstrap-test-data-excel
     - name: How to edit data in Service Studio
       id: edit-data-service-studio
+    - name: Manage sample data
+      id: manage-sample-data
+      description: Wants to export, import, and reset the sample data provided
+        by the OutSystemsSampleDataDB module using its public Server Actions
+        and Service Center timers, so they can customize or refresh the data
+        used by Screen Templates in Service Studio.
   - name: Modeling Data
     id: modeling-data
     subtopics:
@@ -600,6 +629,14 @@ knowledge-needs:
       id: api-rate-limit
     - name: Customize headers
       id: customize-headers
+    - name: Choose log level
+      id: choose-log-level
+      description: Wants to choose the appropriate logging level for REST APIs and consumed
+        SOAP Web Services in OutSystems 11, understanding what each level logs
+        and that higher levels increase database storage and may expose
+        sensitive parameter values in the environment management console, so
+        that they can balance troubleshooting needs against performance and
+        security.
   - name: Integration Patterns
     id: integration-patterns
   - name: Extensions
@@ -1374,6 +1411,13 @@ knowledge-needs:
         the producer library's icon setting or manually replacing icons flagged
         with a TrueChange warning, in ODC Studio, so that referenced blocks
         display correctly without visual inconsistency.
+    - name: Fix theme mismatch
+      id: fix-theme-mismatch
+      description: 'Wants to resolve the "Themes are not compatible" warning
+        between a Screen Template and their module, by selecting a compatible
+        Screen Template, reverting Theme changes, or migrating a Traditional
+        Web App from Silk UI/the London Theme to the OutSystems UI framework,
+        in Service Studio for O11, so the final screen renders as previewed.'
   - name: UI framework migration
     id: ui-framework-migration
     subtopics:
@@ -1524,6 +1568,14 @@ knowledge-needs:
         added, and setting the ExtendedClass property, in Service Studio for
         OutSystems 11, so that content is vertically centered within its
         container, in mobile apps and reactive web apps.
+    - name: Use Margin Container
+      id: use-margin-container
+      description: Wants to add the Margin Container UI Pattern to a screen to
+        add symmetrical padding around a container, including adding the
+        widget via Toolbox or Search in other modules if the dependency isn't
+        added, and setting the ExtendedClass property, in Service Studio for
+        OutSystems 11, so that content has consistent spacing in mobile apps
+        and reactive web apps.
     - name: Display binary image
       id: display-binary-image
       description: Wants to configure an Image widget to display a binary data image
@@ -1595,6 +1647,20 @@ knowledge-needs:
         properties, in Service Studio for OutSystems 11, so that additional
         options are shown for a row or element when there's a space constraint
         on the UI, in mobile apps and reactive web apps.
+    - name: Use Mouse Events pattern
+      id: use-mouse-events-pattern
+      description: Wants to add the Mouse Events UI Pattern to a screen and
+        configure its WidgetId, PreventDefaults, and Handler properties,
+        including adding the widget via Toolbox or Search in other modules
+        if the dependency isn't added, in Service Studio for OutSystems 11,
+        so that they can capture high-precision mouse drag events, such as
+        drag distance, in mobile apps and reactive web apps.
+    - name: Mouse Events reference
+      id: mouse-events-reference
+      description: Wants to look up the properties of the Mouse Events UI
+        Pattern in Service Studio, including WidgetId and PreventDefaults,
+        so that they can correctly configure high-precision mouse event
+        handling in OutSystems 11 mobile apps and reactive web apps.
     - name: Validate Upload widget file
       id: validate-upload-widget-file
       description: Wants to add custom validation logic for the Upload widget using If
@@ -1791,6 +1857,49 @@ knowledge-needs:
         ODC Studio, so that widgets inside iterators (for example, inside a For
         Each node) can be validated individually, in ODC Mobile Apps and
         Reactive Web Apps.
+    - name: Define JS code blocks
+      id: define-js-code-block-o11
+      description: Wants to define JavaScript code blocks at the Module, Web
+        Screen, or Web Block level in Service Studio, so that OutSystems
+        compiles them into separate .js files added via <script> tags in the
+        page's <head> element and the code becomes reusable across Web
+        Screens and Web Blocks, in Traditional Web Apps (O11).
+    - name: Run JS code methods
+      id: run-js-code-methods
+      description: Wants to know the ways to run JavaScript code in a
+        Traditional Web App, using an Extended Property event, an unescaped
+        Expression, or the RunJavaScript Server Action of the
+        HTTPRequestHandler API, in Service Studio for O11, so that they can
+        trigger custom JavaScript behavior in response to events or during
+        screen rendering.
+  - name: Using external JavaScript
+    id: using-external-javascript
+    subtopics:
+    - name: Add external JS library
+      id: add-external-js-library
+      description: Wants to add JavaScript code from an external library or a
+        .js file to an app by importing or creating a script under the Scripts
+        folder and setting it as the Required Scripts property on a screen or
+        block, in Service Studio for OutSystems 11 Mobile Apps and Reactive Web
+        Apps, so that the script's functions and objects become available in
+        JavaScript elements on that screen or block.
+    - name: Script loading order
+      id: script-loading-order
+      description: Wants to understand when and in what order required scripts
+        load and execute (module-level scripts first, then block-level, then
+        screen-level), including that module scripts load before the On
+        Application Ready system event and block/screen scripts load before
+        their element renders, in OutSystems 11 Mobile Apps and Reactive Web
+        Apps, so that they can predict when JavaScript functions and objects
+        become available at runtime.
+    - name: Add external JS file O11
+      id: add-external-js-file-o11
+      description: Wants to reference a JavaScript file hosted outside their
+        OutSystems infrastructure by adding the AddJavaScriptTag Server
+        Action of the HTTPRequestHandler API to a screen's Preparation with
+        the file's URL, in Service Studio for O11 Traditional Web Apps, so
+        that the external script runs on that screen without hosting the
+        file locally.
   - name: Securing UI
     id: securing-ui
     subtopics:

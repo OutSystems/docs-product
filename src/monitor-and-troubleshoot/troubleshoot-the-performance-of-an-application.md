@@ -1,5 +1,5 @@
 ---
-summary: Explore application performance troubleshooting in OutSystems 11 (O11) using detailed analytics in the LifeTime console.
+summary: OutSystems 11 (O11) LifeTime analytics diagnose slow screens by drilling into client, network, and server metrics and APDEX scores.
 tags: application performance analysis, analytics, performance troubleshooting, traditional web apps, outsystems
 locale: en-us
 guid: 8b6d4c19-e002-4a96-b043-766b1b7e4024

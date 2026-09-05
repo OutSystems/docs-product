@@ -1,7 +1,7 @@
 ---
 guid: 477882d1-0269-4f53-bca6-cf625b143816
 locale: en-us
-summary: Learn about sample best-practices paths toward optimal monitoring and analysis solutions.
+summary: OutSystems 11 (O11) monitoring use cases match Service Center, LifeTime, and third-party tools to workgroup, departmental, and enterprise apps.
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3985-320&t=Oh0mOL83tSvyVQAJ-1
 coverage-type:
   - evaluate

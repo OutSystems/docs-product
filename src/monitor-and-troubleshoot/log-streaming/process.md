@@ -1,5 +1,5 @@
 ---
-summary: Explore how OutSystems 11 (O11) supports streaming log data in OTLP format to various APM tools for enhanced monitoring and troubleshooting.
+summary: Log streaming setup in OutSystems 11 (O11) covers retrieving APM credentials, configuring OpenTelemetry Collector, and testing LifeTime connections.
 tags: apm integration, log streaming, opentelemetry, monitoring, troubleshooting
 locale: en-us
 guid: 0795de8e-20cc-4be0-8b51-883a46a9b84b

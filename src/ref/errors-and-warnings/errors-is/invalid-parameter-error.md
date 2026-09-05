@@ -5,7 +5,9 @@ guid: 2d30ca21-ea1e-4db2-b580-602938b104aa
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, data types, entity management, parameter configuration, app development best practices
+tags:
+  - Entities
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

@@ -5,7 +5,9 @@ guid: b28e1b36-ce34-4cae-b7e9-75fa23cb70ec
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, data types, application development, application design, platform troubleshooting
+tags:
+  - Data Model
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

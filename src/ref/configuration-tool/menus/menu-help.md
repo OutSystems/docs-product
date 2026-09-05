@@ -7,8 +7,6 @@ platform-version: o11
 figma:
 tags: configuration tool, outsystems platform, help menu, version info, traditional web apps
 audience:
-  - Front-end developer
-  - Developer
   - Platform administrator
 outsystems-tools:
   - service studio

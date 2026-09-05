@@ -8,8 +8,6 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=330
 tags: configuration, deployment, outsystems platform, server settings, application deployment
 audience:
   - Platform administrator
-  - Front-end developer
-  - Developer
 outsystems-tools:
   - service center
   - platform server

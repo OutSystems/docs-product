@@ -5,7 +5,12 @@ guid: 50bd26cf-d24f-4027-b172-46a02e30c0d6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: database configuration, sql server, azure sql, application deployment, database management
+tags:
+  - 1-Click Publish
+  - Infrastructure
+  - Platform Server
+  - Settings
+  - SQL
 audience:
   - Developer
   - Platform administrator

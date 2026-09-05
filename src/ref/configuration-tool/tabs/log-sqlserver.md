@@ -5,7 +5,10 @@ guid: 09712708-bd45-4271-9005-9b19e43d29dc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: sql server, azure sql database, database configuration, logging, security
+tags:
+  - Logging
+  - Platform Server
+  - SQL
 audience:
   - Platform administrator
   - Developer

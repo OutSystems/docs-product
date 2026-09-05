@@ -5,7 +5,12 @@ guid: 8a4e8da5-fdb0-4112-a474-c1781f35d12c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-150&p=f&t=YWpNVSB3J2vcO8FT-0
-tags: network configuration, service center, ip configuration, security, deployment
+tags:
+  - Infrastructure
+  - IP Filters
+  - Platform Server
+  - Security
+  - Settings
 audience:
   - Front-end developer
   - Developer

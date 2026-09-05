@@ -5,7 +5,10 @@ guid: edfd47cf-ac05-450b-8823-ebc389345dc8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3302-173&p=f&t=zjxh0YlCbYVw1W5S-0
-tags: database configuration, session management, sql server, azure sql database, oracle database
+tags:
+  - Platform Server
+  - Settings
+  - SQL
 audience:
   - Developer
   - Platform administrator

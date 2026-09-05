@@ -5,7 +5,8 @@ guid: 065a2e85-acf4-4895-87fd-5f176f406932
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-130&p=f&t=YWpNVSB3J2vcO8FT-0
-tags: security, password management, configuration management, platform administration, system settings
+tags:
+  - Platform Server
 audience:
   - Platform administrator
 outsystems-tools:

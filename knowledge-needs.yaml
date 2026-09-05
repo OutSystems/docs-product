@@ -3133,6 +3133,14 @@ knowledge-needs:
         file, by checking and correcting the resource declarations for their
         app and its dependencies, so that the mobile app package generates
         successfully.'
+    - name: Resource file missing
+      id: resource-file-missing-error
+      description: 'Wants to resolve the OS-MABS-PRJ-40004 "Resource file declared
+        in extensibility configurations can''t be found" error, caused by a
+        literal file path pointing to a missing resource in the app''s or a
+        library''s extensibility configuration, by replacing the literal path
+        with a placeholder or correcting it to an existing file, so that the
+        mobile app package generates successfully.'
     - name: Android manifest error
       id: android-manifest-error
       description: 'Wants to resolve the OS-MABS-GEN-40001 "multiple errors merging
@@ -3868,6 +3876,15 @@ knowledge-needs:
         the Administrator role unless necessary, testing roles before rollout, and
         auditing permissions regularly, so that they can govern access securely and
         maintainably across their organization.
+  - name: Subscription and entitlement management
+    id: subscription-entitlement-management
+    subtopics:
+    - name: Retrieve subscription data
+      id: retrieve-subscription-data
+      description: Wants to retrieve ODC subscription, entitlement, and usage
+        data by asset and environment, using the Subscription API v1 REST
+        endpoints, so they can programmatically monitor account status and
+        resource consumption.
   - name: Expanded governance
     id: expanded-governance
     subtopics:

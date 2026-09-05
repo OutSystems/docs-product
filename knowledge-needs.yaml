@@ -1634,6 +1634,12 @@ knowledge-needs:
         added, and setting the ExtendedClass property, in Service Studio for
         OutSystems 11, so that content has consistent spacing in mobile apps
         and reactive web apps.
+    - name: Margin Container reference
+      id: margin-container-reference
+      description: Wants to look up the properties of the Margin Container UI
+        Pattern in Service Studio, including ExtendedClass, so that they can
+        correctly configure custom CSS styling for a Mobile App or Reactive
+        Web App in OutSystems 11.
     - name: Display binary image
       id: display-binary-image
       description: Wants to configure an Image widget to display a binary data image
@@ -2069,6 +2075,40 @@ knowledge-needs:
         antivirus scanning, or using tools like Process Explorer/Process
         Monitor to find and stop the conflicting process, so that publication
         completes successfully.'
+    - name: Fix invoke ping error
+      id: fix-invoke-ping-error
+      description: 'Wants to resolve a "Could not invoke ping" deployment error
+        by identifying the HTTP status code returned (5xx or 4xx) on the
+        module''s ping request and applying the corresponding fix (e.g.,
+        IIS/application pool checks, gateway timeout, network/DNS
+        configuration), in OutSystems 11, so that the module''s ping request
+        succeeds and deployment completes.'
+    - name: Fix ping content error
+      id: fix-ping-content-error
+      description: 'Wants to resolve an "Unexpected content found in ping"
+        deployment error by determining whether the _ping.html content was
+        altered by a code-injection tool or by a redirection caused by SEO
+        rules, and applying the corresponding fix (disabling the injecting
+        tool or removing the offending SEO/pathrule/siterule), in OutSystems
+        11, so that deployment completes successfully.'
+  - name: Troubleshoot SEO-friendly URLs
+    id: troubleshoot-seo-friendly-urls
+    subtopics:
+    - name: Fix SEO redirects
+      id: fix-seo-redirects
+      description: 'Wants to fix SEO-friendly URL redirect rules that don''t
+        work in a small number of OutSystems Cloud environments, by checking
+        the React version their app is running via the browser console and
+        contacting OutSystems Support if it''s lower than 16, in Reactive Web
+        Apps, so that redirects work correctly.'
+    - name: Fix blocked external URL
+      id: fix-blocked-external-url
+      description: 'Wants to fix a blank page and "Content Security Policy
+        blocked" error that stops users reaching a login or home page, caused
+        by using an External URL node in a Screen''s SecurityException logic
+        with an active site rule for a domain, by replacing it with a
+        JavaScript redirect (window.location.href) instead, in OutSystems 11
+        Reactive Web Apps.'
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:

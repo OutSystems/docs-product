@@ -9,7 +9,6 @@ figma:
 tags: soap web services, error resolution, web service customization, api usage, outsystems platform
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

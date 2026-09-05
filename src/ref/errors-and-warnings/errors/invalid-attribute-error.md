@@ -8,7 +8,6 @@ figma:
 tags: database management, error handling, entity modeling, application development, data type validation
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

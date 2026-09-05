@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - send-mobile-app-feedback
 ---
 
 # Send feedback in mobile apps

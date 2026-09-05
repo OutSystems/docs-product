@@ -6,7 +6,9 @@ figma:
 coverage-type:
   - unblock
   - understand
-topic: 
+topic:
+  - fix-built-in-function-pattern
+  - incompatible-built-in-functions
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:

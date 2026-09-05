@@ -15,6 +15,8 @@ outsystems-tools:
   - conversion assessment tool
 coverage-type:
   - apply
+topic:
+  - review-assessment-report
 ---
 
 # Assess app architecture and ODC readiness

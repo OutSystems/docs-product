@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - prepare-o11-for-odc
 ---
 
 # Prepare O11 app

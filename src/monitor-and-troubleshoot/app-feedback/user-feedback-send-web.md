@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - send-web-app-feedback
 ---
 
 # Send feedback in web apps

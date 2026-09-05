@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - camera-plugin-reference-v7
 isautopublish: true
 ---
 

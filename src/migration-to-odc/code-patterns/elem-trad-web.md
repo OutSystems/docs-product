@@ -5,7 +5,8 @@ summary: This article provides guidelines for handling Traditional Web modules b
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2993-53
 coverage-type: 
   - unblock
-topic: 
+topic:
+  - trad-web-modules-pattern
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 audience: 

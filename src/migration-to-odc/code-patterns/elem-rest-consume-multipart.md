@@ -6,7 +6,8 @@ figma:
 coverage-type:
   - unblock
   - understand
-topic: 
+topic:
+  - multipart-rest-pattern
 app_type: mobile apps, reactive web apps
 platform-version: o11
 audience:

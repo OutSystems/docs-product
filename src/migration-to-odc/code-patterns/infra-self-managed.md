@@ -6,6 +6,7 @@ figma:
 coverage-type:
   - unblock
 topic:
+  - self-managed-infra-pattern
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:

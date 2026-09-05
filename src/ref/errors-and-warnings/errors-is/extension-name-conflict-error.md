@@ -8,7 +8,6 @@ figma:
 tags: error handling, extension management, platform server, integration studio, publishing apps
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
   - service studio

@@ -8,7 +8,6 @@ figma:
 tags: compiler errors, extension troubleshooting, source code issues, debugging procedures, ide integration
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

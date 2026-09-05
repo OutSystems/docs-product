@@ -11,14 +11,10 @@ on:
     paths:
       - knowledge-needs.yaml
 
-concurrency:
-  group: evergreen-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   metadata-refresh:
     name: Metadata
-    uses: OutSystems/tk-cicd/.github/workflows/evergreen-metadata.yml@main
+    uses: OutSystems/tk-cicd/.github/workflows/evergreen.yml@main
     with:
       path: "src"
       required-key: "guid"

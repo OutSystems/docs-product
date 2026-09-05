@@ -83,6 +83,12 @@ knowledge-needs:
         provider events using JavaScript and the OutSystems UI API (e.g., SetProviderEvent),
         in Service Studio, so that custom logic runs when a component fires events
         like open or close.
+    - name: On Parameters Changed
+      id: on-parameters-changed
+      description: Wants to refresh a block's displayed information when
+        parent-passed input parameters change, by implementing the block's
+        On Parameters Changed event handler in Service Studio, so that the
+        block reflects updates without needing a full screen refresh.
   - name: Understanding Exceptions
     id: understanding-exceptions
     subtopics:
@@ -344,6 +350,12 @@ knowledge-needs:
         the UI asynchronously, by using an Assign node to set a filter parameter
         followed by a Refresh Data node inside a client action triggered by a UI
         event, so that the Screen displays updated data without a full page reload.
+    - name: Chain aggregate fetches
+      id: chain-aggregate-fetches
+      description: Wants to sequence multiple On Demand aggregates so each fetches
+        only after the aggregate it depends on has data, using the On After Fetch
+        event on each aggregate, so that dependent dropdowns and fields don't try
+        to filter using data that isn't loaded yet when a screen first opens.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -612,6 +624,15 @@ knowledge-needs:
         description: Wants to access data from a legacy Lotus Notes/Domino application
           using ODBC and a SQL Server Linked Server, on a 64-bit SQL Server environment,
           so that OutSystems applications can query that legacy data at runtime.
+  - name: Private Gateway
+    id: private-gateway
+    subtopics:
+    - name: Activate private gateway
+      id: activate-private-gateway
+      description: Wants to activate an ODC Private Gateway for an environment
+        stage in ODC Portal and configure the Cloud Connector using the generated
+        token and address, so that ODC apps can securely connect to private
+        network endpoints.
   - name: Generate PDF reports
     id: generate-pdf-reports
     subtopics:
@@ -1162,6 +1183,12 @@ knowledge-needs:
         a mirrored set of meta-model entities and using Process_Delete or
         Process_BulkDelete from the BPT_API extension, in OutSystems 11, so
         that BPT queries stay performant as Process volume grows.
+    - name: Fix BPT activity timeout
+      id: fix-bpt-activity-timeout
+      description: Wants to resolve a BPT automatic activity hitting the 5-minute
+        timeout by moving the long-running batch logic into a Timer that signals
+        the waiting process to proceed, in OutSystems 11, so that thread pool
+        resources aren't exhausted and the process can continue.
   - name: Workflow Builder
     id: workflow-builder
     subtopics:
@@ -2290,6 +2317,15 @@ knowledge-needs:
   topics:
   - name: Local Storage
     id: local-storage
+    subtopics:
+    - name: SQLite attribute limit
+      id: sqlite-attribute-limit
+      description: Wants to understand why Android mobile apps with local storage
+        entities that have a large number of attributes, or complex queries
+        returning many attributes, throw Out Of Memory exceptions due to a
+        SQLite plugin limitation in how Android handles JSON objects
+        internally, so that they can keep entities under the 50-attribute
+        threshold and avoid the issue.
   - name: App distribution
     id: app-distribution
     subtopics:

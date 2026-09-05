@@ -13,6 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-missing-device-data
+  - fix-mobile-ui-flicker
+  - fix-slow-transition
 ---
 
 # Solve Common Mobile App Development Issues

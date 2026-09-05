@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+topic:
+  - adopt-visual-paradigm
 ---
 
 # Onboarding developers

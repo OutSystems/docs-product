@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - trace-query-origin
 ---
 
 # Trace executed queries back to your OutSystems applications

@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - apply
+topic:
+  - debugging-toolkit-overview
 ---
 
 # Debugging and troubleshooting mobile and reactive web apps

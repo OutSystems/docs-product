@@ -14,6 +14,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - aggregates
+  - create-screen-scratch
+  - how-to-create-an-action
 ---
 
 # Developer cheat sheet

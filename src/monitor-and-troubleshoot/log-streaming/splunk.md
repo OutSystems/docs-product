@@ -15,6 +15,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - configure-splunk-streaming
 ---
 
 # Stream logs to Splunk

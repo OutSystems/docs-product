@@ -15,6 +15,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - monitoring-area-screens
+  - native-app-shell-logs
+  - o11-platform-services
 ---
 
 # View the Environment Logs and Status

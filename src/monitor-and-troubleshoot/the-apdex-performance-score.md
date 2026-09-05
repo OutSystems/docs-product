@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - apdex-score-explained
 ---
 
 # The APDEX Performance Score

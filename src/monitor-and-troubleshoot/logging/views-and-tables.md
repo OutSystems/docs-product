@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - o11-log-table-separation-retention
+  - top-level-vs-drill-logs
 isautopublish: true
 ---
 

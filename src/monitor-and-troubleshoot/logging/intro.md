@@ -16,6 +16,9 @@ outsystems-tools:
   - service center
 coverage-type:
   - understand
+topic:
+  - o11-async-log-writing
+  - o11-log-table-separation-retention
 ---
 
 # Logging database and architecture

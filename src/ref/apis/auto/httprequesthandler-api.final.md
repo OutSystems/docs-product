@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) provides a comprehensive HTTPRequestHandler API for managing HTTP requests and responses across various application types.
-tags: http, api management, web development, header manipulation, response customization
+tags:
+  - Security
+  - Traditional Web
+  - Web
 locale: en-us
 guid: 762585b4-510c-4749-b5d9-646e1c46f2e0
 app_type: traditional web apps, mobile apps, reactive web apps

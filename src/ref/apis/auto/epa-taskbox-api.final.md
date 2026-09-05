@@ -1,6 +1,11 @@
 ---
 summary: Explore the EPA Taskbox API functionalities in OutSystems 11 (O11) for managing user activities in Traditional Web Apps.
-tags: epa taskbox api, user activities management, traditional web api integration, outsystems traditional web apps, pending activities visualization
+tags:
+  - Business Processes
+  - Pagination
+  - Taskbox
+  - Traditional Web
+  - Workflows
 locale: en-us
 guid: 24b83310-17ec-4eea-a688-89da29816145
 app_type: traditional web apps

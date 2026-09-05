@@ -1,6 +1,13 @@
 ---
 summary: Explore the core features and language mappings of OutSystems 11 (O11) for developing enterprise-grade applications.
-tags: application development, business process automation, asynchronous processing, enterprise applications, .net/javascript integration
+tags:
+  - .NET
+  - Business Processes
+  - Data
+  - Logic
+  - Programming Model
+  - Security
+  - UI
 locale: en-us
 guid: 708cf7ca-d378-4db1-b479-62e11496f75a
 app_type: mobile apps, reactive web apps, traditional web apps

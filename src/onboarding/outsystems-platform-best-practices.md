@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: database optimization, ui design best practices, code reusability, javascript best practices, css best practices
+tags:
+  - Aggregates
+  - Architecture
+  - Best Practices
+  - Entities
+  - Performance
+  - Security
+  - SQL
 audience:
   - Developer
   - Front-end developer

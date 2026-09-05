@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) LifeTime API v1 is deprecated; use LifeTime API v2 for infrastructure management.
-tags: api management, deployment automation, version control, outsystems platform, infrastructure management
+tags:
+  - Deploy
+  - Infrastructure
+  - REST
 locale: en-us
 guid: 12a00b35-9fbb-497f-a3f1-4e0017f401bd
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) introduces an Asynchronous Logging API that enables non-persistent, queued database logging for errors, records, and request events.
-tags: asynchronous programming, logging, performance optimization, application monitoring, error handling
+tags:
+  - Asynchronous Processes
+  - Batch Processing
+  - Events
+  - Logging
 locale: en-us
 guid: 3f292aa4-1be7-4699-8231-0d465c90297d
 app_type: traditional web apps, mobile apps, reactive web apps

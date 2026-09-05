@@ -55,6 +55,18 @@ knowledge-needs:
         For Each logic node in OutSystems 11, including setting the Record
         List, Start Index, and Maximum Iterations properties, so that they
         can perform logic recursively on each list item.
+    - name: Create conditional paths
+      id: create-conditional-paths
+      description: Wants to branch logic execution in a screen action based
+        on a condition, by using If and Switch nodes in Service Studio, in
+        OutSystems 11 (O11) apps, so that different logic paths run depending
+        on runtime values.
+    - name: Conditional paths (ODC)
+      id: create-conditional-paths-odc
+      description: Wants to branch logic execution in an action based on a
+        condition, by using If nodes in ODC Studio, in OutSystems Developer
+        Cloud (ODC) apps, so that different logic paths run depending on
+        runtime values.
     - name: Define async action
       id: define-async-client-action
       description: Wants to make a client action asynchronous and signal its
@@ -1314,6 +1326,18 @@ knowledge-needs:
   - name: Workflow Builder
     id: workflow-builder
     subtopics:
+    - name: WFB overview
+      id: wfb-overview
+      description: Wants to understand what Workflow Builder is and who it's for,
+        including business experts, analysts, process owners, IT managers, and
+        developers, in OutSystems 11, so that they can decide whether it's the
+        right tool for their business process app.
+    - name: WFB app building steps
+      id: wfb-app-building-steps
+      description: Wants to build and publish a business process app in Workflow
+        Builder by setting up a form, defining workflow steps, publishing to test,
+        and sharing it with end-users via IT, in OutSystems 11, so that they can
+        turn a business process into a working app.
     - name: WFB group naming
       id: wfb-group-naming
       description: Wants to understand how Workflow Builder automatically creates
@@ -2675,6 +2699,23 @@ knowledge-needs:
         with time deltas, lightweight local database design, and minimizing server
         requests — so that the app performs efficiently and remains error-tolerant
         under demanding synchronization scenarios.
+  - name: OTA upgrade troubleshooting
+    id: ota-upgrade-troubleshooting
+    subtopics:
+    - name: Fix cache manifest error
+      id: cache-manifest-not-found-error
+      description: 'Wants to resolve the "Failed to load cache manifest: File
+        not found" error that leaves a mobile app stuck on the splash screen
+        during an OTA upgrade, by reloading the app or reinstalling it, so
+        that the app upgrade completes successfully.'
+    - name: Fix local entity type error
+      id: fix-local-entity-type-error
+      description: 'Wants to resolve the "Upgrade failed - rolling back to
+        previous application version" / "Unable to upgrade attribute" error
+        caused by an incompatible Local Entity attribute data type change
+        when the device already holds data for that entity, by rolling back
+        the app and clearing the cache/data or reinstalling on affected
+        devices, so that the OTA upgrade completes successfully.'
   - name: Customize Mobile apps
     id: customize-mobile-apps
     subtopics:
@@ -3132,6 +3173,13 @@ knowledge-needs:
         blocks (Login, ChangePassword, RecoverPassword, UserProfile, UserInfo, PasswordPolicy)
         available in the Common UI folder in ODC Studio, so that they can implement
         a custom-branded authentication flow without building it from scratch.
+    - name: External login redirect
+      id: external-login-redirect
+      description: Wants to configure the OnException global handler's
+        SecurityException flow to call GetExternalLoginURL and set the
+        Destination to the Login screen, in ODC Studio, so that unauthenticated
+        users accessing a protected screen are automatically redirected to the
+        configured external identity provider's login page.
     - name: External IDPs
       id: external-idps
     - name: External IdP concepts
@@ -3157,6 +3205,14 @@ knowledge-needs:
       id: idp-apple
     - name: External IDPs - OpenIDP
       id: idp-openidp
+    - name: Configure Okta IdP
+      id: idp-okta
+      description: Wants to register ODC as a trusted OIDC application in
+        Okta (grants, redirect URIs, access policies) and configure the
+        matching connection in the ODC Portal using the Issuer Metadata URI
+        as the Discovery endpoint, entering the Client ID/Secret, and
+        confirming claim mapping, so that they can establish a secure OIDC
+        handshake between ODC and Okta.
     - name: Map AD Groups to Roles
       id: map-ad-groups-to-roles
       description: Wants to map Active Directory Groups to OutSystems Roles using

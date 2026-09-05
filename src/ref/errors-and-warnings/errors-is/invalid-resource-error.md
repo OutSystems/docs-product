@@ -8,7 +8,6 @@ figma:
 tags: error handling, outsystems platform, platform server, application deployment, extension verification
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - service studio

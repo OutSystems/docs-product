@@ -7,6 +7,7 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
+  - apply
 tags: api usage, database mapping, deployment status, lifetime api, outsystems 11
 audience:
   - Platform administrator

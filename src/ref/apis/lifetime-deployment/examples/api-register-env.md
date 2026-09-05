@@ -13,6 +13,7 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+  - apply
 ---
 
 # Register an Environment using the LifeTime API

@@ -15,6 +15,7 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+  - apply
 ---
 
 # Publish an app across infrastructures using the LifeTime API

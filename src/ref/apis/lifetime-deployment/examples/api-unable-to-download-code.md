@@ -14,6 +14,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+  - apply
+  - unblock
 ---
 
 # Unable to download the source code of an application

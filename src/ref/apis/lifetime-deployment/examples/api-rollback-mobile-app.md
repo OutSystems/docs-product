@@ -14,6 +14,7 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+  - apply
 ---
 
 # Rollback a Mobile App using the LifeTime API

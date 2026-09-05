@@ -15,6 +15,7 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+  - apply
 ---
 
 # Download source code

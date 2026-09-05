@@ -1365,6 +1365,13 @@ knowledge-needs:
         Builder doesn't have a valid token to access the environment, by logging
         out and back in (or contacting support if the problem persists), in
         OutSystems 11, so that Workflow Builder can reconnect to the environment.
+    - name: WFB app architecture
+      id: wfb-app-architecture
+      description: Wants to understand the architecture of a Workflow Builder
+        generated app (built on Case Management Framework and Business Process
+        Technology, including logic, UI, and data model) and how IT can extend
+        it using Service Studio, in OutSystems 11, so that they can plan how to
+        hand off and evolve the app after publishing.
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -3221,6 +3228,13 @@ knowledge-needs:
         as the Discovery endpoint, entering the Client ID/Secret, and
         confirming claim mapping, so that they can establish a secure OIDC
         handshake between ODC and Okta.
+    - name: Assign end-user app roles
+      id: assign-end-user-app-roles
+      description: Wants to assign Okta-authenticated end-users to an ODC
+        application's role (via Invite user or Manage roles in the ODC Portal
+        Users section) and set the deployment stage, so that role-based
+        access control (RBAC) grants them access to the app after external
+        IdP login.
     - name: Map AD Groups to Roles
       id: map-ad-groups-to-roles
       description: Wants to map Active Directory Groups to OutSystems Roles using

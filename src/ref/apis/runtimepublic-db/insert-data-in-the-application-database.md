@@ -12,7 +12,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - remember
+  - apply
 ---
 
 # Insert data in the application database

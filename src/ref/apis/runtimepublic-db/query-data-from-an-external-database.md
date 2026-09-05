@@ -13,6 +13,7 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+  - apply
 ---
 
 # Query data from an external database

@@ -8,7 +8,6 @@ figma:
 tags: error resolution, data modeling, ide usage, outsystems platform, troubleshooting
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

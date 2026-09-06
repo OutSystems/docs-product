@@ -7,7 +7,6 @@ platform-version: o11
 figma:
 tags: error handling, outsystems development, data modeling, entities management, module dependencies
 audience:
-  - Front-end developer
   - Developer
 outsystems-tools:
   - service studio

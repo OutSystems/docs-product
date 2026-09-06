@@ -448,6 +448,12 @@ knowledge-needs:
         only after the aggregate it depends on has data, using the On After Fetch
         event on each aggregate, so that dependent dropdowns and fields don't try
         to filter using data that isn't loaded yet when a screen first opens.
+    - name: Optional aggregate filter
+      id: optional-aggregate-filter
+      description: Wants to add an optional filter condition to an aggregate using
+        a NullIdentifier() comparison against a screen variable, in Service Studio
+        for OutSystems 11, so that filtering is skipped when no value is selected,
+        in traditional web apps, mobile apps, and reactive web apps.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -1840,6 +1846,12 @@ knowledge-needs:
         its properties, in Service Studio for OutSystems 11, so that users can
         select an option from a searchable dropdown list, in mobile apps and
         reactive web apps.
+    - name: Multi-select filter list
+      id: multi-select-filter-list
+      description: Wants to configure a Dropdown Search widget with AllowMultipleSelection
+        enabled and store the selected values as a comma-separated screen variable
+        used in an aggregate's filter condition, in Service Studio for OutSystems
+        11, so that a list can be filtered by multiple categories at once.
     - name: Dropdown Search reference
       id: dropdown-search-ref
       description: Wants to look up the properties and events of the Dropdown
@@ -1964,6 +1976,28 @@ knowledge-needs:
         and ExtendedClass, so that they can correctly configure a button's
         loading spinner behavior and appearance in OutSystems 11 mobile apps
         and reactive web apps.
+    - name: Use Video pattern
+      id: use-video-pattern
+      description: Wants to add a video to a screen using the OutSystems UI
+        Video Pattern, configuring it with a URL-hosted video file or an
+        uploaded Resource, in Service Studio, so that videos play within
+        the app's UI.
+    - name: Embed streaming video
+      id: embed-streaming-video
+      description: Wants to embed a video from a streaming platform like
+        YouTube or Vimeo into an app screen by copying the platform's embed
+        iframe code and pasting the source URL into an Iframe block's
+        SourceURL property, in Service Studio, so that streamed video
+        content displays within the app.
+    - name: Add autocomplete search
+      id: add-autocomplete-search
+      description: Wants to add a server-side filtered autocomplete search field
+        to an input widget, by adding the Input_AutoComplete and
+        Input_AutoComplete_ShowList RichWidgets, wiring the On Notify event to a
+        Screen Action containing an Aggregate and filter, in Service Studio for
+        OutSystems 11, so that a long list of results is filtered on the server
+        and suggestions appear below the field as the user types in a Traditional
+        Web App.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -2557,6 +2591,13 @@ knowledge-needs:
         Extension) in the OutSystems 11 log database, and how they're linked via
         the request_key field, so that they can correctly interpret how a drill
         log relates to the top-level access request that generated it.
+    - name: Remove Log Service
+      id: remove-log-service
+      description: Wants to remove the OutSystems Log Service and its Microsoft
+        Message Queues from a self-managed OutSystems 11 environment after upgrading
+        every module of every application to OutSystems 11, by running a PowerShell
+        cleanup script and closing the associated firewall port, so that they can
+        free up server memory no longer needed for pre-OutSystems 11 logging.
 - name: Hotfixing
   guid: d8111f11-34b0-4f33-8374-5d9611d507e2
   topics:
@@ -2968,6 +3009,29 @@ knowledge-needs:
         SQLite plugin limitation in how Android handles JSON objects
         internally, so that they can keep entities under the 50-attribute
         threshold and avoid the issue.
+  - name: Firebase plugin migration
+    id: migrate-firebase-plugins
+    description: Wants to migrate mobile app logic from unsupported Firebase-based
+      plugins (Firebase Mobile) to the newer supported Firebase plugins (Analytics,
+      Performance Monitoring, Crash Reporting, Cloud Messaging), by replacing
+      actions with their equivalents, so the app benefits from dedicated release
+      cycles, OutSystems support, and new features.
+    subtopics:
+    - name: Migrate LogEvent action
+      id: migrate-analytics-logevent
+      description: Wants to replace the LogEvent action of the unsupported Firebase
+        Mobile plugin with the LogEvent action of the supported Analytics plugin
+        in Service Studio, by deleting the old action and substituting its
+        parameters with the new action's equivalents, so analytics logging keeps
+        working after migration.
+    - name: Migrate Cloud Messaging
+      id: migrate-cloud-messaging-notifications
+      description: Wants to migrate topic subscription and push notification
+        handling from the unsupported Firebase plugin to the supported Cloud
+        Messaging plugin, by calling the Subscribe action, adding the
+        NotificationsHandler/NotificationDialog blocks, and using the Cloud
+        Messaging Configurator's REST API, so notifications keep working after
+        migration.
   - name: App distribution
     id: app-distribution
     subtopics:
@@ -3449,6 +3513,23 @@ knowledge-needs:
         a resource bundle in the plugin's .podspec and Package.swift files,
         so that the manifest is correctly discovered by Xcode without
         colliding with the app's own privacy manifest.
+  - name: Deep linking
+    id: deep-linking
+    subtopics:
+    - name: Configure mobile deep links
+      id: configure-mobile-deep-links
+      description: Wants to define a deep link to a specific screen of a
+        module in an OutSystems Mobile App using the
+        `<app-identifier>://<module>/<screen>` syntax, including passing
+        input parameter values in the URL, so that end users and external
+        systems can navigate directly to a specific screen of the app.
+    - name: Configure Android deep link intents
+      id: configure-android-deep-link-intents
+      description: Wants to define an Android Intent for a Mobile App using
+        the `intent://` syntax, including specifying a custom fallback URL,
+        so that Android Chrome users without the app installed are
+        redirected to the Google Play Store or another URL instead of the
+        app.
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
 - name: Product security
@@ -3706,6 +3787,12 @@ knowledge-needs:
         configuration when using the Trust identity provider setting, by
         verifying the IdP's claim mapping to ensure it sends the correct
         data, so that end users can log in successfully.
+    - name: Trust IdP email setting
+      id: trust-idp-email-setting
+      description: 'Wants to know when to set organization user email
+        verification to "Trust identity provider" in ODC, so that ODC honors
+        the IdP''s email_verified claim instead of performing its own
+        verification, when the IdP is known to guarantee verified emails.'
     - name: External IDPs - User Mapping
       id: user-mapping
     - name: External IDPs - LinkedIn
@@ -4250,6 +4337,18 @@ knowledge-needs:
         setting a password via requirepass, restarting the service), so that the
         server is ready to accept connections from OutSystems front-end servers
         for in-memory session storage.
+    - name: Set up prod Redis
+      id: redis-prod-setup
+      description: Wants to set up a three-server Redis Cluster for OutSystems
+        11 production environments on self-managed infrastructures, including
+        hardening each Ubuntu node (disabling the default redis-server service,
+        opening the cluster ports, disabling transparent huge pages, tuning
+        overcommit memory), configuring paired Master and Replica redis-server
+        processes with cluster mode enabled and systemd services, creating the
+        cluster with redis-cli --cluster create, and validating that the
+        resulting nodes and hash slots are healthy, so that the cluster is
+        ready to accept connections from OutSystems front-end servers for
+        in-memory session storage.
     - name: Configure Redis sessions
       id: configure-redis-sessions
       description: Wants to configure OutSystems 11 front-end servers to use Redis

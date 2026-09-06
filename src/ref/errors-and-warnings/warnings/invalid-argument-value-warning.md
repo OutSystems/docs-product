@@ -8,7 +8,6 @@ figma:
 tags: web services, error handling, design-time validation, service studio tips, outsystems development
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

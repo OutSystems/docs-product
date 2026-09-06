@@ -417,9 +417,24 @@ knowledge-needs:
         displayed in the device's local time zone — including how client-side,
         server-side, and SQL calls differ — so that time-sensitive data is handled
         correctly across regions.
+    - name: Fix invalid data type
+      id: fix-invalid-data-type
+      description: 'Wants to fix the "Invalid Data Type" error family in Service
+        Studio for OutSystems 11, caused by using incompatible data types with
+        an operator, setting a property or operator to the wrong data type, or
+        assigning a Null Value of a different data type than the Input widget''s
+        variable, by matching the operator, property, or Null Value to the
+        correct data type, so that the expression or widget configuration
+        compiles and publishes successfully.'
   - name: Querying data
     id: querying-data
     subtopics:
+    - name: Query fundamentals
+      id: query-fundamentals
+      description: Wants to understand what a query is and the ways it can be used
+        to work with data (retrieving results, performing calculations, combining
+        data from different entities, and adding, deleting, or changing data), so
+        they can choose the right query approach for a data task in OutSystems.
     - name: Joins
       id: joins
     - name: Filter data
@@ -454,6 +469,22 @@ knowledge-needs:
         a NullIdentifier() comparison against a screen variable, in Service Studio
         for OutSystems 11, so that filtering is skipped when no value is selected,
         in traditional web apps, mobile apps, and reactive web apps.
+    - name: Fix invalid aggregate
+      id: fix-invalid-aggregate
+      description: 'Wants to fix the "Invalid Aggregate" error in Service Studio
+        for OutSystems 11, caused by joining entities from multiple databases,
+        having duplicate join conditions on the same entities, or applying an
+        aggregation function to a calculated column with an incompatible data
+        type, so that the module compiles and publishes successfully.'
+    - name: Fix invalid dependency
+      id: fix-invalid-dependency
+      description: 'Wants to fix the "Invalid Data Dependency" error in Service
+        Studio for OutSystems 11, caused by conflicting Fetch property values
+        between dependent data sources, a data source depending on more than
+        one other data source, or a circular reference between data sources,
+        by adjusting Fetch properties, merging or referencing data via a
+        client variable, or removing the circular dependency, so that the
+        module compiles and publishes successfully.'
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -907,6 +938,42 @@ knowledge-needs:
       non-guessable IDs) and information (checking permissions in Preparation
       before displaying data), so that only authorized users can perform actions
       or view data.
+- name: ODC Workflows
+  guid: 8f3c2a1d-6e4b-4a7f-9c0d-2b5e7f1a4c9e
+  topics:
+  - name: Workflow editor
+    id: workflow-editor
+    subtopics:
+    - name: Configure workflow start
+      id: configure-workflow-start
+      description: Wants to configure how a workflow begins execution by assigning
+        a triggering event to the Start node in ODC's Workflow editor, so that
+        the workflow launches automatically when that event occurs.
+    - name: Workflow instance labels
+      id: workflow-instance-labels
+      description: Wants to create a custom instance label expression on the Start node,
+        using the start event's input parameters, built-in runtime properties
+        for identifying the instance, and built-in functions, in ODC's Workflow
+        editor, so that workflow instances are easier to identify and
+        troubleshoot in logs and the Portal.
+    - name: Create a workflow
+      id: create-workflow
+      description: Wants to implement a workflow in ODC Portal by creating it
+        in the workflow editor, giving it a unique name, selecting the event
+        that triggers the Start node, adding steps through to the End node,
+        and publishing it, so that the workflow is ready to run in the app.
+  - name: Test a workflow
+    id: test-workflow
+    description: Wants to verify a workflow works as expected before deploying
+      it, by triggering its execution from the app and reviewing instance
+      details and errors in the Instances tab of the ODC Portal, so that
+      issues are caught before the workflow reaches production.
+  - name: Deploy a workflow
+    id: deploy-workflow
+    description: Wants to deploy a workflow and its app to the QA stage and
+      then to the Production stage, understanding that an impact analysis
+      runs in the background before each deployment, so that the workflow
+      becomes available to end users.
 - name: Advanced workflows
   guid: 7a84e09e-c48c-404f-8d9f-728b9f78c88c
   topics:
@@ -1209,6 +1276,14 @@ knowledge-needs:
         one) and choosing Library as the module type, and knows to set the entry
         module to a consuming module when debugging it, so that they have a
         working Library ready to hold reusable stateless components.
+    - name: ODC library overview
+      id: odc-library-overview
+      description: Wants to understand what a library is in OutSystems Developer
+        Cloud (ODC), including its stateless design, common use cases such as
+        wrapping an external system or centralizing style guides and themes, and
+        its role as a shared, cross-portfolio building block with an independent
+        lifecycle, so that they can decide when to use a library in their app
+        architecture.
   - name: Core module patterns
     id: core-module-patterns
     subtopics:
@@ -1275,6 +1350,44 @@ knowledge-needs:
         versus a custom User Provider with the TenantSwitch system action, so that
         queries and aggregates are automatically scoped to the correct tenant's
         data.
+  - name: Mobile libraries
+    id: mobile-libraries
+    subtopics:
+    - name: Mobile libraries overview
+      id: mobile-libraries-overview
+      description: Wants to understand what mobile libraries are in ODC, how they
+        differ from general-purpose libraries in terms of target platform,
+        extensibility configurations, and UI component options, and their key use
+        cases such as plugin wrappers and reusable mobile UI components, so that
+        they can decide when to build a mobile library instead of a general-purpose
+        library.
+  - name: Library versioning
+    id: library-versioning
+    subtopics:
+    - name: Library revision vs. version
+      id: library-revision-vs-version
+      description: Wants to understand the distinction between a library's revision
+        number and version number in ODC, so that they can choose the right
+        update flow for each type of change.
+    - name: Test a library revision
+      id: test-library-revision
+      description: Wants to test a library revision in a test app in ODC before
+        releasing it, so that library changes don't break consumers.
+    - name: Release a new library version
+      id: release-library-version
+      description: Wants to release a new library version in ODC using semantic
+        versioning and release notes, so that consumers can adopt updates with
+        clear compatibility expectations.
+    - name: Review accepted library updates
+      id: review-accepted-library-updates
+      description: Wants to review accepted library updates in consuming apps or
+        libraries in ODC, so that they can verify update impact before deciding
+        on follow-up actions.
+    - name: Roll back accepted library updates
+      id: roll-back-accepted-library-updates
+      description: Wants to roll back accepted library updates in consuming apps
+        or libraries in ODC when needed, so that they can recover safely from
+        breaking updates.
 - name: Asynchronous processes
   guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
   topics:
@@ -1325,6 +1438,15 @@ knowledge-needs:
         be verified before considering it complete.'
     - name: Troubleshoot webservices
       id: troubleshoot-webservices
+    - name: Fix REST param type
+      id: fix-rest-param-type
+      description: 'Wants to fix the "Cannot send a ''Binary Data''/''List''
+        parameter" error in a REST API method request in Service Studio for
+        OutSystems 11, caused by setting a request parameter to the Binary
+        Data or List data type when the method''s request format doesn''t
+        support it, by changing the parameter''s data type or the method''s
+        request format, so that the REST API method compiles and publishes
+        successfully.'
   - name: Consume webservices
     id: consume-webservices
     subtopics:
@@ -1998,6 +2120,14 @@ knowledge-needs:
         OutSystems 11, so that a long list of results is filtered on the server
         and suggestions appear below the field as the user types in a Traditional
         Web App.
+    - name: Configure Line Chart
+      id: configure-line-chart
+      description: Wants to add the Line Chart widget to a screen and configure
+        its data points, series name, and Spline property, then customize
+        series styling and marker settings, in Service Studio for OutSystems
+        11, so that a line chart with a smooth spline line and custom markers
+        displays correctly in traditional web apps, mobile apps, and reactive
+        web apps.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -2289,6 +2419,47 @@ knowledge-needs:
         rules, and applying the corresponding fix (disabling the injecting
         tool or removing the offending SEO/pathrule/siterule), in OutSystems
         11, so that deployment completes successfully.'
+    - name: Invalid argument error
+      id: invalid-argument-error
+      description: 'Wants to fix the "Invalid Argument Value" error in Service
+        Studio, caused by referencing a non-existent Web Service name in an
+        action''s argument, by checking whether the Web Service is consumed
+        by the module or correcting the argument name, in OutSystems 11, so
+        that the module compiles and publishes successfully.'
+    - name: Invalid Blocks error
+      id: invalid-blocks-error
+      description: 'Wants to resolve the "Invalid Blocks" "Block loop detected"
+        error in OutSystems 11, by reading the web block include sequence
+        reported in the TrueChange tab or the 1-Click Publish compile step to
+        identify which web blocks include each other in a loop, so they can
+        break the loop and get the module to compile and publish
+        successfully.'
+    - name: Invalid client function error
+      id: invalid-client-function-error
+      description: 'Wants to resolve the "Invalid Client Function" error in
+        OutSystems 11, caused by a Client Action marked as a function calling
+        a Server Action, Local Storage Aggregate, or asynchronous JavaScript
+        node, or by calling a non-function action inside another function, by
+        changing the Function property of the relevant Client Action to Yes
+        or No as appropriate, so that the module compiles and publishes
+        successfully.'
+    - name: Invalid Combo Box error
+      id: invalid-combo-box-error
+      description: 'Wants to resolve the "Invalid Combo Box Widget" error in
+        Service Studio, caused by missing or inconsistent Source Entity/Struct,
+        Source Record List, Special List, Variable, or Source Attribute
+        properties on a Combo Box widget, by editing the widget to set the
+        correct combination of properties matching the specific error
+        message, in OutSystems 11, so that the module compiles and publishes
+        successfully.'
+    - name: Invalid Data Action error
+      id: invalid-data-action-error
+      description: 'Wants to resolve the "Invalid Data Action" error in
+        OutSystems 11, caused by a Data Action that doesn''t set a value for
+        an Output Parameter or that has no Output Parameters at all, by
+        assigning a correctly typed value to the existing Output Parameter
+        or creating at least one, so that the module compiles and publishes
+        successfully.'
   - name: Troubleshoot SEO-friendly URLs
     id: troubleshoot-seo-friendly-urls
     subtopics:
@@ -2385,6 +2556,19 @@ knowledge-needs:
         available (built-in, custom, and Forge), and what predefined elements they
         provide, when starting to create an OutSystems app in Service Studio, so that
         they can choose the right template for their project.
+    - name: Create custom app template
+      id: create-custom-app-template
+      description: Wants to create a reusable custom app template in ODC Studio by
+        naming the app with the Template_ prefix and adding a description and
+        icon, then publishing it, so that the template becomes available as a
+        base for new apps with consistent look, feel, and logic.
+    - name: Template color inheritance
+      id: template-color-inheritance
+      description: Wants to understand that an app created from a custom app
+        template inherits the template's primary color from its CSS
+        declarations even if a different color is selected during app
+        creation, so they can predict and control the new app's initial theme
+        color.
   - name: Using external OutSystems components
     id: external-outsystems-comp
     subtopics:
@@ -2503,6 +2687,28 @@ knowledge-needs:
         space, including access to the development stage, assets, logs, configurations,
         end-user management, and Forge, so they can plan what they can build and manage
         during the trial.
+    - name: PE hibernation basics
+      id: pe-hibernation-basics
+      description: Wants to understand what PE hibernation is, when it triggers after a
+        period of development inactivity, what activity prevents it, and its
+        impact on published apps and cost, in OutSystems Personal Edition, so
+        that they know what to expect from the sleep state and don't mistake it
+        for data loss or a paid feature.
+    - name: Wake up hibernated PE
+      id: wake-hibernated-pe
+      description: Wants to reactivate a hibernated OutSystems Personal
+        Edition, either manually from the ODC Portal's Manage Organization
+        console or automatically by performing a developer action that
+        requires the environment to be online, and know how long
+        reactivation takes, so that they can resume development or restore
+        access to published apps.
+    - name: PE hibernation vs deletion
+      id: pe-hibernation-vs-deletion
+      description: Wants to understand the difference between a hibernated
+        Personal Edition (asleep but fully preserved) and a deleted one
+        (removed after extended inactivity per the PE lifecycle), so that
+        they know hibernation doesn't mean data loss and can anticipate when
+        their PE might eventually be deleted.
     - name: O11 error tracking
       id: o11-error-tracking-setup
       description: Wants to obtain error information in a self-managed O11 installation
@@ -2760,6 +2966,21 @@ knowledge-needs:
         type and serializing the structured data before storing it in the
         Store Memory node, so that the structured response can be persisted
         and later deserialized on the consumer side.
+    - name: Agent evaluations overview
+      id: agent-evaluations-overview
+      description: Wants to understand what agent evaluations are and how
+        a run works end-to-end, including the black box methodology
+        (evaluating a service action as the executable unit) and the flow
+        from dataset through service action, execution trace, and platform
+        judge to evaluation results, so they can decide when to use
+        evaluations and interpret how results are produced.
+    - name: Evaluation data retention
+      id: evaluation-data-retention
+      description: Wants to understand how long ODC retains agent evaluation data,
+        distinguishing evaluation summaries (kept indefinitely) from evaluation
+        details like per-test-case results and judge rationale (retained for a
+        limited period before being automatically removed), so they know how
+        long granular results stay available for review.
     - name: Create evaluation dataset
       id: create-evaluation-dataset
       description: Wants to create and upload a dataset for an agentic app
@@ -2864,6 +3085,55 @@ knowledge-needs:
         prompts or requirement documents in Mentor Web, meeting theme
         compatibility requirements, so that the generated app uses the
         intended visual theme.
+  - name: AI models and search services
+    id: ai-models-and-search-services
+    subtopics:
+    - name: Manage AI model connections
+      id: manage-ai-model-connections
+      description: Wants to understand how to connect apps to AI models in ODC, including
+        using natively supported providers or bringing their own API key (BYOK),
+        configuring endpoints, and setting daily usage limits, so they can set
+        up AI model connections before writing app logic that calls the model.
+    - name: Custom model connections
+      id: custom-model-connections-odc
+      description: Wants to connect ODC to non-native LLM providers or
+        private models by building a custom connector service that
+        implements OutSystems' API contract, handling authentication,
+        request and response formatting, and error codes, so that custom
+        or third-party models can be called from ODC Studio like natively
+        supported models.
+    - name: Search services for RAG
+      id: search-services-rag
+      description: Wants to connect ODC apps to external knowledge bases
+        like Azure AI Search or Amazon Kendra and retrieve semantically
+        relevant data via a service action, then pass that data as context
+        to an AI model call, so they can implement the
+        Retrieval-augmented generation (RAG) pattern in app logic.
+  - name: Agent guardrails
+    id: agent-guardrails
+    subtopics:
+    - name: Configure stage guardrails
+      id: configure-stage-guardrails
+      description: Wants to configure baseline agent guardrail policies at the stage level
+        in the ODC Portal, so that safety standards are enforced consistently
+        across all agents in a given stage.
+    - name: Configure agent-level guardrails
+      id: configure-agent-level-guardrails
+      description: Wants to configure or override guardrail policies for
+        an individual AI agent in the ODC Portal, either overriding an
+        inherited stage-level baseline policy or enabling guardrails
+        directly when no baseline exists, so that specific high-risk or
+        sensitive agents get tailored protection.
+    - name: Handle guardrail violation exception
+      id: handle-guardrail-violation-exception
+      description: Wants to recognize and handle the exception code raised when an agent
+        guardrail blocks a request, so that violations are surfaced to end users
+        appropriately.
+    - name: Review guardrail events
+      id: review-guardrail-events
+      description: Wants to review guardrail violation events in the ODC
+        Portal's Monitor > Logs area, so that policy effectiveness can
+        be assessed.
 - name: Integrating with Plugins
   guid: 1af9eece-e820-40ec-8483-b1243267b038
   topics:
@@ -2998,6 +3268,36 @@ knowledge-needs:
 - name: Native Mobile apps
   guid: f67965c4-a2ef-4076-8676-c8b8203ab671
   topics:
+  - name: MABS release notes
+    id: mabs-release-notes
+    subtopics:
+    - name: MABS 12 upgrade overview
+      id: mabs-12-upgrade-overview
+      description: Wants to understand what's new in MABS 12, including Capacitor
+        support, the iOS 26 and Android API 36 SDK updates, build actions, and
+        universal extensibility, so that they can plan whether and how to
+        upgrade their mobile app's build service version.
+    - name: MABS 12 breaking changes
+      id: mabs-12-breaking-changes
+      description: Wants to understand the breaking changes introduced in MABS
+        12 for Capacitor apps (WebView version requirement, removed iOS
+        Inspector, DeepLinksHandlerType no longer effective) and Cordova apps
+        (Android status bar behavior, renamed Cordova template files), so that
+        they can update their app before or after upgrading the MABS version.
+    - name: MABS 12.1 splash screen changes
+      id: mabs-12-1-splash-changes
+      description: Wants to understand how splash screen behavior and configuration changed
+        for Capacitor apps in MABS 12.1, including the native splash screen
+        implementation, IDE-driven settings replacing extensibility
+        configuration, and the new branding image size requirement, so that they
+        can update their app's splash screen setup correctly.
+    - name: MABS version support
+      id: mabs-version-support
+      description: Wants to know which MABS versions are currently supported,
+        deprecated, or obsolete, and which Android and iOS versions and build
+        tools each version supports, so they can choose the correct MABS
+        version for their mobile app and plan upgrades before a version
+        becomes obsolete.
   - name: Local Storage
     id: local-storage
     subtopics:
@@ -3241,6 +3541,13 @@ knowledge-needs:
         correctly configured" error, by reviewing and correcting the Google
         Services plugin configuration file setup, so that the Android mobile
         app package generates successfully.'
+    - name: Cordova build failure
+      id: cordova-build-failure-error
+      description: 'Wants to resolve the OS-MABS-GEN-50000 "Couldn''t generate
+        your app. If the problem persists, check our documentation for more
+        information." error, by regenerating the app package and checking the
+        build logs in Service Center for O11 or ODC Portal for ODC, so that
+        the mobile app package generates successfully.'
     - name: Invalid CocoaPods spec error
       id: invalid-cocoapods-spec-error
       description: 'Wants to resolve the OS-MABS-PLG-40005 "Spec attribute in
@@ -3416,6 +3723,46 @@ knowledge-needs:
         case." error, by regenerating the app package or contacting
         OutSystems Support if the problem persists, so that the mobile app
         package generates successfully.'
+    - name: Splash image resize error
+      id: splash-image-resize-error
+      description: 'Wants to resolve the OS-MABS-PRJ-50002 "An error occurred
+        while generating the splash screen images" error, caused by the
+        branding image failing to be transformed or resized to match iOS or
+        Android splash screen requirements, by regenerating the app package
+        or contacting OutSystems Support if the problem persists, so that the
+        mobile app package generates successfully.'
+    - name: File copy/write error
+      id: file-write-copy-error
+      description: 'Wants to resolve the OS-MABS-PRJ-50003 "An error occurred
+        while writing or copying a file. If the problem persists, open a
+        support case." error, by regenerating the app package or contacting
+        OutSystems Support if the problem persists, so that the mobile app
+        package generates successfully.'
+    - name: Invalid code structure error
+      id: invalid-code-structure-error
+      description: 'Wants to resolve the OS-MABS-PRJ-50004 "The code project
+        structure is invalid. If the problem persists, open a support case."
+        error, caused by a missing or malformed file or folder in the native
+        project template, by regenerating the app package or contacting
+        OutSystems Support if the problem persists, so that the mobile app
+        package generates successfully.'
+    - name: Cordova dependency error
+      id: cordova-dependency-error
+      description: 'Wants to resolve the OS-MABS-PRJ-50005 "An error occurred
+        while resolving Cordova plugin dependencies. If the problem
+        persists, open a support case." error, caused by a declared Cordova
+        plugin not found among installed dependencies or a missing or
+        unreadable dependency manifest, by regenerating the app package or
+        contacting OutSystems Support if the problem persists, so that the
+        mobile app package generates successfully.'
+    - name: Template preparation error
+      id: template-preparation-error
+      description: 'Wants to resolve the OS-MABS-PRJ-50006 "An error occurred
+        while preparing the project template. If the problem persists,
+        open a support case." error, caused by a missing or unpreparable
+        iOS or Android project template archive, by regenerating the app
+        package or contacting OutSystems Support if the problem persists,
+        so that the mobile app package generates successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -3513,6 +3860,15 @@ knowledge-needs:
         a resource bundle in the plugin's .podspec and Package.swift files,
         so that the manifest is correctly discovered by Xcode without
         colliding with the app's own privacy manifest.
+    - name: Implement web plugin layer
+      id: implement-web-plugin-layer
+      description: Wants to scaffold a custom Capacitor plugin project and
+        implement its web/TypeScript layer, by using the plugin generator to
+        create the project structure, defining the plugin's TypeScript
+        interface and method signatures in definitions.ts, and registering
+        the plugin with registerPlugin() in index.ts, so that the web layer
+        serves as the entry point that native Android and iOS
+        implementations bind to.
   - name: Deep linking
     id: deep-linking
     subtopics:
@@ -3980,6 +4336,20 @@ knowledge-needs:
         data by asset and environment, using the Subscription API v1 REST
         endpoints, so they can programmatically monitor account status and
         resource consumption.
+    - name: AO counting rules
+      id: ao-counting-rules
+      description: Wants to know how application objects (AOs) are counted for
+        screens, entities/database tables, API methods, and events in
+        OutSystems 11 and OutSystems Developer Cloud, including special cases
+        such as libraries, imported Forge components, and objects reused
+        across multiple apps, so that they can accurately estimate the AO
+        footprint of their apps.
+    - name: AO limits and usage
+      id: ao-limits-usage
+      description: Wants to check their licensed AO capacity and current AO
+        usage across production runtimes, using Service Center in OutSystems
+        11 or the Subscription section of the ODC Portal, so that they can
+        manage AO consumption and know when to request a capacity upgrade.
   - name: Expanded governance
     id: expanded-governance
     subtopics:

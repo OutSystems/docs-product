@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - avoid-duplicate-redirects
+  - duplicate-page-name-error
 ---
 
 # Duplicated Page Name

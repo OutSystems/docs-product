@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-grid-overflow
 ---
 
 # Grid Dimensions Overflow Error

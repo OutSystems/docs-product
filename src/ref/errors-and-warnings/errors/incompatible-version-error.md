@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - unblock
+topic:
+  - incompatible-version-error
 ---
 
 # Incompatible Version Error

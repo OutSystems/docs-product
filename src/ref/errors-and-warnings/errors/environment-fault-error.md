@@ -14,6 +14,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - o11-service-error-recovery
 ---
 
 # Environment Fault Error

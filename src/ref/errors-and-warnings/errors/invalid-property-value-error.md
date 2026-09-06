@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-invalid-property-value
 ---
 
 # Invalid Property Value Error

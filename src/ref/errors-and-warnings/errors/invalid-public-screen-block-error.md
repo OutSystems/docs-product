@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - public-screen-block-error
 ---
 
 # Invalid Public Screen Block Error

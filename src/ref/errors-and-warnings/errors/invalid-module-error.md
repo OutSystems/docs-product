@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - invalid-module-error
 ---
 
 # Invalid Module Error

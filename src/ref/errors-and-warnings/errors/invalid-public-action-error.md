@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-invalid-public-action
 ---
 
 # Invalid Public Action Error

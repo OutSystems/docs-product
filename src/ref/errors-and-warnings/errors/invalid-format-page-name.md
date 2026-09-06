@@ -1,6 +1,7 @@
 ---
 summary: Explore how OutSystems 11 (O11) handles Invalid Format errors in page names by enforcing SEO-friendly URL guidelines.
-tags: ide usage, reactive web apps, tutorials for beginners, seo, url validation
+tags:
+  - Troubleshooting
 locale: en-us
 guid: 6f21e13b-c858-496b-bd91-942d787e8457
 app_type: traditional web apps, mobile apps, reactive web apps

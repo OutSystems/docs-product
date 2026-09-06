@@ -5,7 +5,9 @@ guid: 286230b7-c011-42bd-9923-7b3ef0a4abbc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, data types, widgets, entity modeling, web development
+tags:
+  - Troubleshooting
+  - Widgets
 audience:
   - Front-end developer
   - Developer

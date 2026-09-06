@@ -5,7 +5,10 @@ guid: 659d5361-cb0c-4aff-bab5-f021cc017017
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, database operations, entity relationships, data modeling, troubleshooting
+tags:
+  - Aggregates
+  - Entities
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

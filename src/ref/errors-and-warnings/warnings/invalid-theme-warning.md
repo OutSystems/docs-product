@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) requires specific placeholders in theme layouts to ensure proper functionality.
+summary: Theme layout warnings in OutSystems 11 (O11) flag missing 'Title' or 'MainContent' placeholders and invalid Menu web blocks.
 tags: theme layout, web block, application development, ui/ux design, error handling
 locale: en-us
 guid: 0b9c59a1-505b-4139-9567-c0f219b62ac8

@@ -13,6 +13,8 @@ outsystems-tools:
   - none
 coverage-type:
   - unblock
+topic:
+  - resolve-internal-error
 ---
 
 # Internal Error

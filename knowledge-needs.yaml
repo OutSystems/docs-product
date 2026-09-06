@@ -141,6 +141,14 @@ knowledge-needs:
         can handle JavaScript errors that occur during an Ajax refresh of an
         unescaped expression or during the RunJavaScript action of the
         HTTPRequestHandler extension, in Traditional Web Apps (O11).
+    - name: Fix Log Error warning
+      id: fix-log-error-warning
+      description: 'Wants to fix the audit suggestion warning "''Log Error''
+        should be set to ''Yes'' for ''AllExceptions'' error handler at screen
+        flow level" by setting the Log Error property to Yes on the screen
+        flow''s AllExceptions error handler in Service Studio, so that
+        OutSystems logs detailed exception information for troubleshooting,
+        in OutSystems 11.'
   - name: Using Expressions
     id: using-expressions
     subtopics:
@@ -457,6 +465,22 @@ knowledge-needs:
         or entity attribute (Decimals or Length) to a value outside its
         allowed range or of the wrong type, by editing the property or
         attribute to a valid numeric value, so that the module compiles and
+        publishes successfully.'
+    - name: Fix reserved attribute
+      id: fix-reserved-attribute-name
+      description: Wants to fix the "'<attribute>' is an invalid attribute name in
+        <database>." warning caused by naming an entity attribute using an
+        Oracle reserved word, by renaming the attribute to a non-reserved word,
+        so that the attribute compiles successfully against an Oracle database,
+        in OutSystems 11.
+    - name: Fix entity warning
+      id: fix-unexpected-entity
+      description: 'Wants to fix the "Unexpected Entity" warning family in
+        Service Studio for OutSystems 11, caused by an entity composed
+        solely of an Auto Number attribute, having more than one Binary
+        Data attribute, or specifying an invalid physical table name, by
+        adding another attribute, moving binary data to a new entity, or
+        correcting the table name, so that the entity compiles and
         publishes successfully.'
   - name: Querying data
     id: querying-data
@@ -880,6 +904,42 @@ knowledge-needs:
         ensuring only one class implements the OSInterface-decorated interface
         in their C# external library project, so that they can successfully
         publish the external library.'
+    - name: Missing file warning
+      id: missing-file-warning
+      description: 'Wants to resolve the "The file ''<file>'' was not found on
+        the file system" warning that occurs when a previously added resource
+        file can''t be found on the file system during extension creation,
+        merge, or save in Integration Studio, by re-opening the extension to
+        recover the files, so that the extension resource is restored.'
+    - name: Overwritten file warning
+      id: overwritten-file-warning
+      description: 'Wants to resolve the "The file ''<file>'' was overridden"
+        warning in Integration Studio by understanding that a merge operation
+        replaces file-system files with newer, extension-generated ones when
+        Last Modified timestamps differ, and by locating the automatic backup
+        saved in the extension''s Backups folder, so that they don''t lose
+        manual file-system changes.'
+    - name: Fix source code warning
+      id: fix-source-code-warning
+      description: 'Wants to resolve the "The Extension has no [.NET] source
+        code to update/compile" warning in Integration Studio by adding at
+        least one action to the extension, so that the extension has
+        associated source code to update and compile, in OutSystems 11.'
+    - name: Fix missing options warning
+      id: fix-missing-options-warning
+      description: 'Wants to resolve the "The .NET Software Development Kit
+        options are not correctly defined" warning that blocks compiling and
+        1-Click Publishing an extension, by setting the .NET SDK options
+        correctly in the Options Window, in Integration Studio, so that the
+        extension compiles and publishes successfully.'
+    - name: Fix resource warning
+      id: fix-resource-warning
+      description: 'Wants to fix the "The Resource <file> should not be included
+        in the Extension" or "...has a reserved file name..." warnings in
+        OutSystems 11, caused by naming an extension resource with the reserved
+        OutSystemsHubEdition prefix or a reserved system filename (for example,
+        compressor or web.config), by renaming the resource file to remove the
+        prefix or reserved name, so that the resource deploys correctly.'
     - name: Authenticate mTLS library
       id: authenticate-mtls-library
       description: 'Wants to implement mutual TLS (mTLS) authentication in an
@@ -1948,6 +2008,44 @@ knowledge-needs:
         storage, by retrying later, publishing without an icon, or contacting
         OutSystems Support if the problem persists, in OutSystems 11, so that
         they can proceed without the icon-save failure blocking their work.
+    - name: WFB status update error
+      id: wfb-status-update-error
+      description: 'Wants to resolve the "Specified application version do not
+        exists or the status update is invalid" error when performing an
+        operation requiring an application status update in Workflow Builder,
+        by logging out and back in (or contacting support if the problem
+        persists), in OutSystems 11, so that they can successfully complete
+        the status update.'
+    - name: WFB icon size error
+      id: wfb-icon-size-error
+      description: 'Wants to resolve the "Application version icon is larger
+        than <MaxSize>" error when uploading an icon that exceeds the max
+        file size in Workflow Builder, by retrying with a smaller icon or
+        contacting OutSystems Support if the problem persists, in OutSystems
+        11, so that the application icon upload succeeds.'
+    - name: WFB discard version error
+      id: wfb-discard-version-error
+      description: 'Wants to resolve the "Unable to discard version. It has
+        published versions: <ApplicationVersionId>." error that occurs when
+        trying to delete an application that''s already published but still
+        displays as unpublished in Workflow Builder, by logging out and back
+        in (or contacting support if the problem persists), in OutSystems 11,
+        so that they can successfully delete the application.'
+    - name: WFB attribute data error
+      id: wfb-attribute-data-error
+      description: 'Wants to resolve the "Attribute data is not valid:
+        <OriginalErrorMessage>" error when creating or modifying a field
+        with inconsistent data in Workflow Builder, by logging out and back
+        in (or contacting support if the problem persists), in OutSystems 11,
+        so that they can successfully save the field.'
+    - name: WFB attribute type error
+      id: wfb-attribute-type-error
+      description: 'Wants to resolve the "Cannot change the type of an
+        existing attribute: <Name> (<Id>)" error that occurs when trying to
+        change the data type of a field that''s already published in
+        Workflow Builder, by creating a new field with the desired data
+        type instead, in OutSystems 11, so that the application field saves
+        successfully.'
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -3966,6 +4064,28 @@ knowledge-needs:
         for the OnKeyboardWillShow, OnKeyboardDidShow, OnKeyboardWillHide, and
         OnKeyboardDidHide events, so that the app can react to keyboard
         visibility changes.
+  - name: Using Capacitor Plugins
+    id: using-capacitor-plugins
+    subtopics:
+    - name: Integrate plugin in app
+      id: integrate-plugin-in-app
+      description: Wants to integrate a Capacitor plugin (official, community,
+        or custom-built) into an ODC app by creating a mobile library
+        wrapper, configuring its extensibility settings to reference the
+        plugin package and permissions, adding a client action that calls
+        the plugin via window.CapacitorPlugins, using the library in the
+        app, and building the mobile package, so that the plugin's native
+        functionality becomes available to the app.
+    - name: Vet plugin security
+      id: vet-plugin-security
+      description: Wants to assess whether a Capacitor plugin is safe to
+        include in a mobile app, given that bundled plugins share the
+        global JavaScript environment and can access device APIs, app
+        data, and user information, by installing only from trusted
+        sources, reviewing the plugin's source code and community
+        signals, and keeping plugins updated or removing unused ones, so
+        that the app's security risk from third-party plugin code stays
+        low.
 - name: Lifecycle Independence
   guid: 4b3a44cd-2a86-462c-81b2-89a841284aab
   topics:
@@ -4637,6 +4757,16 @@ knowledge-needs:
         plugin, or community Capacitor plugin), so that they avoid
         unnecessary investment in custom native plugin development for ODC
         mobile apps.
+    - name: Migrate Cordova plugin
+      id: migrate-cordova-plugin
+      description: Wants to adapt an existing Cordova plugin's plugin.xml
+        preferences, hooks, and config-file changes, plus Cordova-specific
+        JavaScript API references, for compatibility with Capacitor, by
+        migrating preferences to extensibility settings, replacing hooks with
+        build actions, converting config-file changes to extensibility
+        configurations or build actions, and refactoring JavaScript checks,
+        in MABS 12, so that an OutSystems library's existing Cordova plugin
+        works in a Capacitor-based ODC mobile app.
     - name: Plan custom Capacitor plugin
       id: plan-custom-capacitor-plugin
       description: Wants to plan a custom Capacitor plugin for an ODC mobile
@@ -4737,6 +4867,42 @@ knowledge-needs:
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
   topics:
+  - name: VPN connection troubleshooting
+    id: vpn-connection-troubleshooting
+    subtopics:
+    - name: Fix VPN IP errors
+      id: fix-vpn-ip-errors
+      description: Wants to resolve VPN creation errors caused by an invalid or
+        already-used Internet gateway public IP address when creating a VPN in
+        the LifeTime console, so that they can provide a valid and unique
+        public IP address.
+    - name: Fix VPN connection limit errors
+      id: fix-vpn-connection-limit-errors
+      description: Wants to resolve VPN creation errors caused by exceeding the
+        maximum number of VPN connections when creating a VPN in the LifeTime
+        console, so that they can choose another supported setup to connect the
+        infrastructure.
+    - name: Fix VPN Transit Gateway conflict errors
+      id: fix-vpn-transit-gateway-conflict-errors
+      description: Wants to resolve VPN creation errors caused by an
+        infrastructure already being connected to an AWS Transit Gateway when
+        creating a VPN in the LifeTime console, so that they can use the
+        existing Transit Gateway setup instead of creating a conflicting VPN.
+    - name: Fix VPN ASN errors
+      id: fix-vpn-asn-errors
+      description: Wants to resolve VPN creation errors related to an invalid
+        BGP ASN value, whether already in use, outside the 0-65535 range, or
+        reserved by Amazon, when configuring a VPN connection in the LifeTime
+        console, so that they can provide a valid, unreserved, and unique ASN
+        value.
+    - name: Fix VPN route errors
+      id: fix-vpn-route-errors
+      description: Wants to resolve errors when adding static routes to a VPN connection in
+        the LifeTime console, including an invalid or overlapping internal
+        network IP range, the disallowed 0.0.0.0/0 range, exceeding the maximum
+        allowed number of routes, or a temporary "operation in progress"
+        conflict, so that they can correct the route configuration and complete
+        the request.
   - name: Organization region information
     id: organization-region-information
     subtopics:
@@ -5846,6 +6012,28 @@ knowledge-needs:
 - name: Log streaming (ODC)
   guid: 5e4d826e-41ed-47ae-9f2e-9c87b56d41f2
   topics:
+  - name: Stream overview
+    id: odc-stream-overview
+    subtopics:
+    - name: Analytics Stream overview
+      id: understand-analytics-stream
+      description: Wants to understand what streaming observability data
+        (Analytics Stream) is, how ODC uses the OpenTelemetry standard and
+        OTLP to export logs, traces, and metrics to third-party APM tools,
+        and its benefits, so they can decide whether and how to adopt it
+        for monitoring ODC apps, agents, and workflows.
+    - name: Supported APM tools
+      id: supported-apm-tools
+      description: Wants to know which APM tools ODC's Analytics Stream supports natively
+        vs. via the OpenTelemetry collector, so they can pick a compatible
+        destination for their observability data.
+    - name: Connectivity requirements
+      id: stream-connectivity-requirements
+      description: Wants to understand the connectivity and security
+        requirements (public endpoint exposure, encryption, authentication,
+        IP allowlisting) for streaming observability data from ODC to an
+        APM tool, so they can prepare their APM tool's ingestion endpoint
+        before configuring a stream.
   - name: Stream configuration
     id: odc-stream-configuration
     subtopics:
@@ -6042,6 +6230,13 @@ knowledge-needs:
       not found" error while opening or editing an application that no
       longer exists, so they can confirm the app was removed and contact
       OutSystems Support if the issue persists.
+  - name: Resolve shared config
+    id: resolve-shared-config
+    description: 'Wants to know what to do when OutSystems 11 shows a "Shared
+      Configuration ''<Shared Configuration>'' is invalid and will be
+      ignored" warning, so they can ask the application manager or Service
+      Center administrator to correct it using the Service Center Factory
+      Configuration solution and republish the module.'
 - name: Project Tracking and Collaboration
   guid: ''
   topics:
@@ -6116,3 +6311,21 @@ knowledge-needs:
         (posting, contributing Forge assets, attending events, publishing
         content, and similar activities), so that they can understand
         which recognition badges they've earned or how to earn new ones.
+- name: SEO
+  guid: 54a1d9e5-0f3e-4a8b-b897-7c5c8838b0ff
+  topics:
+  - name: Sitemap and robots configuration
+    id: sitemap-and-robots-configuration
+    subtopics:
+    - name: Generate dynamic sitemap
+      id: generate-dynamic-sitemap
+      description: 'Wants to generate a valid sitemap.xml for their app by
+        creating a REST API endpoint that outputs an XML-formatted list of
+        static and dynamic screen URLs, in ODC Studio, so that search engine
+        crawlers can discover and index all public pages.'
+    - name: Create robots.txt file
+      id: create-robots-txt-file
+      description: 'Wants to control which parts of their site search engine
+        crawlers can access by creating a static robots.txt file that
+        defines allow/disallow rules and references the sitemap.xml
+        endpoint, in ODC, so that crawler behavior is properly restricted.'

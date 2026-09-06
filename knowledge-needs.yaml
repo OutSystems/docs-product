@@ -595,6 +595,16 @@ knowledge-needs:
   topics:
   - name: SOA and Microservices
     id: soa-and-microservices
+  - name: ODC Events
+    id: odc-events
+    subtopics:
+    - name: ODC event limits
+      id: odc-event-limits
+      description: Wants to look up the platform limits for ODC events — maximum payload
+        size per event, maximum queue capacity per event type, delivery retry
+        count and backoff intervals, and concurrent execution/duration limits —
+        so that they can design event payloads, queues, and consumer logic
+        within ODC's supported constraints.
 - name: Advanced data handling
   guid: c6a945c1-deaa-4266-9b94-d7b31d9fdf07
   topics:
@@ -1539,6 +1549,16 @@ knowledge-needs:
   - name: Multi-portfolio architecture
     id: multi-portfolio-architecture
     subtopics:
+    - name: Portfolio overview
+      id: portfolio-overview
+      description: Wants to understand what a portfolio is in OutSystems
+        Developer Cloud (ODC), including its place in the organization >
+        portfolio > stage > asset hierarchy, the benefits of isolating
+        assets by non-functional requirements or governance rules, and
+        common use cases (different identity providers, compliance
+        boundaries, department-specific delivery, shared building-block
+        libraries), so that they can decide whether and how to adopt a
+        multi-portfolio structure.
     - name: Identify cross-portfolio needs
       id: identify-cross-portfolio-needs
       description: Wants to identify which business concepts, logic/UI components,
@@ -1843,6 +1863,13 @@ knowledge-needs:
         Technology, including logic, UI, and data model) and how IT can extend
         it using Service Studio, in OutSystems 11, so that they can plan how to
         hand off and evolve the app after publishing.
+    - name: WFB delete version error
+      id: wfb-delete-version-error
+      description: Wants to resolve the "Cannot remove case application version
+        since it's not in Draft" error when deleting an application in Workflow
+        Builder, by logging out and back in (or contacting support if the problem
+        persists), in OutSystems 11, so that they can successfully delete the
+        application version.
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -2673,6 +2700,13 @@ knowledge-needs:
         including separate revisions, versions, and deployment history per
         portfolio, so that they deploy and undeploy assets in the correct
         portfolio without affecting others.
+    - name: Rename org or stage
+      id: rename-org-or-stage
+      description: Wants to change the display name of their ODC organization
+        or a pipeline stage from the Organization page in the ODC Portal, so
+        that the name shown throughout the portal and ODC Studio matches
+        updated naming conventions without affecting apps, users, domains, or
+        configurations.
   - name: Manual deployment with an infrastructure management console
     id: manual-deploy-mgmt-console
     subtopics:
@@ -2864,6 +2898,59 @@ knowledge-needs:
         checking existing Page Names, app/module names, and Site Rules
         before choosing a Page Name, in OutSystems 11 Reactive Web Apps, so
         that SEO-friendly URLs route to the intended destination.'
+  - name: Portfolio API management
+    id: portfolio-api-management
+    subtopics:
+    - name: List portfolios via API
+      id: list-portfolios-via-api
+      description: Wants to list ODC portfolios programmatically by using the
+        Portfolio API v2 REST endpoints, so they can discover available
+        portfolios before automating portfolio administration.
+    - name: Rename portfolio via API
+      id: rename-portfolio-via-api
+      description: Wants to rename an ODC portfolio programmatically by using
+        the Portfolio API v2 REST endpoints, so they can keep portfolio names
+        aligned with organizational changes.
+    - name: Reorder portfolios via API
+      id: reorder-portfolios-via-api
+      description: Wants to reorder ODC portfolios programmatically by using
+        the Portfolio API v2 REST endpoints, so they can keep portfolio
+        organization consistent across environments.
+    - name: List environments via Portfolio API
+      id: list-environments-via-portfolio-api
+      description: Wants to list ODC environments programmatically by using the
+        Portfolio API v2 REST endpoints, so they can discover available
+        environments before automating environment administration.
+    - name: List deployed assets via Portfolio API
+      id: list-deployed-assets-via-portfolio-api
+      description: Wants to list deployed assets programmatically by using the
+        Portfolio API v2 REST endpoints, so they can discover deployed assets
+        across portfolios and environments before automating asset
+        administration.
+    - name: List libraries via Portfolio API
+      id: list-libraries-via-portfolio-api
+      description: Wants to list libraries programmatically by using the
+        Portfolio API v2 REST endpoints, so they can discover available
+        libraries before automating library administration.
+  - name: ODC public REST APIs
+    id: odc-public-rest-apis
+    subtopics:
+    - name: Choose REST API domain
+      id: choose-rest-api-domain
+      description: Wants to identify which ODC public REST API domain addresses a given
+        automation task, based on each domain's high-level purpose, so they can
+        locate the correct API reference for implementation.
+    - name: ODC API rate limits
+      id: odc-api-rate-limits
+      description: Wants to know the domain-wide and specific endpoint request-per-minute
+        limits for each ODC public REST API domain, so they can design
+        integrations that stay within OutSystems Developer Cloud's rate limits.
+    - name: Handle rate limit errors
+      id: handle-rate-limit-errors
+      description: Wants to know what response the ODC public REST APIs
+        return when a client exceeds an API rate limit, so they can detect
+        and handle the 429 Too Many Requests response in their integration
+        code.
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -5669,6 +5756,12 @@ knowledge-needs:
       "Internal Error" caused by an unexpected situation in the application
       or environment, so they can submit feedback through the tool or
       contact OutSystems Support if the issue persists.
+  - name: Resolve app not found
+    id: resolve-app-not-found
+    description: Wants to know what to do when OutSystems 11 shows an "Application
+      not found" error while opening or editing an application that no
+      longer exists, so they can confirm the app was removed and contact
+      OutSystems Support if the issue persists.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:
@@ -5723,3 +5816,13 @@ knowledge-needs:
         or junk folders, by using the confirmation number and last name on
         the Prometric Score Report portal, so that they can see which exam
         topics they passed or failed.
+  - name: Support Portal
+    id: support-portal
+    subtopics:
+    - name: Add case followers
+      id: add-case-followers
+      description: Wants to add colleagues as followers to an OutSystems
+        support case, either while opening the case in Support Portal or
+        afterward by entering their email addresses on an existing case,
+        so that those colleagues receive email notifications and can
+        contribute information to the case.

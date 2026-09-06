@@ -1640,6 +1640,38 @@ knowledge-needs:
         shared across portfolios versus scoped to a single portfolio or
         portfolio stage in ODC, so that they can plan where to create assets and
         apply configurations correctly.
+    - name: Confirm portfolio structure for migration
+      id: confirm-portfolio-structure
+      description: Wants to confirm the target portfolio structure for an ODC
+        organization that already has existing apps and libraries before
+        starting an incremental migration, so that assets are grouped
+        correctly and existing deployments keep working throughout the
+        transition.
+    - name: Refactor dependencies for portfolio migration
+      id: refactor-portfolio-dependencies
+      description: Wants to refactor dependencies among existing apps and
+        libraries before separating them across ODC portfolios, so that
+        cross-portfolio consumers keep working during an incremental
+        migration.
+    - name: Prepare stages for portfolio migration
+      id: prepare-portfolio-stages
+      description: Wants to prepare portfolio stages for migrating existing
+        apps and libraries incrementally in ODC, so that each asset group can
+        be moved and validated in the right environment sequence without
+        disrupting active deployments.
+    - name: Update roles for portfolio migration
+      id: update-portfolio-roles
+      description: Wants to update portfolio access roles before and during an
+        incremental migration of existing apps and libraries in ODC, so that
+        the right teams can manage each portfolio without blocking ongoing
+        deployments.
+    - name: Migrate asset groups incrementally
+      id: migrate-asset-groups-incrementally
+      description: Wants to migrate one asset group at a time to portfolios in
+        an ODC organization that already has existing apps and libraries,
+        validating end-to-end flows before retiring the prior
+        implementation, so that existing deployments keep working throughout
+        the transition.
 - name: Asynchronous processes
   guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
   topics:
@@ -4598,6 +4630,20 @@ knowledge-needs:
   - name: Custom plugin development
     id: custom-plugin-development
     subtopics:
+    - name: Choose plugin approach
+      id: choose-plugin-approach
+      description: Wants to decide whether to build a custom Capacitor plugin
+        from scratch or reuse an existing option (Forge plugin, adapted Cordova
+        plugin, or community Capacitor plugin), so that they avoid
+        unnecessary investment in custom native plugin development for ODC
+        mobile apps.
+    - name: Plan custom Capacitor plugin
+      id: plan-custom-capacitor-plugin
+      description: Wants to plan a custom Capacitor plugin for an ODC mobile
+        app after deciding that no existing Forge plugin, adapted Cordova
+        plugin, or community Capacitor plugin meets their requirements, so
+        that they can start building from scratch with the right development
+        sequence.
     - name: Implement Android plugin
       id: android-plugin-implementation
       description: Wants to implement the native Android layer of a custom
@@ -4649,6 +4695,28 @@ knowledge-needs:
         the plugin with registerPlugin() in index.ts, so that the web layer
         serves as the entry point that native Android and iOS
         implementations bind to.
+    - name: Test custom Capacitor plugin
+      id: test-custom-capacitor-plugin
+      description: Wants to test a custom Capacitor plugin in an ODC mobile
+        app after implementing its web and native layers, so that they can
+        confirm it behaves correctly across supported platforms before
+        release.
+    - name: Package custom Capacitor plugin
+      id: package-custom-capacitor-plugin
+      description: Wants to package a custom Capacitor plugin for distribution
+        after implementing and testing it, so that consumers can install the
+        expected plugin files consistently in downstream projects.
+    - name: Publish Capacitor plugin to npm
+      id: publish-capacitor-plugin-npm
+      description: Wants to publish a tested custom Capacitor plugin to npm, so
+        that ODC wrapper libraries and consuming mobile apps can install a
+        versioned release from a standard package registry.
+    - name: Create ODC wrapper library for plugin
+      id: create-odc-wrapper-library-plugin
+      description: Wants to create an ODC wrapper library for a custom
+        Capacitor plugin after the plugin package is ready, so that ODC mobile
+        app developers can call the plugin through reusable OutSystems
+        elements instead of hand-writing JavaScript integration code.
   - name: Deep linking
     id: deep-linking
     subtopics:
@@ -4668,6 +4736,16 @@ knowledge-needs:
         app.
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
+  topics:
+  - name: Organization region information
+    id: organization-region-information
+    subtopics:
+    - name: View organization regions
+      id: view-organization-regions
+      description: Wants to view their ODC organization's Runtime region,
+        Data platform region, and Platform region on the Organization page
+        in ODC Portal, so that they can verify data residency for
+        compliance and allowlist the correct IP addresses for networking.
 - name: Product security
   guid: f5935fdf-7f64-46b8-bc71-dd69627c33d8
   topics:
@@ -4723,6 +4801,32 @@ knowledge-needs:
         embargo/disclosure timeline, patched versions), so that they can assess
         their exposure and apply the appropriate patch or workaround to protect
         their OutSystems 11 on-premises or cloud environment.
+  - name: Regulatory compliance
+    id: regulatory-compliance
+    subtopics:
+    - name: HIPAA requirements
+      id: hipaa-compliance-requirements
+      description: Wants to understand what protected health information (PHI) and
+        electronic PHI (ePHI) are under HIPAA, the difference between the HIPAA
+        Privacy Rule and Security Rule, and who counts as a covered entity or
+        business associate, so that they can determine whether their OutSystems
+        application handling health data falls under HIPAA obligations.
+    - name: Achieve HIPAA compliance
+      id: hipaa-odc-compliance
+      description: Wants to understand what's required to achieve HIPAA compliance for an
+        OutSystems Developer Cloud (ODC) application handling protected health
+        information (PHI), such as obtaining a Business Associate Agreement
+        (BAA), independent auditor attestation, and access to an audit trail, so
+        that they can legally handle PHI in production and meet their
+        organization's compliance obligations.
+    - name: Achieve PCI compliance
+      id: pci-odc-compliance
+      description: Wants to achieve PCI DSS compliance for an OutSystems Developer Cloud
+        (ODC) application processing credit card payments, by delegating payment
+        handling to a third-party PCI-compliant payment gateway rather than
+        processing card data directly, and using Sentry for ODC, so that
+        cardholder data is never stored or processed within OutSystems
+        applications and compliance obligations are met.
 - name: Production Recovery
   guid: e392931b-251f-4d43-8c0b-c85bbc97e02e
   topics:
@@ -5068,6 +5172,14 @@ knowledge-needs:
     subtopics:
     - name: Creating Users
       id: creating-users
+    - name: Register user actions
+      id: register-user-system-actions
+      description: Wants to register a new end user in ODC's built-in
+        identity provider by calling StartUserRegistration to create the
+        user and obtain a temporary password, then FinishUserRegistration
+        to activate the password and log the user in, so that a new user
+        account becomes usable without going through the standard
+        self-registration screens.
     - name: Deleting Users
       id: deleting-users
     - name: Updating Users
@@ -5180,6 +5292,12 @@ knowledge-needs:
         usage across production runtimes, using Service Center in OutSystems
         11 or the Subscription section of the ODC Portal, so that they can
         manage AO consumption and know when to request a capacity upgrade.
+    - name: View subscription entitlements
+      id: view-subscription-entitlements
+      description: Wants to view their organization's and portfolios' subscription details
+        and entitlement consumption across resource types, along with available
+        add-ons, using the Subscription page in ODC Portal, so that they can
+        monitor usage and know when to request an upgrade.
   - name: Expanded governance
     id: expanded-governance
     subtopics:

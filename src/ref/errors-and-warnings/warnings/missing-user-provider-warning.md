@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) troubleshooting guide for resolving missing User Provider module errors during application runtime.
-tags: outsystems, troubleshooting, application runtime, platform server, user provider
+tags:
+  - Authentication
+  - External Authentication
+  - Platform Server
+  - Troubleshooting
 locale: en-us
 guid: 708e1290-d4e0-4877-96fa-19876fd8b685
 app_type: traditional web apps, mobile apps, reactive web apps

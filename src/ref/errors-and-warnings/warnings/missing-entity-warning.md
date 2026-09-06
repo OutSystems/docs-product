@@ -5,7 +5,11 @@ guid: 714e8e95-4ada-4a81-9929-e392e5ae55dd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, entity management, outsystems platform, server configuration, deployment issues
+tags:
+  - Deploy
+  - Entities
+  - Platform Server
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

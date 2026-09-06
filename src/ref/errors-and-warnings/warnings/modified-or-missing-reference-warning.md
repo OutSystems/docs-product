@@ -5,7 +5,10 @@ guid: eacad4d3-ae36-4f26-bb60-02ba575bf448
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, application lifecycle management, module management, dependency management, compatibility issues
+tags:
+  - Extensions
+  - Modular Programming
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

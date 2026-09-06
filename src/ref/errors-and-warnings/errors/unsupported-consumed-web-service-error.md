@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: soap web services, error handling, application integration, web service consumption, service orchestration
 audience:
-  - Developer
-  - Front-end developer
-  - Platform administrator
   - Architect
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

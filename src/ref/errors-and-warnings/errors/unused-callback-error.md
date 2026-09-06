@@ -8,7 +8,6 @@ figma:
 tags: outsystems, error handling, rest api, api callbacks, outsystems service studio
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

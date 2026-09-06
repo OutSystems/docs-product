@@ -8,7 +8,6 @@ figma:
 tags: error handling, rest api, data formatting, outsystems service studio, api design
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

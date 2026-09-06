@@ -8,7 +8,6 @@ figma:
 tags: error handling, entity attributes, data modeling, ide error messages, outsystems development
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

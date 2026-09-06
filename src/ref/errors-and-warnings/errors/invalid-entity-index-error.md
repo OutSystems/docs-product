@@ -8,7 +8,6 @@ figma:
 tags: error resolution, database management, entity modeling, index configuration, data types
 audience:
   - Developer
-  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

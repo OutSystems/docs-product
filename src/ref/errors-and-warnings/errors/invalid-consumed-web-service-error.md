@@ -8,7 +8,6 @@ figma:
 tags: error handling, web services, soap protocol, troubleshooting, integration issues
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,7 +7,6 @@ platform-version: o11
 figma:
 tags: error handling, database design, data modeling, circular dependencies, sorting data
 audience:
-  - Front-end developer
   - Developer
 outsystems-tools:
   - service studio

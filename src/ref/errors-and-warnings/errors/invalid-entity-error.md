@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) addresses common entity configuration errors, detai
 tags: error handling, data modeling, database configuration, app development, entity management
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

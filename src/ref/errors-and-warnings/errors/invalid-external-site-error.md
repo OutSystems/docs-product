@@ -8,7 +8,6 @@ figma:
 tags: error handling, external integrations, debugging, best practices
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

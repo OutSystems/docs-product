@@ -8,7 +8,6 @@ figma:
 tags: error resolution, excel integration, data types handling, best practices, system troubleshooting
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

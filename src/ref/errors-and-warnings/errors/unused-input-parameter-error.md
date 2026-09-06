@@ -5,7 +5,11 @@ guid: d8e4aae9-26ab-4de7-af48-5bd5e2fd9962
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: rest api, api development, error handling, debugging, service studio
+tags:
+  - Debugging
+  - REST
+  - Troubleshooting
+  - Web services
 audience:
   - Front-end developer
   - Developer

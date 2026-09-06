@@ -122,6 +122,20 @@ knowledge-needs:
         parent-passed input parameters change, by implementing the block's
         On Parameters Changed event handler in Service Studio, so that the
         block reflects updates without needing a full screen refresh.
+    - name: Fix OnRender loop warning
+      id: fix-onrender-loop-warning
+      description: Wants to fix the "Potential Loop at Runtime" warning caused
+        by changing screen or block data inside an OnRender action, in Service
+        Studio for OutSystems 11, by removing that data change from the
+        OnRender action, so that the OnRender event doesn't retrigger itself
+        and cause an infinite rendering loop.
+    - name: Fix OnAfterFetch loop warning
+      id: fix-onafterfetch-loop-warning
+      description: Wants to fix the "Potential Loop at Runtime" warning caused
+        by refreshing an Aggregate or Data Action inside its own OnAfterFetch
+        action, in Service Studio for OutSystems 11, by removing that refresh
+        from the OnAfterFetch action, so that the OnAfterFetch event doesn't
+        retrigger itself and cause an infinite fetch loop.
   - name: Understanding Exceptions
     id: understanding-exceptions
     subtopics:
@@ -255,6 +269,14 @@ knowledge-needs:
         from the Text Extension (StringBuilder_Append) instead of plain string concatenation,
         so that operations that build large outputs, such as serializing large record
         sets, avoid severe performance degradation.
+    - name: Avoid complex data types
+      id: avoid-complex-data-types
+      description: Wants to fix Service Studio scalability suggestion warnings
+        about Binary Data, List, or Record-typed screen input parameters,
+        session variables, and entity attributes, by avoiding those complex
+        data types on screens/session state (or splitting a Binary Data
+        attribute into a separate one-to-one entity), so that OutSystems 11
+        apps avoid unnecessary performance overhead.
 - name: (Creating Basic) Application Security
   guid: f89b0297-9ba2-48bd-9e84-b56614a7e620
   topics:
@@ -263,6 +285,13 @@ knowledge-needs:
     subtopics:
     - name: Anonymous
       id: anonymous
+    - name: Secure anonymous screens
+      id: secure-anonymous-screens
+      description: Wants to resolve the Service Studio warning about exposing
+        a Server Action for public/anonymous access, by removing the
+        Anonymous role from a screen or otherwise validating server-side
+        data access, so that public endpoints don't expose sensitive data or
+        enable cross-site request forgery attacks.
     - name: Check user role in code
       id: check-user-role-in-code
       description: Wants to verify whether the currently logged-in end-user has
@@ -490,6 +519,32 @@ knowledge-needs:
         adding another attribute, moving binary data to a new entity, or
         correcting the table name, so that the entity compiles and
         publishes successfully.'
+    - name: Fix table name changed
+      id: fix-table-name-changed
+      description: 'Wants to fix the "Entity physical table name was set to..."
+        warning in Service Studio for OutSystems 11, caused by the entity''s
+        physical table name colliding with an existing external table name in
+        the database, by acknowledging Service Studio''s automatic rename to
+        a non-conflicting name, so that the entity compiles and publishes
+        successfully without a database naming clash.'
+    - name: Fix data type warning
+      id: fix-unexpected-data-type-warning
+      description: 'Wants to fix the "Unexpected Data Type" warning family in
+        Service Studio for OutSystems 11, caused by comparing Entity
+        identifiers of different data types, using an incorrect data type in
+        an expression or Built-in function, or referencing a Static Entity
+        Record with the wrong attribute data type, by matching the data types
+        involved or setting the correct <Static Entity Name> Identifier type,
+        so that the expression or entity compiles and publishes successfully.'
+    - name: Fix database warning
+      id: fix-database-type-warning
+      description: 'Wants to fix the "module ''Database'' property (<database>)
+        does not match Platform Server database type (<database>)" warning in
+        Service Studio for OutSystems 11, caused by the module''s Database
+        property not matching the server''s configured database type, by
+        setting the property to the correct database type or "(Both)" and
+        validating that SQL queries are compliant with the chosen database,
+        so that the module compiles without the mismatch warning.'
   - name: Querying data
     id: querying-data
     subtopics:
@@ -501,6 +556,13 @@ knowledge-needs:
         they can choose the right query approach for a data task in OutSystems.
     - name: Joins
       id: joins
+    - name: Fix cross join warning
+      id: fix-cross-join-warning
+      description: Wants to fix the Service Studio scalability suggestion
+        warning that an aggregate is being calculated as a cross join for
+        each entity, by adding the missing join condition between the
+        entities in the aggregate, so that the query performs an inner or
+        outer join instead of unnecessarily evaluating every combination.
     - name: Filter data
       id: filter-data
     - name: Aggregates
@@ -652,6 +714,12 @@ knowledge-needs:
         count and backoff intervals, and concurrent execution/duration limits —
         so that they can design event payloads, queues, and consumer logic
         within ODC's supported constraints.
+    - name: Trigger ODC event
+      id: trigger-odc-event
+      description: Wants to create a public event with an input parameter in
+        ODC Studio and trigger it from a server action using an IF condition
+        and a Trigger Event node, so that the event fires only when a new
+        record is created, providing the data a workflow needs to start.
 - name: Advanced data handling
   guid: c6a945c1-deaa-4266-9b94-d7b31d9fdf07
   topics:
@@ -814,6 +882,14 @@ knowledge-needs:
         accurate access plans and performance recovers.
   - name: Indexes
     id: indexes
+    subtopics:
+    - name: Index FK reference attribute
+      id: index-fk-reference-attribute
+      description: Wants to fix the Service Studio scalability suggestion
+        recommending an index on an entity's Foreign Key reference
+        attribute, by creating that index when the attribute's Delete Rule
+        is set to Protect or Delete, so that the OutSystems 11 app avoids
+        the performance cost of an unindexed reference lookup.
   - name: Enforcing data integrity
     id: enforcing-data-integrity
   - name: Exposing data via REST webservices
@@ -1003,6 +1079,14 @@ knowledge-needs:
         deleted), by importing at least one remote function or deleting the
         connection, so that the SAP connection compiles and publishes
         successfully in OutSystems 11.
+    - name: Fix SAP decimal warning
+      id: fix-sap-decimal-warning
+      description: Wants to resolve the "This can result in data loss" warning
+        caused by an SAP remote function parameter mapped to Decimal that can
+        exceed the Decimal data type's supported range or digit length, by
+        checking whether the SAP data fits within Decimal's boundaries and
+        switching the parameter to Text instead, so that the integration
+        avoids runtime errors or silent rounding in OutSystems 11.
   - name: Private Gateway
     id: private-gateway
     subtopics:
@@ -1188,6 +1272,14 @@ knowledge-needs:
         an External Site element that doesn't take a URL input, in
         OutSystems 11, so that malicious redirect URLs can't be injected via
         that parameter.
+    - name: Fix SQL injection warning
+      id: fix-sql-injection-warning
+      description: Wants to resolve the Service Studio warning that a SQL
+        Query Parameter has Expand Inline enabled, including the specific
+        case of a parameter used after ORDER BY or GROUP BY, by disabling
+        Expand Inline where possible or ensuring the parameter value doesn't
+        contain end-user input, in OutSystems 11, so their application isn't
+        vulnerable to SQL injection.
   - name: Access control risks
     id: access-control-risks
     description: Wants to protect OutSystems 11 applications from access control
@@ -1215,6 +1307,25 @@ knowledge-needs:
         for identifying the instance, and built-in functions, in ODC's Workflow
         editor, so that workflow instances are easier to identify and
         troubleshoot in logs and the Portal.
+    - name: Add decision activity
+      id: add-decision-activity
+      description: Wants to add a Decision activity to an ODC workflow, defining
+        conditions on the outcomes to route execution down different paths
+        based on data values, in ODC's Workflow editor, so that the workflow
+        follows the correct path for each case.
+    - name: Configure automatic path
+      id: configure-automatic-path
+      description: Wants to configure the automatic outcome path after a
+        Decision activity in an ODC workflow, using automatic activities to
+        run service actions and send notifications, in ODC's Workflow editor,
+        so that the process completes without manual intervention when
+        conditions are met.
+    - name: Pause for manual review
+      id: pause-for-manual-review
+      description: Wants to pause a workflow with a Wait activity until a
+        business event occurs, then hand off to a Human activity assigned to
+        a role that closes on another event, in ODC's Workflow editor, so that
+        a person can complete a required task before the workflow continues.
     - name: Create a workflow
       id: create-workflow
       description: Wants to implement a workflow in ODC Portal by creating it
@@ -3472,6 +3583,13 @@ knowledge-needs:
       description: Wants to navigate the ODC Studio IDE as a newcomer by understanding what
         each major area of the interface is for, so they can move through the
         tool without getting blocked by layout or navigation friction.
+    - name: Get diagnostics report
+      id: get-diagnostics-report
+      description: Wants to obtain and send an ODC Studio diagnostics report to
+        OutSystems Support after an unexpected error or a non-error behavior
+        issue, by expanding the Unexpected Error window or using the Give Us
+        Feedback icon, opening the report in a text editor, and saving it as
+        a text file, so that Support has the information needed to investigate.
   - name: Publish and share apps
     id: publish-and-share-apps
     subtopics:
@@ -5146,6 +5264,14 @@ knowledge-needs:
         embargo/disclosure timeline, patched versions), so that they can assess
         their exposure and apply the appropriate patch or workaround to protect
         their OutSystems 11 on-premises or cloud environment.
+    - name: Activate remoting security
+      id: activate-remoting-security
+      description: Wants to activate the Enhanced security for Remoting requests
+        setting per environment (including LifeTime) after upgrading to the
+        RPM-3056 fixed Platform Server/LifeTime versions and upgrading their
+        apps, so that they can complete the mandatory remediation for this
+        vulnerability without breaking apps compiled on older, unpatched
+        versions.
   - name: Regulatory compliance
     id: regulatory-compliance
     subtopics:
@@ -5643,6 +5769,13 @@ knowledge-needs:
         and entitlement consumption across resource types, along with available
         add-ons, using the Subscription page in ODC Portal, so that they can
         monitor usage and know when to request an upgrade.
+    - name: Agent Execution counting
+      id: agent-execution-counting
+      description: Wants to know how Agent Executions are counted in OutSystems,
+        understanding that each CallAgent action call at runtime counts as one
+        Execution regardless of the number of actions, tools, or AI model calls
+        performed within that call, so that they can accurately estimate Agent
+        Execution consumption for licensing purposes.
   - name: Expanded governance
     id: expanded-governance
     subtopics:

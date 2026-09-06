@@ -1301,6 +1301,13 @@ knowledge-needs:
         and how to install it from Forge for OutSystems 11, so that they can use it
         to manage web.config shared configurations and platform-level settings across
         their Service Center Factory.
+    - name: Use settings in logic
+      id: use-settings-in-logic
+      description: Wants to reference an app setting's value in server-side
+        logic (server actions) and client-side logic (client actions) in
+        ODC Studio, using a Settings expression directly on the server and
+        a wrapper server action for the client, so that hardcoded values
+        are avoided and secret settings stay on the server.
     - name: Shared configurations
       id: factory-configuration-shared-configs
       description: Wants to create shared configurations in Factory Configuration using
@@ -1477,6 +1484,54 @@ knowledge-needs:
       description: Wants to roll back accepted library updates in consuming apps
         or libraries in ODC when needed, so that they can recover safely from
         breaking updates.
+  - name: Multi-portfolio architecture
+    id: multi-portfolio-architecture
+    subtopics:
+    - name: Identify cross-portfolio needs
+      id: identify-cross-portfolio-needs
+      description: Wants to identify which business concepts, logic/UI components,
+        or data need to be shared across portfolios in a multi-portfolio
+        organization, so that they can extract shared functionality into
+        libraries or expose it via REST APIs.
+    - name: Own shared portfolio libraries
+      id: own-shared-portfolio-libraries
+      description: Wants to establish clear ownership and governance for
+        libraries shared across portfolios, including using a dedicated shared
+        building blocks portfolio owned by a platform group or Center of
+        Excellence (CoE), so that other portfolios can adopt library updates
+        on their own schedule without affecting release cadence.
+    - name: Portfolio boundary design
+      id: portfolio-boundary-design
+      description: Wants to decide portfolio boundaries by grouping apps that
+        share service actions, entities, or bounded-context logic together and
+        choosing the correct portfolio at asset creation, since ODC doesn't
+        support moving assets between portfolios afterward, so that consumer
+        apps keep working and rework is avoided.
+    - name: Per-portfolio configs
+      id: per-portfolio-configs
+      description: Wants to configure portfolio-specific settings, such as REST
+        API endpoint URLs, identity providers, and connection strings or
+        credentials, when consuming a REST API from another portfolio, so
+        that each stage authenticates and connects correctly per portfolio.
+    - name: Forge asset ownership
+      id: forge-asset-ownership
+      description: Wants to understand that in a multi-portfolio ODC
+        organization, an installed Forge asset is permanently owned by the
+        portfolio chosen at installation (following its stages,
+        configurations, and access controls), and that install/update
+        permissions, plus any dependencies Forge installs, are scoped to
+        that same portfolio, so they select the correct portfolio and
+        confirm they have the right permissions before installing or
+        updating a Forge asset.
+    - name: Clone Forge asset
+      id: clone-forge-asset
+      description: Wants to clone a locked, installed Forge asset into a
+        different portfolio in a multi-portfolio ODC organization when they
+        need to modify its implementation, understanding that the clone
+        becomes an independent editable copy following the target
+        portfolio's stages and access controls while apps keep referencing
+        the original until updated, so they can safely customize Forge
+        assets without affecting other portfolios.
 - name: Asynchronous processes
   guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
   topics:
@@ -2521,6 +2576,14 @@ knowledge-needs:
       id: environments-stages
     - name: Deployment options
       id: deployment-options
+    - name: Portfolio deploy scope
+      id: portfolio-deploy-scope
+      description: Wants to understand how deployment, promotion, and undeployment
+        of assets are scoped to a single portfolio's stages and pipeline in a
+        multi-portfolio OutSystems Developer Cloud (ODC) organization,
+        including separate revisions, versions, and deployment history per
+        portfolio, so that they deploy and undeploy assets in the correct
+        portfolio without affecting others.
   - name: Manual deployment with an infrastructure management console
     id: manual-deploy-mgmt-console
     subtopics:
@@ -2749,6 +2812,20 @@ knowledge-needs:
         logic, drag-and-drop UI composition, and automatic data and logic
         wiring, so they don't force imperative coding habits into Service Studio
         and get blocked early when building their first app.
+  - name: Using ODC Portal and Studio
+    id: using-odc-portal-and-studio
+    subtopics:
+    - name: ODC Portal overview
+      id: odc-portal-overview
+      description: Wants to navigate the ODC Portal as a newcomer by understanding
+        what the top bar, Navigation menu, and app-creation options are for, so
+        they can move through the console without getting blocked by layout or
+        navigation friction.
+    - name: ODC Studio overview
+      id: odc-studio-overview
+      description: Wants to navigate the ODC Studio IDE as a newcomer by understanding what
+        each major area of the interface is for, so they can move through the
+        tool without getting blocked by layout or navigation friction.
   - name: Publish and share apps
     id: publish-and-share-apps
     subtopics:
@@ -3315,6 +3392,47 @@ knowledge-needs:
         prompts or requirement documents in Mentor Web, meeting theme
         compatibility requirements, so that the generated app uses the
         intended visual theme.
+  - name: Mentor Studio prompts
+    id: mentor-studio-prompts
+    subtopics:
+    - name: Logic prompts
+      id: mentor-studio-logic-prompts
+      description: Wants to write prompts for Mentor Studio to create or
+        modify server actions, client actions, service actions, and
+        aggregates, using a basic-to-detailed prompt progression, so that
+        ODC Studio artifacts are generated or modified correctly.
+    - name: UI prompts
+      id: mentor-studio-ui-prompts
+      description: Wants to write prompts for Mentor Studio to create or
+        modify screens, web blocks, and layouts, using a basic-to-detailed
+        prompt progression, so that ODC Studio artifacts are generated or
+        modified correctly.
+    - name: Data model prompts
+      id: mentor-studio-data-model-prompts
+      description: Wants to write prompts for Mentor Studio to create or
+        modify entities, attributes, and relationships, using a
+        basic-to-detailed prompt progression, so that ODC Studio artifacts
+        are generated or modified correctly.
+    - name: TrueChange error and warning prompts
+      id: mentor-studio-truechange-prompts
+      description: Wants to write prompts for Mentor Studio to resolve
+        TrueChange errors and warnings, so that compile issues are
+        diagnosed and corrected without manual debugging.
+    - name: Behavior and bug fix prompts
+      id: mentor-studio-behavior-bug-fix-prompts
+      description: Wants to write prompts for Mentor Studio to identify and
+        fix unexpected app behavior or bugs, so that logic issues are
+        diagnosed and corrected without manual debugging.
+    - name: Technical debt refactor prompts
+      id: mentor-studio-technical-debt-refactor-prompts
+      description: Wants to write prompts for Mentor Studio to identify and
+        refactor technical debt, so that large or messy logic becomes
+        maintainable.
+    - name: Requirement breakdown prompts
+      id: mentor-studio-requirement-breakdown-prompts
+      description: Wants to write prompts for Mentor Studio to break down
+        complex requirements into smaller implementation steps, so that
+        large features become actionable to build incrementally.
   - name: AI models and search services
     id: ai-models-and-search-services
     subtopics:
@@ -4599,6 +4717,34 @@ knowledge-needs:
         the Administrator role unless necessary, testing roles before rollout, and
         auditing permissions regularly, so that they can govern access securely and
         maintainably across their organization.
+  - name: Multi-portfolio user management
+    id: multi-portfolio-user-management
+    subtopics:
+    - name: Centralized user access
+      id: centralized-user-access
+      description: Wants to understand how ODC manages users (members,
+        end-users, and API clients) at the organization level rather than
+        per portfolio, with a single user profile and organization roles
+        that include portfolio-scoped permissions, in a multi-portfolio
+        organization, so that they don't create redundant per-portfolio
+        accounts and understand the centralized user model.
+    - name: Configure portfolio roles
+      id: configure-portfolio-roles
+      description: Wants to configure organization roles' portfolio-level permissions
+        across the available permission categories for one or more portfolios,
+        including relying on the built-in Administrator role for automatic
+        access to all portfolios or the Developer role scoped to the main
+        portfolio, and designing custom cross-portfolio or portfolio-specific
+        roles, in a multi-portfolio ODC organization, so that each user gets the
+        correct level of access per portfolio.
+    - name: End-users in portfolios
+      id: end-users-in-portfolios
+      description: Wants to understand how end-users are managed in a
+        multi-portfolio ODC organization, including that a single end-user
+        profile is shared and counted once toward the organization-level
+        end-user limit while end-user groups and IdP assignments remain
+        portfolio-specific, so that they can plan end-user access and
+        authentication correctly across portfolios.
   - name: Subscription and entitlement management
     id: subscription-entitlement-management
     subtopics:
@@ -5167,6 +5313,24 @@ knowledge-needs:
         Collector receiver and Splunk Exporter, updating the collector image
         version, and registering the collector endpoint and credentials in
         LifeTime, so that logs stream to Splunk in near real time.
+- name: Log streaming (ODC)
+  guid: 5e4d826e-41ed-47ae-9f2e-9c87b56d41f2
+  topics:
+  - name: Stream configuration
+    id: odc-stream-configuration
+    subtopics:
+    - name: Create analytics stream
+      id: create-analytics-stream
+      description: Wants to create a stream in the ODC Portal by selecting a destination
+        APM tool, entering destination and source environment details, and
+        testing the connection, so that observability data (logs, metrics, and
+        traces) streams from their app to that APM tool.
+    - name: Stream status meanings
+      id: stream-status-meanings
+      description: Wants to understand what the Active, Active with errors, and
+        Inactive statuses mean for a stream in the ODC Portal, so they can tell
+        whether observability data is being delivered correctly to the
+        destination APM tool.
 - name: O11 Data Migration
   guid: ''
   topics:

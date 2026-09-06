@@ -5,7 +5,10 @@ guid: 590a02ff-3c8a-442a-a6af-a18205dbe1d8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: module management, entity references, permissions, environment management, troubleshooting
+tags:
+  - Entities
+  - Modular Programming
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

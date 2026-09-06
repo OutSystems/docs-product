@@ -1,6 +1,9 @@
 ---
 summary: Explore how to resolve incomplete upgrade warnings in OutSystems 11 (O11) by ensuring all modules are updated post-server upgrade.
-tags: upgrade issues, deployment best practices, error resolution, server management, application lifecycle management
+tags:
+  - Deploy
+  - Platform Server
+  - Troubleshooting
 helpids: 30220
 locale: en-us
 guid: E5F5D75D-ABCE-4BAF-956E-30F5E6111B05

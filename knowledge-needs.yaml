@@ -3957,6 +3957,12 @@ knowledge-needs:
       description: Wants to resolve a MABS build error that isn't yet documented,
         by opening a support case with OutSystems Support, so that they can get
         help resolving their mobile app build issue.
+    - name: Deprecated MABS version error
+      id: deprecated-mabs-version-error
+      description: Wants to resolve the error that occurs when creating a
+        mobile app package using a deprecated MABS version, by switching to a
+        MABS version that meets the minimum required version, so that the
+        mobile app package generates successfully.
   - name: AppShield
     id: appshield
     subtopics:

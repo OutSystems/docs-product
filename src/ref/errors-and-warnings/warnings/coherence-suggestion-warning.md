@@ -5,7 +5,10 @@ guid: b50e7c6e-1f6a-4ae5-bd3d-5c621d1bd899
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, user interface design, data validation, form input, entity management
+tags:
+  - Entities
+  - Forms
+  - Widgets
 audience:
   - Front-end developer
   - Developer

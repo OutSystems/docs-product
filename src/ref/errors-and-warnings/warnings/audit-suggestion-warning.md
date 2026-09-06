@@ -5,7 +5,11 @@ guid: daf2fc35-917d-446f-b1a8-3f821f59dda8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, exception logging, best practices, debugging, application monitoring
+tags:
+  - Best Practices
+  - Debugging
+  - Logging
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

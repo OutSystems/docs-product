@@ -5,7 +5,10 @@ guid: 781daf7e-11c4-4792-b928-e8d9a993f5fe
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: jquery upgrade, application compatibility, software maintenance, web development, platform-specific advice
+tags:
+  - Front-End
+  - JavaScript
+  - Troubleshooting
 audience:
   - Front-end developer
   - Developer

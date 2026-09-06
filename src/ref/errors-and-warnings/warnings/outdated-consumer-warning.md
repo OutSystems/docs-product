@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) error indicates an outdated consumer module due to changes in a producer module, requiring republishing.
+summary: OutSystems 11 (O11) outdated consumer warning appears when a producer module change requires republishing the consumer module.
 locale: en-us
 guid: 00c4300a-4dd9-4770-a540-ddec24bc8d79
 app_type: traditional web apps, mobile apps, reactive web apps

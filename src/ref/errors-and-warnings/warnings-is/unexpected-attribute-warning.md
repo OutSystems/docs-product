@@ -8,7 +8,6 @@ figma:
 tags: database management, oracle database, reserved words, attribute naming, error handling
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -8,7 +8,6 @@ figma:
 tags: resource management, extension customization, file naming conventions, deployment issues, reserved namespaces
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - integration studio

@@ -8,7 +8,6 @@ figma:
 tags: extension development, error handling, development best practices, .net integration, outsystems ide
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

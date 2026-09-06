@@ -8,7 +8,6 @@ figma:
 tags: .net, software development kit, compilation error, 1-click publish, extension deployment
 audience:
   - Developer
-  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

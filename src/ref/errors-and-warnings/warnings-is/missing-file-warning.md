@@ -8,7 +8,6 @@ figma:
 tags: error handling, extension management, resource management, file system integration, outsystems best practices
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

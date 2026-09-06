@@ -1,6 +1,8 @@
 ---
 summary: Learn how to resolve the 'Old Producer Error' in OutSystems 11 (O11) when a module hasn't been prepared for the current environment version.
-tags: platform server upgrade, environment configuration, application publishing, dependency management, error handling
+tags:
+  - Platform Server
+  - Troubleshooting
 locale: en-us
 guid: 0897286f-5a9a-480b-992f-1855920b9ed1
 app_type: traditional web apps, mobile apps, reactive web apps

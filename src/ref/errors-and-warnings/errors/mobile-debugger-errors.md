@@ -5,7 +5,10 @@ guid: 960f029e-c1fc-444c-bb46-ac92fdda5916
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ide usage, reactive web apps, tutorials for beginners, mobile app debugging, google chrome, error handling
+tags:
+  - Debugging
+  - Mobile app
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

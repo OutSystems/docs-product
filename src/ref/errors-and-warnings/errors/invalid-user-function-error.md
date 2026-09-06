@@ -5,7 +5,9 @@ guid: cc89e846-d1a0-41bb-b604-c2ecef4bbf6c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, debugging, application development, platform troubleshooting, functionality configuration
+tags:
+  - Debugging
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

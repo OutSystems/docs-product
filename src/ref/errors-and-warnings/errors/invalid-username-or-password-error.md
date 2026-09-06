@@ -5,7 +5,10 @@ guid: 7b4eaa43-6615-4829-8e22-b7df71e4f887
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, authentication, rest api, basic authentication, best practices
+tags:
+  - Authentication
+  - REST
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

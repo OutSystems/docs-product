@@ -572,6 +572,16 @@ knowledge-needs:
         semantic tags instead of generic span/div elements.
   - name: Translating apps
     id: translating-apps
+    subtopics:
+    - name: Migrate Multilingual
+      id: migrate-multilingual
+      description: Wants to migrate translations, clean up client-action logic
+        (GetLocale, SetLocale, GetTranslation, AddTranslations,
+        AddTranslationsFromResource), and remove the module dependency from
+        the deprecated Multilingual Forge component to the built-in
+        multilingual feature, in Service Studio for OutSystems 11, so that
+        the app's translations and logic keep working without the
+        unsupported Forge component.
 - name: Advanced app architecture
   guid: d59b4004-582f-44ee-a1ae-eb75787ba1e0
   topics:
@@ -1832,6 +1842,14 @@ knowledge-needs:
         Width value or increasing the theme''s Grid property, in Service Studio
         for OutSystems 11, so they can continue publishing or running the app
         without the error.'
+    - name: Uppercase input text
+      id: uppercase-input-text
+      description: 'Wants to display input text in uppercase at runtime while
+        keeping the stored variable''s original letter case, by applying a
+        text-transform: uppercase CSS style class to the Input widget and
+        using the ToUpper function on the variable in logic, in Service
+        Studio for OutSystems 11, so end users see uppercase text without
+        altering the underlying data casing.'
   - name: UI framework migration
     id: ui-framework-migration
     subtopics:
@@ -2245,6 +2263,21 @@ knowledge-needs:
         11, so that a line chart with a smooth spline line and custom markers
         displays correctly in traditional web apps, mobile apps, and reactive
         web apps.
+    - name: Order combo box list
+      id: order-combo-box-list
+      description: Wants to control the order of items displayed in a Combo Box
+        widget by sorting the Source Record List, for example via an Aggregate's
+        Sort property, in Service Studio, so that a combo box displays entries
+        in a specific order, in traditional web apps, mobile apps, and reactive
+        web apps for OutSystems 11.
+    - name: Set combo box default
+      id: set-combo-box-default
+      description: Wants to set the default selected value of a Combo Box widget
+        by initializing the destination Variable with the desired Source
+        Identifier Attribute value, for example using IntegerToIdentifier, in
+        Service Studio, so that the combo box pre-selects a specific record
+        when the screen loads, in traditional web apps, mobile apps, and
+        reactive web apps for OutSystems 11.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -2381,6 +2414,29 @@ knowledge-needs:
         Refresh, in Service Studio for OutSystems 11 Traditional Web Apps, so
         that dependent form fields (for example, a date range) update without
         requiring the user to manually re-enter data.
+    - name: Multiline table input
+      id: multiline-table-input
+      description: Wants to allow multiline input in an Editable Table's Text
+        Area by using JavaScript to intercept the Enter keypress and insert
+        a new line instead of triggering the table's auto-save, in Service
+        Studio for OutSystems 11 Traditional Web Apps, so that users can
+        enter multi-line text without the row saving prematurely.
+    - name: Remove add record
+      id: remove-add-record-editable-table
+      description: Wants to disable the ability to add new records in an
+        Editable Table by modifying the On Row Save server action (changing
+        CreateOrUpdate to Update and removing row-creation logic), hiding the
+        Add Record icon with a CSS snippet, and blocking the auto-new-row TAB
+        behavior with a JavaScript snippet, in Service Studio for OutSystems
+        11 Traditional Web Apps, so that end users can only edit existing
+        records.
+    - name: Remove delete record
+      id: remove-delete-record-editable-table
+      description: Wants to disable the ability to delete records in an
+        Editable Table by leaving the On Row Delete event empty and hiding
+        the Delete Record icon/link with a CSS snippet, in Service Studio for
+        OutSystems 11 Traditional Web Apps, so that end users can only edit
+        existing records without deleting them.
   - name: Using external JavaScript
     id: using-external-javascript
     subtopics:
@@ -2416,6 +2472,14 @@ knowledge-needs:
       id: secure-ui-element
     - name: Secure screen
       id: secure-screen
+    - name: Prevent content copying
+      id: prevent-content-copying
+      description: Wants to prevent users from copying or capturing page text
+        and images, by adding CSS to disable text selection and hide content
+        when printing, and JavaScript to block the right-click context menu
+        and the print screen key, in OutSystems 11 traditional web apps,
+        mobile apps, and reactive web apps, so that page content is harder
+        to copy, print, or screenshot.
   - name: Basic front-end architecture
     id: basic-frontend-arch
     subtopics:
@@ -3482,6 +3546,14 @@ knowledge-needs:
         SQLite plugin limitation in how Android handles JSON objects
         internally, so that they can keep entities under the 50-attribute
         threshold and avoid the issue.
+    - name: Persist screen state
+      id: persist-screen-state
+      description: Wants to maintain field values entered on a mobile screen (for
+        example, a search form) across navigation to other screens and back, by
+        storing the values in a Local Storage entity filtered by user ID and
+        updating it via a client action on the field's OnChange event, in
+        Service Studio for OutSystems 11, so that user input persists without
+        relying on the back button.
   - name: Firebase plugin migration
     id: migrate-firebase-plugins
     description: Wants to migrate mobile app logic from unsupported Firebase-based

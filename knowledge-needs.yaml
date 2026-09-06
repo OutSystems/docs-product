@@ -1668,6 +1668,13 @@ knowledge-needs:
         (optionally reading the prior locale via GetCurrentLocale), in Service
         Studio for O11, so that the email is sent in the same language as the
         user's session.
+    - name: Find last sent email
+      id: find-last-sent-email
+      description: Wants to find the timestamp of the last sent email in
+        OutSystems 11, either by referencing the Sent_Email and Email_Status
+        entities' Sent attribute in Service Studio, or by checking the Email
+        Log screen in Service Center's Monitoring tab, so that they can
+        verify when an email was actually sent.
   - name: BPT
     id: bpt
     subtopics:
@@ -2313,11 +2320,11 @@ knowledge-needs:
     - name: Configure Line Chart
       id: configure-line-chart
       description: Wants to add the Line Chart widget to a screen and configure
-        its data points, series name, and Spline property, then customize
-        series styling and marker settings, in Service Studio for OutSystems
-        11, so that a line chart with a smooth spline line and custom markers
-        displays correctly in traditional web apps, mobile apps, and reactive
-        web apps.
+        its DataPointList (Label, Value, SeriesName) and Spline property,
+        then customize series and markers via SeriesStyling, in Service
+        Studio for OutSystems 11, so that a line chart with a smooth spline
+        line and custom markers displays correctly in traditional web apps,
+        mobile apps, and reactive web apps.
     - name: Order combo box list
       id: order-combo-box-list
       description: Wants to control the order of items displayed in a Combo Box
@@ -4317,6 +4324,16 @@ knowledge-needs:
         infrastructure updates and what permission determines that, so that they
         can ensure the right people stay informed of scheduled and rescheduled
         updates.
+  - name: Vulnerability disclosures
+    id: vulnerability-disclosures
+    subtopics:
+    - name: Vulnerability disclosure
+      id: public-vulnerability-disclosure
+      description: Wants to understand a specific publicly disclosed OutSystems
+        Platform Server vulnerability (affected component, CVSS risk score,
+        embargo/disclosure timeline, patched versions), so that they can assess
+        their exposure and apply the appropriate patch or workaround to protect
+        their OutSystems 11 on-premises or cloud environment.
 - name: Production Recovery
   guid: e392931b-251f-4d43-8c0b-c85bbc97e02e
   topics:
@@ -5515,3 +5532,15 @@ knowledge-needs:
       description: Wants to interpret the color-coded notification icons on OnTrack work
         items, so they can quickly tell whether a work item has an unread
         update, was rejected, or was accepted.
+- name: Community and Training
+  guid: 336189f2-2366-41d7-9dfa-6819b924a0ae
+  topics:
+  - name: Boot Camps
+    id: boot-camps
+    subtopics:
+    - name: Boot Camp registration
+      id: boot-camp-registration
+      description: Wants to find the price of an OutSystems Boot Camp and register
+        for one, when planning to attend instructor-led training, so that they
+        can enroll through a Training Partner and receive schedule, location,
+        and payment details.

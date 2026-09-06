@@ -149,6 +149,14 @@ knowledge-needs:
         flow''s AllExceptions error handler in Service Studio, so that
         OutSystems logs detailed exception information for troubleshooting,
         in OutSystems 11.'
+    - name: Fix error handling warning
+      id: fix-error-handling-warning
+      description: 'Wants to fix the "Errors are not being handled in the web
+        flow" warning in Service Studio for OutSystems 11, caused by a web
+        flow lacking error handlers and its Theme lacking a web flow for
+        error handling, by adding error handlers to the web flow or changing
+        the Theme''s error handling Flow property to one that already
+        implements error handling.'
   - name: Using Expressions
     id: using-expressions
     subtopics:
@@ -1170,6 +1178,16 @@ knowledge-needs:
         VerifyJavascriptLiteral() from the Sanitization extension, in OutSystems
         11, so that malicious script content can't be injected via that
         expression.
+    - name: Fix open redirect warning
+      id: fix-open-redirect-warning
+      description: Wants to resolve the Service Studio warning that an
+        HTTPRequestHandler input parameter derived from end-user input is
+        susceptible to open redirect vulnerabilities, by wrapping the
+        parameter with the ReplaceURLDomain() function, replacing the
+        'External Site' element with a well-known page, or replacing it with
+        an External Site element that doesn't take a URL input, in
+        OutSystems 11, so that malicious redirect URLs can't be injected via
+        that parameter.
   - name: Access control risks
     id: access-control-risks
     description: Wants to protect OutSystems 11 applications from access control
@@ -1414,6 +1432,13 @@ knowledge-needs:
         input value belongs to a process associated with the given case using
         Service Studio''s Debugger before calling Case_DiscardActivity in the
         Case Management Framework in OutSystems 11, so that the action
+        executes successfully.'
+    - name: Fix invalid GUID
+      id: fix-invalid-guid
+      description: 'Wants to fix the "<record> Id is not a valid GUID:
+        <input-parameter-value>" error by verifying the input parameter''s
+        value is a properly formatted GUID using Service Studio''s Debugger
+        in OutSystems 11, so that the Case Management Framework action
         executes successfully.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
@@ -1960,6 +1985,14 @@ knowledge-needs:
         timeout by moving the long-running batch logic into a Timer that signals
         the waiting process to proceed, in OutSystems 11, so that thread pool
         resources aren't exhausted and the process can continue.
+    - name: Fix missing detail warning
+      id: fix-missing-detail-warning
+      description: 'Wants to fix the "Please set the ''<process>'' Process
+        Detail property to display in Taskbox" warning in OutSystems 11, by
+        setting the Detail property on the Human Activity or, if that''s
+        unset, on the Process itself (directly, or via the Launch On
+        entity''s Label Attribute), in Service Studio, so that a meaningful
+        detail text appears under the activity in the Taskbox.'
   - name: Workflow Builder
     id: workflow-builder
     subtopics:
@@ -2061,6 +2094,22 @@ knowledge-needs:
         Workflow Builder, by creating a new field with the desired data
         type instead, in OutSystems 11, so that the application field saves
         successfully.'
+    - name: WFB attribute length error
+      id: wfb-attribute-length-error
+      description: 'Wants to resolve the "Cannot decrease the Length of an
+        existing attribute: <Name> (<Id>)" error that occurs when trying to
+        decrease the Length of a Text field that''s already published in
+        Workflow Builder, by creating a new field with the desired Length
+        instead, in OutSystems 11, so that the application field saves
+        successfully.'
+    - name: WFB dropdown id error
+      id: wfb-dropdown-id-error
+      description: 'Wants to resolve the "Cannot create new dropdown entry. Id
+        is invalid for dropdown: <Name> (<Id>)" error that occurs when
+        creating or updating a Dropdown field with inconsistent data in
+        Workflow Builder, by deleting and re-creating the unpublished field
+        (or contacting support if already published), in OutSystems 11, so
+        that they can successfully save the field.'
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -3169,6 +3218,15 @@ knowledge-needs:
         consumer module, by refreshing the dependency in the consumer
         module in Service Studio, adapting the logic, and republishing it,
         so that runtime errors are avoided.'
+    - name: Outdated consumer
+      id: outdated-consumer-warning
+      description: 'Wants to resolve the "Consumer module is outdated" warning
+        in OutSystems 11, caused by a compatible change to a producer
+        module''s exposed functionality that leaves the consumer running an
+        older version (applicable only to strong dependencies), by
+        republishing the consumer module without needing to refresh its
+        producer dependencies, so that it uses the latest producer
+        implementation.'
     - name: Inconsistent dependency
       id: inconsistent-dependency-warning
       description: 'Wants to resolve the "Producer is inconsistent" warning
@@ -3176,6 +3234,15 @@ knowledge-needs:
         isn''t consistent in the Platform Server where it was deployed, by
         1-Click Publishing the producer module and notifying the Service
         Center administrator, so that runtime errors are prevented.'
+    - name: Outdated producer warning
+      id: outdated-producer-warning
+      description: 'Wants to resolve the "Producer ''<producer>'' uses
+        outdated references. Please republish ''<producer>'' to prevent
+        runtime errors" warning in OutSystems 11, caused by a referenced
+        producer module itself having outdated references to other
+        producers that changed since it was last published, by
+        republishing the referenced producer module and then republishing
+        the consuming module, so that runtime errors are prevented.'
     - name: Fix invalid theme warning
       id: fix-invalid-theme-warning
       description: 'Wants to resolve the "Invalid Theme" warning family in
@@ -3187,6 +3254,52 @@ knowledge-needs:
         missing placeholders or comply with Menu requirements, or choosing
         a different compliant Web Block, in OutSystems 11, so that the
         theme compiles and publishes successfully.'
+    - name: Module name changed warning
+      id: module-name-changed-warning
+      description: 'Wants to resolve the "Module <name> was renamed to
+        <name>. Ensure that external links to this application are
+        compliant" warning in OutSystems 11, caused by renaming a module,
+        by updating the external links related to the application (for
+        example, External Sites that other modules have to this module),
+        so that the application remains compliant.'
+    - name: Fix missing entity warning
+      id: fix-missing-entity-warning
+      description: 'Wants to fix the "Foreign Entity/Referenced Entity was
+        not found in Platform Server" warning family in OutSystems 11,
+        caused by using a Foreign Entity or Entity Reference that doesn''t
+        exist yet in the connected server (for example, before deploying
+        to a production server), by publishing the extension or Producer
+        module that exposes the entity to that Platform Server, so that
+        the module publishes without the warning.'
+    - name: Missing module warning
+      id: missing-module-warning
+      description: 'Wants to resolve the "Module <module name> uses module
+        <producer name> that was not found. Runtime errors may occur."
+        warning in OutSystems 11, caused by a module referencing a producer
+        module that can''t be found on the connected Platform Server, by
+        checking with the producer module''s owner or the Platform Server
+        administrator to determine the cause, so that runtime errors are
+        avoided.'
+    - name: Missing provider warning
+      id: missing-provider-warning
+      description: 'Wants to resolve the "Could not find the <provider> User
+        Provider module in this server. Application runtime errors might
+        occur" warning in OutSystems 11, caused by a module''s configured
+        User Provider not existing on the Platform Server it''s published
+        to, by checking with the Platform Server administrator or the User
+        Provider''s owner to determine the cause, or by changing the
+        module''s User Provider property, so that runtime errors are
+        avoided.'
+    - name: Fix reference warning
+      id: modified-or-missing-reference-warning
+      description: 'Wants to resolve the "''<element>'' <type> is incompatible
+        with ''<Producer>'' <module | extension> definition" or "''<element>''
+        <type> was not found in the ''<Producer>'' <module | extension>
+        definition" warning in OutSystems 11, caused by a module referencing
+        an element that was modified or removed in the Producer module or
+        Extension, by refreshing the modified reference or removing the
+        missing reference in Service Studio, so that runtime errors are
+        avoided.'
   - name: Troubleshoot SEO-friendly URLs
     id: troubleshoot-seo-friendly-urls
     subtopics:

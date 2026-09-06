@@ -905,6 +905,24 @@ knowledge-needs:
         that the generated PDF report renders correctly and completely.
   - name: Handling webservice errors
     id: handle-webservice-errors
+    subtopics:
+    - name: Fix IM unreachable
+      id: fix-im-unreachable
+      description: 'Wants to resolve the "Integration Manager couldn''t be
+        reached" network error in Integration Builder by verifying Integration
+        Manager is installed and up to date in the environment''s Dependencies
+        settings, and checking that Integration Builder''s network/firewall
+        configuration allows access to the environment''s
+        OSIntegrationManager_API endpoint, so that they can navigate from
+        Integration Builder to Integration Manager to configure integration
+        connections.'
+    - name: Fix Salesforce API error
+      id: fix-salesforce-api-error
+      description: 'Wants to resolve a Salesforce error message
+        (OS-INBL-API-20000) returned when Integration Builder calls the
+        Salesforce API, by retrying later and contacting the Salesforce
+        administrator or Salesforce support if the error persists, so that
+        they can restore the connection to Salesforce.'
   - name: Workato Connector
     id: workato-connector
     subtopics:
@@ -1500,6 +1518,21 @@ knowledge-needs:
         building blocks portfolio owned by a platform group or Center of
         Excellence (CoE), so that other portfolios can adopt library updates
         on their own schedule without affecting release cadence.
+    - name: Dual-exposure pattern
+      id: dual-exposure-pattern
+      description: Wants to expose the same business logic both within a
+        portfolio (via a service action) and to other portfolios (via a REST
+        API) by wrapping both around a shared internal server action, so that
+        logic isn't duplicated when assembling a complete multi-portfolio
+        architecture.
+    - name: Reuse across portfolios
+      id: reuse-across-portfolios
+      description: Wants to choose between a library (for shared logic) and a
+        REST API (for shared data) to share an asset across portfolios in ODC,
+        understanding which elements are available cross-portfolio and how to
+        manage REST API breaking changes for other portfolios' consumers, so
+        that they pick the correct mechanism and avoid disrupting
+        cross-portfolio consumers.
     - name: Portfolio boundary design
       id: portfolio-boundary-design
       description: Wants to decide portfolio boundaries by grouping apps that
@@ -3440,6 +3473,19 @@ knowledge-needs:
       description: Wants to write prompts for Mentor Studio to break down
         complex requirements into smaller implementation steps, so that
         large features become actionable to build incrementally.
+    - name: Reuse public element prompts
+      id: mentor-studio-reuse-public-element-prompts
+      description: Wants to write prompts for Mentor Studio to reuse a
+        public element exposed by another app in the tenant, using Add
+        public elements or letting Mentor find and add it automatically,
+        so that existing logic can be called from a new app without
+        rebuilding it.
+    - name: Explain and document prompts
+      id: mentor-studio-explain-document-prompts
+      description: Wants to write prompts for Mentor Studio to generate
+        documentation for an element or explain unfamiliar logic and app
+        structure, so that an element's intent and impact are understood
+        before making changes.
   - name: AI models and search services
     id: ai-models-and-search-services
     subtopics:
@@ -4302,6 +4348,12 @@ knowledge-needs:
         system updates based on their infrastructure configuration (single front-end,
         multiple front-ends, load balancer), so that they can assess the impact on
         their production environment.
+    - name: SQL Server version upgrade
+      id: sql-server-2022-upgrade
+      description: Wants to understand what changes during the SQL Server 2022 upgrade of
+        O11 Cloud databases (version and compatibility-level change) and whether
+        it introduces breaking changes or requires application modifications, so
+        that they can confirm whether their applications need any adaptation.
     - name: Update lifecycle states
       id: update-lifecycle-states
       description: Wants to understand the states an ODC platform infrastructure update
@@ -5544,3 +5596,13 @@ knowledge-needs:
         for one, when planning to attend instructor-led training, so that they
         can enroll through a Training Partner and receive schedule, location,
         and payment details.
+  - name: Training videos
+    id: training-videos
+    subtopics:
+    - name: Access blocked videos
+      id: access-blocked-videos
+      description: Wants to watch OutSystems training videos when the streaming
+        platform (for example Vimeo) is blocked, by downloading the video and
+        subtitle files from the Training portal and playing them locally with
+        a media player like VLC, so that they can continue training without
+        guaranteed progress tracking.

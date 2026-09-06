@@ -14,6 +14,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - unblock
+topic:
+  - incompatible-consumer-warning
 ---
 
 # Potential Incompatible Consumer Warning

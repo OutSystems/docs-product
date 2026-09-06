@@ -8,8 +8,6 @@ figma:
 tags: error handling, configuration management, user authentication, user management, authentication providers
 audience:
   - Developer
-  - Front-end developer
-  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

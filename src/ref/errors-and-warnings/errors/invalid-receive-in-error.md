@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-invalid-receive-in-error
 ---
 
 # Invalid Receive In Error

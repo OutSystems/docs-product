@@ -8,7 +8,6 @@ summary: Learn how to manage and edit entity properties in OutSystems 11 (O11) u
 tags: entity management, database integration, ide usage, outsystems development, data modeling
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

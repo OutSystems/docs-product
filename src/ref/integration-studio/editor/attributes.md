@@ -8,7 +8,6 @@ summary: Explore how OutSystems 11 (O11) enhances attribute management in extens
 tags: extension development, attribute management, ui design, service studio ide, entity management
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

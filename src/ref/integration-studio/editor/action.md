@@ -8,7 +8,6 @@ summary: Explore the features of the Action Editor in OutSystems 11 (O11) for ed
 tags: ide usage, reactive web apps, extensions management, action editing, user interface customization
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

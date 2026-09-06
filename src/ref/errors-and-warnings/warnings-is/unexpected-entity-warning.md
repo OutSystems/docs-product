@@ -1,5 +1,5 @@
 ---
-summary: Explore common entity configuration errors and solutions in OutSystems 11 (O11) to ensure database compatibility.
+summary: Unexpected entity warning messages in OutSystems 11 (O11) cover Auto Number-only entities, multiple Binary Data attributes, and invalid table names.
 locale: en-us
 guid: 8af78fca-1b14-4d21-a4c6-560929c22322
 app_type: traditional web apps, mobile apps, reactive web apps

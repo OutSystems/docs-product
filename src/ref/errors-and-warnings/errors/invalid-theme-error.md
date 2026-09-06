@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, web flow, theme customization, troubleshooting, outsystems development
 audience:
-  - Front-end developer
   - Developer
-  - Platform administrator
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

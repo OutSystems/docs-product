@@ -8,7 +8,6 @@ figma:
 tags: sap integration, error handling, configuration, debugging, troubleshooting
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

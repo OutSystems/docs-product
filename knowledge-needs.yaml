@@ -541,6 +541,13 @@ knowledge-needs:
         by adjusting Fetch properties, merging or referencing data via a
         client variable, or removing the circular dependency, so that the
         module compiles and publishes successfully.'
+    - name: Fix maintenance warning
+      id: fix-maintenance-suggestion-warning
+      description: Wants to fix the "Complete enumeration of <entity> attributes
+        found" maintenance suggestion warning in Service Studio, caused by a
+        SQL query selecting all attributes individually instead of using the
+        entity wildcard, by replacing the attribute list with <entity>.*, so
+        that the query is easier to maintain, in OutSystems 11.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -1155,6 +1162,14 @@ knowledge-needs:
         default escaping, and Encode functions (EncodeSQL, EncodeHTML, EncodeJavaScript,
         EncodeURL) and parameterized queries, so that they can protect their ODC
         applications against SQL injection and XSS attacks.
+    - name: Fix JS injection warning
+      id: fix-js-injection-warning
+      description: Wants to resolve the Service Studio warning that an expression
+        using end-user input isn't protected against JavaScript injection, by
+        wrapping it with the EncodeJavascript() built-in function or
+        VerifyJavascriptLiteral() from the Sanitization extension, in OutSystems
+        11, so that malicious script content can't be injected via that
+        expression.
   - name: Access control risks
     id: access-control-risks
     description: Wants to protect OutSystems 11 applications from access control
@@ -2989,6 +3004,15 @@ knowledge-needs:
         action''s argument, by checking whether the Web Service is consumed
         by the module or correcting the argument name, in OutSystems 11, so
         that the module compiles and publishes successfully.'
+    - name: Invalid argument warning
+      id: invalid-argument-warning
+      description: 'Wants to understand the cause of the "Unable to validate
+        if the argument of the action refers a web service consumed in your
+        module because the name supplied is not a literal" warning in
+        Service Studio, triggered by passing a non-literal (variable) value
+        to an action parameter that expects a consumed Web Service name, so
+        that they understand why Service Studio can''t validate the web
+        service reference at design time, in OutSystems 11.'
     - name: Invalid Blocks error
       id: invalid-blocks-error
       description: 'Wants to resolve the "Invalid Blocks" "Block loop detected"
@@ -3023,6 +3047,14 @@ knowledge-needs:
         Dropdown, or dragging an Entity or Static Entity Identifier variable
         into it to auto-configure the Dropdown, in OutSystems 11, so that
         the module compiles and publishes successfully.'
+    - name: Invalid widget warning
+      id: invalid-widget-warning
+      description: 'Wants to resolve the "Screen ''<screen name>'' contained
+        a corrupted <widget kind> Widget that was re-created. Please check
+        its properties" warning in Service Studio, caused by Service Studio
+        automatically detecting and recreating a corrupted widget, by
+        reviewing and correcting the properties of the recreated widget, in
+        OutSystems 11, so that the screen behaves as expected.'
     - name: Invalid Data Action error
       id: invalid-data-action-error
       description: 'Wants to resolve the "Invalid Data Action" error in
@@ -3047,6 +3079,14 @@ knowledge-needs:
         Center administrator which Platform Server version is in use and
         what needs to be upgraded, so that the module publishes
         successfully.'
+    - name: Fix Incomplete Upgrade error
+      id: fix-incomplete-upgrade-error
+      description: 'Wants to resolve the "Incomplete Upgrade" error when
+        publishing a module in Service Studio, caused by the module
+        consuming other modules that weren''t upgraded yet to the new
+        Platform Server version after a server upgrade, by publishing the
+        consumed modules first, in OutSystems 11, so that the module
+        publishes successfully.'
     - name: Invalid Reference error
       id: invalid-reference-error
       description: 'Wants to resolve the "Invalid Reference" error in Service
@@ -3121,6 +3161,32 @@ knowledge-needs:
         only in-module Entities/Structures, or adjusting/removing the
         Destination argument or the block''s Public property, in OutSystems
         11, so that the module compiles and publishes successfully.'
+    - name: Incompatible consumer warning
+      id: incompatible-consumer-warning
+      description: 'Wants to resolve the "Consumer module has incompatible
+        dependencies" warning in OutSystems 11, caused by changing a
+        producer module''s exposed signature in a way that breaks a
+        consumer module, by refreshing the dependency in the consumer
+        module in Service Studio, adapting the logic, and republishing it,
+        so that runtime errors are avoided.'
+    - name: Inconsistent dependency
+      id: inconsistent-dependency-warning
+      description: 'Wants to resolve the "Producer is inconsistent" warning
+        in OutSystems 11, caused by a Producer (module or Extension) that
+        isn''t consistent in the Platform Server where it was deployed, by
+        1-Click Publishing the producer module and notifying the Service
+        Center administrator, so that runtime errors are prevented.'
+    - name: Fix invalid theme warning
+      id: fix-invalid-theme-warning
+      description: 'Wants to resolve the "Invalid Theme" warning family in
+        Service Studio, caused by using a Web Block as a theme''s Layout,
+        Info Balloon, Pop-up Editor, Email, or Menu without the required
+        placeholders (''Title'' and ''MainContent'' for Layout;
+        ''MainContent'' for Info Balloon/Pop-up Editor/Email; or the
+        Menu-specific requirements), by editing the Web Block to add the
+        missing placeholders or comply with Menu requirements, or choosing
+        a different compliant Web Block, in OutSystems 11, so that the
+        theme compiles and publishes successfully.'
   - name: Troubleshoot SEO-friendly URLs
     id: troubleshoot-seo-friendly-urls
     subtopics:
@@ -6237,6 +6303,21 @@ knowledge-needs:
       ignored" warning, so they can ask the application manager or Service
       Center administrator to correct it using the Service Center Factory
       Configuration solution and republish the module.'
+  - name: Renew server license
+    id: renew-server-license
+    description: Wants to know how to respond to a Service Center warning
+      that their OutSystems 11 server license will expire soon or has
+      already expired, by contacting their Service Center administrator to
+      request a new license from OutSystems before losing access to
+      licensed features.
+  - name: License limit exceeded
+    id: license-limit-exceeded
+    description: Wants to resolve a Service Center warning that their
+      OutSystems 11 server has exceeded its licensed resource usage or
+      Software Units publishing limit, by cleaning up obsolete users,
+      modules, or data, or asking their Service Center administrator to
+      change the license contract, so that they can keep using licensed
+      features and publish new modules.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:

@@ -2221,6 +2221,14 @@ knowledge-needs:
         Workflow Builder, by deleting and re-creating the unpublished field
         (or contacting support if already published), in OutSystems 11, so
         that they can successfully save the field.'
+    - name: WFB group create error
+      id: wfb-group-create-error
+      description: 'Wants to resolve the "Cannot create Group:
+        <OriginalErrorMessage>" error that occurs when creating a group
+        where the operation fails for some members, in Workflow Builder,
+        by retrying the operation or contacting OutSystems Support if the
+        problem persists, in OutSystems 11, so that they can successfully
+        create the group.'
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -4445,6 +4453,28 @@ knowledge-needs:
         implementation, IDE-driven settings replacing extensibility
         configuration, and the new branding image size requirement, so that they
         can update their app's splash screen setup correctly.
+    - name: MABS 6 upgrade overview
+      id: mabs-6-upgrade-overview
+      description: Wants to understand what's new across MABS 6.0 to 6.3,
+        including the introduction of WKWebView as the default web view,
+        Android 10 (API 29) and iOS 13 SDK support, removal of UIWebView,
+        and the optional AndroidX support added in 6.3, so that they can
+        plan whether and how to upgrade their mobile app's build service
+        version.
+    - name: MABS 8 upgrade overview
+      id: mabs-8-upgrade-overview
+      description: Wants to understand what's new in MABS 8.0 and 8.1, including
+        iOS 15 and Android 12 (API 31) support, Gradle 7.1.1, Java 11, and
+        updated Forge plugin version requirements, so that they can plan
+        whether and how to upgrade their mobile app's build service version.
+    - name: MABS 8 breaking changes
+      id: mabs-8-breaking-changes
+      description: 'Wants to understand the breaking changes introduced in
+        MABS 8.0, including the mandatory android:exported attribute for
+        Android 12 components, removal of Gradle''s compile configuration,
+        the Cordova AllowList Plugin replacing Whitelist Plugin, and the
+        native Android 12 splash screen behavior, so that they can update
+        their app before or after upgrading the MABS version.'
     - name: MABS version support
       id: mabs-version-support
       description: Wants to know which MABS versions are currently supported,
@@ -6618,6 +6648,12 @@ knowledge-needs:
         or junk folders, by using the confirmation number and last name on
         the Prometric Score Report portal, so that they can see which exam
         topics they passed or failed.
+    - name: Missing exam appointment
+      id: missing-exam-appointment
+      description: 'Wants to get their exam appointment details when they
+        didn''t receive the appointment confirmation email, by checking
+        spam and junk folders and opening a support case if it''s still
+        missing, so that they can continue with their exam registration.'
   - name: Support Portal
     id: support-portal
     subtopics:

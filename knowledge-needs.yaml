@@ -4391,6 +4391,13 @@ knowledge-needs:
         signals, and keeping plugins updated or removing unused ones, so
         that the app's security risk from third-party plugin code stays
         low.
+    - name: iOS usage descriptions
+      id: ios-usage-descriptions
+      description: Wants to understand why omitting an iOS privacy usage
+        description (for example, NSCameraUsageDescription) from a Capacitor
+        plugin's extensibility JSON causes the app to fail or be rejected on
+        iOS while Android continues to work, so they include the required
+        iOS usage descriptions when configuring plugin permissions.
 - name: Lifecycle Independence
   guid: 4b3a44cd-2a86-462c-81b2-89a841284aab
   topics:

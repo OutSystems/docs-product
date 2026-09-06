@@ -5,7 +5,9 @@ guid: cfa237a8-7738-48a4-8561-bacf28c6e379
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, debugging, user interface development, data validation, outsystems development
+tags:
+  - Debugging
+  - Troubleshooting
 audience:
   - Front-end developer
   - Developer

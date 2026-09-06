@@ -5,7 +5,11 @@ guid: 786ff43e-9e5f-4aa7-bda0-bb8693a6510a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, multitenancy, cross-application interaction, navigation patterns, ide troubleshooting
+tags:
+  - Blocks
+  - Multi-Tenant
+  - Screens
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

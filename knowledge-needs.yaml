@@ -442,6 +442,14 @@ knowledge-needs:
         exceeding its maximum length, so they can correct the underlying value
         or expression and continue publishing or running the app without the
         error.
+    - name: Fix invalid indexer
+      id: fix-invalid-indexer
+      description: 'Wants to fix the "Invalid Record List Indexer" error in Service
+        Studio for OutSystems 11, caused by indexing a Record List with a
+        non-Integer value or indexing an element that isn''t a List, by
+        matching the index value''s data type to Integer or using the []
+        operator only on List elements, so that the module compiles and
+        publishes successfully.'
   - name: Querying data
     id: querying-data
     subtopics:
@@ -869,6 +877,32 @@ knowledge-needs:
         description: Wants to access data from a legacy Lotus Notes/Domino application
           using ODBC and a SQL Server Linked Server, on a 64-bit SQL Server environment,
           so that OutSystems applications can query that legacy data at runtime.
+    - name: Regex text search/replace
+      id: regex-search-replace
+      description: Wants to use the Regex_Search and Regex_Replace server actions
+        from the Text extension to search for and replace regular expression
+        patterns in text, wrapping them inside a server action instead of a
+        client action, so that the regex pattern stays secure server-side in
+        a reactive OutSystems app.
+    - name: Validate GUID with regex
+      id: validate-guid-regex
+      description: Wants to build a reusable server action that uses Regex_Search
+        with a GUID-matching pattern to check whether a text input is a valid
+        GUID, so that they can validate identifiers are properly formatted
+        before use in OutSystems 11.
+    - name: Extract GUID with regex
+      id: extract-guid-regex
+      description: Wants to build a reusable server action that uses Regex_Search
+        with a GUID-matching pattern to detect and extract a GUID embedded
+        within a larger text string, so that they can retrieve the GUID value
+        from unstructured text in OutSystems 11.
+    - name: Fix SAP connection
+      id: fix-sap-connection-error
+      description: Wants to fix the "Invalid SAP Connection" error caused by a
+        SAP connection with no remote functions linked (never imported, or all
+        deleted), by importing at least one remote function or deleting the
+        connection, so that the SAP connection compiles and publishes
+        successfully in OutSystems 11.
   - name: Private Gateway
     id: private-gateway
     subtopics:
@@ -1632,6 +1666,21 @@ knowledge-needs:
         configured Date Format property, by changing the API''s Date Format
         property or the example''s date values, so that the REST API method
         compiles and publishes successfully.'
+    - name: Fix invalid request format
+      id: fix-invalid-request-format
+      description: 'Wants to fix the "Invalid Request Format" error for a REST
+        API method in Service Studio for OutSystems 11, caused by an invalid
+        or missing Request Format property, or by a mismatch between the
+        Request Format property and the body input''s data type, by
+        correcting the Request Format property or the input parameters, so
+        that the REST API method compiles and publishes successfully.'
+    - name: Fix invalid response format
+      id: fix-invalid-response-format
+      description: 'Wants to fix the "Invalid Response Format" error for a REST
+        API method in Service Studio for OutSystems 11, caused by an invalid
+        or missing Response Format property, by correcting the property or
+        removing the output parameters, so that the REST API method compiles
+        and publishes successfully.'
   - name: Consume webservices
     id: consume-webservices
     subtopics:
@@ -2768,6 +2817,27 @@ knowledge-needs:
         Center administrator which Platform Server version is in use and
         what needs to be upgraded, so that the module publishes
         successfully.'
+    - name: Invalid Reference error
+      id: invalid-reference-error
+      description: 'Wants to resolve the "Invalid Reference" error in Service
+        Studio, caused either by an Action reference to a Multi-tenant
+        entity parameter where the ''Show Tenant Identifier'' property
+        differs from the producer module (fixed by removing the reference
+        or synchronizing the property value), or by a Block or Screen
+        navigating to a Screen outside the application (fixed by removing
+        the navigation, using an external link, or moving the module into
+        the application), in OutSystems 11, so that the module compiles
+        and publishes successfully.'
+    - name: Fix invalid screen error
+      id: fix-invalid-screen-error
+      description: 'Wants to fix the "Invalid Screen" error family in Service
+        Studio for OutSystems 11, caused by setting the Cache in Minutes
+        property on a screen or block with a Binary Data, Record, or List
+        input parameter, binding the same variable to multiple input widgets,
+        or having a corrupted widget definition, by unsetting Cache in
+        Minutes, binding each variable to only one widget, or deleting and
+        re-creating the corrupted widget, so that the screen or block
+        compiles and publishes successfully.'
   - name: Troubleshoot SEO-friendly URLs
     id: troubleshoot-seo-friendly-urls
     subtopics:
@@ -3706,6 +3776,23 @@ knowledge-needs:
         tools each version supports, so they can choose the correct MABS
         version for their mobile app and plan upgrades before a version
         becomes obsolete.
+  - name: Mobile app debugging
+    id: mobile-app-debugging
+    subtopics:
+    - name: Inspect network traffic
+      id: inspect-network-traffic
+      description: Wants to inspect network requests and responses generated by
+        their mobile app, using Chrome or Safari Developer Tools or network
+        proxy tools (HTTP Toolkit, Mitmweb, Charles), so that they can debug
+        HTTP traffic, check first-visit resource loading, and monitor OTA
+        updates.
+    - name: Simulate slow network
+      id: simulate-mobile-network-conditions
+      description: Wants to simulate degraded network conditions (slow,
+        unreliable, or packet-dropping connections) in a mobile app using
+        Chrome Developer Tools, Charles, or the iOS Network Link Conditioner,
+        so that they can investigate bugs that occur only intermittently or
+        under poor network conditions.
   - name: Local Storage
     id: local-storage
     subtopics:
@@ -3798,6 +3885,13 @@ knowledge-needs:
         delayed CSS style calculations, by reviewing conditional logic and
         aggregate timing or deferring element visibility until styles are ready,
         so that the transition is smooth.
+    - name: iOS 12 viewport flicker
+      id: ios-12-viewport-flicker
+      description: Wants to fix the screen flickering that occurs on iPhones running iOS 12
+        when the viewport-fit meta tag is set to cover on a screen with many
+        input fields, in mobile apps built with MABS 4 or MABS 5, by applying
+        the documented workaround for the shared native stack issue, so that the
+        screen displays smoothly without flickering.
     - name: Fix slow transition
       id: fix-slow-transition
       description: Wants to fix a slow transition between two screens in a mobile
@@ -5562,6 +5656,19 @@ knowledge-needs:
       including the Service Studio debugger, Service Center application
       logs, and modern browser developer tools, so that they know where to
       start when investigating unexpected application behavior.
+  - name: EPA taskbox administration
+    id: epa-taskbox-admin
+    description: Wants to hide or show the EPA Taskbox per eSpace by activating EPA
+      Administration and setting which applications/eSpaces display it, in
+      OutSystems 11, from the EPA administration backoffice screen, so that they
+      can control which apps expose the taskbox to end users and keep it hidden
+      where it isn't needed.
+  - name: Resolve internal error
+    id: resolve-internal-error
+    description: Wants to know what to do when OutSystems 11 shows a generic
+      "Internal Error" caused by an unexpected situation in the application
+      or environment, so they can submit feedback through the tool or
+      contact OutSystems Support if the issue persists.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:
@@ -5606,3 +5713,13 @@ knowledge-needs:
         subtitle files from the Training portal and playing them locally with
         a media player like VLC, so that they can continue training without
         guaranteed progress tracking.
+  - name: Certification exams
+    id: certification-exams
+    subtopics:
+    - name: Access exam score report
+      id: access-exam-score-report
+      description: Wants to access their certification or specialization exam
+        score report when it wasn't received by email and isn't in the spam
+        or junk folders, by using the confirmation number and last name on
+        the Prometric Score Report portal, so that they can see which exam
+        topics they passed or failed.

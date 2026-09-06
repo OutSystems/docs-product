@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - resolve-internal-error
 ---
 
 # Internal Warning

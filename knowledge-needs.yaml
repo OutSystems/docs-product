@@ -722,12 +722,19 @@ knowledge-needs:
         count and backoff intervals, and concurrent execution/duration limits —
         so that they can design event payloads, queues, and consumer logic
         within ODC's supported constraints.
-    - name: Trigger ODC event
-      id: trigger-odc-event
-      description: Wants to create a public event with an input parameter in
-        ODC Studio and trigger it from a server action using an IF condition
-        and a Trigger Event node, so that the event fires only when a new
-        record is created, providing the data a workflow needs to start.
+  - name: ODC network architecture
+    id: odc-network-architecture
+    description: Wants to understand OutSystems Developer Cloud (ODC)'s network
+      architecture and security components, including the CDN, WAF, Identity
+      Service, Load Balancer, TLS encryption, and network isolation between
+      customers, so that they can design and secure Platform and Runtime apps
+      accordingly
+  - name: Trigger ODC event
+    id: trigger-odc-event
+    description: Wants to create a public event with an input parameter in
+      ODC Studio and trigger it from a server action using an IF condition
+      and a Trigger Event node, so that the event fires only when a new
+      record is created, providing the data a workflow needs to start.
 - name: Advanced data handling
   guid: c6a945c1-deaa-4266-9b94-d7b31d9fdf07
   topics:
@@ -1122,6 +1129,69 @@ knowledge-needs:
         resource that was added by importing actions from a .NET assembly,
         in Integration Studio's Resource Editor, so that they can review
         additional information about the imported resource.
+    - name: Structure element properties
+      id: structure-element-properties
+      description: Wants to know the properties available when defining a Structure element
+        in Integration Studio, including which are mandatory or optional and
+        their default values, so that they can correctly configure a structure
+        inside an extension.
+    - name: File menu operations
+      id: file-menu-operations
+      description: Wants to know what operations the File menu provides in Integration
+        Studio, so that they can manage an extension's lifecycle while working
+        in Integration Studio.
+    - name: Edit menu operations
+      id: edit-menu-operations
+      description: Wants to know what operations the Edit menu provides in Integration
+        Studio, so that they can perform clipboard actions and access
+        environment editing options while working on an extension.
+    - name: Help menu operations
+      id: help-menu-operations
+      description: Wants to know what operations the Help menu provides in Integration
+        Studio, so that they can access help resources, product updates, and
+        feedback tools while working on an extension.
+    - name: Configure .NET SDK options
+      id: configure-net-sdk-options
+      description: Wants to configure the .NET IDE, .NET Compiler Tool, and
+        .NET Compiler Tool Options paths in Integration Studio's Options
+        window .NET tab, so that they can compile and edit .NET extensions
+        with their preferred development environment and build settings, in
+        OutSystems 11.
+    - name: Configure proxy auth
+      id: configure-is-proxy-auth
+      description: Wants to configure proxy authentication settings (enabling
+        proxy authentication and setting the proxy user name and password)
+        in Integration Studio's Options window Connection tab, so that
+        Integration Studio can connect to a Platform Server behind an
+        authenticating proxy, in OutSystems 11.
+    - name: Select Server window
+      id: select-server-window
+      description: Wants to know what information the Select Server window requires in
+        Integration Studio, so that they can connect to a specific Platform
+        Server, in OutSystems 11.
+    - name: 1-Click Publish window
+      id: 1-click-publish-window
+      description: Wants to know what areas and action buttons the 1-Click Publish window
+        provides in Integration Studio, so that they can monitor progress,
+        review errors and warnings, and manage extension publishing to a
+        Platform Server, in OutSystems 11.
+    - name: Verify window
+      id: verify-window
+      description: Wants to know what areas and buttons the Verify window provides in
+        Integration Studio, so that they can review verification errors and
+        warnings and continue extension publishing, in OutSystems 11.
+    - name: Download version window
+      id: download-version-window
+      description: Wants to know what information and buttons the Download Version from
+        Server window provides in Integration Studio, so that they can review
+        available versions and download a specific extension version from the
+        Platform Server they're connected to.
+    - name: Download window
+      id: download-window
+      description: Wants to know what information and buttons the Download from Server
+        window provides in Integration Studio, so that they can review
+        extensions they have Download access to and download the latest
+        published version from the Platform Server they're connected to.
   - name: Private Gateway
     id: private-gateway
     subtopics:
@@ -2604,11 +2674,11 @@ knowledge-needs:
         Web App in OutSystems 11.
     - name: Display binary image
       id: display-binary-image
-      description: Wants to configure an Image widget to display a binary data image
-        fetched from an aggregate, including setting a default image fallback and style
-        properties, in an OutSystems 11 Traditional Web App screen, so that profile
-        pictures show correctly when available and a placeholder appears when none is
-        uploaded.
+      description: Wants to configure an Image widget's Type as Binary Data and
+        bind its Image Content property to a binary attribute retrieved from an
+        Aggregate, including setting a default image fallback and style properties,
+        so that profile pictures show correctly when available and a placeholder
+        appears when none is uploaded.
     - name: Use User Avatar pattern
       id: use-user-avatar-pattern
       description: Wants to add the User Avatar UI Pattern to a screen and configure
@@ -2714,6 +2784,12 @@ knowledge-needs:
         Studio for OutSystems 11, so that end users get an error message when no
         file is selected, an empty file is chosen, or the file type doesn't
         match what's expected, in Traditional Web Apps and Reactive Web Apps.
+    - name: Use Upload widget
+      id: use-upload-widget
+      description: Wants to configure the Upload widget's File Content and File
+        Name properties by binding them to aggregate data, so that users can
+        upload a file (such as a photo) and save it to the database from a
+        Traditional Web App or Reactive Web App form.
     - name: Use Pagination pattern
       id: use-pagination-pattern
       description: 'Wants to add the Pagination UI Pattern to a screen and configure
@@ -3116,6 +3192,36 @@ knowledge-needs:
         that the name shown throughout the portal and ODC Studio matches
         updated naming conventions without affecting apps, users, domains, or
         configurations.
+    - name: Plan domains early
+      id: plan-domains-early
+      description: Wants to deliberately choose their ODC organization
+        subdomain and each stage's domain when provisioning a new tenant,
+        before building apps, generating native mobile builds, or
+        configuring external identity providers, so that they minimize the
+        need for a disruptive domain change later.
+    - name: Change org subdomain
+      id: change-org-subdomain
+      description: Wants to change their ODC organization's built-in subdomain
+        (<subdomain>.outsystems.dev) from the ODC Portal's Organization page,
+        understanding that the new subdomain isn't set as default until they
+        explicitly switch it, so they can rebrand or correct their
+        organization's address without disrupting active users.
+    - name: Change stage subdomain
+      id: change-stage-subdomain
+      description: Wants to change a stage's built-in subdomain
+        (<subdomain>.outsystems.app) from the ODC Portal's Domains page,
+        understanding that both the new and previous subdomains stay active
+        until they explicitly set the new one as default, so they can rename
+        a stage's address after a rebrand or SDLC process change without
+        breaking existing traffic.
+    - name: Finalize subdomain switch
+      id: finalize-subdomain-switch
+      description: Wants to complete a built-in subdomain change in the ODC
+        Portal by setting the new organization or stage subdomain as default
+        and then deleting the previous one, understanding that deletion is
+        immediate, permanent, and only possible for a non-default subdomain,
+        so that they safely retire the old address once all dependent
+        configurations have been updated.
     - name: Reorder pipeline stages
       id: reorder-pipeline-stages
       description: Wants to change the sequence of non-production stages in
@@ -3820,6 +3926,16 @@ knowledge-needs:
         space, including access to the development stage, assets, logs, configurations,
         end-user management, and Forge, so they can plan what they can build and manage
         during the trial.
+    - name: PE 503 recovery
+      id: pe-503-resource-limit
+      description: 'Wants to diagnose an HTTP 503 "Service Unavailable" error
+        appearing when accessing apps, using 1-Click Publish in Service
+        Studio, or viewing Environment Health in Service Center/LifeTime,
+        caused by OutSystems 11 automatically disabling their Personal
+        Environment after exceeding memory, CPU, or resource limits, by
+        freeing up resources via the Free Up Resources page or contacting
+        Support if the problem persists, so that they can restore access to
+        their Personal Environment.'
     - name: PE hibernation basics
       id: pe-hibernation-basics
       description: Wants to understand what PE hibernation is, when it triggers after a
@@ -4296,6 +4412,30 @@ knowledge-needs:
         relevant data via a service action, then pass that data as context
         to an AI model call, so they can implement the
         Retrieval-augmented generation (RAG) pattern in app logic.
+  - name: Knowledge bases (ODC)
+    id: knowledge-bases-odc
+    subtopics:
+    - name: Knowledge base overview
+      id: knowledge-base-overview
+      description: Wants to understand what a knowledge base is in ODC and
+        how the ingestion pipeline (chunking, embedding, vector index) and
+        semantic search enable retrieval-augmented generation (RAG) at
+        runtime, so they can grasp how agents and apps retrieve relevant
+        content from uploaded documents.
+    - name: KB supported file types
+      id: kb-supported-file-types
+      description: Wants to know which file types and the maximum file size a knowledge
+        base accepts, so they can prepare documents before uploading them.
+    - name: KB stage isolation
+      id: kb-stage-isolation
+      description: Wants to understand how knowledge base files and indexes
+        are isolated per ODC stage and don't auto-copy between stages, so
+        they can plan deployment steps.
+    - name: KB region and data residency limits
+      id: kb-region-data-residency-limits
+      description: Wants to understand which regions trigger cross-region
+        data transfers for knowledge bases, so they can plan for data
+        residency compliance.
   - name: Agent guardrails
     id: agent-guardrails
     subtopics:
@@ -4445,6 +4585,27 @@ knowledge-needs:
         signals, and keeping plugins updated or removing unused ones, so
         that the app's security risk from third-party plugin code stays
         low.
+  - name: Migrate Cordova plugins to Capacitor
+    id: migrate-cordova-plugin-capacitor
+    subtopics:
+    - name: Migrate Cordova settings
+      id: migrate-cordova-settings
+      description: Wants to decide whether a Cordova plugin can be adapted by
+        updating extensibility configurations only or needs a
+        Capacitor-compatible plugin, then migrate its preference variables
+        and config-file/edit-config declarations, which Capacitor doesn't
+        support directly, to MABS 12 extensibility settings, plugin
+        extensibility JSON, or build actions, so that plugin customization
+        and native file changes (such as Info.plist entries or Android
+        resource strings) keep working when building Capacitor apps.
+    - name: Adapt Cordova hooks and APIs
+      id: adapt-cordova-hooks-apis
+      description: Wants to replace a Cordova plugin's build-time hooks with
+        MABS 12 build actions (falling back to Capacitor Hooks when needed)
+        and update Cordova-specific JavaScript API checks (such as typeof
+        cordova and cordova.platformId) to also support Capacitor, so that
+        the plugin's build process and client-side code work correctly in
+        Capacitor apps.
     - name: iOS usage descriptions
       id: ios-usage-descriptions
       description: Wants to understand why omitting an iOS privacy usage
@@ -4756,6 +4917,15 @@ knowledge-needs:
         mechanism so the next OTA attempt doesn''t redownload everything,
         so they can anticipate runtime issues (like server action
         mismatches) after a failed OTA upgrade.'
+    - name: Healing resource error
+      id: healing-resource-error
+      description: 'Wants to understand and resolve the "Healing resource
+        <Resource> from prebundle: FAILED" error (and its "healing from the
+        web" variant, sometimes accompanied by a "File is corrupt or
+        invalid" checksum error), which leaves a mobile app in an invalid
+        state recoverable only via an app store update, by reloading the
+        app or reinstalling it from the app store, so that the app returns
+        to a working state.'
   - name: Customize Mobile apps
     id: customize-mobile-apps
     subtopics:
@@ -5145,16 +5315,6 @@ knowledge-needs:
         plugin, or community Capacitor plugin), so that they avoid
         unnecessary investment in custom native plugin development for ODC
         mobile apps.
-    - name: Migrate Cordova plugin
-      id: migrate-cordova-plugin
-      description: Wants to adapt an existing Cordova plugin's plugin.xml
-        preferences, hooks, and config-file changes, plus Cordova-specific
-        JavaScript API references, for compatibility with Capacitor, by
-        migrating preferences to extensibility settings, replacing hooks with
-        build actions, converting config-file changes to extensibility
-        configurations or build actions, and refactoring JavaScript checks,
-        in MABS 12, so that an OutSystems library's existing Cordova plugin
-        works in a Capacitor-based ODC mobile app.
     - name: Plan custom Capacitor plugin
       id: plan-custom-capacitor-plugin
       description: Wants to plan a custom Capacitor plugin for an ODC mobile
@@ -5291,6 +5451,40 @@ knowledge-needs:
         allowed number of routes, or a temporary "operation in progress"
         conflict, so that they can correct the route configuration and complete
         the request.
+    - name: Fix VPN Dead Peer Detection (DPD) failures
+      id: fix-vpn-dpd-failures
+      description: Wants to diagnose and fix VPN tunnel instability caused by
+        Dead Peer Detection (DPD) failures after setup, so that they can
+        restore a stable OutSystems Cloud VPN connection.
+    - name: Fix periodic IKEv2 tunnel drops
+      id: fix-periodic-ikev2-tunnel-drops
+      description: Wants to diagnose and fix periodic IKEv2 tunnel drops
+        due to IKE/IPsec SA lifetime expiration and rekeying after setup, so
+        that they can restore a stable OutSystems Cloud VPN connection.
+    - name: Fix asymmetric routing with dual active VPN tunnels
+      id: fix-vpn-asymmetric-routing-dual-active-tunnels
+      description: Wants to diagnose and fix VPN tunnel instability caused by
+        asymmetric routing with dual active tunnels after setup, so that they
+        can restore a stable OutSystems Cloud VPN connection.
+    - name: Fix VPN Phase 1 (IKE) and Phase 2 (IPsec) negotiation failures
+      id: fix-vpn-phase-1-phase-2-negotiation-failures
+      description: Wants to diagnose and fix VPN tunnel instability caused by
+        Phase 1 (IKE) and Phase 2 (IPsec) negotiation failures after setup, so
+        that they can restore a stable OutSystems Cloud VPN connection.
+    - name: Test VPN connectivity
+      id: test-vpn-connectivity
+      description: Wants to test and troubleshoot VPN connectivity to
+        OutSystems Cloud environments using ping, traceroute, telnet, and
+        nslookup against the OutSystems DNS servers and front-end domain
+        names, so that they can confirm whether DNS resolution and the
+        network path to their environments works over the established VPN.
+    - name: Configure VPN DNS resolution
+      id: configure-vpn-dns-resolution
+      description: Wants to configure conditional forwarders on their
+        internal DNS servers to resolve OutSystems Cloud environment public
+        domain names, internal network domain names, and external database
+        hostnames over the VPN, so that traffic routes correctly through the
+        internal load balancers instead of failing to resolve.
   - name: Organization region information
     id: organization-region-information
     subtopics:
@@ -5323,6 +5517,14 @@ knowledge-needs:
         O11 Cloud databases (version and compatibility-level change) and whether
         it introduces breaking changes or requires application modifications, so
         that they can confirm whether their applications need any adaptation.
+    - name: Windows Server upgrade breaking changes
+      id: windows-server-upgrade-breaking-changes
+      description: Wants to understand and prepare for the breaking changes
+        introduced by the Windows Server 2022 upgrade of O11 Cloud environments
+        (TLS protocol deprecation, OS-level dependency changes, private IP
+        address changes, front-end storage loss, and required Platform Server
+        upgrade), so that they can adapt their applications and infrastructure
+        before their scheduled upgrade date.
     - name: Update lifecycle states
       id: update-lifecycle-states
       description: Wants to understand the states an ODC platform infrastructure update
@@ -5637,6 +5839,13 @@ knowledge-needs:
         configuring the SAML connection and callback URL in Auth0, and mapping the
         SAML configuration parameters between Auth0 and the IdP Configuration page,
         so that end users can log in via Auth0 single sign-on.
+    - name: Migrate SAML provider for domain change
+      id: migrate-saml-domain-change
+      description: Wants to create and cut over to a new SAML 2.0 provider
+        in ODC after an organization or stage domain change, understanding
+        that the SP metadata's EntityID and ACS URL are immutable and tied
+        to the domain, so that end users can keep authenticating once the
+        previous domain is deleted.
     - name: Configure Okta IdP
       id: idp-okta
       description: Wants to register ODC as a trusted OIDC application in
@@ -6640,6 +6849,13 @@ knowledge-needs:
 - name: Monitor and Troubleshoot (O11)
   guid: efd7e36b-05ea-4fe3-bf72-80617a1557e8
   topics:
+  - name: Check OutSystems version
+    id: check-outsystems-version
+    description: Wants to check the installed version and revision of Service
+      Studio, Integration Studio, LifeTime, Service Center, and Platform
+      Server (including System Components) in OutSystems 11, so they can
+      provide accurate version information when opening a support case or
+      verifying environment consistency.
   - name: Debugging toolkit overview
     id: debugging-toolkit-overview
     description: Wants to understand what tools are available for debugging
@@ -6808,3 +7024,39 @@ knowledge-needs:
         crawlers can access by creating a static robots.txt file that
         defines allow/disallow rules and references the sitemap.xml
         endpoint, in ODC, so that crawler behavior is properly restricted.'
+  - name: Prerendering for SPAs
+    id: prerendering-for-spas
+    subtopics:
+    - name: Integrate SEO prerender
+      id: integrate-seo-prerender
+      description: 'Wants to improve SEO for a reactive or mobile ODC app
+        affected by client-side-rendering indexing issues by integrating a
+        third-party prerender solution via a reverse proxy or CDN, in ODC, so
+        that search engine bots receive fully rendered pages for indexing.'
+    - name: Configure prerender custom domain and SSL
+      id: configure-prerender-custom-domain-ssl
+      description: 'Wants to configure the custom domain and SSL certificates
+        for a reverse proxy or CDN that fronts a prerendered reactive or mobile
+        ODC app, so that prerendered pages are served securely on the intended
+        public domain.'
+    - name: Expose sitemap and robots through prerender
+      id: expose-sitemap-robots-through-prerender
+      description: 'Wants to expose sitemap.xml and robots.txt through the
+        prerender reverse proxy or CDN for a reactive or mobile ODC app, so
+        that search engine crawlers can discover crawl rules and public URLs
+        through the same SEO entry point.'
+    - name: Validate prerender integration
+      id: validate-prerender-integration
+      description: 'Wants to validate that the prerender integration serves
+        fully rendered pages to search engine bots through the reverse proxy or
+        CDN, in ODC, so that they can confirm the app is ready for indexing.'
+  - name: Root domain redirection
+    id: root-domain-redirection
+    subtopics:
+    - name: Redirect root domain
+      id: redirect-root-domain
+      description: 'Wants to redirect a root domain (or subdomain) to a
+        default ODC app screen using a reverse proxy such as Nginx or a
+        CDN, in OutSystems Developer Cloud, so that end users and search
+        engine crawlers land on a functional app entry point for improved
+        SEO and usability.'

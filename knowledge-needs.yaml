@@ -6943,6 +6943,26 @@ knowledge-needs:
         collation conflict" error, so that they plan and safely execute (or
         troubleshoot) a collation change with the appropriate database
         professionals.'
+  - name: Database connection pools (O11)
+    id: database-connection-pools-o11
+    subtopics:
+    - name: Configure pool size
+      id: configure-connection-pool-size
+      description: Wants to control the minimum and maximum number of database
+        connections in the connection pool for the .NET stack (via the
+        Configuration Tool's Database > Advanced connection string) and the
+        Java stack (via the Configuration Tool's Advanced Configurations), in
+        OutSystems 11, so that they can tune connection pool size for their
+        environment's performance needs.
+    - name: Calculate runtime connections
+      id: calculate-runtime-connections
+      description: Wants to calculate the number of database connections used
+        at runtime, using the (connections per module) x (application
+        modules) x (front-end servers) formula for the .NET stack and the
+        (connections configured) x (front-end servers) formula for the Java
+        stack, including how minimum and maximum connections behave under
+        concurrent load, in OutSystems 11, so that they can plan capacity and
+        avoid connection-pool exhaustion or timeouts.
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:
@@ -7461,6 +7481,12 @@ knowledge-needs:
   - name: Support Portal
     id: support-portal
     subtopics:
+    - name: Open support case
+      id: open-support-case
+      description: Wants to open a support case with OutSystems through the Support Portal,
+        by logging in, choosing the affected infrastructure, and selecting the
+        appropriate case type, so that the case is routed to the right team and
+        resolved quickly.
     - name: Add case followers
       id: add-case-followers
       description: Wants to add colleagues as followers to an OutSystems

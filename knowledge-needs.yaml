@@ -970,6 +970,29 @@ knowledge-needs:
     description: Wants to know which actions the BinaryData library provides in ODC,
       including their inputs, outputs, and supported encodings, so that they can
       convert and manipulate binary content correctly in logic flows.
+  - name: JSON Deserialize action
+    id: json-deserialize-action
+    description: Wants to look up the configurable properties, such as JSON String,
+      Data Type, and Date Format, and the runtime Data output of the JSON
+      Deserialize action, in Service Studio for OutSystems 11, so that a JSON
+      string can be converted into an Entity, Static Entity, Structure, or List
+      record.
+  - name: JSON Serialize action
+    id: json-serialize-action
+    description: Wants to look up the configurable properties, such as Data, Serialize
+      Default Values, and Date Format, and the runtime JSON output of the JSON
+      Serialize action, and understand how enabling Serialize Default Values
+      affects the JSON equivalents produced for empty values of certain data
+      types, in Service Studio for OutSystems 11, so that a Record or List of
+      Records can be correctly converted into a JSON string.
+  - name: JSON Serialize large numbers
+    id: json-serialize-large-numbers
+    description: Wants to understand why serializing or deserializing a Long
+      Integer or Decimal value larger than JavaScript's MAX_SAFE_INTEGER
+      (9007199254740991) fails when the operation runs on the client side, and
+      how running the operation in a Server Action avoids the issue, in
+      OutSystems 11, so that large numeric values can be serialized or
+      deserialized without errors.
   - name: Dealing with rollbacks
     id: dealing-with-rollbacks
     subtopics:
@@ -1964,6 +1987,15 @@ knowledge-needs:
         protection, slow query threshold, and remember login settings) and what database
         parameters they control, so that they can tune platform-wide behavior in
         OutSystems 11.
+    - name: JSON Serialize consistency opt-in
+      id: json-serialize-consistency-optin
+      description: Wants to enable the "Enable Json Serialize consistency between
+        Client and Server side" opt-in in Factory Configuration's Platform
+        Configuration settings, requiring Platform Server 11.17.0 and Factory
+        Configuration 11.0, so that JSON Serialize actions produce consistent
+        null and default-value output between client and server, understanding
+        this is a breaking change that requires republishing apps and updating
+        any existing workaround code.
   - name: Runbooks for app configuration management
     id: runbook-config-mgmt
     subtopics:
@@ -2382,6 +2414,12 @@ knowledge-needs:
         fails.
     - name: Structures
       id: structures
+    - name: SOAP parameter reference
+      id: soap-parameter-reference
+      description: Wants to look up the properties of a deprecated SOAP web service's input
+        parameter in Service Studio, so that they can correctly configure and
+        understand input parameters when consuming a deprecated SOAP web service
+        in OutSystems 11.
     - name: Consume SAP OData
       id: consume-sap-odata
       description: Wants to consume an SAP OData service in OutSystems 11 by downloading
@@ -2918,6 +2956,20 @@ knowledge-needs:
         plugin, and using an un-escaped Expression to activate it, in Service Studio
         for O11, so that the plugin can be reused across multiple screens without
         duplicating resources.
+    - name: Image widget reference
+      id: image-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Image widget in Service Studio, including Type, Image, URL, Filename,
+        Cache, Attribute, and Entity Identifier, so that they can correctly
+        display an image from a static resource, external URL, or platform
+        database in a Traditional Web App (O11).
+    - name: Image resource reference
+      id: image-resource-reference
+      description: Wants to look up the properties and runtime properties of the
+        Image resource element in Service Studio, including Width, Height,
+        Runtime Path, Original Filename, Original Format, and Public, so that
+        they can correctly configure an image file resource in a Traditional
+        Web App or Mobile App (O11).
     - name: Icon widget reference
       id: icon-widget-ref
       description: Wants to look up the properties, events, and runtime properties
@@ -2936,6 +2988,24 @@ knowledge-needs:
         Check Box widget in Service Studio, so that they can correctly configure a
         boolean-backed check box field with validation in a Traditional Web App
         (O11).
+    - name: Input Password widget reference
+      id: input-password-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Input Password widget in Service Studio, including Password Type, Max.
+        Length, and Extended Properties, so that they can correctly configure a
+        masked text input field with validation in a Traditional Web App (O11).
+    - name: Input Widget reference
+      id: input-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Input Widget in Service Studio, including Name, Variable, Mandatory,
+        Max. Length, and Type, so that they can correctly configure a validated
+        text input field in a Traditional Web App (O11).
+    - name: If Widget reference
+      id: if-widget-reference
+      description: Wants to look up the properties and runtime properties of
+        the If Widget in Service Studio, including Condition, Animate, and Id,
+        so that they can correctly configure conditional content rendering on
+        a screen in a Traditional Web App or Mobile App (O11).
     - name: Icon Badge reference
       id: icon-badge-reference
       description: Wants to look up the properties of the Icon Badge UI Pattern
@@ -3473,6 +3543,12 @@ knowledge-needs:
         Delete event, in OutSystems 11, by adding the missing submit
         button/screen action or event action, so that end user input is
         saved instead of silently ignored.
+    - name: JavaScript flow element
+      id: javascript-flow-element
+      description: Wants to know the configurable properties of the JavaScript flow element
+        available in Service Studio, so that they can add custom JavaScript code
+        to a screen, screen action, or module, in OutSystems 11 Traditional Web
+        Apps, Mobile Apps, and Reactive Web Apps.
   - name: Using external JavaScript
     id: using-external-javascript
     subtopics:

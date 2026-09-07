@@ -8,7 +8,6 @@ figma:
 tags: extension development, system integration, development best practices, extension management, outsystems extensions
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

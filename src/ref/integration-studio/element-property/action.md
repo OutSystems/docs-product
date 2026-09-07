@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) action properties include mandatory and optional se
 tags: ide usage, reactive web apps, tutorials for beginners, extension management, action definition
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

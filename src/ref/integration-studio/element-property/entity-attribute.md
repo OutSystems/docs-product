@@ -8,7 +8,6 @@ summary: Explore the detailed properties of entity attributes in OutSystems 11 (
 tags: entity management, database configuration, ide usage, reactive web apps, entity attributes
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

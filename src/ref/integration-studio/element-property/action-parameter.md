@@ -8,7 +8,6 @@ figma:
 tags: action parameters, data types, input parameters, entity definitions, extension structures
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) Integration Studio enforces naming conventions and 
 tags: ide usage, reactive web apps, tutorials for beginners, integration studio, naming conventions, database compatibility
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

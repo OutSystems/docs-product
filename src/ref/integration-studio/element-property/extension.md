@@ -8,7 +8,6 @@ figma:
 tags: outsystems, extension lifecycle, database management, ide usage, extension configuration
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

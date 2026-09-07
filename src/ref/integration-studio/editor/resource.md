@@ -7,7 +7,6 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=306
 summary: Explore how OutSystems 11 (O11) manages resource properties and deployment actions in its Resource Editor.
 tags: resource management, extension properties, deployment configuration, platform server directories, resource properties
 audience:
-  - Front-end developer
   - Developer
   - Platform administrator
 outsystems-tools:

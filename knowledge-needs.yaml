@@ -4539,6 +4539,17 @@ knowledge-needs:
         and following the recommended action, so that they can continue
         working with Mentor Studio's conversational AI development flow in
         ODC Studio.
+  - name: Troubleshoot Mentor Web
+    id: troubleshoot-mentor-web
+    subtopics:
+    - name: Mentor Web errors
+      id: mentor-web-errors
+      description: Wants to locate and resolve Mentor Web errors by finding
+        the error code in the reference, understanding whether it's a
+        generation/refinement error, an AI Provider error, or a platform
+        error, and following the recommended action, so that they can
+        continue using Mentor Web to generate and refine apps in ODC
+        Portal.
   - name: Mentor Web prompts
     id: mentor-web-prompts
     subtopics:

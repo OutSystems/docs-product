@@ -6126,6 +6126,39 @@ knowledge-needs:
 - name: Infrastructure Setup
   guid: a1c2e3f4-5b6d-7e8f-9a0b-1c2d3e4f5a6b
   topics:
+  - name: Certificate Management
+    id: certificate-management
+    subtopics:
+    - name: Trust self-signed cert
+      id: trust-self-signed-cert
+      description: Wants to add a self-signed certificate to the trusted root
+        store on O11 Platform Server front-end servers, by importing it via
+        the Microsoft Management Console (MMC) Certificates snap-in into the
+        Trusted Root Certification Authorities store and exporting a
+        DER-encoded copy for reuse, so that HTTPS connections to a
+        self-signed web service can establish trust instead of failing with
+        "Could not establish trust relationship for the SSL/TLS" errors.
+    - name: Generate CSR keytool
+      id: generate-csr-keytool
+      description: Wants to generate a PKCS#10 Certificate Signing Request
+        (CSR) for an OutSystems 11 Java/Linux front-end (JBoss, Wildfly, or
+        WebLogic), by creating a Java keystore and key pair with keytool and
+        generating a .csr file, so that they can submit it to a
+        certification authority to obtain an SSL certificate.
+    - name: Import SSL cert keystore
+      id: import-ssl-cert-keystore
+      description: Wants to import an acquired SSL certificate, along with
+        its root and intermediate CA certificates, into a Java keystore
+        using keytool on an OutSystems 11 Linux front-end, and set correct
+        keystore file ownership, so that the certificate chain is trusted
+        and ready for the application server to use.
+    - name: Configure app server SSL
+      id: configure-app-server-ssl
+      description: Wants to configure JBoss EAP/Community, Wildfly, or WebLogic to use an
+        installed SSL certificate and keystore (editing standalone-
+        outsystems.xml or the WebLogic Administration Console keystore/SSL
+        settings) and restart the server, so that OutSystems 11 applications on
+        Linux become accessible over HTTPS.
   - name: Reverse Proxy Configuration
     id: reverse-proxy-configuration
     subtopics:
@@ -6649,6 +6682,16 @@ knowledge-needs:
       ignored" warning, so they can ask the application manager or Service
       Center administrator to correct it using the Service Center Factory
       Configuration solution and republish the module.'
+  - name: Resolve FIPS crypto error
+    id: resolve-fips-crypto-error
+    description: 'Wants to resolve the "This implementation is not part of the
+      Windows Platform FIPS validated cryptographic algorithms" error that occurs
+      when running OutSystems Platform Server versions earlier than 11.38.0 on a
+      system enforcing FIPS policy, by disabling the local FIPS compliance security
+      policy, overriding the .NET configuration to allow non-FIPS-validated
+      algorithms, or upgrading to Platform Server 11.38.0+ for native FIPS-compliant
+      environment support, so that the platform runs without being blocked by the
+      system''s FIPS enforcement.'
   - name: Renew server license
     id: renew-server-license
     description: Wants to know how to respond to a Service Center warning
@@ -6724,6 +6767,18 @@ knowledge-needs:
         didn''t receive the appointment confirmation email, by checking
         spam and junk folders and opening a support case if it''s still
         missing, so that they can continue with their exam registration.'
+    - name: Exam refund eligibility
+      id: exam-refund-eligibility
+      description: Wants to cancel a scheduled certification exam and receive a refund, by
+        canceling before the refund eligibility cutoff relative to the exam's
+        scheduled date and time, so that they know whether they qualify for a
+        refund or forfeit the fee.
+    - name: Exam reschedule windows
+      id: exam-reschedule-windows
+      description: Wants to reschedule a scheduled certification exam without
+        losing the fee, by understanding the free, paid, and not-allowed
+        rescheduling windows based on how many days remain before the exam,
+        so that they can reschedule at the right time.
   - name: Support Portal
     id: support-portal
     subtopics:

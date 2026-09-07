@@ -1928,18 +1928,9 @@ knowledge-needs:
       id: timer-best-practices
       description: Wants to implement a long-running Timer correctly by applying best
         practices (timeout prevention, idempotent commits, completeness through batching,
-        and data integrity) in ODC, so that the Timer never aborts due to timeout and
-        all records are eventually processed without data corruption or repeated work.
-    - name: Timer best practices O11
-      id: timer-best-practices-o11
-      description: Wants to implement a long-running Timer correctly in O11 Service Studio
-        by applying best practices (timeout prevention via a captured start time
-        and periodic check, idempotent commits per iteration to avoid repeated
-        work, completeness via a For Each loop with re-querying, and data
-        integrity), including chaining execution to continue processing when
-        more records remain, so that the Timer never aborts due to timeout and
-        all records are eventually processed without data corruption or repeated
-        work.
+        chaining execution to continue processing when more records remain, and data
+        integrity), so that the Timer never aborts due to timeout and all records are
+        eventually processed without data corruption or repeated work.
     - name: Configure timer settings
       id: configure-timer-settings
       description: Wants to configure a Timer's schedule (Daily, Weekly, Monthly, When

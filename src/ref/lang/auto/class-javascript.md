@@ -1,5 +1,5 @@
 ---
-summary: Explore JavaScript integration in OutSystems 11 (O11) to enhance application capabilities with custom code.
+summary: JavaScript flow element properties in OutSystems 11 (O11) define the Name, Description, and JavaScript code fields for custom logic.
 helpids: 30111
 locale: en-us
 guid: f4f5a9b7-d123-4438-a900-9ca289c4e339

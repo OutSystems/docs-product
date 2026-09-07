@@ -1,3 +1,10 @@
+coverage-type:
+  - remember
+  - understand
+  - apply
+  - evaluate
+  - unblock
+
 audience:
   - Architect
   - Business analyst

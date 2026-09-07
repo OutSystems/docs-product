@@ -4535,6 +4535,14 @@ knowledge-needs:
         OmniDoc2MD's extractedImagesMetadata and imagesZipFile outputs with LoadZIP
         and GetFiles, to the same user message that carries the Markdown, so that
         a multimodal AI model receives both text and image content together.
+    - name: Attach docs to message
+      id: attach-docs-to-message
+      description: Wants to attach multiple binary documents (PDFs, images)
+        directly as content items in an agent's user message, using a
+        ForEach loop with ListAppend nodes to add a text label and an
+        ImageBinary content item per document, so that a multimodal AI
+        model can analyze several documents in a single call without prior
+        conversion to Markdown.
   - name: Sentiment analysis
     id: sentiment-analisys
     subtopics:
@@ -4702,6 +4710,12 @@ knowledge-needs:
         dataset versions across runs, and failure details for setup or
         teardown stages, so that they can interpret run outcomes and know
         where to investigate failures.
+    - name: Agent conversation memory
+      id: agent-conversation-memory
+      description: Wants to configure an AI agent's BuildMessages logic to
+        include prior conversation turns and grounding data in each system
+        message, so that the agent maintains contextual memory across
+        multiple user prompts in a conversational agentic app.
   - name: Semantic Search
     id: semantic-search
     subtopics:

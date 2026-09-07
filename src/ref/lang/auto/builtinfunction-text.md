@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - built-in-text-functions
+  - check-string-contains
 ---
 
 # Text

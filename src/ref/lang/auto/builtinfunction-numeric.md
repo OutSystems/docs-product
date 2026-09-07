@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - built-in-math-functions
 ---
 
 # Numeric

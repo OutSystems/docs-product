@@ -2060,6 +2060,28 @@ knowledge-needs:
   topics:
   - name: Integration Patterns - Basics (decision tree)
     id: integration-pattern-basics
+  - name: HTTP library actions
+    id: http-library-actions
+    subtopics:
+    - name: Inspect HTTP request
+      id: inspect-http-request
+      description: Wants to read details of the current HTTP request, such as
+        cookies, headers, HTTP method, URL, domain, and submitted files, using
+        the ODC HTTP library's Request_Get* actions, in ODC Studio, so that
+        server-side logic can react to incoming request data.
+    - name: Customize HTTP response
+      id: customize-http-response
+      description: Wants to customize the current HTTP response by adding a header, setting
+        a cookie, or setting the status code, using the ODC HTTP library's
+        response actions, in ODC Studio, so that server-side logic can control
+        what's sent back to the client.
+    - name: Build and submit HTTP URLs
+      id: build-submit-http-urls
+      description: Wants to generate an absolute URL, replace a URL's domain,
+        and submit an outbound HTTP GET request, using the ODC HTTP library's
+        Request_AbsoluteURL, Request_ReplaceDomain, and
+        Request_SubmitGetRequest actions, in ODC Studio, so that apps can
+        normalize URLs and call external HTTP endpoints.
   - name: Expose webservices
     id: expose-webservices
     subtopics:
@@ -3268,6 +3290,40 @@ knowledge-needs:
         immediate, permanent, and only possible for a non-default subdomain,
         so that they safely retire the old address once all dependent
         configurations have been updated.
+    - name: Reauthenticate users after domain change
+      id: reauthenticate-users-domain-change
+      description: Wants to manage member or end-user reauthentication after
+        an organization or stage domain change in ODC, understanding that
+        both the previous and new domain stay active until the previous one
+        is deleted, so that they avoid access disruptions when retiring the
+        old domain.
+    - name: Update OIDC redirect URIs after domain change
+      id: update-oidc-redirect-uris-domain-change
+      description: Wants to update OIDC redirect URIs after an organization
+        or stage domain change in ODC, understanding that both the previous
+        and new domain stay active until the previous one is deleted, so
+        that sign-in flows keep working when they retire the old domain.
+    - name: Rebuild native mobile apps after domain change
+      id: rebuild-native-mobile-apps-domain-change
+      description: Wants to rebuild native mobile apps after an organization
+        or stage domain change in ODC, understanding that both the previous
+        and new domain stay active until the previous one is deleted, so
+        that distributed mobile apps keep pointing to the active domain
+        after the old one is removed.
+    - name: Reconnect private gateway connectors after domain change
+      id: reconnect-private-gateway-connectors-domain-change
+      description: Wants to reconnect private gateway connectors after an
+        organization or stage domain change in ODC, understanding that both
+        the previous and new domain stay active until the previous one is
+        deleted, so that private connectivity keeps working when they retire
+        the old domain.
+    - name: Reconnect self-hosted configurator after domain change
+      id: reconnect-self-hosted-configurator-domain-change
+      description: Wants to reconnect the self-hosted configurator after an
+        organization or stage domain change in ODC, understanding that both
+        the previous and new domain stay active until the previous one is
+        deleted, so that self-hosted setup keeps working when they retire
+        the old domain.
     - name: Reorder pipeline stages
       id: reorder-pipeline-stages
       description: Wants to change the sequence of non-production stages in
@@ -4482,6 +4538,22 @@ knowledge-needs:
       description: Wants to understand which regions trigger cross-region
         data transfers for knowledge bases, so they can plan for data
         residency compliance.
+    - name: Choose chunking strategy
+      id: choose-chunking-strategy
+      description: Wants to compare ODC knowledge base chunking strategies and their trade-
+        offs, so they can select the strategy that optimizes retrieval quality
+        for their data structure and expected query type.
+    - name: Manage KB lifecycle
+      id: manage-kb-lifecycle
+      description: Wants to create, upload files to, view, edit, and delete
+        a knowledge base in the ODC Portal, so they can manage a knowledge
+        base's full life cycle without using ODC Studio.
+    - name: Add KB server action
+      id: add-kb-server-action
+      description: Wants to add the auto-generated Server Action for a
+        published knowledge base to an app in ODC Studio, so the app can
+        run semantic search against that knowledge base's indexed content
+        without custom integration code.
   - name: Agent guardrails
     id: agent-guardrails
     subtopics:
@@ -6376,7 +6448,7 @@ knowledge-needs:
     id: certificate-management
     subtopics:
     - name: Trust self-signed cert
-      id: trust-self-signed-cert
+      id: trust-self-signed-cert-o11
       description: Wants to add a self-signed certificate to the trusted root
         store on O11 Platform Server front-end servers, by importing it via
         the Microsoft Management Console (MMC) Certificates snap-in into the
@@ -6384,6 +6456,15 @@ knowledge-needs:
         DER-encoded copy for reuse, so that HTTPS connections to a
         self-signed web service can establish trust instead of failing with
         "Could not establish trust relationship for the SSL/TLS" errors.
+    - name: Add cloud trusted cert
+      id: add-cloud-trusted-cert
+      description: 'Wants to add a self-signed certificate to the trusted
+        root store on O11 Cloud environment front-end servers, by opening a
+        support case with the certificate in .CER format and specifying the
+        target environments, so that OutSystems staff can install it and
+        HTTPS connections to the external system establish trust instead of
+        failing with "Could not establish trust relationship for the
+        SSL/TLS" errors.'
     - name: Generate CSR keytool
       id: generate-csr-keytool
       description: Wants to generate a PKCS#10 Certificate Signing Request
@@ -6960,6 +7041,36 @@ knowledge-needs:
       modules, or data, or asking their Service Center administrator to
       change the license contract, so that they can keep using licensed
       features and publish new modules.
+  - name: License limits reached
+    id: license-limits-reached
+    description: Wants to resolve reaching their OutSystems 11 license usage
+      limits (users, Application Objects, or environments), by contacting
+      OutSystems Support with their Audit License and Activation Code, so
+      that they can troubleshoot their license usage or upgrade their
+      license.
+  - name: License verification
+    id: license-verification
+    description: Wants to manually verify their OutSystems 11 license
+      consumption by downloading the license verification file
+      (OutSystems.Audit.txt) from Service Center's Licensing menu and
+      uploading it to the Customer Portal, so that self-managed
+      environments without automatic telemetry communication remain
+      license compliant each quarter.
+  - name: License invalid hardware
+    id: license-invalid-hardware
+    description: Wants to resolve an OutSystems 11 license invalid error
+      caused by a hardware change (Deployment Controller VM restart,
+      physical network device change, or promoting a front-end server to
+      Deployment Controller) that alters the environment's serial number,
+      by releasing the previous environment, registering it with the new
+      serial number on the Licensing portal, and installing the new
+      license file.
+  - name: Retain VM MAC
+    id: retain-vm-mac
+    description: Wants to prevent a Virtual Machine hosting the Deployment
+      Controller from getting a new environment serial number after a
+      restart, by configuring the VM to retain its MAC address across
+      restarts instead of assigning a new one.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:

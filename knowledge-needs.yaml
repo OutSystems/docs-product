@@ -67,6 +67,14 @@ knowledge-needs:
         condition, by using If nodes in ODC Studio, in OutSystems Developer
         Cloud (ODC) apps, so that different logic paths run depending on
         runtime values.
+    - name: Create action via widget
+      id: create-action-from-widget-event
+      description: Wants to create a new client action directly from a
+        widget's event property (for example, a Dropdown's On Change), by
+        selecting New Client Action from the property's drop-down list in
+        Service Studio/ODC Studio, so that the widget is automatically
+        wired to trigger the newly created logic without adding a separate
+        action and connector afterward.
     - name: Define async action
       id: define-async-client-action
       description: Wants to make a client action asynchronous and signal its
@@ -261,6 +269,14 @@ knowledge-needs:
         a custom format, including how to escape literal characters, so
         they can display dates and times in a specific format in
         OutSystems 11.
+    - name: Built-in URL functions
+      id: built-in-url-functions
+      description: Wants to know which built-in URL functions are available in OutSystems
+        11 (e.g. AddPersonalAreaToURLPath, GetBookmarkableURL,
+        GetPersonalAreaName, GetOwnerURLPath, GetExceptionURL), including their
+        parameters, return types, and availability in server-side and client-
+        side logic, so that they can manage Personal Area URL paths and retrieve
+        the current screen's or last exception's URL in expressions.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -279,6 +295,12 @@ knowledge-needs:
       id: output-parameters
     - name: How to use Variables
       id: how-to-use-variables
+    - name: Record auto-assign
+      id: record-auto-assign
+      description: 'Wants to automatically populate a Record variable''s attribute
+        values in Service Studio''s Assign Tool, by first assigning the record''s
+        identifying attribute in the same Assign node, so they don''t have to
+        manually enter each attribute value one by one.'
   - name: Using Structures
     id: using-structures
     subtopics:
@@ -339,6 +361,14 @@ knowledge-needs:
         server action or service action, using the CheckEndUserRole built-in
         function with a RoleId input, so that business logic can conditionally
         allow or restrict behavior based on the user's role.
+    - name: Check role of user
+      id: check-role-of-user
+      description: Wants to verify whether a given user (not necessarily the
+        current one) has a specific role, inside server-side logic or in
+        database/local storage aggregates, using the CheckRole built-in
+        function with RoleId and UserId inputs, so that business logic can
+        conditionally allow or restrict behavior based on any user's role, in
+        OutSystems 11.
     - name: Hierarchical roles choice
       id: hierarchical-roles-choice
       description: Wants to decide whether to use hierarchical roles instead
@@ -2223,6 +2253,12 @@ knowledge-needs:
         entities' Sent attribute in Service Studio, or by checking the Email
         Log screen in Service Center's Monitoring tab, so that they can
         verify when an email was actually sent.
+    - name: Attach file to email
+      id: attach-file-to-email
+      description: Wants to attach a file to an outgoing email by configuring the Attach
+        File action's required and optional properties in Service Studio for
+        O11, so that recipients receive the supporting file directly within the
+        email rather than through a separate channel.
   - name: BPT
     id: bpt
     subtopics:
@@ -2248,6 +2284,20 @@ knowledge-needs:
       id: bpmn-notation
     - name: Patterns for processes (automatic, human, decision)
       id: process-decision-patterns
+    - name: Automatic activity errors
+      id: automatic-activity-errors
+      description: Wants to understand how errors are handled in an Automatic
+        Activity in OutSystems 11, by knowing that on error the flow execution
+        stops and automatically retries from the beginning until it succeeds
+        or the process is terminated, so that they can monitor and resolve
+        failing process activities through Service Center.
+    - name: Automatic activity scope
+      id: automatic-activity-scope
+      description: Wants to know what elements are accessible when editing an
+        Automatic Activity's flow in OutSystems 11 (process input/output
+        parameters, local variables, invoked actions' and queries' output
+        parameters), so that they can select the right variable in the
+        Expression Editor or Select Variable window.
     - name: Archive BPT processes
       id: archive-bpt-processes
       description: Wants to archive old closed BPT Process instances by creating
@@ -2618,6 +2668,18 @@ knowledge-needs:
       id: layouts
     - name: Adding a Block
       id: adding-a-block
+    - name: Block widget reference
+      id: block-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Block widget in Service Studio, including Name, Source Block, and Id, so
+        that they can correctly display a Block with input parameters on a screen
+        in a Traditional Web App or Mobile App (O11).
+    - name: Block element reference
+      id: block-element-reference
+      description: Wants to look up the properties and events of the Block element,
+        including its identification, visibility, and lifecycle event handlers,
+        in Service Studio, so that they can correctly configure a Block's
+        behavior and lifecycle in a Traditional Web App (O11).
     - name: Adding a Widget or OS UI pattern
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
@@ -2978,9 +3040,26 @@ knowledge-needs:
         Service Studio, so that the combo box pre-selects a specific record
         when the screen loads, in traditional web apps, mobile apps, and
         reactive web apps for OutSystems 11.
+    - name: Ajax Refresh reference
+      id: ajax-refresh-reference
+      description: Wants to look up the properties and key usage rules of the
+        Ajax Refresh element (Widget or Web Block, Row Number, Animation
+        Effect, one-element-per-node limit, Ajax Submit requirement, Name
+        requirement, Web Block Preparation re-execution, refresh order) in
+        Service Studio, so that they can correctly configure partial screen
+        refreshes without a full page reload, in OutSystems 11 traditional
+        web apps, mobile apps, and reactive web apps.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
+    - name: Implement form validation
+      id: implement-form-validation
+      description: Wants to implement custom business-rule validation on a
+        screen's Save action, using an If condition to check a field's value
+        and an Assign to set the input's Valid property to False and its
+        ValidationMessage, in Service Studio for OutSystems 11, so that
+        invalid data (such as a past due date or a malformed phone number) is
+        rejected before it's saved to the database.
     - name: Navigating between screens
       id: navigate-screens
     - name: Resolve unused connector

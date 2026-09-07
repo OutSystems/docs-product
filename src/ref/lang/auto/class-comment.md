@@ -9,7 +9,6 @@ summary: Explore how OutSystems 11 (O11) enhances code commenting with features 
 tags: ide usage, reactive web apps, tutorials for beginners, code commenting, development best practices
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

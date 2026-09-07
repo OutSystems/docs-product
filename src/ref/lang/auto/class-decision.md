@@ -8,7 +8,6 @@ figma:
 tags: process flow design, decision management, outsystems development, process flow toolbox, decision logic
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

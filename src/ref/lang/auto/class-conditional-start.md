@@ -8,7 +8,6 @@ summary: Explore how OutSystems 11 (O11) utilizes the Conditional Start process 
 tags: workflow automation, event-driven processes, entity record events, process design, process flow
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -9,7 +9,6 @@ figma:
 tags: soap, web services, deprecation, input parameters, technical reference
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -205,7 +205,7 @@ knowledge-needs:
         output data type instead when an issue occurs, so that they can predict
         function behavior when writing expressions in ODC Studio.
     - name: Built-in math functions
-      id: built-in-math-functions
+      id: built-in-math-functions-odc
       description: Wants to know which built-in math functions are available in ODC Studio,
         including their parameters, return types, and availability in server-
         side logic, client-side logic, and database aggregates, so that they can
@@ -222,13 +222,27 @@ knowledge-needs:
         Studio, including their outputs and availability in server-side logic,
         client-side logic, and database aggregates, so that they can retrieve
         session locale, user agent, and app name information in expressions.
+    - name: O11 math functions
+      id: built-in-math-functions-o11
+      description: Wants to know which built-in math functions are available
+        in OutSystems 11 (Traditional Web, Mobile, and Reactive apps),
+        including their parameters, return types, and availability in server-
+        side logic, client-side logic, database aggregates, and Local Storage,
+        so that they can perform mathematical calculations in expressions.
     - name: Built-in date functions
-      id: built-in-date-functions
+      id: built-in-date-functions-odc
       description: Wants to know which built-in DateTime functions are available
-        in ODC Studio (e.g. DiffMonths, DiffQuarters, DiffWeeks, DiffYears,
-        GetTicks, Quarter, IsLeapYear), including their parameters and return
-        types, so that they can perform date and time calculations in
-        expressions.
+        in ODC Studio (e.g. GetTicks), including their parameters and return
+        types, so that they can perform date and time calculations in expressions.
+    - name: O11 date functions
+      id: built-in-date-functions-o11
+      description: Wants to know which built-in date and time functions are
+        available in OutSystems 11 (Traditional Web, Mobile, and Reactive apps),
+        including date/time arithmetic (AddDays, AddMonths), extraction (Day,
+        Month, Year), and difference (DiffDays, DiffHours) functions,
+        including their parameters, return types, and availability in server-
+        side logic, client-side logic, database aggregates, and Local Storage,
+        so that they can perform date and time calculations in expressions.
     - name: DST date calculations
       id: dst-date-calculations
       description: Wants to understand how Daylight Saving Time (DST) transitions
@@ -277,6 +291,15 @@ knowledge-needs:
         parameters, return types, and availability in server-side and client-
         side logic, so that they can manage Personal Area URL paths and retrieve
         the current screen's or last exception's URL in expressions.
+    - name: O11 misc functions
+      id: o11-misc-functions
+      description: Wants to know which miscellaneous built-in functions are
+        available in OutSystems 11 (GeneratePassword, If, IsLoadingScreen,
+        CurrentThemeIsMobile), including their parameters, return types, and
+        availability in server-side logic, client-side logic, and database
+        aggregates, so that they can generate passwords, evaluate conditional
+        expressions, detect screen loading state, and check for a mobile
+        theme in expressions.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -301,6 +324,15 @@ knowledge-needs:
         values in Service Studio''s Assign Tool, by first assigning the record''s
         identifying attribute in the same Assign node, so they don''t have to
         manually enter each attribute value one by one.'
+    - name: Client Variables
+      id: client-variables
+      description: 'Wants to store and share client-side key-value data across
+        Mobile and Reactive Web apps using Client Variables, including how to
+        create one in Service Studio, use it to filter an Aggregate or bind it
+        to a widget, and understand when its value resets (on sign-out) or is
+        shared (same User Provider, same browser, via Public Blocks/Client
+        Actions), so that app context or configuration data persists
+        client-side without exposing sensitive information.'
   - name: Using Structures
     id: using-structures
     subtopics:
@@ -2350,6 +2382,13 @@ knowledge-needs:
         File action's required and optional properties in Service Studio for
         O11, so that recipients receive the supporting file directly within the
         email rather than through a separate channel.
+    - name: Concatenate emails
+      id: concatenate-email-addresses
+      description: Wants to combine multiple email addresses (or lists of email
+        addresses) into a single comma-separated list using the
+        EmailAddressesConcatenate built-in function, in Service Studio for O11,
+        so that they can pass a combined recipient list to the Send Email
+        element or activity.
   - name: BPT
     id: bpt
     subtopics:
@@ -2771,6 +2810,12 @@ knowledge-needs:
         including its identification, visibility, and lifecycle event handlers,
         in Service Studio, so that they can correctly configure a Block's
         behavior and lifecycle in a Traditional Web App (O11).
+    - name: Comment widget reference
+      id: comment-widget-reference
+      description: Wants to look up the properties of the Comment Widget in
+        Service Studio, including Text and Is Reminder, so that they can
+        correctly add a development-time screen annotation that appears as a
+        TrueChange reminder in a Traditional Web App (O11).
     - name: Adding a Widget or OS UI pattern
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
@@ -2801,6 +2846,12 @@ knowledge-needs:
         Studio — including Position, StartsOpen, Trigger, and ExtendedClass — so
         that they can correctly configure tooltip appearance and behavior in a
         Reactive Web App or Mobile App.
+    - name: Check Box widget reference
+      id: check-box-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Check Box widget in Service Studio, so that they can correctly configure a
+        boolean-backed check box field with validation in a Traditional Web App
+        (O11).
     - name: Icon Badge reference
       id: icon-badge-reference
       description: Wants to look up the properties of the Icon Badge UI Pattern
@@ -3116,6 +3167,13 @@ knowledge-needs:
         Studio for OutSystems 11, so that a line chart with a smooth spline
         line and custom markers displays correctly in traditional web apps,
         mobile apps, and reactive web apps.
+    - name: Combo Box widget reference
+      id: combo-box-widget-reference
+      description: Wants to look up the properties and runtime properties of the Combo Box
+        widget in Service Studio, including its data binding, display, and
+        behavior configuration options, so that they can correctly configure a
+        value-selection dropdown field bound to an Entity, Structure, or special
+        values list in a Traditional Web App (O11).
     - name: Order combo box list
       id: order-combo-box-list
       description: Wants to control the order of items displayed in a Combo Box

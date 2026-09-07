@@ -5,7 +5,9 @@ guid: 7316b94a-14c9-4e46-85bf-c1105c44030e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: performance optimization, code maintenance, application development, outsystems ide, code cleanup
+tags:
+  - Optimization
+  - Performance
 audience:
   - Developer
   - Front-end developer

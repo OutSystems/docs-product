@@ -5,7 +5,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3067-146&t=0cuQUgeosMV2m0Kw-1
 summary: OutSystems 11 (O11) facilitates importing .NET assembly items as actions with specific properties and parameters.
-tags: ide usage, reactive web apps, .net integration, outsystems development, import actions
+tags:
+  - .NET
+  - Extensions
 audience:
   - Developer
   - Front-end developer

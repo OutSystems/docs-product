@@ -5,7 +5,8 @@ guid: 0afc82d0-345d-4c7e-b0be-3e7679fbad14
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: outsystems, resource management, extension management, development best practices, application deployment
+tags:
+  - Extensions
 audience:
   - Developer
   - Front-end developer

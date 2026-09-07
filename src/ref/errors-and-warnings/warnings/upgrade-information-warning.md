@@ -5,7 +5,10 @@ guid: ac6e349e-376b-4975-aac4-491d09f1a7a7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: version control, module management, application deployment, error handling, server upgrade
+tags:
+  - 1-Click Publish
+  - Platform Server
+  - Troubleshooting
 audience:
   - Platform administrator
   - Developer

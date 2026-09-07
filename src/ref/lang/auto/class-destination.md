@@ -5,7 +5,12 @@ guid: a9b00968-b707-4dc9-9884-209002577aca
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: screen navigation, user interface development, application flow control, transition effects, outsystems platform
+tags:
+  - Front-End
+  - Mobile app
+  - Screens
+  - Traditional Web
+  - UI
 audience:
   - Developer
   - Front-end developer

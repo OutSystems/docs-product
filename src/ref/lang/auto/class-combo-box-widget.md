@@ -1,7 +1,9 @@
 ---
 summary: Explore the Combo Box Widget in OutSystems 11 (O11), designed for selecting values from a list in Traditional Web Apps.
 helpids: 4027
-tags: outsystems development, widget configuration, web development, form elements, ui components
+tags:
+  - Traditional Web
+  - Widgets
 locale: en-us
 guid: 2ad09f6b-4508-4db2-b84a-3ce248492fc3
 app_type: traditional web apps

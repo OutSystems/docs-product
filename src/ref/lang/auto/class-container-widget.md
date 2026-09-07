@@ -1,7 +1,12 @@
 ---
 summary: OutSystems 11 (O11) features a Container Widget for organizing layouts in Traditional Web Apps.
 helpids: 4047
-tags: user interface, layouts, web development, widgets, style customization
+tags:
+  - Front-End
+  - Layouts
+  - Traditional Web
+  - UI
+  - Widgets
 locale: en-us
 guid: f018d411-b8b9-4c20-9744-4807528f9255
 app_type: traditional web apps

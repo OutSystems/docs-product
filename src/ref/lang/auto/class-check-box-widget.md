@@ -1,7 +1,11 @@
 ---
 summary: Learn about the Check Box widget in OutSystems 11 (O11), designed for Traditional Web Apps, featuring properties for customization and validation.
 helpids: 4026
-tags: widget customization, boolean variable handling, validation in forms, ui component properties, html attributes
+tags:
+  - Front-End
+  - Traditional Web
+  - UI
+  - Widgets
 locale: en-us
 guid: 3facb0e8-ae9c-4efa-95ea-27bacf9806fa
 app_type: traditional web apps

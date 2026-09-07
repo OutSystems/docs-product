@@ -5,7 +5,10 @@ guid: ab789a32-fe94-4809-9459-fac3b3a9a999
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: decision management, process flow, decision logic, flow design, decision outcomes
+tags:
+  - Business Processes
+  - Logic
+  - Workflows
 audience:
   - Developer
   - Front-end developer

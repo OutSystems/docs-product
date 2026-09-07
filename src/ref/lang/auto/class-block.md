@@ -6,7 +6,9 @@ guid: fc28dd21-c51c-429f-a88d-61824267676a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ide usage, reactive web apps, tutorials for beginners, ui component development, dependency management
+tags:
+  - Blocks
+  - Events
 audience:
   - Developer
   - Front-end developer

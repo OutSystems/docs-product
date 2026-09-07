@@ -5,7 +5,10 @@ guid: 2a9589d1-4484-4a62-aa11-9574fa5e2b17
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: low-code development, user interface components, widget implementation, application development
+tags:
+  - Blocks
+  - Screens
+  - Widgets
 audience:
   - Front-end developer
   - Developer

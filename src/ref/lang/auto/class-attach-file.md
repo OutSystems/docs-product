@@ -5,7 +5,9 @@ guid: 05294b82-4021-4992-abe8-41d7d285b55b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: email attachment, file management, web development, outsystems platform, user interface components
+tags:
+  - Logic
+  - Traditional Web
 audience:
   - Developer
   - Front-end developer

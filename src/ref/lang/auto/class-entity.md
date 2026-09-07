@@ -6,7 +6,8 @@ guid: 9c912e20-4808-41f2-93e8-6e83a3654ab7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: entity management, database management, data protection, software development, outsystems platform
+tags:
+  - Entities
 audience:
   - Developer
   - Platform administrator

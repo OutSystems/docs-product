@@ -5,7 +5,8 @@ guid: c895ee72-9869-47c1-a51d-5189df376351
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: process automation, process flow management, software development best practices, application design
+tags:
+  - Business Processes
 audience:
   - Developer
   - Front-end developer

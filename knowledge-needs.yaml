@@ -1014,6 +1014,21 @@ knowledge-needs:
         which entity actions are available when the entity is consumed as an
         external entity in ODC Studio, so that they can correctly use O11 data
         in ODC apps.
+    - name: Connect O11 infrastructure
+      id: connect-o11-infrastructure
+      description: Wants to connect their ODC organization to an O11
+        infrastructure in the ODC Portal, by adding the infrastructure with
+        its LifeTime base URL and creating a bound LifeTime service account
+        with the Administrator role and ODC organization ID, so that they
+        can consume O11 entities and logic in their ODC apps.
+    - name: Edit or remove O11 infrastructure
+      id: edit-remove-o11-infrastructure
+      description: Wants to edit the name and authentication token of a
+        connected O11 infrastructure, or remove it, in the ODC Portal,
+        understanding that the LifeTime base URL can't be changed and that
+        infrastructures with associated O11 data connections or secure
+        connections can't be removed, so that they can manage O11-ODC
+        connections over time.
     - name: Set up interop DB access
       id: setup-interop-db-access
       description: Wants to set up the initial database access for O11-ODC
@@ -1029,6 +1044,24 @@ knowledge-needs:
         an O11 application entity is exposed or promoted, and read access to
         the views/tables for the User and Tenant system entities, so ODC can
         consume the data.
+    - name: Expose O11 entities
+      id: expose-o11-entities
+      description: Wants to configure the baseline environment and select
+        which O11 entities to expose to ODC, setting the Public and Expose
+        Read Only properties in Service Studio, using the O11 LifeTime
+        console, so that ODC apps can reuse O11 data.
+    - name: Promote exposed entities
+      id: promote-exposed-entities
+      description: Wants to promote exposed O11 entities from the baseline
+        environment to the next environment in the O11 infrastructure
+        pipeline using the LifeTime console, so that the exposed entities
+        become available in that ODC stage.
+    - name: Update exposed entities
+      id: update-exposed-entities
+      description: Wants to rename, remove, or update the database view of
+        an already-exposed O11 entity in the baseline environment via the
+        LifeTime console, so that changes to the entity's definition are
+        reflected before promoting it to other environments.
   - name: Extensions
     id: extensions
     subtopics:
@@ -2052,6 +2085,13 @@ knowledge-needs:
         API endpoint URLs, identity providers, and connection strings or
         credentials, when consuming a REST API from another portfolio, so
         that each stage authenticates and connects correctly per portfolio.
+    - name: Configure new portfolio
+      id: configure-new-portfolio
+      description: Wants to configure the default stage-level settings, such as domain,
+        identity, connectivity, and security configurations, for a newly
+        provisioned portfolio's stages in ODC, since new portfolios start with
+        default configurations, so that the new portfolio's apps have the
+        connections, domains, and security needed to work correctly.
     - name: Forge asset ownership
       id: forge-asset-ownership
       description: Wants to understand that in a multi-portfolio ODC
@@ -5907,6 +5947,23 @@ knowledge-needs:
         infrastructure updates and what permission determines that, so that they
         can ensure the right people stay informed of scheduled and rescheduled
         updates.
+  - name: Automatic app patching
+    id: automatic-app-patching
+    description: Wants to understand how OutSystems Developer Cloud (ODC) scans
+      app container images for vulnerabilities and automatically patches
+      affected apps according to CVSS severity, including the difference
+      between automatic and manual (1-Click Publish) patching, and the impact
+      on active timers scheduled to run "When published", so that they can
+      prepare for and manage vulnerability patch rollouts without disrupting
+      running apps.
+  - name: ODC data protection
+    id: odc-data-protection
+    description: Wants to understand how OutSystems Developer Cloud (ODC) protects customer
+      production runtime data, including per-customer KMS-managed encryption at
+      rest, data residency in the organization's specified region, continuous
+      incremental backups retained for a defined retention period, and Aurora
+      Serverless high-availability failover, so that they can assess data
+      protection and disaster recovery guarantees for their apps.
   - name: Vulnerability disclosures
     id: vulnerability-disclosures
     subtopics:
@@ -7304,7 +7361,7 @@ knowledge-needs:
       can control which apps expose the taskbox to end users and keep it hidden
       where it isn't needed.
   - name: Resolve internal error
-    id: resolve-internal-error
+    id: resolve-internal-error-o11
     description: Wants to know what to do when OutSystems 11 shows a generic
       "Internal Error" caused by an unexpected situation in the application
       or environment, so they can submit feedback through the tool or
@@ -7414,6 +7471,15 @@ knowledge-needs:
       third-party or OutSystems content, failing OAuth/OpenID/SAML
       authentication flows, and custom JavaScript-set cookies, so their
       applications keep working correctly.
+- name: Monitor and Troubleshoot (ODC)
+  guid: ''
+  topics:
+  - name: Resolve internal error (ODC)
+    id: resolve-internal-error-odc
+    description: 'Wants to know what to do when ODC Mentor Web shows the generic
+      OS-IDE-CORE-50001 internal server error (a catch-all code for failures
+      without a more specific cause), so they can retry the action or contact
+      OutSystems Support with the trace ID if the problem persists.'
 - name: Project Tracking and Collaboration
   guid: ''
   topics:

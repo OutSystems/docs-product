@@ -221,6 +221,46 @@ knowledge-needs:
         GetTicks, Quarter, IsLeapYear), including their parameters and return
         types, so that they can perform date and time calculations in
         expressions.
+    - name: DST date calculations
+      id: dst-date-calculations
+      description: Wants to understand how Daylight Saving Time (DST) transitions
+        affect date and time built-in functions in OutSystems 11, including
+        unexpected results from client-side JavaScript Date arithmetic during
+        DST changes and how server-side Diff* functions always ignore DST and
+        use the platform server's time zone, so that they can predict outcomes
+        when adding to or comparing dates across a DST boundary.
+    - name: Data conversion functions
+      id: built-in-conversion-functions
+      description: Wants to know which built-in data conversion functions are
+        available in OutSystems 11 (e.g. TextToInteger, DecimalToText,
+        DateTimeToText, BooleanToInteger), including their parameters, return
+        types, and availability in server-side logic, client-side logic, and
+        database aggregates, so that they can convert values between data
+        types in expressions.
+    - name: Format numbers rounding
+      id: format-numbers-rounding
+      description: Wants to know how to format Currency, Decimal, and Percent
+        values into Text (specifying decimal digits, decimal separator, and
+        group separator) using FormatCurrency, FormatDecimal, and
+        FormatPercent, and understand why rounding results differ between
+        server-side logic (round half up) and client-side logic (round half
+        to even), so they get consistent formatted output in OutSystems 11.
+    - name: Text/phone formatting
+      id: text-phone-formatting
+      description: Wants to know how to format Text output using FormatText
+        (padding a string to a minimum/maximum character count with a
+        chosen side and padding character) and FormatPhoneNumber (splitting
+        a phone number string into international code, area code, and phone
+        number segments with custom separators), so they can build
+        formatted text values in OutSystems 11.
+    - name: FormatDateTime patterns
+      id: formatdatetime-patterns
+      description: Wants to know the formatting pattern characters (day,
+        month, year, hour, minute, second, AM/PM designators) supported by
+        the FormatDateTime function to convert a DateTime value into Text in
+        a custom format, including how to escape literal characters, so
+        they can display dates and times in a specific format in
+        OutSystems 11.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -2133,6 +2173,12 @@ knowledge-needs:
       id: how-to-send-emails
     - name: How to create emails
       id: how-to-create-emails
+    - name: Validate email address
+      id: validate-email-address
+      description: Wants to check whether a text string is a properly formatted
+        email address using the EmailAddressValidate built-in function, which
+        follows the HTML5 email validation spec, in Service Studio for O11, so
+        that they can validate user input before using it in email operations.
     - name: Email link variable
       id: email-link-variable
       description: Wants to generate a direct link to a specific record by building

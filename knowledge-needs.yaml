@@ -5355,6 +5355,15 @@ knowledge-needs:
         variable references, or malformed merge/inject content in the build
         action configuration file, so that the mobile app build completes
         successfully.
+    - name: Fix empty file error
+      id: fix-empty-extensibility-file-error
+      description: 'Wants to resolve the "Binary file for <resource-type>
+        ''<resource-name>'' cannot be null or empty" error that blocks
+        updating a mandatory extensibility setting or defining a mandatory
+        mobile configuration during new package creation, caused by
+        uploading a file with no contents or only zero bytes, by replacing
+        it with a file that contains data, so that the extensibility
+        setting update or package creation can proceed.'
     - name: Missing resource error
       id: missing-resource-error
       description: 'Wants to resolve the OS-MABS-CNF-40012 "resource {0} declared
@@ -7086,6 +7095,42 @@ knowledge-needs:
         stack, including how minimum and maximum connections behave under
         concurrent load, in OutSystems 11, so that they can plan capacity and
         avoid connection-pool exhaustion or timeouts.
+  - name: Database and farm server migration
+    id: database-farm-server-migration
+    subtopics:
+    - name: Reinstall on new path
+      id: reinstall-different-path
+      description: Wants to move an on-premises OutSystems 11 Platform Server
+        installation from one folder path to another, by uninstalling
+        RabbitMQ, Erlang, and Platform Server, cleaning up database and .NET
+        configuration entries and environment variables tied to the old
+        path, reinstalling on the new path, and restoring the private key
+        and server configuration files, so that the environment continues
+        to run correctly from the new location without losing its identity
+        or license.
+    - name: Restore database server
+      id: restore-database-server
+      description: Wants to restore the OutSystems 11 database to a new
+        database server in a self-managed .NET stack farm, by running the
+        Configuration Tool on each application server (starting with the
+        deployment controller, then each front-end) to update database
+        connection settings, then creating and applying an All Components
+        solution across all modules, so that all servers point to the new
+        database server without altering application data.
+  - name: LifeTime environment setup
+    id: lifetime-environment-setup
+    subtopics:
+    - name: Relocate LifeTime console
+      id: relocate-lifetime-console
+      description: Wants to relocate the infrastructure management console
+        (LifeTime) from a shared on-premises environment to a new dedicated
+        environment, by installing LifeTime in the new environment, manually
+        recreating Roles, Teams, Authentication Mode, and Service Account
+        configurations, registering the OutSystems environments, and then
+        disabling and deleting LifeTime's applications from the original
+        environment, so that LifeTime runs independently, accepting the
+        loss of LifeTime-specific data such as Performance Monitor history,
+        application tagging history, and the change log.
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:
@@ -7610,6 +7655,13 @@ knowledge-needs:
         losing the fee, by understanding the free, paid, and not-allowed
         rescheduling windows based on how many days remain before the exam,
         so that they can reschedule at the right time.
+    - name: Exam payment receipt
+      id: exam-payment-receipt
+      description: Wants to get a receipt or invoice for their certification or
+        specialization exam payment, when Prometric (the exam vendor) doesn't
+        issue invoices, by requesting the payment receipt through the
+        Prometric confirmation portal, so that they have a document to
+        support the expense with their company or tax authority.
   - name: Support Portal
     id: support-portal
     subtopics:
@@ -7636,6 +7688,44 @@ knowledge-needs:
         (posting, contributing Forge assets, attending events, publishing
         content, and similar activities), so that they can understand
         which recognition badges they've earned or how to earn new ones.
+  - name: Customer Portal
+    id: customer-portal
+    subtopics:
+    - name: Customer Portal access levels
+      id: customer-portal-access-levels
+      description: Wants to understand the access and permission structure of OutSystems
+        Customer Portal, including the different member types and role tiers, so
+        that they can determine who has access to what within their team.
+    - name: Add Customer Portal member
+      id: add-customer-portal-member
+      description: Wants to add a new team member to OutSystems Customer
+        Portal for an O11 infrastructure, by inviting them via email,
+        assigning company and infrastructure permissions, and optionally
+        configuring their initial LifeTime developer account, so that the
+        new member gets appropriate access.
+    - name: Set Customer Portal security contact
+      id: set-customer-portal-security-contact
+      description: Wants to designate a security contact in OutSystems
+        Customer Portal, by assigning the Security role to a member with
+        Company admin or Infrastructure admin permissions, so that person
+        receives all security-related communications and notifications.
+  - name: Account Settings
+    id: account-settings
+    subtopics:
+    - name: Change community email
+      id: change-community-email
+      description: Wants to change their OutSystems community account email
+        through the Settings > Change email option on the community website
+        and confirm it via the verification email sent, so that the new
+        email also syncs as their Personal Environment login on next
+        sign-in.
+    - name: Merge community accounts
+      id: merge-community-accounts
+      description: Wants to merge two OutSystems community accounts into one, understanding
+        what information transfers automatically and what doesn't between the
+        two accounts, by designating which account to keep and which to delete,
+        so that they consolidate their community history without losing needed
+        data unexpectedly.
 - name: SEO
   guid: 54a1d9e5-0f3e-4a8b-b897-7c5c8838b0ff
   topics:

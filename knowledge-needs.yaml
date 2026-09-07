@@ -5190,6 +5190,20 @@ knowledge-needs:
         the Cordova AllowList Plugin replacing Whitelist Plugin, and the
         native Android 12 splash screen behavior, so that they can update
         their app before or after upgrading the MABS version.'
+    - name: MABS 10 upgrade overview
+      id: mabs-10-upgrade-overview
+      description: Wants to understand what's new in MABS 10, including iOS
+        17 and Android 14 SDK targeting and the updated minimum Forge plugin
+        version requirements for O11 and ODC, so that they can plan whether
+        and how to upgrade their mobile app's build service version.
+    - name: MABS 10 breaking changes
+      id: mabs-10-breaking-changes
+      description: Wants to understand the breaking changes introduced in
+        MABS 10, including the removal of legacy Android Support Library
+        (com.android.support) support in favor of mandatory AndroidX, the
+        AndroidXEnabled preference no longer taking effect, and the removal
+        of automatic aps-environments plist injection, so that they can
+        update their app before or after upgrading the MABS version.
     - name: MABS version support
       id: mabs-version-support
       description: Wants to know which MABS versions are currently supported,

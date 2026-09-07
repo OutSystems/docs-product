@@ -565,6 +565,22 @@ knowledge-needs:
       description: Wants to understand what data types are available in ODC, their
         default values, and their minimum/maximum constraints, so that variables and
         entity attributes can be correctly typed during app development.
+    - name: Entity properties
+      id: entity-properties
+      description: Wants to look up the configurable properties of an Entity, including
+        which are mandatory, their default values, and constraints such as
+        Expose Read Only still allowing SQL-based writes, so they can correctly
+        configure an entity in Service Studio for OutSystems 11.
+    - name: Entity attribute properties
+      id: entity-attribute-properties
+      description: Wants to look up the configurable properties of an Entity Attribute,
+        including which are mandatory, their default values, and constraints, so
+        they can correctly define an attribute's behavior in Service Studio.
+    - name: Entity diagram properties
+      id: entity-diagram-properties
+      description: Wants to look up the configurable properties of an Entity Diagram
+        element, including which are mandatory, so they can correctly document
+        their data model in Service Studio.
     - name: DateTime UTC behavior
       id: datetime-utc-behavior
       description: Wants to understand how DateTime values are stored in UTC and
@@ -824,6 +840,12 @@ knowledge-needs:
         count and backoff intervals, and concurrent execution/duration limits —
         so that they can design event payloads, queues, and consumer logic
         within ODC's supported constraints.
+  - name: ODC cloud architecture
+    id: odc-cloud-architecture
+    description: Wants to understand how OutSystems Developer Cloud (ODC) separates
+      its development platform and app runtime into independent, multi-tenant
+      Kubernetes clusters that auto-scale based on CPU and RAM usage, so that
+      they can reason about how apps are built, deployed, and run in ODC.
   - name: ODC network architecture
     id: odc-network-architecture
     description: Wants to understand OutSystems Developer Cloud (ODC)'s network
@@ -831,6 +853,15 @@ knowledge-needs:
       Service, Load Balancer, TLS encryption, and network isolation between
       customers, so that they can design and secure Platform and Runtime apps
       accordingly
+  - name: Data Fabric data handling
+    id: data-fabric-data-handling
+    description: Wants to understand how Data Fabric handles customer data
+      when connecting to external systems in ODC, including what's kept only
+      in memory versus cached in NoSQL storage, how connection secrets are
+      encrypted and never stored in clear text, the encrypted channels used
+      for data in transit, and what's deleted when a connection or environment
+      is removed, so that they can assess data-handling and security
+      practices for external system integrations.
   - name: Trigger ODC event
     id: trigger-odc-event
     description: Wants to create a public event with an input parameter in
@@ -1037,6 +1068,12 @@ knowledge-needs:
         sensitive parameter values in the environment management console, so
         that they can balance troubleshooting needs against performance and
         security.
+    - name: New API version
+      id: new-api-version
+      description: Wants to create a new REST API version when changing an
+        endpoint path, authentication, method name, or a mandatory
+        parameter/field's presence or type, so that existing consumers keep
+        working on the old contract during a migration period.
   - name: Integration Patterns
     id: integration-patterns
     subtopics:
@@ -1053,6 +1090,14 @@ knowledge-needs:
         its LifeTime base URL and creating a bound LifeTime service account
         with the Administrator role and ODC organization ID, so that they
         can consume O11 entities and logic in their ODC apps.
+    - name: Fix org ID mismatch
+      id: fix-org-id-mismatch
+      description: Wants to resolve the OS-EBRG-40301 "authentication token
+        doesn't match the ODC organization ID" validation error when
+        connecting an ODC organization to an O11 infrastructure, by creating
+        a new LifeTime service account scoped to ODC with a matching ODC
+        organization ID, so that the connection can be established
+        successfully.
     - name: Edit or remove O11 infrastructure
       id: edit-remove-o11-infrastructure
       description: Wants to edit the name and authentication token of a
@@ -1094,6 +1139,14 @@ knowledge-needs:
         an already-exposed O11 entity in the baseline environment via the
         LifeTime console, so that changes to the entity's definition are
         reflected before promoting it to other environments.
+    - name: Decide ODC extension
+      id: decide-odc-extension
+      description: Wants to decide whether to extend an existing O11 app
+        with new ODC apps, using data, logic, and user interoperability, or
+        continue evolving it in O11, by weighing use cases such as agentic
+        workflows, high-scale B2C apps, and low-dependency apps against
+        heavy-dependency or UI-extension scenarios, so that they can choose
+        the right platform for a new use case.
   - name: Extensions
     id: extensions
     subtopics:
@@ -1336,6 +1389,12 @@ knowledge-needs:
         stage in ODC Portal and configure the Cloud Connector using the generated
         token and address, so that ODC apps can securely connect to private
         network endpoints.
+    - name: Private gateway routing for O11 consumption
+      id: private-gateway-routing-o11-consumption
+      description: Wants to route O11-consumption requests in ODC through an
+        already activated private gateway by selecting that gateway in the O11
+        infrastructure connection configuration, so that traffic stays on a
+        private network path.
   - name: Generate PDF reports
     id: generate-pdf-reports
     subtopics:
@@ -1434,6 +1493,11 @@ knowledge-needs:
       id: acls
     - name: Webservice authentication
       id: webservice-authentication
+    - name: JWT REST authentication
+      id: jwt-rest-authentication
+      description: Wants to secure REST APIs exposed or consumed between O11
+        and ODC using JWT-based token authentication, so that only trusted
+        callers can invoke sensitive operations across platform boundaries.
     - name: Credential delegation
       id: credential-delegation
       description: Wants to enable Integrated Authentication credential delegation
@@ -2389,6 +2453,13 @@ knowledge-needs:
         EmailAddressesConcatenate built-in function, in Service Studio for O11,
         so that they can pass a combined recipient list to the Send Email
         element or activity.
+    - name: Add email MIME headers
+      id: add-email-mime-headers
+      description: Wants to add custom header properties (MIME headers) to an
+        outgoing email by using the Email element's Extended Properties
+        (Property and Value) in Service Studio for O11, so that they can
+        control message-level headers such as Precedence or Auto-Submitted
+        for automated email handling.
   - name: BPT
     id: bpt
     subtopics:
@@ -2448,6 +2519,19 @@ knowledge-needs:
         unset, on the Process itself (directly, or via the Launch On
         entity''s Label Attribute), in Service Studio, so that a meaningful
         detail text appears under the activity in the Taskbox.'
+    - name: End process activity
+      id: end-process-activity
+      description: Wants to end a process flow path using the End process
+        activity in OutSystems 11, so that the process execution properly
+        terminates once every flow path in the main process reaches its own
+        End activity.
+    - name: Terminate process property
+      id: terminate-process-property
+      description: Wants to force immediate termination of a process
+        execution by setting the End activity's Terminate Process property
+        to Yes in OutSystems 11, so that all activity instances stop right
+        away regardless of other running flow paths, and can be restarted
+        later from Service Center.
   - name: Workflow Builder
     id: workflow-builder
     subtopics:
@@ -3446,6 +3530,13 @@ knowledge-needs:
       id: screen-scaffolding
     - name: Create screen from screen template
       id: screen-template
+    - name: Entry point URL
+      id: entry-point-url
+      description: 'Wants to understand what an Entry element is in a Traditional
+        Web App UI Flow, including how its Name property forms the page''s URL
+        (<entry_name>.aspx) and how the Is Default property designates the
+        module''s index page, so that they can configure the correct entry
+        point for the web app.'
 - name: Deployment Management
   guid: 2d8be9e7-a1a1-4c3b-943e-93ad568b32b0
   topics:
@@ -6394,6 +6485,13 @@ knowledge-needs:
         appears when an end user authenticates via O11-ODC single sign-on
         (UsersIdP) but lacks a valid email address configured in the O11
         Users app.
+    - name: Install UsersIdP for SSO
+      id: install-usersidp-sso
+      description: Wants to install and configure the UsersIdP Forge component
+        in an O11 environment, including creating the UsersIdP client, adding
+        O11 as an external identity provider in ODC, assigning it to an ODC
+        stage, and configuring redirect URIs, so that end users authenticating
+        with O11 built-in authentication get single sign-on access to ODC apps.
   - name: Authorization
     id: authorization
     subtopics:

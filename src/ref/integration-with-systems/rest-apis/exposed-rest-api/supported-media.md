@@ -1,6 +1,7 @@
 ---
 summary: Explore supported media types in REST API requests with OutSystems 11 (O11), detailing rules based on input parameter data types.
-tags: rest api, content-type header, media types, error handling, http status codes
+tags:
+  - REST
 locale: en-us
 guid: 223d6f3f-6f3f-4204-a5f0-f135ca1a76a4
 app_type: traditional web apps, mobile apps, reactive web apps

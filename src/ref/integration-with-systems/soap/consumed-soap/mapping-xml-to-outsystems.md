@@ -1,5 +1,7 @@
 ---
-tags: web services, soap, data mapping, data types, xml
+tags:
+  - SOAP
+  - Web services
 locale: en-us
 guid: ac774bf3-82fc-480e-a633-7652e559d52a
 app_type: traditional web apps, mobile apps, reactive web apps

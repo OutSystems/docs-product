@@ -1,6 +1,7 @@
 ---
 summary: OutSystems 11 (O11) includes a structure attribute for handling REST API multipart requests, detailing properties like Name, Description, and Data Type.
-tags: rest api, api development, data structuring, api integration, json
+tags:
+  - REST
 locale: en-us
 guid: DE3E8594-E1DF-416D-969A-91C522B637B8
 app_type: traditional web apps, mobile apps, reactive web apps

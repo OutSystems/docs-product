@@ -1464,6 +1464,51 @@ knowledge-needs:
       non-guessable IDs) and information (checking permissions in Preparation
       before displaying data), so that only authorized users can perform actions
       or view data.
+  - name: Content security policy
+    id: content-security-policy
+    subtopics:
+    - name: Configure CSP for iOS
+      id: configure-csp-ios
+      description: Wants to configure Content Security Policy directives with the explicit
+        https:// protocol and correct iframe frame-ancestors values, so that
+        CSP-protected resources and iframes load successfully in iOS native
+        mobile apps built with MABS 12 or later on ODC.
+    - name: CSP mobile app propagation
+      id: csp-mobile-app-propagation
+      description: Wants to understand how activating, updating, or
+        deactivating a CSP for a stage propagates to already-installed ODC
+        mobile apps, including that no new build is required, changes are
+        delivered via a native caching system over HTTP headers, a bundled
+        fallback policy applies if the app launches offline right after
+        install, and updates are fetched the next time the app is online, so
+        that they can predict when CSP changes take effect for existing
+        installs.
+    - name: CSP misconfiguration risks
+      id: csp-misconfiguration-risks
+      description: Wants to understand common CSP misconfiguration risks, including missing
+        policies breaking functionality, overly permissive wildcard sources
+        enabling malicious redirects, omitting the explicit https:// protocol,
+        and exceeding the per-stage directive character limit, so that they can
+        plan and test a CSP configuration that's neither too restrictive nor too
+        permissive.
+    - name: Activate CSP for a stage
+      id: activate-csp-stage
+      description: Wants to activate a Content Security Policy for a stage
+        in ODC Portal by toggling CSP status to active, requiring CSP
+        Management permissions, so that default restrictive directives are
+        automatically applied to protect all apps in that stage.
+    - name: Configure CSP directive values
+      id: configure-csp-directive-values
+      description: Wants to customize CSP directive values, or reset them
+        to defaults, in ODC Portal to match their app's specific external
+        service dependencies, plugins, and resources, so that the CSP
+        allow list permits necessary domains while blocking everything
+        else.
+    - name: CSP default and required values
+      id: csp-default-required-values
+      description: Wants to understand what each CSP default value and required value does
+        and the impact of removing them, so that they can safely customize their
+        app's CSP without breaking functionality.
 - name: ODC Workflows
   guid: 8f3c2a1d-6e4b-4a7f-9c0d-2b5e7f1a4c9e
   topics:
@@ -1736,6 +1781,12 @@ knowledge-needs:
       id: config-app-after-deploy
     - name: App settings
       id: app-settings
+    - name: Set app setting secret
+      id: set-app-setting-secret
+      description: Wants to mark or unmark an app setting as secret in ODC
+        Studio and configure its per-stage value in the ODC Portal, so that
+        sensitive setting values stay encrypted and hidden, understanding
+        that reverting to non-secret clears the value on publish.
     - name: Configure app properties
       id: configure-app-properties
       description: Wants to configure an app, library, or mobile library's general
@@ -4760,9 +4811,54 @@ knowledge-needs:
         for the OnKeyboardWillShow, OnKeyboardDidShow, OnKeyboardWillHide, and
         OnKeyboardDidHide events, so that the app can react to keyboard
         visibility changes.
+    - name: KeyStore plugin actions
+      id: keystore-plugin-actions
+      description: Wants to use the KeyStore Plugin's client actions
+        (CheckKeyStorePlugin, SetValue, GetValue, RemoveKey) in ODC Studio to
+        securely set, get, and remove key-value secrets in a mobile app, and
+        handle errors using each action's Success output, so that sensitive
+        information like tokens or passwords is stored safely on iOS and
+        Android devices.
+    - name: Secure KeyStore access
+      id: secure-keystore-access
+      description: Wants to require additional user authentication (device
+        PIN or biometrics) before accessing a KeyStore Plugin secret, by
+        setting the KeyAuthentication parameter on SetValue, customizing the
+        Android authentication dialog's title, subtitle, and cancel button
+        via extensibility settings, enabling automatic invalidation of
+        secrets on biometric change with InvalidateOnBiometricChange, and
+        providing the required NSFaceIDUsageDescription iOS permission, so
+        that access to sensitive key-value pairs is protected by the
+        device's lock screen security.
+    - name: Implement SSL Pinning
+      id: implement-ssl-pinning-cordova
+      description: Wants to implement SSL Pinning for an OutSystems Cordova
+        mobile app, by generating certificate public key hashes, creating a
+        JSON configuration file, installing the SSL Pinning plugin from
+        Forge, uploading the configuration via extensibility settings, and
+        validating certificates with the RequireSSLPinning block, so that
+        mobile app HTTPS communications are protected against
+        man-in-the-middle attacks via client-side certificate verification.
+    - name: Check SSL Pinning validity
+      id: check-ssl-pinning-hash-validity
+      description: Wants to check whether a mobile app's bundled SSL Pinning
+        certificate hash is still valid, using the client action
+        CheckCertificateForUrl and handling whether the check succeeds or
+        returns an error, so that users can be prompted to install a new app
+        version before calls to server actions stop working due to a hash
+        mismatch.
   - name: Using Capacitor Plugins
     id: using-capacitor-plugins
     subtopics:
+    - name: Configure SSL Pinning Capacitor
+      id: configure-ssl-pinning-capacitor
+      description: Wants to configure SSL Pinning in a Capacitor-based ODC
+        mobile app, by creating a build action JSON file that injects
+        certificate pin configuration into the Android network security
+        config and iOS TSKPinnedDomains/TSKPublicKeyHashes during the build,
+        and referencing that file in the app's extensibility configuration,
+        so that Capacitor apps enforce certificate pinning without relying
+        on Cordova extensibility settings.
     - name: Integrate plugin in app
       id: integrate-plugin-in-app
       description: Wants to integrate a Capacitor plugin (official, community,
@@ -5024,6 +5120,15 @@ knowledge-needs:
         running in the On Initialize event handler before the screen DOM loads,
         by moving them to On Ready or another later event handler, so that the
         destination screen loads quickly.
+  - name: Data security
+    id: mobile-data-security
+    description: Wants to protect sensitive data in OutSystems Developer Cloud (ODC)
+      mobile apps by minimizing local storage of sensitive information (keeping
+      it server-side and fetching it only when needed over authenticated HTTPS
+      connections), using the device's encrypted keystore, for example via the
+      KeyStore Plugin, for small sensitive items like authentication tokens, and
+      mandatorily re-validating all data server-side, so that mobile app data
+      stays protected against device compromise and client-side tampering.
   - name: Extensibility configurations
     id: extensibility-configurations
     subtopics:
@@ -5612,6 +5717,22 @@ knowledge-needs:
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
   topics:
+  - name: Firewall allowlisting
+    id: firewall-allowlisting
+    subtopics:
+    - name: Allowlist front-end IPs
+      id: allowlist-frontend-public-ips
+      description: Wants to obtain the static public IPs of their
+        OutSystems Cloud environment's front-end servers via Service
+        Center and correctly allowlist them on their firewall instead of
+        the load balancer's IP, so that outgoing connections to external
+        services through the firewall aren't blocked.
+    - name: Allowlist VPN IP range
+      id: allowlist-vpn-private-ip-range
+      description: Wants to allowlist the full private IP range of their
+        OutSystems Cloud on their firewall when connecting via VPN instead
+        of a single IP, so that traffic isn't blocked due to the
+        non-static nature of individual private IP addresses.
   - name: VPN connection troubleshooting
     id: vpn-connection-troubleshooting
     subtopics:
@@ -5694,9 +5815,40 @@ knowledge-needs:
 - name: Product security
   guid: f5935fdf-7f64-46b8-bc71-dd69627c33d8
   topics:
+  - name: Cloud shared responsibility model
+    id: cloud-shared-responsibility-model
+    subtopics:
+    - name: Shared responsibility overview
+      id: shared-responsibility-overview
+      description: Wants to understand how security and infrastructure
+        responsibilities are divided between OutSystems and the customer in
+        OutSystems Cloud (ODC and OutSystems 11 Cloud) deployments, so that
+        they know which protections OutSystems provides and where their own
+        responsibility begins.
+    - name: Cloud customer duties
+      id: cloud-customer-duties
+      description: Wants to understand which security and application
+        lifecycle tasks customers must handle themselves in OutSystems Cloud,
+        such as data management, secure development, vulnerability testing,
+        and mitigation, so that they can meet their share of the shared
+        responsibility model.
+    - name: OutSystems cloud duties
+      id: outsystems-cloud-duties
+      description: Wants to understand which infrastructure and platform
+        security tasks OutSystems handles on their behalf in OutSystems
+        Cloud, such as platform security, network/firewall configuration,
+        encryption, and compute/storage/database management, so that they
+        know what protections are already covered without needing action on
+        their part.
   - name: Cloud infrastructure maintenance
     id: cloud-infrastructure-maintenance
     subtopics:
+    - name: Set maintenance window
+      id: set-maintenance-window
+      description: Wants to configure the maintenance window (day of week and
+        time interval) for a production or non-production OutSystems Cloud
+        environment via the LifeTime console, so that database maintenance
+        and any related downtime occur at a time that minimizes disruption.
     - name: Cloud maintenance schedule
       id: cloud-maintenance-schedule
       description: Wants to understand the schedule, frequency, advance notice periods,
@@ -6752,6 +6904,34 @@ knowledge-needs:
         including how crossed replica placement enables automatic failover to a
         surviving server, so that they can reason about Redis Cluster resilience
         before deploying it.
+  - name: Database Collation
+    id: database-collation
+    subtopics:
+    - name: Collation requirements
+      id: collation-requirements
+      description: Wants to understand OutSystems' case-insensitive collation
+        requirements at the SQL Server instance, database, and column level,
+        and why collations must stay consistent across all environments in
+        an on-premises infrastructure, so that they configure a compliant
+        and consistent database backend when installing OutSystems Platform
+        Server on SQL Server.
+    - name: Avoid collation conflicts
+      id: avoid-collation-conflicts
+      description: Wants to understand why mismatched SQL Server column
+        collations cause errors in join conditions and foreign keys between
+        different data models, in an on-premises OutSystems 11
+        installation, so that they account for future integration needs
+        before finalizing their database's collation choice.
+    - name: Change DB collation
+      id: change-db-collation
+      description: 'Wants to change the collation of an existing OutSystems
+        SQL Server database, understanding that changing only the
+        database-level collation doesn''t update existing column
+        collations, that OutSystems Support doesn''t assist with the change
+        itself, and how to interpret the resulting "Cannot resolve the
+        collation conflict" error, so that they plan and safely execute (or
+        troubleshoot) a collation change with the appropriate database
+        professionals.'
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:
@@ -7069,6 +7249,14 @@ knowledge-needs:
       including the Service Studio debugger, Service Center application
       logs, and modern browser developer tools, so that they know where to
       start when investigating unexpected application behavior.
+  - name: Fix cross-site cookies (O11)
+    id: fix-cross-site-cookies-o11
+    description: Wants to identify and fix cross-site cookie problems in
+      OutSystems 11 apps by using the LifeTime SameSite/Secure settings when
+      stricter SameSite cookie policies cause issues such as broken iframes
+      displaying third-party or OutSystems content, failing OAuth/OpenID/SAML
+      authentication flows, and custom JavaScript-set cookies, so their
+      applications keep working correctly.
   - name: EPA taskbox administration
     id: epa-taskbox-admin
     description: Wants to hide or show the EPA Taskbox per eSpace by activating EPA
@@ -7150,6 +7338,43 @@ knowledge-needs:
       Controller from getting a new environment serial number after a
       restart, by configuring the VM to retain its MAC address across
       restarts instead of assigning a new one.
+  - name: Migrate Activation Code
+    id: migrate-activation-code
+    description: Wants to move a full self-managed OutSystems 11
+      infrastructure (including LifeTime) from one Activation Code to
+      another, by backing up existing license files, checking for
+      IP-protected modules, registering and uploading new license files for
+      the destination Activation Code, and republishing a test module to
+      confirm the change, so that development activities and app publishing
+      continue without unexpected Intellectual Property errors.
+  - name: Rollback Activation Code
+    id: rollback-activation-code
+    description: Wants to revert a self-managed OutSystems 11 infrastructure
+      back to its previous Activation Code after an Intellectual Property
+      error occurs during a migration, by pausing Production deployments
+      and restoring each environment's backed-up license file, so that they
+      can confirm the old Activation Code is active again and contact
+      OutSystems Support for further help.
+  - name: AC migration issues
+    id: ac-migration-issues
+    description: Wants to know how to respond to common issues during an
+      Activation Code migration (a missing serial number under the old
+      Activation Code, or a license under either the old or new Activation
+      Code not prepared for migration), by gathering the affected
+      environments and contacting OutSystems Support, so they can get
+      assistance completing the license change for all environments at
+      once.
+- name: Monitor and Troubleshoot (O10)
+  guid: 69e74025-d666-40fd-b224-c96f5cbba50c
+  topics:
+  - name: Fix cross-site cookies (O10)
+    id: fix-cross-site-cookies-o10
+    description: Wants to identify and fix cross-site cookie problems in
+      OutSystems 10 apps by using Factory Configuration when stricter
+      SameSite cookie policies cause issues such as broken iframes displaying
+      third-party or OutSystems content, failing OAuth/OpenID/SAML
+      authentication flows, and custom JavaScript-set cookies, so their
+      applications keep working correctly.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:

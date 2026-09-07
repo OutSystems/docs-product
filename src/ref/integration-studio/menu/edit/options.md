@@ -8,7 +8,6 @@ summary: Explore customization options for development in Integration Studio wit
 tags: ide usage, reactive web apps, tutorials for beginners, integration studio customization, .net development
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

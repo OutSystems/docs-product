@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) features a Submit Feedback operation in the Help me
 tags: user feedback, integration studio, problem reporting, technical support, online help
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

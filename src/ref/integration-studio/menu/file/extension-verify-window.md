@@ -8,7 +8,6 @@ summary: Learn about the Verify window in OutSystems 11 (O11), essential for ext
 tags: ide usage, reactive web apps, tutorials for beginners, error handling, extension verification
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

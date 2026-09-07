@@ -8,7 +8,6 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=309
 tags: ide usage, reactive web apps, tutorials for beginners, integration studio, help resources
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

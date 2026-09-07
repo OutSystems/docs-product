@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) features a Download from Server window in Integrati
 tags: ide usage, reactive web apps, tutorials for beginners, integration studio, extension management
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

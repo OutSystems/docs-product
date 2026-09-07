@@ -8,7 +8,6 @@ summary: Explore the File menu functionalities in OutSystems 11 (O11) for managi
 tags: ide usage, reactive web apps, tutorials for beginners, extension management, integration studio
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

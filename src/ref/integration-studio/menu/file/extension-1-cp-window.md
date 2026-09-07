@@ -8,7 +8,6 @@ summary: Explore the features of the 1-Click Publish window in OutSystems 11 (O1
 tags: error handling, progress tracking, extension management, ide features, deployment
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

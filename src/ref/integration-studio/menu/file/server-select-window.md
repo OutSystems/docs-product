@@ -8,7 +8,6 @@ summary: Explore server connection options in OutSystems 11 (O11) using the Sele
 tags: server connection, platform integration, user authentication, outsystems ide, configuration management
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - service studio

@@ -5,7 +5,9 @@ guid: 59ec2532-1c5b-4011-a042-2edd112da5b0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: sap integration, data types, error handling, data mapping, outsystems platform
+tags:
+  - Data Integrity
+  - Troubleshooting
 audience:
   - Developer
   - Architect

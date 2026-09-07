@@ -5,7 +5,10 @@ guid: dc568697-e3e5-4dae-9f80-7c4663228e68
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: database configuration, compatibility issues, platform configuration, sql query optimization, error resolution
+tags:
+  - Platform Server
+  - SQL
+  - Troubleshooting
 audience:
   - Developer
   - Platform administrator

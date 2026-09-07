@@ -1,6 +1,9 @@
 ---
 summary: Learn how OutSystems 11 (O11) uses prepared statements and SQL parameters to protect against SQL injection attacks.
-tags: security, sql injection prevention, database management, application security, web development
+tags:
+  - OWASP
+  - SQL
+  - Security
 locale: en-us
 guid: fb90dea0-5413-4871-8e16-ee2b0ce89a73
 app_type: traditional web apps, mobile apps, reactive web apps

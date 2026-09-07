@@ -8,6 +8,9 @@ figma:
 coverage-type:
   - remember
 tags: date manipulation, time manipulation, server-side functions, client-side functions, outsystems 11
+topic:
+  - built-in-date-functions-o11
+  - dst-date-calculations
 audience:
   - Developer
 outsystems-tools:

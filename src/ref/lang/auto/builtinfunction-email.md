@@ -13,6 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - concatenate-email-addresses
+  - how-to-create-emails
+  - validate-email-address
 ---
 
 # Email

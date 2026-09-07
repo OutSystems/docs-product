@@ -5,7 +5,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3042-288&t=EDoWHHiECWnNFXux-1
 summary: Explore the management of extension resources in OutSystems 11 (O11) using Integration Studio's Resources tree.
-tags: extension management, integration studio, version control, resource management, ide customization
+tags:
+  - Extensions
 audience:
   - Developer
 outsystems-tools:

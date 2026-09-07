@@ -1,6 +1,7 @@
 ---
 summary: Explore how OutSystems 11 (O11) maps external database data types to its own data types across various databases.
-tags: database integration, data mapping, external database connectivity, data type conversion, cross-platform development
+tags:
+  - External Databases
 locale: en-us
 guid: 310843b2-84da-4461-99e8-c2dc6be41778
 app_type: traditional web apps, mobile apps, reactive web apps

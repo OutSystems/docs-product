@@ -1,5 +1,5 @@
 ---
-summary: Explore the features and navigation tips of OutSystems 11 (O11) in this detailed guide.
+summary: OutSystems 11 (O11) application navigation covers Service Studio menus and screens for building reactive web and mobile apps.
 tags: ide usage, reactive web apps, tutorials for beginners, application navigation, outsystems platform
 locale: en-us
 guid: 2a31f77b-09dd-4bac-b3b8-bc286a684fc0

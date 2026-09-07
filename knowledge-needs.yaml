@@ -545,6 +545,14 @@ knowledge-needs:
         setting the property to the correct database type or "(Both)" and
         validating that SQL queries are compliant with the chosen database,
         so that the module compiles without the mismatch warning.'
+    - name: Fix unused attribute
+      id: fix-unused-attribute
+      description: 'Wants to fix the "Consider deleting the value <value>. It''s
+        never used because it refers to the missing attribute <attribute>."
+        warning in Service Studio for OutSystems 11, caused by a value being
+        set for an attribute that no longer exists on the entity, by deleting
+        the unused value entry and verifying the attribute deletion was
+        intended, so that the module compiles and publishes successfully.'
   - name: Querying data
     id: querying-data
     subtopics:
@@ -973,6 +981,13 @@ knowledge-needs:
         via Visual Studio's Add Web Reference dialog, and implementing the action
         to call the generated proxy class, so that Service Studio can call the
         Web Service like a built-in action, in OutSystems 11.
+    - name: Open extension editor
+      id: open-extension-editor
+      description: Wants to open the Extension Editor in Integration Studio to
+        view and edit an extension's properties, by double-clicking the
+        extension node in the Multi-tree Navigator or selecting its tab in the
+        Multi-tab Editor, so that they can modify extension properties and
+        manage its elements (actions, structures, entities, and resources).
     - name: Fix invalid assembly
       id: fix-invalid-assembly
       description: 'Wants to fix the OS-ELG-MODL-05001 error ("File does not
@@ -1087,6 +1102,26 @@ knowledge-needs:
         checking whether the SAP data fits within Decimal's boundaries and
         switching the parameter to Text instead, so that the integration
         avoids runtime errors or silent rounding in OutSystems 11.
+    - name: Configure deploy action
+      id: configure-deploy-action
+      description: Wants to choose the correct Deploy Action for an extension resource in
+        Integration Studio based on the resource's file type, so that the
+        resource deploys to the right Platform Server location, or is excluded,
+        when the module is published.
+    - name: Compare resource template
+      id: compare-resource-template
+      description: Wants to compare a resource file stored on the file system
+        against its template file in Integration Studio's Resources tree,
+        using the Compare With Template operation and a diff tool set in the
+        Options Window, so that they can review and merge changes made
+        outside the Resource Editor when Update Source Code can't
+        auto-merge them.
+    - name: Check import details
+      id: check-import-details
+      description: Wants to check the Import Details report for an extension
+        resource that was added by importing actions from a .NET assembly,
+        in Integration Studio's Resource Editor, so that they can review
+        additional information about the imported resource.
   - name: Private Gateway
     id: private-gateway
     subtopics:
@@ -2813,6 +2848,14 @@ knowledge-needs:
     subtopics:
     - name: Navigating between screens
       id: navigate-screens
+    - name: Resolve unused connector
+      id: resolve-unused-connector
+      description: 'Wants to resolve the "Connector from <screen> to <screen>
+        in never used in <flow>" warning in Service Studio, caused by having
+        a connector between two screens that hasn''t been instantiated, by
+        adding a Link or Button on the first screen to the second screen so
+        the connector is used, so that the module compiles without the
+        warning, in OutSystems 11 (O11).'
     - name: Override back navigation
       id: override-back-navigation
       description: Wants to override the default back-navigation behavior by
@@ -2973,6 +3016,16 @@ knowledge-needs:
         the Delete Record icon/link with a CSS snippet, in Service Studio for
         OutSystems 11 Traditional Web Apps, so that end users can only edit
         existing records without deleting them.
+    - name: Fix ignored input
+      id: fix-ignored-input
+      description: Wants to fix Service Studio warnings caused by user input
+        that never reaches the server, either because a screen or block has
+        no widget submitting its inputs (no Submit/Ajax Submit button or
+        Ajax-triggering widget with a mapped screen action) or because an
+        Editable Table has no screen action on its On Row Save or On Row
+        Delete event, in OutSystems 11, by adding the missing submit
+        button/screen action or event action, so that end user input is
+        saved instead of silently ignored.
   - name: Using external JavaScript
     id: using-external-javascript
     subtopics:
@@ -3255,6 +3308,16 @@ knowledge-needs:
         Platform Server version after a server upgrade, by publishing the
         consumed modules first, in OutSystems 11, so that the module
         publishes successfully.'
+    - name: Fix upgrade warning
+      id: fix-upgrade-warning
+      description: 'Wants to resolve the "Upgrade Information Warning" (Producer,
+        Consumer, or User Provider "<module>" was published with a different
+        Platform Server version) in Service Studio or Service Center, caused
+        by a referenced producer, consumer, or user provider module not being
+        republished since the last Platform Server upgrade, by republishing
+        the affected module (via Service Center notification or 1-Click
+        Publish), in OutSystems 11, so that the module avoids runtime errors
+        from version mismatches.'
     - name: Invalid Reference error
       id: invalid-reference-error
       description: 'Wants to resolve the "Invalid Reference" error in Service

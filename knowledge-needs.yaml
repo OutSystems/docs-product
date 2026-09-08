@@ -96,6 +96,10 @@ knowledge-needs:
     subtopics:
     - name: System Events
       id: system-events
+      description: Wants to look up when the On Begin Web Request system event
+        executes and how to configure its Description property, in Service
+        Studio, so that they can correctly document logic that runs on every
+        server request in a Traditional Web App (O11).
     - name: How to use Events
       id: how-to-use-events
     - name: Screen Events
@@ -2266,6 +2270,16 @@ knowledge-needs:
         CaseServices_API module, and passing the DelegatedBy input parameter
         when acting under delegation, in OutSystems 11, so that the Case
         Management Framework can successfully execute the action.'
+    - name: Fix close activity error
+      id: fix-close-activity-error
+      description: 'Wants to fix the "The activity couldn''t be closed, either
+        because you''re missing the required access or it was already
+        closed." error by verifying the user has access to the activity
+        using the Activity_ValidateUserAccess action of the CaseServices_API
+        module, and passing the DelegatedBy input parameter when acting
+        under delegation, before calling Case_CloseActivity in the Case
+        Management Framework in OutSystems 11, so that the action executes
+        successfully.'
     - name: Fix reference mismatch
       id: fix-reference-mismatch
       description: 'Wants to fix the "Not all <records> reference the same
@@ -3393,6 +3407,13 @@ knowledge-needs:
         Cache, Attribute, and Entity Identifier, so that they can correctly
         display an image from a static resource, external URL, or platform
         database in a Traditional Web App (O11).
+    - name: Placeholder widget reference
+      id: placeholder-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Placeholder widget in Service Studio, including Name, Align, Style
+        Classes, Is Ajax Refreshed, and Id, so that they can correctly reserve
+        and configure space in a Block for content in a Traditional Web App or
+        Mobile App (O11).
     - name: Image resource reference
       id: image-resource-reference
       description: Wants to look up the properties and runtime properties of the
@@ -8538,6 +8559,13 @@ knowledge-needs:
         O11 installation — using Test Connection, the Fluent Bit service log, the
         Windows Service console, and the metrics endpoint — so that they can identify
         why logs aren't arriving at a destination or the service isn't running.
+    - name: Fix streaming cancelled
+      id: fix-streaming-cancelled
+      description: Wants to understand and resolve the OS-DP-STREAM-00001 "operation
+        was cancelled" error — where the destination server responds with a gRPC 1
+        (Cancelled) error when testing the streaming connection in O11 or ODC — so
+        that they can restore log and observability data streaming by verifying the
+        destination works correctly and re-establishing the connection.
     - name: Fix streaming timeout
       id: fix-streaming-timeout
       description: Wants to understand and resolve the OS-DP-STREAM-00004 "deadline

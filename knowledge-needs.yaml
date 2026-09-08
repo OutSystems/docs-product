@@ -25,6 +25,12 @@ knowledge-needs:
         which run in response to user interactions like clicking a button, so that
         they can add the right logic to each when building a Traditional Web App
         screen.'
+    - name: Action properties reference
+      id: action-properties-reference
+      description: Wants to look up the configuration properties available for an
+        action in OutSystems 11 Service Studio, including which are mandatory and
+        their default values, so they can correctly configure and understand the
+        action's behavior.
     - name: Use AI logic suggestions
       id: use-ai-logic-suggestions
       description: Wants to understand what AI logic suggestions are and how to use
@@ -337,6 +343,11 @@ knowledge-needs:
         shared (same User Provider, same browser, via Public Blocks/Client
         Actions), so that app context or configuration data persists
         client-side without exposing sensitive information.'
+    - name: Runtime property fields
+      id: runtime-property-fields
+      description: Wants to look up the configurable properties of a Runtime Property
+        element and which are mandatory, so they can correctly define a Runtime
+        Property in Service Studio for OutSystems 11.
   - name: Using Structures
     id: using-structures
     subtopics:
@@ -775,6 +786,13 @@ knowledge-needs:
         the UI asynchronously, by using an Assign node to set a filter parameter
         followed by a Refresh Data node inside a client action triggered by a UI
         event, so that the Screen displays updated data without a full page reload.
+    - name: Refresh Data properties
+      id: refresh-data-properties-reference
+      description: Wants to look up the properties of the Refresh Data node and understand
+        that it runs synchronously, blocking the execution flow until the data
+        source is refreshed, in OutSystems 11 Service Studio, so they can
+        correctly configure a Refresh Data action to update a widget's data on
+        demand.
     - name: Chain aggregate fetches
       id: chain-aggregate-fetches
       description: Wants to sequence multiple On Demand aggregates so each fetches
@@ -3435,6 +3453,13 @@ knowledge-needs:
         Runtime Path, Original Filename, Original Format, and Public, so that
         they can correctly configure an image file resource in a Traditional
         Web App or Mobile App (O11).
+    - name: Resource reference
+      id: resource-reference
+      description: Wants to look up the properties and runtime properties of the
+        Resource element in Service Studio, including Name, Public, Deploy
+        Action, Target Directory, Runtime Path, Resource Content, URL, and
+        Content, so that they can correctly configure a resource file in a
+        Traditional Web App or Mobile App (O11).
     - name: Icon widget reference
       id: icon-widget-ref
       description: Wants to look up the properties, events, and runtime properties
@@ -3453,6 +3478,13 @@ knowledge-needs:
         Check Box widget in Service Studio, so that they can correctly configure a
         boolean-backed check box field with validation in a Traditional Web App
         (O11).
+    - name: Radio Button widget reference
+      id: radio-button-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Radio Button widget in Service Studio, including Name, Variable,
+        Validation Parent, and Value, so that they can correctly configure a group
+        of mutually exclusive options bound to the same variable in a Traditional
+        Web App (O11).
     - name: Input Password widget reference
       id: input-password-widget-reference
       description: Wants to look up the properties and runtime properties of the
@@ -4086,6 +4118,12 @@ knowledge-needs:
       id: screen-scaffolding
     - name: Create screen from screen template
       id: screen-template
+    - name: Screen properties reference
+      id: screen-properties-reference
+      description: Wants to look up the configuration properties available for a
+        screen in OutSystems 11 Service Studio, including which are mandatory
+        and their default values, so they can correctly configure and
+        understand the screen's behavior.
     - name: Entry point URL
       id: entry-point-url
       description: 'Wants to understand what an Entry element is in a Traditional
@@ -6143,6 +6181,17 @@ knowledge-needs:
         storage data model tracking ModifiedOn and IsActive attributes, so that
         only changed or deleted records are synced to local storage for
         read-only offline data access.
+    - name: One-to-many sync pattern
+      id: one-to-many-sync-pattern
+      description: Wants to implement the Read/Write Data One-to-Many offline
+        synchronization pattern for ODC mobile apps, covering the client-side
+        OnSync trigger logic, the server-side ServerDataSync reconciliation
+        logic for the parent and child sync actions, a dictionary mapping local
+        record IDs to newly created server record IDs to preserve the parent-
+        child relationship, and a local entity data model with metadata
+        attributes tracking whether a record originated from the server, was
+        modified locally, and remains active, so that one-to-many master/detail
+        records stay consistent under a "last write wins" strategy.
   - name: Mobile app performance troubleshooting
     id: mobile-app-performance-troubleshooting
     subtopics:
@@ -7358,6 +7407,28 @@ knowledge-needs:
         stage-level assignment is portfolio-scoped in multi-portfolio
         organizations, so that they can decide the correct scope when
         planning an external IdP rollout.
+    - name: Add SAML 2.0 provider
+      id: add-saml-provider-odc
+      description: Wants to add a SAML 2.0 identity provider in ODC Portal
+        by naming the provider, selecting its scope (organization or a
+        specific stage), exchanging SP and IdP metadata, configuring claim
+        mapping and advanced signing options, and reviewing the
+        configuration before adding it, so that end users can authenticate
+        via that provider.
+    - name: SAML endpoint access
+      id: saml-endpoint-access
+      description: Wants to know which SAML endpoints (metadata, single
+        logout, and single sign-on) must be reachable from ODC to their
+        identity provider before configuring a SAML 2.0 provider, including
+        which ones can be skipped when uploading metadata as an XML file,
+        so that they can expose or allowlist only the required endpoints.
+    - name: SAML single logout
+      id: saml-single-logout
+      description: Wants to understand what the single logout service URL
+        does and when it needs to be configured for a SAML 2.0 provider in
+        ODC, including the consequences of leaving it unconfigured (users
+        remaining signed in at the identity provider), so that they can
+        decide whether to enable SAML single logout for their setup.
     - name: Lockout
       id: lockout
     - name: Passwords
@@ -7537,7 +7608,7 @@ knowledge-needs:
         scope when Single Sign-On Between App Types is configured, so that
         they can predict logout behavior across their apps.
     - name: Configure SAML authentication
-      id: configure-saml-authentication
+      id: configure-saml-authentication-o11
       description: Wants to configure SAML 2.0 authentication in the Users
         application by selecting the SAML 2.0 authentication method, entering
         the Identity Provider's configuration values, enabling signed login
@@ -7635,6 +7706,14 @@ knowledge-needs:
         reachability or firewall allowlisting, unsupported dynamic issuer
         URIs, PKCE-only OIDC flows, SP-initiated-only SAML), so that they
         can confirm their IdP is compatible before configuring it.
+    - name: Validate IdP setup
+      id: validate-idp-setup
+      description: Wants to verify that an external IdP's claim mappings
+        and end-to-end login flow work correctly in ODC, by inspecting
+        token claims against portal configuration and testing complete
+        login flows across different user types, before deploying the IdP
+        to production, so that they can catch mapping issues and
+        authentication failures early.
   - name: Authorization
     id: authorization
     subtopics:

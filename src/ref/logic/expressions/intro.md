@@ -1,6 +1,7 @@
 ---
 summary: Explore how to create, edit, and display expressions in OutSystems 11 (O11) using various built-in tools and functions.
-tags: ide usage, reactive web apps, expressions, error handling, expression editor
+tags:
+  - Logic
 locale: en-us
 guid: 7d9ef917-ff30-4562-a5c6-9a21bd4318d8
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,7 @@
 ---
-tags: process design, process modeling, timers, application development, outsystems platform
+tags:
+  - Business Processes
+  - Timers
 summary: Reference information on processes, process design tools and timers.
 locale: en-us
 guid: e8acf001-424d-4059-8044-716ffd06eefd

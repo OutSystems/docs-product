@@ -8,7 +8,12 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
-tags: label widget, traditional web apps, usability, accessibility, widget properties
+tags:
+  - Accessibility
+  - Front-End
+  - Traditional Web
+  - UI
+  - Widgets
 audience:
   - Front-end developer
 outsystems-tools:

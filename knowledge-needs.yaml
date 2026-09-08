@@ -465,6 +465,15 @@ knowledge-needs:
         and the Independent Modules app''s Move action, so that a module built
         in one app can be reused in another without recreating it from
         scratch.'
+    - name: Module properties reference
+      id: module-properties-reference
+      description: Wants to look up the configuration properties available for
+        a Traditional Web App module in OutSystems 11 Service Studio, covering
+        general settings (DBMS, user provider, icon), Web settings (theme,
+        jQuery version, exception handler), validation and upgrade messages,
+        and advanced settings (cookies, multi-tenancy, rendering mode),
+        including default values, so they can correctly configure and
+        understand module behavior.
   - name: Multi-tenant architecture
     id: multi-tenant-architecture
     description: Wants to understand what multi-tenancy is and how OutSystems 11
@@ -489,6 +498,13 @@ knowledge-needs:
       id: replace-ui-sample-data
     - name: Bind data to a UI element
       id: bind-data-to-a-ui-element
+    - name: Header row widget behavior
+      id: header-row-widget-behavior
+      description: Wants to understand how the Header Row Widget automatically
+        integrates with a Table Records Widget, including how it auto-adds/removes
+        Cells to match each attribute and how to hide it via the Show Header
+        property, in Service Studio for OutSystems 11 Traditional Web Apps,
+        so they can correctly structure and configure table headers.
     - name: Table pagination setup
       id: table-pagination-setup
       description: Wants to add pagination and records-per-page control to a Table
@@ -851,6 +867,16 @@ knowledge-needs:
         without an active logged-in user session, by ensuring the user logs in
         before executing these actions, so that the Case Management Framework
         can successfully execute the action.
+    - name: CMF access denied
+      id: cmf-access-denied
+      description: 'Wants to resolve the OS-CMFR-GEN-20002 error ("You need
+        <write/read> access to the Case to perform the <action-name> action."),
+        caused by the Case Management Framework''s access control being enabled
+        while the user lacks the required permission level for the action, by
+        granting the user or group access via CaseDefinition_GrantAccessToUser,
+        CaseDefinition_GrantAccessToGroup, Case_GrantAccessToUser, or
+        Case_GrantAccessToGroup, so that the action can be executed
+        successfully.'
 - name: Accessibility
   guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
   topics:
@@ -1745,6 +1771,13 @@ knowledge-needs:
         token-signing keys separate from claim-encryption keys, so that keys
         can be rotated without breaking validation and the blast radius of a
         compromised key is minimized.
+    - name: Store signing keys
+      id: store-jwt-signing-keys
+      description: Wants to choose where to store JWT signing keys in O11
+        (secret site properties, configuration modules, an external identity
+        provider's JWK endpoint, or a Forge component) based on their
+        architecture and platform version, so that keys are stored and
+        retrieved securely.
     - name: Credential delegation
       id: credential-delegation
       description: Wants to enable Integrated Authentication credential delegation
@@ -2213,6 +2246,55 @@ knowledge-needs:
         requester is an internal user, or only the ExternalRequesterDetails
         input structure when the requester is external, before calling
         Case_Initialize, verifying the values with Service Studio''s
+        Debugger, in OutSystems 11, so that the Case Management Framework
+        can successfully execute the action.'
+    - name: Fix activity access error
+      id: fix-activity-access-error
+      description: 'Wants to fix the "It looks like you don''t have access to
+        the activity" error by verifying the user is assigned to the
+        activity, belongs to the activity''s group, or has a valid
+        delegation, using the Activity_ValidateUserAccess action of the
+        CaseServices_API module, and passing the DelegatedBy input parameter
+        when acting under delegation, in OutSystems 11, so that the Case
+        Management Framework can successfully execute the action.'
+    - name: Fix reference mismatch
+      id: fix-reference-mismatch
+      description: 'Wants to fix the "Not all <records> reference the same
+        <record>. Change them accordingly." error by making sure the
+        CaseDefinitionId attribute of all records passed as input to a
+        Bootstrap action reference the same case definition, in OutSystems
+        11, so that the Case Management Framework can successfully execute
+        the action.'
+    - name: Fix rule processing error
+      id: fix-rule-processing-error
+      description: 'Wants to resolve the generic "There was an error
+        processing rule <rule-identifier>. <error-message>" message raised
+        when the Case Management Framework''s rules engine fails to execute
+        a rule, by checking the documentation for the specific
+        <error-message> code shown, in OutSystems 11, so that the correct
+        underlying fix can be applied.'
+    - name: Fix missing rule config
+      id: fix-missing-rule-config
+      description: 'Wants to fix the "This rule isn''t configured or doesn''t
+        exist" error by configuring the rule using the
+        RuleGroup_CreateOrUpdate action from the CaseConfigurations_API
+        module before executing it, in OutSystems 11, so that the Case
+        Management Framework can successfully execute the action.'
+    - name: Fix FromDate ToDate error
+      id: fix-fromdate-todate-error
+      description: 'Wants to fix the "FromDate must be set to a date before
+        ToDate." error by setting the FromDate input parameter to a date
+        earlier than the ToDate input parameter before calling
+        Delegation_Create or Delegation_Update, verifying the values with
+        Service Studio''s Debugger, in OutSystems 11, so that the Case
+        Management Framework can successfully execute the action.'
+    - name: Fix delegation group mismatch
+      id: fix-delegation-group-mismatch
+      description: 'Wants to fix the "The user you are trying to delegate
+        from is not a member of the selected group." error by ensuring
+        the FromUserId input parameter belongs to a user who is a member
+        of the FromGroupId group before calling Delegation_Create or
+        Delegation_Update, verifying the values with Service Studio''s
         Debugger, in OutSystems 11, so that the Case Management Framework
         can successfully execute the action.'
 - name: App Configuration Management
@@ -3686,6 +3768,21 @@ knowledge-needs:
         rejected before it's saved to the database.
     - name: Navigating between screens
       id: navigate-screens
+    - name: Go To Destination
+      id: go-to-destination
+      description: Wants to look up the purpose and properties (Destination)
+        of the Go To Destination node in Service Studio, so that they can
+        navigate to a specific screen, in OutSystems 11 traditional web apps,
+        mobile apps, and reactive web apps.
+    - name: External Site reference
+      id: external-site-reference
+      description: Wants to look up the purpose and configurable properties
+        (Name, Description, URL, Is Frequent Destination) of the External
+        Site logic element in Service Studio, including how to supply the
+        URL dynamically via its required URL input parameter and why only
+        that input, not the base URL, should be encoded with EncodeURL(),
+        in OutSystems 11, so that they can navigate users to an external
+        site correctly and securely.
     - name: Resolve unused connector
       id: resolve-unused-connector
       description: 'Wants to resolve the "Connector from <screen> to <screen>
@@ -7403,6 +7500,20 @@ knowledge-needs:
         invalidates the previous token on each refresh and revokes all
         related tokens if a used token is replayed, so that they can explain
         unexpected forced logouts and reason about session security.
+    - name: Self-hosted IdP requirements
+      id: self-hosted-idp-requirements
+      description: Wants to understand why self-hosted tenants require an
+        external OIDC identity provider for every stage, including
+        Development, and why two separate connector configurations (For
+        Cloud vs. For self-hosted) are needed, so that they can plan and
+        configure authentication correctly for a self-hosted tenant.
+    - name: External IdP system limits
+      id: external-idp-system-limits
+      description: Wants to know the technical requirements and protocol
+        limitations for external IdPs in ODC (endpoint network
+        reachability or firewall allowlisting, unsupported dynamic issuer
+        URIs, PKCE-only OIDC flows, SP-initiated-only SAML), so that they
+        can confirm their IdP is compatible before configuring it.
   - name: Authorization
     id: authorization
     subtopics:
@@ -8890,6 +9001,14 @@ knowledge-needs:
         Action elements in the Analytics console's element breakdown, so they
         can focus on agent-specific behavior when diagnosing a performance
         issue.
+    - name: View agent trace
+      id: view-agent-trace
+      description: Wants to open a production execution trace for an AI agent
+        in the ODC Portal Analytics console and read what each CallAgent node
+        was prompted with, what it responded, and which tools it called,
+        plus the execution's overall duration and token counts, so they can
+        inspect agent behavior in detail beyond what general trace search
+        shows.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:

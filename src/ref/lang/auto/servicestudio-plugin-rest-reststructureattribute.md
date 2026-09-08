@@ -9,7 +9,6 @@ figma:
 tags: rest api, data modeling, attribute configuration, api documentation, web services
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

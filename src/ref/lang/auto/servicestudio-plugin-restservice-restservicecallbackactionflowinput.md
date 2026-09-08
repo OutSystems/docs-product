@@ -9,7 +9,6 @@ figma:
 tags: api design, rest apis, api documentation, data types, mandatory fields
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

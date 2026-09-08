@@ -9,7 +9,6 @@ figma:
 tags: authentication, rest apis, security, api development, service studio configuration
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

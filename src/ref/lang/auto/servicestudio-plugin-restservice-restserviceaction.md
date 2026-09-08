@@ -9,7 +9,6 @@ figma:
 tags: rest api, http methods, api documentation, outsystems development, api properties
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

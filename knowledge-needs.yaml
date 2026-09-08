@@ -1721,6 +1721,22 @@ knowledge-needs:
       description: Wants to secure REST APIs exposed or consumed between O11
         and ODC using JWT-based token authentication, so that only trusted
         callers can invoke sensitive operations across platform boundaries.
+    - name: Choose JWT key type
+      id: choose-jwt-signing-key-type
+      description: Wants to choose between symmetric (HMAC) and asymmetric
+        (RSA/EC) signing when designing key management for JWT-based
+        authentication of exposed REST APIs, weighing shared-secret
+        simplicity against multi-consumer key rotation and untrusted-client
+        verification needs, so that they pick the right signing approach for
+        their trust and deployment scenario.
+    - name: JWK rotation practices
+      id: jwk-key-rotation-practices
+      description: Wants to represent JWT signing keys using the JWK format
+        and rotate them by publishing new keys alongside existing ones and
+        accepting both during a transition period, while keeping
+        token-signing keys separate from claim-encryption keys, so that keys
+        can be rotated without breaking validation and the blast radius of a
+        compromised key is minimized.
     - name: Credential delegation
       id: credential-delegation
       description: Wants to enable Integrated Authentication credential delegation
@@ -6840,6 +6856,24 @@ knowledge-needs:
         unauthenticated, inside a server action, service action, or database
         aggregate, using the GetUserId built-in function, so that logic can
         reference or filter data by the current user's identity.
+    - name: Integrated authentication
+      id: integrated-windows-authentication
+      description: Wants to understand how OutSystems 11 Integrated Windows
+        Authentication (NTLM/Kerberos) works, including the HTTP 401
+        challenge-response flow and domain-credential prompt, and which
+        elements (Web Screens, Web Flows, exposed/consumed SOAP Web Services)
+        support enabling the Integrated Authentication property, so that end
+        users can be automatically authenticated using their Windows domain
+        credentials without a separate login screen, provided the client and
+        front-end server share the same domain and Active Directory.
+    - name: Windows auth actions
+      id: windows-auth-actions
+      description: Wants to use the IntegratedSecurityGetDetails and
+        IntegratedSecurityCheckRole built-in server actions to get the
+        current Windows user's details and check their Windows role
+        membership, in Traditional Web Apps using Integrated Windows
+        Authentication, so that app logic can act on the authenticated
+        Windows user's identity and role without a custom login mechanism.
     - name: Extend login validation
       id: extend-login-validation
       description: Wants to add custom server-side validation to the built-in
@@ -6975,13 +7009,6 @@ knowledge-needs:
         as the Discovery endpoint, entering the Client ID/Secret, and
         confirming claim mapping, so that they can establish a secure OIDC
         handshake between ODC and Okta.
-    - name: Assign end-user app roles
-      id: assign-end-user-app-roles
-      description: Wants to assign Okta-authenticated end-users to an ODC
-        application's role (via Invite user or Manage roles in the ODC Portal
-        Users section) and set the deployment stage, so that role-based
-        access control (RBAC) grants them access to the app after external
-        IdP login.
     - name: Map AD Groups to Roles
       id: map-ad-groups-to-roles
       description: Wants to map Active Directory Groups to OutSystems Roles using
@@ -7030,6 +7057,74 @@ knowledge-needs:
         O11 as an external identity provider in ODC, assigning it to an ODC
         stage, and configuring redirect URIs, so that end users authenticating
         with O11 built-in authentication get single sign-on access to ODC apps.
+    - name: Configure auth settings
+      id: configure-app-authentication-settings
+      description: Wants to configure OutSystems 11 app authentication settings
+        in Service Center's Applications Authentication area, including Cache
+        Time In Minutes, Single Sign-On Between App Types, and the persistent
+        (Max Idle Time, Cookie Expiration) and session (Max Idle Time)
+        authentication settings, so that app authentication behavior meets
+        their environment's security and user-experience requirements.
+    - name: Authentication cookies
+      id: authentication-cookies
+      description: Wants to understand how OutSystems 11 authenticates app
+        requests, including the difference between session and persistent
+        authentication (the RememberLogin parameter), the purpose and
+        HttpOnly flags of the nr1 and nr2 authentication cookies, and how the
+        server verifies the X-CSRF-Token header and cookies on each request,
+        so that they can reason about how their app's login state is
+        maintained and validated.
+    - name: Auth cache and session extension
+      id: auth-cache-session-extension
+      description: Wants to understand how the OutSystems 11 authentication
+        cache window affects when a session's login expiration is extended, so
+        that they can predict session expiration behavior across their apps.
+    - name: Logout propagation across app types
+      id: logout-propagation-app-types
+      description: Wants to understand how logging out of an app propagates
+        across Reactive, Mobile, and Traditional apps sharing the same browser
+        scope when Single Sign-On Between App Types is configured, so that
+        they can predict logout behavior across their apps.
+    - name: Configure SAML authentication
+      id: configure-saml-authentication
+      description: Wants to configure SAML 2.0 authentication in the Users
+        application by selecting the SAML 2.0 authentication method, entering
+        the Identity Provider's configuration values, enabling signed login
+        response verification to match their IdP's assertion signing setting,
+        and exchanging SP/IdP metadata XML files, in OutSystems 11, so that
+        end users can authenticate via their enterprise Identity Provider.
+    - name: Troubleshoot SAML errors
+      id: troubleshoot-saml-errors
+      description: 'Wants to troubleshoot SAML 2.0 authentication issues in
+        OutSystems 11 by reviewing the SAML Message Logs, adjusting the
+        DeleteSAMLLogsOlderThen site property retention period, regaining
+        access via the default Users app login page when locked out of a
+        misconfigured authentication method, and resolving common SAML
+        configuration errors, so that they can diagnose and fix broken SAML
+        logins.'
+    - name: Auth methods overview
+      id: auth-methods-overview
+      description: Wants to understand the end-user authentication methods available in
+        OutSystems 11 and select one via the Configure Authentication dropdown
+        in the Users application, so that they can choose and set up the
+        appropriate identity source for their end users.
+    - name: End-user login flow
+      id: end-user-login-flow
+      description: Wants to understand how OutSystems 11 handles end-user
+        login depending on the configured authentication method, including
+        SSO redirects for SAML 2.0, Microsoft Entra, and Okta, the Integrated
+        Windows Authentication challenge flow, and the Login screen
+        credential validation against Active Directory or LDAP, so that they
+        can predict how and where end users authenticate.
+    - name: User data sync
+      id: user-data-sync
+      description: Wants to understand how OutSystems 11 synchronizes
+        end-user Name, Email, and Mobile Phone data from Active Directory,
+        LDAP, SAML 2.0, Microsoft Entra, or Okta after login and via the
+        daily SynchronizeDomainUsers timer, including the known issue where a
+        reactivated Active Directory user's status isn't automatically
+        updated to active, so that they can diagnose synchronization
+        behavior and apply the manual status-update workaround.
     - name: UsersIdP security risks
       id: usersidp-security-risks
       description: Wants to understand the security characteristics and
@@ -7070,6 +7165,19 @@ knowledge-needs:
   - name: Authorization
     id: authorization
     subtopics:
+    - name: Manage end-user roles
+      id: assign-roles-o11
+      description: Wants to grant or revoke an end user's application role,
+        using the Applications tab in the Users application to add or remove
+        specific users under a role, in OutSystems 11, so that end users
+        gain or lose access to the app's associated screens and tasks.
+    - name: Assign end-user app roles
+      id: assign-end-user-app-roles-odc
+      description: Wants to assign externally-authenticated end-users to an
+        ODC application's role (via Invite user or Manage roles in the ODC
+        Portal Users section) and set the deployment stage, so that role-based
+        access control (RBAC) grants them access to the app after external
+        IdP login.
     - name: Creating app role
       id: create-app-role
     - name: Application Roles
@@ -7183,6 +7291,14 @@ knowledge-needs:
       id: permission-model-qa
     - name: Role assignment
       id: role-assignment
+    - name: Create IT role
+      id: create-it-role
+      description: Wants to create a new custom IT role in the LifeTime
+        console, defining environment-specific permission levels,
+        per-application permission toggles, and infrastructure-wide
+        permissions, in OutSystems 11, so that they can implement a more
+        granular security policy beyond the built-in Developer and
+        Administrator roles.
     - name: Permission governance
       id: permission-governance
       description: Wants to know the recommended practices for managing permissions
@@ -7450,6 +7566,13 @@ knowledge-needs:
       description: Wants to understand why O11 to ODC conversion isn't supported
         yet for self-managed infrastructures, so that they can focus on preparing
         code and data for ODC instead of attempting conversion.
+    - name: Align persistent login
+      id: align-persistent-login-timeout
+      description: Wants to align an O11 Reactive Web or Mobile app's customizable
+        persistent login duration with ODC's fixed access token limit before
+        migrating, by testing the shorter duration in a non-production O11
+        environment and then propagating it to production, so that app behavior
+        and any O11-ODC single sign-on stay compatible after conversion to ODC.
   - name: Data Migration
     id: data-migration
     subtopics:

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - refresh-data-properties-reference
 ---
 
 # Refresh Data

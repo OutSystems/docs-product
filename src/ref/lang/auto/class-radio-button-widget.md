@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - radio-button-widget-reference
 ---
 
 # Radio Button Widget

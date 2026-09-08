@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - runtime-property-fields
 ---
 
 # Runtime Property

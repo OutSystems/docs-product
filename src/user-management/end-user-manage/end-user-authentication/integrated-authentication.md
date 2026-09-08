@@ -14,7 +14,8 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - external-auth-mechanisms
+  - integrated-windows-authentication
+  - windows-auth-actions
 ---
 
 # Integrated Authentication

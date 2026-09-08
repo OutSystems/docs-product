@@ -15,7 +15,7 @@ outsystems-tools:
   - forge
   - service studio
 coverage-type:
-  - none
+  - understand
 ---
 
 # Artificial Intelligence

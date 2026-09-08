@@ -5,7 +5,8 @@ guid: c29cf435-579e-4912-aed4-af8d6d55f93e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: localization, internationalization, application development, outsystems platform, web development
+tags:
+  - Multi-language
 audience:
   - Developer
   - Front-end developer

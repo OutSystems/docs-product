@@ -6,7 +6,8 @@ guid: d36d267e-97d6-4a18-ad83-08f8bd1e76a3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1351:1635
-tags: local variables, data handling, web development, application development, data filtering
+tags:
+  - Aggregates
 audience:
   - Developer
   - Front-end developer

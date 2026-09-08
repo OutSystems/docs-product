@@ -6,7 +6,9 @@ guid: ed1575d2-e5b5-41a1-be11-e638b406fbb4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: json parsing, data serialization, application development, api integration, data transformation
+tags:
+  - Data
+  - Entities
 audience:
   - Developer
   - Front-end developer

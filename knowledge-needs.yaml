@@ -5946,6 +5946,15 @@ knowledge-needs:
         uploading a file with no contents or only zero bytes, by replacing
         it with a file that contains data, so that the extensibility
         setting update or package creation can proceed.'
+    - name: Fix empty secret error
+      id: fix-empty-secret-error
+      description: 'Wants to resolve the "Secret for <resource-type>
+        ''<resource-name>'' cannot be empty" error that blocks updating a
+        mandatory extensibility setting or defining a mandatory mobile
+        configuration during new package creation, caused by saving an
+        empty-string value for a secret setting, by providing a valid
+        value, so the extensibility setting update or package creation
+        can proceed.'
     - name: Missing resource error
       id: missing-resource-error
       description: 'Wants to resolve the OS-MABS-CNF-40012 "resource {0} declared
@@ -6255,6 +6264,15 @@ knowledge-needs:
         mobile app package using a deprecated MABS version, by switching to a
         MABS version that meets the minimum required version, so that the
         mobile app package generates successfully.
+    - name: Fetch mobile config error
+      id: fetch-mobile-config-error
+      description: 'Wants to resolve the OS-NAOS-50024 "An internal error has
+        occurred while fetching mobile configurations" error, caused by ODC
+        failing to retrieve mobile configurations during mobile package
+        creation, by canceling the current package creation attempt,
+        starting a new one, and reapplying the mobile configurations,
+        escalating to OutSystems Support if the problem persists, so that
+        the mobile app package generates successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -7102,6 +7120,14 @@ knowledge-needs:
         misconfigured authentication method, and resolving common SAML
         configuration errors, so that they can diagnose and fix broken SAML
         logins.'
+    - name: Map IdP groups
+      id: map-idp-groups
+      description: Wants to understand how OutSystems maps external SAML
+        Identity Provider group names to OutSystems groups via the Groups
+        claim in the Configure Authentication screen of the Users
+        application, including auto-creation of unmatched groups and the
+        Microsoft Entra GUID-naming limitation, so that they can align their
+        OutSystems group names with their IdP's group data.
     - name: Auth methods overview
       id: auth-methods-overview
       description: Wants to understand the end-user authentication methods available in
@@ -7254,6 +7280,12 @@ knowledge-needs:
       id: users-licensing
     - name: User Types
       id: user-types
+    - name: Configure user domains
+      id: configure-user-domains
+      description: Wants to configure internal user domains in the ODC Portal
+        by adding organization email domains under Management > Admin >
+        Subscription, so that end users are correctly classified as internal
+        or external for separate licensing purposes.
     - name: IT vs App Users
       id: it-vs-app-users
       description: Wants to understand the difference between IT Users and Application
@@ -7268,6 +7300,21 @@ knowledge-needs:
         app), by understanding the common causes — inactive user, different password,
         external authentication configuration, or multi-tenancy — so that they can
         resolve the login failure.
+    - name: Built-in member workflow
+      id: builtin-member-workflow
+      description: Wants to manage members (IT-users) end-to-end using ODC's
+        built-in authentication, by optionally creating custom roles, creating
+        members in the ODC Portal, and granting or revoking their roles, so
+        that they can onboard and manage members without an external identity
+        provider.
+    - name: IdP member workflow
+      id: external-idp-member-workflow
+      description: Wants to manage members (IT-users) end-to-end using an
+        external identity provider, by optionally creating custom roles,
+        configuring and assigning an external IdP, adding members manually,
+        programmatically, or automatically, and granting or revoking their
+        roles, so that they can onboard and manage members backed by an
+        external IdP.
   - name: Governance principles
     id: governance-principles
     subtopics:
@@ -8027,6 +8074,16 @@ knowledge-needs:
         environment, so that LifeTime runs independently, accepting the
         loss of LifeTime-specific data such as Performance Monitor history,
         application tagging history, and the change log.
+    - name: Remove LifeTime console
+      id: remove-lifetime-console
+      description: Wants to remove OutSystems infrastructure management console
+        (LifeTime) from an on-premises environment by unregistering all
+        registered environments in LifeTime and then deleting the
+        LifeTimePerformanceMonitor, LifeTime, and LifeTimeSDK applications
+        in that order in Service Center, or disabling those applications
+        instead if the environment runs a Platform Server version lower
+        than 10.0.804.0, so that LifeTime is uninstalled without deleting
+        any table or data from the database.
     - name: LifeTime dedicated env
       id: lifetime-dedicated-env
       description: Wants to understand that OutSystems 11 requires installing
@@ -8087,6 +8144,18 @@ knowledge-needs:
         solution, so that the module operates in its new database without
         losing data or breaking dependent modules, in a self-managed
         OutSystems 11 environment.
+  - name: SQL Server Compatibility Upgrade
+    id: sql-server-compatibility-upgrade
+    subtopics:
+    - name: Upgrade SQL compatibility
+      id: upgrade-sql-compatibility
+      description: Wants to upgrade the SQL Server compatibility level of a
+        self-managed OutSystems 11 installation, using either an
+        upgrade-in-place or a fresh-install migration path, so that they
+        keep the database engine current or meet company compliance
+        requirements while safeguarding correct application behavior and
+        query performance for databases created at a lower compatibility
+        level.
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:
@@ -8661,6 +8730,19 @@ knowledge-needs:
         issue invoices, by requesting the payment receipt through the
         Prometric confirmation portal, so that they have a document to
         support the expense with their company or tax authority.
+    - name: Download exam certificate
+      id: download-exam-certificate
+      description: Wants to download the PDF certificate for a passed
+        OutSystems certification exam, either via the public certifications
+        page or via the Learn tab on their OutSystems profile, so that they
+        have proof of certification once results are processed.
+    - name: Download team certs
+      id: download-team-certs
+      description: Wants to download certification documents for their team
+        members, by accessing the Certifications tab in the Customer Portal
+        (as an infrastructure/company admin) or the Certifications option in
+        the Partner Center (as a partner manager), so that they can track
+        and share proof of certification for people they manage.
   - name: Support Portal
     id: support-portal
     subtopics:
@@ -8711,6 +8793,13 @@ knowledge-needs:
   - name: Account Settings
     id: account-settings
     subtopics:
+    - name: Transfer certifications
+      id: transfer-certifications
+      description: Wants to transfer their OutSystems certifications from
+        one community account to another, by logging into the receiving
+        account's Settings and using the Move certifications option with
+        the other account's email and password, so that certifications
+        earned under a different email consolidate onto one account.
     - name: Change community email
       id: change-community-email
       description: Wants to change their OutSystems community account email

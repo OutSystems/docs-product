@@ -1755,6 +1755,44 @@ knowledge-needs:
         correct username, or contacting OutSystems support if the username
         is already correct, so that they can create or edit connections in
         Integration Manager.'
+    - name: Fix integration key error
+      id: fix-integration-key-error
+      description: 'Wants to resolve the "No integration was found for the
+        ''Key'' with <value>" error (OS-INBL-API-00008) in Integration
+        Builder, caused by the integration key no longer existing (a deleted
+        integration or an incorrect key used in the API call), by refreshing
+        the integration list in Integration Builder and recreating the
+        integration if it no longer exists, or contacting OutSystems support
+        if the integration still exists, so that they can assign a
+        connection to the integration in Integration Manager.'
+    - name: Fix environment not authorized
+      id: fix-environment-not-authorized
+      description: 'Wants to resolve the "Environment <Hostname> isn''t
+        authorized to access the Integration Builder" error
+        (OS-INBL-API-00011), caused by the environment not being registered
+        in Integration Builder, by going to Integration Builder''s Settings >
+        Environment setup and adding the environment, so that Integration
+        Manager can create connections and redirect to Integration Builder.'
+    - name: Fix Salesforce access
+      id: fix-salesforce-access
+      description: 'Wants to resolve the "The request has been refused"
+        Salesforce error (OS-INBL-API-00021) returned when Integration
+        Builder verifies the Salesforce user during Connection creation,
+        caused by the account lacking necessary permissions (or exceeding
+        API request limits, if the error code shown is
+        REQUEST_LIMIT_EXCEEDED), by authorizing Integration Manager with a
+        different Salesforce account or manually setting up a Connected App
+        in Salesforce and filling in the connection form in Integration
+        Manager, so that they can restore the Salesforce connection.'
+    - name: Fix AAD delete error
+      id: fix-aad-delete-error
+      description: 'Wants to resolve the "connection was deleted locally, but
+        we could not delete the connection on the Microsoft''s servers" error
+        (OS-INBL-API-00030) in Integration Manager, caused by the
+        corresponding Application already being deleted in Microsoft Azure
+        Active Directory, by manually deleting the Application in Azure
+        Active Directory if it still exists, so that they can fully remove a
+        connection tied to an Azure AD app registration.'
   - name: Workato Connector
     id: workato-connector
     subtopics:

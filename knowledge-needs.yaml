@@ -6371,6 +6371,24 @@ knowledge-needs:
         error, by checking the build logs for issues related to the Shield
         phase and escalating to OutSystems Support if the problem persists,
         so that the mobile app package generates successfully.'
+    - name: Deprecated signer cert
+      id: deprecated-signer-cert-error
+      description: 'Wants to resolve the OS-MABS-SHLD-40007 "The
+        ''GooglePlayAppSigningCertificate'' AppShield preference is
+        deprecated and no longer supported. Use
+        ''ApplicationSignerCertificate'' instead." error, by replacing the
+        deprecated GooglePlayAppSigningCertificate preference with
+        ApplicationSignerCertificate in the app''s extensibility
+        configurations, so that the mobile app package generates
+        successfully.'
+    - name: Encode signer certificate
+      id: encode-signer-certificate
+      description: 'Wants to fix an app crash (RepackagingException)
+        affecting LifeTime 11.6.1/Platform Server 11.10 and earlier when
+        Google Play App Signing is enabled, by URL-encoding the
+        ApplicationSignerCertificate value in LifeTime''s Extensibility
+        Configurations, so that the mobile app package builds
+        successfully.'
   - name: Custom plugin development
     id: custom-plugin-development
     subtopics:
@@ -7024,6 +7042,14 @@ knowledge-needs:
         verification to "Trust identity provider" in ODC, so that ODC honors
         the IdP''s email_verified claim instead of performing its own
         verification, when the IdP is known to guarantee verified emails.'
+    - name: Fix invalid invitation
+      id: fix-invalid-invitation
+      description: Wants to resolve the OS-UAUC-60043 onboarding error,
+        caused by the invitation's associated profile target becoming
+        invalid after an authentication configuration change, by verifying
+        identity provider configurations with the administrator and having
+        the administrator resend the invitation, so that the end user can
+        complete onboarding.
     - name: Add social accelerator
       id: add-social-accelerator
       description: Wants to add a social identity provider to ODC using the accelerator
@@ -8805,6 +8831,14 @@ knowledge-needs:
         (as an infrastructure/company admin) or the Certifications option in
         the Partner Center (as a partner manager), so that they can track
         and share proof of certification for people they manage.
+    - name: Use exam voucher
+      id: use-exam-voucher
+      description: Wants to redeem a promotional exam voucher code during
+        OutSystems Certification exam registration, understanding its
+        expiration date rules (the exam must be scheduled before it expires)
+        and the reasons behind an "Invalid voucher" error (expired, wrong
+        exam type, or already used), so that they can successfully apply the
+        discount without registration issues.
   - name: Support Portal
     id: support-portal
     subtopics:
@@ -8821,6 +8855,14 @@ knowledge-needs:
         afterward by entering their email addresses on an existing case,
         so that those colleagues receive email notifications and can
         contribute information to the case.
+    - name: Get support case approved
+      id: get-support-case-approved
+      description: Wants to get their OutSystems support case approved when
+        they aren't listed as an authorized contact in Customer Portal, by
+        having a company or infrastructure administrator authorize the
+        request via email or the Support Portal, so that the case isn't
+        held or suspended and future cases from them proceed without
+        approval.
   - name: Community Badges
     id: community-badges
     subtopics:
@@ -8869,6 +8911,14 @@ knowledge-needs:
         and confirm it via the verification email sent, so that the new
         email also syncs as their Personal Environment login on next
         sign-in.
+    - name: Change community password
+      id: change-community-password
+      description: Wants to change their OutSystems community account
+        password by logging into their profile Settings and using the
+        Change password form, understanding that the new password syncs
+        to their Personal Environment after a short delay, so that they
+        can update their login credentials for both the community website
+        and their Personal Environment.
     - name: Merge community accounts
       id: merge-community-accounts
       description: Wants to merge two OutSystems community accounts into one, understanding
@@ -8876,6 +8926,13 @@ knowledge-needs:
         two accounts, by designating which account to keep and which to delete,
         so that they consolidate their community history without losing needed
         data unexpectedly.
+    - name: Close community account
+      id: close-community-account
+      description: Wants to close their OutSystems community account, understanding it's a
+        destructive operation that permanently deletes their community data and
+        Personal Environment access, by confirming the action with their
+        password in Settings > Close my account, so that they stop being part of
+        the OutSystems community and their data isn't retained.
 - name: SEO
   guid: 54a1d9e5-0f3e-4a8b-b897-7c5c8838b0ff
   topics:

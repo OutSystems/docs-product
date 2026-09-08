@@ -9,7 +9,6 @@ figma:
 tags: business process management, process flows, entity lifecycle, public exposed processes
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

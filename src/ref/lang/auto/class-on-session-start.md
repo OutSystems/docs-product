@@ -8,7 +8,6 @@ figma:
 tags: session management, system events, authentication, permissions, multi-tenancy
 audience:
   - Developer
-  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

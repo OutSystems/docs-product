@@ -9,7 +9,6 @@ figma:
 tags: soap, web services, wsdl, service orchestration, data mapping
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

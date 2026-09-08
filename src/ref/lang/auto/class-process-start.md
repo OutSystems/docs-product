@@ -8,7 +8,6 @@ figma:
 tags: process flows, outsystems, process start activity, conditional start activity, entity actions
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

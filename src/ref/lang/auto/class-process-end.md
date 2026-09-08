@@ -8,7 +8,6 @@ figma:
 tags: process flows, process automation, workflow design, process modeling, service studio
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

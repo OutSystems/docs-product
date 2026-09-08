@@ -8,7 +8,6 @@ summary: Explore how to integrate query parameters into SQL queries within OutSy
 tags: sql query integration, data retrieval, entity modeling, sql parameters, service studio tutorial
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

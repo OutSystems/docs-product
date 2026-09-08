@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - export-data-to-excel
 ---
 
 # Record List To Excel

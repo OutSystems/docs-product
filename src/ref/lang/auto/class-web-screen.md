@@ -6,7 +6,10 @@ guid: 333dff4e-a7da-4b66-903f-041625db4010
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: outsystems development, screen configuration, user interface customization, http security
+tags:
+  - Screens
+  - Security
+  - UI
 audience:
   - Developer
   - Front-end developer

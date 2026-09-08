@@ -6,7 +6,10 @@ guid: b5b035e8-ea51-41bb-ab1a-92dcb8db2013
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:341
-tags: expression widgets, user interface development, runtime display, service studio editor
+tags:
+  - Front-End
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer

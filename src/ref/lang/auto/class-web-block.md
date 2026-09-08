@@ -6,7 +6,9 @@ guid: 5d03bd37-8e91-4c60-8d7f-b550ab56994d
 app_type: traditional web apps
 platform-version: o11
 figma:
-tags: web development, outsystems, application development, web blocks, traditional web apps
+tags:
+  - Blocks
+  - Traditional Web
 audience:
   - Front-end developer
   - Developer

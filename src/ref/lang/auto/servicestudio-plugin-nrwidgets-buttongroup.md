@@ -6,7 +6,11 @@ guid: 018284ce-ede4-43d4-b85b-189b2d5a86ac
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=3002%3A373&mode=design&t=t7R0lKcODmSSUet7-1
-tags: ui components, button group widget, user input, component properties, widget customization
+tags:
+  - Accessibility
+  - Front-End
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer

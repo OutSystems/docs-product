@@ -6,7 +6,13 @@ guid: a8b45f04-a2a6-459a-817a-308e933b9d71
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: component configuration, ui design, widget customization, service studio tutorial
+tags:
+  - Events
+  - Front-End
+  - Mobile app
+  - UI
+  - Web
+  - Widgets
 audience:
   - Developer
   - Front-end developer

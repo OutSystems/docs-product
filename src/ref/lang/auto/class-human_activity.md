@@ -8,7 +8,6 @@ summary: Explore how OutSystems 11 (O11) implements Human Activity to manage use
 tags: process flow, task management, user task assignment, workflow processes, human-centric bpm
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

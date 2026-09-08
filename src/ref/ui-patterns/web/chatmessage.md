@@ -1,6 +1,6 @@
 ---
 tags: ui patterns, ui design, css customization, event handling, widget configuration
-summary: Explore the features and customization options of the Chat Message UI Pattern in OutSystems 11 for Traditional Web Apps.
+summary: Customize the Chat Message pattern in OutSystems 11 with CSS selectors, click events, and conditional styling for sender messages.
 locale: en-us
 guid: 6a62f636-ac37-4f02-8dde-b125bbb18919
 app_type: traditional web apps

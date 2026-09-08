@@ -387,7 +387,7 @@ knowledge-needs:
         data access, so that public endpoints don't expose sensitive data or
         enable cross-site request forgery attacks.
     - name: Check user role in code
-      id: check-user-role-in-code
+      id: check-user-role-in-code-o11
       description: Wants to verify whether the currently logged-in end-user has
         a specific public role (local or consumed from another app) inside a
         server action or service action, using the CheckEndUserRole built-in
@@ -401,6 +401,14 @@ knowledge-needs:
         function with RoleId and UserId inputs, so that business logic can
         conditionally allow or restrict behavior based on any user's role, in
         OutSystems 11.
+    - name: Restrict logic with roles
+      id: restrict-logic-with-roles-odc
+      description: Wants to restrict what end-users can do or see in an ODC
+        app by using the Check<ROLENAME>Role action generated for an end-user
+        role, checking the role in an If condition to guard server-side logic
+        or in an aggregate filter to restrict returned data, so that only
+        users with the required role can execute actions or access sensitive
+        data.
     - name: Hierarchical roles choice
       id: hierarchical-roles-choice
       description: Wants to decide whether to use hierarchical roles instead
@@ -2293,11 +2301,17 @@ knowledge-needs:
         Web, Web Service, and Timer sessions — so that they can reason about when
         session state is available during their application's execution.
     - name: Configure session timeout
-      id: configure-session-timeout
+      id: configure-session-timeout-o11
       description: Wants to configure how long an idle Traditional Web App session
         remains active before the Platform Server automatically ends it, by adjusting
         the session timeout value in the machine.config file, so that end users
         get a session duration appropriate to their app's needs.
+    - name: Configure user session
+      id: configure-session-timeout-odc
+      description: Wants to configure the maximum session duration and idle
+        session duration per stage in the ODC Portal, so that end-user app
+        sessions in each stage meet their organization's security and
+        compliance requirements.
     - name: Session variables
       id: session-variables
       description: Wants to understand how session variables persist data during
@@ -3080,6 +3094,23 @@ knowledge-needs:
         upgrading a Silk Web UI Traditional Web App to the OutSystems 11 Web
         UI Framework, so they can pick the path that best fits their team's
         workflow and app complexity.
+  - name: Mobile UI framework selection
+    id: mobile-ui-framework-selection
+    subtopics:
+    - name: Choose UI framework
+      id: choose-ui-framework-mobile
+      description: Wants to choose between the Mobile UI and OutSystems UI
+        frameworks for a mobile app, based on project type (consumer vs.
+        enterprise), performance needs, design requirements, and long-term
+        strategy, in ODC Studio, so they can pick the framework best suited
+        to their app's requirements.
+    - name: Compare UI frameworks
+      id: compare-ui-frameworks-mobile
+      description: Wants to compare the technical differences between the
+        Mobile UI and OutSystems UI frameworks, including target platform,
+        performance, customization, widget availability, and icon libraries,
+        in ODC Studio, so they can evaluate which framework fits their app's
+        technical requirements.
 - name: Creating UI
   guid: a6b567df-2deb-4736-bd6d-cf144a9c6262
   topics:
@@ -5023,6 +5054,16 @@ knowledge-needs:
         include prior conversation turns and grounding data in each system
         message, so that the agent maintains contextual memory across
         multiple user prompts in a conversational agentic app.
+  - name: Tools and connectors
+    id: tools-and-connectors
+    subtopics:
+    - name: Choose tool source
+      id: choose-tool-source
+      description: Wants to decide whether to import external tools into an
+        ODC app via a custom MCP server or a prebuilt connector,
+        understanding that both produce callable server actions, so that
+        they can choose based on portability and reuse versus faster
+        guided setup.
   - name: Semantic Search
     id: semantic-search
     subtopics:
@@ -5461,6 +5502,15 @@ knowledge-needs:
         plugin's extensibility JSON causes the app to fail or be rejected on
         iOS while Android continues to work, so they include the required
         iOS usage descriptions when configuring plugin permissions.
+    - name: Build dual-stack plugin
+      id: build-dual-stack-plugin
+      description: Wants to implement a dual-stack plugin that supports both
+        Cordova and Capacitor implementations, by creating an equivalent
+        Capacitor plugin, declaring both sources in the OutSystems plugin's
+        extensibility configuration, and updating JavaScript client actions
+        to detect the runtime framework and route calls to the right
+        implementation, so that the plugin works in both Cordova and
+        Capacitor apps without breaking existing Cordova-based apps.
 - name: Lifecycle Independence
   guid: 4b3a44cd-2a86-462c-81b2-89a841284aab
   topics:
@@ -5712,6 +5762,15 @@ knowledge-needs:
         aggregates with restrictive JOIN "Only With"/"With or Without" settings on
         local storage entities, by checking server data, device local storage, and
         sync/aggregate configuration, so that expected data appears on the device.
+    - name: Conflict sync pattern
+      id: conflict-detection-sync-pattern
+      description: Wants to implement the Read/Write Data with Conflict Detection offline
+        synchronization pattern for ODC mobile apps, covering the client-side
+        sync trigger logic, the server-side data reconciliation logic, and a
+        local entity/conflict-shadow entity data model with metadata attributes
+        tracking whether a record originated from the server, was modified
+        locally, and remains active, so that concurrent offline edits are
+        detected as conflicts instead of being silently overwritten.
   - name: Mobile app performance troubleshooting
     id: mobile-app-performance-troubleshooting
     subtopics:
@@ -6608,6 +6667,28 @@ knowledge-needs:
         Region, so that they can confirm they aren't exposed to unauthorized
         EU-US data transfers and know when they still bear responsibility for
         their own data-handling compliance.
+  - name: Mobile certificate protection
+    id: mobile-certificate-protection
+    subtopics:
+    - name: Protect signing key
+      id: protect-signing-key
+      description: Wants to understand how OutSystems protects the Android and iOS mobile
+        app signing certificate and password throughout the build lifecycle,
+        including encrypted database storage, HTTPS transmission to the Mobile
+        Apps Builder Service, S3/queue storage protected by IAM permissions, and
+        automatic deletion after a defined retention period, so that they can
+        assess the security of uploading their own developer signing key to
+        OutSystems.
+    - name: Certificate access scope
+      id: certificate-access-scope
+      description: Wants to understand who can access their Android/iOS mobile
+        app signing certificate and password, including that on-premises
+        database readers can't decrypt it without file-system access, and
+        that the OutSystems Support team has DBA/system-administrator
+        equivalent access to Cloud environments and Mobile Apps Builder
+        Service assets used only for troubleshooting or outage response, so
+        that they know the scope and justification for third-party access to
+        their signing credentials.
 - name: Production Recovery
   guid: e392931b-251f-4d43-8c0b-c85bbc97e02e
   topics:
@@ -6784,6 +6865,15 @@ knowledge-needs:
         configured external identity provider's login page.
     - name: External IDPs
       id: external-idps
+    - name: Assign external IdP
+      id: assign-external-idp
+      description: Wants to assign an existing external identity provider to their
+        organization or to specific app stages in ODC Portal (Management >
+        Govern > Identity providers), by selecting the target scopes and
+        confirming the change, so that users can authenticate with that
+        provider, understanding that the change doesn't apply instantly to
+        already signed-in users and that propagation time varies depending on
+        the provider's configuration.
     - name: External IdP concepts
       id: external-idp-concepts
       description: Wants to understand what external identity providers (IdPs) are,
@@ -6836,6 +6926,20 @@ knowledge-needs:
         verification to "Trust identity provider" in ODC, so that ODC honors
         the IdP''s email_verified claim instead of performing its own
         verification, when the IdP is known to guarantee verified emails.'
+    - name: Add social accelerator
+      id: add-social-accelerator
+      description: Wants to add a social identity provider to ODC using the accelerator
+        configuration screen in the ODC Portal, including entering the
+        provider's client credentials and choosing email verification and
+        profile matching settings, so that end users can authenticate with that
+        social provider.
+    - name: Social accelerator info
+      id: social-accelerator-info
+      description: Wants to know what credentials to gather from Apple,
+        Google, Facebook, or LinkedIn (for example, Client ID, Client
+        Secret, or Apple's Key ID and private key) before configuring that
+        provider as a social accelerator in ODC, so that the accelerator
+        configuration screen can be completed without missing information.
     - name: External IDPs - User Mapping
       id: user-mapping
     - name: External IDPs - LinkedIn
@@ -6957,6 +7061,12 @@ knowledge-needs:
         (OIDC or SAML) instead of O11 built-in authentication, so that end
         users sign in once at the IdP and reuse that session across O11 and
         ODC apps without separate ODC credentials.
+    - name: Refresh token rotation
+      id: refresh-token-rotation
+      description: Wants to understand how ODC's refresh token rotation
+        invalidates the previous token on each refresh and revokes all
+        related tokens if a used token is replayed, so that they can explain
+        unexpected forced logouts and reason about session security.
   - name: Authorization
     id: authorization
     subtopics:
@@ -6972,6 +7082,19 @@ knowledge-needs:
       id: update-app-role
     - name: Assign Users to Organization Roles
       id: assign-to-org-roles
+    - name: Assign asset-scope roles
+      id: assign-asset-scope-roles
+      description: Wants to grant or revoke asset-scope (app-specific) roles
+        for a member (IT-user) in the ODC Portal, using the Assign roles
+        option on the Organization access tab, so that the member's
+        permissions are scoped to specific apps rather than the whole
+        organization.
+    - name: Assign end-user roles
+      id: assign-end-user-roles
+      description: Wants to grant or revoke an end-user's role for a specific
+        app and stage (Development, QA, or Production) in the ODC Portal's
+        End-user access tab, so that the end-user's access to app features
+        and data updates immediately.
     - name: Define Permissions
       id: define-permissions
     - name: Permissions
@@ -7725,6 +7848,15 @@ knowledge-needs:
         definition (following ADO.NET syntax on .NET or JDBC syntax on Java),
         so that extensions can connect to external Oracle databases without
         needing a tnsnames.ora file.
+    - name: Configure Oracle sorting
+      id: configure-oracle-linguistic-sorting
+      description: Wants to change the linguistic sorting (NLS_SORT) of an
+        on-premises OutSystems 11 platform database from Oracle's default
+        BINARY_AI (accent-insensitive) to BINARY_CI (accent-sensitive),
+        using the Configuration Tool's Advanced Settings, understanding
+        that applications must be republished for the change to take
+        effect, so that character searches on the Oracle-backed platform
+        database return accent-sensitive results.
   - name: Database and farm server migration
     id: database-farm-server-migration
     subtopics:

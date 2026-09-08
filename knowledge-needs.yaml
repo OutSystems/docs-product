@@ -4400,6 +4400,13 @@ knowledge-needs:
         synchronized via NTP, so that they can configure their infrastructure correctly
         and avoid unexpected behavior with time-dependent features such as timers
         and BPT.
+    - name: Cloud UTC time zone
+      id: cloud-utc-timezone
+      description: Wants to understand that OutSystems Cloud fixes all servers
+        to the UTC time zone, a setting that can't be changed, so that they can
+        design applications from early development to properly handle time
+        zone differences, using techniques such as the unsupported Timezone
+        Forge component.
     - name: Fix .NET Core upgrade
       id: fix-net-core-upgrade
       description: Wants to fix Server.API and Server.Identity failing to initialize
@@ -5405,6 +5412,33 @@ knowledge-needs:
         tools each version supports, so they can choose the correct MABS
         version for their mobile app and plan upgrades before a version
         becomes obsolete.
+    - name: MABS 3.x release notes
+      id: mabs-3x-release-notes
+      description: Wants to review the release notes for MABS 3.x, including
+        new features and bug fixes, so that they can troubleshoot mobile apps
+        still running on a MABS 3.x version.
+    - name: MABS 4.x release notes
+      id: mabs-4x-release-notes
+      description: Wants to review the release notes for MABS 4.x, including
+        new features, bug fixes, and the known viewport-fit issue, so that they
+        can troubleshoot mobile apps still running on a MABS 4.x version.
+  - name: OS and SDK support policy
+    id: os-sdk-support-policy
+    subtopics:
+    - name: OS support process
+      id: os-support-process
+      description: Wants to understand how OutSystems supports new mobile
+        operating system versions, by releasing a new major MABS version with
+        updated runtime primitives and Forge components ahead of each new OS
+        release, so they know when new SDKs become mandatory for publishing to
+        the app stores.
+    - name: Beta OS testing
+      id: beta-os-testing
+      description: Wants to know their responsibilities when testing mobile
+        apps against new OS betas and SDKs, including testing custom and
+        non-supported plugins and starting tests at the first public beta, so
+        they understand support severity and stability expectations during
+        Beta MABS versions.
   - name: Mobile app debugging
     id: mobile-app-debugging
     subtopics:

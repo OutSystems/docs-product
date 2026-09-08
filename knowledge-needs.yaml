@@ -489,6 +489,13 @@ knowledge-needs:
         and advanced settings (cookies, multi-tenancy, rendering mode),
         including default values, so they can correctly configure and
         understand module behavior.
+    - name: Reference element properties
+      id: reference-element-properties
+      description: Wants to look up the properties available for a Reference
+        element, a reference to another module shown in the workspace tree,
+        in Service Studio for OutSystems 11, including Name, Description,
+        Icon, and jQuery Version and which are mandatory, so they can
+        correctly interpret a module reference.
   - name: Multi-tenant architecture
     id: multi-tenant-architecture
     description: Wants to understand what multi-tenancy is and how OutSystems 11
@@ -3541,6 +3548,34 @@ knowledge-needs:
         via Toolbox or Search in other modules if the dependency isn't added,
         in Service Studio for OutSystems 11, so that numerical notifications
         like unread message counts display on mobile apps and reactive web apps.
+    - name: Alert reference
+      id: alert-reference
+      description: Wants to look up the CSS selectors and classes for the Alert
+        UI Pattern, including alert-error, alert-info, alert-success,
+        alert-warning, and alert-close.is--hidden, so that they can correctly
+        customize the Alert Pattern's appearance based on its type and the
+        ShowCloseButton parameter, in a Traditional Web App (O11).
+    - name: Animate Alert pattern
+      id: animate-alert-pattern
+      description: Wants to add an enter animation to the Alert UI Pattern, using
+        a container bound to a Boolean local variable and the Animate pattern
+        with the EnterTop animation, in Service Studio, so that the alert
+        transitions in visually when triggered, in a Traditional Web App (O11).
+    - name: Animate reference
+      id: animate-reference
+      description: Wants to look up the CSS selectors and classes for the
+        Animate UI Pattern, including animate-wrapper.is--visible/is--hidden
+        and the enter/leave direction, fade, and scale classes, plus the
+        animate-slow and animate-fast timing modifiers, so that they can
+        correctly customize enter and leave animations for elements in a
+        Traditional Web App (O11).
+    - name: Trigger Animate pattern
+      id: trigger-animate-pattern
+      description: Wants to trigger the Animate UI Pattern programmatically,
+        using the ToggleAnimate server action to show or hide an element, or
+        the LoadOnVisible pattern to animate elements as they scroll into
+        view, in Service Studio, so that UI elements animate dynamically in
+        a Traditional Web App (O11).
     - name: Adaptive UI patterns
       id: adaptive-ui-patterns
       description: Wants to understand what adaptive UI patterns are and why to use them,
@@ -3640,6 +3675,14 @@ knowledge-needs:
         its IsHorizontal and ExtendedClass properties, in Service Studio for
         OutSystems 11, so that content is centered horizontally or vertically on
         the screen, in mobile apps and reactive web apps.
+    - name: Align Center reference
+      id: align-center-reference
+      description: Wants to look up the CSS selectors and classes for the Align
+        Center UI Pattern, including center-align.flex-direction-row and
+        center-align.flex-direction-column, and see an example of building
+        custom vertically aligned content with image and text widgets, so that
+        they can correctly customize the pattern's layout and appearance in a
+        Traditional Web App (O11).
     - name: Use Inline SVG pattern
       id: use-inline-svg-pattern
       description: Wants to add the Inline SVG UI Pattern to a screen and configure

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: web services, soap, api development, outsystems development, application upgrades
 audience:
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

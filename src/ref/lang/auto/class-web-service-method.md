@@ -8,7 +8,6 @@ figma:
 tags: web services, api development, outsystems platform, service methods
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

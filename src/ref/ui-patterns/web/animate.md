@@ -12,6 +12,7 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+  - apply
 ---
 
 # Animate Reference

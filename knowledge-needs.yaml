@@ -6319,6 +6319,22 @@ knowledge-needs:
         starting a new one, and reapplying the mobile configurations,
         escalating to OutSystems Support if the problem persists, so that
         the mobile app package generates successfully.'
+    - name: Fix extensibility error
+      id: extensibility-fetch-error
+      description: Wants to resolve the OS-NAOS-50005 "An error occurred while fetching the
+        extensibility configurations" error, caused by malformed extensibility
+        configuration JSON (a missing or invalid required property) or
+        missing/inaccessible extensibility resources, by ensuring the necessary
+        extensibility configurations are available and correctly set up,
+        escalating to OutSystems Support if the problem persists, so that the
+        mobile app build completes successfully.
+    - name: Compilation state error
+      id: compilation-state-error
+      description: 'Wants to resolve the OS-NAOS-50019 "An error occurred due
+        to an unexpected state in the compilation process" error, by
+        reviewing logs for details about the compilation state or
+        associated errors and contacting OutSystems Support if none are
+        found, so that the application build process can proceed.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -8305,6 +8321,14 @@ knowledge-needs:
         responds with a gRPC 2 (Unknown) error when testing the streaming connection
         in O11 or ODC — so that they can restore log and observability data streaming
         to the destination APM tool.
+    - name: Fix streaming invalid argument
+      id: fix-streaming-invalid-argument
+      description: Wants to understand and resolve the OS-DP-STREAM-00003 "invalid
+        argument" error — where the destination server responds with a gRPC 3 (Invalid
+        argument) error when testing the streaming connection in O11 or ODC — so
+        that they can restore log and observability data streaming by correcting
+        the authentication credentials or endpoint URL in LifeTime Log Streaming
+        or the ODC Portal.
   - name: Fluent Bit configuration
     id: fluentbit-configuration
     subtopics:

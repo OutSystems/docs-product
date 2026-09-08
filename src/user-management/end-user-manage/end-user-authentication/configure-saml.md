@@ -19,7 +19,9 @@ coverage-type:
   - remember
   - unblock
 topic:
-  - external-auth-mechanisms
+  - configure-saml-authentication
+  - map-idp-groups
+  - troubleshoot-saml-errors
 ---
 
 # Configure SAML 2.0 Authentication

@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - add-email-mime-headers
+  - how-to-create-emails
 ---
 
 # Email

@@ -17,7 +17,9 @@ coverage-type:
   - apply
   - unblock
 topic:
-  - built-in-mechanisms
+  - auth-methods-overview
+  - end-user-login-flow
+  - user-data-sync
 isautopublish: true
 ---
 

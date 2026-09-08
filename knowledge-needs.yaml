@@ -3879,6 +3879,12 @@ knowledge-needs:
       id: environments-stages
     - name: Deployment options
       id: deployment-options
+    - name: Deployment error concept
+      id: deployment-error-concept
+      description: Wants to understand what a deployment error is in OutSystems
+        11, an issue that must be fixed in Service Studio before a module can be
+        published to the server, so that they know why every reported error
+        needs resolving prior to deployment.
     - name: Portfolio deploy scope
       id: portfolio-deploy-scope
       description: Wants to understand how deployment, promotion, and undeployment
@@ -5527,6 +5533,14 @@ knowledge-needs:
         to detect the runtime framework and route calls to the right
         implementation, so that the plugin works in both Cordova and
         Capacitor apps without breaking existing Cordova-based apps.
+    - name: Decide dual-stack need
+      id: decide-dual-stack-need
+      description: Wants to decide whether to implement a dual-stack plugin
+        (separate Cordova and Capacitor implementations) instead of fully
+        adapting a Cordova plugin for Capacitor-only compatibility, based on
+        criteria such as needing Capacitor-only APIs, better performance, a
+        gradual Cordova phase-out, or complex compatibility logic, so that
+        they choose the right migration approach for an OutSystems plugin.
 - name: Lifecycle Independence
   guid: 4b3a44cd-2a86-462c-81b2-89a841284aab
   topics:
@@ -8683,6 +8697,22 @@ knowledge-needs:
       OS-IDE-CORE-50001 internal server error (a catch-all code for failures
       without a more specific cause), so they can retry the action or contact
       OutSystems Support with the trace ID if the problem persists.'
+  - name: Agent cost and performance analytics
+    id: agent-cost-performance-analytics
+    subtopics:
+    - name: View agent token analytics
+      id: view-agent-token-latency
+      description: Wants to view token consumption and P90 response-time data
+        for AI agents in the ODC Portal Analytics console, both as sortable
+        columns on the agent overview page and as trend charts on the agent
+        detail page, so they can identify which agents are the most expensive
+        or slowest and investigate what changed.
+    - name: Distinguish agent nodes
+      id: distinguish-agent-nodes
+      description: Wants to distinguish CallAgent nodes from generic Service
+        Action elements in the Analytics console's element breakdown, so they
+        can focus on agent-specific behavior when diagnosing a performance
+        issue.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:

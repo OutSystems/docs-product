@@ -6,7 +6,11 @@ guid: c6a9d058-311b-4564-8685-cd992ed4563f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ui design, security features, http requests, integrated authentication, user interface customization
+tags:
+  - Authentication
+  - Screens
+  - Security
+  - Themes
 audience:
   - Developer
   - Front-end developer

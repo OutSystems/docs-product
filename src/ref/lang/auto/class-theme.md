@@ -6,7 +6,11 @@ guid: b29c0bb6-f138-4d20-934f-df01ba3c4e2a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: theme customization, styling applications, ui design, web development, frontend customization
+tags:
+  - Blocks
+  - CSS
+  - Layouts
+  - Themes
 audience:
   - Front-end developer
   - Developer

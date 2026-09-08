@@ -5,7 +5,10 @@ guid: f8be65b0-6cde-4d57-ad19-0f473f662fa0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: process management, workflow automation, event-driven processes, entity events
+tags:
+  - Business Processes
+  - Events
+  - Workflows
 audience:
   - Developer
   - Front-end developer

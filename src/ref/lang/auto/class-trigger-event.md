@@ -5,7 +5,9 @@ guid: f093d004-0222-44cd-96ac-2f25a94f3acf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: event handling, web application development, outsystems development, traditional web apps
+tags:
+  - Events
+  - Triggers
 audience:
   - Front-end developer
   - Developer

@@ -6,7 +6,12 @@ guid: 5886405f-8490-4b2c-8eff-06f95ceec41d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: widget configuration, html attributes, ui design, web development, frontend development
+tags:
+  - Blocks
+  - Front-End
+  - Screens
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer

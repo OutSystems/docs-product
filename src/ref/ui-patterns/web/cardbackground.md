@@ -1,5 +1,9 @@
 ---
-tags: ui design, css, ui patterns, web development, style customization
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI Patterns
 summary: Explore CSS class alignment options for the Card Background UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 1c3ead1f-e810-47d0-993a-743656d4d4f1

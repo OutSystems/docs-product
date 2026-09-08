@@ -1,5 +1,10 @@
 ---
-tags: ui design, traditional web development, styling and themes, interaction design, outsystems ui
+tags:
+  - CSS
+  - Layouts
+  - OutSystems UI
+  - Traditional Web
+  - UI Patterns
 summary: Explore the customization of the Counter UI Pattern in OutSystems 11 (O11) for Traditional Web Apps, including layout, CSS, and advanced styling options.
 locale: en-us
 guid: c41f4255-ed4b-4aae-a934-9eebbcfcc129

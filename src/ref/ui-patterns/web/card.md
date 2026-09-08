@@ -1,5 +1,9 @@
 ---
-tags: ui customization, css, web development, component customization, design systems
+tags:
+  - CSS
+  - Front-End
+  - UI Patterns
+  - Web
 summary: Explore card component customization in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 64b922a7-ca05-4d8f-bb40-2c75539b0bc2

@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, web development, traditional web, outsystems ui, design systems
+tags:
+  - CSS
+  - Front-End
+  - Layouts
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the layout and classes of the Character Count UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 0aff7fc0-9c0e-4ff5-9736-588beddc3335

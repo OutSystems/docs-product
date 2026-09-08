@@ -1,5 +1,9 @@
 ---
-tags: ui component customization, css customization, web design, carousel customization, outsystems ui
+tags:
+  - CSS
+  - Front-End
+  - Themes
+  - UI Patterns
 summary: Explore advanced customization options for Carousel UI components in OutSystems 11 (O11), including external arrow placement and dot styling.
 locale: en-us
 guid: d0b2bc8d-6a37-424d-8399-56e586304c93

@@ -1,5 +1,9 @@
 ---
-tags: outsystems, ui patterns, badge design, web development, ui customization
+tags:
+  - Front-End
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the layout, classes, and advanced customization of the Badge UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: f677e159-79fd-4270-adad-fc16e1c49bf4

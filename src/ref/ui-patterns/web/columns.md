@@ -1,5 +1,11 @@
 ---
-tags: css, web development, ui design patterns, responsive design, style guide
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: OutSystems 11 (O11) provides a detailed guide on CSS selectors for various column configurations in Traditional Web Apps.
 locale: en-us
 guid: 6ce39ef3-220e-4cc8-ac81-a96b73b8d259

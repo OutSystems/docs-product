@@ -1,5 +1,10 @@
 ---
-tags: ui components, date time handling, web development, outsystems traditional web, component configuration
+tags:
+  - Events
+  - Front-End
+  - Traditional Web
+  - UI Patterns
+  - Widgets
 summary: Explore the features and configurations of the Date Picker component in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: f0fe14e4-6f11-4000-aa5b-81344f784447

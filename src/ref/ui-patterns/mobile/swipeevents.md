@@ -1,5 +1,10 @@
 ---
-tags: mobile events, user interaction, gesture controls, reactive web development, frontend event handling
+tags:
+  - Events
+  - Front-End
+  - Mobile app
+  - UI
+  - UI Patterns
 summary: Explore swipe events like SwipeDown, SwipeLeft, SwipeRight, and SwipeUp in OutSystems 11 (O11) for Mobile and Reactive Web Apps.
 locale: en-us
 guid: 4cbd7c42-2fd9-4e84-b9c0-091534b608b7

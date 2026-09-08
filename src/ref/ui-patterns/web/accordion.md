@@ -1,5 +1,11 @@
 ---
-tags: css customization, web development, ui components, design patterns, outsystems ui
+tags:
+  - CSS
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI Patterns
+  - Widgets
 summary: Explore accordion customization options in OutSystems 11 (O11) for traditional web apps, including CSS modifications and advanced use cases.
 locale: en-us
 guid: 535efa42-703f-4913-a0e6-d452ac259513

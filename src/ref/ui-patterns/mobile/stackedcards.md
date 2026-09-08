@@ -1,5 +1,8 @@
 ---
-tags: css customization, ui patterns, design systems, frontend development, web design
+tags:
+  - CSS
+  - Front-End
+  - UI Patterns
 summary: Explore CSS customization for the Stacked Cards UI Pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: 2b2b2437-d9dc-44bf-8d95-a0fb959fa61c

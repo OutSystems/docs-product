@@ -1,5 +1,9 @@
 ---
-tags: ui patterns, range slider, css conventions, event handling, outsystems ui framework
+tags:
+  - CSS
+  - Mobile app
+  - OutSystems UI
+  - UI Patterns
 summary: Explore the technical functionalities and events of OutSystems 11 (O11) Range Slider for mobile and reactive web apps.
 locale: en-us
 guid: e4c1bddc-985a-4895-b74e-9fb7e406c8a9

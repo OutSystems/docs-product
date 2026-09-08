@@ -1,5 +1,10 @@
 ---
-tags: component customization, ui design, outsystems ui, api documentation, events handling
+tags:
+  - Events
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
 summary: Explore the features and API of the Rating component in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: cde868f5-0402-49de-8c91-0754724634cc

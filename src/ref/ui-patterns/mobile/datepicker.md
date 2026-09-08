@@ -1,5 +1,10 @@
 ---
-tags: ui patterns, user interface design, outsystems development, date input, form elements
+tags:
+  - CSS
+  - Events
+  - Forms
+  - Mobile app
+  - UI Patterns
 summary: Explore the Date Picker reference for OutSystems 11 (O11), detailing events, layout, and CSS selectors for mobile and reactive web apps.
 locale: en-us
 guid: 0134e6e2-5319-4f34-9f72-5a137e9971a4

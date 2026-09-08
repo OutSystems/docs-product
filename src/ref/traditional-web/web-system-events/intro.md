@@ -1,5 +1,9 @@
 ---
-tags: web system events, traditional web apps, system events, outsystems platform, web development
+tags:
+  - Events
+  - Front-End
+  - Traditional Web
+  - Web
 summary: Explore web system events exclusive to Traditional Web Apps in OutSystems 11 (O11).
 locale: en-us
 guid: 0472959b-95fe-43d1-9d99-a25e3acff433

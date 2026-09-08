@@ -1,5 +1,10 @@
 ---
-tags: carousel component, ui components, carousel api, event handling, dom manipulation
+tags:
+  - Blocks
+  - JavaScript
+  - Mobile app
+  - UI Patterns
+  - Widgets
 summary: Explore Carousel functionalities and API methods in OutSystems 11 (O11) for advanced customization and event handling.
 locale: en-us
 guid: fe0f0d5b-bd63-4ddd-a18c-16d9df1e200f

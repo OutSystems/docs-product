@@ -1,5 +1,11 @@
 ---
-tags: css customization, ui design patterns, responsive design, mobile app development, web development
+tags:
+  - CSS
+  - Events
+  - Layouts
+  - Mobile app
+  - UI
+  - UI Patterns
 summary: Explore how OutSystems 11 (O11) enhances mobile and reactive web apps with master-detail layouts for landscape phone views similar to tablets.
 locale: en-us
 guid: 73bcc3f2-fbce-4e53-b0c3-a3501d2dc2ff

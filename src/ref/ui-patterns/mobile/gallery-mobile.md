@@ -1,5 +1,8 @@
 ---
-tags: ui patterns, outsystems api, css modifiers, ui design, application development
+tags:
+  - CSS
+  - Mobile app
+  - UI Patterns
 summary: Explore the structure and API of the Gallery UI pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: b48f442d-6ab3-47c9-96ad-2bae75f24bc8

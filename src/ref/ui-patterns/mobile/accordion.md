@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, accordion component, api usage, ui design, outsystems patterns
+tags:
+  - Events
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore accordion management features and APIs in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: e1c30cdd-a7f1-4ce5-aae5-2dddb7a845b9

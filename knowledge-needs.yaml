@@ -1711,6 +1711,16 @@ knowledge-needs:
   - name: Handling webservice errors
     id: handle-webservice-errors
     subtopics:
+    - name: Fix builder connection
+      id: fix-builder-connection
+      description: 'Wants to resolve the "We were unable to reach your environment
+        and we couldn''t sign you into <Integration/Workflow> Builder" error in
+        OutSystems 11, caused by an incorrect environment name or by
+        Integration/Workflow Builder being unable to reach the environment over
+        the network, by verifying with their IT department that
+        Integration/Workflow Builder has network access to the correct source
+        and destination per OutSystems network requirements, so that they can
+        sign in to Integration Builder or Workflow Builder.'
     - name: Fix IM unreachable
       id: fix-im-unreachable
       description: 'Wants to resolve the "Integration Manager couldn''t be
@@ -1728,6 +1738,16 @@ knowledge-needs:
         Salesforce API, by retrying later and contacting the Salesforce
         administrator or Salesforce support if the error persists, so that
         they can restore the connection to Salesforce.'
+    - name: Fix username not found
+      id: fix-username-not-found
+      description: 'Wants to resolve the "User with username <Username> was
+        not found" error (OS-INBL-API-00004) in Integration Builder, caused
+        by an unregistered username in the API call, by verifying the
+        username shown in the error matches the one used to sign into
+        Integration Manager and signing into Integration Builder with the
+        correct username, or contacting OutSystems support if the username
+        is already correct, so that they can create or edit connections in
+        Integration Manager.'
   - name: Workato Connector
     id: workato-connector
     subtopics:
@@ -8682,6 +8702,24 @@ knowledge-needs:
         requirements while safeguarding correct application behavior and
         query performance for databases created at a lower compatibility
         level.
+  - name: Technical Preview features
+    id: technical-preview-features
+    subtopics:
+    - name: Understand Technical Preview
+      id: understand-technical-preview
+      description: Wants to understand what Technical Preview features are in
+        OutSystems, including that they aren't production-ready, are disabled
+        by default, receive no OutSystems support, and may change
+        significantly or be removed, so that they can decide whether to opt
+        in.
+    - name: Enable Technical Preview
+      id: enable-technical-preview
+      description: Wants to activate a Technical Preview feature in LifeTime,
+        either in OutSystems Cloud under Environment > Options or in a
+        self-managed installation under Infrastructure > Technical Preview,
+        requiring the "Manage Infrastructure and Users" infrastructure
+        permission, so that they can start using the feature before it's
+        generally available.
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:
@@ -8705,6 +8743,12 @@ knowledge-needs:
   - name: Log Streaming operations
     id: log-streaming-ops
     subtopics:
+    - name: Understand stream errors
+      id: understand-stream-errors
+      description: Wants to understand why a streaming error occurs when configuring
+        a connection to an APM tool in O11 or ODC, and to find the resolution for
+        a specific error code, so they can navigate to the correct error page and
+        fix the connection.
     - name: Troubleshoot Log Streaming
       id: log-streaming-troubleshoot
       description: Wants to diagnose and resolve Log Streaming issues on a self-managed
@@ -8824,6 +8868,13 @@ knowledge-needs:
         that they can restore data streaming by correcting the authentication
         credentials or endpoint URL in the ODC Portal or LifeTime Log Streaming
         destination configuration.
+    - name: Fix streaming bad gateway
+      id: fix-streaming-bad-gateway
+      description: Wants to understand and resolve the OS-DP-STREAM-50002 "internal
+        or gateway communication error" — where the destination server responds
+        with HTTP 502 when testing the streaming connection in O11 or ODC — so
+        that they can restore log and observability data streaming by verifying
+        the APM tool is working and re-establishing the connection.
     - name: Fix streaming authz error
       id: fix-streaming-authz
       description: Wants to understand and resolve the OS-DP-STREAM-40301 authorization
@@ -8831,6 +8882,13 @@ knowledge-needs:
         streaming audit/observability data in ODC or logs in O11, so that they
         can restore data streaming by reviewing the APM server configuration and
         verifying that the credentials have the correct permissions.
+    - name: Fix streaming HTTP 503
+      id: fix-streaming-http-503
+      description: Wants to understand and resolve the OS-DP-STREAM-50003 "unknown
+        error reaching your APM tool server" error, where the destination server
+        responds with HTTP 503 when testing the streaming connection in O11 or
+        ODC, so that they can restore audit, observability, and log data streaming
+        by verifying the APM tool is working and re-establishing the connection.
   - name: Fluent Bit configuration
     id: fluentbit-configuration
     subtopics:

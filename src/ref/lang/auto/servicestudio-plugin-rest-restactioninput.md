@@ -9,7 +9,6 @@ figma:
 tags: rest api, api configuration, web services, parameter handling, outsystems platform
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

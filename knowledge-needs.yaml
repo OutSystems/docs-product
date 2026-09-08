@@ -924,6 +924,122 @@ knowledge-needs:
     id: agg-vs-sql
   - name: Stored procedures
     id: stored-procedures
+  - name: File data type
+    id: file-data-type
+    subtopics:
+    - name: File vs BinaryData
+      id: file-vs-binarydata
+      description: Wants to understand why ODC stores File attribute content in
+        cloud storage instead of the database, and how the File type differs
+        from BinaryData in loading behavior, size limits, and reference
+        semantics, so they can choose the right data type for large content in
+        reactive web and mobile apps.
+    - name: File type properties
+      id: file-type-properties
+      description: Wants to look up the File data type's properties and restrictions,
+        including its maximum size and where it isn't supported, so they can
+        correctly configure File attributes in ODC Studio.
+    - name: Display cloud images
+      id: display-cloud-images
+      description: Wants to bind a File-typed entity attribute to the Image
+        widget (Type = File or Binary Data) in ODC Studio, understanding that
+        the File must already be saved to the entity before binding and that
+        each image loads asynchronously via its own request after the
+        aggregate or data action completes, so that images stored in cloud
+        storage render correctly on screen.
+    - name: Configure image caching
+      id: configure-image-caching
+      description: Wants to control caching for images bound to File values
+        in ODC, understanding the default 'private, no-store' behavior and
+        how to enable CDN-level caching by generating a signed URL via
+        GetFileSignedURL and setting ResponseHeaders.CacheControl, so that
+        images can be cached appropriately without exposing user-scoped
+        content publicly.
+    - name: Scoped image URLs
+      id: scoped-image-urls
+      description: Wants to understand that a File image's generated URL is
+        tied to the requesting user's session, so that they avoid sharing or
+        reusing image URLs across sessions or users, since such URLs fail to
+        load outside the original session.
+    - name: Use Download node
+      id: use-download-node
+      description: Wants to add the Download node to a screen action in ODC
+        Studio to let users download a File-typed variable directly from
+        cloud storage to their device, understanding it works for any file
+        size without routing through the app server, doesn't require
+        authentication (unlike uploads), and is only available in screen
+        actions (not client or server actions), so that they can implement
+        file downloads correctly in reactive web and mobile apps.
+    - name: File data preview
+      id: file-data-preview
+      description: Wants to understand how ODC Studio previews File attribute
+        values as MIMEType metadata (not content) in Edit Data, Advanced SQL
+        test queries, the debugger's variable inspector, and the data type
+        picker, so they can correctly interpret File data during
+        development, testing, and debugging.
+    - name: File reference lifecycle
+      id: file-reference-lifecycle
+      description: Wants to understand how a File attribute's reference
+        moves through Uploaded, Active, and Pending deletion states as
+        entity records are created, updated, and deleted, and how ODC's
+        reference counting keeps a shared File value from being deleted
+        while other committed records (including via cascade delete)
+        still reference it, so they can predict when File content
+        actually gets removed.
+    - name: File storage operations
+      id: file-storage-operations
+      description: Wants to understand how File storage behaves
+        operationally in production, including that File content follows
+        the same disaster-recovery retention as the database, that
+        removed or replaced File content still counts against storage
+        usage until the retention period ends, and that the platform
+        automatically reclaims content from incomplete or rolled-back
+        operations, so they can plan storage capacity and DR expectations
+        correctly.
+    - name: Aggregate File results
+      id: aggregate-file-results
+      description: Wants to understand that an aggregate returns File
+        metadata and a direct cloud-storage download URL instead of
+        binary content, so screen logic can use that URL like any other
+        string and the app server never handles the file's binary data.
+    - name: Generate signed URLs
+      id: generate-signed-urls
+      description: Wants to generate a time-limited signed URL for a File value using
+        GetFileSignedURL or for multiple files using GetMultipleFilesSignedURLs,
+        configuring the URLExpiration TTL within a bounded default and maximum
+        duration enforced at runtime rather than publish time, so they can grant
+        direct, temporary cloud-storage file access without routing bytes
+        through the app server.
+    - name: Signed URL safe usage
+      id: signed-url-safe-usage
+      description: Wants to follow safe-usage rules for signed URLs
+        (generate on demand, use immediately, never store or reuse,
+        keep TTLs short, never share via email or messages) and
+        understand that a signed URL is a bearer token nobody's
+        identity is checked, so they can avoid leaking file access.
+    - name: Handle expired signed URLs on idle screens
+      id: expired-signed-url-idle-screens
+      description: Wants to handle requests for an expired signed URL
+        on a long-idle screen when it fails silently without an ODC
+        error code, so they can refresh URLs correctly on long-idle
+        screens.
+    - name: Use ODC Upload widget
+      id: use-upload-widget-odc
+      description: Wants to add the Upload widget to a screen in ODC
+        Studio, bind its File Content property to a File-typed entity
+        attribute, and call CreateOrUpdate in a server action to save
+        the uploaded file, understanding that only authenticated users
+        can upload (anonymous users see a login-required banner unless
+        the screen's Accessible by property requires authentication),
+        so they can implement file uploads to cloud storage in ODC
+        reactive web and mobile apps.
+    - name: ODC upload size limit
+      id: odc-upload-size-limit
+      description: Wants to resolve the "File with X bytes cannot be uploaded because it is
+        above the maximum size of Y bytes" error shown by default when a file
+        exceeds the Upload widget's size limit in ODC, by checking Size() on the
+        selected File value before the form submits and showing a custom
+        message, so end users get a friendlier size-limit warning.
   - name: Aggregating data
     id: agregating-data
     subtopics:
@@ -1245,6 +1361,28 @@ knowledge-needs:
         supported connector.
     - name: Integrate using custom code
       id: custom-code-integration
+    - name: Declare File parameters
+      id: declare-file-parameters
+      description: Wants to declare File input and output parameters in an
+        External Library function using the IOSFile type from the
+        OutSystems External Libraries SDK, so their custom code can receive
+        File values an ODC app provides and return new File values back to
+        the calling app.
+    - name: Read write file content
+      id: read-write-file-content
+      description: Wants to read a File input parameter's content and write
+        a File output parameter's content in an External Library function
+        using the IFileStorage interface from the FileStorage NuGet
+        package, choosing the right read or write method based on file size
+        and access pattern, so they can process file content correctly
+        without loading unsupported amounts of data into memory.
+    - name: Library file lifecycle
+      id: library-file-lifecycle
+      description: Wants to understand that files created by an External
+        Library function are stored temporarily and isolated per function
+        invocation, and that the calling app must save the returned File
+        reference to an entity to promote it to permanent storage, so they
+        can correctly manage file retention and access from custom code.
     - name: Consume via extension
       id: consume-webservice-via-extension
       description: Wants to consume a Web Service that can't be natively imported
@@ -3265,7 +3403,7 @@ knowledge-needs:
         file is selected, an empty file is chosen, or the file type doesn't
         match what's expected, in Traditional Web Apps and Reactive Web Apps.
     - name: Use Upload widget
-      id: use-upload-widget
+      id: use-upload-widget-o11
       description: Wants to configure the Upload widget's File Content and File
         Name properties by binding them to aggregate data, so that users can
         upload a file (such as a photo) and save it to the database from a

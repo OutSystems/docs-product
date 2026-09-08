@@ -560,6 +560,28 @@ knowledge-needs:
       id: static-entities
     - name: Create/manipulate entities
       id: create-edit-entities
+    - name: CRUD wrapper accelerator
+      id: crud-wrapper-accelerator
+      description: Wants to understand what CRUD wrappers are and use the ODC
+        Studio accelerator to auto-generate Create, CreateOrUpdate, Update,
+        and Delete server (and service) action wrappers for an entity,
+        including their built-in mandatory-attribute validation, so they can
+        add business rules and validations to CRUD operations without
+        manually building wrapper logic.
+    - name: Non-AutoNumber CRUD Ids
+      id: non-autonumber-crud-ids
+      description: Wants to know how the ODC Studio CRUD wrapper accelerator
+        handles entities whose Id attribute doesn't use AutoNumber, requiring
+        the developer to supply a unique identifier (for example via
+        GenerateGuid()) in the Create and CreateOrUpdate wrappers, so records
+        aren't created without a valid, unique Id.
+    - name: CRUD wrapper auditing
+      id: crud-wrapper-auditing
+      description: Wants to enable automatic auditing in ODC Studio CRUD
+        wrappers by naming entity attributes CreatedOn, CreatedBy,
+        UpdatedOn/ModifiedOn, and UpdatedBy/ModifiedBy, so the generated
+        wrapper logic automatically fills in who created or last updated a
+        record and when.
     - name: Data types
       id: data-types
       description: Wants to understand what data types are available in ODC, their
@@ -868,6 +890,17 @@ knowledge-needs:
       ODC Studio and trigger it from a server action using an IF condition
       and a Trigger Event node, so that the event fires only when a new
       record is created, providing the data a workflow needs to start.
+  - name: ODC data platform
+    id: odc-data-platform
+    description: Wants to understand what the ODC data platform is, which
+      categories of platform features send data to it, so that they can
+      reason about where their platform data lives and how to access it for
+      monitoring and compliance.
+  - name: ODC Portal log and metric filtering
+    id: odc-portal-log-metric-filtering
+    description: Wants to understand how logs and metrics are filtered by
+      stage and portfolio in ODC Portal, so that they can access platform
+      data for monitoring and compliance.
 - name: Advanced data handling
   guid: c6a945c1-deaa-4266-9b94-d7b31d9fdf07
   topics:
@@ -1162,6 +1195,11 @@ knowledge-needs:
         an already-exposed O11 entity in the baseline environment via the
         LifeTime console, so that changes to the entity's definition are
         reflected before promoting it to other environments.
+    - name: O11-ODC interop overview
+      id: o11-odc-interop-overview
+      description: Wants to understand the three areas of O11-ODC
+        interoperability, data, logic, and user, and what each enables,
+        before deciding how to extend an O11 app with ODC capabilities.
     - name: Decide ODC extension
       id: decide-odc-extension
       description: Wants to decide whether to extend an existing O11 app
@@ -4786,6 +4824,38 @@ knowledge-needs:
         dataset versions across runs, and failure details for setup or
         teardown stages, so that they can interpret run outcomes and know
         where to investigate failures.
+    - name: Understand A2A protocol
+      id: understand-a2a-protocol
+      description: Wants to understand what agent-to-agent (A2A) communication is in ODC,
+        including its benefits and the roles and architectural building blocks
+        involved, so that they can decide whether it fits their agentic app
+        design.
+    - name: A2A communication flow
+      id: a2a-communication-flow
+      description: Wants to understand the phases of an A2A communication
+        flow, discovery, authentication, and communication, between a
+        client agent and a remote agent, so that they can implement or
+        troubleshoot the integration correctly.
+    - name: A2A vs MCP
+      id: a2a-vs-mcp
+      description: Wants to understand the difference between the MCP and
+        A2A protocols and how they complement each other, so that they can
+        decide which protocol to use for a specific agent integration
+        scenario.
+    - name: Raise agent timeout
+      id: raise-agent-timeout
+      description: Wants to fix AI agent call timeouts in ODC by raising the Server Request
+        Timeout property to its maximum allowed value at the app level or on
+        individual Call Agent actions, so that longer AI Model responses
+        complete before the request times out.
+    - name: Async AI agent calls
+      id: async-agent-calls
+      description: Wants to implement asynchronous processing for AI agent calls that
+        exceed the platform's request timeout ceiling, by building client
+        actions, queue and request entities, an event-triggered server action to
+        call the agent, a polling action to check status, and a timer to clean
+        up completed queue entries, so that long-running AI Model responses
+        don't block the calling app.
     - name: Agent conversation memory
       id: agent-conversation-memory
       description: Wants to configure an AI agent's BuildMessages logic to
@@ -6630,6 +6700,37 @@ knowledge-needs:
         O11 as an external identity provider in ODC, assigning it to an ODC
         stage, and configuring redirect URIs, so that end users authenticating
         with O11 built-in authentication get single sign-on access to ODC apps.
+    - name: UsersIdP security risks
+      id: usersidp-security-risks
+      description: Wants to understand the security characteristics and
+        identity-spoofing risks of the UsersIdP component (token validation,
+        no password sync, unvalidated email change risk) before deploying
+        O11-ODC SSO, so that they monitor O11 and ODC for suspicious activity
+        to prevent user impersonation.
+    - name: UsersIdP limitations
+      id: usersidp-limitations
+      description: Wants to confirm which authentication methods, Users app configuration,
+        and user provider the UsersIdP component supports, before installing it,
+        so that they can determine whether O11-ODC SSO via UsersIdP is viable
+        for their environment.
+    - name: O11-ODC SSO overview
+      id: o11-odc-sso-overview
+      description: Wants to understand how SSO lets O11 end users access
+        both O11 and ODC apps without re-authenticating, including the two
+        authentication scenarios (O11 built-in authentication, where the
+        Users app acts as an external OIDC provider for ODC, versus O11
+        external authentication, where both platforms federate with a
+        shared external identity provider), so that they can plan which
+        SSO setup path applies to their environment.
+    - name: Set up O11 external SSO
+      id: setup-o11-external-sso
+      description: Wants to configure O11 and ODC single sign-on for the O11
+        external authentication scenario by adding the external IdP in ODC,
+        configuring redirect URIs, and assigning the IdP to ODC stages, when
+        O11 apps authenticate end users through an external identity provider
+        (OIDC or SAML) instead of O11 built-in authentication, so that end
+        users sign in once at the IdP and reuse that session across O11 and
+        ODC apps without separate ODC credentials.
   - name: Authorization
     id: authorization
     subtopics:
@@ -6804,6 +6905,14 @@ knowledge-needs:
         Execution regardless of the number of actions, tools, or AI model calls
         performed within that call, so that they can accurately estimate Agent
         Execution consumption for licensing purposes.
+    - name: Interop end-user licensing
+      id: interop-end-user-licensing
+      description: Wants to understand how end-user licensing is counted
+        when O11-ODC user interoperability is enabled, since the same
+        individual is tracked as an end user separately on each platform and
+        only exceeds capacity if either platform's own limit is surpassed
+        individually, so that they can accurately assess licensed end-user
+        capacity across both platforms.
   - name: Expanded governance
     id: expanded-governance
     subtopics:

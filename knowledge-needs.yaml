@@ -877,6 +877,15 @@ knowledge-needs:
         CaseDefinition_GrantAccessToGroup, Case_GrantAccessToUser, or
         Case_GrantAccessToGroup, so that the action can be executed
         successfully.'
+    - name: Fix sample user login
+      id: fix-sample-user-login
+      description: 'Wants to resolve the OS-CMFR-GEN-20006 error ("Couldn''t
+        log in. Make sure you''re accessing as a sample user."), caused by
+        passing a non-sample user identifier to the SampleUser_Login action,
+        by ensuring the UserId input parameter belongs to a valid sample
+        user, verified with Service Studio''s Debugger, in OutSystems 11, so
+        that the Case Management Framework can successfully execute the
+        action.'
 - name: Accessibility
   guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
   topics:
@@ -2297,6 +2306,24 @@ knowledge-needs:
         Delegation_Update, verifying the values with Service Studio''s
         Debugger, in OutSystems 11, so that the Case Management Framework
         can successfully execute the action.'
+    - name: Fix unassigned activity error
+      id: fix-unassigned-activity-error
+      description: 'Wants to fix the "The activity must be assigned to a
+        user before it can be released" error by assigning the activity
+        to a user using the Activity_AssignToUser action from the
+        CaseServices_API module before calling Case_ReleaseActivity, in
+        OutSystems 11, so that the Case Management Framework can
+        successfully execute the action.'
+    - name: Fix takeover access error
+      id: fix-takeover-access-error
+      description: 'Wants to fix the "Couldn''t complete the Takeover. Either
+        the user is missing access or the activity isn''t assigned to
+        anyone." error by verifying the user has access to the activity
+        using the Activity_ValidateUserAccess action, or assigning the
+        activity to a user using the Activity_AssignToUser action, both
+        from the CaseServices_API module, before calling
+        Case_TakeoverActivity in the Case Management Framework in
+        OutSystems 11, so that the action executes successfully.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:

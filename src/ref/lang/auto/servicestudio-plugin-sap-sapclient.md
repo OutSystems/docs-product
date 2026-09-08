@@ -6,7 +6,9 @@ guid: 14b4eecd-c93a-45cd-871d-6f6470945bd1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: sap integration, enterprise systems, system integration, connection configuration, traditional web apps
+tags:
+  - Plugins
+  - Settings
 audience:
   - Developer
   - Platform administrator

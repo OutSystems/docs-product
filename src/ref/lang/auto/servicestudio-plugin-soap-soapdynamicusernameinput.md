@@ -5,7 +5,10 @@ guid: 21a8934d-1aa2-45a3-b899-b22589dd256f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: soap web service, api authentication, outsystems platform, input parameters, security configuration
+tags:
+  - Authentication
+  - SOAP
+  - Web services
 audience:
   - Developer
   - Front-end developer

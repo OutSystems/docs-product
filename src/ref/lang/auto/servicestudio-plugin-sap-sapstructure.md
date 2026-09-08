@@ -6,7 +6,8 @@ guid: 895732c3-42f6-4e78-87f8-efef7a1de2ef
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: sap integration, sap data types, remote function call (rfc), outsystems integrations
+tags:
+  - Plugins
 audience:
   - Developer
   - Front-end developer

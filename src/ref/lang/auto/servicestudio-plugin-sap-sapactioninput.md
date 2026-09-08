@@ -6,7 +6,8 @@ guid: 0c2f28f8-e4c4-4b13-9139-fba94b1a2774
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: sap integration, data types, parameter management, api development, traditional web apps
+tags:
+  - Plugins
 audience:
   - Developer
   - Front-end developer

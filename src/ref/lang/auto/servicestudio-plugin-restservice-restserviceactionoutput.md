@@ -6,7 +6,8 @@ guid: 887a371e-106f-46cc-b419-92d929de0dd1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: rest apis, parameter configuration, http headers, api documentation, traditional web apps
+tags:
+  - REST
 audience:
   - Developer
   - Front-end developer

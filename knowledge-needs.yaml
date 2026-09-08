@@ -7148,6 +7148,13 @@ knowledge-needs:
         deployment scenarios such as plain HTTP redirection, end-to-end HTTPS, SSL
         offload, and multi-app path-based routing, so they can implement the correct
         configuration set for their specific setup.
+    - name: Configure Android HTTP/2
+      id: configure-android-http2
+      description: Wants to enable reverse proxy support with NGINX and HTTP/2 for
+        Android apps built with MABS 4.1 or later, by configuring the platform
+        server's SSL settings to support at least one of the required cipher
+        suites, so that Android devices can connect over HTTP/2 through the
+        reverse proxy.
   - name: Redis in-memory sessions
     id: redis-in-memory-sessions
     subtopics:
@@ -7276,6 +7283,39 @@ knowledge-needs:
         including how crossed replica placement enables automatic failover to a
         surviving server, so that they can reason about Redis Cluster resilience
         before deploying it.
+  - name: Front-end server scaling
+    id: front-end-server-scaling
+    subtopics:
+    - name: Install front-end server
+      id: install-front-end-server-o11
+      description: Wants to install and configure a new front-end server on a
+        self-managed OutSystems 11 environment, by exporting the private key
+        and configuration files from the Controller, running the Platform
+        Server installation checklist with the First install task and the
+        Server (or Front-end Server) role, so that the environment gains
+        additional horizontal scalability without disrupting ongoing
+        deployments.
+    - name: Request Cloud horizontal scaling
+      id: request-cloud-horizontal-front-end-scaling
+      description: Wants to request horizontal scaling of front-end servers
+        for an OutSystems Cloud environment, by submitting a support case
+        and understanding that OutSystems provisions new front-end servers
+        automatically, so that they can plan for the resulting capacity
+        increase without manual server installation.
+    - name: Request Cloud vertical scaling
+      id: request-cloud-vertical-front-end-scaling
+      description: Wants to request vertical scaling of front-end servers
+        for an OutSystems Cloud environment, by submitting a support case
+        and understanding that OutSystems proposes an upgrade schedule that
+        can involve downtime, so that they can plan for the resulting
+        capacity change.
+    - name: Automate server scaling
+      id: automate-server-scaling-o11
+      description: Wants to automate the horizontal scaling of front-end
+        servers in a self-managed OutSystems 11 environment, using
+        OutSystems unattended installation commands or, on Microsoft Azure,
+        Azure scale sets, so that new front-end servers can be provisioned
+        without manual installation steps.
   - name: Database Collation
     id: database-collation
     subtopics:
@@ -7346,6 +7386,17 @@ knowledge-needs:
         connection settings, then creating and applying an All Components
         solution across all modules, so that all servers point to the new
         database server without altering application data.
+    - name: Change DB user passwords
+      id: change-database-user-passwords
+      description: Wants to change the passwords of OutSystems Platform,
+        Log, and Session database users on a self-managed O11
+        infrastructure, by updating credentials directly in each database,
+        then in the Configuration Tool on the deployment controller and
+        each front-end server, and finally applying settings to all
+        modules in Service Center so republished apps use the new
+        credentials, so that they can comply with password rotation
+        requirements without leaving modules unable to log in to the
+        database.
   - name: LifeTime environment setup
     id: lifetime-environment-setup
     subtopics:
@@ -7360,6 +7411,21 @@ knowledge-needs:
         environment, so that LifeTime runs independently, accepting the
         loss of LifeTime-specific data such as Performance Monitor history,
         application tagging history, and the change log.
+    - name: LifeTime dedicated env
+      id: lifetime-dedicated-env
+      description: Wants to understand that OutSystems 11 requires installing
+        the infrastructure management console (LifeTime) in its own dedicated
+        environment, with separate application servers and distinct database
+        catalogs or schemas, rather than reusing an existing environment, so
+        that they plan the installation correctly.
+    - name: Size LifeTime storage
+      id: lifetime-storage-sizing
+      description: Wants to estimate the storage capacity needed for the
+        LifeTime infrastructure management console environment, including
+        Production monitoring data, LifeTime database growth, and
+        transaction log growth, based on average page views of monitored
+        applications, so that they can properly size the dedicated
+        environment's database.
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:
@@ -7721,6 +7787,22 @@ knowledge-needs:
       algorithms, or upgrading to Platform Server 11.38.0+ for native FIPS-compliant
       environment support, so that the platform runs without being blocked by the
       system''s FIPS enforcement.'
+  - name: AD auth login workaround
+    id: ad-auth-login-workaround
+    description: Wants to temporarily disable Active Directory (AD)
+      authentication for IT users on a self-managed OutSystems 11
+      environment, by updating the OSSYS_AUTHPROVIDER and admin user
+      records directly in the Platform database and reapplying settings in
+      the Configuration Tool, so that they can log in to Service Center
+      with the built-in admin account and apply settings when AD-based
+      login is otherwise blocked.
+  - name: Release environment serial
+    id: release-environment-serial
+    description: Wants to release an OutSystems 11 environment's serial
+      number through the Customer Portal when performing planned operations
+      (Platform Server upgrade, server transfer, hardware change, or
+      environment sunset), so that they can register a new serial number
+      and download an updated license file.
   - name: Renew server license
     id: renew-server-license
     description: Wants to know how to respond to a Service Center warning
@@ -7792,6 +7874,21 @@ knowledge-needs:
       environments and contacting OutSystems Support, so they can get
       assistance completing the license change for all environments at
       once.
+  - name: Find Activation Code
+    id: find-activation-code
+    description: 'Wants to locate their OutSystems 11 infrastructure''s
+      Activation Code and each environment''s Serial Number, either from the
+      subscription confirmation email or from Service Center''s
+      Administration and Licensing pages, so that they can reference these
+      license identifiers when contacting OutSystems Support or performing
+      license management tasks.'
+  - name: Get environment license
+    id: get-environment-license
+    description: Wants to obtain and install a license file for a
+      self-managed OutSystems 11 environment by registering the
+      environment's serial number in Customer Portal, downloading the
+      license file, and installing it, so that the environment can be
+      activated or upgraded.
 - name: Monitor and Troubleshoot (O10)
   guid: 69e74025-d666-40fd-b224-c96f5cbba50c
   topics:

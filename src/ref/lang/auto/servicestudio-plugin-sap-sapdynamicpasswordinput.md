@@ -9,7 +9,6 @@ figma:
 tags: sap integration, security, parameter configuration, service studio, dynamic login
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

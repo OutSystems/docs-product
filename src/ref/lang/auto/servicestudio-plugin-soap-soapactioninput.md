@@ -8,7 +8,6 @@ figma:
 tags: soap web services, api integration, web service consumption, input parameters
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

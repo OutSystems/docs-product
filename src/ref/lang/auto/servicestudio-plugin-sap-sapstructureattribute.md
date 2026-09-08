@@ -9,7 +9,6 @@ figma:
 tags: sap integration, data modeling, application development, software documentation
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

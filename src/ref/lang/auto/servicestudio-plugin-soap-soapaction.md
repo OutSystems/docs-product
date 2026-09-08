@@ -8,7 +8,6 @@ figma:
 tags: soap web services, web service integration, api documentation, service orchestration
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

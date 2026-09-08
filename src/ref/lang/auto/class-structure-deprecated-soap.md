@@ -9,8 +9,6 @@ figma:
 tags: soap web services, wsdl, api development, application integration, outsystems platform
 audience:
   - Developer
-  - Architect
-  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

@@ -8,7 +8,6 @@ figma:
 tags: action flows, conditional logic, workflow design, visual programming, outsystems development
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

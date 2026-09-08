@@ -4926,6 +4926,22 @@ knowledge-needs:
         freeing up resources via the Free Up Resources page or contacting
         Support if the problem persists, so that they can restore access to
         their Personal Environment.'
+    - name: PE expiration policy
+      id: pe-expiration-policy
+      description: Wants to understand that the OutSystems Personal Edition is free
+        indefinitely while actively used, stays active for a default period that
+        renews with continued activity, enters expiration after prolonged
+        inactivity with an advance warning email, and can be recreated afterward
+        (with OML export/import as the only way to preserve apps), so they know
+        how to avoid losing work and what to do if their PE expires.
+    - name: PE resource limits
+      id: pe-resource-limits
+      description: Wants to know the concrete resource limits of the OutSystems Personal
+        Edition compared to a commercial ODC tenant — including the number of
+        development stages, API clients, users, and active components
+        (apps/workflows/AI agents/timers) allowed, the database storage cap, and
+        the daily execution/log caps — so they can plan what they can
+        realistically build and run in a PE.
     - name: PE hibernation basics
       id: pe-hibernation-basics
       description: Wants to understand what PE hibernation is, when it triggers after a
@@ -7023,6 +7039,32 @@ knowledge-needs:
       incremental backups retained for a defined retention period, and Aurora
       Serverless high-availability failover, so that they can assess data
       protection and disaster recovery guarantees for their apps.
+  - name: Penetration testing
+    id: penetration-testing
+    subtopics:
+    - name: Run penetration tests
+      id: run-penetration-tests
+      description: Wants to perform penetration tests or vulnerability scans
+        against their own OutSystems Cloud, hybrid, or self-managed
+        infrastructure, checking the OutSystems Platform Hardening guidance
+        beforehand, so that they know which assets are in scope and avoid
+        generating avoidable false positives.
+    - name: Pentest false positives
+      id: pentest-false-positives
+      description: Wants to determine whether a penetration test or
+        vulnerability scan finding against a known OutSystems platform
+        component (for example jQuery, jQuery-UI, IdentityServer4,
+        Newtonsoft.Json) is a false positive, so that they can distinguish
+        already-mitigated findings from confirmed platform vulnerabilities
+        before reporting them.
+    - name: Pentest support process
+      id: pentest-support-process
+      description: Wants to understand the conditions under which
+        OutSystems support and security teams review penetration test
+        findings, and how responsibilities and expectations differ between
+        the customer and OutSystems by deployment model (Cloud and hybrid
+        versus self-managed), so that they know what to prepare before
+        opening a support case.
   - name: Vulnerability disclosures
     id: vulnerability-disclosures
     subtopics:
@@ -8653,6 +8695,63 @@ knowledge-needs:
         that they can restore log and observability data streaming by correcting
         the authentication credentials or endpoint URL in LifeTime Log Streaming
         or the ODC Portal.
+    - name: Fix streaming out of range
+      id: fix-streaming-out-of-range
+      description: Wants to understand and resolve the OS-DP-STREAM-00011 "out
+        of range" error — where the destination server responds with a gRPC 11
+        (Out of range) error when testing the streaming connection in O11 or ODC
+        — so that they can restore log and observability data streaming by verifying
+        the APM tool is working and re-establishing the connection.
+    - name: Fix streaming unimplemented
+      id: fix-streaming-unimplemented
+      description: Wants to understand and resolve the OS-DP-STREAM-00012 "unimplemented"
+        error — where the destination server responds with a gRPC 12 (Unimplemented)
+        error when testing the streaming connection in O11 or ODC — so that they
+        can restore log and observability data streaming by verifying the APM tool
+        is working and re-establishing the connection.
+    - name: Fix streaming internal
+      id: fix-streaming-internal
+      description: Wants to understand and resolve the OS-DP-STREAM-00013 "internal
+        error" error — where the destination server responds with a gRPC 13 (Internal)
+        error when testing the streaming connection in O11 or ODC — so that they
+        can restore log and observability data streaming by verifying the APM tool
+        is working and re-establishing the connection.
+    - name: Fix streaming unavailable
+      id: fix-streaming-unavailable
+      description: Wants to understand and resolve the OS-DP-STREAM-00014 "unavailable"
+        error — where the destination server responds with a gRPC 14 (Unavailable)
+        error when testing the streaming connection in O11 or ODC — so that they
+        can restore log and observability data streaming by verifying the destination
+        server is reachable and correcting the server URL.
+    - name: Fix streaming data loss
+      id: fix-streaming-data-loss
+      description: Wants to understand and resolve the OS-DP-STREAM-00015 "data
+        loss" error — where the destination server responds with a gRPC 15 (Data
+        loss) error when testing the streaming connection in O11 or ODC — so that
+        they can restore log and observability data streaming by verifying the
+        APM tool is working and re-establishing the connection.
+    - name: Fix streaming redirect
+      id: fix-streaming-redirect
+      description: Wants to understand and resolve the OS-DP-STREAM-30101 "moved
+        permanently" error — where the destination server responds with HTTP 301
+        when testing the streaming connection in O11 or ODC — so that they can
+        restore log and observability data streaming by updating the endpoint
+        URL to the new destination location.
+    - name: Fix streaming auth error
+      id: fix-streaming-auth
+      description: Wants to understand and resolve the OS-DP-STREAM-40101 "authentication
+        error" — where the destination APM tool server rejects an authentication
+        attempt when streaming audit/observability data (ODC) or logs (O11) — so
+        that they can restore data streaming by correcting the authentication
+        credentials or endpoint URL in the ODC Portal or LifeTime Log Streaming
+        destination configuration.
+    - name: Fix streaming authz error
+      id: fix-streaming-authz
+      description: Wants to understand and resolve the OS-DP-STREAM-40301 authorization
+        error, where the APM tool server rejects an authorization attempt when
+        streaming audit/observability data in ODC or logs in O11, so that they
+        can restore data streaming by reviewing the APM server configuration and
+        verifying that the credentials have the correct permissions.
   - name: Fluent Bit configuration
     id: fluentbit-configuration
     subtopics:

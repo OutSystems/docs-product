@@ -6,7 +6,12 @@ guid: 21c2bb40-056c-4805-a231-63e5c40492f8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: widget implementation, web development, ui components, outsystems widgets, screen navigation
+tags:
+  - Accessibility
+  - Front-End
+  - Screens
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer

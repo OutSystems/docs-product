@@ -1,7 +1,11 @@
 ---
 helpids: 30044
 summary: Learn how to use the Icon widget in OutSystems 11 (O11) to add scalable vector icons to Mobile Apps and Reactive Web Apps, enhancing UI design.
-tags: ui components, svg icons, user interface design, outsystems widgets, accessibility
+tags:
+  - Front-End
+  - Mobile app
+  - UI
+  - Widgets
 locale: en-us
 guid: 46d19d6d-4088-4950-805d-c07e75825805
 app_type: mobile apps, reactive web apps

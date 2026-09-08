@@ -6,7 +6,10 @@ guid: 58db2c1b-53a2-48ef-b635-9f7e1f762b65
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ui design, user interface components, accessibility, label widget, web development
+tags:
+  - Forms
+  - UI
+  - Widgets
 audience:
   - Front-end developer
   - Developer

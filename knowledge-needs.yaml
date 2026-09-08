@@ -4829,6 +4829,16 @@ knowledge-needs:
         error, and following the recommended action, so that they can
         continue using Mentor Web to generate and refine apps in ODC
         Portal.
+  - name: Mentor Web app generation
+    id: mentor-web-app-generation
+    subtopics:
+    - name: Generate app from document
+      id: generate-app-from-document
+      description: Wants to generate an ODC app in Mentor Web by uploading
+        a requirement document and reviewing the resulting blueprint's
+        entities, roles, and screens before generating, so that
+        misinterpretations are caught early and the generated app matches
+        the requirements.
   - name: Mentor Web prompts
     id: mentor-web-prompts
     subtopics:
@@ -4856,6 +4866,23 @@ knowledge-needs:
         prompts or requirement documents in Mentor Web, meeting theme
         compatibility requirements, so that the generated app uses the
         intended visual theme.
+  - name: Mentor Studio app modification
+    id: mentor-studio-app-modification
+    subtopics:
+    - name: Modify app workflow
+      id: mentor-studio-modify-workflow
+      description: Wants to access Mentor Studio in ODC Studio and follow
+        its describe-review-iterate workflow, including reviewing Proposed
+        changes and viewing a summary of what changed, so that they can
+        modify an app through conversation and refine the result until it
+        meets requirements.
+    - name: Generation scope
+      id: mentor-studio-generation-scope
+      description: Wants to know which elements (logic, UI, data, timers,
+        events, code analysis) Mentor Studio can generate or modify for the
+        open asset type in ODC Studio, since web apps, libraries, and
+        agentic apps each support a different subset, so that they
+        understand what changes are possible before describing a request.
   - name: Mentor Studio prompts
     id: mentor-studio-prompts
     subtopics:

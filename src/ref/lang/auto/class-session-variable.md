@@ -6,7 +6,8 @@ guid: ee806cae-33e4-4751-b49f-ddbd4aa5164c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: session management, server-side storage, data types, data modeling, performance optimization
+tags:
+  - Traditional Web
 audience:
   - Developer
 outsystems-tools:

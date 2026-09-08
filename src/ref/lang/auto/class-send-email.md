@@ -5,7 +5,9 @@ guid: 73d29c1b-5be0-4ebc-9828-0c0aaaff142b
 app_type: traditional web apps
 platform-version: o11
 figma:
-tags: asynchronous processes, email configuration, workflow automation
+tags:
+  - Asynchronous Processes
+  - Traditional Web
 audience:
   - Front-end developer
   - Developer

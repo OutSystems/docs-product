@@ -5,7 +5,8 @@ guid: c29bbf19-1e63-4a0c-a306-6bf84ebbd51f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: element management, application development, outsystems platform, script management, property configuration
+tags:
+  - JavaScript
 audience:
   - Front-end developer
   - Developer

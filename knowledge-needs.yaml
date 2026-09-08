@@ -4866,6 +4866,13 @@ knowledge-needs:
         prompts or requirement documents in Mentor Web, meeting theme
         compatibility requirements, so that the generated app uses the
         intended visual theme.
+    - name: Extend generated app
+      id: extend-generated-app
+      description: Wants to extend an already-generated Mentor Web app in
+        the editor by writing follow-up prompts to add data model elements
+        or modify screens (for example, a dashboard), iterating with
+        additional prompts when results don't match expectations, so that
+        the app meets requirements discovered after the initial generation.
   - name: Mentor Studio app modification
     id: mentor-studio-app-modification
     subtopics:

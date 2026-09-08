@@ -6,7 +6,9 @@ guid: 1c756124-6173-4742-a20d-52bb7e0833fc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: data modeling, entity management, static data, design time, application development
+tags:
+  - Data Model
+  - Entities
 audience:
   - Developer
   - Front-end developer

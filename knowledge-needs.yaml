@@ -5597,6 +5597,15 @@ knowledge-needs:
         and the optional AndroidX support added in 6.3, so that they can
         plan whether and how to upgrade their mobile app's build service
         version.
+    - name: MABS 6 breaking changes
+      id: mabs-6-breaking-changes
+      description: Wants to understand the breaking changes and known
+        limitations introduced in MABS 6, including CORS enforcement for
+        XHR/Fetch requests to OutSystems servers, document.cookie no longer
+        working, RedirectToURL failures due to the outsystems:// scheme,
+        missing Network information in Web Inspector, and Content Security
+        Policy violations for images due to WKWebView, so that they can
+        update their app before or after upgrading the MABS version.
     - name: MABS 8 upgrade overview
       id: mabs-8-upgrade-overview
       description: Wants to understand what's new in MABS 8.0 and 8.1, including
@@ -5662,6 +5671,29 @@ knowledge-needs:
       description: Wants to review the release notes for MABS 4.x, including
         new features, bug fixes, and the known viewport-fit issue, so that they
         can troubleshoot mobile apps still running on a MABS 4.x version.
+    - name: MABS 11 upgrade overview
+      id: mabs-11-upgrade-overview
+      description: Wants to understand what's new in MABS 11, including iOS
+        18 and Android 15 SDK targeting, the O11 and ODC mobile build service
+        architecture unification introduced in MABS 11.2, and recommended
+        plugin updates, so that they can plan whether and how to upgrade
+        their mobile app's build service version.
+    - name: MABS 11.1 upload widget changes
+      id: mabs-11-1-upload-widget-changes
+      description: Wants to understand how the Upload Widget's media
+        selection behavior changed in MABS 11.1, including the new Android
+        photo picker, the optional capture attribute for opening the camera
+        directly, and the known limitation where capture doesn't work on
+        Android 9, so that they can update their app's Upload Widget
+        configuration correctly.
+    - name: MABS 11 breaking changes
+      id: mabs-11-breaking-changes
+      description: Wants to understand the breaking changes introduced in
+        MABS 11, including the AddUploadWidgetPermissions property default
+        changing from true to false, the StatusBarOverlaysWebView property
+        default changing from false to true, and the new StatusBarStyle
+        property default, so that they can update their app before or after
+        upgrading the MABS version.
   - name: OS and SDK support policy
     id: os-sdk-support-policy
     subtopics:

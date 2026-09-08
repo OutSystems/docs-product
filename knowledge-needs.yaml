@@ -1791,6 +1791,20 @@ knowledge-needs:
         provider's JWK endpoint, or a Forge component) based on their
         architecture and platform version, so that keys are stored and
         retrieved securely.
+    - name: Choose token flow
+      id: choose-token-flow
+      description: Wants to select the right JWT token flow (service account,
+        credentials-only, or credentials + service account) for an ODC exposed
+        REST API based on whether callers are applications, users via an app,
+        or users directly, so that authentication matches the caller identity
+        model.
+    - name: Validate JWT in OnAuthentication
+      id: validate-jwt-onauthentication
+      description: Wants to implement token validation in an ODC exposed REST
+        API's OnAuthentication callback, extracting the bearer token from the
+        Authorization header and verifying its signature and standard claims
+        (iss, aud, nbf, exp), so that unauthorized or tampered requests are
+        rejected before business logic executes.
     - name: Credential delegation
       id: credential-delegation
       description: Wants to enable Integrated Authentication credential delegation
@@ -6105,6 +6119,14 @@ knowledge-needs:
         tracking whether a record originated from the server, was modified
         locally, and remains active, so that concurrent offline edits are
         detected as conflicts instead of being silently overwritten.
+    - name: Read-only sync pattern
+      id: read-only-sync-pattern
+      description: Wants to implement the Read-Only Data Optimized offline
+        synchronization pattern for ODC mobile apps, covering the client-side
+        OnSync logic, the server-side ServerDataSync logic, and a database/local
+        storage data model tracking ModifiedOn and IsActive attributes, so that
+        only changed or deleted records are synced to local storage for
+        read-only offline data access.
   - name: Mobile app performance troubleshooting
     id: mobile-app-performance-troubleshooting
     subtopics:
@@ -7285,6 +7307,15 @@ knowledge-needs:
         core concepts of authentication, authorization, and single sign-on in the
         context of ODC, so that they can explain external IdP integration and its
         value before configuring it.
+    - name: IdP assignment scopes
+      id: idp-assignment-scopes
+      description: Wants to understand the difference between assigning an
+        external IdP at organization scope (for member sign-in to ODC Portal
+        and ODC Studio) versus stage scope (for end-user app sign-in),
+        including that multiple IdPs can be active per scope and that
+        stage-level assignment is portfolio-scoped in multi-portfolio
+        organizations, so that they can decide the correct scope when
+        planning an external IdP rollout.
     - name: Lockout
       id: lockout
     - name: Passwords

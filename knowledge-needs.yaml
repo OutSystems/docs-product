@@ -843,6 +843,14 @@ knowledge-needs:
         group in OutSystems 11 using the Case Management Framework server actions
         (Case_GrantAccessToUser / Case_GrantAccessToGroup), so that only the intended
         users or groups can access that individual case instance.
+    - name: CMF login requirement
+      id: cmf-login-requirement
+      description: Wants to resolve the OS-CMFR-GEN-20001 error ("It looks like
+        you don't have access. Make sure you're logged in with a registered
+        user."), caused by calling a CaseServices_API Get service action
+        without an active logged-in user session, by ensuring the user logs in
+        before executing these actions, so that the Case Management Framework
+        can successfully execute the action.
 - name: Accessibility
   guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
   topics:
@@ -2180,6 +2188,15 @@ knowledge-needs:
         Bootstrap/Setup actions in the Case Management Framework in
         OutSystems 11, so that the framework can successfully execute the
         action.'
+    - name: Fix no initial status
+      id: fix-no-initial-status
+      description: 'Wants to fix the "The Case Definition must have an
+        initial status defined" error by filling in the CaseStatusId input
+        parameter of Case_Initialize with a case status that has IsInitial
+        set to True, creating or updating one with the
+        CaseStatus_CreateOrUpdate action from the CaseConfigurations_API
+        module if needed, in OutSystems 11, so that the Case Management
+        Framework can successfully initialize the case instance.'
     - name: Fix bootstrap GUID error
       id: fix-bootstrap-guid-error
       description: 'Wants to fix the "One or more <record> Ids aren''t valid
@@ -2188,6 +2205,16 @@ knowledge-needs:
         Bootstrap/Setup actions in the Case Management Framework in
         OutSystems 11, so that the framework can successfully execute the
         action.'
+    - name: Fix requester conflict
+      id: fix-requester-conflict
+      description: 'Wants to fix the "ExternalRequesterDetails and
+        CaseRequesterUserId input parameters cannot be both filled in" error
+        by filling in only the CaseRequesterUserId input parameter when the
+        requester is an internal user, or only the ExternalRequesterDetails
+        input structure when the requester is external, before calling
+        Case_Initialize, verifying the values with Service Studio''s
+        Debugger, in OutSystems 11, so that the Case Management Framework
+        can successfully execute the action.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -5131,6 +5158,32 @@ knowledge-needs:
         include prior conversation turns and grounding data in each system
         message, so that the agent maintains contextual memory across
         multiple user prompts in a conversational agentic app.
+    - name: Agent monitoring overview
+      id: agent-monitoring-overview
+      description: Wants to understand what agent monitoring in ODC shows, including its
+        analytics groups, execution traces, and data layers, so they can decide
+        where to look for visibility into an agent's behavior.
+    - name: Agent monitoring access
+      id: agent-monitoring-access
+      description: Wants to know which permissions grant access to agent
+        monitoring and its detailed execution traces in the ODC Portal, so
+        they can confirm they can view an agent's logs and traces, given
+        that detailed execution traces additionally require a separate
+        per-agent toggle.
+    - name: Answer relevance score
+      id: answer-relevance-score
+      description: Wants to understand what the answer relevance judge
+        measures on an agent's CallAgent execution traces and what a low
+        score indicates, so they can investigate whether a prompt or model
+        change caused the agent to drift toward generic or off-topic
+        responses.
+    - name: Safety score
+      id: safety-score
+      description: Wants to understand what the safety judge measures on an
+        agent's CallAgent execution traces, distinguishing unsafe input
+        (jailbreak or harmful prompts) from unsafe output, and what a low
+        score indicates, so they can determine whether the issue is on the
+        input or output side and check it against their Guardrails policy.
   - name: Tools and connectors
     id: tools-and-connectors
     subtopics:

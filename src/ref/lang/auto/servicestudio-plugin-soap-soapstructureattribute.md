@@ -8,7 +8,6 @@ figma:
 tags: soap web services, structure attributes, data types, field validation, web service integration
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

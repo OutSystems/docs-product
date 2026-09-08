@@ -1,5 +1,5 @@
 ---
-summary: Explore the specific features and applications of OutSystems 11 (O11) for Traditional Web Apps.
+summary: OutSystems 11 (O11) Traditional Web Apps reference organizes documentation on web interfaces, logic tools, and system events unique to this app type.
 tags: outsystems 11, traditional web apps, web development
 locale: en-us
 guid: b26525c6-b5d0-47c6-bd58-179ce4c8434a

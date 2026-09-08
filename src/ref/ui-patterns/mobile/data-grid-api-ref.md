@@ -1,6 +1,6 @@
 ---
 tags: enterprise grade javascript data grid, grid functionalities, outsystems widgets, data grid api
-summary: Explore advanced grid functionalities in OutSystems 11 (O11) for building dynamic, data-driven reactive web applications.
+summary: Data Grid API reference for OutSystems 11 (O11) covers column widgets, client actions, and structures for reactive web grids.
 locale: en-us
 guid: 1bd5d5c4-98f6-4b5f-a463-865bfccb7339
 app_type: reactive web apps

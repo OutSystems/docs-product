@@ -1888,6 +1888,14 @@ knowledge-needs:
         Authorization header and verifying its signature and standard claims
         (iss, aud, nbf, exp), so that unauthorized or tampered requests are
         rejected before business logic executes.
+    - name: JWT security practices
+      id: jwt-security-practices
+      description: Wants to apply security best practices for JWT
+        token-based exposed REST APIs, covering short token lifetimes,
+        minimizing claims and sensitive data in the payload, planning token
+        revocation, protecting tokens in transit and at rest, and defending
+        against replay attacks, so that the token-based authentication
+        pattern resists common token-related attacks.
     - name: Credential delegation
       id: credential-delegation
       description: Wants to enable Integrated Authentication credential delegation

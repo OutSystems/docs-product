@@ -11,7 +11,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - none
+  - evaluate
 topic:
   - scalable-process-best-practices
 ---

@@ -16,7 +16,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - built-in-mechanisms
+  - auth-cache-session-extension
+  - authentication-cookies
+  - configure-app-authentication-settings
 ---
 
 # Configure app authentication

@@ -6,7 +6,9 @@ guid: acb357eb-4100-486a-a9ba-e610ce1b52b2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: rest apis, api integration, parameter configuration, input validation, web service development
+tags:
+  - REST
+  - Web services
 audience:
   - Developer
   - Front-end developer

@@ -6,7 +6,14 @@ guid: d3d73598-1309-489b-a15a-2b9d518a8226
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: input validation, user interface design, web development, data binding, form elements
+tags:
+  - Accessibility
+  - Events
+  - Forms
+  - Front-End
+  - UI
+  - UI Patterns
+  - Widgets
 audience:
   - Front-end developer
   - Developer

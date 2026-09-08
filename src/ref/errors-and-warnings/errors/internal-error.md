@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - unblock
 topic:
-  - resolve-internal-error
+  - resolve-internal-error-o11
 ---
 
 # Internal Error

@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - configure-session-timeout
+  - configure-session-timeout-o11
   - session-lifecycle
   - session-variables
 ---

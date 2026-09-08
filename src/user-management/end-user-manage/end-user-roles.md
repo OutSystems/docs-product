@@ -15,7 +15,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - assign-roles
+  - assign-roles-o11
 ---
 
 # Grant and Revoke End User Roles

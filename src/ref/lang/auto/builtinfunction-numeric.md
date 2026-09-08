@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - built-in-math-functions
+  - built-in-math-functions-o11
 ---
 
 # Numeric

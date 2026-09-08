@@ -2139,6 +2139,55 @@ knowledge-needs:
         value is a properly formatted GUID using Service Studio''s Debugger
         in OutSystems 11, so that the Case Management Framework action
         executes successfully.'
+    - name: Fix access flag error
+      id: fix-access-flag-error
+      description: 'Wants to fix the "Either CanView or CanEdit must be set to
+        True" error by setting at least one of the CanView or CanEdit input
+        parameters to True before calling the DEPRECATED_Case_AddAccessToGroup
+        or DEPRECATED_Case_AddAccessToUser action, verifying the values with
+        Service Studio''s Debugger, in OutSystems 11, so that the Case
+        Management Framework action executes successfully.'
+    - name: Fix CMF email record
+      id: fix-cmf-email-record
+      description: 'Wants to fix the "We couldn''t retrieve the record
+        <case-identifier> of object <entity-name>" error by verifying the
+        case-identifier value passed to Email_ProcessPlaceholders or
+        Email_Send using Service Studio''s Debugger in OutSystems 11, so
+        that the Case Management Framework can find the matching record and
+        execute the action successfully.'
+    - name: Fix CMF no entities
+      id: fix-cmf-no-entities
+      description: 'Wants to fix the "We couldn''t find any entities." error
+        by verifying the input values passed to the GetBusinessEntityAttributes,
+        Email_ProcessPlaceholders, or Email_Send actions using Service Studio''s
+        Debugger in OutSystems 11, so that the Case Management Framework can
+        find the entities associated with the case definition and execute the
+        action successfully.'
+    - name: Fix duplicate case status
+      id: fix-duplicate-case-status
+      description: 'Wants to fix the "There''s already an active Case Status
+        defined as initial" error by setting the existing initial case
+        status''s IsInitial attribute to False, or deleting it using the
+        CaseStatus_Delete action of the CaseConfigurations_API module, in
+        OutSystems 11, so that the Case Management Framework can successfully
+        create or update the new initial case status.'
+    - name: Fix initial status error
+      id: fix-initial-status-error
+      description: 'Wants to fix the "You can only have one initial case
+        status" error, which occurs when more than one case status record
+        has its IsInitial attribute set to True, by ensuring only one case
+        status record has IsInitial set to True before running the
+        Bootstrap/Setup actions in the Case Management Framework in
+        OutSystems 11, so that the framework can successfully execute the
+        action.'
+    - name: Fix bootstrap GUID error
+      id: fix-bootstrap-guid-error
+      description: 'Wants to fix the "One or more <record> Ids aren''t valid
+        GUIDs" error by verifying that the Identifier attribute of all
+        records matches a valid GUID format before running the
+        Bootstrap/Setup actions in the Case Management Framework in
+        OutSystems 11, so that the framework can successfully execute the
+        action.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -3177,6 +3226,12 @@ knowledge-needs:
         Service Studio, including Text and Is Reminder, so that they can
         correctly add a development-time screen annotation that appears as a
         TrueChange reminder in a Traditional Web App (O11).
+    - name: Expression widget reference
+      id: expression-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Expression widget in Service Studio, including Value, Escape Content, and
+        Id, so that they can correctly display a literal text or an evaluated
+        expression on a screen in a Traditional Web App (O11).
     - name: Adding a Widget or OS UI pattern
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
@@ -5708,6 +5763,25 @@ knowledge-needs:
         default changing from false to true, and the new StatusBarStyle
         property default, so that they can update their app before or after
         upgrading the MABS version.
+    - name: MABS 7 upgrade overview
+      id: mabs-7-upgrade-overview
+      description: Wants to understand what's new in MABS 7.0 to 7.2, including
+        Android 11 (API level 30), iOS 14, Cordova CLI 10, npm-based plugin
+        installation, iOS Usage Descriptions at the application level,
+        removing unwanted Upload Widget permissions, and improved Logger API
+        and device UUID in HTTP headers, so that they can plan whether and
+        how to upgrade their mobile app's build service version.
+    - name: MABS 7 breaking changes
+      id: mabs-7-breaking-changes
+      description: Wants to understand the breaking changes and known
+        limitations introduced in MABS 7.0, including plugins now installed
+        via npm requiring the git+ protocol prefix, the commit/subdir
+        dependency elements no longer taking effect,
+        context.requireCordovaModule no longer loading non-Cordova modules,
+        the xcode module needing to be declared in package.json, and
+        user-agent no longer being retrievable through CDVUserAgentUtil, so
+        that they can update their app before or after upgrading the MABS
+        version.
   - name: OS and SDK support policy
     id: os-sdk-support-policy
     subtopics:

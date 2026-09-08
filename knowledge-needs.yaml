@@ -609,6 +609,22 @@ knowledge-needs:
         displayed in the device's local time zone — including how client-side,
         server-side, and SQL calls differ — so that time-sensitive data is handled
         correctly across regions.
+    - name: Null DateTime behavior
+      id: null-datetime-behavior
+      description: Wants to understand why the null DateTime value (#1900-01-01
+        00:00:00#) behaves differently in mobile apps depending on the Platform
+        Server version at first installation, including the UTC time zone
+        adjustment applied in environments installed before 10.0.804.0, so that
+        they can predict how the null DateTime value is stored, read from local
+        storage, and sent to the server.
+    - name: Change null DateTime
+      id: change-null-datetime-behavior
+      description: Wants to change the null DateTime value behavior in mobile apps
+        so it matches new installations of Platform Server 10.0.804.0 or later, by
+        inserting the Compiler.MobileRuntime.ApplyTZForNullDates parameter into the
+        OSSYS_PARAMETER table on-premises (or contacting Support in cloud
+        environments), so time zone adjustments stop being applied to the null
+        DateTime value.
     - name: Fix invalid data type
       id: fix-invalid-data-type
       description: 'Wants to fix the "Invalid Data Type" error family in Service
@@ -5412,11 +5428,31 @@ knowledge-needs:
         tools each version supports, so they can choose the correct MABS
         version for their mobile app and plan upgrades before a version
         becomes obsolete.
+    - name: MABS lifecycle timeline
+      id: mabs-lifecycle-timeline
+      description: Wants to understand how long a MABS major or minor version stays
+        supported before becoming deprecated and then obsolete relative to the
+        release of the next major or minor version, so they can plan mobile app
+        upgrades before their current MABS version loses support.
+    - name: Choose MABS version
+      id: choose-mabs-version
+      description: Wants to select which MABS version to use when creating a
+        mobile app's package for each app and mobile platform, either always
+        using the latest available version or pinning a specific one, so
+        they get a consistent app version across stages and the
+        performance, security, and OS-compatibility benefits of newer MABS
+        releases.
     - name: MABS 3.x release notes
       id: mabs-3x-release-notes
       description: Wants to review the release notes for MABS 3.x, including
         new features and bug fixes, so that they can troubleshoot mobile apps
         still running on a MABS 3.x version.
+    - name: Pre-3.x MABS notes
+      id: pre-3x-mabs-notes
+      description: Wants to review the release notes for Mobile Apps Build
+        Service versions before 3.3, from 2017 to 2018, including new
+        features and bug fixes, so that they can troubleshoot mobile apps
+        still running on these early builds.
     - name: MABS 4.x release notes
       id: mabs-4x-release-notes
       description: Wants to review the release notes for MABS 4.x, including
@@ -6317,6 +6353,24 @@ knowledge-needs:
         O11 Cloud databases (version and compatibility-level change) and whether
         it introduces breaking changes or requires application modifications, so
         that they can confirm whether their applications need any adaptation.
+    - name: Database storage overview
+      id: database-storage-overview-lifetime
+      description: Wants to understand what the database storage figures shown
+        in LifeTime's Environments screen mean for an OutSystems Cloud
+        environment, including the occupied versus total space and the
+        breakdown between System data (OutSystems system tables) and
+        Application data (application Entities), so that they can interpret
+        current storage usage, knowing the free-space panel is unavailable
+        for Enterprise PaaS infrastructures since LifeTime Management Console
+        11.25.0.
+    - name: Database autogrow safety
+      id: database-storage-autogrow-safety
+      description: Wants to understand whether an OutSystems Cloud environment
+        can stop running due to lack of database space, given that storage
+        autogrows automatically and OutSystems health monitoring reacts
+        promptly to gradual increases, so that they know a sudden, large
+        storage spike is the main scenario that may not leave enough time to
+        react before it affects the platform.
     - name: Windows Server upgrade breaking changes
       id: windows-server-upgrade-breaking-changes
       description: Wants to understand and prepare for the breaking changes
@@ -7514,6 +7568,25 @@ knowledge-needs:
         stack, including how minimum and maximum connections behave under
         concurrent load, in OutSystems 11, so that they can plan capacity and
         avoid connection-pool exhaustion or timeouts.
+  - name: Oracle Database Configuration
+    id: oracle-database-configuration
+    subtopics:
+    - name: Configure Oracle connection
+      id: configure-oracle-connection
+      description: Wants to configure an Oracle database connection for the
+        OutSystems 11 Platform Server using the Configuration Tool, by
+        choosing between the Service Name or TNS Name naming method
+        (including SID-based TNS connect descriptors) for both the .NET and
+        Java stacks, so that the platform database connects successfully to
+        the target Oracle service or instance.
+    - name: External Oracle DB connection
+      id: external-oracle-db-connection
+      description: Wants to configure an external Oracle database connection
+        for use in extensions via Service Center, using Basic Configuration
+        for a Service Name or Advanced Configuration for an explicit TNS
+        definition (following ADO.NET syntax on .NET or JDBC syntax on Java),
+        so that extensions can connect to external Oracle databases without
+        needing a tnsnames.ora file.
   - name: Database and farm server migration
     id: database-farm-server-migration
     subtopics:
@@ -7576,6 +7649,51 @@ knowledge-needs:
         transaction log growth, based on average page views of monitored
         applications, so that they can properly size the dedicated
         environment's database.
+  - name: IIS application pool management
+    id: iis-application-pool-management
+    subtopics:
+    - name: Move app to new pool
+      id: move-app-to-new-pool
+      description: Wants to isolate a critical or misbehaving app from
+        resource contention with other apps by creating a new IIS
+        application pool (with matching .NET CLR version and managed
+        pipeline mode, tuned recycling settings, and immediate start), then
+        moving the app to it via Change Application Pool, in a self-managed
+        OutSystems 11 environment, so that the app runs on its own worker
+        process without impacting or being impacted by other apps.
+    - name: Revert app pool move
+      id: revert-app-pool-move
+      description: Wants to move an app back to the default
+        OutSystemsApplications IIS application pool and remove the custom
+        application pool they created, in a self-managed OutSystems 11
+        environment, so that the isolation change can be undone once no
+        longer needed.
+  - name: Database Catalogs and Schemas
+    id: database-catalogs-and-schemas
+    subtopics:
+    - name: Set up DB catalog/schema
+      id: setup-database-catalog-schema
+      description: Wants to create a new SQL Server database catalog or
+        Oracle schema and configure it in Service Center (setting
+        permissions, downloading/running the configuration script, and
+        testing the configuration), so that OutSystems modules can be
+        published to a dedicated database, in a self-managed OutSystems 11
+        environment.
+    - name: Publish module to catalog
+      id: publish-module-to-catalog-schema
+      description: Wants to specify the target database catalog or schema
+        when publishing a new module or a solution containing new modules,
+        in Service Studio or Service Center, so that the module's database
+        objects are created in the intended catalog/schema, in a
+        self-managed OutSystems 11 environment.
+    - name: Move module database
+      id: move-module-database-catalog-schema
+      description: Wants to move an existing module to a different database
+        catalog or schema (SQL Server or Oracle), including backing up
+        databases, copying module data, and republishing or staging the
+        solution, so that the module operates in its new database without
+        losing data or breaking dependent modules, in a self-managed
+        OutSystems 11 environment.
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:
@@ -7901,6 +8019,18 @@ knowledge-needs:
       displaying third-party or OutSystems content, failing OAuth/OpenID/SAML
       authentication flows, and custom JavaScript-set cookies, so their
       applications keep working correctly.
+  - name: Cookie reference (O11)
+    id: cookie-reference-o11
+    description: Wants to look up the OutSystems 11 cookies used by default
+      (name, size, expiration, and purpose), covering session, visitor,
+      login, pagination, and device-detection cookies, so they can
+      document cookie usage for EU cookie-consent compliance.
+  - name: Disabled cookies impact
+    id: disabled-cookies-impact-o11
+    description: Wants to know what happens when end-users disable cookies
+      in their browser for an OutSystems 11 application, so they
+      understand unauthenticated pages stay accessible but
+      login-dependent functionality may break.
   - name: EPA taskbox administration
     id: epa-taskbox-admin
     description: Wants to hide or show the EPA Taskbox per eSpace by activating EPA

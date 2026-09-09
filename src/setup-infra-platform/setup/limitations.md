@@ -12,7 +12,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - understand
+  - remember
 ---
 
 # Features currently unavailable in the cross-platform Service Studio

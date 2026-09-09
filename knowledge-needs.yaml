@@ -6696,6 +6696,15 @@ knowledge-needs:
         empty-string value for a secret setting, by providing a valid
         value, so the extensibility setting update or package creation
         can proceed.'
+    - name: Fix invalid property type
+      id: invalid-property-type-error
+      description: 'Wants to resolve the OS-MABS-CNF-40005 "Invalid {0} type
+        in your extensibility configurations" error, caused by an invalid
+        property type in the app''s extensibility configuration or by
+        referencing a Secret/Binary Setting in ODC that has no value set,
+        by reviewing and fixing the extensibility configuration or setting
+        the referenced Setting''s value, so that the mobile app package
+        generates successfully.'
     - name: Missing resource error
       id: missing-resource-error
       description: 'Wants to resolve the OS-MABS-CNF-40012 "resource {0} declared
@@ -6712,6 +6721,24 @@ knowledge-needs:
         library''s extensibility configuration, by replacing the literal path
         with a placeholder or correcting it to an existing file, so that the
         mobile app package generates successfully.'
+    - name: No resources file error
+      id: no-resources-file-error
+      description: 'Wants to resolve the OS-MABS-CNF-40004 "No Resources file
+        found. Check your extensibility configurations and try again." error,
+        caused by a resource path declared in the extensibility configuration
+        not existing, by checking the extensibility configurations to ensure
+        the resource zip file exists and the declared path is correct, so
+        that the mobile app package generates successfully.'
+    - name: Restricted path error
+      id: restricted-path-error
+      description: 'Wants to resolve the OS-MABS-CNF-40011 "the {0} property
+        of a resource declared in your extensibility configurations points
+        to a restricted path" error, caused by a resource''s src or target
+        property resolving outside the Cordova project root or platform
+        project root folder, by checking and correcting the resource
+        declarations in the extensibility configurations of their app and
+        its dependencies, so that the mobile app package generates
+        successfully.'
     - name: Android manifest error
       id: android-manifest-error
       description: 'Wants to resolve the OS-MABS-GEN-40001 "multiple errors merging
@@ -6994,6 +7021,16 @@ knowledge-needs:
         Service Center build logs and validating the plugin and server
         extensibility configurations, so that the mobile app package
         generates successfully.'
+    - name: Server config error
+      id: server-config-error
+      description: 'Wants to resolve the OS-MABS-CNF-50000 "There was an
+        issue processing your extensibility configurations. Please try
+        again." error, caused by an unexpected server-side failure while
+        processing the app''s extensibility configurations, by checking the
+        build logs in Service Center and reviewing the extensibility
+        configurations for validity, escalating to OutSystems Support if
+        the problem persists, so that the mobile app package generates
+        successfully.'
     - name: Undocumented MABS error
       id: undocumented-mabs-error
       description: Wants to resolve a MABS build error that isn't yet documented,
@@ -7045,6 +7082,31 @@ knowledge-needs:
         size in an extensibility configuration, by checking and fixing the
         icon''s density/size in Service Studio (O11) or ODC Studio, so that
         the mobile app package generates successfully.'
+    - name: Fix missing image error
+      id: fix-missing-image-error
+      description: 'Wants to resolve the OS-MABS-CNF-40002 "Unable to copy
+        your {0}s. Check your Resources path and try again." error that
+        blocks mobile app package generation, caused by an image file
+        declared in an extensibility configuration not existing, by
+        checking the extensibility configurations to ensure the declared
+        image file exists and the path is correct, so that the mobile app
+        package generates successfully.'
+    - name: Missing property error
+      id: missing-property-error
+      description: 'Wants to resolve the OS-MABS-CNF-40006 "Missing property
+        {0} on {1} in your extensibility configurations. Review it and try
+        again." error that blocks mobile app package generation, caused by a
+        required property missing in the app''s extensibility configuration,
+        by reviewing the extensibility configuration and adding the missing
+        property, so that the mobile app package generates successfully.'
+    - name: Fix invalid icon format
+      id: fix-invalid-icon-format-error
+      description: 'Wants to resolve the OS-MABS-CST-40000 "This icon file is
+        not supported, choose another one" error that blocks mobile app
+        package generation, caused by an invalid or unparsable application
+        icon image file, by replacing the icon with a valid image in the
+        correct format, so that the mobile app package generates
+        successfully.'
   - name: AppShield
     id: appshield
     subtopics:

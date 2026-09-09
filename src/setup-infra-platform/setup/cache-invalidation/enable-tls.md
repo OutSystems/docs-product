@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) guide on configuring TLS communication in RabbitMQ by setting up listeners and certificates.
-tags: security, tls configuration, message queuing, rabbitmq, ssl certificates
+tags:
+  - Infrastructure
+  - Platform Server
+  - Security
 helpids: 30177
 locale: en-us
 guid: 2027cfb9-111f-43f5-a3fb-cf1581beece6

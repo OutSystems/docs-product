@@ -1,6 +1,7 @@
 ---
 summary: Learn about cache invalidation using RabbitMQ in OutSystems 11 (O11) to manage data efficiently.
-tags: cache invalidation, performance optimization, message queue, rabbitmq, data management
+tags:
+  - Caching
 helpids: 30176
 locale: en-us
 guid: b3c02281-82f0-4f57-95f9-e357da5114db

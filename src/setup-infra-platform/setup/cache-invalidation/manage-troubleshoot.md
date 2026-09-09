@@ -1,6 +1,8 @@
 ---
 summary: Explore troubleshooting techniques for the cache invalidation service in OutSystems 11 (O11) involving RabbitMQ and Erlang configurations.
-tags: troubleshooting, cache invalidation, rabbitmq, erlang, plugin management
+tags:
+  - Caching
+  - Troubleshooting
 locale: en-us
 guid: 4b06ed06-572c-48c9-835c-f38db745052c
 app_type: traditional web apps, mobile apps, reactive web apps

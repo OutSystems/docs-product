@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) cache invalidation upgrade strategies include full-stop and rolling upgrades, each with specific pros and cons.
-tags: high-availability, cache invalidation, rabbitmq, upgrade strategies, cluster management
+tags:
+  - Caching
+  - Infrastructure
+  - Platform Server
 locale: en-us
 guid: 54a92414-2911-11ed-b1a1-00155d847f89
 app_type: traditional web apps, mobile apps, reactive web apps

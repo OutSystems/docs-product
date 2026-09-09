@@ -1,6 +1,8 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates with AWS Direct Connect for enhanced network connectivity and bandwidth management.
-tags: support-cloud_platform, support-installation, support-installation_configuration, support-maintenance, support-devops
+tags:
+  - Infrastructure
+  - Platform Server
 locale: en-us
 guid: 8a6372d7-7acc-4e88-98cd-41946233ca2d
 app_type: traditional web apps, mobile apps, reactive web apps

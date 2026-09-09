@@ -1,5 +1,6 @@
 ---
-tags: cloud infrastructure, microsoft azure, horizontal scaling, multi-environment deployment, deployment management
+tags:
+  - Infrastructure
 summary: Explore OutSystems 11 (O11) infrastructure setup on Microsoft Azure, featuring multi-environment deployment and horizontal scaling options.
 locale: en-us
 guid: 5a889483-823a-4502-8899-7c5bc94082a9

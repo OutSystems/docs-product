@@ -1,6 +1,7 @@
 ---
 summary: Explore how to install and configure RabbitMQ via command-line for OutSystems 11 (O11) by modifying server configurations and running specific commands.
-tags: installation, configuration, command-line tools, rabbitmq, server administration
+tags:
+  - Platform Server
 locale: en-us
 guid: 7f15fedf-010b-4271-8630-86ab785d618a
 app_type: traditional web apps, mobile apps, reactive web apps

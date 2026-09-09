@@ -1,5 +1,8 @@
 ---
-tags: azure, cloud deployment, licensing, security certificates, infrastructure management
+tags:
+  - Deploy
+  - Infrastructure
+  - Platform Server
 summary: Learn how to deploy and configure OutSystems 11 (O11) on Microsoft Azure, including licensing, certificate installation, and environment registration.
 locale: en-us
 guid: 4a33c4a9-87b2-4ce0-9523-93c937f53fdd

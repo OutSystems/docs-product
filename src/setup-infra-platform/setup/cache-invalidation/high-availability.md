@@ -1,6 +1,8 @@
 ---
 summary: Learn how to configure a RabbitMQ cluster for high-availability cache invalidation in OutSystems 11 (O11).
-tags: high availability, cluster configuration, rabbitmq, cache invalidation, load balancing
+tags:
+  - Caching
+  - Infrastructure
 locale: en-us
 guid: a86cf4a3-e053-46a4-b873-373624fda83d
 app_type: traditional web apps, mobile apps, reactive web apps

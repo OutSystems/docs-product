@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=3010-682&t=GvLiKHXITRsPv8hn-1
-tags: infrastructure design, server roles, on-premises deployment, private cloud deployment
+tags:
+  - Deploy
+  - Front-End
+  - Infrastructure
+  - Platform Server
+  - Roles
 audience:
   - Platform administrator
   - Developer

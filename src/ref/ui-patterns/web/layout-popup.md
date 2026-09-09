@@ -1,5 +1,9 @@
 ---
-tags: ui design, responsive design, web development, cross-browser compatibility, customization
+tags:
+  - Layouts
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the features and customization options of the Layout Popup in OutSystems 11 for Traditional Web Apps, including responsive breakpoint adjustments.
 locale: en-us
 guid: b363b2eb-6bee-41e0-a0a5-926d6a67f1dd

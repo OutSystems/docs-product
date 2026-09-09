@@ -1,5 +1,9 @@
 ---
-tags: css customization, ui design, ui patterns, web design, frontend development
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI Patterns
 summary: Explore CSS customization options for Dropdown Select UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 4d9ccb38-173c-42fa-9f2f-6ea73e338b52

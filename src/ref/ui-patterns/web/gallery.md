@@ -1,5 +1,9 @@
 ---
-tags: ui patterns, traditional web, web development, outsystems ui, ui design
+tags:
+  - Layouts
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the layout and classes of the Gallery UI pattern in Traditional Web Apps with OutSystems 11 (O11).
 locale: en-us
 guid: ff855320-4a19-426d-8fcb-a1fd47809f29

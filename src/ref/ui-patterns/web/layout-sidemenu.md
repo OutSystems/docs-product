@@ -1,5 +1,12 @@
 ---
-tags: responsive design, customization, ux/ui design, web development, front-end frameworks
+tags:
+  - CSS
+  - Layouts
+  - Themes
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Explore the responsive design and customization options of the Layout Side Menu in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 4d5d4869-2345-4646-a8b0-5c24c0f6a8cd

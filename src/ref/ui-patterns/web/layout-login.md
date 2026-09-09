@@ -1,5 +1,10 @@
 ---
-tags: web development, user interface design, theme customization, web blocks, design patterns
+tags:
+  - Blocks
+  - CSS
+  - Layouts
+  - Traditional Web
+  - UI Patterns
 summary: Explore the layout and customization options for the Layout Login web block in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 61a76744-2261-4ea2-9b6a-a4de711177a7

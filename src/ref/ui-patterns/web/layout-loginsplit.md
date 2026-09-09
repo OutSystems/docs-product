@@ -1,5 +1,12 @@
 ---
-tags: web development, ui customization, web blocks, outsystems ui patterns, visual development
+tags:
+  - Blocks
+  - Front-End
+  - Layouts
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Learn to customize the Login Split web block in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 804f282e-4480-4c8c-ba5a-4bc376436caa

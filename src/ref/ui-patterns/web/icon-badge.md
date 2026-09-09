@@ -1,5 +1,9 @@
 ---
-tags: ui patterns, outsystems development, web user interface, ui customization
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI Patterns
 summary: Explore the layout and classes of the Icon Badge UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 0cc65bfa-e4c1-4ac9-bc04-979b6506c7ed

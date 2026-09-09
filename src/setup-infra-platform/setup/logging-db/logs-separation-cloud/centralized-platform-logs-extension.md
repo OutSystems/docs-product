@@ -1,6 +1,9 @@
 ---
 summary: Use the CentralizedPlatformLogs extension for accessing log data when using the logs separation feature.
-tags: log management, api integration, platform server, technical troubleshooting, system administration
+tags:
+  - Extensions
+  - Logging
+  - Platform Server
 locale: en-us
 guid: F5F17E2A-F130-40EF-AD5E-7774D3295FE7
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) enables the separation of log data into a distinct database, enhancing application performance and maintenance.
-tags: database management, application performance, log data separation, database maintenance, infrastructure management
+tags:
+  - Architecture
+  - Infrastructure
+  - Logging
 locale: en-us
 guid: 1e5deb19-1e3e-4f3d-8036-ec5f4ade1a5c
 app_type: traditional web apps, mobile apps, reactive web apps

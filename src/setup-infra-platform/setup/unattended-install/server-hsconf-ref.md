@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) uses the `server.hsconf` XML file for detailed platform configuration across various database systems.
-tags: configuration management, xml configuration, outsystems platform, database systems, installation & setup
+tags:
+  - Infrastructure
+  - Platform Server
+  - Settings
 locale: en-us
 guid: dcc55c5d-8cd5-4850-9e88-fa385badc663
 app_type: traditional web apps, mobile apps, reactive web apps

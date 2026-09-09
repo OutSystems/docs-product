@@ -1,6 +1,10 @@
 ---
 summary: Guide on upgrading the LifeTime management console in OutSystems 11 (O11) to enhance features without needing to upgrade application environments.
-tags: upgrade process, lifecycle management, version management, release notes, independent distribution
+tags:
+  - Infrastructure
+  - Lifecycle
+  - Platform Server
+  - Plugins
 locale: en-us
 guid: 1dd579f8-20ca-4af9-89fa-40697272f8bc
 app_type: traditional web apps, mobile apps, reactive web apps

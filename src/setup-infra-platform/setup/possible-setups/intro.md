@@ -1,6 +1,9 @@
 ---
 summary: Explore the scalable infrastructure setups for cloud and on-premises environments in OutSystems 11 (O11), covering development to deployment stages.
-tags: cloud infrastructure, on-premises infrastructure, application lifecycle management, environment setup, performance analytics
+tags:
+  - Architecture
+  - Infrastructure
+  - Platform Server
 locale: en-us
 guid: e0be06cb-e6e3-4a67-8442-6cb74e246378
 app_type: traditional web apps, mobile apps, reactive web apps

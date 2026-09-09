@@ -1793,6 +1793,47 @@ knowledge-needs:
         Active Directory, by manually deleting the Application in Azure
         Active Directory if it still exists, so that they can fully remove a
         connection tied to an Azure AD app registration.'
+    - name: Fix identity token error
+      id: fix-identity-token-error
+      description: 'Wants to resolve the "An error occurred while getting a
+        token from the Microsoft Identity Platform" error (OS-INBL-API-00038)
+        in Integration Builder, caused by a Dataverse, Dynamics, or SharePoint
+        connection''s Microsoft Entra App Registration having an expired or
+        mismatched certificate, by creating a new connection automatically
+        (if a Microsoft Entra administrator) or verifying the App
+        Registration''s Application, Object, and Tenant IDs and certificate
+        match the connection''s configuration in Integration Manager, so that
+        they can restore the connector''s ability to get data from the
+        external system.'
+    - name: Fix IM sign-in error
+      id: fix-im-signin-error
+      description: 'Wants to resolve the "Internal server error" (OS-INBL-API-00061)
+        that blocks signing into Integration Manager in OutSystems 11, caused
+        by broken references between Integration Manager and the modules it
+        consumes, by using Service Center to republish the Integration
+        Manager application and its dependent modules, for example by
+        creating a Solution with the "OsIntegrationManager" module and the
+        "include dependencies as components" option checked and publishing
+        its running version, so that they can sign into Integration Manager
+        again.'
+    - name: Fix publish error
+      id: fix-publish-error
+      description: 'Wants to resolve the "Publish failed with an error:
+        <OriginalErrorMessage>" error (OS-INBL-GEN-00032) in Integration
+        Builder, caused by an issue during publishing an integration, by
+        checking the Service Center Error logs of the remote environment for
+        the original error message and contacting OutSystems support if the
+        logs don''t provide enough information, so that they can resolve the
+        publish failure and successfully publish the integration.'
+    - name: Fix module gen error
+      id: fix-module-gen-error
+      description: 'Wants to resolve the "unexpected error" (OS-INBL-GEN-50002)
+        or "There was an unexpected error" message (OS-INBL-GEN-50004) that
+        blocks publishing an integration in Integration Builder, caused by a
+        module generation failure, by returning to the Review Integration
+        screen and clicking Publish again, or contacting OutSystems support
+        if the issue persists, so that they can successfully publish the
+        integration.'
   - name: Workato Connector
     id: workato-connector
     subtopics:
@@ -3487,10 +3528,24 @@ knowledge-needs:
         Expression widget in Service Studio, including Value, Escape Content, and
         Id, so that they can correctly display a literal text or an evaluated
         expression on a screen in a Traditional Web App (O11).
+    - name: File Upload reference
+      id: file-upload-reference
+      description: Wants to look up the CSS selectors and classes for the
+        File Upload UI Pattern, including .file-upload.active, so that they
+        can correctly customize the icon-to-delete visibility state, in a
+        Traditional Web App (O11).
     - name: Adding a Widget or OS UI pattern
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
       id: ui-elements-accelerators
+    - name: Floating Actions reference
+      id: floating-actions-reference
+      description: Wants to look up the properties, events, and CSS selectors
+        for the Floating Actions UI Pattern, including the OnToggle event and
+        the .floating-actions.is--open class, so that they can correctly
+        customize its layout, open/close behavior, and position (for example,
+        moving it to the opposite side of the screen), in a Traditional Web
+        App (O11).
     - name: List Records layout
       id: list-records-layout
       description: Wants to display records side-by-side instead of one per line by
@@ -3594,6 +3649,12 @@ knowledge-needs:
         via Toolbox or Search in other modules if the dependency isn't added,
         in Service Studio for OutSystems 11, so that numerical notifications
         like unread message counts display on mobile apps and reactive web apps.
+    - name: Icon Badge layout reference
+      id: icon-badge-layout-reference
+      description: Wants to look up the layout and CSS classes of the Icon
+        Badge UI Pattern, in Service Studio, so that they can correctly
+        identify the pattern's structure for customization, in a Traditional
+        Web App (O11).
     - name: Alert reference
       id: alert-reference
       description: Wants to look up the CSS selectors and classes for the Alert
@@ -3729,6 +3790,35 @@ knowledge-needs:
         custom vertically aligned content with image and text widgets, so that
         they can correctly customize the pattern's layout and appearance in a
         Traditional Web App (O11).
+    - name: Fieldset reference
+      id: fieldset-reference
+      description: Wants to look up the CSS selectors and classes for the
+        Fieldset UI Pattern, including .fieldset and .fieldset-legend, and
+        see two example style overrides, so that they can correctly customize
+        the pattern's appearance in a Traditional Web App (O11).
+    - name: Flip Content reference
+      id: flip-content-reference
+      description: Wants to look up the CSS selectors and classes for the
+        Flip Content UI Pattern, including .flip-content.is--hover,
+        .flip-content.is--click, and .flip-content.is--click.is--flipped, so
+        that they can correctly customize the pattern's hover, click, and
+        flipped states in a Traditional Web App (O11).
+    - name: Flip Content events
+      id: flip-content-events
+      description: Wants to interact with other patterns or trigger actions
+        based on the Flip Content pattern's flipped state, by creating a
+        screen action that assigns the Flipped local variable to the
+        isFlipped event variable and triggers an Ajax Refresh, in Service
+        Studio, so that other UI elements update dynamically when a Flip
+        Content pattern flips, in a Traditional Web App (O11).
+    - name: Toggle Flip Content
+      id: toggle-flip-content
+      description: Wants to flip the Flip Content pattern programmatically
+        using a button or container, by setting the pattern's Trigger
+        property to Manual and calling the ToggleFlipContent server action
+        with the pattern's WidgetId, in Service Studio, so that the pattern
+        can be triggered from custom UI elements in a Traditional Web App
+        (O11).
     - name: Use Inline SVG pattern
       id: use-inline-svg-pattern
       description: Wants to add the Inline SVG UI Pattern to a screen and configure
@@ -3760,6 +3850,27 @@ knowledge-needs:
         Prompt, and OptionalConfigs, so that they can correctly configure a
         searchable dropdown selector in OutSystems 11 mobile apps and reactive
         web apps.
+    - name: Dropdown reference
+      id: dropdown-reference
+      description: Wants to look up the CSS selectors and classes for the
+        Dropdown UI Pattern, including dropdown.is--hidden and
+        dropdown.is--visible, so that they can correctly customize the
+        pattern's open/closed state appearance in a Traditional Web App (O11).
+    - name: Dropdown Select reference
+      id: dropdown-select-reference
+      description: Wants to look up the CSS selectors and classes for the
+        Dropdown Select UI Pattern, including choices__list--dropdown.is-active,
+        and see examples of customizing the border color and removable tag
+        background using CSS variables, so that they can correctly customize
+        the pattern's appearance in a Traditional Web App (O11).
+    - name: Dropdown link list
+      id: dropdown-link-list
+      description: Wants to build a list of links inside the Dropdown UI
+        Pattern by dragging a ListRecords widget into the DropdownList
+        placeholder, setting its Line Separator property to None, and
+        connecting a link to a destination for each record, in Service
+        Studio, so that a dropdown displays a dynamic list of navigable
+        links in a Traditional Web App (O11).
     - name: Style dropdown icons
       id: style-dropdown-icons
       description: Wants to override the default circular icon style of the
@@ -3958,6 +4069,13 @@ knowledge-needs:
         Service Studio, so that they can correctly configure partial screen
         refreshes without a full page reload, in OutSystems 11 traditional
         web apps, mobile apps, and reactive web apps.
+    - name: Iframe responsive width
+      id: iframe-responsive-width
+      description: Wants to change the width of an Iframe based on the device
+        type by setting the Width property to a conditional expression using
+        IsDesktop(), in Service Studio for O11 Traditional Web Apps, so that
+        the Iframe displays at a fixed width on desktop while remaining
+        full-width on mobile to avoid overflow.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -8942,6 +9060,13 @@ knowledge-needs:
         loss) error when testing the streaming connection in O11 or ODC — so that
         they can restore log and observability data streaming by verifying the
         APM tool is working and re-establishing the connection.
+    - name: Fix streaming unauthenticated
+      id: fix-streaming-unauthenticated
+      description: Wants to understand and resolve the OS-DP-STREAM-00016 "unauthenticated"
+        error — where the destination server responds with a gRPC 16 (Unauthenticated)
+        error when testing the streaming connection in O11 or ODC — so that they
+        can restore log and observability data streaming by correcting the authentication
+        credentials or endpoint URL in LifeTime Log Streaming or the ODC Portal.
     - name: Fix streaming redirect
       id: fix-streaming-redirect
       description: Wants to understand and resolve the OS-DP-STREAM-30101 "moved

@@ -2601,6 +2601,15 @@ knowledge-needs:
         null and default-value output between client and server, understanding
         this is a breaking change that requires republishing apps and updating
         any existing workaround code.
+    - name: Disable role error logs
+      id: disable-role-error-logs
+      description: Wants to stop Registered Role Required error logs from being
+        generated when expired sessions in reactive or mobile apps trigger server
+        requests, by installing the Factory Configuration Forge component and
+        unchecking the Enable Registered Role Required error logs option in the
+        Platform Configurations tab, in OutSystems 11 Platform Server 11.21.0 and
+        newer, so they can eliminate this specific log noise without suppressing
+        other relevant exceptions.
   - name: Runbooks for app configuration management
     id: runbook-config-mgmt
     subtopics:
@@ -5389,6 +5398,14 @@ knowledge-needs:
         shown in the Environment Health screen, so they can interpret
         environment health status and know which service is responsible for
         which platform function.
+    - name: Configure HTTP proxy
+      id: configure-http-proxy
+      description: Wants to configure a HTTP proxy server so Service Studio
+        can reach the Internet on a restricted network, by setting the proxy
+        in the operating system (Windows or macOS) and, if the proxy
+        requires it, enabling proxy authentication in Service Studio's
+        Preferences dialog, so that Service Studio can connect to their
+        OutSystems 11 environment.
     - name: Fix proxy auth 401
       id: fix-proxy-auth-401
       description: Wants to fix the 401 Unauthorized error (or missing app templates)
@@ -5448,6 +5465,20 @@ knowledge-needs:
         every module of every application to OutSystems 11, by running a PowerShell
         cleanup script and closing the associated firewall port, so that they can
         free up server memory no longer needed for pre-OutSystems 11 logging.
+    - name: Configure environment purpose
+      id: configure-environment-purpose
+      description: Wants to set the Purpose of an OutSystems 11 environment in Service
+        Center's Environment Configuration, understanding when it can be
+        changed, its license restrictions, and how it affects available platform
+        features, so that they configure the environment's behavior correctly
+        for its role.
+    - name: Configure debug mode
+      id: configure-debug-mode
+      description: Wants to enable or disable the Debug Mode of an OutSystems 11
+        environment in Service Center's Environment Configuration, understanding
+        that both environment and module Debug Mode must be enabled to debug a
+        module in Service Studio and that changes take effect after
+        republishing, so that they can control which modules can be debugged.
 - name: Hotfixing
   guid: d8111f11-34b0-4f33-8374-5d9611d507e2
   topics:
@@ -5764,6 +5795,12 @@ knowledge-needs:
         a prebuilt connector in ODC Portal, providing authentication and
         importing selected tools as server actions, so that the tools
         become available for use in apps and agents.
+    - name: Set up MCP connection
+      id: set-up-mcp-connection
+      description: Wants to configure a connection to a custom MCP server in ODC Portal by
+        selecting the matching transport type, choosing an authentication
+        method, and providing the required credentials, then testing the
+        connection, so that the server's tools become available for import.
     - name: Use connector tools in agent
       id: use-connector-tools-in-agent
       description: Wants to add imported prebuilt-connector tools as
@@ -5772,6 +5809,28 @@ knowledge-needs:
         common errors (invalid key, empty results, rate limit), so that
         external service functionality can be used within apps and agentic
         flows.
+    - name: MCP unavailable patterns
+      id: mcp-unavailable-patterns
+      description: Wants to identify which JSON schema input patterns
+        (multi-type anyOf/oneOf/allOf, mixed-type arrays, arrays without an
+        items schema, arrays of arrays, external $refs, or objects without
+        typed properties) make an entire MCP server action unavailable
+        when ODC imports it, so they can diagnose why a tool didn't
+        import.
+    - name: MCP omitted fields
+      id: mcp-omitted-fields
+      description: Wants to understand which input schema patterns
+        (recursive $ref, or $dynamicRef/$recursiveRef) cause ODC to omit a
+        specific parameter or field, rather than block the entire action,
+        when importing an MCP server action, so they can predict what will
+        be missing from the action's signature.
+    - name: Fix unsupported MCP tool
+      id: fix-unsupported-mcp-tool
+      description: Wants to make an unavailable MCP action importable into
+        ODC by either simplifying the original tool's data structures on
+        the external MCP server or creating a wrapper tool with a
+        simplified input set, so the action becomes usable in an ODC app
+        or agent.
   - name: Semantic Search
     id: semantic-search
     subtopics:
@@ -6781,6 +6840,21 @@ knowledge-needs:
         the Android Manifest" error, by checking the Service Center build logs
         to identify the custom plugins causing the incompatibility, so that the
         Android mobile app package generates successfully.'
+    - name: PNG resource error
+      id: png-resource-error
+      description: 'Wants to resolve the OS-MABS-GEN-40002 "We couldn''t process
+        your resources because at least one file isn''t in PNG format" error, by
+        checking the Service Center build logs to identify the non-PNG resource
+        file and replacing it with a valid PNG file, so that the Android mobile
+        app package generates successfully.'
+    - name: Missing plugin file error
+      id: missing-plugin-file-error
+      description: 'Wants to resolve the OS-MABS-GEN-40005 "There was an issue
+        generating the app because {0} ''{1}'' wasn''t found" error, caused
+        by a custom plugin referencing a file that doesn''t exist, by
+        checking the Service Center build logs to identify the affected
+        plugin and updating it, so that the Android mobile app package
+        generates successfully.'
     - name: Support library error
       id: support-library-error
       description: 'Wants to resolve the OS-MABS-GEN-40006 "there was an issue
@@ -6789,6 +6863,16 @@ knowledge-needs:
         plugin(s) via com.android.support references and migrating them to
         AndroidX, so that the Android mobile app package generates
         successfully.'
+    - name: Swift language error
+      id: swift-language-error
+      description: 'Wants to resolve the OS-MABS-GEN-40003 "There was an issue
+        generating the app. At least one Cordova plugin used in the build
+        requires Swift, but no ''Swift Language Version'' build setting was
+        defined" error, caused by a custom Cordova plugin requiring Swift
+        without a Swift Language Version build setting defined for the iOS
+        project, by checking the Service Center build logs to identify the
+        plugin and configuring the required Swift Language Version setting,
+        so that the iOS mobile app package generates successfully.'
     - name: Metadata conflict error
       id: metadata-conflict-error
       description: 'Wants to resolve the OS-MABS-GEN-40008 "meta-data {0} is
@@ -7161,6 +7245,41 @@ knowledge-needs:
         and reviewing the Service Center build logs, escalating to
         OutSystems Support if the problem persists, so that the mobile app
         package generates successfully.'
+    - name: Maven fetch error
+      id: maven-fetch-error
+      description: 'Wants to resolve the OS-MABS-GEN-10000 "Your app wasn''t
+        generated because we couldn''t fetch its dependencies from the
+        repository server" error that blocks mobile app package generation,
+        caused by a failure to fetch build plugin dependencies from a Maven
+        repository, by checking the Service Center build logs to identify
+        the failing plugin and confirming access to the repository, so that
+        the mobile app package generates successfully.'
+    - name: Blocked plugin action
+      id: blocked-plugin-action-error
+      description: 'Wants to resolve the OS-MABS-GEN-20000 "Your app wasn''t
+        generated because an action was blocked due to security concerns.
+        Contact the support team if this problem persists." error, caused by
+        a custom plugin attempting to execute non-permitted actions during
+        mobile app package generation, by checking the Service Center build
+        logs to identify the offending plugin, so that the mobile app
+        package generates successfully.'
+    - name: Missing hook dependency
+      id: missing-hook-dependency-error
+      description: 'Wants to resolve the OS-MABS-GEN-20001 "Your app wasn''t
+        generated because the required dependency for the {0} node module in
+        a plugin hook was missing" error, by checking the Service Center
+        build logs to identify the custom plugin hook with the missing node
+        module dependency, so that the mobile app package generates
+        successfully.'
+    - name: Generic CocoaPods error
+      id: cocoapods-config-error
+      description: 'Wants to resolve the OS-MABS-GEN-40012 "There was an issue
+        generating the app. Some plugins using CocoaPods aren''t correctly
+        configured or a pod wasn''t found in the repository. Check your
+        plugin configurations and try again." error, by checking the Service
+        Center build logs to identify the affected pod and the custom plugin
+        introducing it, then fixing that plugin''s CocoaPods configuration,
+        so that the iOS mobile app package generates successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -8202,9 +8321,9 @@ knowledge-needs:
       description: Wants to verify that an external IdP's claim mappings
         and end-to-end login flow work correctly in ODC, by inspecting
         token claims against portal configuration and testing complete
-        login flows across different user types, before deploying the IdP
-        to production, so that they can catch mapping issues and
-        authentication failures early.
+        login flows across different user types and groups, before
+        deploying the IdP to production, so that they can catch mapping
+        issues and authentication failures early.
   - name: Authorization
     id: authorization
     subtopics:
@@ -8975,6 +9094,36 @@ knowledge-needs:
         Redis Cluster or single Redis server with redis-cli and checking for the
         expected _Data and _Internal session keys, so they can validate their
         self-managed O11 Redis session configuration is working.
+  - name: CDN Configuration
+    id: cdn-configuration
+    subtopics:
+    - name: Configure CDN
+      id: configure-cdn
+      description: Wants to set up and configure a CDN for OutSystems 11
+        mobile and reactive web apps, including the CNAME DNS record, SSL
+        certificate installation, supported HTTP versions, pointing the
+        origin to the load balancer, matching ForwardCookies to the cache
+        policy, forcing HTTPS redirects, setting OriginKeepaliveTimeout and
+        OriginReadTimeout, and choosing which static file types to cache,
+        so that static content is served correctly and securely from the
+        CDN instead of the front-end servers.
+    - name: CDN stale cache
+      id: cdn-stale-cache
+      description: Wants to prevent users from receiving outdated application resources
+        from the CDN after a new app version is deployed, by using Platform
+        Server 11.30.0+'s stale cache prevention mechanism in Factory
+        Configuration, or the IIS cache-timeout fallback (reducing static
+        content expiration to a short duration) on earlier versions, in
+        OutSystems 11, so that they can set long cache expiration times without
+        risking stale content.
+    - name: CDN brute-force fix
+      id: cdn-brute-force-fix
+      description: Wants to prevent a CDN from triggering the Users
+        module's brute-force protection against legitimate users, because
+        the CDN masks each end-user's real IP address, by setting the
+        EnableBruteForceProtectionPerIP site property to False in Service
+        Center, in OutSystems 11, so that valid login attempts through the
+        CDN aren't blocked.
   - name: Self-hosted cluster services
     id: self-hosted-cluster-services
     subtopics:
@@ -9162,6 +9311,16 @@ knowledge-needs:
         credentials, so that they can comply with password rotation
         requirements without leaving modules unable to log in to the
         database.
+    - name: Change DB auth mode
+      id: change-db-authentication-mode
+      description: Wants to change the SQL Server database authentication
+        mode (Windows Authentication or Database Authentication) for a
+        self-managed OutSystems 11 standalone or farm installation, using
+        the Configuration Tool to set credentials, grant permissions, and
+        create the session database, then updating Database Catalog
+        permissions and Application Pool identities, so that the platform
+        continues running correctly under the new authentication mode
+        without undesired behavior.
   - name: LifeTime environment setup
     id: lifetime-environment-setup
     subtopics:
@@ -9220,6 +9379,25 @@ knowledge-needs:
         application pool they created, in a self-managed OutSystems 11
         environment, so that the isolation change can be undone once no
         longer needed.
+    - name: Tune app pool recycling
+      id: tune-app-pool-recycling
+      description: Wants to understand application pool recycling in IIS, including the
+        overlapped recycle method, and configure automatic recycling settings
+        through the IIS Manager Recycling wizard, then set memory-based recycle
+        limits high enough to avoid unnecessary recycles and low enough to avoid
+        affecting other pools' available memory, fine-tuning those values using
+        real-world memory usage data, in a self-managed OutSystems 11 on-
+        premises or private cloud deployment, so that application pools remain
+        performant and stable.
+    - name: Tune IIS thread pool
+      id: tune-iis-thread-pool
+      description: Wants to tune the ASP.NET worker process thread pool
+        settings (the processModel element in machine.config, including
+        autoConfig, minWorkerThreads, and minIoThreads) on a self-managed
+        OutSystems 11 IIS front-end, and to understand why the default
+        autoConfig="true" behavior doesn't react fast enough to bursty
+        Mobile/Reactive traffic, so that the front-end has enough ready
+        threads to absorb request bursts without queuing.
   - name: Database Catalogs and Schemas
     id: database-catalogs-and-schemas
     subtopics:
@@ -9276,6 +9454,67 @@ knowledge-needs:
         requiring the "Manage Infrastructure and Users" infrastructure
         permission, so that they can start using the feature before it's
         generally available.
+  - name: Platform Server Setup
+    id: platform-server-setup
+    subtopics:
+    - name: Install prerequisites
+      id: platform-install-prerequisites
+      description: Wants to understand the default hardware, software, and
+        file system requirements for installing OutSystems 11 Platform
+        Server, including the fixed MAC address hardware requirement, the
+        Platform Server installation checklist, default installation and
+        registry locations, and the Deployment Controller, Deployment, and
+        Scheduler Windows services with their executables and running
+        accounts, so that they can prepare their on-premises infrastructure
+        and grant the necessary file system, service, and port permissions
+        before installing.
+    - name: Database requirements
+      id: platform-database-requirements
+      description: Wants to understand the database configuration
+        requirements for the OutSystems 11 platform database across SQL
+        Server, Azure SQL Database, Oracle, and DB2, including
+        authentication mode, case-insensitive collation, NLS_CHARACTERSET
+        encoding, and IBM iAccess software prerequisites, so that they
+        configure a compliant database backend before installing
+        OutSystems 11.
+    - name: App server requirements
+      id: platform-app-server-requirements
+      description: Wants to understand the IIS Application Server and
+        deployed application requirements for OutSystems 11, including
+        enabling IIS6 compatibility mode, keeping the Default Web Site
+        listening on 127.0.0.1:80 without host headers, allowing the HTTP
+        PATCH method for Server.API endpoints, and where deployed
+        application source code and compiled applications are stored, so
+        that they can prepare the application server layer before
+        deployment.
+  - name: Schedule index/statistics maintenance
+    id: schedule-index-statistics-maintenance
+    description: Wants to schedule regular index reorganize/rebuild
+      operations and statistics updates for OutSystems 11 self-managed
+      installations, so that database query performance stays stable as
+      fragmentation and stale statistics accumulate.
+  - name: Schedule transaction log backups
+    id: schedule-transaction-log-backups
+    description: Wants to schedule transaction log backups across all
+      environments for OutSystems 11 self-managed installations, so that
+      transaction log growth stays under control and point-in-time recovery
+      remains available.
+  - name: Configure data/log file growth and storage isolation
+    id: configure-data-log-file-growth-storage-isolation
+    description: Wants to set large fixed database file growth and keep
+      data and log files on separate storage for OutSystems 11
+      self-managed installations, so that database files avoid
+      fragmentation and storage contention as capacity grows.
+  - name: Server performance tuning
+    id: server-performance-tuning
+    description: Wants to apply OutSystems 11 self-managed server-level
+      performance tuning practices, including disabling unnecessary
+      Virtual Memory/system indexers and Data Execution Prevention,
+      isolating heavy background timers on dedicated servers, preferring
+      64-bit server architecture, and excluding Platform Server, ASP.NET
+      temp, and Deployment Controller Service folders from real-time
+      antivirus scanning, so that frontend and timer processing avoid
+      unnecessary CPU, memory, and I/O overhead.
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:

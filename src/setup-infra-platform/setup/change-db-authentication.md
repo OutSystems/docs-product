@@ -8,7 +8,6 @@ platform-version: o11
 figma:
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - service center
 coverage-type:

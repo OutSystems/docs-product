@@ -8,8 +8,6 @@ figma:
 tags: database maintenance, server optimization, performance tuning, antivirus configuration, sql query optimization
 audience:
   - Platform administrator
-  - Developer
-  - Tech lead
 outsystems-tools:
   - platform server
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2635%3A733&mode=design&t=PPL7U8XyNSIpuC5w-1
 tags: ssl certificate, security, https, server administration, cryptographic key
 audience:
-  - Platform administrator
   - Developer
-  - Tech lead
+  - Platform administrator
 outsystems-tools:
   - none
 coverage-type:

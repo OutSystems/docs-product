@@ -1,6 +1,12 @@
 ---
 summary: Explore the architecture and WAF rules to integrate OutSystems 11 (O11) with a Web Application firewall.
-tags: web application firewall, cloud infrastructure, security enhancements, application load balancer, attack prevention
+tags:
+  - Infrastructure
+  - IP Filters
+  - Mobile app
+  - Monitoring
+  - OWASP
+  - Security
 locale: en-us
 guid: E0B721A4-C4F7-47AD-8E33-529F6383145C
 app_type: traditional web apps, reactive web apps

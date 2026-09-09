@@ -1,6 +1,11 @@
 ---
 summary: OutSystems 11 (O11) enables enhanced application security by allowing internal network access restrictions for UI flows, SOAP web services, and REST APIs.
-tags: application security, access control, network configuration, service center, environment configuration
+tags:
+  - Authorization
+  - IP Filters
+  - REST
+  - Security
+  - SOAP
 locale: en-us
 guid: 110c2416-65b4-404d-8adc-e02219af4207
 app_type: traditional web apps, mobile apps, reactive web apps

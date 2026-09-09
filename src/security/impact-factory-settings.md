@@ -1,6 +1,12 @@
 ---
 summary: Removing unsafe directives from OutSystems CSP impacts JavaScript widgets and UI components by preventing the use of eval() and requiring updates to the logic
-tags: content security policy, security best practices, javascript widgets, web application security
+tags:
+  - Front-End
+  - JavaScript
+  - Security
+  - Troubleshooting
+  - UI
+  - Widgets
 locale: en-us
 guid: 657030e8-6825-492d-bfe4-e29a9610eafc
 app_type: traditional web apps, mobile apps, reactive web apps

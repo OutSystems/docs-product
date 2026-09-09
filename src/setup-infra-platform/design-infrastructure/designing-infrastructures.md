@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) infrastructure design ensures scalability, availability, and security for on-premises deployments.
-tags: infrastructure design, scalability, high availability, disaster recovery, security
+tags:
+  - Architecture
+  - Infrastructure
+  - Platform Server
+  - Security
 guid: 27df757d-7cc9-4dfc-bf3b-d59a0420ffd0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

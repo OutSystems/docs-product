@@ -1,5 +1,9 @@
 ---
-tags: ui design, css, web development, layout patterns, style guide
+tags:
+  - CSS
+  - Layouts
+  - UI
+  - UI Patterns
 summary: Explore the sidebar UI pattern layout and CSS classes for traditional web apps in OutSystems 11 (O11).
 locale: en-us
 guid: 084bb303-c011-405d-adec-710e9227c8ae

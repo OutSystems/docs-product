@@ -1,5 +1,9 @@
 ---
-tags: css customization, ui patterns, section index, sticky elements, web design
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI Patterns
 summary: Explore the CSS customization and layout features of the Section Index UI Pattern in Traditional Web Apps with OutSystems 11 (O11).
 locale: en-us
 guid: fd1fc012-8659-4cd2-861e-220cfa3090ec

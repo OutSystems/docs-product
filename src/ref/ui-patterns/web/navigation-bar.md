@@ -1,5 +1,11 @@
 ---
-tags: css customization, web development, ui design, outsystems traditional web apps, css selectors
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Explore navigation bar customization options in OutSystems 11 (O11) for traditional web apps, including CSS selectors and advanced use cases.
 locale: en-us
 guid: 7eec386c-a22e-4f3a-a6cd-2509360fadfc

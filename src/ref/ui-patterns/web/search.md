@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, web app development, search functionality, interface design, outsystems ui framework
+tags:
+  - Front-End
+  - Layouts
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore advanced search functionalities in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: cfd34720-b1a4-452c-ab75-0af83bed2963

@@ -1,5 +1,9 @@
 ---
-tags: css customization, ui design, style customization, css selectors, web development
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI Patterns
 summary: Explore the CSS customization options for the Tabs UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 1acd4b94-2c08-48ab-9ad6-9c64bcf4d5de

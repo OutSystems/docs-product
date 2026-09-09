@@ -1,5 +1,11 @@
 ---
-tags: component customization, css styling, web development, ui components, outsystems ui framework
+tags:
+  - CSS
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI Patterns
+  - Widgets
 summary: Explore the features and customization options of the Range Slider Interval component in OutSystems 11 (O11).
 locale: en-us
 guid: 3c86ec87-d4c6-441b-adf1-bdb30f056a62

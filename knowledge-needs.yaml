@@ -1909,6 +1909,13 @@ knowledge-needs:
       id: acls
     - name: Webservice authentication
       id: webservice-authentication
+    - name: Restrict internal access
+      id: restrict-internal-network-access
+      description: Wants to restrict access to UI Flows, exposed SOAP Web
+        Services, and REST APIs to users authenticated on an internal
+        network IP range, by setting the Internal Access Only property to
+        Yes in Service Studio, so that sensitive elements are reachable
+        only from within the internal network, in OutSystems 11.
     - name: JWT REST authentication
       id: jwt-rest-authentication
       description: Wants to secure REST APIs exposed or consumed between O11
@@ -2012,13 +2019,13 @@ knowledge-needs:
         attacks, specifically reflected, stored, and DOM-based XSS, including how each
         propagates and their relative severity, so that they can identify the type of
         XSS risk present in their application and apply the right mitigation.
-    - name: Prevent injection ODC
-      id: prevent-injection-odc
-      description: Wants to understand and apply OutSystems ODC's built-in injection
-        protections, including IDE injection warnings, Content Security Policy, platform
-        default escaping, and Encode functions (EncodeSQL, EncodeHTML, EncodeJavaScript,
-        EncodeURL) and parameterized queries, so that they can protect their ODC
-        applications against SQL injection and XSS attacks.
+    - name: Encode custom HTML and JavaScript
+      id: encode-custom-html-javascript
+      description: Wants to safely include end-user input in custom HTML or
+        JavaScript by using the appropriate EncodeHtml() or EncodeJavascript()
+        built-in function whenever escape content is disabled, so that
+        untrusted values are rendered as text instead of executing in the
+        browser.
     - name: Fix JS injection warning
       id: fix-js-injection-warning
       description: Wants to resolve the Service Studio warning that an expression
@@ -2045,6 +2052,13 @@ knowledge-needs:
         Expand Inline where possible or ensuring the parameter value doesn't
         contain end-user input, in OutSystems 11, so their application isn't
         vulnerable to SQL injection.
+    - name: Prevent SQL injection O11
+      id: prevent-sql-injection-o11
+      description: Wants to prevent SQL injection in OutSystems 11 SQL Object
+        queries with inline parameters, by wrapping untrusted variables with
+        EncodeSql() or VerifySqlLiteral() and avoiding Expand Inline on
+        end-user input, so that attacker-controlled input can't alter the
+        query's SQL structure.
   - name: Access control risks
     id: access-control-risks
     description: Wants to protect OutSystems 11 applications from access control
@@ -2057,6 +2071,14 @@ knowledge-needs:
   - name: Content security policy
     id: content-security-policy
     subtopics:
+    - name: CSP directive impacts
+      id: csp-directive-impacts
+      description: Wants to understand the impacts of disabling the unsafe-eval and unsafe-
+        inline CSP directives via Factory Configuration settings, covering
+        effects on client-side components and widgets that rely on eval() or
+        inline scripts/styles in Reactive Web Apps on OutSystems 11, so that
+        they can identify what breaks and how to fix it before disabling these
+        directives.
     - name: Configure CSP for iOS
       id: configure-csp-ios
       description: Wants to configure Content Security Policy directives with the explicit
@@ -5736,6 +5758,20 @@ knowledge-needs:
         understanding that both produce callable server actions, so that
         they can choose based on portability and reuse versus faster
         guided setup.
+    - name: Set up prebuilt connector
+      id: set-up-prebuilt-connector
+      description: Wants to create a connection to an external service using
+        a prebuilt connector in ODC Portal, providing authentication and
+        importing selected tools as server actions, so that the tools
+        become available for use in apps and agents.
+    - name: Use connector tools in agent
+      id: use-connector-tools-in-agent
+      description: Wants to add imported prebuilt-connector tools as
+        dependencies in ODC Studio and invoke them in server logic or an
+        agent's Call Agent element, mapping required inputs and handling
+        common errors (invalid key, empty results, rate limit), so that
+        external service functionality can be used within apps and agentic
+        flows.
   - name: Semantic Search
     id: semantic-search
     subtopics:
@@ -7082,6 +7118,15 @@ knowledge-needs:
         size in an extensibility configuration, by checking and fixing the
         icon''s density/size in Service Studio (O11) or ODC Studio, so that
         the mobile app package generates successfully.'
+    - name: Fix missing splash error
+      id: fix-missing-splash-error
+      description: 'Wants to resolve the OS-MABS-CNF-40001 "There''s a splash
+        screen missing in your extensibility configurations with {0}" error
+        that blocks mobile app package generation, caused by a missing
+        splash screen density or size in an extensibility configuration, by
+        checking and fixing the splash screen''s density/size in Service
+        Studio (O11) or ODC Studio, so that the mobile app package
+        generates successfully.'
     - name: Fix missing image error
       id: fix-missing-image-error
       description: 'Wants to resolve the OS-MABS-CNF-40002 "Unable to copy
@@ -7107,6 +7152,15 @@ knowledge-needs:
         icon image file, by replacing the icon with a valid image in the
         correct format, so that the mobile app package generates
         successfully.'
+    - name: Fix app zip error
+      id: fix-app-zip-error
+      description: 'Wants to resolve the OS-MABS-FIN-50000 "Something happened
+        on our side while packaging your app" error that blocks mobile app
+        package generation, caused by MABS failing to zip the application
+        source code at the end of the build process, by retrying the build
+        and reviewing the Service Center build logs, escalating to
+        OutSystems Support if the problem persists, so that the mobile app
+        package generates successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -7564,13 +7618,21 @@ knowledge-needs:
         that they can legally handle PHI in production and meet their
         organization's compliance obligations.
     - name: Achieve PCI compliance
-      id: pci-odc-compliance
-      description: Wants to achieve PCI DSS compliance for an OutSystems Developer Cloud
-        (ODC) application processing credit card payments, by delegating payment
-        handling to a third-party PCI-compliant payment gateway rather than
-        processing card data directly, and using Sentry for ODC, so that
-        cardholder data is never stored or processed within OutSystems
-        applications and compliance obligations are met.
+      id: pci-compliance
+      description: Wants to achieve PCI DSS compliance for an OutSystems application
+        processing credit card payments, by delegating payment handling to a
+        third-party PCI-compliant payment gateway via URL redirection, iFrame
+        integration, or tokenization (direct post or secure APIs) rather than
+        processing card data directly, so that cardholder data is never stored
+        or processed within OutSystems applications and compliance obligations
+        are met.
+    - name: PCI security checklist O11
+      id: pci-security-checklist-o11
+      description: Wants to know which security configurations (HSTS, secure
+        endpoints, Content Security Policy) they must enable in OutSystems 11
+        Sentry to satisfy PCI DSS SAQ D attestation requirements, so that they
+        can complete the required steps before pursuing attestation with a
+        PCI Qualified Security Assessor.
     - name: Safe Harbor compliance
       id: safe-harbor-compliance
       description: Wants to understand why the Safe Harbor ECJ ruling doesn't apply
@@ -7844,6 +7906,22 @@ knowledge-needs:
         decide whether to enable SAML single logout for their setup.
     - name: Lockout
       id: lockout
+    - name: App brute force config
+      id: app-brute-force-config
+      description: Wants to configure the brute force login protection thresholds and
+        backoff delays for application (end) users via the Users module's Site
+        Properties in Service Center, including enabling the protection and
+        setting the username- and IP-level attempt thresholds and backoff delay
+        windows, in OutSystems 11, so that they can tune how aggressively user-
+        and IP-level brute force attacks are throttled.
+    - name: IT brute force config
+      id: it-brute-force-config
+      description: Wants to configure the brute force login protection settings
+        for IT users signing in to Service Center and LifeTime, using the
+        Factory Configuration Forge application deployed to all environments,
+        in OutSystems 11, so that the same backoff protection behavior is
+        applied consistently for IT users across every application and
+        LifeTime environment.
     - name: Passwords
       id: passwords
     - name: Update user email
@@ -8729,6 +8807,91 @@ knowledge-needs:
         server's SSL settings to support at least one of the required cipher
         suites, so that Android devices can connect over HTTP/2 through the
         reverse proxy.
+  - name: Web Application Firewall
+    id: web-application-firewall
+    subtopics:
+    - name: Configure Akamai WAF
+      id: configure-akamai-waf
+      description: Wants to set up Akamai's App & API Protector product and
+        configure the CDN/WAF property to protect their OutSystems web app,
+        by creating an Akamai account, configuring the CDN property with
+        origin hostname, DNS, and edge certificate, and enabling the
+        out-of-the-box WAF protections, so that traffic to their OutSystems
+        environment is filtered through Akamai's WAF.
+    - name: Customize Akamai WAF rules
+      id: customize-akamai-waf-rules
+      description: Wants to customize Akamai WAF protections for their
+        OutSystems web app, by creating a new security policy version,
+        adjusting attack group actions, and creating custom rules for
+        specific rule IDs, so that they can tailor the WAF's blocking
+        behavior to their application's needs.
+    - name: Configure Cloudflare WAF
+      id: configure-cloudflare-waf
+      description: Wants to set up a Cloudflare account and integrate
+        Cloudflare's WAF with their OutSystems web app, by creating an
+        account, adding their domain, configuring DNS records and SSL/TLS
+        settings, and enabling the built-in managed WAF rule sets, so that
+        traffic to their OutSystems application is filtered through
+        Cloudflare's WAF.
+    - name: Customize Cloudflare WAF rules
+      id: customize-cloudflare-waf-rules
+      description: Wants to customize Cloudflare WAF protections for their
+        OutSystems web app by creating custom rules with specific match
+        criteria and actions (for example, a JS Challenge triggered by a
+        Threat Score threshold), so that they can tailor the WAF's blocking
+        behavior to their application's needs.
+    - name: WAF overview
+      id: waf-overview
+      description: Wants to understand what a Web Application Firewall is,
+        including its key features (traffic filtering and monitoring,
+        rule-based protection, real-time response, compliance support, and
+        logging and reporting) and its three deployment types (network-based,
+        host-based, cloud-based), so that they can evaluate how a WAF fits
+        into a layered defense strategy for their OutSystems web application.
+    - name: OWASP Top 10 awareness
+      id: owasp-top10-awareness
+      description: Wants to understand what the OWASP Top 10 is and why
+        keeping up with each new release matters, so that they can identify
+        which attack vectors their WAF rules need to protect their
+        OutSystems web applications against.
+    - name: Configure customer-managed WAF
+      id: configure-customer-managed-waf
+      description: Wants to set up a customer-managed WAF for OutSystems Cloud alongside
+        the built-in Application Load Balancer protections, understanding the
+        added benefits of geo-blocking, custom rules, CDN performance offload,
+        and security monitoring, so that they can protect their environment with
+        capabilities the built-in ALB doesn't provide.
+    - name: Customize customer-managed WAF rules
+      id: customize-customer-managed-waf-rules
+      description: Wants to customize rules on a customer-managed WAF
+        protecting OutSystems Cloud, so that application-specific traffic
+        patterns and new attack behavior are handled without blocking
+        legitimate requests.
+    - name: Monitor customer-managed WAF security analytics
+      id: monitor-customer-managed-waf-security-analytics
+      description: Wants to monitor the security analytics from a
+        customer-managed WAF protecting OutSystems Cloud, so that they can
+        detect repeated attack patterns and false positives before they affect
+        users.
+    - name: Decide when to involve a WAF security expert
+      id: decide-waf-security-expert-involvement
+      description: Wants to know when to involve a WAF security expert while
+        operating a customer-managed WAF for OutSystems Cloud, so that complex
+        tuning or incident response work is escalated before configuration
+        gaps leave the application exposed.
+    - name: Recommended WAF rules
+      id: recommended-waf-rules
+      description: Wants to look up the recommended ModSecurity-style WAF rule IDs and
+        names to always enable on a customer-managed WAF protecting OutSystems
+        Cloud applications, so that they configure baseline protection against
+        common attack types.
+    - name: WAF mobile integrity
+      id: waf-mobile-integrity
+      description: Wants to configure their WAF to exclude mobile app
+        static asset paths (css, img, scripts, fonts, assets) for each
+        mobile app OS, retrieved via the moduleinfo URL, so that WAF
+        features like bot protection, file compression, or code injection
+        don't break MABS Over-the-Air update checksum validation.
   - name: Redis in-memory sessions
     id: redis-in-memory-sessions
     subtopics:

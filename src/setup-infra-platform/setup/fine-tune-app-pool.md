@@ -5,7 +5,11 @@ guid: 939F9A46-EBA1-4442-BD8B-6CAAA5CDE555
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: application pool, iis, performance optimization, stability, on-premises deployment
+tags:
+  - Infrastructure
+  - Optimization
+  - Performance
+  - Platform Server
 audience:
   - Platform administrator
   - Developer

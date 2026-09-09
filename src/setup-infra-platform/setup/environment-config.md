@@ -1,6 +1,10 @@
 ---
 summary: Learn how to configure your OutSystems 11 (O11) environment, including setting the hostname, purpose, and debug mode in the Service Center console.
-tags: installation, configuration, service center, environment setup, platform server
+tags:
+  - Debugging
+  - Infrastructure
+  - Platform Server
+  - Settings
 locale: en-us
 guid: 34e53ab0-1ab2-429a-81c0-dd29cf99a549
 app_type: traditional web apps, mobile apps, reactive web apps

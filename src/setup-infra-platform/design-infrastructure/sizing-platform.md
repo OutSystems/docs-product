@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: infrastructure scaling, performance optimization, application deployment, hardware recommendations, capacity planning
+tags:
+  - Infrastructure
+  - Performance
+  - Platform Server
 audience:
   - Platform administrator
   - Developer

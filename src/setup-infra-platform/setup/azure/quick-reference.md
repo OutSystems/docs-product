@@ -1,5 +1,8 @@
 ---
-tags: azure deployment, cloud infrastructure, infrastructure configuration, virtual machine configuration, deployment best practices
+tags:
+  - Deploy
+  - Infrastructure
+  - Platform Server
 summary: OutSystems 11 (O11) deployment on Microsoft Azure involves configuring virtual machines, SQL databases, and application gateways.
 locale: en-us
 guid: 88d66b58-baee-4c61-9d03-b21e5b4aeac9

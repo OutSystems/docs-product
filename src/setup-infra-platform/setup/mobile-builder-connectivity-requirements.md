@@ -1,5 +1,5 @@
 ---
-summary: Learn how OutSystems 11 (O11) utilizes the Mobile Apps Build Service (MABS) with Amazon CloudFront for scalable, redundant mobile app development.
+summary: "MABS network connectivity requirements: secure access to OutSystems' cloud build service using a proxy, domain firewall rules, or CloudFront IP allowlists."
 locale: en-us
 guid: 9b32edb6-a14d-46d5-b180-10b6bc0eff3f
 app_type: traditional web apps, mobile apps, reactive web apps

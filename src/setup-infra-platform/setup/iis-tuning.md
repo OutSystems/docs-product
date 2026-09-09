@@ -12,6 +12,7 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
+  - understand
   - evaluate
 ---
 

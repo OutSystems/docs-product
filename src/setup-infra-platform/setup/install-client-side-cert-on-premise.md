@@ -14,6 +14,7 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+  - unblock
 ---
 
 # Installing client side certificates on self-managed environments

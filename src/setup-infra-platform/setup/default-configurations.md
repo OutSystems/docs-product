@@ -12,6 +12,7 @@ audience:
 outsystems-tools:
   - platform server
 coverage-type:
+  - remember
   - understand
 ---
 

@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) ensures secure data management and encryption across all cloud environment assets, including automated key management.
-tags: cloud security, encryption, secure data management, automated key management, aws
+tags:
+  - Data
+  - Infrastructure
+  - Security
 guid: 5f4a803b-5b64-4b4b-bef7-eba1cc149941
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

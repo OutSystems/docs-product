@@ -1,6 +1,7 @@
 ---
 summary: OutSystems 11 (O11) facilitates HIPAA compliance by enabling secure healthcare application development and deployment across various platforms.
-tags: healthcare application development, hipaa compliance
+tags:
+  - Security
 locale: en-us
 guid: 13c94c45-4142-48f8-a06b-733675577c1e
 app_type: traditional web apps, mobile apps, reactive web apps

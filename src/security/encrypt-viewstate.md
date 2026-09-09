@@ -1,6 +1,8 @@
 ---
 summary: Explore how OutSystems 11 (O11) ensures secure web applications by encrypting view state in traditional web apps.
-tags: security, view state, asp.net, encryption, web development
+tags:
+  - Security
+  - Traditional Web
 locale: en-us
 guid: a07b13f4-d8a9-4d32-8c52-57544422ce46
 app_type: traditional web apps

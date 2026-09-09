@@ -1,5 +1,9 @@
 ---
-tags: tooltip implementation, ui design, component customization, event handling, web development
+tags:
+  - Events
+  - Front-End
+  - Traditional Web
+  - UI Patterns
 summary: Explore tooltip functionality in Traditional Web Apps using OutSystems 11 (O11), including layout, events, and advanced customization options.
 locale: en-us
 guid: 421bf73a-44ad-44ee-ba61-b2d234472c54

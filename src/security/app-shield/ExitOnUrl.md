@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) uses AppShield's ExitOnURL feature to redirect users when an app is blocked for security.
-tags: mobile app security, configuration management, app lifecycle management, json extensibility
+tags:
+  - Mobile app
+  - Security
 locale: en-us
 guid: ff593156-92ef-4947-86f1-e3d2dfb58908
 app_type: mobile apps

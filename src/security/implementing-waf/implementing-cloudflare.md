@@ -8,7 +8,6 @@ platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5186-295
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - none

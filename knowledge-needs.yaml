@@ -6840,6 +6840,26 @@ knowledge-needs:
         the Android Manifest" error, by checking the Service Center build logs
         to identify the custom plugins causing the incompatibility, so that the
         Android mobile app package generates successfully.'
+    - name: Missing exported attribute
+      id: missing-exported-attribute-error
+      description: 'Wants to resolve the OS-MABS-GEN-40016 "Couldn''t generate
+        your app. For "<type>" type elements with defined intent filters, you
+        must declare the value for the attribute "android:exported" in all
+        AndroidManifest.xml files." error, caused by using custom plugins with
+        MABS 8.0 or higher that define intent filters without declaring the
+        android:exported attribute, by declaring the attribute and its value in
+        the AndroidManifest.xml files for the affected type elements, so that
+        the Android mobile app package generates successfully.'
+    - name: Gradle dependency error
+      id: gradle-dependency-error
+      description: 'Wants to resolve the OS-MABS-GEN-40017 "There was an issue
+        generating the app. Gradle now requires you to declare dependencies
+        using ''implementation'' or ''api'' instead of ''compile''" error,
+        caused by a custom plugin using a Gradle compile dependency in MABS
+        8 or higher, by checking the Service Center build logs to identify
+        the affected plugin and updating its Gradle files to use
+        implementation or api instead of compile, so that the Android
+        mobile app package generates successfully.'
     - name: PNG resource error
       id: png-resource-error
       description: 'Wants to resolve the OS-MABS-GEN-40002 "We couldn''t process
@@ -6873,6 +6893,14 @@ knowledge-needs:
         project, by checking the Service Center build logs to identify the
         plugin and configuring the required Swift Language Version setting,
         so that the iOS mobile app package generates successfully.'
+    - name: Fix plugin Swift version
+      id: fix-plugin-swift-version
+      description: 'Wants to resolve the OS-MABS-GEN-40014 error ("...Cordova
+        plugin {0} is not compatible with the ''Swift Language Version''
+        build setting...") that blocks iOS app generation, by checking the
+        build logs in Service Center to identify the incompatible custom
+        plugin and updating its configuration to match the defined Swift
+        Language Version, so that iOS app generation completes successfully.'
     - name: Metadata conflict error
       id: metadata-conflict-error
       description: 'Wants to resolve the OS-MABS-GEN-40008 "meta-data {0} is
@@ -6887,6 +6915,24 @@ knowledge-needs:
         correctly configured" error, by reviewing and correcting the Google
         Services plugin configuration file setup, so that the Android mobile
         app package generates successfully.'
+    - name: Non-Cordova module load error
+      id: non-cordova-module-load-error
+      description: 'Wants to resolve the OS-MABS-GEN-40013 "Using
+        requireCordovaModule to load a non-cordova module is not supported"
+        error, by checking the Service Center build logs to identify the
+        custom plugin using requireCordovaModule and replacing it with
+        require, so that the mobile app package generates successfully.'
+    - name: Whitelist plugin error
+      id: whitelist-plugin-error
+      description: 'Wants to resolve the OS-MABS-GEN-40018 "There was an issue
+        generating the app. Whitelist Plugin was renamed AllowList in newer
+        Cordova Android engine versions. Check your plugin code and try
+        again." error, caused by a custom plugin referencing the Cordova
+        Android Whitelist plugin that was renamed to AllowList starting in
+        Cordova Android 10, by checking the Service Center build logs to
+        identify the affected plugin and updating its Whitelist references
+        to Allowlist, so that the Android mobile app package generates
+        successfully.'
     - name: Cordova build failure
       id: cordova-build-failure-error
       description: 'Wants to resolve the OS-MABS-GEN-50000 "Couldn''t generate
@@ -6894,6 +6940,28 @@ knowledge-needs:
         information." error, by regenerating the app package and checking the
         build logs in Service Center for O11 or ODC Portal for ODC, so that
         the mobile app package generates successfully.'
+    - name: Android build tools error
+      id: android-build-tools-error
+      description: 'Wants to resolve the OS-MABS-GEN-40020 "Couldn''t generate
+        your app. It''s configured to use Android Build Tools version
+        <used_version>, but the version can''t be modified. Check if it''s
+        being overridden in your extensibility configurations or via a
+        plugin." error, caused by the android-buildToolsVersion preference
+        being overridden in the app''s extensibility configurations or via a
+        specialized hook in a Cordova plugin, by removing the override from
+        the extensibility configurations or identifying the offending
+        plugin, so that the Android mobile app package generates
+        successfully.'
+    - name: Kotlin version error
+      id: kotlin-version-error
+      description: 'Wants to resolve the OS-MABS-GEN-40021 "Couldn''t generate
+        your app. Kotlin version <used_version> isn''t compatible with this
+        app. Update it to <minimum_version> or higher." error, caused by the
+        GradlePluginKotlinVersion preference in the Extensibility
+        Configurations or a plugin''s specialized hook setting an
+        incompatible Kotlin version, by updating the preference to a
+        compatible version or checking whether a plugin is overriding it,
+        so that the mobile app package generates successfully.'
     - name: Invalid CocoaPods spec error
       id: invalid-cocoapods-spec-error
       description: 'Wants to resolve the OS-MABS-PLG-40005 "Spec attribute in
@@ -7151,6 +7219,16 @@ knowledge-needs:
         configurations for validity, escalating to OutSystems Support if
         the problem persists, so that the mobile app package generates
         successfully.'
+    - name: Plugin compile error
+      id: plugin-compile-error
+      description: 'Wants to resolve the OS-MABS-GEN-40019 "Couldn''t compile
+        the Cordova plugin <plugin_name>. Review your plugin configurations
+        and check our documentation for more information if the problem
+        persists." error, caused by a malformed plugin resource failing
+        during the compilation phase of the application package, by checking
+        the Service Center build logs to identify the affected plugin and
+        correcting the malformed resource, so that the mobile app package
+        generates successfully.'
     - name: Undocumented MABS error
       id: undocumented-mabs-error
       description: Wants to resolve a MABS build error that isn't yet documented,

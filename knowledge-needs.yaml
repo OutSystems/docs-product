@@ -1742,6 +1742,14 @@ knowledge-needs:
         Integration/Workflow Builder has network access to the correct source
         and destination per OutSystems network requirements, so that they can
         sign in to Integration Builder or Workflow Builder.'
+    - name: Fix builder credentials
+      id: fix-builder-credentials
+      description: 'Wants to resolve the "It was not possible to sign into
+        <Integration/Workflow> Builder" error in OutSystems 11, caused by
+        invalid credentials or a blocked user, by verifying the username and
+        password, confirming with a LifeTime administrator that the username
+        exists, and asking a LifeTime administrator to unblock the username,
+        so that they can sign into Integration Builder or Workflow Builder.'
     - name: Fix IM unreachable
       id: fix-im-unreachable
       description: 'Wants to resolve the "Integration Manager couldn''t be
@@ -7022,6 +7030,21 @@ knowledge-needs:
         reviewing logs for details about the compilation state or
         associated errors and contacting OutSystems Support if none are
         found, so that the application build process can proceed.'
+    - name: Connection timeout error
+      id: connection-timeout-error
+      description: 'Wants to resolve the OS-MABS-CKT-10000 "It looks like the
+        connection timed out" error that blocks mobile app package
+        generation, by retrying the build and reviewing the Service Center
+        build logs, escalating to OutSystems Support if the problem
+        persists, so that the mobile app package generates successfully.'
+    - name: Fix missing icon error
+      id: fix-missing-icon-error
+      description: 'Wants to resolve the OS-MABS-CNF-40000 "There''s an icon
+        missing in your extensibility configurations" error that blocks
+        mobile app package generation, caused by a missing icon density or
+        size in an extensibility configuration, by checking and fixing the
+        icon''s density/size in Service Studio (O11) or ODC Studio, so that
+        the mobile app package generates successfully.'
   - name: AppShield
     id: appshield
     subtopics:

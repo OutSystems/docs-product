@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) includes LifeTime, a dedicated console for centralized infrastructure management.
+summary: Configure LifeTime in OutSystems 11 (O11) by registering environments, mapping roles, and importing users through the setup wizard.
 tags: infrastructure management, environment configuration, it security, centralized management, application lifecycle management
 locale: en-us
 guid: 581ba434-6216-4005-8974-44c44285d933

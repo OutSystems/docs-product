@@ -1,6 +1,6 @@
 ---
 tags: ui patterns, range slider, customization, css, web development
-summary: Explore the features and customization options of the Range Slider UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
+summary: Range Slider UI Pattern reference for OutSystems 11 (O11), covering CSS selectors, events, and interval color customization.
 locale: en-us
 guid: 6b1ad133-79fa-4894-8d51-26e0c33f8f39
 app_type: traditional web apps

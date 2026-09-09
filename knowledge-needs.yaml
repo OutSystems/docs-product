@@ -1057,6 +1057,13 @@ knowledge-needs:
         test queries, the debugger's variable inspector, and the data type
         picker, so they can correctly interpret File data during
         development, testing, and debugging.
+    - name: Download content type behavior
+      id: download-content-type-behavior
+      description: Wants to understand that the browser decides whether to
+        open a downloaded file in-browser (e.g. PDF viewer) or save it to
+        disk based on the file's MIMEType, set at upload time and not
+        controlled by ODC, so they can predict download behavior for files
+        handled by the Download node.
     - name: File reference lifecycle
       id: file-reference-lifecycle
       description: Wants to understand how a File attribute's reference
@@ -1066,6 +1073,13 @@ knowledge-needs:
         while other committed records (including via cascade delete)
         still reference it, so they can predict when File content
         actually gets removed.
+    - name: Unsaved upload lifecycle
+      id: unsaved-upload-lifecycle
+      description: Wants to understand how ODC handles a file uploaded through the Upload
+        widget before it's saved to an entity attribute, including that aborted
+        or interrupted uploads are deleted immediately and unsaved uploads are
+        automatically deleted after a fixed retention window, so they can save
+        the file reference in time to prevent it being removed.
     - name: File storage operations
       id: file-storage-operations
       description: Wants to understand how File storage behaves
@@ -3502,6 +3516,19 @@ knowledge-needs:
     subtopics:
     - name: Layouts
       id: layouts
+    - name: Add Sign In button
+      id: add-sign-in-button
+      description: Wants to add a second Sign In button to the Login Form UI
+        Pattern by dragging a Columns 2 structure into the layout-login-button
+        container and setting the new button's Label, in Service Studio, so
+        that the login screen offers an additional sign-in action, in a
+        Traditional Web App (O11).
+    - name: Modal animation speed
+      id: modal-animation-speed
+      description: Wants to change the animation speed of the Modal UI Pattern
+        by overriding the .modal .animate CSS class's animation-duration
+        property in the theme, in Service Studio, so that the modal opens
+        and closes faster or slower, in a Traditional Web App (O11).
     - name: Adding a Block
       id: adding-a-block
     - name: Block widget reference
@@ -3522,12 +3549,32 @@ knowledge-needs:
         Service Studio, including Text and Is Reminder, so that they can
         correctly add a development-time screen annotation that appears as a
         TrueChange reminder in a Traditional Web App (O11).
+    - name: Add panel shadow
+      id: add-panel-shadow
+      description: Wants to add a box-shadow effect to the Panel UI Pattern by
+        setting the ExtendedClass parameter to shadow-l, in Service Studio, so
+        that the panel displays a shadow effect in a Traditional Web App (O11).
     - name: Expression widget reference
       id: expression-widget-reference
       description: Wants to look up the properties and runtime properties of the
         Expression widget in Service Studio, including Value, Escape Content, and
         Id, so that they can correctly display a literal text or an evaluated
         expression on a screen in a Traditional Web App (O11).
+    - name: Range Slider reference
+      id: range-slider-reference
+      description: Wants to look up the events and CSS selectors for the
+        Range Slider UI Pattern, including the OnChange event and
+        .noUi-handle/.noUi-connect classes, so that they can correctly
+        customize the handle and interval color, in a Traditional Web App
+        (O11).
+    - name: Light Box Image reference
+      id: lightbox-image-reference
+      description: Wants to look up the CSS selectors and classes for the
+        Light Box Image UI Pattern, including .pswp__bg,
+        .pswp__ui--fit .pswp__top-bar/.pswp__caption,
+        .lightbox-content-thumbnail img, and .pswp__item img, so that they
+        can correctly customize the overlay opacity and add rounded
+        corners to images, in a Traditional Web App (O11).
     - name: File Upload reference
       id: file-upload-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -3545,6 +3592,23 @@ knowledge-needs:
         the .floating-actions.is--open class, so that they can correctly
         customize its layout, open/close behavior, and position (for example,
         moving it to the opposite side of the screen), in a Traditional Web
+        App (O11).
+    - name: Navigation Bar reference
+      id: navigation-bar-reference
+      description: Wants to look up the CSS selectors and classes for the
+        Navigation Bar UI Pattern, including .navigation-bar.is--sticky,
+        .navigation-bar-item.is--active/is--open/is--closed, and
+        .navigation-bar-item-content active/open/closed/expanded/collapsed
+        states, plus how to override the active-color CSS variable on items
+        and sub-items, so that they can correctly customize its layout and
+        appearance, in a Traditional Web App (O11).
+    - name: Use Navigation Bar with ListRecords
+      id: navigation-bar-listrecords
+      description: Wants to combine the Navigation Bar UI Pattern with a
+        ListRecords widget, by setting Line Separator to None and using
+        expressions in the NavigationBarItem/NavigationBarSubItem
+        placeholders, in Service Studio, so that navigation items are
+        dynamically generated from database content, in a Traditional Web
         App (O11).
     - name: List Records layout
       id: list-records-layout
@@ -3981,6 +4045,36 @@ knowledge-needs:
         and OptionalConfigs (Shape, AnimateInitialProgress), so that they can
         correctly configure a progress bar's appearance and behavior in OutSystems
         11 mobile apps and reactive web apps.
+    - name: Progress Bar CSS reference
+      id: progress-bar-css-reference
+      description: Wants to look up the CSS selectors and classes for the
+        Progress Bar UI Pattern, including .progress-container.flex-direction-column
+        and .progress-container.flex-direction-row, so that they can correctly
+        customize the pattern's layout, in a Traditional Web App (O11).
+    - name: Customize Progress Bar CSS
+      id: customize-progress-bar-css
+      description: Wants to customize the Progress Bar UI Pattern's appearance
+        with custom CSS, including dynamically changing its color based on value
+        via the Color parameter, overriding the .progress class's padding and
+        border, and setting background-color to transparent to remove the
+        background, in Service Studio, so that the progress bar's visual style
+        matches app requirements, in a Traditional Web App (O11).
+    - name: Progress Circle CSS reference
+      id: progress-circle-css-reference
+      description: Wants to look up the CSS selectors and classes for the
+        Progress Circle UI Pattern, including .progress-circle .progress-circle-content
+        and .progress-circle .progress-semi-circle-content, so that they can
+        correctly identify the pattern's structure when the IsSemiCircle
+        parameter is False or True, in a Traditional Web App (O11).
+    - name: Customize Progress Circle CSS
+      id: customize-progress-circle-css
+      description: Wants to customize the Progress Circle UI Pattern's appearance
+        with custom CSS, including dynamically changing its color based on value
+        via the ProgressColor parameter, removing the round corners by setting
+        stroke-linecap to square, and changing the trail thickness via the
+        AdvancedFormat property, in Service Studio, so that the progress
+        circle's visual style matches app requirements, in a Traditional Web
+        App (O11).
     - name: Use Rating pattern
       id: use-rating-pattern
       description: Wants to add the Rating UI Pattern to a screen and configure its
@@ -5786,6 +5880,13 @@ knowledge-needs:
         documentation for an element or explain unfamiliar logic and app
         structure, so that an element's intent and impact are understood
         before making changes.
+    - name: Prompt best practices
+      id: mentor-studio-prompt-best-practices
+      description: Wants to write clear, specific prompts for Mentor Studio
+        by referencing elements by name, sending one task per prompt, and
+        providing context like data types or relationships, so that
+        requests to modify logic, UI, or data produce predictable,
+        correctly-scoped results.
   - name: AI models and search services
     id: ai-models-and-search-services
     subtopics:

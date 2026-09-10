@@ -1,6 +1,10 @@
 ---
 summary: Explore mobile architecture best practices and the use of the Architecture Canvas in OutSystems 11 (O11) for streamlined application development.
-tags: mobile architecture, architecture canvas, application development, best practices, module design
+tags:
+  - Architecture
+  - Best Practices
+  - Mobile app
+  - Modular Programming
 guid: 08b49902-b964-4004-b4e5-5e00c7fdd322
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

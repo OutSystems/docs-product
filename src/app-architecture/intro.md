@@ -13,7 +13,9 @@ audience:
   - Architect
   - Developer
   - Tech lead
-tags: none
+tags:
+  - Architecture
+  - Best Practices
 outsystems-tools:
   - none
 helpids: 

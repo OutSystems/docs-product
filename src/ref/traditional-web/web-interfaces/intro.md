@@ -1,6 +1,11 @@
 ---
 summary: Explore web interfaces in Traditional Web Apps using OutSystems 11 (O11).
-tags: runtime-traditionalweb
+tags:
+  - Layouts
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
 locale: en-us
 guid: 00aca302-9aa1-4fd7-a887-b99bb764dd82
 app_type: traditional web apps

@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=18-2&t=jlGay4xDI503Rj5x-1
-tags: audit trail, compliance, security monitoring, logging, regulatory standards
+tags:
+  - Architecture
+  - Logging
+  - Monitoring
+  - Security
+  - Troubleshooting
 audience:
   - Platform administrator
   - Architect

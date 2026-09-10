@@ -5,7 +5,9 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: application customization, product architecture, design patterns, upgrade strategies, user experience customization
+tags:
+  - Architecture
+  - Multi-Tenant
 audience:
   - Developer
   - Front-end developer

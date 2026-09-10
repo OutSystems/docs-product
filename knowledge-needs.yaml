@@ -971,6 +971,16 @@ knowledge-needs:
         attribute with SetAriaHidden when showing or hiding the alert, in
         Service Studio, so that the pattern meets WCAG 2.2 AA accessibility
         requirements, in mobile apps and reactive web apps (O11).
+    - name: Accessible Notification pattern
+      id: accessible-notification-pattern
+      description: Wants to make the Notification UI Pattern accessible to
+        assistive technologies, by choosing between the alertdialog role
+        (for interactive notifications with buttons) and the alert role
+        with aria-live="assertive" (for non-interactive status messages),
+        and applying the correct ARIA attributes via a JavaScript node in
+        the Initialized client action when needed, in Service Studio, so
+        that the pattern meets WCAG 2.2 AA accessibility requirements, in
+        mobile apps and reactive web apps (O11).
     - name: Accessible Card Background pattern
       id: accessible-card-background-pattern
       description: Wants to improve text contrast on the Card Background UI
@@ -995,6 +1005,15 @@ knowledge-needs:
         Service Studio, so that screen readers correctly announce the
         input's purpose, meeting WCAG 2.2 AA accessibility requirements, in
         mobile apps and reactive web apps (O11).
+    - name: Accessible Lightbox Image pattern
+      id: accessible-lightbox-image-pattern
+      description: Wants to make the Lightbox Image UI Pattern accessible to
+        assistive technologies, by providing a meaningful aria-label or alt
+        attribute for each image displayed within the lightbox dialog, in
+        Service Studio, so that screen readers announce an accessible name
+        for each image, meeting WCAG 2.2 AA Non-text Content (1.1.1) and
+        Name, Role, Value (4.1.2) requirements, in mobile apps and reactive
+        web apps (O11).
   - name: Translating apps
     id: translating-apps
     subtopics:
@@ -3624,6 +3643,30 @@ knowledge-needs:
       description: Wants to look up the properties of the Master Detail UI Pattern in
         Service Studio, so that they can correctly configure the widget's layout
         and behavior in mobile apps and reactive web apps (O11).
+    - name: Use Master Detail pattern
+      id: use-master-detail-pattern
+      description: Wants to add the Master Detail UI Pattern to a screen, bind
+        the LeftContent list to an aggregate, and use a client action to
+        filter and fetch the RightContent details for the selected item,
+        including adding the widget via Toolbox or Search in other modules
+        if the dependency isn't added, in Service Studio, so that a master
+        list and its corresponding item details display together in mobile
+        apps and reactive web apps (O11).
+    - name: Dropdown Server reference
+      id: dropdown-server-reference
+      description: Wants to look up the properties, events, and JavaScript API
+        (OutSystems.OSUI.Patterns.DropdownAPI and DropdownServerSideItemAPI)
+        of the Dropdown Server Side UI pattern in Service Studio, so that
+        they can correctly configure and programmatically control the
+        pattern's behavior in mobile apps and reactive web apps (O11).
+    - name: Use Dropdown Server Side
+      id: use-dropdown-server-side
+      description: Wants to add the Dropdown Server Side UI pattern to a
+        screen, bind its list source to an aggregate, customize item content
+        with expressions and images, and save the selected option in a local
+        variable via the OnSelected event, in Service Studio, so that they
+        can build a customizable, data-driven dropdown for mobile apps and
+        reactive web apps (O11).
     - name: Add Sign In button
       id: add-sign-in-button
       description: Wants to add a second Sign In button to the Login Form UI
@@ -3683,6 +3726,21 @@ knowledge-needs:
         .lightbox-content-thumbnail img, and .pswp__item img, so that they
         can correctly customize the overlay opacity and add rounded
         corners to images, in a Traditional Web App (O11).
+    - name: Use Lightbox Image pattern
+      id: use-lightbox-image-pattern
+      description: Wants to add the Lightbox Image UI Pattern to a screen by
+        dragging the widget from the Toolbox into the Main Content area,
+        adding an Image placeholder per thumbnail and selecting or
+        importing each image, in Service Studio, so that thumbnail images
+        open in full screen mode for a gallery, in mobile apps and
+        reactive web apps (O11).
+    - name: Lightbox Image properties
+      id: lightbox-image-properties
+      description: Wants to look up the properties of the Lightbox Image UI
+        Pattern in Service Studio, including Title, Group, ImageURL,
+        ImageZoom, and ExtendedClass, so that they can correctly configure
+        an image's title, gallery grouping, and full-screen zoom behavior,
+        in mobile apps and reactive web apps (O11).
     - name: File Upload reference
       id: file-upload-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -3841,6 +3899,15 @@ knowledge-needs:
         alert-warning, and alert-close.is--hidden, so that they can correctly
         customize the Alert Pattern's appearance based on its type and the
         ShowCloseButton parameter, in a Traditional Web App (O11).
+    - name: Use Notification pattern
+      id: use-notification-pattern
+      description: Wants to add the Notification UI Pattern to a screen, add
+        the OutSystemsUI dependency if the widget doesn't display in the
+        Toolbox, add content to its placeholder, and wire Open/Close buttons
+        to the NotificationOpen and NotificationClose client actions, in
+        Service Studio, so that contextual short messages like app crashes,
+        updates, or reminders display to users in mobile apps and reactive
+        web apps (O11).
     - name: Use Card Background pattern
       id: use-card-background-pattern
       description: Wants to add the Card Background UI Pattern to a screen,

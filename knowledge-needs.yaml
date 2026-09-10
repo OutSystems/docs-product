@@ -422,6 +422,13 @@ knowledge-needs:
         server-side logic (a Service Studio logic flow), in OutSystems 11,
         so that role assignment can be automated instead of done manually
         through the Users application.
+    - name: Add role in Studio
+      id: add-role-in-studio-o11
+      description: Wants to create a new application-specific Role in a
+        Service Studio module, using the Logic tab's Roles folder and Add
+        Role option, so that they can define a custom role (for example
+        HRManager) to use later in screen and logic access control, in
+        OutSystems 11.
     - name: Restrict screen access
       id: restrict-screen-access-o11
       description: Wants to restrict which end-users can open specific
@@ -436,6 +443,15 @@ knowledge-needs:
         condition to guard server-side logic or in an aggregate filter to
         restrict returned data, so that only users with the required role can
         execute actions or access sensitive data.
+    - name: Access control overview
+      id: access-control-overview
+      description: Wants to understand what access control means in
+        OutSystems 11, including the difference between authentication and
+        authorization, the built-in Anonymous and Registered roles versus
+        application-specific roles, and how authorization is granted to
+        users, either programmatically with Grant/Revoke actions or manually
+        in the Users app, so they can reason about how permissions are
+        structured before implementing them.
     - name: Hierarchical roles choice
       id: hierarchical-roles-choice
       description: Wants to decide whether to use hierarchical roles instead
@@ -6096,6 +6112,12 @@ knowledge-needs:
         entities, roles, screens, and stateflows before generating, so
         that misinterpretations are caught early and the generated app
         matches the requirements.
+    - name: Deploy or continue
+      id: mentor-web-deploy-or-continue
+      description: Wants to decide whether to deploy a refined Mentor Web app to test or
+        production through Portal, or continue building it in ODC Studio, based
+        on which capabilities require ODC Studio, so that they choose the right
+        next step after the refine phase.
   - name: Mentor Web prompts
     id: mentor-web-prompts
     subtopics:
@@ -7482,6 +7504,45 @@ knowledge-needs:
         confirming and updating the certificate and provisioning profile
         information so they match each other, so that the mobile app
         package generates successfully.'
+    - name: Fix build type mismatch
+      id: fix-build-type-mismatch
+      description: Wants to fix the "application build type must match the
+        provisioning profile" error when generating an iOS mobile app, by
+        checking that the provisioning profile matches the requested build
+        type and adjusting either the build type or the provisioning
+        profile, so that the app package can be generated successfully.
+    - name: APS environment mismatch
+      id: aps-environment-mismatch-error
+      description: 'Wants to resolve the OS-MABS-SIG-40001 "The APS Environment
+        <value> doesn''t match your provisioning profile" error, caused by an
+        iOS app''s APS Environment entitlement value not matching the
+        provisioning profile''s declared value, by fixing the mismatch and
+        escalating to OutSystems Support if the problem persists, so that the
+        mobile app package generates successfully.'
+    - name: Certificate format error
+      id: certificate-format-error
+      description: 'Wants to resolve the OS-MABS-SIG-40004 "This certificate
+        has an unknown file format." error, caused by MABS being unable to
+        parse an iOS app''s certificate file, by checking that the
+        certificate uses the .p12 format and replacing it if needed, so that
+        the mobile app package generates successfully.'
+    - name: Provisioning format error
+      id: provisioning-format-error
+      description: 'Wants to resolve the OS-MABS-SIG-40006 "Your provisioning
+        profile has an unknown format." error, caused by MABS being unable
+        to parse an iOS app''s provisioning profile file, by checking that
+        the provisioning profile uses the .mobileprovision format and
+        replacing it if needed, so that the mobile app package generates
+        successfully.'
+    - name: Certificate keys error
+      id: certificate-keys-error
+      description: 'Wants to resolve the OS-MABS-SIG-40008 "There was an
+        issue reading the certificate keys." error, caused by MABS failing
+        to process or find the necessary information in an iOS app''s
+        provisioning profile, by checking that the provisioning profile is
+        valid and uses the .mobileprovision format and replacing it if
+        needed, escalating to OutSystems Support if the problem persists,
+        so that the mobile app package generates successfully.'
     - name: Document storage error
       id: document-storage-error
       description: 'Wants to resolve the OS-MCO-50002 "A document is not
@@ -8494,6 +8555,23 @@ knowledge-needs:
         configured external identity provider's login page.
     - name: External IDPs
       id: external-idps
+    - name: Replace external IdP
+      id: replace-external-idp
+      description: Wants to replace an external IdP in ODC without disrupting
+        authentication, by configuring and assigning the new provider,
+        updating apps with custom login logic (settings or the
+        IdentityProvider property) to reference it, verifying successful
+        authentication, and then unassigning the old provider, so that user
+        profile associations are preserved and login continuity isn't
+        interrupted, including when only the issuer changes.
+    - name: Remove built-in IdP
+      id: remove-built-in-idp
+      description: Wants to remove the built-in identity provider assignment
+        for an organization or app stage in ODC Portal (Management > Govern
+        > Identity providers > Built-in provider > Unassign), by clearing
+        the scope checkboxes to unassign, so that end users authenticate
+        only via the assigned external IdP(s), understanding this action
+        can cause lockout if the external IdP isn't working correctly.
     - name: Assign external IdP
       id: assign-external-idp
       description: Wants to assign an existing external identity provider to their

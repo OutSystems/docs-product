@@ -1,6 +1,11 @@
 ---
 summary: Troubleshoot AppShield crashes for mobile apps on OutSystems 11 (O11) by analyzing crash logs for Android and configuring ExitOnURL for iOS.
-tags: support-application_development, runtime-mobile
+tags:
+  - Android
+  - iOS
+  - Mobile app
+  - Security
+  - Troubleshooting
 locale: en-us
 guid: 51175e8a-0f68-472a-928b-96b81646011a
 app_type: mobile apps

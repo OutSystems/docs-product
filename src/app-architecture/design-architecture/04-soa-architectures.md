@@ -5,7 +5,9 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-1078&t=WkNS4cBkPZHvTban-1
-tags: service-oriented architecture, api design, system integration, legacy system migration
+tags:
+  - Architecture
+  - Web services
 audience:
   - Developer
   - Architect

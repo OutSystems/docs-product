@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) is used to develop a soccer field booking application from an architecture blueprint.
-tags: outsystems development, web application development, application blueprint implementation, service studio usage
+tags:
+  - Aggregates
+  - Architecture
+  - Data Synchronization
+  - Entities
+  - Modular Programming
+  - REST
+  - Timers
 guid: aece0925-1c82-430e-ae4f-bc436e097eba
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) enhances mobile app security with the licensed AppShield plugin, offering runtime and rest protection.
-tags: mobile app security, plugin licensing, mabs, runtime protection, app hardening
+tags:
+  - Android
+  - Forge
+  - iOS
+  - Mobile app
+  - Plugins
+  - Security
 locale: en-us
 guid: bacbf600-bd10-4caf-820a-205c16a58691
 app_type: mobile apps

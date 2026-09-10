@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-489&t=WkNS4cBkPZHvTban-1
-tags: soa design, architecture canvas, reusable services, module dependency, cost-effective architecture
+tags:
+  - Architecture
+  - Lifecycle
+  - Modular Programming
 audience:
   - Developer
   - Architect

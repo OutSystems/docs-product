@@ -5,7 +5,13 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-1739&t=WkNS4cBkPZHvTban-1
-tags: enterprise architecture, ui design, theme customization, css, layout design
+tags:
+  - Architecture
+  - Blocks
+  - CSS
+  - Front-End
+  - Layouts
+  - Themes
 audience:
   - Front-end developer
   - Developer

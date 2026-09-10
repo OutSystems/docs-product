@@ -39,6 +39,10 @@ Use these rules when writing or reviewing documentation in this repository.
         * Entirely code font.
         * Entirely link text.
 
+## Version numbers
+
+* **API and plugin versions**: Use a lowercase `v` (for example, `v1`, `v2`), not `V1`, `V2`.
+
 ## Links and cross-references
 
 * **Write descriptive link text**: Use short, unique, descriptive phrases. Do not use "click here".

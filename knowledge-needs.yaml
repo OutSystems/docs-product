@@ -1019,6 +1019,15 @@ knowledge-needs:
         background combinations meet WCAG 2.2 AA contrast requirements (4.5:1
         for normal text, 3:1 for large text) without altering the app's color
         palette, in mobile apps and reactive web apps (O11).
+    - name: Accessible Badge pattern
+      id: accessible-badge-pattern
+      description: Wants to fix low-contrast color combinations on the Badge UI
+        Pattern by identifying the theme's low-contrast OutSystems UI colors
+        and updating the theme's CSS color variables in Service Studio, so
+        that text and background combinations meet WCAG 2.2 AA contrast
+        requirements (4.5:1 for normal text, 3:1 for large text) without
+        altering the app's color palette, in mobile apps and reactive web
+        apps (O11).
     - name: Accessible Animated Label pattern
       id: accessible-animated-label-pattern
       description: Wants to make the Animated Label UI Pattern accessible to
@@ -1036,6 +1045,44 @@ knowledge-needs:
         for each image, meeting WCAG 2.2 AA Non-text Content (1.1.1) and
         Name, Role, Value (4.1.2) requirements, in mobile apps and reactive
         web apps (O11).
+    - name: Accessible Range Slider Interval
+      id: accessible-range-slider-interval-pattern
+      description: Wants to make the Range Slider Interval UI Pattern
+        accessible to assistive technologies, by adding a JavaScript node
+        to the OnReady client action that assigns distinct aria-label
+        attributes ("Lower value handle" and "Upper value handle") to each
+        .noUi-handle element, in Service Studio, so that screen readers can
+        distinguish between the lower and upper handles, meeting WCAG 2.2
+        AA accessibility requirements, in mobile apps and reactive web apps
+        (O11).
+    - name: Accessible Submenu pattern
+      id: accessible-submenu-pattern
+      description: Wants to increase the pointer target size of Submenu UI
+        Pattern headers, by adding a custom CSS rule (.osui-submenu__header)
+        that sets a minimum height and width of 24px in the theme's style
+        sheet, in Service Studio, so that the pattern meets WCAG 2.2 AA
+        accessibility requirements for touch and pointer target size, in
+        mobile apps and reactive web apps (O11).
+    - name: Accessible Wizard pattern
+      id: accessible-wizard-pattern
+      description: Wants to make the Wizard UI Pattern accessible to
+        assistive technologies, by removing redundant aria-label attributes
+        and hiding the icon wrapper from screen readers, assigning the
+        tabpanel role to each Wizard item when steps navigate between
+        panels, or setting aria-current="step" on the active item when the
+        Wizard is used as a progress tracker, via a JavaScript node in the
+        OnReady client action, in Service Studio, so that the pattern meets
+        WCAG 2.2 AA accessibility requirements, in mobile apps and reactive
+        web apps (O11).
+    - name: Accessible Counter pattern
+      id: accessible-counter-pattern
+      description: Wants to fix low-contrast color combinations on the Counter
+        UI Pattern by identifying the theme's low-contrast OutSystems UI
+        colors and updating the theme's CSS color variables in Service
+        Studio, so that text and background combinations meet WCAG 2.2 AA
+        contrast requirements (4.5:1 for normal text, 3:1 for large text)
+        without altering the app's color palette, in mobile apps and
+        reactive web apps (O11).
   - name: Translating apps
     id: translating-apps
     subtopics:
@@ -3740,6 +3787,21 @@ knowledge-needs:
         .noUi-handle/.noUi-connect classes, so that they can correctly
         customize the handle and interval color, in a Traditional Web App
         (O11).
+    - name: Use Range Slider Interval
+      id: use-range-slider-interval-pattern
+      description: Wants to add the Range Slider Interval UI Pattern to a
+        screen by dragging the widget into the Main Content area, setting
+        the MinValue, MaxValue, StartingValueFrom, and StartingValueTo
+        properties, and creating an OnValueChange client action to read the
+        IntervalStart and IntervalEnd values, in Service Studio, so that
+        users can select a value within a chosen range, in mobile apps and
+        reactive web apps (O11).
+    - name: Slider Interval reference
+      id: range-slider-interval-reference
+      description: Wants to look up the configuration properties and events of the Range
+        Slider Interval UI Pattern in Service Studio, so that they can correctly
+        configure and customize the pattern's behavior, in mobile apps and
+        reactive web apps (O11).
     - name: Light Box Image reference
       id: lightbox-image-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -3883,6 +3945,34 @@ knowledge-needs:
         the If Widget in Service Studio, including Condition, Animate, and Id,
         so that they can correctly configure conditional content rendering on
         a screen in a Traditional Web App or Mobile App (O11).
+    - name: Badge reference
+      id: badge-reference
+      description: Wants to look up the configurable properties of the Badge UI Pattern in
+        Service Studio, so that they can correctly configure a numerical
+        notification badge in a Mobile App or Reactive Web App for OutSystems
+        11.
+    - name: Use Badge pattern
+      id: use-badge-pattern
+      description: Wants to add the Badge UI Pattern to a screen and bind its
+        Number property to an aggregate count, including adding the widget
+        via Toolbox or Search in other modules if the dependency isn't added,
+        in Service Studio, so that numerical notifications like unread counts
+        display in mobile apps and reactive web apps (O11).
+    - name: Counter reference
+      id: counter-reference
+      description: Wants to look up the properties of the Counter UI Pattern in
+        Service Studio, including BackgroundColor, IsVertical, Height, and
+        ExtendedClass, so that they can correctly configure a counter's
+        appearance and orientation, in a Mobile App or Reactive Web App for
+        OutSystems 11.
+    - name: Use Counter pattern
+      id: use-counter-pattern
+      description: Wants to add the Counter UI Pattern to a screen and bind its
+        content to an aggregate's Count property, including creating the
+        aggregate via Fetch Data from Database and adding the widget via
+        Toolbox or Search in other modules if the dependency isn't added, in
+        Service Studio, so that a dynamic numerical count, like registered
+        users, displays in mobile apps and reactive web apps (O11).
     - name: Icon Badge reference
       id: icon-badge-reference
       description: Wants to look up the properties of the Icon Badge UI Pattern
@@ -3930,6 +4020,12 @@ knowledge-needs:
         Service Studio, so that contextual short messages like app crashes,
         updates, or reminders display to users in mobile apps and reactive
         web apps (O11).
+    - name: Notification reference
+      id: notification-reference
+      description: Wants to look up the properties and events of the Notification UI
+        Pattern in Service Studio, so that they can correctly configure and
+        control the pattern's appearance and behavior, in mobile apps and
+        reactive web apps (O11).
     - name: Use Card Background pattern
       id: use-card-background-pattern
       description: Wants to add the Card Background UI Pattern to a screen,
@@ -4203,6 +4299,14 @@ knowledge-needs:
         properties, in Service Studio for OutSystems 11, so that additional
         options are shown for a row or element when there's a space constraint
         on the UI, in mobile apps and reactive web apps.
+    - name: Use Submenu pattern
+      id: use-submenu-pattern
+      description: Wants to add the Submenu UI Pattern to a screen and populate
+        its Menu and Items placeholders with content and links, including
+        adding the widget via Toolbox or Search in other modules when the
+        dependency is missing, in Service Studio for OutSystems 11, so that
+        users get a menu nested within another menu, in mobile apps and
+        reactive web apps.
     - name: Use Mouse Events pattern
       id: use-mouse-events-pattern
       description: Wants to add the Mouse Events UI Pattern to a screen and

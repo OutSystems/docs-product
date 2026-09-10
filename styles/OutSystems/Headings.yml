@@ -303,6 +303,7 @@ exceptions:
   - SAML
   - Phosphor
   - Font Awesome
+  - OneSignal
   - Oracle
   - SQL Server
   - MCP

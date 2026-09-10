@@ -1,0 +1,8 @@
+# OutSystems style: version identifiers (API versions, plugin versions, and similar)
+# always use a lowercase 'v'. For example, v1, v2 — not V1, V2.
+extends: existence
+message: "Use a lowercase 'v' in version numbers (for example, 'v1', 'v2'), not '%s'."
+ignorecase: false
+level: warning
+tokens:
+  - '\bV[0-9]+(?:\.[0-9]+)*\b'

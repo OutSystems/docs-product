@@ -6837,6 +6837,32 @@ knowledge-needs:
   - name: Customize Mobile apps
     id: customize-mobile-apps
     subtopics:
+    - name: Plugin not found error
+      id: plugin-not-found-error
+      description: 'Wants to resolve the OS-MABS-PLG-40000 "We couldn''t find
+        Cordova plugin <plugin_name>" error, caused by MABS failing to
+        resolve the specified Cordova plugin in the NPM registry or at the
+        provided URL, by checking the build log and the plugin''s
+        extensibility configurations, retrying app generation, and
+        escalating to OutSystems Support if the problem persists, so that
+        the mobile app package generates successfully.'
+    - name: Invalid plugin error
+      id: invalid-plugin-error
+      description: 'Wants to resolve the OS-MABS-PLG-40001 "Invalid Cordova
+        plugin <plugin_name>" error, caused by an invalid plugin identifier,
+        URL, or resource (often a missing package.json) in the extensibility
+        configurations, by checking the build logs on Service Center and
+        fixing the configuration, so that the mobile app package generates
+        successfully.'
+    - name: Missing plugin variables error
+      id: missing-plugin-variables-error
+      description: 'Wants to resolve the OS-MABS-PLG-40002 "Couldn''t install
+        the Cordova plugin <plugin_name> because one or more plugin
+        variables are missing" error, caused by the plugin requiring
+        variables that are missing from the extensibility configurations of
+        the plugin module, by checking the build logs on Service Center and
+        fixing the configuration, so that the mobile app package generates
+        successfully.'
     - name: Detect device ready
       id: detect-device-ready
       description: Wants to wait until Cordova's native device APIs are fully
@@ -7120,6 +7146,23 @@ knowledge-needs:
         dependency, including hooks dependencies declared in the plugin''s
         package.json for MABS 7 and later, so that the mobile app package
         generates successfully.'
+    - name: Missing hook node module
+      id: missing-hook-node-module-error
+      description: 'Wants to resolve the OS-MABS-PLG-20000 "Couldn''t install
+        the Cordova plugin <plugin_name> because the required dependency
+        for the ''<dependency_name>'' node module in a plugin hook was
+        missing" error, by declaring all hook dependencies in the plugin''s
+        package.json, escalating to OutSystems Support if the problem
+        persists, so that the mobile app package generates successfully.'
+    - name: Blocked plugin security error
+      id: blocked-plugin-security-error
+      description: 'Wants to resolve the OS-MABS-PLG-20001 "Couldn''t install
+        the Cordova plugin <plugin_name> because an action was blocked due
+        to security concerns. Contact our support team if this problem
+        persists." error, by checking the build logs and working around the
+        imposed security limitation, escalating to OutSystems Support if the
+        problem persists, so that the mobile app package generates
+        successfully.'
     - name: Forge plugin version error
       id: forge-plugin-version-error
       description: 'Wants to resolve the OS-MABS-PLG-40019 "<plugin_name>"

@@ -580,6 +580,13 @@ knowledge-needs:
         enclosing the body in a CSS-styled container with overflow-y auto, in Service
         Studio for O11 Traditional Web Apps, so that large datasets are navigable
         without losing column context.
+    - name: Optimize mobile list data loading
+      id: optimize-mobile-list-data-loading
+      description: Wants to tune how a mobile app list fetches records on demand,
+        by setting the initial fetch size, the On Scroll Ending increment, and the
+        infinite-scroll-threshold attribute, and by keeping list items visually
+        simple, in OutSystems 11, so that scrolling stays smooth and list rendering
+        avoids visual glitches.
   - name: Securing Data
     id: securing-data
     subtopics:
@@ -946,6 +953,48 @@ knowledge-needs:
         Extended Property on Container/Placeholder widgets in Traditional Web
         Apps, in Service Studio for O11, so the generated markup uses proper
         semantic tags instead of generic span/div elements.
+    - name: Accessible master detail
+      id: accessible-master-detail
+      description: Wants to make the Master Detail UI Pattern accessible to
+        assistive technologies, by mapping the list and detail content to
+        ARIA tabs roles (tablist/tab/tabpanel), aria-controls,
+        aria-labelledby, and tabindex attributes in Service Studio, so that
+        screen readers announce the relationship between selectable items
+        and the detail panel and keyboard users can navigate predictably, in
+        mobile apps and reactive web apps (O11).
+    - name: Accessible Alert pattern
+      id: accessible-alert-pattern
+      description: Wants to make the Alert UI Pattern accessible to assistive
+        technologies, by understanding its built-in ARIA role behavior (alert
+        for Error/Warning, status for Success/Info), changing the role with
+        the SetAccessibilityRole action, and toggling the aria-hidden
+        attribute with SetAriaHidden when showing or hiding the alert, in
+        Service Studio, so that the pattern meets WCAG 2.2 AA accessibility
+        requirements, in mobile apps and reactive web apps (O11).
+    - name: Accessible Card Background pattern
+      id: accessible-card-background-pattern
+      description: Wants to improve text contrast on the Card Background UI
+        Pattern by darkening the gradient mask applied to the lower half of
+        the card via custom theme CSS, in Service Studio, so that overlaid
+        text meets WCAG 2.2 AA contrast requirements (4.5:1 for normal text,
+        3:1 for large text) without altering the app's color palette, in
+        mobile apps and reactive web apps (O11).
+    - name: Accessible Tag pattern
+      id: accessible-tag-pattern
+      description: Wants to fix low-contrast color combinations on the Tag UI Pattern by
+        identifying the theme's low-contrast OutSystems UI colors and updating
+        the theme's CSS color variables in Service Studio, so that text and
+        background combinations meet WCAG 2.2 AA contrast requirements (4.5:1
+        for normal text, 3:1 for large text) without altering the app's color
+        palette, in mobile apps and reactive web apps (O11).
+    - name: Accessible Animated Label pattern
+      id: accessible-animated-label-pattern
+      description: Wants to make the Animated Label UI Pattern accessible to
+        assistive technologies, by associating the Input widget with its
+        Label widget via the Label Properties' Input Widget dropdown, in
+        Service Studio, so that screen readers correctly announce the
+        input's purpose, meeting WCAG 2.2 AA accessibility requirements, in
+        mobile apps and reactive web apps (O11).
   - name: Translating apps
     id: translating-apps
     subtopics:
@@ -3570,6 +3619,11 @@ knowledge-needs:
     subtopics:
     - name: Layouts
       id: layouts
+    - name: Master Detail reference
+      id: master-detail-widget-reference
+      description: Wants to look up the properties of the Master Detail UI Pattern in
+        Service Studio, so that they can correctly configure the widget's layout
+        and behavior in mobile apps and reactive web apps (O11).
     - name: Add Sign In button
       id: add-sign-in-button
       description: Wants to add a second Sign In button to the Login Form UI
@@ -3773,6 +3827,13 @@ knowledge-needs:
         Badge UI Pattern, in Service Studio, so that they can correctly
         identify the pattern's structure for customization, in a Traditional
         Web App (O11).
+    - name: Use Alert pattern
+      id: use-alert-pattern
+      description: Wants to add the Alert UI Pattern to a screen, add the OutSystemsUI
+        dependency if the widget doesn't display in the Toolbox, and set the
+        MessageText placeholder and the AlertType property to the appropriate
+        alert type, in Service Studio, so that important messages, errors, or
+        warnings display to users in mobile apps and reactive web apps (O11).
     - name: Alert reference
       id: alert-reference
       description: Wants to look up the CSS selectors and classes for the Alert
@@ -3780,6 +3841,35 @@ knowledge-needs:
         alert-warning, and alert-close.is--hidden, so that they can correctly
         customize the Alert Pattern's appearance based on its type and the
         ShowCloseButton parameter, in a Traditional Web App (O11).
+    - name: Use Card Background pattern
+      id: use-card-background-pattern
+      description: Wants to add the Card Background UI Pattern to a screen,
+        add the OutSystemsUI dependency if the widget doesn't display in the
+        Toolbox, and configure its content, background image, color, and
+        height properties, in Service Studio, so that a small block of
+        information is grouped and highlighted with a background image in
+        mobile apps and reactive web apps (O11).
+    - name: Use Tag pattern
+      id: use-tag-pattern
+      description: Wants to add the Tag UI Pattern to a screen, add the
+        OutSystemsUI dependency if the widget doesn't display in the
+        Toolbox, add content to its placeholders, and configure its Color,
+        Shape, Size, and IsLight properties, in Service Studio, so that
+        small texts display in a colored tag format to show statuses,
+        labels, or categories, in mobile apps and reactive web apps (O11).
+    - name: Tag reference
+      id: tag-reference
+      description: Wants to look up the properties of the Tag UI Pattern in
+        Service Studio, including Color, Shape, Size, IsLight, and
+        ExtendedClass, so that they can correctly configure a Tag's
+        appearance in mobile apps and reactive web apps (O11).
+    - name: Use Animated Label pattern
+      id: use-animated-label-pattern
+      description: Wants to add the Animated Label UI Pattern to a screen,
+        add the OutSystemsUI dependency if the widget doesn't display in
+        the Toolbox, enter the label text, and set a name and type for the
+        Input variable, in Service Studio, so that an animated label
+        displays for user input in mobile apps and reactive web apps (O11).
     - name: Animate Alert pattern
       id: animate-alert-pattern
       description: Wants to add an enter animation to the Alert UI Pattern, using
@@ -6732,6 +6822,24 @@ knowledge-needs:
         running in the On Initialize event handler before the screen DOM loads,
         by moving them to On Ready or another later event handler, so that the
         destination screen loads quickly.
+  - name: Mobile app performance best practices
+    id: mobile-app-performance-best-practices
+    subtopics:
+    - name: Prevent mobile content flicker
+      id: prevent-mobile-content-flicker
+      description: Wants to prevent flickering and layout shift while dynamic
+        content loads on a mobile screen, by displaying an empty-state
+        placeholder for asynchronously fetched content and setting explicit
+        width and height on Image widgets, in OutSystems 11 mobile apps, so
+        that the screen transitions smoothly without visual jank.
+    - name: Prioritize mobile screen content
+      id: prioritize-mobile-screen-content
+      description: Wants to delay rendering of secondary screen content until
+        after the main content loads, by placing the secondary content in a
+        Block inside an If widget's True branch and toggling the condition
+        variable from the On Render event, in OutSystems 11 mobile apps, so
+        that the most relevant content appears first and perceived
+        performance improves.
   - name: Data security
     id: mobile-data-security
     description: Wants to protect sensitive data in OutSystems Developer Cloud (ODC)
@@ -9120,6 +9228,23 @@ knowledge-needs:
 - name: Infrastructure Setup
   guid: a1c2e3f4-5b6d-7e8f-9a0b-1c2d3e4f5a6b
   topics:
+  - name: Configuration Tool
+    id: configuration-tool
+    subtopics:
+    - name: Sync front-end configs
+      id: sync-front-end-configs
+      description: Wants to keep configuration settings identical across a
+        Deployment Controller and multiple front-end servers, by exporting
+        the Deployment Controller's configuration with the Configuration
+        Tool's Export Configuration option and importing it on each
+        front-end server with Import Configuration, so that all front-end
+        servers share the same configuration.
+    - name: Generate setup scripts
+      id: generate-setup-scripts
+      description: Wants to create and export the required SQL and PowerShell setup scripts
+        from the OutSystems 11 Configuration Tool's File menu, so that they can
+        inspect the scripts before manually running them to set up the required
+        on-premises databases and cache invalidation service.
   - name: Certificate Management
     id: certificate-management
     subtopics:
@@ -10477,6 +10602,20 @@ knowledge-needs:
       environment's serial number in Customer Portal, downloading the
       license file, and installing it, so that the environment can be
       activated or upgraded.
+  - name: Enable environment analytics
+    id: enable-environment-analytics
+    description: Wants to enable performance and end-user-experience analytics for
+      a non-Production Traditional Web Apps environment (for example, Quality Assurance)
+      in OutSystems 11, using the Configuration link and toggle on the LifeTime Analytics
+      Configuration page, so that performance issues can be detected before the app
+      reaches Production.
+  - name: Analytics data retention
+    id: analytics-data-retention
+    description: Wants to understand and adjust how long LifeTime Analytics retains
+      collected data by setting a retention period in the Factory Configuration
+      application's Platform Configurations tab, and to archive data before
+      shortening the period since older data is purged permanently, so that
+      database growth is controlled without losing needed historical analytics.
 - name: Monitor and Troubleshoot (O10)
   guid: 69e74025-d666-40fd-b224-c96f5cbba50c
   topics:

@@ -12,8 +12,9 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
-  - understand
   - remember
+  - understand
+  - evaluate
 ---
 
 # Automated Testing Tools

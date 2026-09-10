@@ -12,7 +12,6 @@ audience:
   - Architect
 coverage-type:
   - understand
-  - apply
 outsystems-tools:
   - none
 ---

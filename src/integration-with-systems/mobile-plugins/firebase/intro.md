@@ -22,6 +22,10 @@ outsystems-tools:
 coverage-type:
   - apply
 isautopublish: true
+topic:
+  - add-firebase-plugin
+  - configure-ios-tracking-prompt
+  - log-firebase-analytics-events
 ---
 
 # Firebase plugins

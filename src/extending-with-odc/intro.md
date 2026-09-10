@@ -6,6 +6,7 @@ figma:
 coverage-type:
   - understand
 topic:
+  - decide-odc-extension
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:

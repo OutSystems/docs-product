@@ -19,6 +19,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - check-app-update-mode
+  - configure-mobile-updates
+  - develop-store-only-apps
 isautopublish: true
 ---
 

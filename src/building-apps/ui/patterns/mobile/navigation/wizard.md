@@ -21,6 +21,9 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - accessible-wizard-pattern
+  - use-wizard-pattern
 isautopublish: true
 ---
 

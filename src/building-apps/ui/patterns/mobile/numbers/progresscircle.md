@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-progress-circle-pattern
+  - progress-circle-reference
+  - use-progress-circle-pattern
 isautopublish: true
 ---
 

@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
 isautopublish: true
+topic:
+  - integration-pattern-basics
 ---
 
 # REST

@@ -416,6 +416,12 @@ knowledge-needs:
         function with RoleId and UserId inputs, so that business logic can
         conditionally allow or restrict behavior based on any user's role, in
         OutSystems 11.
+    - name: Grant role in logic
+      id: grant-role-in-logic-o11
+      description: Wants to grant a role to a user programmatically inside
+        server-side logic (a Service Studio logic flow), in OutSystems 11,
+        so that role assignment can be automated instead of done manually
+        through the Users application.
     - name: Restrict logic with roles
       id: restrict-logic-with-roles-odc
       description: Wants to restrict what end-users can do or see in an ODC
@@ -864,6 +870,15 @@ knowledge-needs:
     subtopics:
     - name: Manual API tests
       id: manual-api-tests
+  - name: Automated API testing
+    id: automated-api-testing
+    subtopics:
+    - name: Automated API tests
+      id: automated-api-tests
+      description: Wants to design automated API integration tests in OutSystems,
+        using syntax testing and multi-step test scenarios and structuring them
+        as reusable, data-driven test blocks, so that the test suite stays
+        maintainable and scalable as APIs evolve.
 - name: Access Control and Privileges
   guid: ccc4b848-0f34-4854-bdc3-76e15fd4f42c
   topics:
@@ -5555,6 +5570,26 @@ knowledge-needs:
       id: sentiment-analysis
   - name: Machine learning
     id: machine-learning
+  - name: Agentic development overview
+    id: agentic-development-overview
+    description: Wants to understand what agentic development is, how it uses
+      AI capabilities (Mentor Web and Mentor Studio) to build and evolve apps
+      through a describe-review-refine conversational workflow, and how AI
+      agents, the OutSystems Model, and the compiler work together under the
+      hood, so that they can decide whether it fits their use case.
+  - name: Agentic dev vs AI apps
+    id: agentic-vs-ai-powered-apps
+    description: Wants to distinguish agentic development (AI helping the
+      developer build apps via Mentor Web and Mentor Studio) from AI-powered
+      apps (apps that call AI models at runtime via Agent Workbench and AI
+      Agent Builder to serve end users), so that they choose the right course
+      and tools for their goal.
+  - name: Choose Mentor tool
+    id: choose-mentor-tool
+    description: Wants to decide whether to use Mentor Web or Mentor Studio
+      based on app type (new web app vs existing apps, libraries, or agentic
+      apps), complexity, and access point (ODC Portal vs ODC Studio), so that
+      they pick the right tool for their development task.
   - name: Agentic Apps
     id: agentic-apps
     subtopics:
@@ -5801,6 +5836,13 @@ knowledge-needs:
         selecting the matching transport type, choosing an authentication
         method, and providing the required credentials, then testing the
         connection, so that the server's tools become available for import.
+    - name: Import MCP tools
+      id: import-mcp-tools
+      description: Wants to select and optionally rename specific tools
+        from a tested MCP connection in ODC Portal so they import as
+        server actions available in ODC Studio, understanding that ODC
+        validates each tool's JSON schema and imports only supported input
+        types during that process.
     - name: Use connector tools in agent
       id: use-connector-tools-in-agent
       description: Wants to add imported prebuilt-connector tools as
@@ -5809,6 +5851,12 @@ knowledge-needs:
         common errors (invalid key, empty results, rate limit), so that
         external service functionality can be used within apps and agentic
         flows.
+    - name: Use MCP tools in agent
+      id: use-mcp-tools-in-agent
+      description: Wants to add imported MCP tool server actions as
+        dependencies in ODC Studio and use them as tools in an agent's
+        Call Agent element, configuring parameters and mapping values, so
+        that MCP capabilities can be invoked within an agentic app.
     - name: MCP unavailable patterns
       id: mcp-unavailable-patterns
       description: Wants to identify which JSON schema input patterns
@@ -5871,6 +5919,13 @@ knowledge-needs:
   - name: Mentor Web app generation
     id: mentor-web-app-generation
     subtopics:
+    - name: Mentor Web workflow
+      id: mentor-web-workflow
+      description: Wants to understand the five phases of the Mentor Web
+        workflow (input, blueprint, generate, refine, deploy or continue
+        in ODC Studio) and the validation checkpoint at each phase, so
+        that they know what to expect end-to-end before building an app
+        with Mentor Web.
     - name: Generate app from document
       id: generate-app-from-document
       description: Wants to generate an ODC app in Mentor Web by uploading
@@ -6623,6 +6678,30 @@ knowledge-needs:
         attributes tracking whether a record originated from the server, was
         modified locally, and remains active, so that one-to-many master/detail
         records stay consistent under a "last write wins" strategy.
+    - name: Sync actions overview
+      id: sync-actions-procedure
+      description: Wants to understand the out-of-the-box OfflineDataSync,
+        ServerDataSync, and TriggerOfflineDataSync actions and the SyncUnit
+        parameter, and how they call each other in sequence to run the data
+        synchronization procedure, in OutSystems 11 mobile apps, so that they
+        can build the client-side and server-side logic needed to keep local
+        storage and server data consistent.
+    - name: Configure auto sync
+      id: configure-auto-sync
+      description: Wants to configure the OfflineDataSyncConfiguration action
+        to automatically trigger the data synchronization when the app gets
+        online, when the user logs in, or when the user resumes the app, and
+        to set the automatic retry and retry interval on failure, in
+        OutSystems 11 mobile apps, so that synchronization keeps local and
+        server data consistent without requiring a manual trigger.
+    - name: Other sync components
+      id: other-sync-components
+      description: Wants to understand the OfflineDataSyncEvents Block (used
+        in the Layout Block to handle OnSyncStart, OnSyncComplete, and
+        OnSyncError events), the NetworkStatusChanged Block, and the
+        GetNetworkStatus action, in OutSystems 11 mobile apps, so that they
+        can react to synchronization events and network connectivity changes
+        in their application.
   - name: Mobile app performance troubleshooting
     id: mobile-app-performance-troubleshooting
     subtopics:
@@ -7200,6 +7279,16 @@ knowledge-needs:
         error, by reviewing the server and plugin access permissions used
         to fetch the plugin, so that the mobile app package generates
         successfully.'
+    - name: Fix plugin fetch timeout
+      id: fix-plugin-fetch-timeout
+      description: 'Wants to resolve the OS-MABS-PLG-10000 "There was an
+        issue fetching the Cordova plugin <plugin_name> because the
+        connection timed out. Please try again." error that blocks mobile
+        app package generation, caused by MABS timing out while fetching a
+        Cordova plugin, by checking the Service Center build logs and the
+        plugin''s hosting location and retrying the build, escalating to
+        OutSystems Support if the problem persists, so that the mobile app
+        package generates successfully.'
     - name: Plugin fetch HTTP error
       id: plugin-fetch-http-error
       description: 'Wants to resolve the OS-MABS-PLG-40014 "There was an
@@ -7228,6 +7317,25 @@ knowledge-needs:
         during the compilation phase of the application package, by checking
         the Service Center build logs to identify the affected plugin and
         correcting the malformed resource, so that the mobile app package
+        generates successfully.'
+    - name: Custom plugin error
+      id: custom-plugin-error
+      description: 'Wants to resolve the OS-MABS-GEN-40022 "There was an issue
+        generating the app. A plugin compilation failed with the following
+        reason: {REASON}" error, caused by a mobile plugin failing the build
+        with a customizable message controlled by the plugin''s owner, by
+        following the instructions or information given in the {REASON}
+        message or contacting the plugin developer for more information, so
+        that the mobile app package generates successfully.'
+    - name: Renamed XML error
+      id: renamed-xml-error
+      description: 'Wants to resolve the OS-MABS-GEN-40023 "There was an issue
+        generating the app. Plugin ''{plugin-name}'' is trying to access
+        ''{filename}.xml'', but this file was renamed in Cordova Android 14"
+        error, caused by a custom plugin referencing the old strings.xml,
+        colors.xml, or themes.xml file names that were renamed with a
+        ''cdv_'' prefix in Cordova Android 14, by updating the plugin to use
+        the new file names, so that the Android mobile app package
         generates successfully.'
     - name: Undocumented MABS error
       id: undocumented-mabs-error
@@ -7348,6 +7456,16 @@ knowledge-needs:
         a plugin hook was missing" error, by checking the Service Center
         build logs to identify the custom plugin hook with the missing node
         module dependency, so that the mobile app package generates
+        successfully.'
+    - name: CocoaPods server error
+      id: cocoapods-server-error
+      description: 'Wants to resolve the OS-MABS-PLF-50002 "Your app wasn''t
+        generated because we couldn''t fetch its dependencies due to a
+        CocoaPods server error. Please try again." error, caused by an issue
+        on the CocoaPods CDN while MABS bootstraps the iOS Cordova project''s
+        dependencies, by checking the Service Center build logs and retrying
+        application generation, escalating to OutSystems Support if the
+        problem persists, so that the mobile app package generates
         successfully.'
     - name: Generic CocoaPods error
       id: cocoapods-config-error
@@ -7947,6 +8065,20 @@ knowledge-needs:
       id: prioritize-test-automation
     - name: Automated testing strategies
       id: automated-test-strategy
+    - name: Infra integration testing
+      id: infra-integration-testing
+      description: Wants to automate integration tests for non-API dependencies,
+        such as virtualization tools, external databases, mail servers, and DNS
+        or proxy servers, by identifying their most critical failure points, so
+        that automated checks can quickly pinpoint or rule out the source of an
+        issue when problems occur.
+    - name: Choose testing tool
+      id: choose-testing-tool
+      description: Wants to select the right automated testing tool for their
+        OutSystems project by weighing their team's coding skills, the app's UI
+        complexity, licensing budget, data-driven testing needs, and
+        cross-technology test coverage, so that they pick a tool suited to
+        their context instead of over- or under-investing.
   - name: Acceptance criteria
     id: acceptance-criteria
     subtopics:
@@ -8443,6 +8575,13 @@ knowledge-needs:
         app and stage (Development, QA, or Production) in the ODC Portal's
         End-user access tab, so that the end-user's access to app features
         and data updates immediately.
+    - name: Grant/revoke role action
+      id: grant-revoke-role-action-odc
+      description: Wants to grant or revoke an end-user's application role
+        programmatically, using the built-in GrantRole and RevokeRole
+        Actions inside a Server Action logic flow, in ODC, so that role
+        assignment can be automated instead of done manually through the
+        ODC Portal.
     - name: Define Permissions
       id: define-permissions
     - name: Permissions
@@ -9565,6 +9704,92 @@ knowledge-needs:
         application source code and compiled applications are stored, so
         that they can prepare the application server layer before
         deployment.
+    - name: Deploy All feature
+      id: deploy-all-feature-upgrade
+      description: Wants to use the optional modules deployment step (Deploy All)
+        introduced in Platform Server 11.19.0+ during an environment upgrade, by
+        going to Factory > Upgrades > Deploy in Service Center, understanding
+        its benefits over manual publishing, and that only modules with a failed
+        compilation or an already-deployed latest version are skipped, so that
+        they can deploy all newly compiled modules after a Platform Server
+        upgrade without publishing each one manually.
+    - name: Track deployment progress
+      id: track-deployment-progress-upgrade
+      description: Wants to monitor an in-progress modules deployment step
+        during a Platform Server upgrade in Service Center, by revisiting
+        Factory > Upgrades > Deployment for the ongoing run, viewing the
+        upgrades report once it finishes, and knowing that relaunching
+        Deploy after an error retries only the modules that failed, so that
+        they can follow the deployment to completion and recover from
+        partial failures.
+    - name: Modules prep overview
+      id: modules-prep-overview
+      description: Wants to understand the modules preparation step
+        introduced in Platform Server 11.12.0+ during an environment
+        upgrade, including that it performs a background compilation of
+        previously published modules without deploying them, that
+        publishing remains gradual and optional until they choose to
+        deploy, and how progressive modules preparation (grouped
+        compilation, dependency-ordered processing, and retry of only
+        failed modules) evolved from 11.12.0 through 11.17.0+, so that they
+        understand what happens automatically after an upgrade and when
+        they still need to publish modules manually.
+    - name: Track modules prep
+      id: track-modules-prep
+      description: Wants to monitor an in-progress modules preparation step
+        during a Platform Server upgrade in Service Center, by checking the
+        current preparation details banner or More details link, viewing
+        group-by-group progress on the Upgrades tab, or in self-managed
+        installations checking the Configuration Tool's Apply/Exit window,
+        so that they can follow progress and know when modules in a group
+        become available again for publish, configuration, or delete
+        operations.
+    - name: Module prep errors
+      id: module-prep-errors
+      description: 'Wants to locate and resolve errors and lock notifications
+        related to the modules preparation step of a Platform Server upgrade
+        in Service Center (failed or skipped module preparation, publish,
+        configuration, or delete lock messages during an ongoing upgrade,
+        and module version mismatch messages), by identifying the specific
+        message and following the recommended fix (checking the Error Log,
+        waiting for the preparation step to finish, or republishing the
+        affected modules), so that they can restore normal publishing and
+        configuration in OutSystems 11 after a platform upgrade.'
+    - name: Modules prep known issues
+      id: modules-prep-known-issues
+      description: Wants to know about a known issue affecting the modules
+        preparation step when directly upgrading from Platform Server
+        11.10.0 or earlier to a version with Flexible Upgrades (11.12.0+),
+        where applications compiled in previous versions combined with new
+        configurations added in 11.10.0 can cause high CPU usage on
+        frontends until republished, by publishing all applications instead
+        of relying on modules preparation, so that they avoid this issue
+        after the upgrade.
+    - name: Plan platform upgrade
+      id: plan-platform-upgrade
+      description: Wants to plan an OutSystems Platform Server upgrade by
+        following the four-phase process (analysis and preparation,
+        planning, execution, testing), including checking release notes
+        and breaking-changes documents and scheduling the upgrade around
+        development sprints, so that the upgrade doesn't disrupt ongoing
+        development and application impact is minimized.
+    - name: Choose upgrade go-live strategy
+      id: upgrade-golive-strategy
+      description: Wants to decide between a downtime or zero-downtime
+        approach for upgrading the Production environment's Platform
+        Server, weighing the safer rollback guarantees of a downtime
+        upgrade against the multiple-front-end requirement and potential
+        data loss of a zero-downtime upgrade, so that they select the
+        go-live strategy that fits their availability needs.
+    - name: Publish apps after upgrade
+      id: publish-apps-after-upgrade
+      description: Wants to know whether to publish all applications
+        immediately or publish them gradually after a Platform Server
+        upgrade, based on the source and target version (Platform Server
+        11.12.0+ enabling gradual publishing at their teams' pace, versus
+        earlier versions requiring all applications to be published), so
+        that they follow the correct application rollout approach for
+        their specific upgrade scenario.
   - name: Schedule index/statistics maintenance
     id: schedule-index-statistics-maintenance
     description: Wants to schedule regular index reorganize/rebuild

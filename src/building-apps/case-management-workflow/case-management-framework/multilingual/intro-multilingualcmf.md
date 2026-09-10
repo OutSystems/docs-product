@@ -1,5 +1,8 @@
 ---
-tags: localization, application scaling, outsystems development, framework configuration, service studio usage
+tags:
+  - Case Management framework
+  - Multi-language
+  - Translation
 summary: "Multilingual Case Management framework in OutSystems 11 (O11): supported languages, static entities to translate, and Bootstrap_CaseConfiguration timer."
 guid: 2e31ca9c-b4b9-4e3a-9ed3-81172a775fd4
 locale: en-us

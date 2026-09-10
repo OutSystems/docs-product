@@ -1,5 +1,8 @@
 ---
-tags: outsystems, outsystems platform, security, application development, access control
+tags:
+  - Authorization
+  - Case Management framework
+  - Security
 summary: Access control in OutSystems 11 (O11) Case Management framework is enabled per case definition by setting HasAccessControl to True in the Bootstrap_CaseConfiguration action.
 guid: 6b9969e1-6771-4e7a-9c5b-d639b0d08d62
 locale: en-us

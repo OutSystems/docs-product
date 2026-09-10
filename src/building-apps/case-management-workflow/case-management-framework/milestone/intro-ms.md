@@ -1,5 +1,7 @@
 ---
-tags: case management, dynamic case management, milestones, workflow management, outsystems
+tags:
+  - Case Management framework
+  - Workflows
 summary: OutSystems 11 (O11) milestones define intermediate goals in dynamic case management, marking phases and triggering actions in the case lifecycle.
 guid: 31c89686-510e-4586-ad31-d04f21c21154
 locale: en-us

@@ -1,5 +1,7 @@
 ---
-tags: case management framework, outsystems 11, application lifecycle management, workflow automation, state machines
+tags:
+  - Case Management framework
+  - Workflows
 summary: Learn how to define allowed case status transitions using a case state machine in OutSystems 11 (O11).
 guid: 9afd417a-9688-49f3-a968-06dd8c96bfd9
 locale: en-us

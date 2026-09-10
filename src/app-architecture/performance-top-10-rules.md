@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: performance optimization, database indexing, database maintenance, query optimization, server configuration
+tags:
+  - Indexes
+  - Optimization
+  - Performance
 audience:
   - Developer
   - Architect

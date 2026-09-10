@@ -1,5 +1,7 @@
 ---
-tags: access control, case management framework, api actions, security, permissions
+tags:
+  - Authorization
+  - Case Management framework
 summary: Explore access control in OutSystems 11 (O11) Case Management framework, detailing permissions and API actions.
 guid: 7748225f-8e88-43ea-bed6-29d510530176
 locale: en-us

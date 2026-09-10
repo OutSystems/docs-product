@@ -6167,6 +6167,12 @@ knowledge-needs:
         then checking the corresponding plugin.xml for a podspec framework reference,
         so that they know whether CocoaPods dependency handling applies before using
         the plugin.
+    - name: Resolve podspec error
+      id: resolve-podspec-error
+      description: Wants to resolve the MABS build error caused by a Cordova plugin
+        using a framework tag with type podspec, by updating the plugin to its latest
+        version or converting the tag to a podspec tag in the plugin's plugin.xml, so
+        that the iOS application package can be generated on MABS 10 or later.
     - name: Set up push notifications
       id: set-up-push-notifications
       description: Wants to set up push notifications in an OutSystems mobile app using
@@ -7146,6 +7152,15 @@ knowledge-needs:
         dependency, including hooks dependencies declared in the plugin''s
         package.json for MABS 7 and later, so that the mobile app package
         generates successfully.'
+    - name: Plugin dependency error
+      id: plugin-dependency-error
+      description: 'Wants to resolve the OS-MABS-PLG-40017 "Couldn''t install
+        the Cordova plugin <plugin_name> because the plugin dependency
+        <plugin_dependency> doesn''t support this Cordova version" error, by
+        checking the build log on Service Center to identify the
+        incompatible plugin dependency and either updating the plugin or
+        changing the MABS version, so that the mobile app package generates
+        successfully.'
     - name: Missing hook node module
       id: missing-hook-node-module-error
       description: 'Wants to resolve the OS-MABS-PLG-20000 "Couldn''t install
@@ -7163,12 +7178,39 @@ knowledge-needs:
         imposed security limitation, escalating to OutSystems Support if the
         problem persists, so that the mobile app package generates
         successfully.'
+    - name: Plugin min version error
+      id: plugin-min-version-error
+      description: 'Wants to resolve the OS-MABS-PLG-40018 "<plugin_id>
+        version <plugin_version> must be <plugin_min_version> or higher"
+        error, caused by using a Cordova plugin version that isn''t
+        compatible with the MABS version (MABS 7 or higher), by updating
+        the plugin to the minimum compatible version, so that the mobile
+        app package generates successfully.'
     - name: Forge plugin version error
       id: forge-plugin-version-error
       description: 'Wants to resolve the OS-MABS-PLG-40019 "<plugin_name>"
         error, caused by using a Forge plugin version that isn''t compatible
         with MABS 8.0 or higher, by updating the plugin to its latest
         version, so that the mobile app package generates successfully.'
+    - name: Plugin install failure
+      id: plugin-install-failure
+      description: 'Wants to resolve the OS-MABS-PLG-40021 "Couldn''t install
+        the Cordova plugin <plugin_id>. <reason>" error, caused by the
+        plugin failing to install for a reason specified by the plugin''s
+        own developer, by following the developer''s instructions in the
+        reported reason or contacting them for more information, so that
+        the mobile app package generates successfully.'
+    - name: Generic plugin error
+      id: generic-plugin-error
+      description: 'Wants to resolve the OS-MABS-PLG-50003 "Couldn''t install
+        the Cordova plugin <plugin_name>. If the problem persists, check our
+        documentation for more information." error, caused by an issue with
+        the plugin''s hook or a malformed plugin missing configurations or
+        files, by confirming the plugin''s hooks and configurations are
+        correct or checking the plugin''s documentation if it''s an
+        OutSystems-supported plugin, and creating a support case if the
+        problem persists, so that the mobile app package generates
+        successfully.'
     - name: Incompatible plugin error
       id: incompatible-plugin-error
       description: 'Wants to resolve the OS-MABS-PRJ-40003 "One or more

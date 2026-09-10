@@ -1,6 +1,12 @@
 ---
 summary: OutSystems O11 accelerates CRUD operations with CRUD wrappers, enabling efficient data handling and faster development.
-tags: crud operations, data handling, application development, service studio, code reusability
+tags:
+  - Best Practices
+  - Data
+  - Data Integrity
+  - Data Model
+  - Entities
+  - Performance
 guid: 94115dec-64af-45bd-8580-65a6c42f2810
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps

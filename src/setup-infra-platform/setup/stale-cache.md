@@ -5,7 +5,10 @@ guid: b251dda9-0aae-4bcd-b33f-972c2ad7fc5e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=2977-497&t=4Nlh3ezICaWHuIQq-1
-tags: caching, stale cache, performance optimization, mobile apps, reactive web apps
+tags:
+  - Caching
+  - Mobile app
+  - Performance
 audience:
   - Front-end developer
   - Developer

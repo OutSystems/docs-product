@@ -1,6 +1,8 @@
 ---
 summary: Conduct cross-region disaster recovery tests to ensure business continuity with OutSystems 11 (O11), validating backup and recovery procedures without production risks.
-tags: cross-region disaster recovery, backup and recovery, outsystems cloud, business continuity, disaster recovery tests
+tags:
+  - Infrastructure
+  - Testing
 guid: 69a181f4-dd86-4314-8deb-7d5f7333d76f
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps

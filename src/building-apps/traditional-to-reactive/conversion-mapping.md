@@ -3,7 +3,14 @@ guid: d484f04f-655a-4e8e-91b8-2ee531f9775f
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
-tags: conversion mapping, traditional module, reactive module, convert to reactive
+tags:
+  - Aggregates
+  - Client Variables
+  - Screens
+  - Site Properties
+  - SQL
+  - Traditional Web
+  - Widgets
 audience:
   - Front-end developer
   - Developer

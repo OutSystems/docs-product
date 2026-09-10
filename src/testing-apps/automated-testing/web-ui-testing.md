@@ -5,7 +5,11 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ui testing, scripted testing, exploratory testing, user experience testing, automated testing
+tags:
+  - Quality Assurance
+  - Testing
+  - UI
+  - UX
 audience:
   - Developer
   - Front-end developer

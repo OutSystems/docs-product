@@ -1,6 +1,10 @@
 ---
 summary: Customize system bars in Cordova mobile apps with changes in MABS 12 for OutSystems 11 (O11), detailing preferences, and CSS updates for Android 16.
-tags: cordova mobile apps, system bars, mabs 12, android 16
+tags:
+  - Android
+  - CSS
+  - Cordova
+  - Mobile app
 locale: en-us
 guid: 43f73d1e-9745-4de4-9d7a-66c7b8a42455
 app_type: mobile apps

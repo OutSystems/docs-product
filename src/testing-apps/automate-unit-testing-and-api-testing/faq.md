@@ -1,5 +1,9 @@
 ---
-tags: unit testing, api testing, devops, test strategy, test framework
+tags:
+  - Quality Assurance
+  - REST
+  - SOAP
+  - Testing
 summary: Explore automated unit and API testing strategies for OutSystems 11 (O11) using the Test Framework and BDD Framework.
 guid: 17f5f7a2-52ff-4059-bf77-370ccfff4be1
 locale: en-us

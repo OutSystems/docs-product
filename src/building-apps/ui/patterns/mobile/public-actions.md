@@ -1,5 +1,11 @@
 ---
-tags: ui components, accordion widget, ui patterns, mobile app development, web app development
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn to manage UI components in OutSystems 11 (O11) for enhanced web and mobile app functionality.
 locale: en-us
 guid: e4899a53-ca9e-4c13-b021-06518a34fba2

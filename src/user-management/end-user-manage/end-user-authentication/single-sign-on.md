@@ -14,6 +14,7 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+  - understand
   - apply
 isautopublish: true
 ---

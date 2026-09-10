@@ -1,5 +1,9 @@
 ---
-tags: workflow automation, project management, app development workflow, project initiation, application configuration
+tags:
+  - Forms
+  - Project Management
+  - Templates
+  - Workflows
 summary: "Project Request template in OutSystems 11 (O11) Workflow Builder: configure forms, statuses, manual tasks, and conditions to build a project intake app."
 guid: 3571926d-eafe-4ced-a42f-9be2230a0639
 locale: en-us

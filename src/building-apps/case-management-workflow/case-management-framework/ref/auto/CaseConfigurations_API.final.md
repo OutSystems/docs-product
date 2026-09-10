@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: api documentation, case management, crud operations, outsystems platform, case configurations
+tags:
+  - Case Management framework
+  - Entities
+  - Workflows
 audience:
   - Developer
   - Front-end developer

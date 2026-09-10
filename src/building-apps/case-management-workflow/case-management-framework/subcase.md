@@ -1,5 +1,8 @@
 ---
-tags: case management, business process technology, process automation, subcases management
+tags:
+  - Business Processes
+  - Case Management framework
+  - Workflows
 summary: Learn how to create and manage subcases in a case management app using OutSystems 11 (O11), including setting up core services and adapting parent cases.
 guid: 6f4a1519-2b35-46d4-979a-5578b33d4dc5
 locale: en-us

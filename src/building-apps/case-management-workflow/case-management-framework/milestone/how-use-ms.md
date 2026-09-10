@@ -1,5 +1,7 @@
 ---
-tags: case management, milestone tracking, workflow automation, outsystems api, caseservices_api
+tags:
+  - Case Management framework
+  - Workflows
 summary: "Milestone instances in OutSystems 11 (O11) Case Management framework: fetch, set as achieved or unachieved, and check achievement status using CaseServices_API actions."
 guid: 34bb2be4-ccf7-4cff-81ee-b517dc31f5d0
 locale: en-us

@@ -5,7 +5,9 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: api documentation, business process technology, service level agreements (sla), process automation, activity management
+tags:
+  - Business Processes
+  - Case Management framework
 audience:
   - Architect
   - Developer

@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: process management, case management, api, workflow automation, service apis
+tags:
+  - Authorization
+  - Business Processes
+  - Case Management framework
+  - Groups
+  - Security
+  - Web services
+  - Workflows
 audience:
   - Architect
   - Developer

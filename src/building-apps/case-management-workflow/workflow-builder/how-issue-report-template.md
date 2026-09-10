@@ -1,5 +1,8 @@
 ---
-tags: workflow automation, app development, user interface customization, productivity tools, no-code/low-code development
+tags:
+  - Forms
+  - Templates
+  - Workflows
 summary: "Workflow Builder Issue Report template in OutSystems 11 (O11): set up app info, edit form fields, assign tasks, and configure statuses to build an issue-tracking workflow."
 guid: 2eb55ee1-3508-4c49-9303-3d968ef6b3a2
 locale: en-us

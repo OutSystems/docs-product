@@ -1,5 +1,5 @@
 ---
-summary: Explore the process of upgrading to OutSystems 11 (O11) with a focus on Platform Server enhancements and independent LifeTime upgrades.
+summary: "OutSystems 11 (O11) Platform Server upgrade follows four phases: analysis, planning, execution, testing, with downtime and zero-downtime strategies."
 locale: en-us
 guid: 617e2ef6-9fca-4cf0-9840-a0277670083e
 app_type: traditional web apps, mobile apps, reactive web apps

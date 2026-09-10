@@ -422,14 +422,20 @@ knowledge-needs:
         server-side logic (a Service Studio logic flow), in OutSystems 11,
         so that role assignment can be automated instead of done manually
         through the Users application.
+    - name: Restrict screen access
+      id: restrict-screen-access-o11
+      description: Wants to restrict which end-users can open specific
+        screens in an OutSystems 11 app, by unticking the Anonymous and/or
+        Registered Screen Roles and enabling only a custom application
+        role, so that only users holding the required role (for example
+        HRManager) can access those screens.
     - name: Restrict logic with roles
-      id: restrict-logic-with-roles-odc
-      description: Wants to restrict what end-users can do or see in an ODC
-        app by using the Check<ROLENAME>Role action generated for an end-user
-        role, checking the role in an If condition to guard server-side logic
-        or in an aggregate filter to restrict returned data, so that only
-        users with the required role can execute actions or access sensitive
-        data.
+      id: restrict-logic-with-roles
+      description: Wants to restrict what end-users can do or see by using the
+        generated Check<RoleName>Role() action, checking the role in an If
+        condition to guard server-side logic or in an aggregate filter to
+        restrict returned data, so that only users with the required role can
+        execute actions or access sensitive data.
     - name: Hierarchical roles choice
       id: hierarchical-roles-choice
       description: Wants to decide whether to use hierarchical roles instead
@@ -6087,9 +6093,9 @@ knowledge-needs:
       id: generate-app-from-document
       description: Wants to generate an ODC app in Mentor Web by uploading
         a requirement document and reviewing the resulting blueprint's
-        entities, roles, and screens before generating, so that
-        misinterpretations are caught early and the generated app matches
-        the requirements.
+        entities, roles, screens, and stateflows before generating, so
+        that misinterpretations are caught early and the generated app
+        matches the requirements.
   - name: Mentor Web prompts
     id: mentor-web-prompts
     subtopics:

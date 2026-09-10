@@ -7,7 +7,7 @@ tags:
   - UI
   - UI Patterns
   - Widgets
-summary: Explore how to use the Tag UI Pattern in OutSystems 11 (O11) to enhance user interfaces by styling texts with customizable colors, shapes, and sizes.
+summary: Tag UI Pattern in OutSystems 11 (O11) styles labels with custom colors and shapes while meeting WCAG 2.2 AA contrast accessibility requirements.
 locale: en-us
 guid: ad4f4ddf-d346-4347-b78d-8741dea7cb94
 app_type: mobile apps, reactive web apps

@@ -10,7 +10,13 @@ coverage-type:
 audience:
   - Developer
   - Front-end developer
-tags: ui patterns, numbers widget, counters, notifications, progress indicators
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 outsystems-tools:
   - none
 isautopublish: true

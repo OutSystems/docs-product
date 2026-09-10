@@ -1,7 +1,11 @@
 ---
 helpids: 30555
 summary: This article explains how to resolve the Common Plugin dependency in O11 by replacing it with the Common Plugin Library before converting mobile plugins to ODC.
-tags: common plugin, mobile plugins, app conversion, o11 to odc, dependency management
+tags:
+  - Forge
+  - Libraries
+  - Mobile app
+  - Plugins
 guid: fda33fd0-371e-4252-b822-578aee484673
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps

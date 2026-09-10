@@ -5,7 +5,8 @@ guid: 811f5c4c-11f5-4998-87c2-d5629a8fe0a2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: data types, default values, data constraints, conversion functions, outsystems 11
+tags:
+  - Data
 audience:
   - Developer
 coverage-type:

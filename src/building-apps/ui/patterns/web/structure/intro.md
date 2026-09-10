@@ -10,7 +10,14 @@ audience:
   - Front-end developer
 coverage-type:
   - none
-tags: ui patterns, page layout, traditional web apps, mobile apps, reactive web apps
+tags:
+  - Front-End
+  - Layouts
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 outsystems-tools:
   - none
 isautopublish: true

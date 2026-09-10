@@ -6,7 +6,7 @@ tags:
   - UI
   - UI Patterns
   - Widgets
-summary: Explore how to implement and customize the Alert UI Pattern in OutSystems 11 (O11) for mobile and reactive web apps.
+summary: Alert UI Pattern in OutSystems 11 (O11) displays error, warning, and success messages with ARIA roles for WCAG 2.2 AA accessibility.
 locale: en-us
 guid: 19bf61bf-cf92-4e5f-b0d1-44f667b32bc7
 app_type: mobile apps, reactive web apps

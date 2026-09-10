@@ -18,6 +18,9 @@ audience:
   - Front-end developer
 outsystems-tools:
   - service studio
+topic:
+  - accessible-card-background-pattern
+  - use-card-background-pattern
 coverage-type:
   - remember
   - apply

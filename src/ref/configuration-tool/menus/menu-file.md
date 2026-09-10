@@ -18,6 +18,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - generate-setup-scripts
+  - sync-front-end-configs
 isautopublish: true
 ---
 

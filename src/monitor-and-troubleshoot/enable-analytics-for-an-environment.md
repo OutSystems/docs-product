@@ -15,6 +15,9 @@ audience:
 outsystems-tools:
   - lifetime
   - forge
+topic:
+  - analytics-data-retention
+  - enable-environment-analytics
 coverage-type:
   - apply
   - understand

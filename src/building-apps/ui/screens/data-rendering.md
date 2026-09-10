@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - evaluate
+topic:
+  - optimize-mobile-list-data-loading
+  - prevent-mobile-content-flicker
+  - prioritize-mobile-screen-content
 isautopublish: true
 ---
 

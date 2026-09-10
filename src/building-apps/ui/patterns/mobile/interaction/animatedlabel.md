@@ -21,6 +21,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-animated-label-pattern
+  - use-animated-label-pattern
 isautopublish: true
 ---
 

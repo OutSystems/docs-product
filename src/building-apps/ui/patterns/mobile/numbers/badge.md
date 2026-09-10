@@ -23,6 +23,10 @@ coverage-type:
   - apply
   - unblock
 isautopublish: true
+topic:
+  - accessible-badge-pattern
+  - badge-reference
+  - use-badge-pattern
 ---
 
 # Badge

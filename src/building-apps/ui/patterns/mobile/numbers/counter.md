@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-counter-pattern
+  - counter-reference
+  - use-counter-pattern
 isautopublish: true
 ---
 

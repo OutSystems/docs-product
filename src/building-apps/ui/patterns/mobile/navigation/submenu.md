@@ -21,6 +21,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-submenu-pattern
+  - use-submenu-pattern
 isautopublish: true
 ---
 

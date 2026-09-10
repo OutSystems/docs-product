@@ -23,6 +23,10 @@ coverage-type:
   - apply
   - evaluate
 isautopublish: true
+topic:
+  - accessible-notification-pattern
+  - notification-reference
+  - use-notification-pattern
 ---
 
 # Notification

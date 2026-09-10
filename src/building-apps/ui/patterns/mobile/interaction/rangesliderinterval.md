@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - remember
+topic:
+  - accessible-range-slider-interval-pattern
+  - range-slider-interval-reference
+  - use-range-slider-interval-pattern
 isautopublish: true
 ---
 

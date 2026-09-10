@@ -7019,6 +7019,38 @@ knowledge-needs:
         by reviewing and fixing the extensibility configuration or setting
         the referenced Setting''s value, so that the mobile app package
         generates successfully.'
+    - name: Invalid preference key
+      id: invalid-preference-key-error
+      description: 'Wants to resolve the OS-MABS-PREF-40000 "Preference key
+        <key> in the context <context> is not recognized" error, caused by
+        an invalid key in the app''s extensibility configuration schema, by
+        fixing the configuration according to the Property Schema
+        documentation and rebuilding the app, so that the mobile app
+        package generates successfully.'
+    - name: Wrong preference type
+      id: wrong-preference-type-error
+      description: 'Wants to resolve the OS-MABS-PREF-40002 "Preference key
+        <key> in <context> has a wrong type" error, caused by an invalid
+        property type for a key in the app''s extensibility configuration
+        schema, by fixing the configuration according to the Property
+        Schema documentation and rebuilding the app, so that the mobile
+        app package generates successfully.'
+    - name: Fix array format error
+      id: wrong-preference-format-error
+      description: 'Wants to resolve the OS-MABS-PREF-40003 "<context> must
+        have the format []" error, caused by a property in the app''s
+        extensibility configuration that must be a JSON array but isn''t,
+        by fixing the configuration according to the Property Schema
+        documentation and rebuilding the app, so that the mobile app
+        package generates successfully.'
+    - name: Missing preference key
+      id: missing-preference-key-error
+      description: 'Wants to resolve the OS-MABS-PREF-40001 "Preference key
+        <key> in <context> wasn''t found" error, caused by a mandatory key
+        missing from the app''s extensibility configuration, by adding the
+        key to the context per the Property Schema documentation and
+        rebuilding the app, so that the mobile app package generates
+        successfully.'
     - name: Missing resource error
       id: missing-resource-error
       description: 'Wants to resolve the OS-MABS-CNF-40012 "resource {0} declared
@@ -7319,6 +7351,16 @@ knowledge-needs:
         OutSystems-supported plugin, and creating a support case if the
         problem persists, so that the mobile app package generates
         successfully.'
+    - name: CocoaPods plugin fetch error
+      id: cocoapods-plugin-fetch-error
+      description: 'Wants to resolve the OS-MABS-PLG-50005 "Couldn''t install
+        the Cordova plugin <plugin_name> because we couldn''t fetch its
+        dependencies due to a CocoaPods server error. Please try again."
+        error, caused by downtime on the CocoaPods CDN preventing MABS from
+        fetching a Pod for the plugin, by checking the build logs on
+        Service Center and retrying app generation, and creating a support
+        case if the problem persists, so that the mobile app package
+        generates successfully.'
     - name: Incompatible plugin error
       id: incompatible-plugin-error
       description: 'Wants to resolve the OS-MABS-PRJ-40003 "One or more

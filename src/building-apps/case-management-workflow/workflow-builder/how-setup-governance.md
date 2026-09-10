@@ -1,5 +1,10 @@
 ---
-tags: governance, lifetime, user management, access control, token authentication
+tags:
+  - Authentication
+  - End-users
+  - IT Roles
+  - IT Teams
+  - IT Users
 summary: Explore how to establish a users governance model in Workflow Builder using OutSystems 11 (O11).
 guid: b0e9d928-403a-4d65-b5bc-c945f78b8436
 locale: en-us

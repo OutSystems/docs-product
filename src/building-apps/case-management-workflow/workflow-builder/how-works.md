@@ -1,5 +1,11 @@
 ---
-tags: case management, saas, workflow automation, cloud deployment, user role configuration
+tags:
+  - Authentication
+  - Case Management framework
+  - Development lifecycle
+  - End-users
+  - Groups
+  - Workflows
 summary: Workflow Builder (O11) lets non-technical users build case management apps backed by Case Management framework, generated app layers, and user roles.
 guid: 03a05097-7984-4e88-86f2-c87418286674
 locale: en-us

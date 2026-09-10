@@ -1,5 +1,8 @@
 ---
-tags: error handling, platform server, outsystems 11, personal environments, technical troubleshooting
+tags:
+  - IT Teams
+  - Platform Server
+  - Troubleshooting
 summary: "Workflow Builder errors in OutSystems 11 (O11): reference for personal environment, platform version, publish, and network issues."
 guid: 71f53a62-0c7d-499b-8772-7990c58ee9d2
 locale: en-us

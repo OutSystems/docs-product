@@ -1,5 +1,7 @@
 ---
-tags: workflow automation, business process management, application templates, app development best practices
+tags:
+  - Templates
+  - Workflows
 summary: Explore app development with OutSystems 11 (O11) using the Workflow Builder for creating internal productivity applications.
 guid: e496117e-5c7f-43c8-9cf5-e728365bc531
 locale: en-us

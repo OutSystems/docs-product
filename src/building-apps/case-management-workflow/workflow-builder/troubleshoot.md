@@ -1,5 +1,8 @@
 ---
-tags: troubleshooting, it administration, lifetime permissions, platform server, network requirements
+tags:
+  - Case Management framework
+  - Platform Server
+  - Troubleshooting
 summary: Workflow Builder troubleshooting for OutSystems 11 (O11) covers publishing failures, IIS configuration, LifeTime permissions, and Case Management framework version issues.
 guid: 33571f0b-996f-47e8-ac9d-e43cbc98c2e4
 locale: en-us

@@ -5,7 +5,10 @@ guid: f41ec73a-5994-41b4-b069-193fffed5e98
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:14
-tags: data modeling, database integrity, entity relationship, outsystems data, referential integrity
+tags:
+  - Data Integrity
+  - Data Model
+  - Entities
 audience:
   - Developer
   - Front-end developer

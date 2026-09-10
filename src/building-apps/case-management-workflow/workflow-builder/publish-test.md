@@ -1,5 +1,9 @@
 ---
-tags: workflow automation, app lifecycle management, user role testing, sample users, environment deployment
+tags:
+  - Roles
+  - Screens
+  - Testing
+  - Workflows
 summary: Workflow Builder app publishing and testing in OutSystems 11 (O11) using sample users, role-based screens, and Administrator task management.
 guid: 326f1e4a-f451-480e-9e40-e068521784eb
 locale: en-us

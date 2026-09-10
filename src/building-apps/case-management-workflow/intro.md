@@ -1,5 +1,7 @@
 ---
-tags: case management, application development, visual workflows, no-code development, decision making
+tags:
+  - Case Management framework
+  - Workflows
 summary: Case Management Framework and Workflow Builder in OutSystems 11 (O11) explained, with guidance on choosing the right tool based on app complexity.
 guid: 464c3478-171b-4f7f-bad6-2e11c4252e5b
 locale: en-us

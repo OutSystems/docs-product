@@ -1083,6 +1083,16 @@ knowledge-needs:
         contrast requirements (4.5:1 for normal text, 3:1 for large text)
         without altering the app's color palette, in mobile apps and
         reactive web apps (O11).
+    - name: Accessible Progress Circle pattern
+      id: accessible-progress-circle-pattern
+      description: Wants to make the Progress Circle UI Pattern accessible to
+        assistive technologies, by hiding the decorative circle with
+        aria-hidden="true" on an enclosing container and adding a
+        descriptive text alternative via an Expression widget styled with
+        the wcag-hide-text CSS class, in Service Studio, so that screen
+        readers announce accurate progress feedback, meeting WCAG 2.2 AA
+        accessibility requirements, in mobile apps and reactive web apps
+        (O11).
   - name: Translating apps
     id: translating-apps
     subtopics:
@@ -3721,6 +3731,17 @@ knowledge-needs:
         if the dependency isn't added, in Service Studio, so that a master
         list and its corresponding item details display together in mobile
         apps and reactive web apps (O11).
+    - name: Use Wizard pattern
+      id: use-wizard-pattern
+      description: Wants to add the Wizard UI Pattern to a screen and build
+        multi-step navigation, by adding the Wizard and Wizard Item widgets,
+        creating a CurrentStep Input Parameter, setting each Wizard Item's
+        Status via an expression that checks CurrentStep, using If widgets
+        to show step-specific content, and wiring Previous/Next buttons with
+        Assign actions and Enclose in If conditions to move between steps,
+        in Service Studio, so that the wizard displays the active, past,
+        and next steps correctly, in mobile apps and reactive web apps
+        (O11).
     - name: Dropdown Server reference
       id: dropdown-server-reference
       description: Wants to look up the properties, events, and JavaScript API
@@ -4412,6 +4433,19 @@ knowledge-needs:
         AdvancedFormat property, in Service Studio, so that the progress
         circle's visual style matches app requirements, in a Traditional Web
         App (O11).
+    - name: Use Progress Circle pattern
+      id: use-progress-circle-pattern
+      description: Wants to add the Progress Circle UI Pattern to a screen and
+        configure its Progress property using a local variable and increment
+        button, in Service Studio for OutSystems 11, so that they can display
+        the current progress of an operation flow as a fraction, in mobile
+        apps and reactive web apps.
+    - name: Progress Circle reference
+      id: progress-circle-reference
+      description: Wants to look up the configurable properties of the Progress Circle UI
+        Pattern in Service Studio, so that they can correctly configure a
+        progress circle's appearance and behavior, in mobile apps and reactive
+        web apps (O11).
     - name: Use Rating pattern
       id: use-rating-pattern
       description: Wants to add the Rating UI Pattern to a screen and configure its
@@ -6905,6 +6939,36 @@ knowledge-needs:
         NotificationsHandler/NotificationDialog blocks, and using the Cloud
         Messaging Configurator's REST API, so notifications keep working after
         migration.
+  - name: Firebase plugins
+    id: firebase-plugins
+    subtopics:
+    - name: Add Firebase plugin
+      id: add-firebase-plugin
+      description: Wants to add a Firebase-based plugin to an OutSystems mobile app, by
+        setting up a Firebase project, installing and referencing the plugin,
+        uploading the GoogleService-Info.plist and google-services.json
+        configuration files as extensibility resources, and calling the plugin's
+        client actions from Service Studio logic, so that the app can use
+        Firebase services.
+    - name: Configure iOS tracking
+      id: configure-ios-tracking-prompt
+      description: Wants to configure the AppTrackingTransparency permission
+        prompt for the Firebase Analytics plugin on iOS, by using the
+        RequestTrackingAuthorization client action, customizing the
+        ShowInformation alert's Title and Message, setting the
+        USER_TRACKING_DESCRIPTION_IOS extensibility preference, or disabling
+        the prompt entirely via the EnableAppTrackingTransparencyPrompt
+        preference, so that the app requests user tracking permission the
+        way its policy requires.
+    - name: Log Firebase Analytics
+      id: log-firebase-analytics-events
+      description: Wants to log analytics data from a mobile app using the
+        Firebase Analytics plugin, by calling the LogEvent client action
+        with custom event names and parameters, using LogECommerceEvent
+        with the supported ecommerce event types and required parameters,
+        or toggling data collection with SetEnabled and the
+        ANALYTICS_COLLECTION_ENABLED preference, so that user behavior and
+        ecommerce activity are captured in Firebase Analytics.
   - name: App distribution
     id: app-distribution
     subtopics:
@@ -6928,6 +6992,27 @@ knowledge-needs:
       description: Wants to debug a PWA built in ODC by emulating it in Google Chrome
         from ODC Studio's Debugger tab, so that they can inspect and troubleshoot the
         app without a physical device.
+    - name: Configure mobile updates
+      id: configure-mobile-updates
+      description: Wants to configure whether a mobile app receives store-only
+        or hybrid updates, by activating the technical preview in LifeTime
+        and setting the update preference per app and per target environment
+        in a deployment plan's Distribution tab, so users get updates
+        through the intended channel.
+    - name: Check app update mode
+      id: check-app-update-mode
+      description: Wants to check whether a mobile app is configured for
+        store-only or hybrid updates in a target environment, by viewing
+        the Native Mobile Application Updates setting in the app's Settings
+        screen in LifeTime, so they can confirm the deployment plan applied
+        the intended update preference.
+    - name: Develop store-only apps
+      id: develop-store-only-apps
+      description: Wants to develop and test a mobile app so it keeps
+        working correctly when configured for store-only updates, by
+        versioning builds, avoiding breaking API/logic changes, updating
+        upgrade messages, and testing thoroughly before generating and
+        submitting the native build to the app stores.
   - name: Offline Synch
     id: offline-synch
     subtopics:
@@ -8685,6 +8770,23 @@ knowledge-needs:
         provider, understanding that the change doesn't apply instantly to
         already signed-in users and that propagation time varies depending on
         the provider's configuration.
+    - name: Unassign external IdP
+      id: unassign-external-idp
+      description: Wants to unassign an external identity provider from an
+        organization or app stage in ODC Portal (Management > Govern >
+        Identity providers) without replacing it, so that they can stop using
+        that provider for the selected scope.
+    - name: Edit external IdP
+      id: edit-external-idp
+      description: Wants to edit the configuration of an external identity
+        provider that is not currently assigned in ODC Portal (Management >
+        Govern > Identity providers), so that they can update its settings
+        before assigning it.
+    - name: Delete external IdP
+      id: delete-external-idp
+      description: Wants to delete an external identity provider that is not
+        currently assigned in ODC Portal (Management > Govern > Identity
+        providers), so that they can remove an unused configuration.
     - name: External IdP concepts
       id: external-idp-concepts
       description: Wants to understand what external identity providers (IdPs) are,

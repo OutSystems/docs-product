@@ -1,5 +1,5 @@
 ---
-summary: Explore mobile development best practices in OutSystems 11 (O11) to enhance app performance and user experience.
+summary: OutSystems 11 (O11) mobile apps perform better with best practices for UI rendering, local storage, list optimization, and JavaScript use.
 guid: 35d524c9-ab83-4f6e-b3fe-b2a89b2ff7af
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 tags: user management, licensing, capacity planning, domain configuration, end-user classification
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - service center
 coverage-type:

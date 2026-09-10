@@ -1,6 +1,7 @@
 ---
 summary: Explore component testing in OutSystems 11 using BDDFramework tools for automated testing of Actions and Services.
-tags: component testing, automated testing, bddframework, gherkin syntax, api testing
+tags:
+  - Testing
 locale: en-us
 guid: b55c5578-ca69-4287-8431-445224d3165f
 app_type: traditional web apps, mobile apps, reactive web apps

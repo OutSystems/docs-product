@@ -1,6 +1,8 @@
 ---
 summary: Explore common module preparation errors and solutions in OutSystems 11 (O11) during platform upgrades.
-tags: platform server upgrade, module preparation errors, devops, support, upgrade issues
+tags:
+  - Platform Server
+  - Troubleshooting
 locale: en-us
 guid: 9e51b5d1-a279-4923-9a79-89d8d47152eb
 app_type: traditional web apps, mobile apps, reactive web apps

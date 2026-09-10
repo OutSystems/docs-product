@@ -1,6 +1,10 @@
 ---
 summary: Explore how to update applications for compatibility with OutSystems 11 (O11) log data model, including handling joins with log entities.
-tags: application upgrade, logging, data model, compatibility
+tags:
+  - Aggregates
+  - Data Model
+  - Entities
+  - Logging
 locale: en-us
 guid: fb46fada-91f7-45b9-b936-b0310303f4e8
 app_type: traditional web apps, mobile apps, reactive web apps

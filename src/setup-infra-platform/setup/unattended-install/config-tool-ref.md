@@ -1,6 +1,8 @@
 ---
 summary: Comprehensive guide to using the Configuration Tool command line for OutSystems 11 (O11), detailing syntax, parameters, and usage examples.
-tags: configuration management, server administration, automation, license management, command line interface
+tags:
+  - Infrastructure
+  - Platform Server
 locale: en-us
 guid: 7c953aae-e0ef-4034-afcf-84960d18ad3b
 app_type: traditional web apps, mobile apps, reactive web apps

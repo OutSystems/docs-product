@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) enhances deployment flexibility with an optional modules deployment step during Platform Server upgrades.
-tags: devops, platform server upgrade, deployment, environment upgrade, outsystems platform
+tags:
+  - CI/CD
+  - Deploy
+  - Platform Server
 locale: en-us
 guid: 510C5CED-6AC6-4FD1-B26F-02BAEDF8E3DD
 app_type: traditional web apps, mobile apps, reactive web apps

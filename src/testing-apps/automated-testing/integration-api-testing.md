@@ -5,7 +5,11 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: integration testing, api testing, test automation, software reliability, software performance
+tags:
+  - REST
+  - SOAP
+  - Testing
+  - Web services
 audience:
   - Developer
   - Architect

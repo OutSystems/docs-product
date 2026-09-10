@@ -1,6 +1,9 @@
 ---
 summary: Learn how to configure a separate database for log data in OutSystems 11 (O11) and apply these changes to existing applications.
-tags: database configuration, performance optimization, deployment, system administration, scaling
+tags:
+  - Logging
+  - Platform Server
+  - SQL
 locale: en-us
 guid: 5e138471-327c-410a-a2ea-104fdad2d68c
 app_type: traditional web apps, mobile apps, reactive web apps

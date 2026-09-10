@@ -5,7 +5,11 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/S948ecVUtPW9JMmJUTPjcO/Testing-apps?node-id=2001-320&t=BqlADDc4tHlI4nzB-1
-tags: component testing, bddframework, gherkin syntax, test automation, quality assurance
+tags:
+  - Best Practices
+  - Forge
+  - Quality Assurance
+  - Testing
 audience:
   - Front-end developer
   - Developer

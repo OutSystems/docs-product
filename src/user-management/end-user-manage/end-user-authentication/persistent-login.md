@@ -1,6 +1,10 @@
 ---
 summary: Learn how to implement persistent login in OutSystems 11 (O11) to maintain user sessions across devices without repeated logins.
-tags: user authentication, persistent login, security, session management, cookies
+tags:
+  - Authentication
+  - End-user Authentication
+  - End-users
+  - Forge
 locale: en-us
 guid: 36803dc8-3459-4e8b-957e-3b3519453e58
 app_type: traditional web apps, mobile apps, reactive web apps

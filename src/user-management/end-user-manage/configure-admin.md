@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) requires configuration of the Administrator user for the Users app to set passwords and assign roles.
-tags: user management, role configuration, environment setup, permissions, administrator setup
+tags:
+  - IT Users
+  - Platform Server
+  - Roles
 locale: en-us
 guid: 319FF915-A2E9-4A0B-AC8A-93E0A511E997
 app_type: traditional web apps, mobile apps, reactive web apps

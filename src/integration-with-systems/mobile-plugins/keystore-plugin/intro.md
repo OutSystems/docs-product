@@ -1,6 +1,12 @@
 ---
 summary: Explore secure storage of sensitive data in mobile apps using the Key Store plugin in OutSystems 11 (O11).
-tags: secure storage, sensitive data protection, data encryption, mobile security, key store plugin
+tags:
+  - Android
+  - Authentication
+  - iOS
+  - Mobile app
+  - Plugins
+  - Security
 locale: en-us
 guid: d66f03f6-4f9a-4923-9f55-75adabf5ed64
 app_type: mobile apps

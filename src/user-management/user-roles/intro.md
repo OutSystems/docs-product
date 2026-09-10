@@ -1,6 +1,13 @@
 ---
 summary: Explore user role management in OutSystems 11 (O11) for controlling access to application screens and operations.
-tags: user role management, access control, authentication, role-based access control, security
+tags:
+  - Authentication
+  - Authorization
+  - End-user Authentication
+  - End-users
+  - Entities
+  - Roles
+  - SSO
 locale: en-us
 guid: d3fe610b-9bf9-4695-b516-01820a33abba
 app_type: traditional web apps, mobile apps, reactive web apps

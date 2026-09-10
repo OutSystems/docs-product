@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/S948ecVUtPW9JMmJUTPjcO/Testing-apps?node-id=1-488&t=BqlADDc4tHlI4nzB-1
-tags: automated testing, continuous integration, deployment planning, application lifecycle management, integrity validation
+tags:
+  - CI/CD
+  - Development lifecycle
+  - Lifecycle
+  - Performance
+  - Quality Assurance
+  - Security
+  - Testing
 audience:
   - Developer
   - Front-end developer

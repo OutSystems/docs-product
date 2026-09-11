@@ -20,6 +20,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - understand
+topic:
+  - install-client-side-cert
 isautopublish: true
 ---
 

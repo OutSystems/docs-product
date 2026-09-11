@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - apply
 isautopublish: true
+topic:
+  - table-pagination-setup
+  - table-sort-accessibility
+  - table-sorting-setup
 ---
 
 # Table pagination and sorting

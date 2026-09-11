@@ -8,6 +8,7 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1526:
 summary: Explore how OutSystems 11 (O11) utilizes site properties to manage global variables and integrate secure data handling in applications.
 tags:
   - Security
+  - Settings
   - Site Properties
 audience:
   - Developer
@@ -16,8 +17,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
 topic:
   - site-properties-settings
+isautopublish: true
 ---
 
 # Site property
@@ -30,9 +33,25 @@ By design, site property values have a limit of 2000 characters. The usable numb
 * The encoding of the value.
 * The platform's database character encoding configuration.
 
-## How to use site properties
+## Secret site property
 
-### Example 1
+<div class="info" markdown="1">
+
+To avail of the secret site property functionality, the following is required:
+
+* LifeTime 11.20.1
+* Platform Server 11.25.0
+* Service Studio 11.54.35
+
+</div>
+
+If you're storing sensitive information, such as passwords or an access token, set the **Is secret** property to **True**. For secret site properties, the length of the data may increase due to the encryption.
+
+When changing a site property from secret to non-secret or vice-versa, the effective value is cleared. Thus, the new value must be set in Service Studio or in Service Center.
+
+## How to use site properties {#how-to-use}
+
+### Example 1 - Define the max records of an aggregate {#example-1}
 
 In this example, there's a screen with an aggregate named **GetEmployees**. This aggregate retrieves records from an Employee entity, with a default maximum records. The maximum records is defined by a site property named MaxRecords.
 
@@ -60,25 +79,15 @@ In this example, there's a screen with an aggregate named **GetEmployees**. This
 
     ![Service Center's view of the module's Site Properties tab listing the MaxRecords site property.](images/site-prop-tab-sc.png "Site Properties Tab in Service Center")
 
-1. Click **MaxRecords**, then change its **Effective Value** to  `5`. By doing this, you're changing the MaxRecords' value at runtime and the aggregate will now retrieve 5 records instead of the default 10.
+1. Click **MaxRecords**, then change its **Effective Value** to  `5`. By doing this, you're changing the MaxRecords' value at runtime and the aggregate now retrieves 5 records instead of the default 10.
 
     ![Service Center interface showing the MaxRecords site property with an option to change its Effective Value.](images/effective-value-sc.png "Editing MaxRecords Site Property")
 
 1. Click **Apply** and then refresh your app's page. The MaxRecords displayed must adopt the new value.
 
-### Example 2 {#example-2}
+### Example 2 - Store the credentials of a service {#example-2}
 
 In this example, there's an integration with an external service, where the service credentials, such as password, must be protected.
-
-<div class="info" markdown="1">
-
-To avail of the secret site property functionality, the following is required:
-
-* LifeTime 11.20.1
-* Platform Server 11.25.0
-* Service Studio 11.54.35
-
-</div>
 
 1. On the **Data** tab, right-click **Site Properties** and select **Add Site Property**.
 
@@ -108,11 +117,19 @@ To avail of the secret site property functionality, the following is required:
 
 1. Click **Apply** and then test your integration implementation.
 
-<div class="info" markdown="1">
+### Example 3 - Store a long private key {#example-3}
 
-If you change a site property from secret to non-secret or vice-versa, the effective value is cleared, and the new value must be set in Service Studio or in Service Center.
+In this example, there's a RSA private key that must be protected. As secret site properties are encrypted before being stored, the length of the data may increase and hit the 2000 character limit. Thus, using them to store long private keys is **not recommended**.
 
-</div>
+To store private keys for use within your applications, follow this general guideline:
+
+1. Create a Key Encryption Key (KEK).
+    * A standard size for a KEK is 256 bits using the AES algorithm, which comfortably fits into a secret site property.
+1. Use the KEK to encrypt the long private key.
+1. Store the KEK as a secret site property.
+1. Store the encrypted long private key in an appropriately sized database column.
+
+This ensures the secret site property stays below the character limit.
 
 ## Properties
 

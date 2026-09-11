@@ -17,6 +17,10 @@ audience:
 outsystems-tools:
   - none
 isautopublish: true
+topic:
+  - request-vpn-connection
+  - vpn-gateway-requirements
+  - vpn-traffic-redundancy
 ---
 # Set up a VPN to your OutSystems Cloud
 

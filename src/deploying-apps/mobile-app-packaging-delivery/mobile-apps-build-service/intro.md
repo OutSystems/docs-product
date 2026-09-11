@@ -20,6 +20,10 @@ coverage-type:
 outsystems-tools:
   - platform server
 isautopublish: true
+topic:
+  - choose-mabs-version
+  - enable-mabs-service
+  - monitor-mabs-status
 ---
 # Mobile Apps Build Service
 

@@ -8,6 +8,9 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 tags:
   - Security
   - Settings
+topic:
+  - secure-custom-cookies
+  - secure-data-in-transit
 audience:
   - Platform administrator
   - Developer

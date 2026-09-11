@@ -18,6 +18,10 @@ coverage-type:
   - understand
   - apply
 isautopublish: true
+topic:
+  - assign-ssl-domain-lifetime
+  - configure-cloud-ssl-domain
+  - renew-cloud-ssl-cert
 ---
 
 # Use your SSL domain in OutSystems Cloud

@@ -16,6 +16,8 @@ outsystems-tools:
   - integration builder
 coverage-type:
   - understand
+topic:
+  - learn-integration-builder
 isautopublish: true
 ---
 

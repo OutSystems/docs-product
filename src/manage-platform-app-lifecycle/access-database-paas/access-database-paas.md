@@ -7,6 +7,10 @@ platform-version: o11
 figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?node-id=304:0
 coverage-type:
   - apply
+topic:
+  - database-user-permissions
+  - permanent-database-access
+  - temporary-database-access
 tags:
   - Authentication
   - Authorization

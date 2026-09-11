@@ -5,7 +5,9 @@ guid: 929211ce-87e5-4927-a399-36c6b342d1a8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1837:9268
-tags: integration, mongodb, database management, server actions, extensibility
+tags:
+  - External Databases
+  - Site Properties
 audience:
   - Developer
   - Front-end developer

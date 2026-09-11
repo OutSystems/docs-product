@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) features a 1-Click Publish tool that automates the entire extension publishing process.
-tags: extension publishing, outsystems extensions, platform server, extension source code, xif files
+tags:
+  - Deploy
+  - Extensions
+  - Platform Server
 locale: en-us
 guid: 7e94a033-566b-43ff-a90a-2f462dd41e60
 app_type: traditional web apps, mobile apps, reactive web apps

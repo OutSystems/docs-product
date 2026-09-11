@@ -5,7 +5,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3728-254&t=SuzzAhRaRDk17IMm-1
 summary: OutSystems 11 (O11) enables direct editing of extension source code in the .NET IDE via Integration Studio.
-tags: ide usage, extension development, .net integration, source code synchronization, outsystems platform
+tags:
+  - .NET
+  - Extensions
 audience:
   - Developer
 outsystems-tools:

@@ -1,6 +1,7 @@
 ---
 summary: Learn how to create and deploy a QnA Maker knowledge base in Azure for use with the FAQ chatbot in OutSystems 11 (O11).
-tags: azure, qna maker, chatbots, knowledge base, faq systems
+tags:
+  - AI
 locale: en-us
 guid: 3d8d6edd-b26e-4f5a-83f4-bfedcf272b68
 app_type: traditional web apps, mobile apps, reactive web apps

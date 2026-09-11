@@ -453,6 +453,14 @@ knowledge-needs:
         users, either programmatically with Grant/Revoke actions or manually
         in the Users app, so they can reason about how permissions are
         structured before implementing them.
+    - name: Check permissions
+      id: check-permissions-overview
+      description: 'Wants to understand how permissions are checked in
+        OutSystems 11 applications, using the Screen Roles property to
+        restrict screen access and the generated Check<RoleName>Role(UserId)
+        action to guard server-side logic, so they can reason about the
+        built-in mechanisms available for enforcing role-based authorization
+        before implementing them.'
     - name: Hierarchical roles choice
       id: hierarchical-roles-choice
       description: Wants to decide whether to use hierarchical roles instead

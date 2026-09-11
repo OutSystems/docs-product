@@ -1,6 +1,8 @@
 ---
 summary: "Edit entity data in OutSystems 11 (O11) Service Studio: add, remove, and modify records with pending change validation before applying."
-tags: ide usage, reactive web apps, tutorials for beginners, entity management, data modeling
+tags:
+  - Data
+  - Entities
 locale: en-us
 guid: ebbc32e6-d57f-43c2-a62b-5ce779c4dad2
 app_type: traditional web apps, mobile apps, reactive web apps

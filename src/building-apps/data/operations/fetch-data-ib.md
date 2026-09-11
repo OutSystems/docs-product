@@ -5,7 +5,11 @@ guid: af0a23a7-38a2-4d2e-89da-a734af4e68a4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: data integration, api consuming, entity data management, single record fetching, record list display
+tags:
+  - Data
+  - Entities
+  - Screens
+  - Widgets
 audience:
   - Developer
   - Front-end developer

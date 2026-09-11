@@ -1,5 +1,10 @@
 ---
-tags: performance optimization, sql query optimization, application development, aggregate functions, platform efficiency
+tags:
+  - Aggregates
+  - Best Practices
+  - Optimization
+  - Performance
+  - SQL
 summary: Explore how OutSystems 11 (O11) optimizes record counting in aggregates and addresses challenges in SQL queries.
 locale: en-us
 guid: 63b22fd8-b156-4c3e-b95a-16b5ace39c62

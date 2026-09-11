@@ -1,6 +1,8 @@
 ---
 summary: "OutSystems 11 (O11) Service Studio entity data: add, remove, and modify records, with step-by-step instructions for applying or discarding changes."
-tags: entity management, data operations, database editing, service studio features, outsystems development
+tags:
+  - Data
+  - Entities
 locale: en-us
 guid: f83e9afb-de9b-4b5e-9564-24490bc762e5
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,7 @@
 ---
 summary: OutSystems 11 (O11) aggregate functions let you group data by identical attributes and calculate values like Count in Service Studio aggregates.
-tags: database operations, data aggregation, aggregate functions, data analysis, data grouping
+tags:
+  - Aggregates
 locale: en-us
 guid: d2578f60-c7a2-40fe-8e74-382aecad9b2f
 app_type: traditional web apps, mobile apps, reactive web apps

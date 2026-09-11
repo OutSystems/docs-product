@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) Aggregates let you fetch database data and display it in a List widget — no SQL knowledge needed.
-tags: ide usage, reactive web apps, tutorials for beginners, database operations, data display
+tags:
+  - Aggregates
+  - Data
+  - Entities
+  - Widgets
 locale: en-us
 guid: c1c2a735-0768-4e33-8e42-73329e7944ae
 app_type: traditional web apps, mobile apps, reactive web apps

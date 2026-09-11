@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5619-258&t=GZoLVxUBtXFpMnnm-1
-tags: data synchronization, mobile app development, performance optimization, local storage, data modelling
+tags:
+  - Best Practices
+  - Data Model
+  - Data Synchronization
+  - Mobile app
+  - Optimization
 audience:
   - Developer
   - Front-end developer

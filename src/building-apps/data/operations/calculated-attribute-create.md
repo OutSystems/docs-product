@@ -1,6 +1,7 @@
 ---
 summary: OutSystems 11 (O11) calculated attributes in aggregates let you add new fields based on existing values, including formulas and grouped expressions.
-tags: database operations, data modeling, ui dynamic content, data fetching, outsystems service studio
+tags:
+  - Aggregates
 locale: en-us
 guid: 802680cb-425f-4561-a353-56f582457b68
 app_type: traditional web apps, mobile apps, reactive web apps

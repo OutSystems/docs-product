@@ -1,6 +1,7 @@
 ---
 summary: OutSystems 11 (O11) aggregate filters let you add conditions to queries in Service Studio to retrieve exactly the data you need.
-tags: database queries, aggregates, filters, data retrieval, query conditions
+tags:
+  - Aggregates
 locale: en-us
 guid: ed7fd28f-d0a7-4b18-bddc-6ee0521677bf
 app_type: traditional web apps, mobile apps, reactive web apps

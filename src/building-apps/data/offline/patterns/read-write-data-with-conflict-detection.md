@@ -1,6 +1,9 @@
 ---
 summary: Read/Write Conflict Detection sync pattern for OutSystems 11 (O11) mobile apps sends local changes to the server, flags conflicts, and updates local storage.
-tags: data synchronization, conflict detection, offline data handling, local storage, database synchronization
+tags:
+  - Data Model
+  - Data Synchronization
+  - Mobile app
 locale: en-us
 guid: 9440e4f9-b77c-44ab-9b9a-f5cc985fbfbb
 app_type: mobile apps

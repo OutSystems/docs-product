@@ -1,6 +1,8 @@
 ---
 summary: "OutSystems 11 (O11) offline sync implementation: build client and server logic, configure OfflineDataSync, and set up manual and automatic sync triggers."
-tags: offline data synchronization, mobile ui framework, entity management, client logic, server logic
+tags:
+  - Data Synchronization
+  - Mobile app
 locale: en-us
 guid: 8680eeb4-f6ec-4c12-ae1d-1b228ed5de5b
 app_type: mobile apps

@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) offers a detailed checklist to improve offline data synchronization in mobile apps, enhancing performance and user experience.
-tags: offline data synchronization, performance optimization, best practices, mobile sync patterns, data management
+tags:
+  - Best Practices
+  - Data Synchronization
+  - Mobile app
+  - Performance
 locale: en-us
 guid: d56de308-6a6f-4003-8573-ba69db403011
 app_type: mobile apps

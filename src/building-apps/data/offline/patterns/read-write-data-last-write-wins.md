@@ -1,6 +1,9 @@
 ---
 summary: Read/Write Data Last Write Wins pattern in OutSystems 11 (O11) uses a last-write-wins strategy to sync mobile app local storage with the server database.
-tags: data synchronization, conflict resolution, mobile app development, offline data handling, last write wins
+tags:
+  - Data Model
+  - Data Synchronization
+  - Mobile app
 locale: en-us
 guid: 053acd13-6c13-4849-b496-35631a4ad7f3
 app_type: mobile apps

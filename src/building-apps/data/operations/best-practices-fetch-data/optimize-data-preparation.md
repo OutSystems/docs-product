@@ -1,5 +1,12 @@
 ---
-tags: performance optimization, server load reduction, data modeling, sql queries, asynchronous processing
+tags:
+  - Aggregates
+  - Best Practices
+  - Data
+  - Data Model
+  - Optimization
+  - Performance
+  - SQL
 summary: "OutSystems 11 (O11) data preparation optimization: design DB models upfront, use SQL over aggregate loops, and leverage asynchronous jobs to reduce server load."
 locale: en-us
 guid: 9508496b-0e5a-4373-a0df-1c3dba6e9f5b

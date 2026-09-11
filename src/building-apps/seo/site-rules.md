@@ -1,6 +1,12 @@
 ---
 summary: Site rules in OutSystems 11 (O11) let you customize domain URLs and app names in Service Center to improve SEO and simplify URL structure.
-tags: seo optimization, platform server, seo best practices, site rules
+tags:
+  - Domains
+  - Multi-language
+  - Optimization
+  - Platform Server
+  - Traditional Web
+  - Web
 locale: en-us
 guid: 3e81bb8b-4351-4533-b084-873a5e38fc2e
 app_type: traditional web apps, reactive web apps

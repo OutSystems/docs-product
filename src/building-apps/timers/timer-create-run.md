@@ -5,7 +5,8 @@ guid: 133d8c46-b36b-47de-9ad3-ca8e6460bb20
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=279:1
-tags: task automation, scheduled tasks, server actions, application deployment, process automation
+tags:
+  - Timers
 audience:
   - Developer
   - Front-end developer

@@ -1,6 +1,7 @@
 ---
 summary: Explore common errors and troubleshooting tips for SEO-friendly URLs in Reactive Web apps using OutSystems 11 (O11).
-tags: seo, url troubleshooting, error handling, web development, application troubleshooting
+tags:
+  - Troubleshooting
 locale: en-us
 guid: 27B0BF98-E947-4B89-91F4-27898F9B8271
 app_type: traditional web apps, reactive web apps

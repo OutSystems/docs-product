@@ -1,6 +1,10 @@
 ---
 summary: "OutSystems 11 (O11) email management in Service Studio: create emails, add content and input parameters, use lightweight themes, and apply templates."
-tags: email design, ui flows, email templates, lightweight styles, ui elements
+tags:
+  - Forge
+  - Templates
+  - Themes
+  - Widgets
 locale: en-us
 guid: 455d5651-9b51-4de7-8f8a-5888ab78d78e
 app_type: traditional web apps, mobile apps, reactive web apps

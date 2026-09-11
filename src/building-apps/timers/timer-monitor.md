@@ -5,7 +5,10 @@ guid: caf9e5cf-7145-41f9-b6e7-af2f0f7f0652
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:3
-tags: monitoring, timers, logs, service center permissions, timer management
+tags:
+  - Logging
+  - Monitoring
+  - Timers
 audience:
   - Developer
   - Platform administrator

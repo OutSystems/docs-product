@@ -1,6 +1,11 @@
 ---
 summary: OutSystems 11 (O11) form validation using built-in client-side checks and custom logic with Form.Valid to validate mandatory fields in Reactive and Mobile apps.
-tags: form validation, user experience, data validation, client-side validation, low-code development
+tags:
+  - Forms
+  - Front-End
+  - Traditional Web
+  - UI
+  - UX
 locale: en-us
 guid: 5a4706ab-9f44-405a-a6fc-758b86c29d30
 app_type: traditional web apps, mobile apps, reactive web apps

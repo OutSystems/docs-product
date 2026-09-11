@@ -1,6 +1,8 @@
 ---
 summary: "Email attachments in OutSystems 11 (O11): attach static or database files using the Send Email node and the Attachment data structure."
-tags: email integration, file management, application development, service studio how-to, outsystems development
+tags:
+  - Aggregates
+  - Logic
 locale: en-us
 guid: 33f25da2-2cd8-4016-a12d-3b6ebfd12fc2
 app_type: traditional web apps, mobile apps, reactive web apps

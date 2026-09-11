@@ -1907,6 +1907,15 @@ knowledge-needs:
         support, by applying the page-break-inside CSS rule, passing header/footer
         URLs via OtherArgs, and adding pagination JavaScript, in OutSystems 11, so
         that the generated PDF report renders correctly and completely.
+  - name: Integration Builder
+    id: integration-builder
+    subtopics:
+    - name: Learn Integration Builder
+      id: learn-integration-builder
+      description: Wants to understand what Integration Builder is, what problem it solves
+        (connecting OutSystems 11 apps to external Systems of Record), and which
+        types of external systems it supports, so that they can decide whether
+        to use it and where to start.
   - name: Handling webservice errors
     id: handle-webservice-errors
     subtopics:
@@ -2080,6 +2089,12 @@ knowledge-needs:
         attacks by using HTTPS/SSL/TLS for Web Flows and Web Services and enabling
         secure cookies with HSTS headers, so that sensitive data and session cookies
         aren't transmitted in plain text.
+    - name: Secure custom cookies
+      id: secure-custom-cookies
+      description: Wants to add the Secure flag to a custom cookie in OutSystems
+        11, using the CookieSecure parameter of the SetCookie Server Action in a
+        server-side context or by appending '; Secure' in client-side JavaScript,
+        so that custom application cookies are only sent over HTTPS.
   - name: External access control
     id: external-access-control
     subtopics:
@@ -6870,6 +6885,23 @@ knowledge-needs:
 - name: Native Mobile apps
   guid: f67965c4-a2ef-4076-8676-c8b8203ab671
   topics:
+  - name: MABS environment configuration
+    id: mabs-environment-configuration
+    subtopics:
+    - name: Enable MABS service
+      id: enable-mabs-service
+      description: Wants to enable or disable the Mobile Apps Build Service
+        (MABS) for an OutSystems 11 environment in Service Center's
+        Environment Configuration, understanding that disabling it prevents
+        new mobile app package generation for that environment, so that
+        they can control when new mobile builds are produced.
+    - name: Monitor MABS status
+      id: monitor-mabs-status
+      description: Wants to check the operational status of the Mobile Apps
+        Build Service (MABS) for an OutSystems 11 environment in Service
+        Center's Environment Health screen, including per-platform status
+        and generation logs, so that they can detect when the service is
+        down and mobile app packages aren't being generated.
   - name: Troubleshoot MABS build errors
     id: troubleshoot-mabs-build-errors
     subtopics:
@@ -7182,13 +7214,14 @@ knowledge-needs:
     subtopics:
     - name: Basic read-only sync
       id: basic-read-only-sync
-      description: Wants to implement the basic Read-Only Data synchronization
-        pattern for OutSystems 11 mobile apps, where the client-side action
-        calls the server to fetch all data, deletes the current local
-        storage, and recreates it with the fetched data on every
-        synchronization, so that they understand this simple but
-        data-heavy one-way (server-to-device) sync approach and when it's
-        suitable.
+      description: Wants to understand how the basic Read-Only Data
+        synchronization pattern works for mobile apps, including the OnSync
+        client action logic (call ServerDataSync, delete all local records,
+        and recreate them from the fetched data), the ServerDataSync server
+        action logic (fetch all records from the database), and the
+        underlying database entity and local storage entity data model, so
+        that they can implement one-way (server-to-device) sync for read-only
+        offline data.
     - name: Generate sync action
       id: generate-sync-action
       description: Wants to automatically generate the client and server
@@ -8754,6 +8787,39 @@ knowledge-needs:
         OutSystems Cloud on their firewall when connecting via VPN instead
         of a single IP, so that traffic isn't blocked due to the
         non-static nature of individual private IP addresses.
+  - name: VPN setup
+    id: vpn-setup
+    subtopics:
+    - name: Request VPN connection
+      id: request-vpn-connection
+      description: Wants to set up a site-to-site VPN connection between
+        their on-premises network and OutSystems Cloud, by requesting the
+        VPN in LifeTime with the internet gateway IP, internal network IP
+        range, and routing type, downloading the generated configuration
+        file, and configuring their VPN gateway and firewall accordingly,
+        so that they can establish secure connectivity between the two
+        networks.
+    - name: VPN gateway requirements
+      id: vpn-gateway-requirements
+      description: Wants to know the requirements and specifications for
+        their on-premises VPN gateway, such as supported IKE protocols,
+        encryption/hashing algorithms, and Diffie-Hellman groups, before
+        setting up a site-to-site VPN to OutSystems Cloud, so that they
+        can choose or configure a compatible gateway.
+    - name: VPN traffic and redundancy
+      id: vpn-traffic-redundancy
+      description: Wants to understand how an OutSystems VPN connection
+        generates traffic and handles redundancy, before setting up a
+        site-to-site VPN, so that they can plan their on-premises network
+        and firewall accordingly.
+    - name: Change VPN IP range
+      id: change-vpn-ip-range
+      description: Wants to update the internal on-premises IP range
+        associated with an existing VPN connection to OutSystems Cloud,
+        using the VPN Management area in LifeTime for static routing or
+        by opening a support case for dynamic routing, so that the VPN
+        reflects a network change without needing to recreate the
+        connection.
   - name: VPN connection troubleshooting
     id: vpn-connection-troubleshooting
     subtopics:
@@ -10267,6 +10333,33 @@ knowledge-needs:
         OutSystems support installs it and the platform can present it when
         authenticating outbound webservice calls that require
         client-certificate authentication.
+    - name: Configure Cloud SSL domain
+      id: configure-cloud-ssl-domain
+      description: Wants to configure their own custom SSL domain for an
+        OutSystems Cloud environment, by meeting the domain and certificate
+        requirements (CSR, CNAME record, complete certificate chain),
+        uploading the PEM, PFX, or ZIP-bundled certificate in LifeTime, and
+        assigning it and its hostname to the environment, so that the
+        environment's apps and web services become reachable over HTTPS
+        under the company's own domain instead of the default
+        `outsystemsenterprise.com` domain.
+    - name: Assign SSL domain to LifeTime
+      id: assign-ssl-domain-lifetime
+      description: Wants to customize the domain of their LifeTime
+        infrastructure management console environment on OutSystems Cloud,
+        by first uploading the domain certificate on another environment
+        (or reusing an existing wildcard certificate) and then opening a
+        support ticket for OutSystems to manually assign it, so that
+        LifeTime becomes reachable under their own domain without
+        disrupting active user sessions.
+    - name: Renew Cloud SSL certificate
+      id: renew-cloud-ssl-cert
+      description: Wants to renew an SSL domain certificate that's about to
+        expire on an OutSystems Cloud environment, by using the Renew
+        option under Manage Domain Certificates, or by opening a new
+        support ticket if the certificate is assigned to the LifeTime
+        environment, so that HTTPS access under their custom domain
+        continues without interruption.
   - name: Reverse Proxy Configuration
     id: reverse-proxy-configuration
     subtopics:
@@ -10831,6 +10924,28 @@ knowledge-needs:
         solution, so that the module operates in its new database without
         losing data or breaking dependent modules, in a self-managed
         OutSystems 11 environment.
+  - name: Direct database access (Cloud)
+    id: direct-database-access-cloud
+    subtopics:
+    - name: Temporary database access
+      id: temporary-database-access
+      description: Wants to request a temporary database user for an OutSystems Cloud
+        environment through LifeTime's self-service "Create database user"
+        option, receiving time-limited read-and-write credentials for ad-hoc
+        troubleshooting, provided their LifeTime version supports the feature
+        and they have an existing VPN or AWS Transit Gateway connection.
+    - name: Permanent database access
+      id: permanent-database-access
+      description: Wants to request a permanent database user for an OutSystems Cloud
+        environment by opening a support case specifying the environment, access
+        level, and connection method, so that they get long-term credentials for
+        automated integration or data synchronization.
+    - name: DB user permissions
+      id: database-user-permissions
+      description: Wants to know the exact permissions granted to OutSystems Cloud direct
+        database access users, comparing SQL Server and Oracle, for read-only
+        versus read-and-write credential sets, so that they can determine which
+        access level meets their needs.
   - name: SQL Server Compatibility Upgrade
     id: sql-server-compatibility-upgrade
     subtopics:
@@ -11015,7 +11130,7 @@ knowledge-needs:
     id: log-streaming-overview
     subtopics:
     - name: Understand Log Streaming
-      id: log-streaming-understand
+      id: log-streaming-overview-selfmanaged
       description: Wants to understand what Log Streaming is for a self-managed O11
         installation — including how the bundled Fluent Bit service reads JSON log
         files, transforms them into the Flat Format, and forwards them to an external
@@ -11028,6 +11143,20 @@ knowledge-needs:
         prerequisites, configuring settings, setting up a multi-front-end farm, and
         disabling the feature, so that application logs are forwarded to an external
         observability or SIEM tool.
+    - name: Cloud log streaming
+      id: log-streaming-overview-cloud
+      description: Wants to understand what log streaming is for an OutSystems 11
+        app running on OutSystems Cloud, including how the OpenTelemetry Protocol
+        (OTLP) is used to export application and platform logs to third-party APM
+        and observability tools, and the benefits it provides, so they can decide
+        whether to adopt it.
+    - name: Log streaming prerequisites
+      id: log-streaming-cloud-prerequisites
+      description: Wants to know the licensing, Platform Server and LifeTime
+        version, user permission, and connectivity requirements to enable log
+        streaming for an OutSystems 11 app on OutSystems Cloud, so they can
+        confirm they meet the prerequisites before configuring a stream to an
+        APM tool.
   - name: Log Streaming operations
     id: log-streaming-ops
     subtopics:
@@ -11230,9 +11359,11 @@ knowledge-needs:
         for monitoring ODC apps, agents, and workflows.
     - name: Supported APM tools
       id: supported-apm-tools
-      description: Wants to know which APM tools ODC's Analytics Stream supports natively
-        vs. via the OpenTelemetry collector, so they can pick a compatible
-        destination for their observability data.
+      description: Wants to know which APM tools the streaming feature supports
+        natively vs. via the OpenTelemetry collector, and which categories of
+        observability data and application and platform log data (for example
+        errors, screen requests, and service actions) stream to them, so they
+        can pick a compatible destination for their observability data.
     - name: Connectivity requirements
       id: stream-connectivity-requirements
       description: Wants to understand the connectivity and security

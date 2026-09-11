@@ -1004,6 +1004,13 @@ knowledge-needs:
         the Initialized client action when needed, in Service Studio, so
         that the pattern meets WCAG 2.2 AA accessibility requirements, in
         mobile apps and reactive web apps (O11).
+    - name: Table sort accessibility
+      id: table-sort-accessibility
+      description: Wants to make Table widget sorting accessible to screen readers
+        by enabling the WCAG 2.2 aria-sort attribute via Factory Configuration, and
+        to declare a non-default initial sort direction using the
+        default-sort-direction Extended Property on a Header Cell, in OutSystems 11,
+        so custom OnSort actions report the correct sort state.
     - name: Accessible Card Background pattern
       id: accessible-card-background-pattern
       description: Wants to improve text contrast on the Card Background UI
@@ -3173,6 +3180,34 @@ knowledge-needs:
         the request body, by correcting the parameter''s ''Receive In''
         property, so that the REST API method compiles and publishes
         successfully.'
+    - name: Fix multipart invalid HTTP method
+      id: fix-multipart-invalid-http-method
+      description: 'Wants to fix the "Invalid HTTP Method" error for a
+        multipart/form-data REST API method in Service Studio for OutSystems
+        11, caused by the method using an HTTP method that doesn''t support
+        multipart/form-data, by changing the method''s HTTP method, so that
+        the REST API method compiles and publishes successfully.'
+    - name: Fix multipart basic parts
+      id: fix-multipart-basic-parts
+      description: 'Wants to fix the multipart/form-data validation error for
+        a REST API method in Service Studio for OutSystems 11 caused by the
+        method defining zero or only one basic part, by adding the required
+        basic parts to the method definition, so that the REST API method
+        compiles and publishes successfully.'
+    - name: Fix multipart nameless parts
+      id: fix-multipart-nameless-parts
+      description: 'Wants to fix the multipart/form-data validation error for
+        a REST API method in Service Studio for OutSystems 11 caused by one
+        or more parts not having a name, by naming every part in the method
+        definition, so that the REST API method compiles and publishes
+        successfully.'
+    - name: Fix multipart JSON part type
+      id: fix-multipart-json-part-type
+      description: 'Wants to fix the multipart/form-data validation error for
+        a REST API method in Service Studio for OutSystems 11 caused by a
+        JSON part not using a Structure or List data type, by changing that
+        part''s data type to a Structure or List, so that the REST API method
+        compiles and publishes successfully.'
   - name: Consume webservices
     id: consume-webservices
     subtopics:
@@ -3203,6 +3238,14 @@ knowledge-needs:
         parameter in Service Studio, so that they can correctly configure and
         understand input parameters when consuming a deprecated SOAP web service
         in OutSystems 11.
+    - name: Multipart form inputs
+      id: multipart-form-inputs
+      description: Wants to consume a REST API method that uses multipart/form-data as its
+        request format in Service Studio, understanding how parts from the
+        OpenAPI specification become input parameters and their configurable
+        properties, including binary dynamic lists and the auto-generated
+        RequestPart data structure, so that they can correctly configure and use
+        the consumed method's inputs.
     - name: Consume SAP OData
       id: consume-sap-odata
       description: Wants to consume an SAP OData service in OutSystems 11 by downloading
@@ -9795,6 +9838,15 @@ knowledge-needs:
         outsystems.xml or the WebLogic Administration Console keystore/SSL
         settings) and restart the server, so that OutSystems 11 applications on
         Linux become accessible over HTTPS.
+    - name: Install client-side cert
+      id: install-client-side-cert
+      description: Wants to install a client-side certificate (in .PFX format
+        with password, plus any required root certificates in .CER format) on
+        all front-ends of an OutSystems Cloud environment, by opening a
+        support case and specifying the target environments, so that
+        OutSystems support installs it and the platform can present it when
+        authenticating outbound webservice calls that require
+        client-certificate authentication.
   - name: Reverse Proxy Configuration
     id: reverse-proxy-configuration
     subtopics:
@@ -11416,3 +11468,27 @@ knowledge-needs:
         CDN, in OutSystems Developer Cloud, so that end users and search
         engine crawlers land on a functional app entry point for improved
         SEO and usability.'
+- name: Traditional to Reactive Conversion
+  guid: ''
+  topics:
+  - name: Conversion process
+    id: conversion-process
+    subtopics:
+    - name: Convert to Reactive
+      id: convert-to-reactive
+      description: Wants to convert an OutSystems 11 Traditional Web module
+        to Reactive using Service Studio's conversion accelerator, including
+        checking prerequisites, deciding conversion order for multiple
+        modules, and handling entities and roles, so that the module is
+        transformed with minimal manual rework.
+  - name: Post-conversion security
+    id: post-conversion-security
+    subtopics:
+    - name: Validate security after conversion
+      id: validate-security-after-conversion
+      description: Wants to review security-sensitive elements introduced
+        by an OutSystems 11 Traditional-to-Reactive conversion (client
+        variables, converted Preparation logic, exposed server actions,
+        client-side role checks, and dynamic sorting queries), so that no
+        previously server-protected data or operations become exposed in
+        the Reactive module.

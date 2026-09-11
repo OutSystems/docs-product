@@ -1109,6 +1109,26 @@ knowledge-needs:
         readers announce accurate progress feedback, meeting WCAG 2.2 AA
         accessibility requirements, in mobile apps and reactive web apps
         (O11).
+    - name: Accessible Accordion
+      id: accessible-accordion-pattern
+      description: Wants to make the Accordion UI Pattern accessible to
+        assistive technologies when used with a List widget, by adding a
+        client action with a JavaScript node that assigns list and
+        listitem roles to the Accordion Item's list element via the
+        AccordionInitialized event, in Service Studio, so that screen
+        readers correctly announce list structure, meeting WCAG 2.2 AA
+        accessibility requirements, for OutSystems UI versions earlier
+        than 2.29.0, in mobile apps and reactive web apps (O11).
+    - name: Accessible Blank Slate pattern
+      id: accessible-blank-slate-pattern
+      description: Wants to make the Blank Slate UI Pattern accessible to
+        assistive technologies, by setting the correct ARIA role (region
+        for a static empty state, status for one that updates
+        dynamically) via a JavaScript node in the OnReady action, in
+        Service Studio, so that screen readers announce the pattern
+        correctly, meeting WCAG 2.2 AA accessibility requirements, for
+        OutSystems UI versions earlier than 2.29.0, in mobile apps and
+        reactive web apps (O11).
   - name: Translating apps
     id: translating-apps
     subtopics:
@@ -3679,6 +3699,31 @@ knowledge-needs:
         (or contacting OutSystems Support if the problem persists), in
         OutSystems 11, so that they can continue working in Workflow
         Builder.'
+    - name: WFB invalid access error
+      id: wfb-invalid-access-error
+      description: 'Wants to resolve the "Invalid access.
+        <OriginalErrorMessage>." error that occurs when a user lacks
+        permission to perform an operation in Workflow Builder, by
+        verifying their permission for the operation or logging out and
+        back in (or contacting OutSystems Support if the problem
+        persists), in OutSystems 11, so that they can continue working
+        in Workflow Builder.'
+    - name: WFB general error
+      id: wfb-general-error
+      description: 'Wants to resolve the "General error.
+        <OriginalErrorMessage>." error that occurs when an operation
+        causes an error in Workflow Builder, by examining the original
+        error message and creating a case with OutSystems Support if
+        the problem persists, in OutSystems 11, so that they can
+        continue working in Workflow Builder.'
+    - name: WFB invalid application data error
+      id: wfb-invalid-application-data-error
+      description: 'Wants to resolve the "Invalid application data.
+        <OriginalErrorMessage>." error that occurs when trying to update
+        an application with inconsistent data in Workflow Builder, by
+        logging out and back in (or creating a case with OutSystems
+        Support if the problem persists), in OutSystems 11, so that
+        they can successfully save the application.'
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -4181,6 +4226,15 @@ knowledge-needs:
         via Toolbox or Search in other modules if the dependency isn't added,
         in Service Studio, so that numerical notifications like unread counts
         display in mobile apps and reactive web apps (O11).
+    - name: Use Blank Slate pattern
+      id: use-blank-slate-pattern
+      description: Wants to add the Blank Slate UI Pattern to a screen,
+        adding the OutSystemsUI dependency via Search in other modules if
+        the widget doesn't display in the Toolbox, and customizing its
+        icon, content, and action placeholders, including the FullHeight
+        and ExtendedClass properties, in Service Studio, so that
+        empty-state messages display when there's no data or a task
+        needs completing, in mobile apps and reactive web apps (O11).
     - name: Counter reference
       id: counter-reference
       description: Wants to look up the properties of the Counter UI Pattern in
@@ -4743,6 +4797,23 @@ knowledge-needs:
         IsDesktop(), in Service Studio for O11 Traditional Web Apps, so that
         the Iframe displays at a fixed width on desktop while remaining
         full-width on mobile to avoid overflow.
+    - name: Use Accordion pattern
+      id: use-accordion-pattern
+      description: Wants to add the Accordion UI Pattern to a screen, by
+        dragging the widget from the Toolbox into the Main Content area
+        (adding the OutSystemsUI dependency via Search in other modules if
+        it doesn't display), adding content to the AccordionItem
+        placeholders, and setting properties like MultipleItems, in Service
+        Studio, so that users can expand and collapse content sections, in
+        mobile apps and reactive web apps (O11).
+    - name: Accordion reference
+      id: accordion-reference
+      description: Wants to look up the properties of the Accordion and
+        Accordion Item widgets in Service Studio, including MultipleItems,
+        ExtendedClass, StartsExpanded, Icon, IconPosition, IsDisabled, and
+        the OnToggle event, so that they can correctly configure the
+        pattern's expand/collapse behavior and appearance, in mobile apps
+        and reactive web apps (O11).
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -5733,6 +5804,19 @@ knowledge-needs:
         project owner, following the appropriate process based on the
         project's classification, so that they can address issues with a
         project they use.
+    - name: Deactivate own Forge component
+      id: deactivate-forge-component
+      description: Wants to request removal of their own Forge component as
+        the project owner, by using Edit project details and Deactivate
+        Component in the Forge UI, or contacting the Community team by
+        email for urgent cases, so that the component is deactivated
+        pending Community team review.
+    - name: Report Forge content
+      id: report-forge-content
+      description: Wants to understand how to report a Forge component or
+        flag a component review/comment as inappropriate, notifying the
+        moderation team and component owner, in OutSystems 11, so that
+        content quality, security, and development issues get addressed.
   - name: Submitting assets to Forge
     id: submitting-assets-to-forge
     subtopics:
@@ -11470,9 +11554,9 @@ knowledge-needs:
       id: supported-apm-tools
       description: Wants to know which APM tools the streaming feature supports
         natively vs. via the OpenTelemetry collector, and which categories of
-        observability data and application and platform log data (for example
-        errors, screen requests, and service actions) stream to them, so they
-        can pick a compatible destination for their observability data.
+        observability data and application and platform log data stream to them,
+        so they can pick a compatible destination for their observability and
+        log data.
     - name: Connectivity requirements
       id: stream-connectivity-requirements
       description: Wants to understand the connectivity and security

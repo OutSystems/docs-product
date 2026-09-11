@@ -7016,6 +7016,15 @@ knowledge-needs:
   - name: Offline Synch
     id: offline-synch
     subtopics:
+    - name: Basic read-only sync
+      id: basic-read-only-sync
+      description: Wants to implement the basic Read-Only Data synchronization
+        pattern for OutSystems 11 mobile apps, where the client-side action
+        calls the server to fetch all data, deletes the current local
+        storage, and recreates it with the fetched data on every
+        synchronization, so that they understand this simple but
+        data-heavy one-way (server-to-device) sync approach and when it's
+        suitable.
     - name: Complex mobile sync
       id: complex-mobile-sync
       description: Wants to optimize complex offline data synchronization in a mobile
@@ -7058,6 +7067,16 @@ knowledge-needs:
         attributes tracking whether a record originated from the server, was
         modified locally, and remains active, so that one-to-many master/detail
         records stay consistent under a "last write wins" strategy.
+    - name: Last write wins pattern
+      id: last-write-wins-sync-pattern
+      description: Wants to implement the Read/Write Last Write Wins offline
+        synchronization pattern for OutSystems 11 mobile apps, covering the
+        client-side logic that retrieves added, updated, and deleted local
+        records and sends them to the server, and the server-side logic
+        that updates the database and returns the full updated data set to
+        replace local storage, so that bidirectional synchronization keeps
+        local and server data consistent under a simple last-write-wins
+        strategy.
     - name: Sync actions overview
       id: sync-actions-procedure
       description: Wants to understand the out-of-the-box OfflineDataSync,
@@ -7693,6 +7712,22 @@ knowledge-needs:
         confirming and updating the certificate and provisioning profile
         information so they match each other, so that the mobile app
         package generates successfully.'
+    - name: App ID/profile mismatch
+      id: app-id-provisioning-mismatch
+      description: 'Wants to resolve the OS-MABS-SIG-40009 "Your application
+        identifier and provisioning profile don''t match" error, by
+        confirming and updating the application identifier and provisioning
+        profile information so they match each other, so that the mobile
+        app package generates successfully.'
+    - name: Dev app type mismatch
+      id: dev-app-type-mismatch
+      description: 'Wants to resolve the OS-MABS-SIG-40011 "There was an
+        issue generating the app. Please check if your app identifier,
+        certificate, and provisioning profile match the Development
+        application type." error, by confirming and updating the app
+        identifier, certificate, and provisioning profile so they match the
+        Development application type, so that the mobile app package
+        generates successfully.'
     - name: Fix build type mismatch
       id: fix-build-type-mismatch
       description: Wants to fix the "application build type must match the
@@ -7732,6 +7767,21 @@ knowledge-needs:
         valid and uses the .mobileprovision format and replacing it if
         needed, escalating to OutSystems Support if the problem persists,
         so that the mobile app package generates successfully.'
+    - name: Invalid keystore error
+      id: invalid-keystore-error
+      description: 'Wants to resolve the OS-MABS-SIG-40012 "The keystore
+        format is invalid" error, caused by MABS being unable to parse an
+        Android app''s keystore file, by checking that the keystore is in
+        the correct format and content and replacing it if needed, so that
+        the Android mobile app package generates successfully.'
+    - name: Keystore password error
+      id: keystore-password-error
+      description: 'Wants to resolve the OS-MABS-SIG-40013 "Please enter the
+        right password for the keystore" error, caused by entering an
+        incorrect password when generating an Android app, by checking and
+        correcting the keystore password and retrying, escalating to
+        OutSystems Support if the problem persists, so that the Android
+        mobile app package generates successfully.'
     - name: Document storage error
       id: document-storage-error
       description: 'Wants to resolve the OS-MCO-50002 "A document is not
@@ -8086,6 +8136,15 @@ knowledge-needs:
         error, by checking the build logs for issues related to the Shield
         phase and escalating to OutSystems Support if the problem persists,
         so that the mobile app package generates successfully.'
+    - name: AppShield license error
+      id: appshield-license-error
+      description: 'Wants to resolve the OS-MABS-SHLD-50001 "Something happened
+        and your request didn''t go through, please try again. If the problem
+        persists, contact our support team." error, by checking the build
+        logs on Service Center for AppShield license validation issues and
+        repeating the operation, escalating to OutSystems Support if the
+        problem persists, so that the mobile app package generates
+        successfully.'
     - name: Deprecated signer cert
       id: deprecated-signer-cert-error
       description: 'Wants to resolve the OS-MABS-SHLD-40007 "The

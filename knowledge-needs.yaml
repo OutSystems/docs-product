@@ -8072,6 +8072,14 @@ knowledge-needs:
         by retrying the mobile compilation and opening a support case with
         OutSystems Support if the problem persists, so that the native
         mobile build completes successfully.'
+    - name: Package listing error
+      id: package-listing-error
+      description: 'Wants to resolve the OS-MCO-50008 "An error occurred
+        while listing the versions of a package. If the problem persists,
+        open a support case." error, an unspecified internal error with no
+        more specific cause, by retrying the mobile compilation and opening
+        a support case with OutSystems Support if the problem persists, so
+        that the native mobile build completes successfully.'
     - name: Package fetch error
       id: package-fetch-error
       description: 'Wants to resolve the OS-MCO-50009 "An error occurred
@@ -8124,6 +8132,14 @@ knowledge-needs:
         persists, open a support case." error, by retrying the mobile
         compilation and escalating to OutSystems Support if the problem
         persists, so that the native mobile build completes successfully.'
+    - name: Object deserialize error
+      id: object-deserialize-error
+      description: 'Wants to resolve the OS-MCO-50005 "An error occurred
+        while attempting to deserialize an object from the object storage.
+        If the problem persists, open a support case." error, by retrying
+        the mobile compilation and escalating to OutSystems Support if the
+        problem persists, so that the native mobile build completes
+        successfully.'
     - name: Template package error
       id: template-package-error
       description: 'Wants to resolve the OS-MCO-50016 "The template NPM

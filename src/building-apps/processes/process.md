@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) processes let you integrate business workflows into apps, with automatic or explicit launch, activity instances, and process scope.
-tags: business process management, process flows, process design, application development, workflow automation
+tags:
+  - Business Processes
+  - Workflows
 locale: en-us
 guid: 7f9ed2cf-c73b-467e-bdfa-cf4ba9655613
 app_type: traditional web apps, mobile apps, reactive web apps

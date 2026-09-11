@@ -1,6 +1,9 @@
 ---
 summary: Explore how OutSystems 11 (O11) automatically upgrades process flows and performs impact analysis to manage active process instances.
-tags: process upgrades, impact analysis, process flows, active process instances, automatic upgrades
+tags:
+  - Business Processes
+  - Deploy
+  - Workflows
 locale: en-us
 guid: 628316ec-b24f-422b-bafa-93bc8dd3bc07
 app_type: traditional web apps, mobile apps, reactive web apps

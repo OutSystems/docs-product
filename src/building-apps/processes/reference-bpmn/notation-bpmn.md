@@ -5,7 +5,9 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5604-2&t=nAkzKIHQvai2bAGN-1
-tags: bpmn, process modeling, bpmn 1.2 notation, business process technology, bpt
+tags:
+  - BPMN
+  - Business Processes
 audience:
   - Business analyst
   - Developer

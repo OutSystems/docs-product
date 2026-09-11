@@ -1,6 +1,10 @@
 ---
 summary: BPT table identity reseeding in OutSystems 11 (O11) for SQL Server and Oracle to avoid the 2,147,483,647 integer limit on self-managed infrastructures.
-tags: sql server, database management, identity reseeding, bpt (business process technology), data archiving
+tags:
+  - Business Processes
+  - Data Integrity
+  - SQL
+  - Troubleshooting
 locale: en-us
 guid: b12b531a-097a-41c5-965b-7354fcdc2cef
 app_type: traditional web apps, mobile apps, reactive web apps

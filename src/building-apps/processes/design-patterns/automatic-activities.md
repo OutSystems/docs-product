@@ -5,7 +5,10 @@ guid: 19cbdea5-0bab-4d93-9e54-aa727f878b4b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: process automation, transaction management, system integration, error handling, process flow
+tags:
+  - Asynchronous Processes
+  - Business Processes
+  - Workflows
 audience:
   - Developer
   - Front-end developer

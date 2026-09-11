@@ -5,7 +5,11 @@ guid: e4f2b751-f68b-4d31-b018-a30bf5a7f61a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:20
-tags: process management, scalability, runtime execution, conditional start, process optimization
+tags:
+  - Architecture
+  - Asynchronous Processes
+  - Business Processes
+  - Workflows
 audience:
   - Architect
   - Developer

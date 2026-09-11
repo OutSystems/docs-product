@@ -2298,6 +2298,24 @@ knowledge-needs:
       description: Wants to understand what each CSP default value and required value does
         and the impact of removing them, so that they can safely customize their
         app's CSP without breaking functionality.
+  - name: Security fundamentals
+    id: security-fundamentals
+    subtopics:
+    - name: CIA security triad
+      id: cia-security-triad
+      description: Wants to understand the CIA (Confidentiality, Integrity,
+        Availability) security triangle model, including the complementary
+        concepts of authenticity and non-repudiation, so that they can
+        reason about the core pillars used to guide an organization's
+        information security policies.
+    - name: OWASP top 10 lists
+      id: owasp-top-10-lists
+      description: Wants to find the major security vulnerabilities
+        affecting web and mobile applications by consulting OWASP's
+        periodically published Top 10 Web Application Security Risks and
+        Top 10 Mobile Risks lists, so that they can use a recognized
+        vulnerability baseline when assessing and securing their
+        applications.
 - name: ODC Workflows
   guid: 8f3c2a1d-6e4b-4a7f-9c0d-2b5e7f1a4c9e
   topics:
@@ -2367,6 +2385,19 @@ knowledge-needs:
   - name: Case Management Framework
     id: case-management-framework
     subtopics:
+    - name: CMf overview
+      id: cmf-overview
+      description: Wants to understand what the Case Management Framework is, how it
+        extends Business Process Technology, and its core features, in
+        OutSystems 11, so that they can decide whether it fits their case
+        management app.
+    - name: CMf app examples
+      id: cmf-app-examples
+      description: Wants to understand the Simple, Medium, and Complex
+        use-case categories for Case Management Framework apps, with example
+        scenarios for each (e.g. approvals, support cases, claims handling),
+        in OutSystems 11, so that they can gauge the complexity and scope of
+        their own case management app.
     - name: Bootstrap CMF app
       id: bootstrap-cmf-app
       description: Wants to create the foundational modules of a case management app
@@ -3253,6 +3284,14 @@ knowledge-needs:
         properties, including binary dynamic lists and the auto-generated
         RequestPart data structure, so that they can correctly configure and use
         the consumed method's inputs.
+    - name: Multipart content-disposition
+      id: multipart-content-disposition
+      description: Wants to understand how OutSystems generates the
+        Content-Disposition header for a multipart/form-data REST API method
+        depending on whether the RequestPart data structure is used, and how
+        to manually add a filename parameter via the OnBeforeRequest callback
+        when it isn't, so that file parts are correctly identified in the
+        request.
     - name: Consume SAP OData
       id: consume-sap-odata
       description: Wants to consume an SAP OData service in OutSystems 11 by downloading
@@ -3528,6 +3567,12 @@ knowledge-needs:
         by retrying the operation or contacting OutSystems Support if the
         problem persists, in OutSystems 11, so that they can successfully
         create the group.'
+    - name: WFB app templates
+      id: wfb-app-templates
+      description: Wants to choose a prebuilt app template that matches their business
+        scenario when starting a new app in Workflow Builder, in OutSystems 11,
+        so that they can start from ready-made form fields and workflow logic
+        instead of building the app from scratch.
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -7091,6 +7136,15 @@ knowledge-needs:
         synchronization, so that they understand this simple but
         data-heavy one-way (server-to-device) sync approach and when it's
         suitable.
+    - name: Generate sync action
+      id: generate-sync-action
+      description: Wants to automatically generate the client and server
+        actions needed to implement the Read-Only Data synchronization
+        pattern for an entity, by right-clicking a local entity linked to a
+        database entity via foreign key in ODC Studio's Data tab and
+        choosing Create Action to Sync Data (Read-Only), so the
+        SyncLocal<Entity> and Sync<Entity> actions are scaffolded without
+        manual creation.
     - name: Complex mobile sync
       id: complex-mobile-sync
       description: Wants to optimize complex offline data synchronization in a mobile
@@ -8231,6 +8285,48 @@ knowledge-needs:
         screens, escalating to OutSystems Support if the problem persists,
         so that the mobile app compiles and the native mobile build
         succeeds.'
+    - name: Missing iOS usage description
+      id: missing-ios-usage-description-error
+      description: 'Wants to resolve the OS-MCO-40003 "Extensibility
+        Configurations are missing a usage description for iOS permission
+        <Permission>" error, caused by a library declaring an iOS permission
+        in its extensibility configurations without a usage description, by
+        adding the missing usage description in the mobile app''s
+        extensibility configurations, removing the unneeded permission
+        declaration from the library, or removing the library, so that the
+        mobile app compiles and the native mobile build succeeds.'
+    - name: Invalid schema error
+      id: invalid-schema-error
+      description: 'Wants to resolve the OS-MCO-40004 "Extensibility
+        Configurations of <AssetName> do not follow a supported schema:
+        <Detail>" error, caused by a mobile app''s or library''s
+        extensibility configurations not conforming to either the Universal
+        Extensibility or Cordova-based Extensibility JSON schema, by
+        reviewing the error''s detail and updating the configurations to
+        match the appropriate schema (Universal-only for Capacitor apps),
+        escalating to OutSystems Support if the problem persists, so that
+        the mobile app compiles and the native mobile build succeeds.'
+    - name: Plugin source mismatch
+      id: plugin-source-mismatch
+      description: 'Wants to resolve the "Extensibility Configurations of
+        <AssetName> include plugin sources, but none of them are compatible
+        with <MobileFramework>" error that causes a mobile app''s native
+        build to fail when a plugin only provides Capacitor sources for a
+        Cordova-based build, by switching the mobile framework to Capacitor,
+        removing the incompatible plugin, or providing a matching Cordova
+        source for it, so that the native mobile build succeeds.'
+    - name: Newer schema error
+      id: newer-schema-error
+      description: 'Wants to resolve the OS-MCO-40006 "Extensibility
+        Configurations of <AssetName> must use a newer schema when
+        targeting <MobileFramework>" error, caused by a Capacitor-targeted
+        mobile app or a library it depends on still using Cordova-based
+        Extensibility instead of Universal Extensibility, by updating the
+        affected asset and its dependent libraries to Universal
+        Extensibility, removing the incompatible library, or continuing to
+        use Cordova as the mobile framework until the migration to
+        Capacitor completes, so that the mobile app compiles and the
+        native mobile build succeeds.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -8729,6 +8825,28 @@ knowledge-needs:
         Region, so that they can confirm they aren't exposed to unauthorized
         EU-US data transfers and know when they still bear responsibility for
         their own data-handling compliance.
+    - name: FedRAMP IT authentication
+      id: fedramp-it-authentication
+      description: Wants to understand how IT users authenticate in an
+        OutSystems FedRAMP environment, exclusively through an external IdP
+        using OIDC with MFA enforced, with no SAML or built-in IdP option
+        for IT users, so that they can configure external IdP access
+        correctly before provisioning and know how to regain access via a
+        support case if lockout occurs due to IdP misconfiguration.
+    - name: FIPS Service Studio
+      id: fips-service-studio-config
+      description: Wants to configure Service Studio for FIPS compliance in an OutSystems
+        FedRAMP environment by editing the local Settings.xml file to disable
+        features not compliant with the Federal Information Processing
+        Standards, repeating the change on every developer's workstation, so
+        that their organization can meet FedRAMP compliance requirements for
+        developer tooling.
+    - name: O11 compliance offerings
+      id: o11-compliance-offerings-overview
+      description: Wants to understand which compliance offerings OutSystems 11 provides
+        and what certifications or regulatory scope each one covers, so that
+        they can identify the right offering for their organization's regulatory
+        and certification requirements.
   - name: Mobile certificate protection
     id: mobile-certificate-protection
     subtopics:
@@ -8763,6 +8881,32 @@ knowledge-needs:
       id: rollback-app-version
   - name: Production recovery using roll forward
     id: recovery-roll-forward
+  - name: Cross-region disaster recovery (XRDR)
+    id: cross-region-disaster-recovery
+    subtopics:
+    - name: XRDR key concepts
+      id: xrdr-key-concepts
+      description: Wants to understand the key concepts of OutSystems
+        cross-region disaster recovery (XRDR), including failover/failback,
+        cross-region data backup, recovery point objective (RPO), and
+        recovery time objective (RTO), including the supported RPO/RTO
+        tiers, so that they can evaluate XRDR's business continuity and
+        compliance benefits for their OutSystems Cloud platform.
+    - name: How XRDR works
+      id: how-xrdr-works
+      description: Wants to understand how OutSystems cross-region disaster
+        recovery works, including the roles of the primary and disaster
+        recovery regions and the cross-region backup schedule between them,
+        so that they can understand the mechanics behind XRDR's business
+        continuity guarantee.
+    - name: XRDR failover process
+      id: xrdr-failover-process
+      description: Wants to understand the end-to-end cross-region disaster
+        recovery failover process, including how a failover is triggered
+        and approved, what infrastructure and security configurations are
+        automatically preserved in the recovery region, and what
+        post-failover steps are required, so that they can plan for and
+        execute a failover with the OutSystems team.
 - name: Progressive Release
   guid: eb4c73d7-260f-4048-9a2f-f61333238db1
   topics:
@@ -11555,3 +11699,13 @@ knowledge-needs:
         client-side role checks, and dynamic sorting queries), so that no
         previously server-protected data or operations become exposed in
         the Reactive module.
+  - name: Post-conversion fixes
+    id: post-conversion-fixes
+    subtopics:
+    - name: Fix mock elements
+      id: fix-mock-elements
+      description: Wants to identify and replace mock elements (mocked
+        actions and "to be fixed" web block placeholders) created by an
+        OutSystems 11 Traditional-to-Reactive conversion, so they can
+        complete the manual conversion work Service Studio couldn't
+        automate.

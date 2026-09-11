@@ -85,6 +85,7 @@ Write a short, accurate SEO summary for the content piece.
     * **Do not include the title verbatim** — rephrase to add context the title alone does not provide.
     * **Stay under 150 characters** to avoid truncation in search results (160 is the absolute maximum; target 150 for safety). Count the characters before proposing.
     * Use a single sentence only.
+    * **Avoid colons inside the summary text.** A colon followed by a space anywhere in the value forces the entire value to be quoted in YAML front matter, and this has repeatedly been missed downstream. Prefer a comma, "for," or a shorter restructured clause instead of a colon. Only use a colon if there is no reasonable way to phrase the sentence without one — and if you do, treat quoting in Step 4 as mandatory, not optional.
     * **Name the platform using the canonical format**:
         * For O11 content: "OutSystems 11 (O11)"
         * For ODC content: "OutSystems Developer Cloud (ODC)"
@@ -162,12 +163,20 @@ The front-matter is the YAML block delimited by `---` at the start of the file.
 * If `summary` already exists within the front-matter block, replace its value in place.
 * If `summary` does not exist, add it as the first key after the opening `---` delimiter.
 
+### Mandatory pre-write quoting check
+
+Before writing the `summary` line, run this check on the exact string you are about to write — do this every time, even if the summary looks like plain prose:
+
+1. Scan the **entire** string, character by character, for the substring `: ` (a colon immediately followed by a space). Check the whole sentence, not just the part naming the platform — a colon can appear anywhere, for example mid-sentence in phrasing like "quiz: identify the correct...".
+1. If `: ` appears anywhere, or the string contains any other special YAML character, wrap the entire value in double quotes when you write it.
+1. If it does not appear, write the value as a plain unquoted scalar.
+
 ### Constraints
 
 * Only the input file provided by the user may be modified — no other file.
 * Only modify the `summary` field — do not add, remove, or reorder any other line in the file.
 * Do not touch the `---` delimiters in `.md` files.
-* The value must be a plain scalar string. If the summary contains a colon (`:`) or other special YAML characters, wrap the value in double quotes.
+* The value must be a plain scalar string, unless the pre-write quoting check above requires double quotes.
 
 ### Post-write validation
 
@@ -175,7 +184,7 @@ After writing the file, read it back and perform the following checks in order:
 
 1. Locate the `summary` line in the file.
 1. Check whether the written value matches the approved summary exactly.
-1. Check for YAML special characters that require quoting — specifically, a colon followed by a space (`:`) anywhere in an unquoted value. Common triggers include colons after product names such as "OutSystems Developer Cloud (ODC): ...".
+1. Check for YAML special characters that require quoting — specifically, scan the *entire* unquoted value, left to right, for a colon followed by a space (`: `). This is not limited to colons right after a product name (for example "OutSystems Developer Cloud (ODC): ..."); it also catches colons anywhere else in the sentence, such as mid-sentence phrasing like "quiz: identify the correct...". Do not stop scanning after checking only the start of the string.
 1. If the value is unquoted and contains any such character, the front-matter is invalid. Rewrite only the `summary` line, wrapping the entire value in double quotes, then re-read the file to confirm the fix was applied correctly.
 1. After applying the quoting fix, re-validate that the corrected summary still satisfies all Step 3 rules: character count under 160, no forbidden phrases, correct platform name, and no YAML special characters left unquoted. If it fails any check, treat this as a new generation failure and restart from Step 3.
 1. If the value matches the approved summary and no unquoted special characters are present, validation passes — inform the user the file was updated successfully.

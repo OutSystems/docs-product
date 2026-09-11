@@ -3514,6 +3514,13 @@ knowledge-needs:
         Technology, including logic, UI, and data model) and how IT can extend
         it using Service Studio, in OutSystems 11, so that they can plan how to
         hand off and evolve the app after publishing.
+    - name: WFB unknown error
+      id: wfb-unknown-error
+      description: 'Wants to resolve the "Unknown error" that occurs when
+        Workflow Builder encounters an unspecified service disruption, by
+        retrying the operation or contacting OutSystems Support if the
+        problem persists, in OutSystems 11, so that they can continue using
+        Workflow Builder.'
     - name: WFB delete version error
       id: wfb-delete-version-error
       description: Wants to resolve the "Cannot remove case application version
@@ -3590,6 +3597,24 @@ knowledge-needs:
         by retrying the operation or contacting OutSystems Support if the
         problem persists, in OutSystems 11, so that they can successfully
         create the group.'
+    - name: WFB EnvModule error
+      id: wfb-envmodule-error
+      description: 'Wants to resolve the "Cannot create EnvModule.
+        <OriginalErrorMessage>." error that occurs when publishing an
+        application in Workflow Builder fails because the system can''t
+        validate external module dependencies, by retrying the publish
+        operation or contacting OutSystems Support if the problem persists,
+        in OutSystems 11, so that they can successfully publish the
+        application.'
+    - name: WFB module error
+      id: wfb-module-error
+      description: 'Wants to resolve the "Module error. <OriginalErrorMessage>."
+        error that occurs when publishing an application in Workflow Builder
+        fails because the system can''t obtain external entity dependencies
+        from the user''s infrastructure, by verifying that the linked Entity
+        and Module are correct and that the logged-in Workflow Builder user
+        has download permission on those modules, in OutSystems 11, so that
+        they can successfully publish the application.'
     - name: WFB app templates
       id: wfb-app-templates
       description: Wants to choose a prebuilt app template that matches their business
@@ -3631,6 +3656,29 @@ knowledge-needs:
         My apps screen in Workflow Builder, including Published, Draft, Failed
         to publish, and Converted to Service Studio, in OutSystems 11, so that
         they can determine what action, if any, is needed for each app.
+    - name: WFB template error
+      id: wfb-template-error
+      description: 'Wants to resolve the "Template error. <OriginalErrorMessage>."
+        error that occurs when creating a new app from a predefined template
+        fails in Workflow Builder, by retrying the operation or contacting
+        OutSystems Support if the problem persists, in OutSystems 11, so that
+        they can successfully create the app from the template.'
+    - name: WFB refresh page error
+      id: wfb-refresh-page-error
+      description: 'Wants to resolve the "Please refresh the page and try
+        again" error that occurs when validation issues prevent an
+        application workflow from being stored in Workflow Builder, by
+        logging out and back in (or contacting support if the problem
+        persists), in OutSystems 11, so that they can successfully modify
+        the workflow.'
+    - name: WFB application error
+      id: wfb-application-error
+      description: 'Wants to resolve the "Application error.
+        <OriginalErrorMessage>." error that occurs when an action over
+        an app fails in Workflow Builder, by logging out and back in
+        (or contacting OutSystems Support if the problem persists), in
+        OutSystems 11, so that they can continue working in Workflow
+        Builder.'
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -6124,6 +6172,13 @@ knowledge-needs:
         AI model, defining grounding data and system messages, adding actions,
         and building the AgentFlow server action, so that the agent can
         autonomously orchestrate responses in an agentic app.
+    - name: AgentFlow logic overview
+      id: agentflow-logic-overview
+      description: Wants to understand the built-in AgentFlow server action
+        structure in Agent Workbench (GetGroundingData, BuildMessages, Call
+        Agent, StoreMemory) and what each step does by default in an agentic
+        app template, so that they know the out-of-the-box logic before
+        customizing any component.
     - name: Add additional agents
       id: add-additional-agents
       description: Wants to add more than one agent to an existing agentic app
@@ -8065,6 +8120,22 @@ knowledge-needs:
         identifier having an invalid format, by checking and correcting the
         identifier so it follows the required format, so that the mobile app
         package generates successfully.'
+    - name: MABS version fetch error
+      id: mabs-version-fetch-error
+      description: 'Wants to resolve the OS-MCO-50020 "An error occurred
+        while fetching the MABS version. If the problem persists, open a
+        support case." error, an unspecified internal error with no more
+        specific cause, by retrying the mobile compilation and opening a
+        support case with OutSystems Support if the problem persists, so
+        that the native mobile build completes successfully.'
+    - name: MABS version not found error
+      id: mabs-version-not-found-error
+      description: 'Wants to resolve the OS-MCO-50021 "MABS version couldn''t
+        be found or is obsolete. If the problem persists, open a support
+        case." error, an unspecified internal error with no more specific
+        cause, by retrying the mobile compilation and opening a support case
+        with OutSystems Support if the problem persists, so that the native
+        mobile build completes successfully.'
     - name: Invalid app icon
       id: invalid-app-icon-error
       description: 'Wants to resolve the OS-MCO-50014 "The app icon is
@@ -8196,6 +8267,15 @@ knowledge-needs:
         case." error, by retrying the mobile compilation and escalating to
         OutSystems Support if the problem persists, so that the native
         mobile build completes successfully.'
+    - name: Asset deserialize error
+      id: asset-deserialize-error
+      description: 'Wants to resolve the OS-MCO-50018 "Extensibility
+        Configurations of <Asset> could not be deserialized. If the problem
+        persists, open a support case." error, caused by incorrect data
+        types or values in the asset''s extensibility configuration
+        properties, by correcting those issues, retrying the mobile
+        compilation, and escalating to OutSystems Support if the problem
+        persists, so that the native mobile build completes successfully.'
     - name: Branding image size error
       id: branding-image-size-error
       description: Wants to resolve the OS-MABS-PRJ-40001 "Branding image for <Screen> must
@@ -8661,6 +8741,14 @@ knowledge-needs:
         modifying the AppShield library and escalating to OutSystems
         Support if the problem persists, so that the mobile compilation and
         native mobile build succeed.'
+    - name: Invalid AppShield config
+      id: invalid-appshield-config-error
+      description: 'Wants to resolve the OS-MCO-50019 "Extensibility
+        Configurations of <Asset> are not valid for AppShield" error, caused
+        by an internal issue unrelated to the asset''s own extensibility
+        configurations, by retrying the operation and escalating to
+        OutSystems Support if the problem persists, so that the mobile
+        compilation and native mobile build succeed.'
   - name: Custom plugin development
     id: custom-plugin-development
     subtopics:

@@ -7866,6 +7866,24 @@ knowledge-needs:
         certificate and retrying, escalating to OutSystems Support if the
         problem persists, so that the mobile app package generates
         successfully.'
+    - name: Keystore alias cert error
+      id: keystore-alias-cert-error
+      description: 'Wants to resolve the OS-MABS-SIG-40019 "There was an
+        issue reading the alias from keystore file. Please review both the
+        keystore file and alias." (Android) or "There are no certificates
+        available. Check your .p12 file or create a new one." (iOS) error,
+        caused by an invalid Android keystore file or an iOS .p12 file
+        lacking a valid certificate, by checking and replacing the keystore
+        or certificate file as needed, escalating to OutSystems Support if
+        the problem persists, so that the mobile app package generates
+        successfully.'
+    - name: App identifier error
+      id: invalid-app-identifier-error
+      description: 'Wants to resolve the OS-MABS-SIG-40020 "It looks like the
+        application identifier is invalid." error, caused by the application
+        identifier having an invalid format, by checking and correcting the
+        identifier so it follows the required format, so that the mobile app
+        package generates successfully.'
     - name: Document storage error
       id: document-storage-error
       description: 'Wants to resolve the OS-MCO-50002 "A document is not
@@ -8168,6 +8186,36 @@ knowledge-needs:
         Center build logs to identify the affected pod and the custom plugin
         introducing it, then fixing that plugin''s CocoaPods configuration,
         so that the iOS mobile app package generates successfully.'
+    - name: Generic validation error
+      id: mabs-generic-validation-error
+      description: 'Wants to resolve the OS-MABS-VLD-50000 "Something happened
+        on our side. Please try again." error, caused by an unexpected
+        failure while MABS validates the application package, plugins, or
+        extensibility configurations, by repeating the operation and
+        checking the build logs on Service Center, escalating to OutSystems
+        Support if the problem persists, so that the mobile app package
+        generates successfully.'
+    - name: Empty plugin source error
+      id: empty-plugin-source-error
+      description: 'Wants to resolve the OS-MCO-40001 "A plugin in
+        Extensibility Configurations is providing an empty source" error,
+        caused by a plugin source in the app''s extensibility
+        configurations being empty and not including an NPM package or a
+        resource, by finding the affected plugin and updating it with a
+        valid NPM package or resource, or removing the extensibility
+        property or the library, so that the mobile app compiles and the
+        native mobile build succeeds.'
+    - name: Missing catalog image error
+      id: missing-catalog-image-error
+      description: 'Wants to resolve the OS-MCO-40002 "Extensibility
+        Configurations are missing image <Identifier> in <Where>" error,
+        caused by an incomplete custom icon or splash screen image catalog
+        missing a required identifier in the app''s extensibility
+        configurations, by adding the complete set of images for the icon
+        or splash screen catalog or removing the custom icons and splash
+        screens, escalating to OutSystems Support if the problem persists,
+        so that the mobile app compiles and the native mobile build
+        succeeds.'
   - name: AppShield
     id: appshield
     subtopics:

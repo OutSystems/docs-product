@@ -2196,6 +2196,13 @@ knowledge-needs:
         built-in function whenever escape content is disabled, so that
         untrusted values are rendered as text instead of executing in the
         browser.
+    - name: Prevent URL parameter injection ODC
+      id: prevent-url-parameter-injection-odc
+      description: Wants to prevent unsafe end-user input from altering URL
+        parameter values in ODC applications by wrapping dynamic parameter
+        values with EncodeUrl() before including them in a URL, so that
+        special characters are encoded safely instead of breaking the
+        generated URL.
     - name: Fix JS injection warning
       id: fix-js-injection-warning
       description: Wants to resolve the Service Studio warning that an expression
@@ -5951,6 +5958,14 @@ knowledge-needs:
       based on app type (new web app vs existing apps, libraries, or agentic
       apps), complexity, and access point (ODC Portal vs ODC Studio), so that
       they pick the right tool for their development task.
+  - name: What is an AI agent
+    id: what-is-an-ai-agent
+    description: Wants to understand what an AI agent is and what makes it
+      unique (fully autonomous, able to make decisions and act without a new
+      prompt for each task), including its five core components, AI model,
+      actions, grounding data, system prompts, and memory (state
+      persistence), so that they have a foundational understanding of AI
+      agents before building or configuring one.
   - name: Agentic Apps
     id: agentic-apps
     subtopics:

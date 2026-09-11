@@ -21,6 +21,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-blank-slate-pattern
+  - use-blank-slate-pattern
 isautopublish: true
 ---
 

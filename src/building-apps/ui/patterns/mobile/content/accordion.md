@@ -23,6 +23,10 @@ coverage-type:
   - apply
   - unblock
 isautopublish: true
+topic:
+  - accessible-accordion-pattern
+  - accordion-reference
+  - use-accordion-pattern
 ---
 
 # Accordion

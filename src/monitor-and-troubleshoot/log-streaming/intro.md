@@ -20,6 +20,9 @@ coverage-type:
   - understand
   - remember
 isautopublish: true
+topic:
+  - log-streaming-cloud-prerequisites
+  - log-streaming-overview-cloud
 ---
 
 # Introduction to log streaming

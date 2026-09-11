@@ -6,7 +6,12 @@ guid: 3cbb4a7d-817e-4709-b696-fae09de3d45d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ui components, data presentation, pagination, sorting, widgets
+tags:
+  - Accessibility
+  - Events
+  - Table
+  - UI
+  - Widgets
 audience:
   - Front-end developer
   - Developer
@@ -14,6 +19,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Table
@@ -161,4 +167,28 @@ This widget is available in Reactive Web Apps.
 
 ## Accessibility – WCAG 2.2 AA compliance
 
-The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.
+From Platform Server 11.43.0, [enable built-in WCAG 2.2 AA compliance](../../../building-apps/ui/accessibility/intro.md#enable-widgets) to ensure this widget complies with WCAG 2.2 AA accessibility standards. See the usage details below. If you customize the widget, validate your implementation to confirm it still meets accessibility requirements.
+
+### Add an accessible caption to the table
+
+To meet WCAG 1.3.1 (Info and Relationships), you can supply an accessible caption for the Table. When present, the widget renders it as a `<caption>` element as the first child of the `<table>`, so screen readers announce it when the user navigates onto the table.
+
+1. In **Service Studio**, in the **Widget Tree**, select the **Table** widget.
+1. In the **Properties** pane, locate **Extended Properties** and add a new entry:
+
+    * **Name**: `table-caption`
+    * **Value**: the caption text (for example, `"Employees"`)
+
+if you keep the WCAG 2.2 configuration disabled, or the value is empty or whitespace-only, no `<caption>` element is rendered.
+
+### Override the default `role="grid"` with native table semantics
+
+By default, the Table widget renders with `role="grid"`. Some screen readers (NVDA, JAWS) use different navigation modes for `role="grid"` versus a native `<table>`. To restore native table semantics for WCAG 4.1.2 (Name, Role, Value), set the following extended property.
+
+1. In **Service Studio**, in the **Widget Tree**, select the **Table** widget.
+1. In the **Properties** pane, locate **Extended Properties** and add a new entry:
+
+    * **Name**: `table-role`
+    * **Value**: `table` (case-sensitive) — the widget omits the `role` attribute, exposing native `<table>` semantics.
+
+Use `grid` (or omit the extended property) to keep the default `role="grid"`. Any other value also falls back to `grid`. This property is honored only when the WCAG 2.2 configuration is enabled, so existing apps see no behavioral change.

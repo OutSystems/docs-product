@@ -8024,6 +8024,22 @@ knowledge-needs:
         identifier having an invalid format, by checking and correcting the
         identifier so it follows the required format, so that the mobile app
         package generates successfully.'
+    - name: Invalid app icon
+      id: invalid-app-icon-error
+      description: 'Wants to resolve the OS-MCO-50014 "The app icon is
+        invalid. If the problem persists, open a support case." error, an
+        unspecified internal error with no more specific cause, by retrying
+        the mobile compilation and opening a support case with OutSystems
+        Support if the problem persists, so that the native mobile build
+        completes successfully.'
+    - name: Invalid primary color error
+      id: invalid-primary-color-error
+      description: 'Wants to resolve the OS-MCO-50015 "The primary color is
+        invalid. If the problem persists, open a support case." error, an
+        unspecified internal error with no more specific cause, by retrying
+        the mobile compilation and opening a support case with OutSystems
+        Support if the problem persists, so that the native mobile build
+        completes successfully.'
     - name: Generic compile error
       id: generic-compile-error
       description: 'Wants to resolve the OS-MCO-50001 "An error occurred. We''ll
@@ -8060,6 +8076,22 @@ knowledge-needs:
       id: avs-deserialize-error
       description: 'Wants to resolve the OS-MCO-50011 "An error occurred
         while deserializing data from AVS. If the problem persists, open a
+        support case." error, an unspecified internal error with no more
+        specific cause, by retrying the mobile compilation and opening a
+        support case with OutSystems Support if the problem persists, so
+        that the native mobile build completes successfully.'
+    - name: BS fetch error
+      id: bs-fetch-error
+      description: 'Wants to resolve the OS-MCO-50012 "An error occurred
+        while fetching data from BS. If the problem persists, open a
+        support case." error, an unspecified internal error with no more
+        specific cause, by retrying the mobile compilation and opening a
+        support case with OutSystems Support if the problem persists, so
+        that the native mobile build completes successfully.'
+    - name: BS deserialize error
+      id: bs-deserialize-error
+      description: 'Wants to resolve the OS-MCO-50013 "An error occurred
+        while deserializing data from BS. If the problem persists, open a
         support case." error, an unspecified internal error with no more
         specific cause, by retrying the mobile compilation and opening a
         support case with OutSystems Support if the problem persists, so

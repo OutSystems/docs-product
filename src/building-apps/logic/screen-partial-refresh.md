@@ -1,6 +1,10 @@
 ---
 summary: Ajax Refresh in OutSystems 11 (O11) Traditional Web Apps lets you update parts of a screen without a full page reload, creating faster, dynamic interfaces.
-tags: ajax, web development, performance optimization, screen interactivity, user experience
+tags:
+  - Front-End
+  - Performance
+  - Screens
+  - Traditional Web
 locale: en-us
 guid: cf447891-96c9-41a7-b624-455c180d4002
 app_type: traditional web apps

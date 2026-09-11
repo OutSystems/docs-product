@@ -5,7 +5,8 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5643-320&t=9qWAwpzhqJ67cc17-1
-tags: error handling, customization, on-premises installation, application design, platform customization
+tags:
+  - Platform Server
 audience:
   - Platform administrator
   - Developer

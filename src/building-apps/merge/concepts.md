@@ -1,6 +1,7 @@
 ---
 summary: "OutSystems 11 (O11) merge concepts explained: automatic merging, conflict resolution, and Compare and Merge in Service Studio."
-tags: version control, code collaboration, application lifecycle management, software development best practices
+tags:
+  - 1-Click Publish
 locale: en-us
 guid: f48625c7-2bc5-42d9-b6aa-435630cf9b22
 app_type: traditional web apps, mobile apps, reactive web apps

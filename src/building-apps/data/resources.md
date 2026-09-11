@@ -1,6 +1,9 @@
 ---
 summary: "OutSystems 11 (O11) resources let you embed files in modules, configure Deploy Action and Target Directory, and serve PDFs, videos, or downloadable files in web screens."
-tags: resource management, deployment, file management, design considerations, performance optimization
+tags:
+  - Data
+  - Deploy
+  - Front-End
 locale: en-us
 guid: a27b2277-218f-4439-8ea7-6884e0d1eaa3
 app_type: traditional web apps, mobile apps, reactive web apps

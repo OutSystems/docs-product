@@ -116,7 +116,7 @@ After configuring a database connection in Service Center, use Integration Studi
 
     </div>
 
-1. After closing the wizard, review the imported entity names, descriptions and data types for each attribute.
+1. After closing the wizard, review the imported entity names and data types for each attribute.
 
 1. Select **1-Click Publish** to publish the Extension Module.
 

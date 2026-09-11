@@ -26,7 +26,7 @@ coverage-type:
 isautopublish: true
 ---
 
-# List widget
+# List
 
 <div class="info" markdown="1">
 
@@ -104,19 +104,19 @@ To prevent this issue, you can either disable the list virtualization or fetch a
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-From **Platform Server 11.43.0**, the **List** widget supports WCAG 2.2 AA compliance by default. [See the details below](#automatic).
+From **Platform Server 11.43.0**, the **List** widget is compliant with WCAG 2.2 AA accessibility standards by default if you [enable the WCAG 2.2 configuration](../../../building-apps/ui/accessibility/intro.md#enable-widgets). No changes or manual workaround are required. [See the details below](#automatic).
 
-For previous Platform Server versions, follow [these guidelines](#manual-fix) to ensure predictable and accessible interactions for all users.
-
-### Automatic status announcements {#automatic}
-
-When you enable the **Enable WCAG 2.2** option in the **Platform Configurations** tab of [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration), the **List** widget automatically renders a visually hidden live region (`role="status"` with `aria-live="polite"` and `aria-atomic="true"`) as a sibling of the list. Screen readers announce the region's text whenever the list state changes, helping you satisfy WCAG 4.1.3 (Status Messages).
+For previous Platform Server versions, or if you keep the WCAG 2.2 configuration disabled, follow [these guidelines](#manual-fix) to expose the correct semantic roles for assistive technologies, as required by WCAG 2.2 AA.
 
 <div class="info" markdown="1">
 
-If you choose to keep the **Enable WCAG 2.2** option disabled, follow [these guidelines](#manual-fix) to expose the correct semantic roles for assistive technologies, as required by WCAG 2.2 AA.
+When you update your **Platform Server** to version **11.43.0** and you have manually applied the [accessibility fixes](#manual-fix) described below, remove those fixes before enabling the WCAG 2.2 configuration. If you keep the WCAG 2.2 configuration disabled, no changes are required, as the fixes are still needed.
 
 </div>
+
+### Automatic status announcements {#automatic}
+
+When you [enable the WCAG 2.2 configuration](../../../building-apps/ui/accessibility/intro.md#enable-widgets), the **List** widget automatically renders a visually hidden live region (`role="status"` with `aria-live="polite"` and `aria-atomic="true"`) as a sibling of the list. Screen readers announce the region's text whenever the list state changes, helping you satisfy WCAG 4.1.3 (Status Messages).
 
 The list is linked to the live region via `aria-describedby`, so the announcement is also discoverable when assistive technologies query the list itself.
 

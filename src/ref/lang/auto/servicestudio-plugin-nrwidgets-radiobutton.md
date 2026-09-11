@@ -20,9 +20,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
-# Radio Button
+# Radio button
 
 <div class="info" markdown="1">
 
@@ -129,7 +130,7 @@ Check the related topic at the bottom of the page for more guidance.
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>
@@ -151,3 +152,7 @@ Check the related topic at the bottom of the page for more guidance.
 </tr>
 </tbody>
 </table>
+
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
+
+From Platform Server 11.43.0, [enable built-in WCAG 2.2 AA compliance](../../../building-apps/ui/accessibility/intro.md#enable-widgets) to ensure this widget complies with WCAG 2.2 AA accessibility standards. No further changes are required. If you customize the widget, validate your implementation to confirm it still meets accessibility requirements.

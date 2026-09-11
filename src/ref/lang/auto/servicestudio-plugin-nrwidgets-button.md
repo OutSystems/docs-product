@@ -8,11 +8,11 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3151-12&t=7CahKhPkrngAV3Pz-1
 tags:
   - Accessibility
+  - CSS
   - Events
-  - Front-End
   - OutSystems UI
+  - Themes
   - UI
-  - UI Patterns
   - Widgets
 audience:
   - Developer
@@ -176,7 +176,9 @@ If the button belongs to a form with some input fields, the button submits the i
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Button** UI Pattern is exposed to color combinations that might not meet the minimum contrast ratio required for WCAG 2.2 AA compliance. Certain color combinations in the **OutSystems UI** palette don’t provide sufficient contrast between the button text and background, particularly in hover or focus states.
+From Platform Server 11.43.0, [enable built-in WCAG 2.2 AA compliance](../../../building-apps/ui/accessibility/intro.md#enable-widgets) to ensure this widget complies with WCAG 2.2 AA accessibility standards. If you customize the widget, validate your implementation to confirm it still meets accessibility requirements.
+
+Additionally, note that the **Button** widget is exposed to color combinations that might not meet the minimum contrast ratio required for WCAG 2.2 AA compliance. Certain color combinations in the **OutSystems UI** palette don’t provide sufficient contrast between the button text and background, particularly in hover or focus states.
 
 Updating your theme variables and adjusting hover styles ensures that buttons remain legible and accessible in all interaction states.
 
@@ -215,7 +217,7 @@ Use a contrast checking tool such as:
 
 * [Contrast Ratio by Lea Verou](https://contrast-ratio.com/)
 
-  ![Example of how to use Color Contrast Checker to validate compliant colors](images/button-yellowcontrast-ss.png "Validating contrast color with Color Contrast Checker")
+  ![Example of how to use Color Contrast Checker to validate compliant colors](images/button-yellowcontrast-sa.png "Validating contrast color with Color Contrast Checker")
 
 ### Update CSS variables to improve contrast
 
@@ -435,7 +437,7 @@ Adding a semi-transparent overlay and ensuring focus visibility makes buttons ea
 
 ### Result
 
-After you update the theme color variables and hover effects, the **Button** pattern maintains readable contrast in all interaction states.
+After you update the theme color variables and hover effects, the **Button** widget maintains readable contrast in all interaction states.
 These updates improve visibility and usability for all users, including those with visual or motor impairments.
 
 Test it in your app to confirm the update.

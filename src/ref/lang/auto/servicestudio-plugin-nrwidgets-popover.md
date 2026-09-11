@@ -1,6 +1,6 @@
 ---
 helpids: 30042
-summary: Explore the properties, events, and runtime attributes of the Popover Menu in OutSystems 11 (O11).
+summary: Popover widget reference for OutSystems 11 (O11), covering properties, events, and the WCAG 2.2 ARIA accessibility fix.
 locale: en-us
 guid: 41d66ab0-f67a-49f8-adf1-931415c3047e
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -135,9 +135,21 @@ A container that opens when the user taps an element or a region. You can use it
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Popover** Built-in Widget may not expose the correct ARIA roles and relationships to assistive technologies. In this procedure, you update the trigger and popover panel so screen readers can identify the control, understand whether it’s expanded, and associate it with the correct content.
+From **Platform Server 11.43.0**, the **Popover** widget is compliant with WCAG 2.2 AA accessibility standards by default if you [enable the WCAG 2.2 configuration](../../../building-apps/ui/accessibility/intro.md#enable-widgets). No changes or manual workaround are required.
 
-### Add the ARIA roles and attributes
+For previous Platform Server versions, or if you keep the WCAG 2.2 configuration disabled, follow [these guidelines](#manual-fix) to ensure predictable and accessible interactions for all users.
+
+<div class="info" markdown="1">
+
+When you update your **Platform Server** to version **11.43.0** and you have manually applied the accessibility fixes described below, remove those fixes before enabling the WCAG 2.2 configuration. If you keep the WCAG 2.2 configuration disabled, no changes are required, as the fixes are still needed.
+
+</div>
+
+### Manual fix required (for Platform Server versions before 11.43.0) {#manual-fix}
+
+By default, the **Popover** widget may not expose the correct ARIA roles and relationships to assistive technologies. In this procedure, you update the trigger and popover panel so screen readers can identify the control, understand whether it's expanded, and associate it with the correct content.
+
+#### Add the ARIA roles and attributes
 
 1. In **Service Studio**, go to the **Interface** tab.  
 
@@ -214,7 +226,7 @@ By default, the **Popover** Built-in Widget may not expose the correct ARIA role
 
 1. Publish the module.
 
-### Result
+#### Result
 
 After completing these steps, the **Popover** trigger exposes the correct ARIA semantics, including `aria-expanded`, `aria-haspopup`, and `aria-controls`. The **Popover** panel is exposed as a dialog, which gives assistive technologies the correct relationship between the trigger and the content.
 

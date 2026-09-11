@@ -173,10 +173,21 @@ Two-state toggle control which allows users to select between two options. You c
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Switch** built-in widget may not expose the correct ARIA attributes for assistive technologies.  
-Set the appropriate roles so that screen readers identify it as a switch and accurately announce its state.
+From **Platform Server 11.43.0**, the **Switch** widget is compliant with WCAG 2.2 AA accessibility standards by default if you [enable the WCAG 2.2 configuration](../../../building-apps/ui/accessibility/intro.md#enable-widgets). No changes or manual workaround are required.
 
-### Set the correct ARIA attributes
+For previous Platform Server versions, or if you keep the WCAG 2.2 configuration disabled, follow [these guidelines](#manual-fix) to ensure predictable and accessible interactions for all users.
+
+<div class="info" markdown="1">
+
+When you update your **Platform Server** to version **11.43.0** and you have manually applied the accessibility fixes described below, remove those fixes before enabling the WCAG 2.2 configuration. If you keep the WCAG 2.2 configuration disabled, no changes are required, as the fixes are still needed.
+
+</div>
+
+### Manual fix required (for Platform Server versions before 11.43.0) {#manual-fix}
+
+By default, the **Switch** widget may not expose the correct ARIA attributes for assistive technologies. Set the appropriate roles so that screen readers identify it as a switch and accurately announce its state.
+
+#### Set the correct ARIA attributes
 
 1. In **Service Studio**, go to the **Interface** tab and select the **Screen/Block** that uses the **Switch**.
 
@@ -198,8 +209,8 @@ Set the appropriate roles so that screen readers identify it as a switch and acc
 
 1. Publish the module.
 
-### Result
+#### Result
 
-After completing these steps, screen readers correctly announce the Switch as a toggle control and describe whether it’s on or off, improving accessibility for all users.
+After completing these steps, screen readers correctly announce the Switch as a toggle control and describe whether it's on or off, improving accessibility for all users.
 
 Test the pattern in your app to confirm the update.

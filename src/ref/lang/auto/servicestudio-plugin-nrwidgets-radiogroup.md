@@ -19,6 +19,7 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Radio group
@@ -175,6 +176,6 @@ The Radio Group widget is supported in **Platform Server** version 11.8.0 or hig
 </tbody>
 </table>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.
+From Platform Server 11.43.0, [enable built-in WCAG 2.2 AA compliance](../../../building-apps/ui/accessibility/intro.md#enable-widgets) to ensure this widget complies with WCAG 2.2 AA accessibility standards. No further changes are required. If you customize the widget, validate your implementation to confirm it still meets accessibility requirements.

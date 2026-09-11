@@ -18,6 +18,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # List Item
@@ -132,7 +133,7 @@ You can use it for example to display an entity record.
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>
@@ -154,3 +155,7 @@ You can use it for example to display an entity record.
 </tr>
 </tbody>
 </table>
+
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
+
+From Platform Server 11.43.0, [enable built-in WCAG 2.2 AA compliance](../../../building-apps/ui/accessibility/intro.md#enable-widgets) to ensure this widget complies with WCAG 2.2 AA accessibility standards. No further changes are required. If you customize the widget, validate your implementation to confirm it still meets accessibility requirements.

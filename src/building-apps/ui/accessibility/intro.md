@@ -4,8 +4,6 @@ tags:
   - Accessibility
   - Forms
   - Layouts
-  - Mobile app
-  - OutSystems UI
   - Screens
   - UI
 locale: en-us
@@ -40,7 +38,7 @@ A general recommendation is to start thinking about accessibility **early in the
 
 Here are some guidelines to consider for meeting your accessibility needs:
 
-1. Ensure that your app meets the basic accessibility requirements. For more information, refer to [Enabling the built-in accessibility features](#enable-the-built-in-accessibility-features).
+1. Ensure that your app meets the basic accessibility requirements. For more information, refer to [Enabling the built-in accessibility features](#enable).
 1. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. For more information, refer to [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
 1. Pay close attention to complex interactions and dynamic content. Fix the critical issues immediately. Use ARIA to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. Refer to [ARIA roles and attributes](aria-roles-and-attributes.md).
 1. Refer to [UI Patterns accessibility](ui-patterns-accessibility.md) for specific notes about patterns you may be using on a page.
@@ -51,11 +49,11 @@ OutSystems UI is often updated to support more accessibility features. For more 
 
 </div>
 
-## Enable the built-in accessibility features
+## Enable the built-in accessibility features {#enable}
 
 OutSystems has many built-in accessibility features, such as creating applications with the right contrast ratio, focus, and skip-to-content settings. To develop accessible apps, you must activate the accessibility features. In that case, you may need specific customization and development, covered in [ARIA roles and attributes](aria-roles-and-attributes.md) and [UI Patterns accessibility](ui-patterns-accessibility.md).
 
-### OutSystems UI patterns
+### OutSystems UI patterns {#enable-patterns}
 
 To enable the built-in accessibility features for UI patterns, do the following steps in Service Studio:
 
@@ -73,19 +71,23 @@ By setting the **EnableAccessibilityFeatures** set to true, you activate the fol
 * **Accessible links** - generates links with high color contrast
 * **Enhanced contrast** - allows displaying the content on the screen using a contrast ratio perceivable to people with visual impairments.
 
-### OutSystems widgets
+### OutSystems widgets {#enable-widgets}
+
+**Platform Server 11.43.0** added built-in WCAG 2.2 AA compliance to widgets that weren't yet built-in compliant. This configuration is disabled by default for back compatibility.
+
+To enable built-in WCAG 2.2 compliance for widgets, do the following steps:
 
 <div class="info" markdown="1">
 
-Requires [Factory Configuration 11.3.1](https://www.outsystems.com/forge/component-overview/25/factory-configuration-o11), for built-in WCAG 2.2 compliance released from Platform Server 11.42.0.
+Requires [Factory Configuration 11.3.1](https://www.outsystems.com/forge/component-overview/25/factory-configuration-o11).
 
 </div>
-
-To enable built-in WCAG 2.2 compliance for widgets, do the following steps:
 
 1. Open [Factory Configuration](../../../setup-infra-platform/setup/factory-config.md) in the browser and login using your LifeTime/Service Center credentials.
 1. Navigate to the **Platform Configurations** tab.
 1. Toggle **EnableWCAG22**.
+
+For Platform Server versions previous to 11.43.0, or if you keep the WCAG 2.2 configuration disabled, you may need specific development, covered in [UI Patterns accessibility](ui-patterns-accessibility.md#widgets).
 
 ## Page title
 
@@ -231,15 +233,4 @@ To find the  **SkipToContent** action, go to **Logic** > **OutSystemsUI** > **Ac
 
 ## Modal dialogs
 
-<div class="info" markdown="1">
-
-Applies to Platform Server 11.11 and later.
-
-</div>
-
-Use the [Popup widget](../../ui/inputs/popup.md) to create accessible modal dialogs. Popup adds the following attributes to the widget:
-
-* `role="dialog"`
-* `aria-modal="true"`
-
-Additionally, you must add the class `"has-accessible-features"` manually in the Style Classes of the Popup Widget to enable the accessibility features.
+Use the [Popup widget](../../ui/inputs/popup.md) to create accessible modal dialogs. See the [widget's accessibility guidelines](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-popup.md#accessibility) for specific details.

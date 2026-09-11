@@ -11,7 +11,6 @@ tags:
   - Events
   - Front-End
   - JavaScript
-  - Mobile app
   - UI
   - Widgets
 audience:
@@ -236,7 +235,19 @@ With the Dropdown Widget you can implement two types of lists:
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Dropdown** Built-in Widget is accessible when **OptionsContent** is set to **Text Only**, because it renders a native `<select>` element that exposes correct semantics to assistive technologies.
+From **Platform Server 11.43.0**, the **Dropdown** widget is compliant with WCAG 2.2 AA accessibility standards by default if you [enable the WCAG 2.2 configuration](../../../building-apps/ui/accessibility/intro.md#enable-widgets). No changes or manual workaround are required.
+
+For previous Platform Server versions, or if you keep the WCAG 2.2 configuration disabled, follow [these guidelines](#manual-fix) to ensure predictable and accessible interactions for all users.
+
+<div class="info" markdown="1">
+
+When you update your **Platform Server** to version **11.43.0** and you have manually applied the accessibility fixes described below, remove those fixes before enabling the WCAG 2.2 configuration. If you keep the WCAG 2.2 configuration disabled, no changes are required, as the fixes are still needed.
+
+</div>
+
+### Manual fix required (for Platform Server versions before 11.43.0) {#manual-fix}
+
+By default, the **Dropdown** widget is accessible when **OptionsContent** is set to **Text Only**, because it renders a native `<select>` element that exposes correct semantics to assistive technologies.
 
 When **OptionsContent** is set to **Custom**, the Dropdown is built with `<div>` elements instead. In this case, **it does not expose the correct ARIA semantics**, and assistive technologies may not recognize it as a combobox.
 
@@ -249,7 +260,7 @@ If you use **Text Only**, no additional ARIA configuration is required.
 
 </div>
 
-### Set the correct ARIA roles for custom dropdowns
+#### Set the correct ARIA roles for custom dropdowns
 
 1. In **Service Studio**, go to the **Interface** tab and select the **Screen/Block** that uses the **Dropdown** with custom options.
 
@@ -363,7 +374,7 @@ If you use **Text Only**, no additional ARIA configuration is required.
 
 1. Publish the module.
 
-### Result
+#### Result
 
 After completing these steps, Dropdowns that use **custom content** expose proper **combobox** semantics:
 

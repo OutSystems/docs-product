@@ -12,7 +12,7 @@ tags:
   - Front-End
   - JavaScript
   - Mobile app
-  - UI
+  - Platform Server
   - Widgets
 audience:
   - Developer
@@ -141,23 +141,23 @@ A floating container/window above other screen content. Popup is a modal contain
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-From **Platform Server 11.43.0**, the **Popup** widget supports WCAG 2.2 AA compliance by default. [See the details below](#automatic).
+From **Platform Server 11.43.0**, the **Popup** widget is compliant with WCAG 2.2 AA accessibility standards by default if you [enable the WCAG 2.2 configuration](../../../building-apps/ui/accessibility/intro.md#enable-widgets). No changes or manual workaround are required. [See the details below](#automatic).
 
-For previous Platform Server versions, follow [these guidelines](#manual-fix) to ensure predictable and accessible interactions for all users.
+For previous Platform Server versions, or if you keep the WCAG 2.2 configuration disabled, follow [these guidelines](#manual-fix) to manage focus, keyboard navigation, or ARIA attributes as required by WCAG 2.2 AA.
+
+<div class="info" markdown="1">
+
+When you update your **Platform Server** to version **11.43.0** and you have manually applied the [accessibility fixes](#manual-fix) described below, remove those fixes before enabling the WCAG 2.2 configuration. If you keep the WCAG 2.2 configuration disabled, no changes are required, as the fixes are still needed.
+
+</div>
 
 ### Automatic dialog name and Escape handling {#automatic}
 
-When you enable the **Enable WCAG 2.2** option in the **Platform Configurations** tab of [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration), the **Popup** widget automatically:
+When you [enable the WCAG 2.2 configuration](../../../building-apps/ui/accessibility/intro.md#enable-widgets), the **Popup** widget automatically:
 
 * Adds `aria-label="Dialog"` to the popup dialog element, providing an accessible name for screen readers as required by WCAG 4.1.2 (Name, Role, Value).
 
 * Invokes a custom `onEscape` event when the user presses the `Escape` key while focus is inside the Popup, helping you satisfy WCAG 2.1.2 (No Keyboard Trap).
-
-<div class="info" markdown="1">
-
-If you choose to keep the **Enable WCAG 2.2** option disabled, follow [these guidelines](#manual-fix) to manage focus, keyboard navigation, or ARIA attributes as required by WCAG 2.2 AA.
-
-</div>
 
 The widget does not modify the **Popup** visibility variable itself. To close the **Popup** when the user presses `Escape`, wire the `onEscape` event to a client action that sets your **Popup** visibility variable to `False`.
 

@@ -1,6 +1,11 @@
 ---
 summary: This guide details configuring Okta authentication for OutSystems 11 (O11) applications and development tools.
-tags: authentication, okta, security, oidc, configuration
+tags:
+  - Authentication
+  - External Authentication
+  - IdP
+  - OIDC
+  - Security
 locale: en-us
 guid: 5F1E1CC1-A4E7-497F-A176-7A8671CC5D8B
 app_type: traditional web apps, mobile apps, reactive web apps

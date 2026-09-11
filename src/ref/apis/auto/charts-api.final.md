@@ -2,7 +2,6 @@
 summary: OutSystems 11 (O11) Charts API reference covering widgets, actions, structures, and static entities for building charts with Highcharts.
 tags:
   - Front-End
-  - OutSystems Charts
   - UI
   - Widgets
 locale: en-us

@@ -1,6 +1,12 @@
 ---
 summary: Explore how to configure Active Directory Federation Services as an external identity provider for OutSystems 11 (O11) applications.
-tags: identity and access management, active directory, security, authentication, single sign-on
+tags:
+  - Active Directory
+  - Authentication
+  - External Authentication
+  - IdP
+  - OIDC
+  - SSO
 locale: en-us
 guid: f57451e9-8f03-4b77-b895-8502bce6122b
 app_type: traditional web apps, reactive web apps

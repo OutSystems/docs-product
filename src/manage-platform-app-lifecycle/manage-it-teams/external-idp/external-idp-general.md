@@ -1,6 +1,11 @@
 ---
 summary: 'External IdP OIDC integration in OutSystems 11 (O11): configure redirect URIs for Consoles and Development Tools using OpenID Connect Discovery.'
-tags: oidc integration, authentication, identity providers, openid connect discovery, token configuration
+tags:
+  - Authentication
+  - External Authentication
+  - IdP
+  - OIDC
+  - SSO
 locale: en-us
 guid: 7486CF76-C3FC-41E0-B2E9-F6C6512FAB44
 app_type: traditional web apps, mobile apps, reactive web apps

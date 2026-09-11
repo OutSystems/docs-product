@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) supports maintaining UI in dedicated modules to enhance reuse and reduce merge conflicts.
-tags: ui module management, screen reuse, block reuse, merge conflict reduction, theme compatibility
+tags:
+  - Blocks
+  - Screens
+  - Themes
+  - UI
 locale: en-us
 guid: 04f7cedb-d02b-42e9-b9f4-f7cbf2cb8506
 app_type: reactive web apps

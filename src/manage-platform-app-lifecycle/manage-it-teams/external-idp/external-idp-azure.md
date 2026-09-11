@@ -1,6 +1,11 @@
 ---
 summary: Microsoft Entra external IdP configuration for OutSystems 11 (O11) covers app registration, redirect URIs, delegated permissions, and LifeTime setup.
-tags: identity provider configuration, azure ad, authentication, security, sso
+tags:
+  - Authentication
+  - External Authentication
+  - IdP
+  - OIDC
+  - SSO
 locale: en-us
 guid: DA5BA9CA-066E-49E2-92C8-674CB644C370
 app_type: traditional web apps, mobile apps, reactive web apps

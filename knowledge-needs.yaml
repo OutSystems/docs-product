@@ -3573,6 +3573,41 @@ knowledge-needs:
         scenario when starting a new app in Workflow Builder, in OutSystems 11,
         so that they can start from ready-made form fields and workflow logic
         instead of building the app from scratch.
+    - name: WFB prerequisites
+      id: wfb-prerequisites
+      description: Wants to confirm they meet the requirements to use Workflow Builder,
+        including a non-Free-Edition environment, the minimum supported Platform
+        Server version (a higher minimum version for entity reuse), inbound
+        network access on port 443, IT user permissions, and a supported desktop
+        browser, in OutSystems 11, so that they can proceed with setup without
+        hitting environment or access blockers.
+    - name: WFB first login
+      id: wfb-first-login
+      description: Wants to log in to Workflow Builder for the first time by
+        entering their OutSystems development environment address, username,
+        and password, in OutSystems 11, so that they can access Workflow
+        Builder using an existing IT user account.
+    - name: WFB env registration
+      id: wfb-env-registration
+      description: Wants to register their OutSystems environment in Workflow
+        Builder as the first user from their organization, by accepting the
+        disclaimer, providing (or having Workflow Builder auto-collect) the
+        Activation Code depending on their Platform Server release, and
+        completing the automatic Case Management framework installation, in
+        OutSystems 11, so that they can then set up the governance model and
+        end-user hierarchy for the workflow app.
+    - name: WFB onboarding tour
+      id: wfb-onboarding-tour
+      description: Wants to revisit the onboarding carousel introducing Workflow
+        Builder's main features, by clicking the ? button in the top menu, in
+        OutSystems 11, so that they can review the tool's core functionality
+        after the initial registration.
+    - name: WFB app statuses
+      id: wfb-app-statuses
+      description: Wants to understand the different app statuses shown on the
+        My apps screen in Workflow Builder, including Published, Draft, Failed
+        to publish, and Converted to Service Studio, in OutSystems 11, so that
+        they can determine what action, if any, is needed for each app.
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -6827,6 +6862,16 @@ knowledge-needs:
 - name: Native Mobile apps
   guid: f67965c4-a2ef-4076-8676-c8b8203ab671
   topics:
+  - name: Troubleshoot MABS build errors
+    id: troubleshoot-mabs-build-errors
+    subtopics:
+    - name: MABS build errors
+      id: mabs-build-errors
+      description: Wants to locate and resolve OutSystems Mobile Apps Build
+        Service (MABS) build errors by finding the error code in the
+        reference, understanding its cause and impact, and following the
+        recommended action, so that they can resolve native mobile app
+        build failures.
   - name: MABS release notes
     id: mabs-release-notes
     subtopics:
@@ -7145,6 +7190,17 @@ knowledge-needs:
         choosing Create Action to Sync Data (Read-Only), so the
         SyncLocal<Entity> and Sync<Entity> actions are scaffolded without
         manual creation.
+    - name: Generate RW sync action
+      id: generate-rw-sync-action
+      description: Wants to automatically generate the client and server actions needed to
+        implement the Read/Write Last Write Wins synchronization pattern for an
+        entity, by right-clicking a local entity linked to a database entity via
+        foreign key in ODC Studio's Data tab and choosing Create Action to Sync
+        Data (Read/Write), which scaffolds the sync actions, the metadata
+        attributes needed to track record origin, modification, and active
+        status, and the replacement local create, update, and delete actions
+        used during sync, so that the synchronization logic is scaffolded
+        without manual creation.
     - name: Complex mobile sync
       id: complex-mobile-sync
       description: Wants to optimize complex offline data synchronization in a mobile
@@ -7213,6 +7269,21 @@ knowledge-needs:
         to set the automatic retry and retry interval on failure, in
         OutSystems 11 mobile apps, so that synchronization keeps local and
         server data consistent without requiring a manual trigger.
+    - name: Avoid sync trigger loops
+      id: avoid-onsync-loop
+      description: Wants to avoid triggering multiple simultaneous
+        synchronizations or an OnSync/OnSyncComplete loop, by not calling
+        OnSync multiple times or from inside OnSyncComplete, and instead
+        chaining OnSyncComplete calls sequentially, so that mobile app
+        data doesn't sync incorrectly in OutSystems 11.
+    - name: Sync conflict avoidance
+      id: sync-conflict-avoidance
+      description: Wants to decide, at the app-design stage, whether to
+        avoid data-sync conflicts altogether (for example, using a
+        last-write-wins approach or locking editing while offline) or to
+        accept them and support conflict management in the UX, before
+        choosing an offline sync implementation pattern for an OutSystems
+        mobile app.
     - name: Other sync components
       id: other-sync-components
       description: Wants to understand the OfflineDataSyncEvents Block (used
@@ -8127,6 +8198,14 @@ knowledge-needs:
         mobile app package using a deprecated MABS version, by switching to a
         MABS version that meets the minimum required version, so that the
         mobile app package generates successfully.
+    - name: Too many plugins error
+      id: too-many-plugins-error
+      description: 'Wants to resolve the OS-MCO-40009 "The app includes too
+        many plugins. Reduce the number of plugins." error, caused by a
+        mobile app exceeding the maximum allowed number of plugins, by
+        removing some plugins from the app and escalating to OutSystems
+        Support if the problem persists, so that the native mobile build
+        completes successfully.'
     - name: Fetch mobile config error
       id: fetch-mobile-config-error
       description: 'Wants to resolve the OS-NAOS-50024 "An internal error has
@@ -8327,6 +8406,27 @@ knowledge-needs:
         use Cordova as the mobile framework until the migration to
         Capacitor completes, so that the mobile app compiles and the
         native mobile build succeeds.'
+    - name: Asset incompatible error
+      id: asset-incompatible-error
+      description: 'Wants to resolve the OS-MCO-40013 "<AssetName>
+        <AssetVersion> is not compatible with MABS <MabsVersion>
+        <MobileFramework>. Update the asset to the latest version." error,
+        caused by using an asset version that isn''t compatible with the
+        current MABS version or mobile framework, by updating the asset to
+        the latest version or building with an older MABS version or a
+        different mobile framework, escalating to OutSystems Support if the
+        problem persists, so that the mobile app compiles and the native
+        mobile build succeeds.'
+    - name: Library framework error
+      id: library-framework-error
+      description: 'Wants to resolve the OS-MCO-40014 "The library
+        <AssetName> does not support the mobile framework <MobileFramework>."
+        error, caused by a mobile library not supporting the app''s mobile
+        framework (Cordova or Capacitor), by updating a library they
+        developed to support both frameworks, or for a third-party library,
+        updating it, finding an alternative, or building with the supported
+        framework, escalating to OutSystems Support if the problem persists,
+        so that the mobile compilation and native mobile build succeed.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -8415,6 +8515,16 @@ knowledge-needs:
         ApplicationSignerCertificate value in LifeTime''s Extensibility
         Configurations, so that the mobile app package builds
         successfully.'
+    - name: AppShield sources error
+      id: appshield-sources-error
+      description: 'Wants to resolve the OS-MCO-40010 "Multiple AppShield
+        plugin sources are present in the Extensibility Configurations. Use
+        only one version of AppShield in the app." error, caused by cloning
+        or modifying the OutSystems AppShield library so the app ends up
+        with more than one AppShield version, by avoiding cloning or
+        modifying the AppShield library and escalating to OutSystems
+        Support if the problem persists, so that the mobile compilation and
+        native mobile build succeed.'
   - name: Custom plugin development
     id: custom-plugin-development
     subtopics:

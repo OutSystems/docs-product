@@ -1,6 +1,10 @@
 ---
 summary: Explore mobile app generation and distribution features in OutSystems 11 (O11) for iOS and Android platforms.
-tags: mobile app generation, mobile app distribution, app build configuration, ios app development, android app development
+tags:
+  - Android
+  - iOS
+  - Mobile app
+  - Native App
 locale: en-us
 guid: 1aacc771-f914-4f95-889a-31f1dde06a38
 app_type: mobile apps

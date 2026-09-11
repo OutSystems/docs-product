@@ -5,7 +5,10 @@ guid: cb9abf07-67bd-427a-b9c6-4c4b608f4980
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:96
-tags: application lifecycle management, dependency management, ide usage, reactive web apps, troubleshooting
+tags:
+  - Deploy
+  - Lifecycle
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

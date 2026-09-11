@@ -1,6 +1,8 @@
 ---
 summary: Explore how OutSystems 11 (O11) facilitates application version tagging and deployment through its LifeTime interface.
-tags: application deployment, version control, application tagging, deployment strategies, mobile app packaging
+tags:
+  - Deploy
+  - Mobile app
 locale: en-us
 guid: d97b99fb-75a2-453c-a20d-d4270e09c8ed
 app_type: traditional web apps, mobile apps, reactive web apps

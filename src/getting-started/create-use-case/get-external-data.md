@@ -1,6 +1,9 @@
 ---
 summary: Learn how OutSystems 11 (O11) enables integration with external databases, systems of record, and Excel to enhance app development.
-tags: external data integration, database connectivity, system of record integration, excel data import, data migration
+tags:
+  - Data
+  - Entities
+  - External Databases
 locale: en-us
 guid: 4430e635-ef3e-45e4-a2f6-39c74300518d
 app_type: traditional web apps, mobile apps, reactive web apps

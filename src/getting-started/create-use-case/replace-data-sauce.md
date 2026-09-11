@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) use-case apps replace sample data in list, detail, and form screens with your database, Excel, or SoR data.
-tags: data integration, ui customization, screen templates, external data, app customization
+tags:
+  - Data
+  - External Databases
+  - Screens
+  - Templates
 locale: en-us
 guid: efe8b43b-19cd-460b-951a-d6af460a1474
 app_type: traditional web apps, mobile apps, reactive web apps

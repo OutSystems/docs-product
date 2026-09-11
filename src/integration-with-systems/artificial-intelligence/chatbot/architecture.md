@@ -1,6 +1,9 @@
 ---
 summary: Chatbot architecture in OutSystems 11 (O11) links Azure Bot Service, Bot Framework, and webhook logic to route user messages between app and Azure.
-tags: chatbot development, azure integration, azure bot service, azure bot framework, ai & machine learning
+tags:
+  - AI
+  - Architecture
+  - REST
 locale: en-us
 guid: b7b3693d-5efc-4f7e-bef5-472a07175945
 app_type: traditional web apps, mobile apps, reactive web apps

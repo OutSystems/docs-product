@@ -1,6 +1,9 @@
 ---
 summary: "Multilingual Traditional Web Apps in OutSystems 11 (O11): add locales, export/import Excel or .resX translation files, and switch languages at runtime."
-tags: localization, internationalization, application translation, language support, locale management
+tags:
+  - Multi-language
+  - Traditional Web
+  - Translation
 locale: en-us
 guid: e4525653-9e57-4bb3-8426-a74a898addd0
 app_type: traditional web apps

@@ -1,6 +1,11 @@
 ---
 summary: Explore various user input options in OutSystems 11 (O11) for UI design, including dropdowns, radio buttons, switches, popups, and file uploads.
-tags: ui design, user input, dropdowns, radio buttons, file upload
+tags:
+  - Forms
+  - Front-End
+  - UI
+  - UI Patterns
+  - Widgets
 locale: en-us
 guid: 18044d09-890f-470b-bf4a-d28b992b4f87
 app_type: traditional web apps, mobile apps, reactive web apps

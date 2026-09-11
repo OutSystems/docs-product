@@ -5,7 +5,11 @@ guid: db93a6af-6f3d-45a6-b57a-ec7fbba596c3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: code maintenance, performance optimization, css best practices, javascript best practices, development best practices
+tags:
+  - Best Practices
+  - CSS
+  - JavaScript
+  - Performance
 audience:
   - Developer
   - Front-end developer

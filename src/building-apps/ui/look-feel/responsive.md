@@ -1,6 +1,12 @@
 ---
 summary: Responsive UI in OutSystems 11 (O11) covers device detection, adaptive patterns, column behaviors, and breakpoints for mobile and reactive web apps.
-tags: ui design, css customization, cross-platform development, adaptive design, screen size detection
+tags:
+  - CSS
+  - Layouts
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
 locale: en-us
 guid: 5d91a5b5-b07e-4858-af62-980f6a558b1d
 app_type: mobile apps, reactive web apps

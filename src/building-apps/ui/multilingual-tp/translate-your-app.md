@@ -1,6 +1,9 @@
 ---
 summary: "OutSystems 11 (O11) multilingual app translation: add locales, use the translation editor, set up a SetCurrentLocale language switcher, and handle Static Entities."
-tags: internationalization, localization, language support, user experience, application development
+tags:
+  - Multi-language
+  - Translation
+  - UI
 locale: en-us
 guid: e664c563-cb0f-491c-bd05-8f1684d4a5a3
 app_type: traditional web apps, mobile apps, reactive web apps

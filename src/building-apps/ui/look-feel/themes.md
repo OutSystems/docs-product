@@ -1,6 +1,11 @@
 ---
 summary: OutSystems 11 (O11) themes let you set a default module theme, create blank or base themes, and define app visuals using Blocks and Placeholders.
-tags: ide usage, reactive web apps, tutorials for beginners, ui customization, performance optimization
+tags:
+  - Blocks
+  - CSS
+  - Layouts
+  - OutSystems UI
+  - Themes
 locale: en-us
 guid: fa7dc8c3-aea1-4ccb-a2d6-219772a1a7f2
 app_type: traditional web apps, mobile apps, reactive web apps

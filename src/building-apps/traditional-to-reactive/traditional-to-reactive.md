@@ -19,6 +19,10 @@ coverage-type:
   - apply
 outsystems-tools:
   - service studio
+topic:
+  - convert-to-reactive
+  - fix-mock-elements
+  - validate-security-after-conversion
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=6099-302
 summary: Automate the conversion of Traditional Web Apps to Reactive Web Apps on OutSystems 11 (O11), minimizing manual changes.
 isautopublish: true

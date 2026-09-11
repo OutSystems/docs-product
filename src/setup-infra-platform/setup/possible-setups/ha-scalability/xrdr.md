@@ -17,6 +17,10 @@ outsystems-tools:
 coverage-type:
   - understand
 isautopublish: true
+topic:
+  - how-xrdr-works
+  - xrdr-failover-process
+  - xrdr-key-concepts
 ---
 
 # Cross-region disaster recovery

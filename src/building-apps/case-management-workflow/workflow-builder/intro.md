@@ -18,6 +18,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+topic:
+  - wfb-app-templates
+  - wfb-overview
 isautopublish: true
 ---
 

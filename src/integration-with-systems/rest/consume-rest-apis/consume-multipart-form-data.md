@@ -17,6 +17,10 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - consume-refresh-methods
+  - multipart-content-disposition
+  - multipart-form-inputs
 isautopublish: true
 ---
 

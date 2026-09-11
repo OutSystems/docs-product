@@ -22,6 +22,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - fedramp-it-authentication
+  - fips-service-studio-config
 isautopublish: true
 ---
 

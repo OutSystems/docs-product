@@ -21,6 +21,9 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - understand
+topic:
+  - cmf-app-examples
+  - cmf-overview
 isautopublish: true
 ---
 

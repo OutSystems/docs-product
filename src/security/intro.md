@@ -18,6 +18,10 @@ outsystems-tools:
 coverage-type:
   - understand
 isautopublish: true
+topic:
+  - cia-security-triad
+  - o11-compliance-offerings-overview
+  - owasp-top-10-lists
 ---
 
 # Security and compliance

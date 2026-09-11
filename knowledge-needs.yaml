@@ -402,12 +402,13 @@ knowledge-needs:
         data access, so that public endpoints don't expose sensitive data or
         enable cross-site request forgery attacks.
     - name: Check user role in code
-      id: check-user-role-in-code-o11
-      description: Wants to verify whether the currently logged-in end-user has
-        a specific public role (local or consumed from another app) inside a
-        server action or service action, using the CheckEndUserRole built-in
-        function with a RoleId input, so that business logic can conditionally
-        allow or restrict behavior based on the user's role.
+      id: check-user-role-in-code
+      description: Wants to verify whether the currently logged-in end-user
+        has a specific public role (local or consumed from another app),
+        inside a server action or service action, using the
+        CheckEndUserRole built-in function with a RoleId input, so that
+        business logic can conditionally allow or restrict behavior based
+        on the user's role.
     - name: Check role of user
       id: check-role-of-user
       description: Wants to verify whether a given user (not necessarily the
@@ -6256,6 +6257,13 @@ knowledge-needs:
         production through Portal, or continue building it in ODC Studio, based
         on which capabilities require ODC Studio, so that they choose the right
         next step after the refine phase.
+    - name: Review MW blueprint
+      id: review-mentor-web-blueprint
+      description: Wants to review and edit the Mentor Web blueprint (entities,
+        roles, screens, and stateflows) through conversational prompts before
+        generation, including switching entities between local and referenced
+        and setting the app theme, so that AI misinterpretations are caught
+        and corrected before the app is generated.
   - name: Mentor Web prompts
     id: mentor-web-prompts
     subtopics:
@@ -7782,6 +7790,39 @@ knowledge-needs:
         correcting the keystore password and retrying, escalating to
         OutSystems Support if the problem persists, so that the Android
         mobile app package generates successfully.'
+    - name: Provisioning expiry error
+      id: provisioning-expiry-error
+      description: 'Wants to resolve the OS-MABS-SIG-40015 "Your provisioning
+        profile expired on <expiration_date>. Upload a new one and retry."
+        error, caused by using an expired iOS provisioning profile, by
+        renewing or uploading a valid provisioning profile with a valid
+        expiration date, escalating to OutSystems Support if the problem
+        persists, so that the mobile app package generates successfully.'
+    - name: Missing entitlement error
+      id: missing-entitlement-error
+      description: 'Wants to resolve the OS-MABS-SIG-40016 "Your provisioning
+        profile <provision_profile> is missing the <entitlement>
+        entitlement" (or missing multiple entitlements) error, caused by the
+        provisioning profile used to generate the iOS app lacking the
+        required entitlements, by checking the provisioning profile''s
+        capabilities against the needed entitlements and fixing the profile,
+        so that the mobile app package generates successfully.'
+    - name: Xcode profile mismatch
+      id: xcode-profile-mismatch
+      description: 'Wants to resolve the OS-MABS-SIG-40017 "Signing settings
+        require a manually managed profile, but your provisioning profile
+        <provision_profile> is Xcode managed." error, by replacing the Xcode
+        managed provisioning profile with a manually created one, so that
+        the iOS mobile app package generates successfully.'
+    - name: Certificate expired error
+      id: certificate-expired-error
+      description: 'Wants to resolve the OS-MABS-SIG-40018 "This certificate
+        expired on <expiration_date>. Create a new certificate or check our
+        documentation to know how." error, caused by using an expired iOS
+        signing certificate, by renewing or uploading a valid, unexpired
+        certificate and retrying, escalating to OutSystems Support if the
+        problem persists, so that the mobile app package generates
+        successfully.'
     - name: Document storage error
       id: document-storage-error
       description: 'Wants to resolve the OS-MCO-50002 "A document is not
@@ -8143,6 +8184,15 @@ knowledge-needs:
         persists, contact our support team." error, by checking the build
         logs on Service Center for AppShield license validation issues and
         repeating the operation, escalating to OutSystems Support if the
+        problem persists, so that the mobile app package generates
+        successfully.'
+    - name: Settings validation error
+      id: app-settings-validation-error
+      description: 'Wants to resolve the OS-MABS-SHLD-50002 "Something went
+        wrong when validating application settings." error, caused by invalid
+        application settings or extensibility configurations, by reviewing
+        and fixing them, checking the Service Center build logs, and
+        retrying app generation, escalating to OutSystems Support if the
         problem persists, so that the mobile app package generates
         successfully.'
     - name: Deprecated signer cert

@@ -20,6 +20,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - wfb-app-statuses
+  - wfb-first-login
 isautopublish: true
 ---
 

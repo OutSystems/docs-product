@@ -18,6 +18,10 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - wfb-env-registration
+  - wfb-first-login
+  - wfb-prerequisites
 isautopublish: true
 ---
 

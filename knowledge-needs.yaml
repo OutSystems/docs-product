@@ -8024,6 +8024,46 @@ knowledge-needs:
         identifier having an invalid format, by checking and correcting the
         identifier so it follows the required format, so that the mobile app
         package generates successfully.'
+    - name: Generic compile error
+      id: generic-compile-error
+      description: 'Wants to resolve the OS-MCO-50001 "An error occurred. We''ll
+        look into it soon. Please try again, and if the problem persists, open
+        a support case." error, an unspecified internal error with no more
+        specific cause, by retrying the mobile compilation and opening a
+        support case with OutSystems Support if the problem persists, so that
+        the native mobile build completes successfully.'
+    - name: Manifest unavailable error
+      id: manifest-unavailable-error
+      description: 'Wants to resolve the OS-MCO-50006 "The project manifest
+        is not available. If the problem persists, open a support case."
+        error, an unspecified internal error with no more specific cause,
+        by retrying the mobile compilation and opening a support case with
+        OutSystems Support if the problem persists, so that the native
+        mobile build completes successfully.'
+    - name: App manifest unavailable error
+      id: app-manifest-unavailable-error
+      description: 'Wants to resolve the OS-MCO-50007 "The app manifest is
+        not available. If the problem persists, open a support case."
+        error, an unspecified internal error with no more specific cause,
+        by retrying the mobile compilation and opening a support case with
+        OutSystems Support if the problem persists, so that the native
+        mobile build completes successfully.'
+    - name: Package fetch error
+      id: package-fetch-error
+      description: 'Wants to resolve the OS-MCO-50009 "An error occurred
+        while fetching package <Package>. If the problem persists, open a
+        support case." error, an unspecified internal error with no more
+        specific cause, by retrying the mobile compilation and opening a
+        support case with OutSystems Support if the problem persists, so
+        that the native mobile build completes successfully.'
+    - name: AVS deserialize error
+      id: avs-deserialize-error
+      description: 'Wants to resolve the OS-MCO-50011 "An error occurred
+        while deserializing data from AVS. If the problem persists, open a
+        support case." error, an unspecified internal error with no more
+        specific cause, by retrying the mobile compilation and opening a
+        support case with OutSystems Support if the problem persists, so
+        that the native mobile build completes successfully.'
     - name: Document storage error
       id: document-storage-error
       description: 'Wants to resolve the OS-MCO-50002 "A document is not
@@ -8037,6 +8077,13 @@ knowledge-needs:
         the mobile compilation and escalating to OutSystems Support if the
         problem persists, so that the native mobile build completes
         successfully.'
+    - name: Object storage error
+      id: object-storage-error
+      description: 'Wants to resolve the OS-MCO-50004 "An error occurred
+        while communicating with the object storage. If the problem
+        persists, open a support case." error, by retrying the mobile
+        compilation and escalating to OutSystems Support if the problem
+        persists, so that the native mobile build completes successfully.'
     - name: Template package error
       id: template-package-error
       description: 'Wants to resolve the OS-MCO-50016 "The template NPM

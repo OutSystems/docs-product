@@ -7357,14 +7357,6 @@ knowledge-needs:
         synchronization procedure, in OutSystems 11 mobile apps, so that they
         can build the client-side and server-side logic needed to keep local
         storage and server data consistent.
-    - name: Configure auto sync
-      id: configure-auto-sync
-      description: Wants to configure the OfflineDataSyncConfiguration action
-        to automatically trigger the data synchronization when the app gets
-        online, when the user logs in, or when the user resumes the app, and
-        to set the automatic retry and retry interval on failure, in
-        OutSystems 11 mobile apps, so that synchronization keeps local and
-        server data consistent without requiring a manual trigger.
     - name: Avoid sync trigger loops
       id: avoid-onsync-loop
       description: Wants to avoid triggering multiple simultaneous
@@ -7388,6 +7380,35 @@ knowledge-needs:
         GetNetworkStatus action, in OutSystems 11 mobile apps, so that they
         can react to synchronization events and network connectivity changes
         in their application.
+    - name: Implement manual sync
+      id: implement-manual-sync
+      description: Wants to manually implement offline data synchronization
+        logic for an OutSystems Developer Cloud (ODC) mobile app, by creating
+        a server action that fetches and processes data, a client action
+        that calls the server action and updates local storage entities via
+        CreateOrUpdate actions, and connecting that client action to the
+        app's OnSync system event, so that custom sync logic runs when
+        synchronization triggers, instead of relying on the Create Action to
+        Sync Data accelerator.
+    - name: Configure sync triggers
+      id: configure-sync-triggers
+      description: Wants to configure how a mobile app triggers data synchronization, by
+        configuring automatic trigger conditions and retry behavior either in
+        Mobile tab properties or through the OfflineDataSyncConfiguration
+        action, so that data synchronization runs automatically under the right
+        conditions.
+    - name: Manually trigger sync
+      id: manually-trigger-sync
+      description: Wants to manually trigger data synchronization in a mobile
+        app by dragging or calling the OnSync system event in the
+        application flow, so that synchronization runs on demand when
+        automatic triggers don't match the intended user interaction.
+    - name: Sync status feedback events
+      id: sync-status-feedback-events
+      description: Wants to provide user feedback about synchronization
+        status in a mobile app by handling OnSyncStart, OnSyncComplete, and
+        OnSyncError events, so that users know when synchronization starts,
+        finishes, or fails.
   - name: Mobile app performance troubleshooting
     id: mobile-app-performance-troubleshooting
     subtopics:

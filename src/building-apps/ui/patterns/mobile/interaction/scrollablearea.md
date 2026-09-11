@@ -1,5 +1,9 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, mobile app development, ui patterns
+tags:
+  - Accessibility
+  - Mobile app
+  - UI Patterns
+  - Widgets
 summary: Scrollable Area pattern in OutSystems 11 (O11) lets you add a scrollable content block with orientation, size, and scrollbar type options.
 locale: en-us
 guid: 3ecfdec5-b135-4faa-8c1f-110595075a02

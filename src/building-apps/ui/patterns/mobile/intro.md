@@ -1,5 +1,8 @@
 ---
-tags: ui patterns, application development, mobile development, design best practices, enhanced user experience
+tags:
+  - Mobile app
+  - UI
+  - UI Patterns
 summary: Explore mobile and reactive UI patterns in OutSystems 11 (O11) for enhanced app development.
 locale: en-us
 guid: c186083b-0936-47cb-804d-3e5fcad431a0

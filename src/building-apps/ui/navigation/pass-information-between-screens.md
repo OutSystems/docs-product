@@ -1,6 +1,10 @@
 ---
 summary: Learn how to pass data between screens using Input Parameters in OutSystems 11 (O11).
-tags: ide usage, reactive web apps, tutorials for beginners, ui flows, navigation, widgets, input parameters
+tags:
+  - Data
+  - Screens
+  - UI
+  - Widgets
 locale: en-us
 guid: abc236ca-9b9d-41ea-9694-7a0148c216b1
 app_type: traditional web apps, mobile apps, reactive web apps

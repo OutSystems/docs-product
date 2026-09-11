@@ -1,5 +1,11 @@
 ---
-tags: ui patterns, mobile development, user interface design, sidebar implementation, outsystems ui
+tags:
+  - Accessibility
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Sidebar UI Pattern in OutSystems 11 (O11) lets you display extra content in the screen margin, with toggle control via SidebarOpen and SidebarClose client actions.
 locale: en-us
 guid: d948b2a9-574a-43a1-bf6a-9465bdc22dfe

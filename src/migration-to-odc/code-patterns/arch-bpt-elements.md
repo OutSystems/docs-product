@@ -12,7 +12,11 @@ platform-version: o11
 audience:
   - Developer
   - Front-end developer
-tags: cloud-native applications, system entities, api development, data integration, app conversion
+tags:
+  - Business Processes
+  - Entities
+  - Taskbox
+  - Workflows
 outsystems-tools:
   - service studio
 helpids: 30628

@@ -6,7 +6,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30537
-tags: ide usage, reactive web apps, app conversion, integration, extensions
+tags:
+  - .NET
+  - C#
+  - External Databases
+  - Extensions
 audience:
   - Developer
   - Platform administrator

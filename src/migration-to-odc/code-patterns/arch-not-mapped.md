@@ -6,7 +6,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30535
-tags: application upgrade, dependency mapping, odc conversion, architecture mapping, outsystems platform
+tags:
+  - Architecture
 audience:
   - Developer
   - Architect

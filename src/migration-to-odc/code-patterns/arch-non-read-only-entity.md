@@ -6,7 +6,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7253
 helpids: 30523
-tags: entity exposure, code conversion, service actions, architecture review, dependency management
+tags:
+  - Architecture
+  - Entities
+  - Refactoring
 audience:
   - Architect
   - Developer

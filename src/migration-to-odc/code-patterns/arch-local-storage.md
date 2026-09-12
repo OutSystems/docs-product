@@ -6,7 +6,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7558
 helpids: 30525
-tags: local storage entities, app architecture conversion, outsystems development, code conversion, app development best practices
+tags:
+  - Architecture
+  - Entities
 audience:
   - Developer
   - Architect

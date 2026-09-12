@@ -7557,15 +7557,16 @@ knowledge-needs:
         modified locally, and remains active, so that one-to-many master/detail
         records stay consistent under a "last write wins" strategy.
     - name: Last write wins pattern
-      id: last-write-wins-sync-pattern
-      description: Wants to implement the Read/Write Last Write Wins offline
-        synchronization pattern for OutSystems 11 mobile apps, covering the
-        client-side logic that retrieves added, updated, and deleted local
-        records and sends them to the server, and the server-side logic
-        that updates the database and returns the full updated data set to
-        replace local storage, so that bidirectional synchronization keeps
-        local and server data consistent under a simple last-write-wins
-        strategy.
+      id: last-write-wins-pattern
+      description: Wants to implement the Read/Write Data Last Write Wins
+        offline synchronization pattern for mobile apps, covering the
+        client-side sync logic that gathers locally added, updated, and
+        deleted records, the server-side sync logic that reconciles the
+        database and returns the full updated record set, and a local
+        entity data model with metadata attributes tracking whether a
+        record originated from the server, was modified locally, and
+        remains active, so that local storage is deleted and recreated
+        from server data under a simple last-write-wins strategy.
     - name: Sync actions overview
       id: sync-actions-procedure
       description: Wants to understand the out-of-the-box OfflineDataSync,
@@ -9791,6 +9792,15 @@ knowledge-needs:
         decide whether to enable SAML single logout for their setup.
     - name: Lockout
       id: lockout
+    - name: Avoid IdP lockout
+      id: avoid-idp-lockout
+      description: Wants to avoid a total IdP lockout (loss of ODC Portal, ODC
+        Studio, or app access) when removing the built-in IdP assignment, by
+        fully testing the external IdP beforehand and verifying its SSO
+        session timeout is long enough to cover the complete login flow
+        (including MFA, consent, or profile matching steps), so that they
+        don't need to rely on a support ticket to reactivate the built-in
+        provider.
     - name: App brute force config
       id: app-brute-force-config
       description: Wants to configure the brute force login protection thresholds and
@@ -10135,7 +10145,9 @@ knowledge-needs:
       id: grant-revoke-role-action-odc
       description: Wants to grant or revoke an end-user's application role
         programmatically, using the built-in GrantRole and RevokeRole
-        Actions inside a Server Action logic flow, in ODC, so that role
+        Actions inside a Server Action logic flow, in ODC, including
+        granting the role immediately inside the same custom server action
+        that finishes user activation or registration, so that role
         assignment can be automated instead of done manually through the
         ODC Portal.
     - name: Define Permissions
@@ -10169,9 +10181,10 @@ knowledge-needs:
       description: Wants to register a new end user in ODC's built-in
         identity provider by calling StartUserRegistration to create the
         user and obtain a temporary password, then FinishUserRegistration
-        to activate the password and log the user in, so that a new user
-        account becomes usable without going through the standard
-        self-registration screens.
+        to activate the password and log the user in, including when
+        completing a custom self-registration flow outside the standard
+        self-registration screens, so that a new user account becomes
+        usable immediately.
     - name: Deleting Users
       id: deleting-users
     - name: Updating Users

@@ -3716,6 +3716,14 @@ knowledge-needs:
         error message and creating a case with OutSystems Support if
         the problem persists, in OutSystems 11, so that they can
         continue working in Workflow Builder.'
+    - name: WFB communication error
+      id: wfb-communication-error
+      description: 'Wants to resolve the "Communication error.
+        <OriginalErrorMessage>." error that occurs when the browser
+        can''t contact the Workflow Builder servers, by verifying the
+        workstation has connectivity to the Workflow Builder servers, in
+        OutSystems 11, so that they can continue accessing Workflow
+        Builder.'
     - name: WFB invalid application data error
       id: wfb-invalid-application-data-error
       description: 'Wants to resolve the "Invalid application data.
@@ -5787,6 +5795,19 @@ knowledge-needs:
     - name: Forge overview
       id: forge-overview
       description: Wants to understand what Forge is, what types of reusable assets (apps, libraries, agentic apps) are available, and how the community-driven sharing model works in OutSystems.
+    - name: Forge project types
+      id: forge-project-types
+      description: Wants to understand the different types of Forge projects, so that they
+        know what kind of project to share or look for in the OutSystems 11
+        Forge.
+    - name: Forge licensing model
+      id: forge-licensing-model
+      description: Wants to understand that individual Forge projects (not
+        Business Solutions) follow a BSD open-source licensing model by
+        default, but contributors can share under other licenses, and that
+        verifying and complying with a project's license is the user's own
+        responsibility, so that they use OutSystems 11 Forge projects
+        appropriately.
     - name: Forge project classifications
       id: forge-project-classifications
       description: Wants to understand the different Forge project classifications and what
@@ -12246,3 +12267,48 @@ knowledge-needs:
         OutSystems 11 Traditional-to-Reactive conversion, so they can
         complete the manual conversion work Service Studio couldn't
         automate.
+- name: Creating components
+  guid: cc7329da-a219-487c-b72f-2ef30bb1676d
+  topics:
+  - name: Plan and design components
+    id: plan-design-components
+    description: Wants to plan and design a reusable OutSystems component by
+      deciding its purpose, defining a small API with sensible defaults and
+      extensibility options, and choosing between a block or a module (with
+      or without a UI template), so it addresses its main use cases and
+      stays easy to reuse and maintain.
+  - name: Component best practices
+    id: component-best-practices
+    description: Groups build-time guidance for reusable OutSystems
+      components, including customization points, lifecycle events, Service
+      Studio preview, and scale, security, and performance concerns.
+    subtopics:
+    - name: Expose component styling and script customization points
+      id: component-styling-script-customization
+      description: Wants to decide how a reusable OutSystems component should
+        reuse shared CSS and JavaScript while still exposing safe
+        customization points, so consuming apps can adapt its look and
+        behavior without forking the component.
+    - name: Handle component lifecycle events
+      id: component-lifecycle-events
+      description: Wants to decide which lifecycle events a reusable
+        OutSystems component should handle and where that logic belongs, so
+        initialization, updates, and cleanup happen predictably in every app
+        that uses it.
+    - name: Support Service Studio preview
+      id: component-service-studio-preview
+      description: Wants to ensure a reusable OutSystems component renders and
+        behaves correctly in Service Studio preview, so developers can inspect
+        and configure it accurately while building apps.
+    - name: Design for scale, security, and performance
+      id: component-scale-security-performance
+      description: Wants to design a reusable OutSystems component to meet
+        scalability, security, and performance requirements, so it remains
+        safe and responsive as more apps and users depend on it.
+  - name: Present and share components
+    id: present-share-components
+    description: Wants to prepare a reusable OutSystems component for others
+      to adopt, by following naming, description, and icon conventions and
+      the Forge sharing and trusted component requirements, so other
+      developers can discover, understand, and trust the component before
+      using it.

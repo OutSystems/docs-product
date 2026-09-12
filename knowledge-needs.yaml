@@ -1594,6 +1594,12 @@ knowledge-needs:
         attribute, by creating that index when the attribute's Delete Rule
         is set to Protect or Delete, so that the OutSystems 11 app avoids
         the performance cost of an unindexed reference lookup.
+    - name: Choose entity indexes
+      id: entity-index-selection
+      description: Wants to identify which entity attributes to index based
+        on query conditions, join usage, and data sparsity, in OutSystems
+        11, so that query performance improves without excessively slowing
+        down inserts and updates.
   - name: Enforcing data integrity
     id: enforcing-data-integrity
   - name: Exposing data via REST webservices
@@ -2209,6 +2215,13 @@ knowledge-needs:
       id: data-masking
     - name: Data encryption
       id: data-encryption
+    - name: Search encrypted data
+      id: search-encrypted-attribute
+      description: Wants to search an encrypted searchable attribute in
+        OutSystems 11, by adding the EncryptSearchableAttribute action
+        before the query and setting its Text and IndexType inputs to match
+        the attribute's encryption IndexType, so that the search string is
+        encrypted before it's used in the database query.
     - name: Secure data in transit
       id: secure-data-in-transit
       description: Wants to protect OutSystems app communications from Man-in-the-Middle
@@ -3584,6 +3597,18 @@ knowledge-needs:
         activity in OutSystems 11, so that the process execution properly
         terminates once every flow path in the main process reaches its own
         End activity.
+    - name: Entity action process events
+      id: entity-action-process-events
+      description: Wants to have an Entity Action issue events to all executing
+        process and activity instances when it creates or updates a record, in
+        OutSystems 11, so that a process can automatically launch or advance
+        in reaction to an entity change.
+    - name: Taskbox overview
+      id: taskbox-overview
+      description: Wants to understand what the Taskbox is and how it lists
+        tasks, instructions, and actions for end users in Reactive and
+        Traditional Web Apps, in OutSystems 11, so that they know where users
+        interact with pending process tasks.
     - name: Terminate process property
       id: terminate-process-property
       description: Wants to force immediate termination of a process
@@ -3591,6 +3616,24 @@ knowledge-needs:
         to Yes in OutSystems 11, so that all activity instances stop right
         away regardless of other running flow paths, and can be restarted
         later from Service Center.
+    - name: Light process overview
+      id: light-process-overview
+      description: Wants to understand what light process execution is and
+        when to use it, for event-driven processes handling large volumes of
+        database events at scale, knowing the trade-offs (no process
+        history, no activity instances, unsupported Automatic Activity start
+        dates), in OutSystems 11, so that they can decide whether a process
+        qualifies for and benefits from this scalable database queueing
+        mode.
+    - name: Enable light process execution
+      id: enable-light-process-execution
+      description: Wants to enable light process execution for a process by
+        meeting the required conditions (a single Start > Automatic Activity
+        > End flow, a database event set as Launch On, and Expose Process
+        Entity set to No) and turning on the Light Process Execution option
+        in Service Center before republishing the module, in OutSystems 11,
+        so that a qualifying process runs faster without process/activity
+        tracking overhead.
   - name: Workflow Builder
     id: workflow-builder
     subtopics:
@@ -3868,10 +3911,11 @@ knowledge-needs:
     subtopics:
     - name: Resolve merge conflicts
       id: resolve-merge-conflicts
-      description: Wants to understand how ODC handles code merges when multiple
-        developers publish changes to the same app simultaneously, including when
-        ODC merges automatically and when conflicts require manual resolution by
-        choosing which changes to keep, so that they can collaborate on an app
+      description: Wants to understand how merge conflicts are handled when multiple
+        developers publish changes to the same app simultaneously, including
+        when changes merge automatically, when conflicts in textual elements
+        require manually choosing which changes to keep, and how to finish with
+        Merge and publish or Merge, so that they can collaborate on an app
         without losing work.
     - name: Compare app revisions
       id: compare-app-revisions
@@ -3882,8 +3926,10 @@ knowledge-needs:
     - name: Recover previous merge
       id: recover-previous-merge
       description: Wants to resume or discard an in-progress merge that was automatically
-        saved by ODC Studio, so that they can continue resolving conflicts without
-        losing earlier merge work or start fresh.
+        saved, using the Recover Previous Merge dialog after canceling a merge
+        or an unexpected Service Studio or ODC Studio closure, so that they can
+        continue resolving conflicts without losing earlier merge work or start
+        fresh.
     - name: Compare workflow versions
       id: compare-workflow-versions
       description: Wants to compare different versions of a workflow (a previous
@@ -3892,7 +3938,7 @@ knowledge-needs:
         publish-conflict dialog, so that they can review differences before choosing
         which version to keep or restore.
     - name: Workflow diff color coding
-      id: workflow-diff-color-coding
+      id: workflow-diff-color-coding-odc
       description: Wants to interpret the color-coded highlights and property-level changes
         shown in ODC's workflow comparison view, so that they can correctly
         identify what was added, modified, deleted, or in conflict between two
@@ -3903,6 +3949,11 @@ knowledge-needs:
         and see that message surface in the revision history and in merge-conflict
         or open-workflow conflict dialogs, so that they and their team understand
         the context behind each revision.
+    - name: Merge color reference
+      id: merge-color-reference-o11
+      description: Wants to interpret the color-coded highlights shown in Service
+        Studio's Compare and Merge window, to identify deleted, inserted, and
+        modified or conflicting lines during a merge, in OutSystems 11.
 - name: Consume UI
   guid: 349f50f2-cb79-41c7-9e8b-f113cbb3e965
   topics:
@@ -4773,6 +4824,12 @@ knowledge-needs:
         Name properties by binding them to aggregate data, so that users can
         upload a file (such as a photo) and save it to the database from a
         Traditional Web App or Reactive Web App form.
+    - name: Use Download widget
+      id: use-download-widget-o11
+      description: Wants to configure the Download widget's File Content and
+        File Name properties in Service Studio, so that the browser downloads
+        binary content, such as an image, directly from an action, in a
+        Traditional Web App or Reactive Web App.
     - name: Use Pagination pattern
       id: use-pagination-pattern
       description: 'Wants to add the Pagination UI Pattern to a screen and configure
@@ -4995,6 +5052,51 @@ knowledge-needs:
         OptionalConfigs.JustifyHeaders, ExtendedClass, and the OnTabChange
         event, so that they can correctly configure the pattern's layout,
         behavior, and styling, in mobile apps and reactive web apps (O11).
+  - name: UI performance best practices
+    id: ui-performance-best-practices
+    description: Wants to apply best practices for optimizing OutSystems 11
+      screen performance and load times, in Traditional Web, mobile, and
+      Reactive Web apps.
+    subtopics:
+    - name: Avoid preparation data in screen actions
+      id: avoid-preparation-data-in-screen-actions
+      description: Wants to avoid using preparation data in screen actions in
+        OutSystems 11, to reduce Viewstate size and network payload, so that
+        Traditional Web, mobile, and Reactive Web apps respond quickly.
+    - name: Use AJAX in moderation
+      id: use-ajax-in-moderation
+      description: Wants to use AJAX in moderation in OutSystems 11 screens, to
+        reduce Viewstate size and network payload, so that Traditional Web,
+        mobile, and Reactive Web apps respond quickly.
+    - name: Split large screens
+      id: split-large-screens
+      description: Wants to split large screens in OutSystems 11, to reduce
+        Viewstate size and network payload, so that Traditional Web, mobile,
+        and Reactive Web apps respond quickly.
+    - name: Minimize screen parameters
+      id: minimize-screen-parameters
+      description: Wants to minimize screen parameters in OutSystems 11, to
+        reduce Viewstate size and network payload, so that Traditional Web,
+        mobile, and Reactive Web apps respond quickly.
+    - name: Cache screens and blocks
+      id: cache-screens-and-blocks
+      description: Wants to cache screens and blocks in OutSystems 11, to reduce
+        Viewstate size and network payload, so that Traditional Web, mobile,
+        and Reactive Web apps respond quickly.
+    - name: Optimize JavaScript loading
+      id: optimize-javascript-loading
+      description: Wants to optimize how JavaScript is included and loaded on
+        OutSystems 11 screens, by placing JavaScript in files instead of
+        screen expressions, deferring JavaScript that isn't needed at load
+        time to the end of the page, and using minified JavaScript in
+        production, so that screen size and page load time are reduced.
+    - name: Use CSS sprites
+      id: use-css-sprites
+      description: Wants to reduce the number of server requests for images
+        on high-traffic, public-facing OutSystems 11 screens by combining
+        frequently used images into a single CSS sprite using
+        background-image and background-position, so that screen load times
+        improve.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:

@@ -10198,6 +10198,20 @@ knowledge-needs:
         external IdP.
     - name: Self Registration
       id: self-registration
+    - name: Build self-reg form
+      id: build-self-registration-form
+      description: Wants to build the verification code and password inputs
+        for a self-registration form in ODC Studio, by adding a boolean
+        condition to swap form content, inserting header and input widgets,
+        and wiring local variables, so that a new user can enter their
+        verification code and set a password after signing up.
+    - name: Validate password confirmation
+      id: validate-password-confirmation
+      description: Wants to validate a new user's password against the
+        platform's complexity policy and confirm it matches a re-entered
+        value, using the PasswordPolicy block and an OnChange client action
+        comparing Input_ConfirmPassword to Password, in ODC Studio, so that
+        the self-registration form blocks submission until both checks pass.
     - name: Users and Licensing
       id: users-licensing
     - name: User Types

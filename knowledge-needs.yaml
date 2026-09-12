@@ -424,19 +424,18 @@ knowledge-needs:
         so that role assignment can be automated instead of done manually
         through the Users application.
     - name: Add role in Studio
-      id: add-role-in-studio-o11
-      description: Wants to create a new application-specific Role in a
-        Service Studio module, using the Logic tab's Roles folder and Add
-        Role option, so that they can define a custom role (for example
-        HRManager) to use later in screen and logic access control, in
-        OutSystems 11.
+      id: add-role-in-studio
+      description: Wants to create a new application-specific role in a
+        module, using the Logic tab's Roles folder and Add Role option, so
+        that they can define a custom role (for example HRManager) to use
+        later in screen and logic access control.
     - name: Restrict screen access
-      id: restrict-screen-access-o11
+      id: restrict-screen-access
       description: Wants to restrict which end-users can open specific
-        screens in an OutSystems 11 app, by unticking the Anonymous and/or
-        Registered Screen Roles and enabling only a custom application
-        role, so that only users holding the required role (for example
-        HRManager) can access those screens.
+        screens by enabling only a custom application role on the screen's
+        roles property (for example, Screen Roles in OutSystems 11 or
+        Accessible by in ODC Studio), so that only users holding the
+        required role (for example HRManager) can access those screens.
     - name: Restrict logic with roles
       id: restrict-logic-with-roles
       description: Wants to restrict what end-users can do or see by using the
@@ -453,6 +452,14 @@ knowledge-needs:
         users, either programmatically with Grant/Revoke actions or manually
         in the Users app, so they can reason about how permissions are
         structured before implementing them.
+    - name: REST endpoint permissions
+      id: rest-endpoint-permissions
+      description: Wants to understand how OutSystems automatically computes
+        access control for generated REST endpoints tied to screens, blocks,
+        global client actions, exception handlers, and application events,
+        based on the security settings of the calling context, so that they
+        know what permission level an endpoint enforces without configuring
+        it manually.
     - name: Check permissions
       id: check-permissions-overview
       description: 'Wants to understand how permissions are checked in
@@ -5243,6 +5250,24 @@ knowledge-needs:
         11, an issue that must be fixed in Service Studio before a module can be
         published to the server, so that they know why every reported error
         needs resolving prior to deployment.
+    - name: IPP protection concept
+      id: ipp-protection-concept
+      description: Wants to understand what Intellectual Property Protection
+        (IPP) is in OutSystems 11, how the protected and unprotected states
+        control whether applications can be deployed to environments in other
+        infrastructures, and how to request their infrastructure's IPP be
+        changed, so that they know why cross-infrastructure deployment may be
+        blocked and what to do about it.
+    - name: Transfer PE apps
+      id: transfer-pe-apps-enterprise
+      description: Wants to transfer applications from an OutSystems 11
+        Personal or Trial Edition environment to a paid Enterprise
+        subscription environment, by creating a Solution in Service Center,
+        removing IP protection via the Intellectual Property Protection
+        tool, and uploading/publishing it in the new environment, so that
+        they can migrate their apps after upgrading their license,
+        understanding this is intended as a one-time migration and app data
+        itself isn't transferred.
     - name: Portfolio deploy scope
       id: portfolio-deploy-scope
       description: Wants to understand how deployment, promotion, and undeployment
@@ -10109,13 +10134,6 @@ knowledge-needs:
         using the Applications tab in the Users application to add or remove
         specific users under a role, in OutSystems 11, so that end users
         gain or lose access to the app's associated screens and tasks.
-    - name: Assign end-user app roles
-      id: assign-end-user-app-roles-odc
-      description: Wants to assign externally-authenticated end-users to an
-        ODC application's role (via Invite user or Manage roles in the ODC
-        Portal Users section) and set the deployment stage, so that role-based
-        access control (RBAC) grants them access to the app after external
-        IdP login.
     - name: Creating app role
       id: create-app-role
     - name: Application Roles
@@ -10136,11 +10154,14 @@ knowledge-needs:
         permissions are scoped to specific apps rather than the whole
         organization.
     - name: Assign end-user roles
-      id: assign-end-user-roles
+      id: assign-end-user-roles-odc
       description: Wants to grant or revoke an end-user's role for a specific
-        app and stage (Development, QA, or Production) in the ODC Portal's
-        End-user access tab, so that the end-user's access to app features
-        and data updates immediately.
+        app and stage (Development, QA, or Production) in the ODC Portal,
+        either by inviting a new end-user from the Users section, selecting
+        End user access and the role to grant, or by using Manage roles for
+        an existing end-user in the End-user access tab, so that role-based
+        access control (RBAC) updates the end-user's access to app features
+        and data after external IdP login or sign-up completion.
     - name: Grant/revoke role action
       id: grant-revoke-role-action-odc
       description: Wants to grant or revoke an end-user's application role
@@ -10175,9 +10196,14 @@ knowledge-needs:
     id: users-in-os
     subtopics:
     - name: Creating Users
-      id: creating-users
+      id: creating-users-o11
+      description: Wants to understand how end-users are created in
+        OutSystems 11, using the built-in Users application or
+        programmatically via the Users module's actions, so that new
+        employees, customers, or partners can be provisioned with app
+        access without going through public self-registration.
     - name: Register user actions
-      id: register-user-system-actions
+      id: register-user-system-actions-odc
       description: Wants to register a new end user in ODC's built-in
         identity provider by calling StartUserRegistration to create the
         user and obtain a temporary password, then FinishUserRegistration
@@ -10340,8 +10366,15 @@ knowledge-needs:
         usage across production runtimes, using Service Center in OutSystems
         11 or the Subscription section of the ODC Portal, so that they can
         manage AO consumption and know when to request a capacity upgrade.
+    - name: Check license limits
+      id: check-license-limits-o11
+      description: Wants to check the licensing limits and current usage
+        statistics for various licensed resource types for their OutSystems 11
+        environment, using the Licensing submenu under the Administration tab
+        in Service Center, so that they can monitor consumption before hitting
+        a limit.
     - name: View subscription entitlements
-      id: view-subscription-entitlements
+      id: view-subscription-entitlements-odc
       description: Wants to view their organization's and portfolios' subscription details
         and entitlement consumption across resource types, along with available
         add-ons, using the Subscription page in ODC Portal, so that they can
@@ -10638,6 +10671,14 @@ knowledge-needs:
   - name: Certificate Management
     id: certificate-management
     subtopics:
+    - name: App Server Certificates
+      id: app-server-certificates
+      description: Wants to understand how application server SSL
+        certificates are managed in OutSystems cloud (default
+        outsystemsenterprise.com wildcard certificate versus a custom
+        domain certificate) and in self-managed environments, so that they
+        know who's responsible for installation and renewal and which
+        article to follow for their deployment type.
     - name: Trust self-signed cert
       id: trust-self-signed-cert-o11
       description: Wants to add a self-signed certificate to the trusted root
@@ -11213,6 +11254,27 @@ knowledge-needs:
         transaction log growth, based on average page views of monitored
         applications, so that they can properly size the dedicated
         environment's database.
+  - name: Add new cloud environment
+    id: add-new-cloud-environment
+    description: Wants to add a new Cloud environment to their OutSystems
+      infrastructure by contacting sales, who provision it and confirm by
+      email, so that the new environment is ready for use.
+  - name: Add new self-managed environment
+    id: add-new-self-managed-environment
+    description: Wants to add a new self-managed environment to their
+      OutSystems infrastructure by verifying system and network requirements,
+      installing the environment, registering the serial number and
+      installing the license, and registering it in the infrastructure
+      management console (LifeTime), so that the new environment is ready for
+      use.
+  - name: Hybrid env addition
+    id: hybrid-env-addition
+    description: Wants to know how to add an environment when running a hybrid
+      configuration (some environments in OutSystems Cloud, others self-
+      managed), by contacting technical support instead of following the
+      standard Cloud or self-managed steps, understanding this option only
+      applies to licenses purchased before a specific cutoff date, so that they
+      add environments correctly under a hybrid setup.
   - name: IIS application pool management
     id: iis-application-pool-management
     subtopics:
@@ -12059,6 +12121,14 @@ knowledge-needs:
       Administration and Licensing pages, so that they can reference these
       license identifiers when contacting OutSystems Support or performing
       license management tasks.'
+  - name: Licensing identifiers
+    id: licensing-identifiers
+    description: Wants to understand what an Activation Code and Serial
+      Number are, how they differ (infrastructure-wide identifier vs.
+      per-environment, hardware-based identifier), and how they relate to
+      each other, so that they can correctly interpret and use these
+      licensing identifiers when managing their OutSystems 11
+      infrastructure.
   - name: Get environment license
     id: get-environment-license
     description: Wants to obtain and install a license file for a
@@ -12080,6 +12150,20 @@ knowledge-needs:
       application's Platform Configurations tab, and to archive data before
       shortening the period since older data is purged permanently, so that
       database growth is controlled without losing needed historical analytics.
+  - name: IP rights not granted
+    id: ip-rights-not-granted
+    description: 'Wants to resolve the "The IP rights of your applications could
+      not be granted" email received after submitting an app through the IPP
+      Portal, caused by changing the activation code of an IPP-protected
+      application on an infrastructure that doesn''t allow it, by contacting
+      their OutSystems Platform administrator to confirm IPP is properly set
+      up, or contacting OutSystems Support if that doesn''t resolve it.'
+  - name: IPP email delay
+    id: ipp-email-delay
+    description: Wants to know what to do when they used the IPP Portal to change an
+      application's activation code but haven't received a confirmation email
+      within the expected time, so they check their spam folder or contact
+      OutSystems Support if the email still doesn't arrive.
 - name: Monitor and Troubleshoot (O10)
   guid: 69e74025-d666-40fd-b224-c96f5cbba50c
   topics:
@@ -12451,3 +12535,34 @@ knowledge-needs:
       the Forge sharing and trusted component requirements, so other
       developers can discover, understand, and trust the component before
       using it.
+- name: Detach from OutSystems
+  guid: 6c31f58f-e910-49bf-8c27-bf14bd8cd714
+  topics:
+  - name: Detach process (.NET)
+    id: detach-process-net
+    subtopics:
+    - name: Detach process overview
+      id: detach-process-overview
+      description: Wants to understand the overall process, requirements, and
+        consequences of detaching .NET web and mobile applications from
+        OutSystems 10/11, including what functionality is lost and the
+        personnel skills needed, so that they can plan a full detach from
+        the platform.
+    - name: Prepare detach infrastructure
+      id: prepare-detach-infrastructure
+      description: Wants to prepare the Application Server (IIS) and Database
+        Server to host a detached OutSystems .NET application, by
+        reconfiguring hostnames, connection strings, encryption keys, and
+        cache control paths, so that the detached application runs
+        correctly outside OutSystems.
+    - name: Compile deploy detached web app
+      id: compile-deploy-detached-web-app
+      description: Wants to obtain, compile, and deploy the detached source
+        code of an OutSystems web application using Visual Studio, so that
+        the application runs independently of OutSystems after detaching.
+    - name: Compile deploy detached mobile native shell
+      id: compile-deploy-detached-mobile-native-shell
+      description: Wants to obtain, compile, and deploy the detached source
+        code of an OutSystems mobile native shell using Android Studio or
+        Xcode, so that the application runs independently of OutSystems after
+        detaching.

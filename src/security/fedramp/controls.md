@@ -19,6 +19,10 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - fedramp-compliance-artifacts
+  - fedramp-control-support
+  - shared-responsibility-overview
 isautopublish: true
 ---
 

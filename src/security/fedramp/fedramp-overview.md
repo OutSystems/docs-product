@@ -20,6 +20,10 @@ coverage-type:
   - evaluate
   - understand
 isautopublish: true
+topic:
+  - fedramp-ato-types
+  - fedramp-hosting-details
+  - fedramp-vpc-architecture
 ---
 
 # OutSystems FedRAMP overview

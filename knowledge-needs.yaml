@@ -554,6 +554,20 @@ knowledge-needs:
         each should isolate data per tenant or share it across tenants, so they
         can correctly implement data segmentation when building a multi-tenant
         application.
+    - name: Physical tenant isolation
+      id: physical-tenant-isolation
+      description: Wants to implement physical segregation of tenants in
+        OutSystems 11 by giving each tenant a separate database accessed
+        through a database access layer, so they can achieve full data
+        isolation between tenants at the cost of higher infrastructure and
+        maintenance overhead compared to logical segregation.
+    - name: Secure tenant data
+      id: secure-tenant-data
+      description: Wants to prevent one tenant from accessing another tenant's
+        data in a logically segregated OutSystems 11 application, by
+        controlling use of the "Show Tenant Identifier" property and the
+        TenantSwitch action, and by auditing where these are referenced, so
+        they can guard against accidental cross-tenant data exposure.
 - name: (Modeling, Consuming and Using) Data
   guid: 184681b2-96da-4711-9efd-53172730bbed
   topics:
@@ -4237,6 +4251,22 @@ knowledge-needs:
         ImageZoom, and ExtendedClass, so that they can correctly configure
         an image's title, gallery grouping, and full-screen zoom behavior,
         in mobile apps and reactive web apps (O11).
+    - name: Use Tooltip pattern
+      id: use-tooltip-pattern
+      description: Wants to add the Tooltip UI Pattern to a screen, add the
+        widget via Toolbox or Search in other modules if the dependency
+        isn't added, add content to the Content and Tooltip placeholders,
+        wire an On Click event, and set the Position property, in Service
+        Studio, so that informative text displays when a user hovers over,
+        clicks, or taps an element, in mobile apps and reactive web apps
+        (O11).
+    - name: Tooltip properties reference
+      id: tooltip-reference
+      description: Wants to look up the properties of the Tooltip UI Pattern
+        or widget in Service Studio or ODC Studio, including Position,
+        StartsOpen, Trigger, and ExtendedClass, so that they can correctly
+        configure tooltip appearance and behavior in mobile apps and
+        reactive web apps.
     - name: File Upload reference
       id: file-upload-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -4320,12 +4350,6 @@ knowledge-needs:
         of the Icon widget in ODC Studio, so that they can correctly configure icon
         display — including icon selection, size, visibility, CSS classes, HTML
         attributes, and event handlers — in a Reactive Web App.
-    - name: Tooltip widget reference
-      id: tooltip-widget-ref
-      description: Wants to look up the properties of the Tooltip widget in ODC
-        Studio — including Position, StartsOpen, Trigger, and ExtendedClass — so
-        that they can correctly configure tooltip appearance and behavior in a
-        Reactive Web App or Mobile App.
     - name: Check Box widget reference
       id: check-box-widget-reference
       description: Wants to look up the properties and runtime properties of the

@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - accessible-inline-svg-pattern
+  - use-inline-svg-pattern
 isautopublish: true
 ---
 

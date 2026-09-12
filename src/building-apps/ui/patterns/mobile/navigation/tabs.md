@@ -23,6 +23,10 @@ coverage-type:
   - apply
   - unblock
 isautopublish: true
+topic:
+  - accessible-tabs-pattern
+  - tabs-reference
+  - use-tabs-pattern
 ---
 
 # Tabs

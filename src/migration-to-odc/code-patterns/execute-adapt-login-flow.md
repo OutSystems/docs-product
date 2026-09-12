@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - apply
 isautopublish: true
+topic:
+  - adapt-login-flows
 ---
 
 # Adapt login and logout flow of converted apps

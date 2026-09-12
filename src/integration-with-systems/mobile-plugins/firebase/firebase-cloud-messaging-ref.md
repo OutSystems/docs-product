@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - cloud-messaging-plugin-reference
 isautopublish: true
 ---
 

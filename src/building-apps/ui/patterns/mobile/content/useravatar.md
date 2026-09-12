@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-user-avatar-contrast
+  - accessible-user-avatar-pattern
+  - use-user-avatar-pattern
 isautopublish: true
 ---
 

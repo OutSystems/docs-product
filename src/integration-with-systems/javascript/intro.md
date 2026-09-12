@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - javascript-best-practices
+  - when-to-use-javascript
 isautopublish: true
 ---
 

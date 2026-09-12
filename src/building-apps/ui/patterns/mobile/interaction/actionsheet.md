@@ -23,6 +23,10 @@ coverage-type:
   - apply
   - unblock
 isautopublish: true
+topic:
+  - accessible-action-sheet-pattern
+  - action-sheet-reference
+  - use-action-sheet-pattern
 ---
 # Action Sheet
 

@@ -7,7 +7,7 @@ coverage-type:
   - apply
   - unblock
 topic:
-  - authentication-mechanisms
+  - align-persistent-login-timeout
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:

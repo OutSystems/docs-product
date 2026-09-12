@@ -15,7 +15,11 @@ audience:
 outsystems-tools:
   - odc studio
 helpids: 30670
-tags: service actions, server actions, odc, code refactoring, transaction management
+tags:
+  - Architecture
+  - Best Practices
+  - Modular Programming
+  - Refactoring
 ---
 # Asset consuming its own service action
 

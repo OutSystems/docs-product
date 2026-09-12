@@ -1,6 +1,11 @@
 ---
 summary: Learn to configure OIDC authentication in OutSystems 11 (O11) LifeTime, including local administrator setup and scope management.
-tags: authentication, oidc, security, single sign-on, user management
+tags:
+  - Authentication
+  - External Authentication
+  - IdP
+  - OIDC
+  - SSO
 locale: en-us
 guid: 1730AE44-3570-4CA9-81BE-032CCF2D12B5
 app_type: traditional web apps, mobile apps, reactive web apps

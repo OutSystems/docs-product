@@ -12,7 +12,8 @@ platform-version: o11
 audience:
   - Architect
   - Developer
-tags: Forge,forge,forge component,outsystems forge
+tags:
+  - Forge
 outsystems-tools:
   - forge
   - odc portal

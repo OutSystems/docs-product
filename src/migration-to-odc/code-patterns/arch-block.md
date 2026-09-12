@@ -6,7 +6,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7042
 helpids: 30521
-tags: app architecture conversion, dependency management, code conversion, app development, outsystems platform
+tags:
+  - Architecture
+  - Blocks
+  - Libraries
+  - Modular Programming
+  - Refactoring
 audience:
   - Front-end developer
   - Developer

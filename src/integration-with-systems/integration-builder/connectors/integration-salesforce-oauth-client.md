@@ -18,6 +18,8 @@ outsystems-tools:
   - integration builder
 coverage-type:
   - apply
+topic:
+  - connect-salesforce
 isautopublish: true
 ---
 

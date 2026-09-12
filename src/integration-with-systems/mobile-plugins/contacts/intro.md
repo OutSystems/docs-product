@@ -17,6 +17,10 @@ coverage-type:
 outsystems-tools:
   - service studio
 isautopublish: true
+topic:
+  - contacts-plugin-reference
+  - remove-contact-by-version
+  - set-contacts-ios-permission
 ---
 
 # Contacts plugin

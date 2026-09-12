@@ -19,6 +19,9 @@ coverage-type:
 outsystems-tools:
   - service studio
 isautopublish: true
+topic:
+  - calendar-plugin-reference
+  - set-calendar-ios-permission
 ---
 
 # Calendar plugin

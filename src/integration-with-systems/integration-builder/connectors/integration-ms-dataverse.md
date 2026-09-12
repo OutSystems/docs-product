@@ -10,6 +10,10 @@ audience:
   - Platform administrator
 coverage-type:
   - apply
+topic:
+  - authorize-dataverse-ib
+  - connect-dataverse
+  - edit-dataverse-connection
 tags:
   - Authentication
   - Authorization

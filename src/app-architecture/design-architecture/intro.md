@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - architecture-canvas
 ---
 
 # Designing the Architecture of Your OutSystems Applications

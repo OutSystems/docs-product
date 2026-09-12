@@ -20,6 +20,8 @@ outsystems-tools:
 coverage-type:
   - remember
 isautopublish: true
+topic:
+  - log-streaming-field-mapping
 ---
 
 # Logged data fields

@@ -22,6 +22,9 @@ coverage-type:
   - apply
   - understand
 isautopublish: true
+topic:
+  - check-outsystems-ui-version
+  - customize-ui-patterns
 ---
 
 # Patterns

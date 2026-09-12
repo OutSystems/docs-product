@@ -11,6 +11,9 @@ coverage-type:
   - apply
 audience:
   - Platform administrator
+topic:
+  - setup-transit-gateway-connection
+  - transit-gateway-benefits
 ---
 
 # Connect to your OutSystems Cloud using AWS Transit Gateway

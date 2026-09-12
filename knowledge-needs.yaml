@@ -1154,6 +1154,14 @@ knowledge-needs:
         combinations meet WCAG 2.2 AA contrast requirements (4.5:1 for
         normal text, 3:1 for large text) without altering the app's
         color palette, in mobile apps and reactive web apps (O11).
+    - name: Accessible Tooltip pattern
+      id: accessible-tooltip-pattern
+      description: Wants to make the Tooltip UI Pattern accessible to
+        assistive technologies, by configuring the Trigger property to
+        OnClick in Service Studio, so that the Tooltip opens automatically
+        on keyboard focus and closes with Esc, meeting WCAG 2.2 AA
+        accessibility requirements, in mobile apps and reactive web apps
+        (O11).
     - name: Accessible Action Sheet pattern
       id: accessible-action-sheet-pattern
       description: Wants to make the Action Sheet UI Pattern accessible to
@@ -1990,6 +1998,36 @@ knowledge-needs:
         (connecting OutSystems 11 apps to external Systems of Record), and which
         types of external systems it supports, so that they can decide whether
         to use it and where to start.
+    - name: Authorize Dataverse IB
+      id: authorize-dataverse-ib
+      description: Wants to authorize Integration Builder to access their
+        Microsoft Dataverse data through their Microsoft account, so that
+        Integration Builder can retrieve environment, table, and column
+        metadata and let them test a newly created Dataverse integration in
+        the development environment.
+    - name: Connect Dataverse
+      id: connect-dataverse
+      description: Wants to authorize a Microsoft Dataverse connection in
+        Integration Manager, either automatically (with Microsoft Entra
+        administrator permissions, generating a certificate and Microsoft
+        Entra app) or manually (without administrator permissions, using
+        parameters supplied by a Microsoft Entra administrator), so that
+        Server Actions in the generated integration module can authenticate
+        requests at runtime.
+    - name: Edit Dataverse connection
+      id: edit-dataverse-connection
+      description: Wants to edit an existing Microsoft Dataverse connection in
+        Integration Manager by authorizing with a Microsoft account that has
+        access to Microsoft Entra, so that they can update the connection tied
+        to the Microsoft Entra app registration.
+    - name: Connect Salesforce
+      id: connect-salesforce
+      description: Wants to set up a Salesforce connection for Integration
+        Builder by having a Salesforce administrator create a permission set
+        and an external client app (with OAuth scopes, JWT flow, and
+        permitted policies) in Salesforce, then share the Consumer Key (and
+        certificate) with the OutSystems developer, so that Integration
+        Manager can complete the connection configuration.
   - name: Handling webservice errors
     id: handle-webservice-errors
     subtopics:
@@ -3884,6 +3922,15 @@ knowledge-needs:
   - name: Customize style
     id: customize-style
     subtopics:
+    - name: Customize UI patterns
+      id: customize-ui-patterns
+      description: Wants to customize a built-in OutSystems UI pattern's look,
+        structure, or behavior, by writing additional CSS in a new module for
+        style changes, or copying the pattern to a new module to add
+        placeholders or change its code, in Service Studio, so they can adapt
+        patterns beyond the officially supported CSS-only customization while
+        understanding that copied patterns won't receive OutSystems UI
+        upgrades.
     - name: Customize styles in your app
       id: customize-app-styles
     - name: Creating a theme
@@ -3940,6 +3987,13 @@ knowledge-needs:
   - name: UI framework migration
     id: ui-framework-migration
     subtopics:
+    - name: Check OutSystems UI version
+      id: check-outsystems-ui-version
+      description: Wants to find out which version of the OutSystems UI
+        framework their app is using, by opening the Dependencies icon,
+        clicking In Use, and selecting OutSystemsUI, in Service Studio, so
+        they can determine whether any patterns they use are deprecated and
+        know when to migrate.
     - name: Migrate Silk patterns
       id: migrate-silk-patterns
       description: Wants to migrate each Silk Web UI pattern to its OutSystems UI
@@ -7061,6 +7115,46 @@ knowledge-needs:
         returns an error, so that users can be prompted to install a new app
         version before calls to server actions stop working due to a hash
         mismatch.
+    - name: Contacts plugin reference
+      id: contacts-plugin-reference
+      description: Wants to look up the Contacts plugin's client actions
+        (CheckContactsPlugin, AddToContacts, FindContact, PickContact,
+        RemoveFromContacts, DEPRECATED_RemoveFromContacts), their
+        parameters, and related error-handling variables, so that they can
+        implement contact list access (add, find, pick, remove) in an O11
+        mobile app.
+    - name: Set contacts iOS permission
+      id: set-contacts-ios-permission
+      description: Wants to configure the NSContactsUsageDescription iOS
+        permission for the Contacts plugin, using either the universal
+        extensibility configurations schema or the Cordova-based schema for
+        MABS versions lower than 12, so that the app can access the
+        device's contact list on iOS without falling back to a default
+        system message.
+    - name: Remove contact by version
+      id: remove-contact-by-version
+      description: Wants to remove a contact from the device's contact list
+        using the RemoveFromContacts action, providing only the ContactId
+        input parameter on plugin version 5.0.0 and later, or the full
+        Contact object on older versions (or via
+        DEPRECATED_RemoveFromContacts if preferred), so that the correct
+        action signature is used for their installed plugin version.
+    - name: Calendar plugin reference
+      id: calendar-plugin-reference
+      description: Wants to look up the Calendar plugin's client actions
+        (CheckCalendarPlugin, CreateEvent, CreateEventWithOptions,
+        DeleteEvent, DeleteEventById, FindEvent, ListCalendars,
+        OpenCalendar), their parameters, output parameters (Success, Error,
+        Events), and MABS version compatibility, so that they can implement
+        calendar event creation, deletion, and lookup in an O11 mobile app.
+    - name: Set calendar iOS permission
+      id: set-calendar-ios-permission
+      description: Wants to configure the NSCalendarsUsageDescription and
+        NSCalendarsFullAccessUsageDescription iOS permissions for the
+        Calendar plugin, using either the universal extensibility
+        configurations schema or the Cordova-based schema for MABS versions
+        lower than 12, so that the app can access the device's calendar on
+        iOS without falling back to default system messages.
   - name: Using Capacitor Plugins
     id: using-capacitor-plugins
     subtopics:
@@ -9123,6 +9217,26 @@ knowledge-needs:
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
   topics:
+  - name: AWS Transit Gateway setup
+    id: aws-transit-gateway-setup
+    subtopics:
+    - name: Transit Gateway benefits
+      id: transit-gateway-benefits
+      description: Wants to understand the advantages of connecting their
+        OutSystems Cloud to an AWS Transit Gateway instead of a VPN, such
+        as centralized network management, full control over on-premises
+        VPN connections, and traffic staying on the AWS private network,
+        so that they can decide whether Transit Gateway suits their
+        connectivity needs.
+    - name: Set up Transit Gateway connection
+      id: setup-transit-gateway-connection
+      description: Wants to connect their OutSystems Cloud to their own
+        AWS Transit Gateway, by opening a support case, sharing the
+        Transit Gateway resource via AWS Resource Access Manager,
+        accepting the attachment, and updating route tables on both
+        sides, so that they can centrally manage internal traffic to
+        their OutSystems Cloud without relying on OutSystems-managed
+        VPNs.
   - name: Firewall allowlisting
     id: firewall-allowlisting
     subtopics:
@@ -11572,6 +11686,11 @@ knowledge-needs:
         streaming for an OutSystems 11 app on OutSystems Cloud, so they can
         confirm they meet the prerequisites before configuring a stream to an
         APM tool.
+    - name: OpenTelemetry field mapping
+      id: log-streaming-field-mapping
+      description: Wants to look up how existing OutSystems 11 log data fields map to their
+        OpenTelemetry equivalents across all supported O11 log types, so they
+        can correctly interpret or query streamed log data in an APM tool.
   - name: Log Streaming operations
     id: log-streaming-ops
     subtopics:

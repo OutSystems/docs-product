@@ -21,6 +21,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - data-archiving-cold-data
+  - data-isolation
+  - entity-index-selection
 isautopublish: true
 ---
 

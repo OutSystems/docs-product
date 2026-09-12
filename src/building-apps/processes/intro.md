@@ -18,6 +18,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - design-process-flow
+  - entity-action-process-events
+  - taskbox-overview
 ---
 
 # Using Processes - BPT

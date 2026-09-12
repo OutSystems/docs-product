@@ -15,6 +15,10 @@ outsystems-tools:
 coverage-type:
   - understand
 isautopublish: true
+topic:
+  - merge-color-reference-o11
+  - recover-previous-merge
+  - resolve-merge-conflicts
 ---
 
 # Merging and versioning

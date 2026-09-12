@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-download-widget-o11
 ---
 
 # Download a file through browser

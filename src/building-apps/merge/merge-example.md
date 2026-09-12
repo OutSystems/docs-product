@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - resolve-merge-conflicts
 ---
 
 # Compare and merge example with conflicts

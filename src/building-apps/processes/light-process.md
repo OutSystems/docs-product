@@ -21,6 +21,9 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - enable-light-process-execution
+  - light-process-overview
 ---
 
 # Design Scalable Database Queueing Using Light Processes

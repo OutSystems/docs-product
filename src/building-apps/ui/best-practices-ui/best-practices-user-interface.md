@@ -20,6 +20,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - avoid-preparation-data-in-screen-actions
+  - cache-screens-and-blocks
+  - use-ajax-in-moderation
 isautopublish: true
 ---
 

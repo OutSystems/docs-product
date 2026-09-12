@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) introduces maintenance mode in LifeTime version 11.9.0 to manage environment synchronization during maintenance activities.
-tags: environment synchronization, platform server upgrade, application deployment, environment settings configuration, external authentication providers
+tags:
+  - Data Synchronization
+  - Deploy
+  - External Authentication
+  - Infrastructure
+  - Platform Server
+  - Settings
 locale: en-us
 guid: 373a27f2-990b-4257-bc8d-4d6d33c41ff0
 app_type: traditional web apps, mobile apps, reactive web apps

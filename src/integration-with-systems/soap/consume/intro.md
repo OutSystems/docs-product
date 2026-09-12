@@ -1,5 +1,7 @@
 ---
-tags: soap web services, wsdl, api integration, service deprecation, outsystems 11 upgrade
+tags:
+  - SOAP
+  - Web services
 summary: Learn how OutSystems 11 (O11) supports consuming SOAP Web Services using WSDL 1.1 and SOAP 1.1/1.2, with previous versions now deprecated.
 locale: en-us
 guid: 1a1bdabb-5cc0-4600-9c5b-6c2604145da0

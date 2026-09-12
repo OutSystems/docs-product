@@ -5,7 +5,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1815%3A9268&mode=design&t=8a1ub9syb4QKHbuk-1
 summary: OutSystems 11 (O11) enhances SOAP web service integration by allowing the export of definition files through Service Studio.
-tags: soap web service, wsdl, xml, service integration, web service definition
+tags:
+  - SOAP
+  - Troubleshooting
+  - Web services
 audience:
   - Developer
 outsystems-tools:

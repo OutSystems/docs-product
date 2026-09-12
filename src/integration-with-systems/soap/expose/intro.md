@@ -5,7 +5,9 @@ guid: 42dd7521-9093-4ac8-a073-987adf622d7e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: soap web services, wsdl, soap 1.1, soap 1.2, web services integration
+tags:
+  - SOAP
+  - Web services
 audience:
   - Developer
   - Front-end developer

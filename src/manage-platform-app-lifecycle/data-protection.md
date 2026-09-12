@@ -1,6 +1,11 @@
 ---
 summary: Explore lifecycle management and data protection features in OutSystems 11 (O11), including personal data handling and security mechanisms.
-tags: data protection, it user management, security, personal data management, brute force attack protection
+tags:
+  - Data
+  - IT Users
+  - Logging
+  - Security
+  - SQL
 locale: en-us
 guid: 9a5711af-7947-4f71-9569-ae016863db49
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -5,7 +5,10 @@ guid: f2286378-689d-43d2-8bd2-7f21be387c3b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:45
-tags: team management, permission management, application lifecycle management, user roles, it administration
+tags:
+  - IT Roles
+  - IT Teams
+  - IT Users
 audience:
   - Platform administrator
   - Developer

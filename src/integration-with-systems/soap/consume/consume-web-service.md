@@ -1,6 +1,8 @@
 ---
 summary: Guide on consuming SOAP Web Services in OutSystems 11 (O11), including WSDL configuration and method integration.
-tags: soap web services, wsdl configuration, service integration, logic tab, web service definition
+tags:
+  - SOAP
+  - Web services
 locale: en-us
 guid: 12679c35-25ab-4d32-a6f2-11a3b94ee3d7
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -10285,6 +10285,14 @@ knowledge-needs:
         that finishes user activation or registration, so that role
         assignment can be automated instead of done manually through the
         ODC Portal.
+    - name: Create user & assign role via API
+      id: create-user-assign-role-rest-api
+      description: Wants to create a new end user and grant them an
+        application role programmatically, using the ODC public REST API
+        endpoints (POST /users, GET /assets, GET /application-roles, POST
+        /users/{key}/application-roles/{roleKey}), so that user
+        provisioning and access control can be automated instead of done
+        manually through the ODC Portal.
     - name: Define Permissions
       id: define-permissions
     - name: Permissions

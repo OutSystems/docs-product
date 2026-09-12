@@ -8,7 +8,9 @@ figma:
 coverage-type:
   - remember
   - apply
-tags: api usage, database mapping, deployment status, lifetime api, outsystems 11
+tags:
+  - Deploy
+  - REST
 audience:
   - Platform administrator
   - Developer

@@ -1,6 +1,9 @@
 ---
 summary: Explore how to use the LifeTime API in OutSystems 11 (O11) to register environments and manage role-based permissions.
-tags: api, role management, environment setup, permission levels, lifetime api
+tags:
+  - Infrastructure
+  - REST
+  - Roles
 locale: en-us
 guid: fa3c3a72-304f-4171-b85a-77e614a20326
 app_type: traditional web apps, mobile apps, reactive web apps

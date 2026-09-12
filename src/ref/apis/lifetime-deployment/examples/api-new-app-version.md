@@ -5,7 +5,10 @@ guid: 1cee6166-d9ce-4a1c-9cd6-665516d482a0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: api usage, outsystems development, application deployment, version control, continuous integration
+tags:
+  - CI/CD
+  - Deploy
+  - REST
 audience:
   - Developer
   - Platform administrator

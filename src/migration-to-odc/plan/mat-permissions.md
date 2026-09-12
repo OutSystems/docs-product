@@ -14,7 +14,11 @@ audience:
   - Platform administrator
   - Tech lead
   - Developer
-tags: app conversion, cloud conversion, conversion process, application assessment
+tags:
+  - IT Roles
+  - IT Teams
+  - IT Users
+  - Roles
 outsystems-tools:
   - conversion assessment tool
 helpids: 

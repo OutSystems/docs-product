@@ -12,7 +12,8 @@ platform-version: o11
 audience:
   - Developer
   - Tech lead
-tags: rest api, url handling, code conversion, odc, backend development
+tags:
+  - REST
 outsystems-tools:
   - service studio
   - odc studio

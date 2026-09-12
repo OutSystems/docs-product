@@ -9,7 +9,9 @@ helpids: 30627
 coverage-type:
   - unblock
   - understand
-tags: outsystems 11, conversion, user provider, odc assets, module configuration
+tags:
+  - End-users
+  - IT Users
 audience:
   - Architect
   - Tech lead

@@ -1,6 +1,11 @@
 ---
 summary: Learn advanced mobile app troubleshooting techniques for OutSystems 11 (O11) using Chrome Developer Tools in this detailed guide.
-tags: chrome developer tools, mobile app debugging, production environment troubleshooting, javascript code debugging, troubleshooting tips
+tags:
+  - Android
+  - Debugging
+  - JavaScript
+  - Mobile app
+  - Troubleshooting
 locale: en-us
 guid: 682f52f0-969b-4524-b291-2f73f2f029ce
 app_type: mobile apps

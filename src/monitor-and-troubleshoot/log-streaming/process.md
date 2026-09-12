@@ -1,6 +1,9 @@
 ---
 summary: Log streaming setup in OutSystems 11 (O11) covers retrieving APM credentials, configuring OpenTelemetry Collector, and testing LifeTime connections.
-tags: apm integration, log streaming, opentelemetry, monitoring, troubleshooting
+tags:
+  - Logging
+  - Monitoring
+  - Troubleshooting
 locale: en-us
 guid: 0795de8e-20cc-4be0-8b51-883a46a9b84b
 app_type: traditional web apps, mobile apps, reactive web apps

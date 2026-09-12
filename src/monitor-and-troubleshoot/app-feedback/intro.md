@@ -1,6 +1,7 @@
 ---
 summary: Explore how OutSystems 11 (O11) enhances app development with integrated user feedback and third-party tool compatibility.
-tags: user feedback, application feedback, third-party integrations, issue tracking, application lifecycle management
+tags:
+  - Forge
 locale: en-us
 guid: bbd958b1-b38f-4ac1-9ea7-7a48be8d65ac
 app_type: traditional web apps, mobile apps, reactive web apps

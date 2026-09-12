@@ -12,7 +12,9 @@ platform-version: o11
 audience:
   - Tech lead
   - Architect
-tags: app conversion, outsystems, database configuration, infrastructure management
+tags:
+  - Deploy
+  - Platform Server
 outsystems-tools:
   - conversion assessment tool
 helpids: 

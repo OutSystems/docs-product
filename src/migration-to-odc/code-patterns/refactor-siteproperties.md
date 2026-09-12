@@ -5,7 +5,11 @@ guid: 19d82c11-dc9a-43e8-bce1-1767e48e58fd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: configuration management, site properties, application settings, runtime settings, api key management
+tags:
+  - Entities
+  - Refactoring
+  - Settings
+  - Site Properties
 audience:
   - Developer
   - Front-end developer

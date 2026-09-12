@@ -1,6 +1,9 @@
 ---
 summary: Understand the changes in Camera Plugin 8.0.0 in OutSystems 11 (O11), and how to migrate to it from older versions.
-tags: mobile app development, plugin integration, error handling, camera, migration, breaking changes
+tags:
+  - Blocks
+  - Mobile app
+  - Plugins
 locale: en-us
 guid: d64d2ff0-e554-4bdc-8769-a038f4eb7c35
 app_type: mobile apps

@@ -1,6 +1,8 @@
 ---
 summary: REST API customization in OutSystems 11 (O11) uses OnBeforeRequest and OnAfterResponse callbacks to edit headers, status codes, and multipart request parts.
-tags: rest api customizations, integration, outsystems forge, http headers, extensibility api
+tags:
+  - REST
+  - Web services
 locale: en-us
 guid: 21574391-c5b3-4831-a7b2-8aaf94df2230
 app_type: traditional web apps, mobile apps, reactive web apps

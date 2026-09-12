@@ -1,5 +1,8 @@
 ---
-tags: javascript integration, client side scripting, drag-and-drop ui, error handling, extensibility
+tags:
+  - Front-End
+  - JavaScript
+  - Mobile app
 locale: en-us
 guid: 191c6d17-5089-4d2e-9848-19e81f69476a
 app_type: mobile apps, reactive web apps

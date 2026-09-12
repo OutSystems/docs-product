@@ -1,6 +1,11 @@
 ---
 summary: Learn how to integrate GPS capabilities in your applications using the Location Plugin in OutSystems 11 (O11).
-tags: location plugin, gps integration, mobile development, outsystems 11, ios permissions
+tags:
+  - Cordova
+  - iOS
+  - Mobile app
+  - Native App
+  - Plugins
 locale: en-us
 guid: 73ec27db-dfe0-4318-852f-7eb8790ffa7d
 app_type: mobile apps

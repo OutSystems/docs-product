@@ -14,7 +14,12 @@ audience:
   - Developer
   - Platform administrator
   - Architect
-tags: application performance management,real-time monitoring,troubleshooting,integration with third-party tools,analytics dashboards
+tags:
+  - Forge
+  - Logging
+  - Monitoring
+  - Performance
+  - Troubleshooting
 outsystems-tools:
   - service studio
   - service center

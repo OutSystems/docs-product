@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) provides detailed logging for Service Actions to aid in troubleshooting, accessible via the Service Center's Monitoring section.
-tags: service actions, logging, monitoring, troubleshooting, service center
+tags:
+  - Logging
+  - Monitoring
+  - Troubleshooting
 locale: en-us
 guid: e37fa5b3-0517-4c62-a0f6-ab2262e44a09
 app_type: traditional web apps, mobile apps, reactive web apps

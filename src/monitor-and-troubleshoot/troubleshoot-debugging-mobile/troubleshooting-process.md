@@ -1,6 +1,11 @@
 ---
 summary: Explore the distinctions and best practices of troubleshooting, debugging, and monitoring in OutSystems 11 (O11).
-tags: troubleshooting, debugging, monitoring, performance optimization, best practices
+tags:
+  - Best Practices
+  - Debugging
+  - Mobile app
+  - Monitoring
+  - Troubleshooting
 guid: 15d56444-9c84-48f9-813b-c662a0e152e1
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

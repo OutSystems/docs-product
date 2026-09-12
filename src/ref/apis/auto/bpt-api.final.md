@@ -1,6 +1,10 @@
 ---
 summary: Explore the BPT API functionalities for managing processes and activities in OutSystems 11 (O11).
-tags: bpt api, process management, activity management, process automation, api reference
+tags:
+  - BPMN
+  - Business Processes
+  - Taskbox
+  - Workflows
 locale: en-us
 guid: 2dc203a7-a140-4fbc-9ab8-97cdaf1c55f5
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) allows monitoring of daily environment activity through the Service Center console, providing detailed application metrics.
-tags: environment monitoring, analytics, reporting, performance metrics, configuration
+tags:
+  - Monitoring
+  - Platform Server
 locale: en-us
 guid: 5d4aa86a-ec57-46d7-b29f-81c2967bdb0c
 app_type: traditional web apps, mobile apps, reactive web apps

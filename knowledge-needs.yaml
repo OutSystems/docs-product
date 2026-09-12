@@ -1129,6 +1129,53 @@ knowledge-needs:
         correctly, meeting WCAG 2.2 AA accessibility requirements, for
         OutSystems UI versions earlier than 2.29.0, in mobile apps and
         reactive web apps (O11).
+    - name: Accessible User Avatar
+      id: accessible-user-avatar-pattern
+      description: Wants to make the User Avatar UI Pattern accessible to
+        assistive technologies, by adding a JavaScript node in the OnReady
+        client action to set an informative or empty alt attribute
+        depending on context, in Service Studio, so that the pattern
+        meets WCAG 2.2 AA accessibility requirements, for OutSystems UI
+        versions earlier than 2.29.0, in mobile apps and reactive web
+        apps (O11).
+    - name: Accessible User Avatar contrast
+      id: accessible-user-avatar-contrast
+      description: Wants to fix low-contrast color combinations on the
+        User Avatar UI Pattern by identifying the theme's low-contrast
+        OutSystems UI colors and updating the theme's CSS color
+        variables in Service Studio, so that text and background
+        combinations meet WCAG 2.2 AA contrast requirements (4.5:1 for
+        normal text, 3:1 for large text) without altering the app's
+        color palette, in mobile apps and reactive web apps (O11).
+    - name: Accessible Action Sheet pattern
+      id: accessible-action-sheet-pattern
+      description: Wants to make the Action Sheet UI Pattern accessible to
+        assistive technologies, by setting aria-expanded, aria-controls,
+        and aria-haspopup on the trigger button and removing the redundant
+        aria-expanded attribute from the Action Sheet container via a
+        JavaScript node in the OnRender client action, in Service Studio,
+        so that the pattern meets WCAG 2.2 AA accessibility requirements,
+        for OutSystems UI versions earlier than 2.29.0, in mobile apps and
+        reactive web apps (O11).
+    - name: Accessible Tabs pattern
+      id: accessible-tabs-pattern
+      description: Wants to make the Tabs UI Pattern accessible to assistive
+        technologies, by moving the tabpanel role and related ARIA
+        attributes from the article element to an inner container via
+        JavaScript nodes added to the OnReady and OnDestroy client actions,
+        in Service Studio, so that screen readers correctly associate tabs
+        with their panels, for OutSystems UI versions earlier than 2.29.0,
+        in mobile apps and reactive web apps (O11).
+    - name: Accessible Inline SVG pattern
+      id: accessible-inline-svg-pattern
+      description: Wants to make the Inline SVG UI Pattern accessible to
+        assistive technologies, by adding aria-hidden and focusable
+        attributes for decorative SVGs, a role and aria-label for
+        informative SVGs, or a role, tabindex, aria-label, and keyboard
+        event handlers for interactive SVGs, via a JavaScript node in the
+        Initialized client action, in Service Studio, so that the pattern
+        meets WCAG 2.2 AA accessibility requirements, in mobile apps and
+        reactive web apps (O11).
   - name: Translating apps
     id: translating-apps
     subtopics:
@@ -3986,6 +4033,21 @@ knowledge-needs:
         if the dependency isn't added, in Service Studio, so that a master
         list and its corresponding item details display together in mobile
         apps and reactive web apps (O11).
+    - name: Use Action Sheet pattern
+      id: use-action-sheet-pattern
+      description: Wants to add the Action Sheet UI Pattern to a screen, add
+        the widget via Toolbox or Search in other modules if the dependency
+        isn't added, add content to the button placeholders, and wire a
+        local variable to the IsOpen property with an OnClick action to
+        open the menu and an OnClose action to close it, in Service Studio,
+        so that a menu slides from the bottom of the screen when
+        triggered, in mobile apps and reactive web apps (O11).
+    - name: Action Sheet reference
+      id: action-sheet-reference
+      description: Wants to look up the properties of the Action Sheet UI
+        Pattern in Service Studio, including IsOpen and ExtendedClass, so
+        that they can correctly configure the pattern's open/close state
+        and custom styling, in mobile apps and reactive web apps (O11).
     - name: Use Wizard pattern
       id: use-wizard-pattern
       description: Wants to add the Wizard UI Pattern to a screen and build
@@ -4012,6 +4074,19 @@ knowledge-needs:
         variable via the OnSelected event, in Service Studio, so that they
         can build a customizable, data-driven dropdown for mobile apps and
         reactive web apps (O11).
+    - name: Use User Avatar pattern
+      id: use-user-avatar-pattern
+      description: Wants to add the User Avatar UI Pattern to a screen, bind the Name
+        property to an aggregate via the Expression Editor to display user
+        initials, add the widget via Toolbox or Search in other modules if the
+        dependency isn't added, and configure its display and behavior
+        properties, so that a circular badge displays a user's initials or image
+        in mobile apps and reactive web apps.
+    - name: User Avatar reference
+      id: user-avatar-reference
+      description: Wants to look up the properties of the User Avatar UI Pattern in Service
+        Studio, so that they can correctly configure the badge's appearance and
+        content, in mobile apps and reactive web apps (O11).
     - name: Add Sign In button
       id: add-sign-in-button
       description: Wants to add a second Sign In button to the Login Form UI
@@ -4442,12 +4517,6 @@ knowledge-needs:
         Aggregate, including setting a default image fallback and style properties,
         so that profile pictures show correctly when available and a placeholder
         appears when none is uploaded.
-    - name: Use User Avatar pattern
-      id: use-user-avatar-pattern
-      description: Wants to add the User Avatar UI Pattern to a screen and configure
-        its properties, including Name, Image, Color, Size, Shape, IsLight, and
-        ExtendedClass, in ODC Studio, so that a circular badge displays a user's
-        initials or image in mobile apps and reactive web apps.
     - name: Use Align Center pattern
       id: use-align-center-pattern
       description: Wants to add the Align Center UI Pattern to a screen and configure
@@ -4500,9 +4569,9 @@ knowledge-needs:
     - name: Use Inline SVG pattern
       id: use-inline-svg-pattern
       description: Wants to add the Inline SVG UI Pattern to a screen and configure
-        its SVGCode and ExtendedClass properties, in ODC Studio, so that they can
-        customize SVG fill and stroke properties and animate SVG paths, in mobile
-        apps and reactive web apps.
+        its SVGCode and ExtendedClass properties, so that they can
+        customize SVG fill and stroke properties and animate SVG paths,
+        in mobile apps and reactive web apps.
     - name: Use Date Picker Range
       id: use-date-picker-range
       description: Wants to add the Date Picker Range UI Pattern to a screen and configure
@@ -4822,9 +4891,46 @@ knowledge-needs:
         the OnToggle event, so that they can correctly configure the
         pattern's expand/collapse behavior and appearance, in mobile apps
         and reactive web apps (O11).
+    - name: Use Tabs pattern
+      id: use-tabs-pattern
+      description: Wants to add the Tabs UI Pattern to a screen to divide
+        content into meaningful sections, by dragging the widget from the
+        Toolbox into the Main Content area (adding the OutSystemsUI
+        dependency via Search in other modules if it doesn't display),
+        adding content to the Header Item and Content Item placeholders,
+        and setting properties like TabsOrientation and StartingTab, in
+        Service Studio, so that users can switch between sections within
+        the same context, in mobile apps and reactive web apps (O11).
+    - name: Tabs reference
+      id: tabs-reference
+      description: Wants to look up the properties and events of the Tabs,
+        Tabs Content Item, and Tabs Header Item widgets in Service Studio,
+        including TabsOrientation, StartingTab, Height,
+        TabsVerticalPosition, OptionalConfigs.ContentAutoHeight,
+        OptionalConfigs.JustifyHeaders, ExtendedClass, and the OnTabChange
+        event, so that they can correctly configure the pattern's layout,
+        behavior, and styling, in mobile apps and reactive web apps (O11).
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
+    - name: When to use JS
+      id: when-to-use-javascript
+      description: Wants to understand when and through which mechanism to
+        add custom JavaScript to an app, using extended properties,
+        unescaped expressions, or platform APIs in Traditional Web Apps, or
+        the JavaScript element inside client actions in Reactive Web Apps
+        and Mobile Apps, in OutSystems 11, so that they can decide whether
+        JavaScript is the right solution and find the detailed instructions
+        for their app type.
+    - name: JS best practices
+      id: javascript-best-practices
+      description: Wants to know the recommendations to follow before adding
+        custom JavaScript to an app, such as preferring built-in OutSystems
+        features, keeping code focused and non-duplicated, testing across
+        supported browsers and devices, and avoiding direct DOM manipulation
+        that can interfere with the framework's rendering lifecycle, in
+        OutSystems 11, so that their JavaScript stays maintainable and
+        doesn't conflict with Reactive Web and Mobile app rendering.
     - name: Implement form validation
       id: implement-form-validation
       description: Wants to implement custom business-rule validation on a
@@ -7325,6 +7431,12 @@ knowledge-needs:
         or toggling data collection with SetEnabled and the
         ANALYTICS_COLLECTION_ENABLED preference, so that user behavior and
         ecommerce activity are captured in Firebase Analytics.
+    - name: Cloud Messaging reference
+      id: cloud-messaging-plugin-reference
+      description: Wants to look up the Firebase Cloud Messaging plugin's client actions,
+        web blocks, and related data structures and static entities, so that
+        they can implement push notification and deep-linking functionality in
+        an O11 mobile app using this plugin version.
   - name: App distribution
     id: app-distribution
     subtopics:

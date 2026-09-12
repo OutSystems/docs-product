@@ -9731,6 +9731,46 @@ knowledge-needs:
         and what certifications or regulatory scope each one covers, so that
         they can identify the right offering for their organization's regulatory
         and certification requirements.
+    - name: FedRAMP control support
+      id: fedramp-control-support
+      description: Wants to understand how OutSystems FedRAMP and Knox Systems
+        hosting support specific FedRAMP Certification Class C control areas
+        (identification and authentication, access control, system and
+        communications protection, audit and accountability, contingency
+        planning, personnel security), so they can evaluate the platform for
+        their own FedRAMP compliance process.
+    - name: FedRAMP compliance artifacts
+      id: fedramp-compliance-artifacts
+      description: Wants to know which compliance artifacts (System Security
+        Plan, Security Assessment Report, Plan of Action and Milestones)
+        OutSystems and Knox Systems maintain for FedRAMP and how their agency
+        uses them, so they can reference the right documents when pursuing
+        an Agency-level ATO.
+    - name: FedRAMP hosting details
+      id: fedramp-hosting-details
+      description: Wants to understand where and how OutSystems FedRAMP is
+        hosted (Knox Systems on AWS in designated US regions, Certification
+        Class C/Moderate impact level) and its platform specifics (region,
+        domain, database engine, high availability, support), so that they
+        can evaluate whether the hosting model and platform configuration
+        meet their requirements before choosing OutSystems FedRAMP.
+    - name: FedRAMP VPC architecture
+      id: fedramp-vpc-architecture
+      description: Wants to understand the network architecture of
+        OutSystems FedRAMP, including the Knox Systems-managed VPC, Internet
+        Gateway, WAF, load balancer, public/private subnets across two
+        Availability Zones, and how the LifeTime, Development,
+        Non-Production, and Production environments connect to their
+        databases, so that they can assess the platform's infrastructure
+        design for their security review.
+    - name: FedRAMP ATO types
+      id: fedramp-ato-types
+      description: Wants to understand the difference between FedRAMP
+        certification (awarded to Knox Systems by the FedRAMP PMO after a
+        third-party audit) and Agency-level ATO (issued by each federal
+        agency after reviewing compliance documentation), so that they know
+        which ATO applies to OutSystems FedRAMP itself versus the
+        applications they build on it.
   - name: Mobile certificate protection
     id: mobile-certificate-protection
     subtopics:

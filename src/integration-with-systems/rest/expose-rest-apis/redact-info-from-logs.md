@@ -5,7 +5,10 @@ guid: 3fcf9d96-a766-4578-9e76-3798201cca0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=2439%3A15059&mode=design&t=187UAgmZTPxcY0ZG-1
-tags: security best practices, api integration, sensitive data handling, logging techniques, outsystems best practices
+tags:
+  - Logging
+  - REST
+  - Security
 audience:
   - Developer
 outsystems-tools:

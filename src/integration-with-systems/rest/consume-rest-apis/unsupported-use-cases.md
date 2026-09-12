@@ -5,7 +5,11 @@ guid: 269cf511-27bd-4705-ab9a-1785375f5367
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: rest api, service integration, static entities, api specification, data mapping
+tags:
+  - Entities
+  - REST
+  - Troubleshooting
+  - Web services
 audience:
   - Developer
 outsystems-tools:

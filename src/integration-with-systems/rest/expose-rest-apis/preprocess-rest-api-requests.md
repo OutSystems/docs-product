@@ -1,6 +1,7 @@
 ---
 summary: OutSystems 11 (O11) enables preprocessing of REST API requests through customizable logic in the "OnRequest" callback.
-tags: api development, restful services, api integration, low-code platforms, api security
+tags:
+  - REST
 locale: en-us
 guid: cf6e96ff-7ea9-4b0b-ace5-c98818996b7b
 app_type: traditional web apps, mobile apps, reactive web apps

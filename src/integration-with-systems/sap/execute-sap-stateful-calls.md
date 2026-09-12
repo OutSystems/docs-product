@@ -1,6 +1,8 @@
 ---
 summary: Learn how to manage stateful SAP calls in OutSystems 11 (O11) using an extension module with the SAP Extensibility API.
-tags: sap integration, extension modules, transaction management, outsystems forge, stateful operations
+tags:
+  - Extensions
+  - Forge
 locale: en-us
 guid: e45e96ca-8a1e-4bb1-b23f-e2306f0157be
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -5,7 +5,8 @@ guid: f3ab51bb-7226-49f9-a529-a5e485a6952b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1083:5160
-tags: rest api, http methods, api development, partial updates, compliance
+tags:
+  - REST
 audience:
   - Developer
 outsystems-tools:

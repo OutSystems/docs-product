@@ -1,6 +1,9 @@
 ---
 summary: Learn how to implement basic authentication in exposed REST APIs using OutSystems 11 (O11).
-tags: authentication, http protocol, security, rest api, api integration
+tags:
+  - Authentication
+  - REST
+  - Security
 locale: en-us
 guid: fa99306b-0261-47c1-821f-80262d8dd45b
 app_type: traditional web apps, mobile apps, reactive web apps

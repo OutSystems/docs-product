@@ -14,7 +14,9 @@ audience:
   - Developer
   - Tech lead
   - Architect
-tags: outsystems 11,conversion,odc assets,entities and relationships
+tags:
+  - Data Integrity
+  - Entities
 outsystems-tools:
   - service studio
   - conversion assessment tool

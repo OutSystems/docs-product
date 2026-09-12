@@ -1,6 +1,8 @@
 ---
 summary: This article provides guidelines for handling Traditional Web apps consumption before converting O11 apps to OutSystems Developer Cloud (ODC).
-tags: reactive web apps, module conversion, conversion guide, outsystems 11, traditional web apps
+tags:
+  - Refactoring
+  - Traditional Web
 guid: 5599ed1d-6b0e-4862-9fe5-0603ab025fa5
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps

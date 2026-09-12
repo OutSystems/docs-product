@@ -6,7 +6,10 @@ app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30631
-tags: oauth 2.0 authentication, rest api, outsystems conversion, custom authentication flow, odc conversion
+tags:
+  - Authentication
+  - OAuth
+  - REST
 audience:
   - Developer
 outsystems-tools:

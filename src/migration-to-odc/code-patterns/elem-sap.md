@@ -13,7 +13,8 @@ platform-version: o11
 audience:
   - Front-end developer
   - Developer
-tags: sap integration,integration platforms,outsystems developer cloud
+tags:
+  - Aggregates
 outsystems-tools:
   - service studio
 helpids: 30632

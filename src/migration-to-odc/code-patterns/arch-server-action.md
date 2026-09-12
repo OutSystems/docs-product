@@ -6,7 +6,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-6594
 helpids: 30519
-tags: code conversion, server actions, service actions, dependency management, refactoring code
+tags:
+  - Architecture
+  - Libraries
+  - Refactoring
 audience:
   - Front-end developer
   - Developer

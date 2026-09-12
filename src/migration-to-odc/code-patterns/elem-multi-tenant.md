@@ -11,7 +11,11 @@ platform-version: o11
 audience:
   - Architect
   - Developer
-tags: multi-tenancy, outsystems developer cloud, conversion, o11 modules, non-supported patterns
+tags:
+  - Entities
+  - Multi-Tenant
+  - Site Properties
+  - Timers
 outsystems-tools:
   - service studio
 helpids: 30633

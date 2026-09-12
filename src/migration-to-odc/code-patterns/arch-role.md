@@ -6,7 +6,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30528
-tags: role management, code conversion, access control, user permissions, odc
+tags:
+  - Roles
 audience:
   - Developer
   - Front-end developer

@@ -11,7 +11,14 @@ app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
   - Developer
-tags: cloud-native applications,system entities,api development,data integration,app conversion
+tags:
+  - Active Directory
+  - Architecture
+  - Authentication
+  - Entities
+  - LDAP
+  - Refactoring
+  - SAML
 outsystems-tools:
   - service studio
 helpids: 30629

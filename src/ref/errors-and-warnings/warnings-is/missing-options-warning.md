@@ -5,7 +5,11 @@ guid: 61e49a79-f5b5-40e1-a9c9-64e28f262cef
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: .net, software development kit, compilation error, 1-click publish, extension deployment
+tags:
+  - .NET
+  - 1-Click Publish
+  - Extensions
+  - Troubleshooting
 audience:
   - Developer
 outsystems-tools:

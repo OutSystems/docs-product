@@ -5,7 +5,10 @@ guid: 8af78fca-1b14-4d21-a4c6-560929c22322
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: database compatibility, entity configuration, error handling, data modeling, best practices
+tags:
+  - Data Model
+  - Entities
+  - Troubleshooting
 audience:
   - Developer
   - Platform administrator

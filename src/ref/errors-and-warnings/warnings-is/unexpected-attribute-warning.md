@@ -5,7 +5,11 @@ guid: 94bc7cd0-af9e-41fe-9b49-cd95a1aa4b13
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: database management, oracle database, reserved words, attribute naming, error handling
+tags:
+  - Data Model
+  - Entities
+  - External Databases
+  - Troubleshooting
 audience:
   - Developer
 outsystems-tools:

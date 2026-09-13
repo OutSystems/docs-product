@@ -1,6 +1,8 @@
 ---
 summary: Required Property Value Error in OutSystems 11 (O11) lists TrueChange fixes for missing widget properties like Value, Source, and On Click.
-tags: error handling, widget configuration, property settings, truechange, troubleshooting
+tags:
+  - Troubleshooting
+  - Widgets
 locale: en-us
 guid: 104aade7-8bf2-4e15-9871-f05e91e008f6
 app_type: traditional web apps, mobile apps, reactive web apps

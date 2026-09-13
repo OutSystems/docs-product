@@ -5633,6 +5633,15 @@ knowledge-needs:
         rules, and applying the corresponding fix (disabling the injecting
         tool or removing the offending SEO/pathrule/siterule), in OutSystems
         11, so that deployment completes successfully.'
+    - name: Slow deploy new attribute
+      id: slow-deploy-new-attribute
+      description: Wants to fix an application deployment that takes a long
+        time or times out during the update database phase after adding a
+        new Attribute to an existing Entity with millions of records, in an
+        affected version of OutSystems 11 Platform Server, by upgrading to a
+        version that resolves the issue or increasing the Configuration
+        Tool's Default Query Timeout, so that the deployment completes
+        successfully.
     - name: Invalid argument error
       id: invalid-argument-error
       description: 'Wants to fix the "Invalid Argument Value" error in Service
@@ -9649,6 +9658,14 @@ knowledge-needs:
         the customer and OutSystems by deployment model (Cloud and hybrid
         versus self-managed), so that they know what to prepare before
         opening a support case.
+    - name: Authorize cloud testing
+      id: authorize-cloud-testing
+      description: Wants to request OutSystems authorization to run penetration tests,
+        vulnerability scans, or load tests against their own apps on OutSystems
+        Cloud, by submitting a support case with contact info, scanning IP
+        addresses, target environments, and a test schedule submitted with
+        sufficient advance notice, so that testing stays within the customer's
+        shared-responsibility scope and doesn't trigger platform protections.
   - name: Vulnerability disclosures
     id: vulnerability-disclosures
     subtopics:
@@ -12284,6 +12301,38 @@ knowledge-needs:
       including the Service Studio debugger, Service Center application
       logs, and modern browser developer tools, so that they know where to
       start when investigating unexpected application behavior.
+    subtopics:
+    - name: Fix debugger Chrome issue
+      id: fix-debugger-chrome-issue
+      description: Wants to fix the Service Studio debugger failing to start (with an
+        "unresponsive browser" error) when using an incompatible Chrome version,
+        by upgrading Service Studio to a version that includes the fix, so that
+        they can resume debugging their app in OutSystems 11.
+    - name: Fix debugger hang
+      id: fix-debugger-hang
+      description: Wants to fix the Service Studio debugger hanging or never
+        reaching a breakpoint during a debug session in OutSystems 11,
+        caused by antivirus, firewall, or network elements closing the
+        connection to the environment, by enabling the "Use One Connection
+        per Request in Debugger" option in Service Studio's Preferences, so
+        debugging can continue without the connection being dropped.
+    - name: Fix stopped debug session
+      id: fix-stopped-debug-session
+      description: 'Wants to fix the "The server has stopped the debug
+        session" / "HTTP Forbidden" error in a self-managed OutSystems 11
+        environment, by trusting the addresses that inject X-Forwarded-For
+        headers under Service Center''s Administration > Security > Network
+        Security > Trusted proxy addresses, so debug sessions behind load
+        balancers or reverse proxies aren''t rejected by the Platform
+        Server.'
+    - name: Fix Chrome debug delay
+      id: fix-chrome-debug-delay
+      description: 'Wants to fix the "There was an error loading the
+        application for debugging" message that stops a Reactive Web app
+        debug session in Service Studio, caused by a proxy auto-detect
+        delay connecting Service Studio and Chrome, by reusing the existing
+        Chrome window or disabling "Automatically detect settings" in
+        Chrome''s proxy settings, so debugging starts successfully.'
   - name: Fix cross-site cookies (O11)
     id: fix-cross-site-cookies-o11
     description: Wants to identify and fix cross-site cookie problems in

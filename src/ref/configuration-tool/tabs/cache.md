@@ -5,7 +5,10 @@ guid: f224026f-76d6-4b2b-b750-a0d2f52f609a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-100&p=f&t=YWpNVSB3J2vcO8FT-0
-tags: cache invalidation, service configuration, rabbitmq, security, deployment & operations
+tags:
+  - Caching
+  - Infrastructure
+  - Platform Server
 audience:
   - Architect
   - Platform administrator

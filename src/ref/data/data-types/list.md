@@ -1,5 +1,7 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, list management, data manipulation
+tags:
+  - Data
+  - Logic
 locale: en-us
 guid: 014b125f-f9e4-4681-bc53-52a4b6c4ea58
 app_type: traditional web apps, mobile apps, reactive web apps

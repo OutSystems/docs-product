@@ -5,7 +5,11 @@ guid: 34809e50-82d5-4e93-a02e-a3bab8811b5d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-122&p=f&t=pRvxEDvINAxPgBYK-0
-tags: configuration, deployment, outsystems platform, server settings, application deployment
+tags:
+  - Deploy
+  - Infrastructure
+  - Platform Server
+  - Settings
 audience:
   - Platform administrator
 outsystems-tools:

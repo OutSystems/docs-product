@@ -1,6 +1,11 @@
 ---
 summary: Explore how OutSystems 11 (O11) manages data model changes to ensure data integrity during application deployment.
-tags: database management, data integrity, deployment best practices, entity operations, data model changes
+tags:
+  - Data
+  - Data Integrity
+  - Data Model
+  - Deploy
+  - Entities
 locale: en-us
 guid: 5008ac01-e236-474f-a0ec-0b7169c31e2d
 app_type: traditional web apps, mobile apps, reactive web apps

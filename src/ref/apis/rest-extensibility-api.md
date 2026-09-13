@@ -1,6 +1,9 @@
 ---
 summary: Explore the capabilities of the OutSystems 11 (O11) REST Extensibility API for manipulating REST API requests and responses.
-tags: rest api, api development, extensibility, .net development, api customization
+tags:
+  - .NET
+  - Extensions
+  - REST
 locale: en-us
 guid: 03c3a77e-6193-495d-b8c4-cb17a8828384
 app_type: traditional web apps, mobile apps, reactive web apps

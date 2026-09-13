@@ -1,5 +1,8 @@
 ---
-tags: sql optimization, performance tuning, database querying, server actions, advanced sql
+tags:
+  - Optimization
+  - Performance
+  - SQL
 summary: Learn how to optimize complex search pages with multiple fields using Advanced SQL and server actions in OutSystems 11 (O11).
 guid: 1AF1558A-82D8-4081-B31C-1136215B4A2D
 locale: en-us

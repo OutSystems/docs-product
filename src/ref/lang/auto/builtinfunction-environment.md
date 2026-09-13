@@ -5,7 +5,10 @@ guid: 83ba44be-1320-4def-9741-0cf7e7842b05
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: outsystems 11, server-side logic, database functions, localization, http headers
+tags:
+  - Logic
+  - Multi-language
+  - Multi-Tenant
 audience:
   - Developer
   - Platform administrator

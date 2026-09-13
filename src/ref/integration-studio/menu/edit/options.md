@@ -5,7 +5,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3072-13&t=wVzbD9aw4fUXUtiF-1
 summary: Explore customization options for development in Integration Studio with OutSystems 11 (O11).
-tags: ide usage, reactive web apps, tutorials for beginners, integration studio customization, .net development
+tags:
+  - .NET
+  - Extensions
+  - Settings
 audience:
   - Developer
 outsystems-tools:

@@ -1,6 +1,9 @@
 ---
 summary: Explore the constraints of consuming SOAP Web Services in OutSystems 11 (O11), requiring extensions for specific scenarios.
-tags: soap web services, extensions, integration studio, data types, wsdl customization
+tags:
+  - Extensions
+  - SOAP
+  - Web services
 locale: en-us
 guid: 6b99f36b-866b-47e6-858f-3b360413fcd7
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -5,7 +5,8 @@ guid: 9b0eabe2-5eb5-4e6b-bb17-b77edc2bb68f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3072-5&t=wVzbD9aw4fUXUtiF-1
-tags: user interface, clipboard operations, environment configuration, development tools, user experience
+tags:
+  - Extensions
 audience:
   - Developer
 outsystems-tools:

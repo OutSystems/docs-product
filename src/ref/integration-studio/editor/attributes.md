@@ -5,7 +5,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3063-4&t=0cuQUgeosMV2m0Kw-1
 summary: Explore how OutSystems 11 (O11) enhances attribute management in extensions through its Attributes Editor.
-tags: extension development, attribute management, ui design, service studio ide, entity management
+tags:
+  - Entities
+  - Extensions
 audience:
   - Developer
 outsystems-tools:

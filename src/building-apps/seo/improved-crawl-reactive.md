@@ -20,6 +20,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - create-robots-txt-file-o11
+  - deploy-o11-sitemap-workflow
+  - generate-dynamic-sitemap
 ---
 
 # Improved crawlability for Reactive Web apps  

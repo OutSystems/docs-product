@@ -18,6 +18,8 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - content-vs-technical-seo
 ---
 
 # Content and technical SEO

@@ -20,6 +20,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - integrate-seo-prerender-o11
+  - validate-prerender-integration
 ---
 
 # Improve SEO of OutSystems reactive apps with prerendering

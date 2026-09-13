@@ -19,6 +19,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - evaluate
+topic:
+  - prerender-sitemap-sync
+  - reduce-prerender-costs
+  - set-prerender-http-status
 ---
 
 # Best practices - Prerender.io usage and configuration

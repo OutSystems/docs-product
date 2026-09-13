@@ -24,6 +24,10 @@ coverage-type:
   - understand
   - apply
   - evaluate
+topic:
+  - configure-custom-screen-urls
+  - create-dynamic-page-titles
+  - manage-seo-redirect-rules
 ---
 
 # SEO-friendly URLs for Reactive Web apps  

@@ -16,6 +16,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - seo-benefits-overview
+  - seo-rule-sync-limits
 ---
 
 # Search engine optimization in apps

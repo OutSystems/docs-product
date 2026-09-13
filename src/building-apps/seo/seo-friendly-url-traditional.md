@@ -20,6 +20,10 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - configure-seo-url-rules
+  - install-seo-isapi-filter
+  - manage-seo-redirect-rules
 ---
 
 # SEO-Friendly URLs for Traditional Web apps

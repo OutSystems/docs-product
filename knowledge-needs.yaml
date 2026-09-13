@@ -2967,6 +2967,14 @@ knowledge-needs:
         in the Factory Configuration component and republishing affected modules,
         in OutSystems 11, so that DBAs can inform developers of the precise
         location of an underperforming query.
+    - name: Increase upload limit
+      id: increase-upload-limit
+      description: Wants to increase the maximum file upload size allowed by an
+        OutSystems 11 application, by creating a Factory Configuration shared
+        configuration that sets the maxRequestLength and maxAllowedContentLength
+        web.config parameters and associating it with the affected eSpaces, so
+        that large file uploads no longer fail with a "Maximum request length
+        exceeded" error.
     - name: Factory Configuration overview
       id: factory-configuration-overview
       description: Wants to understand what the Factory Configuration Forge plugin is
@@ -5441,7 +5449,14 @@ knowledge-needs:
     - name: Publish a solution in SC
       id: publish-a-solution-in-sc
     - name: Publish an app in SC
-      id: publish-an-app-in-sc
+      id: publish-an-app-o11
+      description: Wants to publish an app from Service Studio or Service
+        Center to the development environment, understanding that this
+        compiles the code, assigns an incremental version number, and
+        optionally attaches a message that teammates can review later in
+        Service Center's Versions tab or query via the Espace_CommitMessage
+        entity, so that they can share app changes and track what was
+        published, in OutSystems 11.
     - name: Publish an extension in SC
       id: publish-extension-sc
   - name: Basic deployment concepts
@@ -6182,7 +6197,9 @@ knowledge-needs:
     - name: Try your app and share with end-users
       id: test-share-app-users
     - name: Publish an app
-      id: publish-an-app
+      id: publish-an-app-odc
+      description: Wants to publish an app from ODC Studio to a stage in ODC,
+        so that the latest changes are available for testing or use.
   - name: Creating apps
     id: creating-apps
     subtopics:
@@ -10276,6 +10293,22 @@ knowledge-needs:
         in OutSystems 11, so that the same backoff protection behavior is
         applied consistently for IT users across every application and
         LifeTime environment.
+    - name: Diagnose failed login block
+      id: diagnose-failed-login
+      description: 'Wants to understand why they''re seeing a "Too many failed
+        login attempts" error when signing into an OutSystems application or
+        management console (LifeTime/Service Center), by identifying the
+        possible causes (mistyped password, stale credentials in Service
+        Studio, brute-force attack on the account or the network''s IP), so
+        they know whether the account, the IP, or both were blocked by
+        brute-force protection, in OutSystems 11.'
+    - name: Unblock user after failed logins
+      id: unblock-user-login
+      description: Wants to unblock an end user or IT user account, or the IP
+        address, blocked by the brute-force login protection, using LifeTime
+        or Service Center (for IT users) or the Users application (for end
+        users), as an administrator, so the blocked user can sign in again,
+        in OutSystems 11.
     - name: Passwords
       id: passwords
     - name: Update user email
@@ -12490,6 +12523,30 @@ knowledge-needs:
       in their browser for an OutSystems 11 application, so they
       understand unauthenticated pages stay accessible but
       login-dependent functionality may break.
+  - name: Fix CSP headers (O11)
+    id: fix-csp-headers-o11
+    description: Wants to troubleshoot missing or incorrect Content Security
+      Policy headers in an OutSystems 11 app by verifying the headers sent
+      in the browser's developer tools and checking common causes, including
+      republishing the app after CSP configuration changes, application-level
+      CSP settings overriding environment-level ones, and a Shared
+      Configuration overwriting the CSP headers, so they can restore the
+      expected CSP header behavior.
+  - name: Fix ViewState decrypt error
+    id: fix-viewstate-decrypt-error
+    description: 'Wants to fix the "Error Deserializing ViewState: Cannot
+      decrypt the content" error in OutSystems 11 Traditional Web apps,
+      caused by a mismatch between the request''s cookies and the ones
+      stored in the view state (cookie caching by reverse proxies/CDNs,
+      network components manipulating cookies/view state, Secure Session
+      Cookies enforced over HTTP, application logic manipulating
+      OutSystems cookies, stale browser sessions after a
+      deployment/upgrade, browsers blocking the osVisitor cookie due to
+      SameSite, switching from the personal area to the public app, or
+      cached screens with PostBacks), by applying the fix for the matching
+      cause or temporarily disabling Encrypt ViewState in Factory
+      Configuration as mitigation, so postbacks stop failing with this
+      error.'
   - name: EPA taskbox administration
     id: epa-taskbox-admin
     description: Wants to hide or show the EPA Taskbox per eSpace by activating EPA
@@ -12526,6 +12583,14 @@ knowledge-needs:
       algorithms, or upgrading to Platform Server 11.38.0+ for native FIPS-compliant
       environment support, so that the platform runs without being blocked by the
       system''s FIPS enforcement.'
+  - name: Fix ORA-00054 error
+    id: fix-ora-00054-error
+    description: 'Wants to resolve the "ORA-00054: resource busy and acquire
+      with NOWAIT specified or timeout expired" error when publishing an
+      OutSystems 11 module to an Oracle-backed environment, by increasing the
+      Oracle DDL Lock Timeout setting in server.hsconf on all front-ends and
+      reapplying configuration via the Configuration Tool, so that ALTER
+      statements succeed despite objects being locked by other transactions.'
   - name: AD auth login workaround
     id: ad-auth-login-workaround
     description: Wants to temporarily disable Active Directory (AD)
@@ -12535,6 +12600,33 @@ knowledge-needs:
       the Configuration Tool, so that they can log in to Service Center
       with the built-in admin account and apply settings when AD-based
       login is otherwise blocked.
+  - name: Reset LifeTime auth
+    id: reset-lifetime-auth
+    description: 'Wants to regain access to LifeTime, Service Center, and
+      Service Studio after being locked out due to a misconfigured external
+      authentication provider (for example, Active Directory or OpenID
+      Connect), by disabling all authentication providers (UPDATE
+      OSSYS_AUTHPROVIDER SET ISACTIVE = 0) in the LifeTime database and all
+      environments registered in it, so that they can log back in with
+      their previous credentials, in a self-managed OutSystems 11
+      infrastructure.'
+  - name: Reset IT admin password
+    id: reset-it-admin-password
+    description: Wants to reset the admin password for IT users in
+      OutSystems 11, by asking another administrator or opening a Support
+      Portal case in Cloud, or by hashing a new password and running a
+      direct UPDATE OSSYS_USER database query in self-managed
+      infrastructure, so that IT users regain administrator access to
+      Service Center.
+  - name: Reset end-user admin password
+    id: reset-end-user-admin-password
+    description: Wants to reset the admin password for the Users
+      application (end users) in OutSystems 11, using Service Center's
+      Users tool on supported Platform Server versions, opening a Support
+      Portal case on older Cloud versions, or hashing a new password and
+      running a direct UPDATE OSSYS_USER database query on any self-managed
+      version, so that end users regain access to the Users app
+      administrator account.
   - name: Release environment serial
     id: release-environment-serial
     description: Wants to release an OutSystems 11 environment's serial
@@ -12905,26 +12997,63 @@ knowledge-needs:
 - name: SEO
   guid: 54a1d9e5-0f3e-4a8b-b897-7c5c8838b0ff
   topics:
+  - name: SEO fundamentals
+    id: seo-fundamentals
+    subtopics:
+    - name: Content vs technical SEO
+      id: content-vs-technical-seo
+      description: Wants to understand the difference between content SEO and
+        technical SEO in OutSystems 11, and which of the platform's SEO-related
+        features and configurations fall into each category, so that they can
+        improve their app's search-engine ranking and user experience.
+    - name: SEO benefits overview
+      id: seo-benefits-overview
+      description: Wants to understand the benefits of implementing SEO in OutSystems apps,
+        so that they can decide to adopt SEO strategies for their app.
+  - name: SEO rules performance
+    id: seo-rules-performance
+    subtopics:
+    - name: SEO rule sync limits
+      id: seo-rule-sync-limits
+      description: Wants to understand why performance degrades in OutSystems 11 when a
+        large number of SEO Rules are configured, and which platform operations
+        trigger the ISAPIFilter synchronization delay, so that they can plan
+        around this known limitation.
   - name: Sitemap and robots configuration
     id: sitemap-and-robots-configuration
     subtopics:
     - name: Generate dynamic sitemap
       id: generate-dynamic-sitemap
-      description: 'Wants to generate a valid sitemap.xml for their app by
-        creating a REST API endpoint that outputs an XML-formatted list of
-        static and dynamic screen URLs, in ODC Studio, so that search engine
+      description: 'Wants to generate a valid sitemap.xml for their Reactive
+        Web app by creating a REST API endpoint that outputs an
+        XML-formatted list of static and dynamic screen URLs and deploying
+        it as a static resource at the domain root, so that search engine
         crawlers can discover and index all public pages.'
     - name: Create robots.txt file
-      id: create-robots-txt-file
+      id: create-robots-txt-file-odc
       description: 'Wants to control which parts of their site search engine
         crawlers can access by creating a static robots.txt file that
         defines allow/disallow rules and references the sitemap.xml
         endpoint, in ODC, so that crawler behavior is properly restricted.'
+    - name: Create O11 robots.txt
+      id: create-robots-txt-file-o11
+      description: 'Wants to control which parts of their site search engine
+        crawlers can access by creating a static robots.txt file that
+        references the sitemap.xml endpoint and deploying it at the domain
+        root, in OutSystems 11, so that crawler behavior is properly
+        restricted.'
+    - name: Deploy O11 sitemap flow
+      id: deploy-o11-sitemap-workflow
+      description: 'Wants to understand the developer-deployer workflow for
+        creating, deploying, and validating sitemap.xml and robots.txt
+        files across environments up to production, using Service Studio,
+        Service Center, and LifeTime, in OutSystems 11, so that the SEO
+        configuration is correctly published.'
   - name: Prerendering for SPAs
     id: prerendering-for-spas
     subtopics:
     - name: Integrate SEO prerender
-      id: integrate-seo-prerender
+      id: integrate-seo-prerender-odc
       description: 'Wants to improve SEO for a reactive or mobile ODC app
         affected by client-side-rendering indexing issues by integrating a
         third-party prerender solution via a reverse proxy or CDN, in ODC, so
@@ -12945,7 +13074,36 @@ knowledge-needs:
       id: validate-prerender-integration
       description: 'Wants to validate that the prerender integration serves
         fully rendered pages to search engine bots through the reverse proxy or
-        CDN, in ODC, so that they can confirm the app is ready for indexing.'
+        CDN, by using the Prerender.io dashboard test tool and comparing curl
+        requests with a bot user agent against a normal browser request, so
+        that they can confirm the app is ready for indexing.'
+    - name: Prerender via CloudFront
+      id: integrate-seo-prerender-o11
+      description: 'Wants to integrate an OutSystems 11 reactive or mobile
+        app with Prerender.io using AWS CloudFront and Lambda@Edge functions
+        to intercept viewer and origin requests, so that search engine bots
+        receive fully rendered pages for improved SEO without affecting
+        end-user experience.'
+    - name: Reduce Prerender.io costs
+      id: reduce-prerender-costs
+      description: 'Wants to minimize Prerender.io caching costs in
+        OutSystems 11 by excluding unnecessary content from caching, limiting
+        the bot user agents forwarded to Prerender.io, and adopting an
+        optimal cache/re-cache strategy, so that render and re-cache charges
+        stay under control.'
+    - name: Prerender.io sitemap sync
+      id: prerender-sitemap-sync
+      description: 'Wants to keep Prerender.io''s cache aligned with current
+        site content by uploading and periodically synchronizing their
+        sitemap.xml with Prerender.io, in OutSystems 11, so that new and
+        updated URLs get queued for caching automatically.'
+    - name: Set prerender HTTP status
+      id: set-prerender-http-status
+      description: 'Wants to make Prerender.io report the correct HTTP status
+        code (for example, 301 or 404) for pages that don''t return a default
+        200, by adding prerender-status-code and prerender-header meta tags
+        via JavaScript in Service Studio, in OutSystems 11, so that crawler
+        history accurately reflects page status.'
   - name: Root domain redirection
     id: root-domain-redirection
     subtopics:
@@ -12956,6 +13114,50 @@ knowledge-needs:
         CDN, in OutSystems Developer Cloud, so that end users and search
         engine crawlers land on a functional app entry point for improved
         SEO and usability.'
+  - name: Reactive Web SEO configuration
+    id: reactive-web-seo-configuration
+    subtopics:
+    - name: Configure custom screen URLs
+      id: configure-custom-screen-urls
+      description: 'Wants to configure SEO-friendly custom URLs for Reactive
+        Web app screens, by meeting the Platform Server and Service Studio
+        version prerequisites and setting the Custom URL, Page Name, and URL
+        Structure screen properties in Service Studio, so that screens have
+        clean, keyword-friendly URLs instead of default query strings.'
+    - name: Create dynamic page titles
+      id: create-dynamic-page-titles
+      description: 'Wants to create dynamic page titles for Reactive Web
+        app screens using expressions in the Service Studio Title property,
+        so that browser tabs, bookmarks, and search results reflect page
+        content dynamically.'
+  - name: Traditional Web SEO configuration
+    id: traditional-web-seo-configuration
+    subtopics:
+    - name: Configure SEO URL rules
+      id: configure-seo-url-rules
+      description: 'Wants to configure SEO-friendly URLs for Traditional Web
+        apps in OutSystems 11 by setting up Page Rules and Module Aliases in
+        Service Center, so that URLs are simplified for search engines.'
+    - name: Manage SEO redirect rules
+      id: manage-seo-redirect-rules
+      description: 'Wants to create, edit, and bulk-import Redirect Rules in
+        Service Center, including permanent 301 and temporary 302 rules, so
+        that old links keep working after domain or URL changes.'
+    - name: Install SEO ISAPI filter
+      id: install-seo-isapi-filter
+      description: 'Wants to install the OutSystems ISAPI Filter in
+        Microsoft IIS on an on-premises Platform Server, by adding the
+        filter through IIS Manager and setting the Root Application''s
+        application pool to OutSystemsApplications, in OutSystems 11, so
+        that SEO-friendly URLs work correctly on on-premises environments.'
+    - name: Configure SEO logging
+      id: configure-seo-logging
+      description: 'Wants to turn detailed logging of SEO-friendly URL
+        transformations and ISAPI Filter status on or off, by editing the
+        OsISAPIConf.cache file on each Front-end server, in OutSystems 11
+        on-premises environments, so that they can troubleshoot URL
+        rewriting issues without permanently degrading Platform Server
+        performance.'
 - name: Traditional to Reactive Conversion
   guid: ''
   topics:

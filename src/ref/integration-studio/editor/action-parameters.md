@@ -5,7 +5,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3043-316&t=EDoWHHiECWnNFXux-1
 summary: Explore the functionalities of the Action Parameters Editor in OutSystems 11 (O11), which facilitates the management of action parameters in extensions.
-tags: extension development, parameter management, service studio interface, ide features, outsystems extensions
+tags:
+  - Extensions
 audience:
   - Developer
   - Front-end developer

@@ -5,7 +5,9 @@ guid: a718f5ab-fe6d-4f5f-b176-172ed90c9a0c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: resource management, extension customization, file naming conventions, deployment issues, reserved namespaces
+tags:
+  - Extensions
+  - Troubleshooting
 audience:
   - Developer
   - Platform administrator

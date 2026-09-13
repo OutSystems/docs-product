@@ -5,7 +5,10 @@ guid: 509dbbc9-652c-44a5-b276-4df9cf8992fd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: web navigation, screen validation, ui/ux design, error handling, best practices
+tags:
+  - Screens
+  - Traditional Web
+  - Widgets
 audience:
   - Front-end developer
   - Developer

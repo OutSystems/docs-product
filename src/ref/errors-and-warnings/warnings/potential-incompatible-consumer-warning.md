@@ -5,7 +5,9 @@ guid: 0e28cb64-765b-4e99-816b-54dca99e4c01
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: dependency management, module compatibility, runtime errors, system maintenance, version control
+tags:
+  - Modular Programming
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

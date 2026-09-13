@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - display-binary-image
+  - image-widget-reference
 ---
 
 # Display an Image Stored in the Database

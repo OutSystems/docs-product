@@ -21,6 +21,9 @@ outsystems-tools:
   - service center
 coverage-type:
   - understand
+topic:
+  - configure-custom-screen-urls
+  - configure-seo-url-rules
 ---
 
 # SEO for OutSystems Reactive Web apps vs Traditional Web apps

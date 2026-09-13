@@ -19,6 +19,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+topic:
+  - deploy-apps-in-lt-portal
+  - publish-an-app-o11
+  - republish-vs-redeploy
 isautopublish: true
 ---
 

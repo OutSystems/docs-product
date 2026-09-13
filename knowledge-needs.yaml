@@ -1948,6 +1948,15 @@ knowledge-needs:
         in Integration Studio's Options window Connection tab, so that
         Integration Studio can connect to a Platform Server behind an
         authenticating proxy, in OutSystems 11.
+    - name: Configure recompilation
+      id: configure-recompilation
+      description: 'Wants to enable or disable the "Enable server extension
+        recompilation on upgrade" option in the Environment Configuration
+        screen of Service Center, understanding it''s disabled by default,
+        unavailable in production, and only safe to enable temporarily for
+        trusted extensions, in OutSystems 11, so that they control whether
+        the Platform Server can automatically recompile extensions during
+        publishing.'
     - name: Select Server window
       id: select-server-window
       description: Wants to know what information the Select Server window requires in
@@ -5460,6 +5469,14 @@ knowledge-needs:
         infrastructures, and how to request their infrastructure's IPP be
         changed, so that they know why cross-infrastructure deployment may be
         blocked and what to do about it.
+    - name: Unexpected app rename
+      id: unexpected-app-rename
+      description: Wants to understand why an app or module's name changes
+        unexpectedly in the target environment after staging, caused by
+        LifeTime maintaining a centralized copy of app details that
+        reflects the last-renamed source environment, by checking the name
+        displayed in LifeTime before staging, so that they can confirm the
+        expected app name before promoting it in OutSystems 11.
     - name: Use IPP portal
       id: use-ipp-portal
       description: Wants to deploy an OutSystems 11 application to an
@@ -5757,6 +5774,24 @@ knowledge-needs:
         the affected module (via Service Center notification or 1-Click
         Publish), in OutSystems 11, so that the module avoids runtime errors
         from version mismatches.'
+    - name: Fix upgrade disabled
+      id: fix-upgrade-disabled
+      description: 'Wants to resolve the "Upgrade Disabled: Extension
+        recompilation on upgrade is disabled" error during publishing on
+        Platform Server 11.14.0 or later, by upgrading and recompiling the
+        extension locally with Integration Studio and republishing it
+        through Service Center, in OutSystems 11, so that the publish
+        completes without automatic server-side recompilation.'
+    - name: Fix recompilation warning
+      id: fix-recompilation-warning
+      description: 'Wants to resolve the "Continuing with extension
+        recompilation enabled may result in security flaws" publish warning
+        in Service Center, caused by automatic upgrade and recompilation of
+        extensions being enabled on Platform Server 11.14.0 or later, by
+        disabling the setting and using the secure upgrade/recompilation
+        process (or knowingly accepting the risk and keeping it enabled
+        temporarily), in OutSystems 11, so that the environment isn''t
+        exposed to unattended and unwanted code modifications.'
     - name: Invalid Reference error
       id: invalid-reference-error
       description: 'Wants to resolve the "Invalid Reference" error in Service
@@ -5921,6 +5956,16 @@ knowledge-needs:
         Extension, by refreshing the modified reference or removing the
         missing reference in Service Studio, so that runtime errors are
         avoided.'
+    - name: Rename staging conflict
+      id: rename-staging-conflict
+      description: 'Wants to resolve the "Name Conflict: Cannot publish
+        because another module with the same name already exists" staging
+        error in LifeTime, caused by renaming an app or module in the source
+        environment and then creating a new app or module that reuses the
+        old name before staging the renamed one to the target environment,
+        by staging the renamed app or module to the target environment
+        first, in OutSystems 11, so that the staging plan completes
+        successfully.'
   - name: Troubleshoot SEO-friendly URLs
     id: troubleshoot-seo-friendly-urls
     subtopics:
@@ -7140,6 +7185,12 @@ knowledge-needs:
   - name: Using Cordova Plugins
     id: using-cordova-plugins
     subtopics:
+    - name: MABS plugin versions
+      id: mabs-plugin-versions
+      description: Wants to determine which version of a supported OutSystems Cordova
+        plugin to use for their MABS 4 or MABS 5 mobile app, by checking the
+        recommended plugin version table for each MABS version, so that they
+        avoid gradle dependency resolution and build compatibility issues.
     - name: Haptics plugin reference
       id: haptics-plugin-reference
       description: Wants to look up the Haptics plugin's client actions (CheckHapticsPlugin,
@@ -7565,6 +7616,15 @@ knowledge-needs:
       description: Wants to review the release notes for MABS 4.x, including
         new features, bug fixes, and the known viewport-fit issue, so that they
         can troubleshoot mobile apps still running on a MABS 4.x version.
+    - name: MABS 5 breaking changes
+      id: mabs-5-breaking-changes
+      description: Wants to understand the breaking changes introduced when
+        upgrading from MABS 4 to MABS 5, including the Cordova-android
+        package update to 8.0.0 that moves application code into a new
+        :app project directory structure and the Android target SDK
+        increase to API 28 that requires updated Android support
+        libraries, so that they can update their app and plugins before
+        or after upgrading the MABS version.
     - name: MABS 11 upgrade overview
       id: mabs-11-upgrade-overview
       description: Wants to understand what's new in MABS 11, including iOS
@@ -8222,6 +8282,24 @@ knowledge-needs:
         the affected plugin and updating its Gradle files to use
         implementation or api instead of compile, so that the Android
         mobile app package generates successfully.'
+    - name: Fix file not found error
+      id: mabs5-file-not-found-error
+      description: 'Wants to resolve a "wasn''t found" / ENOENT build error
+        caused by a Cordova plugin trying to access a file at its old path
+        after the Cordova-android package update (to 8.0.0) moved Android
+        project files into a new :app subdirectory in MABS 5.0, by checking
+        whether the OneSignal Plugin version matches the MABS version,
+        updating or reconfiguring affected plugins, or adapting the plugin
+        to the new directory, so that the mobile app build succeeds.'
+    - name: Fix minimum SDK incompatibility
+      id: min-sdk-incompatibility-error
+      description: 'Wants to resolve a "requires minimum Android SDK X, which
+        is higher than Y required by the application" build error caused by
+        a plugin library needing a higher minimum Android SDK than the
+        app''s configured value, by checking whether the minimum SDK is
+        overridden in the Extensibility Configurations and adjusting it or
+        using a compatible plugin library version, so that the mobile app
+        build succeeds.'
     - name: PNG resource error
       id: png-resource-error
       description: 'Wants to resolve the OS-MABS-GEN-40002 "We couldn''t process

@@ -5,7 +5,7 @@ guid: a4e4f590-1c84-40b3-9242-77824221ee46
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3098-240
-tags: ide usage, reactive web apps, tutorials for beginners, integration studio, help resources
+tags: []
 audience:
   - Developer
 outsystems-tools:

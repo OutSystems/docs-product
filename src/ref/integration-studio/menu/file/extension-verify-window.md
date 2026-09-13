@@ -5,7 +5,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3077-8&t=ngfUZsYain6dMjce-1
 summary: Learn about the Verify window in OutSystems 11 (O11), essential for extension verification and error handling.
-tags: ide usage, reactive web apps, tutorials for beginners, error handling, extension verification
+tags:
+  - 1-Click Publish
+  - Extensions
+  - Troubleshooting
 audience:
   - Developer
 outsystems-tools:

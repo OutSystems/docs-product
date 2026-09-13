@@ -5,7 +5,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3075-2&t=2BvaZ7YzXKrvxKhA-1
 summary: Explore the File menu functionalities in OutSystems 11 (O11) for managing extensions efficiently.
-tags: ide usage, reactive web apps, tutorials for beginners, extension management, integration studio
+tags:
+  - .NET
+  - 1-Click Publish
+  - External Databases
+  - Extensions
+  - Platform Server
 audience:
   - Developer
 outsystems-tools:

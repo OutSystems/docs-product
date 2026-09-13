@@ -5,7 +5,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3075-3&t=ngfUZsYain6dMjce-1
 summary: Explore the features of the 1-Click Publish window in OutSystems 11 (O11), facilitating error handling, progress tracking, and extension management.
-tags: error handling, progress tracking, extension management, ide features, deployment
+tags:
+  - 1-Click Publish
+  - Deploy
+  - Extensions
 audience:
   - Developer
 outsystems-tools:

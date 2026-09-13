@@ -5,7 +5,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3090-2&t=KPNGTaQL5AdMrozR-1
 summary: Explore server connection options in OutSystems 11 (O11) using the Select Server window for efficient platform integration.
-tags: server connection, platform integration, user authentication, outsystems ide, configuration management
+tags:
+  - Platform Server
 audience:
   - Developer
   - Platform administrator

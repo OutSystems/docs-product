@@ -5,7 +5,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3075-6&t=ngfUZsYain6dMjce-1
 summary: OutSystems 11 (O11) features a Download from Server window in Integration Studio, facilitating the download of the latest extension versions.
-tags: ide usage, reactive web apps, tutorials for beginners, integration studio, extension management
+tags:
+  - Extensions
+  - Platform Server
 audience:
   - Developer
 outsystems-tools:

@@ -5636,6 +5636,37 @@ knowledge-needs:
         its cause and impact, and following the recommended fix action, so that
         they can resolve build failures when publishing mobile or reactive web
         apps.
+  - name: Troubleshoot LifeTime deployments
+    id: troubleshoot-lifetime-deployments
+    subtopics:
+    - name: Diagnose LifeTime deploy
+      id: diagnose-lifetime-deploy
+      description: Wants to diagnose why deploying an application through
+        LifeTime from a source to a target environment fails or gets stuck,
+        by checking network connectivity between LifeTime and the
+        environments, confirming OutSystems services are running in both
+        environments, and reviewing LifeTime's Business Process Technology
+        processes for suspended or errored instances, in an on-premises
+        OutSystems 11 infrastructure, so that they can identify and resolve
+        the cause of the failed deployment.
+    - name: LifeTime process errors
+      id: lifetime-process-errors
+      description: Wants to fix suspended process instances or active
+        instances with errors on the LifeTime environment's Service Center
+        Monitoring > Processes page, which indicate a problem with
+        LifeTime's Business Process Technology deployment synchronization,
+        by opening a support case with OutSystems, so that stuck
+        deployments between environments can be resolved.
+    - name: LifeTime sync stuck
+      id: lifetime-sync-stuck
+      description: Wants to diagnose why environment synchronization in
+        LifeTime is stuck, by verifying LifeTime and Platform Server are on
+        the latest version, testing connectivity between LifeTime and the
+        synchronizing environment, confirming server timezones match, and
+        checking for suspended or errored Business Process Technology
+        process instances in Service Center, in an OutSystems 11
+        infrastructure, so that they can identify and resolve the cause of
+        the stuck synchronization.
   - name: Troubleshoot self-managed publish errors
     id: troubleshoot-self-managed-publish-errors
     subtopics:
@@ -10549,6 +10580,12 @@ knowledge-needs:
       id: update-app-role
     - name: Assign Users to Organization Roles
       id: assign-to-org-roles
+    - name: Assign org-scope role
+      id: assign-org-scope-role
+      description: Wants to grant or revoke a member's (IT-user's) role at
+        the organization scope in the ODC Portal, using Edit role on the
+        Organization access tab to pick a single role or No role, so that
+        the member's tenant-wide permissions update immediately.
     - name: Assign asset-scope roles
       id: assign-asset-scope-roles
       description: Wants to grant or revoke asset-scope (app-specific) roles

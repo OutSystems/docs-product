@@ -10556,6 +10556,13 @@ knowledge-needs:
         value, using the PasswordPolicy block and an OnChange client action
         comparing Input_ConfirmPassword to Password, in ODC Studio, so that
         the self-registration form blocks submission until both checks pass.
+    - name: Finish user registration
+      id: finish-user-registration
+      description: Wants to complete a self-registration flow in ODC
+        Studio by calling FinishUserRegistration to activate the account,
+        running a FinishSignUp server action to grant the app role, and
+        redirecting to the Login screen on success or showing an error for
+        an invalid verification code or failed password policy.
     - name: Users and Licensing
       id: users-licensing
     - name: User Types

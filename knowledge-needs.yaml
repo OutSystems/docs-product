@@ -678,6 +678,12 @@ knowledge-needs:
       id: static-entities
     - name: Create/manipulate entities
       id: create-edit-entities
+    - name: Import data model from Excel
+      id: import-data-model-excel
+      description: Wants to create an app's entity and initial data by
+        importing a spreadsheet through Import New Entities from Excel in
+        ODC Studio, so that the data model exists without manually creating
+        entities and attributes one by one.
     - name: CRUD wrapper accelerator
       id: crud-wrapper-accelerator
       description: Wants to understand what CRUD wrappers are and use the ODC
@@ -7026,6 +7032,12 @@ knowledge-needs:
         generation, including switching entities between local and referenced
         and setting the app theme, so that AI misinterpretations are caught
         and corrected before the app is generated.
+    - name: Generate app from prompt
+      id: generate-app-from-prompt
+      description: Wants to generate an ODC app in Mentor Web by entering a
+        natural-language prompt describing the entity, screens, and access
+        rules, and reviewing the resulting blueprint before generating, so
+        that the described app is produced in a single pass.
   - name: Mentor Web prompts
     id: mentor-web-prompts
     subtopics:

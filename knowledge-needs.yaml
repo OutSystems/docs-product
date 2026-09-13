@@ -461,13 +461,20 @@ knowledge-needs:
         know what permission level an endpoint enforces without configuring
         it manually.
     - name: Check permissions
-      id: check-permissions-overview
+      id: check-permissions-overview-o11
       description: 'Wants to understand how permissions are checked in
         OutSystems 11 applications, using the Screen Roles property to
         restrict screen access and the generated Check<RoleName>Role(UserId)
         action to guard server-side logic, so they can reason about the
         built-in mechanisms available for enforcing role-based authorization
         before implementing them.'
+    - name: Check role actions ODC
+      id: check-role-actions-odc
+      description: 'Wants to check whether a user has a specific role in ODC,
+        using the generated Check<RoleName>Role(UserId) client and server
+        actions inside If conditions on server-side logic, or in a screen
+        widget''s If condition, Enabled, and Visible properties, so they can
+        enforce role-based authorization on both logic and UI elements.'
     - name: ODC access control overview
       id: odc-access-control-overview
       description: Wants to understand what access control means in ODC,
@@ -3679,6 +3686,27 @@ knowledge-needs:
         in Service Center before republishing the module, in OutSystems 11,
         so that a qualifying process runs faster without process/activity
         tracking overhead.
+    - name: DST BPT bug overview
+      id: dst-bpt-bug-overview
+      description: Wants to understand why some BPT activities scheduled during
+        a Daylight Savings time transition may never execute on the .NET
+        stack in OutSystems 11 (versions 7.0.1.25+, 8.0.1.8+, 9.0, 9.1),
+        including the risk of the BPT system locking down entirely, so that
+        they can assess whether their environment is affected.
+    - name: Detect DST BPT issue
+      id: detect-dst-bpt-issue
+      description: Wants to detect whether their OutSystems 11 environment is
+        affected by the Daylight Savings time BPT bug, by checking for
+        Pending Activities in Service Center's Environment Health monitoring
+        and running a diagnostic SQL query against the OSSYS_BPM tables, so
+        that they can confirm the issue before applying a fix.
+    - name: Fix stuck BPT activities
+      id: fix-dst-bpt-activities
+      description: Wants to fix BPT activities stuck due to the Daylight
+        Savings time bug in OutSystems 11, by rescheduling the affected
+        activities' NEXT_RUN value outside the missing hour via a SQL
+        update, or by terminating the affected processes in Service Center
+        or through the BPT API, so that normal BPT processing resumes.
   - name: Workflow Builder
     id: workflow-builder
     subtopics:
@@ -4190,6 +4218,19 @@ knowledge-needs:
     subtopics:
     - name: Layouts
       id: layouts
+    - name: Mobile CRUD screens
+      id: crud-screens-mobile
+      description: Wants to build List and Form screens for an entity and wire
+        up Create, Update, and Delete logic, including a swipe action to
+        delete list items, in Service Studio for OutSystems 11 Mobile Apps,
+        so that end users can list, add, edit, and delete records from the
+        app.
+    - name: Reactive CRUD screens
+      id: crud-screens-reactive-web
+      description: Wants to build a list screen and a form screen for an entity,
+        and wire up Create, Update, and Delete logic using server actions and
+        entity actions, so that end users can list, add, edit, and delete
+        records, in Service Studio for OutSystems 11 Reactive Web Apps.
     - name: Master Detail reference
       id: master-detail-widget-reference
       description: Wants to look up the properties of the Master Detail UI Pattern in
@@ -5618,6 +5659,16 @@ knowledge-needs:
       id: deployment-plan
     - name: Deploy apps in LT/Portal
       id: deploy-apps-in-lt-portal
+    - name: Republish vs redeploy
+      id: republish-vs-redeploy
+      description: Wants to understand the difference between republishing an
+        app in OutSystems 11, which recompiles and redistributes its code
+        without changing its version when LifeTime's deployment plan flags
+        dependent apps with outdated dependencies, and redeploying an app,
+        which only redistributes the already-compiled code via Service
+        Center's Redeploy Published Version option without recompiling, so
+        that they choose the correct action to keep dependent apps and
+        frontends synchronized.
   - name: Advanced manual deployments
     id: manual-advanced-deploy
     subtopics:
@@ -6312,6 +6363,12 @@ knowledge-needs:
   - name: Setting up your OutSystems environment
     id: setup-outsystems-env
     subtopics:
+    - name: Wake sleeping PE
+      id: wake-sleeping-pe-o11
+      description: 'Wants to regain access to an OutSystems 11 personal
+        environment that automatically fell asleep due to inactivity, by
+        going to outsystems.com/home, logging in, and clicking Wake up, so
+        they can resume using their apps without losing data.'
     - name: OutSystems overview
       id: outsystems-overview
     - name: Install Azure trial
@@ -6434,7 +6491,7 @@ knowledge-needs:
         that they know what to expect from the sleep state and don't mistake it
         for data loss or a paid feature.
     - name: Wake up hibernated PE
-      id: wake-hibernated-pe
+      id: wake-hibernated-pe-odc
       description: Wants to reactivate a hibernated OutSystems Personal
         Edition, either manually from the ODC Portal's Manage Organization
         console or automatically by performing a developer action that
@@ -12540,8 +12597,8 @@ knowledge-needs:
     description: Wants to troubleshoot missing or incorrect Content Security
       Policy headers in an OutSystems 11 app by verifying the headers sent
       in the browser's developer tools and checking common causes, including
-      republishing the app after CSP configuration changes, application-level
-      CSP settings overriding environment-level ones, and a Shared
+      republishing the app and its dependencies after CSP configuration changes,
+      application-level CSP settings overriding environment-level ones, and a Shared
       Configuration overwriting the CSP headers, so they can restore the
       expected CSP header behavior.
   - name: Fix ViewState decrypt error
@@ -12768,6 +12825,15 @@ knowledge-needs:
       application's activation code but haven't received a confirmation email
       within the expected time, so they check their spam folder or contact
       OutSystems Support if the email still doesn't arrive.
+  - name: Fix Windows token error
+    id: fix-windows-token-error
+    description: 'Wants to resolve the "Could not create Windows user token
+      from the credentials specified in the config file" error that blocks
+      access to an eSpace (screens, web services, BPT processes, timers, or
+      publishing) in OutSystems 11 on the .NET stack, caused by a
+      misconfigured "Run As" user, by removing the Run As credentials or
+      adding the specified user to the IIS_IUSRS group, so that the eSpace
+      becomes accessible again.'
 - name: Monitor and Troubleshoot (O10)
   guid: 69e74025-d666-40fd-b224-c96f5cbba50c
   topics:

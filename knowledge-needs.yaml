@@ -444,7 +444,7 @@ knowledge-needs:
         restrict returned data, so that only users with the required role can
         execute actions or access sensitive data.
     - name: Access control overview
-      id: access-control-overview
+      id: access-control-overview-o11
       description: Wants to understand what access control means in
         OutSystems 11, including the difference between authentication and
         authorization, the built-in Anonymous and Registered roles versus
@@ -468,6 +468,13 @@ knowledge-needs:
         action to guard server-side logic, so they can reason about the
         built-in mechanisms available for enforcing role-based authorization
         before implementing them.'
+    - name: ODC access control overview
+      id: odc-access-control-overview
+      description: Wants to understand what access control means in ODC,
+        including the difference between authentication and authorization and
+        how application-specific roles determine what an end user can do after
+        signing in, so they can reason about permissions before implementing
+        them.
     - name: Hierarchical roles choice
       id: hierarchical-roles-choice
       description: Wants to decide whether to use hierarchical roles instead
@@ -2354,10 +2361,10 @@ knowledge-needs:
     - name: Encode custom HTML and JavaScript
       id: encode-custom-html-javascript
       description: Wants to safely include end-user input in custom HTML or
-        JavaScript by using the appropriate EncodeHtml() or EncodeJavascript()
-        built-in function whenever escape content is disabled, so that
-        untrusted values are rendered as text instead of executing in the
-        browser.
+        JavaScript, including concatenated HTML attribute values, by using the
+        appropriate EncodeHtml() or EncodeJavascript() built-in function
+        whenever escape content is disabled, so that untrusted values are
+        rendered as text instead of executing in the browser.
     - name: Prevent URL parameter injection ODC
       id: prevent-url-parameter-injection-odc
       description: Wants to prevent unsafe end-user input from altering URL
@@ -2398,13 +2405,21 @@ knowledge-needs:
         Expand Inline where possible or ensuring the parameter value doesn't
         contain end-user input, in OutSystems 11, so their application isn't
         vulnerable to SQL injection.
-    - name: Prevent SQL injection O11
-      id: prevent-sql-injection-o11
-      description: Wants to prevent SQL injection in OutSystems 11 SQL Object
-        queries with inline parameters, by wrapping untrusted variables with
-        EncodeSql() or VerifySqlLiteral() and avoiding Expand Inline on
-        end-user input, so that attacker-controlled input can't alter the
-        query's SQL structure.
+    - name: Prevent SQL injection
+      id: prevent-sql-injection
+      description: Wants to prevent SQL injection in custom queries by keeping
+        untrusted input in query parameters instead of concatenating it into
+        inline SQL, and by wrapping untrusted variables with EncodeSql() or
+        VerifySqlLiteral() and avoiding Expand Inline on end-user input when
+        inline SQL is unavoidable, so that attacker-controlled input can't
+        alter the query's SQL structure.
+    - name: ODC injection defense overview
+      id: odc-injection-defense-overview
+      description: Wants to understand the main layers of injection defense
+        in ODC, including design-time warnings, context-appropriate
+        sanitization, safe query parameterization, default output escaping,
+        and Content Security Policy, so they can choose the right mitigation
+        for each injection risk in an ODC application.
   - name: Access control risks
     id: access-control-risks
     description: Wants to protect OutSystems 11 applications from access control

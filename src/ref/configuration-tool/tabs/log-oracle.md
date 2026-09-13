@@ -5,7 +5,10 @@ guid: 4730ef3b-0979-41fb-95dc-b177a430f9e7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: oracle database, database configuration, connection settings, user management, unicode support
+tags:
+  - External Databases
+  - Logging
+  - Platform Server
 audience:
   - Platform administrator
 outsystems-tools:

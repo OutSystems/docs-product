@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - style-guide-purpose
+  - ui-architecture-overview
 ---
 
 # User Interface

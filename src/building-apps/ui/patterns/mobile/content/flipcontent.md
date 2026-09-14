@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - flip-content-widget-reference
+  - use-flip-content-pattern
 ---
 
 # Flip content

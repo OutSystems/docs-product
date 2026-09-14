@@ -20,6 +20,8 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - adaptive-ui-patterns
 ---
 
 # Adaptive

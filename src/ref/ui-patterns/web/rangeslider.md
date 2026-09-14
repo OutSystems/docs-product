@@ -1,5 +1,9 @@
 ---
-tags: ui patterns, range slider, customization, css, web development
+tags:
+  - CSS
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Range Slider UI Pattern reference for OutSystems 11 (O11), covering CSS selectors, events, and interval color customization.
 locale: en-us
 guid: 6b1ad133-79fa-4894-8d51-26e0c33f8f39

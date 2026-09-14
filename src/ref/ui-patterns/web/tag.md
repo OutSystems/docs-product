@@ -1,5 +1,10 @@
 ---
-tags: ui design, customization, tag pattern, outsystems traditional web, styling
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the customization of the Tag UI Pattern in OutSystems 11 (O11) for Traditional Web Apps, including border-only modifications.
 locale: en-us
 guid: 98676e02-fc12-46ea-a908-cf04568e7d09

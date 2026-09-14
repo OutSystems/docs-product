@@ -1,5 +1,10 @@
 ---
-tags: css customization, responsive design, user interface development, web development practices
+tags:
+  - CSS
+  - Front-End
+  - Table
+  - Traditional Web
+  - UI Patterns
 summary: Learn how to configure responsive tables in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 7b507cb7-8c2c-4705-a564-69e0bda38397

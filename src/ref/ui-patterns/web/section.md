@@ -1,5 +1,9 @@
 ---
-tags: css customization, ui design, ui patterns, web development, style customization
+tags:
+  - CSS
+  - Layouts
+  - Traditional Web
+  - UI Patterns
 summary: "Section UI Pattern reference for OutSystems 11 (O11): layout classes, CSS to remove the title border, and pairing with Section-Index."
 locale: en-us
 guid: c7493358-7bab-4ebf-ada6-2f101c53db4e

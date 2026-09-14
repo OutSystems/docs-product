@@ -1,5 +1,12 @@
 ---
-tags: user interface design, web application development, form design, ui patterns
+tags:
+  - Forms
+  - Front-End
+  - Layouts
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Login Form UI pattern reference for OutSystems 11 (O11), detailing layout classes and steps to add a Sign In button in Traditional Web Apps.
 locale: en-us
 guid: bf2c05bb-2a29-4a57-903b-98007af0401b

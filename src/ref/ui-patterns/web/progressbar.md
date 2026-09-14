@@ -1,5 +1,10 @@
 ---
-tags: progress bar, css customization, web development, ui components, dynamic styling
+tags:
+  - CSS
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore progress bar customization in OutSystems 11 (O11) with layout options, CSS, and dynamic color changes.
 locale: en-us
 guid: e574e089-b093-408e-9ed1-6850d664a81d

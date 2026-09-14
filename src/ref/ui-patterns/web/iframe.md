@@ -1,5 +1,10 @@
 ---
-tags: outsystems, iframe customization, responsive design, ui development, web development
+tags:
+  - Front-End
+  - Layouts
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore Iframe customization for traditional web apps in OutSystems 11 (O11), including responsive width adjustments based on device type.
 locale: en-us
 guid: d2e2b815-ef17-438b-b200-fe7ec9c1cd23

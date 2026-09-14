@@ -1,5 +1,8 @@
 ---
-tags: ui design, web development, css customization, component customization, ui components
+tags:
+  - CSS
+  - Traditional Web
+  - UI Patterns
 summary: Explore UI customization options for the Progress Circle in OutSystems 11 (O11).
 locale: en-us
 guid: 26092480-0d4f-441c-aeca-c82f31a3df51

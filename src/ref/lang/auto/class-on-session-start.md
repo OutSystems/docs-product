@@ -5,7 +5,11 @@ guid: 6b2deaab-c532-4326-9934-c042c42271de
 app_type: traditional web apps
 platform-version: o11
 figma:
-tags: session management, system events, authentication, permissions, multi-tenancy
+tags:
+  - End-user Authentication
+  - Events
+  - Multi-Tenant
+  - Traditional Web
 audience:
   - Developer
 outsystems-tools:

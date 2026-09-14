@@ -1,5 +1,8 @@
 ---
-tags: runtime-traditionalweb
+tags:
+  - Performance
+  - Traditional Web
+  - UI Patterns
 summary: Explore how OutSystems 11 (O11) enhances Traditional Web Apps with the Load on Visible feature, improving UI performance and efficiency.
 locale: en-us
 guid: 40fe6f1a-a08c-4b79-b2b4-6961d1a18a42

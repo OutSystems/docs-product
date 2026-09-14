@@ -1,7 +1,11 @@
 ---
 audience:
   - Developer
-tags: Mobile app,Programming Model,Traditional Web
+tags:
+  - Mobile app
+  - Modular Programming
+  - Programming Model
+  - Traditional Web
 summary: Reference information on top-level elements like modules, belonging to web applications and mobile apps.
 locale: en-us
 guid: aeb980ee-e71e-497c-bb24-99ddd7c69f48

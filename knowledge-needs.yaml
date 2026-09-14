@@ -688,9 +688,9 @@ knowledge-needs:
     - name: Import data model from Excel
       id: import-data-model-excel
       description: Wants to create an app's entity and initial data by
-        importing a spreadsheet through Import New Entities from Excel in
-        ODC Studio, so that the data model exists without manually creating
-        entities and attributes one by one.
+        importing a spreadsheet through Import New Entities from Excel, so
+        that the data model exists without manually creating entities and
+        attributes one by one.
     - name: CRUD wrapper accelerator
       id: crud-wrapper-accelerator
       description: Wants to understand what CRUD wrappers are and use the ODC
@@ -4271,6 +4271,30 @@ knowledge-needs:
         in Service Studio, so that the wizard displays the active, past,
         and next steps correctly, in mobile apps and reactive web apps
         (O11).
+    - name: Add switch widget
+      id: add-switch-widget
+      description: Wants to add a Switch widget to a screen and bind a
+        boolean variable to its Variable property, in Service Studio, so
+        that end users can provide boolean input in a form for mobile apps
+        and reactive web apps (O11).
+    - name: Add check box widget
+      id: add-check-box-widget
+      description: Wants to add a Check Box widget to a screen and bind a
+        boolean variable to its Variable property, in Service Studio, so
+        that end users can provide boolean input in a form for traditional
+        web apps (O11).
+    - name: Add dropdown widget
+      id: add-dropdown-widget
+      description: Wants to add the Dropdown Widget to a screen and configure
+        its List, Options Content, Options Text, and Variable properties, in
+        Service Studio, so that end users can choose one value from a list of
+        values, in mobile apps and reactive web apps (O11).
+    - name: Add combo box widget
+      id: add-combo-box-widget
+      description: Wants to add the Combo Box Widget to a screen and configure
+        its Source Entity, Source Attribute, and Variable properties, in
+        Service Studio, so that end users can choose one value from a list of
+        values bound to an Entity, in traditional web apps (O11).
     - name: Dropdown Server reference
       id: dropdown-server-reference
       description: Wants to look up the properties, events, and JavaScript API
@@ -4562,10 +4586,17 @@ knowledge-needs:
         so that they can correctly configure a numerical notification badge in
         a Mobile App or Reactive Web App for OutSystems 11.
     - name: Add icon widget
-      id: add-icon-widget
+      id: add-icon-widget-odc
       description: Wants to add an Icon widget to a screen and select the icon and weight,
         adjusting its size, color, and styling, in ODC Studio, so that visual
         cues are included in the app's UI.
+    - name: Add icon (O11)
+      id: add-icon-widget-o11
+      description: 'Wants to add an Icon widget to a screen in Reactive Web, Mobile,
+        or Traditional Web apps, selecting the icon from the built-in icon
+        collection and optionally associating an OnClick action, in Service
+        Studio, so that end users can visually identify functionality or
+        information (OutSystems 11).'
     - name: Use Icon Badge pattern
       id: use-icon-badge-pattern
       description: Wants to add the Icon Badge UI Pattern to a screen and bind
@@ -5257,6 +5288,30 @@ knowledge-needs:
       id: changing-data-with-ui
     - name: UI interactions in apps
       id: ui-interactions-in-apps
+    - name: Create popup widget
+      id: create-popup-widget
+      description: Wants to create and show a popup to display information or
+        collect user input, by adding a Popup widget, toggling its Show Popup
+        property with a boolean variable, and using Client Actions to set that
+        variable via Close Popup and Show Popup buttons, in Service Studio for
+        OutSystems 11 Reactive Web and Mobile Apps, so that users stay on the
+        same page while interacting with the popup.
+    - name: Create Popup Editor
+      id: create-popup-editor
+      description: Wants to create and show a popup screen in Traditional Web
+        Apps, by adding a Link widget to trigger navigation, creating a new
+        screen from the LayoutPopup template, and configuring the Popup Editor
+        widget's LinkOnButtonWidgetId property to open it, in Service Studio
+        for OutSystems 11, so that the popup screen displays without a full
+        page navigation.
+    - name: Popup link confirmation
+      id: popup-link-confirmation
+      description: Wants to show a Confirmation Message on a Link widget that navigates to
+        a popup screen destination, by routing through an intermediate hidden
+        Link and a Server Action that triggers RichWidgets\Widget_Click, in
+        Service Studio for OutSystems 11 Traditional Web Apps, so that the
+        confirmation dialog appears, which OutSystems doesn't show when
+        navigating directly to a popup screen.
     - name: Resize popup window
       id: resize-popup-window
       description: Wants to dynamically resize a Popup_Editor window at runtime by
@@ -6207,6 +6262,12 @@ knowledge-needs:
 - name: Getting started with app development
   guid: 08c8e683-27ea-4656-8559-e145b5e05086
   topics:
+  - name: Front-end design journey
+    id: front-end-development-journey
+    description: Wants to understand how an app's front-end development moves
+      through the UX Concept, UI design, and Front-End Development stages,
+      from wireframes and Hi-Fi mockups to a live style guide, so they know
+      how business requirements get translated into application screens.
   - name: Using Service Studio
     id: using-service-studio
     subtopics:

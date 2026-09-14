@@ -165,7 +165,7 @@ This widget is available in Reactive Web Apps.
 </tbody>
 </table>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 From Platform Server 11.43.0, [enable built-in WCAG 2.2 AA compliance](../../../building-apps/ui/accessibility/intro.md#enable-widgets) to ensure this widget complies with WCAG 2.2 AA accessibility standards. See the usage details below. If you customize the widget, validate your implementation to confirm it still meets accessibility requirements.
 

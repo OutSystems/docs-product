@@ -4072,6 +4072,13 @@ knowledge-needs:
         and usability across an organization's applications, so they can
         recognize the Style Guide's purpose within the OutSystems UI
         architecture.
+    - name: UI architecture overview
+      id: ui-architecture-overview
+      description: Wants to understand the components of the OutSystems UI
+        architecture (the OutSystems UI Framework, built-in screen templates,
+        custom application templates, style guide, and applications) and how
+        they relate to each other, so they can understand how OutSystems UI
+        structures the user interfaces of their applications, in OutSystems 11.
   - name: Customize style
     id: customize-style
     subtopics:
@@ -4350,6 +4357,23 @@ knowledge-needs:
       description: Wants to look up the properties of the User Avatar UI Pattern in Service
         Studio, so that they can correctly configure the badge's appearance and
         content, in mobile apps and reactive web apps (O11).
+    - name: Use Chat Message pattern
+      id: use-chat-message-pattern
+      description: Wants to add the Chat Message UI Pattern to a screen, add
+        the widget via Toolbox or Search in other modules if the dependency
+        isn't added, add content such as an avatar and text to the Image and
+        Content placeholders (or bind a List to an entity to display a
+        message per record), and customize its look and feel via optional
+        properties, in Service Studio, so that conversational posts display
+        in notifications or chat screens, in mobile apps and reactive web
+        apps (O11).
+    - name: Chat Message reference
+      id: chat-message-reference
+      description: Wants to look up the properties of the Chat Message UI
+        Pattern in Service Studio, including DisplayOnRight, Time,
+        MessageStatus, and ExtendedClass, so that they can correctly
+        configure the pattern's alignment, timestamp, status, and custom
+        styling, in mobile apps and reactive web apps (O11).
     - name: Add Sign In button
       id: add-sign-in-button
       description: Wants to add a second Sign In button to the Login Form UI
@@ -4666,6 +4690,35 @@ knowledge-needs:
         Pattern in Service Studio, so that they can correctly configure and
         control the pattern's appearance and behavior, in mobile apps and
         reactive web apps (O11).
+    - name: Use Card pattern
+      id: use-card-pattern
+      description: Wants to add the Card UI Pattern to a screen, add the
+        OutSystemsUI dependency via Search in other modules if the widget
+        doesn't display in the Toolbox, and add content to its placeholder,
+        in Service Studio, so that a small block of information is grouped
+        and highlighted on-screen in mobile apps and reactive web apps
+        (O11).
+    - name: Card reference
+      id: card-reference
+      description: Wants to look up the properties of the Card UI Pattern in
+        Service Studio, including UsePadding and ExtendedClass, so that they
+        can correctly configure the pattern's padding and custom styling, in
+        mobile apps and reactive web apps (O11).
+    - name: Use Card Item pattern
+      id: use-card-item-pattern
+      description: Wants to add the Card Item UI Pattern to a screen, add
+        the OutSystemsUI dependency via Search in other modules if the
+        widget doesn't display in the Toolbox, and add content to each of
+        its Left, Title, Content, and Right placeholders, in Service
+        Studio, so that items with multiple content types (image/icon,
+        title, description, and an action) are listed together in mobile
+        apps and reactive web apps (O11).
+    - name: Card Item reference
+      id: card-item-reference
+      description: Wants to look up the properties of the Card Item UI
+        Pattern in Service Studio, including ExtendedClass, so that they
+        can correctly configure the pattern's custom styling, in mobile
+        apps and reactive web apps (O11).
     - name: Use Card Background pattern
       id: use-card-background-pattern
       description: Wants to add the Card Background UI Pattern to a screen,
@@ -4721,7 +4774,7 @@ knowledge-needs:
       description: Wants to understand what adaptive UI patterns are and why to use them,
         so that they can choose the appropriate pattern to ensure their app
         displays correctly across different device sizes, resolutions, and
-        aspect ratios, in ODC Studio, for mobile apps and reactive web apps.
+        aspect ratios for mobile apps and reactive web apps.
     - name: Number patterns overview
       id: number-patterns-overview
       description: Wants to know which number-based UI pattern to use for displaying
@@ -5196,6 +5249,22 @@ knowledge-needs:
         OptionalConfigs.JustifyHeaders, ExtendedClass, and the OnTabChange
         event, so that they can correctly configure the pattern's layout,
         behavior, and styling, in mobile apps and reactive web apps (O11).
+    - name: Use Flip Content pattern
+      id: use-flip-content-pattern
+      description: Wants to add the Flip Content UI Pattern to a screen, drag
+        the widget into the Main Content area, and add content to the
+        CardFront and CardBack placeholders, including adding the widget via
+        Toolbox or Search in other modules if the dependency isn't added, in
+        Service Studio, so that content flips between a front and back
+        state, in mobile apps and reactive web apps.
+    - name: Flip Content widget reference
+      id: flip-content-widget-reference
+      description: Wants to look up the properties and events of the Flip
+        Content UI Pattern, including StartsFlipped, FlipOnClick,
+        ExtendedClass, and the OnFlip event, in Service Studio, so that they
+        can correctly configure the pattern's initial flipped state, trigger
+        behavior, and react to flip changes, in mobile apps and reactive web
+        apps.
   - name: UI performance best practices
     id: ui-performance-best-practices
     description: Wants to apply best practices for optimizing OutSystems 11

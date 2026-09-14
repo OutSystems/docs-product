@@ -1196,6 +1196,14 @@ knowledge-needs:
         on keyboard focus and closes with Esc, meeting WCAG 2.2 AA
         accessibility requirements, in mobile apps and reactive web apps
         (O11).
+    - name: Dropdown Tags NVDA behavior
+      id: dropdown-tags-nvda-esc
+      description: Wants to understand why NVDA screen reader users need to
+        press Esc twice to close the Dropdown Tags dropdown, since the first
+        Esc exits focus mode and the second collapses the control, so that
+        they can confirm this is expected behavior rather than a bug and
+        explain it to end users, in mobile apps and reactive web apps
+        (O11).
     - name: Accessible Action Sheet pattern
       id: accessible-action-sheet-pattern
       description: Wants to make the Action Sheet UI Pattern accessible to
@@ -2582,6 +2590,21 @@ knowledge-needs:
         in the workflow editor, giving it a unique name, selecting the event
         that triggers the Start node, adding steps through to the End node,
         and publishing it, so that the workflow is ready to run in the app.
+    - name: Search workflow editor
+      id: search-workflow-editor
+      description: Wants to open the workflow editor's search menu using
+        Ctrl+K (or Cmd+K on a Mac) to search and execute commands, find
+        flow-steps or properties, edit expressions and outcomes, or add new
+        flow-steps, so that they can navigate and edit complex workflows
+        faster.
+    - name: Manage workflow errors
+      id: manage-workflow-errors
+      description: Wants to identify, locate, and resolve issues in a
+        workflow using the workflow editor's notification panel, by
+        reviewing the error count, searching and filtering errors by
+        activity, property, or message, and using one-click navigation to
+        jump to the affected node and property, so that they can debug
+        workflow errors efficiently.
   - name: Test a workflow
     id: test-workflow
     description: Wants to verify a workflow works as expected before deploying
@@ -4543,6 +4566,20 @@ knowledge-needs:
         StartsOpen, Trigger, and ExtendedClass, so that they can correctly
         configure tooltip appearance and behavior in mobile apps and
         reactive web apps.
+    - name: Use Input with Icon pattern
+      id: use-input-with-icon-pattern
+      description: Wants to add the Input with Icon UI Pattern to a screen
+        via Toolbox or Search in other modules if the dependency isn't
+        added, set a local Variable for the Input widget, configure the
+        Prompt text, and select an Icon, in Service Studio, so that end
+        users get a visual hint when entering data, in mobile apps and
+        reactive web apps (O11).
+    - name: Input with Icon reference
+      id: input-with-icon-reference
+      description: Wants to look up the properties of the Input with Icon UI
+        Pattern in Service Studio, including AlignIconRight and
+        ExtendedClass, so that they can correctly configure icon placement
+        and custom styling, in mobile apps and reactive web apps (O11).
     - name: File Upload reference
       id: file-upload-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -4856,6 +4893,13 @@ knowledge-needs:
         properties, in Service Studio, so that elements are emphasized with
         an entrance animation as they appear on screen, in mobile apps and
         reactive web apps (O11).
+    - name: Animate properties
+      id: animate-properties-reference
+      description: Wants to look up the properties of the Animate UI Pattern
+        in Service Studio, including AnimationType, Delay, and Speed, so
+        that they can correctly configure how and when an element's
+        entrance animation occurs, in mobile apps and reactive web apps
+        (O11).
     - name: Adaptive UI patterns
       id: adaptive-ui-patterns
       description: Wants to understand what adaptive UI patterns are and why to use them,
@@ -5038,6 +5082,20 @@ knowledge-needs:
         Prompt, and OptionalConfigs, so that they can correctly configure a
         searchable dropdown selector in OutSystems 11 mobile apps and reactive
         web apps.
+    - name: Use Dropdown Tags pattern
+      id: use-dropdown-tags-pattern
+      description: Wants to add the Dropdown Tags UI Pattern to a screen, bind
+        it to an aggregate, and configure the OnChanged event to display the
+        number of selected options, in Service Studio, so that end users can
+        select multiple values from a searchable dropdown, in mobile apps and
+        reactive web apps (O11).
+    - name: Dropdown Tags reference
+      id: dropdown-tags-reference
+      description: Wants to look up the properties and events of the Dropdown
+        Tags widget in Service Studio, including OptionsList, StartingSelection,
+        Prompt, and OptionalConfigs, so that they can correctly configure a
+        multi-select searchable dropdown in mobile apps and reactive web apps
+        (O11).
     - name: Dropdown reference
       id: dropdown-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -5413,6 +5471,15 @@ knowledge-needs:
         sorting, grouping, and virtual scrolling), and where to download it
         for Traditional Web and Reactive Web apps, so they can decide
         whether it fits their data manipulation needs, in OutSystems 11.
+    - name: Add marker on map click
+      id: add-marker-map-click
+      description: Wants to add a marker to the OutSystems Map component and
+        capture its coordinates, by adding a Map Event block with EventName
+        set to Click, creating Latitude and Longitude local variables, and
+        binding a Marker block's Position property to them via a handler,
+        in Service Studio, so that end users can drop a marker at the
+        location they click on the map, in mobile apps and reactive web
+        apps (O11).
   - name: UI performance best practices
     id: ui-performance-best-practices
     description: Wants to apply best practices for optimizing OutSystems 11
@@ -5843,6 +5910,22 @@ knowledge-needs:
         11, an issue that must be fixed in Service Studio before a module can be
         published to the server, so that they know why every reported error
         needs resolving prior to deployment.
+    - name: 1-Click Publish steps
+      id: 1-click-publish-steps
+      description: Wants to understand what happens when they use 1-Click
+        Publish to publish an app or library in OutSystems Developer Cloud
+        (ODC), including compiling code, building the container image,
+        generating database sync scripts, and deploying to the Kubernetes
+        cluster, so that they can anticipate the build and deployment work
+        triggered each time they publish a new revision in the Development
+        stage.
+    - name: ODC publish message
+      id: odc-publish-message
+      description: Wants to add an optional message describing their changes when 1-Click
+        Publishing an app in ODC Studio, understanding the message has a maximum
+        length and becomes a permanent, read-only record reviewable via App >
+        View revisions, so that their team can track the intent behind each
+        revision.
     - name: IPP protection concept
       id: ipp-protection-concept
       description: Wants to understand what Intellectual Property Protection

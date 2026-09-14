@@ -4064,6 +4064,14 @@ knowledge-needs:
         so that the app avoids nested iframes (cascade syndrome).
   - name: Front end architecture
     id: front-end-architecture
+    subtopics:
+    - name: Style Guide purpose
+      id: style-guide-purpose
+      description: Wants to understand what a Style Guide is and why it matters,
+        including its role in ensuring brand theme consistency, UI consistency,
+        and usability across an organization's applications, so they can
+        recognize the Style Guide's purpose within the OutSystems UI
+        architecture.
   - name: Customize style
     id: customize-style
     subtopics:
@@ -4080,6 +4088,12 @@ knowledge-needs:
       id: customize-app-styles
     - name: Creating a theme
       id: creating-a-theme
+    - name: CSS best practices
+      id: css-best-practices
+      description: Wants to write maintainable CSS in an OutSystems app by
+        avoiding inline styles and ID selectors, centralizing CSS in the
+        theme, and using CSS variables, in Service Studio, so their app's
+        styling stays maintainable and scalable.
     - name: Make header scroll
       id: make-header-scroll
       description: Wants to make the London theme's fixed header scroll with the page
@@ -4290,6 +4304,12 @@ knowledge-needs:
         boolean variable to its Variable property, in Service Studio, so
         that end users can provide boolean input in a form for traditional
         web apps (O11).
+    - name: Add icon block
+      id: add-icon-block
+      description: Wants to add an Icon block from Rich Widgets to a screen
+        and select the icon to display via the Name property drop-down, in
+        Service Studio, so that end users see an icon on the screen, in
+        traditional web apps (O11).
     - name: Add dropdown widget
       id: add-dropdown-widget
       description: Wants to add the Dropdown Widget to a screen and configure
@@ -4599,11 +4619,11 @@ knowledge-needs:
         cues are included in the app's UI.
     - name: Add icon (O11)
       id: add-icon-widget-o11
-      description: 'Wants to add an Icon widget to a screen in Reactive Web, Mobile,
-        or Traditional Web apps, selecting the icon from the built-in icon
-        collection and optionally associating an OnClick action, in Service
-        Studio, so that end users can visually identify functionality or
-        information (OutSystems 11).'
+      description: Wants to add an Icon widget from the widgets toolbox to a
+        screen, select the icon from the built-in icon collection, and
+        optionally associate an OnClick action, in Service Studio, so that
+        end users can visually identify functionality or information in
+        reactive web apps and mobile apps (OutSystems 11).
     - name: Use Icon Badge pattern
       id: use-icon-badge-pattern
       description: Wants to add the Icon Badge UI Pattern to a screen and bind
@@ -5568,6 +5588,13 @@ knowledge-needs:
         published, in OutSystems 11.
     - name: Publish an extension in SC
       id: publish-extension-sc
+    - name: Open other version
+      id: open-other-version
+      description: Wants to switch to a previous published version of a
+        module from Service Studio's Module menu using Open Other Version,
+        reviewing the list of versions along with the publish date, time,
+        and publisher, so that they can revert to or inspect an earlier
+        version, in OutSystems 11.
   - name: Basic deployment concepts
     id: basic-deployment-concepts
     subtopics:
@@ -5625,6 +5652,20 @@ knowledge-needs:
         including separate revisions, versions, and deployment history per
         portfolio, so that they deploy and undeploy assets in the correct
         portfolio without affecting others.
+    - name: ODC container deployment
+      id: odc-container-deployment
+      description: Wants to understand how OutSystems Developer Cloud packages
+        web apps and libraries into loosely coupled containers, with only
+        weak references allowed between apps and strong references created
+        when consuming library versions, so they understand how ODC's
+        packaging model differs from OutSystems 11 modules.
+    - name: ODC deployment terminology
+      id: odc-deployment-terminology
+      description: Wants to understand key OutSystems Developer Cloud
+        deployment terminology, including organization, portfolio, stage,
+        app, and revision, and how selecting a revision and running impact
+        analysis fit into deploying an app to a stage in the ODC Portal, so
+        they can follow ODC deployment documentation and workflows.
     - name: Rename org or stage
       id: rename-org-or-stage
       description: Wants to change the display name of their ODC organization
@@ -5752,6 +5793,13 @@ knowledge-needs:
     subtopics:
     - name: Integrate with external orchestrators for CD
       id: external-orchestrator-cd
+    - name: ODC CI/CD pipeline model
+      id: odc-cicd-pipeline-model
+      description: Wants to understand that ODC apps are built once in the
+        Development stage and deployed unchanged to later pipeline stages
+        without recompilation, and that only Development supports
+        publishing while other stages are only updated via a new
+        deployment, so they understand ODC's CI/CD deployment flow.
     - name: Build O11 CD pipeline
       id: cd-pipeline-stages
       description: Wants to build an automated continuous delivery pipeline for
@@ -6843,6 +6891,12 @@ knowledge-needs:
       description: Wants to understand the use cases, solutions, and customization options
         of the AI Agent Builder's sample apps, so they can pick a starting point
         matching their business scenario.
+    - name: Create agentic app
+      id: create-agentic-app
+      description: Wants to create a new agentic app in ODC Studio by clicking
+        Create, selecting Agentic App, naming it, and selecting a previously
+        configured AI model, so that they have a scaffolded AgentFlow
+        template ready to customize.
     - name: Build agent flow
       id: build-agent-flow
       description: Wants to create an AI agent in ODC Studio by configuring an

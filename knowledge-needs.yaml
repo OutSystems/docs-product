@@ -7540,6 +7540,12 @@ knowledge-needs:
         open asset type in ODC Studio, since web apps, libraries, and
         agentic apps each support a different subset, so that they
         understand what changes are possible before describing a request.
+    - name: Mentor Studio constraints
+      id: mentor-studio-constraints
+      description: Wants to know that Mentor Studio conversations aren't
+        persistent and that agentic development capabilities evolve, so
+        they save work frequently and check documentation for current
+        constraints before relying on an open Mentor Studio session.
   - name: Mentor Studio prompts
     id: mentor-studio-prompts
     subtopics:

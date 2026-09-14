@@ -1,6 +1,13 @@
 ---
 summary: Explore end user authentication methods in OutSystems 11 (O11), including Internal, Active Directory, LDAP, SAML 2.0, Microsoft Entra, and Okta.
-tags: authentication, security, user management, identity providers, integration
+tags:
+  - Active Directory
+  - Authentication
+  - End-user Authentication
+  - End-users
+  - External Authentication
+  - LDAP
+  - SAML
 locale: en-us
 guid: eaa92f05-a00d-4e75-a937-8c100b81d6df
 app_type: traditional web apps, mobile apps, reactive web apps

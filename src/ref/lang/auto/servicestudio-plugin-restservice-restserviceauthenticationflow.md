@@ -6,7 +6,11 @@ guid: d57b2c7c-1238-4d6b-b1a7-3afc4ffba82d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: authentication, rest apis, security, api development, service studio configuration
+tags:
+  - Authentication
+  - Plugins
+  - REST
+  - Security
 audience:
   - Developer
 outsystems-tools:

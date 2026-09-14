@@ -6,7 +6,8 @@ guid: 32eb391b-601d-4332-9f9b-a6844fd5c034
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: rest api, api configuration, web services, parameter handling, outsystems platform
+tags:
+  - REST
 audience:
   - Developer
 outsystems-tools:

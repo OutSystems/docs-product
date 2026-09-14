@@ -7293,6 +7293,14 @@ knowledge-needs:
         Agent, StoreMemory) and what each step does by default in an agentic
         app template, so that they know the out-of-the-box logic before
         customizing any component.
+    - name: Combine grounding sources
+      id: combine-grounding-sources
+      description: Wants to combine data from multiple entities into an AI
+        agent's grounding data by serializing each entity's aggregate to
+        JSON with separate JSON Serialize actions and combining the results
+        in GetGroundingData, so that the agent can compare more than one
+        data source (for example, applicant data and policy rules) in a
+        single grounding context.
     - name: Add additional agents
       id: add-additional-agents
       description: Wants to add more than one agent to an existing agentic app
@@ -7332,6 +7340,14 @@ knowledge-needs:
         type and serializing the structured data before storing it in the
         Store Memory node, so that the structured response can be persisted
         and later deserialized on the consumer side.
+    - name: Act on agent decision
+      id: act-on-agent-decision
+      description: Wants to convert an AI agent's structured text decision
+        (for example "Approved" or "Rejected") into a business status by
+        matching it with Index() and using the result to call a service
+        action that persists the decision, so that the agent's
+        recommendation drives downstream business logic instead of
+        remaining free text.
     - name: Agent evaluations overview
       id: agent-evaluations-overview
       description: Wants to understand what agent evaluations are and how
@@ -7462,6 +7478,14 @@ knowledge-needs:
         (jailbreak or harmful prompts) from unsafe output, and what a low
         score indicates, so they can determine whether the issue is on the
         input or output side and check it against their Guardrails policy.
+    - name: Limit response length
+      id: limit-response-length
+      description: Wants to prevent an AI agent's free-text response from
+        exceeding a downstream database column's character limit, by
+        enforcing an explicit length rule in the SystemPrompt and adding a
+        truncation fallback (e.g., Substr) before saving the response, so
+        that the app avoids DB string-truncation errors and constraint
+        violations.
   - name: Tools and connectors
     id: tools-and-connectors
     subtopics:

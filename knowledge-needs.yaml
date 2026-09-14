@@ -1237,6 +1237,13 @@ knowledge-needs:
         multilingual feature, in Service Studio for OutSystems 11, so that
         the app's translations and logic keep working without the
         unsupported Forge component.
+    - name: Fix RTL display
+      id: fix-rtl-display
+      description: Wants to fix right-to-left (RTL) languages displaying left-to-right in
+        apps, by creating a client action that adds or removes the CSS is-rtl
+        class based on the current locale and calling it from the OnRender
+        action of the Menu block used on all screens, in Service Studio for
+        OutSystems 11, until the official fix is applied.
 - name: Advanced app architecture
   guid: d59b4004-582f-44ee-a1ae-eb75787ba1e0
   topics:
@@ -12587,6 +12594,14 @@ knowledge-needs:
 - name: Monitor and Troubleshoot (O11)
   guid: efd7e36b-05ea-4fe3-bf72-80617a1557e8
   topics:
+  - name: Test environment connectivity
+    id: test-environment-connectivity
+    description: Wants to verify bidirectional HTTPS connectivity between the
+      LifeTime environment and an application environment in OutSystems 11,
+      by remoting into one environment's server and accessing the other
+      environment's Service Center console over HTTPS, so that they can
+      confirm the network path required by the OutSystems architecture is
+      working.
   - name: Check OutSystems version
     id: check-outsystems-version
     description: Wants to check the installed version and revision of Service
@@ -12721,6 +12736,14 @@ knowledge-needs:
       Oracle DDL Lock Timeout setting in server.hsconf on all front-ends and
       reapplying configuration via the Configuration Tool, so that ALTER
       statements succeed despite objects being locked by other transactions.'
+  - name: Fix open cursors error
+    id: fix-open-cursors-error
+    description: 'Wants to resolve the "ORA-01000: maximum open cursors
+      exceeded" error in OutSystems 11, by increasing the Oracle
+      OPEN_CURSORS database setting or by refactoring application logic to
+      avoid reusing aggregate output directly as a server action/loop
+      input (assigning it to a local variable instead), so that sessions
+      stop exceeding the open cursor limit.'
   - name: AD auth login workaround
     id: ad-auth-login-workaround
     description: Wants to temporarily disable Active Directory (AD)
@@ -12895,6 +12918,26 @@ knowledge-needs:
       misconfigured "Run As" user, by removing the Run As credentials or
       adding the specified user to the IIS_IUSRS group, so that the eSpace
       becomes accessible again.'
+  - name: Diagnose SSL trust error
+    id: diagnose-ssl-trust-error-o11
+    description: 'Wants to identify the cause of a "Could not establish trust
+      relationship for the SSL/TLS secure channel" error when consuming a web
+      service in OutSystems 11, by checking the service URL in a browser for
+      certificate warnings/details or running openssl s_client from the
+      command line, so they can determine whether the cause is a hostname
+      mismatch, expired/invalid certificate, untrusted CA, self-signed
+      certificate, or protocol/cipher mismatch and apply the matching fix.'
+  - name: Forge component known issues
+    id: forge-component-known-issues
+    subtopics:
+    - name: Map component issues
+      id: map-component-issues
+      description: Wants to check known issues with the Map Forge component for Reactive
+        Web and Mobile Apps in OutSystems 11, covering issues such as inaccurate
+        positioning behavior with Auto Zoom, marker popup interaction problems,
+        shape dragging issues with Polyline and Polygon, and search UI scrolling
+        problems, so they can identify whether an issue they're facing is
+        already known, apply available workarounds, and decide when to upgrade.
 - name: Monitor and Troubleshoot (O10)
   guid: 69e74025-d666-40fd-b224-c96f5cbba50c
   topics:

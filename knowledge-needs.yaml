@@ -2270,6 +2270,16 @@ knowledge-needs:
         11, using the CookieSecure parameter of the SetCookie Server Action in a
         server-side context or by appending '; Secure' in client-side JavaScript,
         so that custom application cookies are only sent over HTTPS.
+    - name: Secure REST headers
+      id: secure-rest-headers
+      description: Wants to fix the security vulnerability where headers marked
+        for removal in a consumed REST service's OnBeforeRequest callback
+        aren't actually removed from the outgoing request, by enabling the
+        Allow headers removal inside onBeforeRequest REST callback setting in
+        the Factory Configuration Forge component and republishing affected
+        modules, so that sensitive information in headers isn't
+        unintentionally exposed to the server, logs, or network during
+        transit, in OutSystems 11.
   - name: External access control
     id: external-access-control
     subtopics:
@@ -3478,6 +3488,28 @@ knowledge-needs:
         username and password with the EnhancedWebReferences extension''s
         SetWebReferenceCredentials action, so that the web service can be
         consumed successfully.'
+    - name: Fix SOAP WSDL schema error
+      id: fix-soap-wsdl-schema-error
+      description: Wants to fix a SOAP web service import error in Service
+        Studio caused by an invalid WSDL schema (for example, an undeclared
+        XML namespace prefix), by editing the exported definition files to
+        correct the schema and re-importing them, so that the web service
+        imports successfully, in OutSystems 11.
+    - name: Enable OSTrace SOAP import
+      id: enable-ostrace-soap-import
+      description: Wants to enable OSTrace logging for SOAP web service
+        consumption in Service Studio, by adding the SoapConsume diagnostics
+        switch and a listener file to Settings.xml, so that they can capture
+        detailed logs when a SOAP import error message alone isn't enough to
+        find the root cause, in OutSystems 11.
+    - name: Fix SOAP name collision
+      id: fix-soap-name-collision
+      description: Wants to fix a SOAP web service import error in Service
+        Studio caused by a name collision between XML schema elements (for
+        example, a complexType and attributeGroup sharing the same name), by
+        examining the OSTrace log's Name Collision Issue table to identify
+        the conflicting elements and renaming one of them in the WSDL, so
+        that the web service imports successfully, in OutSystems 11.
     - name: Changing endpoints
       id: changing-endpoints
     - name: Consume and refresh methods
@@ -6478,6 +6510,20 @@ knowledge-needs:
         logic, drag-and-drop UI composition, and automatic data and logic
         wiring, so they don't force imperative coding habits into Service Studio
         and get blocked early when building their first app.
+    - name: Enable enhanced logging
+      id: enable-service-studio-logging
+      description: 'Wants to enable enhanced/verbose logging in Service Studio,
+        via Settings.xml switches or ServiceStudio.exe.config, when the
+        diagnostics report doesn''t contain enough detail, by turning on
+        diagnostic switches and specifying a log output path, so they can
+        capture more detailed logs before sharing them with Support.'
+    - name: Fix Studio permissions
+      id: fix-studio-permissions
+      description: Wants to fix Service Studio or ODC Studio failing to launch because it
+        can't create or read its local configuration folder, by resetting folder
+        ownership and permissions via Terminal or Finder on macOS, or the
+        Security tab in Windows File Explorer, so that Studio can launch
+        normally.
   - name: Using ODC Portal and Studio
     id: using-odc-portal-and-studio
     subtopics:
@@ -6493,12 +6539,12 @@ knowledge-needs:
         each major area of the interface is for, so they can move through the
         tool without getting blocked by layout or navigation friction.
     - name: Get diagnostics report
-      id: get-diagnostics-report
-      description: Wants to obtain and send an ODC Studio diagnostics report to
-        OutSystems Support after an unexpected error or a non-error behavior
-        issue, by expanding the Unexpected Error window or using the Give Us
-        Feedback icon, opening the report in a text editor, and saving it as
-        a text file, so that Support has the information needed to investigate.
+      id: diagnostics-report
+      description: Wants to obtain and send a diagnostics report to OutSystems
+        Support after an unexpected error or a non-error behavior issue, by
+        expanding the Unexpected Error window or using the Give Us Feedback
+        option, opening the report in a text editor, and saving it as a text
+        file, so that Support has the information needed to investigate.
   - name: Publish and share apps
     id: publish-and-share-apps
     subtopics:
@@ -6886,6 +6932,20 @@ knowledge-needs:
         that both environment and module Debug Mode must be enabled to debug a
         module in Service Studio and that changes take effect after
         republishing, so that they can control which modules can be debugged.
+    - name: O11 service log levels
+      id: o11-increase-service-log-levels
+      description: Wants to increase the logging verbosity of a self-managed OutSystems 11
+        platform service on the .NET stack by editing the service's `.config`
+        file or on the Java stack by editing the service's `.properties` file,
+        and restart the service, so that they can collect the detailed logs
+        Support needs for troubleshooting.
+    - name: Increase O11 app logs
+      id: o11-increase-app-log-levels
+      description: Wants to increase the logging verbosity for a specific OutSystems 11
+        application at runtime, using the Factory Configuration tool's OSTrace
+        sample on the .NET stack or manually editing the application server's
+        configuration on the Java stack, so that they can capture detailed
+        traces for troubleshooting or Support.
 - name: Hotfixing
   guid: d8111f11-34b0-4f33-8374-5d9611d507e2
   topics:
@@ -8448,6 +8508,16 @@ knowledge-needs:
         start, typically caused by insufficient device disk space corrupting
         the on-device cache manifest file, by checking available storage and
         reinstalling the app, so that the app works again.'
+    - name: Fix hash mismatch error
+      id: fix-hash-mismatch-error
+      description: 'Wants to resolve the "Checksum failed for file" / "File
+        is corrupt or invalid" hash mismatch errors that cause a mobile app
+        OTA upgrade to roll back to the previous version, caused by network
+        caching, CDN/proxy tampering, or deployment inconsistencies between
+        the moduleinfo and the frontend running folder, by comparing hashes
+        with the Hash Calculator tool and verifying that all frontends were
+        deployed consistently, so that the OTA upgrade completes
+        successfully.'
     - name: Fix local entity type error
       id: fix-local-entity-type-error
       description: 'Wants to resolve the "Upgrade failed - rolling back to

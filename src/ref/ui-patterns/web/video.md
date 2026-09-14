@@ -1,5 +1,8 @@
 ---
-tags: outsystems ui, ui customization, web development, video control customization, ui patterns
+tags:
+  - OutSystems UI
+  - Traditional Web
+  - UI Patterns
 summary: Explore advanced customization of video controls in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: cd532674-6556-4684-bdd5-fcff4e6c422e

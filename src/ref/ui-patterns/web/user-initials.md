@@ -1,5 +1,10 @@
 ---
-tags: ui patterns, web development, outsystems, user interface design, application development
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the integration of the User Initials UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 02ba4227-0341-4645-8202-58dcb3119d8d

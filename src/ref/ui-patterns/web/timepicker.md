@@ -1,5 +1,10 @@
 ---
-tags: ui components, css customization, event handling, ui patterns, time management
+tags:
+  - CSS
+  - Events
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the features and advanced use cases of the Time Picker UI component in OutSystems 11 (O11).
 locale: en-us
 guid: 19d186e8-664b-4066-9e83-e866c45cbba7

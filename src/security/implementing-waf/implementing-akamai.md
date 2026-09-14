@@ -1,6 +1,10 @@
 ---
 summary: Explore how to use Akamai WAF in an OutSystems 11 (O11) Web Application.
-tags: security integration, web application firewall, akamai, cdn configuration, cloud services
+tags:
+  - IP Filters
+  - Monitoring
+  - Security
+  - Traditional Web
 locale: en-us
 guid: 01082934-624A-43BE-B6D4-3A21E2D94689
 app_type: traditional web apps, reactive web apps

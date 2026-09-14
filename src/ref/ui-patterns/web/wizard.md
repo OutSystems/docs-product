@@ -1,5 +1,9 @@
 ---
-tags: ui patterns, css customization, web development, outsystems ui, user interface design
+tags:
+  - CSS
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the implementation and customization of the Wizard UI Pattern in OutSystems 11 (O11) for enhancing Traditional Web Apps.
 locale: en-us
 guid: 40d6949b-644d-4bc3-8ed9-83bdbe79fba2

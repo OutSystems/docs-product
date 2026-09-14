@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) security relies on a Web Application Firewall to filter HTTP/HTTPS traffic and align with OWASP Top 10 risks.
-tags: web application security, waf configuration, api protection, http/https traffic monitoring, compliance standards
+tags:
+  - OWASP
+  - Security
+  - Web
 locale: en-us
 guid: 453F8846-CBCE-412D-8E59-2F12C1A5E489
 app_type: traditional web apps, reactive web apps

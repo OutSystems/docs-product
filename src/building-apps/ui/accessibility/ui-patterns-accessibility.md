@@ -94,4 +94,5 @@ When upgrading to Platform Server 11.43.0 or higher, if you enable built-in WCAG
 | [Radio button](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-radiobutton.md#accessibility) | 11.43.0 |
 | [Radio group](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-radiogroup.md#accessibility) | 11.43.0 |
 | [Switch](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md#accessibility) | 11.43.0 |
+| [Table](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-tablerecords.md#accessibility) | 11.43.0 |
 | [Upload](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-upload.md#accessibility) | 11.43.0 |

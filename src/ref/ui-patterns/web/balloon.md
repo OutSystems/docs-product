@@ -1,5 +1,10 @@
 ---
-tags: ui patterns, web development, web design, user interface components, ux design
+tags:
+  - Front-End
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Explore the Balloon UI Pattern features and advanced use-cases in OutSystems 11 (O11) for enhancing traditional web applications.
 locale: en-us
 guid: d95ffaba-85b3-4152-95f5-71804d0aa12b

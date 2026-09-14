@@ -1,5 +1,10 @@
 ---
-tags: ui patterns, web development, css customization, layout design, event handling
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the Floating Actions UI Pattern in OutSystems 11 (O11) for Traditional Web Apps, detailing layout, events, CSS selectors, and advanced use cases.
 locale: en-us
 guid: ada89c16-a9f3-45b5-b488-1dec777600c5

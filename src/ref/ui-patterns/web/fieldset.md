@@ -1,5 +1,9 @@
 ---
-tags: css customization, ui design, web development, outsystems ui, outsystems traditional web apps
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI Patterns
 summary: Learn how to customize the Fieldset UI Pattern in Traditional Web Apps using custom CSS in OutSystems 11 (O11).
 locale: en-us
 guid: 6a58d000-dd26-489f-ae56-94a4ad3dd6a2

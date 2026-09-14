@@ -1,5 +1,9 @@
 ---
-tags: ui patterns, css customization, web development, design systems, outsystems ui
+tags:
+  - CSS
+  - OutSystems UI
+  - Traditional Web
+  - UI Patterns
 summary: "Animated Label UI Pattern in OutSystems 11 (O11): CSS selector classes, layout diagram, and steps to reposition the active label with custom CSS."
 locale: en-us
 guid: eb80a9ee-c99a-4136-85b4-ec06d6b8e8d4

@@ -1,5 +1,9 @@
 ---
-tags: ui patterns, interface design, web development, outsystems ui, ui components
+tags:
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Learn how to integrate the Button Group UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 42dbee79-dfe8-4f57-8fb7-d5a19e8bf87d

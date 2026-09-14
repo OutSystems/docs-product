@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - bottom-sheet-reference
+  - use-bottom-sheet-pattern
 ---
 
 # Bottom Sheet

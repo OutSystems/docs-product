@@ -17,6 +17,8 @@ audience:
   - Developer
 outsystems-tools:
   - service studio
+topic:
+  - enable-grid-column-edit
 ---
 # How to edit data in the OutSystems Data Grid
 

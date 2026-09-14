@@ -15,6 +15,8 @@ platform-version: o11
 figma:
 coverage-type:
   - understand
+topic:
+  - data-grid-overview
 audience:
   - Front-end developer
   - Developer

@@ -18,6 +18,8 @@ audience:
   - Front-end developer
 outsystems-tools:
   - none
+topic:
+  - save-data-grid-changes
 ---
 # How to save changes to the OutSystems Data Grid
 

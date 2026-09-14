@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - section-group-reference
+  - use-section-group-pattern
 ---
 
 # Section Group

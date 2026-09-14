@@ -1,6 +1,7 @@
 ---
 summary: This guide details configuring a HTTP proxy server in OutSystems 11 (O11) Service Studio for developers on restricted networks.
-tags: ide usage, reactive web apps, tutorials for beginners, network configuration, proxy setup
+tags:
+  - Authentication
 locale: en-us
 guid: b367660c-65e1-45d5-a6c2-c4ea29a9c8ab
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) features integrated protection against brute force attacks, blocking suspicious user and IP activity.
-tags: security, brute force attack protection, dos prevention, authentication security, access control
+tags:
+  - Authentication
+  - End-user Authentication
+  - End-users
+  - IT Users
+  - Monitoring
+  - Security
+  - Site Properties
 locale: en-us
 guid: 12783fed-7ac1-41f3-8d46-544892ff8b58
 app_type: traditional web apps, mobile apps, reactive web apps

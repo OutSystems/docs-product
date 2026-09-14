@@ -1,6 +1,9 @@
 ---
 summary: Guide on changing SQL Server database authentication modes in OutSystems 11 (O11) for various installations.
-tags: sql server, database authentication, authentication modes, self-managed environments, configuration
+tags:
+  - Authentication
+  - Infrastructure
+  - SQL
 locale: en-us
 guid: 34EF8749-5F32-456F-965D-5FF41037B82C
 app_type: traditional web apps, mobile apps, reactive web apps

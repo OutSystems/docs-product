@@ -1,5 +1,9 @@
 ---
-tags: azure integration, infrastructure setup, error handling, deployment troubleshooting, configuration management
+tags:
+  - Deploy
+  - Infrastructure
+  - Logging
+  - Troubleshooting
 summary: This guide details how to retrieve setup logs and configuration files for OutSystems 11 (O11) on Microsoft Azure.
 locale: en-us
 guid: 1e5925fb-8700-4998-a2b4-7a149caeb17d

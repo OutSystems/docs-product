@@ -5,7 +5,9 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=3010-787&t=GvLiKHXITRsPv8hn-1
-tags: clustering, failover, high availability, infrastructure management, scaling
+tags:
+  - Infrastructure
+  - Platform Server
 audience:
   - Platform administrator
   - Developer

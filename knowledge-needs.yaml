@@ -3020,6 +3020,30 @@ knowledge-needs:
         in the Factory Configuration component and republishing affected modules,
         in OutSystems 11, so that DBAs can inform developers of the precise
         location of an underperforming query.
+    - name: Configure SQL query timeout
+      id: configure-sql-query-timeout
+      description: Wants to configure the platform-wide Default Query Timeout in
+        the OutSystems 11 Configuration Tool, so that queries without an individual
+        timeout setting fail only after an appropriate amount of database execution
+        time.
+    - name: Configure application request timeout
+      id: configure-application-request-timeout
+      description: Wants to configure the application request timeout in OutSystems
+        11 by setting the `executionTimeout` parameter under `httpRuntime` in
+        machine.config, so that IIS allows a Traditional Web request to run for an
+        appropriate amount of time before aborting it.
+    - name: Configure web service timeout
+      id: configure-web-service-timeout
+      description: Wants to configure the `Timeout in Seconds` property for a
+        consumed web service method in OutSystems 11, so that the app waits an
+        appropriate amount of time for an external service response before timing
+        out.
+    - name: Configure server request timeout
+      id: configure-server-request-timeout
+      description: Wants to configure the `Server Request Timeout` property for
+        Reactive Web or Mobile app server calls in OutSystems 11, so that the client
+        waits an appropriate amount of time for Data Actions, Server Actions, and
+        Aggregates before triggering a Communication Exception.
     - name: Increase upload limit
       id: increase-upload-limit
       description: Wants to increase the maximum file upload size allowed by an
@@ -3372,12 +3396,16 @@ knowledge-needs:
         chaining execution to continue processing when more records remain, and data
         integrity), so that the Timer never aborts due to timeout and all records are
         eventually processed without data corruption or repeated work.
-    - name: Configure timer settings
-      id: configure-timer-settings
-      description: Wants to configure a Timer's schedule (Daily, Weekly, Monthly, When
-        Published, Run Now), timeout, and active flag in ODC Portal per deployment stage,
-        so the Timer runs at the right time, within resource limits, and with appropriate
-        values in each environment.
+    - name: Configure timer settings (ODC)
+      id: configure-timer-settings-odc
+      description: Wants to configure a Timer's schedule, timeout, and active flag in ODC
+        Portal per deployment stage, so the Timer runs at the right time, within
+        resource limits, and with appropriate values in each environment.
+    - name: Configure timer timeout (O11)
+      id: configure-timer-timeout-o11
+      description: Wants to configure the `Timeout in Minutes` property for an
+        OutSystems 11 Timer in Service Studio, so that the platform allows the timer
+        execution to run for an appropriate amount of time before aborting it.
     - name: Monitor timer logs
       id: monitor-timer-logs
       description: Wants to monitor timer execution by viewing timer logs in the ODC
@@ -13046,6 +13074,27 @@ knowledge-needs:
         pressing SEND, so that developers can better understand reported
         issues, provided the feedback feature is activated in the
         environment.
+  - name: SLOWSQL log messages
+    id: slowsql-log-messages
+    description: Wants to interpret SLOWSQL log messages in Service Center's
+      General Logs, with a configurable threshold set via Factory
+      Configuration, in OutSystems 11, so that they can identify when a query
+      has been flagged as slow during performance troubleshooting.
+  - name: SLOWSQL duration behavior
+    id: slowsql-duration-behavior
+    description: Wants to understand why the duration reported by SLOWSQL log
+      messages, with a configurable threshold set via Factory Configuration,
+      excludes network fetch time and changes with progressive or
+      optimizer-driven data fetching in OutSystems 11, so that they can
+      interpret the logged duration correctly during performance
+      troubleshooting.
+  - name: Measure true query elapsed time
+    id: measure-true-query-elapsed-time
+    description: Wants to measure the true elapsed time of a query or screen in
+      OutSystems 11 when SLOWSQL log messages, with a configurable threshold
+      set via Factory Configuration, do not reflect the complete operation, by
+      using LogMessage calls or an isolated screen copy, so that they can
+      diagnose performance issues without relying only on SLOWSQL timings.
 - name: Monitor and Troubleshoot (O11)
   guid: efd7e36b-05ea-4fe3-bf72-80617a1557e8
   topics:
@@ -13400,6 +13449,21 @@ knowledge-needs:
       Control permissions) and downloading it from the Troubleshooting
       Processes page, in OutSystems 11, so that they have diagnostic
       information for investigating BPT process issues.
+  - name: Diagnose timeout errors
+    id: diagnose-timeout-errors
+    description: Wants to identify which type of OutSystems 11 timeout (SQL
+      query, application request, web service, service action, server
+      request, or timer) caused a runtime error, by matching the error
+      message and stack trace in Service Center's Error Logs to the
+      timeout event's known symptoms, so they can address the correct
+      timeout setting.
+  - name: Service Action timeout
+    id: service-action-timeout
+    description: 'Wants to understand why a Service Action call between OutSystems 11
+      modules fails after a fixed period of time with "The request was aborted:
+      The operation has timed out", caused by a fixed, non-configurable client-
+      side timeout that SetRequestTimeout cannot extend, so they know to break
+      down long-running logic instead of trying to raise the limit.'
 - name: Monitor and Troubleshoot (O10)
   guid: 69e74025-d666-40fd-b224-c96f5cbba50c
   topics:

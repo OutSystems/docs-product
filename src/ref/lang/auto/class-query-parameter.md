@@ -5,7 +5,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1469:2187
 summary: Explore how to integrate query parameters into SQL queries within OutSystems 11 (O11) for dynamic data retrieval.
-tags: sql query integration, data retrieval, entity modeling, sql parameters, service studio tutorial
+tags:
+  - Entities
+  - SQL
 audience:
   - Developer
 outsystems-tools:

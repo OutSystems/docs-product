@@ -5,7 +5,10 @@ guid: 6f406b45-353d-49f7-b859-2d3b5e153240
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: process flows, outsystems, process start activity, conditional start activity, entity actions
+tags:
+  - Business Processes
+  - Entities
+  - Workflows
 audience:
   - Developer
 outsystems-tools:

@@ -6,7 +6,9 @@ guid: 459c47a3-0744-4ec6-85b0-af67b81d16d6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: soap web services, wsdl, api development, application integration, outsystems platform
+tags:
+  - SOAP
+  - Web services
 audience:
   - Developer
 outsystems-tools:

@@ -5,7 +5,9 @@ guid: bbcf3fc3-e6c7-4d65-b941-2a77b0b885d6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: action flows, conditional logic, workflow design, visual programming, outsystems development
+tags:
+  - Logic
+  - Workflows
 audience:
   - Developer
 outsystems-tools:

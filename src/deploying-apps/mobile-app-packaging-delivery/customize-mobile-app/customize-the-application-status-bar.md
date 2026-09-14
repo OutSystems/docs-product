@@ -16,13 +16,14 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Customize the application status bar
 
 <div class="info" markdown="1">
 
-Applies only to Mobile Apps. Apps built using MABS 12 and later versions, refer to [Customize the application systems bars with edge-to-edge display](customize-edge-to-edge.md).
+Applies only to Mobile Apps. Apps built using MABS 12 and later versions, refer to [Customize the application system bars with edge-to-edge display](customize-edge-to-edge.md).
 
 </div>
 

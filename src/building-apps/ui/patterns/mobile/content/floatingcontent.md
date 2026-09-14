@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - floating-content-reference
+  - use-floating-content-o11
 ---
 
 # Floating Content

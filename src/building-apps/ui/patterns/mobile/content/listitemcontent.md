@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - list-item-content-reference
+  - use-list-item-content-pattern
 ---
 
 # List Item Content

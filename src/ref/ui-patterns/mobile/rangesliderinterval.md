@@ -1,5 +1,8 @@
 ---
-tags: ui design, user interface components, user interaction, frontend development, event handling
+tags:
+  - Events
+  - OutSystems UI
+  - UI Patterns
 summary: Explore the technical functionalities and events of OutSystems 11 (O11) Range Slider Interval for enhanced UI control in mobile and reactive web apps.
 locale: en-us
 guid: 0a4c0ebb-4ee1-4443-9ab8-971329ca1541

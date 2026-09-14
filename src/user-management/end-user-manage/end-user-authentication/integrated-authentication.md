@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) supports Integrated Windows Authentication for centralized user management and automatic application authentication.
-tags: authentication, security, user management, integrated windows authentication, active directory
+tags:
+  - Active Directory
+  - Authentication
+  - End-user Authentication
+  - Security
 locale: en-us
 guid: 7cfdce45-42ed-4217-9e4b-fdd3bd671f6b
 app_type: traditional web apps

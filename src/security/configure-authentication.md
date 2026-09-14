@@ -1,6 +1,11 @@
 ---
 summary: Explore how to configure app authentication settings in OutSystems 11 (O11) to enhance security and user experience across different app types.
-tags: security, authentication, single sign-on, configuration guide, platform server
+tags:
+  - Authentication
+  - Platform Server
+  - Security
+  - Settings
+  - SSO
 locale: en-us
 guid: 74fffe9e-d6fa-4ea9-a8ae-aa7a34a37511
 app_type: mobile apps, reactive web apps

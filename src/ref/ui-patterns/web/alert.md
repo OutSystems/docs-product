@@ -1,5 +1,9 @@
 ---
-tags: ui patterns, css customization, web development, alert components, animation implementation
+tags:
+  - CSS
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the CSS selectors and advanced use cases for the Alert UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 252cc44d-c1de-4848-869b-55f9c33c3430

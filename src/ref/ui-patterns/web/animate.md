@@ -1,5 +1,8 @@
 ---
-tags: css animations, ui patterns, web development, user interface design, frontend interactions
+tags:
+  - CSS
+  - Traditional Web
+  - UI Patterns
 summary: Explore animation features in Traditional Web Apps using OutSystems 11 (O11) for dynamic UI interactions.
 locale: en-us
 guid: 1aad8f7f-9da7-417a-9cfd-3c159905fc99

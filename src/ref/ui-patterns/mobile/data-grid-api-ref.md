@@ -1,5 +1,11 @@
 ---
-tags: enterprise grade javascript data grid, grid functionalities, outsystems widgets, data grid api
+tags:
+  - Front-End
+  - JavaScript
+  - Table
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Data Grid API reference for OutSystems 11 (O11) covers column widgets, client actions, and structures for reactive web grids.
 locale: en-us
 guid: 1bd5d5c4-98f6-4b5f-a463-865bfccb7339

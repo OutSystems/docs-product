@@ -7,7 +7,10 @@ platform-version: o11
 figma:
 coverage-type:
   - understand
-tags: responsive design, ui patterns, web apps, mobile apps, outsystems 11
+tags:
+  - UI
+  - UI Patterns
+  - Web
 outsystems-tools:
   - none
 isautopublish: true

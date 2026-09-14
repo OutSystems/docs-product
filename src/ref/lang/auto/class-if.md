@@ -5,7 +5,8 @@ guid: cc607302-6a99-4463-9756-adab0f7e2ccd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: conditional branching, action flows, boolean conditions, flow control, service studio features
+tags:
+  - Logic
 audience:
   - Developer
   - Front-end developer

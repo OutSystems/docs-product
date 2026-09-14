@@ -6,7 +6,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=2836%3A3583&mode=design&t=Ix2yojgoXorQvo4C-1
 summary: Explore how OutSystems 11 (O11) enhances code commenting with features like reminders and link embedding in the TrueChange™ tab.
-tags: ide usage, reactive web apps, tutorials for beginners, code commenting, development best practices
+tags:
+  - Logic
 audience:
   - Developer
 outsystems-tools:

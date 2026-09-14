@@ -4343,6 +4343,23 @@ knowledge-needs:
         boolean variable to its Variable property, in Service Studio, so
         that end users can provide boolean input in a form for traditional
         web apps (O11).
+    - name: Use Bottom Sheet pattern
+      id: use-bottom-sheet-pattern
+      description: Wants to add the Bottom Sheet UI Pattern to a screen, add
+        the widget via Toolbox or Search in other modules if the dependency
+        isn't added, add content to the TopBar and Content placeholders,
+        and wire Open and Close buttons using the BottomSheetOpen and
+        BottomSheetClose client actions with the WidgetId property set to
+        BottomSheet.Id, in Service Studio, so that additional information
+        displays and dismisses from the bottom of the screen in mobile
+        apps (O11).
+    - name: Bottom Sheet reference
+      id: bottom-sheet-reference
+      description: Wants to look up the properties and events of the Bottom
+        Sheet UI Pattern in Service Studio, including Shape, ShowHandler,
+        ExtendedClass, and the OnToggle event, so that they can correctly
+        configure the pattern's appearance and behavior, in mobile apps
+        (O11).
     - name: Add icon block
       id: add-icon-block
       description: Wants to add an Icon block from Rich Widgets to a screen
@@ -4495,6 +4512,21 @@ knowledge-needs:
         ImageZoom, and ExtendedClass, so that they can correctly configure
         an image's title, gallery grouping, and full-screen zoom behavior,
         in mobile apps and reactive web apps (O11).
+    - name: Use Section Group pattern
+      id: use-section-group-pattern
+      description: Wants to add the Section Group UI Pattern to a screen, add
+        the widget via Toolbox or Search in other modules if the dependency
+        isn't added, add content to the Title and Content placeholders, and
+        set the HasStickyTitles and TopPosition properties, in Service
+        Studio, so that section titles stay in view while scrolling
+        through content, in mobile apps and reactive web apps (O11).
+    - name: Section Group reference
+      id: section-group-reference
+      description: Wants to look up the properties of the Section Group UI
+        Pattern in Service Studio, including HasStickyTitles, TopPosition,
+        and ExtendedClass, so that they can correctly configure sticky
+        header behavior and custom styling, in mobile apps and reactive
+        web apps (O11).
     - name: Use Tooltip pattern
       id: use-tooltip-pattern
       description: Wants to add the Tooltip UI Pattern to a screen, add the
@@ -4815,6 +4847,15 @@ knowledge-needs:
         the LoadOnVisible pattern to animate elements as they scroll into
         view, in Service Studio, so that UI elements animate dynamically in
         a Traditional Web App (O11).
+    - name: Use Animate pattern
+      id: use-animate-pattern
+      description: Wants to add the Animate UI Pattern to a screen, add the
+        OutSystemsUI dependency via Search in other modules if the widget
+        doesn't display in the Toolbox, add content to its Content
+        placeholder, and configure the AnimationType, Delay, and Speed
+        properties, in Service Studio, so that elements are emphasized with
+        an entrance animation as they appear on screen, in mobile apps and
+        reactive web apps (O11).
     - name: Adaptive UI patterns
       id: adaptive-ui-patterns
       description: Wants to understand what adaptive UI patterns are and why to use them,
@@ -5349,6 +5390,29 @@ knowledge-needs:
         can correctly configure the pattern's initial flipped state, trigger
         behavior, and react to flip changes, in mobile apps and reactive web
         apps.
+    - name: Enable grid column edit
+      id: enable-grid-column-edit
+      description: Wants to enable and configure column editing in the
+        OutSystems Data Grid component, by setting the AllowColumnEdit
+        property to True and adding Column widgets (such as Text, Number,
+        Currency, and Checkbox Columns) with Header and Binding properties
+        configured, in Service Studio, so that end users can edit cell
+        values directly within the Grid, in Reactive Web Apps (O11).
+    - name: Save Data Grid changes
+      id: save-data-grid-changes
+      description: Wants to save edited cell data from the OutSystems Data
+        Grid component to the database, by adding a Save button that runs
+        a client action calling GetChangedLines, deserializing the JSON
+        result with JSON Deserialize, passing it to a Server Action that
+        updates the database, and calling MarkChangesAsSaved to clear
+        change indicators, in Service Studio, in Reactive Web Apps (O11).
+    - name: Data Grid overview
+      id: data-grid-overview
+      description: Wants to understand what the OutSystems Data Grid
+        component is and its key features (data selection and editing,
+        sorting, grouping, and virtual scrolling), and where to download it
+        for Traditional Web and Reactive Web apps, so they can decide
+        whether it fits their data manipulation needs, in OutSystems 11.
   - name: UI performance best practices
     id: ui-performance-best-practices
     description: Wants to apply best practices for optimizing OutSystems 11

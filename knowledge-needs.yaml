@@ -4719,6 +4719,20 @@ knowledge-needs:
         Pattern in Service Studio, including ExtendedClass, so that they
         can correctly configure the pattern's custom styling, in mobile
         apps and reactive web apps (O11).
+    - name: Use List Item Content pattern
+      id: use-list-item-content-pattern
+      description: Wants to add the List Item Content UI Pattern to a
+        screen, add the OutSystemsUI dependency via Search in other
+        modules if the widget doesn't display in the Toolbox, and add
+        content to its placeholders, in Service Studio, so that critical
+        content such as icons, text, and actions organizes in a readable
+        way inside a list, in mobile apps and reactive web apps (O11).
+    - name: List Item Content reference
+      id: list-item-content-reference
+      description: Wants to look up the properties of the List Item
+        Content UI Pattern in Service Studio, including ExtendedClass, so
+        that they can correctly configure the pattern's custom styling,
+        in mobile apps and reactive web apps (O11).
     - name: Use Card Background pattern
       id: use-card-background-pattern
       description: Wants to add the Card Background UI Pattern to a screen,
@@ -4781,6 +4795,12 @@ knowledge-needs:
         numerical data, so that they can choose the appropriate pattern for
         showing counts, percentages, ratings, or progress in a Mobile App or
         Reactive Web App for OutSystems 11.
+    - name: Content patterns overview
+      id: content-patterns-overview
+      description: Wants to know which content UI pattern to use for displaying
+        warnings, errors, tooltips, notifications, or organizing information
+        into sections and lists, so that they can choose the appropriate
+        pattern for a Mobile App or Reactive Web App for OutSystems 11.
     - name: Use Columns pattern
       id: use-columns-pattern
       description: Wants to add the Columns UI Pattern to a screen and configure
@@ -4821,6 +4841,21 @@ knowledge-needs:
         UseMargin, and ExtendedClass, in ODC Studio, so that content overlays on
         top of other screen elements like a map, in mobile apps and reactive web
         apps.
+    - name: Use Floating Content (O11)
+      id: use-floating-content-o11
+      description: Wants to add the Floating Content UI Pattern to a screen,
+        drag it into the Main Content area, add content to its placeholder,
+        and set the mandatory Position property (plus optional UseFullHeight,
+        UseFullWidth, UseMargin, and ExtendedClass properties), including
+        adding the widget via Toolbox or Search in other modules if the
+        dependency isn't added, in Service Studio for OutSystems 11, so that
+        content overlays on top of other screen elements like a map, in
+        mobile apps and reactive web apps.
+    - name: Floating Content reference
+      id: floating-content-reference
+      description: Wants to look up the properties of the Floating Content UI Pattern in
+        Service Studio, so that they can correctly configure the pattern's
+        display and layout, in mobile apps and reactive web apps (O11).
     - name: Use Center Content
       id: use-center-content
       description: Wants to add the Center Content UI Pattern to a screen and
@@ -5249,6 +5284,23 @@ knowledge-needs:
         OptionalConfigs.JustifyHeaders, ExtendedClass, and the OnTabChange
         event, so that they can correctly configure the pattern's layout,
         behavior, and styling, in mobile apps and reactive web apps (O11).
+    - name: Use Section pattern
+      id: use-section-pattern
+      description: Wants to add the Section UI Pattern to a screen, by
+        dragging the widget from the Toolbox into the Main Content area
+        (adding the OutSystemsUI dependency via Search in other modules if
+        it doesn't display), adding content to the Title and Content
+        placeholders, and setting properties like UsePadding and
+        ExtendedClass, in Service Studio, so that they can organize
+        on-screen content into different sections, in mobile apps and
+        reactive web apps (O11).
+    - name: Section reference
+      id: section-reference
+      description: Wants to look up the properties of the Section UI
+        Pattern in Service Studio, including UsePadding and ExtendedClass,
+        so that they can correctly configure padding and custom CSS
+        styling for the pattern, in mobile apps and reactive web apps
+        (O11).
     - name: Use Flip Content pattern
       id: use-flip-content-pattern
       description: Wants to add the Flip Content UI Pattern to a screen, drag

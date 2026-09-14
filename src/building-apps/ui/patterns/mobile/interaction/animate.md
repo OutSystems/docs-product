@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - animate-properties-reference
+  - use-animate-pattern
 ---
 
 # Animate

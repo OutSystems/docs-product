@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - connection-pool-usage
+  - module-reference-tradeoffs
 ---
 
 # Performance Best Practices - References

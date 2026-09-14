@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - input-with-icon-reference
+  - use-input-with-icon-pattern
 ---
 
 # Input with Icon

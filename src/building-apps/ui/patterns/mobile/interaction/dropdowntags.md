@@ -20,6 +20,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - dropdown-tags-nvda-esc
+  - dropdown-tags-reference
+  - use-dropdown-tags-pattern
 ---
 
 # Dropdown Tags

@@ -14,6 +14,9 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - apply
+topic:
+  - define-case-status
+  - update-case-status
 ---
 
 # Case status

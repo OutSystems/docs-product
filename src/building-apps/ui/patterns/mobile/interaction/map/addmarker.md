@@ -21,6 +21,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - add-marker-map-click
 ---
 
 # How to add a marker on map click

@@ -5,7 +5,12 @@ guid: 4238af98-49f2-480c-b837-43bcadba9053
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: test automation, devops, agile methodology, application lifecycle management, quality assurance
+tags:
+  - Agile
+  - Development lifecycle
+  - Lifecycle
+  - Quality Assurance
+  - Testing
 audience:
   - Business analyst
   - Developer

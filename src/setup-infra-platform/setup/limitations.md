@@ -5,7 +5,10 @@ guid: 7f64b9e0-7746-416e-b32d-c770f1322f02
 locale: en-us
 platform-version: o11
 figma:
-tags: cross-platform compatibility, ide shortcuts, multilingual support, ux/ui design, widget properties
+tags:
+  - Front-End
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer

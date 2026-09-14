@@ -1,6 +1,8 @@
 ---
 summary: Explore automated testing strategies and tools in OutSystems 11 (O11) to enhance application delivery and reliability.
-tags: automated testing, application reliability, software testing tools, testing best practices, bddframework
+tags:
+  - Best Practices
+  - Testing
 locale: en-us
 guid: 319b0b59-b9cc-48d8-a776-ea8c0b564711
 app_type: traditional web apps, mobile apps, reactive web apps

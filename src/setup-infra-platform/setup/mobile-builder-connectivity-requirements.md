@@ -5,7 +5,12 @@ guid: 9b32edb6-a14d-46d5-b180-10b6bc0eff3f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: mobile app development, cloud services, amazon cloudfront, network security, api management
+tags:
+  - Infrastructure
+  - IP Filters
+  - Mobile app
+  - Native App
+  - Security
 audience:
   - Developer
   - Front-end developer

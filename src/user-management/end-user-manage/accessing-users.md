@@ -1,6 +1,9 @@
 ---
 summary: Manage end-user roles and access in OutSystems 11 (O11) using the Users app by visiting your specific environment URL.
-tags: user management, access control, security, administrator configuration, environment setup
+tags:
+  - End-users
+  - Groups
+  - Roles
 locale: en-us
 guid: 2cbb2e7d-9936-4bb4-8791-240ade1d1ad6
 app_type: traditional web apps, mobile apps, reactive web apps

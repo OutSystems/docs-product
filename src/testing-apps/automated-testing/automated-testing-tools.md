@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: automated testing, ui testing, test automation tools, load testing, testing best practices
+tags:
+  - Forge
+  - Quality Assurance
+  - Testing
 audience:
   - Developer
   - Front-end developer

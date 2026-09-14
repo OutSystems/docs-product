@@ -5311,6 +5311,20 @@ knowledge-needs:
         registerNavigationHandler JavaScript API, in ODC mobile apps and reactive
         web apps, so that navigation only proceeds when custom business logic
         approves it.
+    - name: Navigate with animations
+      id: navigate-with-animations
+      description: Wants to programmatically navigate between screens using
+        $public.Navigation's navigateBack, navigateForward, and navigateTo
+        JavaScript API functions with optional transition animations, in ODC
+        mobile apps and reactive web apps, so that users experience smoother
+        in-app transitions between screens.
+    - name: Detect history-based navigation
+      id: detect-history-based-navigation
+      description: Wants to check whether the current screen was loaded from
+        browser history using $public.Navigation's navigatedFromHistory
+        JavaScript API, in ODC mobile apps and reactive web apps, so that the
+        app restores UI state and avoids re-running initialization logic when
+        users return via browser history.
     - name: Changing data with UI
       id: changing-data-with-ui
     - name: UI interactions in apps

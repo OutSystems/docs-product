@@ -19,6 +19,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - add-icon-block
+  - add-icon-widget-o11
 ---
 
 # Use Icons

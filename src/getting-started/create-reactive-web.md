@@ -24,10 +24,12 @@ coverage-type:
   - apply
   - understand
 topic:
-  - creating-app-from-scratch
-  - publish-an-app
-  - test-share-app-users
+  - add-table-widget
   - add-widget-ui-pattern
+  - creating-app-from-scratch
+  - import-data-model-excel
+  - publish-an-app-o11
+  - test-share-app-users
 ---
 
 # Create your first Reactive Web App

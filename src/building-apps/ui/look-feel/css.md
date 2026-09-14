@@ -18,6 +18,9 @@ audience:
   - Front-end developer
 outsystems-tools:
   - service studio
+topic:
+  - css-best-practices
+  - customize-app-styles
 coverage-type:
   - understand
   - apply

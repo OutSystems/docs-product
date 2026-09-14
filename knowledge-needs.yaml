@@ -6493,6 +6493,19 @@ knowledge-needs:
   - name: Setting up your OutSystems environment
     id: setup-outsystems-env
     subtopics:
+    - name: Schedule PE upgrade
+      id: schedule-pe-upgrade
+      description: 'Wants to check for and schedule an automatic platform
+        version upgrade of an OutSystems 11 personal environment, by using
+        the Environment tab''s "Check for new platform release" link and
+        the Schedule upgrade button, so that they can control when their
+        personal environment is upgraded.'
+    - name: Cancel scheduled PE upgrade
+      id: cancel-scheduled-pe-upgrade
+      description: 'Wants to cancel an already scheduled automatic platform
+        version upgrade of an OutSystems 11 personal environment, by using
+        the Environment tab''s Cancel upgrade button, so that they can
+        reschedule it for a different time.'
     - name: Wake sleeping PE
       id: wake-sleeping-pe-o11
       description: 'Wants to regain access to an OutSystems 11 personal
@@ -7954,6 +7967,13 @@ knowledge-needs:
         Chrome Developer Tools, Charles, or the iOS Network Link Conditioner,
         so that they can investigate bugs that occur only intermittently or
         under poor network conditions.
+    - name: Android device logs
+      id: android-device-logs
+      description: Wants to extract Android device logs for troubleshooting
+        mobile app issues, by enabling USB debugging, downloading Android
+        platform-tools, and using adb and logcat commands to capture the
+        device log, so that they can send the log file to OutSystems Support
+        for diagnosis.
   - name: Local Storage
     id: local-storage
     subtopics:
@@ -9907,6 +9927,29 @@ knowledge-needs:
         system updates based on their infrastructure configuration (single front-end,
         multiple front-ends, load balancer), so that they can assess the impact on
         their production environment.
+    - name: Schedule demo upgrade
+      id: schedule-demo-upgrade
+      description: Wants to schedule the self-service upgrade of an OutSystems Cloud demo
+        environment to the latest available platform version within the self-
+        service window, by using the "Check for a new platform release" link in
+        the LifeTime console's Environments tab and upgrading Development before
+        Production, so that they control the timing of the upgrade instead of
+        waiting for automatic upgrade.
+    - name: Cancel scheduled upgrade
+      id: cancel-scheduled-demo-upgrade
+      description: Wants to cancel an already scheduled self-service upgrade
+        of an OutSystems Cloud demo environment, by selecting the
+        environment in the LifeTime Environments tab, clicking "Upgrade
+        scheduled for", and confirming the cancellation, so that they can
+        reschedule it for a different time.
+    - name: Demo upgrade timing
+      id: demo-upgrade-timing
+      description: Wants to understand how OutSystems Cloud demo environment upgrades are
+        timed, including the automatic upgrade window that starts once the self-
+        service period ends, the postponement option available during that
+        window, the downtime expected during the upgrade, and that requesting an
+        upgrade before the self-service period opens isn't possible, so that
+        they can plan around the resulting downtime and deadlines.
     - name: SQL Server version upgrade
       id: sql-server-2022-upgrade
       description: Wants to understand what changes during the SQL Server 2022 upgrade of
@@ -13006,6 +13049,13 @@ knowledge-needs:
         shape dragging issues with Polyline and Polygon, and search UI scrolling
         problems, so they can identify whether an issue they're facing is
         already known, apply available workarounds, and decide when to upgrade.
+  - name: Generate BPT troubleshooting report
+    id: generate-bpt-troubleshooting-report
+    description: Wants to generate a BPT troubleshooting report by installing
+      the BPT Utils component in their LifeTime environment (with Full
+      Control permissions) and downloading it from the Troubleshooting
+      Processes page, in OutSystems 11, so that they have diagnostic
+      information for investigating BPT process issues.
 - name: Monitor and Troubleshoot (O10)
   guid: 69e74025-d666-40fd-b224-c96f5cbba50c
   topics:

@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - add-combo-box-widget
+  - add-dropdown-widget
 ---
 
 # Choose One Value from a List

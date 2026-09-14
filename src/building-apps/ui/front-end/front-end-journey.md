@@ -17,6 +17,8 @@ audience:
   - Front-end developer
 outsystems-tools:
   - none
+topic:
+  - front-end-development-journey
 coverage-type:
   - evaluate
   - understand

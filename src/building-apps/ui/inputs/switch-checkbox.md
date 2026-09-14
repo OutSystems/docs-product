@@ -21,6 +21,9 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - add-check-box-widget
+  - add-switch-widget
 ---
 
 # Switch or Toggle a Boolean Value

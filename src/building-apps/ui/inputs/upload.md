@@ -19,6 +19,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-upload-widget-o11
 ---
 
 # Enable End Users to Upload Files

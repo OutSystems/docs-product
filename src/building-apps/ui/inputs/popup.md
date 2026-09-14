@@ -20,6 +20,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - create-popup-editor
+  - create-popup-widget
+  - popup-link-confirmation
 ---
 
 # Create and use a Popup

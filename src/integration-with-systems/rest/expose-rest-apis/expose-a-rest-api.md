@@ -3,6 +3,7 @@ summary: "OutSystems 11 (O11) REST API: create a REST API service and define met
 tags:
   - REST
   - Web services
+
 locale: en-us
 guid: 28d56896-53c1-40c0-ac3d-84c757ac71d0
 app_type: traditional web apps, mobile apps, reactive web apps

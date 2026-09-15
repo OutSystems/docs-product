@@ -1,6 +1,9 @@
 ---
 summary: Explore custom group management techniques in OutSystems 11 (O11) using internal and external systems.
-tags: custom groups, user management, database operations, group hierarchies, system integration
+tags:
+  - Data Model
+  - Entities
+  - Groups
 locale: en-us
 guid: f2dc6e55-9db1-48b6-9e06-796a42618b8d
 app_type: traditional web apps, mobile apps, reactive web apps

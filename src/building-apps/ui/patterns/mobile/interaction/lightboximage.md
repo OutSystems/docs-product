@@ -4,7 +4,6 @@ tags:
   - Front-End
   - Mobile app
   - OutSystems UI
-  - UI
   - UI Patterns
   - Widgets
 summary: Learn how to implement the Lightbox Image UI Pattern in OutSystems 11 (O11) for enhancing image galleries in mobile and reactive web apps.

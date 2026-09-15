@@ -1,6 +1,9 @@
 ---
 summary: Update SAML 2.0 login and logout flows in OutSystems 11 (O11) for Reactive Web Apps using older UI templates.
-tags: saml 2.0, authentication, login flows, outsystems ui, upgrading
+tags:
+  - Authentication
+  - End-user Authentication
+  - SAML
 locale: en-us
 guid: 11596936-2e31-4503-a83c-02513439f95d
 app_type: reactive web apps

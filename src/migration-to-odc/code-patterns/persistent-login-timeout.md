@@ -14,7 +14,11 @@ audience:
   - Developer
   - Architect
   - Tech lead
-tags: persistent login, session timeout, access tokens, single sign-on, security enhancement
+tags:
+  - Authentication
+  - End-user Authentication
+  - Security
+  - SSO
 outsystems-tools:
   - service center
   - service studio

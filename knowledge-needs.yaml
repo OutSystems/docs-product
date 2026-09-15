@@ -1793,6 +1793,23 @@ knowledge-needs:
         workflows, high-scale B2C apps, and low-dependency apps against
         heavy-dependency or UI-extension scenarios, so that they can choose
         the right platform for a new use case.
+    - name: Reuse logic O11-ODC
+      id: reuse-logic-o11-odc
+      description: Wants to reuse business logic between O11 and ODC by
+        exposing it as a REST API on one platform, setting the API Consumer
+        property to identify the other platform as the intended consumer in
+        Service Studio or ODC Studio, and then consuming that REST API on
+        the other platform by setting the API Producer property, so that
+        O11 and ODC apps can call each other's logic exclusively through
+        REST.
+    - name: Secure logic reuse connection
+      id: route-logic-reuse-secure-connection
+      description: Wants to route the REST API requests of an O11-ODC logic
+        reuse integration through a secure connection instead of over the
+        public internet, by using the secure Base URL an administrator
+        created for that stage and setting it as the URL of the Consumed
+        REST APIs in the ODC app's configuration for each deployed stage,
+        so that logic reuse traffic between O11 and ODC stays private.
   - name: Extensions
     id: extensions
     subtopics:

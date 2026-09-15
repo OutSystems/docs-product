@@ -862,6 +862,12 @@ knowledge-needs:
       id: filter-data
     - name: Aggregates
       id: aggregates
+    - name: Sort aggregate data
+      id: sort-aggregate-data
+      description: Wants to sort an Aggregate's returned records in ascending
+        or descending order using the Sorting tab's Add Sort feature, in
+        Service Studio for OutSystems 11, so they can retrieve information
+        such as the first or last record when data is ordered alphabetically.
     - name: Multi-entity aggregate
       id: multi-entity-aggregate
       description: Wants to create an aggregate that joins multiple entities and applies
@@ -1619,6 +1625,13 @@ knowledge-needs:
         outdated table statistics and checking and defragmenting the table in
         Oracle or SQL Server, in OutSystems 11, so that the query optimizer builds
         accurate access plans and performance recovers.
+    - name: Get AWR/ADDM reports
+      id: get-awr-addm-reports
+      description: Wants to generate Oracle AWR (Automatic Workload Repository) and
+        ADDM (Automatic Database Diagnostic Monitor) reports for an OutSystems 11
+        Oracle-backed platform database, using SQL*Plus commands with begin/end
+        snapshot IDs, so that they can diagnose database performance problems such
+        as CPU statistics, wait time statistics, and workload profile issues.
   - name: Indexes
     id: indexes
     subtopics:
@@ -2325,10 +2338,8 @@ knowledge-needs:
         compromised key is minimized.
     - name: Store signing keys
       id: store-jwt-signing-keys
-      description: Wants to choose where to store JWT signing keys in O11
-        (secret site properties, configuration modules, an external identity
-        provider's JWK endpoint, or a Forge component) based on their
-        architecture and platform version, so that keys are stored and
+      description: Wants to choose where to store JWT signing keys based on
+        their architecture and platform version, so that keys are stored and
         retrieved securely.
     - name: Choose token flow
       id: choose-token-flow
@@ -2610,6 +2621,12 @@ knowledge-needs:
         activity, property, or message, and using one-click navigation to
         jump to the affected node and property, so that they can debug
         workflow errors efficiently.
+    - name: Manage workflow history
+      id: manage-workflow-history
+      description: Wants to view the full history of published workflow revisions, and
+        discard unpublished changes or restore the workflow to any previous
+        published revision, in ODC's Workflow editor, so that they can track and
+        recover prior states of a workflow.
   - name: Test a workflow
     id: test-workflow
     description: Wants to verify a workflow works as expected before deploying

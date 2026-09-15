@@ -481,6 +481,12 @@ knowledge-needs:
         users, either programmatically with Grant/Revoke actions or manually
         in the Users app, so they can reason about how permissions are
         structured before implementing them.
+    - name: Built-in end-user access control choice
+      id: builtin-end-user-access-control-choice
+      description: Wants to decide whether to rely on OutSystems' built-in
+        end-user roles and screen or logic permission checks to control
+        access in an application, so that they know whether they need an
+        external authorization layer before implementation.
     - name: REST endpoint permissions
       id: rest-endpoint-permissions
       description: Wants to understand how OutSystems automatically computes
@@ -1060,6 +1066,14 @@ knowledge-needs:
         user, verified with Service Studio''s Debugger, in OutSystems 11, so
         that the Case Management Framework can successfully execute the
         action.'
+    - name: Fix missing access grant
+      id: fix-missing-access-grant
+      description: 'Wants to fix the "There''s no access control for that
+        <user/group>/<case/case definition> pairing." error by verifying the
+        user/group and case/case definition identifier values passed to the
+        Case Management Framework''s access-revoking or access-updating
+        action using Service Studio''s Debugger, in OutSystems 11, so that
+        the action targets an access control record that actually exists.'
 - name: Accessibility
   guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
   topics:
@@ -2648,6 +2662,13 @@ knowledge-needs:
         Top 10 Mobile Risks lists, so that they can use a recognized
         vulnerability baseline when assessing and securing their
         applications.
+    - name: Design-time security warnings overview
+      id: design-time-security-warnings-overview
+      description: Wants to understand which security warnings OutSystems
+        surfaces at design time in Service Studio, and what kinds of issues
+        those warnings help catch before deployment, so that they can evaluate
+        whether the built-in guidance covers their team's secure coding
+        baseline.
 - name: ODC Workflows
   guid: 8f3c2a1d-6e4b-4a7f-9c0d-2b5e7f1a4c9e
   topics:
@@ -3158,6 +3179,14 @@ knowledge-needs:
         parameter''s value using Service Studio''s Debugger before
         executing the action, in OutSystems 11''s Case Management
         Framework, so that the action executes successfully.'
+    - name: Fix tag case mismatch
+      id: fix-tag-case-mismatch
+      description: 'Wants to fix the "The selected Tag and Case belong to
+        different Case Definitions." error by verifying the Tag and Case
+        input values passed to CaseTag_Create belong to the same case
+        definition using Service Studio''s Debugger, in OutSystems 11''s
+        Case Management Framework, so that the action executes
+        successfully.'
     - name: Fix record not found
       id: fix-record-not-found
       description: 'Wants to fix the "<record> wasn''t found" error by
@@ -3165,6 +3194,45 @@ knowledge-needs:
         Debugger and confirming the referenced entity record exists,
         creating it if it doesn''t, in OutSystems 11, so that the Case
         Management Framework action executes successfully.'
+    - name: Fix duplicate ID error
+      id: fix-duplicate-id
+      description: 'Wants to fix the "<record> with the Id
+        "<input-parameter-value>" already exists." error by verifying the
+        input parameter''s value is correct using Service Studio''s
+        Debugger, and changing a create action to its update or
+        create-or-update counterpart if appropriate, in OutSystems 11''s
+        Case Management Framework, so that the action executes
+        successfully.'
+    - name: Fix duplicate tag
+      id: fix-duplicate-tag
+      description: 'Wants to fix the "This combination of Case and Tag already
+        exists." error by verifying the Tag input parameter passed to
+        CaseTag_Create doesn''t already correspond to a tag linked to the
+        case, using Service Studio''s Debugger, in OutSystems 11''s Case
+        Management Framework, so that the action executes successfully.'
+    - name: Fix working hours error
+      id: fix-working-hours-error
+      description: 'Wants to fix the "WorkingHourStart must be set to a time
+        before WorkingHourEnd." error by setting the WorkingHourStart input
+        parameter to a time earlier than the WorkingHourEnd input parameter
+        before calling Calendar_Create or Calendar_Update, verifying the
+        values with Service Studio''s Debugger, in OutSystems 11, so that
+        the Case Management Framework can successfully execute the action.'
+    - name: Fix negative minutes
+      id: fix-negative-minutes
+      description: 'Wants to fix the "The number of minutes must be greater
+        than or equal to zero." error by setting the Minutes input parameter
+        to a value equal to or greater than zero before calling
+        Calendar_GetEndDate, verifying the value with Service Studio''s
+        Debugger, in OutSystems 11, so that the Case Management Framework
+        can successfully execute the action.'
+    - name: Fix unsupported database
+      id: fix-unsupported-database
+      description: Wants to fix the "We're sorry, but this database isn't supported." error
+        by using a database platform that supports advanced queries for the
+        environment before executing an action that requires an advance query,
+        in OutSystems 11's Case Management Framework, so that the action
+        executes successfully.
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -4397,6 +4465,15 @@ knowledge-needs:
         custom application templates, style guide, and applications) and how
         they relate to each other, so they can understand how OutSystems UI
         structures the user interfaces of their applications, in OutSystems 11.
+    - name: Look and feel overview
+      id: look-and-feel-overview
+      description: Wants to understand what capabilities the OutSystems UI
+        Framework provides for customizing an app's look and feel, including
+        CSS style sheets, screen layout placeholders, the style editor,
+        themes, the theme editor, UI patterns, right-to-left content support,
+        and responsive design, in OutSystems 11, so they can determine which
+        OutSystems UI Framework tool to use to enhance their app's user
+        interface and user experience.
   - name: Customize style
     id: customize-style
     subtopics:
@@ -4419,6 +4496,25 @@ knowledge-needs:
         avoiding inline styles and ID selectors, centralizing CSS in the
         theme, and using CSS variables, in Service Studio, so their app's
         styling stays maintainable and scalable.
+    - name: Set stacking order with layer system
+      id: set-stacking-order-layer-system
+      description: Wants to understand and use the OutSystems UI Layer
+        System's z-index CSS variables across its different layer tiers to
+        set stacking order for custom CSS or UI patterns, in OutSystems 11
+        Mobile Apps and Reactive Web Apps, so their custom UI elements stack
+        correctly.
+    - name: Adjust layer system scale
+      id: adjust-layer-system-scale
+      description: Wants to adjust the OutSystems UI Layer System scale by
+        extending or changing the available z-index values for layer tiers,
+        in OutSystems 11 Mobile Apps and Reactive Web Apps, so that custom
+        interface elements fit the app's required stacking model.
+    - name: Mitigate layer system z-index breaking changes
+      id: mitigate-layer-system-z-index-breaking-changes
+      description: Wants to identify and mitigate breaking changes caused by
+        the OutSystems UI Layer System's new z-index values, in OutSystems
+        11 Mobile Apps and Reactive Web Apps, so their app keeps working as
+        expected after adopting the updated layer system.
     - name: Make header scroll
       id: make-header-scroll
       description: Wants to make the London theme's fixed header scroll with the page
@@ -6907,6 +7003,16 @@ knowledge-needs:
         their corresponding ODC REST API resource names (environment,
         application role), so they can correctly interpret API reference
         documentation without confusion between the two naming conventions.
+- name: DevOps and ALM
+  guid: a8f0bc19-a180-4f83-b28e-8c786568516c
+  topics:
+  - name: OutSystems DevOps loop overview
+    id: devops-loop-overview
+    description: Wants to decide whether OutSystems' built-in DevOps and ALM capabilities
+      can replace a custom toolchain for their application lifecycle, so they
+      can determine whether an out-of-the-box DevOps model meets their
+      organization's needs before evaluating the individual lifecycle stages
+      (plan, develop, test, deploy, release, secure, and monitor) in more depth.
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -11004,11 +11110,32 @@ knowledge-needs:
     subtopics:
     - name: Manage technical debt with AIMS
       id: manage-tech-debt
+    - name: Reclassify module
+      id: reclassify-module
+      description: Wants to change a module's classification (architecture
+        layer) in the OutSystems 11 Code Quality canvas, by selecting a new
+        layer in the module details area and confirming the override, so
+        that the app's classification and technical debt score are
+        recalculated to reflect the change.
+    - name: Customize pattern impact
+      id: customize-pattern-impact
+      description: Wants to customize the impact level (weight) that a specific
+        code pattern has on the overall technical debt calculation in O11 Code
+        Quality, by changing its status from Default to Customized in the
+        Maintenance area, so that technical debt priorities reflect their
+        organization's specific needs.
   - name: SAST integration
     id: sast-integration
     subtopics:
     - name: Use third party SAST tools
       id: use-third-party-sast
+    - name: Code Quality security scans overview
+      id: code-quality-security-scans-overview
+      description: Wants to understand which security issues OutSystems Code
+        Quality scans can detect, and how that detection scope compares with
+        third-party SAST tools, so that they can evaluate whether the built-in
+        analysis covers the security checks they need before adding another
+        SAST tool.
   - name: Automated SAST integration in dev
     id: sast-integration-dev
   - name: Automated SAST in CI/CD pipelines
@@ -11016,6 +11143,36 @@ knowledge-needs:
     subtopics:
     - name: Automated low-code analysis and SAST integrated in a CI/CD pipeline
       id: low-code-sast-ci-cd
+  - name: Code Quality product FAQs
+    id: code-quality-product-faqs
+    subtopics:
+    - name: Code Quality licensing
+      id: code-quality-licensing
+      description: Wants to understand how the OutSystems 11 licensing model limits the
+        number of code analysis environments that can be linked to an Activation
+        Code, so that they can determine whether multiple development
+        environments can be analyzed separately.
+    - name: Code Quality probes
+      id: code-quality-probes
+      description: Wants to check, update, or uninstall their Code Quality
+        probes, and change the target code analysis environment, so that they
+        keep the Code Quality Environment Probe, LifeTime Probe, and Shared
+        components current and correctly configured without losing collected
+        technical debt data.
+    - name: Code Quality data privacy
+      id: code-quality-data-privacy
+      description: Wants to understand what platform, module, and personal
+        data Code Quality collects, stores, and retains, and how to give or
+        withdraw GDPR consent or request erasure, so that they can assess
+        compliance before registering their infrastructure.
+    - name: Request unscheduled sync
+      id: request-unscheduled-sync
+      description: Wants to request an unscheduled data synchronization between the Code
+        Quality LifeTime probe and Code Quality SaaS in OutSystems 11, by
+        selecting Request Synchronization in the Code Quality LifeTime plugin's
+        Monitor page, understanding the daily limit on unscheduled requests per
+        scheduled sync, so that they get updated technical debt data sooner than
+        the default sync schedule.
 - name: Testing practice
   guid: 0e440c0c-7db6-41cd-a51c-0c00ccb15e72
   topics:
@@ -11121,6 +11278,32 @@ knowledge-needs:
   - name: Authentication
     id: authentication
     subtopics:
+    - name: IT Users external IdP OIDC overview
+      id: it-users-external-idp-oidc-overview
+      description: Wants to understand what the IT Users Integration with
+        External IdP (OIDC) feature does and why it's used, including
+        reducing password-related risk, consolidating identity providers,
+        and enabling single sign-on for IT users across OutSystems tools, in
+        OutSystems 11, so that they can decide whether to adopt it for
+        securing IT user access and centralize IT user authentication without
+        deploying a separate IAM solution.
+    - name: IT Users external IdP login flow
+      id: it-users-external-idp-login-flow
+      description: Wants to understand how IT users authenticate through
+        the external IdP OIDC login flow when accessing OutSystems tools
+        such as Service Center, LifeTime, Service Studio, and Integration
+        Studio, including the token exchange sequence between the tool,
+        the Server API, and the identity provider, in OutSystems 11, so
+        that they can explain how authentication is handled end-to-end for
+        each tool.
+    - name: External IdP flow exceptions
+      id: external-idp-flow-exceptions
+      description: Wants to know which OutSystems tools and custom apps
+        don't enforce the External IdP (OIDC) login flow for IT users,
+        such as the OSP Tool and apps not using the User_GetUnifiedLoginUrl
+        API, and instead continue to use username and password or LT login
+        authentication plugins, in OutSystems 11, so that they can identify
+        exceptions when planning an External IdP rollout.
     - name: Built-in Authentication
       id: built-in-authentication
     - name: Get authenticated user id
@@ -13718,6 +13901,15 @@ knowledge-needs:
       avoid reusing aggregate output directly as a server action/loop
       input (assigning it to a local variable instead), so that sessions
       stop exceeding the open cursor limit.'
+  - name: Fix registration mismatch
+    id: fix-registration-mismatch
+    description: 'Wants to fix the "Unable to register the Front-end Server"
+      error caused by a mismatched database connection string between a
+      front-end server and the Deployment Controller in a self-managed
+      OutSystems 11 farm environment, by comparing the case-sensitive
+      Configuration Tool database settings on both servers and correcting
+      them to match, so that the Deployment and Scheduler services start
+      successfully.'
   - name: AD auth login workaround
     id: ad-auth-login-workaround
     description: Wants to temporarily disable Active Directory (AD)

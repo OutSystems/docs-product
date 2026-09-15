@@ -2662,6 +2662,20 @@ knowledge-needs:
         CaseStatusConfiguration static entity in the core services module in
         OutSystems 11, so that the bootstrapping action can register it with the
         case definition and it becomes available for assignment to case instances.
+    - name: Enable CMF milestones
+      id: enable-cmf-milestones
+      description: Wants to enable milestone definitions for a case definition
+        by creating a MilestoneConfiguration static entity with the required
+        attributes and adapting the Bootstrap_CaseConfiguration timer action in
+        the core services module in OutSystems 11, so that milestone definitions
+        are fetched and included in the case definition's setup data.
+    - name: Add CMF milestones
+      id: add-cmf-milestones
+      description: Wants to add milestone definitions and associate them with a case
+        definition by creating records with the required attributes in the
+        MilestoneConfiguration static entity in OutSystems 11, so that the
+        Bootstrap_CaseConfiguration timer automatically creates milestone
+        instances for new case instances.
     - name: Update case status
       id: update-case-status
       description: Wants to update the status of an existing case instance using
@@ -3674,6 +3688,13 @@ knowledge-needs:
         (Property and Value) in Service Studio for O11, so that they can
         control message-level headers such as Precedence or Auto-Submitted
         for automated email handling.
+    - name: Email render timeout
+      id: email-render-timeout
+      description: Wants to understand why an OutSystems 11 email fails to send
+        with "The operation has timed out" when the Preparation action's
+        rendering page takes too long, and that SetRequestTimeout has no effect
+        on it, so they reduce the email's render time instead of trying to
+        extend the timeout.
   - name: BPT
     id: bpt
     subtopics:
@@ -4946,6 +4967,13 @@ knowledge-needs:
         warnings, errors, tooltips, notifications, or organizing information
         into sections and lists, so that they can choose the appropriate
         pattern for a Mobile App or Reactive Web App for OutSystems 11.
+    - name: Navigation patterns overview
+      id: navigation-patterns-overview
+      description: Wants to know which navigation UI pattern to use for grouping
+        related content and helping users move around an app, such as Bottom
+        Bar Item, Breadcrumbs, Pagination, Section Index, Submenu, Timeline
+        Item, or Wizard, so that they can choose the appropriate pattern for a
+        Mobile App or Reactive Web App for OutSystems 11.
     - name: Use Columns pattern
       id: use-columns-pattern
       description: Wants to add the Columns UI Pattern to a screen and configure
@@ -6835,6 +6863,16 @@ knowledge-needs:
   - name: Setting up your OutSystems environment
     id: setup-outsystems-env
     subtopics:
+    - name: Restart cloud services
+      id: restart-cloud-services
+      description: Wants to resolve OutSystems Cloud environment health
+        problems caused by synchronization or service errors, by retrying
+        synchronization or using Service Center's Restart Services option,
+        understanding that this performs an IIS reset, clears application
+        pools, restarts the core OutSystems services, and balances
+        front-end restarts across multiple servers, so that transient
+        Cloud environment issues are resolved without opening a support
+        case.
     - name: Schedule PE upgrade
       id: schedule-pe-upgrade
       description: 'Wants to check for and schedule an automatic platform
@@ -6942,6 +6980,15 @@ knowledge-needs:
         space, including access to the development stage, assets, logs, configurations,
         end-user management, and Forge, so they can plan what they can build and manage
         during the trial.
+    - name: PE database space
+      id: pe-database-space
+      description: Wants to check how much database space (system data versus application
+        data) their OutSystems 11 personal environment is using via the
+        Environments tab's "View details" link, understanding that usage figures
+        refresh periodically and knowing to open a Support Case with OutSystems
+        if usage reaches the platform's storage limit, so that they can monitor
+        space and get help unblocking the environment before it becomes
+        unavailable.
     - name: PE 503 recovery
       id: pe-503-resource-limit
       description: 'Wants to diagnose an HTTP 503 "Service Unavailable" error
@@ -8652,6 +8699,22 @@ knowledge-needs:
         running in the On Initialize event handler before the screen DOM loads,
         by moving them to On Ready or another later event handler, so that the
         destination screen loads quickly.
+    - name: Fix viewport-fit empty bar
+      id: fix-viewport-fit-empty-bar
+      description: Wants to fix the empty bottom bar that appears above the home
+        button on iPhone X devices after applying the documented viewport-fit
+        meta tag workaround for the MABS 4.0 iOS 12 known issue, by changing
+        the Status Bar background color and the WebView's default background
+        color at runtime, so that the app appears full-screen without the
+        empty bar.
+    - name: iOS video upload issue
+      id: ios-video-upload-issue
+      description: 'Wants to understand why videos selected from the file
+        system (not filmed in-app) fail to upload via the Upload widget
+        in OutSystems mobile apps on iOS 10.3.1-10.3.3, due to Apple''s
+        UIWebView changes to input type="file" fields that Apple has
+        declined to fix, so they know this is a known, unresolved platform
+        limitation rather than an OutSystems bug.'
   - name: Mobile app performance best practices
     id: mobile-app-performance-best-practices
     subtopics:
@@ -11960,6 +12023,14 @@ knowledge-needs:
         server's SSL settings to support at least one of the required cipher
         suites, so that Android devices can connect over HTTP/2 through the
         reverse proxy.
+    - name: Fix broken app links
+      id: fix-broken-app-links
+      description: Wants to fix links in their OutSystems 11 app that unexpectedly
+        switch from HTTPS to HTTP or expose an internal server hostname instead
+        of the expected domain, caused by a reverse proxy or load balancer not
+        passing through the original protocol and Host header, so that they can
+        restore correct URLs by enabling SSL offload pass-through and preserving
+        the host header at the network layer.
   - name: Web Application Firewall
     id: web-application-firewall
     subtopics:
@@ -12355,6 +12426,15 @@ knowledge-needs:
         permissions and Application Pool identities, so that the platform
         continues running correctly under the new authentication mode
         without undesired behavior.
+    - name: Change DB address
+      id: change-database-address
+      description: Wants to change the address of an OutSystems database
+        (Platform, Log, or Session) used by applications on a self-managed
+        OutSystems 11 infrastructure, by updating it in the Configuration
+        Tool on each application server and then creating and applying an
+        All Components solution across all modules, so that the
+        applications reconnect to the new database address without
+        altering application data.
   - name: LifeTime environment setup
     id: lifetime-environment-setup
     subtopics:
@@ -13488,6 +13568,39 @@ knowledge-needs:
       The operation has timed out", caused by a fixed, non-configurable client-
       side timeout that SetRequestTimeout cannot extend, so they know to break
       down long-running logic instead of trying to raise the limit.'
+  - name: Diagnose HTTP 502 errors
+    id: diagnose-http-502-errors
+    description: Wants to identify why an OutSystems 11 application returns
+      an HTTP 502 bad gateway error, by comparing IIS/proxy access logs to
+      distinguish a proxy timeout, a dropped proxy-to-server connection, or
+      queued requests exceeding the proxy timeout, so they can pinpoint the
+      correct cause at the network layer.
+  - name: React 16 runtime (technical preview)
+    id: react-16-runtime-technical-preview
+    subtopics:
+    - name: React 16 preview prereqs
+      id: react-16-preview-prereqs
+      description: Wants to know the requirements (the minimum required versions of
+        Platform Server, LifeTime, and Service Studio, and how to activate the
+        React 16 technical preview in LifeTime) to test their Reactive Web and
+        Mobile apps on the React 16 runtime in OutSystems 11 before it becomes
+        the default, so they can anticipate breaking changes ahead of the
+        upgrade.
+    - name: React 16 runtime side effects
+      id: react-16-runtime-side-effects
+      description: Wants to identify the behavioral differences introduced
+        by the React 16 runtime in Reactive Web and Mobile apps (widgets
+        ignoring JavaScript-tampered events, all unknown HTML attributes
+        now rendering, and `option` element children being stringified),
+        so they can fix or work around app issues before React 16 becomes
+        the default runtime in OutSystems 11.
+    - name: React 16 known issues
+      id: react-16-known-issues
+      description: Wants to check the known issues (pending and fixed) with
+        the React 16 runtime technical preview for Reactive Web and Mobile
+        apps in OutSystems 11, so they can tell whether an issue they're
+        facing is already known and in which Platform Server version it
+        was fixed.
 - name: Monitor and Troubleshoot (O10)
   guid: 69e74025-d666-40fd-b224-c96f5cbba50c
   topics:

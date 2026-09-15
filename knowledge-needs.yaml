@@ -1656,11 +1656,13 @@ knowledge-needs:
         accurate access plans and performance recovers.
     - name: Get AWR/ADDM reports
       id: get-awr-addm-reports
-      description: Wants to generate Oracle AWR (Automatic Workload Repository) and
-        ADDM (Automatic Database Diagnostic Monitor) reports for an OutSystems 11
-        Oracle-backed platform database, using SQL*Plus commands with begin/end
-        snapshot IDs, so that they can diagnose database performance problems such
-        as CPU statistics, wait time statistics, and workload profile issues.
+      description: Wants to generate and interpret Oracle AWR (Automatic Workload
+        Repository) and ADDM (Automatic Database Diagnostic Monitor) reports for
+        an OutSystems 11 Oracle-backed platform database, using SQL*Plus commands
+        with begin/end snapshot IDs, including ADDM automated diagnostics and
+        recommendations, so that they can identify the root cause of database
+        performance problems such as CPU statistics, wait time statistics, and
+        workload profile issues.
   - name: Indexes
     id: indexes
     subtopics:
@@ -8358,6 +8360,12 @@ knowledge-needs:
         Center's Environment Health screen, including per-platform status
         and generation logs, so that they can detect when the service is
         down and mobile app packages aren't being generated.
+    - name: Access MABS generation log
+      id: access-mabs-generation-log
+      description: Wants to access the mobile app package generation log for
+        a specific platform in OutSystems 11, using Application Management
+        in Service Studio or the Distribute tab in Service Center, so that
+        they can review or share generation details for troubleshooting.
   - name: Troubleshoot MABS build errors
     id: troubleshoot-mabs-build-errors
     subtopics:
@@ -8565,6 +8573,12 @@ knowledge-needs:
         platform-tools, and using adb and logcat commands to capture the
         device log, so that they can send the log file to OutSystems Support
         for diagnosis.
+    - name: iOS device logs
+      id: ios-device-logs
+      description: Wants to retrieve iOS device logs for troubleshooting
+        mobile app issues, using Apple Configurator 2, Xcode, iTools, or
+        iOSLogInfo, so that they can send the log file to OutSystems
+        Support for diagnosis.
   - name: Local Storage
     id: local-storage
     subtopics:
@@ -11025,6 +11039,15 @@ knowledge-needs:
         membership, in Traditional Web Apps using Integrated Windows
         Authentication, so that app logic can act on the authenticated
         Windows user's identity and role without a custom login mechanism.
+    - name: Fix recurring WIA popup
+      id: fix-recurring-wia-popup
+      description: Wants to stop the Windows Integrated Authentication (WIA)
+        login popup from repeatedly reappearing for end users in an
+        OutSystems 11 .NET Traditional Web app, by restricting WIA to the
+        login page instead of every page (relying on Roles for access
+        control) or by configuring the browser to trust the server for
+        implicit authentication, so that users aren't repeatedly prompted
+        for credentials during normal use.
     - name: Extend login validation
       id: extend-login-validation
       description: Wants to add custom server-side validation to the built-in
@@ -13423,6 +13446,59 @@ knowledge-needs:
         delay connecting Service Studio and Chrome, by reusing the existing
         Chrome window or disabling "Automatically detect settings" in
         Chrome''s proxy settings, so debugging starts successfully.'
+    - name: Capture HAR file
+      id: capture-har-file
+      description: Wants to capture a Network HAR file for troubleshooting an
+        application issue, by opening the browser's developer tools,
+        enabling network log recording and preservation, reproducing the
+        issue, and exporting the captured traffic, across Google Chrome,
+        Firefox, Edge, and IE11, so they have the network trace needed to
+        diagnose the problem in OutSystems 11.
+  - name: Log source catalog
+    id: log-source-catalog
+    description: Wants to know which log or report file to collect for a
+      specific OutSystems 11 component (Service Center, mobile app
+      generation, Service Studio, LifeTime, Windows Event Viewer,
+      Android/iOS devices, IIS, Java, OutSystems services, or the
+      database) when preparing a support case, so they know where each
+      log is available and which one applies to their issue.
+    subtopics:
+    - name: Obtain Java logs
+      id: obtain-java-logs
+      description: Wants to obtain JBoss, WildFly, or WebLogic server logs
+        for a self-managed OutSystems 11 environment, by connecting to the
+        server and locating the log files at their default installation
+        paths for each app server, so that they can zip and attach them to
+        a support case.
+    - name: Export Windows event logs
+      id: export-windows-event-logs
+      description: Wants to export a copy of Windows event logs (Application, Security,
+        or System) for a specific OutSystems 11 environment, by connecting via Remote
+        Desktop, opening Windows Event Viewer, and using Save All Events As, so that
+        they have a log file to review or send to OutSystems Support.
+    - name: LifeTime infrastructure report
+      id: lifetime-infrastructure-report
+      description: Wants to download the LifeTime infrastructure report to
+        attach to an OutSystems Support case, by accessing the LifeTime
+        troubleshoot page (OutSystems 11) or using the Send us your feedback
+        icon in the LifeTime console (OutSystems 10) to save the file, so
+        that Support has the information needed to investigate an
+        infrastructure-level issue.
+    - name: LifeTime staging report
+      id: lifetime-staging-report
+      description: Wants to download the staging report for a specific
+        deployment plan to attach to an OutSystems Support case, by using
+        the Deployment/Staging list on the LifeTime troubleshoot page
+        (OutSystems 11) or the environment's Change Log and DebugStaging
+        page (OutSystems 10), so that Support has the deployment
+        diagnostic information needed to investigate a staging issue.
+    - name: LifeTime user permissions report
+      id: lifetime-user-permissions-report
+      description: Wants to download the user permissions report to attach
+        to an OutSystems Support case, by using the LifeTime troubleshoot
+        page (OutSystems 11) or the DebugPermissions page (OutSystems 10)
+        to save the file, so that Support has the information needed to
+        investigate a permissions issue.
   - name: Fix cross-site cookies (O11)
     id: fix-cross-site-cookies-o11
     description: Wants to identify and fix cross-site cookie problems in

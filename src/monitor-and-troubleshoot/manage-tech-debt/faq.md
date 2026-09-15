@@ -21,6 +21,10 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - unblock
+topic:
+  - code-quality-data-privacy
+  - code-quality-licensing
+  - code-quality-probes
 isautopublish: true
 ---
 

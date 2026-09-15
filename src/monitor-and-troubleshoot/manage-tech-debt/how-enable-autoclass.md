@@ -19,6 +19,8 @@ outsystems-tools:
   - code quality
 coverage-type:
   - apply
+topic:
+  - manage-tech-debt
 isautopublish: true
 ---
 

@@ -22,6 +22,8 @@ coverage-type:
   - evaluate
   - understand
 isautopublish: true
+topic:
+  - devops-loop-overview
 ---
 
 # DevOps and ALM in OutSystems

@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - look-and-feel-overview
 ---
 
 # Look and Feel

@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - manage-tech-debt
 isautopublish: true
 ---
 

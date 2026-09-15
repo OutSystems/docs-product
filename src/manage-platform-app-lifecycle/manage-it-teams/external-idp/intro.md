@@ -22,6 +22,10 @@ outsystems-tools:
   - service center
 coverage-type:
   - understand
+topic:
+  - external-idp-flow-exceptions
+  - it-users-external-idp-login-flow
+  - it-users-external-idp-oidc-overview
 isautopublish: true
 ---
 

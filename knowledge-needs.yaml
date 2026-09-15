@@ -3158,6 +3158,13 @@ knowledge-needs:
         parameter''s value using Service Studio''s Debugger before
         executing the action, in OutSystems 11''s Case Management
         Framework, so that the action executes successfully.'
+    - name: Fix record not found
+      id: fix-record-not-found
+      description: 'Wants to fix the "<record> wasn''t found" error by
+        verifying the input parameter''s value using Service Studio''s
+        Debugger and confirming the referenced entity record exists,
+        creating it if it doesn''t, in OutSystems 11, so that the Case
+        Management Framework action executes successfully.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:

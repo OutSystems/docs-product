@@ -13480,6 +13480,13 @@ knowledge-needs:
       database) when preparing a support case, so they know where each
       log is available and which one applies to their issue.
     subtopics:
+    - name: Use OSDiagTool
+      id: use-osdiagtool
+      description: Wants to collect Windows server system information and logs for an
+        OutSystems 11 support case, by downloading, configuring, and running
+        OSDiagTool and sending the generated ZIP file to OutSystems Support, so
+        that Support has the diagnostic information needed to investigate the
+        issue.
     - name: Obtain Java logs
       id: obtain-java-logs
       description: Wants to obtain JBoss, WildFly, or WebLogic server logs

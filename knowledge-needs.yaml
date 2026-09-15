@@ -81,6 +81,15 @@ knowledge-needs:
         Service Studio/ODC Studio, so that the widget is automatically
         wired to trigger the newly created logic without adding a separate
         action and connector afterward.
+    - name: Build CRUD server action
+      id: build-crud-server-action-odc
+      description: Wants to create a server action in ODC Studio with an
+        entity-typed input parameter, drag the entity's built-in
+        CreateOrUpdate entity action into the logic flow, and set its
+        Source property to the input parameter, so that data entered on a
+        form screen (for example, Employee, Project, or project member
+        details) creates or updates the corresponding database record when
+        the user clicks Save.
     - name: Define async action
       id: define-async-client-action
       description: Wants to make a client action asynchronous and signal its
@@ -328,6 +337,16 @@ knowledge-needs:
       id: output-parameters
     - name: How to use Variables
       id: how-to-use-variables
+    - name: Reset form after save
+      id: reset-form-after-save
+      description: Wants to reset a screen's form to a blank state after
+        saving a record, and reuse the same identifier input parameter to
+        view or edit an existing record, by adding an Identifier-typed
+        screen input parameter, filtering the screen's Aggregates with it,
+        and setting it via a Destination node to NullIdentifier() (reset)
+        or GetX.List.Current.X.Id (edit), so that a single detail screen
+        supports add, view, and edit flows for master-detail navigation in
+        ODC Studio.
     - name: Record auto-assign
       id: record-auto-assign
       description: 'Wants to automatically populate a Record variable''s attribute

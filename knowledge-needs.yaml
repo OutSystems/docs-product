@@ -692,6 +692,22 @@ knowledge-needs:
     subtopics:
     - name: Get data from external db
       id: get-data-from-external-db
+    - name: Create SAP entity actions
+      id: create-sap-entity-actions
+      description: Wants to generate default entity actions for a
+        non-hierarchical external SAP OData connection, by selecting
+        non-navigation-property attributes in the ODC Portal and adding
+        the entity as a public element in ODC Studio, so that they can
+        use the generated Create, Update, and Delete entity actions in
+        their app logic.
+    - name: Create SAP deep insert
+      id: create-sap-deep-insert
+      description: Wants to generate a custom deep insert server action
+        for an external SAP OData connection with hierarchical
+        (navigation property) attributes, by selecting those attributes
+        in the ODC Portal and adding the resulting server action as a
+        public element in ODC Studio, so that they can insert an entity
+        and its related entities in a single atomic transaction.
   - name: Adding test data
     id: adding-test-data
     subtopics:

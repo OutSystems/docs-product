@@ -1582,6 +1582,14 @@ knowledge-needs:
         single-record insert, multiple-record insert, upsert, and insert/upsert
         from a SELECT in an ODC SQL node, so they can determine which operations
         are available before writing a query against a given external system.
+    - name: SQL best practices
+      id: sql-best-practices
+      description: Wants to follow best practices when writing SQL nodes in ODC
+        Studio — using input parameters, limiting the number of records fetched,
+        avoiding queries inside cycles, selecting only the required attributes
+        instead of the whole entity, and defining an output structure that
+        matches the expected result set — so their SQL queries stay secure,
+        performant, and maintainable.
   - name: Compound data
     id: compound-data
   - name: Binary data actions
@@ -1826,6 +1834,23 @@ knowledge-needs:
         created for that stage and setting it as the URL of the Consumed
         REST APIs in the ODC app's configuration for each deployed stage,
         so that logic reuse traffic between O11 and ODC stays private.
+    - name: Reflect O11 changes
+      id: reflect-o11-changes
+      description: Wants to reflect an O11 data model change (new entities,
+        changed attributes, or exposure settings) in their ODC apps, by
+        updating the exposed entities in LifeTime, refreshing the O11
+        connection in the ODC Portal, and updating dependencies in ODC
+        Studio, following the O11-to-ODC development lifecycle order (dev,
+        QA, production) for each environment, so the ODC app doesn't fail
+        at runtime looking for database columns or views that don't yet
+        exist.
+    - name: O11 breaking changes
+      id: o11-breaking-changes
+      description: Wants to identify which O11 data model changes break an
+        ODC app (removing an exposed entity, or removing an entity
+        attribute that's used in the app) versus safe changes (exposing a
+        new entity, renaming an exposed entity, adding a non-mandatory
+        attribute, or removing an unused attribute).
   - name: Extensions
     id: extensions
     subtopics:
@@ -2562,12 +2587,13 @@ knowledge-needs:
         inline scripts/styles in Reactive Web Apps on OutSystems 11, so that
         they can identify what breaks and how to fix it before disabling these
         directives.
-    - name: Configure CSP for iOS
-      id: configure-csp-ios
+    - name: Configure CSP for mobile app iframes
+      id: configure-csp-mobile-app-iframes
       description: Wants to configure Content Security Policy directives with the explicit
-        https:// protocol and correct iframe frame-ancestors values, so that
-        CSP-protected resources and iframes load successfully in iOS native
-        mobile apps built with MABS 12 or later on ODC.
+        https:// protocol and the correct frame-ancestors values, including
+        adding the outsystems:// scheme alongside https:// when iframe content
+        works on Android but is blocked on iOS, so that CSP-protected
+        resources and iframes load successfully in native mobile apps.
     - name: CSP mobile app propagation
       id: csp-mobile-app-propagation
       description: Wants to understand how activating, updating, or
@@ -3118,6 +3144,20 @@ knowledge-needs:
         exceeded, by adding a Conditional Start based on the SLAOverdue
         ProcessEventType, in OutSystems 11's Case Management Framework, so
         that overdue cases are automatically handled.
+    - name: Process still running
+      id: process-still-running
+      description: 'Wants to understand why a BPT process stays open with
+        "The process is still running" error when it has pending or running
+        events, caused by the Wait activity''s auto-retry after an
+        unhandled exception, in OutSystems 11''s Case Management Framework,
+        so that they can confirm no action is required.'
+    - name: Fix invalid input
+      id: fix-invalid-input
+      description: 'Wants to fix the "The <input-parameter> you''ve entered
+        is either incorrect or null." error by verifying the input
+        parameter''s value using Service Studio''s Debugger before
+        executing the action, in OutSystems 11''s Case Management
+        Framework, so that the action executes successfully.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -4325,6 +4365,14 @@ knowledge-needs:
         that navigate back to the mobile app open in the top window by setting
         target="_top" on those links, in O11 Mobile Apps using an iframe block,
         so that the app avoids nested iframes (cascade syndrome).
+    - name: Fix Safari cookie block
+      id: fix-safari-cookie-block
+      description: Wants to fix an embedded O11 Mobile App iframe that loads
+        but doesn't behave as expected in Safari on iOS/macOS, caused by
+        Intelligent Tracking Prevention blocking third-party cookies, by
+        implementing OAuth 2.0 token forwarding to a first-party session or
+        Apple's Storage Access API consent flow, so cross-domain iframe
+        content keeps working.
   - name: Front end architecture
     id: front-end-architecture
     subtopics:
@@ -6734,6 +6782,16 @@ knowledge-needs:
         by staging the renamed app or module to the target environment
         first, in OutSystems 11, so that the staging plan completes
         successfully.'
+    - name: Slow farm publishing
+      id: slow-farm-publishing
+      description: Wants to fix slow publishing, staging, or deployment in self-managed
+        OutSystems 11 farm installations running an affected Platform Server
+        version where the deployment zone address is set to the load balancer's
+        hostname, by confirming the symptom pattern (slow Deployment phase,
+        SLOWEXTENSION RefreshISAPIFilters entries, RefreshPathRules connection
+        errors) and applying the Compiler.UseFrontEndAddressRefreshPaths
+        database workaround or upgrading to a version that resolves the issue,
+        so that deployments complete in normal time.
   - name: Troubleshoot SEO-friendly URLs
     id: troubleshoot-seo-friendly-urls
     subtopics:
@@ -7160,6 +7218,17 @@ knowledge-needs:
         GAC on the platform server, by removing or replacing the DLL using OraProvCfg.exe,
         so that Configuration Tool, Service Studio, and application runtime stop throwing
         Oracle driver errors.
+    - name: Fix service permissions
+      id: fix-service-permissions
+      description: 'Wants to fix the "Failed to set permissions for OutSystems
+        services" error when installing or upgrading to Platform Server
+        11.12.0 or later in a self-managed environment, caused by Active
+        Directory Group Policy blocking creation of the lower-privilege
+        OSControllerUser/OSSchedulerUser (or NT Service) accounts, by adding
+        those accounts to the "Create symbolic links" user rights assignment
+        via Group Policy Management, so that the Deployment Controller and
+        Scheduler Services can run with least-privilege accounts and
+        installation completes.'
     - name: ODC shared trial
       id: odc-shared-trial
       description: Wants to understand what the ODC shared space trial is, how long
@@ -13539,6 +13608,13 @@ knowledge-needs:
         page (OutSystems 11) or the DebugPermissions page (OutSystems 10)
         to save the file, so that Support has the information needed to
         investigate a permissions issue.
+    - name: Export SC logs
+      id: export-sc-logs
+      description: Wants to export Service Center application logs (such as
+        Errors or General) in OutSystems 11, by selecting the log type in the
+        Monitoring section, resetting filters, and using Export to Excel, so
+        they have a log file to review or attach to a support case, given
+        that Service Center has a limited log retention window.
   - name: Fix cross-site cookies (O11)
     id: fix-cross-site-cookies-o11
     description: Wants to identify and fix cross-site cookie problems in
@@ -13671,6 +13747,23 @@ knowledge-needs:
       running a direct UPDATE OSSYS_USER database query on any self-managed
       version, so that end users regain access to the Users app
       administrator account.
+  - name: Fix SAML decrypt error
+    id: fix-saml-decrypt-error
+    description: 'Wants to resolve the "Unable to decrypt the assertion" error
+      that occurs during end-user SAML authentication in OutSystems 11,
+      caused by a certificate mismatch between the Service Provider (SP)
+      and Identity Provider (IdP), by regenerating the SP KeyStore in the
+      Users application, downloading the new KeyStore and SP metadata XML,
+      and re-uploading both to the IdP, so that end users can successfully
+      authenticate.'
+  - name: Fix SAML signature error
+    id: fix-saml-signature-error
+    description: 'Wants to resolve the "Unable to create SAML signature" error
+      that occurs during end-user SAML logout in an OutSystems 11 personal
+      environment, understanding it''s caused by personal environment
+      hosting infrastructure security constraints and only affects the free
+      personal environment offering, so they know this is expected behavior
+      rather than a misconfiguration.'
   - name: Release environment serial
     id: release-environment-serial
     description: Wants to release an OutSystems 11 environment's serial
@@ -14028,6 +14121,29 @@ knowledge-needs:
         and the reasons behind an "Invalid voucher" error (expired, wrong
         exam type, or already used), so that they can successfully apply the
         discount without registration issues.
+  - name: Community account overview
+    id: community-account-overview
+    subtopics:
+    - name: Community participation overview
+      id: community-participation-overview
+      description: Wants to understand how an OutSystems community account
+        helps them participate in community spaces and activities, so they can
+        decide how to engage with other community members.
+    - name: Training access overview
+      id: training-access-overview
+      description: Wants to understand how an OutSystems community account
+        connects them to OutSystems learning resources, so they can plan how
+        to use the platform for training and skill development.
+    - name: Support access overview
+      id: support-access-overview
+      description: Wants to understand how an OutSystems community account
+        relates to support interactions and when extra permissions affect that
+        access, so they know which support tasks they can perform.
+    - name: Community account settings overview
+      id: community-account-settings-overview
+      description: Wants to understand which profile and account settings they
+        can manage with an OutSystems community account, so they know where to
+        update their personal details and account preferences.
   - name: Support Portal
     id: support-portal
     subtopics:

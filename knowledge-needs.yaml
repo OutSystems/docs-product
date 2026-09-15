@@ -3256,6 +3256,13 @@ knowledge-needs:
         its role as a shared, cross-portfolio building block with an independent
         lifecycle, so that they can decide when to use a library in their app
         architecture.
+    - name: Module types overview
+      id: module-types-overview
+      description: Wants to understand the different module types available in OutSystems
+        11 and how a producer module's exposed logic differs by type for the
+        consumer modules that reference it, including modules with no UI, so
+        that they can choose the right module type when structuring an app for
+        reuse.
   - name: Core module patterns
     id: core-module-patterns
     subtopics:
@@ -3810,6 +3817,14 @@ knowledge-needs:
         so that they know instances continue executing unaffected regardless
         of whether they've already passed the added activity, haven't reached
         it yet, or are in a newly added branch.
+    - name: Delete activity impact
+      id: process-upgrade-delete-activity-impact
+      description: Wants to understand how deleting activities from a process
+        flow affects executing process instances after publishing, in
+        OutSystems 11, including using a Decision tool workaround to avoid
+        suspension and checking active instances via BAM, Service Center, or
+        the platform database, so that they can safely remove deprecated
+        activities without suspending running processes.
     - name: BPMN notation
       id: bpmn-notation
     - name: Patterns for processes (automatic, human, decision)
@@ -4457,6 +4472,13 @@ knowledge-needs:
   - name: Adding UI Elements to a Screen
     id: add-ui-elements
     subtopics:
+    - name: Group inputs with forms
+      id: group-inputs-with-forms
+      description: Wants to understand what a Form widget is and how it
+        groups input widgets to collect, submit, and validate user data in
+        real time, in OutSystems 11 traditional web apps, mobile apps, and
+        reactive web apps, so that they can decide when to use a form on a
+        screen.
     - name: Use UI accelerator
       id: use-ui-accelerator
       description: Wants to add a pre-built OutSystems UI Accelerator (such
@@ -6752,6 +6774,14 @@ knowledge-needs:
       description: Wants to list libraries programmatically by using the
         Portfolio API v2 REST endpoints, so they can discover available
         libraries before automating library administration.
+    - name: Migrate Portfolio API
+      id: migrate-portfolio-api-v1-v2
+      description: Wants to migrate an existing Portfolio API v1 integration to v2 in ODC
+        before v1 is sunset, by updating endpoint URL paths, replacing removed
+        or renamed Environment fields with their v2 equivalents, handling the
+        removed EnvironmentPurpose enum value, and accounting for deployment
+        URLs built from the default domain, so that their integration keeps
+        working after v1 is removed.
   - name: ODC public REST APIs
     id: odc-public-rest-apis
     subtopics:
@@ -11292,6 +11322,15 @@ knowledge-needs:
         O11 as an external identity provider in ODC, assigning it to an ODC
         stage, and configuring redirect URIs, so that end users authenticating
         with O11 built-in authentication get single sign-on access to ODC apps.
+    - name: O11-ODC interop limits
+      id: o11-odc-interop-limitations
+      description: Wants to know the limitations of O11-ODC user
+        interoperability before setting up SSO, including that the UsersIdP
+        component only supports O11 built-in authentication,
+        external-authentication interoperability is limited to protocols ODC
+        supports, and O11 and ODC apps can't be served from the same
+        subdomain, so they can plan realistic domain and authentication
+        architecture.
     - name: Configure auth settings
       id: configure-app-authentication-settings
       description: Wants to configure OutSystems 11 app authentication settings

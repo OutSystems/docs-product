@@ -33,15 +33,18 @@ knowledge-needs:
         action's behavior.
     - name: Use AI logic suggestions
       id: use-ai-logic-suggestions
-      description: Wants to understand what AI logic suggestions are and how to use
-        them in ODC Studio action flows, including accessing suggestions via the AI
-        radar, accepting them, and applying tips to improve suggestion quality, so
-        that they can build logic faster with ML-guided assistance.
+      description: Wants to understand what logic suggestions are and how to use
+        them in action flows, including starting and naming the flow to trigger
+        suggestions, accessing and accepting suggestions via the AI radar, using
+        specific and generic suggestion types, and applying tips to improve suggestion
+        quality, so that they can build application logic faster with AI-assisted
+        suggestions.
     - name: Enable logic suggestions
       id: enable-logic-suggestions
-      description: Wants to enable or disable AI logic suggestions in ODC Studio
-        Preferences, so that they can control whether the feature is active during
-        development.
+      description: Wants to enable or disable logic suggestions in Studio Preferences
+        (called Code Mentor in Service Studio and AI logic suggestions in ODC Studio),
+        so that they can control whether suggestions appear while building action
+        flows.
     - name: AI logic suggestions model
       id: ai-logic-suggestions-model
       description: Wants to understand how the AI logic suggestions model works,
@@ -55,6 +58,13 @@ knowledge-needs:
         in OutSystems 11 (OutSystems built-in actions, custom actions, and actions
         that handle system events) and when each applies, so that they can choose
         the right type of action when designing application logic.
+    - name: Troubleshoot Code Mentor
+      id: troubleshoot-code-mentor
+      description: Wants to troubleshoot Code Mentor issues in Service Studio,
+        such as no more suggestions appearing, needing to click again to get
+        suggestions, the AI radar not showing up due to missing prerequisites,
+        or the AI radar disappearing due to connectivity problems, so that they
+        can resolve the issue and keep using logic suggestions.
     - name: Iterate a list
       id: iterate-a-list
       description: Wants to loop over each element in a collection using the
@@ -2685,6 +2695,20 @@ knowledge-needs:
         scenarios for each (e.g. approvals, support cases, claims handling),
         in OutSystems 11, so that they can gauge the complexity and scope of
         their own case management app.
+    - name: Understand subcases
+      id: understand-subcases
+      description: Wants to understand what a subcase is, how it relates to a
+        parent case via the CaseRelation entity, and when to use one to
+        abstract a complex set of steps from the parent case, in OutSystems
+        11's Case Management Framework, so that they can decide whether to
+        model part of their process as a subcase.
+    - name: Track subcase completion
+      id: track-subcase-completion
+      description: Wants to track subcase completion from the parent case's
+        process by adding a Wait node with a relevant timeout and an On Close
+        callback action to the parent's Business Process Technology flow, in
+        OutSystems 11's Case Management Framework, so that the parent case can
+        react once the subcase finishes.
     - name: Bootstrap CMF app
       id: bootstrap-cmf-app
       description: Wants to create the foundational modules of a case management app
@@ -3037,6 +3061,28 @@ knowledge-needs:
         from the CaseServices_API module, before calling
         Case_TakeoverActivity in the Case Management Framework in
         OutSystems 11, so that the action executes successfully.'
+    - name: Configure case SLA
+      id: configure-case-sla
+      description: Wants to set and enforce a resolution/response time limit
+        on a case, using the GenerateEvent, OverrideMinutesForCompletion, and
+        CalendarId input parameters of the Case_AssociateProcess action, in
+        OutSystems 11's Case Management Framework, so that an event fires
+        when the case's SLA time limit is exceeded.
+    - name: Set default case SLA
+      id: set-default-case-sla
+      description: Wants to set a default SLA response time for every new
+        case instance by creating a ProcessSLAConfiguration static entity
+        and wiring the ProcessDefinitionSLA_CreateOrUpdate action into the
+        Bootstrap_CaseConfigurations timer, in OutSystems 11's Case
+        Management Framework, so that the SLA starts counting automatically
+        from case creation.
+    - name: Act on overdue case SLA
+      id: act-on-overdue-case-sla
+      description: Wants to trigger custom logic (such as terminating the
+        process or completing the case) when a case's SLA time limit is
+        exceeded, by adding a Conditional Start based on the SLAOverdue
+        ProcessEventType, in OutSystems 11's Case Management Framework, so
+        that overdue cases are automatically handled.
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -3757,6 +3803,13 @@ knowledge-needs:
         affects executing process instances after publishing, in OutSystems 11,
         so that they can predict which instances get suspended and know to
         review them in Service Center.
+    - name: Add activity impact
+      id: process-upgrade-add-activity-impact
+      description: Wants to understand how adding activities to a process flow
+        affects executing process instances after publishing, in OutSystems 11,
+        so that they know instances continue executing unaffected regardless
+        of whether they've already passed the added activity, haven't reached
+        it yet, or are in a newly added branch.
     - name: BPMN notation
       id: bpmn-notation
     - name: Patterns for processes (automatic, human, decision)
@@ -3801,6 +3854,21 @@ knowledge-needs:
         activity in OutSystems 11, so that the process execution properly
         terminates once every flow path in the main process reaches its own
         End activity.
+    - name: Output parameter access
+      id: output-parameter-access
+      description: Wants to understand which process activity can read and
+        write a process flow's output parameters (the owning activity has
+        read/write, others have read-only, and the Process Flow itself has
+        read/write), in OutSystems 11, so that they correctly design data
+        handoffs between process activities.
+    - name: Output parameter defaults
+      id: output-parameter-defaults
+      description: Wants to understand how a process or process activity
+        output parameter behaves when it's never set, using the default
+        value from the currently published process definition (applied
+        immediately if a new version publishes mid-execution, and the same
+        rule applying to unset input parameters), in OutSystems 11, so that
+        they know what value they'll read.
     - name: Entity action process events
       id: entity-action-process-events
       description: Wants to have an Entity Action issue events to all executing

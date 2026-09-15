@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - group-inputs-with-forms
 ---
 
 # Forms

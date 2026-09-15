@@ -14,6 +14,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - understand
+topic:
+  - process-upgrade-delete-activity-impact
 ---
 
 # Impact of Deleting Activities from Process Flows

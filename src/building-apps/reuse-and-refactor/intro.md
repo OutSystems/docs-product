@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - module-types-overview
 ---
 
 # Reusing and Refactoring

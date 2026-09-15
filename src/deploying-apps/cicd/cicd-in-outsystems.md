@@ -23,6 +23,10 @@ coverage-type:
   - evaluate
   - understand
 isautopublish: true
+topic:
+  - cd-pipeline-stages
+  - ci-cd-foundations
+  - test-pyramid
 ---
 
 # Application Lifecycle Management in O11 CI/CD

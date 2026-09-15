@@ -2558,6 +2558,11 @@ knowledge-needs:
       description: Wants to configure how a workflow begins execution by assigning
         a triggering event to the Start node in ODC's Workflow editor, so that
         the workflow launches automatically when that event occurs.
+    - name: Configure conditional start
+      id: configure-conditional-start
+      description: Wants to add a Conditional Start activity to an existing
+        ODC workflow and link it to a business event in ODC's Workflow editor,
+        so that the workflow triggers only when that event occurs.
     - name: Workflow instance labels
       id: workflow-instance-labels
       description: Wants to create a custom instance label expression on the Start node,
@@ -2573,11 +2578,11 @@ knowledge-needs:
         follows the correct path for each case.
     - name: Configure automatic path
       id: configure-automatic-path
-      description: Wants to configure the automatic outcome path after a
-        Decision activity in an ODC workflow, using automatic activities to
-        run service actions and send notifications, in ODC's Workflow editor,
-        so that the process completes without manual intervention when
-        conditions are met.
+      description: Wants to configure an automatic path in an ODC workflow
+        using automatic activities to run service actions and send
+        notifications, including when continuing from a Decision outcome or
+        after a conditional start event, in ODC's Workflow editor, so that the
+        process completes without manual intervention when conditions are met.
     - name: Pause for manual review
       id: pause-for-manual-review
       description: Wants to pause a workflow with a Wait activity until a
@@ -4348,6 +4353,25 @@ knowledge-needs:
   - name: Adding UI Elements to a Screen
     id: add-ui-elements
     subtopics:
+    - name: Use UI accelerator
+      id: use-ui-accelerator
+      description: Wants to add a pre-built OutSystems UI Accelerator (such
+        as the Order Management Products Gallery) to an empty Screen by
+        dragging it from the Toolbox, in Service Studio for OutSystems 11,
+        so that a complex, fully functional Screen layout scaffolds quickly
+        with sample data instead of building each widget from scratch.
+    - name: Style Card Sectioned
+      id: style-card-sectioned
+      description: Wants to replace a List Item inside a Gallery/List widget
+        with the Card Sectioned widget to organize content into its
+        placeholders, in Service Studio for OutSystems 11, so that gallery
+        items follow a structured and consistent content layout.
+    - name: Fix gallery image sizing
+      id: fix-gallery-image-sizing
+      description: Wants to fix inconsistent image sizes in a Gallery/List
+        widget by applying an image-sizing style class and setting explicit
+        dimensions on the Image widget, in Service Studio for OutSystems 11,
+        so that gallery items display with a clean, consistent visual layout.
     - name: Layouts
       id: layouts
     - name: Mobile CRUD screens

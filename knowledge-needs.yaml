@@ -11139,6 +11139,20 @@ knowledge-needs:
     subtopics:
     - name: Manage technical debt with AIMS
       id: manage-tech-debt
+    - name: Investigate finding causes
+      id: investigate-finding-causes
+      description: Wants to investigate the cause of an OutSystems 11 Code
+        Quality technical debt finding, by filtering findings by team, app,
+        module, category, or status, and reviewing a code pattern's Impact
+        and How to resolve information, so that they can understand why it
+        counts as debt and how to fix it.
+    - name: Ignore modules
+      id: ignore-modules
+      description: Wants to exclude specific modules from the OutSystems 11
+        Code Quality technical debt calculation, by setting their status to
+        Ignored Modules in the Maintenance area and waiting for the next
+        synchronization, so that findings from those modules are resolved
+        and removed from the infrastructure's technical debt score.
     - name: Reclassify module
       id: reclassify-module
       description: Wants to change a module's classification (architecture
@@ -11153,6 +11167,57 @@ knowledge-needs:
         Quality, by changing its status from Default to Customized in the
         Maintenance area, so that technical debt priorities reflect their
         organization's specific needs.
+    - name: Resolve findings status
+      id: resolve-findings-status
+      description: Wants to resolve OutSystems 11 Code Quality technical debt
+        findings, by setting each finding's status to Already Fixed, False
+        Positive, Won't Fix, or Remind Me Later in the module findings view,
+        so that the finding is correctly counted or excluded from the
+        infrastructure's technical debt score after the next synchronization.
+  - name: Technical debt dashboards
+    id: tech-debt-dashboards
+    subtopics:
+    - name: Interpret overview dashboard
+      id: interpret-overview-dashboard
+      description: Wants to understand the overall status, distribution by
+        category, and evolution of their factory's technical debt using the
+        Infrastructure Overview dashboard in OutSystems 11 Code Quality, so
+        that they can decide which apps or teams need more investment to
+        reduce technical debt.
+    - name: Filter overview dashboard data
+      id: filter-overview-dashboard-data
+      description: Wants to filter the Infrastructure Overview dashboard by
+        team, application, module, code pattern category, or analysis date
+        range, so that they can get the most relevant technical debt data to
+        define their reduction strategy.
+    - name: Interpret debt variation chart
+      id: interpret-debt-variation-chart
+      description: Wants to interpret the Technical Debt Variation vs. Number
+        of Findings chart, correlating the variation percentage against the
+        number of new and solved findings, so that they can understand how
+        much weight those findings had on their overall technical debt score.
+  - name: Code Quality setup
+    id: code-quality-setup
+    subtopics:
+    - name: Set up Code Quality
+      id: setup-code-quality
+      description: Wants to register their infrastructure in OutSystems 11 Code
+        Quality and install the code analysis and LifeTime probes, so that
+        their apps' technical debt data starts being collected and appears in
+        Code Quality.
+    - name: Associate IT user
+      id: associate-code-quality-user
+      description: Wants to associate their IT user account with Code Quality
+        after their infrastructure is already registered, using either an
+        OutSystems account or an IT user account login flow through LifeTime,
+        so that they can access Code Quality with their credentials.
+    - name: Fix Code Quality 401
+      id: fix-code-quality-401
+      description: Wants to resolve a 401 Unauthorized error encountered while
+        logging into, registering infrastructure with, or associating an IT
+        user with OutSystems 11 Code Quality, by identifying whether the cause
+        is a wrong authentication mode, an incomplete IT user association, or
+        invalid credentials, so that they can complete setup successfully.
   - name: SAST integration
     id: sast-integration
     subtopics:
@@ -11202,6 +11267,22 @@ knowledge-needs:
         Monitor page, understanding the daily limit on unscheduled requests per
         scheduled sync, so that they get updated technical debt data sooner than
         the default sync schedule.
+    - name: Plugin communication
+      id: plugin-communication-flow
+      description: Wants to understand how the authentication method
+        (OutSystems account versus IT User account) determines whether
+        communication between the Code Quality LifeTime plugin and the Code
+        Quality SaaS is plugin-initiated only or bidirectional, and that a
+        forward proxy can be used with either method, so that they can plan
+        the network connectivity required for Code Quality in OutSystems 11.
+  - name: Code Quality permissions
+    id: code-quality-permissions
+    description: Wants to know how LifeTime permission levels and role
+      assignment (default role, team, or app) determine which Code Quality
+      features an IT user can access, including viewing teams and apps,
+      managing findings, dashboards, and maintenance operations, so that
+      they can plan and troubleshoot IT user access to Code Quality in
+      OutSystems 11.
 - name: Testing practice
   guid: 0e440c0c-7db6-41cd-a51c-0c00ccb15e72
   topics:

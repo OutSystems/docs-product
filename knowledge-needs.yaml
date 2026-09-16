@@ -1604,6 +1604,21 @@ knowledge-needs:
         instead of the whole entity, and defining an output structure that
         matches the expected result set — so their SQL queries stay secure,
         performant, and maintainable.
+    - name: Test Query differences
+      id: test-query-runtime-differences
+      description: Wants to understand why running Test Query on an Aggregate
+        or SQL node in ODC Studio can produce different results than the
+        published app at runtime, because lower record volumes in
+        Development skew cost-based execution-plan estimates and Test
+        Query runs through a separate execution path from the app, so
+        they know when to also validate a query in the target environment
+        with representative data.
+    - name: SQL test query commits
+      id: sql-node-test-query-commits
+      description: Wants to understand that for SQL nodes querying external
+        entities, INSERT, UPDATE, DELETE, and CALL statements commit
+        immediately when running Test Query in ODC Studio, so they can
+        avoid unintended data changes while validating a SQL node's logic.
   - name: Compound data
     id: compound-data
   - name: Binary data actions
@@ -8781,6 +8796,20 @@ knowledge-needs:
         Chrome Developer Tools, Charles, or the iOS Network Link Conditioner,
         so that they can investigate bugs that occur only intermittently or
         under poor network conditions.
+    - name: Mobile diagnostic logging
+      id: mobile-production-logging
+      description: Wants to diagnose production issues on a mobile app that
+        cannot be reproduced with a debug build, by logging diagnostic
+        messages with the LogMessage system action (viewable in ODC
+        Portal's Monitoring > Logs), so that they can trace the sequence
+        of events behind an issue without direct device access.
+    - name: Mobile native crash reporting
+      id: mobile-native-crash-reporting
+      description: Wants to diagnose production issues on a mobile app that
+        cannot be reproduced with a debug build, by integrating the
+        Firebase Crashlytics plugin for native crash reporting, so that
+        they can capture crash reports needed to resolve the issue
+        without direct device access.
     - name: Android device logs
       id: android-device-logs
       description: Wants to extract Android device logs for troubleshooting

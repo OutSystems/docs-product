@@ -136,7 +136,6 @@ exceptions:
   - Traditional
   - Variable
   - Web
-  - WCAG 2.2 AA
   - Create/Upgrade
   - JSON
   - Cordova-based
@@ -368,6 +367,9 @@ exceptions:
   - CPU
   - SSL
   - APNs
+  - WCAG 2.2 AA
+  - Accessibility Conformance Report
+  - ACR
 # Country
   - US East
   - North Virginia

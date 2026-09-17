@@ -21,6 +21,10 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+topic:
+  - deployment-options
+  - environment-architecture
+  - infrastructure-architecture
 isautopublish: true
 ---
 

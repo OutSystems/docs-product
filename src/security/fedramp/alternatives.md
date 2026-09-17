@@ -21,6 +21,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - unblock
+topic:
+  - fedramp-native-app-alternatives
+  - fedramp-tooling-alternatives
 isautopublish: true
 ---
 

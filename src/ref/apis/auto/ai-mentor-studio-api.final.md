@@ -19,6 +19,8 @@ outsystems-tools:
   - code quality
 coverage-type:
   - remember
+topic:
+  - retrieve-tech-debt-data
 isautopublish: true
 ---
 

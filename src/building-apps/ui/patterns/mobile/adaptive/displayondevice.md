@@ -1,5 +1,7 @@
 ---
 tags: ide usage, reactive web apps, mobile apps, ui design, cross-platform development
+topic:
+  - use-display-on-device
 summary: Display on Device UI pattern in OutSystems 11 (O11) lets you show different content on desktop, tablet, and phone using Service Studio placeholders.
 locale: en-us
 guid: cfb2d1db-e5a7-42ef-85d9-a4348e3f1895

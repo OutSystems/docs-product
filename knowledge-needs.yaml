@@ -1383,6 +1383,15 @@ knowledge-needs:
       responsibilities split, and what runtime, connectivity, monitoring,
       and infrastructure prerequisites are required, so that they can
       evaluate and plan a self-hosted deployment.
+    subtopics:
+    - name: Install flow overview
+      id: install-flow-overview
+      description: Wants to understand the end-to-end process for installing a
+        self-hosted ODC stage, including infrastructure provisioning,
+        database setup, custom registry preparation, configurator
+        installation, inbound traffic setup, and final portal configuration,
+        so that they can plan and follow the installation in the correct
+        order.
   - name: Data Fabric data handling
     id: data-fabric-data-handling
     description: Wants to understand how Data Fabric handles customer data
@@ -1815,6 +1824,17 @@ knowledge-needs:
         which entity actions are available when the entity is consumed as an
         external entity in ODC Studio, so that they can correctly use O11 data
         in ODC apps.
+    - name: O11 entity handling
+      id: o11-entity-handling
+      description: Wants to consume O11 entities in ODC apps while accounting for
+        static-entity IDs, explicit tenant filtering, transaction boundaries, and
+        load-related performance limits, so they can keep reads and writes correct.
+    - name: Oracle empty text
+      id: oracle-empty-text
+      description: Wants to handle Oracle empty-text behavior when consuming O11
+        Oracle entities in ODC apps, including single-space placeholders, quoted
+        default Email and Phone values, and empty-string filters in data mashup
+        queries, so they can avoid unexpected query results and UI output.
     - name: Connect O11 infrastructure
       id: connect-o11-infrastructure
       description: Wants to connect their ODC organization to an O11
@@ -8711,6 +8731,15 @@ knowledge-needs:
         reference, understanding its cause and impact, and following the
         recommended action, so that they can resolve native mobile app
         build failures.
+    - name: Cordova bootstrap error
+      id: cordova-bootstrap-error
+      description: 'Wants to resolve the OS-MABS-PLF-50000 "Something
+        happened on our side. Please try again." error, caused by MABS
+        failing while bootstrapping the base Cordova project with the
+        OutSystems native shell, by retrying the generation, checking the
+        Service Center build logs, and opening a support case if the
+        problem persists, so that the mobile app package generates
+        successfully.'
   - name: MABS release notes
     id: mabs-release-notes
     subtopics:
@@ -9694,6 +9723,17 @@ knowledge-needs:
         checking the Service Center build logs and fixing the pod dependency
         on the affected Cordova plugin, so that the mobile app package
         generates successfully.'
+    - name: Fix iOS deployment target
+      id: fix-ios-deployment-target
+      description: 'Wants to resolve the OS-MABS-PLG-40007 "Couldn''t install
+        the Cordova plugin <plugin_name>. You must set a higher minimum iOS
+        deployment target for a specific pod in the Extensibility
+        Configurations property of your home module." error, caused by a
+        Cordova plugin needing a higher minimum iOS deployment target than
+        the app uses, by raising the deployment-target preference for the
+        affected pod in the home module''s Extensibility Configurations or
+        changing the referenced plugin, so that the app package generates
+        successfully.'
     - name: Swift CocoaPods error
       id: swift-cocoapods-error
       description: 'Wants to resolve the OS-MABS-PLG-40008 "Couldn''t install
@@ -9806,6 +9846,15 @@ knowledge-needs:
         own developer, by following the developer''s instructions in the
         reported reason or contacting them for more information, so that
         the mobile app package generates successfully.'
+    - name: Plugin source URL error
+      id: plugin-source-url-error
+      description: 'Wants to resolve the OS-MABS-PLG-50002 "Couldn''t fetch
+        the Cordova plugin <plugin_name>. If the problem persists, check
+        our documentation for more information." error, caused by an
+        unreachable Cordova plugin source URL or a network issue while
+        generating the mobile app package, by verifying the plugin URL and
+        network connectivity and retrying the build, so that the mobile app
+        package generates successfully.'
     - name: Generic plugin error
       id: generic-plugin-error
       description: 'Wants to resolve the OS-MABS-PLG-50003 "Couldn''t install
@@ -10240,6 +10289,16 @@ knowledge-needs:
         Service Center build logs and validating the plugin and server
         extensibility configurations, so that the mobile app package
         generates successfully.'
+    - name: Plugin connection lost
+      id: plugin-fetch-connection-lost
+      description: 'Wants to resolve the OS-MABS-PLG-50001 "There was an
+        issue fetching the Cordova plugin <plugin_name> because the
+        connection to the server was lost. This might be caused by server
+        downtime." error, by checking the Service Center build logs,
+        validating the connection to the server hosting the plugin,
+        retrying app generation, and creating a support case if the
+        problem persists, so that the mobile app package can be generated
+        successfully.'
     - name: Server config error
       id: server-config-error
       description: 'Wants to resolve the OS-MABS-CNF-50000 "There was an

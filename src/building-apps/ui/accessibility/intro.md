@@ -49,6 +49,10 @@ OutSystems UI is often updated to support more accessibility features. For more 
 
 </div>
 
+## Accessibility Conformance Report
+
+The Accessibility Conformance Report (ACR) documents how OutSystems UI conforms to the WCAG 2.2 Level A and AA, using the Voluntary Product Accessibility Template (VPAT) format. Refer to the latest [OutSystems UI Accessibility Conformance Report](resources/outsystems-ui-acr-2026-05-20.pdf) for the full conformance details.
+
 ## Enable the built-in accessibility features {#enable}
 
 OutSystems has many built-in accessibility features, such as creating applications with the right contrast ratio, focus, and skip-to-content settings. To develop accessible apps, you must activate the accessibility features. In that case, you may need specific customization and development, covered in [ARIA roles and attributes](aria-roles-and-attributes.md) and [UI Patterns accessibility](ui-patterns-accessibility.md).

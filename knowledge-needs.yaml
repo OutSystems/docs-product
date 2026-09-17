@@ -2331,6 +2331,14 @@ knowledge-needs:
         different Salesforce account or manually setting up a Connected App
         in Salesforce and filling in the connection form in Integration
         Manager, so that they can restore the Salesforce connection.'
+    - name: Fix Salesforce token error
+      id: fix-salesforce-token-error
+      description: Wants to resolve the OS-INBL-API-00050 Salesforce error,
+        where the session ID or OAuth token is expired or invalid because
+        the Salesforce authorization has expired or been revoked, by
+        reauthorizing the Salesforce integration in Integration Builder, so
+        that Integration Builder can retrieve Salesforce metadata and create
+        the integration.
     - name: Fix AAD delete error
       id: fix-aad-delete-error
       description: 'Wants to resolve the "connection was deleted locally, but
@@ -2340,6 +2348,17 @@ knowledge-needs:
         Active Directory, by manually deleting the Application in Azure
         Active Directory if it still exists, so that they can fully remove a
         connection tied to an Azure AD app registration.'
+    - name: Fix AAD update error
+      id: fix-aad-update-error
+      description: 'Wants to resolve the "connection was updated locally, but we
+        could not update the connection on the Microsoft''s servers" error
+        (OS-INBL-API-00028) in Integration Manager, caused by the matching
+        Application in Microsoft Azure Active Directory already being deleted
+        or otherwise unavailable for editing, by updating the connection
+        manually in Azure Active Directory or deleting the connection in
+        Integration Builder and creating a new one if the current connection
+        still does not work, so that they can keep the connection in sync with
+        the remote application registration.'
     - name: Fix identity token error
       id: fix-identity-token-error
       description: 'Wants to resolve the "An error occurred while getting a
@@ -2381,6 +2400,9 @@ knowledge-needs:
         screen and clicking Publish again, or contacting OutSystems support
         if the issue persists, so that they can successfully publish the
         integration.'
+    - name: Fix internal service error
+      id: fix-internal-service-error
+      description: 'Wants to resolve the OS-INBL-API-00069 "There was an error contacting an internal service." error in Integration Builder by verifying the server address configured in Service Center can be resolved through DNS, ensuring it matches the HTTPS certificate, and checking the Service Center Error logs for more details, so that Integration Manager can contact the internal service.'
   - name: Workato Connector
     id: workato-connector
     subtopics:

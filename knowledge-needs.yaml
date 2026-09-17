@@ -732,6 +732,13 @@ knowledge-needs:
     subtopics:
     - name: Data relationships
       id: data-relationships
+      subtopics:
+      - name: One-to-one relationship
+        id: one-to-one-relationship
+        description: Wants to create a one-to-one relationship between an
+          Employee entity and an EmployeePicture entity in Service Studio,
+          with mandatory EmployeeId, Filename, and Picture attributes, so
+          that each employee has exactly one related picture record.
     - name: Static Entities
       id: static-entities
     - name: Static entity data migration
@@ -4819,6 +4826,17 @@ knowledge-needs:
         so that gallery items display with a clean, consistent visual layout.
     - name: Layouts
       id: layouts
+    - name: Add menu link
+      id: add-menu-link
+      description: Wants to add a screen to the application menu by dragging it into the
+        menu bar and setting its Text property, so that users can open that
+        screen from the app toolbar in a Traditional Web App.
+    - name: Build screen layouts
+      id: build-screen-layouts
+      description: Wants to use Text, Container, Button, and Link widgets to set screen
+        titles, add navigation buttons for related screens, and arrange the
+        detail screen into side-by-side containers, so that the app screens
+        present the intended layout and navigation in a Traditional Web App.
     - name: Mobile CRUD screens
       id: crud-screens-mobile
       description: Wants to build List and Form screens for an entity and wire
@@ -6375,6 +6393,9 @@ knowledge-needs:
       id: screen-scaffolding
     - name: Create screen from screen template
       id: screen-template
+    - name: Set screen access
+      id: set-screen-access
+      description: Wants to configure a screen's Accessible by property to Everyone in ODC Studio so the screen is available to all users during initial app setup.
     - name: Screen properties reference
       id: screen-properties-reference
       description: Wants to look up the configuration properties available for a

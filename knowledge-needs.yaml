@@ -9599,6 +9599,14 @@ knowledge-needs:
         by fixing the configuration according to the Property Schema
         documentation and rebuilding the app, so that the mobile app
         package generates successfully.'
+    - name: Fix object format error
+      id: wrong-preference-object-format-error
+      description: 'Wants to resolve the OS-MABS-PREF-40004 "Preferences must
+        have the format {}." error, caused by a property in the app''s
+        extensibility configuration that must be a JSON object but isn''t,
+        by fixing the configuration according to the Property Schema
+        documentation and rebuilding the app, so that the mobile app
+        package generates successfully.'
     - name: Missing preference key
       id: missing-preference-key-error
       description: 'Wants to resolve the OS-MABS-PREF-40001 "Preference key
@@ -9993,6 +10001,14 @@ knowledge-needs:
         and retrying application generation, escalating to OutSystems
         support if the problem persists, so that the mobile app package
         generates successfully.'
+    - name: Resource processing error
+      id: resource-processing-error
+      description: 'Wants to resolve the OS-MABS-RES-50001 "Something happened
+        on our side while packaging your app. Please try again." error
+        that occurs when MABS fails while processing app resources such
+        as icons, splash screens, or custom plugins, by validating the
+        added resource files and reviewing the Service Center build logs,
+        so that the mobile app package generates successfully.'
     - name: Resource load timeout
       id: resource-load-timeout-error
       description: 'Wants to resolve the OS-MABS-UNX-50000 "There was an issue
@@ -10010,6 +10026,9 @@ knowledge-needs:
         confirming and updating the certificate and provisioning profile
         information so they match each other, so that the mobile app
         package generates successfully.'
+    - name: Cert password error
+      id: certificate-password-error
+      description: 'Wants to resolve the OS-MABS-SIG-40003 "Please enter the correct password for this certificate." error by verifying that the password for the iOS signing certificate matches the uploaded certificate when generating a mobile app package in MABS, so that the app build completes successfully.'
     - name: App ID/profile mismatch
       id: app-id-provisioning-mismatch
       description: 'Wants to resolve the OS-MABS-SIG-40009 "Your application
@@ -10053,9 +10072,9 @@ knowledge-needs:
       description: 'Wants to resolve the OS-MABS-SIG-40006 "Your provisioning
         profile has an unknown format." error, caused by MABS being unable
         to parse an iOS app''s provisioning profile file, by checking that
-        the provisioning profile uses the .mobileprovision format and
-        replacing it if needed, so that the mobile app package generates
-        successfully.'
+        the provisioning profile is valid and uses the .mobileprovision
+        format and replacing it if needed, so that the mobile app package
+        generates successfully.'
     - name: Certificate keys error
       id: certificate-keys-error
       description: 'Wants to resolve the OS-MABS-SIG-40008 "There was an
@@ -10080,6 +10099,14 @@ knowledge-needs:
         correcting the keystore password and retrying, escalating to
         OutSystems Support if the problem persists, so that the Android
         mobile app package generates successfully.'
+    - name: Alias password error
+      id: keystore-alias-password-error
+      description: 'Wants to resolve the OS-MABS-SIG-40014 "Please enter the
+        right password for the alias." error, caused by entering an
+        incorrect alias password when generating an Android app, by
+        checking and correcting the alias password and retrying,
+        escalating to OutSystems Support if the problem persists, so that
+        the Android mobile app package generates successfully.'
     - name: Provisioning expiry error
       id: provisioning-expiry-error
       description: 'Wants to resolve the OS-MABS-SIG-40015 "Your provisioning
@@ -10688,6 +10715,9 @@ knowledge-needs:
         plugin and removing them, keeping only the reference from the AppShield
         plugin retrieved from Forge, so that the mobile app package generates
         successfully.'
+    - name: Changed AppShield config
+      id: changed-appshield-config
+      description: 'Wants to resolve the OS-MABS-SHLD-40002 "The AppShield''s extensibility configurations can''t be changed." error, by installing the OutSystems AppShield plugin from Forge and requesting a new build without changing its extensibility configurations, escalating to OutSystems Support if the problem persists, so that the mobile app package generates successfully.'
     - name: AppShield settings error
       id: appshield-settings-error
       description: 'Wants to resolve the OS-MABS-SHLD-40003 "Some AppShield plugin

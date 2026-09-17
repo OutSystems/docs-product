@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - tech-debt-formula
 isautopublish: true
 ---
 

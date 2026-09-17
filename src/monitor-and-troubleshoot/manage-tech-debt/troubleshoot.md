@@ -20,6 +20,9 @@ outsystems-tools:
   - code quality
 coverage-type:
   - unblock
+topic:
+  - fix-code-quality-login-error
+  - troubleshoot-code-quality-sync
 isautopublish: true
 ---
 

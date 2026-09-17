@@ -21,6 +21,9 @@ coverage-type:
   - evaluate
   - apply
 isautopublish: true
+topic:
+  - browser-first-debugging
+  - debugging-toolkit-overview
 ---
 
 # Suggested standard toolkit

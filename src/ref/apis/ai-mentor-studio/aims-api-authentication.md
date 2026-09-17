@@ -17,6 +17,9 @@ audience:
 outsystems-tools:
   - code quality
   - service studio
+topic:
+  - code-quality-api-authentication
+  - manage-code-quality-api-key
 coverage-type:
   - remember
   - apply

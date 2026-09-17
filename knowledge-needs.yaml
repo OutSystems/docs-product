@@ -734,6 +734,29 @@ knowledge-needs:
       id: data-relationships
     - name: Static Entities
       id: static-entities
+    - name: Static entity data migration
+      id: static-entity-data-migration
+      description: Wants to understand the considerations for migrating Static
+        Entity data between OutSystems environments, including how Entity
+        Records get environment-specific Data IDs, how the SS_Key combined
+        with the Espace SS_Key uniquely identifies a record across
+        environments, and how the Is_Active flag marks soft-deleted records,
+        so they can correctly map static entity foreign keys and avoid
+        data-integrity issues during migration.
+    - name: Entity record table reference
+      id: entity-record-table-reference
+      description: Wants to look up the physical table name and dependencies
+        of the Entity Record table (OSSYS_ENTITY_RECORD), including its data
+        source (OSSYS_ESPACE) as producer and its lack of downstream
+        consumers, so they can understand where entity record data
+        originates when investigating or migrating static entity data.
+    - name: Static entity record example
+      id: static-entity-record-example
+      description: Wants to see a worked example of how creating, removing
+        (soft-deleting), and re-adding Static Entity records changes the
+        OSSYS_ENTITY_RECORD and physical table data (Data_Id, SS_Key,
+        Is_Active), so they can interpret real entity record state when
+        troubleshooting or verifying static entity data during migration.
     - name: Create/manipulate entities
       id: create-edit-entities
     - name: Import data model from Excel

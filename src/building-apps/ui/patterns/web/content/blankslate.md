@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-blank-slate-pattern
 ---
 
 # Blank Slate

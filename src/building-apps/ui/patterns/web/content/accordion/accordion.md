@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - accordion-reference
+  - use-accordion-pattern
 ---
 
 # Accordion

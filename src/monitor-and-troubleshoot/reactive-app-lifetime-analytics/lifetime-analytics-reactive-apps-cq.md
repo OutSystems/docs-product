@@ -22,6 +22,10 @@ coverage-type:
   - understand
   - apply
   - unblock
+topic:
+  - connect-performance-analytics-code-quality
+  - troubleshoot-code-quality-performance-data
+  - understand-code-quality-performance-differences
 isautopublish: true
 ---
 

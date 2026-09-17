@@ -1097,6 +1097,14 @@ knowledge-needs:
         Case Management Framework''s access-revoking or access-updating
         action using Service Studio''s Debugger, in OutSystems 11, so that
         the action targets an access control record that actually exists.'
+    - name: Fix UserId GroupId
+      id: fix-userid-groupid-conflict
+      description: 'Wants to resolve the "It''s not possible to fill in both
+        UserId and GroupId attributes." error, caused by passing values for
+        both the UserId and GroupId inputs to a Case Management Framework
+        internal access-control action instead of the correct CaseServices_API
+        action, by using the correct CaseServices_API action, so that Case
+        Management Framework access control functions correctly.'
 - name: Accessibility
   guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
   topics:
@@ -2965,6 +2973,14 @@ knowledge-needs:
         calling the execution actions in the CaseServices_API Rules Engine folder
         in OutSystems 11, so that the rule result can be used in a case management
         application's logic.
+    - name: Fix status mismatch
+      id: fix-status-mismatch
+      description: 'Wants to fix the "Both statuses must belong to the same
+        Case Definition." error by making sure the CaseStatusId and
+        NextCaseStatusId input parameters reference case statuses that
+        belong to the same case definition, in OutSystems 11, so that the
+        Case Management Framework can successfully create or update the
+        case state machine.'
     - name: Fix duplicate transition
       id: fix-duplicate-transition
       description: 'Wants to fix the "We found more than one record for this
@@ -3285,6 +3301,16 @@ knowledge-needs:
         to Milestone_SetAchieved isn''t already set to the achieved status,
         using Service Studio''s Debugger, in OutSystems 11''s Case
         Management Framework, so that the action executes successfully.'
+    - name: Fix milestone pairing
+      id: fix-milestone-pairing
+      description: 'Wants to fix the "We couldn''t find a pairing for
+        <case/case definition> and Milestone Definition." error by
+        verifying the case/case definition and milestone definition
+        identifier values passed to Case_IsMilestoneAchieved or
+        CaseDefinition_UnlinkFromMilestoneDefinition using Service
+        Studio''s Debugger, in OutSystems 11, so that the Case Management
+        Framework can find the matching record and execute the action
+        successfully.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -8860,6 +8886,16 @@ knowledge-needs:
         mobile app issues, using Apple Configurator 2, Xcode, iTools, or
         iOSLogInfo, so that they can send the log file to OutSystems
         Support for diagnosis.
+  - name: Mobile app testing practices
+    id: mobile-app-testing-practices
+    subtopics:
+    - name: Test on real devices
+      id: test-mobile-real-devices
+      description: Wants to validate a mobile app's native behavior across a
+        range of physical Android and iOS devices, by installing Debug
+        (Android) or Development (iOS) builds via QR code from ODC Portal,
+        so that they can catch manufacturer-specific rendering, permission,
+        and hardware issues that simulators and emulators cannot reproduce.
   - name: Local Storage
     id: local-storage
     subtopics:
@@ -13489,6 +13525,13 @@ knowledge-needs:
         error when testing the streaming connection in O11 or ODC — so that they
         can restore log and observability data streaming by verifying the APM tool
         is working and re-establishing the connection.
+    - name: Fix streaming aborted
+      id: fix-streaming-aborted
+      description: Wants to understand and resolve the OS-DP-STREAM-00010 "aborted"
+        error — where the destination server responds with a gRPC 10 (Aborted)
+        error when testing the streaming connection in O11 or ODC — so that they
+        can restore log and observability data streaming by verifying the APM
+        tool is working and re-establishing the connection.
     - name: Fix streaming unknown error
       id: fix-streaming-unknown
       description: Wants to understand and resolve the OS-DP-STREAM-00002 "unknown
@@ -13575,6 +13618,14 @@ knowledge-needs:
         streaming audit/observability data in ODC or logs in O11, so that they
         can restore data streaming by reviewing the APM server configuration and
         verifying that the credentials have the correct permissions.
+    - name: Fix streaming 40401
+      id: fix-streaming-40401
+      description: Wants to understand and resolve the OS-DP-STREAM-40401 error,
+        where an authorization failure blocks the connection to the APM tool
+        server when streaming audit/observability data in ODC or logs in O11,
+        so that they can restore data streaming by reviewing the APM server
+        configuration and verifying the server URL in the ODC Portal or LifeTime
+        Log Streaming destination configuration.
     - name: Fix streaming HTTP 503
       id: fix-streaming-http-503
       description: Wants to understand and resolve the OS-DP-STREAM-50003 "unknown
@@ -14051,12 +14102,14 @@ knowledge-needs:
   - name: Fix registration mismatch
     id: fix-registration-mismatch
     description: 'Wants to fix the "Unable to register the Front-end Server"
-      error caused by a mismatched database connection string between a
-      front-end server and the Deployment Controller in a self-managed
-      OutSystems 11 farm environment, by exporting the Controller''s
+      error caused by a mismatched, case-sensitive database connection string
+      between a front-end server and the Deployment Controller in a
+      self-managed OutSystems 11 farm environment, with the Deployment and
+      Scheduler services not starting and the error appearing in Event Viewer
+      (.NET) or DeployService.log (Java), by exporting the Controller''s
       configuration and importing it into the front-end (or copying
-      server.hsconf and rerunning the configuration tool on Java), so that
-      the Deployment and Scheduler services start successfully.'
+      server.hsconf and rerunning the configuration tool on Java), so that the
+      Deployment and Scheduler services start successfully.'
   - name: AD auth login workaround
     id: ad-auth-login-workaround
     description: Wants to temporarily disable Active Directory (AD)
@@ -14219,7 +14272,7 @@ knowledge-needs:
       Configuration page, so that performance issues can be detected before the app
       reaches Production.
   - name: Analytics data retention
-    id: analytics-data-retention
+    id: analytics-data-retention-o11
     description: Wants to understand and adjust how long LifeTime Analytics retains
       collected data by setting a retention period in the Factory Configuration
       application's Platform Configurations tab, and to archive data before
@@ -14343,6 +14396,17 @@ knowledge-needs:
       OS-IDE-CORE-50001 internal server error (a catch-all code for failures
       without a more specific cause), so they can retry the action or contact
       OutSystems Support with the trace ID if the problem persists.'
+  - name: Traces and spans
+    id: understand-traces-spans
+    description: Wants to understand what a trace and its spans represent in
+      ODC Portal, and how to review the Traces screen to identify which span
+      caused an error or performance issue in a server-side request, so they
+      can locate the root cause before resolving it.
+  - name: ODC observability retention window
+    id: odc-observability-data-retention
+    description: Wants to know how long logs, traces, and metrics remain
+      available in ODC Portal, so they can understand the default retention
+      window before it expires.
   - name: Agent cost and performance analytics
     id: agent-cost-performance-analytics
     subtopics:

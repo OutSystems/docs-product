@@ -1376,6 +1376,13 @@ knowledge-needs:
       Service, Load Balancer, TLS encryption, and network isolation between
       customers, so that they can design and secure Platform and Runtime apps
       accordingly
+  - name: ODC self-hosted architecture
+    id: odc-self-hosted-architecture
+    description: Wants to understand the ODC self-hosted deployment model,
+      including why customers use it, how cloud and self-hosted
+      responsibilities split, and what runtime, connectivity, monitoring,
+      and infrastructure prerequisites are required, so that they can
+      evaluate and plan a self-hosted deployment.
   - name: Data Fabric data handling
     id: data-fabric-data-handling
     description: Wants to understand how Data Fabric handles customer data
@@ -2254,6 +2261,9 @@ knowledge-needs:
         permitted policies) in Salesforce, then share the Consumer Key (and
         certificate) with the OutSystems developer, so that Integration
         Manager can complete the connection configuration.
+    - name: Fix recursive refs
+      id: fix-recursive-refs
+      description: 'Wants to resolve the "The attribute <EntityName>.<AttributeName> has recursive references, which are not supported by OutSystems. Please deselect it before proceeding." error in Integration Builder by reopening the SAP OData Add Entities step and clicking Next so Integration Builder auto-unselects recursive attributes, or by consuming the service through an extension in Integration Studio when the recursive attribute is required, so that they can save or publish the integration.'
   - name: Handling webservice errors
     id: handle-webservice-errors
     subtopics:
@@ -2400,6 +2410,9 @@ knowledge-needs:
         screen and clicking Publish again, or contacting OutSystems support
         if the issue persists, so that they can successfully publish the
         integration.'
+    - name: Fix missing fields
+      id: fix-missing-fields
+      description: 'Wants to resolve the "There was an unexpected error. If the problem persists, contact OutSystems Support." message in Integration Builder while creating or updating an integration, caused by missing mandatory fields, by filling in the missing values on the screen and then retrying the step, so that the integration can be saved or updated successfully.'
     - name: Fix internal service error
       id: fix-internal-service-error
       description: 'Wants to resolve the OS-INBL-API-00069 "There was an error contacting an internal service." error in Integration Builder by verifying the server address configured in Service Center can be resolved through DNS, ensuring it matches the HTTPS certificate, and checking the Service Center Error logs for more details, so that Integration Manager can contact the internal service.'
@@ -7103,6 +7116,13 @@ knowledge-needs:
         their corresponding ODC REST API resource names (environment,
         application role), so they can correctly interpret API reference
         documentation without confusion between the two naming conventions.
+    - name: Call API with token
+      id: call-api-with-token
+      description: Wants to call an ODC public REST API with an access token after
+        the client credentials and token are already in place, by consuming the
+        API in ODC Studio, setting the base URL, adding the token to the
+        Authorization header, and invoking the method from app logic, so that
+        the request authenticates successfully before the token expires.
 - name: DevOps and ALM
   guid: a8f0bc19-a180-4f83-b28e-8c786568516c
   topics:
@@ -8888,6 +8908,14 @@ knowledge-needs:
         messages with the LogMessage system action (viewable in ODC
         Portal's Monitoring > Logs), so that they can trace the sequence
         of events behind an issue without direct device access.
+    - name: Debug mobile issues
+      id: debug-mobile-issues
+      description: Wants to choose the right debugging and diagnostics tool
+        for a mobile app issue, using browser DevTools for web-layer
+        problems, native IDEs for plugin crashes or build issues, network
+        simulation for connectivity problems, and client-side logging or
+        Crashlytics for production issues, so that they can inspect the
+        layer that matches the problem.
     - name: Mobile native crash reporting
       id: mobile-native-crash-reporting
       description: Wants to diagnose production issues on a mobile app that
@@ -12997,9 +13025,34 @@ knowledge-needs:
         headers at the load balancer, or another upstream proxy, so that Gloo can
         identify the target runtime stage and route each inbound request correctly
         in a self-hosted ODC cluster.
+    - name: Finish stage setup
+      id: finish-stage-setup
+      description: Wants to complete the final ODC Portal setup for a self-hosted
+        ODC stage after the platform services are deployed, including the domain
+        and identity provider configuration, so that users can reach the stage and
+        sign in successfully.
   - name: Self-hosted configurator
     id: self-hosted-configurator
     subtopics:
+    - name: Stage prerequisites
+      id: stage-prerequisites
+      description: Wants to prepare the infrastructure, PostgreSQL database, and
+        optional custom OCI registry before starting the Self-hosted configurator
+        for a self-hosted ODC stage, so that the stage can be installed on a ready
+        environment.
+    - name: Configure registry credentials
+      id: configure-registry-credentials
+      description: Wants to prepare provider-specific credentials for a custom OCI
+        registry before starting the Self-hosted configurator, including the
+        registry endpoint, required permissions, and expiration value, so that
+        the configurator can authenticate to the registry and sync images.
+    - name: Install self-hosted stage
+      id: install-self-hosted-stage
+      description: Wants to install and configure a self-hosted ODC stage through
+        the Self-hosted configurator, including onboarding in the ODC Portal,
+        authenticating, providing registry, APM, and database details, deploying
+        platform services, and capturing the stage ID, so that the cluster is
+        bootstrapped correctly.
     - name: Reopen self-hosted configurator
       id: reopen-self-hosted-configurator
       description: Wants to reopen the Self-hosted configurator on an already-bootstrapped

@@ -1245,6 +1245,13 @@ knowledge-needs:
         sheet, in Service Studio, so that the pattern meets WCAG 2.2 AA
         accessibility requirements for touch and pointer target size, in
         mobile apps and reactive web apps (O11).
+    - name: Accessible Breadcrumbs pattern
+      id: accessible-breadcrumbs-pattern
+      description: Wants to confirm the Breadcrumbs UI Pattern remains
+        accessible by relying on its default WCAG 2.2 AA-compliant behavior
+        and validating any custom changes in Service Studio for O11, so
+        that customized breadcrumbs continue to meet accessibility
+        requirements in mobile apps and reactive web apps.
     - name: Accessible Wizard pattern
       id: accessible-wizard-pattern
       description: Wants to make the Wizard UI Pattern accessible to
@@ -4668,6 +4675,14 @@ knowledge-needs:
         patterns beyond the officially supported CSS-only customization while
         understanding that copied patterns won't receive OutSystems UI
         upgrades.
+    - name: UI pattern extensibility
+      id: ui-pattern-extensibility
+      description: Wants to understand how OutSystems UI Patterns that use
+        external providers expose curated input parameters and client actions,
+        and how to reach the providers' full extensibility through provider
+        client actions or provider instance and JavaScript, so they can work
+        with the latest patterns and know when deprecated patterns use
+        AdvancedFormat instead.
     - name: Customize styles in your app
       id: customize-app-styles
     - name: Creating a theme
@@ -4868,6 +4883,18 @@ knowledge-needs:
         so that gallery items display with a clean, consistent visual layout.
     - name: Layouts
       id: layouts
+      subtopics:
+      - name: Customize layout block
+        id: customize-layout-block
+        description: Wants to customize a reactive app layout block by applying a CSS
+          class through ExtendedClass for visual changes or duplicating the
+          block to make structural edits, so the app can change the page shell
+          without affecting other apps.
+      - name: Label layout navigation
+        id: label-layout-navigation
+        description: Wants to add a unique aria-label to a layout nav element,
+          either directly or through a MenuName input parameter, so screen
+          readers can distinguish navigation regions in a reactive app layout.
     - name: Add menu link
       id: add-menu-link
       description: Wants to add a screen to the application menu by dragging it into the
@@ -5519,6 +5546,15 @@ knowledge-needs:
         Bar Item, Breadcrumbs, Pagination, Section Index, Submenu, Timeline
         Item, or Wizard, so that they can choose the appropriate pattern for a
         Mobile App or Reactive Web App for OutSystems 11.
+      subtopics:
+      - name: Use Breadcrumbs pattern
+        id: use-breadcrumbs-pattern
+        description: Wants to add the Breadcrumbs UI Pattern to a screen,
+          add the OutSystemsUI dependency if the widget does not display in
+          the Toolbox, configure Breadcrumb Item widgets with titles, icons,
+          and links, and create a breadcrumb trail in Service Studio for
+          O11, so that users can navigate through a mobile or reactive app
+          with location context.
     - name: Use Columns pattern
       id: use-columns-pattern
       description: Wants to add the Columns UI Pattern to a screen and configure
@@ -5685,6 +5721,20 @@ knowledge-needs:
       description: Wants to look up the Month Picker UI Pattern's configurable properties
         and events in Service Studio for OutSystems 11, so that they can
         correctly configure month selection behavior and styling in mobile apps
+        and reactive web apps.
+    - name: Use Time Picker pattern
+      id: use-time-picker-pattern
+      description: Wants to add the Time Picker UI Pattern to a screen, including adding
+        the dependency when the widget does not appear in the Toolbox,
+        creating local variables for the input and selected time, wiring the
+        OnSelected event, and configuring the pattern's properties in Service
+        Studio for OutSystems 11, so that users can select a time in mobile
+        apps and reactive web apps.
+    - name: Time Picker reference
+      id: time-picker-reference
+      description: Wants to look up the Time Picker UI Pattern's configurable properties
+        and events in Service Studio for OutSystems 11, so that they can
+        correctly configure time selection behavior and styling in mobile apps
         and reactive web apps.
     - name: Use Date Picker Range
       id: use-date-picker-range
@@ -5952,6 +6002,13 @@ knowledge-needs:
         Video Pattern, configuring it with a URL-hosted video file or an
         uploaded Resource, in Service Studio, so that videos play within
         the app's UI.
+    - name: Video pattern reference
+      id: video-pattern-reference
+      description: Wants to look up the properties of the Video UI Pattern
+        in Service Studio, including VideoURL, PosterURL, Width, Height,
+        Muted, Loop, Controls, Autoplay, and ExtendedClass, so that they
+        can configure a video widget correctly in mobile apps and reactive
+        web apps.
     - name: Embed streaming video
       id: embed-streaming-video
       description: Wants to embed a video from a streaming platform like
@@ -12282,6 +12339,17 @@ knowledge-needs:
         response verification to match their IdP's assertion signing setting,
         and exchanging SP/IdP metadata XML files, in OutSystems 11, so that
         end users can authenticate via their enterprise Identity Provider.
+    - name: Mobile SSO login flow
+      id: mobile-sso-login-flow
+      description: Wants to implement the mobile SSO login flow for a mobile
+        app by installing the SSO Mobile plugin, checking whether SSO is
+        available, and wiring the LoginSSO action to the identity provider,
+        when the app uses SAML 2.0 single sign-on.
+    - name: Mobile SSO logout flow
+      id: mobile-sso-logout-flow
+      description: Wants to implement the mobile SSO logout flow for a mobile
+        app by updating the UserInfo block to call the right logout actions
+        for PWA and native users, when the app uses SAML 2.0 single sign-on.
     - name: Troubleshoot SAML errors
       id: troubleshoot-saml-errors
       description: 'Wants to troubleshoot SAML 2.0 authentication issues in

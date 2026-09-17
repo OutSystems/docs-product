@@ -9080,6 +9080,20 @@ knowledge-needs:
         web blocks, and related data structures and static entities, so that
         they can implement push notification and deep-linking functionality in
         an O11 mobile app using this plugin version.
+    - name: Cloud Messaging APIs
+      id: cloud-messaging-apis
+      description: Wants to look up the deprecated Cloud Messaging Configurator REST
+        API v1 and v2 endpoints for sending notifications to topics or users,
+        including request and response parameters, so they can maintain an
+        existing integration until they migrate to the Cloud Messaging plugin's
+        server actions.
+    - name: Cloud messaging setup
+      id: cloud-messaging-setup
+      description: Wants to set up Firebase Cloud Messaging server actions by creating
+        the backend notification service, configuring service-account fields and
+        access-token storage, and using the send and silent-send actions for users
+        or topics, so that an ODC mobile app can deliver push notifications and
+        authenticate FCM HTTP v1 requests.
   - name: App distribution
     id: app-distribution
     subtopics:
@@ -10631,6 +10645,12 @@ knowledge-needs:
         against the documented configuration reference and correcting the
         invalid values, so that the mobile app package generates
         successfully.'
+    - name: Configure Exit URL
+      id: configure-exit-url
+      description: 'Wants to configure AppShield''s ExitOnURL preference for a blocked
+        mobile app so the app opens a landing page in the default browser,
+        keeps the URL free of query parameters, and uses the generated query
+        parameters to explain why the app shut down.'
     - name: Outdated MABS version error
       id: outdated-mabs-version-error
       description: Wants to resolve the OS-MABS-SHLD-40004 "It looks like your MABS version
@@ -10991,6 +11011,11 @@ knowledge-needs:
         encryption, and compute/storage/database management, so that they
         know what protections are already covered without needing action on
         their part.
+  - name: Cloud connectivity
+    id: cloud-connectivity
+    description: Wants to understand the secure connection options between OutSystems Cloud
+      and on-premises or AWS corporate systems, so that they can choose the
+      right integration or troubleshooting path.
   - name: Cloud infrastructure maintenance
     id: cloud-infrastructure-maintenance
     subtopics:
@@ -11261,6 +11286,36 @@ knowledge-needs:
         agency after reviewing compliance documentation), so that they know
         which ATO applies to OutSystems FedRAMP itself versus the
         applications they build on it.
+    - name: Native apps
+      id: fedramp-native-app-alternatives
+      description: Wants to understand the FedRAMP-supported alternative for
+        native apps, so that they can keep building within the authorization
+        boundary.
+    - name: Tooling
+      id: fedramp-tooling-alternatives
+      description: Wants to understand the FedRAMP-supported alternative for
+        tooling, so that they can keep building within the authorization
+        boundary.
+    - name: Integrations
+      id: fedramp-integration-alternatives
+      description: Wants to understand the FedRAMP-supported alternative for
+        integrations, so that they can keep building within the authorization
+        boundary.
+    - name: Disaster recovery
+      id: fedramp-disaster-recovery-alternatives
+      description: Wants to understand the FedRAMP-supported alternative for
+        disaster recovery, so that they can keep building within the
+        authorization boundary.
+    - name: Log streaming
+      id: fedramp-log-streaming-alternatives
+      description: Wants to understand the FedRAMP-supported alternative for
+        log streaming, so that they can keep building within the authorization
+        boundary.
+    - name: External services
+      id: fedramp-external-service-alternatives
+      description: Wants to understand the FedRAMP-supported alternative for
+        external services, so that they can keep building within the
+        authorization boundary.
   - name: Mobile certificate protection
     id: mobile-certificate-protection
     subtopics:
@@ -11463,6 +11518,12 @@ knowledge-needs:
         replacing it) and that revoking the key immediately blocks further
         API access, so that they can control and rotate access to the Code
         Quality API.
+    - name: Retrieve tech debt data
+      id: retrieve-tech-debt-data
+      description: Wants to retrieve Code Quality technical debt data from the
+        Swagger reference, including the technical debt endpoints and their
+        filters, so that they can integrate the data into third-party tools
+        or CI/CD quality gates.
   - name: SAST integration
     id: sast-integration
     subtopics:
@@ -13602,12 +13663,25 @@ knowledge-needs:
         earlier versions requiring all applications to be published), so
         that they follow the correct application rollout approach for
         their specific upgrade scenario.
-  - name: Schedule index/statistics maintenance
-    id: schedule-index-statistics-maintenance
-    description: Wants to schedule regular index reorganize/rebuild
-      operations and statistics updates for OutSystems 11 self-managed
-      installations, so that database query performance stays stable as
-      fragmentation and stale statistics accumulate.
+    - name: Infrastructure architecture
+      id: infrastructure-architecture
+      description: Wants to understand how an OutSystems infrastructure is
+        organized around environments, LifeTime, pipelines, and SaaS tools,
+        so that they can reason about the platform architecture and
+        management model.
+    - name: Environment architecture
+      id: environment-architecture
+      description: Wants to understand how an OutSystems environment is
+        built from application servers, databases, Platform Server
+        services, and standalone or server-farm configurations, so that
+        they can plan and troubleshoot the runtime topology for each
+        environment.
+    - name: Schedule index/statistics maintenance
+      id: schedule-index-statistics-maintenance
+      description: Wants to schedule regular index reorganize/rebuild
+        operations and statistics updates for OutSystems 11 self-managed
+        installations, so that database query performance stays stable as
+        fragmentation and stale statistics accumulate.
   - name: Schedule transaction log backups
     id: schedule-transaction-log-backups
     description: Wants to schedule transaction log backups across all
@@ -14627,6 +14701,23 @@ knowledge-needs:
     description: Wants to monitor and troubleshoot apps in ODC Portal by using
       the Logs, Traces, and Analytics screens, so they can inspect errors,
       performance, and usage trends.
+  - name: Resource capacity
+    id: resource-capacity
+    description: Wants to understand ODC resource capacity limits, scaling
+      behavior, and what happens when resources approach or exceed those
+      limits, so they can plan usage and avoid performance or deployment
+      issues.
+    subtopics:
+    - name: Capacity limits
+      id: capacity-limits
+      description: Wants to understand which ODC resource types have stage-level limits and
+        how resources scale against those limits, so they can plan capacity.
+    - name: Optimize usage
+      id: optimize-usage
+      description: Wants to optimize ODC resource consumption and understand
+        the effect of hitting or exceeding a resource limit, so they can
+        reduce wasted capacity and avoid performance issues, failed publishes,
+        or deployment errors.
   - name: Agent cost and performance analytics
     id: agent-cost-performance-analytics
     subtopics:

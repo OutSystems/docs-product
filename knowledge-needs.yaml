@@ -3045,6 +3045,13 @@ knowledge-needs:
         CaseStatus_Delete action of the CaseConfigurations_API module, in
         OutSystems 11, so that the Case Management Framework can successfully
         create or update the new initial case status.'
+    - name: Fix duplicate record
+      id: fix-duplicate-record
+      description: 'Wants to fix the "<record/attribute> already exists for
+        that <record/attribute>" error by verifying the input parameter
+        values passed to a Case Management Framework create or update action
+        using Service Studio''s Debugger in OutSystems 11, so that the
+        action doesn''t attempt to create a duplicate record.'
     - name: Fix initial status error
       id: fix-initial-status-error
       description: 'Wants to fix the "You can only have one initial case
@@ -3248,6 +3255,13 @@ knowledge-needs:
         environment before executing an action that requires an advance query,
         in OutSystems 11's Case Management Framework, so that the action
         executes successfully.
+    - name: Fix milestone achieved
+      id: fix-milestone-achieved
+      description: 'Wants to fix the "The milestone has already been
+        achieved." error by verifying the milestone input parameter passed
+        to Milestone_SetAchieved isn''t already set to the achieved status,
+        using Service Studio''s Debugger, in OutSystems 11''s Case
+        Management Framework, so that the action executes successfully.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -14016,10 +14030,10 @@ knowledge-needs:
     description: 'Wants to fix the "Unable to register the Front-end Server"
       error caused by a mismatched database connection string between a
       front-end server and the Deployment Controller in a self-managed
-      OutSystems 11 farm environment, by comparing the case-sensitive
-      Configuration Tool database settings on both servers and correcting
-      them to match, so that the Deployment and Scheduler services start
-      successfully.'
+      OutSystems 11 farm environment, by exporting the Controller''s
+      configuration and importing it into the front-end (or copying
+      server.hsconf and rerunning the configuration tool on Java), so that
+      the Deployment and Scheduler services start successfully.'
   - name: AD auth login workaround
     id: ad-auth-login-workaround
     description: Wants to temporarily disable Active Directory (AD)

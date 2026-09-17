@@ -1348,6 +1348,12 @@ knowledge-needs:
         multilingual feature, in Service Studio for OutSystems 11, so that
         the app's translations and logic keep working without the
         unsupported Forge component.
+    - name: Enable RTL support
+      id: enable-rtl-support
+      description: Wants to enable right-to-left layout in an OutSystems 11 app by
+        setting the locale to an RTL language such as Arabic, so that the
+        platform automatically applies the is-rtl class and renders the UI
+        right to left without manual CSS injection.
     - name: Fix RTL display
       id: fix-rtl-display
       description: Wants to fix right-to-left (RTL) languages displaying left-to-right in
@@ -1355,6 +1361,13 @@ knowledge-needs:
         class based on the current locale and calling it from the OnRender
         action of the Menu block used on all screens, in Service Studio for
         OutSystems 11, until the official fix is applied.
+    - name: Use IsRTL action
+      id: use-isrtl-action
+      description: Wants to use the IsRTL action to branch screen logic based on
+        whether RTL is applied, including filling input parameters,
+        controlling container visibility, and driving If conditions and
+        client actions, so that the app adapts its content when the UI
+        switches between left-to-right and right-to-left.
 - name: Advanced app architecture
   guid: d59b4004-582f-44ee-a1ae-eb75787ba1e0
   topics:
@@ -4912,6 +4925,14 @@ knowledge-needs:
         BottomSheet.Id, in Service Studio, so that additional information
         displays and dismisses from the bottom of the screen in mobile
         apps (O11).
+    - name: Use Floating Actions
+      id: use-floating-actions
+      description: Wants to add the Floating Actions UI Pattern to a screen,
+        add the widget via Toolbox or Search in other modules if the
+        dependency isn't added, add content to the Button and Items
+        placeholders, and configure IsExpanded and IsHover in Service
+        Studio, so that a floating action button opens additional actions
+        on mobile and reactive web screens (O11).
     - name: Bottom Sheet reference
       id: bottom-sheet-reference
       description: Wants to look up the properties and events of the Bottom
@@ -6014,6 +6035,29 @@ knowledge-needs:
         sorting, grouping, and virtual scrolling), and where to download it
         for Traditional Web and Reactive Web apps, so they can decide
         whether it fits their data manipulation needs, in OutSystems 11.
+    - name: Data Grid properties
+      id: data-grid-properties
+      description: Wants to look up the OutSystems Data Grid properties in Service Studio,
+        so they can configure the Grid correctly in Reactive Web Apps (O11).
+    - name: Display grid data
+      id: display-grid-data
+      description: Wants to display database data in the OutSystems Data Grid in a Reactive
+        Web App by creating a Data Action, using ArrangeData to serialize the
+        aggregate result to JSON, assigning ArrangeData.DataJSON to the action
+        output, and binding the Grid's Data and IsDataFetched properties, so
+        users can review query results in a grid, in OutSystems 11.
+    - name: Map component overview
+      id: map-component-overview
+      description: Wants to understand what the OutSystems Map component
+        does, which app types support it, and how it supports single or
+        multiple locations, customization, location search, and route
+        planning, when they need to build a map-enabled screen.
+    - name: Static maps usage
+      id: static-map-usage
+      description: Wants to use a static map to show a simple,
+        non-interactive map when a dynamic map is not possible or not
+        needed, such as in an email, and accept that users cannot
+        interact with it or add markers at runtime.
     - name: Add marker on map click
       id: add-marker-map-click
       description: Wants to add a marker to the OutSystems Map component and
@@ -10871,6 +10915,23 @@ knowledge-needs:
         OutSystems Cloud on their firewall when connecting via VPN instead
         of a single IP, so that traffic isn't blocked due to the
         non-static nature of individual private IP addresses.
+  - name: Cloud architecture
+    id: cloud-architecture
+    description: Wants to understand the architecture and operational
+      controls of OutSystems Cloud environments.
+    subtopics:
+    - name: Network architecture
+      id: cloud-network-architecture
+      description: Wants to understand the dedicated VPC architecture,
+        environment segregation, WAF, security groups, administration
+        access, and IP restrictions used in OutSystems Cloud
+        environments, so that they can assess how the platform is
+        isolated and operated.
+    - name: HA and compliance
+      id: cloud-ha-compliance
+      description: Wants to understand the high-availability and compliance options for
+        OutSystems Cloud environments, so that they can assess resilience and
+        compliance posture.
   - name: VPN setup
     id: vpn-setup
     subtopics:
@@ -11286,6 +11347,11 @@ knowledge-needs:
         agency after reviewing compliance documentation), so that they know
         which ATO applies to OutSystems FedRAMP itself versus the
         applications they build on it.
+    - name: FedRAMP feature limits
+      id: fedramp-feature-limits
+      description: Wants to review which kinds of OutSystems 11 features are unavailable in
+        OutSystems FedRAMP before designing or planning a project, so they avoid
+        unsupported platform capabilities.
     - name: Native apps
       id: fedramp-native-app-alternatives
       description: Wants to understand the FedRAMP-supported alternative for

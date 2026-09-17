@@ -9972,6 +9972,13 @@ knowledge-needs:
         reviewing the SSLPinning JSON configuration file and removing any
         OutSystems domains, so that the mobile app package generates
         successfully.'
+    - name: SSL Pinning config error
+      id: ssl-pinning-config-error
+      description: 'Wants to resolve the OS-MABS-RES-40002 "The configuration
+        file is missing. Add a valid configuration file for SSLPinning."
+        error, by adding a valid SSLPinning configuration file and retrying
+        app generation when the SSL Pinning plugin is in use, so that MABS
+        can generate the mobile app package successfully.'
     - name: SSL Pinning format error
       id: ssl-pinning-format-error
       description: 'Wants to resolve the OS-MABS-RES-40003 "The configuration

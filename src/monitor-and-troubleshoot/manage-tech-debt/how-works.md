@@ -20,6 +20,10 @@ audience:
 outsystems-tools:
   - lifetime
   - code quality
+topic:
+  - code-quality-data-privacy
+  - code-quality-permissions
+  - plugin-communication-flow
 coverage-type:
   - understand
   - remember

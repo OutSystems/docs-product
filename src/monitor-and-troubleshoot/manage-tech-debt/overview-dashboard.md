@@ -17,6 +17,10 @@ outsystems-tools:
   - code quality
 coverage-type:
   - understand
+topic:
+  - filter-overview-dashboard-data
+  - interpret-debt-variation-chart
+  - interpret-overview-dashboard
 isautopublish: true
 ---
 

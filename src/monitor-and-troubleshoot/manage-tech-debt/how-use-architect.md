@@ -20,6 +20,10 @@ coverage-type:
   - understand
   - apply
 isautopublish: true
+topic:
+  - ignore-modules
+  - interpret-overview-dashboard
+  - manage-tech-debt
 ---
 
 # Getting started as an architect

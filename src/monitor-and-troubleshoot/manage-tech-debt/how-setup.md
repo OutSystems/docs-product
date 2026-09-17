@@ -21,6 +21,10 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - associate-code-quality-user
+  - fix-code-quality-401
+  - setup-code-quality
 isautopublish: true
 ---
 

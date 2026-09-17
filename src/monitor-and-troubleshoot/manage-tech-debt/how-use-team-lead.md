@@ -21,6 +21,10 @@ coverage-type:
   - understand
   - apply
 isautopublish: true
+topic:
+  - investigate-finding-causes
+  - manage-tech-debt
+  - resolve-findings-status
 ---
 
 # Getting started as a team lead

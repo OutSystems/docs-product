@@ -25,6 +25,11 @@ knowledge-needs:
         which run in response to user interactions like clicking a button, so that
         they can add the right logic to each when building a Traditional Web App
         screen.'
+    - name: Use screen server actions
+      id: use-screen-server-actions
+      description: Wants to add a screen client action that runs a server action
+        from a button click, pass the current form values as input parameters,
+        and continue the flow after a successful save in a Traditional Web App.
     - name: Action properties reference
       id: action-properties-reference
       description: Wants to look up the configuration properties available for an
@@ -423,6 +428,12 @@ knowledge-needs:
     subtopics:
     - name: Anonymous
       id: anonymous
+    - name: Anonymous screen access
+      id: anonymous-screen-access
+      description: Wants to grant anonymous and registered users access to selected
+        Traditional Web App screens by assigning the Anonymous role to those
+        screens, so that public screens open without sign-in during initial app
+        setup.
     - name: Secure anonymous screens
       id: secure-anonymous-screens
       description: Wants to resolve the Service Studio warning about exposing
@@ -943,12 +954,23 @@ knowledge-needs:
       id: filter-data
     - name: Aggregates
       id: aggregates
-    - name: Sort aggregate data
-      id: sort-aggregate-data
-      description: Wants to sort an Aggregate's returned records in ascending
-        or descending order using the Sorting tab's Add Sort feature, in
-        Service Studio for OutSystems 11, so they can retrieve information
-        such as the first or last record when data is ordered alphabetically.
+      subtopics:
+      - name: Create aggregate
+        id: create-aggregate
+        description: Wants to create an aggregate to fetch data from the database
+          using the Search field or drag-and-drop entity placement in the
+          Aggregate editor, so a screen can display the records it needs.
+      - name: Add calculated attribute
+        id: add-calculated-attribute
+        description: Wants to add a calculated attribute to an Aggregate and set
+          its Value expression to derive a field from existing attributes, so
+          that the query returns computed text such as an employee full name.
+      - name: Sort aggregate data
+        id: sort-aggregate-data
+        description: Wants to sort an Aggregate's returned records in ascending
+          or descending order using the Sorting tab's Add Sort feature, in
+          Service Studio for OutSystems 11, so they can retrieve information
+            such as the first or last record when data is ordered alphabetically.
     - name: Multi-entity aggregate
       id: multi-entity-aggregate
       description: Wants to create an aggregate that joins multiple entities and applies
@@ -4315,6 +4337,13 @@ knowledge-needs:
         storage, by retrying later, publishing without an icon, or contacting
         OutSystems Support if the problem persists, in OutSystems 11, so that
         they can proceed without the icon-save failure blocking their work.
+    - name: WFB storage error
+      id: wfb-storage-error
+      description: 'Wants to resolve the "Storage error. <OriginalErrorMessage>."
+        error when Workflow Builder cannot access its internal storage, by
+        retrying later or contacting OutSystems Support if the problem
+        persists, in OutSystems 11, so that icon display and publishing
+        succeed.'
     - name: WFB status update error
       id: wfb-status-update-error
       description: 'Wants to resolve the "Specified application version do not
@@ -4877,6 +4906,14 @@ knowledge-needs:
         if the dependency isn't added, in Service Studio, so that a master
         list and its corresponding item details display together in mobile
         apps and reactive web apps (O11).
+    - name: Use Stacked Cards pattern
+      id: use-stacked-cards-pattern
+      description: Wants to add the Stacked Cards UI Pattern to a screen, add the widget
+        via Toolbox or Search in other modules if the dependency isn't added,
+        populate the List and overlay placeholders, configure swipe actions for
+        the overlay directions, and configure the pattern's optional properties,
+        in Service Studio for OutSystems 11, so that users can swipe cards in
+        multiple directions in mobile apps and reactive web apps.
     - name: Use Action Sheet pattern
       id: use-action-sheet-pattern
       description: Wants to add the Action Sheet UI Pattern to a screen, add
@@ -5621,12 +5658,46 @@ knowledge-needs:
         its SVGCode and ExtendedClass properties, so that they can
         customize SVG fill and stroke properties and animate SVG paths,
         in mobile apps and reactive web apps.
+    - name: Use Range Slider
+      id: use-range-slider-pattern
+      description: Wants to add the Range Slider UI Pattern to a screen,
+        including adding the dependency when the widget does not appear in
+        the Toolbox, setting the MinValue, MaxValue, and StartingValue
+        properties, wiring the OnValueChange event to a local variable
+        through an Assign action, and configuring optional properties, so
+        that users can select a single value within a defined range in
+        mobile apps and reactive web apps.
+    - name: Range Slider properties
+      id: range-slider-properties
+      description: Wants to look up the Range Slider UI Pattern's properties and events in
+        Service Studio for OutSystems 11, so that they can correctly configure
+        the Range Slider in mobile apps and reactive web apps.
+    - name: Use Month Picker
+      id: use-month-picker
+      description: Wants to add the Month Picker UI Pattern to a screen, including adding
+        the dependency when the widget does not appear in the Toolbox,
+        creating local variables for the input and selected month, wiring the
+        OnSelected event, and configuring its properties in Service Studio for
+        OutSystems 11, so that users can select a month and year in mobile
+        apps and reactive web apps.
+    - name: Month Picker reference
+      id: month-picker-reference
+      description: Wants to look up the Month Picker UI Pattern's configurable properties
+        and events in Service Studio for OutSystems 11, so that they can
+        correctly configure month selection behavior and styling in mobile apps
+        and reactive web apps.
     - name: Use Date Picker Range
       id: use-date-picker-range
       description: Wants to add the Date Picker Range UI Pattern to a screen and configure
         its properties, in Service Studio for OutSystems 11, so that users can
         select a date range from a calendar, in mobile apps and reactive web
         apps.
+    - name: Use Search pattern
+      id: use-search-pattern
+      description: Wants to add the Search UI Pattern to a screen and configure
+        its input variable in Service Studio for OutSystems 11, so that users
+        can search for content by entering queries without knowing its
+        location, in mobile apps and reactive web apps.
     - name: Use Dropdown Search
       id: use-dropdown-search
       description: Wants to add the Dropdown Search UI Pattern to a screen and configure

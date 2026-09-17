@@ -23,7 +23,7 @@ coverage-type:
   - apply
 ---
 
-# Protection against Brute Force Attacks
+# Protection against brute force attacks
 
 Applications secured with authentication can be subject to brute force attacks that systematically try to guess user passwords. OutSystems provides a built-in protection mechanism that lets you take countermeasures against these attacks.
 
@@ -54,7 +54,7 @@ The same brute force attack protection is available by default for **IT users** 
 
 </div>
 
-## Unblocking Application Users
+## Unblocking end users  { #unblock-end-users }
 
 Users and IP addresses can get blocked even if they're legitimate, for example:
 

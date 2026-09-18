@@ -412,6 +412,13 @@ knowledge-needs:
         fetch data via data fetch calls, using the On After Fetch event for dependent
         fetches, so that data fetching runs in parallel with screen rendering instead
         of being fully serialized.
+    - name: Optimize mobile loading
+      id: optimize-mobile-loading
+      description: Wants to reduce a mobile screen's loading time when it depends
+        on multiple server calls or long lists, by grouping related calls,
+        caching infrequently changing data locally, and fetching additional list
+        items with infinite scroll, so that the screen renders faster and stays
+        responsive.
     - name: StringBuilder for large strings
       id: stringbuilder-large-strings
       description: Wants to concatenate many strings, or a few large strings, into
@@ -1940,6 +1947,13 @@ knowledge-needs:
         down inserts and updates.
   - name: Enforcing data integrity
     id: enforcing-data-integrity
+    subtopics:
+    - name: Fix foreign key data
+      id: fix-foreign-key-data
+      description: Wants to fix foreign key creation failures by checking the child table for values with no matching parent record and correcting or removing those rows, so the relationship can be created during deployment.
+    - name: Review delete rules
+      id: review-delete-rules
+      description: Wants to review foreign key delete rules to remove circular dependencies or multiple cascade paths that block foreign key creation during deployment, so the module can publish successfully.
   - name: Exposing data via REST webservices
     id: rest-webservice-data
   - name: Data isolation
@@ -2996,6 +3010,20 @@ knowledge-needs:
         notifications, including when continuing from a Decision outcome or
         after a conditional start event, in ODC's Workflow editor, so that the
         process completes without manual intervention when conditions are met.
+    - name: Add human activity
+      id: add-human-activity
+      description: Wants to add a Human activity to an ODC workflow in the
+        Workflow editor, configuring assignment, destination screen, display
+        message, close conditions, and timeout so the workflow can pause for
+        manual input and continue when the activity completes.
+    - name: Manual task notifications
+      id: manual-task-notifications
+      description: Wants to build custom notifications for pending human
+        activities so users know when a manual workflow task needs attention.
+    - name: Human activity SLA
+      id: human-activity-sla
+      description: Wants to configure an SLA for a human activity in an ODC
+        workflow so the task must complete within a defined timeframe.
     - name: Pause for manual review
       id: pause-for-manual-review
       description: Wants to pause a workflow with a Wait activity until a
@@ -4170,6 +4198,14 @@ knowledge-needs:
         examining the OSTrace log's Name Collision Issue table to identify
         the conflicting elements and renaming one of them in the WSDL, so
         that the web service imports successfully, in OutSystems 11.
+    - name: Fix SOAP compile error
+      id: fix-soap-compile-error
+      description: 'Wants to fix a CS0117 compilation error that occurs when
+        publishing a module after consuming a SOAP web service with an
+        unsupported list-attribute WSDL case, by finding the method and
+        output parameter in the error details, locating the related
+        complexType and maxOccurs definition in the WSDL, and adding a dummy
+        element so the module publishes successfully, in OutSystems 11.'
     - name: Changing endpoints
       id: changing-endpoints
     - name: Consume and refresh methods
@@ -9236,6 +9272,13 @@ knowledge-needs:
         and referencing that file in the app's extensibility configuration,
         so that Capacitor apps enforce certificate pinning without relying
         on Cordova extensibility settings.
+    - name: Choose plugin source
+      id: choose-plugin-source
+      description: Wants to choose the safest plugin source for an ODC
+        mobile app by checking OutSystems-supported plugins first, then
+        following the plugin decision flow and reviewing source,
+        maintenance activity, and security posture when no supported
+        plugin fits.
     - name: Integrate plugin in app
       id: integrate-plugin-in-app
       description: Wants to integrate a Capacitor plugin (official, community,
@@ -9255,6 +9298,12 @@ knowledge-needs:
         signals, and keeping plugins updated or removing unused ones, so
         that the app's security risk from third-party plugin code stays
         low.
+    - name: Pin plugin versions
+      id: pin-plugin-versions
+      description: Wants to pin plugin package versions in an ODC app
+        extensibility configuration to exact values instead of floating
+        ranges, so that MABS builds stay reproducible and plugin upgrades
+        are deliberate.
   - name: Migrate Cordova plugins to Capacitor
     id: migrate-cordova-plugin-capacitor
     subtopics:
@@ -9364,6 +9413,11 @@ knowledge-needs:
 - name: Native Mobile apps
   guid: f67965c4-a2ef-4076-8676-c8b8203ab671
   topics:
+  - name: Mobile best practices
+    id: mobile-best-practices
+    description: Wants to understand the mobile best-practices section for ODC apps,
+      including what kinds of guidance it covers, so that they can find the
+      right best-practice topic for their app.
   - name: MABS environment configuration
     id: mabs-environment-configuration
     subtopics:
@@ -9677,6 +9731,12 @@ knowledge-needs:
         configuring the screen's local storage aggregate, adding filters and
         sorting, and refreshing it from screen lifecycle events or client
         actions so the screen shows the right records.
+    - name: Load screen data locally
+      id: load-screen-data-locally
+      description: Wants to load only the data a mobile screen needs when the data
+        changes infrequently or the screen should not depend on a live network
+        round trip, by storing frequently accessed data in local storage and
+        denormalizing the local model to match the screen.
   - name: Firebase plugin migration
     id: migrate-firebase-plugins
     description: Wants to migrate mobile app logic from unsupported Firebase-based
@@ -10021,6 +10081,13 @@ knowledge-needs:
       KeyStore Plugin, for small sensitive items like authentication tokens, and
       mandatorily re-validating all data server-side, so that mobile app data
       stays protected against device compromise and client-side tampering.
+  - name: Mobile app security
+    id: mobile-app-security
+    description: Wants to reduce a mobile app's attack surface by limiting
+      declared device permissions, configuring a restrictive CSP for the
+      WebView, and pinning server certificates when the app loads external
+      content or handles high-sensitivity data, so that the app resists common
+      platform and network attacks.
   - name: Extensibility configurations
     id: extensibility-configurations
     subtopics:
@@ -11373,6 +11440,13 @@ knowledge-needs:
         after AppShield obfuscation, so that they can identify whether misconfigured
         dependencies, Gradle/JAR/AAR imports, or reflection-based code are causing
         the issue.
+    - name: AppShield hardening
+      id: appshield-hardening
+      description: Wants to harden a high-security mobile app with AppShield by installing
+        the plugin, keeping a Stable and Current version, configuring
+        development-time disablement, and setting the optional protection
+        preferences that match its security needs, so that the app binary
+        resists reverse engineering, repackaging, and tampering.
     - name: Duplicate AppShield ref
       id: duplicate-appshield-reference
       description: 'Wants to resolve the OS-MABS-SHLD-40001 "The AppShield plugin
@@ -13641,6 +13715,12 @@ knowledge-needs:
         WebLogic), by creating a Java keystore and key pair with keytool and
         generating a .csr file, so that they can submit it to a
         certification authority to obtain an SSL certificate.
+    - name: Generate CSR request
+      id: generate-csr-request
+      description: Wants to generate a Certificate Signing Request (CSR)
+        and keep the private key safe when using IIS, OpenSSL, or another
+        supported tool, so that they can submit the CSR to a certificate
+        authority and preserve the key for later certificate installation.
     - name: Import SSL cert keystore
       id: import-ssl-cert-keystore
       description: Wants to import an acquired SSL certificate, along with
@@ -14438,6 +14518,19 @@ knowledge-needs:
         compilation or an already-deployed latest version are skipped, so that
         they can deploy all newly compiled modules after a Platform Server
         upgrade without publishing each one manually.
+    - name: Check Deploy All impact
+      id: check-deploy-all-impact
+      description: Wants to determine whether an on-premises environment is
+        affected by RPM-3448 after using Deploy All in Platform Server 11.18.0
+        by checking Service Center > Factory > Upgrades for the Deployment step,
+        so that they know whether the issue applies before they try the cleanup
+        procedure.
+    - name: Clean Deploy All tenants
+      id: clean-deploy-all-tenants
+      description: Wants to clean up invalid records created by Deploy All in an affected
+        on-premises environment by running the platform-specific cleanup scripts
+        and validation steps after an affected Platform Server upgrade, so that
+        they can remove the duplicated records safely.
     - name: Track deployment progress
       id: track-deployment-progress-upgrade
       description: Wants to monitor an in-progress modules deployment step

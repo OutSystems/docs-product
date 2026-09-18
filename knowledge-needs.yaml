@@ -744,12 +744,18 @@ knowledge-needs:
     - name: Data relationships
       id: data-relationships
       subtopics:
+      - name: One-to-many relationship
+        id: one-to-many-relationship
+        description: Wants to create a one-to-many relationship between an Employee entity and a Department entity in Service Studio, with Department as the master entity and Employee as the detail entity, so that each employee belongs to one department and each department can have many employees.
       - name: One-to-one relationship
         id: one-to-one-relationship
         description: Wants to create a one-to-one relationship between an
           Employee entity and an EmployeePicture entity in Service Studio,
           with mandatory EmployeeId, Filename, and Picture attributes, so
           that each employee has exactly one related picture record.
+      - name: Many-to-many relationship
+        id: many-to-many-relationship
+        description: Wants to create a many-to-many relationship between an Employee entity and a Project entity in Service Studio by introducing a ProjectMember junction entity with mandatory EmployeeId, ProjectId, and RoleDescription attributes, so that an employee can belong to multiple projects and each project can have multiple employees.
     - name: Static Entities
       id: static-entities
     - name: Static entity data migration
@@ -1612,6 +1618,12 @@ knowledge-needs:
       description: Wants to implement dynamic sorting on calculated attributes in
         an aggregate that uses external entities, so that the sort works correctly
         at runtime without errors or empty results.
+    - name: Create calculated attribute
+      id: create-calculated-attribute
+      description: Wants to create a calculated attribute in an Aggregate that
+        concatenates an employee's last and first names into a FullName value,
+        so the result can be used as a sort key and displayed on the
+        EmployeeDashboard screen.
     - name: Aggregation functions
       id: aggregation-functions
       description: Wants to understand which aggregation functions are available
@@ -4911,6 +4923,12 @@ knowledge-needs:
         titles, add navigation buttons for related screens, and arrange the
         detail screen into side-by-side containers, so that the app screens
         present the intended layout and navigation in a Traditional Web App.
+      subtopics:
+      - name: Conditionally show link
+        id: conditionally-show-link
+        description: Wants to show a Reset link only when a condition is true by
+          enclosing it in an If widget, so that the link appears only when the
+          screen Number input parameter is not zero.
     - name: Mobile CRUD screens
       id: crud-screens-mobile
       description: Wants to build List and Form screens for an entity and wire
@@ -5216,6 +5234,12 @@ knowledge-needs:
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
       id: ui-elements-accelerators
+    - name: Build calculator screen
+      id: build-calculator-screen
+      description: Wants to build a simple Reactive Web calculator screen with a screen
+        input parameter, Text, Expression, Container, Button, Link, and If
+        widgets, so that users can display a number, increment it by one,
+        multiply it by two, and reset it only when the value is not zero.
     - name: Floating Actions reference
       id: floating-actions-reference
       description: Wants to look up the properties, events, and CSS selectors

@@ -1954,6 +1954,9 @@ knowledge-needs:
     - name: Review delete rules
       id: review-delete-rules
       description: Wants to review foreign key delete rules to remove circular dependencies or multiple cascade paths that block foreign key creation during deployment, so the module can publish successfully.
+    - name: Troubleshoot FK timeout
+      id: troubleshoot-fk-timeout
+      description: Wants to increase the SQL query timeout or check database locks when foreign key creation times out during deployment, so the relationship can be created successfully.
   - name: Exposing data via REST webservices
     id: rest-webservice-data
   - name: Data isolation
@@ -13762,6 +13765,14 @@ knowledge-needs:
         environment's apps and web services become reachable over HTTPS
         under the company's own domain instead of the default
         `outsystemsenterprise.com` domain.
+    - name: SSL domain errors
+      id: ssl-domain-errors
+      description: Wants to troubleshoot SSL domain certificate validation
+        errors in LifeTime while configuring a custom SSL domain on
+        OutSystems Cloud, by identifying each validation message, its
+        cause, and the recommended fix for PFX, PEM, ZIP, password,
+        private key, expiration, and chain problems, so that the
+        certificate validates successfully.
     - name: Assign SSL domain to LifeTime
       id: assign-ssl-domain-lifetime
       description: Wants to customize the domain of their LifeTime
@@ -15254,6 +15265,17 @@ knowledge-needs:
         Monitoring section, resetting filters, and using Export to Excel, so
         they have a log file to review or attach to a support case, given
         that Service Center has a limited log retention window.
+  - name: Troubleshooting overview
+    id: troubleshooting-overview
+    description: Wants to find the troubleshooting guides and known issues
+      in the section, then check their causes and how to solve them, so
+      that they can diagnose the issue from the right article.
+  - name: Troubleshoot infra issues
+    id: troubleshoot-infra-issues
+    description: Wants to find the right troubleshooting article for O11 infrastructure
+      issues, including installation, upgrade, configuration, connectivity,
+      application server, database, and platform service problems, so that they can
+      diagnose the problem in the correct section.
   - name: Fix cross-site cookies (O11)
     id: fix-cross-site-cookies-o11
     description: Wants to identify and fix cross-site cookie problems in

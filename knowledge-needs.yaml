@@ -82,6 +82,13 @@ knowledge-needs:
         on a condition, by using If and Switch nodes in Service Studio, in
         OutSystems 11 (O11) apps, so that different logic paths run depending
         on runtime values.
+    - name: Calculation and algorithm examples
+      id: calculation-and-algorithm-examples
+      subtopics:
+      - name: Calculate factorial
+        id: calculate-factorial
+        description: Wants to implement a factorial calculation in a server
+          action, so that a button click returns the factorial for a number.
     - name: Conditional paths (ODC)
       id: create-conditional-paths-odc
       description: Wants to branch logic execution in an action based on a
@@ -4167,6 +4174,9 @@ knowledge-needs:
       id: changing-endpoints
     - name: Consume and refresh methods
       id: consume-refresh-methods
+    - name: Write SOAP data
+      id: write-soap-data
+      description: 'Wants to create and update contact records through a consumed SOAP web service by loading an existing contact with GetContact when the Email input parameter is set, calling CreateContact when it is empty, and saving the form data back to the external system, so that users can maintain contacts in the SOAP service.'
     - name: Show webservice errors
       id: show-webservice-errors
       description: Wants to handle the outcome of a webservice method call in the

@@ -6889,6 +6889,12 @@ knowledge-needs:
         reflects the last-renamed source environment, by checking the name
         displayed in LifeTime before staging, so that they can confirm the
         expected app name before promoting it in OutSystems 11.
+    - name: Synchronize app definition
+      id: sync-app-definition
+      description: Wants to display an app's name, icon, and color from a
+        particular environment in LifeTime by using Synchronize App Definition,
+        so that the app details match that environment instead of the most
+        recently modified version.
     - name: Use IPP portal
       id: use-ipp-portal
       description: Wants to deploy an OutSystems 11 application to an
@@ -8305,6 +8311,12 @@ knowledge-needs:
         opening Configurations, selecting Custom connection, entering the source
         details, adding an authentication header, and saving the configuration, so
         that the app can connect to a custom database or search service.
+    - name: Add Amazon Kendra data source
+      id: add-amazon-kendra-data-source
+      description: Wants to add an Amazon Kendra data source in the AI Agent Builder
+        app by opening Configurations, selecting Amazon Kendra, entering the source
+        details, and saving the connection, so that the app can use Kendra as a
+        search data source.
     - name: Configure CallAgent
       id: configure-callagent
       description: Wants to add the CallAgent service action to their app in ODC
@@ -8322,6 +8334,12 @@ knowledge-needs:
         access it provides to sample apps, the playground, model and data source
         configurations, and components, so they can navigate the tool and find
         the right entry point for their task.
+    - name: Agent Builder analytics
+      id: agent-builder-analytics
+      description: Wants to review AI Agent Builder analytics for agents, AI
+        models, and data sources, export usage data, and use logs and traces
+        to troubleshoot latency or request errors, so they can understand
+        load patterns when tuning an agent.
     - name: Agent sample apps
       id: ai-agent-builder-sample-apps
       description: Wants to understand the use cases, solutions, and customization options
@@ -8819,6 +8837,19 @@ knowledge-needs:
         relevant data via a service action, then pass that data as context
         to an AI model call, so they can implement the
         Retrieval-augmented generation (RAG) pattern in app logic.
+      subtopics:
+      - name: Configure Azure AI Search
+        id: configure-azure-ai-search
+        description: Wants to create an Azure AI Search service backed by Azure Blob
+          Storage, upload files, build an index, and retrieve the endpoint,
+          key, and index name, so that they can add the source to AI Agent
+          Builder.
+    - name: Add Azure AI Search
+      id: add-azure-ai-search-data-source
+      description: Wants to add an Azure AI Search data source in the AI
+        Agent Builder app by providing the connection details, testing the
+        connection, and saving the source, so that the app can ground
+        agents on Azure AI Search content.
   - name: Knowledge bases (ODC)
     id: knowledge-bases-odc
     subtopics:
@@ -12879,6 +12910,11 @@ knowledge-needs:
         using the Applications tab in the Users application to add or remove
         specific users under a role, in OutSystems 11, so that end users
         gain or lose access to the app's associated screens and tasks.
+    - name: Users app visibility
+      id: users-app-visibility
+      description: Wants to make an application appear in the Users
+        application so that application roles can be assigned, when the app
+        has no Home module defined.
     - name: Creating app role
       id: create-app-role
     - name: Application Roles
@@ -14089,6 +14125,13 @@ knowledge-needs:
       installing the license, and registering it in the infrastructure
       management console (LifeTime), so that the new environment is ready for
       use.
+  - name: Env registration error
+    id: env-registration-error
+    description: Wants to troubleshoot why registering a new environment in
+      LifeTime fails by checking bidirectional network connectivity, reviewing
+      the environment's Integration logs for SOAP requests from LifeTime, and
+      confirming valid SSL certificates on LifeTime and the target environment,
+      so that the environment can be registered successfully.
   - name: Hybrid env addition
     id: hybrid-env-addition
     description: Wants to know how to add an environment when running a hybrid
@@ -15121,10 +15164,19 @@ knowledge-needs:
       running a direct UPDATE OSSYS_USER database query on any self-managed
       version, so that end users regain access to the Users app
       administrator account.
+  - name: Restore console access
+    id: restore-console-access
+    description: 'Wants to restore access to Service Center and LifeTime when
+      the browser shows "You are not authorized to view this page" because
+      the machine is outside the Internal Network, by updating the Internal
+      Network configuration in the Configuration Tool for OutSystems 9.1 or
+      in the Service Center Network Security screen for OutSystems 11 and
+      restarting the required services, so that the management consoles are
+      reachable again.'
   - name: Fix SAML decrypt error
     id: fix-saml-decrypt-error
     description: 'Wants to resolve the "Unable to decrypt the assertion" error
-      that occurs during end-user SAML authentication in OutSystems 11,
+      that occurs during end-user SAML authentication in OutSystems 11,       
       caused by a certificate mismatch between the Service Provider (SP)
       and Identity Provider (IdP), by regenerating the SP KeyStore in the
       Users application, downloading the new KeyStore and SP metadata XML,

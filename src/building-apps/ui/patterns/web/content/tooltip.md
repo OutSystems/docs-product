@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - tooltip-reference
+  - use-tooltip-pattern
 ---
 
 # Tooltip

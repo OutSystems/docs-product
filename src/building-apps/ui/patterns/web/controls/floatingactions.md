@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - floating-actions-reference
+  - use-floating-actions
 ---
 
 # Floating Actions

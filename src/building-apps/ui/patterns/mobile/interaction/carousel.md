@@ -22,6 +22,10 @@ coverage-type:
   - remember
   - apply
   - unblock
+topic:
+  - accessible-carousel-pattern
+  - carousel-wcag-fix
+  - use-carousel-pattern
 isautopublish: true
 ---
 

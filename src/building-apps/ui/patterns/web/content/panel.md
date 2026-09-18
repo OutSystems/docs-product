@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - panel-reference
+  - use-panel-pattern
 ---
 
 # Panel

@@ -576,6 +576,13 @@ knowledge-needs:
         reactive SPAs differ from traditional web models, so they can map Java
         web app concepts and client-side logic to OutSystems apps when choosing
         an app model.
+    - name: Application layers overview
+      id: application-layers-overview
+      description: Wants to understand how OutSystems organizes an application
+        into Data, Logic, and Interface layers, and how those layers map to
+        Java persistence, business logic, and presentation layers, so they can
+        place each concern in the correct layer when building an OutSystems
+        app.
   - name: Modules
     id: modules
     subtopics:
@@ -744,6 +751,11 @@ knowledge-needs:
         by the OutSystemsSampleDataDB module using its public Server Actions
         and Service Center timers, so they can customize or refresh the data
         used by Screen Templates in Service Studio.
+    - name: Reference sample data
+      id: reference-sample-data
+      description: Wants to add the OutSystems Sample Data public elements to
+        an app in ODC Studio, so they can use the sample entities and actions
+        that Screen Templates rely on when building screens.
   - name: Modeling Data
     id: modeling-data
     subtopics:
@@ -2062,6 +2074,14 @@ knowledge-needs:
         attribute that's used in the app) versus safe changes (exposing a
         new entity, renaming an exposed entity, adding a non-mandatory
         attribute, or removing an unused attribute).
+    - name: Troubleshoot O11 interoperability
+      id: troubleshoot-o11-interoperability
+      description: Wants to troubleshoot O11-ODC data interoperability when
+        an O11 connection shows Missing prerequisites, fails with Error
+        connecting after token rotation, or exposes only the baseline
+        environment or a Platform Server version requirement error in
+        LifeTime, so they can fix the connection or version issue and
+        continue exposing O11 entities to ODC.
   - name: Extensions
     id: extensions
     subtopics:
@@ -2639,6 +2659,13 @@ knowledge-needs:
       id: acls
     - name: Webservice authentication
       id: webservice-authentication
+    - name: Authenticate REST with client cert
+      id: authenticate-rest-client-cert
+      description: Wants to secure a consumed REST API by sending a client-side
+        certificate through the REST Extensibility API, customizing the
+        request with OnBeforeRequest, and optionally forcing a TLS version for
+        legacy servers, so that an OutSystems 11 app can authenticate to a
+        client-certificate-protected endpoint.
     - name: Restrict internal access
       id: restrict-internal-network-access
       description: Wants to restrict access to UI Flows, exposed SOAP Web
@@ -2731,6 +2758,12 @@ knowledge-needs:
       description: Wants to edit the permissions of an existing API client in the
         ODC portal after it was created, so its access to ODC REST APIs and data
         can be updated.
+  - name: Prevent CSRF attacks
+    id: prevent-csrf-attacks
+    description: Wants to prevent cross-site request forgery attacks in OutSystems
+      11 by relying on the built-in anti-CSRF protections for traditional and
+      reactive web apps and by validating API requests server-side, so that
+      forged requests from another site are rejected.
   - name: Injection attacks
     id: injection-attacks
     subtopics:
@@ -3673,6 +3706,12 @@ knowledge-needs:
         consumer modules that reference it, including modules with no UI, so
         that they can choose the right module type when structuring an app for
         reuse.
+  - name: App naming and URLs
+    id: app-naming-and-urls
+    description: Wants to understand how ODC turns an app's display name into its internal
+      URL path, including which characters are dropped or replaced, the naming
+      limit, the Module fallback, and when two apps collide on the same path, so
+      that they can choose names that produce predictable, unique URLs.
   - name: Core module patterns
     id: core-module-patterns
     subtopics:
@@ -7763,6 +7802,12 @@ knowledge-needs:
         published to Forge, using the same asset name and updating the
         description, images, release notes, license, and documentation as needed,
         so that existing installers can update to the new version.
+    - name: Upload Forge asset
+      id: upload-forge-asset
+      description: Wants to upload a prepared OutSystems asset to Forge by
+        completing the upload flow, including pre-upload checks, asset and demo
+        file selection, asset details, documentation, dependencies, and
+        confirmation, so that the asset is published for others to download.
   - name: Troubleshoot Forge
     id: troubleshoot-forge
     subtopics:
@@ -8234,6 +8279,12 @@ knowledge-needs:
         Agent Builder contract, including HTTP parameters, input and output schemas,
         request/response formats, and error codes, so that a custom retrieval service
         can be integrated with AI Agent Builder search.
+    - name: Add custom data source
+      id: add-custom-data-source
+      description: Wants to add a custom data source in the AI Agent Builder app by
+        opening Configurations, selecting Custom connection, entering the source
+        details, adding an authentication header, and saving the configuration, so
+        that the app can connect to a custom database or search service.
     - name: Configure CallAgent
       id: configure-callagent
       description: Wants to add the CallAgent service action to their app in ODC
@@ -11560,6 +11611,13 @@ knowledge-needs:
         such as data management, secure development, vulnerability testing,
         and mitigation, so that they can meet their share of the shared
         responsibility model.
+    - name: Platform server hardening
+      id: platform-server-hardening
+      description: Wants to harden an OutSystems Platform Server deployment
+        by configuring security contacts, administrator passwords,
+        authentication methods, encryption, network restrictions, and
+        application security controls, so that the environment reduces its
+        attack surface and follows security best practices.
     - name: OutSystems cloud duties
       id: outsystems-cloud-duties
       description: Wants to understand which infrastructure and platform

@@ -1314,6 +1314,22 @@ knowledge-needs:
         for each image, meeting WCAG 2.2 AA Non-text Content (1.1.1) and
         Name, Role, Value (4.1.2) requirements, in mobile apps and reactive
         web apps (O11).
+    - name: Accessible Carousel
+      id: accessible-carousel-pattern
+      description: Wants to make the Carousel UI Pattern accessible to
+        assistive technologies by wrapping static content, images, and OutSystems
+        UI components in Containers, adding meaningful aria-label values to slide
+        containers, and keeping Image alt text on each image, so that screen
+        readers announce Carousel slides correctly in mobile apps and reactive
+        web apps (O11).
+    - name: Carousel WCAG fix
+      id: carousel-wcag-fix
+      description: Wants to update the Carousel UI Pattern for OutSystems UI by increasing
+        the pagination control target size, enclosing direct Image widgets in
+        Containers to prevent incorrect roles, and assigning list and listitem
+        roles to carousel lists in an OnReady client action, so that the pattern
+        meets WCAG 2.2 AA accessibility requirements in mobile apps and reactive
+        web apps (O11).
     - name: Accessible Range Slider Interval
       id: accessible-range-slider-interval-pattern
       description: Wants to make the Range Slider Interval UI Pattern
@@ -5356,6 +5372,12 @@ knowledge-needs:
         the Title, Actions, Content, and Footer placeholders, and place grouped
         content in a small, structured block, so that users can present related
         content in a compact panel in a Traditional Web App (O11).
+    - name: Panel reference
+      id: panel-reference
+      description: Wants to look up the properties of the Panel UI Pattern in
+        Service Studio, including ExtendedClass, so that they can correctly
+        configure custom style classes for the pattern in a Traditional Web App
+        (O11).
     - name: Adding a Block
       id: adding-a-block
     - name: Block widget reference
@@ -5768,15 +5790,12 @@ knowledge-needs:
         Toolbox, and configure its content, background image, color, and
         height properties, in Service Studio, so that a small block of
         information is grouped and highlighted with a background image.
-    - name: Use Carousel TW
-      id: use-carousel-tw
-      description: Wants to add the Carousel UI Pattern to a Traditional Web
-        App screen, add the OutSystemsUI dependency if the widget doesn't
-        display in the Toolbox, place content or a ListRecords widget inside
-        the Items placeholder, and configure optional properties such as
-        navigation arrows, pagination, autoplay, rewind, loop, and device-
-        specific item counts, so that horizontal slides display in OutSystems
-        11 Traditional Web Apps.
+    - name: Use Carousel pattern
+      id: use-carousel-pattern
+      description: Wants to add the Carousel UI Pattern to a screen, add the OutSystemsUI
+        dependency if the widget doesn't display in the Toolbox, place content
+        or a List widget inside the CarouselItems placeholder, and configure the
+        carousel's optional settings, so that horizontal slides display.
     - name: Use Tag pattern
       id: use-tag-pattern
       description: Wants to add the Tag UI Pattern to a screen, add the
@@ -6355,6 +6374,14 @@ knowledge-needs:
         Studio for OutSystems 11, so that a line chart with a smooth spline
         line and custom markers displays correctly in traditional web apps,
         mobile apps, and reactive web apps.
+    - name: Charts API v2 reference
+      id: charts-api-v2-reference
+      description: Wants to look up the available Charts API v2 widgets,
+        add-ons, the HighchartsModules element, and the client actions used
+        to extend chart configuration in Service Studio for OutSystems 11,
+        so that they can choose the right chart component and customize it
+        correctly in traditional web apps, mobile apps, and reactive web
+        apps.
     - name: Combo Box widget reference
       id: combo-box-widget-reference
       description: Wants to look up the properties and runtime properties of the Combo Box

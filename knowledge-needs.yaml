@@ -4710,6 +4710,22 @@ knowledge-needs:
         avoiding inline styles and ID selectors, centralizing CSS in the
         theme, and using CSS variables, in Service Studio, so their app's
         styling stays maintainable and scalable.
+    - name: Promote style changes
+      id: promote-style-changes
+      description: Wants to promote visual Styles Editor changes to a reusable CSS
+        class and move the generated CSS to a screen style sheet, so the styled
+        container can be reused on other widgets.
+    - name: Combine CSS classes
+      id: combine-css-classes
+      description: Wants to assign multiple CSS classes to a single widget and
+        split text, background, and border styles across those classes, so the
+        widget combines the expected styling from each class and reflects
+        screen and block style loading order.
+    - name: Switch style classes
+      id: switch-style-classes
+      description: Wants to set a widget's Style Classes property with an
+        expression that switches between CSS classes based on a Boolean screen
+        variable, so the widget can change style dynamically at runtime.
     - name: Set stacking order with layer system
       id: set-stacking-order-layer-system
       description: Wants to understand and use the OutSystems UI Layer

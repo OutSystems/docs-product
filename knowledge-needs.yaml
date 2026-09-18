@@ -5213,6 +5213,12 @@ knowledge-needs:
         and ExtendedClass, so that they can correctly configure sticky
         header behavior and custom styling, in mobile apps and reactive
         web apps (O11).
+    - name: Use Balloon pattern
+      id: use-balloon-pattern
+      description: Wants to add the Balloon UI Pattern to a Traditional Web
+        App, bind it to a UI element, enter pop-up content, and configure
+        its position, trigger, and optional styling so that additional
+        information appears next to the target element.
     - name: Use Tooltip pattern
       id: use-tooltip-pattern
       description: Wants to add the Tooltip UI Pattern to a screen, add the
@@ -5249,6 +5255,12 @@ knowledge-needs:
         File Upload UI Pattern, including .file-upload.active, so that they
         can correctly customize the icon-to-delete visibility state, in a
         Traditional Web App (O11).
+    - name: Separator reference
+      id: separator-reference
+      description: Wants to look up the properties of the Separator UI Pattern
+        in Service Studio, so they can configure line color, spacing,
+        orientation, and custom classes in mobile apps and reactive web apps
+        (O11).
     - name: Adding a Widget or OS UI pattern
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
@@ -5907,6 +5919,14 @@ knowledge-needs:
         Pattern in Service Studio, including WidgetId and PreventDefaults,
         so that they can correctly configure high-precision mouse event
         handling in OutSystems 11 mobile apps and reactive web apps.
+    - name: Use Touch Events pattern
+      id: use-touch-events-pattern
+      description: Wants to add the Touch Events UI Pattern to a screen and
+        configure it to handle touch events on a specific widget, including
+        calling event.preventDefault() for custom touchmove behavior or
+        scroll-linked header hiding, in Service Studio for OutSystems 11,
+        so that mobile apps and reactive web apps respond correctly to touch
+        interactions.
     - name: Validate Upload widget file
       id: validate-upload-widget-file
       description: Wants to add custom validation logic for the Upload widget using If
@@ -14531,6 +14551,17 @@ knowledge-needs:
       Reactive and Mobile apps by changing the PerformanceMonitoringReactiveSampleRate
       parameter in Factory Configuration and republishing the app, so that the
       collection rate matches the app's traffic volume.
+  - name: Enable performance analytics
+    id: enable-performance-analytics
+    description: Wants to enable LifeTime Analytics for Reactive and Mobile apps
+      by activating the Technical Preview feature in LifeTime, resuming monitoring
+      for each app, republishing the app, and waiting for data synchronization,
+      so that performance metrics appear in LifeTime once the environment meets
+      the version prerequisites and LifeTime Analytics is enabled.
+  - name: App performance analytics
+    id: app-performance-analytics
+    description: Wants to understand how LifeTime performance analytics measures Reactive
+      and Mobile app performance, so they can interpret the metrics correctly.
   - name: Custom alerts
     id: custom-alerts
     subtopics:

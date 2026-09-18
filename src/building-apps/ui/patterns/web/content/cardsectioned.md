@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - card-sectioned-properties
+  - use-card-sectioned
 ---
 
 # Card Sectioned

@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - modal-pattern-reference
+  - use-modal-pattern
 ---
 
 # Modal

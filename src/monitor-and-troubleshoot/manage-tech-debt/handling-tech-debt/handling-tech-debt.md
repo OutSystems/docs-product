@@ -22,6 +22,10 @@ coverage-type:
   - evaluate
   - understand
 isautopublish: true
+topic:
+  - architecture-canvas
+  - debug-troubleshoot-logic
+  - tech-debt-basics
 ---
 
 # Handling technical debt with OutSystems

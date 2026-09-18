@@ -3784,6 +3784,12 @@ knowledge-needs:
         versus a custom User Provider with the TenantSwitch system action, so that
         queries and aggregates are automatically scoped to the correct tenant's
         data.
+    - name: Keep session alive
+      id: keep-session-alive
+      description: Wants to keep a Traditional Web App session alive from a Reactive
+        or Mobile Web app by issuing periodic asynchronous requests to a blank
+        Traditional Web page, so that users do not get signed out when the
+        Traditional Web app would otherwise idle out.
   - name: Mobile libraries
     id: mobile-libraries
     subtopics:
@@ -6868,6 +6874,13 @@ knowledge-needs:
         infrastructures, and how to request their infrastructure's IPP be
         changed, so that they know why cross-infrastructure deployment may be
         blocked and what to do about it.
+    - name: Check IPP errors
+      id: check-ipp-errors
+      description: Wants to identify modules in an OutSystems 11
+        infrastructure that will return an IPP error when republished, by
+        running the ActivationCodeCheck app, reviewing the flagged modules,
+        and exporting the results, so that they can fix the affected modules
+        before republishing them.
     - name: Unexpected app rename
       id: unexpected-app-rename
       description: Wants to understand why an app or module's name changes
@@ -7849,6 +7862,13 @@ knowledge-needs:
         environment that automatically fell asleep due to inactivity, by
         going to outsystems.com/home, logging in, and clicking Wake up, so
         they can resume using their apps without losing data.'
+    - name: Restore deleted PE
+      id: restore-deleted-pe
+      description: 'Wants to recover access to an OutSystems 11 personal
+        environment that was deleted after prolonged inactivity by clicking
+        Fetch me a new environment, then republishing their apps in the
+        new environment, so that they can keep developing after the old
+        environment is gone.'
     - name: OutSystems overview
       id: outsystems-overview
     - name: Install Azure trial
@@ -15891,11 +15911,12 @@ knowledge-needs:
     - name: Compile deploy detached web app
       id: compile-deploy-detached-web-app
       description: Wants to obtain, compile, and deploy the detached source
-        code of an OutSystems web application using Visual Studio, so that
+        code of an OutSystems web application using the supported development
+        tools, so that
         the application runs independently of OutSystems after detaching.
     - name: Compile deploy detached mobile native shell
       id: compile-deploy-detached-mobile-native-shell
       description: Wants to obtain, compile, and deploy the detached source
-        code of an OutSystems mobile native shell using Android Studio or
-        Xcode, so that the application runs independently of OutSystems after
-        detaching.
+        code of an OutSystems mobile native shell using the supported
+        development tools, so that the application runs independently of
+        OutSystems after detaching.

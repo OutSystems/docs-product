@@ -977,6 +977,24 @@ knowledge-needs:
           or descending order using the Sorting tab's Add Sort feature, in
           Service Studio for OutSystems 11, so they can retrieve information
             such as the first or last record when data is ordered alphabetically.
+      - name: Aggregate outputs
+        id: aggregate-outputs
+        description: Wants to understand the records list returned by an
+          Aggregate, including the Current and CurrentRowNumber iterator
+          values, the Length and Empty properties, and the Count output, so
+          they can use aggregate results correctly in screen logic.
+      - name: Aggregate properties
+        id: aggregate-properties
+        description: Wants to understand the Aggregate properties that control
+          returned data, including Max. Records and the read-only Executed SQL
+          property, so they can limit results and inspect the generated SQL
+          without affecting Count.
+      - name: Aggregate SQL translation
+        id: aggregate-sql-translation
+        description: Wants to understand how an Aggregate is translated into
+          SQL during compilation, including how Sources, Filters, Sorting,
+          and Test values map to SELECT, FROM, WHERE, and ORDER BY clauses, so
+          they can reason about the generated query.
     - name: Multi-entity aggregate
       id: multi-entity-aggregate
       description: Wants to create an aggregate that joins multiple entities and applies
@@ -1051,6 +1069,18 @@ knowledge-needs:
         using the Record List To Excel action and enable users to download the
         generated file, in OutSystems 11 Reactive Web and Traditional Web apps,
         so that entity records can be shared as an Excel file.
+    - name: Extract PE data via REST API
+      id: extract-pe-data-rest-api
+      description: Wants to extract data from an OutSystems 11 Personal Environment
+        when direct access to the front-end or database servers is unavailable,
+        by exposing a REST API, so they can retrieve their data through a
+        supported API-based mechanism.
+    - name: Extract PE data via Excel download
+      id: extract-pe-data-excel-download
+      description: Wants to extract data from an OutSystems 11 Personal Environment
+        when direct access to the front-end or database servers is unavailable,
+        by generating an Excel download, so they can retrieve their data
+        through a supported file-based mechanism.
 - name: API testing
   guid: 195d823e-8f16-4d32-a66d-7766c6bdd032
   topics:
@@ -1408,6 +1438,30 @@ knowledge-needs:
   topics:
   - name: SOA and Microservices
     id: soa-and-microservices
+  - name: Distributed transactions
+    id: distributed-transactions
+    description: Wants to manage distributed transactions in ODC apps by
+      combining service actions and events while keeping state consistent
+      after failures and retries.
+    subtopics:
+    - name: Choreography tradeoffs
+      id: choreography-tradeoffs
+      description: Wants to compare choreography with orchestration for
+        distributed transactions so they can keep the process centralized,
+        keep apps loosely coupled, and make testing and troubleshooting
+        easier.
+    - name: Retry compensation
+      id: retry-compensation
+      description: Wants to handle distributed transactions with service
+        actions so they can retry transient failures, compensate
+        unrecoverable errors, and restore a consistent state across
+        concurrent transactions.
+    - name: Event compensation
+      id: event-compensation
+      description: Wants to handle distributed transactions with events so
+        they can track transaction state, emit compensation events, and
+        recover consistent state after failure callbacks or exception
+        flows.
   - name: ODC Events
     id: odc-events
     subtopics:
@@ -4412,6 +4466,12 @@ knowledge-needs:
         Workflow Builder, by creating a new field with the desired Length
         instead, in OutSystems 11, so that the application field saves
         successfully.'
+    - name: WFB field label error
+      id: wfb-field-label-error
+      description: 'Wants to resolve the "Field label cannot be higher than
+        <Max_Length>." error in Workflow Builder in OutSystems 11 by
+        shortening a field label that exceeds the maximum allowed length so
+        the application can save.'
     - name: WFB dropdown id error
       id: wfb-dropdown-id-error
       description: 'Wants to resolve the "Cannot create new dropdown entry. Id
@@ -4707,6 +4767,14 @@ knowledge-needs:
       id: customize-app-styles
     - name: Creating a theme
       id: creating-a-theme
+    - name: Layout placeholder names
+      id: layout-placeholder-names
+      description: Wants to identify the layout placeholder names reserved by the
+        OutSystems platform, so they avoid naming conflicts when building a
+        theme layout or block in OutSystems 11.
+    - name: BEM methodology
+      id: bem-methodology
+      description: Wants to understand the BEM (Block Element Modifier) approach used in OutSystems UI themes, including how blocks, elements, and modifiers keep CSS components small and reusable, so they can structure theme CSS without unintended side effects.
     - name: CSS best practices
       id: css-best-practices
       description: Wants to write maintainable CSS in an OutSystems app by
@@ -7648,6 +7716,9 @@ knowledge-needs:
   - name: Submitting assets to Forge
     id: submitting-assets-to-forge
     subtopics:
+    - name: Export Forge asset
+      id: export-forge-asset
+      description: Wants to export a Forge asset as an application package or module when preparing it for sharing, by using the appropriate Service Studio or Service Center export option for the asset type, so that they can upload the right file to Forge.
     - name: Document Forge asset
       id: document-forge-asset
       description: Wants to document a Forge asset before sharing it by outlining the introduction, best practices, and installation and setup guidance, so that readers know what the asset does and how to install and use it.
@@ -7712,6 +7783,12 @@ knowledge-needs:
         completing the Azure Portal wizard (resource group, credentials, VM size),
         starting the deployed VM, and connecting Service Studio to the new environment,
         so that they have a working OutSystems trial up and running.
+    - name: Back up trial apps
+      id: back-up-trial-apps
+      description: Wants to back up their trial apps by creating a Personal Environment
+        if needed, downloading the .osp files, uploading them to Service Center, and
+        continuing development in Service Studio after the trial ends, so that they
+        can keep working on the apps they built during the trial.
     - name: Missing confirmation email
       id: missing-confirmation-email
       description: 'Wants to troubleshoot not receiving the ODC shared space signup
@@ -7838,6 +7915,12 @@ knowledge-needs:
         (apps/workflows/AI agents/timers) allowed, the database storage cap, and
         the daily execution/log caps — so they can plan what they can
         realistically build and run in a PE.
+    - name: PE infrastructure limits
+      id: pe-infrastructure-limits
+      description: Wants to understand that an OutSystems 11 Personal Environment runs on
+        shared infrastructure with limited CPU, memory, IO, and database
+        storage, reduced caching and collaboration capabilities, and app-version
+        retention limits, so they know the hosting constraints.
     - name: PE hibernation basics
       id: pe-hibernation-basics
       description: Wants to understand what PE hibernation is, when it triggers after a
@@ -8988,6 +9071,31 @@ knowledge-needs:
       id: feature-toggle-site-settings
     - name: Feature fencing strategies
       id: feature-fencing
+- name: Platform lifecycle and support
+  guid: 2a9c4b6f-7d5e-4a58-8f7e-3a5c5f0f0a61
+  topics:
+  - name: O11 lifecycle and support
+    id: o11-lifecycle-support
+    subtopics:
+    - name: O11 lifecycle overview
+      id: o11-lifecycle-overview
+      description: Wants to understand the OutSystems 11 product lifecycle, including its
+        release types and support calendar, so that they know how the platform
+        stays supported over time.
+    - name: Install O11 releases
+      id: install-o11-releases
+      description: Wants to plan how to install a new OutSystems 11 release,
+        including the differences between self-managed upgrades,
+        OutSystems 11 Cloud upgrades handled by the support team, and
+        Service Studio auto-update, so that they know what to expect when
+        updating the platform.
+    - name: Update docs cadence
+      id: update-docs-cadence
+      description: Wants to know which documentation, training, installation
+        checklist, release notes, and product update content change with
+        major releases, regular releases, and cumulative patches in
+        OutSystems 11, so that they can tell what gets refreshed for each
+        release type.
 - name: Load testing
   guid: f816091c-1508-4da9-b5f6-cffebb845234
   topics:

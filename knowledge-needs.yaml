@@ -2020,6 +2020,9 @@ knowledge-needs:
         supported connector.
     - name: Integrate using custom code
       id: custom-code-integration
+    - name: Use NuGet package
+      id: use-nuget-package
+      description: Wants to add a public .NET assembly to an OutSystems 11 extension by using Visual Studio's NuGet Package Manager, ensuring the referenced DLL is copied locally and packages.config is included, so that the extension can call the package from C# code.
     - name: Declare File parameters
       id: declare-file-parameters
       description: Wants to declare File input and output parameters in an
@@ -6553,6 +6556,12 @@ knowledge-needs:
         Delete event, in OutSystems 11, by adding the missing submit
         button/screen action or event action, so that end user input is
         saved instead of silently ignored.
+    - name: JavaScript API keywords
+      id: javascript-api-keywords
+      description: Wants to use the JavaScript API keywords inside JavaScript nodes in
+        Reactive Web Apps, so they can pass values into JavaScript, call other
+        client actions, check the current end-user role, and use platform APIs
+        from client-side logic.
     - name: JavaScript flow element
       id: javascript-flow-element
       description: Wants to know the configurable properties of the JavaScript flow element
@@ -7541,6 +7550,9 @@ knowledge-needs:
       id: choose-app-type
     - name: Creating app from scratch
       id: creating-app-from-scratch
+    - name: Traditional web app
+      id: traditional-web-app
+      description: Wants to create a traditional web application with a UI module and a blank Core module, connect the modules with a public server action, and show that action result on an anonymous home screen, so they can publish and test the app in a browser.
     - name: Application templates overview
       id: application-templates-overview
       description: Wants to understand what application templates are, what types are
@@ -9663,6 +9675,21 @@ knowledge-needs:
       checking plugin compatibility, rebuilding with MABS 12, and moving ODC
       Settings or Cordova hooks to supported Capacitor mechanisms, so that the
       app keeps working on the Capacitor runtime.
+  - name: Mobile app updates
+    id: mobile-app-updates
+    subtopics:
+    - name: Automatic app updates
+      id: automatic-app-updates
+      description: Wants to understand when a mobile app detects and applies
+        published updates automatically, including when it checks for a new
+        version and how seamless and attention-requiring upgrades behave, so
+        that they can predict how production changes reach end users.
+    - name: New build required
+      id: new-build-required
+      description: Wants to understand which mobile app changes require a new build or
+        updated package on the device, including changes to branding, resources,
+        plugins, and configuration, so that they can plan when a reinstall or
+        republish is necessary.
   - name: OTA upgrade troubleshooting
     id: ota-upgrade-troubleshooting
     subtopics:
@@ -13304,6 +13331,12 @@ knowledge-needs:
         (load balancing, SSL offloading, caching, compression, content switching,
         application firewall, server obfuscation, authentication, and single sign-on),
         so they can determine whether it fits their OutSystems infrastructure needs.
+    - name: Custom 404 pages
+      id: custom-404-pages
+      description: Wants to serve a custom 404 page through a reverse proxy or
+        CDN when a requested URL is not found, so that end users and search
+        engines reach a branded error page instead of a generic not found
+        response.
     - name: Reverse proxy benefits
       id: reverse-proxy-benefits
       description: Wants to understand the benefits of placing a reverse proxy

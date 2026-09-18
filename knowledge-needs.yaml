@@ -597,6 +597,17 @@ knowledge-needs:
         and the Independent Modules app''s Move action, so that a module built
         in one app can be reused in another without recreating it from
         scratch.'
+    - name: Module naming by layer
+      id: module-naming-by-layer
+      description: Wants to choose the correct naming convention for foundation, core, and
+        mobile modules, so they can name modules consistently by layer in an
+        OutSystems app.
+    - name: Module naming rationale
+      id: module-naming-rationale
+      description: 'Wants to understand why module naming conventions matter,
+        including how they reveal each module''s purpose, enforce the reference
+        architecture, and normalize common patterns, so they can decide when
+        to apply a convention.'
     - name: Module properties reference
       id: module-properties-reference
       description: Wants to look up the configuration properties available for
@@ -613,6 +624,11 @@ knowledge-needs:
         in Service Studio for OutSystems 11, including Name, Description,
         Icon, and jQuery Version and which are mandatory, so they can
         correctly interpret a module reference.
+    - name: End-user module names
+      id: end-user-module-names
+      description: Wants to keep end-user module names short, direct, and
+        meaningful so the module names work well in URLs and stay easy for
+        users to understand.
   - name: Multi-tenant architecture
     id: multi-tenant-architecture
     description: Wants to understand what multi-tenancy is and how OutSystems 11
@@ -2636,6 +2652,13 @@ knowledge-needs:
         attacks by using HTTPS/SSL/TLS for Web Flows and Web Services and enabling
         secure cookies with HSTS headers, so that sensitive data and session cookies
         aren't transmitted in plain text.
+    - name: Enable TLS protocols
+      id: enable-tls-protocols
+      description: Wants to enable supported TLS protocols for OutSystems integrations by
+        adding Schannel client registry keys and setting SchUseStrongCrypto in
+        the .NET Framework registry hives, so that requests can negotiate a
+        supported SSL/TLS protocol when the defaults cause secure channel
+        errors.
     - name: Secure custom cookies
       id: secure-custom-cookies
       description: Wants to add the Secure flag to a custom cookie in OutSystems
@@ -3706,6 +3729,16 @@ knowledge-needs:
         consumer modules that reference it, including modules with no UI, so
         that they can choose the right module type when structuring an app for
         reuse.
+    - name: Modular programming
+      id: modular-programming
+      description: Wants to structure an ODC app so it encapsulates one aspect of
+        functionality in a single app and keeps the code independent and
+        replaceable, so they can organize a solution into modular pieces.
+    - name: Producer and consumer apps
+      id: producer-consumer-apps
+      description: Wants to identify producer apps and consumer apps in ODC when
+        apps share reusable elements across applications, so they can reuse
+        features from one app in another and keep the app roles clear.
   - name: App naming and URLs
     id: app-naming-and-urls
     description: Wants to understand how ODC turns an app's display name into its internal
@@ -7039,6 +7072,14 @@ knowledge-needs:
         Center's Redeploy Published Version option without recompiling, so
         that they choose the correct action to keep dependent apps and
         frontends synchronized.
+    - name: Prevent entity data loss
+      id: prevent-entity-data-loss
+      description: Wants to prevent entity data loss after deployment when
+        recreating an entity changes its Identifier across environments, by
+        rolling back Production and staging the entity from Production to
+        Development before redeploying, or by repopulating the data when
+        rollback is not feasible, so that the original records remain
+        available.
   - name: Advanced manual deployments
     id: manual-advanced-deploy
     subtopics:
@@ -8830,6 +8871,22 @@ knowledge-needs:
         request and response formatting, and error codes, so that custom
         or third-party models can be called from ODC Studio like natively
         supported models.
+    - name: Add custom AI model
+      id: add-custom-ai-model
+      description: Wants to add a custom AI model in the AI Agent Builder app by
+        opening Configurations, selecting Custom connection, entering the model
+        details, adding endpoints and authentication headers, and saving the
+        configuration, so that the app can call a custom or third-party LLM.
+    - name: Configure Amazon Bedrock
+      id: configure-amazon-bedrock
+      description: Wants to request access to Amazon Bedrock Claude foundation models,
+        create an IAM user, and assign the minimum permissions needed to use the
+        model in AI Agent Builder, so they can set up the model connection.
+    - name: Configure Azure OpenAI
+      id: configure-azure-openai
+      description: Wants to create and deploy an Azure OpenAI service, retrieve the
+        API keys and endpoint, and prepare them for AI Agent Builder, so that they
+        can configure an Azure OpenAI model connection.
     - name: Search services for RAG
       id: search-services-rag
       description: Wants to connect ODC apps to external knowledge bases
@@ -8844,6 +8901,12 @@ knowledge-needs:
           Storage, upload files, build an index, and retrieve the endpoint,
           key, and index name, so that they can add the source to AI Agent
           Builder.
+      - name: Configure Amazon Kendra
+        id: configure-amazon-kendra
+        description: Wants to create an Amazon Kendra index backed by Amazon S3,
+          upload source data, configure the data source, and retrieve the
+          details needed to add the source to AI Agent Builder, so that they
+          can ground agents on Amazon Kendra content.
     - name: Add Azure AI Search
       id: add-azure-ai-search-data-source
       description: Wants to add an Azure AI Search data source in the AI
@@ -9547,6 +9610,11 @@ knowledge-needs:
         updating it via a client action on the field's OnChange event, in
         Service Studio for OutSystems 11, so that user input persists without
         relying on the back button.
+    - name: Create local storage
+      id: create-local-storage
+      description: Wants to define local storage entities in ODC Studio by using
+        the app's database entity structure as the basis for the local model, so
+        mobile and native apps can store offline data.
     - name: Fetch local storage data
       id: fetch-local-storage-data
       description: Wants to display local storage data on a mobile screen by
@@ -11507,6 +11575,11 @@ knowledge-needs:
         Center and correctly allowlist them on their firewall instead of
         the load balancer's IP, so that outgoing connections to external
         services through the firewall aren't blocked.
+    - name: Allowlist ODC public IPs
+      id: allowlist-odc-public-ips
+      description: Wants to identify which ODC public IP addresses to allowlist by region
+        when private network endpoints need to accept traffic from ODC services,
+        so that those endpoints can receive the correct ODC traffic.
     - name: Allowlist VPN IP range
       id: allowlist-vpn-private-ip-range
       description: Wants to allowlist the full private IP range of their
@@ -12449,6 +12522,12 @@ knowledge-needs:
         control) or by configuring the browser to trust the server for
         implicit authentication, so that users aren't repeatedly prompted
         for credentials during normal use.
+    - name: Fix WIA Negotiate Login
+      id: fix-wia-negotiate-login
+      description: Wants to resolve the Windows Integrated Authentication login
+        failure in Internet Explorer or Edge caused by the NEGOTIATE protocol,
+        by disabling NEGOTIATE in IIS or on the client workstation, so that
+        users can sign in successfully with Integrated Authentication.
     - name: Extend login validation
       id: extend-login-validation
       description: Wants to add custom server-side validation to the built-in
@@ -13644,6 +13723,11 @@ knowledge-needs:
         passing through the original protocol and Host header, so that they can
         restore correct URLs by enabling SSL offload pass-through and preserving
         the host header at the network layer.
+    - name: Host header mismatch
+      id: host-header-mismatch
+      description: Wants to diagnose and fix the 503 "Host header does not match"
+        error by checking secure endpoints, redirect rules, and DNS entries so
+        that legitimate domains are allowed through the cloud environment.
   - name: Web Application Firewall
     id: web-application-firewall
     subtopics:
@@ -15348,6 +15432,11 @@ knowledge-needs:
         shape dragging issues with Polyline and Polygon, and search UI scrolling
         problems, so they can identify whether an issue they're facing is
         already known, apply available workarounds, and decide when to upgrade.
+    - name: Data Grid known issues
+      id: data-grid-known-issues
+      description: Wants to check known issues with the Data Grid component for Reactive
+        Web apps in OutSystems 11, so they can tell whether a problem is already
+        known and decide whether to use a workaround or upgrade.
   - name: Generate BPT troubleshooting report
     id: generate-bpt-troubleshooting-report
     description: Wants to generate a BPT troubleshooting report by installing

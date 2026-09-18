@@ -5298,6 +5298,25 @@ knowledge-needs:
         by overriding the .modal .animate CSS class's animation-duration
         property in the theme, in Service Studio, so that the modal opens
         and closes faster or slower, in a Traditional Web App (O11).
+    - name: Modal pattern reference
+      id: modal-pattern-reference
+      description: Wants to look up the properties of the Modal UI Pattern in Service
+        Studio, so that they can correctly configure modal behavior and styling
+        in a Traditional Web App (O11).
+    - name: Use Modal pattern
+      id: use-modal-pattern
+      description: Wants to add the Modal UI Pattern to a screen, place
+        content in the Title, Icon, Content, and Footer placeholders, and
+        use the ToggleModal action with the WidgetId property to open and
+        close the modal, in Service Studio, so that the app can display a
+        focused interaction in a Traditional Web App (O11).
+    - name: Use Panel pattern
+      id: use-panel-pattern
+      description: Wants to add the Panel UI Pattern to a screen, add the widget via
+        Toolbox or Search in other modules if the dependency isn't added, fill
+        the Title, Actions, Content, and Footer placeholders, and place grouped
+        content in a small, structured block, so that users can present related
+        content in a compact panel in a Traditional Web App (O11).
     - name: Adding a Block
       id: adding-a-block
     - name: Block widget reference
@@ -5662,6 +5681,18 @@ knowledge-needs:
         Service Studio, including UsePadding and ExtendedClass, so that they
         can correctly configure the pattern's padding and custom styling, in
         mobile apps and reactive web apps (O11).
+    - name: Use Card Sectioned
+      id: use-card-sectioned
+      description: Wants to add the Card Sectioned UI Pattern to a Traditional
+        Web App screen, add the OutSystemsUI dependency if the widget does not
+        display in the Toolbox, drag it into Main Content, and populate its
+        placeholders, so that users can group short pieces of information into
+        a noticeable block on screen in OutSystems 11 Traditional Web Apps.
+    - name: Card Sectioned properties
+      id: card-sectioned-properties
+      description: Wants to configure the Card Sectioned widget properties in Service
+        Studio for a Traditional Web App, so that the card layout, padding,
+        alignment, and custom styling match the screen design.
     - name: Use Card Item pattern
       id: use-card-item-pattern
       description: Wants to add the Card Item UI Pattern to a screen, add
@@ -5697,16 +5728,24 @@ knowledge-needs:
         add the OutSystemsUI dependency if the widget doesn't display in the
         Toolbox, and configure its content, background image, color, and
         height properties, in Service Studio, so that a small block of
-        information is grouped and highlighted with a background image in
-        mobile apps and reactive web apps (O11).
+        information is grouped and highlighted with a background image.
+    - name: Use Carousel TW
+      id: use-carousel-tw
+      description: Wants to add the Carousel UI Pattern to a Traditional Web
+        App screen, add the OutSystemsUI dependency if the widget doesn't
+        display in the Toolbox, place content or a ListRecords widget inside
+        the Items placeholder, and configure optional properties such as
+        navigation arrows, pagination, autoplay, rewind, loop, and device-
+        specific item counts, so that horizontal slides display in OutSystems
+        11 Traditional Web Apps.
     - name: Use Tag pattern
       id: use-tag-pattern
       description: Wants to add the Tag UI Pattern to a screen, add the
         OutSystemsUI dependency if the widget doesn't display in the
         Toolbox, add content to its placeholders, and configure its Color,
-        Shape, Size, and IsLight properties, in Service Studio, so that
-        small texts display in a colored tag format to show statuses,
-        labels, or categories, in mobile apps and reactive web apps (O11).
+        Shape, Size, IsLight, and ExtendedClass properties, in Service
+        Studio, so that small texts display in a colored tag format to show
+        statuses, labels, or categories.
     - name: Tag reference
       id: tag-reference
       description: Wants to look up the properties of the Tag UI Pattern in
@@ -5719,7 +5758,7 @@ knowledge-needs:
         add the OutSystemsUI dependency if the widget doesn't display in
         the Toolbox, enter the label text, and set a name and type for the
         Input variable, in Service Studio, so that an animated label
-        displays for user input in mobile apps and reactive web apps (O11).
+        displays for user input.
     - name: Animate Alert pattern
       id: animate-alert-pattern
       description: Wants to add an enter animation to the Alert UI Pattern, using
@@ -6821,6 +6860,13 @@ knowledge-needs:
     subtopics:
     - name: Elements of UI in OutSystems (UI Flow, screen, UI element)
       id: ui-elements-screen-blocks
+    - name: Web application overview
+      id: web-application-overview
+      description: Wants to understand how a web application in OutSystems is
+        put together, including screens, blocks, widgets, forms, themes,
+        entities, aggregates, events, debugging tools, and security settings,
+        so that they can orient themselves before building or reviewing a web
+        app.
   - name: Creating Screens
     id: creating-screens
     subtopics:

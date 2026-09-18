@@ -570,6 +570,12 @@ knowledge-needs:
     subtopics:
     - name: Map OS concepts with "rest of the world" concepts
       id: map-os-to-global-concepts
+    - name: Programming model intro
+      id: programming-model-intro
+      description: Wants to understand the OutSystems programming model and how
+        reactive SPAs differ from traditional web models, so they can map Java
+        web app concepts and client-side logic to OutSystems apps when choosing
+        an app model.
   - name: Modules
     id: modules
     subtopics:
@@ -756,6 +762,9 @@ knowledge-needs:
       - name: Many-to-many relationship
         id: many-to-many-relationship
         description: Wants to create a many-to-many relationship between an Employee entity and a Project entity in Service Studio by introducing a ProjectMember junction entity with mandatory EmployeeId, ProjectId, and RoleDescription attributes, so that an employee can belong to multiple projects and each project can have multiple employees.
+    - name: Entity schema mapping
+      id: entity-schema-mapping
+      description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
     - name: Static Entities
       id: static-entities
     - name: Static entity data migration
@@ -3898,6 +3907,12 @@ knowledge-needs:
   - name: How to process data using Timers
     id: process-data-timers
     subtopics:
+    - name: Timer overview
+      id: timer-overview
+      description: Wants to understand how OutSystems timers run asynchronous
+        logic on a schedule compared with PHP cron jobs, including logs,
+        retries, and DevOps-adjustable settings, so that they can use timers
+        for background work.
     - name: Timer best practices
       id: timer-best-practices
       description: Wants to implement a long-running Timer correctly by applying best
@@ -4676,6 +4691,11 @@ knowledge-needs:
       description: Wants to interpret the color-coded highlights shown in Service
         Studio's Compare and Merge window, to identify deleted, inserted, and
         modified or conflicting lines during a merge, in OutSystems 11.
+  - name: Isolated workspaces
+    id: isolated-workspaces
+    description: Wants to choose a branching strategy and use a personal area for
+      isolated debugging when collaborating on an OutSystems app, so that work
+      stays short-lived and safe to share.
 - name: Consume UI
   guid: 349f50f2-cb79-41c7-9e8b-f113cbb3e965
   topics:
@@ -6207,6 +6227,15 @@ knowledge-needs:
         IsDesktop(), in Service Studio for O11 Traditional Web Apps, so that
         the Iframe displays at a fixed width on desktop while remaining
         full-width on mobile to avoid overflow.
+    - name: Use Bullets pattern
+      id: use-bullets-pattern
+      description: Wants to add the Bullets UI Pattern to a screen, by
+        dragging the widget from the Toolbox into the Main Content area,
+        adding the OutSystemsUI dependency via Search in other modules if it
+        does not display, adding content to the Bullet Item placeholders, and
+        nesting a Bullets widget inside a Bullet Item to create sub-bullets,
+        in Service Studio, so that users can organize content into bullet
+        points in Traditional Web Apps (O11).
     - name: Use Accordion pattern
       id: use-accordion-pattern
       description: Wants to add the Accordion UI Pattern to a screen, by
@@ -9416,6 +9445,12 @@ knowledge-needs:
         updating it via a client action on the field's OnChange event, in
         Service Studio for OutSystems 11, so that user input persists without
         relying on the back button.
+    - name: Fetch local storage data
+      id: fetch-local-storage-data
+      description: Wants to display local storage data on a mobile screen by
+        configuring the screen's local storage aggregate, adding filters and
+        sorting, and refreshing it from screen lifecycle events or client
+        actions so the screen shows the right records.
   - name: Firebase plugin migration
     id: migrate-firebase-plugins
     description: Wants to migrate mobile app logic from unsupported Firebase-based

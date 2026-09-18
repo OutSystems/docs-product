@@ -6,6 +6,9 @@ tags:
   - Performance
   - Platform Server
   - Troubleshooting
+topic:
+  - adjust-request-sampling
+  - enable-performance-analytics
 locale: en-us
 guid: b8e4d2e1-6f3c-4b7a-9c0d-3e6f8b2c4d0e
 app_type: reactive web apps, mobile apps

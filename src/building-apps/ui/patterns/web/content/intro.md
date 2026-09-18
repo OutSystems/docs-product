@@ -18,6 +18,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - content-patterns-overview
 ---
 
 # Content

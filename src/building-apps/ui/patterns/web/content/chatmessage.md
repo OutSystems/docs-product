@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - chat-message-reference
+  - use-chat-message-pattern
 ---
 
 # Chat Message

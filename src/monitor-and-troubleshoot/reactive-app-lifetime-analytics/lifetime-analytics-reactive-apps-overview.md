@@ -18,6 +18,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - adjust-request-sampling
+  - app-performance-analytics
+  - enable-performance-analytics
 isautopublish: true
 ---
 

@@ -19,6 +19,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - use-layout-login
 ---
 
 # Layout Login

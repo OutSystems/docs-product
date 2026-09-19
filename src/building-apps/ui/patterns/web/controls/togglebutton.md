@@ -19,6 +19,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-toggle-button-pattern
 ---
 
 # Toggle Button

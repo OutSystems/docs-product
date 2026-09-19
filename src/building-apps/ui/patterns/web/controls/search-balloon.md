@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-search-balloon-pattern
 ---
 
 # Search Balloon

@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-video-pattern
+  - video-pattern-reference
 ---
 
 # Video

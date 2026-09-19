@@ -3005,7 +3005,7 @@ knowledge-needs:
         a triggering event to the Start node in ODC's Workflow editor, so that
         the workflow launches automatically when that event occurs.
     - name: Configure conditional start
-      id: configure-conditional-start
+      id: configure-conditional-start-odc
       description: Wants to add a Conditional Start activity to an existing
         ODC workflow and link it to a business event in ODC's Workflow editor,
         so that the workflow triggers only when that event occurs.
@@ -4357,6 +4357,15 @@ knowledge-needs:
       id: async-processes-basics
     - name: Triggering processes, process flows
       id: trigger-processes
+    - name: Execute sub-process
+      id: execute-sub-process
+      description: Wants to execute a sub-process from a parent process by using the Execute
+        Process activity in OutSystems 11, so that the runtime creates a
+        sub-process instance, pauses the parent until the sub-process terminates,
+        and then resumes the parent flow.
+    - name: Conditional process start
+      id: conditional-process-start-o11
+      description: Wants to configure a conditional start in an OutSystems 11 process so it starts on create or update entity events and only listens after a dependency source activity has executed.
     - name: Design process flow
       id: design-process-flow
       description: Wants to design the behavior of a process using the Process
@@ -6108,6 +6117,9 @@ knowledge-needs:
         its input variable in Service Studio for OutSystems 11, so that users
         can search for content by entering queries without knowing its
         location, in mobile apps and reactive web apps.
+    - name: Use Search Balloon pattern
+      id: use-search-balloon-pattern
+      description: Wants to add the Search Balloon UI Pattern to a Traditional Web App, wire its search input and results list, configure the preparation action, filter condition, and refresh logic, so that matching records update as the user types.
     - name: Use Dropdown Search
       id: use-dropdown-search
       description: Wants to add the Dropdown Search UI Pattern to a screen and configure
@@ -12604,6 +12616,13 @@ knowledge-needs:
       id: prioritize-test-automation
     - name: Automated testing strategies
       id: automated-test-strategy
+    - name: Team automation roles
+      id: team-automation-roles
+      description: Wants to assign test automation responsibilities across product
+        owners, business analysts, engagement managers, tech leads, developers,
+        and manual testers when implementing a test automation strategy with a
+        team, so that the team plans, builds, triages, and maintains automated
+        tests as a shared responsibility.
     - name: Infra integration testing
       id: infra-integration-testing
       description: Wants to automate integration tests for non-API dependencies,

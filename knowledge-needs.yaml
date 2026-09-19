@@ -3034,6 +3034,11 @@ knowledge-needs:
         notifications, including when continuing from a Decision outcome or
         after a conditional start event, in ODC's Workflow editor, so that the
         process completes without manual intervention when conditions are met.
+    - name: Parallel workflow tasks
+      id: parallel-workflow-tasks
+      description: Wants to run multiple workflow tasks in parallel by
+        adding parallel branches in ODC's Workflow editor, so that
+        independent activities execute at the same time.
     - name: Add human activity
       id: add-human-activity
       description: Wants to add a Human activity to an ODC workflow in the
@@ -3787,6 +3792,10 @@ knowledge-needs:
         and fixing its main causes, monolithic single-module architecture, large
         images, large resources, and numerous custom icons, so that the module
         publishes, deploys, and runs efficiently.
+    - name: Architecture canvas rules
+      id: architecture-canvas-rules
+      description: Wants to validate module architecture with the Architecture Canvas rules
+        for modules, so they can keep module dependencies sound.
   - name: Architecture Canvas
     id: architecture-canvas
   - name: Application composition
@@ -5610,6 +5619,14 @@ knowledge-needs:
         in Service Studio, so they can configure line color, spacing,
         orientation, and custom classes in mobile apps and reactive web apps
         (O11).
+    - name: Use Sidebar pattern
+      id: use-sidebar-pattern
+      description: Wants to add and configure the Sidebar UI Pattern in a
+        Traditional Web App, including finding the widget when the
+        dependency is missing, placing it in the screen, wiring
+        ToggleSidebar to a button, and setting WidgetId, HasOverlay, and
+        ExtendedClass, so that additional information appears beside the
+        main content.
     - name: Adding a Widget or OS UI pattern
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
@@ -6387,6 +6404,12 @@ knowledge-needs:
         its IsActive, Color, and ExtendedClass properties, in Service Studio for
         OutSystems 11, so that related events display in chronological order, in
         mobile apps and reactive web apps.
+    - name: Use Timeline pattern
+      id: use-timeline-pattern
+      description: Wants to add the Timeline UI Pattern to a Traditional Web App in
+        Service Studio, place Timeline Items on a screen, fill the Icon, Date, and
+        Content placeholders, and configure the Timeline and Timeline Item
+        properties, so that related events display in chronological order.
     - name: Use Progress Bar pattern
       id: use-progress-bar-pattern
       description: Wants to add the Progress Bar UI Pattern to a screen and configure
@@ -6599,7 +6622,7 @@ knowledge-needs:
         pattern's expand/collapse behavior and appearance, in mobile apps
         and reactive web apps (O11).
     - name: Use Tabs pattern
-      id: use-tabs-pattern
+      id: use-tabs-pattern-o11
       description: Wants to add the Tabs UI Pattern to a screen to divide
         content into meaningful sections, by dragging the widget from the
         Toolbox into the Main Content area (adding the OutSystemsUI
@@ -6609,7 +6632,7 @@ knowledge-needs:
         Service Studio, so that users can switch between sections within
         the same context, in mobile apps and reactive web apps (O11).
     - name: Tabs reference
-      id: tabs-reference
+      id: tabs-reference-o11
       description: Wants to look up the properties and events of the Tabs,
         Tabs Content Item, and Tabs Header Item widgets in Service Studio,
         including TabsOrientation, StartingTab, Height,
@@ -6617,6 +6640,23 @@ knowledge-needs:
         OptionalConfigs.JustifyHeaders, ExtendedClass, and the OnTabChange
         event, so that they can correctly configure the pattern's layout,
         behavior, and styling, in mobile apps and reactive web apps (O11).
+    - name: Use Tabs pattern
+      id: use-tabs-pattern-traditional-web
+      description: Wants to add the Tabs UI Pattern to a Traditional Web App
+        screen by dragging the widget from the Toolbox into the Main Content
+        area, adding the OutSystemsUI dependency via Search in other modules
+        if it doesn't display, filling the Header Item and Content Item
+        placeholders, and setting properties like ActiveTab and Orientation in
+        Service Studio, so that users can switch between sections within the
+        same context in OutSystems 11 traditional web apps.
+    - name: Tabs reference
+      id: tabs-reference-traditional-web
+      description: Wants to look up the properties of the Tabs, Tabs Header
+        Item, and Tabs Content Item widgets in Service Studio, including
+        ActiveTab, Orientation, IsJustified, IsRight, ExtendedClass, and
+        DataTab, so that they can correctly configure the pattern's layout,
+        behavior, styling, and tab-item pairing in OutSystems 11 traditional
+        web apps.
     - name: Use Section pattern
       id: use-section-pattern
       description: Wants to add the Section UI Pattern to a screen, by

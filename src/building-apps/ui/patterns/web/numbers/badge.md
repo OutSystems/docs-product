@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - badge-reference
+  - use-badge-pattern
 ---
 
 # Badge

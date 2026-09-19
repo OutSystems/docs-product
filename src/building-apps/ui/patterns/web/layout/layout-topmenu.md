@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - use-layout-top-menu
 ---
 
 # Layout Top Menu

@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - section-index-reference
+  - use-section-index-pattern
 ---
 
 # Section Index

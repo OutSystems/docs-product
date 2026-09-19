@@ -5295,6 +5295,19 @@ knowledge-needs:
         its Source Entity, Source Attribute, and Variable properties, in
         Service Studio, so that end users can choose one value from a list of
         values bound to an Entity, in traditional web apps (O11).
+    - name: Use Dropdown pattern
+      id: use-dropdown-pattern
+      description: Wants to use the Dropdown UI Pattern in a Traditional Web
+        App by adding the widget, binding a List Records widget to a data
+        source, creating a Screen Action for each option, and refreshing the
+        selected value after Ajax Submit, so that users can choose an option
+        from a dynamic list and see feedback.
+    - name: Use Dropdown Select pattern
+      id: use-dropdown-select-pattern
+      description: Wants to use the Dropdown Select UI Pattern in a Traditional
+        Web App by adding the widget, linking it to a Combo Box or List Box
+        widget, and configuring its WidgetId and optional properties, so that
+        users can use an enhanced combo box or multi-select dropdown in forms.
     - name: Dropdown Server reference
       id: dropdown-server-reference
       description: Wants to look up the properties, events, and JavaScript API
@@ -6069,12 +6082,26 @@ knowledge-needs:
         and events in Service Studio for OutSystems 11, so that they can
         correctly configure time selection behavior and styling in mobile apps
         and reactive web apps.
+    - name: Use Date Picker
+      id: use-date-picker
+      description: Wants to add the Date Picker UI Pattern to a screen, including adding
+        the dependency when the widget does not appear in the Toolbox,
+        creating the input and local variable, wiring the OnClose and OnSelect
+        events, and configuring its properties in Service Studio for
+        OutSystems 11, so that users can select a single date or a date range
+        in Traditional Web Apps.
     - name: Use Date Picker Range
       id: use-date-picker-range
       description: Wants to add the Date Picker Range UI Pattern to a screen and configure
         its properties, in Service Studio for OutSystems 11, so that users can
         select a date range from a calendar, in mobile apps and reactive web
         apps.
+    - name: Date Picker reference
+      id: date-picker-reference
+      description: Wants to look up the Date Picker UI Pattern's configurable properties
+        and advanced format options in Service Studio for OutSystems 11, so
+        that they can correctly configure date selection behavior, disabled
+        dates, default dates, and styling in Traditional Web Apps.
     - name: Use Search pattern
       id: use-search-pattern
       description: Wants to add the Search UI Pattern to a screen and configure
@@ -6330,6 +6357,17 @@ knowledge-needs:
         Service Studio for OutSystems 11, so that a button shows a loading
         spinner and is disabled from being clicked while a non-immediate
         action is executing, in mobile apps and reactive web apps.
+    - name: Use Button Group pattern
+      id: use-button-group-pattern
+      description: Wants to add the Button Group UI Pattern to a Traditional
+        Web App screen and configure its radio-button items, labels, and
+        IsJustified property, so that users can choose from a small set of
+        options with grouped buttons.
+    - name: Button Group reference
+      id: button-group-reference
+      description: Wants to look up the Button Group UI Pattern's IsJustified
+        property in Service Studio, so that they can control how the button
+        group items are distributed in a Traditional Web App.
     - name: Button Loading reference
       id: button-loading-reference
       description: Wants to look up the properties of the Button Loading UI
@@ -10945,6 +10983,15 @@ knowledge-needs:
         the mobile compilation and opening a support case with OutSystems
         Support if the problem persists, so that the native mobile build
         completes successfully.'
+    - name: Missing app icon
+      id: missing-app-icon-error
+      description: 'Wants to resolve the OS-MCO-40015 "The app doesn''t have
+        an icon. Define an icon for the app in ODC Studio." error by
+        defining an app icon in the app properties in ODC Studio and
+        rebuilding the mobile app, so that the native build succeeds.'
+    - name: Missing primary color
+      id: missing-primary-color
+      description: 'Wants to resolve the OS-MCO-40016 "The app doesn''t have a primary color. Define a primary color for the app in ODC Studio." error by defining a primary color in the app properties in ODC Studio and rebuilding the mobile app, so that the native build succeeds.'
     - name: Invalid primary color error
       id: invalid-primary-color-error
       description: 'Wants to resolve the OS-MCO-50015 "The primary color is
@@ -12381,6 +12428,12 @@ knowledge-needs:
         Quality and install the code analysis and LifeTime probes, so that
         their apps' technical debt data starts being collected and appears in
         Code Quality.
+    - name: Configure proxy access
+      id: configure-code-quality-proxy
+      description: Wants to configure a forward proxy for Code Quality by
+        turning on proxy authentication, entering the proxy URL, and
+        providing credentials in the LifeTime plugin, so that the plugin can
+        connect to Code Quality SaaS through the proxy.
     - name: Connect performance analytics
       id: connect-performance-analytics-code-quality
       description: Wants to enable Code Quality to use runtime performance data from LifeTime Analytics by selecting the Runtime Performance probe environment, resuming monitoring for the app, republishing it, and waiting for synchronization, so that findings can show performance metrics.

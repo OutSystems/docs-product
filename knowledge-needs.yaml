@@ -1104,6 +1104,11 @@ knowledge-needs:
         SQL query selecting all attributes individually instead of using the
         entity wildcard, by replacing the attribute list with <entity>.*, so
         that the query is easier to maintain, in OutSystems 11.
+    - name: Fix unused query warning
+      id: fix-unused-query-warning
+      description: Wants to remove an unused Aggregate or SQL query that is not
+        referenced anywhere in the app, so the app does not run unnecessary
+        queries and the codebase stays easier to maintain.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -9380,14 +9385,11 @@ knowledge-needs:
         exporting an APNS certificate and private key from Keychain, and creating
         and configuring an iOS application in the Pushwoosh dashboard, so that the
         app is ready to send and receive push notifications via Pushwoosh on iOS.
-    - name: Camera plugin v7 reference
-      id: camera-plugin-reference-v7
-      description: Wants to look up the Camera plugin version 7's client actions
-        (CheckCameraPlugin, RecordVideo, TakePicture, PlayVideo, EditURIPicture,
-        ChooseFromGallery, and their deprecated variants), web blocks, related data
-        structures (MediaResult, MediaMetadata) and static entities (MediaType), and
-        error codes, so that they can implement camera and gallery functionality in
-        an O11 mobile app using this legacy plugin version.
+    - name: Camera plugin reference
+      id: camera-plugin-reference
+      description: Wants to look up the Camera plugin's API reference so that they
+        can implement camera and gallery functionality in a mobile app using this
+        legacy plugin.
     - name: Camera plugin migration
       id: migrate-camera-plugin
       description: Wants to migrate the Camera plugin from version 1 to version 2
@@ -9512,6 +9514,17 @@ knowledge-needs:
         configurations schema or the Cordova-based schema for MABS versions
         lower than 12, so that the app can access the device's calendar on
         iOS without falling back to default system messages.
+    - name: Common plugin actions
+      id: common-plugin-actions
+      description: Wants to use the Common plugin's client actions to log to the device
+        console and retrieve runtime environment information in an ODC mobile
+        app, so that the app can identify its runtime environment.
+    - name: Plugin manager scopes
+      id: plugin-manager-scopes
+      description: Wants to create and destroy PluginManager scopes in a
+        mobile app screen lifecycle, using InitPluginManager, createScope,
+        and destroyScope, so that native background work and callbacks
+        follow the screen and UI block lifecycle safely.
   - name: Using Capacitor Plugins
     id: using-capacitor-plugins
     subtopics:
@@ -12538,6 +12551,17 @@ knowledge-needs:
     subtopics:
     - name: Manage technical debt with AIMS
       id: manage-tech-debt
+    - name: Remove disabled code
+      id: remove-disabled-code
+      description: Wants to remove code that has been disabled for a while,
+        or when the app is already in production and behaving correctly, so
+        that the app stays easier to read and maintain.
+    - name: Remove unused action
+      id: remove-unused-action
+      description: Wants to delete an action that is not used in an app or
+        library and is not exposed to other apps or libraries, so that the
+        code stays smaller, easier to maintain, and less exposed to security
+        risk.
     - name: Technical debt formula
       id: tech-debt-formula
       description: Wants to understand how OutSystems 11 Code Quality

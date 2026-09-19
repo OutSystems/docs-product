@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-timeline-item-pattern
+  - use-timeline-pattern
 ---
 
 # Timeline

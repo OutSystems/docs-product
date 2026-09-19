@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - counter-reference
+  - use-counter-pattern
 ---
 
 # Counter

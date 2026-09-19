@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - tabs-reference-traditional-web
+  - use-tabs-pattern-traditional-web
 ---
 
 # Tabs

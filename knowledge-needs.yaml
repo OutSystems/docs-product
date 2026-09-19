@@ -5198,6 +5198,19 @@ knowledge-needs:
         description: Wants to add a unique aria-label to a layout nav element,
           either directly or through a MenuName input parameter, so screen
           readers can distinguish navigation regions in a reactive app layout.
+      - name: Use layout login
+        id: use-layout-login
+        description: Wants to locate and reuse the Layout Login web block in a Traditional
+          Web App by customizing its placeholders and widgets and adjusting its
+          optional device and accessibility configuration properties, so that
+          login screens use the built-in layout.
+      - name: Use layout popup
+        id: use-layout-popup
+        description: Wants to locate and reuse the Layout Popup web block in a Traditional
+          Web App by customizing its placeholders and widgets and adjusting its
+          optional DeviceConfiguration and AccessibilityConfiguration properties,
+          so that screens can display reusable off-canvas content in the built-in
+          popup layout.
     - name: Add menu link
       id: add-menu-link
       description: Wants to add a screen to the application menu by dragging it into the
@@ -5570,6 +5583,19 @@ knowledge-needs:
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
       id: ui-elements-accelerators
+      subtopics:
+      - name: Use Search pattern
+        id: use-search-pattern-odc
+        description: Wants to add the Search UI Pattern to a screen and configure
+          its input variable in Service Studio for OutSystems 11, so that users
+          can search for content by entering queries without knowing its
+          location, in mobile apps and reactive web apps.
+      - name: Use Search pattern O11
+        id: use-search-pattern-o11
+        description: Wants to add the Search UI Pattern to a Traditional Web App screen,
+          add the dependency if the widget does not appear in the Toolbox,
+          create a local input variable, and configure the widget so users can
+          search for content by entering queries.
     - name: Build calculator screen
       id: build-calculator-screen
       description: Wants to build a simple Reactive Web calculator screen with a screen
@@ -6138,12 +6164,6 @@ knowledge-needs:
         and advanced format options in Service Studio for OutSystems 11, so
         that they can correctly configure date selection behavior, disabled
         dates, default dates, and styling in Traditional Web Apps.
-    - name: Use Search pattern
-      id: use-search-pattern
-      description: Wants to add the Search UI Pattern to a screen and configure
-        its input variable in Service Studio for OutSystems 11, so that users
-        can search for content by entering queries without knowing its
-        location, in mobile apps and reactive web apps.
     - name: Use Search Balloon pattern
       id: use-search-balloon-pattern
       description: Wants to add the Search Balloon UI Pattern to a Traditional Web App, wire its search input and results list, configure the preparation action, filter condition, and refresh logic, so that matching records update as the user types.
@@ -6414,6 +6434,13 @@ knowledge-needs:
         and ExtendedClass, so that they can correctly configure a button's
         loading spinner behavior and appearance in OutSystems 11 mobile apps
         and reactive web apps.
+    - name: Use Toggle Button pattern
+      id: use-toggle-button-pattern
+      description: Wants to add the Toggle Button UI Pattern to a Traditional
+        Web App screen, bind it to a Boolean local variable, and use OnChange
+        with Ajax Refresh to update a related button's Enabled state, in
+        Service Studio, so that users can switch between two states before
+        submitting.
     - name: Use Video pattern
       id: use-video-pattern
       description: Wants to add a video to a screen using the OutSystems UI

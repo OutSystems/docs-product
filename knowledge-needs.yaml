@@ -3932,6 +3932,11 @@ knowledge-needs:
       description: Wants to release a new library version in ODC using semantic
         versioning and release notes, so that consumers can adopt updates with
         clear compatibility expectations.
+    - name: Deploy library version
+      id: deploy-library-version
+      description: Wants to understand whether a new library version in ODC can
+        be deployed by itself from Development to QA, so they know that the
+        library is packaged and deployed with a consuming app instead.
     - name: Review accepted library updates
       id: review-accepted-library-updates
       description: Wants to review accepted library updates in consuming apps or
@@ -7848,6 +7853,12 @@ knowledge-needs:
       can determine whether an out-of-the-box DevOps model meets their
       organization's needs before evaluating the individual lifecycle stages
       (plan, develop, test, deploy, release, secure, and monitor) in more depth.
+  - name: DORA metrics
+    id: dora-metrics
+    description: Wants to identify the four DORA metrics, deployment frequency,
+      lead time for changes, time to restore service, and change failure rate,
+      so they can recognize the correct measure set for DevOps delivery
+      effectiveness in an assessment.
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:

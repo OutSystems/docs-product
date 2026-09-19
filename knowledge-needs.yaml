@@ -3016,6 +3016,11 @@ knowledge-needs:
         for identifying the instance, and built-in functions, in ODC's Workflow
         editor, so that workflow instances are easier to identify and
         troubleshoot in logs and the Portal.
+    - name: Workflow built-in functions
+      id: workflow-built-in-functions
+      description: Wants to know which built-in function groups are available in ODC
+        workflow expressions, so they can choose expressions that work in
+        workflows.
     - name: Add decision activity
       id: add-decision-activity
       description: Wants to add a Decision activity to an ODC workflow, defining
@@ -3049,12 +3054,23 @@ knowledge-needs:
         business event occurs, then hand off to a Human activity assigned to
         a role that closes on another event, in ODC's Workflow editor, so that
         a person can complete a required task before the workflow continues.
+    - name: Add wait activity
+      id: add-wait-activity
+      description: Wants to add a Wait activity to an ODC workflow in the
+        Workflow editor and configure its close event, conditions, and
+        timeout so the workflow pauses until the wait ends.
     - name: Create a workflow
       id: create-workflow
       description: Wants to implement a workflow in ODC Portal by creating it
         in the workflow editor, giving it a unique name, selecting the event
         that triggers the Start node, adding steps through to the End node,
         and publishing it, so that the workflow is ready to run in the app.
+    - name: End workflow
+      id: end-workflow
+      description: Wants to understand how an ODC workflow finishes when
+        execution reaches the End node, including how conditional start
+        flows must also reach the End node before the instance status changes
+        to Done.
     - name: Search workflow editor
       id: search-workflow-editor
       description: Wants to open the workflow editor's search menu using
@@ -3062,6 +3078,12 @@ knowledge-needs:
         flow-steps or properties, edit expressions and outcomes, or add new
         flow-steps, so that they can navigate and edit complex workflows
         faster.
+    - name: Go to flow step
+      id: go-to-flow-step
+      description: Wants to use a Go to a flow step in an ODC workflow to loop back to a
+        previous node and understand where it is valid and which variables
+        remain available after the jump, so that they can model controlled loops
+        without losing required data.
     - name: Manage workflow errors
       id: manage-workflow-errors
       description: Wants to identify, locate, and resolve issues in a
@@ -3088,6 +3110,11 @@ knowledge-needs:
       then to the Production stage, understanding that an impact analysis
       runs in the background before each deployment, so that the workflow
       becomes available to end users.
+  - name: Workflow activity filters
+    id: workflow-activity-filters
+    description: Wants to create an aggregate that filters workflow activity
+      instances by process and activity definition keys so they can build
+      dashboards or task boxes that show only the relevant workflow work.
 - name: Advanced workflows
   guid: 7a84e09e-c48c-404f-8d9f-728b9f78c88c
   topics:
@@ -13586,6 +13613,11 @@ knowledge-needs:
         users in action and collecting statistics and context information for each,
         when conducting business analysis, so that they can understand each persona's
         contribution to strategic or tactical goals.
+  - name: Business processes
+    id: business-processes
+    description: Wants to understand what business processes are, why organizations
+      use them, and common examples such as approval and support flows, so that they
+      can recognize process-driven work in an organization.
 - name: O11 to ODC Migration
   guid: ''
   topics:

@@ -6795,6 +6795,11 @@ knowledge-needs:
         frequently used images into a single CSS sprite using
         background-image and background-position, so that screen load times
         improve.
+    - name: Simplify splash screen
+      id: simplify-splash-screen
+      description: Wants to keep a mobile app splash screen simple by
+        minimizing server requests, complex UI logic, and Blocks, so that the
+        app loads faster and users do not see a blank screen.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -8039,6 +8044,12 @@ knowledge-needs:
       description: Wants to navigate the ODC Studio IDE as a newcomer by understanding what
         each major area of the interface is for, so they can move through the
         tool without getting blocked by layout or navigation friction.
+    - name: Troubleshoot reminder comments
+      id: troubleshoot-reminder-comments
+      description: Wants to troubleshoot reminder comments in ODC Studio by understanding
+        what turns a comment into a reminder and why removing the text alone
+        does not clear the flag, so that they can resolve or unmark the reminder
+        correctly.
     - name: ODC Studio commands
       id: odc-studio-commands
       description: 'Wants to run ODC Studio command-line switches from the installation

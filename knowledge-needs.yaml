@@ -5876,12 +5876,13 @@ knowledge-needs:
         Web App screen, add the OutSystemsUI dependency if the widget does not
         display in the Toolbox, drag it into Main Content, and populate its
         placeholders, so that users can group short pieces of information into
-        a noticeable block on screen in OutSystems 11 Traditional Web Apps.
-    - name: Card Sectioned properties
-      id: card-sectioned-properties
-      description: Wants to configure the Card Sectioned widget properties in Service
-        Studio for a Traditional Web App, so that the card layout, padding,
-        alignment, and custom styling match the screen design.
+        a noticeable block on screen.
+    - name: Card Sectioned settings
+      id: card-sectioned-settings
+      description: Wants to configure the Card Sectioned widget settings,
+        including UsePadding, IsVertical, ImagePadding, and ExtendedClass, so
+        that the card layout, padding, image spacing, and custom styling match
+        the screen design.
     - name: Use Card Item pattern
       id: use-card-item-pattern
       description: Wants to add the Card Item UI Pattern to a screen, add

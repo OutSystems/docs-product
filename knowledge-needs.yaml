@@ -13830,6 +13830,21 @@ knowledge-needs:
       the developer mindset, so that they can contribute effectively to solution
       design, implementation, quality, usability, scalability, performance, testing,
       and team collaboration.
+  - name: Business analyst responsibilities
+    id: business-analyst-responsibilities
+    description: Wants to understand what is expected from a Business Analyst in an
+      OutSystems delivery team, including representing the business, gathering
+      requirements, creating the vision document, preparing and developing
+      iterations, assuring quality, supporting release planning, and contributing
+      additional competencies such as product ownership, UX promotion, and quality
+      control, so that they can perform the role effectively.
+  - name: Business analyst mindset
+    id: business-analyst-mindset
+    description: Wants to understand the Business Analyst mindset in an OutSystems
+      delivery team, including business alignment, quality assurance,
+      organizational context awareness, user focus, and project steering, so that
+      they can challenge decisions against the real business vision and guide
+      delivery toward the right outcomes.
   - name: Product owner mindset
     id: product-owner-mindset
     description: Wants to understand the Product Owner mindset in an OutSystems
@@ -13845,6 +13860,20 @@ knowledge-needs:
       plus additional competencies such as project management, budget control, UX
       promotion, delivery process ownership, and quality control, so that they can
       perform the role effectively.
+  - name: Tech lead duties
+    id: tech-lead-duties
+    description: Wants to understand what is expected from a Tech Lead in an
+      OutSystems delivery team, including responsibilities before and during
+      iterations such as business goals, technical solution, non-functional
+      requirements, architecture, task breakdown, team leadership, quality
+      assurance, and delivery to production, so that they can perform the role
+      effectively.
+  - name: Tech lead mindset
+    id: tech-lead-mindset
+    description: Wants to understand the Tech Lead mindset in an OutSystems
+      delivery team, including solution architecture, team building, quality
+      assurance, acting as the user, and project steering, so that they can guide
+      delivery with a balance of architecture, quality, and business value.
   - name: Project timebox phases
     id: project-timebox-phases
     description: Wants to understand the project timebox lifecycle in OutSystems
@@ -13863,6 +13892,12 @@ knowledge-needs:
       project timebox phases, including which roles are involved at initiation,
       iteration development, solution release, and post-production, so that they
       can plan team involvement across the lifecycle.
+  - name: OutSystems delivery methodology
+    id: outsystems-delivery-methodology
+    description: Wants to understand the OutSystems delivery methodology baseline,
+      including that it is based on Scrum but changes team roles, delivery
+      approach, and adaptations for speed, risk reduction, and value delivery,
+      so they can align their working method with OutSystems projects.
 - name: O11 to ODC Migration
   guid: ''
   topics:

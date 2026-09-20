@@ -13793,11 +13793,76 @@ knowledge-needs:
         users in action and collecting statistics and context information for each,
         when conducting business analysis, so that they can understand each persona's
         contribution to strategic or tactical goals.
+    - name: Workshop roles
+      id: workshop-roles
+      description: Wants to identify the key roles that drive a Business Vision workshop,
+        when planning the session, so that responsibilities and deliverables are
+        clear.
+    - name: Workshop participants
+      id: workshop-participants
+      description: Wants to identify the additional business and technical participant
+        groups needed for a Business Vision workshop, when organizing the
+        session, so that business context, technical alignment, and coordination
+        are covered.
+    - name: Workshop planning
+      id: workshop-planning
+      description: Wants to prepare and run a Business Vision workshop, including
+        the kickoff, preparation, stage sequence, and two-week agenda, when setting
+        up the workshop, so that participants align on activities, deliverables,
+        and timing.
+    - name: OutSystems 6 dimensions
+      id: outsystems-6-dimensions
+      description: Wants to identify the six dimensions used to optimize an
+        OutSystems delivery methodology, including that speed is not one of them,
+        so they can answer questions about the value-realization model.
   - name: Business processes
     id: business-processes
     description: Wants to understand what business processes are, why organizations
       use them, and common examples such as approval and support flows, so that they
       can recognize process-driven work in an organization.
+- name: Agile methodology
+  guid: ''
+  topics:
+  - name: Developer responsibilities
+    id: developer-responsibilities
+    description: Wants to understand what is expected from a developer in an OutSystems
+      delivery team, including responsibilities before and during iterations and
+      the developer mindset, so that they can contribute effectively to solution
+      design, implementation, quality, usability, scalability, performance, testing,
+      and team collaboration.
+  - name: Product owner mindset
+    id: product-owner-mindset
+    description: Wants to understand the Product Owner mindset in an OutSystems
+      delivery team, including business alignment, communication hub behavior,
+      organizational context awareness, user focus, and project steering, so that
+      they can challenge decisions against the business vision and guide delivery
+      toward the right outcomes.
+  - name: Product owner responsibilities
+    id: product-owner-responsibilities
+    description: Wants to understand what is expected from a Product Owner in an
+      OutSystems delivery team, including core responsibilities like solution
+      ownership, backlog management, organizational awareness, and change management,
+      plus additional competencies such as project management, budget control, UX
+      promotion, delivery process ownership, and quality control, so that they can
+      perform the role effectively.
+  - name: Project timebox phases
+    id: project-timebox-phases
+    description: Wants to understand the project timebox lifecycle in OutSystems
+      agile methodology, including initiation, iteration development, solution
+      release, and post-production, so that they can see how the overall delivery
+      timeline is organized.
+  - name: Iteration structure
+    id: iteration-structure
+    description: Wants to understand how a single iteration is organized in the
+      OutSystems project timebox, including development, analysis, stabilization,
+      daily stand-ups, and retrospectives, so that they can follow the work tracks
+      and ceremonies within each iteration.
+  - name: Project role allocation
+    id: project-role-allocation
+    description: Wants to understand how project roles are allocated across the
+      project timebox phases, including which roles are involved at initiation,
+      iteration development, solution release, and post-production, so that they
+      can plan team involvement across the lifecycle.
 - name: O11 to ODC Migration
   guid: ''
   topics:

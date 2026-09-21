@@ -2795,6 +2795,13 @@ knowledge-needs:
         revocation, protecting tokens in transit and at rest, and defending
         against replay attacks, so that the token-based authentication
         pattern resists common token-related attacks.
+    - name: Manage token lifecycle
+      id: manage-token-lifecycle
+      description: Wants to centralize token acquisition, secure storage,
+        request attachment in OnBeforeRequest, and refresh handling for
+        consumed REST APIs that use JWT-based token authentication, so that
+        apps reuse valid tokens and recover from 401 or 403 failures without
+        scattering token logic.
     - name: Credential delegation
       id: credential-delegation
       description: Wants to enable Integrated Authentication credential delegation
@@ -6579,6 +6586,28 @@ knowledge-needs:
         Studio for OutSystems 11, so that a line chart with a smooth spline
         line and custom markers displays correctly in traditional web apps,
         mobile apps, and reactive web apps.
+    - name: Configure Area Chart
+      id: configure-area-chart
+      description: Wants to add the Area Chart widget to a screen and configure
+        its DataPointList, SeriesName, and StackingType properties in Service
+        Studio for ODC, so that a stacked area chart displays correctly in
+        mobile apps and reactive web apps.
+    - name: Configure radar chart
+      id: configure-radar-chart
+      description: Wants to add the Radar Chart widget to a screen and
+        configure its DataPointList, SeriesName, SeriesStyling, and SeriesType
+        properties in ODC Studio, so that the radar chart displays multiple
+        series and area styling correctly in mobile apps and reactive web apps.
+    - name: Configure chart data points
+      id: configure-chart-data-points
+      description: Wants to populate a chart's DataPointList with fixed or
+        variable data, map Label and Value fields, and set SeriesName for
+        multiple series in ODC Studio, so that chart widgets display data
+        correctly in mobile apps and reactive web apps.
+    - name: Set donut inner size
+      id: configure-donut-inner-size
+      description: Wants to set the Donut Chart InnerSize property in ODC Studio,
+        so that the donut chart displays with the intended hole size.
     - name: Charts API v2 reference
       id: charts-api-v2-reference
       description: Wants to look up the available Charts API v2 widgets,
@@ -8173,6 +8202,14 @@ knowledge-needs:
       id: add-module-dependency
     - name: Installing Forge component
       id: install-forge-component
+    - name: ODC solutions overview
+      id: odc-solutions-overview
+      description: Wants to understand what an ODC solution is, how it bundles components,
+        and how components differ from dependencies, so that they can tell what
+        belongs in the solution and what stays separate.
+    - name: Manage ODC solution
+      id: manage-odc-solution
+      description: Wants to manage an installed ODC solution after installation, including independent deployment, customization, and locating its components in the Solutions console and asset lists, so that they can work with it like standard assets.
     - name: Forge overview
       id: forge-overview
       description: Wants to understand what Forge is, what types of reusable assets (apps, libraries, agentic apps) are available, and how the community-driven sharing model works in OutSystems.
@@ -9246,6 +9283,11 @@ knowledge-needs:
         using natively supported providers or bringing their own API key (BYOK),
         configuring endpoints, and setting daily usage limits, so they can set
         up AI model connections before writing app logic that calls the model.
+    - name: Configure AI Agent Builder with Amazon Bedrock
+      id: configure-ai-agent-builder-amazon-bedrock
+      description: Wants to configure AI Agent Builder to use a supported model
+        provider by gathering the service keys and endpoint details and adding
+        them to the builder, so that agents can use the selected model.
     - name: Custom model connections
       id: custom-model-connections-odc
       description: Wants to connect ODC to non-native LLM providers or

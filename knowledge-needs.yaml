@@ -2027,6 +2027,12 @@ knowledge-needs:
         environment in Service Center and map the extension's logical database
         to it, so that applications using extension modules can read and write
         data from the correct external database after deployment.
+    - name: Set physical table names
+      id: set-physical-table-names
+      description: Wants to enter the three-part Physical Table Name for each
+        external database Entity during a LifeTime deployment, and copy the
+        source value when both environments use the same external database or
+        schema, so that the deployed app points to the correct target database.
   - name: Integration Patterns
     id: integration-patterns
     subtopics:
@@ -2914,6 +2920,14 @@ knowledge-needs:
         VerifyJavascriptLiteral() from the Sanitization extension, in OutSystems
         11, so that malicious script content can't be injected via that
         expression.
+    - name: Fix LDAP injection warning
+      id: fix-ldap-injection-warning
+      description: Wants to resolve the Service Studio warning that an LDAP
+        filter built from end-user input isn't protected against LDAP
+        injection, by encoding each dynamic filter value with
+        LdapFilterEncode() before assembling LDAP_Search, LDAP_Search_WithAuthenticationType,
+        or LDAP_Login filters, so that attacker-controlled values can't alter
+        the LDAP filter structure.
     - name: Fix open redirect warning
       id: fix-open-redirect-warning
       description: Wants to resolve the Service Studio warning that an
@@ -7393,6 +7407,12 @@ knowledge-needs:
         11, an issue that must be fixed in Service Studio before a module can be
         published to the server, so that they know why every reported error
         needs resolving prior to deployment.
+    - name: Warnings overview
+      id: warnings-overview
+      description: Wants to understand what a warning is in OutSystems 11 and
+        that warnings do not block module deployment, so they can decide which
+        warnings need investigation and follow the specific guidance that
+        applies.
     - name: 1-Click Publish steps
       id: 1-click-publish-steps
       description: Wants to understand what happens when they use 1-Click
@@ -10418,6 +10438,9 @@ knowledge-needs:
     - name: File plugin manifest
       id: file-plugin-manifest
       description: Wants to declare the correct API reason keys (NSPrivacyAccessedAPICategoryFileTimestamp, NSPrivacyAccessedAPICategoryDiskSpace) and recommended reason values for the File plugin in a PrivacyInfo.xcprivacy file, so that the app passes Apple App Store privacy validation when using the File plugin.
+    - name: App license compliance
+      id: app-license-compliance
+      description: Wants to publish the third-party license texts and copyright notices required by OutSystems UI and other plug-ins or components in a mobile app, so end users can access the required notices and the app meets license obligations.
     - name: Distribute as PWA
       id: distribute-as-pwa
       description: Wants to understand what a PWA is, how it compares to native mobile
@@ -14136,12 +14159,29 @@ knowledge-needs:
       description: Wants to create and scope process diagrams for a business vision
         document, when conducting business analysis, so that all stakeholders can
         visually understand the full business process beyond just the application scope.
+    - name: Information architecture
+      id: information-architecture
+      description: Wants to create an information architecture for a vision document
+        by representing the application structure and navigation hierarchy, so that
+        stakeholders understand where concepts live and how users move through the
+        application.
+    - name: 'Low-fi mockups'
+      id: low-fi-mockups
+      description: Wants to design low-fi mockups with seed data from the business
+        processes, information architecture, and user stories in the vision document,
+        so that the team can validate the user experience and get useful user feedback
+        early.
     - name: Personas
       id: personas
       description: Wants to create personas for a business vision document by observing
         users in action and collecting statistics and context information for each,
         when conducting business analysis, so that they can understand each persona's
         contribution to strategic or tactical goals.
+    - name: Identify user roles
+      id: identify-user-roles
+      description: Wants to identify the user roles that matter when creating personas
+        by grouping users with specific capabilities or different purposes, so that
+        they can define personas with the right scope.
     - name: Workshop roles
       id: workshop-roles
       description: Wants to identify the key roles that drive a Business Vision workshop,
@@ -14216,6 +14256,41 @@ knowledge-needs:
       plus additional competencies such as project management, budget control, UX
       promotion, delivery process ownership, and quality control, so that they can
       perform the role effectively.
+    subtopics:
+    - name: Create backlog structure
+      id: create-backlog-structure
+      description: Wants to create the backlog from user story mapping by turning
+        user needs into themes, epics, and high-level user stories, sequencing the
+        epics, and keeping the structure focused on the minimum viable product, so
+        that they can shape the initial project scope.
+    - name: Prioritize user stories
+      id: prioritize-user-stories
+      description: Wants to prioritize user stories with the MoSCoW technique by
+        classifying them as must have, should have, could have, or will not have,
+        so that they can rank work inside each epic.
+    - name: Define product minimums
+      id: define-product-minimums
+      description: Wants to define the minimum viable product and the minimum
+        lovable product from the prioritized backlog by separating must-have stories
+        from lower-priority ones and deciding which desirable enhancements deserve
+        extra effort, so that they can plan incremental deliveries that are usable
+        and appealing.
+    - name: Drill down stories
+      id: drill-down-user-stories
+      description: Wants to drill down high-level user stories into small, valuable,
+        end-to-end slices that fit within a few days of work and still support demo
+        feedback, so that each iteration delivers usable value without overengineering.
+    - name: Personal story framing
+      id: personal-user-story-framing
+      description: Wants to frame a user story from a specific user profile with the
+        who, what, why, and collaboratively defined how, so that the story unfolds
+        progressively and stays personal and actionable for the team.
+    - name: Connected story structure
+      id: story-collaboration-structure
+      description: Wants to structure a user story with relevant context,
+        prerequisites, next steps, acceptance criteria, examples, and a collaboration
+        zone, so that the team can plan, test, and update it while keeping it as the
+        single source of truth.
   - name: Tech lead duties
     id: tech-lead-duties
     description: Wants to understand what is expected from a Tech Lead in an
@@ -14242,6 +14317,17 @@ knowledge-needs:
       description: Wants to understand how Product teams, CoE teams, release staging,
         testing, monitoring, and production support fit into the OutSystems delivery
         lifecycle, so that they can organize releases and handoffs effectively.
+    - name: Solution release phase
+      id: solution-release-phase
+      description: Wants to understand the solution release phase in OutSystems agile
+        methodology, including change and release management, rollout planning,
+        training, documentation, project control, testing, stabilization, and user
+        acceptance, so that they can prepare the solution for go-live.
+    - name: Release testing and UAT
+      id: release-testing-and-uat
+      description: Wants to validate a solution during the release phase by running
+        business testing, load and stress tests, stabilization activities, and user
+        acceptance testing, so that they can confirm it is ready to go live.
   - name: Iteration structure
     id: iteration-structure
     description: Wants to understand how a single iteration is organized in the

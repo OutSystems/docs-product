@@ -285,7 +285,8 @@ suffix-vs-content mismatch in either direction:
 
   **Not acceptable** — flag these:
     * Infrastructure or staging names: `eng-stage-us-01.outsystems.dev`,
-      `eng-stage-*`, `qa-*`, `internal-*`, `staging-*`
+      `eng-<lifecycle>-*` (for example `eng-stage-*` and `eng-dev-*`),
+      `qa-*`, `internal-*`, `staging-*`, `personal-*`
     * Development server IPs or private VPN hostnames
     * Internal Jira / ticket IDs (`RDTKF-*`, `TK-*`) visible on screen
 
@@ -305,7 +306,8 @@ suffix-vs-content mismatch in either direction:
   `training-prd.outsystems.app` (public demo URL).
 * **Fail example:** `action-odcs.png` (browser tab shows
   `eng-stage-us-01 - eng-stage-us-01.out...`), `emanuel-rodrigues-odcs.png`
-  (footer shows `eng-stage-us-01.outsystems.dev`).
+  (footer shows `eng-stage-us-01.outsystems.dev`), a screenshot with a
+  browser tab or address bar showing `personal-z1f36vp9.outsystems.dev`.
 
 ## 10. Theme must match the captured surface
 

@@ -15,6 +15,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+topic:
+  - basic-deployment-concepts
 ---
 
 # Deploying apps

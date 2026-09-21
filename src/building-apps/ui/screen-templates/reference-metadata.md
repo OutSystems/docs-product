@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - create-screen-templates
 ---
 
 # Metadata reference

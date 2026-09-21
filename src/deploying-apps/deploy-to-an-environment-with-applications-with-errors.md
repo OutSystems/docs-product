@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - unblock
+topic:
+  - deploy-dependency-management
 ---
 
 # Deploy to an Environment with Applications with Errors

@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - create-screen-templates
 ---
 
 # Guidelines for creating Screen Templates

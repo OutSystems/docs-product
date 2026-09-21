@@ -9214,6 +9214,13 @@ knowledge-needs:
         opening Configurations, selecting Custom connection, entering the model
         details, adding endpoints and authentication headers, and saving the
         configuration, so that the app can call a custom or third-party LLM.
+    - name: Add Amazon Bedrock model
+      id: add-amazon-bedrock-model
+      description: Wants to add an Amazon Bedrock model in the AI Agent Builder app
+        by opening Configurations, selecting Amazon Bedrock, entering the model
+        details, adding one or more endpoints for the same model and version,
+        setting endpoint priorities, and saving the configuration, so that the app
+        can use Bedrock with prioritized failover endpoints.
     - name: Configure Amazon Bedrock
       id: configure-amazon-bedrock
       description: Wants to request access to Amazon Bedrock Claude foundation models,
@@ -9224,6 +9231,12 @@ knowledge-needs:
       description: Wants to create and deploy an Azure OpenAI service, retrieve the
         API keys and endpoint, and prepare them for AI Agent Builder, so that they
         can configure an Azure OpenAI model connection.
+    - name: Model high availability
+      id: model-high-availability
+      description: Wants to configure multiple deployments or resources for an AI
+        model in AI Agent Builder and distribute load between them so the system
+        stays operational during upstream outages or when token-per-minute limits
+        are reached.
     - name: Search services for RAG
       id: search-services-rag
       description: Wants to connect ODC apps to external knowledge bases

@@ -4954,6 +4954,13 @@ knowledge-needs:
         implementing the FetchIframe action with correct CSRF headers, and working
         around the LifeTime Analytics incompatibility, so that existing web screens
         can be surfaced inside a mobile app without full migration.
+    - name: Use Iframe pattern
+      id: use-iframe-pattern
+      description: Wants to add the Iframe UI Pattern to a Traditional Web App screen
+        in Service Studio, handle a missing dependency if the widget does not
+        appear, configure the SourceURL, Title, Width, and Height properties, and
+        publish and test the module so that external app content displays in a
+        bite-size preview inside the app.
     - name: Auto-login mobile user
       id: auto-login-mobile-user
       description: Wants to automatically log in an end user authenticated in the
@@ -5236,6 +5243,13 @@ knowledge-needs:
         dragging it from the Toolbox, in Service Studio for OutSystems 11,
         so that a complex, fully functional Screen layout scaffolds quickly
         with sample data instead of building each widget from scratch.
+    - name: Use Separator pattern
+      id: use-separator-pattern
+      description: Wants to add the Separator UI Pattern to a Traditional Web
+        App screen, recover the dependency if the widget does not display in
+        the Toolbox, drag it into Main Content, and configure its optional
+        properties in Service Studio, so that content is visually separated
+        in O11.
     - name: Style Card Sectioned
       id: style-card-sectioned
       description: Wants to replace a List Item inside a Gallery/List widget
@@ -5341,6 +5355,18 @@ knowledge-needs:
         the overlay directions, and configure the pattern's optional properties,
         in Service Studio for OutSystems 11, so that users can swipe cards in
         multiple directions in mobile apps and reactive web apps.
+    - name: Use Stacked Icon pattern
+      id: use-stacked-icon-pattern
+      description: Wants to add the Stacked Icon UI Pattern to a screen,
+        configure the front and back icons, colors, and size, and recover the
+        dependency if it is missing, in Service Studio for OutSystems 11, so
+        that users can create a distinctive stacked icon in traditional web
+        apps.
+    - name: Stacked Icon reference
+      id: stacked-icon-reference
+      description: Wants to look up the properties of the Stacked Icon UI Pattern in
+        Service Studio, so that they can correctly configure a stacked icon in
+        traditional web apps for OutSystems 11.
     - name: Use Action Sheet pattern
       id: use-action-sheet-pattern
       description: Wants to add the Action Sheet UI Pattern to a screen, add
@@ -5512,6 +5538,13 @@ knowledge-needs:
         the Title, Actions, Content, and Footer placeholders, and place grouped
         content in a small, structured block, so that users can present related
         content in a compact panel in a Traditional Web App (O11).
+    - name: Use Fieldset pattern
+      id: use-fieldset-pattern
+      description: Wants to add the Fieldset UI Pattern to a Traditional Web
+        App screen, set its Title, add related content to the placeholder,
+        and optionally apply custom classes with ExtendedClass, so that
+        related information is grouped and labeled clearly in Service Studio
+        for O11.
     - name: Panel reference
       id: panel-reference
       description: Wants to look up the properties of the Panel UI Pattern in
@@ -5667,6 +5700,15 @@ knowledge-needs:
         main content.
     - name: Adding a Widget or OS UI pattern
       id: add-widget-ui-pattern
+      subtopics:
+      - name: Use Character Count
+        id: use-character-count-pattern
+        description: Wants to add the Character Count UI Pattern to a
+          Traditional Web App screen, bind it to an Input widget, set the
+          Limit and IsDescending properties, and recover the widget if it
+          does not appear in the Toolbox because unused references were
+          removed, so that the screen shows how many characters a user has
+          entered or has remaining.
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
       id: ui-elements-accelerators
       subtopics:
@@ -5682,6 +5724,13 @@ knowledge-needs:
           add the dependency if the widget does not appear in the Toolbox,
           create a local input variable, and configure the widget so users can
           search for content by entering queries.
+      - name: Use web gallery
+        id: use-web-gallery
+        description: Wants to add the Gallery UI Pattern to a Traditional Web App
+          screen, add the widget if it is missing from the Toolbox, drag it into
+          the Main Content area, add List Records or images as content, and
+          configure ItemsDesktop, ItemsTablet, and ItemsPhone, so that users can
+          browse grouped content in a responsive grid.
     - name: Build calculator screen
       id: build-calculator-screen
       description: Wants to build a simple Reactive Web calculator screen with a screen
@@ -6002,7 +6051,7 @@ knowledge-needs:
         view, in Service Studio, so that UI elements animate dynamically in
         a Traditional Web App (O11).
     - name: Use Animate pattern
-      id: use-animate-pattern
+      id: use-animate-pattern-o11
       description: Wants to add the Animate UI Pattern to a screen, add the
         OutSystemsUI dependency via Search in other modules if the widget
         doesn't display in the Toolbox, add content to its Content
@@ -6010,6 +6059,14 @@ knowledge-needs:
         properties, in Service Studio, so that elements are emphasized with
         an entrance animation as they appear on screen, in mobile apps and
         reactive web apps (O11).
+    - name: Use Animate web pattern
+      id: use-animate-web-pattern-o11
+      description: Wants to add the Animate UI Pattern to a Traditional Web
+        App screen, add the OutSystemsUI dependency if the widget does not
+        display in the Toolbox, drag the widget into Main Content, and
+        configure EnterAnimation, LeaveAnimation, Speed, Delay, and
+        ExtendedClass in Service Studio, so that elements animate as they
+        appear on screen in a Traditional Web App (O11).
     - name: Animate properties
       id: animate-properties-reference
       description: Wants to look up the properties of the Animate UI Pattern

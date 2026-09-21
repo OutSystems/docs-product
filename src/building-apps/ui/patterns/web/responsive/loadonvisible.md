@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-load-on-visible-pattern
 ---
 
 # Load on Visible

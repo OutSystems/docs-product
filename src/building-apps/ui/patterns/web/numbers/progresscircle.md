@@ -19,6 +19,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - progress-circle-reference
+  - use-progress-circle-traditional-web
 ---
 
 # Progress Circle

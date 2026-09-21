@@ -14,6 +14,11 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - fix-theme-mismatch
+  - manage-sample-data
+  - replace-ui-sample-data
+  - screen-template
 ---
 
 # How Screen Templates work

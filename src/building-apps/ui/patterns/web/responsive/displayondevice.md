@@ -19,6 +19,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-display-on-device
 ---
 
 # Display on Device

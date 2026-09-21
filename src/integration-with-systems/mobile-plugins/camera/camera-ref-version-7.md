@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - camera-plugin-reference-v7
+  - camera-plugin-reference
 isautopublish: true
 ---
 

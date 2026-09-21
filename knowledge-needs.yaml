@@ -5819,8 +5819,9 @@ knowledge-needs:
       description: Wants to add the Icon Badge UI Pattern to a screen and bind
         its Number property to an aggregate count, including adding the widget
         via Toolbox or Search in other modules if the dependency isn't added,
-        in Service Studio for OutSystems 11, so that numerical notifications
-        like unread message counts display on mobile apps and reactive web apps.
+        and recovering the dependency in Service Studio if the widget does not
+        display, so that numerical notifications like unread message counts
+        display correctly.
     - name: Icon Badge layout reference
       id: icon-badge-layout-reference
       description: Wants to look up the layout and CSS classes of the Icon
@@ -6050,8 +6051,9 @@ knowledge-needs:
       id: use-display-on-device
       description: Wants to add the Display on Device UI pattern to a screen and
         configure its device-specific content placeholders — OnDesktop, OnTablet,
-        and OnPhone — in ODC Studio, so that different content is displayed on
-        desktop computers, tablets, and phones.
+        and OnPhone — and Behavior property in Service Studio or ODC Studio, so
+        that different content is displayed on desktop computers, tablets, and
+        phones.
     - name: Use Gallery pattern
       id: use-gallery-pattern
       description: Wants to add the Gallery UI Pattern to a screen and configure
@@ -6460,19 +6462,24 @@ knowledge-needs:
         AdvancedFormat property, in Service Studio, so that the progress
         circle's visual style matches app requirements, in a Traditional Web
         App (O11).
+    - name: Use Progress Circle
+      id: use-progress-circle-traditional-web
+      description: Wants to add the Progress Circle UI Pattern to a Traditional Web App
+        screen and configure its Progress property and content placeholder so that
+        they can display the current progress of an operation flow as a percentage
+        value, in Service Studio for OutSystems 11.
+    - name: Progress Circle reference
+      id: progress-circle-reference
+      description: Wants to look up the configurable properties of the Progress Circle UI
+        Pattern in Service Studio so that they can correctly configure a Progress
+        Circle's appearance and behavior.
     - name: Use Progress Circle pattern
-      id: use-progress-circle-pattern
+      id: use-progress-circle-mobile-reactive-web
       description: Wants to add the Progress Circle UI Pattern to a screen and
         configure its Progress property using a local variable and increment
         button, in Service Studio for OutSystems 11, so that they can display
         the current progress of an operation flow as a fraction, in mobile
         apps and reactive web apps.
-    - name: Progress Circle reference
-      id: progress-circle-reference
-      description: Wants to look up the configurable properties of the Progress Circle UI
-        Pattern in Service Studio, so that they can correctly configure a
-        progress circle's appearance and behavior, in mobile apps and reactive
-        web apps (O11).
     - name: Use Rating pattern
       id: use-rating-pattern
       description: Wants to add the Rating UI Pattern to a screen and configure its
@@ -6493,6 +6500,11 @@ knowledge-needs:
         Service Studio for OutSystems 11, so that a button shows a loading
         spinner and is disabled from being clicked while a non-immediate
         action is executing, in mobile apps and reactive web apps.
+    - name: Use Load on Visible pattern
+      id: use-load-on-visible-pattern
+      description: Wants to add the Load on Visible UI Pattern to a Traditional
+        Web App screen and place content in its placeholder so that content
+        loads only when it becomes visible and page performance improves.
     - name: Use Button Group pattern
       id: use-button-group-pattern
       description: Wants to add the Button Group UI Pattern to a Traditional

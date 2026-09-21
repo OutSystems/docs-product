@@ -735,6 +735,12 @@ knowledge-needs:
         enclosing the body in a CSS-styled container with overflow-y auto, in Service
         Studio for O11 Traditional Web Apps, so that large datasets are navigable
         without losing column context.
+    - name: Responsive table setup
+      id: responsive-table-setup
+      description: Wants to add and configure the Responsive Table UI Pattern in Service
+        Studio for O11 Traditional Web Apps, including binding data to the
+        placeholder and configuring the row behavior so the table header stays
+        fixed while rows either scroll or expand.
     - name: Optimize mobile list data loading
       id: optimize-mobile-list-data-loading
       description: Wants to tune how a mobile app list fetches records on demand,
@@ -6054,6 +6060,12 @@ knowledge-needs:
         and OnPhone — and Behavior property in Service Studio or ODC Studio, so
         that different content is displayed on desktop computers, tablets, and
         phones.
+    - name: Use Move on Device
+      id: use-move-on-device
+      description: Wants to add the Move on Device UI pattern to a screen and
+        configure its device-specific target containers — PhoneWidgetId and
+        TabletWidgetId — in Service Studio for OutSystems 11, so that content
+        moves to the appropriate container on phones and tablets.
     - name: Use Gallery pattern
       id: use-gallery-pattern
       description: Wants to add the Gallery UI Pattern to a screen and configure
@@ -7433,6 +7445,11 @@ knowledge-needs:
       id: service-accounts-deploy
     - name: CI/CD foundations
       id: ci-cd-foundations
+    - name: DevOps toolset
+      id: devops-toolset
+      description: Wants to understand which OutSystems and third-party tools support
+        DevOps work across the application lifecycle, so that they can choose the
+        right toolset for delivery and operations.
   - name: CI/CD pipelines
     id: ci-cd-pipelines
     subtopics:
@@ -7965,6 +7982,11 @@ knowledge-needs:
       lead time for changes, time to restore service, and change failure rate,
       so they can recognize the correct measure set for DevOps delivery
       effectiveness in an assessment.
+  - name: DevOps reference model
+    id: devops-reference-model
+    description: Wants to understand how the DevOps reference model maps OutSystems
+      capabilities across delivery, governance, and operations, so that they can
+      plan a DevOps approach for the platform.
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -8000,6 +8022,13 @@ knowledge-needs:
       publishing it to the LifeTime environment via Service Center, so that they
       can extend LifeTime with functionality tailored to their organization's
       governance or automation needs.
+  - name: Customize authentication plugin
+    id: customize-authentication-plugin
+    description: Wants to customize or implement an authentication plugin
+      for OutSystems 11, using the provided external authentication provider
+      model as a base or extending the built-in Active Directory and LDAP
+      options, so that they can support the authentication flow their
+      organization needs.
 - name: Getting started with app development
   guid: 08c8e683-27ea-4656-8559-e145b5e05086
   topics:
@@ -8550,6 +8579,11 @@ knowledge-needs:
         that both environment and module Debug Mode must be enabled to debug a
         module in Service Studio and that changes take effect after
         republishing, so that they can control which modules can be debugged.
+    - name: Configure application settings
+      id: configure-application-settings
+      description: Wants to configure application settings per environment in Service
+        Center after deployment, so that each environment uses the correct
+        settings without republishing or downtime.
     - name: O11 service log levels
       id: o11-increase-service-log-levels
       description: Wants to increase the logging verbosity of a self-managed OutSystems 11
@@ -12951,6 +12985,13 @@ knowledge-needs:
         API, and instead continue to use username and password or LT login
         authentication plugins, in OutSystems 11, so that they can identify
         exceptions when planning an External IdP rollout.
+    - name: Change authentication provider
+      id: change-authentication-provider
+      description: Wants to change an OutSystems 11 environment's
+        authentication provider in LifeTime by choosing the new method,
+        configuring it, testing it, propagating the settings, and applying
+        them across environments, so that IT users sign in through the
+        selected provider.
     - name: Built-in Authentication
       id: built-in-authentication
     - name: Get authenticated user id
@@ -13209,6 +13250,12 @@ knowledge-needs:
         configuration screen can be completed without missing information.
     - name: External IDPs - User Mapping
       id: user-mapping
+    - name: Map users from external systems
+      id: map-external-auth-users
+      description: Wants to map IT users from an external authentication
+        provider to matching LifeTime users, either manually or by using
+        the LifeTime Services API, so that each external user can
+        authenticate to LifeTime with an existing OutSystems account.
     - name: External IDPs - LinkedIn
       id: idp-linkedin
     - name: External IDPs - Google
@@ -13749,8 +13796,27 @@ knowledge-needs:
       id: permission-model-pp
     - name: Assign a role within a team
       id: assign-team-role
+      description: Wants to assign roles within a LifeTime team, so that they can
+        control team members' access across the applications included in the team.
     - name: Create a team
       id: create-a-team
+      description: Wants to create a LifeTime team, so that they can organize
+        related applications and the people who manage them.
+    - name: Edit a team
+      id: edit-a-team
+      description: Wants to edit an existing LifeTime team, so that they can
+        update the applications or people assigned to the team.
+    - name: App-specific permissions
+      id: app-specific-permissions
+      description: Wants to assign an infrastructure role to a user for a specific
+        application or set of applications in LifeTime, including when
+        application-specific access overrides the user's default role and when No
+        Access blocks sign-in, so they can control app-level access per
+        environment.
+    - name: Add IT users and applications
+      id: manage-teams
+      description: Wants to add IT users and applications to a LifeTime team, so
+        that they can keep the team membership and application scope aligned.
 - name: Using audit logs for compliance and troubleshooting
   guid: c96ed7dd-90d2-406d-a816-c47269c0d20b
   topics:
@@ -13864,6 +13930,13 @@ knowledge-needs:
       iterations, assuring quality, supporting release planning, and contributing
       additional competencies such as product ownership, UX promotion, and quality
       control, so that they can perform the role effectively.
+    subtopics:
+    - name: Business analyst skills
+      id: business-analyst-skills
+      description: Wants to identify additional skills that help a Business Analyst
+        perform better in an OutSystems project, when the role extends beyond core
+        responsibilities, so they can strengthen brainstorming, negotiation,
+        presentation, elicitation, and analysis.
   - name: Business analyst mindset
     id: business-analyst-mindset
     description: Wants to understand the Business Analyst mindset in an OutSystems
@@ -13906,6 +13979,12 @@ knowledge-needs:
       agile methodology, including initiation, iteration development, solution
       release, and post-production, so that they can see how the overall delivery
       timeline is organized.
+    subtopics:
+    - name: Product team lifecycle
+      id: product-team-lifecycle
+      description: Wants to understand how Product teams, CoE teams, release staging,
+        testing, monitoring, and production support fit into the OutSystems delivery
+        lifecycle, so that they can organize releases and handoffs effectively.
   - name: Iteration structure
     id: iteration-structure
     description: Wants to understand how a single iteration is organized in the
@@ -13924,6 +14003,28 @@ knowledge-needs:
       including that it is based on Scrum but changes team roles, delivery
       approach, and adaptations for speed, risk reduction, and value delivery,
       so they can align their working method with OutSystems projects.
+  - name: Agile rationale
+    id: agile-rationale
+    description: Wants to understand why OutSystems uses agile methodology instead
+      of waterfall, including user value, time to market, and response to
+      change, so that they can explain the motivation for the approach.
+  - name: Agile software development manifesto
+    id: agile-software-development-manifesto
+    description: Wants to understand the Agile software development manifesto,
+      including its core values and how they guide collaborative delivery, so that
+      they can work with the mindset expected in agile projects.
+  - name: Software craftsmanship manifesto
+    id: software-craftsmanship-manifesto
+    description: Wants to understand the software craftsmanship manifesto,
+      including its core values and how they guide collaborative delivery and
+      professional practice, so that they can contribute to sustainable agile
+      delivery.
+  - name: Working in an agile way
+    id: working-in-an-agile-way
+    description: Wants to understand how to work in an agile way in OutSystems
+      projects, including timeboxing, iteration-based feedback, and adapting
+      delivery as requirements evolve, so that they can apply the approach in
+      practice.
 - name: O11 to ODC Migration
   guid: ''
   topics:

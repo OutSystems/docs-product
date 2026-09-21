@@ -19,6 +19,10 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - configure-database-connections
+  - deploy-apps-in-lt-portal
+  - set-physical-table-names
 ---
 
 # Deploy an Integration With an External Database

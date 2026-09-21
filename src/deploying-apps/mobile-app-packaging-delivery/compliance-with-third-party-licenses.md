@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - app-license-compliance
 ---
 
 # Compliance with Third Party Licenses

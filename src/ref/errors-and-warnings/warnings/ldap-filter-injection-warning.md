@@ -3,6 +3,8 @@ summary: 'LDAP filter injection warning in OutSystems 11 (O11): encode end-user 
 helpids: 30786
 locale: en-us
 guid: 07c40401-46c4-4f16-a535-fa7aecbc6b11
+topic:
+  - fix-ldap-injection-warning
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

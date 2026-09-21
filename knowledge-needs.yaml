@@ -7552,6 +7552,15 @@ knowledge-needs:
       id: deployment-plan
     - name: Deploy apps in LT/Portal
       id: deploy-apps-in-lt-portal
+    - name: Deployment flow
+      id: deployment-flow
+      description: Wants to understand how a LifeTime deployment runs after
+        the plan is defined, including the progress screen, who can follow
+        the execution, when it can be aborted, and the backend steps that
+        retrieve applications, analyze impact, compile code, generate SQL
+        scripts, distribute code, update the database, hot deploy versions,
+        and synchronize environments, so that they can explain or monitor
+        the deployment.
     - name: Republish vs redeploy
       id: republish-vs-redeploy
       description: Wants to understand the difference between republishing an
@@ -8652,6 +8661,21 @@ knowledge-needs:
         shown in the Environment Health screen, so they can interpret
         environment health status and know which service is responsible for
         which platform function.
+    - name: Code generator service
+      id: code-generator-service
+      description: Wants to understand how the Code Generator Service receives XML from
+        Service Studio and binary code from Integration Studio, compiles deployable
+        code, generates SQL, backend logic, and interface assets, validates external
+        dependencies, and runs database upgrade scripts before deployment, so they
+        can trace what the service does during 1-Click Publish.
+    - name: Deployment services
+      id: deployment-services
+      description: Wants to understand how the Deployment Controller Service coordinates
+        compilation and deployment across front-end Deployment Services, retries
+        failed deployments, uses the Cache Invalidation Service to notify front-end
+        servers through publish/subscribe messaging, and monitors the process in
+        Service Center, so they can follow how applications reach the application
+        servers.
     - name: Configure HTTP proxy
       id: configure-http-proxy
       description: Wants to configure a HTTP proxy server so Service Studio
@@ -9919,6 +9943,12 @@ knowledge-needs:
     description: Wants to understand the mobile best-practices section for ODC apps,
       including what kinds of guidance it covers, so that they can find the
       right best-practice topic for their app.
+  - name: MABS build process
+    id: mabs-build-process
+    description: Wants to understand how MABS turns an OutSystems mobile app into a
+      signed native package, including the template, app resources, mobile
+      platform selection, native plugins, signing keys, and build output, so
+      they can follow the build flow.
   - name: MABS environment configuration
     id: mabs-environment-configuration
     subtopics:
@@ -13988,6 +14018,11 @@ knowledge-needs:
       id: manage-teams
       description: Wants to add IT users and applications to a LifeTime team, so
         that they can keep the team membership and application scope aligned.
+    - name: Manage teams overview
+      id: manage-teams-overview
+      description: Wants to manage a LifeTime team and its related users and
+        applications, so that they can control team-based access across related
+        applications.
 - name: Using audit logs for compliance and troubleshooting
   guid: c96ed7dd-90d2-406d-a816-c47269c0d20b
   topics:
@@ -15610,6 +15645,19 @@ knowledge-needs:
         Collector receiver and Splunk Exporter, updating the collector image
         version, and registering the collector endpoint and credentials in
         LifeTime, so that logs stream to Splunk in near real time.
+    - name: Configure Datadog streaming
+      id: configure-datadog-streaming
+      description: Wants to set up log streaming from ODC apps to Datadog by
+        configuring the OpenTelemetry Collector with the Datadog exporter,
+        getting the Datadog API key and collector endpoint credentials, and
+        registering the stream in the ODC Portal, so that observability data
+        streams to Datadog.
+    - name: Configure New Relic streaming
+      id: configure-new-relic-streaming
+      description: Wants to set up log streaming from ODC apps to New Relic by
+        retrieving the New Relic API key and account region, configuring the
+        stream in the ODC Portal, and sending observability data to New Relic,
+        so that app telemetry reaches the New Relic APM tool.
 - name: Log streaming (ODC)
   guid: 5e4d826e-41ed-47ae-9f2e-9c87b56d41f2
   topics:
@@ -15623,6 +15671,16 @@ knowledge-needs:
         OTLP to export logs, traces, and metrics to third-party APM tools,
         and its benefits, so they can decide whether and how to adopt it
         for monitoring ODC apps, agents, and workflows.
+    - name: Streamed log data
+      id: streamed-log-data
+      description: Wants to look up which log attributes ODC streams to APM tools,
+        so they can interpret the streamed log records when analyzing app
+        telemetry in an APM tool.
+    - name: Streamed metrics data
+      id: streamed-metrics-data
+      description: Wants to look up which metrics ODC streams to APM tools and
+        the request, invocation, and resource attributes associated with them,
+        so they can interpret streamed metric records in an APM tool.
     - name: Supported APM tools
       id: supported-apm-tools
       description: Wants to know which APM tools the streaming feature supports
@@ -15646,6 +15704,19 @@ knowledge-needs:
         APM tool, entering destination and source environment details, and
         testing the connection, so that observability data (logs, metrics, and
         traces) streams from their app to that APM tool.
+    - name: Stream to Elastic
+      id: stream-to-elastic
+      description: Wants to stream observability data from ODC apps to Elastic APM
+        by deploying the required Elastic Observability services and Kibana plugins
+        alongside Elasticsearch, providing the Elastic URL and Secret token, and
+        configuring the stream in the ODC Portal, so that observability data reaches
+        Elastic.
+    - name: Stream to Amazon S3
+      id: stream-to-amazon-s3
+      description: Wants to stream observability data from ODC apps to Amazon S3 by
+        setting up the OpenTelemetry Collector with the AWS S3 contrib exporter and
+        configuring the stream in the ODC Portal, so that observability data lands
+        in Amazon S3 when that is the destination.
     - name: Stream status meanings
       id: stream-status-meanings
       description: Wants to understand what the Active, Active with errors, and

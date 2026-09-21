@@ -13,6 +13,9 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - apply
+topic:
+  - client-event-fetch
+  - optimize-mobile-loading
 ---
 
 # Best practices for loading data on mobile screens

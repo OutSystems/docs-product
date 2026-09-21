@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - create-custom-app-template
+  - template-color-inheritance
 ---
 
 # Create a Custom Application Template

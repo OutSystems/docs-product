@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - separator-reference
+  - use-separator-pattern
 ---
 
 # Separator

@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - fieldset-reference
+  - use-fieldset-pattern
 ---
 
 # Fieldset

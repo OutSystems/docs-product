@@ -6677,6 +6677,12 @@ knowledge-needs:
         OutSystems 11, so that a long list of results is filtered on the server
         and suggestions appear below the field as the user types in a Traditional
         Web App.
+    - name: Charts extensibility
+      id: charts-extensibility
+      description: Wants to understand the Charts extensibility surface in ODC
+        Studio, including the available chart widgets, add-ons, and API actions,
+        so that they can choose the right chart component and customization
+        entry point.
     - name: Configure Line Chart
       id: configure-line-chart
       description: Wants to add the Line Chart widget to a screen and configure
@@ -9394,6 +9400,12 @@ knowledge-needs:
         using natively supported providers or bringing their own API key (BYOK),
         configuring endpoints, and setting daily usage limits, so they can set
         up AI model connections before writing app logic that calls the model.
+    - name: Configure AI models
+      id: configure-ai-models
+      description: Wants to prepare a supported model provider for AI Agent Builder by
+        gathering the required keys, endpoint details, and custom integration
+        before creating agents, so the selected model can be used in the
+        builder.
     - name: Configure AI Agent Builder with Amazon Bedrock
       id: configure-ai-agent-builder-amazon-bedrock
       description: Wants to configure AI Agent Builder to use a supported model

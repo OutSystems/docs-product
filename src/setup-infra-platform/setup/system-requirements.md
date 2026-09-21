@@ -12,6 +12,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 audience:
+  - Architect
+  - Developer
   - Platform administrator
   - Tech lead
 outsystems-tools:
@@ -87,9 +89,9 @@ OutSystems supports Microsoft SQL Server with the following considerations:
 
 * Supported versions<sup>1</sup> and respective supported compatibility levels:
 
-    | 2016 | 2017 | 2019 | 2022 | 2025 |
-    | ---- | ---- | ---- | ---- | ---- |
-    | 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150, 170 |
+    | 2017 | 2019 | 2022 | 2025 |
+    | ---- | ---- | ---- | ---- |
+    | 140 | 140, 150 | 140, 150 | 140, 150, 170 |
 
 * These versions are also supported when running on [Amazon RDS](#amazon-database) or Azure virtual machine
 
@@ -101,18 +103,23 @@ OutSystems supports Microsoft SQL Server with the following considerations:
 
 ##### Out of support
 
-* SQL Server 2014 support ended in Platform Server version 11.33
+* SQL Server 2016 and compatibility level 130 support ended in Platform Server version 11.44
+* SQL Server 2014 and compatibility level 120 support ended in Platform Server version 11.33
 
 #### Azure SQL {#ps-azure-sql}
 
 OutSystems supports Microsoft Azure SQL with the following considerations:
 
-* The compatibility level must be 130, 140, 150 or 170.
+* The compatibility level must be 140, 150 or 170.
 * The database service tier must be at least "S3".
 * The MDC (Multiple Database Catalogs) feature isn't supported.
 * Connecting to Azure SQL using Windows authentication isn't supported.
 * Private endpoints aren't supported, due to a limitation on how Microsoft implements them.
 * Customizing the timezone from UTC isn't supported in Azure SQL.
+
+##### Out of support
+
+* Compatibility level 130 support ended in Platform Server version 11.44
 
 #### Azure SQL Managed Instance {#ps-azure-sql-managed-instance}
 
@@ -136,7 +143,7 @@ The following table summarizes the differences between Azure SQL and Azure SQL M
 
 | Feature | Azure SQL | Azure SQL Managed Instance |
 | ------- | ------------------ | -------------------------- |
-| Compatibility level (validated) | 130, 140, 150, 170 | 170 |
+| Compatibility level (validated) | 140, 150, 170 | 170 |
 | Minimum service tier | S3 (DTU model) | General Purpose (vCore model) |
 | Windows Authentication | Not supported | Supported via Microsoft Entra ID |
 | Private endpoints | Not supported | Not supported |
@@ -269,19 +276,24 @@ The following systems are certified to integrate with OutSystems.
 
 * Supported versions and respective supported compatibility levels:
 
-| 2016 | 2017 | 2019 | 2022 | 2025<sup>1</sup> |
-| ---- | ---- | ---- | ---- | ---- |
-| 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150, 170 |
+| 2017 | 2019 | 2022 | 2025<sup>1</sup> |
+| ---- | ---- | ---- | ---- |
+| 140 | 140, 150 | 140, 150 | 140, 150, 170 |
 
 <sup>1</sup> Supported since Platform Server 11.42.0. SQL Server 2025 has breaking changes to the linked servers feature. Refer to [Microsoft's documentation](https://learn.microsoft.com/en-us/sql/database-engine/breaking-changes-to-database-engine-features-in-sql-server-2025?view=sql-server-ver17#linked-server-connections-fail-after-an-upgrade) for more information.
 
 #### Out of support
 
-* SQL Server 2008 to 2014 support ended in Platform Server version 11.33
+* SQL Server 2016 and compatibility level 130 support ended in Platform Server version 11.44
+* SQL Server 2008 to 2014 and compatibility levels 100 to 120 support ended in Platform Server version 11.33
 
 ### Azure SQL database {#azure-sql}
 
-* Azure SQL with compatibility level 130, 140, 150 or 170
+* Azure SQL with compatibility level 140, 150 or 170
+
+#### Out of support
+
+* Compatibility level 130 support ended in Platform Server version 11.44
 
 ### Azure SQL Managed Instance database {#azure-sql-managed-instance}
 
@@ -302,13 +314,13 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 ### MySQL database {#mysql}
 
-* MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
 * MySQL 8.4 (8.4.3 or later within the 8.3 version, all editions), since Platform Server 11.38.0
+* MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
 
 #### Out of support
 
-* MySQL 5.6 support ended in Platform Server version 11.32.0
 * MySQL 5.7 support ended in Platform Server version 11.32.0
+* MySQL 5.6 support ended in Platform Server version 11.32.0
 
 ### PostgreSQL database {#postgresql-database}
 
@@ -316,8 +328,8 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 #### Out of support
 
-* PostgreSQL 12.x.x support ended in Platform Server version 11.38.0. It was initially supported from Platform Server 11.15
 * PostgreSQL 13.x.x support ended in Platform Server version 11.40.0. It was initially supported from Platform Server 11.15
+* PostgreSQL 12.x.x support ended in Platform Server version 11.38.0. It was initially supported from Platform Server 11.15
 
 ### Aurora PostgreSQL database {#aurora-postgresql}
 
@@ -339,10 +351,10 @@ The use of double-byte characters with DB2 databases isn't supported.
 ### MongoDB database {#mongodb}
 
 * MongoDB Atlas and on-premises
-* MongoDB 4.X
-* MongoDB 5.X
-* MongoDB 6.X
 * MongoDB 7.0
+* MongoDB 6.X
+* MongoDB 5.X
+* MongoDB 4.X
 
 ### SAP {#sap}
 

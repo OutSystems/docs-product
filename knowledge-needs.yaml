@@ -2999,6 +2999,13 @@ knowledge-needs:
         and exceeding the per-stage directive character limit, so that they can
         plan and test a CSP configuration that's neither too restrictive nor too
         permissive.
+    - name: Configure CSP in O11
+      id: configure-csp-o11
+      description: Wants to configure Content Security Policy in OutSystems 11 by enabling
+        CSP in LifeTime or Service Center, setting directive values at the
+        environment or app level, republishing affected apps after changes,
+        and monitoring blocked resources, so that approved sources load
+        correctly and the policy takes effect as expected.
     - name: Activate CSP for a stage
       id: activate-csp-stage
       description: Wants to activate a Content Security Policy for a stage
@@ -7356,6 +7363,19 @@ knowledge-needs:
         reviewing the list of versions along with the publish date, time,
         and publisher, so that they can revert to or inspect an earlier
         version, in OutSystems 11.
+    - name: Publish modules and track versions
+      id: publish-modules-version-history
+      description: Wants to publish modules and review the version history
+        created by each publish in Service Center, so that they can trace
+        releases.
+    - name: Tag milestone versions
+      id: tag-milestone-versions
+      description: Wants to mark specific published versions as milestones,
+        so that they can identify important release checkpoints.
+    - name: Roll back to a previous tagged version
+      id: rollback-to-previous-tagged-version
+      description: Wants to restore an app to a previously tagged version,
+        so that they can recover from a bad release.
   - name: Basic deployment concepts
     id: basic-deployment-concepts
     subtopics:
@@ -7552,6 +7572,25 @@ knowledge-needs:
       id: deployment-plan
     - name: Deploy apps in LT/Portal
       id: deploy-apps-in-lt-portal
+    - name: Deploy single module
+      id: deploy-single-module
+      description: Wants to deploy a single module from a Traditional Web app to
+        another stage in LifeTime by choosing Deploy Custom, selecting the
+        module, validating the deployment, and continuing the plan, so that
+        they update only the changed module instead of the whole application.
+    - name: Block app deployment
+      id: block-app-deployment
+      description: Wants to block an app from being deployed to specific
+        environments in LifeTime, understand how blocked apps behave in
+        deployment plans and direct deployments, and unblock the app when
+        needed, so that deployment restrictions stay enforced.
+    - name: Block newly created apps
+      id: block-newly-created-apps
+      description: Wants to turn off the LifeTime setting that lets newly
+        created applications be deployed to all environments, choosing the
+        self-managed or cloud location for the setting and recording the
+        required reason for change, so that new apps are blocked by
+        default.
     - name: Deployment flow
       id: deployment-flow
       description: Wants to understand how a LifeTime deployment runs after
@@ -8762,6 +8801,18 @@ knowledge-needs:
       description: Wants to configure application settings per environment in Service
         Center after deployment, so that each environment uses the correct
         settings without republishing or downtime.
+    - name: Apply runtime settings
+      id: apply-runtime-settings
+      description: Wants to apply runtime settings in Service Center for
+        applications, modules, extensions, or the whole factory by saving
+        changes, applying them to the factory or a selected solution, and
+        handling the resulting reload and pending-change warnings, so that
+        configuration changes take effect without republishing code.
+    - name: Republish compile-time changes
+      id: republish-compile-time-changes
+      description: Wants to republish modules after changing compile-time
+        settings in Service Center or Service Studio, so that the updated
+        configuration values are used when the modules are compiled.
     - name: O11 service log levels
       id: o11-increase-service-log-levels
       description: Wants to increase the logging verbosity of a self-managed OutSystems 11

@@ -2018,6 +2018,15 @@ knowledge-needs:
         endpoint path, authentication, method name, or a mandatory
         parameter/field's presence or type, so that existing consumers keep
         working on the old contract during a migration period.
+  - name: Database connections
+    id: database-connections
+    subtopics:
+    - name: Configure database connections
+      id: configure-database-connections
+      description: Wants to configure an external database connection per
+        environment in Service Center and map the extension's logical database
+        to it, so that applications using extension modules can read and write
+        data from the correct external database after deployment.
   - name: Integration Patterns
     id: integration-patterns
     subtopics:
@@ -4128,6 +4137,11 @@ knowledge-needs:
       description: Wants to configure a Timer's schedule, timeout, and active flag in ODC
         Portal per deployment stage, so the Timer runs at the right time, within
         resource limits, and with appropriate values in each environment.
+    - name: Configure timer settings (O11)
+      id: configure-timer-settings-o11
+      description: Wants to configure a Timer's effective schedule, periodicity,
+        priority, and timeout in Service Center per environment, so that the
+        Timer runs at the right time and within execution limits.
     - name: Configure timer timeout (O11)
       id: configure-timer-timeout-o11
       description: Wants to configure the `Timeout in Minutes` property for an
@@ -4139,6 +4153,12 @@ knowledge-needs:
         Portal, so that they can check whether a timer is running, review its last
         execution time and duration, and investigate errors using log details and
         related activities.
+    - name: Scheduler job dispatch
+      id: scheduler-job-dispatch
+      description: Wants to understand how the Scheduler Service queues timer, email,
+        and business process jobs, dispatches them to available front-end servers,
+        and uses fixed thread pools without running the business logic itself, so
+        that they can reason about background task execution in Application Services.
   - name: How to process massive amounts of data in Batch Processing
     id: batch-data-processing
 - name: Basic integrations
@@ -13855,6 +13875,12 @@ knowledge-needs:
         application-specific access overrides the user's default role and when No
         Access blocks sign-in, so they can control app-level access per
         environment.
+    - name: Permission precedence
+      id: permission-precedence
+      description: Wants to understand how LifeTime combines application-specific,
+        team, and infrastructure-level permissions for a user, including which
+        level overrides the others and how No Access affects sign-in, so they can
+        reason about the effective access a user receives.
     - name: Add IT users and applications
       id: manage-teams
       description: Wants to add IT users and applications to a LifeTime team, so

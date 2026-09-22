@@ -164,6 +164,8 @@ Use inline bold prefixes instead:
 
 ## Shared files
 
-This `CLAUDE.md` and all skills (Claude Code slash commands) are authored and
-maintained in the `tk-cicd` repository and synced to all other documentation
-repositories. Always edit them in `tk-cicd`. If unsure where to make the edit, ask the user.
+This file (`SHARED-CLAUDE.md` in `tk-cicd`) and all skills (Claude Code slash
+commands) are authored and maintained in the `tk-cicd` repository. This file is
+synced out to other documentation repositories as their `CLAUDE.md`. Always
+edit it in `tk-cicd` under the name `SHARED-CLAUDE.md`. If unsure where to make
+the edit, ask the user.

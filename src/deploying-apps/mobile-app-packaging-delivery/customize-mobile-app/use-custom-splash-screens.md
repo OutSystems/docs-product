@@ -21,6 +21,8 @@ coverage-type:
   - apply
   - remember
   - understand
+topic:
+  - custom-splash-screens
 ---
 
 # Use Custom Splash Screens

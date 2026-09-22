@@ -18,6 +18,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - custom-splash-screens
+  - override-app-config
+  - set-app-preferences
 ---
 
 # Customize Your Mobile App

@@ -20,6 +20,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - remember
+topic:
+  - add-custom-service-worker
+  - edit-pwa-manifest
+  - keep-pwa-resources
 ---
 
 # Advanced settings and customizations

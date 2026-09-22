@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - set-app-preferences
 ---
 
 # Set the Preferences for Your Mobile App

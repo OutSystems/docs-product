@@ -2977,6 +2977,18 @@ knowledge-needs:
       non-guessable IDs) and information (checking permissions in Preparation
       before displaying data), so that only authorized users can perform actions
       or view data.
+    subtopics:
+    - name: Protect block parameters
+      id: protect-block-parameters
+      description: Wants to keep GetUserId and other identity values out of client
+        Block widget parameters so that client-side parameter changes cannot
+        impersonate another user or undermine server-side role checks when the
+        block calls backend actions or queries.
+    - name: Secure GetUserId use
+      id: secure-getuserid-use
+      description: Wants to keep GetUserId and other identity values out of
+        client-side action parameters so server-side logic retrieves identity on
+        the server, preventing tampering and impersonation.
   - name: Content security policy
     id: content-security-policy
     subtopics:
@@ -15795,6 +15807,12 @@ knowledge-needs:
         retrieving the New Relic API key and account region, configuring the
         stream in the ODC Portal, and sending observability data to New Relic,
         so that app telemetry reaches the New Relic APM tool.
+    - name: Set up OpenTelemetry Collector
+      id: set-up-open-telemetry-collector
+      description: Wants to set up the OpenTelemetry Collector with the appropriate
+        exporter and security settings for destinations that do not support
+        native OTLP ingestion, so they can receive streamed logs, traces, and
+        metrics.
 - name: Log streaming (ODC)
   guid: 5e4d826e-41ed-47ae-9f2e-9c87b56d41f2
   topics:

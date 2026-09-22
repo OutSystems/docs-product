@@ -233,6 +233,11 @@ knowledge-needs:
       id: operators
     - name: Functions
       id: functions
+    - name: Library actions
+      id: library-actions
+      description: Wants to know which ODC library actions are available and what each
+        library is for, so they can pick the right action for the logic task
+        they need.
     - name: Check string contains
       id: check-string-contains
       description: Wants to check whether one text string contains another using
@@ -8391,6 +8396,19 @@ knowledge-needs:
         expanding the Unexpected Error window or using the Give Us Feedback
         option, opening the report in a text editor, and saving it as a text
         file, so that Support has the information needed to investigate.
+  - name: Development artifacts
+    id: development-artifacts
+    subtopics:
+    - name: Programming style
+      id: programming-style
+      description: Wants to compare .NET object-oriented classes and
+        OutSystems component-oriented visual elements and structured text, so
+        they understand how the platform expresses logic and UI resources.
+    - name: Resource storage
+      id: resource-storage
+      description: Wants to understand how OutSystems stores application
+        resources in OML files locally and on the server, so they know what
+        gets saved, published, and tested where.
   - name: Publish and share apps
     id: publish-and-share-apps
     subtopics:
@@ -8434,6 +8452,9 @@ knowledge-needs:
     subtopics:
     - name: Adding dependencies to a module
       id: add-module-dependency
+    - name: Dependency management
+      id: dependency-management-overview
+      description: Wants to compare how .NET and OutSystems expose dependency references, tooling, and package sources, so they can locate, add, and use external components in either platform when moving between Visual Studio and Service Studio.
     - name: Installing Forge component
       id: install-forge-component
     - name: ODC solutions overview
@@ -10096,6 +10117,40 @@ knowledge-needs:
       description: Wants to share a generated mobile app package with testers and
         install it on devices when the package was created for development tests,
         using the QR code, installation link, or package file.
+    - name: Limited iOS package
+      id: limited-ios-package
+      description: Wants to generate an iOS mobile app package for a limited group
+        of end users by selecting the Ad Hoc build type and providing a matching
+        certificate and provisioning profile, so that they can distribute it to
+        selected testers before general release.
+    - name: Limited Android package
+      id: limited-android-package
+      description: Wants to generate an Android mobile app package for a limited
+        group of end users by selecting the Release build type and signing it with
+        a keystore, so that they can distribute it to selected testers before
+        general release.
+    - name: Limited app distribution
+      id: limited-app-distribution
+      description: Wants to distribute a generated mobile app to a limited group of end
+        users before general release, so that selected testers can install it
+        through the supported limited-distribution methods.
+    - name: App Store submission
+      id: app-store-submission
+      description: Wants to generate an App Store iOS package in Service Studio
+        or Service Center and submit it to App Store Connect with Transporter,
+        after meeting the Apple Developer and signing prerequisites, so that
+        the app can be reviewed and published in the Apple App Store.
+    - name: iOS signing setup
+      id: ios-signing-setup
+      description: Wants to enroll in the Apple Developer Program or Apple Developer
+        Enterprise Program, create the signing certificate and provisioning
+        profile needed to package iOS mobile apps, and renew the profile when it
+        expires, so that they can generate signed iOS packages.
+    - name: Android keystore setup
+      id: android-keystore-setup
+      description: Wants to create an Android keystore with keytool and keep it in
+        a safe place for future app updates, so that Android mobile apps can be
+        signed and published with the same key.
   - name: MABS environment configuration
     id: mabs-environment-configuration
     subtopics:
@@ -10575,6 +10630,12 @@ knowledge-needs:
         versioning builds, avoiding breaking API/logic changes, updating
         upgrade messages, and testing thoroughly before generating and
         submitting the native build to the app stores.
+    - name: Prepare app store submission
+      id: prepare-app-store-submission
+      description: Wants to prepare the screenshots, metadata, and product
+        details needed to publish a mobile app to Google Play or the Apple
+        App Store when the app is ready for production, so that the store
+        listing is complete before submission.
   - name: Offline Synch
     id: offline-synch
     subtopics:
@@ -14024,6 +14085,10 @@ knowledge-needs:
         completing a custom self-registration flow outside the standard
         self-registration screens, so that a new user account becomes
         usable immediately.
+    - name: Login actions
+      id: login-actions
+      description: Wants to know which built-in login actions are available in
+        ODC, so they can build sign-in flows.
     - name: Deleting Users
       id: deleting-users
     - name: Updating Users

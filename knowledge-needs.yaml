@@ -3880,6 +3880,10 @@ knowledge-needs:
         for modules, so they can keep module dependencies sound.
   - name: Architecture Canvas
     id: architecture-canvas
+    subtopics:
+    - name: Pattern layer overview
+      id: pattern-layer-overview
+      description: Wants to understand how the Architecture Patterns in OutSystems course groups patterns by architecture canvas layer, so they can follow the library module and core module sections in context.
   - name: Application composition
     id: application-composition
     subtopics:
@@ -3891,6 +3895,19 @@ knowledge-needs:
         which Service Studio elements are available or restricted in a Library,
         and what reference restrictions apply to it, so that they can decide
         when and how to use Libraries in their application architecture.
+    - name: Library module patterns
+      id: library-module-patterns
+      description: Wants to understand the extension and connector patterns used in
+        OutSystems library modules, including wrapping external libraries,
+        external database entities, and external APIs behind reusable
+        consumer-facing modules, so that they can design library modules that
+        hide implementation details and normalize business concepts.
+    - name: Granularity of APIs
+      id: granularity-of-apis
+      description: Wants to split an integration service into smaller APIs by functional
+        area when a single external system exposes too many operations, so
+        that consumers avoid a single bottleneck and the integration stays
+        easier to maintain.
     - name: Create a Library module
       id: create-library-module
       description: Wants to create a new Library module in Service Studio, by
@@ -4934,10 +4951,19 @@ knowledge-needs:
     subtopics:
     - name: Service virtualization
       id: service-virtualization
+    - name: Thin screen actions
+      id: thin-screen-actions
+      description: Wants to keep screen actions focused on UI validations and user interactions by moving business validations and business logic into reusable server or public actions, so the logic can be tested without UI tests.
+    - name: Isolate data access
+      id: isolate-data-access
+      description: Wants to keep complex algorithms testable by loading the required data before the action runs and passing it in as inputs, so the logic does not depend on direct database queries or database setup in tests.
     - name: Testing small units of code
       id: test-small-units
     - name: Automated component tests
       id: automated-component-tests
+    - name: BDD test templates
+      id: bdd-test-templates
+      description: Wants to create BDD Framework test apps and screen suites from the provided application and screen templates, with the required blocks and actions, so that they can start component tests quickly.
 - name: Collaborative Development
   guid: ''
   topics:
@@ -8259,6 +8285,13 @@ knowledge-needs:
       through the UX Concept, UI design, and Front-End Development stages,
       from wireframes and Hi-Fi mockups to a live style guide, so they know
       how business requirements get translated into application screens.
+    subtopics:
+    - name: Design mobile apps
+      id: design-mobile-apps
+      description: Wants to design a mobile app by accounting for device
+        form factor, input and output methods, processing power, and usage
+        context, so that the app works well on mobile devices and matches
+        user expectations.
   - name: Using Service Studio
     id: using-service-studio
     subtopics:
@@ -13317,6 +13350,13 @@ knowledge-needs:
         configuring it, testing it, propagating the settings, and applying
         them across environments, so that IT users sign in through the
         selected provider.
+    - name: Custom federated SSO
+      id: custom-federated-sso
+      description: Wants to understand how to integrate a centralized federated
+        single sign-on setup into template-based OutSystems apps by using a
+        central authentication server, an authentication library, and the
+        SAML authentication flow, so that users sign in once and return to the
+        original app URL.
     - name: Built-in Authentication
       id: built-in-authentication
     - name: Get authenticated user id

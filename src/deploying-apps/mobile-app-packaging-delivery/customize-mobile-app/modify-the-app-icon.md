@@ -18,6 +18,9 @@ coverage-type:
   - apply
   - remember
   - understand
+topic:
+  - app-icon-sizes
+  - custom-app-icons
 ---
 
 # Modify the App Icon

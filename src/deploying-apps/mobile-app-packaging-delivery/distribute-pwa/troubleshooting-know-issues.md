@@ -15,6 +15,10 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - debug-pwa
+  - override-app-config
+  - troubleshoot-pwa-issues
 ---
 
 # Troubleshooting and known issues

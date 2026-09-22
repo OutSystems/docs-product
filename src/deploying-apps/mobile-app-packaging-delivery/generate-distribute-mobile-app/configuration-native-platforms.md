@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - native-platforms-overview
 ---
 
 # Native Platforms Configuration

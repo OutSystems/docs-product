@@ -16,6 +16,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - apple-privacy-manifest
+  - file-plugin-manifest
 ---
 
 # Privacy updates for Apple App Store submissions

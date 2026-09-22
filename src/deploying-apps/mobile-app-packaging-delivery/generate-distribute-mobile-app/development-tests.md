@@ -18,6 +18,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - distribute-development-package
+  - generate-android-development-package
+  - generate-ios-development-package
 ---
 
 # Generate and Distribute Your Mobile App for Development Tests

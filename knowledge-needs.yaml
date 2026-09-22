@@ -8715,6 +8715,11 @@ knowledge-needs:
         Service, Log Service, IIS, and Message Queue — by reading error messages,
         checking Service Center Monitoring, and restarting services in a self-managed
         environment, so that they can restore normal platform operation.
+    - name: Service Center analytics
+      id: service-center-analytics
+      description: Wants to use Service Center's built-in analytics reports to review
+        application usage and diagnose issues for a specific date interval, so
+        they can decide whether it meets their learning or exploration needs.
     - name: Monitoring area screens
       id: monitoring-area-screens
       description: Wants to understand which screen to check first in Service Center's
@@ -10464,6 +10469,22 @@ knowledge-needs:
       description: Wants to debug a PWA built in ODC by emulating it in Google Chrome
         from ODC Studio's Debugger tab, so that they can inspect and troubleshoot the
         app without a physical device.
+    - name: Edit PWA manifest
+      id: edit-pwa-manifest
+      description: Wants to edit the PWA manifest in Service Studio or LifeTime, and
+        understand which location overrides which settings, so that the app uses the
+        desired PWA configuration.
+    - name: Add custom service worker
+      id: add-custom-service-worker
+      description: Wants to add a custom service worker to a PWA by creating the
+        script, referencing it in the manifest, and accounting for the manual
+        resource-management impact, so that the app can use custom offline or
+        network behavior.
+    - name: Keep PWA resources
+      id: keep-pwa-resources
+      description: Wants to keep the PWA static resources and URL mappings up to date
+        when the app changes, so that a custom service worker keeps working after the
+        app is republished.
     - name: Configure mobile updates
       id: configure-mobile-updates
       description: Wants to configure whether a mobile app receives store-only
@@ -10714,6 +10735,29 @@ knowledge-needs:
         the Mobile tab defaults, using the app extensibility configurations JSON
         schema, so that functionality not exposed by the Mobile tab UI can be
         configured.
+    - name: Custom splash screens
+      id: custom-splash-screens
+      description: Wants to customize a mobile app's native splash screen by packaging the
+        required PNG variants in a ZIP file and configuring splash screen paths and
+        preferences in the Extensibility Configurations JSON, so that the app shows the
+        intended splash screen before it finishes loading.
+    - name: Set app preferences
+      id: set-app-preferences
+      description: Wants to set mobile app preferences in the Extensibility Configurations JSON,
+        including global and platform-specific values, so that the app uses the
+        intended Cordova settings.
+    - name: App icon sizes
+      id: app-icon-sizes
+      description: Wants to know the required iOS icon widths and heights and Android icon
+        densities for a mobile app, so that they can include every icon variant
+        in the app's extensibility configurations and avoid mobile package
+        generation errors.
+    - name: Override app config
+      id: override-app-config
+      description: Wants to override a mobile app's default extensibility configurations
+        in LifeTime for a specific environment, so that different environments
+        use different settings without manually changing and redeploying the
+        app.
     - name: Library plugin config
       id: plugin-extensibility-use-cases
       description: Wants to customize a mobile library's plugin runtime and
@@ -15236,6 +15280,11 @@ knowledge-needs:
         transaction log growth, based on average page views of monitored
         applications, so that they can properly size the dedicated
         environment's database.
+    - name: Start demo infrastructure
+      id: start-demo-infrastructure
+      description: Wants to start the demo infrastructure VMs and open the LifeTime console
+        so they can prepare the infrastructure demo environment before running
+        the demo steps.
   - name: Add new cloud environment
     id: add-new-cloud-environment
     description: Wants to add a new Cloud environment to their OutSystems
@@ -16005,6 +16054,12 @@ knowledge-needs:
     id: app-performance-analytics
     description: Wants to understand how LifeTime performance analytics measures Reactive
       and Mobile app performance, so they can interpret the metrics correctly.
+  - name: LifeTime analytics
+    id: lifetime-analytics
+    description: Wants to use LifeTime Analytics in Traditional Web apps to inspect
+      end-user experience and performance by drilling from the environment to the
+      application, module, screen, and screen action levels, reading client, network,
+      server, and APDEX metrics, and troubleshooting performance issues.
   - name: Custom alerts
     id: custom-alerts
     subtopics:
@@ -16697,6 +16752,28 @@ knowledge-needs:
       description: Wants to interpret the color-coded notification icons on OnTrack work
         items, so they can quickly tell whether a work item has an unread
         update, was rejected, or was accepted.
+  - name: Project management metrics
+    id: project-management-metrics
+    subtopics:
+    - name: Project metrics overview
+      id: project-metrics-overview
+      description: Wants to understand how OutSystems project management metrics are
+        grouped and what each category is used to monitor, so that they can
+        interpret the overall metrics overview and choose the right metric
+        family for a delivery problem.
+    - name: Project metrics tooling
+      id: project-metrics-tooling
+      description: Wants to understand how to collect, analyze, and visualize
+        project management metrics with tools such as JIRA and EazyBI, including
+        using the metric template to structure title, purpose, inputs, charts,
+        and signs, so that they can implement the metrics with the tool set
+        available to them.
+    - name: Project metrics ceremonies
+      id: project-metrics-ceremonies
+      description: Wants to understand how to use project management metrics in
+        planning, status meetings, scrum, and retrospectives, so that they can
+        discuss scope, estimation, productivity, quality, and lead-time findings
+        in the right ceremony.
 - name: Community and Training
   guid: 336189f2-2366-41d7-9dfa-6819b924a0ae
   topics:

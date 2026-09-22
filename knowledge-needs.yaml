@@ -8213,6 +8213,12 @@ knowledge-needs:
         API in ODC Studio, setting the base URL, adding the token to the
         Authorization header, and invoking the method from app logic, so that
         the request authenticates successfully before the token expires.
+    - name: Upload external library
+      id: upload-external-library
+      description: Wants to upload an external library to ODC by obtaining an upload URL,
+        uploading the ZIP file to the provided storage location, creating the
+        generation operation with the download URL, and checking the operation
+        status, so that the library can be published for ODC assets to consume.
 - name: DevOps and ALM
   guid: a8f0bc19-a180-4f83-b28e-8c786568516c
   topics:
@@ -10070,6 +10076,23 @@ knowledge-needs:
       signed native package, including the template, app resources, mobile
       platform selection, native plugins, signing keys, and build output, so
       they can follow the build flow.
+    subtopics:
+    - name: Generate iOS package
+      id: generate-ios-development-package
+      description: Wants to generate an iOS mobile app package for development tests
+        in Service Studio or Service Center when the app uses Development build
+        type, an iOS App Development certificate, and a matching provisioning
+        profile.
+    - name: Generate Android package
+      id: generate-android-development-package
+      description: Wants to generate an Android mobile app package for development
+        tests in Service Studio or Service Center when the app uses Debug build
+        type and, optionally, a custom keystore.
+    - name: Distribute development package
+      id: distribute-development-package
+      description: Wants to share a generated mobile app package with testers and
+        install it on devices when the package was created for development tests,
+        using the QR code, installation link, or package file.
   - name: MABS environment configuration
     id: mabs-environment-configuration
     subtopics:
@@ -10093,6 +10116,11 @@ knowledge-needs:
         a specific platform in OutSystems 11, using Application Management
         in Service Studio or the Distribute tab in Service Center, so that
         they can review or share generation details for troubleshooting.
+    - name: Native platforms overview
+      id: native-platforms-overview
+      description: Wants to understand the Native Platforms section in Service Center's
+        Distribute tab, including what the fields show, so that they can
+        interpret mobile platform configuration and package status.
   - name: Troubleshoot MABS build errors
     id: troubleshoot-mabs-build-errors
     subtopics:
@@ -10502,6 +10530,11 @@ knowledge-needs:
       description: Wants to debug a PWA built in ODC by emulating it in Google Chrome
         from ODC Studio's Debugger tab, so that they can inspect and troubleshoot the
         app without a physical device.
+    - name: Troubleshoot PWA installation issues
+      id: troubleshoot-pwa-issues
+      description: Wants to troubleshoot common PWA installation issues in
+        OutSystems 11 by applying the documented fixes, so that the app installs
+        correctly on supported devices.
     - name: Edit PWA manifest
       id: edit-pwa-manifest
       description: Wants to edit the PWA manifest in Service Studio or LifeTime, and
@@ -10768,12 +10801,23 @@ knowledge-needs:
         the Mobile tab defaults, using the app extensibility configurations JSON
         schema, so that functionality not exposed by the Mobile tab UI can be
         configured.
+    - name: Accessible domains
+      id: accessible-domains
+      description: 'Wants to configure the `access` extensibility configuration entry for a
+        mobile app when they need to allowlist domains, block HTTP by allowing only HTTPS
+        origins, or set the iOS-only optional fields that control ATS behavior.'
     - name: Custom splash screens
       id: custom-splash-screens
       description: Wants to customize a mobile app's native splash screen by packaging the
         required PNG variants in a ZIP file and configuring splash screen paths and
         preferences in the Extensibility Configurations JSON, so that the app shows the
         intended splash screen before it finishes loading.
+    - name: Custom app icons
+      id: custom-app-icons
+      description: Wants to replace a mobile app's default icon with custom icon assets by
+        packaging the icon variants in a ZIP file, importing it as a resource, and
+        configuring the icons section of the app's Extensibility Configurations JSON, so
+        that the published mobile app uses the custom icon.
     - name: Set app preferences
       id: set-app-preferences
       description: Wants to set mobile app preferences in the Extensibility Configurations JSON,
@@ -15925,6 +15969,10 @@ knowledge-needs:
       description: Wants to look up which metrics ODC streams to APM tools and
         the request, invocation, and resource attributes associated with them,
         so they can interpret streamed metric records in an APM tool.
+    - name: Streamed trace data
+      id: streamed-trace-data
+      description: Wants to look up which trace span attributes ODC streams to
+        APM tools, so they can interpret streamed trace records in an APM tool.
     - name: Supported APM tools
       id: supported-apm-tools
       description: Wants to know which APM tools the streaming feature supports
@@ -15961,6 +16009,13 @@ knowledge-needs:
         setting up the OpenTelemetry Collector with the AWS S3 contrib exporter and
         configuring the stream in the ODC Portal, so that observability data lands
         in Amazon S3 when that is the destination.
+    - name: Stream to Splunk
+      id: stream-to-splunk
+      description: Wants to stream observability data from ODC apps to Splunk APM
+        by setting up the HTTP Event Collector, configuring the OpenTelemetry
+        Collector with an HTTP or gRPC receiver and Splunk Exporter, updating the
+        collector image version, and registering the stream in the ODC Portal,
+        so that observability data reaches Splunk.
     - name: Stream status meanings
       id: stream-status-meanings
       description: Wants to understand what the Active, Active with errors, and
@@ -16719,6 +16774,34 @@ knowledge-needs:
       ODC Portal, and how to review the Traces screen to identify which span
       caused an error or performance issue in a server-side request, so they
       can locate the root cause before resolving it.
+    subtopics:
+    - name: Client-side trace behavior
+      id: client-side-trace-behavior
+      description: Wants to understand client-side trace behavior in ODC Portal,
+        including trace types, missing or out-of-order spans, empty blocks,
+        and additional spans after screen interactions, so they can
+        interpret trace data while troubleshooting an app.
+    - name: Enable client-side traces
+      id: enable-client-side-traces
+      description: Wants to enable client-side traces for an ODC app in ODC
+        Portal by turning on Capture client-side traces and metrics under
+        Monitoring & Troubleshooting, so they can collect traces after
+        publishing the app.
+    - name: Client-side trace limits
+      id: client-side-trace-limits
+      description: Wants to understand client-side trace limits and known limitations, so
+        they can decide when to use client-side traces.
+    - name: Capture and view traces
+      id: capture-and-view-traces
+      description: Wants to turn server-side traces on or off and enable
+        client-side trace capture in ODC Portal, then open the Traces screen
+        and trace details to inspect spans and related logs, so they can
+        collect and review request traces with the required permissions.
+    - name: Trace retention rules
+      id: trace-retention-rules
+      description: Wants to understand which traces ODC retains or samples, and the rules
+        that determine that, so they can predict which requests remain available
+        for troubleshooting.
   - name: ODC observability retention window
     id: odc-observability-data-retention
     description: Wants to know how long logs, traces, and metrics remain

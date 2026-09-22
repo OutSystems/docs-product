@@ -4964,6 +4964,9 @@ knowledge-needs:
     - name: BDD test templates
       id: bdd-test-templates
       description: Wants to create BDD Framework test apps and screen suites from the provided application and screen templates, with the required blocks and actions, so that they can start component tests quickly.
+    - name: BDD test best practices
+      id: bdd-test-best-practices
+      description: Wants to implement BDD Framework component tests by separating test code from business code, mirroring only relevant dependencies, organizing suites and blocks, using consistent names, and selecting the right assert type, so that the tests stay readable and maintainable.
 - name: Collaborative Development
   guid: ''
   topics:
@@ -13401,6 +13404,13 @@ knowledge-needs:
         central authentication server, an authentication library, and the
         SAML authentication flow, so that users sign in once and return to the
         original app URL.
+    - name: Configure Okta SAML
+      id: configure-okta-saml
+      description: Wants to configure an Okta SAML application and the matching
+        IdP Forge settings for an OutSystems 11 Traditional Web exercise,
+        including the Single sign on URL, Audience URI, certificate import,
+        attribute statements, and claim mapping, so that users can
+        authenticate through Okta with SAML.
     - name: Built-in Authentication
       id: built-in-authentication
     - name: Get authenticated user id
@@ -13466,6 +13476,14 @@ knowledge-needs:
         Destination to the Login screen, in ODC Studio, so that unauthenticated
         users accessing a protected screen are automatically redirected to the
         configured external identity provider's login page.
+    - name: External authentication flow
+      id: external-authentication-flow
+      description: 'Wants to add external authentication to a template-based
+        OutSystems app by isolating the login logic in a reusable library,
+        validating credentials in an external system, updating the user in the
+        Users component, and redirecting back to the original URL, so that the
+        app can use an external identity system while keeping the local
+        session.'
     - name: External IDPs
       id: external-idps
     - name: Replace external IdP

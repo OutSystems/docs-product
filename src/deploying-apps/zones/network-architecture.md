@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - environment-architecture
 ---
 
 # Recommended Network Architecture

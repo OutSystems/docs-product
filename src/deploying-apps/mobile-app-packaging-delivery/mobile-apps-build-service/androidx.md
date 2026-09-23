@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - enable-androidx
 ---
 
 # Building apps with AndroidX

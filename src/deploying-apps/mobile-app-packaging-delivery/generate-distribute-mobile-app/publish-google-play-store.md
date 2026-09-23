@@ -15,6 +15,10 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - app-store-submission
+  - google-play-data-safety
+  - limited-android-package
 ---
 
 # Publish Your Mobile Android Application to the Google Play Store

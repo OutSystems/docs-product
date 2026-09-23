@@ -19,6 +19,9 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - extensibility-configurations
+  - lifetime-extensibility-json-limit
 ---
 
 # Override the Default Mobile Extensibility Configurations

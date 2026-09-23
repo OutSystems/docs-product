@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - unblock
+topic:
+  - understand-ota-upgrades
 ---
 
 # Over-the-air upgrades

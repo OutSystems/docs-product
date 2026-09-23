@@ -17,6 +17,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - deployment-plan
 ---
 
 # Plan a Deployment for the Operations Team

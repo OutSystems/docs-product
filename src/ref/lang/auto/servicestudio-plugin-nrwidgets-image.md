@@ -1,12 +1,13 @@
 ---
 helpids: 30043
-summary: Learn how to display and manage images in OutSystems 11 (O11) with options for local, external, and binary data sources.
+summary: "Image widget in OutSystems 11 (O11): properties for local, external, and binary data sources, and WCAG 2.2 AA accessibility guidance for the alt attribute."
 locale: en-us
 guid: 5d499b46-63fa-4200-9a63-19c5bc007744
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 tags:
+  - Accessibility
   - Front-End
   - Traditional Web
   - UI
@@ -18,6 +19,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Image
@@ -161,3 +163,30 @@ The supported image formats are GIF, JPEG, and PNG. Please note that the images 
 </tr>
 </tbody>
 </table>
+
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
+
+By default, the **Image** widget doesn't add an `alt` attribute to the resulting `<img>` element. Without it, screen readers either announce the image file name or skip the image, so the content it conveys isn't available to assistive technology users. Add an `alt` attribute to meet WCAG 1.1.1 (Non-text Content).
+
+### Add alternative text to an image
+
+Add the following attribute:
+
+1. In **Service Studio**, in the **Widget Tree**, select the **Image** widget.
+1. In the **Properties** pane, locate **Attributes** and add a new entry:
+
+    * **Property**: `alt`
+    * **Value**: a text literal or expression describing the image (for example, `"Chart of quarterly sales"`)
+
+1. Publish the module.
+
+If the **Image** is purely decorative, for example, a background flourish that doesn't add information, set **Value** to an empty string (`""`) instead. Assistive technologies skip an `<img>` with an empty `alt` attribute rather than announcing it.
+
+If you use the **Image** inside a **Link** or **Button**, set the `alt` text to describe the destination or the action, not the picture itself.
+
+### Result
+
+After completing these steps:
+
+* An informative **Image** is announced by screen readers with the text you set in `alt`.
+* A decorative **Image** with `alt=""` is skipped, so it doesn't add noise for screen reader users.

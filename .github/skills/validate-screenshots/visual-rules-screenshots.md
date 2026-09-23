@@ -110,9 +110,12 @@ suffix-vs-content mismatch in either direction:
 ## 3. Highlight — red rectangle outline on the focal element
 
 * **Severity:** ❌ when the screenshot illustrates a specific click or focused
-  element and no highlight is present; ⚠️ when a highlight is present but the
-  red doesn't match the design-system token (a sign the rectangle was drawn
-  by hand instead of dropped from the Figma library).
+  element and it has no red rectangle AND no native selection state of its
+  own (see below); ⚠️ when a highlight is present but the red doesn't match
+  the design-system token (a sign the rectangle was drawn by hand instead of
+  dropped from the Figma library); also ⚠️ when there's no red rectangle but
+  the captured product already marks the focal element with its own native
+  selection state — see "Native selection state" below.
 * **Check (vision):** for screenshots that are part of a step ("click X",
   "open the Y panel"), the focal element is surrounded by a red rectangle
   outline — sharp corners, uniform ~2–3 px stroke, no fill. Multiple red
@@ -151,6 +154,33 @@ suffix-vs-content mismatch in either direction:
 * **Fail example:** would be a green or blue highlight, a filled rectangle,
   or the whole screenshot reshot without any highlight on an obvious
   step-target.
+
+**Native selection state:** when the focal element is a list row, tree node,
+card, or menu item, and the captured product already renders its own
+selected/chosen state on it — a full-row or full-node accent-color
+background, a ticked checkbox/radio, a bordered/filled selected state — that
+native state is a ⚠️, not a ❌, even with no red rectangle added. The native
+state likely makes the target clear enough on its own, but a designer should
+still confirm whether a red rectangle should be added for consistency with
+other step screenshots. This applies regardless of which product is
+captured or what accent color its native selection uses (blue, purple, gray,
+etc.) — it's a separate, broader case from the native-red-UI list above
+(that list covers pure rendering artifacts like buttons and logos, not a
+selection state standing in for a highlight). Still fail ❌ when the focal
+element has no native visual selection/focus indicator of its own at all (a
+plain unselected button, an unselected menu item, a bare canvas node) —
+there the reader has no way to tell what to click without an added
+rectangle.
+
+* **Verdict wording:** "Focal element is marked only by the product's native
+  selection state, not a red design-system highlight — consider adding one
+  from the Figma library for consistency with other step screenshots
+  (rule 3)."
+* **⚠️ example:** `a2a-public-element-odcs.png` (ODC Studio's "Add public
+  elements" dialog — the chosen `SendMessage` row is ticked and shown with a
+  full-row blue background, no red rectangle added); `a2a-call-odcs.png`
+  (ODC Studio's "Select ActionHandler" dialog — `SendMessage` is marked via
+  the tree's own blue selection highlight, no red rectangle added).
 
 ## 4. Numbered callouts — red circle, white digit
 
@@ -248,21 +278,46 @@ suffix-vs-content mismatch in either direction:
   chrome visible, but no grey border or drop shadow outside that chrome;
   the dark-theme background runs to the image edge.
 
-## 7. Cursor — present on interaction screenshots
+## 7. Cursor — only where the interaction can't otherwise be understood
 
 * **Severity:** ⚠️
-* **Check:** screenshots that document a click, drag, or hover include a
-  cursor icon positioned on or immediately next to the highlighted element.
-  Use one of the three Figma cursor components — never a raw vector:
-  `cursor-white`, `cursor-black`, `cursor-hand`. Informational screenshots
-  (output panels, result views, overviews) don't need a cursor. Step-based
-  screenshots that already contain numbered callouts guiding the user through
-  interaction steps also don't need a cursor — the callouts already direct
-  attention to the relevant element.
-* **Pass example:** `aggregate-create-ss.png` (cursor on the right edge of
-  the highlighted menu item); `add-source-ss.png` (cursor just below the
-  **Add source** button).
-* **Fail example:** a "click **Save**" step screenshot with no cursor at all.
+* **Check:** a cursor is no longer expected on every click/drag/hover
+  screenshot — most current screenshots don't have one, and that's fine.
+  Only flag a missing cursor when the interaction genuinely can't be
+  understood from what else is on screen:
+    * **Drag operations** — a static highlight can't show motion; pair the
+      cursor with the red arrow from rule 5.
+    * **Hover-revealed content** — a tooltip, flyout, or preview that only
+      appears on hover, where the element that actually triggers it (not
+      just something else nearby) has no red highlight, native selection
+      state, or callout of its own.
+
+  Whenever a red highlight rectangle, a native selection state (rule 3), or a
+  numbered callout (rule 4) already marks the single focal element for a
+  plain click, a missing cursor is **not** a finding — the target is already
+  unambiguous. A highlight elsewhere in the same image, on a different
+  element than the one that triggers the hover state, doesn't count — check
+  that the marked element and the hover-trigger element are the same one.
+  Informational screenshots (output panels, result views, overviews) still
+  don't need a cursor either. When used, a cursor is one of the three Figma
+  cursor components — never a raw vector: `cursor-white`, `cursor-black`,
+  `cursor-hand`.
+* **Pass example (cursor not required):** `creating-connection-pl.png`,
+  `a2a-connection-pl.png`, `a2a-details-pl.png`, `a2a-auth-details-pl.png`,
+  `a2a-public-element-odcs.png`, `a2a-call-odcs.png` — each has a red
+  highlight or a native selection state (rule 3) already marking the target,
+  so the lack of a cursor isn't flagged. `aggregate-create-ss.png` (cursor on
+  the right edge of the highlighted menu item) and `add-source-ss.png`
+  (cursor just below the **Add source** button) also pass — having a cursor
+  is still fine, it's just no longer required.
+* **Fail example:** `a2a-supported-auth-pl.png` — the **Authentication**
+  column header has a red highlight (marking that column as the step's
+  focus), but the floating tooltip ("Bearer token, API key, Basic") is
+  triggered by hovering a specific row's truncated auth-methods badge, not
+  the header. That row's badge has no highlight, selection state, or
+  callout of its own and no cursor either, so the reader can't tell what to
+  hover to reproduce the tooltip — this is exactly the "highlight is on a
+  different element than the hover trigger" case rule 7 still catches.
 
 ## 8. No PII / customer data
 

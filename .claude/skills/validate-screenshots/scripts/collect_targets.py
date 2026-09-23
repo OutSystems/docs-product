@@ -11,11 +11,32 @@ Non-PNG image formats (.jpg, .jpeg, .gif, .webp, .svg, .bmp) are included so
 rule 1 of the rubric can flag them as format failures.
 
 Output: JSON array on stdout, one entry per image:
-    {"image_path": abspath, "article_path": str|None, "sha256": str|None}
+    {"image_path": abspath, "article_path": str|None, "sha256": str|None,
+     "blob_sha": str|None, "cached": bool, "cache_reason": str,
+     "cache_detail": str, "cached_findings": [str]}
 
 The sha256 field lets downstream logic spot duplicate files — two
 screenshots with the same hash are byte-for-byte identical and the
 content developer should delete all but one.
+
+The blob_sha / cached fields drive the validation cache. `cached: true`
+means this exact content already passed this rubric, so the skill skips
+the vision read and the checker scripts for it and reuses
+`cached_findings` verbatim. Note the two hashes are not
+interchangeable: sha256 is for duplicate detection, blob_sha is git's
+blob id and is what the cache keys on, because the workflow can obtain
+it from the GitHub API before the repo is cloned.
+
+Entries are never dropped for being cached — duplicate detection is
+set-scoped and must still see every target.
+
+* AI_SKILL_VALIDATION_RECORD — path to the restored validation record. Unset or unreadable
+  means nothing is cached, which is always safe.
+* AI_SKILL_CACHE_MAX_AGE_DAYS — optional; entries older than this are
+  treated as misses.
+
+Cache decisions are logged to stderr, one line per file, because stdout
+carries the JSON the skill parses.
 
 Two env vars let the calling workflow avoid validating the same image
 twice when it fans out one invocation per changed file (see
@@ -58,7 +79,13 @@ def _find_lib_dir() -> Path:
 
 
 sys.path.insert(0, str(_find_lib_dir()))
-from lib import extract_image_refs, file_sha256, find_article_for_image, git_repo_root  # noqa: E402
+from lib import (  # noqa: E402
+    annotate_cache,
+    extract_image_refs,
+    file_sha256,
+    find_article_for_image,
+    git_repo_root,
+)
 
 IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)\s]+\.png)(?:\s+\"[^\"]*\")?\)")
 
@@ -153,6 +180,7 @@ def main(argv: list[str]) -> int:
             entries = resolve_single_png(path, shared_with=shared_with)
         else:
             entries = []
+    annotate_cache(entries, repo_root=git_repo_root(Path.cwd()))
     print(json.dumps(entries, indent=2))
     return 0
 

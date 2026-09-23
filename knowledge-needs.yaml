@@ -7773,6 +7773,22 @@ knowledge-needs:
     subtopics:
     - name: Selective Deployment Using Deployment Zones (self-managed)
       id: selective-deploy-zones
+    - name: App zone behavior
+      id: app-zone-behavior
+      description: Wants to understand how application-level deployment zones work in OutSystems 11 so that existing mixed-mode apps keep their module-level settings after upgrade, new apps use application-wide zone configuration only, and changing an application's zone removes module-level zone settings.
+    - name: Configure app zone
+      id: configure-app-zone
+      description: Wants to configure an OutSystems application to use a specific deployment zone in Service Center by selecting the zone in the application's Operation tab and saving the change, so that the platform deploys the app to the chosen zone.
+    - name: Unify deployment zones
+      id: unify-deployment-zones
+      description: Wants to unify modules under one deployment zone, so that
+        they can follow the Service Center procedure for deployment-zone
+        changes.
+    - name: Split application into separate apps
+      id: split-application-into-separate-apps
+      description: Wants to split an application into separate apps when
+        modules must stay in different deployment zones, so that they can
+        follow the Service Studio procedure for deployment-zone changes.
     - name: Deployments with no downtime
       id: zero-downtime-deployments
   - name: Automated deployments foundations
@@ -8527,6 +8543,13 @@ knowledge-needs:
         available (built-in, custom, and Forge), and what predefined elements they
         provide, when starting to create an OutSystems app in Service Studio, so that
         they can choose the right template for their project.
+    - name: Create use-case app
+      id: create-use-case-app
+      description: Wants to create a first app for a supported business use case by
+        following the matching Service Studio tutorial and development
+        accelerator, then customize it with their own data and use case-specific
+        screens, so that they can get a working starter app for a real business
+        scenario.
     - name: Create custom app template
       id: create-custom-app-template
       description: Wants to create a reusable custom app template in ODC Studio by

@@ -71,9 +71,28 @@ summary:
 
 Empty `sha256` values (file unreadable) are not grouped.
 
+**Run this over every entry, including ones marked `"cached": true`.**
+Whether an image duplicates another depends on the whole set, not on that
+image's own content, so a cached image can become a duplicate when a new copy
+is added and stop being one when the copy is deleted. This grouping is cheap
+and needs no vision, so it is never skipped. Note `sha256` is used here and
+nowhere else; the cache keys on `blob_sha` instead.
+
 ## Step 2: Validate each target
 
-For each entry in the list:
+**Cached entries first.** If an entry has `"cached": true`, this exact file
+content already passed this rubric on an earlier run. Skip the numbered steps
+below for it entirely — no `Read` into vision, no checker scripts — and reuse
+its `cached_findings` array verbatim as that image's findings (an empty array
+means it passed clean). It still counts toward `N` in Step 3, and toward `M`
+when `cached_findings` is non-empty. Do not re-word, re-order, or re-judge a
+cached finding: it was produced by this same rubric and must read identically
+so the report stays stable across runs.
+
+`cache_reason` and `cache_detail` on each entry say why it was or wasn't
+cached; they are for the log, not for the report.
+
+For every entry that is **not** cached:
 
 1. Read the image with the Read tool so it goes into vision.
 1. Run the deterministic checkers. They are authoritative for the rules
@@ -127,11 +146,19 @@ For each entry in the list:
 1. Use vision only for the rules the scripts don't cover: rule 2's
    suffix-vs-content mismatch (filename says `-ss` but the image shows
    ODC Studio), rule 3's _placement_ (whether a highlight is present and
-    on the right element — the color is scripted), rule 4 (numbered
-   callouts), rule 5 (arrows), rule 7 (cursor — skip if the screenshot
-   already has numbered callouts; they substitute for the cursor in
-   step-based flows), rule 8 (PII), rule 9
-   (internal environment URLs).
+    on the right element — the color is scripted; check
+   `visual-rules-screenshots.md` rule 3's "Native selection state" case
+   first — if the product's own selection highlight already marks the focal
+   element but no red rectangle was added, that's a ⚠️ with the quoted
+   verdict wording, not a ❌; only fail ❌ when there's neither a red
+   rectangle nor a native selection state), rule 4 (numbered callouts),
+   rule 5 (arrows), rule 7 (cursor — only flag a missing cursor for a drag
+   operation or hover-revealed content whose specific trigger element has no
+   highlight/selection/callout of its own; skip whenever a red highlight, a
+   native selection state, or a numbered callout already marks that exact
+   element — a highlight elsewhere in the same image on a different element
+   doesn't count, see `visual-rules-screenshots.md` rule 7), rule 8 (PII),
+   rule 9 (internal environment URLs).
 
    For `-ss`/`-odcs` files showing an entity or data-model layout (boxes
    connected by lines), check against `visual-rules-screenshots.md` rule 2's
@@ -190,6 +217,32 @@ article in the header. In the common single-article case, one line is enough.
 
 ## Step 3: Emit the summary
 
+### Verdict block (always, before anything else)
+
+Print one line recording the outcome for every target in this invocation —
+cached and freshly validated alike — before any other Step 3 output, and
+before the `<!-- REPORT BEGIN -->` sentinel the calling workflow expects:
+
+```
+<!-- VERDICTS {"src/foo/images/a-ss.png":"clean","src/foo/images/b-ss.png":"findings"} -->
+```
+
+Keys are repo-relative POSIX paths, values are exactly `clean` or `findings`
+(`findings` when that image has at least one ❌ or ⚠️ in this report). One
+line, valid JSON, no line breaks inside it. HTML comments don't render on
+GitHub, so this never shows up in the PR comment.
+
+**Print it even when the whole run is clean** — that is, print it immediately
+before `<!-- NO REPORT -->` too. It is what lets the workflow record which
+files passed. A missing or malformed block is not fatal: the workflow falls
+back to caching only fully-clean invocations, which is safe but coarser.
+
+Never record a duplicate-detection ❌ as that image's own `findings` verdict
+unless it also has a non-duplicate finding: duplicates depend on the whole
+set, so they must be re-derived every run rather than cached against one file.
+
+### Report
+
 Follow this exact format:
 
 ```
@@ -229,6 +282,11 @@ branch-diff mode it is "branch changes". For a single-image invocation,
 
 Rules:
 
+* `N` counts every target in this invocation, cached ones included; `M` counts
+  those with at least one finding, again cached ones included. A cached image
+  is a validated image — never quietly drop it from the totals, or the counts
+  will shrink as the cache warms up and the report will look like coverage
+  was lost.
 * If N > 0 and M == 0: replace the body with `All N screenshots pass.` and skip
   the per-image sections entirely. Keep the `Figma:` line in the header if it
   was extracted.

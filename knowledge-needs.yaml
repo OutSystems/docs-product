@@ -36,6 +36,9 @@ knowledge-needs:
         action in OutSystems 11 Service Studio, including which are mandatory and
         their default values, so they can correctly configure and understand the
         action's behavior.
+    - name: Server action exposure
+      id: server-action-exposure
+      description: 'Wants to determine when a server action can be exposed, based on whether it is defined in an App or is a Library action that uses a parameter defined with a non-exposed static entity, so they can expose only valid server actions.'
     - name: Use AI logic suggestions
       id: use-ai-logic-suggestions
       description: Wants to understand what logic suggestions are and how to use
@@ -238,6 +241,19 @@ knowledge-needs:
       description: Wants to know which ODC library actions are available and what each
         library is for, so they can pick the right action for the logic task
         they need.
+      subtopics:
+      - name: Text library actions
+        id: text-library-actions
+        description: Wants to know which actions are available in the Text library
+          and what each does, including regex search and replace, string splitting
+          and joining, DateTime formatting, and StringBuilder usage, so they can
+          pick the right action for text manipulation tasks in ODC Studio.
+      - name: URL library actions
+        id: url-library-actions
+        description: Wants to know which actions are available in the URL library
+          and what each does, including decoding, encoding, extracting the host
+          and protocol, getting relative URLs, and checking whether a URL is
+          relative, so they can manipulate URLs correctly in ODC Studio.
     - name: Check string contains
       id: check-string-contains
       description: Wants to check whether one text string contains another using
@@ -1871,6 +1887,17 @@ knowledge-needs:
     description: Wants to know which actions the BinaryData library provides in ODC,
       including their inputs, outputs, and supported encodings, so that they can
       convert and manipulate binary content correctly in logic flows.
+  - name: Zip library actions
+    id: zip-library-actions
+    description: Wants to know which actions the Zip library provides in ODC,
+      including their inputs, outputs, and the required action order for creating,
+      updating, and reading Zip archives in logic flows, so that they can manage
+      Zip files correctly.
+  - name: Text dictionary actions
+    id: text-dictionary-actions
+    description: Wants to know which actions the TextDictionary library provides in ODC,
+      including how to create and manage dictionaries and their keys and values,
+      so that they can manage text dictionaries in logic flows.
   - name: JSON Deserialize action
     id: json-deserialize-action
     description: Wants to look up the configurable properties, such as JSON String,
@@ -2310,6 +2337,11 @@ knowledge-needs:
         values, using the OutSystems 11 XML Extension, so that only the data
         matching specific criteria is available for downstream business logic
         without processing the entire document.
+    - name: Process XML content
+      id: process-xml-content
+      description: Wants to create, load, query, modify, save, and transform XML
+        documents and elements with the ODC XML actions, so that a server action
+        can build and process XML content end to end.
     - name: Integrate with legacy systems
       id: legacy-systems-integration
       subtopics:
@@ -2726,6 +2758,25 @@ knowledge-needs:
       id: data-masking
     - name: Data encryption
       id: data-encryption
+    - name: Secure random generation actions
+      id: secure-random-generation-actions
+      description: Wants to use the Security library to generate secure random
+        values, so that an app can produce unpredictable inputs for sensitive
+        workflows in ODC.
+    - name: Cryptographic key generation actions
+      id: cryptographic-key-generation-actions
+      description: Wants to use the Security library to generate cryptographic
+        keys, so that an app can prepare key material for protected operations
+        in ODC.
+    - name: Data confidentiality actions
+      id: data-confidentiality-actions
+      description: Wants to use the Security library to protect data
+        confidentiality, so that an app can encrypt and decrypt sensitive
+        information in ODC.
+    - name: Data integrity and authenticity actions
+      id: data-integrity-authenticity-actions
+      description: Wants to use the Security library to protect data integrity
+        and authenticity, so that an app can trust protected content in ODC.
     - name: Search encrypted data
       id: search-encrypted-attribute
       description: Wants to search an encrypted searchable attribute in
@@ -2831,6 +2882,13 @@ knowledge-needs:
         revocation, protecting tokens in transit and at rest, and defending
         against replay attacks, so that the token-based authentication
         pattern resists common token-related attacks.
+    - name: JWT library actions
+      id: jwt-library-actions
+      description: Wants to use the Security library JWT actions to create,
+        read, and validate tokens, including toggling exception PII output and
+        filling the TokenPayload and ValidationParameters records, so that an
+        app can handle JWTs when implementing token-based authentication in
+        ODC.
     - name: Manage token lifecycle
       id: manage-token-lifecycle
       description: Wants to centralize token acquisition, secure storage,
@@ -10229,6 +10287,13 @@ knowledge-needs:
         and the optional AndroidX support added in 6.3, so that they can
         plan whether and how to upgrade their mobile app's build service
         version.
+      subtopics:
+      - name: Enable AndroidX
+        id: enable-androidx
+        description: Wants to enable AndroidX for a mobile app by setting the
+          AndroidXEnabled preference in the main module's Extensibility
+          Configurations and publishing the app, so that MABS 6.3 Beta
+          through MABS 9 generates native builds with AndroidX dependencies.
     - name: MABS 6 breaking changes
       id: mabs-6-breaking-changes
       description: Wants to understand the breaking changes and known
@@ -10609,6 +10674,14 @@ knowledge-needs:
       description: Wants to keep the PWA static resources and URL mappings up to date
         when the app changes, so that a custom service worker keeps working after the
         app is republished.
+    - name: Understand OTA upgrades
+      id: understand-ota-upgrades
+      description: Wants to understand how over-the-air upgrades deliver mobile app changes
+        to installed devices without a store submission, including the server-
+        side precache.manifest check, client-side version checks, and the
+        situations that require a new build and redistribution, so they can
+        decide when an installed mobile app will update OTA versus when it needs
+        a new build.
     - name: Configure mobile updates
       id: configure-mobile-updates
       description: Wants to configure whether a mobile app receives store-only
@@ -10636,6 +10709,13 @@ knowledge-needs:
         details needed to publish a mobile app to Google Play or the Apple
         App Store when the app is ready for production, so that the store
         listing is complete before submission.
+    - name: Google Play data safety
+      id: google-play-data-safety
+      description: Wants to complete the Google Play data safety disclosure for
+        an Android app by declaring the default crash logs and device or other
+        IDs collected by OutSystems apps and adding any extra
+        plugin-collected data when the app uses custom or supported plugins, so
+        that the app meets Google Play submission requirements.
   - name: Offline Synch
     id: offline-synch
     subtopics:
@@ -10899,6 +10979,13 @@ knowledge-needs:
         in LifeTime for a specific environment, so that different environments
         use different settings without manually changing and redeploying the
         app.
+    - name: Extensibility JSON limit
+      id: lifetime-extensibility-json-limit
+      description: Wants to resolve the LifeTime Extensibility Configuration JSON character
+        limit issue when the configuration exceeds the supported size, by
+        upgrading to supported LifeTime and Platform Server versions or by
+        editing the JSON in Service Studio, so they can keep the configuration
+        within limits.
     - name: Library plugin config
       id: plugin-extensibility-use-cases
       description: Wants to customize a mobile library's plugin runtime and

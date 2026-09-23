@@ -2059,6 +2059,9 @@ knowledge-needs:
         environment in Service Center and map the extension's logical database
         to it, so that applications using extension modules can read and write
         data from the correct external database after deployment.
+    - name: Import external tables
+      id: import-external-tables
+      description: Wants to import entities from external tables or views in Integration Studio by selecting the database connection, selecting the tables and views, defining the logical database, reviewing the data types, and publishing the extension so that they create entities from external database data.
     - name: Set physical table names
       id: set-physical-table-names
       description: Wants to enter the three-part Physical Table Name for each
@@ -5098,6 +5101,12 @@ knowledge-needs:
     description: Wants to choose a branching strategy and use a personal area for
       isolated debugging when collaborating on an OutSystems app, so that work
       stays short-lived and safe to share.
+  - name: Version control workflows
+    id: version-control-workflows
+    description: Wants to use Visual Studio Team Explorer and Git repositories to
+      connect to a server copy, sync local changes, and manage branches and
+      merges when working on a module, so that they can version code in a
+      Git-based workflow.
 - name: Consume UI
   guid: 349f50f2-cb79-41c7-9e8b-f113cbb3e965
   topics:
@@ -7515,6 +7524,11 @@ knowledge-needs:
       id: solutions-apps-modules
     - name: Environments/Stages
       id: environments-stages
+    - name: Get default stage domain
+      id: get-default-domain
+      description: Wants to get the default domain configured for the current ODC
+        stage by calling GetDefaultDomain, so that they can build URLs against
+        the active stage domain when no custom domain is set.
     - name: Deployment options
       id: deployment-options
     - name: Deployment error concept
@@ -8396,6 +8410,12 @@ knowledge-needs:
         logic, drag-and-drop UI composition, and automatic data and logic
         wiring, so they don't force imperative coding habits into Service Studio
         and get blocked early when building their first app.
+    - name: Compare platform stacks
+      id: compare-platform-stacks
+      description: Wants to compare the .NET and OutSystems development stacks,
+        including Visual Studio workloads, Service Studio, Integration Studio,
+        and the IIS-based runtime servers, so they can map each platform's
+        setup and execution path.
     - name: Enable enhanced logging
       id: enable-service-studio-logging
       description: 'Wants to enable enhanced/verbose logging in Service Studio,
@@ -8528,6 +8548,11 @@ knowledge-needs:
     - name: Dependency management
       id: dependency-management-overview
       description: Wants to compare how .NET and OutSystems expose dependency references, tooling, and package sources, so they can locate, add, and use external components in either platform when moving between Visual Studio and Service Studio.
+    - name: Add language extensions
+      id: add-language-extensions
+      description: Wants to extend OutSystems with Integration Studio and Visual Studio
+        so they can add C# code and custom components that the visual language
+        does not provide.
     - name: Installing Forge component
       id: install-forge-component
     - name: ODC solutions overview
@@ -13521,6 +13546,9 @@ knowledge-needs:
     subtopics:
     - name: Automated UI tests
       id: automated-ui-tests
+    - name: Page object model
+      id: page-object-model
+      description: Wants to structure automated web UI tests around reusable page objects, page widgets, interactions, assertions, and templates so the test framework stays maintainable as the UI changes.
 - name: User Management
   guid: 30a6f6ca-c898-4e05-b5d6-88a6789ca36c
   topics:
@@ -14195,6 +14223,13 @@ knowledge-needs:
         completing a custom self-registration flow outside the standard
         self-registration screens, so that a new user account becomes
         usable immediately.
+    - name: End-user management
+      id: end-user-management
+      description: Wants to understand how end-users are managed in ODC
+        Portal, including that they are not created only programmatically
+        and that each end-user needs at least one application role to
+        access protected screens, so that they can identify the correct
+        statement about ODC user administration and access rules.
     - name: Login actions
       id: login-actions
       description: Wants to know which built-in login actions are available in

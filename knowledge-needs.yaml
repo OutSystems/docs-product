@@ -2404,6 +2404,12 @@ knowledge-needs:
         resource that was added by importing actions from a .NET assembly,
         in Integration Studio's Resource Editor, so that they can review
         additional information about the imported resource.
+    - name: Import assembly actions
+      id: import-actions-from-dotnet-assembly
+      description: Wants to import actions from a .NET assembly in Integration Studio by
+        browsing for the assembly, selecting the assembly members to import, and
+        reviewing the generated report, so that the extension creates the
+        corresponding actions and resources automatically.
     - name: Structure element properties
       id: structure-element-properties
       description: Wants to know the properties available when defining a Structure element
@@ -4465,6 +4471,12 @@ knowledge-needs:
         displaying the Result.ErrorMessage in a feedback message when it's false,
         so that end users are informed when an operation like deleting a record
         fails.
+    - name: Handle REST status codes
+      id: handle-rest-status-codes
+      description: Wants to handle the outcome of a consumed REST web service call
+        by checking the HTTP status code returned and branching on success and
+        error cases, so that the application can react appropriately to 2xx, 4xx,
+        and 5xx responses.
     - name: Structures
       id: structures
     - name: SOAP parameter reference
@@ -8457,6 +8469,9 @@ knowledge-needs:
   - name: Development artifacts
     id: development-artifacts
     subtopics:
+    - name: Project structure
+      id: project-structure
+      description: 'Wants to compare .NET solutions, projects, and libraries with OutSystems applications and modules, and use Service Studio''s Applications and Modules views when working with development artifacts.'
     - name: Programming style
       id: programming-style
       description: Wants to compare .NET object-oriented classes and
@@ -13561,6 +13576,14 @@ knowledge-needs:
         authenticate through Okta with SAML.
     - name: Built-in Authentication
       id: built-in-authentication
+    - name: Custom authentication
+      id: custom-authentication
+      description: Wants to understand when OutSystems built-in authentication
+        is not enough and how to choose a custom authentication approach,
+        including external corporate authentication through REST or SOAP and
+        federated single sign-on through OAuth or SAML, so that they can decide
+        how to integrate identity systems that the built-in methods do not
+        cover.
     - name: Get authenticated user id
       id: get-authenticated-user-id
       description: Wants to retrieve the identifier of the user currently

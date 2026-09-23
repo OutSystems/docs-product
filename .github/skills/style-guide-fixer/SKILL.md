@@ -83,7 +83,7 @@ Summary of decision logic:
 * Do not rewrite, reword, or restructure content beyond what the specific error requires.
 * Do not add, remove, or reorder sections, headings, or paragraphs.
 * Do not modify front-matter fields unless an error explicitly targets one.
-* Always follow the style guidelines in `.github/doc-styles/formatting.md`, `.github/doc-styles/tone.md`, and `.github/doc-styles/structure.md`.
+* Always follow the style guidelines in `.github/doc-styles/formatting.md`, `.github/doc-styles/tone.md`, `.github/doc-styles/structure.md`, `.github/doc-styles/content.md`, `.github/doc-styles/markdown.md`, `.github/doc-styles/procedure-rules.md`, `.github/doc-styles/process-rules.md`, `.github/doc-styles/word-lists.md`, and `.github/doc-styles/working-with-files.md`.
 
 ## Step 3 — report results
 

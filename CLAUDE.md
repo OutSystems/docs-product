@@ -42,7 +42,15 @@ When writing or reviewing docs, follow the rules in:
 * `.github/doc-styles/formatting.md`: Markdown conventions, emphasis, UI elements, placeholders, admonitions
 * `.github/doc-styles/tone.md`: voice, language, capitalization, product names
 * `.github/doc-styles/structure.md`: headings, paragraphs, lists, procedures, document types
+* `.github/doc-styles/content.md`: grammar, clarity, and general content-quality rules
+* `.github/doc-styles/markdown.md`: Markdown syntax mechanics (headings, emphasis, lists, tables, links, images)
+* `.github/doc-styles/procedure-rules.md`: rules specific to procedure (task-based) topics
+* `.github/doc-styles/process-rules.md`: rules specific to process (multi-task, end-to-end) topics
+* `.github/doc-styles/word-lists.md`: approved product names and terminology
+* `.github/doc-styles/working-with-files.md`: file and folder naming conventions, and table of contents placement
 * `.github/doc-styles/visual-assets.md`: Mermaid diagram rules, color palette, visual audit workflow (only when working on diagrams or visual assets)
+
+`.github/copilot-instructions.md` is the index of these files; treat it as authoritative if the two ever disagree, since new style files are added there first.
 
 Key rules:
 

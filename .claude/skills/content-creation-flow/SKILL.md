@@ -646,8 +646,14 @@ Create content drafts and open a pull request that strictly follow the approved 
         * `.github/doc-styles/formatting.md`
         * `.github/doc-styles/tone.md`
         * `.github/doc-styles/structure.md`
+        * `.github/doc-styles/content.md`
+        * `.github/doc-styles/markdown.md`
+        * `.github/doc-styles/procedure-rules.md` (for procedure/task topics)
+        * `.github/doc-styles/process-rules.md` (for process topics)
+        * `.github/doc-styles/word-lists.md`
+        * `.github/doc-styles/working-with-files.md`
     * If something regarding the writing style isn't covered in the documentation style guide, use Google Dev's writing style.
-    * **Important:** `.github/copilot-instructions.md` is an index that points to the current style guide files.
+    * **Important:** `.github/copilot-instructions.md` is an index that points to the current style guide files. Refer to it, not just to the subset listed above, since the style guide can gain new files over time.
 1. **Using Figma nodes as data sources:**
     * Reference Figma nodes discovered in Step 1 when creating content that requires visual elements
     * Use `mcp_Figma_get_design_context` to retrieve design code, component descriptions, and design tokens from relevant Figma nodes
@@ -666,8 +672,8 @@ Create content drafts and open a pull request that strictly follow the approved 
     * Agreed scope and acceptance criteria
 1. **Content structure and formatting validation:**
     * Content structure matches the approved design
-    * Language, tone, and formatting strictly follow the documentation style guide referenced by `.github/copilot-instructions.md`
-    * Follow all structure, formatting, and file naming rules in the documentation style guide
+    * Language, tone, and formatting strictly follow all the documentation style guide files referenced by `.github/copilot-instructions.md`
+    * Follow all structure, formatting, file naming, and word-list rules in the documentation style guide
     * Ensure all generated content complies with the project's Vale and markdownlint rules
     * **Vale rule updates:** When Vale validation reports issues of type **ERROR** that cannot be resolved by changing the content (because the rule itself needs updating - exceptions), update the corresponding Vale rule file in the `tk-cicd` repository. The `tk-cicd` repository is included in the workspace, so rule files can be edited directly. For instance, if `OutSystems.Headings` incorrectly flags "JSON" in "Building JSON strings" title as a capitalization error, but "JSON" is a valid acronym that should remain uppercase, add "JSON" to the exception list in `styles/OutSystems/Headings.yml`. After modifying the corresponding rule, commit the changes and create a pull request in the `tk-cicd` repository. Note that the rule changes will not take effect in the documentation repositories until the PR is merged in `tk-cicd` and the changes are synced to those repositories.
     * No unapproved assumptions or scope expansion are introduced

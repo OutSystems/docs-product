@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - create-use-case-app
 ---
 
 # Understanding how to create an app

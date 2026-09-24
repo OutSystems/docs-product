@@ -18,6 +18,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - app-zone-behavior
+  - unify-deployment-zones
+  - split-application-into-separate-apps
 ---
 
 # Modules and apps in deployment zones

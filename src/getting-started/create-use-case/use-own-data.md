@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - get-data-from-external-db
+  - replace-ui-sample-data
 ---
 
 # Using your own data in your app

@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - create-use-case-app
 ---
 
 # Getting started with your own app use case

@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - configure-app-zone
 ---
 
 # Configure an Application to Use a Deployment Zone

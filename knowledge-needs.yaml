@@ -2276,6 +2276,12 @@ knowledge-needs:
         project targets a supported .NET version and packaging the compiled
         project into a ZIP correctly before uploading, so that they can
         successfully publish the external library.'
+    - name: Fix ZIP compression
+      id: fix-zip-compression-method
+      description: 'Wants to fix the OS-ELG-MODL-05029 error ("The package was compressed using an unsupported compression method: <CompressionMethodName>") by using the Deflated or Stored compression method when creating high code package ZIP files, so that the external library uploads and publishes successfully.'
+    - name: Fix ZIP uncompress error
+      id: fix-zip-uncompress-error
+      description: 'Wants to fix the OS-ELG-MODL-05028 error ("The file <FileName> can not be uncompressed.") by removing unnecessary files from the external library ZIP package or contacting Support when the file is required, so they can upload and publish the external library successfully.'
     - name: Fix OSIgnore field error
       id: fix-osignore-field-error
       description: 'Wants to fix the OS-ELG-MODL-05012 error ("The property/field
@@ -2290,6 +2296,21 @@ knowledge-needs:
         ensuring only one class implements the OSInterface-decorated interface
         in their C# external library project, so that they can successfully
         publish the external library.'
+    - name: Fix name length error
+      id: fix-name-length-error
+      description: 'Wants to fix the OS-ELG-MODL-05019 error ("The name <Name> is
+        not supported as it has more than 50 characters.") by shortening the
+        external library name to 50 characters or fewer, so they can
+        successfully publish the library.'
+    - name: Fix leading-digit error
+      id: fix-leading-digit-error
+      description: 'Wants to fix the OS-ELG-MODL-05020 error ("The name <Name> is not supported as it begins with a number.") by renaming the C# external library so the name starts with a letter before uploading it, so they can successfully publish the external library.'
+    - name: Fix invalid characters error
+      id: fix-invalid-characters-error
+      description: 'Wants to fix the OS-ELG-MODL-05021 error ("The name: ''<Name>'' is not supported as it has the following invalid characters ''<InvalidCharacters>''.") by renaming the C# external library so the name uses only letters, numbers, and underscores before uploading it, so they can successfully publish the external library.'
+    - name: Fix underscore names
+      id: fix-underscore-names
+      description: 'Wants to fix the OS-ELG-MODL-05022 error ("The following name: <InterfaceName/MethodName> begins with underscores") by renaming C# interface or method names so they do not start with underscores, so they can successfully publish the external library.'
     - name: Missing file warning
       id: missing-file-warning
       description: 'Wants to resolve the "The file ''<file>'' was not found on
@@ -5045,6 +5066,9 @@ knowledge-needs:
     - name: BDD test best practices
       id: bdd-test-best-practices
       description: Wants to implement BDD Framework component tests by separating test code from business code, mirroring only relevant dependencies, organizing suites and blocks, using consistent names, and selecting the right assert type, so that the tests stay readable and maintainable.
+    - name: BDD test setup
+      id: bdd-test-setup
+      description: Wants to set up a BDD Framework test app in ODC Studio by adding the component as a public element, creating a screen and BDD scenario, and implementing the test actions, so they can start component testing.
 - name: Collaborative Development
   guid: ''
   topics:
@@ -8568,6 +8592,11 @@ knowledge-needs:
     subtopics:
     - name: Adding dependencies to a module
       id: add-module-dependency
+    - name: Resolve dependency error
+      id: resolve-dependency-error
+      description: Wants to resolve an ODC app or library dependency error after the
+        referenced app or library is removed from the organization, so that the
+        dependency becomes valid again and the app or library keeps working.
     - name: Dependency management
       id: dependency-management-overview
       description: Wants to compare how .NET and OutSystems expose dependency references, tooling, and package sources, so they can locate, add, and use external components in either platform when moving between Visual Studio and Service Studio.

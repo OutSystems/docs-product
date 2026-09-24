@@ -417,6 +417,11 @@ knowledge-needs:
       id: how-to-create-structures
     - name: What are structures
       id: what-are-structures
+    - name: Select output structure
+      id: select-output-structure
+      description: Wants to use a Structure instead of an Entity in the output of a
+        SELECT SQL Query, so they retrieve only the needed attributes and less
+        data.
   - name: Logic performance tips
     id: logic-performance-tips
     description: Wants to apply best practices for optimizing OutSystems 11 application
@@ -8594,6 +8599,11 @@ knowledge-needs:
         accelerator, then customize it with their own data and use case-specific
         screens, so that they can get a working starter app for a real business
         scenario.
+    - name: Patient portal overview
+      id: patient-portal-overview
+      description: Wants to understand the patient self-service portal they will
+        build in the guided path, so they know the app purpose and scope before
+        starting the course.
     - name: Create custom app template
       id: create-custom-app-template
       description: Wants to create a reusable custom app template in ODC Studio by
@@ -13534,6 +13544,9 @@ knowledge-needs:
     subtopics:
     - name: End of sprint testing
       id: end-of-sprint-testing
+    - name: Testing in iterations
+      id: testing-in-iterations
+      description: Wants to understand what a tester does during an iteration, including coordinating user acceptance testing, creating the next iteration test plan, and supporting shaping and build work, so that they can manage testing activities across the iteration.
   - name: Fundamentals of testing practice
     id: testing-practices
     subtopics:

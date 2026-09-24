@@ -7553,6 +7553,11 @@ knowledge-needs:
       description: Wants to get the default domain configured for the current ODC
         stage by calling GetDefaultDomain, so that they can build URLs against
         the active stage domain when no custom domain is set.
+    - name: Understand ODC domains
+      id: understand-odc-domains
+      description: Wants to understand ODC domain types, the default domain,
+        and how built-in and custom domains affect access and future domain
+        changes, so they can plan domain-related decisions safely.
     - name: Deployment options
       id: deployment-options
     - name: Deployment error concept
@@ -8332,6 +8337,16 @@ knowledge-needs:
         return when a client exceeds an API rate limit, so they can detect
         and handle the 429 Too Many Requests response in their integration
         code.
+    - name: Paged request limit
+      id: paged-request-limit
+      description: Wants to know the valid range for the limit value in a
+        paged request, so they can avoid the OS-FRGE-AST-40003 error and
+        fetch assets successfully.
+    - name: Paged request offset
+      id: paged-request-offset
+      description: Wants to know the valid range for the offset value in a
+        paged request, so they can avoid the OS-FRGE-AST-40004 error and
+        fetch assets successfully.
     - name: API terminology mapping
       id: api-terminology-mapping
       description: Wants to map ODC Portal terminology (stage, end-user role) to
@@ -8351,6 +8366,11 @@ knowledge-needs:
         uploading the ZIP file to the provided storage location, creating the
         generation operation with the download URL, and checking the operation
         status, so that the library can be published for ODC assets to consume.
+    - name: Create asset via API
+      id: create-asset-via-api
+      description: Wants to create a new ODC asset through the Asset Repository API,
+        including choosing a valid asset type and using a subtype only for
+        LowCodeLibraries, so that the create request succeeds.
 - name: DevOps and ALM
   guid: a8f0bc19-a180-4f83-b28e-8c786568516c
   topics:

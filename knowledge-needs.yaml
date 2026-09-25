@@ -561,6 +561,12 @@ knowledge-needs:
         actions inside If conditions on server-side logic, or in a screen
         widget''s If condition, Enabled, and Visible properties, so they can
         enforce role-based authorization on both logic and UI elements.'
+    - name: Manage menu access
+      id: manage-menu-access
+      description: Wants to hide menu entries with a Data Action that combines
+        an HRManager role check and a custom Server Action that detects
+        whether the current user manages employees, so that the Vacations app
+        menu only shows the links the user is allowed to see.
     - name: ODC access control overview
       id: odc-access-control-overview
       description: Wants to understand what access control means in ODC,
@@ -4323,6 +4329,12 @@ knowledge-needs:
         Portal, so that they can check whether a timer is running, review its last
         execution time and duration, and investigate errors using log details and
         related activities.
+    - name: Holiday cache sync
+      id: holiday-cache-sync
+      description: Wants to use a timer to fetch public holiday data from a REST library
+        into a public entity when the cached year has no rows, then read the cached
+        records by month for a calendar screen, so that the app avoids repeated API
+        calls and shows holidays in each month.
     - name: Scheduler job dispatch
       id: scheduler-job-dispatch
       description: Wants to understand how the Scheduler Service queues timer, email,
@@ -5433,6 +5445,13 @@ knowledge-needs:
         real time, in OutSystems 11 traditional web apps, mobile apps, and
         reactive web apps, so that they can decide when to use a form on a
         screen.
+      subtopics:
+      - name: Automatic form validation
+        id: automatic-form-validation
+        description: Wants to identify which input validations the Form widget
+          performs automatically in ODC, such as mandatory fields and data
+          type checks, and which validation still requires custom logic, so
+          they can recognize built-in validation behavior.
     - name: Use UI accelerator
       id: use-ui-accelerator
       description: Wants to add a pre-built OutSystems UI Accelerator (such
@@ -7544,6 +7563,18 @@ knowledge-needs:
       id: rollback-to-previous-tagged-version
       description: Wants to restore an app to a previously tagged version,
         so that they can recover from a bad release.
+  - name: Package version errors
+    id: package-version-errors
+    subtopics:
+    - name: Invalid package version
+      id: invalid-package-version
+      description: 'Wants to fix the OS-PKGS-40003 "The package version ''<version>'' is not in the correct format (MAJOR.MINOR.PATCH)." error that blocks package installation by updating the package version to MAJOR.MINOR.PATCH format, so that the package installs successfully.'
+  - name: Package repository errors
+    id: package-repository-errors
+    subtopics:
+    - name: Fix invalid package data
+      id: fix-invalid-package-data
+      description: 'Wants to fix the OS-PKGS-40004 "Requested package <package> not found in the package repository." error by retrying the package installation and creating a support case if the problem persists, so that the package installs successfully.'
   - name: Basic deployment concepts
     id: basic-deployment-concepts
     subtopics:
@@ -14824,6 +14855,12 @@ knowledge-needs:
 - name: O11 to ODC Migration
   guid: ''
   topics:
+  - name: O11 to ODC overview
+    id: o11-to-odc-overview
+    description: Wants to understand the main terminology, app model, user model,
+      portal, deployment, configuration, and monitoring differences between
+      OutSystems 11 and ODC, so they can map concepts quickly when reading the
+      cheatsheet or moving between platforms.
   - name: Code Conversion
     id: code-conversion
     subtopics:

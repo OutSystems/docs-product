@@ -13,6 +13,8 @@ audience:
   - Platform administrator
 outsystems-tools:
   - none
+topic:
+  - azure-ai-resources
 coverage-type:
   - remember
 ---

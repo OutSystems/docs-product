@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - configure-chatbot-webhook-module
+  - create-chatbot-webhook-module
 ---
 
 # Create and configure the chatbot webhook module

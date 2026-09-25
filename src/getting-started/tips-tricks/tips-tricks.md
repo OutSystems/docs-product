@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - service-studio-workspace
+  - element-shortcuts
 ---
 
 # Service Studio Tips and Tricks

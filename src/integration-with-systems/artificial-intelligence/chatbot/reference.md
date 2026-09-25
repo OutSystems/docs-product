@@ -18,6 +18,10 @@ outsystems-tools:
   - forge
 coverage-type:
   - remember
+topic:
+  - chatbot-block-settings
+  - configure-chatbot-wizard
+  - install-forge-component
 ---
 
 # Reference

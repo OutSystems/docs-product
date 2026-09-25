@@ -3,7 +3,7 @@ tags:
   - Authentication
   - Infrastructure
   - IT Users
-  - Platform Server
+  - Mentor Studio
   - Plugins
   - Technical Debt
   - Troubleshooting
@@ -21,6 +21,7 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+  - unblock
 topic:
   - associate-code-quality-user
   - fix-code-quality-401
@@ -95,19 +96,21 @@ Before registering and setting up your infrastructure in Code Quality, make sure
 
 * Code Quality uses the environment's public DNS hostname to communicate. Check [Code Quality network requirements](../../setup-infra-platform/setup/network-requirements.md#ai-mentor-studio) for detailed information. In the OutSystems Cloud, these requirements are ensured.
 
-Your code analysis and LifeTime environments meet the minimum Platform Server and LifeTime Management Console versions required by your Code Quality probes version, according to the following table.
+* Your code analysis environment is on Platform Server version 11.0.542 or higher.
 
-| Code Quality probes version | Minimum Platform Server version | Minimum LifeTime Management Console version |
-| --- | --- | --- |
-| 6.0.0 | 11.43.0 | 11.31.0 |
-| 5.0 | 11.18.1 | 11.16.1 |
-| 4.0, 4.1, 4.2 | 11.7.2 | Jul.2019 |
+* Your LifeTime environment meets the minimum LifeTime Management Console version required by the Code Quality probes version, according to the following table:
 
-<div class="warning" markdown="1">
+    | Code Quality probes version | Minimum LifeTime Management Console version |
+    | --- | --- |
+    | 6.0.0 | 11.31.0 |
+    | 5.0 | 11.16.1 |
+    | 4.3 (Deprecated) | 11.5.0 |
 
-Code Quality probes older than 5.0 are deprecated. Update to the latest compatible probe version.
+    <div class="warning" markdown="1">
 
-</div>
+    Code Quality probes older than 5.0 are deprecated. Update to the latest compatible probe version.
+
+    </div>
 
 ### Register and set up your infrastructure
 

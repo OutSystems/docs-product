@@ -43,6 +43,7 @@ Understand the content of the provided file so you can classify it accurately.
     * The file cannot be found or read.
     * The file has no identifiable front-matter or content.
     * The file is `metadata.yaml` — this file is read-only and must never be modified by this skill.
+    * The file is `README.md` — README files don't need a coverage type and are excluded from this classification.
 
 ### Output requirements
 

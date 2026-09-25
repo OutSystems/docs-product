@@ -1868,6 +1868,11 @@ knowledge-needs:
         single-record insert, multiple-record insert, upsert, and insert/upsert
         from a SELECT in an ODC SQL node, so they can determine which operations
         are available before writing a query against a given external system.
+    - name: Non-select query setup
+      id: non-select-query-setup
+      description: Wants to configure an ODC SQL Tool non-SELECT query with an
+        Output Entity or Structure and know that DELETE, INSERT, and UPDATE
+        statements are supported, so they can run data-changing SQL correctly.
     - name: SQL best practices
       id: sql-best-practices
       description: Wants to follow best practices when writing SQL nodes in ODC
@@ -5452,13 +5457,25 @@ knowledge-needs:
           performs automatically in ODC, such as mandatory fields and data
           type checks, and which validation still requires custom logic, so
           they can recognize built-in validation behavior.
-    - name: Use UI accelerator
-      id: use-ui-accelerator
-      description: Wants to add a pre-built OutSystems UI Accelerator (such
-        as the Order Management Products Gallery) to an empty Screen by
-        dragging it from the Toolbox, in Service Studio for OutSystems 11,
-        so that a complex, fully functional Screen layout scaffolds quickly
-        with sample data instead of building each widget from scratch.
+      - name: Check form validity
+        id: check-form-validity
+        description: Wants to check a Form's Valid property after custom
+          validations run so execution branches correctly and invalid data is
+          not stored in the database in ODC.
+      - name: Invalid widget feedback
+        id: invalid-widget-feedback
+        description: Wants to understand how an input widget behaves when its
+          Valid property is set to False, including that it keeps its normal
+          appearance, applies invalid styling, and shows the validation
+          message, so they can recognize built-in validation feedback in an
+          OutSystems 11 screen.
+      - name: Use UI accelerator
+        id: use-ui-accelerator
+        description: Wants to add a pre-built OutSystems UI Accelerator (such
+          as the Order Management Products Gallery) to an empty Screen by
+          dragging it from the Toolbox, in Service Studio for OutSystems 11,
+          so that a complex, fully functional Screen layout scaffolds quickly
+          with sample data instead of building each widget from scratch.
     - name: Use Separator pattern
       id: use-separator-pattern
       description: Wants to add the Separator UI Pattern to a Traditional Web

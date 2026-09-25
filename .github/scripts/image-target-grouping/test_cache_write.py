@@ -175,6 +175,82 @@ def test_malformed_verdict_block_falls_back_not_crashes() -> None:
         assert _invoke(tmp, art3, m3, o3) == {}, "unknown verdict values are unusable"
 
 
+def test_fragment_captured_regardless_of_sentinel_order() -> None:
+    """REPORT BEGIN is not a precondition for capturing the <details> block.
+
+    The prompt asks the model to print REPORT BEGIN "immediately before the
+    Step 3 summary heading" while also wrapping "the entire report" in
+    <details>...</details>. The model resolves that ambiguity either way —
+    sometimes REPORT BEGIN lands before <details>, sometimes just inside it,
+    after <summary>. Both must still produce a stored report_fragment: a
+    fragment silently dropped on one order means a later unchanged run has
+    a cached verdict but nothing to replay, and (via the same anchor logic
+    in the workflow's awk) a cold run's blocking findings go unreported.
+    """
+    sentinel_before = """
+<!-- VERDICTS {"src/images/b-ss.png":"findings","src/art.md":"clean"} -->
+<!-- REPORT BEGIN -->
+<details>
+<summary>art.md — 1 of 1 need changes</summary>
+
+## Screenshot review: art.md
+
+### images/b-ss.png
+- ❌ Missing TK-shadow effect (rule 6)
+</details>
+"""
+    sentinel_inside = """
+<!-- VERDICTS {"src/images/b-ss.png":"findings","src/art.md":"clean"} -->
+<details>
+<summary>art.md — 1 of 1 need changes</summary>
+
+<!-- REPORT BEGIN -->
+## Screenshot review: art.md
+
+### images/b-ss.png
+- ❌ Missing TK-shadow effect (rule 6)
+</details>
+"""
+    for label, out in [("before", sentinel_before), ("inside", sentinel_inside)]:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            art, mpath, opath = _setup(tmp, out)
+            entries = _invoke(tmp, art, mpath, opath)
+            fragment = entries.get("src/art.md", {}).get("report_fragment")
+            assert fragment, f"sentinel {label} <details>: no fragment stored, {entries}"
+            assert fragment.startswith("<details>"), (label, fragment)
+            assert fragment.endswith("</details>"), (label, fragment)
+            assert "TK-shadow" in fragment, (label, fragment)
+            # The sentinel line itself is a strip marker, not report content.
+            assert "REPORT BEGIN" not in fragment, (label, fragment)
+
+
+def test_fragment_ignores_cli_preview_of_details() -> None:
+    """A previewed '  │ <details>' line must not be mistaken for the real tag."""
+    out = (
+        '  │ <details>\n'
+        '  └ 12 lines…\n'
+        '<!-- VERDICTS {"src/images/b-ss.png":"findings","src/art.md":"clean"} -->\n'
+        '<details>\n'
+        '<summary>art.md — 1 of 1 need changes</summary>\n'
+        '\n'
+        '<!-- REPORT BEGIN -->\n'
+        '## Screenshot review: art.md\n'
+        '\n'
+        '### images/b-ss.png\n'
+        '- ❌ Missing TK-shadow effect (rule 6)\n'
+        '</details>\n'
+    )
+    with tempfile.TemporaryDirectory() as td:
+        tmp = Path(td)
+        art, mpath, opath = _setup(tmp, out)
+        entries = _invoke(tmp, art, mpath, opath)
+        fragment = entries.get("src/art.md", {}).get("report_fragment")
+        assert fragment, entries
+        assert fragment.count("<details>") == 1, fragment
+        assert not fragment.startswith("  │"), fragment
+
+
 def test_no_report_skills_cache_on_a_clean_exit() -> None:
     """Tags, Summary, Alt Text and friends emit no sentinels at all."""
     with tempfile.TemporaryDirectory() as td:
@@ -195,6 +271,8 @@ def test_no_report_skills_cache_on_a_clean_exit() -> None:
 
 TESTS = [
     test_verdict_block_gives_per_file_granularity,
+    test_fragment_captured_regardless_of_sentinel_order,
+    test_fragment_ignores_cli_preview_of_details,
     test_no_report_skills_cache_on_a_clean_exit,
     test_no_report_sentinel_is_the_fallback,
     test_report_without_verdict_block_caches_nothing,

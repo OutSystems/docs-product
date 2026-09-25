@@ -85,13 +85,6 @@ knowledge-needs:
         on a condition, by using If and Switch nodes in Service Studio, in
         OutSystems 11 (O11) apps, so that different logic paths run depending
         on runtime values.
-    - name: Calculation and algorithm examples
-      id: calculation-and-algorithm-examples
-      subtopics:
-      - name: Calculate factorial
-        id: calculate-factorial
-        description: Wants to implement a factorial calculation in a server
-          action, so that a button click returns the factorial for a number.
     - name: Conditional paths (ODC)
       id: create-conditional-paths-odc
       description: Wants to branch logic execution in an action based on a
@@ -131,6 +124,13 @@ knowledge-needs:
         Mobile Apps and Reactive Web Apps, so that they can read the action's
         output parameters and handle unhandled errors or $reject() calls once
         the async action completes.
+  - name: Calculation and algorithm examples
+    id: calculation-and-algorithm-examples
+    subtopics:
+    - name: Calculate factorial
+      id: calculate-factorial
+      description: Wants to implement a factorial calculation in a server
+        action, so that a button click returns the factorial for a number.
   - name: Using Events
     id: using-events
     subtopics:
@@ -236,24 +236,6 @@ knowledge-needs:
       id: operators
     - name: Functions
       id: functions
-    - name: Library actions
-      id: library-actions
-      description: Wants to know which ODC library actions are available and what each
-        library is for, so they can pick the right action for the logic task
-        they need.
-      subtopics:
-      - name: Text library actions
-        id: text-library-actions
-        description: Wants to know which actions are available in the Text library
-          and what each does, including regex search and replace, string splitting
-          and joining, DateTime formatting, and StringBuilder usage, so they can
-          pick the right action for text manipulation tasks in ODC Studio.
-      - name: URL library actions
-        id: url-library-actions
-        description: Wants to know which actions are available in the URL library
-          and what each does, including decoding, encoding, extracting the host
-          and protocol, getting relative URLs, and checking whether a URL is
-          relative, so they can manipulate URLs correctly in ODC Studio.
     - name: Check string contains
       id: check-string-contains
       description: Wants to check whether one text string contains another using
@@ -362,6 +344,21 @@ knowledge-needs:
         aggregates, so that they can generate passwords, evaluate conditional
         expressions, detect screen loading state, and check for a mobile
         theme in expressions.
+  - name: Library actions
+    id: library-actions
+    description: Wants to know which ODC library actions are available and what each
+      library is for, so they can pick the right action for the logic task
+      they need.
+    subtopics:
+    - name: Text library actions
+      id: text-library-actions
+      description: Wants to know which actions are available in the Text library and what
+        each does, so they can pick the right action for text manipulation tasks
+        in ODC Studio.
+    - name: URL library actions
+      id: url-library-actions
+      description: Wants to know which actions are available in the URL library and what
+        each does, so they can manipulate URLs correctly in ODC Studio.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -827,21 +824,6 @@ knowledge-needs:
   - name: Modeling Data
     id: modeling-data
     subtopics:
-    - name: Data relationships
-      id: data-relationships
-      subtopics:
-      - name: One-to-many relationship
-        id: one-to-many-relationship
-        description: Wants to create a one-to-many relationship between an Employee entity and a Department entity in Service Studio, with Department as the master entity and Employee as the detail entity, so that each employee belongs to one department and each department can have many employees.
-      - name: One-to-one relationship
-        id: one-to-one-relationship
-        description: Wants to create a one-to-one relationship between an
-          Employee entity and an EmployeePicture entity in Service Studio,
-          with mandatory EmployeeId, Filename, and Picture attributes, so
-          that each employee has exactly one related picture record.
-      - name: Many-to-many relationship
-        id: many-to-many-relationship
-        description: Wants to create a many-to-many relationship between an Employee entity and a Project entity in Service Studio by introducing a ProjectMember junction entity with mandatory EmployeeId, ProjectId, and RoleDescription attributes, so that an employee can belong to multiple projects and each project can have multiple employees.
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
@@ -1027,6 +1009,26 @@ knowledge-needs:
         set for an attribute that no longer exists on the entity, by deleting
         the unused value entry and verifying the attribute deletion was
         intended, so that the module compiles and publishes successfully.'
+  - name: Data relationships
+    id: data-relationships
+    subtopics:
+    - name: One-to-many relationship
+      id: one-to-many-relationship
+      description: Wants to create a one-to-many relationship between two entities in
+        Service Studio, with one entity as the master and the other as the
+        detail entity, so that each detail record belongs to one master record
+        and each master record can have many detail records.
+    - name: One-to-one relationship
+      id: one-to-one-relationship
+      description: Wants to create a one-to-one relationship between two entities in
+        Service Studio, with the dependent entity holding the foreign key, so
+        that each record has exactly one related record.
+    - name: Many-to-many relationship
+      id: many-to-many-relationship
+      description: Wants to create a many-to-many relationship between two entities in
+        Service Studio by introducing a junction entity with the necessary
+        foreign keys and any extra attributes, so that each record can relate to
+        multiple records on both sides.
   - name: Querying data
     id: querying-data
     subtopics:
@@ -1047,43 +1049,6 @@ knowledge-needs:
         outer join instead of unnecessarily evaluating every combination.
     - name: Filter data
       id: filter-data
-    - name: Aggregates
-      id: aggregates
-      subtopics:
-      - name: Create aggregate
-        id: create-aggregate
-        description: Wants to create an aggregate to fetch data from the database
-          using the Search field or drag-and-drop entity placement in the
-          Aggregate editor, so a screen can display the records it needs.
-      - name: Add calculated attribute
-        id: add-calculated-attribute
-        description: Wants to add a calculated attribute to an Aggregate and set
-          its Value expression to derive a field from existing attributes, so
-          that the query returns computed text such as an employee full name.
-      - name: Sort aggregate data
-        id: sort-aggregate-data
-        description: Wants to sort an Aggregate's returned records in ascending
-          or descending order using the Sorting tab's Add Sort feature, in
-          Service Studio for OutSystems 11, so they can retrieve information
-            such as the first or last record when data is ordered alphabetically.
-      - name: Aggregate outputs
-        id: aggregate-outputs
-        description: Wants to understand the records list returned by an
-          Aggregate, including the Current and CurrentRowNumber iterator
-          values, the Length and Empty properties, and the Count output, so
-          they can use aggregate results correctly in screen logic.
-      - name: Aggregate properties
-        id: aggregate-properties
-        description: Wants to understand the Aggregate properties that control
-          returned data, including Max. Records and the read-only Executed SQL
-          property, so they can limit results and inspect the generated SQL
-          without affecting Count.
-      - name: Aggregate SQL translation
-        id: aggregate-sql-translation
-        description: Wants to understand how an Aggregate is translated into
-          SQL during compilation, including how Sources, Filters, Sorting,
-          and Test values map to SELECT, FROM, WHERE, and ORDER BY clauses, so
-          they can reason about the generated query.
     - name: Multi-entity aggregate
       id: multi-entity-aggregate
       description: Wants to create an aggregate that joins multiple entities and applies
@@ -1147,6 +1112,38 @@ knowledge-needs:
       description: Wants to remove an unused Aggregate or SQL query that is not
         referenced anywhere in the app, so the app does not run unnecessary
         queries and the codebase stays easier to maintain.
+  - name: Aggregates
+    id: aggregates
+    subtopics:
+    - name: Create aggregate
+      id: create-aggregate
+      description: Wants to create an aggregate to fetch data from the database
+        using the Search field or drag-and-drop entity placement in the
+        Aggregate editor, so a screen can display the records it needs.
+    - name: Sort aggregate data
+      id: sort-aggregate-data
+      description: Wants to sort an Aggregate's returned records in ascending
+        or descending order using the Sorting tab's Add Sort feature, in
+        Service Studio for OutSystems 11, so they can retrieve information
+          such as the first or last record when data is ordered alphabetically.
+    - name: Aggregate outputs
+      id: aggregate-outputs
+      description: Wants to understand the records list returned by an
+        Aggregate, including the Current and CurrentRowNumber iterator
+        values, the Length and Empty properties, and the Count output, so
+        they can use aggregate results correctly in screen logic.
+    - name: Aggregate properties
+      id: aggregate-properties
+      description: Wants to understand the Aggregate properties that control
+        returned data, including Max. Records and the read-only Executed SQL
+        property, so they can limit results and inspect the generated SQL
+        without affecting Count.
+    - name: Aggregate SQL translation
+      id: aggregate-sql-translation
+      description: Wants to understand how an Aggregate is translated into
+        SQL during compilation, including how Sources, Filters, Sorting,
+        and Test values map to SELECT, FROM, WHERE, and ORDER BY clauses, so
+        they can reason about the generated query.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -2382,14 +2379,6 @@ knowledge-needs:
       description: Wants to create, load, query, modify, save, and transform XML
         documents and elements with the ODC XML actions, so that a server action
         can build and process XML content end to end.
-    - name: Integrate with legacy systems
-      id: legacy-systems-integration
-      subtopics:
-      - name: Access Lotus Notes data
-        id: access-lotus-notes-data
-        description: Wants to access data from a legacy Lotus Notes/Domino application
-          using ODBC and a SQL Server Linked Server, on a 64-bit SQL Server environment,
-          so that OutSystems applications can query that legacy data at runtime.
     - name: Regex text search/replace
       id: regex-search-replace
       description: Wants to use the Regex_Search and Regex_Replace server actions
@@ -2522,6 +2511,14 @@ knowledge-needs:
         window provides in Integration Studio, so that they can review
         extensions they have Download access to and download the latest
         published version from the Platform Server they're connected to.
+  - name: Integrate with legacy systems
+    id: legacy-systems-integration
+    subtopics:
+    - name: Access Lotus Notes data
+      id: access-lotus-notes-data
+      description: Wants to access data from a legacy Lotus Notes/Domino application
+        using ODBC and a SQL Server Linked Server, on a 64-bit SQL Server environment,
+        so that OutSystems applications can query that legacy data at runtime.
   - name: Private Gateway
     id: private-gateway
     subtopics:
@@ -5443,39 +5440,6 @@ knowledge-needs:
   - name: Adding UI Elements to a Screen
     id: add-ui-elements
     subtopics:
-    - name: Group inputs with forms
-      id: group-inputs-with-forms
-      description: Wants to understand what a Form widget is and how it
-        groups input widgets to collect, submit, and validate user data in
-        real time, in OutSystems 11 traditional web apps, mobile apps, and
-        reactive web apps, so that they can decide when to use a form on a
-        screen.
-      subtopics:
-      - name: Automatic form validation
-        id: automatic-form-validation
-        description: Wants to identify which input validations the Form widget
-          performs automatically in ODC, such as mandatory fields and data
-          type checks, and which validation still requires custom logic, so
-          they can recognize built-in validation behavior.
-      - name: Check form validity
-        id: check-form-validity
-        description: Wants to check a Form's Valid property after custom
-          validations run so execution branches correctly and invalid data is
-          not stored in the database in ODC.
-      - name: Invalid widget feedback
-        id: invalid-widget-feedback
-        description: Wants to understand how an input widget behaves when its
-          Valid property is set to False, including that it keeps its normal
-          appearance, applies invalid styling, and shows the validation
-          message, so they can recognize built-in validation feedback in an
-          OutSystems 11 screen.
-      - name: Use UI accelerator
-        id: use-ui-accelerator
-        description: Wants to add a pre-built OutSystems UI Accelerator (such
-          as the Order Management Products Gallery) to an empty Screen by
-          dragging it from the Toolbox, in Service Studio for OutSystems 11,
-          so that a complex, fully functional Screen layout scaffolds quickly
-          with sample data instead of building each widget from scratch.
     - name: Use Separator pattern
       id: use-separator-pattern
       description: Wants to add the Separator UI Pattern to a Traditional Web
@@ -5495,64 +5459,11 @@ knowledge-needs:
         widget by applying an image-sizing style class and setting explicit
         dimensions on the Image widget, in Service Studio for OutSystems 11,
         so that gallery items display with a clean, consistent visual layout.
-    - name: Layouts
-      id: layouts
-      subtopics:
-      - name: Customize layout block
-        id: customize-layout-block
-        description: Wants to customize a reactive app layout block by applying a CSS
-          class through ExtendedClass for visual changes or duplicating the
-          block to make structural edits, so the app can change the page shell
-          without affecting other apps.
-      - name: Label layout navigation
-        id: label-layout-navigation
-        description: Wants to add a unique aria-label to a layout nav element,
-          either directly or through a MenuName input parameter, so screen
-          readers can distinguish navigation regions in a reactive app layout.
-      - name: Use layout login
-        id: use-layout-login
-        description: Wants to locate and reuse the Layout Login web block in a Traditional
-          Web App by customizing its placeholders and widgets and adjusting its
-          optional device and accessibility configuration properties, so that
-          login screens use the built-in layout.
-      - name: Use layout popup
-        id: use-layout-popup
-        description: Wants to locate and reuse the Layout Popup web block in a Traditional
-          Web App by customizing its placeholders and widgets and adjusting its
-          optional DeviceConfiguration and AccessibilityConfiguration properties,
-          so that screens can display reusable off-canvas content in the built-in
-          popup layout.
-      - name: Use layout side menu
-        id: use-layout-side-menu
-        description: Wants to locate and reuse the Layout Side Menu web block in a
-          Traditional Web App by customizing its placeholders and widgets and
-          adjusting its DeviceConfiguration, AccessibilityConfiguration, and
-          ExtendedClass properties, so that screens use the built-in side menu
-          layout.
-      - name: Use layout top menu
-        id: use-layout-top-menu
-        description: Wants to locate and reuse the Layout Top Menu web block in a
-          Traditional Web App by customizing its placeholders and widgets and
-          adjusting its DeviceConfiguration, AccessibilityConfiguration, and
-          ExtendedClass properties, so that screens use the built-in top menu
-          layout.
     - name: Add menu link
       id: add-menu-link
       description: Wants to add a screen to the application menu by dragging it into the
         menu bar and setting its Text property, so that users can open that
         screen from the app toolbar in a Traditional Web App.
-    - name: Build screen layouts
-      id: build-screen-layouts
-      description: Wants to use Text, Container, Button, and Link widgets to set screen
-        titles, add navigation buttons for related screens, and arrange the
-        detail screen into side-by-side containers, so that the app screens
-        present the intended layout and navigation in a Traditional Web App.
-      subtopics:
-      - name: Conditionally show link
-        id: conditionally-show-link
-        description: Wants to show a Reset link only when a condition is true by
-          enclosing it in an If widget, so that the link appears only when the
-          screen Number input parameter is not zero.
     - name: Mobile CRUD screens
       id: crud-screens-mobile
       description: Wants to build List and Form screens for an entity and wire
@@ -5931,39 +5842,6 @@ knowledge-needs:
         ToggleSidebar to a button, and setting WidgetId, HasOverlay, and
         ExtendedClass, so that additional information appears beside the
         main content.
-    - name: Adding a Widget or OS UI pattern
-      id: add-widget-ui-pattern
-      subtopics:
-      - name: Use Character Count
-        id: use-character-count-pattern
-        description: Wants to add the Character Count UI Pattern to a
-          Traditional Web App screen, bind it to an Input widget, set the
-          Limit and IsDescending properties, and recover the widget if it
-          does not appear in the Toolbox because unused references were
-          removed, so that the screen shows how many characters a user has
-          entered or has remaining.
-    - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
-      id: ui-elements-accelerators
-      subtopics:
-      - name: Use Search pattern
-        id: use-search-pattern-odc
-        description: Wants to add the Search UI Pattern to a screen and configure
-          its input variable in Service Studio for OutSystems 11, so that users
-          can search for content by entering queries without knowing its
-          location, in mobile apps and reactive web apps.
-      - name: Use Search pattern O11
-        id: use-search-pattern-o11
-        description: Wants to add the Search UI Pattern to a Traditional Web App screen,
-          add the dependency if the widget does not appear in the Toolbox,
-          create a local input variable, and configure the widget so users can
-          search for content by entering queries.
-      - name: Use web gallery
-        id: use-web-gallery
-        description: Wants to add the Gallery UI Pattern to a Traditional Web App
-          screen, add the widget if it is missing from the Toolbox, drag it into
-          the Main Content area, add List Records or images as content, and
-          configure ItemsDesktop, ItemsTablet, and ItemsPhone, so that users can
-          browse grouped content in a responsive grid.
     - name: Build calculator screen
       id: build-calculator-screen
       description: Wants to build a simple Reactive Web calculator screen with a screen
@@ -6325,39 +6203,6 @@ knowledge-needs:
         warnings, errors, tooltips, notifications, or organizing information
         into sections and lists, so that they can choose the appropriate
         pattern for a Mobile App or Reactive Web App for OutSystems 11.
-    - name: Navigation patterns overview
-      id: navigation-patterns-overview
-      description: Wants to know which navigation UI pattern to use for grouping
-        related content and helping users move around an app, such as Bottom
-        Bar Item, Breadcrumbs, Pagination, Section Index, Submenu, Timeline
-        Item, or Wizard, so that they can choose the appropriate pattern for a
-        Mobile App or Reactive Web App for OutSystems 11.
-      subtopics:
-      - name: Use Breadcrumbs pattern
-        id: use-breadcrumbs-pattern
-        description: Wants to add the Breadcrumbs UI Pattern to a screen,
-          add the OutSystemsUI dependency if the widget does not display in
-          the Toolbox, configure Breadcrumb Item widgets with titles, icons,
-          and links, and create a breadcrumb trail in Service Studio for
-          O11, so that users can navigate through a mobile or reactive app
-          with location context.
-      - name: Use web breadcrumbs
-        id: use-web-breadcrumbs
-        description: Wants to add the Breadcrumbs UI Pattern to a
-          Traditional Web App screen, add the OutSystemsUI dependency if
-          the widget does not display in the Toolbox, configure Breadcrumb
-          Item widgets with titles, icons, and links, and create a
-          breadcrumb trail in Service Studio, so that users can navigate
-          through the app with location context.
-      - name: Use web navigation bar
-        id: use-web-navigation-bar
-        description: Wants to add the Navigation Bar UI Pattern to a
-          Traditional Web App screen or web block, add the widget via the
-          Toolbox or Search in other modules if the dependency is missing,
-          add content to the Navigation Bar Item and Navigation Bar
-          SubItem placeholders, configure optional properties, and
-          publish the module so that users can navigate through main
-          sections and subsections.
     - name: Use Columns pattern
       id: use-columns-pattern
       description: Wants to add the Columns UI Pattern to a screen and configure
@@ -7120,6 +6965,142 @@ knowledge-needs:
         in Service Studio, so that end users can drop a marker at the
         location they click on the map, in mobile apps and reactive web
         apps (O11).
+  - name: Group inputs with forms
+    id: group-inputs-with-forms
+    description: Wants to understand what a Form widget is and how it
+      groups input widgets to collect, submit, and validate user data in
+      real time, in OutSystems 11 traditional web apps, mobile apps, and
+      reactive web apps, so that they can decide when to use a form on a
+      screen.
+    subtopics:
+    - name: Automatic form validation
+      id: automatic-form-validation
+      description: Wants to identify which input validations the Form widget
+        performs automatically in ODC, such as mandatory fields and data
+        type checks, and which validation still requires custom logic, so
+        they can recognize built-in validation behavior.
+    - name: Check form validity
+      id: check-form-validity
+      description: Wants to check a Form's Valid property after custom
+        validations run so execution branches correctly and invalid data is
+        not stored in the database in ODC.
+    - name: Invalid widget feedback
+      id: invalid-widget-feedback
+      description: Wants to understand how an input widget behaves when its
+        Valid property is set to False, including that it keeps its normal
+        appearance, applies invalid styling, and shows the validation
+        message, so they can recognize built-in validation feedback in an
+        OutSystems 11 screen.
+  - name: Navigation patterns overview
+    id: navigation-patterns-overview
+    description: Wants to know which navigation UI pattern to use for grouping
+      related content and helping users move around an app, such as Bottom
+      Bar Item, Breadcrumbs, Pagination, Section Index, Submenu, Timeline
+      Item, or Wizard, so that they can choose the appropriate pattern for a
+      Mobile App or Reactive Web App for OutSystems 11.
+    subtopics:
+    - name: Use Breadcrumbs pattern
+      id: use-breadcrumbs-pattern
+      description: Wants to add the Breadcrumbs UI Pattern to a screen,
+        add the OutSystemsUI dependency if the widget does not display in
+        the Toolbox, configure Breadcrumb Item widgets with titles, icons,
+        and links, and create a breadcrumb trail in Service Studio for
+        O11, so that users can navigate through a mobile, reactive, or
+        Traditional Web App with location context.
+    - name: Use web navigation bar
+      id: use-web-navigation-bar
+      description: Wants to add the Navigation Bar UI Pattern to a
+        Traditional Web App screen or web block, add the widget via the
+        Toolbox or Search in other modules if the dependency is missing,
+        add content to the Navigation Bar Item and Navigation Bar
+        SubItem placeholders, configure optional properties, and
+        publish the module so that users can navigate through main
+        sections and subsections.
+  - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
+    id: ui-elements-accelerators
+    subtopics:
+    - name: Use UI accelerator
+      id: use-ui-accelerator
+      description: Wants to add a pre-built OutSystems UI Accelerator to an empty Screen by
+        dragging it from the Toolbox, in Service Studio for OutSystems 11, so
+        that a complex, fully functional Screen layout scaffolds quickly with
+        sample data instead of building each widget from scratch.
+    - name: Use Search pattern
+      id: use-search-pattern
+      description: Wants to add the Search UI Pattern to a screen and configure
+        its input variable in Service Studio, so that users can search for
+        content by entering queries.
+    - name: Use web gallery
+      id: use-web-gallery-o11
+      description: Wants to add the Gallery UI Pattern to a Traditional Web App
+        screen, add the widget if it is missing from the Toolbox, drag it into
+        the Main Content area, add List Records or images as content, and
+        configure ItemsDesktop, ItemsTablet, and ItemsPhone, so that users can
+        browse grouped content in a responsive grid.
+  - name: Adding a Widget or OS UI pattern
+    id: add-widget-ui-pattern
+    subtopics:
+    - name: Use Character Count
+      id: use-character-count-pattern
+      description: Wants to add the Character Count UI Pattern to a
+        Traditional Web App screen, bind it to an Input widget, set the
+        Limit and IsDescending properties, and recover the widget if it
+        does not appear in the Toolbox because unused references were
+        removed, so that the screen shows how many characters a user has
+        entered or has remaining.
+  - name: Build screen layouts
+    id: build-screen-layouts
+    description: Wants to use Text, Container, Button, and Link widgets to set screen
+      titles, add navigation buttons for related screens, and arrange the
+      detail screen into side-by-side containers, so that the app screens
+      present the intended layout and navigation in a Traditional Web App.
+    subtopics:
+    - name: Conditionally show link
+      id: conditionally-show-link
+      description: Wants to show a Reset link only when a condition is true by enclosing it
+        in an If widget, so that the link appears only when the condition is
+        true.
+  - name: Layouts
+    id: layouts
+    subtopics:
+    - name: Customize layout block
+      id: customize-layout-block
+      description: Wants to customize a reactive app layout block by applying a CSS
+        class through ExtendedClass for visual changes or duplicating the
+        block to make structural edits, so the app can change the page shell
+        without affecting other apps.
+    - name: Label layout navigation
+      id: label-layout-navigation
+      description: Wants to add a unique aria-label to a layout nav element,
+        either directly or through a MenuName input parameter, so screen
+        readers can distinguish navigation regions in a reactive app layout.
+    - name: Use layout login
+      id: use-layout-login
+      description: Wants to locate and reuse the Layout Login web block in a Traditional
+        Web App by customizing its placeholders and widgets and adjusting its
+        optional device and accessibility configuration properties, so that
+        login screens use the built-in layout.
+    - name: Use layout popup
+      id: use-layout-popup
+      description: Wants to locate and reuse the Layout Popup web block in a Traditional
+        Web App by customizing its placeholders and widgets and adjusting its
+        optional DeviceConfiguration and AccessibilityConfiguration properties,
+        so that screens can display reusable off-canvas content in the built-in
+        popup layout.
+    - name: Use layout side menu
+      id: use-layout-side-menu
+      description: Wants to locate and reuse the Layout Side Menu web block in a
+        Traditional Web App by customizing its placeholders and widgets and
+        adjusting its DeviceConfiguration, AccessibilityConfiguration, and
+        ExtendedClass properties, so that screens use the built-in side menu
+        layout.
+    - name: Use layout top menu
+      id: use-layout-top-menu
+      description: Wants to locate and reuse the Layout Top Menu web block in a
+        Traditional Web App by customizing its placeholders and widgets and
+        adjusting its DeviceConfiguration, AccessibilityConfiguration, and
+        ExtendedClass properties, so that screens use the built-in top menu
+        layout.
   - name: UI performance best practices
     id: ui-performance-best-practices
     description: Wants to apply best practices for optimizing OutSystems 11
@@ -8543,6 +8524,60 @@ knowledge-needs:
         ownership and permissions via Terminal or Finder on macOS, or the
         Security tab in Windows File Explorer, so that Studio can launch
         normally.
+  - name: Element shortcuts
+    id: element-shortcuts
+    subtopics:
+    - name: Create elements with shortcuts
+      id: create-elements-with-shortcuts
+      description: Wants to create common Service Studio elements faster with
+        drag-and-drop shortcuts, so they can build the app without manually
+        inserting each element.
+    - name: Reuse elements with Extract to Action
+      id: reuse-elements-with-extract-to-action
+      description: Wants to reuse an existing Service Studio element by
+        extracting it to an action, so they can avoid duplicating logic and
+        keep the app easier to maintain.
+    - name: Convert existing elements
+      id: convert-existing-elements
+      description: Wants to convert existing Service Studio elements with
+        conversion commands, so that they can adapt the app structure without
+        rebuilding it from scratch.
+  - name: Service Studio workspace
+    id: service-studio-workspace
+    subtopics:
+    - name: Workspace navigation
+      id: service-studio-workspace-navigation
+      description: Wants to navigate the Service Studio workspace with
+        shortcuts, so they can move around the IDE faster.
+    - name: Open files and modules
+      id: service-studio-open-files-and-modules
+      description: Wants to manage open Service Studio files and modules from
+        the workspace, so they can switch between items without losing
+        context.
+    - name: Inspect screens in the browser
+      id: service-studio-inspect-screens-in-browser
+      description: Wants to inspect a Service Studio screen in the browser,
+        so they can preview how the app renders.
+    - name: Create entity diagrams
+      id: service-studio-create-entity-diagrams
+      description: Wants to create entity diagrams in Service Studio, so they
+        can visualize the data model.
+    - name: Guess data types
+      id: service-studio-guess-data-types
+      description: Wants to guess data types in Service Studio, so they can
+        configure elements faster without checking each type manually.
+    - name: Manage dependencies
+      id: service-studio-manage-dependencies
+      description: Wants to add or remove dependencies in Service Studio, so
+        they can control which modules the app can use.
+    - name: Tree helpers
+      id: service-studio-tree-helpers
+      description: Wants to use Service Studio tree helpers, so they can
+        organize elements faster.
+    - name: Styling helpers
+      id: service-studio-styling-helpers
+      description: Wants to use Service Studio styling helpers, so they can
+        adjust element appearance faster.
   - name: Using ODC Portal and Studio
     id: using-odc-portal-and-studio
     subtopics:
@@ -9194,6 +9229,42 @@ knowledge-needs:
   topics:
   - name: Chatbots
     id: chatbots
+    subtopics:
+    - name: Configure chatbot wizard
+      id: configure-chatbot-wizard
+      description: Wants to access Chatbot Configurator, sign in with an OutSystems
+        account, and set up the AI provider connection for an OutSystems
+        environment, so that they can manage the chatbot wizard.
+    - name: Add QnA chatbots
+      id: add-qna-chatbots
+      description: Wants to add QnA chatbots in Chatbot Configurator after setting
+        up the AI provider connection, so that the chatbot can answer questions in
+        their OutSystems app.
+    - name: Create chatbot webhook module
+      id: create-chatbot-webhook-module
+      description: Wants to create a chatbot webhook module from the Chatbot Webhook
+        app template in Service Studio and publish it, so that they can add custom
+        chatbot logic and richer responses.
+    - name: Configure chatbot webhook module
+      id: configure-chatbot-webhook-module
+      description: Wants to configure a chatbot webhook module in Service Center
+        and Azure by setting MicrosoftClientId and MicrosoftClientSecret, copying
+        the Request URL, and updating the bot messaging endpoint, so that Azure
+        sends chatbot messages to the module.
+    - name: Chatbot block settings
+      id: chatbot-block-settings
+      description: Wants to identify the chatbot block properties and what each one
+        configures, so they can configure the chatbot component.
+    - name: Compare chatbot versions
+      id: compare-chatbot-versions
+      description: Wants to choose between the Reactive Web App and Traditional
+        Web App chatbot components, so they can use the compatible version for
+        their app type and account for the documented differences.
+  - name: Azure AI resources
+    id: azure-ai-resources
+    description: Wants to know which Azure resources each OutSystems AI component
+      and connector requires, so they can provision the right Azure services
+      before configuring the integration.
   - name: Document Conversion
     id: document-conversion
     subtopics:
@@ -9851,32 +9922,32 @@ knowledge-needs:
         model in AI Agent Builder and distribute load between them so the system
         stays operational during upstream outages or when token-per-minute limits
         are reached.
-    - name: Search services for RAG
-      id: search-services-rag
-      description: Wants to connect ODC apps to external knowledge bases
-        like Azure AI Search or Amazon Kendra and retrieve semantically
-        relevant data via a service action, then pass that data as context
-        to an AI model call, so they can implement the
-        Retrieval-augmented generation (RAG) pattern in app logic.
-      subtopics:
-      - name: Configure Azure AI Search
-        id: configure-azure-ai-search
-        description: Wants to create an Azure AI Search service backed by Azure Blob
-          Storage, upload files, build an index, and retrieve the endpoint,
-          key, and index name, so that they can add the source to AI Agent
-          Builder.
-      - name: Configure Amazon Kendra
-        id: configure-amazon-kendra
-        description: Wants to create an Amazon Kendra index backed by Amazon S3,
-          upload source data, configure the data source, and retrieve the
-          details needed to add the source to AI Agent Builder, so that they
-          can ground agents on Amazon Kendra content.
     - name: Add Azure AI Search
       id: add-azure-ai-search-data-source
       description: Wants to add an Azure AI Search data source in the AI
         Agent Builder app by providing the connection details, testing the
         connection, and saving the source, so that the app can ground
         agents on Azure AI Search content.
+  - name: Search services for RAG
+    id: search-services-rag
+    description: Wants to connect ODC apps to external knowledge bases
+      like Azure AI Search or Amazon Kendra and retrieve semantically
+      relevant data via a service action, then pass that data as context
+      to an AI model call, so they can implement the
+      Retrieval-augmented generation (RAG) pattern in app logic.
+    subtopics:
+    - name: Configure Azure AI Search
+      id: configure-azure-ai-search
+      description: Wants to create an Azure AI Search service backed by Azure Blob
+        Storage, upload files, build an index, and retrieve the endpoint,
+        key, and index name, so that they can add the source to AI Agent
+        Builder.
+    - name: Configure Amazon Kendra
+      id: configure-amazon-kendra
+      description: Wants to create an Amazon Kendra index backed by Amazon S3,
+        upload source data, configure the data source, and retrieve the
+        details needed to add the source to AI Agent Builder, so that they
+        can ground agents on Amazon Kendra content.
   - name: Knowledge bases (ODC)
     id: knowledge-bases-odc
     subtopics:
@@ -10029,30 +10100,6 @@ knowledge-needs:
       description: Wants to look up the Camera plugin's API reference so that they
         can implement camera and gallery functionality in a mobile app using this
         legacy plugin.
-    - name: Camera plugin migration
-      id: migrate-camera-plugin
-      description: Wants to migrate the Camera plugin from version 1 to version 2
-        by replacing deprecated client actions and blocks with TakePhoto and
-        ChooseFromGallery, updating renamed parameters and MediaResult output
-        handling, and adapting to the new OnError and error code behavior, so the
-        app keeps working after the upgrade.
-      subtopics:
-      - name: Migrate camera actions and blocks
-        id: migrate-camera-actions-blocks
-        description: Wants to replace deprecated Camera plugin actions and blocks
-          with TakePhoto and ChooseFromGallery, update renamed inputs and outputs,
-          and handle the gallery PWA limitations during migration, so the app uses
-          the version 2 API correctly.
-      - name: Handle TakePhoto migration errors
-        id: handle-takephoto-migration-errors
-        description: Wants to add the required OnError handler for the TakePhoto
-          block and update related error handling logic, so the migrated block
-          continues to fail safely.
-      - name: Update camera error codes
-        id: update-camera-error-codes
-        description: Wants to remap the Camera plugin error codes after version 2
-          renumbering, so existing error handling continues to route each failure
-          to the correct branch.
     - name: Control device keyboard
       id: control-device-keyboard
       description: Wants to show or hide the device's keyboard programmatically
@@ -10164,6 +10211,30 @@ knowledge-needs:
         mobile app screen lifecycle, using InitPluginManager, createScope,
         and destroyScope, so that native background work and callbacks
         follow the screen and UI block lifecycle safely.
+  - name: Camera plugin migration
+    id: migrate-camera-plugin
+    description: Wants to migrate the Camera plugin from version 1 to version 2
+      by replacing deprecated client actions and blocks with TakePhoto and
+      ChooseFromGallery, updating renamed parameters and MediaResult output
+      handling, and adapting to the new OnError and error code behavior, so the
+      app keeps working after the upgrade.
+    subtopics:
+    - name: Migrate camera actions and blocks
+      id: migrate-camera-actions-blocks
+      description: Wants to replace deprecated Camera plugin actions and blocks
+        with TakePhoto and ChooseFromGallery, update renamed inputs and outputs,
+        and handle the gallery PWA limitations during migration, so the app uses
+        the version 2 API correctly.
+    - name: Handle TakePhoto migration errors
+      id: handle-takephoto-migration-errors
+      description: Wants to add the required OnError handler for the TakePhoto
+        block and update related error handling logic, so the migrated block
+        continues to fail safely.
+    - name: Update camera error codes
+      id: update-camera-error-codes
+      description: Wants to remap the Camera plugin error codes after version 2
+        renumbering, so existing error handling continues to route each failure
+        to the correct branch.
   - name: Using Capacitor Plugins
     id: using-capacitor-plugins
     subtopics:
@@ -10449,21 +10520,6 @@ knowledge-needs:
         implementation, IDE-driven settings replacing extensibility
         configuration, and the new branding image size requirement, so that they
         can update their app's splash screen setup correctly.
-    - name: MABS 6 upgrade overview
-      id: mabs-6-upgrade-overview
-      description: Wants to understand what's new across MABS 6.0 to 6.3,
-        including the introduction of WKWebView as the default web view,
-        Android 10 (API 29) and iOS 13 SDK support, removal of UIWebView,
-        and the optional AndroidX support added in 6.3, so that they can
-        plan whether and how to upgrade their mobile app's build service
-        version.
-      subtopics:
-      - name: Enable AndroidX
-        id: enable-androidx
-        description: Wants to enable AndroidX for a mobile app by setting the
-          AndroidXEnabled preference in the main module's Extensibility
-          Configurations and publishing the app, so that MABS 6.3 Beta
-          through MABS 9 generates native builds with AndroidX dependencies.
     - name: MABS 6 breaking changes
       id: mabs-6-breaking-changes
       description: Wants to understand the breaking changes and known
@@ -10589,6 +10645,21 @@ knowledge-needs:
         user-agent no longer being retrievable through CDVUserAgentUtil, so
         that they can update their app before or after upgrading the MABS
         version.
+  - name: MABS 6 upgrade overview
+    id: mabs-6-upgrade-overview
+    description: Wants to understand what's new across MABS 6.0 to 6.3,
+      including the introduction of WKWebView as the default web view,
+      Android 10 (API 29) and iOS 13 SDK support, removal of UIWebView,
+      and the optional AndroidX support added in 6.3, so that they can
+      plan whether and how to upgrade their mobile app's build service
+      version.
+    subtopics:
+    - name: Enable AndroidX
+      id: enable-androidx
+      description: Wants to enable AndroidX for a mobile app by setting the AndroidXEnabled
+        preference in the main module's Extensibility Configurations and
+        publishing the app, so that supported MABS builds generate native builds
+        with AndroidX dependencies.
   - name: OS and SDK support policy
     id: os-sdk-support-policy
     subtopics:
@@ -10763,26 +10834,6 @@ knowledge-needs:
         or toggling data collection with SetEnabled and the
         ANALYTICS_COLLECTION_ENABLED preference, so that user behavior and
         ecommerce activity are captured in Firebase Analytics.
-    - name: Cloud Messaging reference
-      id: cloud-messaging-plugin-reference
-      description: Wants to look up the Firebase Cloud Messaging plugin's client actions,
-        web blocks, and related data structures and static entities, so that
-        they can implement push notification and deep-linking functionality in
-        an O11 mobile app using this plugin version.
-      subtopics:
-      - name: Cloud Messaging actions
-        id: cloud-messaging-actions
-        description: Wants to implement push notification behavior in an ODC mobile app
-          using the Firebase Cloud Messaging plugin client actions and blocks, by
-          registering devices, retrieving tokens, managing topic subscriptions,
-          handling notification clicks and custom actions, and configuring notification
-          behavior, so that the app responds correctly to incoming notifications.
-      - name: Cloud Messaging limitations
-        id: cloud-messaging-limitations
-        description: Wants to identify the known Firebase Cloud Messaging plugin limitations,
-          including silent notification constraints on iOS, topic name restrictions,
-          transitive dependency build failures, and Firebase Performance compatibility,
-          so they can avoid unsupported configurations.
     - name: Cloud Messaging APIs
       id: cloud-messaging-apis
       description: Wants to look up the deprecated Cloud Messaging Configurator REST
@@ -10797,6 +10848,24 @@ knowledge-needs:
         access-token storage, and using the send and silent-send actions for users
         or topics, so that an ODC mobile app can deliver push notifications and
         authenticate FCM HTTP v1 requests.
+  - name: Cloud Messaging reference
+    id: cloud-messaging-plugin-reference
+    description: Wants to look up the Firebase Cloud Messaging plugin's client actions,
+      web blocks, and related data structures and static entities, so that
+      they can implement push notification and deep-linking functionality in
+      an O11 mobile app using this plugin version.
+    subtopics:
+    - name: Cloud Messaging actions
+      id: cloud-messaging-actions
+      description: Wants to implement push notification behavior in an ODC mobile app
+        using the Firebase Cloud Messaging plugin client actions and blocks, by
+        registering devices, retrieving tokens, managing topic subscriptions,
+        handling notification clicks and custom actions, and configuring notification
+        behavior, so that the app responds correctly to incoming notifications.
+    - name: Cloud Messaging limitations
+      id: cloud-messaging-limitations
+      description: Wants to identify the known Firebase Cloud Messaging plugin limitations,
+        so they can avoid unsupported configurations.
   - name: App distribution
     id: app-distribution
     subtopics:

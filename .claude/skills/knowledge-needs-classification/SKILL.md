@@ -82,6 +82,14 @@ knowledge-needs:
       description: <optional>
 ```
 
+**The nesting is exactly 3 levels — category > topic > subtopic — and a
+subtopic is always a leaf.** A subtopic entry must never have a `subtopics`
+key of its own; if a subtopic needs finer breakdown, either add more
+subtopics as siblings under the same topic, or promote it to a topic in its
+own right (with its own `subtopics`) — never nest a fourth level under an
+existing subtopic. `validate-metadata.yml`'s schema check rejects a subtopic
+that has its own `subtopics`, so this isn't just a style preference.
+
 **How to fetch it:**
 
 1. Read `knowledge-needs.yaml` from the root of the current repository.
@@ -190,7 +198,12 @@ For every `NEW` candidate (not `REUSE`):
    taxonomy (the categories, topics, and subtopics already in
    `knowledge-needs.yaml`) reasonably covers it.
 2. If an existing topic fits but the specific question isn't covered yet, add
-   it as a new subtopic under that topic.
+   it as a new subtopic under that topic — as a sibling of the topic's other
+   subtopics, never nested under one of them. A subtopic is always a leaf
+   (Step 2); if the closest conceptual fit is an existing *subtopic* rather
+   than a topic, that subtopic needs to become a topic of its own (moved up a
+   level, with the new entry added as one of its subtopics) — don't nest the
+   new entry under it as-is.
 3. Generate the `id`: lowercase, hyphen-separated, derived from the name,
    unique across the entire flattened register — check for collisions before
    finalizing.

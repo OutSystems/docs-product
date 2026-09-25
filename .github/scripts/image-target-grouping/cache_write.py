@@ -44,28 +44,35 @@ _CLOSE_RE = re.compile(r"^[ \t]*</details>[ \t]*$")
 def extract_fragment(text: str) -> str | None:
     """This invocation's rendered <details> block, or None if it printed no report.
 
-    Deliberately the same arming rules the workflow's awk uses: start on a
-    line that is only the REPORT BEGIN sentinel, capture from the next
-    bare <details> to its matching close. The CLI echoes a truncated
-    preview of a shell call before running it, so anchoring to whole lines
-    is what stops the preview being mistaken for the real report.
+    Capture from a bare <details> line to its matching close — that's the
+    whole boundary. The REPORT BEGIN sentinel the prompt asks for is not a
+    precondition here: the model places it wherever it likes relative to
+    <details> (usually just inside, after <summary>, sometimes before the
+    tag entirely), and requiring one specific order silently dropped the
+    fragment on whichever order didn't match, with no error — an invocation
+    with real findings would cache a verdict but no report, and a later
+    unchanged run would replay nothing to show for it. The anchor alone
+    (a whole line, nothing else on it) is what actually stops a false match:
+    the CLI echoes a truncated preview of a shell call before running it,
+    prefixed with '  │ ', so a previewed "<details>" line never matches this
+    pattern regardless of sentinel position.
 
     Storing the fragment is what lets a later run with an unchanged
     dependency closure republish the report without invoking the model at
     all — the findings are already known, so paying for an LLM call to
     retype them is pure waste.
     """
-    armed = False
     capturing = False
     out: list[str] = []
     for line in text.splitlines():
-        if not capturing and _BEGIN_RE.match(line):
-            armed = True
-            continue
-        if armed and _OPEN_RE.match(line):
+        if not capturing and _OPEN_RE.match(line):
             capturing = True
-            armed = False
         if capturing:
+            # The sentinel is a strip marker, not report content, wherever
+            # the model happened to place it — drop it if it lands inside
+            # the boundary instead of before it.
+            if _BEGIN_RE.match(line):
+                continue
             out.append(line)
             if _CLOSE_RE.match(line):
                 capturing = False

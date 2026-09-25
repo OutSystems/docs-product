@@ -887,6 +887,11 @@ knowledge-needs:
       description: Wants to understand what data types are available in ODC, their
         default values, and their minimum/maximum constraints, so that variables and
         entity attributes can be correctly typed during app development.
+    - name: List data type
+      id: list-data-type
+      description: Wants to understand that an OutSystems List stores elements of
+        the same data type, so they can use list variables correctly when modeling
+        app data.
     - name: Entity properties
       id: entity-properties
       description: Wants to look up the configurable properties of an Entity, including
@@ -5278,6 +5283,11 @@ knowledge-needs:
       description: Wants to set a widget's Style Classes property with an
         expression that switches between CSS classes based on a Boolean screen
         variable, so the widget can change style dynamically at runtime.
+    - name: Style class precedence
+      id: style-class-precedence
+      description: Wants to determine which style class definition applies when
+        the same class exists in a Web Block, a Screen, and the Theme, so they
+        know which scope overrides the others in OutSystems 11.
     - name: Set stacking order with layer system
       id: set-stacking-order-layer-system
       description: Wants to understand and use the OutSystems UI Layer
@@ -7037,6 +7047,12 @@ knowledge-needs:
         the Main Content area, add List Records or images as content, and
         configure ItemsDesktop, ItemsTablet, and ItemsPhone, so that users can
         browse grouped content in a responsive grid.
+    - name: Web block characteristics
+      id: web-block-characteristics
+      description: Wants to understand the core characteristics of a Web Block in
+        OutSystems 11, including that it is reusable across screens,
+        encapsulates its own logic, and improves maintainability, so that they
+        can distinguish true and false statements about Web Blocks.
   - name: Adding a Widget or OS UI pattern
     id: add-widget-ui-pattern
     subtopics:
@@ -11834,6 +11850,12 @@ knowledge-needs:
         updating libraries, toggling the spmPreview configuration, or
         removing the affected plugins/libraries, so that the iOS mobile app
         package generates successfully.'
+    - name: Resolve plugin conflicts
+      id: resolve-plugin-conflicts
+      description: Wants to diagnose and resolve build failures when combining
+        multiple mobile plugin libraries by checking for duplicate Cordova
+        plugin IDs and other incompatible native requirements in the generated
+        build, so that the app packages successfully.
     - name: SSL Pinning domain error
       id: ssl-pinning-domain-error
       description: 'Wants to resolve the OS-MABS-RES-40001 "The configuration

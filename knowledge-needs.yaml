@@ -7,6 +7,12 @@ knowledge-needs:
     subtopics:
     - name: What are service actions/when to use service actions
       id: service-actions-when-use
+    - name: Delegate manager action
+      id: delegate-manager-action
+      description: Wants to create a service action that updates the current employee's delegated manager and returns the manager name, so another app can save the assignment and confirm who was selected.
+    - name: Get employee picture
+      id: get-employee-picture
+      description: Wants to create a service action that retrieves an employee picture from EmployeePicture by employee identifier and returns binary data, so another app can display the latest image.
     - name: Server-side vs client-side logic
       id: server-vs-client-logic
     - name: How to create an action
@@ -739,6 +745,11 @@ knowledge-needs:
         action with an attribute-encoding function in Reactive Web, or the List
         Sort Column Rich Widget in Traditional Web, in OutSystems 11, so users can
         reorder SQL-query-driven table results safely without SQL injection risk.
+    - name: List sorting setup
+      id: list-sorting-setup
+      description: Wants to implement user-triggered sorting on a List widget by
+        using other widgets to capture the sort criteria and refresh the data
+        source, so that end users can reorder the list at runtime in OutSystems 11.
     - name: Customize table columns
       id: customize-table-columns
       description: Wants to customize the columns of a Table widget — adding, deleting,
@@ -6283,6 +6294,12 @@ knowledge-needs:
         added, and setting the ExtendedClass property, in Service Studio for
         OutSystems 11, so that content is vertically centered within its
         container, in mobile apps and reactive web apps.
+    - name: Container widget facts
+      id: container-widget-facts
+      description: Wants to identify which statement about the Container widget is
+        false in ODC Studio, by knowing that containers group widgets, can nest
+        inside other containers, can span from 1 to 12 columns by default, and
+        can be empty.
     - name: Use Margin Container
       id: use-margin-container
       description: Wants to add the Margin Container UI Pattern to a screen to
@@ -7610,6 +7627,12 @@ knowledge-needs:
     - name: Missing status parameter
       id: missing-status-parameter
       description: Wants to fix the OS-PKGS-40012 error by sending the required status query parameter when listing installations, so that the list of installations returns successfully.
+    - name: Missing installation key
+      id: missing-installation-key
+      description: 'Wants to fix the OS-PKGS-40101 "An installation with installationKey ''<installKey>'' was not found." error by trying another installation key or using an existing installation key, so that the selected package installs successfully.'
+    - name: Missing installation messages
+      id: missing-installation-messages
+      description: 'Wants to fix the OS-PKGS-40102 "Messages for installationKey ''<installKey>'' were not found for the specified filters." error by trying another installation key or using one with matching messages for the selected filters, so that installation messages are returned successfully.'
     - name: Invalid installation key
       id: invalid-installation-key
       description: 'Wants to fix the OS-PKGS-40014 "The value specified for ''installationKey'': ''<installKey>'' is not in the correct GUID format." error by sending a valid GUID in installationKey when requesting installation status or messages, so that installation details can be retrieved successfully.'
@@ -10493,6 +10516,12 @@ knowledge-needs:
       description: Wants to create an Android keystore with keytool and keep it in
         a safe place for future app updates, so that Android mobile apps can be
         signed and published with the same key.
+    - name: Native app generation overview
+      id: native-app-generation-overview
+      description: Wants to understand that the same OutSystems mobile app code
+        base generates both iOS and Android packages, and what Apple and Google
+        developer enrollment each platform requires, so that they can set up
+        native app generation correctly.
   - name: MABS environment configuration
     id: mabs-environment-configuration
     subtopics:
@@ -14899,6 +14928,11 @@ knowledge-needs:
       description: Wants to drill down high-level user stories into small, valuable,
         end-to-end slices that fit within a few days of work and still support demo
         feedback, so that each iteration delivers usable value without overengineering.
+    - name: Apply INVEST principle
+      id: apply-invest-principle
+      description: Wants to evaluate and shape user stories with the INVEST principle
+        so that they remain independent, negotiable, valuable, estimable, small,
+        and testable when planning and refining work.
     - name: Personal story framing
       id: personal-user-story-framing
       description: Wants to frame a user story from a specific user profile with the

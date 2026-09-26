@@ -7583,12 +7583,39 @@ knowledge-needs:
     - name: Invalid package version
       id: invalid-package-version
       description: 'Wants to fix the OS-PKGS-40003 "The package version ''<version>'' is not in the correct format (MAJOR.MINOR.PATCH)." error that blocks package installation by updating the package version to MAJOR.MINOR.PATCH format, so that the package installs successfully.'
+    - name: Resolve version conflict
+      id: resolve-version-conflict
+      description: 'Wants to resolve the OS-PKGS-40008 "Another version for <package> is already installed." error by setting replaceApplicationVersion to true when installing a package, so that the selected package installs successfully.'
   - name: Package repository errors
     id: package-repository-errors
     subtopics:
     - name: Fix invalid package data
       id: fix-invalid-package-data
       description: 'Wants to fix the OS-PKGS-40004 "Requested package <package> not found in the package repository." error by retrying the package installation and creating a support case if the problem persists, so that the package installs successfully.'
+    - name: Missing package version
+      id: missing-package-version
+      description: 'Wants to fix the OS-PKGS-40007 "Valid version could not be found for the package <package>." error by retrying the package installation and creating a support case if the problem persists, so that the package installs successfully.'
+  - name: Package installation errors
+    id: package-installation-errors
+    subtopics:
+    - name: Package dependency error
+      id: package-dependency-error
+      description: 'Wants to fix the OS-PKGS-40010 "All packages errored out as one of the package has errored." error by retrying the package installation and creating a support case if the problem persists, so that the package installs successfully.'
+    - name: Resolve install conflict
+      id: resolve-install-conflict
+      description: 'Wants to resolve the OS-PKGS-40005 "Another installation with installation key <key> which conflicts with current installation is in progress. Please wait for this to finish to start a new installation." error by waiting for the conflicting installation to finish before starting a new package installation, so that the selected package installs successfully.'
+    - name: Missing application key
+      id: missing-application-key
+      description: 'Wants to fix the OS-PKGS-40011 "Application key could not be fetched for the <package>." error by retrying the package installation and creating a support case if the problem persists, so that the selected package installs successfully.'
+    - name: Missing status parameter
+      id: missing-status-parameter
+      description: Wants to fix the OS-PKGS-40012 error by sending the required status query parameter when listing installations, so that the list of installations returns successfully.
+    - name: Invalid installation key
+      id: invalid-installation-key
+      description: 'Wants to fix the OS-PKGS-40014 "The value specified for ''installationKey'': ''<installKey>'' is not in the correct GUID format." error by sending a valid GUID in installationKey when requesting installation status or messages, so that installation details can be retrieved successfully.'
+    - name: Unsupported package error
+      id: unsupported-package-error
+      description: 'Wants to resolve the OS-PKGS-40017 "Unsupported package <packageName>." error by selecting another package for installation, or by contacting OutSystems Support when a package depends on an older built-in app version and should not be unsupported, so the package installs successfully.'
   - name: Basic deployment concepts
     id: basic-deployment-concepts
     subtopics:

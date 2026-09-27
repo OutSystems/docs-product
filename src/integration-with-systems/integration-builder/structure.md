@@ -18,6 +18,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - available-server-actions
+  - integration-modules
+  - search-controls
 ---
 
 # Structure of generated integrations

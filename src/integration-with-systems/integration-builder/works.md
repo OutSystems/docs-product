@@ -19,6 +19,10 @@ outsystems-tools:
   - integration builder
 coverage-type:
   - understand
+topic:
+  - integration-builder-architecture
+  - integration-builder-dependencies
+  - integration-builder-users
 ---
 
 # How Integration Builder works

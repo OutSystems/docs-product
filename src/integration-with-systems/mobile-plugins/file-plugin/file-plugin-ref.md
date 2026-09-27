@@ -18,6 +18,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - file-info-reference
+  - file-plugin-actions
+  - path-directory-options
 isautopublish: true
 ---
 

@@ -22,6 +22,9 @@ coverage-type:
   - understand
   - apply
   - remember
+topic:
+  - file-viewer-actions
+  - file-viewer-resources
 isautopublish: true
 ---
 

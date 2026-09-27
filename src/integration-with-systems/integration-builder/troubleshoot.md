@@ -15,6 +15,8 @@ outsystems-tools:
   - integration builder
 coverage-type:
   - unblock
+topic:
+  - troubleshoot-salesforce-integration
 ---
 
 # Troubleshooting Integration Builder

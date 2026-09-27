@@ -20,6 +20,10 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - integration-builder-setup
+  - install-dependencies
+  - configure-on-prem-envs
 ---
 
 # How to set up Integration Builder

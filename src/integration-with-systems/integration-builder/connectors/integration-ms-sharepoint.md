@@ -18,6 +18,9 @@ coverage-type:
   - unblock
   - understand
   - apply
+topic:
+  - authorize-sharepoint-ib
+  - connect-sharepoint
 ---
 
 # SharePoint Online integration

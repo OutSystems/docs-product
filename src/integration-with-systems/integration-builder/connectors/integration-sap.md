@@ -16,6 +16,10 @@ outsystems-tools:
   - integration builder
 coverage-type:
   - apply
+topic:
+  - configure-sap-authentication
+  - create-sap-odata-integration
+  - select-sap-odata-version
 ---
 
 # SAP OData integration

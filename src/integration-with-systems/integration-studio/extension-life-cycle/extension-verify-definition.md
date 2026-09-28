@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - verify-extension-definition
 ---
 
 # Verify the Extension Definition

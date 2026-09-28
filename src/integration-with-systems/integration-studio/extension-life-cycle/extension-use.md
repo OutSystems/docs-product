@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-extension-in-module
 ---
 
 # Use the Extension in a Module

@@ -12,6 +12,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+topic:
+  - update-source-code
 ---
 
 # Update the Extension Source Code

@@ -479,6 +479,51 @@ knowledge-needs:
         data types on screens/session state (or splitting a Binary Data
         attribute into a separate one-to-one entity), so that OutSystems 11
         apps avoid unnecessary performance overhead.
+  - name: File plugin reference
+    id: file-plugin-reference
+    subtopics:
+    - name: File plugin actions
+      id: file-plugin-actions
+      description: Wants to look up the File Plugin version 4 client actions and deprecated version 3 elements, so they can choose the correct API when working with files in an O11 mobile app.
+    - name: Path directory options
+      id: path-directory-options
+      description: Wants to understand how the File Plugin's Path and Directory attributes use PathDirectory values and platform fallbacks, so they can target the right storage location when reading or writing files.
+    - name: File parameter validation
+      id: file-parameter-validation
+      description: Wants to validate File Plugin method inputs such as Path and Directory, and confirm required parameters are provided with accepted values or types, so OS-PLUG-FILE-0005 does not occur when reading or writing files.
+    - name: Resolve invalid path
+      id: resolve-invalid-path
+      description: 'Wants to resolve the OS-PLUG-FILE-0006 "Invalid PATH path" error by using GetFileUri and valid File Plugin directory values instead of building paths manually, so filesystem operations target an accessible location.'
+    - name: File info reference
+      id: file-info-reference
+      description: Wants to inspect the FileInfo structure returned by GetMetadata and ListDirectory, including its attributes, so they can read file metadata correctly.
+    - name: File plugin availability
+      id: file-plugin-availability
+      description: Wants to troubleshoot the OS-PLUG-FILE-0001 error by confirming the app runs as a native mobile app with the File plugin included, so the Cordova or Capacitor bridge is available when file operations run.
+    - name: File plugin readiness
+      id: file-plugin-readiness
+      description: 'Wants to call File Plugin methods only after the Cordova or Capacitor bridge has fully initialized, so filesystem operations do not fail with OS-PLUG-FILE-0004.'
+    - name: File access denied
+      id: file-access-denied
+      description: Wants to troubleshoot the OS-PLUG-FILE-0007 error by requesting the needed file access permission before the operation, explaining why the permission is needed, and guiding users to app settings when they permanently deny the request, so file operations fail gracefully on Android.
+    - name: Resolve file not found
+      id: resolve-file-not-found
+      description: 'Wants to resolve the OS-PLUG-FILE-0008 "file at PATH does not exist" error by verifying that the target file or directory exists before calling the File Plugin action, handling the missing-path case in app logic, and treating GetMetadata as the same not-found error, so filesystem operations complete successfully.'
+    - name: Resolve target mismatch
+      id: resolve-target-mismatch
+      description: 'Wants to resolve the OS-PLUG-FILE-0009 "METHOD_NAME not supported for TARGET" error by using read-only actions for content:// URIs, matching file actions to file targets and directory actions to directory targets, and using a local destination for copies, so filesystem operations run on compatible targets.'
+    - name: Directory already exists
+      id: directory-already-exists
+      description: 'Wants to resolve the OS-PLUG-FILE-0010 "Directory at PATH already exists, cannot be overwritten" error by checking whether the target directory already exists before CreateDirectory, copy, or rename operations, deleting it first when replacement is required, and treating an existing directory as a non-failure state when that is acceptable, so filesystem operations complete successfully.'
+    - name: Resolve missing parent directory
+      id: resolve-missing-parent-directory
+      description: Wants to resolve the OS-PLUG-FILE-0011 "Missing parent directory" error by creating the parent directory before calling CreateDirectory or by passing Recursive=True when nested folders do not yet exist, so directory creation succeeds.
+    - name: Resolve non-empty directory
+      id: resolve-non-empty-directory
+      description: Wants to resolve the OS-PLUG-FILE-0012 "Cannot delete directory with children" error by deleting child files and folders first or calling DeleteDirectory with Recursive=True when the target directory is not empty, so filesystem cleanup succeeds.
+    - name: Resolve file system error
+      id: resolve-file-system-error
+      description: Wants to resolve the OS-PLUG-FILE-0013 error by checking ERROR_DETAILS, freeing device storage when space is low, retrying transient OS or permission failures, and opening a support case when the failure persists, so filesystem operations recover.
 - name: (Creating Basic) Application Security
   guid: f89b0297-9ba2-48bd-9e84-b56614a7e620
   topics:
@@ -2123,6 +2168,9 @@ knowledge-needs:
     - name: Import external tables
       id: import-external-tables
       description: Wants to import entities from external tables or views in Integration Studio by selecting the database connection, selecting the tables and views, defining the logical database, reviewing the data types, and publishing the extension so that they create entities from external database data.
+    - name: Refresh entity definition
+      id: refresh-entity-definition
+      description: Wants to refresh an imported entity definition in Integration Studio after the source database table changes, so that the entity is updated from the database, any local changes are replaced except for the entity name, invalid attributes are ignored with a warning, and the extension remains connected to the server where it will be deployed.
     - name: External database options
       id: external-database-options
       description: Wants to understand the ways OutSystems integrates with external databases, using Integration Builder or Integration Studio, so they can choose the integration path to follow.
@@ -2307,6 +2355,9 @@ knowledge-needs:
     - name: Use NuGet package
       id: use-nuget-package
       description: Wants to add a public .NET assembly to an OutSystems 11 extension by using Visual Studio's NuGet Package Manager, ensuring the referenced DLL is copied locally and packages.config is included, so that the extension can call the package from C# code.
+    - name: Create .NET proxy
+      id: create-net-proxy
+      description: Wants to generate a .NET assembly proxy for multiple web services that share data types by using Disco.exe, Wsdl.exe, and csc.exe from a Visual Studio Command Prompt, so that the compiled DLL can be imported into Integration Studio.
     - name: Declare File parameters
       id: declare-file-parameters
       description: Wants to declare File input and output parameters in an
@@ -2342,6 +2393,13 @@ knowledge-needs:
       description: Wants to define an extension's actions, structures, entities,
         and resources in Integration Studio after creating the extension, so
         they can complete the extension definition before publishing.
+    - name: Action parameters
+      id: action-parameters
+      description: Wants to add, change, or delete action parameters in Integration
+        Studio's Action Parameters Editor, create one action parameter for each C#
+        method parameter, and keep the parameter order aligned between the
+        extension action and the corresponding C# method, so the action maps
+        correctly.
     - name: Open extension editor
       id: open-extension-editor
       description: Wants to open the Extension Editor in Integration Studio to
@@ -2428,6 +2486,11 @@ knowledge-needs:
         OutSystemsHubEdition prefix or a reserved system filename (for example,
         compressor or web.config), by renaming the resource file to remove the
         prefix or reserved name, so that the resource deploys correctly.'
+    - name: Avoid DLL name clash
+      id: avoid-dll-name-clash
+      description: Wants to avoid runtime overwrite issues when a DLL resource
+        filename matches an application module name in an extension, so that
+        the resource is not replaced during publish.
     - name: Authenticate mTLS library
       id: authenticate-mtls-library
       description: 'Wants to implement mutual TLS (mTLS) authentication in an
@@ -2514,6 +2577,14 @@ knowledge-needs:
         browsing for the assembly, selecting the assembly members to import, and
         reviewing the generated report, so that the extension creates the
         corresponding actions and resources automatically.
+    - name: Imported null checks
+      id: imported-null-checks
+      description: Wants to enable the Add null checks to imported items option when
+        importing actions from a .NET assembly, so that the generated code converts
+        null values to the documented default values.
+    - name: Handle imported types
+      id: handle-imported-types
+      description: Wants to understand how Integration Studio represents imported web service types with inheritance, recursive data types, or multi-dimensional arrays as generated structures and constructor actions, so that they can instantiate values bottom-up and use serialization helpers correctly.
     - name: Structure element properties
       id: structure-element-properties
       description: Wants to know the properties available when defining a Structure element
@@ -10612,48 +10683,36 @@ knowledge-needs:
         mobile app screen lifecycle, using InitPluginManager, createScope,
         and destroyScope, so that native background work and callbacks
         follow the screen and UI block lifecycle safely.
-  - name: File plugin reference
-    id: file-plugin-reference
-    subtopics:
-    - name: File plugin actions
-      id: file-plugin-actions
-      description: Wants to look up the File Plugin version 4 client actions and deprecated version 3 elements, so they can choose the correct API when working with files in an O11 mobile app.
-    - name: Path directory options
-      id: path-directory-options
-      description: Wants to understand how the File Plugin's Path and Directory attributes use PathDirectory values and platform fallbacks, so they can target the right storage location when reading or writing files.
-    - name: File parameter validation
-      id: file-parameter-validation
-      description: Wants to validate File Plugin method inputs such as Path and Directory, and confirm required parameters are provided with accepted values or types, so OS-PLUG-FILE-0005 does not occur when reading or writing files.
-    - name: Resolve invalid path
-      id: resolve-invalid-path
-      description: 'Wants to resolve the OS-PLUG-FILE-0006 "Invalid PATH path" error by using GetFileUri and valid File Plugin directory values instead of building paths manually, so filesystem operations target an accessible location.'
-    - name: File info reference
-      id: file-info-reference
-      description: Wants to inspect the FileInfo structure returned by GetMetadata and ListDirectory, including its attributes, so they can read file metadata correctly.
-    - name: File plugin availability
-      id: file-plugin-availability
-      description: Wants to troubleshoot the OS-PLUG-FILE-0001 error by confirming the app runs as a native mobile app with the File plugin included, so the Cordova or Capacitor bridge is available when file operations run.
-    - name: File plugin readiness
-      id: file-plugin-readiness
-      description: 'Wants to call File Plugin methods only after the Cordova or Capacitor bridge has fully initialized, so filesystem operations do not fail with OS-PLUG-FILE-0004.'
-    - name: File access denied
-      id: file-access-denied
-      description: Wants to troubleshoot the OS-PLUG-FILE-0007 error by requesting the needed file access permission before the operation, explaining why the permission is needed, and guiding users to app settings when they permanently deny the request, so file operations fail gracefully on Android.
-    - name: Resolve file not found
-      id: resolve-file-not-found
-      description: 'Wants to resolve the OS-PLUG-FILE-0008 "file at PATH does not exist" error by verifying that the target file or directory exists before calling the File Plugin action, handling the missing-path case in app logic, and treating GetMetadata as the same not-found error, so filesystem operations complete successfully.'
-    - name: Resolve target mismatch
-      id: resolve-target-mismatch
-      description: 'Wants to resolve the OS-PLUG-FILE-0009 "METHOD_NAME not supported for TARGET" error by using read-only actions for content:// URIs, matching file actions to file targets and directory actions to directory targets, and using a local destination for copies, so filesystem operations run on compatible targets.'
-    - name: Directory already exists
-      id: directory-already-exists
-      description: 'Wants to resolve the OS-PLUG-FILE-0010 "Directory at PATH already exists, cannot be overwritten" error by checking whether the target directory already exists before CreateDirectory, copy, or rename operations, deleting it first when replacement is required, and treating an existing directory as a non-failure state when that is acceptable, so filesystem operations complete successfully.'
-    - name: Resolve missing parent directory
-      id: resolve-missing-parent-directory
-      description: Wants to resolve the OS-PLUG-FILE-0011 "Missing parent directory" error by creating the parent directory before calling CreateDirectory or by passing Recursive=True when nested folders do not yet exist, so directory creation succeeds.
-    - name: Resolve non-empty directory
-      id: resolve-non-empty-directory
-      description: Wants to resolve the OS-PLUG-FILE-0012 "Cannot delete directory with children" error by deleting child files and folders first or calling DeleteDirectory with Recursive=True when the target directory is not empty, so filesystem cleanup succeeds.
+    - name: File transfer parameter validation
+      id: file-transfer-parameter-validation
+      description: Wants to validate the File Transfer plugin's file path
+        parameter is a non-empty Text value before calling transfer actions,
+        so OS-PLUG-FLTR-0004 does not occur when the native library checks
+        required inputs.
+    - name: File transfer server URL validation
+      id: file-transfer-server-url-validation
+      description: Wants to validate the File Transfer plugin's server URL is
+        a non-empty, well-formed HTTP or HTTPS URL before calling transfer
+        actions, so OS-PLUG-FLTR-0005 does not occur when the native library
+        checks required inputs.
+    - name: File transfer readiness
+      id: file-transfer-readiness
+      description: Wants to call File Transfer plugin actions only after the Cordova or Capacitor bridge has fully initialized, so file transfer operations do not fail with OS-PLUG-FLTR-0001 in supported mobile apps.
+    - name: File transfer access denied
+      id: file-transfer-access-denied
+      description: Wants to troubleshoot the OS-PLUG-FLTR-0006 error by requesting the required Android storage permission before file transfer operations, explaining why the permission is needed, and guiding users to app settings when they permanently deny the request, so file transfer operations fail gracefully on Android.
+    - name: Resolve missing file
+      id: resolve-missing-file
+      description: 'Wants to resolve the OS-PLUG-FLTR-0007 "Operation failed because file does not exist" error by verifying that the upload source file exists and is reachable before calling the File Transfer action, so the upload can proceed.'
+    - name: Resolve file transfer connection failure
+      id: resolve-file-transfer-connection-failure
+      description: Wants to resolve the OS-PLUG-FLTR-0008 "Failed to connect to server" error by verifying device network connectivity, confirming the server is reachable and online, correcting the server URL, and checking DNS or timeout issues before retrying file transfer operations.
+    - name: Resolve not modified
+      id: resolve-not-modified
+      description: Wants to resolve the OS-PLUG-FLTR-0009 HTTP 304 Not Modified error by reviewing and adjusting cache-related request headers such as If-None-Match, If-Modified-Since, and Cache-Control in the File Transfer plugin request configuration, so the download returns fresh content.
+    - name: File transfer error
+      id: file-transfer-error
+      description: Wants to troubleshoot the OS-PLUG-FLTR-0011 catch-all File Transfer error by checking the exception field and device logs to identify the underlying I/O, directory, stream, or internal library cause, so the failure can be investigated or escalated.
   - name: File plugin migration
     id: file-plugin-migration
     description: Wants to migrate the File Plugin from version 3 to version 4

@@ -13,6 +13,9 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+topic:
+  - action-properties-reference
+  - define-extension-elements
 ---
 
 # Add an Action

@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - define-extension-elements
 ---
 
 # Define the Extension Elements

@@ -13,6 +13,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - extension-life-cycle
 ---
 
 # Add an Entity

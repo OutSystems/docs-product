@@ -17,6 +17,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - download-version-window
+  - download-window
 ---
 
 # Download an Extension

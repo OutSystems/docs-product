@@ -14,6 +14,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+topic:
+  - how-to-create-structures
 ---
 
 # Define Extension Structures

@@ -18,6 +18,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+topic:
+  - extension-life-cycle
 ---
 
 # Extension Life Cycle

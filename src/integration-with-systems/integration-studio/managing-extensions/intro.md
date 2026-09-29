@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - none
+topic:
+  - extensions
 ---
 
 # Managing Extensions

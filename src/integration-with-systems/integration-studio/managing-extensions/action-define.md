@@ -12,6 +12,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - define-extension-elements
+  - import-actions-from-dotnet-assembly
 ---
 
 # Define Extension Actions

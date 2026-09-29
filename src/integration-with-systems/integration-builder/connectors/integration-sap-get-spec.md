@@ -14,6 +14,8 @@ outsystems-tools:
   - integration builder
 coverage-type:
   - apply
+topic:
+  - get-sap-service-spec
 ---
 
 # Obtaining the SAP service specification

@@ -2126,6 +2126,12 @@ knowledge-needs:
     - name: External database options
       id: external-database-options
       description: Wants to understand the ways OutSystems integrates with external databases, using Integration Builder or Integration Studio, so they can choose the integration path to follow.
+    - name: Create ODC external database connection
+      id: create-odc-external-database-connection
+      description: Wants to create a new external database connection in ODC
+        Portal, select a supported provider, and reference the external
+        entities in an app, so they can use external database data in ODC
+        Studio.
     - name: Set physical table names
       id: set-physical-table-names
       description: Wants to enter the three-part Physical Table Name for each
@@ -5990,6 +5996,11 @@ knowledge-needs:
         Value expression, and choose whether to escape the content, so that the
         screen displays a computed or literal value in a Traditional Web App or
         Mobile App (O11).
+    - name: Use If widget
+      id: use-if-widget
+      description: Wants to add an If widget to a screen, set its Condition
+        expression, and use it to render UI content only when the expression
+        evaluates to true in a Traditional Web App or Mobile App (O11).
     - name: Range Slider reference
       id: range-slider-reference
       description: Wants to look up the events and CSS selectors for the

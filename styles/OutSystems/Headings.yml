@@ -163,7 +163,9 @@ exceptions:
   - RequestPart
   - Form URL
   - Create/Upgrade
-  
+  - Excel To Record List
+  - Record List To Excel
+
 # Events
   - On Click
   - On Initialize

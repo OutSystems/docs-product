@@ -2,7 +2,7 @@
 name: validate-screenshots
 description: >-
   Validates PNG screenshots in an OutSystems docs article against the team's
-  visual rules (highlight components, shadow, cursor, naming, cropping).
+  visual rules (highlight components, shadow, naming, cropping).
   Returns a short issues-only summary so the content developer knows whether
   the images are ready for design review.
 
@@ -152,13 +152,7 @@ For every entry that is **not** cached:
    element but no red rectangle was added, that's a ⚠️ with the quoted
    verdict wording, not a ❌; only fail ❌ when there's neither a red
    rectangle nor a native selection state), rule 4 (numbered callouts),
-   rule 5 (arrows), rule 7 (cursor — only flag a missing cursor for a drag
-   operation or hover-revealed content whose specific trigger element has no
-   highlight/selection/callout of its own; skip whenever a red highlight, a
-   native selection state, or a numbered callout already marks that exact
-   element — a highlight elsewhere in the same image on a different element
-   doesn't count, see `visual-rules-screenshots.md` rule 7), rule 8 (PII),
-   rule 9 (internal environment URLs).
+   rule 5 (arrows), rule 7 (PII), rule 8 (internal environment URLs).
 
    For `-ss`/`-odcs` files showing an entity or data-model layout (boxes
    connected by lines), check against `visual-rules-screenshots.md` rule 2's
@@ -306,7 +300,7 @@ Rules:
 1. When done, the script writes a draft `visual-rules-screenshots.md`. Review
    and edit it — the skill uses whatever is in that file.
 1. Re-run calibration whenever the Figma library changes (new highlight
-   component, new cursor asset, etc.) so the rubric stays current.
+   component, etc.) so the rubric stays current.
 
 If the calibration output looks thin or inconsistent across runs, switch to
 authoring the rules manually — the skill doesn't care how the file was

@@ -103,7 +103,7 @@ def next_steps_note(out_path: Path) -> str:
     return (
         "Next steps for the LLM:\n"
         "  1. Read each image in the manifest below with the Read tool.\n"
-        "  2. Describe what you observe — shadow, cursor, highlight component, "
+        "  2. Describe what you observe — shadow, highlight component, "
         "annotation style, cropping, padding, blurring of PII, etc.\n"
         "  3. Cluster the observations into concrete, checkable rules. Each rule "
         "needs a name, a one-line acceptance criterion, and at least one pass "

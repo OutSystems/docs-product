@@ -23,6 +23,16 @@ knowledge-needs:
       id: client-actions-when-use
     - name: What are server actions/when to use server actions
       id: server-actions-when-use
+    - name: Use system actions
+      id: use-system-actions
+      description: Wants to find and use built-in system actions in the Logic tab
+        in ODC Studio from the Client Actions and Server Actions folders, so
+        they can build app logic with platform-provided actions.
+    - name: Excel to record list
+      id: excel-to-record-list
+      description: Wants to convert an uploaded Excel file into a Record List with
+        the Excel to Record List action in a Server Action, so they can
+        validate the rows and save them to entities at runtime.
     - name: Screen-level actions
       id: screen-level-actions
       description: 'Wants to understand the two types of screen-level actions in
@@ -36,6 +46,12 @@ knowledge-needs:
       description: Wants to add a screen client action that runs a server action
         from a button click, pass the current form values as input parameters,
         and continue the flow after a successful save in a Traditional Web App.
+    - name: Build registration logic
+      id: build-registration-logic
+      description: Wants to build a server action for patient registration that
+        verifies whether a user already exists, encrypts the password, creates
+        the user and related patient records, and grants the Patient role so a
+        new patient account is saved correctly.
     - name: Action properties reference
       id: action-properties-reference
       description: Wants to look up the configuration properties available for an
@@ -898,6 +914,11 @@ knowledge-needs:
       description: Wants to understand what data types are available in ODC, their
         default values, and their minimum/maximum constraints, so that variables and
         entity attributes can be correctly typed during app development.
+    - name: External type mapping
+      id: external-type-mapping
+      description: Wants to look up how external system data types map to ODC SQL node and
+        app data types, so they can choose the correct ODC type when integrating
+        external data.
     - name: List data type
       id: list-data-type
       description: Wants to understand that an OutSystems List stores elements of
@@ -1160,6 +1181,12 @@ knowledge-needs:
         SQL during compilation, including how Sources, Filters, Sorting,
         and Test values map to SELECT, FROM, WHERE, and ORDER BY clauses, so
         they can reason about the generated query.
+    - name: Screen aggregate basics
+      id: screen-aggregate-basics
+      description: Wants to understand how Screen Aggregates work in OutSystems 11,
+        including that they run automatically and asynchronously, stay within
+        the screen scope where they are defined, and fetch data from the
+        database, so they can identify false statements about them.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -1881,6 +1908,11 @@ knowledge-needs:
         single-record insert, multiple-record insert, upsert, and insert/upsert
         from a SELECT in an ODC SQL node, so they can determine which operations
         are available before writing a query against a given external system.
+    - name: Custom insert query
+      id: custom-insert-query
+      description: Wants to create a custom INSERT SQL query in the ODC SQL Tool
+        to add records in bulk to an entity, so they can populate data with a
+        data-changing SQL node.
     - name: Non-select query setup
       id: non-select-query-setup
       description: Wants to configure an ODC SQL Tool non-SELECT query with an
@@ -2091,6 +2123,9 @@ knowledge-needs:
     - name: Import external tables
       id: import-external-tables
       description: Wants to import entities from external tables or views in Integration Studio by selecting the database connection, selecting the tables and views, defining the logical database, reviewing the data types, and publishing the extension so that they create entities from external database data.
+    - name: External database options
+      id: external-database-options
+      description: Wants to understand the ways OutSystems integrates with external databases, using Integration Builder or Integration Studio, so they can choose the integration path to follow.
     - name: Set physical table names
       id: set-physical-table-names
       description: Wants to enter the three-part Physical Table Name for each
@@ -2257,6 +2292,12 @@ knowledge-needs:
         supported connector.
     - name: Integrate using custom code
       id: custom-code-integration
+    - name: Extension life cycle
+      id: extension-life-cycle
+      description: Wants to create an extension in Integration Studio, define its actions, structures, entities, and resources, keep its source code synchronized, publish it, and then use it in a Service Studio module, so that they can follow the full extension life cycle from setup to consumption.
+    - name: Use extension in module
+      id: use-extension-in-module
+      description: Wants to add a published extension as a reference in a Service Studio module and use the referenced actions, structures, and entities after selecting them in Manage Dependencies, so that the module can call the extension functionality and data model.
     - name: Use NuGet package
       id: use-nuget-package
       description: Wants to add a public .NET assembly to an OutSystems 11 extension by using Visual Studio's NuGet Package Manager, ensuring the referenced DLL is copied locally and packages.config is included, so that the extension can call the package from C# code.
@@ -2290,6 +2331,11 @@ knowledge-needs:
         via Visual Studio's Add Web Reference dialog, and implementing the action
         to call the generated proxy class, so that Service Studio can call the
         Web Service like a built-in action, in OutSystems 11.
+    - name: Define extension elements
+      id: define-extension-elements
+      description: Wants to define an extension's actions, structures, entities,
+        and resources in Integration Studio after creating the extension, so
+        they can complete the extension definition before publishing.
     - name: Open extension editor
       id: open-extension-editor
       description: Wants to open the Extension Editor in Integration Studio to
@@ -2443,6 +2489,13 @@ knowledge-needs:
         Options Window, so that they can review and merge changes made
         outside the Resource Editor when Update Source Code can't
         auto-merge them.
+    - name: Update source code
+      id: update-source-code
+      description: Wants to update an extension's source code in Integration
+        Studio by running Update Source Code or 1-Click Publish so the
+        generated template files, implementation files, and
+        `<extension_name>.cs` stay synchronized with the extension
+        definition when actions, structures, or entities change.
     - name: Check import details
       id: check-import-details
       description: Wants to check the Import Details report for an extension
@@ -2510,6 +2563,9 @@ knowledge-needs:
         provides in Integration Studio, so that they can monitor progress,
         review errors and warnings, and manage extension publishing to a
         Platform Server, in OutSystems 11.
+    - name: Verify extension definition
+      id: verify-extension-definition
+      description: Wants to verify an extension definition in Integration Studio by using Verify, Verify and Save, or 1-Click Publish from the File menu or toolbar, so that they can confirm the extension has no errors before publishing and review warnings in the Verify window.
     - name: Verify window
       id: verify-window
       description: Wants to know what areas and buttons the Verify window provides in
@@ -2592,6 +2648,74 @@ knowledge-needs:
         (connecting OutSystems 11 apps to external Systems of Record), and which
         types of external systems it supports, so that they can decide whether
         to use it and where to start.
+    - name: Architecture overview
+      id: integration-builder-architecture
+      description: Wants to understand how Integration Builder generates integrations,
+        publishes Integration Manager, and uses integrations, connections,
+        and OutSystems apps together, so that they can understand how the
+        feature works end to end.
+    - name: Integration Builder setup
+      id: integration-builder-setup
+      description: Wants to prepare the required permissions, browser, platform
+        version, and network access, and register the development infrastructure
+        in Integration Builder, so that IT users can start using Integration
+        Builder.
+    - name: Install dependencies
+      id: install-dependencies
+      description: Wants to install the apps Integration Builder requires after
+        registering the infrastructure by using the Setup widget and choosing
+        Install dependencies, so that Integration Builder works correctly.
+    - name: Register Microsoft Entra app
+      id: register-microsoft-entra-app
+      description: Wants to register an OutSystems Integration Builder app in
+        Microsoft Entra without administrator permissions, so that they can
+        follow the shared setup steps for the supported connectors.
+    - name: Configure app permissions
+      id: configure-app-permissions
+      description: Wants to add the required SharePoint Online or Dataverse/
+        Dynamics 365 application permissions, create the Dataverse or
+        Dynamics application user, and upload the certificate after
+        registering the Integration Builder app in Microsoft Entra, so that
+        the connector can authenticate.
+    - name: Create and publish integration
+      id: create-and-publish-integration
+      description: Wants to create a new Integration Builder integration for an
+        external system, configure the wizard settings, and publish the
+        generated modules to the development environment, so that the
+        integration becomes available to use in OutSystems.
+    - name: Integration modules
+      id: integration-modules
+      description: Wants to understand that Integration Builder generates integrations with
+        a library module and a service module, how the service module exposes
+        the Server Actions they should use, and how the integration and module
+        names are set when creating the integration, so they can find the right
+        generated module and use its Server Actions correctly.
+    - name: Available Server Actions
+      id: available-server-actions
+      description: Wants to understand the CRUD and other server actions Integration Builder
+        generates for an external entity, so they can use the correct
+        service-module action.
+    - name: Search controls
+      id: search-controls
+      description: Wants to filter, order, and paginate Search and Count Server Actions in
+        a generated integration, so they can retrieve external records in the
+        right shape.
+    - name: Service Studio editing
+      id: service-studio-editing
+      description: Wants to allow editing of a generated integration in Service
+        Studio by choosing the editable integration option, so they can make
+        custom changes there instead of in Integration Builder.
+    - name: Users
+      id: integration-builder-users
+      description: Wants to understand who can sign in to Integration Builder
+        and which IT user permissions are required, so that they can control
+        access to integrations.
+    - name: Manage integration connections
+      id: manage-integration-connections
+      description: Wants to create a connection in Integration Manager for an
+        Integration Builder integration, associate it with the generated
+        integration, and reassign the connection after deployment in another
+        environment, so that the integration can authenticate at runtime.
     - name: Authorize Dataverse IB
       id: authorize-dataverse-ib
       description: Wants to authorize Integration Builder to access their
@@ -2614,6 +2738,21 @@ knowledge-needs:
         Integration Manager by authorizing with a Microsoft account that has
         access to Microsoft Entra, so that they can update the connection tied
         to the Microsoft Entra app registration.
+    - name: Authorize SharePoint IB
+      id: authorize-sharepoint-ib
+      description: Wants to authorize Integration Builder to access SharePoint
+        Online through their Microsoft account, so that Integration Builder
+        can retrieve SharePoint metadata and let them test a newly created
+        integration in the development environment.
+    - name: Connect SharePoint
+      id: connect-sharepoint
+      description: Wants to authorize a SharePoint Online connection in
+        Integration Manager, either automatically with Microsoft Entra
+        administrator permissions or manually with Microsoft Entra
+        parameters supplied by a Microsoft Entra administrator, so that
+        Server Actions in the generated integration module can authenticate
+        requests at runtime and an authorized Microsoft account can edit the
+        connection later.
     - name: Connect Salesforce
       id: connect-salesforce
       description: Wants to set up a Salesforce connection for Integration
@@ -2622,6 +2761,44 @@ knowledge-needs:
         permitted policies) in Salesforce, then share the Consumer Key (and
         certificate) with the OutSystems developer, so that Integration
         Manager can complete the connection configuration.
+    - name: Dependencies
+      id: integration-builder-dependencies
+      description: Wants to understand which apps Integration Builder integrations
+        depend on and how dependency updates can force republishing of affected
+        integrations, so that they can manage changes safely.
+    - name: Troubleshoot Salesforce integration
+      id: troubleshoot-salesforce-integration
+      description: Wants to resolve problems in the Select Objects step when
+        creating a Salesforce integration in Integration Builder, including
+        missing Salesforce object permissions, Salesforce API connectivity
+        issues, and network access to Integration Builder, so that they can
+        continue creating the integration.
+    - name: Create SAP OData integration
+      id: create-sap-odata-integration
+      description: Wants to create an SAP OData integration in Integration
+        Builder by uploading a JSON or EDMX service specification and
+        selecting the SAP entities and actions to expose, so that the
+        generated integration includes the operations the app needs.
+    - name: Get SAP service spec
+      id: get-sap-service-spec
+      description: Wants to obtain the SAP service specification needed in
+        Integration Builder, either by downloading the spec from SAP API
+        Business Hub for a default SAP service or by requesting the
+        `/$metadata` endpoint of a custom SAP service, so that they can
+        paste or upload it during integration creation.
+    - name: Configure SAP authentication
+      id: configure-sap-authentication
+      description: Wants to configure SAP authentication for an Integration
+        Builder integration by using Basic authentication or Sandbox API
+        authentication and then associating the connection after
+        deployment in Integration Manager, so that the integration can call
+        the SAP service in the target environment.
+    - name: Select SAP OData version
+      id: select-sap-odata-version
+      description: Wants to select the correct SAP OData version during
+        import when Integration Builder cannot infer it from the service
+        specification, so that search queries and DateTime values use the
+        right format and the integration avoids runtime issues.
     - name: Fix recursive refs
       id: fix-recursive-refs
       description: 'Wants to resolve the "The attribute <EntityName>.<AttributeName> has recursive references, which are not supported by OutSystems. Please deselect it before proceeding." error in Integration Builder by reopening the SAP OData Add Entities step and clicking Next so Integration Builder auto-unselects recursive attributes, or by consuming the service through an extension in Integration Studio when the recursive attribute is required, so that they can save or publish the integration.'
@@ -2777,6 +2954,11 @@ knowledge-needs:
     - name: Fix internal service error
       id: fix-internal-service-error
       description: 'Wants to resolve the OS-INBL-API-00069 "There was an error contacting an internal service." error in Integration Builder by verifying the server address configured in Service Center can be resolved through DNS, ensuring it matches the HTTPS certificate, and checking the Service Center Error logs for more details, so that Integration Manager can contact the internal service.'
+    - name: Configure on-prem envs
+      id: configure-on-prem-envs
+      description: Wants to add the addresses of the non-LifeTime environments
+        after development by using the Setup widget and Add environment, so that
+        Integration Builder can connect to the target on-premises environments.
   - name: Workato Connector
     id: workato-connector
     subtopics:
@@ -2893,6 +3075,13 @@ knowledge-needs:
         network IP range, by setting the Internal Access Only property to
         Yes in Service Studio, so that sensitive elements are reachable
         only from within the internal network, in OutSystems 11.
+    - name: IP filter groups
+      id: ip-filter-groups
+      description: Wants to understand how IP Filter Groups work in ODC,
+        including AllowList or DenyList access control models, stage-specific
+        scope, toggling individual rules, and the limit on how many IP addresses
+        or CIDR entries a group can contain, so they can identify valid group
+        behavior and constraints.
     - name: JWT REST authentication
       id: jwt-rest-authentication
       description: Wants to secure REST APIs exposed or consumed between O11
@@ -2998,6 +3187,12 @@ knowledge-needs:
       description: Wants to edit the permissions of an existing API client in the
         ODC portal after it was created, so its access to ODC REST APIs and data
         can be updated.
+    - name: Generate client secret
+      id: generate-client-secret
+      description: Wants to generate a new secret for an existing API client in the
+        ODC portal when the current secret was not copied or is nearing expiration,
+        so the client can keep authenticating to ODC REST APIs with updated
+        credentials.
   - name: Prevent CSRF attacks
     id: prevent-csrf-attacks
     description: Wants to prevent cross-site request forgery attacks in OutSystems
@@ -3231,6 +3426,12 @@ knowledge-needs:
         conditions on the outcomes to route execution down different paths
         based on data values, in ODC's Workflow editor, so that the workflow
         follows the correct path for each case.
+    - name: Add automatic activity
+      id: add-automatic-activity
+      description: Wants to add an Automatic activity to an ODC workflow in the
+        Workflow editor, configuring it to run a service action without manual
+        intervention when the workflow reaches that node, so that the process
+        continues automatically.
     - name: Configure automatic path
       id: configure-automatic-path
       description: Wants to configure an automatic path in an ODC workflow
@@ -4486,6 +4687,13 @@ knowledge-needs:
         username and password with the EnhancedWebReferences extension''s
         SetWebReferenceCredentials action, so that the web service can be
         consumed successfully.'
+    - name: Client certificate auth
+      id: client-certificate-auth
+      description: 'Wants to authenticate requests to a consumed SOAP web
+        service with a client certificate in OutSystems 11 by creating an
+        Integration Studio extension that configures the SOAP binding to
+        require client certificates and loads the certificate from binary
+        content, so that the service call succeeds.'
     - name: Fix SOAP WSDL schema error
       id: fix-soap-wsdl-schema-error
       description: Wants to fix a SOAP web service import error in Service
@@ -5492,12 +5700,35 @@ knowledge-needs:
         delete list items, in Service Studio for OutSystems 11 Mobile Apps,
         so that end users can list, add, edit, and delete records from the
         app.
+    - name: Configure list action
+      id: configure-list-action
+      description: Wants to configure the List Action On-Click Destination to
+        run a Client Action that executes the swipe logic, so that the list
+        performs the intended swipe action in OutSystems 11 mobile screens.
     - name: Reactive CRUD screens
       id: crud-screens-reactive-web
       description: Wants to build a list screen and a form screen for an entity,
         and wire up Create, Update, and Delete logic using server actions and
         entity actions, so that end users can list, add, edit, and delete
         records, in Service Studio for OutSystems 11 Reactive Web Apps.
+    - name: Read-only order fields
+      id: read-only-order-fields
+      description: Wants to wrap order form fields in an If widget so the
+        code and date inputs stay editable while the order is new or in draft,
+        and show the saved values as bold read-only expressions otherwise, so
+        that users only edit those fields before submission.
+    - name: Order controls visibility
+      id: order-controls-visibility
+      description: Wants to show or hide the order detail save button, submit
+        button, wizard, and add-item area based on whether the order is new,
+        draft, or submitted, so that only the controls relevant to the order
+        state appear.
+    - name: Submit order action
+      id: submit-order-action
+      description: Wants to submit a draft order by changing its status to
+        Submitted, saving the updated order, showing a success message, and
+        redirecting back to OrderDetail so the screen refreshes after
+        submission.
     - name: Master Detail reference
       id: master-detail-widget-reference
       description: Wants to look up the properties of the Master Detail UI Pattern in
@@ -5569,6 +5800,12 @@ knowledge-needs:
       description: Wants to add a Check Box widget to a screen and bind a
         boolean variable to its Variable property, in Service Studio, so
         that end users can provide boolean input in a form for traditional
+        web apps (O11).
+    - name: Add radio group widget
+      id: add-radio-group-widget
+      description: Wants to add a Radio Group widget to a screen and bind
+        its option list and selected value, in Service Studio, so that end
+        users can choose one option in a form for mobile apps and reactive
         web apps (O11).
     - name: Use Bottom Sheet pattern
       id: use-bottom-sheet-pattern
@@ -5747,6 +5984,12 @@ knowledge-needs:
         Expression widget in Service Studio, including Value, Escape Content, and
         Id, so that they can correctly display a literal text or an evaluated
         expression on a screen in a Traditional Web App (O11).
+    - name: Use Expression widget
+      id: use-expression-widget
+      description: Wants to add an Expression widget to a screen, set its
+        Value expression, and choose whether to escape the content, so that the
+        screen displays a computed or literal value in a Traditional Web App or
+        Mobile App (O11).
     - name: Range Slider reference
       id: range-slider-reference
       description: Wants to look up the events and CSS selectors for the
@@ -7093,6 +7336,13 @@ knowledge-needs:
       description: Wants to show a Reset link only when a condition is true by enclosing it
         in an If widget, so that the link appears only when the condition is
         true.
+    - name: Prepare order detail screen
+      id: prepare-order-detail-screen
+      description: Wants to prepare the OrderDetail screen for the wizard-driven order
+        workflow by adjusting the layout, replacing the order status dropdown
+        and total amount input with display-only widgets, and updating the save
+        controls and save action so new and existing orders use the correct
+        initial state and navigation.
   - name: Layouts
     id: layouts
     subtopics:
@@ -7594,6 +7844,12 @@ knowledge-needs:
       id: rollback-to-previous-tagged-version
       description: Wants to restore an app to a previously tagged version,
         so that they can recover from a bad release.
+  - name: Package Manager Service errors
+    id: package-manager-service-errors
+    description: Wants to locate and resolve ODC Package Manager Service errors by finding the
+      error code in the reference, understanding its cause and impact, and following the
+      recommended action, so that they can install packages from Forge into an organization
+      successfully.
   - name: Package version errors
     id: package-version-errors
     subtopics:
@@ -7603,6 +7859,9 @@ knowledge-needs:
     - name: Resolve version conflict
       id: resolve-version-conflict
       description: 'Wants to resolve the OS-PKGS-40008 "Another version for <package> is already installed." error by setting replaceApplicationVersion to true when installing a package, so that the selected package installs successfully.'
+    - name: Tag version error
+      id: tag-version-error
+      description: 'Wants to fix the OS-PKGS-50004 "Unable to tag version for <packageName>." error during package installation by retrying the installation and creating a support case if the problem persists, so that the selected package installs successfully.'
   - name: Package repository errors
     id: package-repository-errors
     subtopics:
@@ -7624,6 +7883,9 @@ knowledge-needs:
     - name: Missing application key
       id: missing-application-key
       description: 'Wants to fix the OS-PKGS-40011 "Application key could not be fetched for the <package>." error by retrying the package installation and creating a support case if the problem persists, so that the selected package installs successfully.'
+    - name: Package publish error
+      id: package-publish-error
+      description: 'Wants to fix the OS-PKGS-50002 "Unable to publish package <packageName>." error by retrying the package installation and creating a support case if the problem persists, so that the selected package installs successfully.'
     - name: Missing status parameter
       id: missing-status-parameter
       description: Wants to fix the OS-PKGS-40012 error by sending the required status query parameter when listing installations, so that the list of installations returns successfully.
@@ -7755,6 +8017,24 @@ knowledge-needs:
         app, and revision, and how selecting a revision and running impact
         analysis fit into deploying an app to a stage in the ODC Portal, so
         they can follow ODC deployment documentation and workflows.
+  - name: ODC deployment inconsistencies
+    id: odc-deployment-inconsistencies
+    description: Wants to interpret and resolve ODC Portal deployment
+      inconsistencies reported during impact analysis, so they can decide
+      whether to proceed with a deployment and fix the reported issues first.
+    subtopics:
+    - name: Impact analysis report
+      id: impact-analysis-report
+      description: Wants to interpret the ODC Portal impact analysis report
+        after selecting a revision for deployment, including the General,
+        Workflows, Producer, and Consumer sections and the blocker-versus-
+        warning outcome, so that they know whether they can proceed or need
+        to inspect specific inconsistencies.
+    - name: Fix deployment inconsistencies
+      id: fix-deployment-inconsistencies
+      description: Wants to resolve ODC deployment inconsistencies reported in impact
+        analysis by correcting the issues found there, so that the deployment
+        can proceed.
     - name: Rename org or stage
       id: rename-org-or-stage
       description: Wants to change the display name of their ODC organization
@@ -8471,6 +8751,12 @@ knowledge-needs:
       description: Wants to create a new ODC asset through the Asset Repository API,
         including choosing a valid asset type and using a subtype only for
         LowCodeLibraries, so that the create request succeeds.
+    - name: Native mobile build API
+      id: native-mobile-build-api
+      description: Wants to use the Native Mobile Build API to configure mobile build
+        settings, start iOS and Android native builds, monitor build status, and
+        download build outputs and logs, so they can automate native mobile package
+        generation in ODC.
 - name: DevOps and ALM
   guid: a8f0bc19-a180-4f83-b28e-8c786568516c
   topics:
@@ -8561,6 +8847,10 @@ knowledge-needs:
         what each major area of the interface is for and where to perform common
         setup and app-building actions, so they can move through the tool without
         getting blocked by layout or navigation friction.
+    - name: Install quickstart app
+      id: install-quickstart-app
+      description: Wants to install a quickstart .oap in Service Studio, so they
+        can open the app and continue the guided path.
     - name: Download and set up
       id: download-and-set-up
     - name: Adopt visual paradigm
@@ -8786,6 +9076,14 @@ knowledge-needs:
         does not provide.
     - name: Installing Forge component
       id: install-forge-component
+    - name: Video call resources
+      id: video-call-resources
+      description: Wants to find curated resources for adding in-app video calls, including articles, sessions, and Forge assets, so they can choose an implementation path for their app.
+    - name: Add voice messaging
+      id: add-voice-messaging
+      description: Wants to add voice messaging to a chat app by using a Forge audio
+        recording and playback component, so users can record and play back
+        audio messages.
     - name: ODC solutions overview
       id: odc-solutions-overview
       description: Wants to understand what an ODC solution is, how it bundles components,
@@ -9306,6 +9604,16 @@ knowledge-needs:
       description: Wants to add QnA chatbots in Chatbot Configurator after setting
         up the AI provider connection, so that the chatbot can answer questions in
         their OutSystems app.
+    - name: Set up QnA Maker connector
+      id: set-up-qna-maker-connector
+      description: Wants to install, reference, and configure the Azure QnA
+        Maker Connector in an OutSystems app after creating the Azure knowledge
+        base, so that the app is ready to query the knowledge base.
+    - name: Test QnA Maker connector
+      id: test-qna-maker-connector
+      description: Wants to test the configured Azure QnA Maker Connector
+        against the Azure knowledge base, so that the app can return answers to
+        user questions.
     - name: Create chatbot webhook module
       id: create-chatbot-webhook-module
       description: Wants to create a chatbot webhook module from the Chatbot Webhook
@@ -9697,6 +10005,22 @@ knowledge-needs:
         selecting the matching transport type, choosing an authentication
         method, and providing the required credentials, then testing the
         connection, so that the server's tools become available for import.
+    - name: Agent connection errors
+      id: agent-connection-errors
+      description: Wants to understand OS-ABRS agent connection errors in ODC
+        Portal by using the error code to find the matching page and read its
+        cause, impact, and recommended action when testing or running
+        connections to an MCP server or an external agent (A2A), so that they
+        can identify the right fix path or support step.
+    - name: Fix AI agent connection error
+      id: fix-ai-agent-connection-error
+      description: Wants to resolve the OS-ABRS-CONN-50000 internal server
+        error that appears when testing or running a connection to an MCP
+        server or an external agent (A2A) in ODC Portal by retrying the
+        connection, verifying the server URL, authentication, and Private
+        Gateway settings, and opening a support case with the trace ID if
+        the error persists, so that the connection test or runtime call
+        completes.
     - name: Import MCP tools
       id: import-mcp-tools
       description: Wants to select and optionally rename specific tools
@@ -10277,10 +10601,96 @@ knowledge-needs:
         mobile app screen lifecycle, using InitPluginManager, createScope,
         and destroyScope, so that native background work and callbacks
         follow the screen and UI block lifecycle safely.
+  - name: File plugin reference
+    id: file-plugin-reference
+    subtopics:
+    - name: File plugin actions
+      id: file-plugin-actions
+      description: Wants to look up the File Plugin version 4 client actions and deprecated version 3 elements, so they can choose the correct API when working with files in an O11 mobile app.
+    - name: Path directory options
+      id: path-directory-options
+      description: Wants to understand how the File Plugin's Path and Directory attributes use PathDirectory values and platform fallbacks, so they can target the right storage location when reading or writing files.
+    - name: File parameter validation
+      id: file-parameter-validation
+      description: Wants to validate File Plugin method inputs such as Path and Directory, and confirm required parameters are provided with accepted values or types, so OS-PLUG-FILE-0005 does not occur when reading or writing files.
+    - name: Resolve invalid path
+      id: resolve-invalid-path
+      description: 'Wants to resolve the OS-PLUG-FILE-0006 "Invalid PATH path" error by using GetFileUri and valid File Plugin directory values instead of building paths manually, so filesystem operations target an accessible location.'
+    - name: File info reference
+      id: file-info-reference
+      description: Wants to inspect the FileInfo structure returned by GetMetadata and ListDirectory, including its attributes, so they can read file metadata correctly.
+    - name: File plugin availability
+      id: file-plugin-availability
+      description: Wants to troubleshoot the OS-PLUG-FILE-0001 error by confirming the app runs as a native mobile app with the File plugin included, so the Cordova or Capacitor bridge is available when file operations run.
+    - name: File plugin readiness
+      id: file-plugin-readiness
+      description: 'Wants to call File Plugin methods only after the Cordova or Capacitor bridge has fully initialized, so filesystem operations do not fail with OS-PLUG-FILE-0004.'
+    - name: File access denied
+      id: file-access-denied
+      description: Wants to troubleshoot the OS-PLUG-FILE-0007 error by requesting the needed file access permission before the operation, explaining why the permission is needed, and guiding users to app settings when they permanently deny the request, so file operations fail gracefully on Android.
+    - name: Resolve file not found
+      id: resolve-file-not-found
+      description: 'Wants to resolve the OS-PLUG-FILE-0008 "file at PATH does not exist" error by verifying that the target file or directory exists before calling the File Plugin action, handling the missing-path case in app logic, and treating GetMetadata as the same not-found error, so filesystem operations complete successfully.'
+    - name: Resolve target mismatch
+      id: resolve-target-mismatch
+      description: 'Wants to resolve the OS-PLUG-FILE-0009 "METHOD_NAME not supported for TARGET" error by using read-only actions for content:// URIs, matching file actions to file targets and directory actions to directory targets, and using a local destination for copies, so filesystem operations run on compatible targets.'
+    - name: Directory already exists
+      id: directory-already-exists
+      description: 'Wants to resolve the OS-PLUG-FILE-0010 "Directory at PATH already exists, cannot be overwritten" error by checking whether the target directory already exists before CreateDirectory, copy, or rename operations, deleting it first when replacement is required, and treating an existing directory as a non-failure state when that is acceptable, so filesystem operations complete successfully.'
+    - name: Resolve missing parent directory
+      id: resolve-missing-parent-directory
+      description: Wants to resolve the OS-PLUG-FILE-0011 "Missing parent directory" error by creating the parent directory before calling CreateDirectory or by passing Recursive=True when nested folders do not yet exist, so directory creation succeeds.
+    - name: Resolve non-empty directory
+      id: resolve-non-empty-directory
+      description: Wants to resolve the OS-PLUG-FILE-0012 "Cannot delete directory with children" error by deleting child files and folders first or calling DeleteDirectory with Recursive=True when the target directory is not empty, so filesystem cleanup succeeds.
+  - name: File plugin migration
+    id: file-plugin-migration
+    description: Wants to migrate the File Plugin from version 3 to version 4
+      by replacing deprecated client actions with the new actions, updating
+      StorageType and StoragePersistence to PathDirectory, handling blob URL
+      replacements, and checking the installed native plugin version so the
+      app keeps working after the upgrade.
+    subtopics:
+    - name: Migrate file plugin actions
+      id: migrate-file-plugin-actions
+      description: Wants to replace deprecated File Plugin v3 client actions
+        with the version 4 client actions, including PathDirectory
+        replacements and the new Success/Error handling, so the app keeps
+        working after the upgrade.
+    - name: Create blob URL
+      id: create-file-blob-url
+      description: Wants to rebuild the blob URL behavior lost when replacing
+        DEPRECATED_GetFileUrl with ReadFile by converting the returned
+        BinaryData to Base64 and then to a JavaScript blob URL, so the app
+        keeps the same download or preview experience.
+    - name: Check File Plugin version
+      id: check-file-plugin-version
+      description: Wants to call CheckFilePlugin before using the version 4
+        client actions and fall back to the deprecated actions when the
+        installed native plugin is still pre-4.0.0, so OTA-updated apps keep
+        working on devices that have not been rebuilt.
+  - name: File Viewer plugin reference
+    id: file-viewer-plugin-reference
+    description: Wants to understand the File Viewer plugin in O11 mobile apps,
+      including its client actions, platform-specific behavior, and resource
+      setup, so they can open supported files correctly.
+    subtopics:
+    - name: File Viewer actions
+      id: file-viewer-actions
+      description: Wants to use the File Viewer plugin to open files from local
+        paths, app resources, or remote URLs in O11 mobile apps and PWAs,
+        check plugin availability, and preview supported media on iOS, so that
+        users can view supported files in the right platform context.
+    - name: File Viewer resources
+      id: file-viewer-resources
+      description: Wants to add a file as an app resource and reference it with
+        OpenDocumentFromResources by setting the Resources target directory and
+        resource path, so that the File Viewer plugin can open bundled files
+        safely.
   - name: Camera plugin migration
     id: migrate-camera-plugin
     description: Wants to migrate the Camera plugin from version 1 to version 2
-      by replacing deprecated client actions and blocks with TakePhoto and
+        by replacing deprecated client actions and blocks with TakePhoto and
       ChooseFromGallery, updating renamed parameters and MediaResult output
       handling, and adapting to the new OnError and error code behavior, so the
       app keeps working after the upgrade.
@@ -10466,6 +10876,17 @@ knowledge-needs:
       platform selection, native plugins, signing keys, and build output, so
       they can follow the build flow.
     subtopics:
+    - name: Create mobile app package
+      id: create-mobile-app-package
+      description: Wants to create a native iOS or Android mobile app package in
+        the ODC Portal using MABS 12, by selecting the build type and native
+        runtime that match the app's distribution goal, so that the package is
+        ready for device installation or app store distribution.
+    - name: Choose mobile framework
+      id: choose-mobile-framework
+      description: Wants to choose Cordova or Capacitor when creating a mobile package in
+        ODC Portal with MABS 12 and later, based on app type and plugin compatibility,
+        so they use the right framework for the app.
     - name: Generate iOS package
       id: generate-ios-development-package
       description: Wants to generate an iOS mobile app package for development tests
@@ -13884,6 +14305,9 @@ knowledge-needs:
         authenticate through Okta with SAML.
     - name: Built-in Authentication
       id: built-in-authentication
+    - name: Authentication actions
+      id: authentication-actions
+      description: 'Wants to use the Login, Logout, GetExternalLoginURL, and GetExternalLogoutURL system actions in ODC, so that they can sign users in and out with built-in authentication or redirect them to an external identity provider when the app uses external authentication.'
     - name: Custom authentication
       id: custom-authentication
       description: Wants to understand when OutSystems built-in authentication
@@ -13892,6 +14316,12 @@ knowledge-needs:
         federated single sign-on through OAuth or SAML, so that they can decide
         how to integrate identity systems that the built-in methods do not
         cover.
+    - name: Configure MFA login
+      id: configure-mfa-login
+      description: Wants to configure multi-factor authentication for end-user
+        login by using Forge MFA assets and the improved end-user
+        authentication flow, so that login credentials are protected before
+        signup and login are completed.
     - name: Get authenticated user id
       id: get-authenticated-user-id
       description: Wants to retrieve the identifier of the user currently
@@ -14132,6 +14562,24 @@ knowledge-needs:
         verification to "Trust identity provider" in ODC, so that ODC honors
         the IdP''s email_verified claim instead of performing its own
         verification, when the IdP is known to guarantee verified emails.'
+    - name: IdP email verification
+      id: idp-email-verification
+      description: Wants to choose how ODC verifies an external IdP email
+        claim, so that logins store the correct verified state.
+    - name: IdP profile matching
+      id: idp-profile-matching
+      description: 'Wants to configure how ODC matches external IdP logins to
+        existing profiles, including subject fallback, email or username
+        matching, auto-create behavior, and how built-in authentication and
+        external IdPs link profiles, so that invited, pre-created, and
+        returning users sign in to the intended profile.'
+    - name: Email matching edge cases
+      id: email-matching-edge-cases
+      description: 'Wants to prevent and recover from external IdP email
+        matching problems when an email changes or casing differs, including
+        keeping the email stable through first login, re-inviting users with
+        the updated address, normalizing email casing, and resolving duplicate
+        or orphaned profiles, so that ODC preserves the correct account link.'
     - name: Fix invalid invitation
       id: fix-invalid-invitation
       description: Wants to resolve the OS-UAUC-60043 onboarding error,
@@ -14527,6 +14975,9 @@ knowledge-needs:
         external IdP.
     - name: Self Registration
       id: self-registration
+    - name: Build registration screen
+      id: build-registration-screen
+      description: Wants to build the first registration screen in a patient self-service application in Service Studio by adding local variables, photo upload, patient, user, and onboarding fields, responsive columns, and a password input, so that unauthenticated users can enter their details before the next tutorial.
     - name: Build self-reg form
       id: build-self-registration-form
       description: Wants to build the verification code and password inputs
@@ -14928,6 +15379,11 @@ knowledge-needs:
       description: Wants to drill down high-level user stories into small, valuable,
         end-to-end slices that fit within a few days of work and still support demo
         feedback, so that each iteration delivers usable value without overengineering.
+    - name: Write user stories
+      id: write-user-stories
+      description: Wants to turn gathered requirements into user stories using the
+        3-liner syntax, INVEST principle, and Three C's, and structure them with a
+        template and example so that the team can refine and implement them.
     - name: Apply INVEST principle
       id: apply-invest-principle
       description: Wants to evaluate and shape user stories with the INVEST principle

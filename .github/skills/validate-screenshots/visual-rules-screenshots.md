@@ -6,7 +6,7 @@ excluding `-diag`).
 
 Focus areas (from the calibration brief): highlight component, shadow, naming
 convention, format. A few adjacent rules are included where they were obvious
-from the reference set (cursor, PII) — these can be kept or deleted on review.
+from the reference set (PII) — these can be kept or deleted on review.
 
 The skill uses this file as a checklist. Each rule has:
 
@@ -278,48 +278,7 @@ rectangle.
   chrome visible, but no grey border or drop shadow outside that chrome;
   the dark-theme background runs to the image edge.
 
-## 7. Cursor — only where the interaction can't otherwise be understood
-
-* **Severity:** ⚠️
-* **Check:** a cursor is no longer expected on every click/drag/hover
-  screenshot — most current screenshots don't have one, and that's fine.
-  Only flag a missing cursor when the interaction genuinely can't be
-  understood from what else is on screen:
-    * **Drag operations** — a static highlight can't show motion; pair the
-      cursor with the red arrow from rule 5.
-    * **Hover-revealed content** — a tooltip, flyout, or preview that only
-      appears on hover, where the element that actually triggers it (not
-      just something else nearby) has no red highlight, native selection
-      state, or callout of its own.
-
-  Whenever a red highlight rectangle, a native selection state (rule 3), or a
-  numbered callout (rule 4) already marks the single focal element for a
-  plain click, a missing cursor is **not** a finding — the target is already
-  unambiguous. A highlight elsewhere in the same image, on a different
-  element than the one that triggers the hover state, doesn't count — check
-  that the marked element and the hover-trigger element are the same one.
-  Informational screenshots (output panels, result views, overviews) still
-  don't need a cursor either. When used, a cursor is one of the three Figma
-  cursor components — never a raw vector: `cursor-white`, `cursor-black`,
-  `cursor-hand`.
-* **Pass example (cursor not required):** `creating-connection-pl.png`,
-  `a2a-connection-pl.png`, `a2a-details-pl.png`, `a2a-auth-details-pl.png`,
-  `a2a-public-element-odcs.png`, `a2a-call-odcs.png` — each has a red
-  highlight or a native selection state (rule 3) already marking the target,
-  so the lack of a cursor isn't flagged. `aggregate-create-ss.png` (cursor on
-  the right edge of the highlighted menu item) and `add-source-ss.png`
-  (cursor just below the **Add source** button) also pass — having a cursor
-  is still fine, it's just no longer required.
-* **Fail example:** `a2a-supported-auth-pl.png` — the **Authentication**
-  column header has a red highlight (marking that column as the step's
-  focus), but the floating tooltip ("Bearer token, API key, Basic") is
-  triggered by hovering a specific row's truncated auth-methods badge, not
-  the header. That row's badge has no highlight, selection state, or
-  callout of its own and no cursor either, so the reader can't tell what to
-  hover to reproduce the tooltip — this is exactly the "highlight is on a
-  different element than the hover trigger" case rule 7 still catches.
-
-## 8. No PII / customer data
+## 7. No PII / customer data
 
 * **Severity:** ❌
 * **Check:** any personal data shown is obviously synthetic — no real names
@@ -331,7 +290,7 @@ rectangle.
 * **Fail example:** would be a screenshot showing `@outsystems.com` emails
   of real people, or a support ticket with a customer's company name.
 
-## 9. No internal environment URLs or hostnames
+## 8. No internal environment URLs or hostnames
 
 * **Severity:** ⚠️
 * **Check:** no internal OutSystems infrastructure hostname or staging
@@ -364,7 +323,7 @@ rectangle.
   (footer shows `eng-stage-us-01.outsystems.dev`), a screenshot with a
   browser tab or address bar showing `personal-z1f36vp9.outsystems.dev`.
 
-## 10. Theme must match the captured surface
+## 9. Theme must match the captured surface
 
 * **Severity:** ❌ when the theme contradicts the mandate in the table
   below; ⚠️ when the suffix isn't listed yet.
@@ -398,14 +357,13 @@ rectangle.
 * **Fail example:** `apps-lalal-pl.png` (light-mode, but `-pl` must be
   dark), `data-mashup-odcs.png` (dark-mode, but `-odcs` must be light).
 
-## 11. Maximum width — 1200 px
+## 10. Maximum width — 1200 px
 
 * **Severity:** ⚠️
 * **Check:** the PNG's pixel width is at most 1200 px. Wider captures render
   poorly on the docs site and are hard to re-use. Heights are not
   constrained. **Verdict comes from `scripts/check_metadata.py`
-  (`width.verdict` and `width.px`; numbered `width` in the JSON refers to
-  this rule even though it's now rule 11).**
+  (`width.verdict` and `width.px`).**
 * **Pass example:** `aggregate-server-side-ss.png` (533 × 593).
 * **Fail example:** any export wider than 1200 px — e.g. a full retina
   editor grab at 2560 × 1440.

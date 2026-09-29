@@ -19,6 +19,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - configure-rest-oauth
 ---
 
 # Use OAuth 2.0 client flow authorization in consumed REST API web services

@@ -19,6 +19,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - payments-plugin-setup
+  - trigger-payment-flow
 ---
 
 # Payments Plugin

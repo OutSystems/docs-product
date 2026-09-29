@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - request-payload-examples
 ---
 
 # Payload request examples when consuming a single REST method

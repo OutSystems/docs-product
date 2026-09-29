@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - social-login-flow
+  - social-login-response
+  - social-login-setup
 ---
 
 # Social Login Plugin

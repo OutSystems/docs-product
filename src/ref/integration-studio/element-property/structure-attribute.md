@@ -15,6 +15,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - structure-attr-properties
 isautopublish: true
 ---
 

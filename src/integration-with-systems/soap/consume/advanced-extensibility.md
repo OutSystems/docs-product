@@ -20,6 +20,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - custom-request-response
 ---
 
 # Use Advanced Extensibility

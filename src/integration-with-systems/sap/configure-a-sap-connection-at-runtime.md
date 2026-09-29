@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - configure-sap-connection
 ---
 
 # Configure a SAP Connection at Runtime

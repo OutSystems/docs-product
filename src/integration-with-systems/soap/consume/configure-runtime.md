@@ -17,6 +17,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - apply-runtime-settings
 ---
 
 # Configure a SOAP Web Service at Runtime

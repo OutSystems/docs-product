@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - changing-endpoints
 ---
 
 # Change service endpoint at runtime

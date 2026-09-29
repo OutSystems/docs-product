@@ -146,6 +146,11 @@ knowledge-needs:
         Mobile Apps and Reactive Web Apps, so that they can read the action's
         output parameters and handle unhandled errors or $reject() calls once
         the async action completes.
+    - name: Await plugin registration
+      id: await-plugin-registration
+      description: Wants to consume a Cordova plugin's event-driven
+        registration flow as a Promise so the client action can await
+        completion instead of using callbacks.
   - name: Calculation and algorithm examples
     id: calculation-and-algorithm-examples
     subtopics:
@@ -1122,6 +1127,12 @@ knowledge-needs:
         they can choose the right query approach for a data task in OutSystems.
     - name: Joins
       id: joins
+    - name: Mashup query guidance
+      id: mashup-query-guidance
+      description: Wants to write ODC data mashup queries that join entities across
+        databases, place filters correctly, and choose join, filter, aggregate,
+        and sort patterns that perform well when combining data from multiple
+        sources.
     - name: Fix cross join warning
       id: fix-cross-join-warning
       description: Wants to fix the Service Studio scalability suggestion
@@ -1867,6 +1878,12 @@ knowledge-needs:
       description: Wants to implement dynamic sorting on calculated attributes in
         an aggregate that uses external entities, so that the sort works correctly
         at runtime without errors or empty results.
+    - name: Troubleshoot mashup errors
+      id: troubleshoot-mashup-errors
+      description: Wants to troubleshoot aggregate mashup errors that occur when
+        joins or sorts hit the record limit across multiple data sources so they
+        can reduce the data, remove the sort, or move the logic into OutSystems
+        code.
     - name: Create calculated attribute
       id: create-calculated-attribute
       description: Wants to create a calculated attribute in an Aggregate that
@@ -3497,6 +3514,11 @@ knowledge-needs:
       description: Wants to know which built-in function groups are available in ODC
         workflow expressions, so they can choose expressions that work in
         workflows.
+    - name: Workflow components
+      id: workflow-components
+      description: Wants to identify the workflow nodes available in the ODC
+        Workflow editor and what each one does when building a workflow, so
+        that they can choose the right component for each step.
     - name: Add decision activity
       id: add-decision-activity
       description: Wants to add a Decision activity to an ODC workflow, defining
@@ -3534,6 +3556,11 @@ knowledge-needs:
         HumanActivityRelease, ProcessTerminate, and close events change the
         node between Running, Waiting, Open, Completed, Terminated, and Error
         states, so they can predict runtime transitions.
+    - name: Workflow node statuses
+      id: workflow-node-statuses
+      description: Wants to understand the runtime statuses of ODC workflow nodes
+        and what they mean, so that they can interpret workflow execution and
+        troubleshoot activity behavior.
     - name: Manual task notifications
       id: manual-task-notifications
       description: Wants to build custom notifications for pending human
@@ -3603,6 +3630,12 @@ knowledge-needs:
       it, by triggering its execution from the app and reviewing instance
       details and errors in the Instances tab of the ODC Portal, so that
       issues are caught before the workflow reaches production.
+  - name: Troubleshoot workflows
+    id: troubleshoot-workflows
+    description: Wants to troubleshoot workflow instances in ODC Portal by checking
+      status, reviewing instance details, investigating errors, and retrying
+      activities after fixes, so they can identify and resolve workflow
+      problems.
   - name: Deploy a workflow
     id: deploy-workflow
     description: Wants to deploy a workflow and its app to the QA stage and
@@ -7395,6 +7428,11 @@ knowledge-needs:
         OutSystems 11, including that it is reusable across screens,
         encapsulates its own logic, and improves maintainability, so that they
         can distinguish true and false statements about Web Blocks.
+    - name: Create web block
+      id: create-web-block
+      description: Wants to create a Web Block in Service Studio for OutSystems 11,
+        add input parameters, and bind an Aggregate to its UI so the block
+        displays entity data as a reusable component.
   - name: Adding a Widget or OS UI pattern
     id: add-widget-ui-pattern
     subtopics:
@@ -10400,6 +10438,11 @@ knowledge-needs:
         Agent Builder app by providing the connection details, testing the
         connection, and saving the source, so that the app can ground
         agents on Azure AI Search content.
+    - name: AI integration overview
+      id: ai-integration-overview
+      description: Wants to understand the roles of the external AI model, the
+        agentic app, and grounding data in an ODC AI integration, so they can
+        map each component to the correct part of the solution.
   - name: Search services for RAG
     id: search-services-rag
     description: Wants to connect ODC apps to external knowledge bases
@@ -17836,6 +17879,11 @@ knowledge-needs:
       id: client-side-trace-limits
       description: Wants to understand client-side trace limits and known limitations, so
         they can decide when to use client-side traces.
+    - name: Server-side trace overview
+      id: server-side-trace-overview
+      description: Wants to understand what server-side traces capture and the
+        trace types ODC records, so they can analyze server-side execution,
+        errors, and performance issues while troubleshooting an app.
     - name: Capture and view traces
       id: capture-and-view-traces
       description: Wants to turn server-side traces on or off and enable

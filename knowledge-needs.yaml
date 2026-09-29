@@ -21,6 +21,10 @@ knowledge-needs:
       id: logic-flows
     - name: What are client actions/when to use client actions
       id: client-actions-when-use
+    - name: Calculate order total
+      id: calculate-order-total
+      description: Wants to calculate an order total in a client action from line item
+        values, so the displayed total amount updates when order details change.
     - name: What are server actions/when to use server actions
       id: server-actions-when-use
     - name: Use system actions
@@ -121,6 +125,12 @@ knowledge-needs:
         Service Studio/ODC Studio, so that the widget is automatically
         wired to trigger the newly created logic without adding a separate
         action and connector afterward.
+    - name: Display price on select
+      id: display-price-on-select
+      description: Wants to display the selected product's price when the
+        product selection changes in a Traditional Web screen, by wiring
+        client-side logic to the selection event, so the price updates for
+        the chosen product.
     - name: Build CRUD server action
       id: build-crud-server-action-odc
       description: Wants to create a server action in ODC Studio with an
@@ -4391,6 +4401,17 @@ knowledge-needs:
       URL path, including which characters are dropped or replaced, the naming
       limit, the Module fallback, and when two apps collide on the same path, so
       that they can choose names that produce predictable, unique URLs.
+    subtopics:
+    - name: App element naming
+      id: app-element-naming
+      description: Wants to name app elements with bounded context prefixes, folder
+        organization, and clear purpose-based names, so that the code is easier to
+        navigate and maintain when an app has more than one bounded context.
+    - name: App library naming
+      id: app-library-naming
+      description: Wants to name apps and libraries using the bounded context, business
+        terms, and a library classification that reflects its purpose, so that the
+        architecture stays understandable and app names produce predictable URLs.
   - name: Core module patterns
     id: core-module-patterns
     subtopics:
@@ -6337,6 +6358,11 @@ knowledge-needs:
         Input Widget in Service Studio, including Name, Variable, Mandatory,
         Max. Length, and Type, so that they can correctly configure a validated
         text input field in a Traditional Web App (O11).
+    - name: Use Label widget
+      id: use-label-widget
+      description: Wants to add and configure a Label widget in a reactive web
+        form in OutSystems 11, so that form fields display a visible label and
+        the input is clearly identified.
     - name: If Widget reference
       id: if-widget-reference
       description: Wants to look up the properties and runtime properties of
@@ -14445,6 +14471,12 @@ knowledge-needs:
         configuring it, testing it, propagating the settings, and applying
         them across environments, so that IT users sign in through the
         selected provider.
+    - name: Configure user provider
+      id: configure-user-provider
+      description: Wants to configure an application module's
+        authentication component by opening the module and editing its
+        User Provider module property, so that the module uses the intended
+        provider.
     - name: Custom federated SSO
       id: custom-federated-sso
       description: Wants to understand how to integrate a centralized federated

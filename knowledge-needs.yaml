@@ -3287,6 +3287,11 @@ knowledge-needs:
         ODC portal when the current secret was not copied or is nearing expiration,
         so the client can keep authenticating to ODC REST APIs with updated
         credentials.
+    - name: API client statuses
+      id: api-client-statuses
+      description: Wants to understand the meaning of API client statuses and what
+        happens when secrets expire or the client is revoked, so they can decide
+        when to generate a new secret or request a new access token in ODC.
   - name: Prevent CSRF attacks
     id: prevent-csrf-attacks
     description: Wants to prevent cross-site request forgery attacks in OutSystems
@@ -3636,6 +3641,13 @@ knowledge-needs:
       status, reviewing instance details, investigating errors, and retrying
       activities after fixes, so they can identify and resolve workflow
       problems.
+    subtopics:
+    - name: View workflow logs
+      id: view-workflow-logs
+      description: Wants to view workflow logs in ODC Portal by selecting a
+        workflow, filtering by instance and context, and reviewing the log
+        entries, so they can analyze workflow execution and troubleshoot
+        issues.
   - name: Deploy a workflow
     id: deploy-workflow
     description: Wants to deploy a workflow and its app to the QA stage and
@@ -8853,6 +8865,16 @@ knowledge-needs:
         their corresponding ODC REST API resource names (environment,
         application role), so they can correctly interpret API reference
         documentation without confusion between the two naming conventions.
+    - name: Asset Configurations API
+      id: asset-configurations-api
+      description: Wants to look up the Asset Configurations API reference,
+        including the base URL and available endpoints, so they can call it
+        correctly when managing ODC asset configuration data.
+    - name: Asset Repository API
+      id: asset-repository-api
+      description: Wants to look up the Asset Repository API reference,
+        including the base URL and available endpoints, so they can call it
+        correctly when managing ODC assets.
     - name: Call API with token
       id: call-api-with-token
       description: Wants to call an ODC public REST API with an access token after
@@ -8871,6 +8893,27 @@ knowledge-needs:
       description: Wants to create a new ODC asset through the Asset Repository API,
         including choosing a valid asset type and using a subtype only for
         LowCodeLibraries, so that the create request succeeds.
+    - name: Build Operations API
+      id: build-operations-api
+      description: Wants to look up the Build Operations API reference, including
+        the base URL and available endpoints, so they can call it correctly when
+        managing ODC build operations.
+    - name: Dependency Management API
+      id: dependency-management-api
+      description: Wants to look up the Dependency Management API reference,
+        including the base URL and available endpoints, so they can call it
+        correctly when managing dependency relationships in ODC.
+    - name: Environment Configurations API
+      id: environment-configurations-api
+      description: Wants to look up the Environment Configurations API reference,
+        including the base URL and available endpoints, so they can call it
+        correctly when managing ODC environment configuration data.
+    - name: Send full request body
+      id: send-full-request-body
+      description: Wants to call the User and Access Management API from ODC Studio with
+        POST, PUT, or PATCH methods by setting Send Default Value to Yes and
+        sending every request field value, so the request body includes the
+        complete data the endpoint expects.
     - name: Native mobile build API
       id: native-mobile-build-api
       description: Wants to use the Native Mobile Build API to configure mobile build

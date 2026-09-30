@@ -3637,6 +3637,18 @@ knowledge-needs:
         Top 10 Mobile Risks lists, so that they can use a recognized
         vulnerability baseline when assessing and securing their
         applications.
+    - name: Authentication risks
+      id: authentication-risks
+      description: Wants to identify the primary risk of authentication
+        vulnerabilities, specifically identity theft or data exposure, so
+        they can recognize the impact of broken authentication in OWASP
+        web security.
+    - name: Software integrity risks
+      id: software-integrity-risks
+      description: Wants to identify scenarios that represent software and
+        data integrity failures in OWASP web security questions, so that
+        they can distinguish risky dependency, CI/CD, auto-update, and
+        deserialization practices from safe behavior.
     - name: Design-time security warnings overview
       id: design-time-security-warnings-overview
       description: Wants to understand which security warnings OutSystems
@@ -4524,6 +4536,12 @@ knowledge-needs:
         its role as a shared, cross-portfolio building block with an independent
         lifecycle, so that they can decide when to use a library in their app
         architecture.
+    - name: ODC architecture overview
+      id: odc-architecture-overview
+      description: Wants to understand that ODC architecture organizes business
+        concepts, UI, logic, and data into loosely coupled applications, so
+        that they can explain the application-based container model used in
+        ODC.
     - name: Theme inheritance
       id: theme-inheritance
       description: Wants to create a base theme in a library and let consumer themes

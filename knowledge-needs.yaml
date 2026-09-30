@@ -501,6 +501,12 @@ knowledge-needs:
         fetch data via data fetch calls, using the On After Fetch event for dependent
         fetches, so that data fetching runs in parallel with screen rendering instead
         of being fully serialized.
+    - name: Screen lifecycle events
+      id: screen-lifecycle-events
+      description: Wants to understand the OutSystems screen lifecycle events and
+        their order, including On Initialize, On Ready, On Render, On Destroy,
+        and On After Fetch, so they know when each event runs while a screen
+        loads and re-renders.
     - name: Optimize mobile loading
       id: optimize-mobile-loading
       description: Wants to reduce a mobile screen's loading time when it depends
@@ -1363,6 +1369,11 @@ knowledge-needs:
         including that they run automatically and asynchronously, stay within
         the screen scope where they are defined, and fetch data from the
         database, so they can identify false statements about them.
+    - name: Aggregate total display
+      id: aggregate-total-display
+      description: Wants to calculate a total from an aggregate after it fetches and
+        only show the chart and total when the aggregate has data, so the
+        screen avoids showing incomplete alarm information.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -5953,6 +5964,10 @@ knowledge-needs:
         avoiding inline styles and ID selectors, centralizing CSS in the
         theme, and using CSS variables, in Service Studio, so their app's
         styling stays maintainable and scalable.
+    - name: CSS hierarchy
+      id: css-hierarchy
+      description: Wants to understand the order OutSystems loads CSS from different
+        scopes, so they know which style wins when selectors conflict.
     - name: Promote style changes
       id: promote-style-changes
       description: Wants to promote visual Styles Editor changes to a reusable CSS
@@ -8286,6 +8301,11 @@ knowledge-needs:
         and the print screen key, in OutSystems 11 traditional web apps,
         mobile apps, and reactive web apps, so that page content is harder
         to copy, print, or screenshot.
+    - name: Context menu lifecycle
+      id: context-menu-lifecycle
+      description: Wants to disable a screen's right-click context menu on
+        OnReady and restore it on OnDestroy, so the restriction applies only
+        while the screen is open.
   - name: Basic front-end architecture
     id: basic-frontend-arch
     subtopics:

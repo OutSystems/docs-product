@@ -177,8 +177,21 @@ knowledge-needs:
         executes and how to configure its Description property, in Service
         Studio, so that they can correctly document logic that runs on every
         server request in a Traditional Web App (O11).
+    - name: On Application Ready
+      id: on-application-ready
+      description: Wants to use the On Application Ready system event to
+        initialize app variables or plugins before the first screen renders,
+        so that startup logic runs once when the app loads, does not rerun on
+        in-app navigation, and reruns on direct reloads or when opening
+        another app.
     - name: How to use Events
       id: how-to-use-events
+    - name: Database event behavior
+      id: database-event-behavior
+      description: Wants to understand how database events trigger after entity record changes and a successful transaction commit, so that they can use OnCreate, OnUpdate, or OnDelete for automatic follow-up logic and know that each trigger event runs once without duplicates.
+    - name: Create database event
+      id: create-database-event
+      description: Wants to create a database event for an entity action in ODC Studio by choosing OnCreate, OnUpdate, or OnDelete, selecting the event and input parameters, and publishing the app, so that the event runs automatically when the entity action commits.
     - name: Screen Events
       id: screen-events
     - name: UI elements Events
@@ -340,6 +353,12 @@ knowledge-needs:
         types, and availability in server-side logic, client-side logic, and
         database aggregates, so that they can convert values between data
         types in expressions.
+    - name: Implicit conversion rules
+      id: implicit-conversion-rules
+      description: Wants to understand when ODC automatically converts compatible
+        data types, including the source and expected type mappings and the
+        Decimal-to-Integer truncation behavior, so they can predict implicit
+        conversion results in expressions.
     - name: Format numbers rounding
       id: format-numbers-rounding
       description: Wants to know how to format Currency, Decimal, and Percent
@@ -1169,6 +1188,11 @@ knowledge-needs:
         databases, place filters correctly, and choose join, filter, aggregate,
         and sort patterns that perform well when combining data from multiple
         sources.
+    - name: Commit before mashup
+      id: commit-before-mashup
+      description: Wants to commit OutSystems entity changes before running a
+        mashup query that combines them with external data, so that the
+        aggregate returns the updated records.
     - name: Fix cross join warning
       id: fix-cross-join-warning
       description: Wants to fix the Service Studio scalability suggestion
@@ -1714,6 +1738,18 @@ knowledge-needs:
         count and backoff intervals, and concurrent execution/duration limits —
         so that they can design event payloads, queues, and consumer logic
         within ODC's supported constraints.
+    - name: Handle ODC event
+      id: handle-odc-event
+      description: Wants to handle an ODC event in the producer or consumer app
+        by adding the public event, choosing a handler server action, and
+        understanding where the handler runs, so that the event logic executes
+        in the correct app.
+    - name: Handle ODC event errors
+      id: handle-odc-event-errors
+      description: Wants to handle errors raised when triggering or consuming
+        ODC events by using All Exceptions handlers in the producer and
+        consumer apps, so that payload-size, queue-capacity, retry-limit, and
+        handler-timeout failures are handled explicitly.
   - name: ODC cloud architecture
     id: odc-cloud-architecture
     description: Wants to understand how OutSystems Developer Cloud (ODC) separates
@@ -1960,6 +1996,11 @@ knowledge-needs:
         DECIMAL_TO_TEXT, TEXT_TO_INTEGER) are available and what behavior to expect
         when converting between data types in SQL queries with external entities in
         ODC, so they can avoid runtime errors and produce correct results.
+    - name: ANSI-92 data types
+      id: ansi-92-data-types
+      description: Wants to know which ANSI-92 SQL data types are available in ODC
+        SQL nodes, including literal syntax, supported ranges, and CAST examples,
+        so they can write correct queries against external entities.
     - name: SQL NULL behavior
       id: sql-null-behavior
       description: Wants to understand how NULL values behave in SQL operators and
@@ -1974,6 +2015,12 @@ knowledge-needs:
         and how to run multiple statements in a single SQL node with transaction
         semantics — so they can write correct queries against external entities without
         syntax errors.
+    - name: SELECT statement syntax
+      id: select-statement-syntax
+      description: Wants to understand how to write ANSI-92 SELECT queries in ODC SQL
+        nodes, including the SELECT, WITH, FROM, WHERE, GROUP BY, HAVING, WINDOW,
+        UNION, ORDER BY, LIMIT, and OFFSET clauses and mashup-query behavior, so they
+        can build correct read queries against external entities.
     - name: SQL query execution
       id: sql-query-execution
       description: Wants to understand how ODC parses, normalizes, and executes SQL
@@ -2175,6 +2222,9 @@ knowledge-needs:
     - name: Troubleshoot FK timeout
       id: troubleshoot-fk-timeout
       description: Wants to increase the SQL query timeout or check database locks when foreign key creation times out during deployment, so the relationship can be created successfully.
+    - name: Purge safeguards
+      id: purge-safeguards
+      description: Wants to plan a data purging strategy that accounts for referential integrity, transient data, and off-peak execution, so records are deleted in the right order, temporary data is removed at the right time, and peak-hour impact stays low.
   - name: Exposing data via REST webservices
     id: rest-webservice-data
   - name: Data isolation

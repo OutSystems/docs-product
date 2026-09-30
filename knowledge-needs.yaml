@@ -2238,6 +2238,38 @@ knowledge-needs:
         recommendations, so that they can identify the root cause of database
         performance problems such as CPU statistics, wait time statistics, and
         workload profile issues.
+    - name: Built-in DB optimizations
+      id: built-in-db-optimizations
+      description: Wants to understand the built-in database optimizations that
+        OutSystems applies automatically, so they can rely on the platform's
+        automatic performance behavior when it accesses the database.
+    - name: Maintain indexes for database queries
+      id: maintain-database-query-indexes
+      description: Wants to add indexes for frequently queried fields and
+        remove indexes that are no longer useful, so database queries remain
+        efficient without unnecessary index maintenance.
+    - name: Isolate large database fields
+      id: isolate-large-database-fields
+      description: Wants to isolate large text and binary fields from
+        frequently accessed data, so routine database queries transfer less
+        data.
+    - name: Avoid cross-server database joins
+      id: avoid-cross-server-database-joins
+      description: Wants to avoid joins across database servers when designing
+        data access, so database queries remain efficient.
+    - name: Cache repeatedly accessed database data
+      id: cache-repeatedly-accessed-database-data
+      description: Wants to use platform caching for data that is accessed
+        repeatedly, so the application makes fewer database calls.
+    - name: Database sharding support
+      id: database-sharding-support
+      description: Wants to know whether OutSystems supports database sharding
+        when evaluating database scaling options for OutSystems applications.
+    - name: Read-only replica routing support
+      id: read-only-replica-routing-support
+      description: Wants to know whether OutSystems supports read-only replica
+        routing when evaluating database scaling options for OutSystems
+        applications.
   - name: Indexes
     id: indexes
     subtopics:
@@ -2295,6 +2327,9 @@ knowledge-needs:
       id: api-rate-limit
     - name: Customize headers
       id: customize-headers
+    - name: Add WS-Addressing
+      id: add-ws-addressing
+      description: Wants to add WS-Addressing elements to consumed SOAP requests in OutSystems 11 by creating an Integration Studio extension that changes the SOAP binding and calling it from the OnBeforeRequestAdvanced callback, so that the generated requests include the required WS-Addressing headers.
     - name: Choose log level
       id: choose-log-level
       description: Wants to choose the appropriate logging level for REST APIs and consumed
@@ -4971,6 +5006,9 @@ knowledge-needs:
       id: document-apis
     - name: Develop the logic of web services
       id: webservice-logic-dev
+    - name: Expose SOAP web service
+      id: expose-soap-web-service
+      description: Wants to expose a SOAP web service in OutSystems 11 by creating the service, adding methods, setting the module namespace, and checking the generated WSDL endpoint and bindings, so that clients can call the published service.
     - name: Test SOAP with SoapUI
       id: test-soap-soapui
       description: 'Wants to test a SOAP web service method built in OutSystems by installing
@@ -5095,6 +5133,16 @@ knowledge-needs:
         output parameter in the error details, locating the related
         complexType and maxOccurs definition in the WSDL, and adding a dummy
         element so the module publishes successfully, in OutSystems 11.'
+    - name: Unsupported SOAP imports
+      id: unsupported-soap-imports
+      description: Wants to identify SOAP WSDL constructs and action names that
+        Service Studio cannot import, so they know when a service needs WSDL
+        changes before consumption.
+    - name: Edit exported WSDL
+      id: edit-exported-wsdl
+      description: Wants to export SOAP definition files from Service Studio,
+        edit them locally to remove or replace unsupported WSDL constructs, and
+        re-import them, so the service can be consumed successfully.
     - name: Changing endpoints
       id: changing-endpoints
     - name: Consume and refresh methods
@@ -9284,6 +9332,30 @@ knowledge-needs:
       publishing it to the LifeTime environment via Service Center, so that they
       can extend LifeTime with functionality tailored to their organization's
       governance or automation needs.
+    subtopics:
+    - name: Plugin development setup
+      id: plugin-development-setup
+      description: Wants to set up a LifeTime plugin development environment by
+        using the application development environment, importing and refreshing
+        sample data from LifeTime, and keeping LifeTime-only APIs, dependency
+        boundaries, and feature toggles in mind, so that plugin work uses the
+        right environment and data.
+    - name: Plugin production deploy
+      id: plugin-production-deploy
+      description: Wants to deploy a LifeTime plugin to the LifeTime environment
+        by packaging it as an .oap or .osp from Service Center and configuring
+        deployment permissions there, so that the final production deploy
+        succeeds.
+    - name: Plugin QA environment decision
+      id: plugin-qa-planning
+      description: Wants to decide whether a LifeTime plugin should use a QA
+        environment, so they can plan an appropriate environment for testing
+        the plugin.
+    - name: Plugin QA environment setup
+      id: plugin-qa-environment-setup
+      description: Wants to install the LifeTime SDK and sample data in a QA
+        environment for a LifeTime plugin and keep the sample data refreshed
+        periodically, so that QA reflects the plugin lifecycle.
   - name: Customize authentication plugin
     id: customize-authentication-plugin
     description: Wants to customize or implement an authentication plugin
@@ -17034,6 +17106,12 @@ knowledge-needs:
         option, receiving time-limited read-and-write credentials for ad-hoc
         troubleshooting, provided their LifeTime version supports the feature
         and they have an existing VPN or AWS Transit Gateway connection.
+    - name: Temporary backup access
+      id: temporary-backup-access
+      description: Wants to request temporary access to an OutSystems Cloud database
+        backup through a support case when they need to recover data from a
+        point in time within the backup retention window, so that they can
+        extract data or run tests against the snapshot.
     - name: Permanent database access
       id: permanent-database-access
       description: Wants to request a permanent database user for an OutSystems Cloud
@@ -17109,6 +17187,33 @@ knowledge-needs:
         application source code and compiled applications are stored, so
         that they can prepare the application server layer before
         deployment.
+    - name: Platform Server storage folders
+      id: platform-server-storage-folders
+      description: Wants to identify the main Platform Server folders that
+        consume disk space, what each folder stores, and which server
+        roles or environment types contain them, so they can understand
+        where disk usage comes from.
+    - name: Safe Platform Server folder deletion
+      id: platform-server-safe-folder-deletion
+      description: Wants to identify which Platform Server cache and
+        application folders can be deleted safely, so they can free disk
+        space without breaking the platform.
+    - name: Recover deleted Platform Server folder content
+      id: recover-platform-server-folder-content
+      description: Wants to know how to recover deleted content from
+        Platform Server folders, so they can restore files needed by the
+        platform.
+    - name: Platform Server automatic cleanup
+      id: platform-server-automatic-cleanup
+      description: Wants to know when the automatic cleanup service removes
+        old running and repository files, so they can understand when the
+        platform reclaims storage automatically.
+    - name: Platform Server disk sizing
+      id: platform-server-disk-sizing
+      description: Wants to estimate the disk space required for a
+        Platform Server factory based on application size and
+        environment characteristics, so they can provision enough
+        storage and avoid fragmentation.
     - name: Deploy All feature
       id: deploy-all-feature-upgrade
       description: Wants to use the optional modules deployment step (Deploy All)

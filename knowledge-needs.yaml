@@ -659,6 +659,21 @@ knowledge-needs:
         actions inside If conditions on server-side logic, or in a screen
         widget''s If condition, Enabled, and Visible properties, so they can
         enforce role-based authorization on both logic and UI elements.'
+    - name: Share public roles
+      id: share-public-roles
+      description: Wants to make an application role public and reference it from
+        a consumer app, so that the consumer app can use the shared role for
+        access control.
+    - name: Check access to public roles
+      id: check-public-role-access
+      description: Wants to validate a user's access to a shared role in a
+        consumer app by using the generated Check<Role> actions, so that the
+        app can enforce role-based access control.
+    - name: Expose role grant and revoke actions
+      id: expose-role-grant-revoke
+      description: Wants to expose role grant and revoke behavior through
+        service actions, so that consumer apps can manage users' access to
+        shared roles.
     - name: Manage menu access
       id: manage-menu-access
       description: Wants to hide menu entries with a Data Action that combines
@@ -757,6 +772,11 @@ knowledge-needs:
         including how they reveal each module''s purpose, enforce the reference
         architecture, and normalize common patterns, so they can decide when
         to apply a convention.'
+    - name: Split UI modules
+      id: split-ui-modules
+      description: Wants to split UI elements by functionality into separate
+        modules in OutSystems mobile apps, so they avoid a monolithic UI
+        module structure and keep the app easier to maintain.
     - name: Module properties reference
       id: module-properties-reference
       description: Wants to look up the configuration properties available for
@@ -833,6 +853,11 @@ knowledge-needs:
       description: Wants to add pagination and records-per-page control to a Table
         widget in ODC Studio, so that users can navigate through large datasets in
         configurable page sizes.
+    - name: Limit record fetches
+      id: limit-record-fetches
+      description: Wants to limit how many records a screen fetches and displays by
+        using on-demand fetch, lazy loading, pagination, Max. Records, and SQL
+        LIMIT, so that large lists and tables load efficiently.
     - name: Table sorting setup
       id: table-sorting-setup
       description: Wants to implement user-triggered column sorting on a Table widget
@@ -4305,6 +4330,9 @@ knowledge-needs:
       id: config-app-after-deploy
     - name: App settings
       id: app-settings
+    - name: Apply portal configurations
+      id: apply-portal-configurations
+      description: Wants to apply settings, timer schedules, and REST endpoint values in the ODC Portal per stage, so that each app keeps separate configuration values and runtime changes update asynchronously.
     - name: Set app setting secret
       id: set-app-setting-secret
       description: Wants to mark or unmark an app setting as secret in ODC
@@ -4513,6 +4541,12 @@ knowledge-needs:
       description: Wants to structure an ODC app so it encapsulates one aspect of
         functionality in a single app and keeps the code independent and
         replaceable, so they can organize a solution into modular pieces.
+    - name: Handle breaking changes
+      id: handle-breaking-changes
+      description: Wants to version a reusable element by duplicating it, renaming it,
+        and changing its implementation when a change would break consumers,
+        so they can introduce the new version without disrupting existing
+        consumers.
     - name: Producer and consumer apps
       id: producer-consumer-apps
       description: Wants to identify producer apps and consumer apps in ODC when
@@ -4524,6 +4558,12 @@ knowledge-needs:
         business data between apps via public entities when the data does not
         need complex business-rule encapsulation, so that consumer apps can use
         the entities directly and development effort stays low.
+    - name: Assess producer changes
+      id: assess-producer-changes
+      description: Wants to determine whether a producer change is immediate or
+        deferred for consumers based on weak or strong dependencies, so they
+        can predict runtime impact and know when republishing consumers is
+        required.
   - name: App naming and URLs
     id: app-naming-and-urls
     description: Wants to understand how ODC turns an app's display name into its internal
@@ -5919,6 +5959,12 @@ knowledge-needs:
         performance, customization, widget availability, and icon libraries,
         in ODC Studio, so they can evaluate which framework fits their app's
         technical requirements.
+    - name: Mobile UI overview
+      id: mobile-ui-framework-overview
+      description: Wants to understand what the Mobile UI framework is, what
+        it includes, how it differs from OutSystems UI, and how to customize
+        it, so they can choose and use the right framework for mobile apps in
+        ODC Studio.
 - name: Creating UI
   guid: a6b567df-2deb-4736-bd6d-cf144a9c6262
   topics:
@@ -7628,6 +7674,12 @@ knowledge-needs:
         does not appear in the Toolbox because unused references were
         removed, so that the screen shows how many characters a user has
         entered or has remaining.
+    - name: Use widgets and patterns
+      id: use-widgets-and-patterns
+      description: Wants to build screens with OutSystems widgets and UI
+        patterns instead of high-code, using high-code only in advanced
+        extensibility scenarios, so that screen UI follows platform best
+        practices.
   - name: Build screen layouts
     id: build-screen-layouts
     description: Wants to use Text, Container, Button, and Link widgets to set screen
@@ -7647,6 +7699,12 @@ knowledge-needs:
         and total amount input with display-only widgets, and updating the save
         controls and save action so new and existing orders use the correct
         initial state and navigation.
+    - name: Build patient dashboard
+      id: build-patient-dashboard
+      description: Wants to build a patient dashboard screen with a welcome title, a
+        health-status Tag, past-appointment and next-appointment cards, and
+        blank-state messaging, so that a logged-in patient can review key
+        appointment information at a glance.
   - name: Layouts
     id: layouts
     subtopics:
@@ -10670,6 +10728,12 @@ knowledge-needs:
       description: Wants to understand the roles of the external AI model, the
         agentic app, and grounding data in an ODC AI integration, so they can
         map each component to the correct part of the solution.
+    - name: Use AI models in ODC Studio
+      id: use-ai-models-in-odc-studio
+      description: Wants to use a configured AI model in ODC Studio by
+        building the request structure, calling the generated server action,
+        and handling the response and usage metadata, so that app logic can
+        use the model output.
   - name: Search services for RAG
     id: search-services-rag
     description: Wants to connect ODC apps to external knowledge bases
@@ -12036,6 +12100,11 @@ knowledge-needs:
         variable from the On Render event, in OutSystems 11 mobile apps, so
         that the most relevant content appears first and perceived
         performance improves.
+    - name: Theme CSS placement
+      id: theme-css-placement
+      description: Wants to keep CSS in the mobile theme instead of blocks or
+        screens when styling a mobile app, so the app avoids performance
+        issues and screen-transition problems.
   - name: Data security
     id: mobile-data-security
     description: Wants to protect sensitive data in OutSystems Developer Cloud (ODC)
@@ -12083,6 +12152,12 @@ knowledge-needs:
       description: Wants to set mobile app preferences in the Extensibility Configurations JSON,
         including global and platform-specific values, so that the app uses the
         intended Cordova settings.
+    - name: Set app resources
+      id: set-app-resources
+      description: Wants to configure the resources section in a mobile app extensibility
+        configuration, including global, Android, and iOS resource entries and their
+        target paths, so that bundled files copy to the correct mobile project folders
+        during build.
     - name: App icon sizes
       id: app-icon-sizes
       description: Wants to know the required iOS icon widths and heights and Android icon
@@ -18634,6 +18709,12 @@ knowledge-needs:
         version prerequisites and setting the Custom URL, Page Name, and URL
         Structure screen properties in Service Studio, so that screens have
         clean, keyword-friendly URLs instead of default query strings.'
+    - name: Remove _ts query strings
+      id: remove-ts-query-strings
+      description: 'Wants to remove ODC-generated _ts query strings from
+        Reactive Web URLs by using a reverse proxy or CDN to redirect bot
+        requests to the canonical URL without the parameter, so search
+        engines index a single page instead of duplicate URLs.'
     - name: Create dynamic page titles
       id: create-dynamic-page-titles
       description: 'Wants to create dynamic page titles for Reactive Web

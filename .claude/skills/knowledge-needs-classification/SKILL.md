@@ -54,10 +54,20 @@ This skill does update the input file's own frontmatter, but only the
 2. If the path doesn't exist or can't be read, stop and ask the user to
    provide the correct path — don't guess at a different path or proceed
    without the content.
-3. Read the whole piece before drafting anything — don't propose knowledge
+3. Determine the applicable identifier key: `kp-guid` if the current
+   repository name starts with `training`, otherwise `guid`. Get the
+   repository name from the **remote** repository, not the local folder
+   name — a worktree's folder often doesn't match the repo name. Prefer
+   `gh repo view --json name --jq '.name'` when the `gh` tool is available;
+   otherwise fall back to `git remote get-url origin` and take the last
+   path segment, stripped of a trailing `.git`. If the file's frontmatter
+   does not contain that identifier field, stop — files without an
+   identifier don't need knowledge needs classification and are excluded
+   from this skill.
+4. Read the whole piece before drafting anything — don't propose knowledge
    needs section-by-section without having seen the full document first,
    since later sections can change how earlier ones should be scoped.
-4. Note whether a `topic` field already exists in the file's frontmatter,
+5. Note whether a `topic` field already exists in the file's frontmatter,
    and if so, its current values — this is used as a prior in Step 9.
 
 ## Step 2 — Fetch the register

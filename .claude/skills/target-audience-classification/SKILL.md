@@ -28,10 +28,12 @@ The taxonomy and the prior must come from different sources. Never use the file'
 1. Read the provided file's front-matter and note the current `audience` values, if any.
     * These are used as a prior in Step 2 — they reflect a previous classification of this content.
     * If the field is missing or empty, that's a cold start.
+1. Determine the applicable identifier key for the content piece: `kp-guid` if the current repository name starts with `training`, otherwise `guid`. Get the repository name from the **remote** repository, not the local folder name — a worktree's folder often doesn't match the repo name. Prefer `gh repo view --json name --jq '.name'` when the `gh` tool is available; otherwise fall back to `git remote get-url origin` and take the last path segment, stripped of a trailing `.git`.
 1. Stop immediately if any of the following occurs:
     * Unable to find the `metadata.yaml` file
     * The `audience` field is missing from `metadata.yaml`
     * Duplicated values exist in the `metadata.yaml` `audience` list
+    * The content piece's front-matter does not contain the applicable identifier field determined above — files without an identifier don't need a target audience and are excluded from this classification.
 
 ### Output requirements
 

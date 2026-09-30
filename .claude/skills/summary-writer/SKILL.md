@@ -27,10 +27,12 @@ Understand the content of the provided file so you can generate an accurate summ
     * Read each reachable linked file for context. Do not follow links found inside those files.
     * All linked files are read-only — do not modify them.
     * Use the context gathered from linked files only to inform the summary for the current file. Do not summarize the linked files themselves.
+1. Determine the applicable identifier key for the content piece: `kp-guid` if the current repository name starts with `training`, otherwise `guid`. Get the repository name from the **remote** repository, not the local folder name — a worktree's folder often doesn't match the repo name. Prefer `gh repo view --json name --jq '.name'` when the `gh` tool is available; otherwise fall back to `git remote get-url origin` and take the last path segment, stripped of a trailing `.git`.
 1. Stop immediately if any of the following occurs:
     * The file cannot be found or read.
     * The file has no identifiable front-matter or content.
     * The file is `metadata.yaml` — this file is read-only and must never be modified by this skill.
+    * The file's front-matter does not contain the applicable identifier field determined above — files without an identifier don't need a summary and are excluded from this classification.
 
 ### Output requirements
 

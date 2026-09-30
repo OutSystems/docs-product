@@ -149,6 +149,18 @@ Validations run on PRs via `.github/workflows/`. Workflow names and checks vary 
 * `build.yml`: documentation build
 * `visual-assets-validate.yml` / `visual-assets-pr.yml`: image/diagram validation
 
+## Pull requests
+
+* Pull request titles must include the Jira ticket ID(s) relevant to the change. Valid Jira tickets ids contain the prefix `RDTKF-` or `TK-`, followed by a number (e.g. RDTKF-1234, TK-5678).
+* Source the ticket ID(s) from, in order of preference:
+    1. The conversation, if the user referenced ticket ID(s) when asking for the work (for example, "implement TK-25291"). Prefer this source since it can surface more than one ticket.
+    2. The current branch name, if it contains a valid ticket ID (`rdtkf-\d+` or `tk-\d+`). Branch names are often in lowercase. Use the uppercase form in the pull request tiltle (i.e. `rdtkf-1234` becomes `RDTKF-1234` in the pull request title).
+* A change can address more than one ticket. Include all relevant ticket IDs in the title, not just first one found.
+* If no Jira ticket ID can be found from either source, ask the user for one before opening the PR.
+* Format: Jira ticket ID(s) first, space-separated, followed by a space and the plain-text short summary of the pull request. No colon, brackets, or other punctuation around the ticket ID, since automations that parse the title can break on non-ASCII characters or unexpected punctuation.
+    * Single ticket: `RDTKF-25291 Fix heading hierarchy in MABS versions page`
+    * Multiple tickets: `RDTKF-25291 TK-1234 Fix heading hierarchy in MABS versions page`
+
 ## Editor settings
 
 * Indent with 4 spaces (configured in `.editorconfig`)

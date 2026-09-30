@@ -22,10 +22,12 @@ Do not read tags from the front-matter of the content piece.
 1. Analyze the @metadata.yaml file, and extract the values from the `tags` field.
     * List each tag identified
     * Proceed to the next step without user confirmation, as this is just an information collection step.
+1. Determine the applicable identifier key for the content piece: `kp-guid` if the current repository name starts with `training`, otherwise `guid`. Get the repository name from the **remote** repository, not the local folder name — a worktree's folder often doesn't match the repo name. Prefer `gh repo view --json name --jq '.name'` when the `gh` tool is available; otherwise fall back to `git remote get-url origin` and take the last path segment, stripped of a trailing `.git`.
 1. Stop immediately if any of the following occurs:
     * Unable to find the file
     * The `tags` field is missing
     * Duplicated values exist in the `tags` list
+    * The content piece's front-matter does not contain the applicable identifier field determined above — files without an identifier don't need tags and are excluded from this classification.
 
 ### Output requirements
 
@@ -75,8 +77,8 @@ Use sibling files — files that share the same identifier but target a differen
 
 ### Instructions
 
-1. Read the front-matter of the current file and determine which identifier key is present: `kp-guid` or `guid`. Use whichever is present.
-    * If neither is present, skip this entire step and proceed to the confirmation below.
+1. Use the identifier key (`guid` by default, or `kp-guid` for training repositories as defined above) and value determined in Step 1 (the file already passed that check, so the key is guaranteed present).
+   * If neither is present, skip this entire step and proceed to the confirmation below.
 1. Search the repository for other Markdown or YAML files that contain the same key and value, and are not the current file. Exclude any file where the `locale` field is present in the front-matter and does not start with `en`.
     * If no sibling files are found, skip the remaining instructions in this step and proceed to the confirmation below.
 1. For each tag in the current file's recommended list:

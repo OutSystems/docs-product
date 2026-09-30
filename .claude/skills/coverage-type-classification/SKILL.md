@@ -39,11 +39,12 @@ Understand the content of the provided file so you can classify it accurately.
     * Identify all files explicitly referenced in the content or front-matter (for example, linked Markdown files, included fragments, or referenced resources).
     * Read each reachable linked file for context. Do not follow links found inside those files.
     * All linked files are read-only — do not modify them.
+1. Determine the applicable identifier key for the content piece: `kp-guid` if the current repository name starts with `training`, otherwise `guid`. Get the repository name from the **remote** repository, not the local folder name — a worktree's folder often doesn't match the repo name. Prefer `gh repo view --json name --jq '.name'` when the `gh` tool is available; otherwise fall back to `git remote get-url origin` and take the last path segment, stripped of a trailing `.git`.
 1. Stop immediately if any of the following occurs:
     * The file cannot be found or read.
     * The file has no identifiable front-matter or content.
     * The file is `metadata.yaml` — this file is read-only and must never be modified by this skill.
-    * The file is `README.md` — README files don't need a coverage type and are excluded from this classification.
+    * The file's front-matter does not contain the applicable identifier field determined above — files without an identifier don't need a coverage type and are excluded from this classification.
 
 ### Output requirements
 

@@ -22,6 +22,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - unblock
+topic:
+  - troubleshoot-idp-errors
 ---
 
 # Troubleshooting

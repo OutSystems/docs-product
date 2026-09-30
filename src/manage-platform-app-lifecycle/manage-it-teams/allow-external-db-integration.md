@@ -22,6 +22,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - grant-publish-access
 ---
 
 # Allow Integrations With External Databases

@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - delegate-team-permissions
 ---
 
 # Allow Managers to Handle Permissions of IT Teams

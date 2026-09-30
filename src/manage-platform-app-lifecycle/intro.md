@@ -21,6 +21,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+topic:
+  - daily-sync-schedule
+  - lifetime-overview
 ---
 
 # Managing OutSystems platform and application lifecycle

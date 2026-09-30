@@ -6,6 +6,7 @@ figma:
 coverage-type:
   - unblock
 topic:
+  - module-reference-tradeoffs
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:

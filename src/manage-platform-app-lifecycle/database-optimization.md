@@ -19,6 +19,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - built-in-db-optimizations
+  - database-sharding-support
+  - maintain-database-query-indexes
 ---
 
 # Database optimization

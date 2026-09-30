@@ -16249,6 +16249,12 @@ knowledge-needs:
         an O11 to ODC code conversion ends with errors — including reading conversion
         logs and exporting the troubleshooting zip file — so that they can diagnose
         the failure or provide the necessary data to OutSystems Support.
+    - name: Fix module open error
+      id: fix-module-open-error
+      description: Wants to recover an O11 module that the Conversion Assessment
+        Tool cannot open by fixing errors or outdated references in Service Studio,
+        republishing the module, or publishing an earlier version from Service
+        Center, so that the module can be assessed for ODC conversion.
     - name: Adapt converted SQL
       id: adapt-converted-sql
       description: Wants to validate and adapt SQL nodes in a converted ODC app to
@@ -16256,6 +16262,12 @@ knowledge-needs:
         queries, handling limitations (Expand Inline, external entities, BEGIN-END
         blocks), and testing all SQL nodes — so that the converted app's data queries
         work correctly in ODC.
+    - name: Fix scope errors
+      id: fix-scope-errors
+      description: Wants to fix errors caused by aggregates or SQL nodes being
+        referenced outside the scope where they were declared after converting
+        an O11 Service module to ODC, so that each node is used only in the same
+        scope where it runs.
     - name: SQL conversion mapping
       id: sql-conversion-mapping
       description: Wants to understand the exact syntax mappings applied automatically
@@ -16314,6 +16326,18 @@ knowledge-needs:
         architecture, either restricted from use inside aggregates or removed
         entirely, after O11 to ODC code conversion, so that they can rework the
         affected logic instead of applying a direct fix.
+    - name: Asset consuming an Application Theme
+      id: arch-app-theme
+      description: Wants to refactor an O11 asset that consumes an Application Theme
+        so the dependency becomes valid for ODC, either by moving the theme into
+        the consumer asset or by sharing it from an ODC Library before code
+        conversion.
+    - name: Private structure asset
+      id: arch-private-structure
+      description: Wants to refactor an O11 asset that consumes a Structure that is
+        private by default in ODC, so the asset keeps working after code conversion
+        by copying the Structure into the consumer or exposing it through a Service
+        Action.
     - name: Traditional Web modules
       id: trad-web-modules-pattern
       description: Wants to convert Traditional Web modules to Service or Reactive
@@ -16353,6 +16377,12 @@ knowledge-needs:
         environment, user extension tables, role migration, and the option to skip
         end-user migration, so that they can prepare their environment and identity
         setup before migrating.
+    - name: Validate end-user emails
+      id: validate-end-user-emails
+      description: Wants to ensure all active and inactive end users have valid,
+        unique email addresses in the source environment before an O11 to ODC data
+        migration, so the conversion assessment pattern is cleared and the migration
+        can continue.
     - name: Cancel data migration
       id: cancel-data-migration
       description: Wants to know when and how to cancel an in-progress O11 to ODC data
@@ -17126,6 +17156,12 @@ knowledge-needs:
       standard Cloud or self-managed steps, understanding this option only
       applies to licenses purchased before a specific cutoff date, so that they
       add environments correctly under a hybrid setup.
+  - name: Clone environment database
+    id: clone-environment-database
+    description: Wants to migrate an OutSystems environment by restoring a
+      cloned database, cleaning the environment-specific configuration, and
+      rebuilding the platform in either a fresh installation or an existing
+      installation, so that the cloned environment runs correctly.
   - name: IIS application pool management
     id: iis-application-pool-management
     subtopics:
@@ -17959,6 +17995,13 @@ knowledge-needs:
         pressing SEND, so that developers can better understand reported
         issues, provided the feedback feature is activated in the
         environment.
+    - name: Handle app feedback
+      id: handle-app-feedback
+      description: Wants to review submitted feedback in the App Feedback
+        application by opening feedback items from LifeTime, reviewing the
+        details and screenshot, launching the affected screen in Service
+        Studio, and closing resolved requests, so that administrators can
+        act on reported issues.
   - name: SLOWSQL log messages
     id: slowsql-log-messages
     description: Wants to interpret SLOWSQL log messages in Service Center's

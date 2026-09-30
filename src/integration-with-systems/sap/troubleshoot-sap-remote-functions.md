@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - troubleshoot-sap-calls
 ---
 
 # Troubleshoot SAP Remote Functions

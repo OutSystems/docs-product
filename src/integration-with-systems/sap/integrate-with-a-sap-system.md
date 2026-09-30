@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - integrate-with-sap
 ---
 
 # Integrate with a SAP System

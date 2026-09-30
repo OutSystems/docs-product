@@ -16,6 +16,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+topic:
+  - custom-soap-encoding
 ---
 
 # Use a different character encoding

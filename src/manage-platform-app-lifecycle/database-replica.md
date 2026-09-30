@@ -18,6 +18,9 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - database-user-permissions
+  - permanent-database-access
 ---
 
 # Using Database Replica for reporting

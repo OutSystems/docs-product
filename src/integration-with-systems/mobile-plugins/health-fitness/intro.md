@@ -19,6 +19,10 @@ coverage-type:
   - understand
   - remember
   - apply
+topic:
+  - health-background-jobs
+  - health-fitness-permissions-availability
+  - health-fitness-query-data
 ---
 
 # Health and Fitness Plugin using HealthKit and Health Connect

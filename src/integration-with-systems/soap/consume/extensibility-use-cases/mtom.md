@@ -19,6 +19,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - custom-soap-encoding
 ---
 
 # Use MTOM

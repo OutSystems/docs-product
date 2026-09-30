@@ -858,6 +858,13 @@ knowledge-needs:
       description: Wants to limit how many records a screen fetches and displays by
         using on-demand fetch, lazy loading, pagination, Max. Records, and SQL
         LIMIT, so that large lists and tables load efficiently.
+    - name: Optimize data fetching
+      id: optimize-data-fetching
+      description: Wants to optimize how a screen fetches and displays data by
+        choosing aggregates or data actions appropriately, keeping count queries
+        efficient, showing a loading state while data loads, and precomputing or
+        indexing expensive work, so that the screen loads quickly and stays
+        responsive.
     - name: Table sorting setup
       id: table-sorting-setup
       description: Wants to implement user-triggered column sorting on a Table widget
@@ -4547,6 +4554,12 @@ knowledge-needs:
         and changing its implementation when a change would break consumers,
         so they can introduce the new version without disrupting existing
         consumers.
+    - name: Producer runtime impact
+      id: producer-runtime-impact
+      description: Wants to understand how changes in a producer's exposed
+        functionality affect consumer apps at runtime depending on whether the
+        dependency is weak or strong, so they can predict immediate, deferred,
+        and TrueChange impacts.
     - name: Producer and consumer apps
       id: producer-consumer-apps
       description: Wants to identify producer apps and consumer apps in ODC when
@@ -6000,6 +6013,13 @@ knowledge-needs:
         the Toolbox, drag it into Main Content, and configure its optional
         properties in Service Studio, so that content is visually separated
         in O11.
+    - name: Use Scrollable Area pattern
+      id: use-scrollable-area-pattern
+      description: Wants to add the Scrollable Area UI Pattern to a screen, drag
+        it into Main Content, add content to the placeholder, and configure its
+        orientation, height, width, and scrollbar type in ODC Studio, so that
+        scrollable content displays correctly in mobile apps and reactive web
+        apps.
     - name: Style Card Sectioned
       id: style-card-sectioned
       description: Wants to replace a List Item inside a Gallery/List widget

@@ -646,6 +646,11 @@ knowledge-needs:
         an HRManager role check and a custom Server Action that detects
         whether the current user manages employees, so that the Vacations app
         menu only shows the links the user is allowed to see.
+    - name: Doctor portal access
+      id: doctor-portal-access
+      description: Wants to route doctors to the Appointments screen after login and
+        hide the Appointments menu entry from other roles, so the doctor portal is
+        only visible to users with the Doctor role.
     - name: ODC access control overview
       id: odc-access-control-overview
       description: Wants to understand what access control means in ODC,
@@ -897,6 +902,20 @@ knowledge-needs:
         the SAP integration and editing the connection, so that the app
         uses a different SAP system in that environment without
         republishing the module.
+  - name: Integrate with SAP
+    id: integrate-with-sap
+    description: Wants to create a connection to a SAP system, import
+      remote functions, and configure authentication callbacks or
+      alternate credentials when integrating an application with SAP,
+      so that the app can call SAP BAPIs and exchange data with the
+      SAP system.
+    subtopics:
+    - name: Troubleshoot SAP calls
+      id: troubleshoot-sap-calls
+      description: Wants to troubleshoot SAP remote function calls by checking
+        the logs, increasing the SAP connection logging level for more detail,
+        and using the Debugger when the logs are not enough, so that they can
+        diagnose integration issues.
   - name: Adding test data
     id: adding-test-data
     subtopics:
@@ -2172,6 +2191,12 @@ knowledge-needs:
     subtopics:
     - name: Customize request and response
       id: custom-request-response
+    - name: Customize SOAP encoding
+      id: custom-soap-encoding
+      description: Wants to support non-default character encodings in consumed SOAP web
+        service requests in OutSystems 11 by implementing custom WCF message encoder
+        classes and a binding element in an Integration Studio extension, so that SOAP
+        calls can send and receive XML using encodings beyond the built-in defaults.
     - name: API rate limit
       id: api-rate-limit
     - name: Customize headers
@@ -7427,6 +7452,11 @@ knowledge-needs:
         aggregate result to JSON, assigning ArrangeData.DataJSON to the action
         output, and binding the Grid's Data and IsDataFetched properties, so
         users can review query results in a grid, in OutSystems 11.
+    - name: Data Grid reference
+      id: data-grid-reference
+      description: Wants to look up the OutSystems Data Grid widgets, client actions,
+        structures, and static entities on the reference page, so they can
+        configure grid behavior in Reactive Web Apps (O11).
     - name: Map component overview
       id: map-component-overview
       description: Wants to understand what the OutSystems Map component
@@ -7513,6 +7543,12 @@ knowledge-needs:
       description: Wants to add the Search UI Pattern to a screen and configure
         its input variable in Service Studio, so that users can search for
         content by entering queries.
+    - name: Identify reactive widgets
+      id: identify-reactive-widgets
+      description: Wants to identify which UI elements count as widgets in
+        reactive web apps, so they distinguish built-in widgets such as Button,
+        Dropdown, and Form from non-widget elements like Canvas when answering
+        classification questions or choosing screen elements.
     - name: Use web gallery
       id: use-web-gallery-o11
       description: Wants to add the Gallery UI Pattern to a Traditional Web App
@@ -8951,6 +8987,12 @@ knowledge-needs:
       description: Wants to know the valid range for the offset value in a
         paged request, so they can avoid the OS-FRGE-AST-40004 error and
         fetch assets successfully.
+    - name: REST result pagination
+      id: rest-result-pagination
+      description: Wants to page through REST API result sets with offset and
+        limit parameters, interpret the pagination metadata, and choose a
+        suitable page size, so they can retrieve successive pages from large
+        resource lists.
     - name: API terminology mapping
       id: api-terminology-mapping
       description: Wants to map ODC Portal terminology (stage, end-user role) to
@@ -14355,6 +14397,12 @@ knowledge-needs:
         Swagger reference, including the technical debt endpoints and their
         filters, so that they can integrate the data into third-party tools
         or CI/CD quality gates.
+    - name: Use Code Quality API reference
+      id: use-code-quality-api-reference
+      description: Wants to use the Code Quality API reference to submit code
+        analysis requests and retrieve code quality findings, application
+        scores, and analysis results, so that they can integrate Code Quality
+        data into automation or tooling.
   - name: SAST integration
     id: sast-integration
     subtopics:
@@ -15289,6 +15337,9 @@ knowledge-needs:
       id: deleting-users
     - name: Updating Users
       id: updating-users
+    - name: Deactivate user
+      id: deactivate-user
+      description: 'Wants to deactivate an end-user account in ODC Portal, using the Management > Users page, so that the user loses access without being deleted.'
     - name: Activate deactivated user
       id: activate-deactivated-user
       description: Wants to reactivate a deactivated end-user account in ODC,
@@ -15301,6 +15352,9 @@ knowledge-needs:
     - name: Build registration screen
       id: build-registration-screen
       description: Wants to build the first registration screen in a patient self-service application in Service Studio by adding local variables, photo upload, patient, user, and onboarding fields, responsive columns, and a password input, so that unauthenticated users can enter their details before the next tutorial.
+    - name: Add consent controls
+      id: add-consent-controls
+      description: Wants to add consent checkboxes and a Forge signature pad to a registration form, bind them to onboarding variables, and save the captured signature so users can confirm consent before submitting.
     - name: Build self-reg form
       id: build-self-registration-form
       description: Wants to build the verification code and password inputs

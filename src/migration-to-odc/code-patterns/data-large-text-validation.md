@@ -2,23 +2,24 @@
 guid: c488d2e0-29de-4728-a770-3a31006d7e59
 locale: en-us
 summary: This article provides guidelines for handling text data with length greater than 100 000 000 characters before converting O11 apps to OutSystems Developer Cloud (ODC).
-figma: 
+figma:
 coverage-type:
   - unblock
-topic: 
+topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
-audience: 
+audience:
   - Developer
 tags: data migration, text attributes, outsystems 11, odc conversion, data validation
 outsystems-tools:
   - conversion assessment tool
 helpids: 30720
+isautopublish: true
 ---
 
 # Large text validation
 
-This pattern identifies an entity in the assessed environment with a **Text** data type record exceeding 100 000 000 characters in length, which is the maximum allowed length for text data migration using the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/).
+This pattern identifies an entity in the assessed environment with a **Text** data type record exceeding 100 000 000 characters in length, which is the maximum allowed length for text data migration using the [conversion tool](https://www.outsystems.com/tk/redirect?g=8073a9f1-f82c-4c11-991f-248ae59b09a9).
 
 ## How to solve
 

@@ -14,6 +14,7 @@ outsystems-tools:
   - conversion assessment tool
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Make O11 apps compatible with ODC
@@ -88,14 +89,12 @@ To adjust your O11 apps and make them ODC-compatible, follow these steps:
 
 ## Next steps
 
-* Tag and deploy the updated O11 apps to the QA environment
+After completing all refactoring and resolving assessment findings, take these steps before converting your apps:
 
-* Perform acceptance tests for the updated O11 apps in QA
+* Tag and deploy the updated O11 apps to the QA environment.
+
+* Perform acceptance tests for the updated O11 apps in QA.
 
 After deploying and testing your O11 apps, you can validate if the apps in your conversion plan [have dependencies on apps in other plans](../plan/plan-define-migration-plans.md#dependencies).
 
-<div class="info" markdown="1">
-
-The capabilities to convert your O11 apps and migrate their data and end users to ODC will be released at a future date.
-
-</div>
+After validating dependencies, you're ready to [convert the O11 apps to ODC](https://www.outsystems.com/tk/redirect?g=903fe9c6-5b0c-4c22-929a-abd06a3763e7).

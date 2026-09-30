@@ -14,11 +14,12 @@ tags: data migration, binary attributes, outsystems 11, odc conversion, data val
 outsystems-tools:
   - service studio
 helpids: 30660
+isautopublish: true
 ---
 
 # Large binaries validation
 
-This pattern identifies an entity in the assessed environment with a **binary data** record exceeding 20 MB, which is the maximum allowed size for data migration using the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/)
+This pattern identifies an entity in the assessed environment with a **binary data** record exceeding 20 MB, which is the maximum allowed size for data migration using the [conversion tool](https://www.outsystems.com/tk/redirect?g=8073a9f1-f82c-4c11-991f-248ae59b09a9)
 
 ## How to solve
 

@@ -17,6 +17,7 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+isautopublish: true
 ---
 
 # OutSystems 11 to ODC conversion
@@ -50,36 +51,16 @@ Outcomes:
 * Implementation of O11 app refactorings to be ODC-compatible.  
 * Testing of your refactored O11 app.
 
-### Stage 3: Execute the code conversion
+### Stage 3: Execute the app conversion
 
-<div class="info" markdown="1">
-
-The capabilities to convert the code of your O11 apps to ODC will be released at a future date.
-
-</div>
-
-Once you’ve prepared your O11 app to align with ODC architecture, you can convert the O11 code to ODC-native code, and publish the converted code to your ODC tenant.
+Once you’ve prepared your O11 app to align with ODC architecture, you can convert the app to ODC.
 
 Outcomes:
 
 * Your O11 app code is converted to ODC.  
 * The app’s O11 entities are mapped into ODC counterparts.  
-* The converted ODC app is published and tested in an ODC development stage.
-
-### Stage 4: Execute the data and users migration
-
-<div class="info" markdown="1">
-
-The capabilities to migrate the data and end users of your O11 apps to ODC will be released at a future date.
-
-</div>
-
-After testing and ensuring your app is running as expected in ODC, you can migrate your O11 data and end users to ODC.
-
-Outcomes:
-
 * The O11 business data is migrated to the corresponding ODC entities.  
-* The O11 end users are migrated alongside business data.
+* The O11 end-user profiles are migrated alongside business data to enable end-user login to the converted ODC apps.
 
 ## Next steps
 

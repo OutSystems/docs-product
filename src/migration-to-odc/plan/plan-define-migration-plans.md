@@ -1,12 +1,12 @@
 ---
 guid: ab447daa-dffc-4374-8ae6-986c8f3d63c4
 locale: en-us
-summary: Group small sets of apps using conversion plans based on your different app domains.
+summary: OutSystems Developer Cloud (ODC) conversion plans group ODC assets by domain in the Conversion Assessment Tool and reveal dependencies for order.
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2655-1045
 coverage-type:
   - apply
   - understand
-topic: 
+topic:
 app_type: mobile apps, reactive web apps
 platform-version: o11
 audience:
@@ -17,7 +17,8 @@ tags: app conversion, conversion process, conversion plans
 outsystems-tools:
   - conversion assessment tool
   - app conversion kit
-helpids: 
+helpids:
+isautopublish: true
 ---
 
 # Define conversion plans
@@ -31,6 +32,8 @@ After [mapping a set of O11 apps into ODC assets](plan-map-apps.md), you can gro
 * Decide on the best preparation sequence and the eventual conversion order of your conversion plans.
 
 * Have different development teams focusing only on the [preparation of their own apps](../prepare/prep-intro.md).
+
+The number and size of the apps you include in each conversion plan also affect your overall conversion effort. Refer to [Application size and complexity](plan-intro.md#effort-complexity) when deciding how to group your apps.
 
 ![Diagram showing the Define conversion plans step in the conversion process.](images/prep-define-plans-diag.png "Define conversion plans")
 

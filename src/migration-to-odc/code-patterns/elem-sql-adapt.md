@@ -1,5 +1,5 @@
 ---
-summary: Learn about adapting SQL queries after converting from O11 to ODC.
+summary: OutSystems Developer Cloud (ODC) SQL node conversion adapts O11 queries to Aurora PostgreSQL and validates each node after migration.
 locale: en-us
 guid: 42375e2b-c9a9-4a53-a7a6-910481be7547
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -9,6 +9,8 @@ helpids: 30554
 tags: sql query conversion, database compatibility, postgresql, aurora postgresql, cloud conversion
 audience:
   - Developer
+coverage-type:
+  - apply
 outsystems-tools:
   - none
 isautopublish: true
@@ -28,7 +30,7 @@ These differences mean that after converting your assets from O11 to ODC, you mu
 
 <div class="info" markdown="1">
 
-If you have access to the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/), the tool automatically converts into ODC PostgreSQL syntax most of your O11 SQL nodes for internal entities.
+The [conversion tool](https://www.outsystems.com/tk/redirect?g=007740bc-589f-4f26-8b65-3dc1d7991785) automatically converts into ODC PostgreSQL syntax most of your O11 SQL nodes for internal entities.
 
 </div>
 
@@ -66,7 +68,7 @@ First, let's ensure the rest of the application logic works correctly before tro
 
     <div class="info" markdown="1">
 
-    If you have access to the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/), the tool automatically comments out the converted SQL nodes, leaving the original nodes disabled by its side for comparison.
+    The [conversion tool](https://www.outsystems.com/tk/redirect?g=007740bc-589f-4f26-8b65-3dc1d7991785) automatically comments out the converted SQL nodes, leaving the original nodes disabled by its side for comparison.
 
     </div>
 
@@ -88,7 +90,7 @@ Having test data in place before you uncomment and test your converted SQL nodes
 
     <div class="info" markdown="1">
 
-    If you have access to the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/), you can use the tool to perform the data and users migration from your O11 environment.
+    You can use the [conversion tool](https://www.outsystems.com/tk/redirect?g=8073a9f1-f82c-4c11-991f-248ae59b09a9) to perform data and users migration from your O11 environment.
 
     </div>
 
@@ -110,7 +112,7 @@ Consider maintaining a checklist to track the status (Pending, In Progress, Vali
 
     <div class="info" markdown="1">
 
-    If you have access to the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/), the tool automatically converts into ODC PostgreSQL syntax most of your O11 SQL nodes for internal entities.
+    The [conversion tool](https://www.outsystems.com/tk/redirect?g=007740bc-589f-4f26-8b65-3dc1d7991785) automatically converts into ODC PostgreSQL syntax most of your O11 SQL nodes for internal entities.
 
     </div>
 

@@ -1,7 +1,7 @@
 ---
 guid: 10a12023-68a5-44db-bc0d-c13a8fc2b05a
 locale: en-us
-summary: The data migration of O11 modules with multiple tenants isn't yet supported.
+summary: OutSystems Developer Cloud (ODC) multi-tenancy data migration isn't supported by the conversion tool, so keep data in the default tenant.
 figma:
 coverage-type:
   - unblock
@@ -9,9 +9,8 @@ topic:
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
 tags: multi-tenancy,outsystems developer cloud,o11 modules,non-supported patterns,data migration
 outsystems-tools:
   - conversion assessment tool
@@ -27,7 +26,7 @@ In OutSystems 11, tenants are associated with a user provider. By default, the u
 
 Initially, the effective user provider only has its default tenant. Then additional tenants can be created to enable multi-tenancy.
 
-This pattern identifies modules in the database of the assessed environment with data in those additional tenants, besides the default tenant. The O11 to ODC App Conversion Kit EAP doesn't yet support data migration for this scenario.
+This pattern identifies modules in the database of the assessed environment with data in those additional tenants, besides the default tenant. The conversion tool doesn't yet support data migration for this scenario.
 
 ## How to solve
 

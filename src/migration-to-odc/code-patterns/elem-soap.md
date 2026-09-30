@@ -8,15 +8,15 @@ figma:
 helpids: 30540
 tags: api integration, rest services, soap conversion, integration platforms, outsystems developer cloud
 audience:
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
 outsystems-tools:
   - service studio
   - integration builder
 coverage-type:
   - unblock
   - understand
+isautopublish: true
 ---
 
 # The Asset cannot contain SOAP
@@ -25,13 +25,13 @@ SOAP is an integration technology that has seen a significant reduction in its u
 
 ## How to solve
 
-If you have access to the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/), and want to proceed with the conversion of other ODC assets without SOAP, follow the steps in the following sections.
+To proceed with the conversion of other ODC assets without SOAP, follow the steps in the following sections.
 
-### SOAP Expose
+### Expose SOAP
 
-Consider replacing SOAP Expose with REST Expose.
+Consider exposing the same functionality using REST APIs instead of SOAP Web Services.
 
-### SOAP Consume
+### Consume SOAP
 
 Consider the following options:
 

@@ -1,5 +1,5 @@
 ---
-summary: The automatic conversion of O11 BPTs to ODC Workflows isn't yet supported.
+summary: OutSystems Developer Cloud (ODC) asset consuming a process, replace it with a placeholder action or REST expose to unblock conversion.
 locale: en-us
 guid: a2ff3f16-e5b9-4ed0-ad63-341083e96101
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -15,6 +15,7 @@ outsystems-tools:
 coverage-type:
   - unblock
   - understand
+isautopublish: true
 ---
 
 # Asset consuming a Process
@@ -35,7 +36,7 @@ If you are only preparing your code for the conversion, at present, OutSystems r
 
 </div>
 
-If you have access to the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/), and want to unblock the conversion of this ODC asset, you can consider one of the following:
+To unblock the conversion of this ODC asset, you can consider one of the following:
 
 * Replace the Process consumption with a placeholder Action. Once it's possible to automatically convert O11 BPTs to ODC Workflows, you'll be able to convert the missing Processes and BPT functionality.
 

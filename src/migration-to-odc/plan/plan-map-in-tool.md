@@ -1,12 +1,12 @@
 ---
 guid: 145433d4-f65f-4da8-a017-a170b20257b0
 locale: en-us
-summary: Learn how to map your O11 apps to ODC assets using the Conversion Assessment Tool.
+summary: O11 to OutSystems Developer Cloud (ODC) app mapping in the Conversion Assessment Tool, with auto-mapping, manual mapping, and assessment runs.
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=3180-1486
 coverage-type:
   - understand
   - apply
-topic: 
+topic:
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 audience:
@@ -16,7 +16,8 @@ tags: app conversion, architecture, o11 conversion, app conversion kit, business
 outsystems-tools:
   - conversion assessement tool
   - architecture canvas
-helpids: 
+helpids:
+isautopublish: true
 ---
 
 # Map O11 to ODC architecture in the Conversion Assessment Tool
@@ -37,6 +38,8 @@ Important considerations:
 
 </div>
 
+These limits affect your overall conversion effort: the module cap affects [application size and complexity](plan-intro.md#effort-complexity), and unsupported extensions affect [manual intervention and testing](plan-intro.md#effort-testing) needs.
+
 ## Mapping your apps
 
 You can map your O11 Apps into ODC Assets using two methods:
@@ -44,7 +47,7 @@ You can map your O11 Apps into ODC Assets using two methods:
 * Quick start your ODC blueprint [using auto-mapping](#auto-mapping) to identify potential mappings.
 * [Manually map your O11 apps](#manual-mapping) to new ODC assets.
 
-### Use auto-mapping { #auto-mapping }
+### Use auto-mapping {#auto-mapping}
 
 The Conversion Assessment Tool enables you to quick start your ODC blueprint using auto-mapping.
 
@@ -88,7 +91,7 @@ The Conversion Assessment Tool adds the created ODC assets to your **ODC bluepri
 
 Now that you have bootstrapped your ODC blueprint, proceed with the [mapping of the remaining O11 apps](#manual-mapping).
 
-### Map O11 apps to a new ODC asset { #manual-mapping }
+### Map O11 apps to a new ODC asset {#manual-mapping}
 
 Follow these steps to manually map your O11 apps to ODC assets, either from scratch or to complete the blueprint you started [using auto-mapping](#auto-mapping):
 
@@ -138,7 +141,7 @@ Currently, the **Forge component** and the **extension** aren't mapped to any OD
 
 </div>
 
-## Assess and plan your conversion { #assess-plan }
+## Assess and plan your conversion {#assess-plan}
 
 Every time you create or update a mapping, the Conversion Assessment Tool automatically queues an assessment for that ODC asset. When the assessment finishes, you can go through the report to [assess its architecture and ODC readiness](plan-assess-refactor.md).
 

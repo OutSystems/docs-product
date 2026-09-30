@@ -9,9 +9,8 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
 tags: outsystems 11, data migration, user provider, odc assets, module configuration
 outsystems-tools:
   - conversion assessment tool
@@ -29,7 +28,7 @@ isautopublish: true
 
 For [O11 modules configured as user provider](../../user-management/end-user-manage/end-user-authentication/single-sign-on.md#different-user-provider), the **Effective User Provider** module can be changed in the Service Center console, affecting all modules using that user provider.
 
-This pattern identifies modules in the database of the assessed environment with an effective user provider different from **Users**. The O11 to ODC App Conversion Kit EAP doesn't yet support data migration for this scenarios.
+This pattern identifies modules in the database of the assessed environment with an effective user provider different from **Users**. The conversion tool doesn't yet support data migration for this scenario.
 
 ## How to solve
 

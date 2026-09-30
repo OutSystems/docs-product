@@ -17,6 +17,7 @@ coverage-type:
   - apply
 topic:
   - review-assessment-report
+isautopublish: true
 ---
 
 # Assess app architecture and ODC readiness
@@ -31,7 +32,7 @@ The assessment report helps you plan your conversion to ODC, by supporting you w
 
 * Adjust the mapping of your O11 apps to ODC architecture.
 
-* Understand and decide on what adjustments your team needs to make in O11 before migrating the apps to ODC. This information is important for your development team, so they can estimate the refactoring effort and [prepare for the app conversion](../prepare/prep-refactor-o11-apps.md).
+* Understand and decide on what adjustments your team needs to make in O11 before migrating the apps to ODC. This information is important for your development team, so they can estimate the refactoring effort and [prepare for the app conversion](../prepare/prep-refactor-o11-apps.md). Refer to [Manual intervention and testing](plan-intro.md#effort-testing) for other aspects to include in your estimate.
 
 <div class="info" markdown="1">
 
@@ -39,7 +40,7 @@ Your [LifeTime permissions for the Development environment](mat-permissions.md#a
 
 </div>
 
-## View the assessment report { #report }
+## View the assessment report {#report}
 
 To view the assessment report of an [ODC asset already mapped from your O11 apps](plan-map-apps.md), follow these steps:
 
@@ -57,7 +58,7 @@ If you already created [conversion plans](plan-define-migration-plans.md), follo
 
     ![Screen showing an assessment report in the Conversion Assessment Tool.](images/assess-report-at.png "Assessment report in Conversion Assessment Tool")
 
-## Validate findings { #validate-findings }
+## Validate findings {#validate-findings}
 
 Go through the assessment report to validate its findings:
 

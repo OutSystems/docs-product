@@ -17,8 +17,6 @@ knowledge-needs:
       id: server-vs-client-logic
     - name: How to create an action
       id: how-to-create-an-action
-    - name: Logic Flows
-      id: logic-flows
     - name: What are client actions/when to use client actions
       id: client-actions-when-use
     - name: Calculate order total
@@ -161,6 +159,15 @@ knowledge-needs:
       description: Wants to consume a Cordova plugin's event-driven
         registration flow as a Promise so the client action can await
         completion instead of using callbacks.
+  - name: Logic Flows
+    id: logic-flows
+    subtopics:
+    - name: Simplify long flows
+      id: simplify-long-flows
+      description: Wants to simplify a client action with a long, undocumented
+        flow by breaking it into smaller reusable actions and adding comments
+        when the flow exceeds the platform node-count limits, so that the
+        logic stays maintainable.
   - name: Calculation and algorithm examples
     id: calculation-and-algorithm-examples
     subtopics:
@@ -420,6 +427,9 @@ knowledge-needs:
     subtopics:
     - name: How to debug and troubleshoot application logic
       id: debug-troubleshoot-app-logic
+    - name: Hard-coded statements
+      id: hard-coded-statements
+      description: Wants to identify and remove hard-coded True/False conditions when they make branches unreachable or dead code in ODC actions.
   - name: Creating Variables
     id: creating-variables
     subtopics:
@@ -2130,6 +2140,18 @@ knowledge-needs:
         entities, INSERT, UPDATE, DELETE, and CALL statements commit
         immediately when running Test Query in ODC Studio, so they can
         avoid unintended data changes while validating a SQL node's logic.
+  - name: PostgreSQL upgrades
+    id: postgresql-upgrades
+    description: Wants to understand PostgreSQL major-version upgrades in ODC environments, including how to stage the rollout and review compatibility changes, so they can upgrade safely.
+    subtopics:
+    - name: Plan PostgreSQL upgrade
+      id: plan-postgresql-upgrade
+      description: Wants to plan a PostgreSQL major-version upgrade in an ODC environment, including staging the rollout early and testing in lower environments before moving to later stages, so they can reduce downtime and operational risk.
+    - name: Review PostgreSQL breaking changes
+      id: review-postgresql-breaking-changes
+      description: Wants to review PostgreSQL breaking changes after a version
+        upgrade, including changes that affect SQL query results and behavior,
+        so they can adjust SQL queries that depend on the previous results.
   - name: Compound data
     id: compound-data
   - name: Binary data actions
@@ -7895,6 +7917,11 @@ knowledge-needs:
       description: Wants to split large screens in OutSystems 11, to reduce
         Viewstate size and network payload, so that Traditional Web, mobile,
         and Reactive Web apps respond quickly.
+    - name: Optimize image size
+      id: optimize-image-size
+      description: Wants to reduce image file size and resolution when large
+        images increase bandwidth usage and slow screen loads, app uploads,
+        or publishes, so that mobile and web apps stay responsive.
     - name: Minimize screen parameters
       id: minimize-screen-parameters
       description: Wants to minimize screen parameters in OutSystems 11, to
@@ -8265,6 +8292,12 @@ knowledge-needs:
         entities, aggregates, events, debugging tools, and security settings,
         so that they can orient themselves before building or reviewing a web
         app.
+    - name: ODC web apps
+      id: odc-web-apps
+      description: Wants to understand the key characteristics of ODC web apps,
+        including that they are cross-device single-page applications built
+        with React JS in ODC Studio and request data asynchronously, so that
+        they can identify correct statements about the ODC web app model.
   - name: Creating Screens
     id: creating-screens
     subtopics:
@@ -9537,6 +9570,26 @@ knowledge-needs:
       description: Wants to navigate the ODC Studio IDE as a newcomer by understanding what
         each major area of the interface is for, so they can move through the
         tool without getting blocked by layout or navigation friction.
+    - name: ODC Portal app lifecycle
+      id: odc-portal-app-lifecycle
+      description: Wants to publish an app in ODC Portal, so they can move it
+        through the right lifecycle stage for their release.
+    - name: External integrations
+      id: odc-external-integrations
+      description: Wants to configure external integrations for an ODC app, so
+        it can connect to external systems.
+    - name: Initial setup
+      id: odc-initial-setup
+      description: Wants to complete the initial setup for ODC, so they can
+        begin developing an app.
+    - name: Portal vs Studio
+      id: portal-vs-studio
+      description: Wants to distinguish ODC Studio from ODC Portal, so they know
+        Studio is the IDE and Portal is the web console for managing apps and users.
+    - name: Open apps in ODC Studio
+      id: open-apps-in-odc-studio
+      description: Wants to open an app in ODC Studio from ODC Portal, so they
+        can start editing it in ODC Studio.
     - name: Open OML files in ODC Studio
       id: open-oml-files-in-odc-studio
       description: Wants to open a local `.oml` file in ODC Studio, so they can
@@ -10357,6 +10410,11 @@ knowledge-needs:
         access it provides to sample apps, the playground, model and data source
         configurations, and components, so they can navigate the tool and find
         the right entry point for their task.
+    - name: Install and access Agent Builder
+      id: agent-builder-process
+      description: Wants to install the AI Agent Builder app and assign users the
+        required role, so they can access the builder and start configuring an
+        agent.
     - name: Create AI agent
       id: create-ai-agent
       description: Wants to create and configure an AI agent in AI Agent Builder
@@ -14602,6 +14660,14 @@ knowledge-needs:
         module, category, or status, and reviewing a code pattern's Impact
         and How to resolve information, so that they can understand why it
         counts as debt and how to fix it.
+    - name: Add missing descriptions
+      id: add-missing-descriptions
+      description: Wants to fix the missing-descriptions maintainability
+        finding by adding meaningful descriptions to a module, its public
+        elements, related entities, and input and output parameters, while
+        leaving optional entity and structure attribute descriptions unchanged,
+        so that the module passes the maintainability check and the finding is
+        resolved.
     - name: Ignore modules
       id: ignore-modules
       description: Wants to exclude specific modules from the OutSystems 11

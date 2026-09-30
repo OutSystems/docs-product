@@ -2261,6 +2261,11 @@ knowledge-needs:
       id: cache-repeatedly-accessed-database-data
       description: Wants to use platform caching for data that is accessed
         repeatedly, so the application makes fewer database calls.
+    - name: Follow database installation checklist
+      id: follow-database-installation-checklist
+      description: Wants to follow database-related recommendations in the
+        OutSystems installation checklist, so that database configuration
+        supports efficient query performance.
     - name: Database sharding support
       id: database-sharding-support
       description: Wants to know whether OutSystems supports database sharding
@@ -2353,6 +2358,15 @@ knowledge-needs:
         environment in Service Center and map the extension's logical database
         to it, so that applications using extension modules can read and write
         data from the correct external database after deployment.
+    - name: Grant publish access
+      id: grant-publish-access
+      description: Wants to let a developer publish an extension that uses a
+        database connection without changing its settings by assigning the
+        developer a default role with Change and Deploy Applications and
+        granting Publish on the connection in Service Center, with Full
+        Control required for the user who configures the extension to use the
+        connection, so they can publish the extension without needing to alter
+        connection settings.
     - name: Import external tables
       id: import-external-tables
       description: Wants to import entities from external tables or views in Integration Studio by selecting the database connection, selecting the tables and views, defining the logical database, reviewing the data types, and publishing the extension so that they create entities from external database data.
@@ -8611,6 +8625,38 @@ knowledge-needs:
       id: deploy-dependency-management
     - name: Deployment plan
       id: deployment-plan
+    - name: Understand environment filters
+      id: understand-environment-filters
+      description: Wants to understand what LifeTime environment filters are,
+        how they narrow the Applications list to a user-specific subset of
+        environments, and why smaller filters improve visibility and loading
+        performance, so that they can manage the right environments for a
+        given workflow.
+    - name: Create environment filters
+      id: create-environment-filters
+      description: Wants to create a LifeTime environment filter from the
+        Applications list screen by naming it and selecting environments, so
+        they can focus on the environments relevant to their work.
+    - name: Edit environment filters
+      id: edit-environment-filters
+      description: Wants to edit a LifeTime environment filter from the
+        Applications list screen by changing its name or selected environments,
+        so the filter remains useful as their needs change.
+    - name: Delete environment filters
+      id: delete-environment-filters
+      description: Wants to delete an obsolete LifeTime environment filter from
+        the Applications list screen, so it is no longer available as a view.
+    - name: Switch active environment filter
+      id: switch-active-environment-filter
+      description: Wants to switch the active LifeTime environment filter from
+        the Applications list screen or set a filter as the default view, so the
+        list shows the intended subset of environments.
+    - name: Configure filter screens
+      id: configure-filter-screens
+      description: Wants to enable or disable LifeTime environment filters
+        for the Application Details screen and the Create deployment plan
+        popup in LifeTime Settings, so that the same filter applies
+        consistently across related screens.
     - name: Deploy apps in LT/Portal
       id: deploy-apps-in-lt-portal
     - name: Deploy single module
@@ -14908,6 +14954,14 @@ knowledge-needs:
         API, and instead continue to use username and password or LT login
         authentication plugins, in OutSystems 11, so that they can identify
         exceptions when planning an External IdP rollout.
+    - name: Troubleshoot IdP errors
+      id: troubleshoot-idp-errors
+      description: Wants to troubleshoot common external IdP OIDC
+        configuration and sign-in errors in OutSystems 11 when activating
+        the provider or logging in through the IdP, by checking LifeTime
+        settings, proxy configuration, client secret and client ID values,
+        redirect URIs, and IdP response codes, so that they can restore
+        external IdP sign-in.
     - name: Change authentication provider
       id: change-authentication-provider
       description: Wants to change an OutSystems 11 environment's
@@ -15025,6 +15079,24 @@ knowledge-needs:
         Users component, and redirecting back to the original URL, so that the
         app can use an external identity system while keeping the local
         session.'
+    - name: Auth plugin methods
+      id: auth-plugin-methods
+      description: Wants to implement the OSPlatformAuthentication SOAP methods
+        for configurations, capabilities, activation, deactivation, testing,
+        and user authentication, so that the platform can manage the
+        authentication plugin and authenticate users through it.
+    - name: Auth plugin structures
+      id: auth-plugin-structures
+      description: Wants to define the PluginAPIStatus, Capability, and
+        PluginAPIConfigurationParameter structures and supported capability
+        values for an authentication plugin, so that the plugin returns the
+        expected inputs and outputs.
+    - name: SOAP auth plugin
+      id: soap-auth-plugin
+      description: Wants to implement an external authentication plugin as the
+        OSPlatformAuthentication SOAP web service and assign it as the
+        platform authentication provider, so that OutSystems can call the
+        plugin when activating it and when authenticating IT users.
     - name: External IDPs
       id: external-idps
     - name: Replace external IdP
@@ -15826,6 +15898,12 @@ knowledge-needs:
       id: assign-team-role
       description: Wants to assign roles within a LifeTime team, so that they can
         control team members' access across the applications included in the team.
+    - name: Delegate team permissions
+      id: delegate-team-permissions
+      description: Wants to let a LifeTime team manager add users and assign roles
+        within an IT team by creating a role with Manage Teams and Application Roles
+        and giving that role to the manager, so that the infrastructure manager can
+        delegate team permission management without giving broader access.
     - name: Create a team
       id: create-a-team
       description: Wants to create a LifeTime team, so that they can organize
@@ -17004,6 +17082,22 @@ knowledge-needs:
       description: Wants to start the demo infrastructure VMs and open the LifeTime console
         so they can prepare the infrastructure demo environment before running
         the demo steps.
+  - name: LifeTime management
+    id: lifetime-management
+    subtopics:
+    - name: LifeTime overview
+      id: lifetime-overview
+      description: Wants to understand LifeTime as the unified console for visibility over
+        all environments and for managing deployment, IT users, and security,
+        so that they can control the application lifecycle across their
+        infrastructure.
+    - name: Daily sync schedule
+      id: daily-sync-schedule
+      description: Wants to change LifeTime's daily synchronization schedule so it
+        runs during low activity, by editing the Daily Synchronization schedule
+        in LifeTime Settings for self-managed infrastructures or OutSystems
+        Cloud, so that LifeTime and the environments stay in sync at the
+        preferred time.
   - name: Add new cloud environment
     id: add-new-cloud-environment
     description: Wants to add a new Cloud environment to their OutSystems

@@ -6,7 +6,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30540
-tags: api integration, rest services, soap conversion, integration platforms, outsystems developer cloud
+tags:
+  - REST
+  - SOAP
+  - Troubleshooting
+  - Web services
 audience:
   - Architect
   - Developer

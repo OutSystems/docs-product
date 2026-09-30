@@ -6,7 +6,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30526
-tags: process automation, bpt, process conversion, rest apis, outsystems upgrades
+tags:
+  - Business Processes
+  - REST
+  - Troubleshooting
+  - Workflows
 audience:
   - Developer
   - Architect

@@ -10,7 +10,9 @@ app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
   - Developer
-tags: data migration, text attributes, outsystems 11, odc conversion, data validation
+tags:
+  - Data
+  - Data Integrity
 outsystems-tools:
   - conversion assessment tool
 helpids: 30720

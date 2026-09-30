@@ -6,7 +6,14 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=3306-143
 helpids: 30554
-tags: sql query conversion, database compatibility, postgresql, aurora postgresql, cloud conversion
+tags:
+  - Data
+  - Data Integrity
+  - Performance
+  - Quality Assurance
+  - SQL
+  - Testing
+  - Troubleshooting
 audience:
   - Developer
 coverage-type:

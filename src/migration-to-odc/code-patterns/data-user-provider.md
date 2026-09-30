@@ -11,7 +11,10 @@ platform-version: o11
 audience:
   - Architect
   - Developer
-tags: outsystems 11, data migration, user provider, odc assets, module configuration
+tags:
+  - Data
+  - End-users
+  - Troubleshooting
 outsystems-tools:
   - conversion assessment tool
 helpids: "30742"

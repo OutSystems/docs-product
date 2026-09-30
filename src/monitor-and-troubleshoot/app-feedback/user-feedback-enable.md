@@ -17,6 +17,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - enable-app-feedback
 ---
 
 # Enable user feedback for apps

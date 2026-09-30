@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - configure-chart-data-points
+  - configure-donut-inner-size
 ---
 
 # Donut Chart

@@ -19,6 +19,10 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - built-in-monitoring-tools
+  - cloud-monitoring-split
+  - extend-monitoring-tools
 ---
 
 # Monitoring and troubleshooting apps

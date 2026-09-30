@@ -16,6 +16,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - dynatrace-log-streaming
 ---
 
 # Stream logs to Dynatrace

@@ -18,6 +18,9 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - lifetime-analytics
+  - performance-monitoring-api
 ---
 
 # How Application Performance Is Measured

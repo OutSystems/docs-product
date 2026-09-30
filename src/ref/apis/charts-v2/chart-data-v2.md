@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - configure-chart-data-points
 ---
 
 # Data

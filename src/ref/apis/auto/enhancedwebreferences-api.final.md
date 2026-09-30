@@ -12,6 +12,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - authenticate-soap-service
+  - custom-request-response
+  - customize-headers
 ---
 
 # EnhancedWebReferences API

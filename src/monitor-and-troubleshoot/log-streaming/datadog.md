@@ -19,6 +19,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - datadog-log-streaming
 ---
 
 # Stream logs to Datadog

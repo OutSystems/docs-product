@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - log-information-in-action-flows
 ---
 
 # Log Information in Action Flows

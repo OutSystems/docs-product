@@ -890,6 +890,13 @@ knowledge-needs:
         in the ODC Portal and adding the resulting server action as a
         public element in ODC Studio, so that they can insert an entity
         and its related entities in a single atomic transaction.
+    - name: Configure SAP connection
+      id: configure-sap-connection
+      description: Wants to configure a SAP connection at runtime in
+        Service Center by opening the application module that contains
+        the SAP integration and editing the connection, so that the app
+        uses a different SAP system in that environment without
+        republishing the module.
   - name: Adding test data
     id: adding-test-data
     subtopics:
@@ -2618,6 +2625,12 @@ knowledge-needs:
         in Integration Studio, including which are mandatory or optional and
         their default values, so that they can correctly configure a structure
         inside an extension.
+    - name: Structure attr properties
+      id: structure-attr-properties
+      description: Wants to look up the configurable properties of a structure
+        attribute in Integration Studio, including which fields are mandatory,
+        their default values, and constraints such as length, decimals, record
+        type, and description, so they can configure the attribute correctly.
     - name: File menu operations
       id: file-menu-operations
       description: Wants to know what operations the File menu provides in Integration
@@ -3276,6 +3289,12 @@ knowledge-needs:
         API client immediately after creation, so they can configure them in their
         app to request an access token, since the credentials can't be retrieved
         again once the credentials page is left.
+    - name: Configure REST OAuth
+      id: configure-rest-oauth
+      description: Wants to configure a consumed REST API in OutSystems 11 to use
+        OAuth 2.0 client credentials, including client authentication, access
+        token URL, scopes, and the single-method or multi-method setup path, so
+        the request authenticates successfully and can be tested.
     - name: Suspend API client
       id: suspend-api-client
       description: Wants to suspend access to an API client from the ODC portal,
@@ -4378,6 +4397,18 @@ knowledge-needs:
         its role as a shared, cross-portfolio building block with an independent
         lifecycle, so that they can decide when to use a library in their app
         architecture.
+    - name: Theme inheritance
+      id: theme-inheritance
+      description: Wants to create a base theme in a library and let consumer themes
+        inherit common CSS, override base styles when needed, and reuse the same
+        visual foundation across apps, so that related apps share a consistent
+        look and feel.
+    - name: Share blocks across apps
+      id: share-blocks-across-apps
+      description: Wants to place business-agnostic blocks in a library, pass
+        business data through input parameters or service actions, and reuse the
+        block across multiple consumer apps, so that shared UI stays centralized
+        and the same block works in scenarios such as an app switcher menu.
     - name: Module types overview
       id: module-types-overview
       description: Wants to understand the different module types available in OutSystems
@@ -4395,6 +4426,12 @@ knowledge-needs:
       description: Wants to identify producer apps and consumer apps in ODC when
         apps share reusable elements across applications, so they can reuse
         features from one app in another and keep the app roles clear.
+    - name: Public entity sharing
+      id: public-entity-sharing
+      description: Wants to share reference data, stable business data, or plain
+        business data between apps via public entities when the data does not
+        need complex business-rule encapsulation, so that consumer apps can use
+        the entities directly and development effort stays low.
   - name: App naming and URLs
     id: app-naming-and-urls
     description: Wants to understand how ODC turns an app's display name into its internal
@@ -4911,6 +4948,12 @@ knowledge-needs:
         to manually add a filename parameter via the OnBeforeRequest callback
         when it isn't, so that file parts are correctly identified in the
         request.
+    - name: Request payload examples
+      id: request-payload-examples
+      description: Wants to paste sample request payloads into the Body tab Request
+        field when consuming a single REST method so Service Studio infers request
+        input parameters, structure fields, and content type for supported request
+        formats.
     - name: Consume SAP OData
       id: consume-sap-odata
       description: Wants to consume an SAP OData service in OutSystems 11 by downloading
@@ -7892,6 +7935,12 @@ knowledge-needs:
         their element renders, in OutSystems 11 Mobile Apps and Reactive Web
         Apps, so that they can predict when JavaScript functions and objects
         become available at runtime.
+    - name: Override JS behavior
+      id: override-js-behavior
+      description: Wants to override default JavaScript behavior in an
+        OutSystems 11 app by adding a custom script in Service Studio and
+        loading it after the original script, so the replacement code runs
+        instead.
     - name: Add external JS file O11
       id: add-external-js-file-o11
       description: Wants to reference a JavaScript file hosted outside their
@@ -10609,6 +10658,39 @@ knowledge-needs:
         plugin to use for their MABS 4 or MABS 5 mobile app, by checking the
         recommended plugin version table for each MABS version, so that they
         avoid gradle dependency resolution and build compatibility issues.
+    - name: Health Fitness permissions and availability
+      id: health-fitness-permissions-availability
+      description: Wants to check whether the Health and Fitness plugin is available
+        and request permissions in a mobile app, so that the app can access
+        supported health features when permission is granted.
+    - name: Query health data
+      id: health-fitness-query-data
+      description: Wants to query health data with the Health and Fitness plugin,
+        so that the app can retrieve the health records it needs.
+    - name: Write health data
+      id: health-fitness-write-data
+      description: Wants to write health data with the Health and Fitness plugin,
+        so that the app can save health measurements it records.
+    - name: Retrieve workout data
+      id: health-fitness-retrieve-workouts
+      description: Wants to retrieve workout data with the Health and Fitness plugin,
+        so that the app can display a user's workout information.
+    - name: Read health record metadata
+      id: health-fitness-record-metadata
+      description: Wants to read metadata for health records with the Health and
+        Fitness plugin, so that the app can identify details about each record.
+    - name: Configure Health Connect
+      id: configure-health-connect
+      description: Wants to configure Android Health Connect access by adding the privacy
+        policy resource, setting data-type and history preferences, opening the
+        Health Connect app when needed, and disconnecting or revoking access when
+        users opt out, so that the app can manage Health Connect permissions correctly.
+    - name: Health background jobs
+      id: health-background-jobs
+      description: Wants to create, update, and delete background jobs that monitor health
+        metrics and send notifications while handling Android permission behavior
+        and private-space limits on newer Android versions, so that health-based
+        alerts run reliably.
     - name: Haptics plugin reference
       id: haptics-plugin-reference
       description: Wants to look up the Haptics plugin's client actions (CheckHapticsPlugin,
@@ -10623,6 +10705,17 @@ knowledge-needs:
         plugin's client actions, including checking the plugin's availability beforehand
         and handling the Success and Error output parameters, so that app users receive
         physical touch or vibration feedback during interactions.
+    - name: Set up payments plugin
+      id: payments-plugin-setup
+      description: Wants to set up the Payments Plugin in an O11 mobile app, including
+        provider dashboard settings, Payments Plugin Configurator values, the JSON
+        configuration resource, plugin setup, and readiness checks, so that Apple Pay
+        or Google Pay is ready for use.
+    - name: Trigger payment flow
+      id: trigger-payment-flow
+      description: Wants to trigger a payment from a button in an O11 mobile app using
+        TriggerPayment, handling success and failure and optional PSP credentials,
+        so that the app can start and confirm the payment flow.
     - name: CocoaPods support
       id: cocoapods-support-outsystems
       description: Wants to understand what CocoaPods support means in OutSystems, including
@@ -14790,6 +14883,28 @@ knowledge-needs:
         Secret, or Apple's Key ID and private key) before configuring that
         provider as a social accelerator in ODC, so that the accelerator
         configuration screen can be completed without missing information.
+    - name: Social login flow
+      id: social-login-flow
+      description: Wants to start a social login flow in a mobile app by
+        checking whether the Social Login plugin is available at runtime,
+        configuring the environment address and redirect URI, and calling
+        StartLogin from a button action, so that end users can sign in with a
+        supported social provider without the app failing when the plugin is
+        unavailable.
+    - name: Social login response
+      id: social-login-response
+      description: Wants to handle the Authenticate block response after a
+        social login, check Success, read the returned login-scope values,
+        and map the social account to an OutSystems end user, so that a
+        successful login continues to the right screen and the user profile
+        stays linked.
+    - name: Social login setup
+      id: social-login-setup
+      description: Wants to configure Social Login providers in the Social
+        Login Configurator, including provider credentials, app type
+        combinations, redirect URI values, and provider-specific setup for the
+        selected external provider, so that the plugin can authenticate users
+        through that provider.
     - name: External IDPs - User Mapping
       id: user-mapping
     - name: Map users from external systems
@@ -17446,6 +17561,11 @@ knowledge-needs:
         issue, and exporting the captured traffic, across Google Chrome,
         Firefox, Edge, and IE11, so they have the network trace needed to
         diagnose the problem in OutSystems 11.
+    - name: Browser console debugging
+      id: browser-console-debugging
+      description: Wants to inspect, test, and troubleshoot JavaScript code in
+        the browser console while debugging an OutSystems 11 app, so they can
+        validate behavior and diagnose issues directly in the browser.
     - name: Browser-first debugging
       id: browser-first-debugging
       description: Wants to troubleshoot a Mobile App faster by first trying

@@ -23,4 +23,4 @@ This tool is only available in infrastructures managed by customers, such as sel
 
 To launch this tool, on the Windows desktop of the server go to: **Start Menu** > **All Programs** > **OutSystems** > **Administration Tools** > **Configuration Tool**. You'll need to be connected to the server for example, via remote desktop.
 
-When you have more than one front-end server, make sure that the configuration is the same in each front-end server, except for the [Scheduler](<tabs/scheduler.md>) configuration.
+When you have more than one front-end server, make sure that the configuration is the same in each front-end server, except for the [Network](<tabs/network.md>) configuration which can have a different IP address.

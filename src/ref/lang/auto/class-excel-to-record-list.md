@@ -6,7 +6,11 @@ guid: 65e7dfbe-2def-4858-85fb-adaf71d7c774
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1477
-tags: data import, entity management, excel integration, workflow implementation, data transformation
+tags:
+  - Data
+  - Data Model
+  - Entities
+  - Logic
 audience:
   - Developer
   - Front-end developer
@@ -14,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
+isautopublish: true
 ---
 
 # Excel To Record List
@@ -23,7 +29,7 @@ Converts an Excel object to a Record List. Use this logic tool when you need to 
 To use Excel To Record List, you need an Entity or Structure that matches the Excel (xlsx) file content you want to import. OutSystems matches the Entity/Structure specified in the **Record Definition** property and the Excel file using one of the following methods:
 
 * **By Column name:** If the number of columns and record attributes differ, it matches column headers to attribute labels (this matching is case-sensitive).
-* **By Position:** If the number of columns and record attributes are identical, it maps sequentially, matching the first attribute to the first column, the second attribute to the second column, and so on. As such, ensure that the order and data types of the columns in the Excel file match the order and data types of the attributes in your Entity or Structure.
+* **By Position:** If the number of columns and record attributes are identical, it maps sequentially, matching each attribute to the column in the same position, starting with the first attribute and first column. As such, ensure that the order and data types of the columns in the Excel file match the order and data types of the attributes in your Entity or Structure.
 
 <div class="info" markdown="1">
 
@@ -33,7 +39,7 @@ Entities' identifier attributes are included in the attribute count.
 
 Check the following example of an Entity named Address and a valid Excel file containing data to import:
 
-![Example of an Entity named Address and a corresponding Excel file with matching data columns](images/exceltorecordlist-entity-excel.png "Entity and Excel File Example")
+![Example of an Entity named Address and a corresponding Excel file with matching data columns](images/exceltorecordlist-entity-excel-diag.png "Entity and Excel File Example")
 
 Entity attributes without a corresponding column in the Excel file get the default value of their data type (for example, `""` for a Text attribute).
 
@@ -55,6 +61,24 @@ Tip: If you need to import data from an Excel file at **design time**, when deve
 * [Bootstrap an Entity Using an Excel File](../../../building-apps/data/excel-bootstrap.md), if you want to import data to an existing Entity
 
 </div>
+
+## Update an entity using Excel To Record List
+
+Having the **Update Behavior** property of an Entity set to **Changed Attributes** (default value), optimizes the update operations when using the **CreateOrUpdate** or **Update** entity actions. For more information about how the changed attributes are tracked, refer to the **Update Behavior** property of the [Entity](class-entity.md) element.
+
+However, records that **Excel To Record List** outputs don't have any attributes flagged as changed. If you pass that record directly to the Entity's **CreateOrUpdate** or **Update** action, no attributes are updated and no error is raised.
+
+Thus, to update existing records with data from an Excel file, follow these steps:
+
+1. Copy the imported values into a local variable of the Entity's data type, using one **Assign** node per attribute.
+
+    <div class="info" markdown="1">
+
+    Each **Assign** flags its attribute as changed, so the update includes that attribute. A single **Assign** of the whole record isn't enough, because it copies the flags of the source record instead of setting them.
+
+    </div>
+
+1. Pass that variable to the **CreateOrUpdate** or **Update** action.
 
 ## Availability
 

@@ -3817,6 +3817,11 @@ knowledge-needs:
         discard unpublished changes or restore the workflow to any previous
         published revision, in ODC's Workflow editor, so that they can track and
         recover prior states of a workflow.
+  - name: Workflow entities
+    id: workflow-entities
+    description: Wants to identify the system and static entities available in ODC
+      Studio for workflows and understand how those entities relate to one another,
+      so that they can interpret the workflow data model.
   - name: Test a workflow
     id: test-workflow
     description: Wants to verify a workflow works as expected before deploying
@@ -9414,6 +9419,14 @@ knowledge-needs:
       description: Wants to navigate the ODC Studio IDE as a newcomer by understanding what
         each major area of the interface is for, so they can move through the
         tool without getting blocked by layout or navigation friction.
+    - name: Open OML files in ODC Studio
+      id: open-oml-files-in-odc-studio
+      description: Wants to open a local `.oml` file in ODC Studio, so they can
+        edit an app or library in the IDE.
+    - name: Export OML files from ODC Studio
+      id: export-oml-files-from-odc-studio
+      description: Wants to export an app or library from ODC Studio as an
+        `.oml` file, so they can save or share the package.
     - name: Troubleshoot reminder comments
       id: troubleshoot-reminder-comments
       description: Wants to troubleshoot reminder comments in ODC Studio by understanding
@@ -10226,6 +10239,12 @@ knowledge-needs:
         access it provides to sample apps, the playground, model and data source
         configurations, and components, so they can navigate the tool and find
         the right entry point for their task.
+    - name: Create AI agent
+      id: create-ai-agent
+      description: Wants to create and configure an AI agent in AI Agent Builder
+        by choosing a template or starting from scratch, setting the model,
+        instructions, and data source, testing the agent, and saving it, so
+        they can use the agent in their app.
     - name: Agent Builder analytics
       id: agent-builder-analytics
       description: Wants to review AI Agent Builder analytics for agents, AI
@@ -10789,6 +10808,12 @@ knowledge-needs:
       description: Wants to understand the roles of the external AI model, the
         agentic app, and grounding data in an ODC AI integration, so they can
         map each component to the correct part of the solution.
+    - name: Function calling overview
+      id: function-calling-overview
+      description: Wants to understand what function calling is in AI Agent
+        Builder and how the ODC app, function declarations, and CallAgent
+        service action work together to return natural-language answers, so
+        they can decide whether to use it in their agent design.
     - name: Use AI models in ODC Studio
       id: use-ai-models-in-odc-studio
       description: Wants to use a configured AI model in ODC Studio by

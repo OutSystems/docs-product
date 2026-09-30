@@ -508,6 +508,12 @@ knowledge-needs:
         caching infrequently changing data locally, and fetching additional list
         items with infinite scroll, so that the screen renders faster and stays
         responsive.
+    - name: Multiple server calls in a client action
+      id: multiple-server-calls-client-action
+      description: Wants to reduce multiple server requests in a client action by
+        combining sequential Aggregates or Server Actions into a single Server
+        Action, so that the app avoids extra round trips, connection overhead,
+        and separate transactions.
     - name: StringBuilder for large strings
       id: stringbuilder-large-strings
       description: Wants to concatenate many strings, or a few large strings, into
@@ -11984,6 +11990,11 @@ knowledge-needs:
         changes infrequently or the screen should not depend on a live network
         round trip, by storing frequently accessed data in local storage and
         denormalizing the local model to match the screen.
+    - name: Optimize local storage
+      id: optimize-local-storage
+      description: Wants to simplify a mobile app local storage model to reduce
+        unnecessary joins in client aggregates and improve performance when the
+        model is overnormalized or too complex.
   - name: Firebase plugin migration
     id: migrate-firebase-plugins
     description: Wants to migrate mobile app logic from unsupported Firebase-based

@@ -3295,6 +3295,23 @@ knowledge-needs:
         OAuth 2.0 client credentials, including client authentication, access
         token URL, scopes, and the single-method or multi-method setup path, so
         the request authenticates successfully and can be tested.
+    - name: Get access token
+      id: get-access-token
+      description: Wants to request an access token from the ODC authorization
+        server by reading the Discovery document, calling the token endpoint
+        with the client credentials grant, and using the returned token to
+        access public REST APIs.
+    - name: OAuth 2.0 grants
+      id: oauth-2-grants
+      description: Wants to understand the OAuth 2.0 grant types available for
+        an ODC API client, so they can choose the correct flow for a given
+        token request scenario.
+    - name: Secure API credentials
+      id: secure-api-credentials
+      description: Wants to secure API client credentials by storing the client
+        ID and client secret in environment variables or secure storage, limiting
+        access to API clients, and using trusted environments, so that OAuth
+        credentials are not exposed or reused unsafely.
     - name: Suspend API client
       id: suspend-api-client
       description: Wants to suspend access to an API client from the ODC portal,
@@ -14540,6 +14557,9 @@ knowledge-needs:
         OutSystems 11, so that they can decide whether to adopt it for
         securing IT user access and centralize IT user authentication without
         deploying a separate IAM solution.
+    - name: OIDC discovery document
+      id: oidc-discovery-document
+      description: 'Wants to find the OIDC discovery document for an OutSystems ODC environment and understand which provider endpoints and metadata it exposes, so that they can configure OpenID Connect authentication against the correct authorization, token, userinfo, JWKS, and logout endpoints.'
     - name: IT Users external IdP login flow
       id: it-users-external-idp-login-flow
       description: Wants to understand how IT users authenticate through

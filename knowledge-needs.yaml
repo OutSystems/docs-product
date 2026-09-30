@@ -836,6 +836,13 @@ knowledge-needs:
       id: replace-ui-sample-data
     - name: Bind data to a UI element
       id: bind-data-to-a-ui-element
+    - name: Fetch screen data
+      id: fetch-screen-data
+      description: Wants to fetch data for a screen with Screen Aggregates for database
+        data or Data Actions for external systems or custom logic, and know that
+        both start running when the screen initializes and render the screen
+        automatically when data arrives, so that they can display the results on
+        the screen.
     - name: Header row widget behavior
       id: header-row-widget-behavior
       description: Wants to understand how the Header Row Widget automatically
@@ -1329,6 +1336,11 @@ knowledge-needs:
         SQL during compilation, including how Sources, Filters, Sorting,
         and Test values map to SELECT, FROM, WHERE, and ORDER BY clauses, so
         they can reason about the generated query.
+    - name: Test aggregate values
+      id: test-aggregate-values
+      description: Wants to set sample input parameter values in an Aggregate
+        to validate filter conditions in Service Studio, so that they can
+        verify the query output while designing the screen.
     - name: Screen aggregate basics
       id: screen-aggregate-basics
       description: Wants to understand how Screen Aggregates work in OutSystems 11,
@@ -2321,6 +2333,11 @@ knowledge-needs:
         Portal, select a supported provider, and reference the external
         entities in an app, so they can use external database data in ODC
         Studio.
+    - name: Manage ODC external database connections
+      id: manage-odc-external-database-connections
+      description: Wants to identify the permissions required to manage
+        external database connections in ODC Portal, so they can grant the
+        right access to users who configure and maintain those connections.
     - name: Set physical table names
       id: set-physical-table-names
       description: Wants to enter the three-part Physical Table Name for each
@@ -3656,6 +3673,12 @@ knowledge-needs:
         those warnings help catch before deployment, so that they can evaluate
         whether the built-in guidance covers their team's secure coding
         baseline.
+    - name: Security misconfigurations
+      id: security-misconfigurations
+      description: Wants to identify how to mitigate security misconfigurations
+        by detecting them, diagnosing the risk to critical assets and
+        infrastructure, and determining the remediation steps that strengthen
+        the security posture, so that they can respond appropriately.
 - name: ODC Workflows
   guid: 8f3c2a1d-6e4b-4a7f-9c0d-2b5e7f1a4c9e
   topics:

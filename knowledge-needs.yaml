@@ -2592,6 +2592,12 @@ knowledge-needs:
         supported connector.
     - name: Integrate using custom code
       id: custom-code-integration
+    - name: Fix DataType mismatch
+      id: fix-datatype-mismatch
+      description: Wants to fix the OS-ELG-MODL-05017 error ("<ParameterName/StructureFieldName> has an incompatible DataType assigned and cannot be converted.") by changing the .NET type or DataType modifier so the field maps to a compatible OutSystems type before uploading the external library, so they can publish it successfully.
+    - name: Fix missing assembly
+      id: fix-missing-assembly
+      description: 'Wants to fix the OS-ELG-MODL-05023 error ("The assembly <AssemblyName> is required and could not be found in your file.") by including the required referenced assembly in the external library ZIP, removing `PrivateAssets` from NuGet references when needed, and publishing with `dotnet publish`, so they can publish the external library successfully.'
     - name: Extension life cycle
       id: extension-life-cycle
       description: Wants to create an extension in Integration Studio, define its actions, structures, entities, and resources, keep its source code synchronized, publish it, and then use it in a Service Studio module, so that they can follow the full extension life cycle from setup to consumption.
@@ -2674,6 +2680,9 @@ knowledge-needs:
         of an OSIgnore-decorated struct property/field to public in their C#
         external library project, so that they can successfully publish the
         external library.'
+    - name: Fix missing OSStructure decoration
+      id: fix-missing-osstructure-decoration
+      description: 'Wants to fix the OS-ELG-MODL-05024 error ("The struct <StructName> used as <UsageName> is missing OSStructure decoration.") by adding the OSStructure decorator to every struct used as a parameter, return type, or public field/property in their C# external library project, so they can successfully publish the external library.'
     - name: Fix OSInterface duplicate
       id: fix-osinterface-duplicate
       description: 'Wants to fix the OS-ELG-MODL-05008 error ("The interface
@@ -2688,6 +2697,29 @@ knowledge-needs:
         OSInterface is defined.'') by adding a public interface decorated with
         OSInterface to the C# project and repackaging a new ZIP for upload, so
         they can publish the external library successfully.'
+    - name: Fix OSInterface attribute
+      id: fix-osinterface-attribute
+      description: 'Wants to fix the OS-ELG-MODL-05003 error ("More than one
+        OSInterface attribute found in your file: <InterfaceNames>. Make sure
+        only one interface decorated with OSInterface is defined.") by
+        removing the extra OSInterface attributes so only one interface in the
+        C# external library project has the OSInterface attribute, so they can
+        successfully publish the external library.'
+    - name: Fix non-public OSInterface
+      id: fix-nonpublic-osinterface
+      description: 'Wants to fix the OS-ELG-MODL-05004 error ("The interface decorated with OSInterface ''<InterfaceName>'' is not public.") by making the OSInterface-decorated interface public in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix non-public OSInterface implementation
+      id: fix-nonpublic-osinterface-implementation
+      description: 'Wants to fix the OS-ELG-MODL-05018 error ("The class that implements the interface decorated with OSInterface ''<InterfaceName>'' must be public.") by making the class that implements the OSInterface-decorated interface public in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix OSInterface ctor
+      id: fix-osinterface-ctor
+      description: 'Wants to fix the OS-ELG-MODL-05005 error ("The interface decorated with OSInterface ''<ClassName>'' is implemented by class ''<ClassName>'' which doesn''t have a public parameterless constructor.") by adding a public parameterless constructor to the class that implements the OSInterface-decorated interface in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix missing OSInterface implementation
+      id: fix-missing-osinterface-implementation
+      description: 'Wants to fix the OS-ELG-MODL-05006 error ("No class implementing the interface decorated with OSInterface ''<InterfaceName>'' found in your file.") by adding a class that implements the OSInterface-decorated interface in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix empty OSInterface
+      id: fix-empty-osinterface
+      description: 'Wants to fix the OS-ELG-MODL-05007 error ("No methods found in the interface decorated with OSInterface ''<InterfaceName>''.") by adding one or more methods to the OSInterface-decorated interface in their C# external library project, so they can successfully publish the external library.'
     - name: Fix name length error
       id: fix-name-length-error
       description: 'Wants to fix the OS-ELG-MODL-05019 error ("The name <Name> is
@@ -15054,6 +15086,9 @@ knowledge-needs:
     - name: Selenium locators
       id: selenium-locators
       description: Wants to choose stable Selenium locators for OutSystems web elements by using CSS selectors, custom styles, and custom IDs instead of generated IDs.
+    - name: Selenium test practices
+      id: selenium-test-practices
+      description: Wants to make Selenium UI tests more reliable and readable by replacing pauses with waits, adding asserts, using variables, and documenting scripts, so the scripts stay maintainable.
 - name: User Management
   guid: 30a6f6ca-c898-4e05-b5d6-88a6789ca36c
   topics:

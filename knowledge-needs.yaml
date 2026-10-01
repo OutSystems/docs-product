@@ -769,6 +769,13 @@ knowledge-needs:
         Java persistence, business logic, and presentation layers, so they can
         place each concern in the correct layer when building an OutSystems
         app.
+    - name: Map PHP patterns
+      id: php-patterns-in-outsystems
+      description: Wants to map PHP design patterns such as Iterator, MVC,
+        Data Access, Service Layer, Template View, Session State, and
+        Gateway to OutSystems lists, structures, screens, actions, variables,
+        and service actions, so they can translate common PHP architecture
+        concepts into OutSystems equivalents.
   - name: Modules
     id: modules
     subtopics:
@@ -851,6 +858,10 @@ knowledge-needs:
 - name: (Modeling, Consuming and Using) Data
   guid: 184681b2-96da-4711-9efd-53172730bbed
   topics:
+  - name: Data handling overview
+    id: data-handling-overview
+    description: Wants to identify the main OutSystems topics covered in the SQL developer data
+      handling course, so that they know the course scope before continuing.
   - name: Showing data on a screen/block
     id: display-data-screen-block
     subtopics:
@@ -1883,6 +1894,25 @@ knowledge-needs:
     id: agg-vs-sql
   - name: Stored procedures
     id: stored-procedures
+    description: Wants to execute database stored procedures from OutSystems using Integration
+      Studio, the Oracle connector, or SQL queries, so that they can use existing database-side
+      procedures in their applications.
+  - name: NULL values
+    id: null-values
+    description: Wants to understand how OutSystems handles NULL values when reading
+      from and writing to the database, including default values, NullIdentifier
+      checks, SQL inserts, external entities, and mandatory foreign keys, so they
+      can detect and preserve NULL-related behavior correctly.
+  - name: Database transactions
+    id: database-transactions
+    description: Wants to understand how OutSystems starts and ends database
+      transactions automatically, when to use CommitTransaction or
+      AbortTransaction, and how exceptions affect rollback, so they can control
+      transaction outcome correctly.
+  - name: Database views
+    id: database-views
+    description: Wants to create database views and integrate them as read-only entities in
+      OutSystems, so that they can query database-side data through the platform.
   - name: File data type
     id: file-data-type
     subtopics:
@@ -2426,6 +2456,23 @@ knowledge-needs:
       description: Wants to identify the permissions required to manage
         external database connections in ODC Portal, so they can grant the
         right access to users who configure and maintain those connections.
+    - name: Troubleshoot ODC connection errors
+      id: troubleshoot-odc-connection-errors
+      description: Wants to resolve OS-INTC-60004 when an ODC connection stays
+        stuck in Fetching entities by reloading the page and opening a support
+        case if the issue persists, so that the connection status recovers.
+    - name: Troubleshoot ODC entity list errors
+      id: troubleshoot-odc-entity-list-errors
+      description: Wants to resolve OS-INTC-60005 when the entity list fails
+        to load on the Connection List screen by refreshing the entities,
+        checking the connection configuration, and opening a support case if
+        the error persists, so that they can select entities and attributes
+        in the connection.
+    - name: Troubleshoot selected entities
+      id: troubleshoot-selected-entities
+      description: Wants to resolve OS-INTC-60006 when the selected entity list
+        fails to load on the entity table by reloading the page and opening a
+        support case if the issue persists, so that they can select entities.
     - name: Set physical table names
       id: set-physical-table-names
       description: Wants to enter the three-part Physical Table Name for each
@@ -3002,6 +3049,13 @@ knowledge-needs:
         stage in ODC Portal and configure the Cloud Connector using the generated
         token and address, so that ODC apps can securely connect to private
         network endpoints.
+    - name: Private gateway endpoints
+      id: use-private-gateway-endpoints
+      description: Wants to use REST API endpoints through an ODC Private Gateway
+        in an app, replacing the Base URL with the secure-gateway address and
+        adjusting the Host header or using a relay when the endpoint requires a
+        different hostname or TLS/SNI behavior, so that the app can reach
+        private network services.
     - name: Configure private gateway
       id: configure-private-gateway
       description: Wants to configure a private gateway for an O11
@@ -8362,6 +8416,11 @@ knowledge-needs:
         available in Service Studio, so that they can add custom JavaScript code
         to a screen, screen action, or module, in OutSystems 11 Traditional Web
         Apps, Mobile Apps, and Reactive Web Apps.
+    - name: JavaScript execution order
+      id: javascript-execution-order
+      description: Wants to understand the runtime order in which JavaScript runs in
+        Reactive apps, including module, block, and screen scopes, and that client
+        actions run only when called, so they can place code in the correct scope.
   - name: Using external JavaScript
     id: using-external-javascript
     subtopics:
@@ -8558,6 +8617,9 @@ knowledge-needs:
     - name: Missing application key
       id: missing-application-key
       description: 'Wants to fix the OS-PKGS-40011 "Application key could not be fetched for the <package>." error by retrying the package installation and creating a support case if the problem persists, so that the selected package installs successfully.'
+    - name: DynamoDB entry error
+      id: dynamodb-entry-error
+      description: 'Wants to resolve the OS-PKGS-40016 "Failed to create a new entry in the dynamoDB table." error by retrying the package installation and creating a support case if the problem persists, so that the selected package installs successfully.'
     - name: Package publish error
       id: package-publish-error
       description: 'Wants to fix the OS-PKGS-50002 "Unable to publish package <packageName>." error by retrying the package installation and creating a support case if the problem persists, so that the selected package installs successfully.'
@@ -8573,6 +8635,9 @@ knowledge-needs:
     - name: Invalid installation key
       id: invalid-installation-key
       description: 'Wants to fix the OS-PKGS-40014 "The value specified for ''installationKey'': ''<installKey>'' is not in the correct GUID format." error by sending a valid GUID in installationKey when requesting installation status or messages, so that installation details can be retrieved successfully.'
+    - name: Missing deployment key
+      id: missing-deployment-key
+      description: 'Wants to resolve the OS-PKGS-40015 "Deployment key could not be fetched for installationKey ''<installKey>''." error by retrying the package installation and opening a support case if it persists, so that the selected package installs successfully.'
     - name: Unsupported package error
       id: unsupported-package-error
       description: 'Wants to resolve the OS-PKGS-40017 "Unsupported package <packageName>." error by selecting another package for installation, or by contacting OutSystems Support when a package depends on an older built-in app version and should not be unsupported, so the package installs successfully.'
@@ -9731,10 +9796,6 @@ knowledge-needs:
       id: odc-portal-app-lifecycle
       description: Wants to publish an app in ODC Portal, so they can move it
         through the right lifecycle stage for their release.
-    - name: External integrations
-      id: odc-external-integrations
-      description: Wants to configure external integrations for an ODC app, so
-        it can connect to external systems.
     - name: Initial setup
       id: odc-initial-setup
       description: Wants to complete the initial setup for ODC, so they can
@@ -9797,6 +9858,23 @@ knowledge-needs:
         expanding the Unexpected Error window or using the Give Us Feedback
         option, opening the report in a text editor, and saving it as a text
         file, so that Support has the information needed to investigate.
+  - name: External integrations
+    id: odc-external-integrations
+    description: Wants to configure external integrations for an ODC app, so
+      it can connect to external systems.
+    subtopics:
+    - name: Troubleshoot integrations errors
+      id: troubleshoot-integrations-errors
+      description: Wants to locate and resolve ODC Integrations console errors by
+        matching the error code to the message, using the cause, impact, and
+        recommended action, and opening a support case if the problem
+        persists, so that they can complete the integration task.
+    - name: Connection test errors
+      id: connection-test-errors
+      description: Wants to locate and resolve OS-DFQE-40004 connection test
+        failures in ODC Studio by matching the SQL Server, Oracle, SAP OData,
+        or Salesforce error message to the cause and recommended action, so
+        that they can fix the failed connection test.
   - name: Development artifacts
     id: development-artifacts
     subtopics:

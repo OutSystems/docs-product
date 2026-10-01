@@ -5525,6 +5525,12 @@ knowledge-needs:
         tasks, instructions, and actions for end users in Reactive and
         Traditional Web Apps, in OutSystems 11, so that they know where users
         interact with pending process tasks.
+    - name: Taskbox activity APIs
+      id: taskbox-activity-apis
+      description: Wants to retrieve, page, and control how EPA Taskbox
+        activities appear in a Traditional Web App by using the Taskbox API
+        actions, so that the app can list the user's pending work and keep the
+        Taskbox display in sync.
     - name: Terminate process property
       id: terminate-process-property
       description: Wants to force immediate termination of a process
@@ -9581,6 +9587,11 @@ knowledge-needs:
       description: Wants to install the LifeTime SDK and sample data in a QA
         environment for a LifeTime plugin and keep the sample data refreshed
         periodically, so that QA reflects the plugin lifecycle.
+  - name: LifeTime SDK reference
+    id: lifetime-sdk-reference
+    description: Wants to look up the LifeTime SDK widgets, actions,
+      structures, and static entities when building a LifeTime plugin, so they
+      can choose the right API and base layout.
   - name: Customize authentication plugin
     id: customize-authentication-plugin
     description: Wants to customize or implement an authentication plugin
@@ -15459,6 +15470,9 @@ knowledge-needs:
         in OutSystems 11.
     - name: Passwords
       id: passwords
+    - name: Password utility actions
+      id: password-utility-actions
+      description: Wants to use the PlatformPasswordUtils API to generate salted MD5 or SHA512 password hashes and validate passwords against salted hashes in O11, so that they can securely store and verify passwords.
     - name: Update user email
       id: update-user-email
       description: Wants to change a logged-in end-user's email address in
@@ -17696,6 +17710,12 @@ knowledge-needs:
         operations and statistics updates for OutSystems 11 self-managed
         installations, so that database query performance stays stable as
         fragmentation and stale statistics accumulate.
+    - name: Free database space
+      id: free-database-space
+      description: Wants to use DbCleaner API to delete unused entity
+        tables, entity attributes, and old module versions, understanding
+        the permission requirements and audit logging, so that they can
+        reclaim database space safely.
   - name: Schedule transaction log backups
     id: schedule-transaction-log-backups
     description: Wants to schedule transaction log backups across all

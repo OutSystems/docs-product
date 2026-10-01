@@ -2601,6 +2601,9 @@ knowledge-needs:
     - name: Fix parameter defaults
       id: fix-parameter-defaults
       description: 'Wants to fix the OS-ELG-MODL-05026 error ("The default value specified for <ParameterName> is unsupported.") by removing or changing unsupported default values in C# external library method signatures before uploading the library, so they can publish it successfully.'
+    - name: Fix reference parameter
+      id: fix-reference-parameter
+      description: 'Wants to fix the OS-ELG-MODL-05016 error ("The parameter ''<ParamaterName>'' in action ''<ActionName>'' is passed by reference. Passing parameters by reference is not supported.") by changing ref or in parameters to pass by value and returning modified values if needed in their C# external library project, so they can successfully publish the external library.'
     - name: Extension life cycle
       id: extension-life-cycle
       description: Wants to create an extension in Integration Studio, define its actions, structures, entities, and resources, keep its source code synchronized, publish it, and then use it in a Service Studio module, so that they can follow the full extension life cycle from setup to consumption.
@@ -2676,6 +2679,9 @@ knowledge-needs:
     - name: Fix ZIP uncompress error
       id: fix-zip-uncompress-error
       description: 'Wants to fix the OS-ELG-MODL-05028 error ("The file <FileName> can not be uncompressed.") by removing unnecessary files from the external library ZIP package or contacting Support when the file is required, so they can upload and publish the external library successfully.'
+    - name: Fix ZIP root assembly
+      id: fix-zip-root-assembly
+      description: 'Wants to fix the OS-ELG-MODL-05027 error ("The assembly <AssemblyName>, which contains the interface decorated with the OSInterface attribute, is not located in the root directory of the zip file.") by placing the compiled assembly in the root of the external library ZIP instead of inside a parent folder, so they can upload and publish the external library successfully.'
     - name: Fix OSIgnore field error
       id: fix-osignore-field-error
       description: 'Wants to fix the OS-ELG-MODL-05012 error ("The property/field
@@ -2686,6 +2692,15 @@ knowledge-needs:
     - name: Fix OSStructure field
       id: fix-osstructure-field
       description: 'Wants to fix the OS-ELG-MODL-05011 error ("The property/field decorated by OSStructureField ''<ParameterName/StructureFieldName>'' in struct <StructureName> is not public.") by making the OSStructureField-decorated struct property or field public in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix unsupported type
+      id: fix-unsupported-type
+      description: 'Wants to fix the OS-ELG-MODL-05015 error ("The struct decorated with OSStructure ''<StructureName>'' contains a public property/field that uses an unsupported parameter type ''<ParameterType>''.") by replacing the unsupported public property or field type with a supported .NET type, an OSStructure-decorated struct, or a list of those types before uploading the external library, so they can publish it successfully.'
+    - name: Fix empty OSStructure
+      id: fix-empty-osstructure
+      description: 'Wants to fix the OS-ELG-MODL-05013 error ("No public properties/fields found in the struct decorated with OSStructure ''<StructureName>''.") by adding at least one public property or field to the OSStructure-decorated struct in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix duplicate OSStructure name
+      id: fix-duplicate-osstructure-name
+      description: 'Wants to fix the OS-ELG-MODL-05014 error ("More than one structure, ''<StructureName>'', was found with the name ''<Name>''.") by renaming each OSStructure-decorated struct so every structure name is unique before uploading the external library, so they can successfully publish it.'
     - name: Non-public OSStructure
       id: fix-nonpublic-osstructure
       description: 'Wants to fix the OS-ELG-MODL-05010 error ("The struct decorated with OSStructure ''<StructName>'' is not public.") by making the OSStructure-decorated struct public in their C# external library project, so they can successfully publish the external library.'
@@ -7591,6 +7606,20 @@ knowledge-needs:
         its DataPointList, SeriesName, and StackingType properties in Service
         Studio for ODC, so that a stacked area chart displays correctly in
         mobile apps and reactive web apps.
+    - name: Configure Bar Chart
+      id: configure-bar-chart
+      description: Wants to add the Bar Chart widget to a screen and configure
+        its DataPointList with fixed or variable data, set SeriesName, and
+        customize the ChartLegend add-on in Service Studio for OutSystems 11,
+        so that a bar chart with a customized legend displays correctly in
+        traditional web apps, mobile apps, and reactive web apps.
+    - name: Configure column chart
+      id: configure-column-chart
+      description: Wants to add the Column Chart widget to a screen and
+        configure its DataPointList, SeriesName, and ShowDataPointValues
+        properties in Service Studio for OutSystems 11, so that a column
+        chart with data labels displays correctly in traditional web apps,
+        mobile apps, and reactive web apps.
     - name: Configure radar chart
       id: configure-radar-chart
       description: Wants to add the Radar Chart widget to a screen and
@@ -8361,6 +8390,16 @@ knowledge-needs:
         the file's URL, in Service Studio for O11 Traditional Web Apps, so
         that the external script runs on that screen without hosting the
         file locally.
+    - name: Manage web screen scripts
+      id: manage-web-screen-scripts
+      description: Wants to create, update, list, activate, deactivate, and
+        delete scripts included in Traditional Web App web screens, so that
+        scripts can be managed throughout their lifecycle.
+    - name: Configure web screen script exclusions
+      id: configure-web-screen-script-exclusions
+      description: Wants to configure application and module exclusion rules
+        for web screen scripts through the IncludeJavascript_API extension,
+        so that scripts are included only where they are needed.
   - name: Securing UI
     id: securing-ui
     subtopics:
@@ -9424,6 +9463,12 @@ knowledge-needs:
         uploading the ZIP file to the provided storage location, creating the
         generation operation with the download URL, and checking the operation
         status, so that the library can be published for ODC assets to consume.
+    - name: External library errors
+      id: external-library-errors
+      description: Wants to locate and resolve external library SDK errors by using
+        the error code to find the matching message, understand the cause and
+        impact, and follow the recommended action, so they can fix external
+        library issues.
     - name: Create asset via API
       id: create-asset-via-api
       description: Wants to create a new ODC asset through the Asset Repository API,
@@ -17927,18 +17972,26 @@ knowledge-needs:
         configuring LifeTime for version 11.22.0 or later or for earlier
         versions with OTLP/HTTP, and sending logs to Dynatrace, so that
         application logs reach the Dynatrace APM tool.
-    - name: Configure New Relic streaming
-      id: configure-new-relic-streaming
-      description: Wants to set up log streaming from ODC apps to New Relic by
-        retrieving the New Relic API key and account region, configuring the
-        stream in the ODC Portal, and sending observability data to New Relic,
-        so that app telemetry reaches the New Relic APM tool.
+    - name: New Relic log streaming
+      id: new-relic-log-streaming
+      description: Wants to set up log streaming to New Relic by retrieving
+        the New Relic API key and account ingestion endpoint, configuring the
+        stream, and sending application logs to New Relic, so that application
+        logs reach the New Relic APM tool.
     - name: Set up OpenTelemetry Collector
       id: set-up-open-telemetry-collector
       description: Wants to set up the OpenTelemetry Collector with the appropriate
         exporter and security settings for destinations that do not support
         native OTLP ingestion, so they can receive streamed logs, traces, and
         metrics.
+    - name: Configure LifeTime log streaming
+      id: configure-lifetime-log-streaming
+      description: Wants to configure log streaming in LifeTime for OutSystems 11
+        by selecting one or more environments, choosing an APM destination,
+        entering the destination URL and secret token or credentials, testing
+        the connection, and completing setup after validating the test data
+        arrives at the destination, so that they can confirm logs are being
+        delivered to the chosen APM tool.
 - name: Log streaming (ODC)
   guid: 5e4d826e-41ed-47ae-9f2e-9c87b56d41f2
   topics:

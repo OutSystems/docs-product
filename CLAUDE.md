@@ -37,7 +37,7 @@ When editing or creating pages:
 
 ## Style guide (source of truth)
 
-When writing or reviewing docs, follow the rules in:
+Whenever you create, edit, rewrite, summarize, or review a content page, however the request is phrased and including small edits, follow the rules in the files below. `.claude/rules/doc-style-auto.md` says which files to read for which kind of change. Don't edit `translated/` content, which is generated from the English version.
 
 * `.github/doc-styles/formatting.md`: Markdown conventions, emphasis, UI elements, placeholders, admonitions
 * `.github/doc-styles/tone.md`: voice, language, capitalization, product names

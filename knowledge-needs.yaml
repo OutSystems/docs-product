@@ -5,26 +5,16 @@ knowledge-needs:
   - name: Creating Actions
     id: creating-actions
     subtopics:
-    - name: What are service actions/when to use service actions
-      id: service-actions-when-use
     - name: Delegate manager action
       id: delegate-manager-action
       description: Wants to create a service action that updates the current employee's delegated manager and returns the manager name, so another app can save the assignment and confirm who was selected.
     - name: Get employee picture
       id: get-employee-picture
       description: Wants to create a service action that retrieves an employee picture from EmployeePicture by employee identifier and returns binary data, so another app can display the latest image.
-    - name: Server-side vs client-side logic
-      id: server-vs-client-logic
-    - name: How to create an action
-      id: how-to-create-an-action
-    - name: What are client actions/when to use client actions
-      id: client-actions-when-use
     - name: Calculate order total
       id: calculate-order-total
       description: Wants to calculate an order total in a client action from line item
         values, so the displayed total amount updates when order details change.
-    - name: What are server actions/when to use server actions
-      id: server-actions-when-use
     - name: Use system actions
       id: use-system-actions
       description: Wants to find and use built-in system actions in the Logic tab
@@ -191,18 +181,12 @@ knowledge-needs:
         so that startup logic runs once when the app loads, does not rerun on
         in-app navigation, and reruns on direct reloads or when opening
         another app.
-    - name: How to use Events
-      id: how-to-use-events
     - name: Database event behavior
       id: database-event-behavior
       description: Wants to understand how database events trigger after entity record changes and a successful transaction commit, so that they can use OnCreate, OnUpdate, or OnDelete for automatic follow-up logic and know that each trigger event runs once without duplicates.
     - name: Create database event
       id: create-database-event
       description: Wants to create a database event for an entity action in ODC Studio by choosing OnCreate, OnUpdate, or OnDelete, selecting the event and input parameters, and publishing the app, so that the event runs automatically when the entity action commits.
-    - name: Screen Events
-      id: screen-events
-    - name: UI elements Events
-      id: ui-elements-events
     - name: Handle block events
       id: handle-block-events
       description: Wants to handle events triggered by a block by mapping a screen
@@ -248,8 +232,6 @@ knowledge-needs:
   - name: Understanding Exceptions
     id: understanding-exceptions
     subtopics:
-    - name: How to handle Exceptions
-      id: how-to-handle-exceptions
     - name: Fix empty OnException
       id: fix-empty-onexception
       description: Wants to fix the "Empty 'OnException'" error in Service Studio
@@ -283,16 +265,6 @@ knowledge-needs:
   - name: Using Expressions
     id: using-expressions
     subtopics:
-    - name: Operands
-      id: operands
-    - name: When and how to write expressions
-      id: write-expressions-guide
-    - name: Scope
-      id: scope
-    - name: Operators
-      id: operators
-    - name: Functions
-      id: functions
     - name: Check string contains
       id: check-string-contains
       description: Wants to check whether one text string contains another using
@@ -425,24 +397,12 @@ knowledge-needs:
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
-    - name: How to debug and troubleshoot application logic
-      id: debug-troubleshoot-app-logic
     - name: Hard-coded statements
       id: hard-coded-statements
       description: Wants to identify and remove hard-coded True/False conditions when they make branches unreachable or dead code in ODC actions.
   - name: Creating Variables
     id: creating-variables
     subtopics:
-    - name: Site properties / Settings
-      id: site-properties-settings
-    - name: Input Parameters
-      id: input-parameters
-    - name: Local Variables
-      id: local-variables
-    - name: Output Parameters
-      id: output-parameters
-    - name: How to use Variables
-      id: how-to-use-variables
     - name: Reset form after save
       id: reset-form-after-save
       description: Wants to reset a screen's form to a blank state after
@@ -476,10 +436,6 @@ knowledge-needs:
   - name: Using Structures
     id: using-structures
     subtopics:
-    - name: How to create structures
-      id: how-to-create-structures
-    - name: What are structures
-      id: what-are-structures
     - name: Select output structure
       id: select-output-structure
       description: Wants to use a Structure instead of an Entity in the output of a
@@ -586,8 +542,6 @@ knowledge-needs:
   - name: User Roles
     id: user-roles
     subtopics:
-    - name: Anonymous
-      id: anonymous
     - name: Anonymous screen access
       id: anonymous-screen-access
       description: Wants to grant anonymous and registered users access to selected
@@ -744,18 +698,9 @@ knowledge-needs:
 - name: (Creating an Application) Architecture
   guid: 9ce4fe11-dcc9-4b0f-b3ea-545557accdec
   topics:
-  - name: Why is architecture relevant?
-    id: architecture-relevance
-    subtopics:
-    - name: Basic architecture concepts
-      id: basic-architecture
-    - name: Importance of having good architecture from day one
-      id: good-architecture-value
   - name: How to build app architecture
     id: app-architecture-basics
     subtopics:
-    - name: Map OS concepts with "rest of the world" concepts
-      id: map-os-to-global-concepts
     - name: Programming model intro
       id: programming-model-intro
       description: Wants to understand the OutSystems programming model and how
@@ -779,10 +724,6 @@ knowledge-needs:
   - name: Modules
     id: modules
     subtopics:
-    - name: What are modules?
-      id: what-are-modules
-    - name: Difference between applications and modules
-      id: apps-vs-modules
     - name: Clone a module
       id: clone-a-module
       description: 'Wants to clone a module and move it to another application
@@ -865,10 +806,6 @@ knowledge-needs:
   - name: Showing data on a screen/block
     id: display-data-screen-block
     subtopics:
-    - name: Replace sample data in a UI element
-      id: replace-ui-sample-data
-    - name: Bind data to a UI element
-      id: bind-data-to-a-ui-element
     - name: Fetch screen data
       id: fetch-screen-data
       description: Wants to fetch data for a screen with Screen Aggregates for database
@@ -960,16 +897,9 @@ knowledge-needs:
         infinite-scroll-threshold attribute, and by keeping list items visually
         simple, in OutSystems 11, so that scrolling stays smooth and list rendering
         avoids visual glitches.
-  - name: Securing Data
-    id: securing-data
-    subtopics:
-    - name: Security validations on CRUD
-      id: security-crud-validation
   - name: Getting Data from your systems of records
     id: fetch-data-system-records
     subtopics:
-    - name: Get data from external db
-      id: get-data-from-external-db
     - name: Create SAP entity actions
       id: create-sap-entity-actions
       description: Wants to generate default entity actions for a
@@ -1010,10 +940,6 @@ knowledge-needs:
   - name: Adding test data
     id: adding-test-data
     subtopics:
-    - name: How to bootstrap test data from an excel file
-      id: bootstrap-test-data-excel
-    - name: How to edit data in Service Studio
-      id: edit-data-service-studio
     - name: Manage sample data
       id: manage-sample-data
       description: Wants to export, import, and reset the sample data provided
@@ -1031,8 +957,6 @@ knowledge-needs:
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
-    - name: Static Entities
-      id: static-entities
     - name: Static entity data migration
       id: static-entity-data-migration
       description: Wants to understand the considerations for migrating Static
@@ -1056,8 +980,6 @@ knowledge-needs:
         OSSYS_ENTITY_RECORD and physical table data (Data_Id, SS_Key,
         Is_Active), so they can interpret real entity record state when
         troubleshooting or verifying static entity data during migration.
-    - name: Create/manipulate entities
-      id: create-edit-entities
     - name: Import data model from Excel
       id: import-data-model-excel
       description: Wants to create an app's entity and initial data by
@@ -1252,8 +1174,6 @@ knowledge-needs:
         to work with data (retrieving results, performing calculations, combining
         data from different entities, and adding, deleting, or changing data), so
         they can choose the right query approach for a data task in OutSystems.
-    - name: Joins
-      id: joins
     - name: Mashup query guidance
       id: mashup-query-guidance
       description: Wants to write ODC data mashup queries that join entities across
@@ -1272,8 +1192,6 @@ knowledge-needs:
         each entity, by adding the missing join condition between the
         entities in the aggregate, so that the query performs an inner or
         outer join instead of unnecessarily evaluating every combination.
-    - name: Filter data
-      id: filter-data
     - name: Multi-entity aggregate
       id: multi-entity-aggregate
       description: Wants to create an aggregate that joins multiple entities and applies
@@ -1385,13 +1303,6 @@ knowledge-needs:
       description: Wants to calculate a total from an aggregate after it fetches and
         only show the chart and total when the aggregate has data, so the
         screen avoids showing incomplete alarm information.
-  - name: Sharing Data defined in OutSystems
-    id: share-data-outsystems
-    subtopics:
-    - name: Allow other apps to change data
-      id: allow-apps-edit-data
-    - name: Allow other apps to read data
-      id: allow-apps-read-data
   - name: Exporting data
     id: exporting-data
     subtopics:
@@ -1416,16 +1327,6 @@ knowledge-needs:
 - name: API testing
   guid: 195d823e-8f16-4d32-a66d-7766c6bdd032
   topics:
-  - name: Fundamentals of API testing strategies
-    id: api-testing-strategy
-    subtopics:
-    - name: API testing strategies
-      id: api-testing-strategies
-  - name: Manual API testing
-    id: manual-api-testing
-    subtopics:
-    - name: Manual API tests
-      id: manual-api-tests
   - name: Automated API testing
     id: automated-api-testing
     subtopics:
@@ -1505,8 +1406,6 @@ knowledge-needs:
 - name: Accessibility
   guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
   topics:
-  - name: Design for accessibility
-    id: design-for-accessibility
   - name: Implement accessibility features (screen readers, contrast...)
     id: accessibility-screen-reader
     subtopics:
@@ -1784,8 +1683,6 @@ knowledge-needs:
 - name: Advanced app architecture
   guid: d59b4004-582f-44ee-a1ae-eb75787ba1e0
   topics:
-  - name: SOA and Microservices
-    id: soa-and-microservices
   - name: Distributed transactions
     id: distributed-transactions
     description: Wants to manage distributed transactions in ODC apps by
@@ -2072,10 +1969,6 @@ knowledge-needs:
   - name: SQL
     id: sql
     subtopics:
-    - name: Query parameters
-      id: query-parameters
-    - name: Use SQL
-      id: use-sql
     - name: Insert null via SQL
       id: insert-null-via-sql
       description: Wants to insert a null value into a database field when the
@@ -2083,8 +1976,6 @@ knowledge-needs:
         example, writing 0 for an undefined decimal), by using a SQL node with
         Expand Inline and EncodeSql, in OutSystems Service Studio (O11), so
         that null is correctly stored in the database.
-    - name: Implement dynamic SQL statements correctly
-      id: dynamic-sql-correctly
     - name: SQL operator reference
       id: sql-operator-reference
       description: Wants to know which ANSI-92 operators and functions — comparison,
@@ -2199,8 +2090,6 @@ knowledge-needs:
       description: Wants to review PostgreSQL breaking changes after a version
         upgrade, including changes that affect SQL query results and behavior,
         so they can adjust SQL queries that depend on the previous results.
-  - name: Compound data
-    id: compound-data
   - name: Binary data actions
     id: binary-data-actions
     description: Wants to know which actions the BinaryData library provides in ODC,
@@ -2375,32 +2264,18 @@ knowledge-needs:
     - name: Purge safeguards
       id: purge-safeguards
       description: Wants to plan a data purging strategy that accounts for referential integrity, transient data, and off-peak execution, so records are deleted in the right order, temporary data is removed at the right time, and peak-hour impact stays low.
-  - name: Exposing data via REST webservices
-    id: rest-webservice-data
-  - name: Data isolation
-    id: data-isolation
-  - name: Data archiving / cold data
-    id: data-archiving-cold-data
-  - name: Data synchronization
-    id: data-syncronization
 - name: Advanced integrations
   guid: fb5d71a9-9ac6-4fda-adea-e89546e0af89
   topics:
   - name: Webservice customization
     id: webservice-customization
     subtopics:
-    - name: Customize request and response
-      id: custom-request-response
     - name: Customize SOAP encoding
       id: custom-soap-encoding
       description: Wants to support non-default character encodings in consumed SOAP web
         service requests in OutSystems 11 by implementing custom WCF message encoder
         classes and a binding element in an Integration Studio extension, so that SOAP
         calls can send and receive XML using encodings beyond the built-in defaults.
-    - name: API rate limit
-      id: api-rate-limit
-    - name: Customize headers
-      id: customize-headers
     - name: Add WS-Addressing
       id: add-ws-addressing
       description: Wants to add WS-Addressing elements to consumed SOAP requests in OutSystems 11 by creating an Integration Studio extension that changes the SOAP binding and calling it from the OnBeforeRequestAdvanced callback, so that the generated requests include the required WS-Addressing headers.
@@ -2637,8 +2512,6 @@ knowledge-needs:
         refreshing entities, and republishing and testing consumer modules, so
         that existing extensions and consumers keep working under the new
         supported connector.
-    - name: Integrate using custom code
-      id: custom-code-integration
     - name: Fix DataType mismatch
       id: fix-datatype-mismatch
       description: Wants to fix the OS-ELG-MODL-05017 error ("<ParameterName/StructureFieldName> has an incompatible DataType assigned and cannot be converted.") by changing the .NET type or DataType modifier so the field maps to a compatible OutSystems type before uploading the external library, so they can publish it successfully.
@@ -3451,10 +3324,6 @@ knowledge-needs:
   - name: Handling sensitive data
     id: handling-sensitive-data
     subtopics:
-    - name: Data masking
-      id: data-masking
-    - name: Data encryption
-      id: data-encryption
     - name: Secure random generation actions
       id: secure-random-generation-actions
       description: Wants to use the Security library to generate secure random
@@ -3513,10 +3382,6 @@ knowledge-needs:
   - name: External access control
     id: external-access-control
     subtopics:
-    - name: ACLs
-      id: acls
-    - name: Webservice authentication
-      id: webservice-authentication
     - name: Authenticate REST with client cert
       id: authenticate-rest-client-cert
       description: Wants to secure a consumed REST API by sending a client-side
@@ -4075,14 +3940,6 @@ knowledge-needs:
 - name: Advanced workflows
   guid: 7a84e09e-c48c-404f-8d9f-728b9f78c88c
   topics:
-  - name: Using callbacks
-    id: using-callbacks
-  - name: Best practices for scalable processes
-    id: scalable-process-best-practices
-  - name: Extend processes (process entities, APIs, reports)
-    id: extend-processes-entities
-  - name: Event driven processes
-    id: event-driven-processes
   - name: Case Management Framework
     id: case-management-framework
     subtopics:
@@ -4593,10 +4450,6 @@ knowledge-needs:
   - name: App configuration
     id: app-configuration
     subtopics:
-    - name: Configure app settings after a deployment
-      id: config-app-after-deploy
-    - name: App settings
-      id: app-settings
     - name: Apply portal configurations
       id: apply-portal-configurations
       description: Wants to apply settings, timer schedules, and REST endpoint values in the ODC Portal per stage, so that each app keeps separate configuration values and runtime changes update asynchronously.
@@ -4618,8 +4471,6 @@ knowledge-needs:
         end users of an app, library, or mobile library, by editing the Messages
         settings page in ODC Studio, so that error and upgrade notifications match
         the app's language, tone, or branding requirements.
-    - name: Configure app settings before a deployment
-      id: config-app-before-deploy
     - name: Trace query origin
       id: trace-query-origin
       description: Wants to trace a slow SQL query generated by OutSystems back
@@ -4704,16 +4555,6 @@ knowledge-needs:
         Platform Configurations tab, in OutSystems 11 Platform Server 11.21.0 and
         newer, so they can eliminate this specific log noise without suppressing
         other relevant exceptions.
-  - name: Runbooks for app configuration management
-    id: runbook-config-mgmt
-    subtopics:
-    - name: Manual runbooks for app configuration
-      id: manual-runbook-config
-  - name: Automated runbooks for app configuration management
-    id: automated-runbook-mgmt
-    subtopics:
-    - name: Automated runbooks for app configuration
-      id: automated-runbook-config
 - name: App architecture
   guid: 6c1b124d-3ad6-456a-926c-0a843667cd0a
   topics:
@@ -5151,13 +4992,9 @@ knowledge-needs:
         and business process jobs, dispatches them to available front-end servers,
         and uses fixed thread pools without running the business logic itself, so
         that they can reason about background task execution in Application Services.
-  - name: How to process massive amounts of data in Batch Processing
-    id: batch-data-processing
 - name: Basic integrations
   guid: c0892f27-0055-4fe6-bb6f-e5a308d37b2a
   topics:
-  - name: Integration Patterns - Basics (decision tree)
-    id: integration-pattern-basics
   - name: HTTP library actions
     id: http-library-actions
     subtopics:
@@ -5183,14 +5020,6 @@ knowledge-needs:
   - name: Expose webservices
     id: expose-webservices
     subtopics:
-    - name: Define methods
-      id: define-methods
-    - name: Error codes
-      id: error-codes
-    - name: Document APIs
-      id: document-apis
-    - name: Develop the logic of web services
-      id: webservice-logic-dev
     - name: Expose SOAP web service
       id: expose-soap-web-service
       description: Wants to expose a SOAP web service in OutSystems 11 by creating the service, adding methods, setting the module namespace, and checking the generated WSDL endpoint and bindings, so that clients can call the published service.
@@ -5200,8 +5029,6 @@ knowledge-needs:
         SoapUI, generating a project from the service''s WSDL, submitting a sample request,
         and inspecting the success/error XML response, so that the method''s behavior can
         be verified before considering it complete.'
-    - name: Troubleshoot webservices
-      id: troubleshoot-webservices
     - name: Fix REST param type
       id: fix-rest-param-type
       description: 'Wants to fix the "Cannot send a ''Binary Data''/''List''
@@ -5328,10 +5155,6 @@ knowledge-needs:
       description: Wants to export SOAP definition files from Service Studio,
         edit them locally to remove or replace unsupported WSDL constructs, and
         re-import them, so the service can be consumed successfully.
-    - name: Changing endpoints
-      id: changing-endpoints
-    - name: Consume and refresh methods
-      id: consume-refresh-methods
     - name: Write SOAP data
       id: write-soap-data
       description: 'Wants to create and update contact records through a consumed SOAP web service by loading an existing contact with GetContact when the Email input parameter is set, calling CreateContact when it is empty, and saving the form data back to the external system, so that users can maintain contacts in the SOAP service.'
@@ -5348,8 +5171,6 @@ knowledge-needs:
         by checking the HTTP status code returned and branching on success and
         error cases, so that the application can react appropriately to 2xx, 4xx,
         and 5xx responses.
-    - name: Structures
-      id: structures
     - name: SOAP parameter reference
       id: soap-parameter-reference
       description: Wants to look up the properties of a deprecated SOAP web service's input
@@ -5404,10 +5225,6 @@ knowledge-needs:
   - name: Emails
     id: emails
     subtopics:
-    - name: How to send emails
-      id: how-to-send-emails
-    - name: How to create emails
-      id: how-to-create-emails
     - name: Validate email address
       id: validate-email-address
       description: Wants to check whether a text string is a properly formatted
@@ -5466,12 +5283,6 @@ knowledge-needs:
   - name: BPT
     id: bpt
     subtopics:
-    - name: Connecting processes to the UI
-      id: connect-process-ui
-    - name: Understanding asynchronous processes
-      id: async-processes-basics
-    - name: Triggering processes, process flows
-      id: trigger-processes
     - name: Execute sub-process
       id: execute-sub-process
       description: Wants to execute a sub-process from a parent process by using the Execute
@@ -5508,10 +5319,6 @@ knowledge-needs:
         suspension and checking active instances via BAM, Service Center, or
         the platform database, so that they can safely remove deprecated
         activities without suspending running processes.
-    - name: BPMN notation
-      id: bpmn-notation
-    - name: Patterns for processes (automatic, human, decision)
-      id: process-decision-patterns
     - name: Automatic activity errors
       id: automatic-activity-errors
       description: Wants to understand how errors are handled in an Automatic
@@ -5894,31 +5701,15 @@ knowledge-needs:
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
-  - name: Fundamentals of component testing strategies
-    id: component-test-fundamentals
-    subtopics:
-    - name: Component testing strategies
-      id: component-test-strategy
-  - name: Manual component testing
-    id: manual-component-testing
-    subtopics:
-    - name: Manual component tests
-      id: manual-component-tests
   - name: Automated component testing
     id: component-test-automation
     subtopics:
-    - name: Service virtualization
-      id: service-virtualization
     - name: Thin screen actions
       id: thin-screen-actions
       description: Wants to keep screen actions focused on UI validations and user interactions by moving business validations and business logic into reusable server or public actions, so the logic can be tested without UI tests.
     - name: Isolate data access
       id: isolate-data-access
       description: Wants to keep complex algorithms testable by loading the required data before the action runs and passing it in as inputs, so the logic does not depend on direct database queries or database setup in tests.
-    - name: Testing small units of code
-      id: test-small-units
-    - name: Automated component tests
-      id: automated-component-tests
     - name: BDD test templates
       id: bdd-test-templates
       description: Wants to create BDD Framework test apps and screen suites from the provided application and screen templates, with the required blocks and actions, so that they can start component tests quickly.
@@ -5993,8 +5784,6 @@ knowledge-needs:
 - name: Consume UI
   guid: 349f50f2-cb79-41c7-9e8b-f113cbb3e965
   topics:
-  - name: Use a live style guide
-    id: use-a-live-style-guide
   - name: Reuse UI
     id: reuse-ui
     subtopics:
@@ -6084,10 +5873,6 @@ knowledge-needs:
         client actions or provider instance and JavaScript, so they can work
         with the latest patterns and know when deprecated patterns use
         AdvancedFormat instead.
-    - name: Customize styles in your app
-      id: customize-app-styles
-    - name: Creating a theme
-      id: creating-a-theme
     - name: Layout placeholder names
       id: layout-placeholder-names
       description: Wants to identify the layout placeholder names reserved by the
@@ -6270,28 +6055,6 @@ knowledge-needs:
 - name: Creating UI
   guid: a6b567df-2deb-4736-bd6d-cf144a9c6262
   topics:
-  - name: Visibility conditions of inputs in App Editor
-    id: visibility-conditions-app-editor
-    subtopics:
-    - name: Removing visibility conditions in App Editor
-      id: remove-visibility-cond-app-editor
-    - name: Adding visibility conditions in App Editor
-      id: add-visibility-cond-app-editor
-    - name: Modify visibility conditions in App Editor
-      id: edit-visibility-cond-app-editor
-    - name: Identify existing visibility conditions in App Editor
-      id: id-visibility-cond-app-editor
-  - name: Business validations of user input in App Editor
-    id: biz-val-app-editor
-    subtopics:
-    - name: Removing validations in App Editor
-      id: remove-biz-val-app-editor
-    - name: Adding validations in App Editor
-      id: add-biz-val-app-editor
-    - name: Refine/Edit validations in App Editor
-      id: edit-biz-val-app-editor
-    - name: Identify existing validations in App Editor
-      id: id-auto-gen-val
   - name: Adding UI Elements to a Screen
     id: add-ui-elements
     subtopics:
@@ -6586,8 +6349,6 @@ knowledge-needs:
         Service Studio, including ExtendedClass, so that they can correctly
         configure custom style classes for the pattern in a Traditional Web App
         (O11).
-    - name: Adding a Block
-      id: adding-a-block
     - name: Block widget reference
       id: block-widget-reference
       description: Wants to look up the properties and runtime properties of the
@@ -8159,8 +7920,6 @@ knowledge-needs:
         ValidationMessage, so that
         invalid data (such as a past due date or a malformed phone number) is
         rejected before it's saved to the database.
-    - name: Navigating between screens
-      id: navigate-screens
     - name: Go To Destination
       id: go-to-destination
       description: Wants to look up the purpose and properties (Destination)
@@ -8220,10 +7979,6 @@ knowledge-needs:
         JavaScript API, in ODC mobile apps and reactive web apps, so that the
         app restores UI state and avoids re-running initialization logic when
         users return via browser history.
-    - name: Changing data with UI
-      id: changing-data-with-ui
-    - name: UI interactions in apps
-      id: ui-interactions-in-apps
     - name: Create popup widget
       id: create-popup-widget
       description: Wants to create and show a popup to display information or
@@ -8468,10 +8223,6 @@ knowledge-needs:
   - name: Securing UI
     id: securing-ui
     subtopics:
-    - name: Secure UI element
-      id: secure-ui-element
-    - name: Secure screen
-      id: secure-screen
     - name: Prevent content copying
       id: prevent-content-copying
       description: Wants to prevent users from copying or capturing page text
@@ -8488,8 +8239,6 @@ knowledge-needs:
   - name: Basic front-end architecture
     id: basic-frontend-arch
     subtopics:
-    - name: Elements of UI in OutSystems (UI Flow, screen, UI element)
-      id: ui-elements-screen-blocks
     - name: Web application overview
       id: web-application-overview
       description: Wants to understand how a web application in OutSystems is
@@ -8506,12 +8255,6 @@ knowledge-needs:
   - name: Creating Screens
     id: creating-screens
     subtopics:
-    - name: Create screen from scratch
-      id: create-screen-scratch
-    - name: Create screen using scaffolding
-      id: screen-scaffolding
-    - name: Create screen from screen template
-      id: screen-template
     - name: Create screen templates
       id: create-screen-templates
       description: Wants to create custom Screen Templates in a Custom Screen
@@ -8541,12 +8284,6 @@ knowledge-needs:
   - name: Manual deployment without an infrastructure management console
     id: manual-deploy-no-console
     subtopics:
-    - name: Publish a module in SC
-      id: publish-a-module-in-sc
-    - name: Create a solution in SC
-      id: create-a-solution-in-sc
-    - name: Publish a solution in SC
-      id: publish-a-solution-in-sc
     - name: Publish an app in SC
       id: publish-an-app-o11
       description: Wants to publish an app from Service Studio or Service
@@ -8556,8 +8293,6 @@ knowledge-needs:
         Service Center's Versions tab or query via the Espace_CommitMessage
         entity, so that they can share app changes and track what was
         published, in OutSystems 11.
-    - name: Publish an extension in SC
-      id: publish-extension-sc
     - name: Open other version
       id: open-other-version
       description: Wants to switch to a previous published version of a
@@ -8644,12 +8379,6 @@ knowledge-needs:
   - name: Basic deployment concepts
     id: basic-deployment-concepts
     subtopics:
-    - name: Dependencies
-      id: dependencies
-    - name: Solutions/Apps/Modules/Extensions
-      id: solutions-apps-modules
-    - name: Environments/Stages
-      id: environments-stages
     - name: Get default stage domain
       id: get-default-domain
       description: Wants to get the default domain configured for the current ODC
@@ -8660,8 +8389,6 @@ knowledge-needs:
       description: Wants to understand ODC domain types, the default domain,
         and how built-in and custom domains affect access and future domain
         changes, so they can plan domain-related decisions safely.
-    - name: Deployment options
-      id: deployment-options
     - name: Deployment error concept
       id: deployment-error-concept
       description: Wants to understand what a deployment error is in OutSystems
@@ -8863,12 +8590,6 @@ knowledge-needs:
   - name: Manual deployment with an infrastructure management console
     id: manual-deploy-mgmt-console
     subtopics:
-    - name: Tag a version
-      id: tag-a-version
-    - name: Dealing with dependencies during deployments
-      id: deploy-dependency-management
-    - name: Deployment plan
-      id: deployment-plan
     - name: Understand environment filters
       id: understand-environment-filters
       description: Wants to understand what LifeTime environment filters are,
@@ -8901,8 +8622,6 @@ knowledge-needs:
         for the Application Details screen and the Create deployment plan
         popup in LifeTime Settings, so that the same filter applies
         consistently across related screens.
-    - name: Deploy apps in LT/Portal
-      id: deploy-apps-in-lt-portal
     - name: Deploy single module
       id: deploy-single-module
       description: Wants to deploy a single module from a Traditional Web app to
@@ -8952,8 +8671,6 @@ knowledge-needs:
   - name: Advanced manual deployments
     id: manual-advanced-deploy
     subtopics:
-    - name: Selective Deployment Using Deployment Zones (self-managed)
-      id: selective-deploy-zones
     - name: App zone behavior
       id: app-zone-behavior
       description: Wants to understand how application-level deployment zones work in OutSystems 11 so that existing mixed-mode apps keep their module-level settings after upgrade, new apps use application-wide zone configuration only, and changing an application's zone removes module-level zone settings.
@@ -8970,17 +8687,9 @@ knowledge-needs:
       description: Wants to split an application into separate apps when
         modules must stay in different deployment zones, so that they can
         follow the Service Studio procedure for deployment-zone changes.
-    - name: Deployments with no downtime
-      id: zero-downtime-deployments
   - name: Automated deployments foundations
     id: automated-deploy-basics
     subtopics:
-    - name: Automating deployments with API
-      id: deployments-api-automation
-    - name: Service accounts for automatic deployments
-      id: service-accounts-deploy
-    - name: CI/CD foundations
-      id: ci-cd-foundations
     - name: DevOps toolset
       id: devops-toolset
       description: Wants to understand which OutSystems and third-party tools support
@@ -8989,8 +8698,6 @@ knowledge-needs:
   - name: CI/CD pipelines
     id: ci-cd-pipelines
     subtopics:
-    - name: Integrate with external orchestrators for CD
-      id: external-orchestrator-cd
     - name: ODC CI/CD pipeline model
       id: odc-cicd-pipeline-model
       description: Wants to understand that ODC apps are built once in the
@@ -9596,30 +9303,9 @@ knowledge-needs:
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
-  - name: Fundamentals of Domain Driven Design for testability
-    id: domain-driven-design-test
-    subtopics:
-    - name: Code isolation
-      id: code-isolation
-    - name: DDD and testability
-      id: ddd-and-testability
-    - name: Mapping tests to the Architecture Canvas
-      id: map-tests-architecture
-  - name: Test data
-    id: test-data
-    subtopics:
-    - name: Setup & teardown strategies for automation
-      id: setup-teardown-automation
-  - name: Develop UI for testability
-    id: testable-ui-development
-    subtopics:
-    - name: UI development for testability
-      id: testable-ui-dev
 - name: Developing Plugins
   guid: 241c1f68-e8b9-4b5d-9e03-c1c014240027
   topics:
-  - name: Wrap a Cordova plugin as an OS Plugin
-    id: wrap-cordova-plugin
   - name: Create LifeTime plugin
     id: create-lifetime-plugin
     description: Wants to create a custom LifeTime plugin for O11 by installing the
@@ -9683,8 +9369,6 @@ knowledge-needs:
   - name: Using Service Studio
     id: using-service-studio
     subtopics:
-    - name: Log in to an environment
-      id: log-in-to-an-environment
     - name: Service Studio overview
       id: service-studio-overview
       description: Wants to navigate Service Studio as a newcomer by understanding
@@ -9695,8 +9379,6 @@ knowledge-needs:
       id: install-quickstart-app
       description: Wants to install a quickstart .oap in Service Studio, so they
         can open the app and continue the guided path.
-    - name: Download and set up
-      id: download-and-set-up
     - name: Adopt visual paradigm
       id: adopt-visual-paradigm
       description: Wants to understand why the OutSystems visual, model-driven paradigm
@@ -9894,8 +9576,6 @@ knowledge-needs:
   - name: Publish and share apps
     id: publish-and-share-apps
     subtopics:
-    - name: Try your app and share with end-users
-      id: test-share-app-users
     - name: Publish an app
       id: publish-an-app-odc
       description: Wants to publish an app from ODC Studio to a stage in ODC,
@@ -9903,10 +9583,6 @@ knowledge-needs:
   - name: Creating apps
     id: creating-apps
     subtopics:
-    - name: Choosing the right app type
-      id: choose-app-type
-    - name: Creating app from scratch
-      id: creating-app-from-scratch
     - name: Traditional web app
       id: traditional-web-app
       description: Wants to create a traditional web application with a UI module and a blank Core module, connect the modules with a public server action, and show that action result on an anonymous home screen, so they can publish and test the app in a browser.
@@ -9944,8 +9620,6 @@ knowledge-needs:
   - name: Using external OutSystems components
     id: external-outsystems-comp
     subtopics:
-    - name: Adding dependencies to a module
-      id: add-module-dependency
     - name: Resolve dependency error
       id: resolve-dependency-error
       description: Wants to resolve an ODC app or library dependency error after the
@@ -9959,8 +9633,6 @@ knowledge-needs:
       description: Wants to extend OutSystems with Integration Studio and Visual Studio
         so they can add C# code and custom components that the visual language
         does not provide.
-    - name: Installing Forge component
-      id: install-forge-component
     - name: Video call resources
       id: video-call-resources
       description: Wants to find curated resources for adding in-app video calls, including articles, sessions, and Forge assets, so they can choose an implementation path for their app.
@@ -10103,8 +9775,6 @@ knowledge-needs:
         Fetch me a new environment, then republishing their apps in the
         new environment, so that they can keep developing after the old
         environment is gone.'
-    - name: OutSystems overview
-      id: outsystems-overview
     - name: Install Azure trial
       id: install-azure-trial
       description: Wants to install the OutSystems 11 trial on Microsoft Azure by
@@ -10442,37 +10112,6 @@ knowledge-needs:
 - name: Hotfixing
   guid: d8111f11-34b0-4f33-8374-5d9611d507e2
   topics:
-  - name: Solve issues identified in Production
-    id: fix-issues-production
-    subtopics:
-    - name: Hotfix in QA
-      id: hotfix-in-qa
-    - name: Hotfixing strategies in OutSystems
-      id: hotfix-strategy-os
-    - name: Deploy Hotfix to Production
-      id: deploy-hotfix-production
-  - name: Solve issues directly in Production
-    id: fix-production-issues
-    subtopics:
-    - name: Hotfix directly in Production
-      id: hotfix-production
-  - name: Propagate hotfix to other environments
-    id: hotfix-propagation
-    subtopics:
-    - name: Portback hotfix
-      id: portback-hotfix
-    - name: Preparing hotfix portback
-      id: preparing-hotfix-portback
-  - name: Advanced hotfixing strategies
-    id: hotfix-strategy-advanced
-    subtopics:
-    - name: Hotfix from development with feature toggles
-      id: hotfix-dev-feature-toggle
-  - name: Hotfixing with a CI/CD pipeline
-    id: hotfix-ci-cd
-    subtopics:
-    - name: Hotfixing from dev with CI/CD pipeline
-      id: hotfix-dev-ci-cd
 - name: Integrate AI
   guid: a7056193-1048-45b9-ba65-37023127caab
   topics:
@@ -10554,13 +10193,6 @@ knowledge-needs:
         ImageBinary content item per document, so that a multimodal AI
         model can analyze several documents in a single call without prior
         conversion to Markdown.
-  - name: Sentiment analysis
-    id: sentiment-analisys
-    subtopics:
-    - name: Sentiment analysis
-      id: sentiment-analysis
-  - name: Machine learning
-    id: machine-learning
   - name: Agentic development overview
     id: agentic-development-overview
     description: Wants to understand what agentic development is, how it uses
@@ -11748,24 +11380,6 @@ knowledge-needs:
 - name: Lifecycle Independence
   guid: 4b3a44cd-2a86-462c-81b2-89a841284aab
   topics:
-  - name: Lifecycle independence
-    id: lifecycle-independence
-    subtopics:
-    - name: Lifecycle independence strategies in OutSystems
-      id: lifecycle-independence-os
-    - name: Domain Driven Design
-      id: domain-driven-design
-    - name: Team structure that promotes autonomy
-      id: autonomous-team-structure
-    - name: Strategies for development at scale
-      id: scale-development-strategy
-  - name: Basic feature fencing for independent releases
-    id: feature-fencing-basics
-    subtopics:
-    - name: Feature fencing using site properties/settings
-      id: feature-toggle-site-settings
-    - name: Feature fencing strategies
-      id: feature-fencing
 - name: Platform lifecycle and support
   guid: 2a9c4b6f-7d5e-4a58-8f7e-3a5c5f0f0a61
   topics:
@@ -11794,18 +11408,6 @@ knowledge-needs:
 - name: Load testing
   guid: f816091c-1508-4da9-b5f6-cffebb845234
   topics:
-  - name: Fundamentals of load testing strategies
-    id: load-test-strategy
-    subtopics:
-    - name: Post-release load testing
-      id: post-release-load-testing
-    - name: Load testing strategies
-      id: load-testing-strategies
-  - name: Load testing as part of CI/CD
-    id: load-test-ci-cd
-    subtopics:
-    - name: Load tests in CI/CD pipeline
-      id: load-tests-ci-cd
 - name: Native Mobile apps
   guid: f67965c4-a2ef-4076-8676-c8b8203ab671
   topics:
@@ -14823,15 +14425,6 @@ knowledge-needs:
 - name: Production Recovery
   guid: e392931b-251f-4d43-8c0b-c85bbc97e02e
   topics:
-  - name: Production rollback
-    id: production-rollback
-    subtopics:
-    - name: Production rollback strategies in OutSystems
-      id: rollback-strategy-os
-    - name: Rollback to an app's previous version
-      id: rollback-app-version
-  - name: Production recovery using roll forward
-    id: recovery-roll-forward
   - name: Cross-region disaster recovery (XRDR)
     id: cross-region-disaster-recovery
     subtopics:
@@ -14861,30 +14454,12 @@ knowledge-needs:
 - name: Progressive Release
   guid: eb4c73d7-260f-4048-9a2f-f61333238db1
   topics:
-  - name: Progressive releases
-    id: progressive-releases
-    subtopics:
-    - name: Progressive release strategies
-      id: progressive-release
-    - name: Canary releases using feature toggles
-      id: canary-release-toggle
-    - name: AB releases using feature toggles
-      id: ab-release-feature-toggle
-  - name: Advanced progressive releases
-    id: progressive-release-adv
-    subtopics:
-    - name: Releases using manual blue-green deployments
-      id: manual-blue-green-release
-    - name: Automated blue-green deployments
-      id: blue-green-deployment
 - name: Static Code Analysis
   guid: 931dbd7f-f26d-4499-b25a-e60f5c268f9d
   topics:
   - name: Basic technical debt maintenance
     id: tech-debt-basics
     subtopics:
-    - name: Manage technical debt with AIMS
-      id: manage-tech-debt
     - name: Remove disabled code
       id: remove-disabled-code
       description: Wants to remove code that has been disabled for a while,
@@ -15052,8 +14627,6 @@ knowledge-needs:
   - name: SAST integration
     id: sast-integration
     subtopics:
-    - name: Use third party SAST tools
-      id: use-third-party-sast
     - name: Code Quality security scans overview
       id: code-quality-security-scans-overview
       description: Wants to understand which security issues OutSystems Code
@@ -15061,13 +14634,6 @@ knowledge-needs:
         third-party SAST tools, so that they can evaluate whether the built-in
         analysis covers the security checks they need before adding another
         SAST tool.
-  - name: Automated SAST integration in dev
-    id: sast-integration-dev
-  - name: Automated SAST in CI/CD pipelines
-    id: automated-sast-ci-cd
-    subtopics:
-    - name: Automated low-code analysis and SAST integrated in a CI/CD pipeline
-      id: low-code-sast-ci-cd
   - name: Code Quality product FAQs
     id: code-quality-product-faqs
     subtopics:
@@ -15127,42 +14693,15 @@ knowledge-needs:
 - name: Testing practice
   guid: 0e440c0c-7db6-41cd-a51c-0c00ccb15e72
   topics:
-  - name: Fundamentals of testing strategies
-    id: testing-strategy-basics
-    subtopics:
-    - name: Testing strategies
-      id: testing-strategies
-    - name: Manual testing strategies
-      id: manual-testing-strategies
-  - name: Fundamentals of testing in SDLC
-    id: fund-testing-in-sdlc
-    subtopics:
-    - name: Pre-release testing
-      id: pre-release-testing
-    - name: Test phase in SDLC
-      id: test-phase-in-sdlc
   - name: Testing in SDLC
     id: testing-in-sdlc
     subtopics:
-    - name: End of sprint testing
-      id: end-of-sprint-testing
     - name: Testing in iterations
       id: testing-in-iterations
       description: Wants to understand what a tester does during an iteration, including coordinating user acceptance testing, creating the next iteration test plan, and supporting shaping and build work, so that they can manage testing activities across the iteration.
-  - name: Fundamentals of testing practice
-    id: testing-practices
-    subtopics:
-    - name: Test scripts
-      id: test-scripts
   - name: Road to automation
     id: road-to-automation
     subtopics:
-    - name: Test pyramid
-      id: test-pyramid
-    - name: Prioritizing automation of tests
-      id: prioritize-test-automation
-    - name: Automated testing strategies
-      id: automated-test-strategy
     - name: Team automation roles
       id: team-automation-roles
       description: Wants to assign test automation responsibilities across product
@@ -15184,55 +14723,15 @@ knowledge-needs:
         complexity, licensing budget, data-driven testing needs, and
         cross-technology test coverage, so that they pick a tool suited to
         their context instead of over- or under-investing.
-  - name: Acceptance criteria
-    id: acceptance-criteria
-    subtopics:
-    - name: Three amigos sessions
-      id: three-amigos-sessions
-    - name: Gherkin syntax for functional acceptance criteria
-      id: gherkin-functional-criteria
 - name: Traceability
   guid: da3a0cdb-4d5e-4281-add1-df304cd6db5f
   topics:
-  - name: Basic traceability
-    id: basic-tracebility
-    subtopics:
-    - name: Track work using tag and deployment notes
-      id: track-work-tag-deploy
-    - name: Traceability strategies in OutSystems
-      id: traceability-outsystems
-  - name: Traceability for automated deployments
-    id: traceability-deployments
-    subtopics:
-    - name: Integrate with ALM tools
-      id: integrate-with-alm-tools
-  - name: Traceability in CI/CD pipelines
-    id: traceability-ci-cd
-    subtopics:
-    - name: Integrate with external version control systems in a CI/CD pipeline
-      id: external-version-control-ci
 - name: UI testing
   guid: 0a465f0d-889b-4ff4-8903-9f3acd3c98c3
   topics:
-  - name: Fundamentals of UI testing strategies
-    id: ui-testing-strategy
-    subtopics:
-    - name: Manual ad-hoc UI tests
-      id: manual-ad-hoc-ui-tests
-    - name: UI testing strategies
-      id: ui-testing-strategies
-  - name: Manual UI testing
-    id: manual-ui-testing
-    subtopics:
-    - name: Manual UI tests using testing scripts
-      id: manual-ui-tests
-    - name: Ad-hoc visual defect reporting
-      id: ad-hoc-defect-reporting
   - name: Automated UI testing
     id: automated-ui-testing
     subtopics:
-    - name: Automated UI tests
-      id: automated-ui-tests
     - name: Page object model
       id: page-object-model
       description: Wants to structure automated web UI tests around reusable page objects, page widgets, interactions, assertions, and templates so the test framework stays maintainable as the UI changes.
@@ -15312,8 +14811,6 @@ knowledge-needs:
         including the Single sign on URL, Audience URI, certificate import,
         attribute statements, and claim mapping, so that users can
         authenticate through Okta with SAML.
-    - name: Built-in Authentication
-      id: built-in-authentication
     - name: Authentication actions
       id: authentication-actions
       description: 'Wants to use the Login, Logout, GetExternalLoginURL, and GetExternalLogoutURL system actions in ODC, so that they can sign users in and out with built-in authentication or redirect them to an external identity provider when the app uses external authentication.'
@@ -15420,8 +14917,6 @@ knowledge-needs:
         OSPlatformAuthentication SOAP web service and assign it as the
         platform authentication provider, so that OutSystems can call the
         plugin when activating it and when authenticating IT users.
-    - name: External IDPs
-      id: external-idps
     - name: Replace external IdP
       id: replace-external-idp
       description: Wants to replace an external IdP in ODC without disrupting
@@ -15503,8 +14998,6 @@ knowledge-needs:
         ODC, including the consequences of leaving it unconfigured (users
         remaining signed in at the identity provider), so that they can
         decide whether to enable SAML single logout for their setup.
-    - name: Lockout
-      id: lockout
     - name: Avoid IdP lockout
       id: avoid-idp-lockout
       description: Wants to avoid a total IdP lockout (loss of ODC Portal, ODC
@@ -15654,24 +15147,12 @@ knowledge-needs:
         combinations, redirect URI values, and provider-specific setup for the
         selected external provider, so that the plugin can authenticate users
         through that provider.
-    - name: External IDPs - User Mapping
-      id: user-mapping
     - name: Map users from external systems
       id: map-external-auth-users
       description: Wants to map IT users from an external authentication
         provider to matching LifeTime users, either manually or by using
         the LifeTime Services API, so that each external user can
         authenticate to LifeTime with an existing OutSystems account.
-    - name: External IDPs - LinkedIn
-      id: idp-linkedin
-    - name: External IDPs - Google
-      id: idp-google
-    - name: External IDPs - Facebook
-      id: idp-facebook
-    - name: External IDPs - Apple
-      id: idp-apple
-    - name: External IDPs - OpenIDP
-      id: idp-openidp
     - name: External IDPs - Auth0
       id: idp-auth0
       description: Wants to integrate Auth0 as an external identity provider with
@@ -15912,18 +15393,6 @@ knowledge-needs:
       description: Wants to make an application appear in the Users
         application so that application roles can be assigned, when the app
         has no Home module defined.
-    - name: Creating app role
-      id: create-app-role
-    - name: Application Roles
-      id: app-roles
-    - name: Creating Organization Role
-      id: create-org-role
-    - name: Delete app roles
-      id: delete-app-role
-    - name: Updating app role
-      id: update-app-role
-    - name: Assign Users to Organization Roles
-      id: assign-to-org-roles
     - name: Assign org-scope role
       id: assign-org-scope-role
       description: Wants to grant or revoke a member's (IT-user's) role at
@@ -15963,22 +15432,6 @@ knowledge-needs:
         /users/{key}/application-roles/{roleKey}), so that user
         provisioning and access control can be automated instead of done
         manually through the ODC Portal.
-    - name: Define Permissions
-      id: define-permissions
-    - name: Permissions
-      id: permissions
-    - name: Assign Users to User Groups
-      id: assign-to-user-groups
-    - name: User Groups
-      id: user-groups
-    - name: Deleting Organization Role
-      id: delete-org-roles
-    - name: Duplicating Organization Role
-      id: duplicate-org-roles
-    - name: Updating Organization Role
-      id: update-org-roles
-    - name: Organizational Roles
-      id: org-roles
     - name: Fix ODC permissions
       id: fix-odc-permissions
       description: Wants to resolve the invalid permissions screen an end
@@ -16014,10 +15467,6 @@ knowledge-needs:
       id: login-actions
       description: Wants to know which built-in login actions are available in
         ODC, so they can build sign-in flows.
-    - name: Deleting Users
-      id: deleting-users
-    - name: Updating Users
-      id: updating-users
     - name: Deactivate user
       id: deactivate-user
       description: 'Wants to deactivate an end-user account in ODC Portal, using the Management > Users page, so that the user loses access without being deleted.'
@@ -16028,8 +15477,6 @@ knowledge-needs:
         or the ODC user management APIs, so that the user can resolve the
         OS-IDCO-AUTH-40101 error and resume authenticating through the
         external IdP.
-    - name: Self Registration
-      id: self-registration
     - name: Build registration screen
       id: build-registration-screen
       description: Wants to build the first registration screen in a patient self-service application in Service Studio by adding local variables, photo upload, patient, user, and onboarding fields, responsive columns, and a password input, so that unauthenticated users can enter their details before the next tutorial.
@@ -16057,10 +15504,6 @@ knowledge-needs:
         running a FinishSignUp server action to grant the app role, and
         redirecting to the Login screen on success or showing an error for
         an invalid verification code or failed password policy.
-    - name: Users and Licensing
-      id: users-licensing
-    - name: User Types
-      id: user-types
     - name: Configure user domains
       id: configure-user-domains
       description: Wants to configure internal user domains in the ODC Portal
@@ -16099,26 +15542,6 @@ knowledge-needs:
   - name: Governance principles
     id: governance-principles
     subtopics:
-    - name: Deleting apps and libraries
-      id: delete-apps-libraries
-    - name: Modify IT Users in LT
-      id: modify-it-users-in-lt
-    - name: Delete IT Users in LT
-      id: delete-it-users-in-lt
-    - name: Create IT Users in LT
-      id: create-it-users-in-lt
-    - name: Built-in Roles
-      id: built-in-roles
-    - name: IT User management in LT
-      id: it-user-management-in-lt
-    - name: Governance strategies
-      id: governance-strategies
-    - name: Permission model in LT
-      id: permission-model-in-lt
-    - name: Permission model for semi-autonomous dev deployments up to QA
-      id: permission-model-qa
-    - name: Role assignment
-      id: role-assignment
     - name: Create IT role
       id: create-it-role
       description: Wants to create a new custom IT role in the LifeTime
@@ -16216,10 +15639,6 @@ knowledge-needs:
   - name: Expanded governance
     id: expanded-governance
     subtopics:
-    - name: Assign a role for an app
-      id: assign-a-role-for-an-app
-    - name: Permission model for autonomous dev deployments up to PP
-      id: permission-model-pp
     - name: Assign a role within a team
       id: assign-team-role
       description: Wants to assign roles within a LifeTime team, so that they can
@@ -16266,41 +15685,36 @@ knowledge-needs:
   - name: Using audit logs for operational alerts
     id: alerts-audit-logs
     description: Can I detect when a deployment happened outside defined hours?
-  - name: Using audit logs for troubleshooting
-    id: troubleshoot-audit-logs
-  - name: Which compliances can audit trail help me achieve
-    id: compliance-audit-logs
   - name: User permissions for audit log access
     id: user-perms-audit-logs
-    description: What is the permission model? For example, if I have access to only
-      some apps, can I see audit logs for other apps for which I don't have permission?
-      Is it per stage?
-  - name: Events logged in the audit trail
+    description: Wants to understand how audit-log access is permissioned across apps and stages, so they can tell whether users who can access only some apps can also see audit logs for other apps and whether that visibility is stage-scoped.
+  - name: Check whether an operation is audited
     id: events-audit-logs
-    description: 'Is operation XYZ in ODC Portal audited?
-
-      What is the list of operations and for what scope for auditing?'
-  - name: Understanding the structure and fields of an audit log
-    id: struct-audit-logs
-    description: 'What does each field mean?
-
-      What fields exist?
-
-      What values can each field hold?
-
-      What does each possible value mean?'
-  - name: Retention period available for audit trail
-    id: retention-audit-logs
+    description: Wants to check whether a specific operation in ODC Portal is
+      recorded in the audit trail.
+  - name: Identify audited operations and their scope
+    id: audited-operations-scope
+    description: Wants to identify which operations are recorded in the audit
+      trail and the scope covered by auditing, so they can tell whether a
+      specific action is audited before relying on audit logs.
+  - name: Identify audit log fields
+    id: audit-log-fields
+    description: Wants to identify the fields available in an audit log.
+  - name: Understand audit log field meanings
+    id: audit-log-field-meanings
+    description: Wants to understand what each audit-log field means.
+  - name: Identify values for audit log fields
+    id: audit-log-field-values
+    description: Wants to identify the values each audit-log field can contain.
+  - name: Understand audit log field values
+    id: audit-log-field-value-meanings
+    description: Wants to understand what each audit-log field value means.
   - name: Methods for accessing audit log data
     id: access-audit-logs
     subtopics:
     - name: Stream audit logs
       id: stream-audit-logs
       description: Can I stream audit logs?
-    - name: Exporting logs via CSV
-      id: export-audit-logs
-    - name: Viewing logs in the ODC Portal
-      id: view-audit-logs
 - name: Business Analysis
   guid: a3f7c821-56e4-4b2d-9d83-1e4c0f2d8b95
   topics:

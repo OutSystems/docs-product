@@ -2598,6 +2598,9 @@ knowledge-needs:
     - name: Fix missing assembly
       id: fix-missing-assembly
       description: 'Wants to fix the OS-ELG-MODL-05023 error ("The assembly <AssemblyName> is required and could not be found in your file.") by including the required referenced assembly in the external library ZIP, removing `PrivateAssets` from NuGet references when needed, and publishing with `dotnet publish`, so they can publish the external library successfully.'
+    - name: Fix parameter defaults
+      id: fix-parameter-defaults
+      description: 'Wants to fix the OS-ELG-MODL-05026 error ("The default value specified for <ParameterName> is unsupported.") by removing or changing unsupported default values in C# external library method signatures before uploading the library, so they can publish it successfully.'
     - name: Extension life cycle
       id: extension-life-cycle
       description: Wants to create an extension in Integration Studio, define its actions, structures, entities, and resources, keep its source code synchronized, publish it, and then use it in a Service Studio module, so that they can follow the full extension life cycle from setup to consumption.
@@ -2680,6 +2683,12 @@ knowledge-needs:
         of an OSIgnore-decorated struct property/field to public in their C#
         external library project, so that they can successfully publish the
         external library.'
+    - name: Fix OSStructure field
+      id: fix-osstructure-field
+      description: 'Wants to fix the OS-ELG-MODL-05011 error ("The property/field decorated by OSStructureField ''<ParameterName/StructureFieldName>'' in struct <StructureName> is not public.") by making the OSStructureField-decorated struct property or field public in their C# external library project, so they can successfully publish the external library.'
+    - name: Non-public OSStructure
+      id: fix-nonpublic-osstructure
+      description: 'Wants to fix the OS-ELG-MODL-05010 error ("The struct decorated with OSStructure ''<StructName>'' is not public.") by making the OSStructure-decorated struct public in their C# external library project, so they can successfully publish the external library.'
     - name: Fix missing OSStructure decoration
       id: fix-missing-osstructure-decoration
       description: 'Wants to fix the OS-ELG-MODL-05024 error ("The struct <StructName> used as <UsageName> is missing OSStructure decoration.") by adding the OSStructure decorator to every struct used as a parameter, return type, or public field/property in their C# external library project, so they can successfully publish the external library.'
@@ -2690,6 +2699,13 @@ knowledge-needs:
         ensuring only one class implements the OSInterface-decorated interface
         in their C# external library project, so that they can successfully
         publish the external library.'
+    - name: Fix duplicate object name
+      id: fix-duplicate-object-name
+      description: 'Wants to fix the OS-ELG-MODL-05025 error ("More than one
+        object with name <ObjectName> was found.") by renaming the conflicting
+        objects in their C# external library project so each object has a
+        unique name before uploading it, so they can successfully publish the
+        external library.'
     - name: Fix missing OSInterface
       id: fix-missing-osinterface
       description: 'Wants to fix the OS-ELG-MODL-05002 error (''No OSInterface
@@ -2720,6 +2736,9 @@ knowledge-needs:
     - name: Fix empty OSInterface
       id: fix-empty-osinterface
       description: 'Wants to fix the OS-ELG-MODL-05007 error ("No methods found in the interface decorated with OSInterface ''<InterfaceName>''.") by adding one or more methods to the OSInterface-decorated interface in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix icon resource
+      id: fix-icon-resource
+      description: 'Wants to fix the OS-ELG-MODL-05009 error (''The resource name ''<FileName>'' provided for the element ''<ElementName>'' IconResourceName was not found.'') by setting the OSInterface IconResourceName to an embedded resource name that exists in their C# external library project, so they can publish the external library successfully.'
     - name: Fix name length error
       id: fix-name-length-error
       description: 'Wants to fix the OS-ELG-MODL-05019 error ("The name <Name> is

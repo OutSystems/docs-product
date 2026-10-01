@@ -25,6 +25,12 @@ knowledge-needs:
       description: Wants to convert an uploaded Excel file into a Record List with
         the Excel to Record List action in a Server Action, so they can
         validate the rows and save them to entities at runtime.
+    - name: Bootstrap Excel ID
+      id: bootstrap-excel-id
+      description: Wants to update a bootstrap action so it converts a text value
+        from Excel into an entity identifier with an aggregate lookup before
+        assigning the record, so they can import bootstrap data correctly when
+        Excel values must be resolved to existing entity records.
     - name: Screen-level actions
       id: screen-level-actions
       description: 'Wants to understand the two types of screen-level actions in
@@ -923,6 +929,11 @@ knowledge-needs:
         the SAP integration and editing the connection, so that the app
         uses a different SAP system in that environment without
         republishing the module.
+    - name: Spreadsheet data source
+      id: spreadsheet-data-source
+      description: Wants to use a spreadsheet as an OutSystems data source,
+        so they can read and write single cells and cell ranges through the
+        supported spreadsheet connectors.
   - name: Integrate with SAP
     id: integrate-with-sap
     description: Wants to create a connection to a SAP system, import
@@ -951,6 +962,12 @@ knowledge-needs:
       description: Wants to add the OutSystems Sample Data public elements to
         an app in ODC Studio, so they can use the sample entities and actions
         that Screen Templates rely on when building screens.
+    - name: Delete test data
+      id: delete-test-data
+      description: Wants to delete all test data from entities by creating a
+        server action and back office screen, so child entities are cleared
+        before parent entities and foreign key relationships do not block the
+        deletion.
   - name: Modeling Data
     id: modeling-data
     subtopics:
@@ -986,6 +1003,12 @@ knowledge-needs:
         importing a spreadsheet through Import New Entities from Excel, so
         that the data model exists without manually creating entities and
         attributes one by one.
+    - name: Bootstrap Excel blanks
+      id: bootstrap-excel-blanks
+      description: Wants to import bootstrap data from Excel when blank cells
+        appear in numeric columns, by defining the fields as Text and
+        converting them with TextToDecimal or TextToInteger so blank cells
+        don't stop the import.
     - name: CRUD wrapper accelerator
       id: crud-wrapper-accelerator
       description: Wants to understand what CRUD wrappers are and use the ODC
@@ -1312,6 +1335,12 @@ knowledge-needs:
         using the Record List To Excel action and enable users to download the
         generated file, in OutSystems 11 Reactive Web and Traditional Web apps,
         so that entity records can be shared as an Excel file.
+    - name: Customize Excel export
+      id: customize-excel-export
+      description: Wants to customize the name and order of columns in an Excel
+        export by mapping a list to a structure and generating the file with
+        Record List To Excel, so they can download a spreadsheet with the
+        required labels and column order.
     - name: Extract PE data via REST API
       id: extract-pe-data-rest-api
       description: Wants to extract data from an OutSystems 11 Personal Environment
@@ -5781,6 +5810,12 @@ knowledge-needs:
       connect to a server copy, sync local changes, and manage branches and
       merges when working on a module, so that they can version code in a
       Git-based workflow.
+    subtopics:
+    - name: External version control
+      id: external-version-control
+      description: Wants to store OutSystems applications and modules in an
+        external version control system so that deployment changes stay tracked
+        and linked to user stories before release.
 - name: Consume UI
   guid: 349f50f2-cb79-41c7-9e8b-f113cbb3e965
   topics:
@@ -8293,6 +8328,12 @@ knowledge-needs:
         Service Center's Versions tab or query via the Espace_CommitMessage
         entity, so that they can share app changes and track what was
         published, in OutSystems 11.
+    - name: Create solution in SC
+      id: create-a-solution-in-sc
+      description: Wants to create a Service Center solution as an All
+        Components solution or as a module solution with dependencies when
+        they need to group components for republishing or troubleshooting,
+        so that they can prepare the right solution package.
     - name: Open other version
       id: open-other-version
       description: Wants to switch to a previous published version of a
@@ -8305,6 +8346,13 @@ knowledge-needs:
       description: Wants to publish modules and review the version history
         created by each publish in Service Center, so that they can trace
         releases.
+    - name: Publish solution in SC
+      id: publish-a-solution-in-sc
+      description: Wants to publish a Service Center solution or download
+        its current version when they need to republish the whole factory,
+        deploy the solution to another environment, or keep a copy for
+        troubleshooting, so that they can use the solution after creating
+        it.
     - name: Tag milestone versions
       id: tag-milestone-versions
       description: Wants to mark specific published versions as milestones,
@@ -8713,6 +8761,12 @@ knowledge-needs:
         progress automatically through Development, Regression, Acceptance,
         and Pre-production/Production stages with governance and impact
         analysis from LifeTime.
+    - name: GitHub pipeline upload
+      id: github-pipeline-upload
+      description: Wants to add an upload-to-GitHub step to a Jenkins CI/CD
+        pipeline after tests run, so that deployment manifest files are
+        uploaded to the repository and the deployment flow stays visible in
+        GitHub.
   - name: Troubleshoot 1-Click Publish
     id: troubleshoot-1-click-publish
     subtopics:

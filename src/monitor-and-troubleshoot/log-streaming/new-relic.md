@@ -17,6 +17,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - new-relic-log-streaming
 ---
 
 # Stream logs to New Relic

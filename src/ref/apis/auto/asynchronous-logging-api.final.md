@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - o11-async-log-writing
 ---
 
 # Asynchronous Logging API

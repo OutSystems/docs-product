@@ -15,6 +15,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - configure-lifetime-log-streaming
 ---
 
 # Configuring the log streaming service in LifeTime

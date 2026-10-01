@@ -17,6 +17,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+topic:
+  - deployments-api-automation
 ---
 
 # LifeTime API v1

@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - map-os-to-global-concepts
 ---
 
 # OutSystems main concepts

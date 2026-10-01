@@ -21,6 +21,10 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - create-it-role
+  - it-user-management-in-lt
+  - manage-teams
 ---
 
 # LifeTime Services API

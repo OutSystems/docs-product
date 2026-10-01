@@ -16,6 +16,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - build-submit-http-urls
+  - customize-http-response
+  - inspect-http-request
 ---
 
 # HTTPRequestHandler API

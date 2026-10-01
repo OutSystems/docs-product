@@ -3,6 +3,9 @@ summary: OutSystems 11 (O11) provides an API for managing JavaScript inclusion a
 tags: api management, javascript, web development, script inclusion/exclusion, service studio
 locale: en-us
 guid: 46cbaa3a-33a2-4504-b4c2-bb07e9b00940
+topic:
+  - configure-web-screen-script-exclusions
+  - manage-web-screen-scripts
 app_type: traditional web apps
 platform-version: o11
 figma:

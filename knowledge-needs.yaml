@@ -2681,6 +2681,13 @@ knowledge-needs:
         ensuring only one class implements the OSInterface-decorated interface
         in their C# external library project, so that they can successfully
         publish the external library.'
+    - name: Fix missing OSInterface
+      id: fix-missing-osinterface
+      description: 'Wants to fix the OS-ELG-MODL-05002 error (''No OSInterface
+        found in your file. Make sure only one interface decorated with
+        OSInterface is defined.'') by adding a public interface decorated with
+        OSInterface to the C# project and repackaging a new ZIP for upload, so
+        they can publish the external library successfully.'
     - name: Fix name length error
       id: fix-name-length-error
       description: 'Wants to fix the OS-ELG-MODL-05019 error ("The name <Name> is
@@ -3748,6 +3755,11 @@ knowledge-needs:
         vulnerabilities, specifically identity theft or data exposure, so
         they can recognize the impact of broken authentication in OWASP
         web security.
+    - name: ODC cookie behavior
+      id: odc-cookie-behavior
+      description: Wants to explain how ODC apps use cookies to identify end-users,
+        enable automatic sign-in, and document the default cookies they create,
+        so they can communicate cookie purpose and consent requirements.
     - name: Software integrity risks
       id: software-integrity-risks
       description: Wants to identify scenarios that represent software and
@@ -7993,6 +8005,12 @@ knowledge-needs:
         that can interfere with the framework's rendering lifecycle, in
         OutSystems 11, so that their JavaScript stays maintainable and
         doesn't conflict with Reactive Web and Mobile app rendering.
+    - name: Fix strict mode violation
+      id: fix-strict-mode-violation
+      description: Wants to resolve the OS-BLD-FE-40001 bundle error caused
+        by JavaScript nodes that violate Strict Mode, by identifying the
+        node named in the error message and correcting the unsupported
+        JavaScript syntax or behavior, so that the app publishes successfully.
     - name: Implement form validation
       id: implement-form-validation
       description: Wants to implement custom business-rule validation on a
@@ -8156,6 +8174,12 @@ knowledge-needs:
         them through the $public object, in ODC Studio, so that custom app
         behavior can be built in JavaScript for mobile apps and reactive web
         apps.
+    - name: Log messages with Logger
+      id: log-messages-with-logger
+      description: Wants to log informational messages or errors through the
+        Logger JavaScript API in ODC Portal, grouping entries by category and
+        buffering them locally when offline, so that they can trace app
+        behavior and send logs when connectivity returns.
     - name: Manipulate screen DOM
       id: manipulate-screen-dom
       description: Wants to apply custom CSS classes to the current screen's root DOM
@@ -13835,6 +13859,12 @@ knowledge-needs:
         development-time disablement, and setting the optional protection
         preferences that match its security needs, so that the app binary
         resists reverse engineering, repackaging, and tampering.
+    - name: Protection features
+      id: appshield-protection-features
+      description: Wants to understand the AppShield protection features available for
+        Android, iOS, and both platforms, including what each feature blocks
+        and whether it is configurable, so that they can choose the right
+        protections for a mobile app.
     - name: Duplicate AppShield ref
       id: duplicate-appshield-reference
       description: 'Wants to resolve the OS-MABS-SHLD-40001 "The AppShield plugin
@@ -13860,6 +13890,11 @@ knowledge-needs:
         mobile app so the app opens a landing page in the default browser,
         keeps the URL free of query parameters, and uses the generated query
         parameters to explain why the app shut down.'
+    - name: Get application hash
+      id: get-application-hash
+      description: Wants to obtain the hash of an Android app package so they can allow
+        a specific screen reader or keyboard signer in AppShield, so that
+        trusted accessibility software can be added to the allowlist.
     - name: Outdated MABS version error
       id: outdated-mabs-version-error
       description: Wants to resolve the OS-MABS-SHLD-40004 "It looks like your MABS version
@@ -15016,6 +15051,9 @@ knowledge-needs:
     - name: Page object model
       id: page-object-model
       description: Wants to structure automated web UI tests around reusable page objects, page widgets, interactions, assertions, and templates so the test framework stays maintainable as the UI changes.
+    - name: Selenium locators
+      id: selenium-locators
+      description: Wants to choose stable Selenium locators for OutSystems web elements by using CSS selectors, custom styles, and custom IDs instead of generated IDs.
 - name: User Management
   guid: 30a6f6ca-c898-4e05-b5d6-88a6789ca36c
   topics:
@@ -17822,13 +17860,19 @@ knowledge-needs:
         Collector receiver and Splunk Exporter, updating the collector image
         version, and registering the collector endpoint and credentials in
         LifeTime, so that logs stream to Splunk in near real time.
-    - name: Configure Datadog streaming
-      id: configure-datadog-streaming
-      description: Wants to set up log streaming from ODC apps to Datadog by
-        configuring the OpenTelemetry Collector with the Datadog exporter,
-        getting the Datadog API key and collector endpoint credentials, and
-        registering the stream in the ODC Portal, so that observability data
-        streams to Datadog.
+    - name: Datadog log streaming
+      id: datadog-log-streaming
+      description: Wants to set up log streaming to Datadog by configuring the
+        OpenTelemetry Collector with the Datadog exporter, providing the
+        Datadog API key and collector endpoint credentials, and registering
+        the stream, so that logs reach Datadog.
+    - name: Dynatrace log streaming
+      id: dynatrace-log-streaming
+      description: Wants to set up log streaming from OutSystems 11 applications
+        to Dynatrace by getting the Dynatrace SaaS endpoint and API token,
+        configuring LifeTime for version 11.22.0 or later or for earlier
+        versions with OTLP/HTTP, and sending logs to Dynatrace, so that
+        application logs reach the Dynatrace APM tool.
     - name: Configure New Relic streaming
       id: configure-new-relic-streaming
       description: Wants to set up log streaming from ODC apps to New Relic by
@@ -18050,6 +18094,9 @@ knowledge-needs:
       end-user experience and performance by drilling from the environment to the
       application, module, screen, and screen action levels, reading client, network,
       server, and APDEX metrics, and troubleshooting performance issues.
+  - name: PerformanceMonitoring API
+    id: performance-monitoring-api
+    description: Wants to use the PerformanceMonitoring API in Traditional Web apps to read metrics stored in the platform database and add custom metrics to applications, so they can build dashboards and extend application performance measurement.
   - name: Custom alerts
     id: custom-alerts
     subtopics:
@@ -18099,6 +18146,29 @@ knowledge-needs:
         details and screenshot, launching the affected screen in Service
         Studio, and closing resolved requests, so that administrators can
         act on reported issues.
+    - name: Enable app feedback
+      id: enable-app-feedback
+      description: Wants to activate or deactivate the App Feedback feature
+        for an environment, regenerate mobile apps when needed, and restrict
+        feedback submission to a specific user group, so that selected users
+        can send feedback from the app.
+  - name: Built-in monitoring tools
+    id: built-in-monitoring-tools
+    description: Wants to use OutSystems built-in monitoring tools, including
+      Service Center, LifeTime Analytics, and App Feedback, to review logs,
+      performance, environment status, and user feedback, so they can detect
+      and troubleshoot app issues from the platform.
+  - name: Extend monitoring tools
+    id: extend-monitoring-tools
+    description: Wants to understand how to extend OutSystems monitoring with
+      supported APIs and plugins so they can add custom logs and integrate
+      third-party monitoring tools.
+  - name: Cloud monitoring split
+    id: cloud-monitoring-split
+    description: Wants to understand how monitoring responsibilities differ
+      between OutSystems Cloud and on-premises environments, so they know
+      which infrastructure, platform, and application monitoring tasks
+      OutSystems handles and which ones they own.
   - name: SLOWSQL log messages
     id: slowsql-log-messages
     description: Wants to interpret SLOWSQL log messages in Service Center's
@@ -18198,6 +18268,13 @@ knowledge-needs:
         connected device, but always confirm the fix on a real device before
         considering it resolved, in OutSystems 11, so that they debug
         efficiently without missing device-only behavior differences.
+    - name: Log information in action flows
+      id: log-information-in-action-flows
+      description: Wants to log debug information in an action flow with the
+        LogMessage system action, view it later in Service Center Monitoring >
+        General, and switch off auditing when the logging is no longer needed,
+        in OutSystems 11, so that they can inspect runtime behavior without
+        republishing the application.
   - name: Log source catalog
     id: log-source-catalog
     description: Wants to know which log or report file to collect for a

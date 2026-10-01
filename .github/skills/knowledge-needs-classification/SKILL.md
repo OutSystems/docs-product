@@ -13,7 +13,7 @@ description: >
   of questions. For validating a list or table of questions the user
   already wrote, use the knowledge-need-validator skill instead — this
   skill's job starts from a file, not a list.
-allowed-tools: Bash(gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml:*),Bash(gh repo view:*),Bash(git branch --show-current:*),Bash(gh api repos/OutSystems/tk-cicd --jq '.default_branch':*),Bash(gh api repos/OutSystems/tk-cicd/git/ref/heads/:*),Bash(gh api repos/OutSystems/tk-cicd/git/matching-refs/heads/add-knowledge-needs:*),Bash(gh api repos/OutSystems/tk-cicd/commits/add-knowledge-needs:*),Bash(gh pr list --repo OutSystems/tk-cicd --head add-knowledge-needs:*),Bash(diff:*)
+allowed-tools: Bash(gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml:*),Bash(gh repo view:*),Bash(git branch --show-current:*),Bash(gh api repos/OutSystems/tk-cicd --jq '.default_branch':*),Bash(gh api repos/OutSystems/tk-cicd/git/ref/heads/:*),Bash(gh api repos/OutSystems/tk-cicd/git/matching-refs/heads/add-knowledge-needs:*),Bash(gh api repos/OutSystems/tk-cicd/commits/add-knowledge-needs:*),Bash(gh pr list --repo OutSystems/tk-cicd --head add-knowledge-needs:*),Bash(diff:*),Bash(python3 .github/skills/knowledge-needs-classification/scripts/validate_register.py:*),Bash(python .github/skills/knowledge-needs-classification/scripts/validate_register.py:*)
 ---
 
 # Knowledge needs content classification
@@ -270,13 +270,29 @@ the matching option above.
   same `gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml`
   command as Step 3.
   Whichever copy you insert into below, validate it immediately after
-  inserting and before saving, committing, or pushing it: parse the file
-  with a YAML parser (for example
-  `python3 -c "import yaml; yaml.safe_load(open('<path>'))"`) and confirm it
-  succeeds. If it fails, the most likely cause is a `name` or `description`
-  value that needed the quoting rule from Step 7 — fix it and re-validate
-  before continuing. Never save, commit, or push a `knowledge-needs.yaml`
-  that fails to parse.
+  inserting and before saving, committing, or pushing it, by running the
+  bundled validator against that file:
+  `python3 .github/skills/knowledge-needs-classification/scripts/validate_register.py <path>`
+  (the `scripts/` folder next to this `SKILL.md`; use `python` if `python3`
+  isn't available). It checks that the file parses as YAML **and** that the
+  register structure is valid — exactly 3 levels with subtopics as leaves,
+  unique `id`s, required `name`s — and prints every problem it finds.
+  **If it fails, fix the file yourself and re-run it; repeat until it exits
+  0.** Don't ask the user and don't skip it. Typical causes:
+  - *Does not parse* — a `name` or `description` that needed the quoting
+    rule from Step 7. Quote it and re-validate.
+  - *Subtopic has its own `subtopics`* — the new entries were nested under an
+    existing subtopic. Re-apply Step 7.2: add them as siblings under the same
+    topic, or promote that subtopic to a topic of its own (move it up a
+    level and put the new entries under it).
+  - *Duplicate or missing `id`* — regenerate the `id` per Step 7.3.
+
+  Fix by editing only the entries you added — never restructure or delete
+  existing entries to make the validator pass beyond the promotion in Step
+  7.2. If the file still fails after a few honest attempts, stop: don't save,
+  commit, or push it, show the user the validator output and the proposed
+  placement, and ask how to proceed. Never save, commit, or push a
+  `knowledge-needs.yaml` that fails this validator.
   - **`tk-cicd` unreachable** — insert each approved `NEW` item at its
     placement directly into the **local** `knowledge-needs.yaml` (the file
     read in Step 2, at the repo root) instead, and save it. Tell the user

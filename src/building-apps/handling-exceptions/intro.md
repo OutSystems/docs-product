@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - how-to-handle-exceptions
+  - understanding-exceptions
 ---
 
 # Handling exceptions

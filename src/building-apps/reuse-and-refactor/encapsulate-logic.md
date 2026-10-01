@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - how-to-create-an-action
+  - reuse-elements-with-extract-to-action
 ---
 
 # Use Actions to Encapsulate Logic

@@ -15714,7 +15714,7 @@ knowledge-needs:
     subtopics:
     - name: Stream audit logs
       id: stream-audit-logs
-      description: Can I stream audit logs?
+      description: Wants to stream audit logs to an external destination so they can centralize audit data for compliance or troubleshooting.
 - name: Business Analysis
   guid: a3f7c821-56e4-4b2d-9d83-1e4c0f2d8b95
   topics:

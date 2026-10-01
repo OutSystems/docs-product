@@ -17,6 +17,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - free-database-space
 ---
 
 # DbCleaner API

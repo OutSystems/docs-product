@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - configure-chart-data-points
 ---
 
 # Create Line and Area Charts

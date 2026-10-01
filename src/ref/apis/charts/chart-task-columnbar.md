@@ -6,6 +6,10 @@ tags:
 summary: Explore how to create column and bar charts in OutSystems 11 (O11) using fixed or variable data points and multiple series.
 locale: en-us
 guid: 7115204b-9a1e-42f8-87f8-d1d771608667
+topic:
+  - configure-bar-chart
+  - configure-chart-data-points
+  - configure-column-chart
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:478

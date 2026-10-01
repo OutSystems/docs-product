@@ -21,6 +21,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - create-lifetime-plugin
+  - lifetime-sdk-reference
 ---
 
 # LifeTime SDK

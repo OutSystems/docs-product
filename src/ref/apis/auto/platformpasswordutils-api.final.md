@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - password-utility-actions
 ---
 
 # PlatformPasswordUtils API

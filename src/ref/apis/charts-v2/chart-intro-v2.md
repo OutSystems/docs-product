@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - charts-api-v2-reference
 ---
 
 # Charts

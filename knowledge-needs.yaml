@@ -5663,6 +5663,12 @@ knowledge-needs:
         EmailAddressesConcatenate built-in function, in Service Studio for O11,
         so that they can pass a combined recipient list to the Send Email
         element or activity.
+    - name: Send email logic
+      id: send-email-logic
+      description: Wants to create server-side logic that sends an email in
+        Service Studio for O11 by adding the Send Email action, selecting an
+        Email, and setting the required input parameters and To and From
+        properties, so that the module sends the message successfully.
     - name: Add email MIME headers
       id: add-email-mime-headers
       description: Wants to add custom header properties (MIME headers) to an
@@ -5705,6 +5711,37 @@ knowledge-needs:
     - name: Process extended actions
       id: process-extended-actions
       description: Wants to use Process Extended Actions and Process Activities Extended Actions from the Processes layer in Service Studio to launch a process or close a process activity, and to pass input and output parameters when invoking them, in OutSystems 11, so that they can control process execution from an action flow.
+    - name: Define process entities
+      id: define-process-entities
+      description: Wants to understand what a Process Entity represents in
+        OutSystems 11, so that they can use process-specific data in application
+        logic.
+    - name: Expose process entity property
+      id: expose-process-entity-property
+      description: Wants to expose a process's Process Entity property in
+        OutSystems 11, so that application logic can access the process entity
+        associated with each instance.
+    - name: Query process runtime state
+      id: query-process-runtime-state
+      description: Wants to query a BPT process instance's runtime state through
+        its Process Entity in OutSystems 11, so that they can inspect the
+        instance's status in application logic.
+    - name: Terminate process instance
+      id: terminate-process-instance
+      description: Wants to terminate a BPT process instance by using its
+        Process Entity in OutSystems 11, so that a process that should no longer
+        continue can be stopped.
+    - name: Reuse process entities across modules
+      id: reuse-process-entities-across-modules
+      description: Wants to reuse a Process Entity from another module in
+        OutSystems 11, so that multiple modules can access the same process
+        data without defining duplicate entities.
+    - name: Separate process logic
+      id: separate-process-logic
+      description: Wants to separate application and process logic when both update the same entity record, so that they avoid record locking and timeout issues in a BPT process.
+    - name: Start conditional start
+      id: start-conditional-start
+      description: Wants to start a Conditional Start from an action flow by using the Start<Conditional Start Name> process activity extended action, passing the ProcessId and each input parameter in the same order and type as the Conditional Start definition, so that the Conditional Start instance starts with the correct data.
     - name: Close human activity
       id: close-human-activity
       description: Wants to close a Human activity from a server action or screen action in OutSystems 11, wrapping the call in a server action when a client action in Reactive Web or Mobile triggers the close, so the workflow continues after the activity ends.
@@ -5827,6 +5864,13 @@ knowledge-needs:
         to Yes in OutSystems 11, so that all activity instances stop right
         away regardless of other running flow paths, and can be restarted
         later from Service Center.
+    - name: Terminate idle processes
+      id: terminate-idle-processes
+      description: Wants to split a BPT process into first execution and
+        resumed execution paths when it stays idle for a long time,
+        ending the process and restarting it later with a timer, another
+        process, or an action on the screen in OutSystems 11, so that
+        database growth and deployment impact stay low.
     - name: Light process overview
       id: light-process-overview
       description: Wants to understand what light process execution is and
@@ -12171,6 +12215,12 @@ knowledge-needs:
       including what kinds of guidance it covers, so that they can find the
       right best-practice topic for their app.
     subtopics:
+    - name: Structure mobile modules
+      id: structure-mobile-modules
+      description: Wants to organize mobile screen content and logic into reusable
+        blocks and split concepts across mobile core and UI modules when
+        multiple developers work on the same app, so each concept stays isolated
+        and developers avoid overlapping changes.
     - name: Use sandboxes
       id: use-sandboxes
       description: Wants to keep mobile app sandboxes in non-production environments,

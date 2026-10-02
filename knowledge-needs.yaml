@@ -482,6 +482,12 @@ knowledge-needs:
         shared (same User Provider, same browser, via Public Blocks/Client
         Actions), so that app context or configuration data persists
         client-side without exposing sensitive information.'
+    - name: Local Variables
+      id: local-variables
+      description: Wants to create and use a local variable inside a screen or
+        action to store an input value and filter an aggregate, so that the
+        value remains available only within its parent scope and is destroyed
+        when execution leaves that scope.
     - name: Runtime property fields
       id: runtime-property-fields
       description: Wants to look up the configurable properties of a Runtime Property
@@ -571,6 +577,9 @@ knowledge-needs:
     - name: File plugin availability
       id: file-plugin-availability
       description: Wants to troubleshoot the OS-PLUG-FILE-0001 error by confirming the app runs as a native mobile app with the File plugin included, so the Cordova or Capacitor bridge is available when file operations run.
+    - name: File plugin missing
+      id: file-plugin-missing
+      description: Wants to resolve the OS-PLUG-FILE-0003 error by confirming the File plugin is included in the mobile package, regenerating the package when it is missing from the build, and verifying the new package installs successfully, so filesystem operations work at runtime.
     - name: File plugin readiness
       id: file-plugin-readiness
       description: 'Wants to call File Plugin methods only after the Cordova or Capacitor bridge has fully initialized, so filesystem operations do not fail with OS-PLUG-FILE-0004.'
@@ -918,6 +927,11 @@ knowledge-needs:
       description: Wants to implement user-triggered sorting on a List widget by
         using other widgets to capture the sort criteria and refresh the data
         source, so that end users can reorder the list at runtime in OutSystems 11.
+    - name: Set up List widget
+      id: set-up-list-widget
+      description: Wants to add a List widget to an ODC screen, bind it to an
+        Aggregate as its data source, and configure item attributes so fetched
+        records display in the list.
     - name: Customize table columns
       id: customize-table-columns
       description: Wants to customize the columns of a Table widget — adding, deleting,
@@ -1015,6 +1029,11 @@ knowledge-needs:
       description: Wants to add the OutSystems Sample Data public elements to
         an app in ODC Studio, so they can use the sample entities and actions
         that Screen Templates rely on when building screens.
+    - name: Bootstrap test data Excel
+      id: bootstrap-test-data-excel
+      description: Wants to bootstrap an existing entity from an Excel file in
+        ODC Studio by generating the bootstrap action, structure, resource,
+        and timer, so they can load test data during development and testing.
     - name: Delete test data
       id: delete-test-data
       description: Wants to delete all test data from entities by creating a
@@ -1375,6 +1394,11 @@ knowledge-needs:
         or descending order using the Sorting tab's Add Sort feature, in
         Service Studio for OutSystems 11, so they can retrieve information
           such as the first or last record when data is ordered alphabetically.
+    - name: Dynamic aggregate sort
+      id: dynamic-aggregate-sort
+      description: Wants to configure a dynamic sort in an aggregate by
+        binding a text variable to the Sorting panel, so users can change the
+        order at runtime with calculated, grouped, or entity attributes.
     - name: Aggregate outputs
       id: aggregate-outputs
       description: Wants to understand the records list returned by an
@@ -1387,6 +1411,10 @@ knowledge-needs:
         returned data, including Max. Records and the read-only Executed SQL
         property, so they can limit results and inspect the generated SQL
         without affecting Count.
+    - name: Filter aggregate data
+      id: filter-aggregate-data
+      description: Wants to add filter conditions to an aggregate in ODC Studio
+        so that it returns only the records that match the selected criteria.
     - name: Aggregate SQL translation
       id: aggregate-sql-translation
       description: Wants to understand how an Aggregate is translated into
@@ -2450,6 +2478,11 @@ knowledge-needs:
     - name: Configure REST runtime
       id: configure-rest-runtime
       description: Wants to change a consumed REST API's endpoint URL and authentication at runtime without extra development, so the integration can target the correct environment and credentials.
+    - name: Document REST API
+      id: document-rest-api
+      description: Wants to add descriptions to exposed REST API methods and
+        parameters, publish the app, and open the generated documentation in
+        ODC Studio so external developers can inspect the API contract.
   - name: Database connections
     id: database-connections
     subtopics:
@@ -4755,6 +4788,9 @@ knowledge-needs:
     - name: Canvas overview
       id: canvas-overview
       description: Wants to understand the Architecture Canvas framework in OutSystems, including its foundation, core, and end-user layers and its benefits for reusable services and lifecycle independence, so they can design application architecture with it.
+    - name: Architecture canvas example
+      id: architecture-canvas-example
+      description: Wants to apply the Architecture Canvas to a doctors appointments app, disclosing requirements, organizing concepts into layers, assembling modules, and producing the architecture blueprint and reference map, so they can follow the design process on a concrete example.
   - name: Application composition
     id: application-composition
     subtopics:
@@ -5373,6 +5409,11 @@ knowledge-needs:
         field when consuming a single REST method so Service Studio infers request
         input parameters, structure fields, and content type for supported request
         formats.
+    - name: Refresh REST service
+      id: refresh-rest-service
+      description: Wants to refresh a consumed REST service in ODC Studio after the
+        API changes, so the app updates the consumed methods and stays aligned with
+        the current API contract.
     - name: Consume SAP OData
       id: consume-sap-odata
       description: Wants to consume an SAP OData service in OutSystems 11 by downloading
@@ -8226,6 +8267,12 @@ knowledge-needs:
         JavaScript API, in ODC mobile apps and reactive web apps, so that the
         app restores UI state and avoids re-running initialization logic when
         users return via browser history.
+    - name: Screen interactions
+      id: screen-interactions
+      description: Wants to understand how buttons, links, screen actions, and
+        client actions trigger navigation, external URLs, events, and
+        client-side logic, so that they can choose the right screen interaction
+        for each control.
     - name: Create popup widget
       id: create-popup-widget
       description: Wants to create and show a popup to display information or
@@ -8514,6 +8561,16 @@ knowledge-needs:
         bootstrap the template with content or start empty, and publish the
         module so other developers can create reusable screens with compatible
         themes, generic prompts, shared logic, and data replacement support.
+    - name: Screen basics
+      id: screen-basics
+      description: Wants to understand what a screen is, how templates and
+        widgets build it, and how widgets adapt to smaller screens, so that
+        they can recognize the main parts of a reactive UI screen.
+    - name: Screen inputs and variables
+      id: screen-inputs-and-variables
+      description: Wants to pass data into a screen with input parameters and
+        store temporary values in local variables, so that the screen shows the
+        right record and keeps context during navigation.
     - name: Set screen access
       id: set-screen-access
       description: Wants to configure a screen's Accessible by property to Everyone in ODC Studio so the screen is available to all users during initial app setup.
@@ -9749,6 +9806,11 @@ knowledge-needs:
       id: odc-portal-app-lifecycle
       description: Wants to publish an app in ODC Portal, so they can move it
         through the right lifecycle stage for their release.
+    - name: Delete apps and libraries
+      id: delete-apps-and-libraries
+      description: Wants to delete apps and libraries from ODC Portal when they are
+        not deployed to Production, understanding the permission, undeploy, and
+        dependency checks, so they can remove unused assets safely.
     - name: Initial setup
       id: odc-initial-setup
       description: Wants to complete the initial setup for ODC, so they can
@@ -9757,6 +9819,19 @@ knowledge-needs:
       id: portal-vs-studio
       description: Wants to distinguish ODC Studio from ODC Portal, so they know
         Studio is the IDE and Portal is the web console for managing apps and users.
+    - name: ODC Portal replaces LifeTime, Service Center, and Users
+      id: odc-portal-replaces-lifetime-service-center-users
+      description: Wants to know which ODC Portal area replaces LifeTime,
+        Service Center, and Users for app and user management, so they can
+        use the right console for each task.
+    - name: ODC deployment assets move one at a time
+      id: odc-deployment-assets-one-at-a-time
+      description: Wants to understand that ODC deployments move assets one at
+        a time, so they know what to expect during deployment.
+    - name: O11 management tasks and terminology in ODC
+      id: odc-o11-management-terminology-mapping
+      description: Wants to map familiar O11 management tasks and terminology
+        to ODC Portal, so they can find the equivalent actions in ODC.
     - name: Open apps in ODC Studio
       id: open-apps-in-odc-studio
       description: Wants to open an app in ODC Studio from ODC Portal, so they
@@ -11391,6 +11466,19 @@ knowledge-needs:
         handle errors using each action's Success output, so that sensitive
         information like tokens or passwords is stored safely on iOS and
         Android devices.
+    - name: KeyStore plugin availability
+      id: keystore-plugin-availability
+      description: Wants to troubleshoot the OS-PLUG-KSTR-0016 error by
+        confirming the app runs as a native mobile app with the KeyStore
+        plugin included and by checking plugin availability before calling
+        KeyStore operations, so the Cordova or Capacitor bridge is available
+        when secrets are accessed.
+    - name: KeyStore browser fallback
+      id: keystore-browser-fallback
+      description: Wants to understand that when the KeyStore Plugin runs in
+        a web browser, it falls back to unencrypted browser local storage, so
+        they avoid storing sensitive data outside the device's secure
+        keystore.
     - name: KeyStore parameter validation
       id: keystore-parameter-validation
       description: Wants to resolve KeyStore Plugin action failures caused by
@@ -11422,6 +11510,15 @@ knowledge-needs:
       description: Wants to resolve the OS-PLUG-KSTR-0014 "Device is not
         secure." error by setting up a secure screen lock so that the Keystore
         plugin can complete its operation on Android.
+    - name: KeyStore access error
+      id: keystore-access-error
+      description: Wants to resolve the OS-PLUG-KSTR-0015 "There was an error
+        accessing the KeyStore." error on Android when encrypted storage or
+        the Android Keystore cannot be read or written because the stored
+        data is corrupted, the encryption key is unavailable, or the device
+        is in an unexpected state, by retrying the operation, clearing the
+        app's data if needed, and contacting support if the problem persists,
+        so that the KeyStore plugin can access secure data again.
     - name: KeyStore unimplemented error
       id: keystore-unimplemented-error
       description: Wants to resolve the OS-PLUG-KSTR-0002 "Function or
@@ -11448,6 +11545,9 @@ knowledge-needs:
     - name: KeyStore item not found error
       id: keystore-item-not-found-error
       description: Wants to resolve the OS-PLUG-KSTR-0007 "The specified item could not be found in the Keychain." error, where the iOS Keychain returns errSecItemNotFound because the requested key does not exist, by verifying that the key was previously saved with `set`, the `service` name matches the saved value, and the item has not been removed, so that `get` or `remove` succeeds.
+    - name: KeyStore key missing
+      id: keystore-key-missing
+      description: 'Wants to resolve the OS-PLUG-KSTR-0012 "Key does not exist." error by verifying that the key was previously saved with `set`, the store name matches the saved value, and the item has not been removed, so that `get` or `remove` succeeds.'
     - name: KeyStore user interaction
       id: keystore-user-interaction
       description: 'Wants to resolve the OS-PLUG-KSTR-0008 "User interaction is currently not allowed" error by triggering the KeyStore operation only when the app is in the foreground and the device is unlocked, so that the required authentication prompt can display.'
@@ -11555,6 +11655,9 @@ knowledge-needs:
     - name: File transfer error
       id: file-transfer-error
       description: Wants to troubleshoot the OS-PLUG-FLTR-0011 catch-all File Transfer error by checking the exception field and device logs to identify the underlying I/O, directory, stream, or internal library cause, so the failure can be investigated or escalated.
+    - name: File transfer rebuild
+      id: file-transfer-rebuild
+      description: Wants to resolve the OS-PLUG-FLTR-0002 warning by generating and distributing a new mobile package after updating the File Transfer Plugin, so the installed native build uses the updated plugin version instead of the older package.
   - name: File plugin migration
     id: file-plugin-migration
     description: Wants to migrate the File Plugin from version 3 to version 4
@@ -15896,6 +15999,11 @@ knowledge-needs:
         the Administrator role unless necessary, testing roles before rollout, and
         auditing permissions regularly, so that they can govern access securely and
         maintainably across their organization.
+    - name: Asset creation governance
+      id: asset-creation-governance
+      description: Wants to govern asset creation in ODC by removing create permissions,
+        reviewing requests, and automating approved asset creation with REST APIs,
+        so that only approved assets are created.
   - name: Multi-portfolio user management
     id: multi-portfolio-user-management
     subtopics:
@@ -16137,6 +16245,11 @@ knowledge-needs:
     description: Wants to understand what business processes are, why organizations
       use them, and common examples such as approval and support flows, so that they
       can recognize process-driven work in an organization.
+  - name: Process decision patterns
+    id: process-decision-patterns
+    description: Wants to understand when to use Business Process Technology,
+      Case Management Framework, or Workflow Builder, so that they can choose
+      the right starting point for a business process app.
 - name: Agile methodology
   guid: ''
   topics:
@@ -18792,6 +18905,19 @@ knowledge-needs:
     description: Wants to monitor and troubleshoot apps in ODC Portal by using
       the Logs, Traces, and Analytics screens, so they can inspect errors,
       performance, and usage trends.
+  - name: Debugging toolkit overview
+    id: debugging-toolkit-overview-odc
+    subtopics:
+    - name: Manage breakpoints
+      id: manage-breakpoints
+      description: Wants to add, remove, disable, and re-enable breakpoints in
+        ODC Studio during a debug session, including keyboard shortcuts and
+        exception behavior, so that they can pause execution where needed.
+    - name: Manage watches
+      id: manage-watches
+      description: Wants to add and remove watches in ODC Studio during a
+        debug session, so they can inspect parameters, variables, and screen
+        widgets in the Watches tab regardless of scope.
   - name: Resource capacity
     id: resource-capacity
     description: Wants to understand ODC resource capacity limits, scaling

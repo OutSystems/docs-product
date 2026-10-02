@@ -20,6 +20,14 @@ knowledge-needs:
       description: Wants to find and use built-in system actions in the Logic tab
         in ODC Studio from the Client Actions and Server Actions folders, so
         they can build app logic with platform-provided actions.
+    - name: Service actions overview
+      id: service-actions-overview
+      description: Wants to understand what service actions are in ODC, how
+        exposing them makes reusable logic available to consumer apps in the
+        same portfolio, and which design practices keep them maintainable,
+        secure, and performant, so they can share functionality across apps
+        and choose libraries or REST APIs when they need cross-portfolio
+        reuse.
     - name: Excel to record list
       id: excel-to-record-list
       description: Wants to convert an uploaded Excel file into a Record List with
@@ -161,6 +169,11 @@ knowledge-needs:
         form screen (for example, Employee, Project, or project member
         details) creates or updates the corresponding database record when
         the user clicks Save.
+    - name: Use server actions
+      id: use-server-actions
+      description: Wants to use a server action to read or manipulate entity
+        data, wrap entity actions, and call it from a client action or timer,
+        so the logic runs on the server.
     - name: Define async action
       id: define-async-client-action
       description: Wants to make a client action asynchronous and signal its
@@ -2505,6 +2518,11 @@ knowledge-needs:
       description: Wants to add descriptions to exposed REST API methods and
         parameters, publish the app, and open the generated documentation in
         ODC Studio so external developers can inspect the API contract.
+    - name: Expose REST API
+      id: expose-rest-api
+      description: Wants to create and expose REST services from an app so
+        external systems can consume the data through JSON-based REST
+        methods.
   - name: Database connections
     id: database-connections
     subtopics:
@@ -2548,6 +2566,16 @@ knowledge-needs:
       description: Wants to resolve OS-INTC-60004 when an ODC connection stays
         stuck in Fetching entities by reloading the page and opening a support
         case if the issue persists, so that the connection status recovers.
+    - name: Configure Snowflake
+      id: configure-snowflake
+      description: Wants to set up a Snowflake connection in ODC using key-pair
+        authentication, including generating the private and public keys,
+        assigning the public key to the Snowflake user, and entering the ODC
+        Portal connection settings, so they can connect ODC to Snowflake.
+    - name: Snowflake limitations
+      id: snowflake-limitations
+      description: Wants to understand the limitations of Snowflake connections
+        in ODC so they can plan around those restrictions.
     - name: Snowflake setup issues
       id: snowflake-setup-issues
       description: Wants to resolve Snowflake connection setup issues in ODC
@@ -4877,12 +4905,29 @@ knowledge-needs:
         its role as a shared, cross-portfolio building block with an independent
         lifecycle, so that they can decide when to use a library in their app
         architecture.
+    - name: Add public elements
+      id: add-public-elements
+      description: Wants to add public elements from an ODC library or another
+        app to an app in ODC Studio, and understand when those elements appear
+        as server actions or user functions, so that they can reuse shared logic
+        in the app.
     - name: ODC architecture overview
       id: odc-architecture-overview
       description: Wants to understand that ODC architecture organizes business
         concepts, UI, logic, and data into loosely coupled applications, so
         that they can explain the application-based container model used in
         ODC.
+    - name: Bounded context mapping
+      id: bounded-context-mapping
+      description: Wants to identify business concepts and group them into bounded
+        contexts before designing an ODC app architecture, so that the app
+        structure follows the business domain.
+    - name: App ownership cadence
+      id: app-ownership-cadence
+      description: Wants to assign one business owner and sponsor per app, and
+        split apps when teams need to deliver at different rates, so that
+        ownership stays clear and each app has an independent release
+        cadence.
     - name: Theme inheritance
       id: theme-inheritance
       description: Wants to create a base theme in a library and let consumer themes
@@ -5079,6 +5124,21 @@ knowledge-needs:
       description: Wants to roll back accepted library updates in consuming apps
         or libraries in ODC when needed, so that they can recover safely from
         breaking updates.
+    - name: Upgrade library target framework
+      id: upgrade-library-target-framework
+      description: Wants to identify custom code libraries affected by a
+        deprecated .NET version and update them to a newer target framework,
+        so they remain supported.
+    - name: Release upgraded library
+      id: release-upgraded-library
+      description: Wants to upload and release a custom code library after
+        upgrading its .NET target framework, so consumers can adopt the
+        supported version.
+    - name: Update consumers of upgraded libraries
+      id: update-consumers-upgraded-libraries
+      description: Wants to update consuming apps and libraries to use an
+        upgraded custom code library and deploy them to Production, so the
+        updated .NET target framework is used throughout the application.
   - name: Multi-portfolio architecture
     id: multi-portfolio-architecture
     subtopics:
@@ -9564,6 +9624,23 @@ knowledge-needs:
         removed EnvironmentPurpose enum value, and accounting for deployment
         URLs built from the default domain, so that their integration keeps
         working after v1 is removed.
+  - name: Asset Repository API
+    id: asset-repository-api
+    description: Wants to look up the Asset Repository API reference,
+      including the base URL and available endpoints, so they can call it
+      correctly when managing ODC assets.
+    subtopics:
+    - name: Create asset via API
+      id: create-asset-via-api
+      description: Wants to create a new ODC asset through the Asset
+        Repository API, including choosing a valid asset type and using a
+        subtype only for LowCodeLibraries, so that the create request
+        succeeds.
+    - name: Delete asset via API
+      id: delete-asset-via-api
+      description: Wants to delete an ODC asset through the Asset Repository
+        API after the deletion analysis is approved and they have the
+        assetKey, so they can remove the asset permanently.
   - name: ODC public REST APIs
     id: odc-public-rest-apis
     subtopics:
@@ -9610,11 +9687,6 @@ knowledge-needs:
       description: Wants to look up the Asset Configurations API reference,
         including the base URL and available endpoints, so they can call it
         correctly when managing ODC asset configuration data.
-    - name: Asset Repository API
-      id: asset-repository-api
-      description: Wants to look up the Asset Repository API reference,
-        including the base URL and available endpoints, so they can call it
-        correctly when managing ODC assets.
     - name: Call API with token
       id: call-api-with-token
       description: Wants to call an ODC public REST API with an access token after
@@ -9634,11 +9706,6 @@ knowledge-needs:
         the error code to find the matching message, understand the cause and
         impact, and follow the recommended action, so they can fix external
         library issues.
-    - name: Create asset via API
-      id: create-asset-via-api
-      description: Wants to create a new ODC asset through the Asset Repository API,
-        including choosing a valid asset type and using a subtype only for
-        LowCodeLibraries, so that the create request succeeds.
     - name: Build Operations API
       id: build-operations-api
       description: Wants to look up the Build Operations API reference, including
@@ -16093,6 +16160,27 @@ knowledge-needs:
         and that each end-user needs at least one application role to
         access protected screens, so that they can identify the correct
         statement about ODC user administration and access rules.
+    - name: Create an end-user group
+      id: create-end-user-group
+      description: Wants to create an end-user group in ODC, so roles can be
+        assigned to a set of users centrally.
+    - name: Assign roles to an end-user group
+      id: assign-roles-to-end-user-group
+      description: Wants to assign end-user roles to an ODC group, so its
+        members receive the group's app access.
+    - name: Update end-user group details
+      id: update-end-user-group
+      description: Wants to update the details of an end-user group in ODC,
+        so the group reflects current ownership and access needs.
+    - name: Delete an end-user group
+      id: delete-end-user-group
+      description: Wants to delete an end-user group in ODC when it is no
+        longer needed, so obsolete group access can be removed.
+    - name: Assign to user groups
+      id: assign-to-user-groups
+      description: Wants to add or remove users and external IdP group
+        mappings from an ODC end-user group, so that users inherit the
+        group roles through either direct membership or mapped IdP groups.
     - name: Login actions
       id: login-actions
       description: Wants to know which built-in login actions are available in

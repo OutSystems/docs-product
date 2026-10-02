@@ -6244,9 +6244,9 @@ knowledge-needs:
         scroll through longer pages.
     - name: Change app favicon
       id: change-app-favicon
-      description: Wants to replace the default OutSystems favicon with a custom PNG
-        or ICO image by changing the favicon resource in Service Studio, in a Reactive
-        Web App for O11, so that the app displays a branded browser tab icon.
+      description: Wants to replace the default OutSystems favicon with a custom image
+        by changing the favicon resource in Service Studio, in a Reactive Web App for
+        O11, so that the app displays a branded browser tab icon.
     - name: Choose icon library
       id: choose-icon-library
       description: Wants to select and switch between the available icon libraries for an
@@ -8604,6 +8604,12 @@ knowledge-needs:
       description: Wants to understand what a screen is, how templates and
         widgets build it, and how widgets adapt to smaller screens, so that
         they can recognize the main parts of a reactive UI screen.
+    - name: Scaffold screens
+      id: scaffold-screens
+      description: Wants to create linked list and detail screens by dragging
+        an entity to a UI flow, and understand the default widgets and actions
+        the platform generates on each screen, so that they can use the
+        scaffolded screens as a starting point.
     - name: Screen inputs and variables
       id: screen-inputs-and-variables
       description: Wants to pass data into a screen with input parameters and
@@ -9970,6 +9976,11 @@ knowledge-needs:
     - name: Traditional web app
       id: traditional-web-app
       description: Wants to create a traditional web application with a UI module and a blank Core module, connect the modules with a public server action, and show that action result on an anonymous home screen, so they can publish and test the app in a browser.
+    - name: Create web app
+      id: create-web-app
+      description: Wants to create a web app from scratch by selecting a web app
+        option, naming the app, uploading an icon, and opening the starter
+        screen, so they can start from a working app shell.
     - name: Application templates overview
       id: application-templates-overview
       description: Wants to understand what application templates are, what types are

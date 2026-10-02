@@ -3560,6 +3560,11 @@ knowledge-needs:
       description: Wants to use the Security library to protect data
         confidentiality, so that an app can encrypt and decrypt sensitive
         information in ODC.
+    - name: Data masking techniques
+      id: data-masking-techniques
+      description: Wants to anonymize sensitive data in OutSystems using data
+        masking techniques so that they can hide or transform values before
+        showing them on screens or exposing them through an API.
     - name: Data integrity and authenticity actions
       id: data-integrity-authenticity-actions
       description: Wants to use the Security library to protect data integrity
@@ -11734,12 +11739,30 @@ knowledge-needs:
         client actions and fall back to the deprecated actions when the
         installed native plugin is still pre-4.0.0, so OTA-updated apps keep
         working on devices that have not been rebuilt.
+    - name: File plugin rebuild
+      id: file-plugin-rebuild
+      description: Wants to resolve the OS-PLUG-FILE-0002 warning by
+        generating and distributing a new mobile package after updating the
+        File Plugin, so the installed native build uses the updated plugin
+        version instead of the older package.
   - name: File Viewer plugin reference
     id: file-viewer-plugin-reference
     description: Wants to understand the File Viewer plugin in O11 mobile apps,
       including its client actions, platform-specific behavior, and resource
       setup, so they can open supported files correctly.
     subtopics:
+    - name: File Viewer availability
+      id: file-viewer-availability
+      description: Wants to resolve the OS-PLUG-FLVW-0001 error by confirming the
+        app runs as a native mobile app with the File Viewer plugin included and
+        the Cordova or Capacitor bridge is available when the File Viewer client
+        action runs, so the app opens files and media on a supported device.
+    - name: File Viewer not loaded
+      id: file-viewer-not-loaded
+      description: Wants to resolve the OS-PLUG-FLVW-0003 error by confirming the
+        File Viewer plugin is included in the mobile package, regenerating the
+        package if it is missing or failed to initialize, and reinstalling the
+        app so the client action can load the plugin at runtime.
     - name: File Viewer actions
       id: file-viewer-actions
       description: Wants to use the File Viewer plugin to open files from local
@@ -11752,6 +11775,12 @@ knowledge-needs:
         OpenDocumentFromResources by setting the Resources target directory and
         resource path, so that the File Viewer plugin can open bundled files
         safely.
+    - name: File Viewer rebuild
+      id: file-viewer-rebuild
+      description: Wants to resolve the OS-PLUG-FLVW-0002 warning by
+        generating and distributing a new mobile package after updating the
+        File Viewer plugin, so the installed native build uses the updated
+        plugin version instead of the older package.
   - name: Camera plugin migration
     id: migrate-camera-plugin
     description: Wants to migrate the Camera plugin from version 1 to version 2

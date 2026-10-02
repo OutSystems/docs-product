@@ -4820,9 +4820,24 @@ knowledge-needs:
     - name: Canvas overview
       id: canvas-overview
       description: Wants to understand the Architecture Canvas framework in OutSystems, including its foundation, core, and end-user layers and its benefits for reusable services and lifecycle independence, so they can design application architecture with it.
+    - name: Concept granularity
+      id: concept-granularity
+      description: Wants to translate business concepts into application modules by choosing a granularity that keeps each module manageable and splits concepts when they are too complex, need independent life cycles, or require service isolation, so they can apply the Architecture Canvas recommendations.
     - name: Architecture canvas example
       id: architecture-canvas-example
       description: Wants to apply the Architecture Canvas to a doctors appointments app, disclosing requirements, organizing concepts into layers, assembling modules, and producing the architecture blueprint and reference map, so they can follow the design process on a concrete example.
+  - name: Domain-driven design
+    id: domain-driven-design
+    subtopics:
+    - name: Decide when to adopt DDD
+      id: decide-when-to-adopt-ddd
+      description: Wants to decide when domain-driven design is appropriate for an OutSystems application, so they can determine whether to adopt DDD for the problem at hand.
+    - name: Decompose business areas into domains
+      id: decompose-business-areas-into-domains
+      description: Wants to decompose business areas into domains and define domain types and coupling rules in an OutSystems DDD architecture, so they can establish clear domain boundaries.
+    - name: Validate a domain-driven architecture
+      id: validate-domain-driven-architecture
+      description: Wants to validate an OutSystems domain-driven architecture, so they can confirm the design follows DDD principles and has sound domain boundaries.
   - name: Application composition
     id: application-composition
     subtopics:
@@ -11718,6 +11733,9 @@ knowledge-needs:
     - name: Resolve not modified
       id: resolve-not-modified
       description: Wants to resolve the OS-PLUG-FLTR-0009 HTTP 304 Not Modified error by reviewing and adjusting cache-related request headers such as If-None-Match, If-Modified-Since, and Cache-Control in the File Transfer plugin request configuration, so the download returns fresh content.
+    - name: File transfer HTTP error
+      id: file-transfer-http-error
+      description: Wants to troubleshoot the OS-PLUG-FLTR-0010 HTTP error by checking the returned HTTP status code and applying the corresponding fix for 401, 403, 404, or 5xx responses, so file transfer operations succeed.
     - name: File transfer error
       id: file-transfer-error
       description: Wants to troubleshoot the OS-PLUG-FLTR-0011 catch-all File Transfer error by checking the exception field and device logs to identify the underlying I/O, directory, stream, or internal library cause, so the failure can be investigated or escalated.
@@ -11768,6 +11786,11 @@ knowledge-needs:
         app runs as a native mobile app with the File Viewer plugin included and
         the Cordova or Capacitor bridge is available when the File Viewer client
         action runs, so the app opens files and media on a supported device.
+    - name: File Viewer readiness
+      id: file-viewer-readiness
+      description: 'Wants to call File Viewer client actions only after the Cordova
+        or Capacitor bridge has fully initialized, so file opening operations do
+        not fail with OS-PLUG-FLVW-0011.'
     - name: File Viewer not loaded
       id: file-viewer-not-loaded
       description: Wants to resolve the OS-PLUG-FLVW-0003 error by confirming the
@@ -11780,6 +11803,41 @@ knowledge-needs:
         paths, app resources, or remote URLs in O11 mobile apps and PWAs,
         check plugin availability, and preview supported media on iOS, so that
         users can view supported files in the right platform context.
+    - name: File Viewer parameters
+      id: file-viewer-parameters
+      description: 'Wants to resolve the OS-PLUG-FLVW-0009 invalid-parameters
+        error by validating File Viewer inputs and using the required
+        `resources/` prefix for OpenDocumentFromResources and
+        PreviewMediaContentFromResources, so file and media content open
+        successfully.'
+    - name: Document open error
+      id: document-open-error
+      description: 'Wants to resolve the OS-PLUG-FLVW-0008 "Could not open the
+        document." error by retrying the open action, re-creating or
+        re-downloading corrupted or unsupported files, and opening a support
+        case if the problem persists, so the document opens successfully.'
+    - name: Missing viewer app
+      id: missing-viewer-app
+      description: 'Wants to resolve the OS-PLUG-FLVW-0010 "There is no app to
+        open this document." error by installing an Android app that supports
+        the file type, verifying the file extension, and opening a support case
+        if the problem persists, so the document opens successfully.'
+    - name: File Viewer URL
+      id: file-viewer-url
+      description: Wants to resolve the OS-PLUG-FLVW-0007 error by ensuring the
+        URL passed to the File Viewer action is non-empty before the action
+        runs, so the app opens or downloads the file successfully.
+    - name: Remote download error
+      id: remote-download-error
+      description: 'Wants to resolve the OS-PLUG-FLVW-0012 "The download failed." error by verifying the remote file URL is reachable, checking for server errors and request timeouts, retrying intermittent failures, and opening a support case if the problem persists, so the File Viewer plugin can download the file successfully.'
+    - name: Missing file extension
+      id: missing-file-extension
+      description: 'Wants to resolve the OS-PLUG-FLVW-0013 "The file has no extension." error by ensuring the file name includes a supported extension before opening it on iOS, so the system can identify the file type and launch the right app.'
+    - name: File Viewer path
+      id: file-viewer-path
+      description: Wants to resolve the OS-PLUG-FLVW-0006 error by ensuring the
+        file path passed to the File Viewer action is non-empty before the
+        action runs, so the document opens successfully.
     - name: File Viewer resources
       id: file-viewer-resources
       description: Wants to add a file as an app resource and reference it with
@@ -11792,6 +11850,13 @@ knowledge-needs:
         generating and distributing a new mobile package after updating the
         File Viewer plugin, so the installed native build uses the updated
         plugin version instead of the older package.
+    - name: File Viewer fallback
+      id: file-viewer-fallback
+      description: Wants to detect OS-PLUG-FLVW-0002 at runtime and keep using
+        the deprecated CheckPlugin, OpenDocument, and PreviewMediaContent
+        actions while the installed native build still bundles an older File
+        Viewer plugin version, so the app keeps working until you distribute a
+        new mobile package.
   - name: Camera plugin migration
     id: migrate-camera-plugin
     description: Wants to migrate the Camera plugin from version 1 to version 2
@@ -11944,6 +12009,13 @@ knowledge-needs:
     description: Wants to understand the mobile best-practices section for ODC apps,
       including what kinds of guidance it covers, so that they can find the
       right best-practice topic for their app.
+    subtopics:
+    - name: Use sandboxes
+      id: use-sandboxes
+      description: Wants to keep mobile app sandboxes in non-production environments,
+        publish them alongside the main app when they need independent testing,
+        and avoid deploying them to production, so teams can validate features
+        without affecting other work.
   - name: MABS build process
     id: mabs-build-process
     description: Wants to understand how MABS turns an OutSystems mobile app into a
@@ -18460,6 +18532,22 @@ knowledge-needs:
         delay connecting Service Studio and Chrome, by reusing the existing
         Chrome window or disabling "Automatically detect settings" in
         Chrome''s proxy settings, so debugging starts successfully.'
+    - name: Inspect debugger context
+      id: inspect-debugger-context
+      description: Wants to inspect the Threads, Breakpoints, and Users tabs in the
+        Debugger context area while debugging is paused, so that they can
+        identify the active thread, view breakpoints, and switch threads when
+        needed.
+    - name: Use debugger toolbar
+      id: use-debugger-toolbar
+      description: Wants to use the Debugger toolbar in Service Studio to continue,
+        step, suspend, abort, and break on exceptions during a debug session,
+        so that they can control thread execution while debugging a module.
+    - name: Use scope tabs
+      id: use-scope-tabs
+      description: Wants to use the Debugger scope tabs in Service Studio during a
+        debug session to inspect runtime values while execution is suspended, so
+        that they can review runtime state during debugging.
     - name: Capture HAR file
       id: capture-har-file
       description: Wants to capture a Network HAR file for troubleshooting an

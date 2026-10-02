@@ -198,12 +198,6 @@ knowledge-needs:
     - name: Create database event
       id: create-database-event
       description: Wants to create a database event for an entity action in ODC Studio by choosing OnCreate, OnUpdate, or OnDelete, selecting the event and input parameters, and publishing the app, so that the event runs automatically when the entity action commits.
-    - name: Handle block events
-      id: handle-block-events
-      description: Wants to handle events triggered by a block by mapping a screen
-        action to the block's event and accessing the event input parameters, in ODC
-        Studio, so that the screen can respond to user interactions happening inside
-        the block.
     - name: Trigger block event
       id: trigger-block-event
       description: Wants to create an event on a block and trigger it using a
@@ -220,6 +214,11 @@ knowledge-needs:
         provider events using JavaScript and the OutSystems UI API (e.g., SetProviderEvent),
         in Service Studio, so that custom logic runs when a component fires events
         like open or close.
+    - name: Call block action
+      id: call-block-action
+      description: Wants to expose a block action on the block DOM element and call
+        it from the consumer screen with JavaScript, so the parent screen can
+        trigger block validation or other block logic in a mobile or reactive app.
     - name: On Parameters Changed
       id: on-parameters-changed
       description: Wants to refresh a block's displayed information when
@@ -839,13 +838,8 @@ knowledge-needs:
     - name: Table pagination setup
       id: table-pagination-setup
       description: Wants to add pagination and records-per-page control to a Table
-        widget in an OutSystems 11 Screen, so that users can navigate through large
-        datasets in configurable page sizes.
-    - name: ODC table pagination
-      id: odc-table-pagination-setup
-      description: Wants to add pagination and records-per-page control to a Table
-        widget in ODC Studio, so that users can navigate through large datasets in
-        configurable page sizes.
+        widget, so that users can navigate through large datasets in configurable
+        page sizes.
     - name: Limit record fetches
       id: limit-record-fetches
       description: Wants to limit how many records a screen fetches and displays by
@@ -993,6 +987,9 @@ knowledge-needs:
     - name: Expose Read Only pattern
       id: entity-expose-read-only-pattern
       description: Wants to understand how to use the recommended Expose Read Only pattern for entity actions on both client and server sides, so they can access entity data through the appropriate layer.
+    - name: Static entity setup
+      id: static-entity-setup
+      description: Wants to create a static entity and add country records with flag URLs and dial-in codes, so that a Dropdown Search screen uses fixed lookup data.
     - name: Static entity data migration
       id: static-entity-data-migration
       description: Wants to understand the considerations for migrating Static
@@ -4797,10 +4794,8 @@ knowledge-needs:
     - name: ECS pattern variations
       id: ecs-pattern-variations
       description: Wants to understand the external core service (ECS) pattern and its
-        variations — base ECS, local replica, isolated synchronization, direct integration,
-        pub/sub, summary cache, and lazy load — in OutSystems 11, so that the right caching
-        and synchronization strategy can be selected when an external system is the system
-        of records.
+        variations in OutSystems 11, so that the right caching and synchronization strategy
+        can be selected when an external system is the system of records.
     - name: Transparency service
       id: transparency-service-pattern
       description: Wants to understand the transparency service pattern in OutSystems 11,
@@ -5470,6 +5465,12 @@ knowledge-needs:
         tasks, instructions, and actions for end users in Reactive and
         Traditional Web Apps, in OutSystems 11, so that they know where users
         interact with pending process tasks.
+    - name: Reactive taskbox setup
+      id: reactive-taskbox-setup
+      description: Wants to install the Sample Reactive Taskbox component,
+        place the Taskbox Block in a Reactive Web App screen or layout, and
+        customize the Taskbox Block by editing the component and refreshing
+        references, so that users can handle BPT tasks in the app.
     - name: Taskbox activity APIs
       id: taskbox-activity-apis
       description: Wants to retrieve, page, and control how EPA Taskbox
@@ -9786,7 +9787,7 @@ knowledge-needs:
       description: Wants to manage an installed ODC solution after installation, including independent deployment, customization, and locating its components in the Solutions console and asset lists, so that they can work with it like standard assets.
     - name: Forge overview
       id: forge-overview
-      description: Wants to understand what Forge is, what types of reusable assets (apps, libraries, agentic apps) are available, and how the community-driven sharing model works in OutSystems.
+      description: Wants to understand what Forge is, what kinds of reusable assets are available, and how the community-driven sharing model works in OutSystems, so they can decide whether Forge is a good place to find or share assets.
     - name: Forge project types
       id: forge-project-types
       description: Wants to understand the different types of Forge projects, so that they
@@ -11241,6 +11242,12 @@ knowledge-needs:
         handle errors using each action's Success output, so that sensitive
         information like tokens or passwords is stored safely on iOS and
         Android devices.
+    - name: KeyStore parameter validation
+      id: keystore-parameter-validation
+      description: Wants to resolve KeyStore Plugin action failures caused by
+        missing or invalid required Text parameters by supplying the expected
+        arguments for the relevant KeyStore Plugin operations, so that the
+        requested KeyStore operation succeeds.
     - name: Secure KeyStore access
       id: secure-keystore-access
       description: Wants to require additional user authentication (device
@@ -11252,6 +11259,49 @@ knowledge-needs:
         providing the required NSFaceIDUsageDescription iOS permission, so
         that access to sensitive key-value pairs is protected by the
         device's lock screen security.
+    - name: KeyStore authentication failure
+      id: keystore-authentication-failure
+      description: Wants to resolve the OS-PLUG-KSTR-0010 error where the
+        iOS Keychain API returns errSecAuthFailed because biometric
+        authentication, passcode entry, or repeated failed attempts do not
+        satisfy access control, by retrying with the correct biometric
+        credentials or device passcode and unlocking biometrics if needed, so
+        that the protected Keychain item can be accessed.
+    - name: KeyStore unimplemented error
+      id: keystore-unimplemented-error
+      description: Wants to resolve the OS-PLUG-KSTR-0002 "Function or
+        operation not implemented" error, where the iOS Keychain API
+        returns errSecUnimplemented because the requested Keychain function
+        or operation is unavailable on the current iOS version or device
+        configuration, so that the user can verify the minimum iOS version
+        and plugin compatibility.
+    - name: KeyStore allocation error
+      id: keystore-allocation-error
+      description: 'Wants to resolve the OS-PLUG-KSTR-0004 "Failed to allocate
+        memory" error by freeing device memory, retrying the operation, and
+        restarting the device if the issue persists, so that the KeyStore
+        operation completes on iOS.'
+    - name: KeyStore unavailable
+      id: keystore-unavailable
+      description: 'Wants to resolve the OS-PLUG-KSTR-0005 "No Keychain is
+        available" error by unlocking the device before the first Keychain
+        access or restarting the device if the error persists, so that the
+        KeyStore plugin can complete its operation on iOS.'
+    - name: KeyStore duplicate item error
+      id: keystore-duplicate-item-error
+      description: Wants to resolve the OS-PLUG-KSTR-0006 "The specified item already exists in the Keychain." error, where the iOS Keychain returns errSecDuplicateItem when saving a value that already exists, by removing the existing item and saving the value again, so that the KeyStore Plugin can update the secret successfully.
+    - name: KeyStore item not found error
+      id: keystore-item-not-found-error
+      description: Wants to resolve the OS-PLUG-KSTR-0007 "The specified item could not be found in the Keychain." error, where the iOS Keychain returns errSecItemNotFound because the requested key does not exist, by verifying that the key was previously saved with `set`, the `service` name matches the saved value, and the item has not been removed, so that `get` or `remove` succeeds.
+    - name: KeyStore user interaction
+      id: keystore-user-interaction
+      description: 'Wants to resolve the OS-PLUG-KSTR-0008 "User interaction is currently not allowed" error by triggering the KeyStore operation only when the app is in the foreground and the device is unlocked, so that the required authentication prompt can display.'
+    - name: KeyStore decode error
+      id: keystore-decode-error
+      description: 'Wants to resolve the OS-PLUG-KSTR-0009 "Unable to decode the provided data." error, where the iOS Keychain API returns errSecDecode because the stored data is corrupted, was saved with a different encoding, or is in an inconsistent state, by removing the affected item and saving it again or clearing the store if needed, so that the KeyStore plugin can read the secret on iOS.'
+    - name: KeyStore unhandled error
+      id: keystore-unhandled-error
+      description: Wants to resolve the OS-PLUG-KSTR-0011 catch-all error where the iOS Keychain API returns an unhandled status code, by retrying the operation and restarting the device if the error persists, so that the KeyStore plugin can complete its operation on iOS.
     - name: Implement SSL Pinning
       id: implement-ssl-pinning-cordova
       description: Wants to implement SSL Pinning for an OutSystems Cordova
@@ -15763,6 +15813,13 @@ knowledge-needs:
         Execution regardless of the number of actions, tools, or AI model calls
         performed within that call, so that they can accurately estimate Agent
         Execution consumption for licensing purposes.
+    - name: End-user counting
+      id: end-user-counting
+      description: Wants to understand how OutSystems counts end users toward
+        subscription capacity, including anonymous users, users without email
+        addresses, deduplication rules, and per-runtime counting limits, so
+        that they can estimate usage and stay within the licensed end-user
+        capacity.
     - name: Interop end-user licensing
       id: interop-end-user-licensing
       description: Wants to understand how end-user licensing is counted

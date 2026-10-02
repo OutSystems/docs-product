@@ -14,8 +14,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - compound-data
-  - how-to-create-structures
+  - compound-data-types
 ---
 
 # Use structures and records to create compound data types

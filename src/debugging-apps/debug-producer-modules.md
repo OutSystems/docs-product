@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - debug-troubleshoot-app-logic
+  - debug-producer-modules
 ---
 
 # Debugging Producer Modules

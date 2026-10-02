@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - dependencies
+  - dependency-strength
 ---
 
 # Understand strong and weak dependencies

@@ -15,7 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - client-actions-when-use
+  - create-client-action
+  - use-ai-logic-suggestions
 ---
 
 # Create a Client Action with Code Mentor

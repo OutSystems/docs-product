@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - navigate-screens
+  - navigate-to-detail-screen
 ---
 
 # Navigate to a Detail Screen

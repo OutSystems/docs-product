@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - customize-app-styles
+  - theme-editor-customization
 ---
 
 # Customize the look of your app with Theme Editor

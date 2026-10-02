@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - write-expressions-guide
+  - use-expression-editor
 ---
 
 # Edit expressions

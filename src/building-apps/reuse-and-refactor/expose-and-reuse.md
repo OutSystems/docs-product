@@ -15,7 +15,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - add-module-dependency
+  - module-exposure-and-reuse
 ---
 
 # Expose and reuse functionality between modules

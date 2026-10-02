@@ -16,7 +16,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - site-properties-settings
+  - site-properties
 ---
 
 # Use Site Properties to Configure Behaviors at Runtime

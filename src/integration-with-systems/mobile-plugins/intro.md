@@ -1,8 +1,10 @@
 ---
 summary: Explore the range of mobile plugins supported by OutSystems 11 (O11) for enhancing native mobile app functionalities, available in the Forge repository.
 tags:
+  - Android
   - Cordova
   - Forge
+  - iOS
   - Mobile app
   - Native App
   - Plugins
@@ -13,6 +15,7 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:31
 audience:
   - Developer
+  - Front-end developer
 outsystems-tools:
   - forge
 coverage-type:
@@ -20,6 +23,7 @@ coverage-type:
   - apply
 topic:
   - using-cordova-plugins
+isautopublish: true
 ---
 
 # Mobile Plugins
@@ -45,7 +49,6 @@ You may also create mobile plugins by [wrapping an Apache Cordova plugin into a 
 | [Barcode](<https://www.outsystems.com/forge/component/1403/barcode-plugin/>) | Scan barcodes and QR codes. | Yes |
 | [Calendar](<https://www.outsystems.com/forge/component/1566/calendar-plugin/>) | Access the calendar of your device. | No |
 | [Camera](<https://www.outsystems.com/forge/component-overview/1390/camera-plugin>) | Enable your application to access the camera capabilities of the device. | Yes |
-| [Card IO](<https://www.outsystems.com/forge/component/1438/card-io-plugin/>) | Automatically get the details of a credit card by taking a picture. | No |
 | [Ciphered Local Storage](<https://www.outsystems.com/forge/component-details/1500/ciphered-local-storage-plugin/>) | Keep your mobile application's sensitive data safe using a ciphered local storage database. | No |
 | [Cloud Messaging](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) | Firebase-based plugin to give your app users a state-of-the-art notifications experience. | No |
 | [Contacts](<https://www.outsystems.com/forge/component-overview/1394/contacts-plugin>) | Access the contacts of your device. | No |

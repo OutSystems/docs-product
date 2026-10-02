@@ -56,6 +56,22 @@ knowledge-needs:
         action in OutSystems 11 Service Studio, including which are mandatory and
         their default values, so they can correctly configure and understand the
         action's behavior.
+    - name: Use input parameters
+      id: use-input-parameters
+      description: Wants to understand what an input parameter is and how to set
+        and pass values to an element, such as a client action, so the value is
+        available in that element's scope.
+    - name: Input parameter reference
+      id: input-parameter-reference
+      description: Wants to look up which elements can use input parameters and
+        which properties input parameters expose, so they can configure them
+        correctly in OutSystems 11.
+    - name: Output parameter reference
+      id: output-parameter-reference
+      description: Wants to look up which elements expose output parameters,
+        how to use them in action and process flows, and which properties
+        output parameters expose, so they can configure them correctly in
+        OutSystems 11.
     - name: Server action exposure
       id: server-action-exposure
       description: 'Wants to determine when a server action can be exposed, based on whether it is defined in an App or is a Library action that uses a parameter defined with a non-exposed static entity, so they can expose only valid server actions.'
@@ -296,6 +312,12 @@ knowledge-needs:
         error handling, by adding error handlers to the web flow or changing
         the Theme''s error handling Flow property to one that already
         implements error handling.'
+    - name: Raise exception
+      id: raise-exception
+      description: Wants to use the Raise Exception element to stop the current
+        action flow and route execution to the exception handler, so they can
+        raise an existing exception or a user exception message in OutSystems
+        11.
   - name: Using Expressions
     id: using-expressions
     subtopics:
@@ -2526,6 +2548,11 @@ knowledge-needs:
       description: Wants to resolve OS-INTC-60004 when an ODC connection stays
         stuck in Fetching entities by reloading the page and opening a support
         case if the issue persists, so that the connection status recovers.
+    - name: Snowflake setup issues
+      id: snowflake-setup-issues
+      description: Wants to resolve Snowflake connection setup issues in ODC
+        Portal, including host, username, passphrase, permission, and private
+        key format errors, so they can finish the connection setup.
     - name: Troubleshoot ODC entity list errors
       id: troubleshoot-odc-entity-list-errors
       description: Wants to resolve OS-INTC-60005 when the entity list fails
@@ -5409,6 +5436,12 @@ knowledge-needs:
         field when consuming a single REST method so Service Studio infers request
         input parameters, structure fields, and content type for supported request
         formats.
+    - name: Consume REST methods
+      id: consume-rest-methods
+      description: Wants to import REST API methods in Service Studio from an
+        OpenAPI specification or a single method definition, including supported
+        URL query-string parameters, then use the generated methods in application
+        logic, so that they can call the API from the app.
     - name: Refresh REST service
       id: refresh-rest-service
       description: Wants to refresh a consumed REST service in ODC Studio after the
@@ -11315,6 +11348,23 @@ knowledge-needs:
         plugin to use for their MABS 4 or MABS 5 mobile app, by checking the
         recommended plugin version table for each MABS version, so that they
         avoid gradle dependency resolution and build compatibility issues.
+    - name: Build plugin wrapper
+      id: build-plugin-wrapper
+      description: Wants to wrap a Cordova plugin in a dedicated module by exposing
+        a Check<Capability>Plugin availability action, adding public wrapper
+        actions with JavaScript, and documenting their inputs and outputs, so the
+        app can reuse the plugin safely from OutSystems logic.
+    - name: Customize plugin hooks
+      id: customize-plugin-hooks
+      description: Wants to create a Cordova plugin hook that stops the build with
+        an OUTSYSTEMS_PLUGIN_ERROR message during installation or build, so MABS
+        shows a custom error code and message for plugin failures.
+    - name: Reference Cordova plugin
+      id: reference-cordova-plugin
+      description: Wants to reference a Cordova plugin through the Extensibility
+        Configuration module property by choosing a repository URL, Cordova
+        identifier, or ZIP resource and supplying any required variables, so the
+        mobile app uses the correct plugin source and settings.
     - name: Health Fitness permissions and availability
       id: health-fitness-permissions-availability
       description: Wants to check whether the Health and Fitness plugin is available
@@ -12187,6 +12237,22 @@ knowledge-needs:
         simulation for connectivity problems, and client-side logging or
         Crashlytics for production issues, so that they can inspect the
         layer that matches the problem.
+    - name: Debug port conflicts
+      id: debug-port-conflicts
+      description: Wants to start a mobile debug session in Service Studio
+        when the required Chrome or device ports are already in use or
+        blocked, so that the debugger binds to an available local port.
+    - name: Device discovery issues
+      id: device-discovery-issues
+      description: Wants to get Service Studio to detect an Android or iOS
+        device for mobile debugging when USB debugging, drivers, USB mode,
+        Web Inspector, trust, or multiple-device setup issues block
+        discovery, so that the device is available for debugging.
+    - name: App detection issues
+      id: app-detection-issues
+      description: Wants to get Service Studio to detect the mobile app
+        after the device connects when the build type or other running apps
+        prevent app discovery, so that the debug session can continue.
     - name: Mobile native crash reporting
       id: mobile-native-crash-reporting
       description: Wants to diagnose production issues on a mobile app that
@@ -15259,6 +15325,16 @@ knowledge-needs:
         federated single sign-on through OAuth or SAML, so that they can decide
         how to integrate identity systems that the built-in methods do not
         cover.
+    - name: Create service account
+      id: create-service-account
+      description: Wants to create a LifeTime service account, choose its role and
+        token duration, and generate its authentication token, so that REST API
+        integrations can authenticate to LifeTime.
+    - name: Use service account token
+      id: use-service-account-token
+      description: Wants to authenticate LifeTime REST API calls with a service
+        account token, rotating or revoking the token when needed, so that the
+        calls stay authorized and the token stays secure.
     - name: Configure MFA login
       id: configure-mfa-login
       description: Wants to configure multi-factor authentication for end-user
@@ -16004,6 +16080,12 @@ knowledge-needs:
       description: Wants to govern asset creation in ODC by removing create permissions,
         reviewing requests, and automating approved asset creation with REST APIs,
         so that only approved assets are created.
+    - name: Asset deletion governance
+      id: asset-deletion-governance
+      description: Wants to govern asset deletion in ODC by removing delete permissions,
+        requiring request and approval flow, running deletion analysis, and
+        deleting only after review, so that dependency and impact risk stays
+        controlled.
   - name: Multi-portfolio user management
     id: multi-portfolio-user-management
     subtopics:
@@ -18372,6 +18454,26 @@ knowledge-needs:
         and the call stack, and selecting the correct entry module when the
         code runs from another module, so that they can trace execution and
         find the failing logic.
+    - name: Debugger tab reference
+      id: debugger-tab-reference
+      description: Wants to understand the Service Studio Debugger tab layout
+        and controls, including the toolbar, debugging context area, and scope
+        tabs, so they can track threads, step through code, and inspect
+        runtime values while debugging an OutSystems 11 app.
+    - name: Thread debug behavior
+      id: thread-debug-behavior
+      description: Wants to understand how OutSystems creates and isolates
+        threads during debugging, including client and server actions, mobile
+        app events, Timer actions, process instances, and integration methods,
+        so that they can choose the right suspended thread and inspect its
+        runtime values in the Threads Tab and scope tabs.
+    - name: Server thread control
+      id: server-thread-control
+      description: Wants to abort a running server thread or suspend all
+        running server threads while debugging in Service Studio, so they can
+        inspect the current execution when a server-side action takes longer
+        than expected, including cases where suspension waits for a web
+        service call or database query to finish.
     - name: Log information in action flows
       id: log-information-in-action-flows
       description: Wants to log debug information in an action flow with the

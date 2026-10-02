@@ -2438,6 +2438,26 @@ knowledge-needs:
       description: Wants to know whether OutSystems supports read-only replica
         routing when evaluating database scaling options for OutSystems
         applications.
+    - name: Data archiving overview
+      id: data-archiving-overview
+      description: Wants to plan a data archiving strategy by understanding what
+        archiving is, where to keep archived data on-premises or in OutSystems
+        Cloud, and why reducing main-catalog volume improves performance and
+        data retention.
+    - name: Implement light archiving
+      id: implement-light-archiving
+      description: Wants to implement a light archiving architecture in
+        OutSystems by mirroring main entities into an archive catalog, running
+        a Timer to move and mark records, exposing search and restore
+        functionality, and purging archived rows from the main catalog, so that
+        archived data stays searchable and recoverable.
+    - name: Implement historical archiving
+      id: implement-historical-archiving
+      description: Wants to implement historical archiving in OutSystems by
+        using a centralized archive component, storing records as JSON with
+        tags, and deleting them from the source in the same transaction, so
+        that archived data is available for historical or legal retrieval
+        only.
   - name: Indexes
     id: indexes
     subtopics:
@@ -2523,6 +2543,13 @@ knowledge-needs:
       description: Wants to create and expose REST services from an app so
         external systems can consume the data through JSON-based REST
         methods.
+    - name: REST API method flow
+      id: rest-api-method-flow
+      description: Wants to understand the execution flow of an exposed REST
+        API method, including request callbacks, parameter deserialization and
+        validation, method execution, response serialization, and the
+        response callback, so they can predict what happens when a request
+        reaches the API.
   - name: Database connections
     id: database-connections
     subtopics:
@@ -3588,6 +3615,41 @@ knowledge-needs:
       description: Wants to use the Security library to protect data
         confidentiality, so that an app can encrypt and decrypt sensitive
         information in ODC.
+    - name: Create decryption action
+      id: create-decryption-action
+      description: Wants to create a decryption action in OutSystems 11 for
+        HIPAA-compliant entity data by adding the Cryptography Services
+        dependencies, defining input and output parameters, and preparing the
+        logic to decrypt attributes, so the module can decrypt stored values.
+    - name: Create encryption action
+      id: create-encryption-action
+      description: Wants to create an encryption action in OutSystems 11 for
+        HIPAA-compliant entity data by adding the Cryptography Services
+        dependencies, defining input and output parameters, and preparing the
+        logic to encrypt attributes, so the module can save encrypted values.
+    - name: Decrypt unsearchable attributes
+      id: decrypt-unsearchable-attributes
+      description: Wants to decrypt unsearchable entity attributes in OutSystems
+        11 by looking up the key mapping, calling DecryptEntityText, and
+        assigning the plaintext to the output entity, so the app restores
+        salted encrypted data.
+    - name: Encrypt unsearchable attributes
+      id: encrypt-unsearchable-attributes
+      description: Wants to encrypt unsearchable entity attributes in OutSystems
+        11 by getting a KeyId, calling EncryptEntityText, and saving the key
+        mapping for later decryption, so the app stores salted encrypted data.
+    - name: Decrypt searchable attributes
+      id: decrypt-searchable-attributes
+      description: Wants to decrypt searchable entity attributes in OutSystems
+        11 by getting the index key, calling DecryptIndexText, and assigning
+        the plaintext to the output entity, so the app restores indexed
+        encrypted data.
+    - name: Encrypt searchable attributes
+      id: encrypt-searchable-attributes
+      description: Wants to encrypt searchable entity attributes in OutSystems
+        11 by creating a reusable action that gets the index key, calls
+        EncryptIndexText, and saves the encrypted text before storing the
+        record, so the app can later search the protected data.
     - name: Data masking techniques
       id: data-masking-techniques
       description: Wants to anonymize sensitive data in OutSystems using data
@@ -4117,6 +4179,13 @@ knowledge-needs:
       description: Wants to add a Wait activity to an ODC workflow in the
         Workflow editor and configure its close event, conditions, and
         timeout so the workflow pauses until the wait ends.
+    - name: Close wait activity
+      id: close-wait-activity
+      description: Wants to close a Wait activity from an action flow by
+        using the Close<Wait Name> process activity extended action,
+        providing the activity identifier and wait output parameters in the
+        same order and type as the Wait activity definition, so the wait
+        ends and execution resumes.
     - name: Create a workflow
       id: create-workflow
       description: Wants to implement a workflow in ODC Portal by creating it
@@ -5608,6 +5677,16 @@ knowledge-needs:
         rendering page takes too long, and that SetRequestTimeout has no effect
         on it, so they reduce the email's render time instead of trying to
         extend the timeout.
+    - name: Configure email settings
+      id: configure-email-settings
+      description: Wants to configure SMTP settings for an app stage in ODC Portal,
+        including the server, port, authentication type, and sender details, so
+        that the app sends email from the correct stage.
+    - name: Create test list
+      id: create-test-list
+      description: Wants to create and activate an email test list for an app in
+        ODC Portal, so that outgoing email during testing goes to test recipients
+        instead of real users.
   - name: BPT
     id: bpt
     subtopics:
@@ -5623,6 +5702,12 @@ knowledge-needs:
     - name: Activity callbacks
       id: bpt-activity-callbacks
       description: Wants to understand how Human Activity and Wait Activity callbacks run in an OutSystems 11 BPT process, including when On Ready, On Open, On Close, and On Skip fire and that Automatic activities do not use callbacks, so they can place activity logic in the right callback.
+    - name: Process extended actions
+      id: process-extended-actions
+      description: Wants to use Process Extended Actions and Process Activities Extended Actions from the Processes layer in Service Studio to launch a process or close a process activity, and to pass input and output parameters when invoking them, in OutSystems 11, so that they can control process execution from an action flow.
+    - name: Close human activity
+      id: close-human-activity
+      description: Wants to close a Human activity from a server action or screen action in OutSystems 11, wrapping the call in a server action when a client action in Reactive Web or Mobile triggers the close, so the workflow continues after the activity ends.
     - name: Conditional callbacks
       id: bpt-conditional-callbacks
       description: Wants to understand how Conditional Start callbacks run in an OutSystems 11 BPT process, including On Ready, On Start, Terminate, and dependency behavior, so they can control when listening starts and how repeat triggers behave.

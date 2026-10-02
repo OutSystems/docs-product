@@ -11788,6 +11788,9 @@ knowledge-needs:
     - name: File transfer readiness
       id: file-transfer-readiness
       description: Wants to call File Transfer plugin actions only after the Cordova or Capacitor bridge has fully initialized, so file transfer operations do not fail with OS-PLUG-FLTR-0001 in supported mobile apps.
+    - name: File transfer not loaded
+      id: file-transfer-not-loaded
+      description: Wants to resolve the OS-PLUG-FLTR-0003 error by confirming the File Transfer plugin is included in the mobile package, regenerating the package when it is missing from the build, and reinstalling the app so the client action can load the plugin at runtime.
     - name: File transfer access denied
       id: file-transfer-access-denied
       description: Wants to troubleshoot the OS-PLUG-FLTR-0006 error by requesting the required Android storage permission before file transfer operations, explaining why the permission is needed, and guiding users to app settings when they permanently deny the request, so file transfer operations fail gracefully on Android.
@@ -15309,6 +15312,15 @@ knowledge-needs:
   - name: SAST integration
     id: sast-integration
     subtopics:
+    - name: 'Use third-party SAST'
+      id: use-third-party-sast
+      description: 'Wants to run third-party static application security testing on OutSystems-generated code by exporting source code from O11 or ODC apps and scanning it with an external tool, so they can analyze the findings.'
+    - name: 'Review SAST findings'
+      id: review-sast-findings
+      description: 'Wants to review third-party SAST findings by recognizing common false positives in OutSystems-generated code and the remaining risks after mitigation, so they can judge which findings are actionable.'
+    - name: 'SAST support process'
+      id: sast-support-process
+      description: 'Wants to understand how OutSystems Support and Security handle third-party SAST findings by following the cloud and self-managed responsibility split, so they can escalate the right issues to the right team.'
     - name: Code Quality security scans overview
       id: code-quality-security-scans-overview
       description: Wants to understand which security issues OutSystems Code

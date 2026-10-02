@@ -19,7 +19,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - using-callbacks
+  - bpt-activity-callbacks
+  - bpt-conditional-callbacks
+  - bpt-process-callbacks
 ---
 
 # Using Process Activities Callback Actions

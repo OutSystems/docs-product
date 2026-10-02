@@ -15,7 +15,9 @@ coverage-type:
   - apply
   - remember
 topic:
-  - debug-troubleshoot-app-logic
+  - inspect-debugger-context
+  - use-debugger-toolbar
+  - use-scope-tabs
 ---
 
 # Debugger Tab Reference

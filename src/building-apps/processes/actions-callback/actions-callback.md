@@ -17,7 +17,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - using-callbacks
+  - bpt-process-callbacks
 ---
 
 # Using Process Callback Actions

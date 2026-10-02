@@ -17,8 +17,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - create-edit-entities
   - bootstrap-test-data-excel
+  - bootstrap-excel-blanks
 ---
 
 # Bootstrap an Entity Using an Excel File

@@ -17,7 +17,8 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - using-callbacks
+  - bpt-activity-callbacks
+  - bpt-process-callbacks
 ---
 
 # Use Callback Actions

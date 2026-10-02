@@ -8145,6 +8145,12 @@ knowledge-needs:
       reactive web apps, so that they can decide when to use a form on a
       screen.
     subtopics:
+    - name: Use form widget
+      id: use-form-widget
+      description: Wants to understand what a Form widget is and how it groups input widgets to collect, submit, and validate user data in reactive web apps, so they can build detail screens that display and edit records.
+    - name: Use input widgets
+      id: use-input-widgets
+      description: Wants to choose input widgets in a reactive web form based on the kind of value they collect, and bind each field to a screen variable, so the form collects, edits, and submits user data correctly.
     - name: Automatic form validation
       id: automatic-form-validation
       description: Wants to identify which input validations the Form widget

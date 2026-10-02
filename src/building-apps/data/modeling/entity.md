@@ -14,7 +14,9 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - create-edit-entities
+  - choose-entity-type
+  - entity-change-behavior
+  - entity-schema-mapping
 ---
 
 # Entities

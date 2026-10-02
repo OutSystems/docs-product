@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - debug-troubleshoot-app-logic
+  - public-and-personal-areas
 ---
 
 # Public and Personal Areas

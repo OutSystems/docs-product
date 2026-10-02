@@ -14,7 +14,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - customize-app-styles
+  - edit-widget-styles
+  - promote-style-changes
+  - reset-widget-styles
 ---
 
 # Change the look of widgets with Styles Editor

@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - troubleshoot-webservices
+  - choose-log-level
 ---
 
 # Set the logging level of REST and SOAP integrations

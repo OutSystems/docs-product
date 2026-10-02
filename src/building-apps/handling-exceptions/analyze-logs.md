@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - how-to-handle-exceptions
+  - analyze-exception-logs
 ---
 
 # Analyze the Logs of Exceptions

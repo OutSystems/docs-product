@@ -24,7 +24,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - data-archiving-cold-data
+  - data-archiving-overview
+  - implement-historical-archiving
+  - implement-light-archiving
 ---
 
 # Data Archiving

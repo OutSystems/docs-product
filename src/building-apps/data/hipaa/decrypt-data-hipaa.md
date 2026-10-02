@@ -18,7 +18,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - data-encryption
+  - create-decryption-action
+  - decrypt-searchable-attributes
+  - decrypt-unsearchable-attributes
 ---
 
 # Decrypting HIPAA compliant data

@@ -15,7 +15,8 @@ coverage-type:
   - understand
   - apply
 topic:
-  - debug-troubleshoot-app-logic
+  - server-thread-control
+  - thread-debug-behavior
 ---
 
 # Threads

@@ -18,7 +18,7 @@ coverage-type:
   - apply
   - remember
 topic:
-  - event-driven-processes
+  - process-extended-actions
 ---
 
 # Use Process Extended Actions

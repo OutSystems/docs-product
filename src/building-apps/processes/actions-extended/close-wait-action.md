@@ -19,7 +19,7 @@ coverage-type:
   - apply
   - remember
 topic:
-  - event-driven-processes
+  - close-wait-activity
 ---
 
 # Close Wait Action

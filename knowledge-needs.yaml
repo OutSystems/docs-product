@@ -119,6 +119,11 @@ knowledge-needs:
         Service Studio/ODC Studio, so that the widget is automatically
         wired to trigger the newly created logic without adding a separate
         action and connector afterward.
+    - name: Create client action
+      id: create-client-action
+      description: Wants to create a client action with an output parameter in
+        Service Studio when they need to return a retrieved value from the
+        flow.
     - name: Display price on select
       id: display-price-on-select
       description: Wants to display the selected product's price when the
@@ -389,6 +394,21 @@ knowledge-needs:
         aggregates, so that they can generate passwords, evaluate conditional
         expressions, detect screen loading state, and check for a mobile
         theme in expressions.
+    - name: Use expression editor
+      id: use-expression-editor
+      description: Wants to open Service Studio's expression editor from an expression
+        widget, a property field, or a TrueChange error or warning, then use
+        autocomplete, the toolbar, the scope pane, and the status indicator to
+        confirm that the expression is valid.
+  - name: Core module patterns
+    id: core-module-patterns-logic
+    subtopics:
+    - name: Module exposure and reuse
+      id: module-exposure-and-reuse
+      description: Wants to expose functionality from a producer module by setting
+        elements to Public and publishing the module, then reuse those exposed
+        elements in a consumer module through Manage Dependencies, so that one
+        module can call functionality defined in another module.
   - name: Library actions
     id: library-actions
     description: Wants to know which ODC library actions are available and what each
@@ -978,6 +998,9 @@ knowledge-needs:
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
+    - name: Entity change behavior
+      id: entity-change-behavior
+      description: Wants to understand how OutSystems handles entity attribute additions, mandatory validation, delete behavior, and entity or static entity conversions, so they can change data models without breaking runtime behavior.
     - name: Entity actions
       id: entity-actions
       description: Wants to understand the built-in CRUD actions generated for an entity, so they can choose the appropriate action for common entity operations.
@@ -1052,6 +1075,12 @@ knowledge-needs:
       description: Wants to understand what data types are available in ODC, their
         default values, and their minimum/maximum constraints, so that variables and
         entity attributes can be correctly typed during app development.
+    - name: Compound data types
+      id: compound-data-types
+      description: Wants to create and use compound data types with structures or records,
+        including defining a reusable structure or a one-off record variable and assigning
+        it to another variable or output parameter, so they can group multiple values with
+        different data types into a single value.
     - name: External type mapping
       id: external-type-mapping
       description: Wants to look up how external system data types map to ODC SQL node and
@@ -4765,6 +4794,13 @@ knowledge-needs:
         deferred for consumers based on weak or strong dependencies, so they
         can predict runtime impact and know when republishing consumers is
         required.
+    - name: Dependency strength
+      id: dependency-strength
+      description: Wants to identify which reusable module elements create
+        strong or weak dependencies between producer and consumer modules,
+        and how those dependency types affect republishing and runtime
+        updates, so they can predict reuse behavior when modules share
+        exposed elements.
   - name: App naming and URLs
     id: app-naming-and-urls
     description: Wants to understand how ODC turns an app's display name into its internal
@@ -5987,11 +6023,27 @@ knowledge-needs:
       id: css-hierarchy
       description: Wants to understand the order OutSystems loads CSS from different
         scopes, so they know which style wins when selectors conflict.
+    - name: Edit widget styles
+      id: edit-widget-styles
+      description: Wants to change a widget's visual properties in Styles Editor,
+        including font, layout, and borders, so they can adjust the widget's
+        appearance in Service Studio.
     - name: Promote style changes
       id: promote-style-changes
       description: Wants to promote visual Styles Editor changes to a reusable CSS
         class and move the generated CSS to a screen style sheet, so the styled
         container can be reused on other widgets.
+    - name: Reset widget styles
+      id: reset-widget-styles
+      description: Wants to reset a widget's styles to default in Styles Editor by
+        clearing the applied CSS and removing custom style classes, so the widget
+        returns to its default appearance.
+    - name: Theme editor customization
+      id: theme-editor-customization
+      description: Wants to customize an app's overall style in Service Studio
+        by using Theme Editor to adjust the app's theme settings and reset those
+        changes when needed, so they can keep the app's look and feel consistent
+        with their brand.
     - name: Combine CSS classes
       id: combine-css-classes
       description: Wants to assign multiple CSS classes to a single widget and
@@ -8038,6 +8090,13 @@ knowledge-needs:
         of the Go To Destination node in Service Studio, so that they can
         navigate to a specific screen, in OutSystems 11 traditional web apps,
         mobile apps, and reactive web apps.
+    - name: Navigate to detail screen
+      id: navigate-to-detail-screen
+      description: Wants to navigate from a list screen to a detail screen
+        by selecting a List Item widget in Reactive Web or Mobile, or a Link
+        widget in Traditional Web, and passing the current item identifier
+        to the target screen, so that the detail screen shows the selected
+        record.
     - name: External Site reference
       id: external-site-reference
       description: Wants to look up the purpose and configurable properties
@@ -10221,6 +10280,12 @@ knowledge-needs:
         changes, applying them to the factory or a selected solution, and
         handling the resulting reload and pending-change warnings, so that
         configuration changes take effect without republishing code.
+    - name: Site properties
+      id: site-properties
+      description: Wants to create a Site Property in Service Studio, use it in
+        server-side logic as `Site.<SitePropertyName>`, and change its effective
+        value in Service Center without republishing, so that application
+        behavior can vary by environment at runtime.
     - name: Republish compile-time changes
       id: republish-compile-time-changes
       description: Wants to republish modules after changing compile-time
@@ -12247,14 +12312,13 @@ knowledge-needs:
     - name: One-to-many sync pattern
       id: one-to-many-sync-pattern
       description: Wants to implement the Read/Write Data One-to-Many offline
-        synchronization pattern for ODC mobile apps, covering the client-side
-        OnSync trigger logic, the server-side ServerDataSync reconciliation
-        logic for the parent and child sync actions, a dictionary mapping local
-        record IDs to newly created server record IDs to preserve the parent-
-        child relationship, and a local entity data model with metadata
-        attributes tracking whether a record originated from the server, was
-        modified locally, and remains active, so that one-to-many master/detail
-        records stay consistent under a "last write wins" strategy.
+        synchronization pattern for mobile apps, covering client-side offline
+        sync logic, server-side ServerDataSync reconciliation for parent and
+        child records, a dictionary mapping local parent IDs to server IDs to
+        preserve the parent-child relationship, and local entity metadata
+        tracking server origin, local modification, and active state, so that
+        one-to-many master/detail records stay consistent under a last-write-wins
+        strategy.
     - name: Last write wins pattern
       id: last-write-wins-pattern
       description: Wants to implement the Read/Write Data Last Write Wins
@@ -17974,6 +18038,14 @@ knowledge-needs:
       Service Center, LifeTime Analytics, and App Feedback, to review logs,
       performance, environment status, and user feedback, so they can detect
       and troubleshoot app issues from the platform.
+    subtopics:
+    - name: Analyze exception logs
+      id: analyze-exception-logs
+      description: Wants to analyze handled exception logs in Service Center's
+        Monitoring area by opening the Errors screen, filtering by application,
+        and reviewing the General section for Abort Activity Change Exception
+        records, so they can investigate application exceptions in OutSystems
+        11.
   - name: Extend monitoring tools
     id: extend-monitoring-tools
     description: Wants to understand how to extend OutSystems monitoring with
@@ -18084,6 +18156,12 @@ knowledge-needs:
         connected device, but always confirm the fix on a real device before
         considering it resolved, in OutSystems 11, so that they debug
         efficiently without missing device-only behavior differences.
+    - name: Debug producer modules
+      id: debug-producer-modules
+      description: Wants to debug a producer module's exposed logic from a
+        consumer module or by using the producer module as the entry module,
+        so that breakpoints stop in the producer module for public client or
+        server actions and Service Actions.
     - name: Debug with breakpoints
       id: debug-with-breakpoints
       description: Wants to debug an OutSystems 11 app by setting breakpoints,

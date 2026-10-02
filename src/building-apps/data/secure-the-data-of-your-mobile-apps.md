@@ -13,7 +13,7 @@ outsystems-tools:
 coverage-type:
   - evaluate
 topic:
-  - data-encryption
+  - mobile-data-security
 ---
 
 # Secure the Data of your Mobile Apps

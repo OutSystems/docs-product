@@ -18,8 +18,7 @@ coverage-type:
   - understand
   - remember
 topic:
-  - trigger-processes
-  - event-driven-processes
+  - process-extended-actions
 ---
 
 # Launch Process Action

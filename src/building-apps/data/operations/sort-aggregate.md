@@ -15,7 +15,8 @@ coverage-type:
   - understand
   - apply
 topic:
-  - filter-data
+  - dynamic-aggregate-sort
+  - sort-aggregate-data
 ---
 
 # Sort Results in an Aggregate

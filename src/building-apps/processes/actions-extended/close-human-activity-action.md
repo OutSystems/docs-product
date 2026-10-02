@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - event-driven-processes
+  - close-human-activity
 ---
 
 # Close Human Activity Action

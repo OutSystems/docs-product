@@ -23,7 +23,7 @@ coverage-type:
   - evaluate
   - apply
 topic:
-  - scalable-process-best-practices
+  - separate-process-logic
 ---
 
 # Separate Process Logic from Application Logic

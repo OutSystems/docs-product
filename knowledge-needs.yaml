@@ -11337,12 +11337,18 @@ knowledge-needs:
         device's lock screen security.
     - name: KeyStore authentication failure
       id: keystore-authentication-failure
-      description: Wants to resolve the OS-PLUG-KSTR-0010 error where the
-        iOS Keychain API returns errSecAuthFailed because biometric
-        authentication, passcode entry, or repeated failed attempts do not
-        satisfy access control, by retrying with the correct biometric
-        credentials or device passcode and unlocking biometrics if needed, so
-        that the protected Keychain item can be accessed.
+      description: Wants to resolve KeyStore authentication failures,
+        including the iOS OS-PLUG-KSTR-0010 errSecAuthFailed error and the
+        Android OS-PLUG-KSTR-0013 "Failed to authenticate user." error, by
+        retrying the operation after completing biometric authentication or
+        providing the device passcode or other supported credentials, and
+        unlocking biometrics if needed, so that protected Keychain items or
+        encrypted KeyStore data can be accessed.
+    - name: Android secure lock
+      id: android-secure-lock
+      description: Wants to resolve the OS-PLUG-KSTR-0014 "Device is not
+        secure." error by setting up a secure screen lock so that the Keystore
+        plugin can complete its operation on Android.
     - name: KeyStore unimplemented error
       id: keystore-unimplemented-error
       description: Wants to resolve the OS-PLUG-KSTR-0002 "Function or

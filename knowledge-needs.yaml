@@ -155,6 +155,11 @@ knowledge-needs:
       description: Wants to consume a Cordova plugin's event-driven
         registration flow as a Promise so the client action can await
         completion instead of using callbacks.
+    - name: Users API reference
+      id: users-api-reference
+      description: Wants to look up the Users API widgets, actions, structures, and static
+        entities when they need to manage users, groups, login, authentication, or blocked
+        accounts from Service Studio, so they can call the right member.
   - name: Logic Flows
     id: logic-flows
     subtopics:
@@ -207,7 +212,7 @@ knowledge-needs:
     - name: Block events O11
       id: block-events
       description: Wants to expose an event on a block and handle it on a screen by
-        triggering the event in the block and mapping a screen action to it, so that 
+        triggering the event in the block and mapping a screen action to it, so that
         they can pass data and trigger logic across UI components.
     - name: Screen action as callback
       id: screen-action-as-callback
@@ -400,6 +405,11 @@ knowledge-needs:
       id: url-library-actions
       description: Wants to know which actions are available in the URL library and what
         each does, so they can manipulate URLs correctly in ODC Studio.
+    - name: Text API actions
+      id: text-api-actions
+      description: Wants to know which Text API actions are available in OutSystems 11 and
+        what each does, including how to add the Text module as a dependency, so they can
+        pick and use the right text-manipulation action in a module.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -974,6 +984,15 @@ knowledge-needs:
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
+    - name: Entity actions
+      id: entity-actions
+      description: Wants to understand the built-in CRUD actions generated for an entity, so they can choose the appropriate action for common entity operations.
+    - name: Entity action availability and fallback
+      id: entity-action-availability-fallback
+      description: Wants to understand when built-in entity actions are available based on the entity identifier or static entity status, and when to use SQL Query as a fallback, so they can choose the correct way to access entity data.
+    - name: Expose Read Only pattern
+      id: entity-expose-read-only-pattern
+      description: Wants to understand how to use the recommended Expose Read Only pattern for entity actions on both client and server sides, so they can access entity data through the appropriate layer.
     - name: Static entity data migration
       id: static-entity-data-migration
       description: Wants to understand the considerations for migrating Static
@@ -1818,6 +1837,13 @@ knowledge-needs:
   topics:
   - name: When to use Aggregates vs SQL Nodes
     id: agg-vs-sql
+    subtopics:
+    - name: Convert aggregate to SQL Tool
+      id: convert-aggregate-to-sql-tool
+      description: Wants to convert an Aggregate into a SQL Tool in OutSystems 11, including the conversion limitations and the conversion process, so they can replace an existing Aggregate with SQL when needed.
+    - name: SQL tool query
+      id: sql-tool-query
+      description: Wants to build a SQL Tool query that returns the top sold products by joining entities, grouping and summing quantities, sorting descending, limiting results, and defining an output structure, so they can return the most-sold products.
   - name: Stored procedures
     id: stored-procedures
     description: Wants to execute database stored procedures from OutSystems using Integration
@@ -1829,12 +1855,6 @@ knowledge-needs:
       from and writing to the database, including default values, NullIdentifier
       checks, SQL inserts, external entities, and mandatory foreign keys, so they
       can detect and preserve NULL-related behavior correctly.
-  - name: Database transactions
-    id: database-transactions
-    description: Wants to understand how OutSystems starts and ends database
-      transactions automatically, when to use CommitTransaction or
-      AbortTransaction, and how exceptions affect rollback, so they can control
-      transaction outcome correctly.
   - name: Database views
     id: database-views
     description: Wants to create database views and integrate them as read-only entities in
@@ -2185,6 +2205,17 @@ knowledge-needs:
 - name: Advanced data modeling
   guid: 9a38cf20-a3dc-491a-8a25-c261c830e9c7
   topics:
+  - name: Database transactions
+    id: database-transactions
+    description: Wants to understand how OutSystems starts and ends database
+      transactions automatically, when to use CommitTransaction or
+      AbortTransaction, and how exceptions affect rollback, so they can control
+      transaction outcome correctly.
+    subtopics:
+    - name: Write a record in a parallel transaction
+      id: write-record-parallel-transaction
+      description: Wants to write a record in a parallel transaction when an app needs an
+        isolated write, so that the write is independent of the current transaction.
   - name: Data performance, caching
     id: data-performance-caching
     subtopics:
@@ -2316,12 +2347,27 @@ knowledge-needs:
         sensitive parameter values in the environment management console, so
         that they can balance troubleshooting needs against performance and
         security.
+    - name: Secure REST APIs
+      id: secure-rest-api
+      description: Wants to secure an exposed REST API with basic or custom authentication,
+        so that callers must authenticate before accessing its methods.
+    - name: REST API customization
+      id: rest-api-customization
+      description: Wants to customize an exposed REST API's endpoint URLs, custom HTTP
+        status codes, and generated documentation with Markdown, so that the
+        published API matches the intended contract and documentation style.
     - name: New API version
       id: new-api-version
       description: Wants to create a new REST API version when changing an
         endpoint path, authentication, method name, or a mandatory
         parameter/field's presence or type, so that existing consumers keep
         working on the old contract during a migration period.
+    - name: Customize REST callbacks
+      id: customize-rest-callbacks
+      description: Wants to customize a consumed REST API's requests and responses with OnBeforeRequest and OnAfterResponse callbacks, so they can adjust headers or payloads without extra development.
+    - name: Configure REST runtime
+      id: configure-rest-runtime
+      description: Wants to change a consumed REST API's endpoint URL and authentication at runtime without extra development, so the integration can target the correct environment and credentials.
   - name: Database connections
     id: database-connections
     subtopics:
@@ -2383,6 +2429,10 @@ knowledge-needs:
         external database Entity during a LifeTime deployment, and copy the
         source value when both environments use the same external database or
         schema, so that the deployed app points to the correct target database.
+    - name: Switch database connection at runtime
+      id: switch-database-connection-at-runtime
+      description: Wants to switch the database connection for the current session at runtime,
+        so that database actions use the intended connection.
   - name: Integration Patterns
     id: integration-patterns
     subtopics:
@@ -3663,6 +3713,11 @@ knowledge-needs:
         sanitization, safe query parameterization, default output escaping,
         and Content Security Policy, so they can choose the right mitigation
         for each injection risk in an ODC application.
+    - name: Use sanitization API
+      id: use-sanitization-api
+      description: Wants to use the Sanitization API server actions in OutSystems 11 to sanitize
+        untrusted HTML, JavaScript, and SQL snippet input, so they can choose the right action
+        for each content type and prevent code injection.
   - name: Access control risks
     id: access-control-risks
     description: Wants to protect OutSystems 11 applications from access control
@@ -5874,6 +5929,11 @@ knowledge-needs:
         custom application templates, style guide, and applications) and how
         they relate to each other, so they can understand how OutSystems UI
         structures the user interfaces of their applications, in OutSystems 11.
+    - name: Reactive app anatomy
+      id: reactive-app-anatomy
+      description: Wants to identify the main building blocks of a Reactive Web
+        app, including screens, widgets, client actions, and server actions,
+        so they can understand how the app is structured.
     - name: Look and feel overview
       id: look-and-feel-overview
       description: Wants to understand what capabilities the OutSystems UI
@@ -6124,6 +6184,11 @@ knowledge-needs:
       description: Wants to add a screen to the application menu by dragging it into the
         menu bar and setting its Text property, so that users can open that
         screen from the app toolbar in a Traditional Web App.
+    - name: List detail screens
+      id: list-detail-screens
+      description: Wants to create list and detail screens for entities from a core
+        module in a UI module, so users can browse records and open individual
+        details after the module is published.
     - name: Mobile CRUD screens
       id: crud-screens-mobile
       description: Wants to build List and Form screens for an entity and wire
@@ -7693,6 +7758,17 @@ knowledge-needs:
         in Service Studio, so that end users can drop a marker at the
         location they click on the map, in mobile apps and reactive web
         apps (O11).
+    - name: Configure pie chart
+      id: configure-pie-chart
+      description: Wants to add the Pie Chart widget, populate its DataPointList, enable ShowDataPointValues,
+        and remove the Chart Legend add-on so that the chart shows labels on slices instead
+        of a legend.
+    - name: Chart JSON customization
+      id: chart-json-customization
+      description: Wants to customize OutSystems Charts by entering Highcharts configuration
+        options as JSON in AdvancedFormat > HighchartsJSON, including changing series appearance,
+        combining chart types, and adapting JSON from Highcharts demos, so that they can fine-tune
+        chart appearance and behavior beyond the default widget properties.
   - name: Group inputs with forms
     id: group-inputs-with-forms
     description: Wants to understand what a Form widget is and how it
@@ -15433,6 +15509,11 @@ knowledge-needs:
         login flows across different user types and groups, before
         deploying the IdP to production, so that they can catch mapping
         issues and authentication failures early.
+    - name: Request and session info
+      id: request-and-session-identifiers
+      description: Wants to retrieve the current request key and authenticated session details
+        for mobile and web apps, when server logic needs to identify the request or logged-in
+        user, so that it can correlate the request with the active session.
   - name: Authorization
     id: authorization
     subtopics:
@@ -15769,6 +15850,11 @@ knowledge-needs:
     - name: Stream audit logs
       id: stream-audit-logs
       description: Wants to stream audit logs to an external destination so they can centralize audit data for compliance or troubleshooting.
+- name: Create audit log records
+  id: create-audit-log-records
+  description: Wants to create a secure audit log record when code needs to write to the
+    auditing store, so that the log entry is persisted successfully or skipped cleanly when
+    secure auditing storage is not supported or configured.
 - name: Business Analysis
   guid: a3f7c821-56e4-4b2d-9d83-1e4c0f2d8b95
   topics:
@@ -17941,6 +18027,13 @@ knowledge-needs:
         connected device, but always confirm the fix on a real device before
         considering it resolved, in OutSystems 11, so that they debug
         efficiently without missing device-only behavior differences.
+    - name: Debug with breakpoints
+      id: debug-with-breakpoints
+      description: Wants to debug an OutSystems 11 app by setting breakpoints,
+        starting a debug session, stepping through code, inspecting variables
+        and the call stack, and selecting the correct entry module when the
+        code runs from another module, so that they can trace execution and
+        find the failing logic.
     - name: Log information in action flows
       id: log-information-in-action-flows
       description: Wants to log debug information in an action flow with the
@@ -18173,7 +18266,7 @@ knowledge-needs:
   - name: Fix SAML decrypt error
     id: fix-saml-decrypt-error
     description: 'Wants to resolve the "Unable to decrypt the assertion" error
-      that occurs during end-user SAML authentication in OutSystems 11,       
+      that occurs during end-user SAML authentication in OutSystems 11,
       caused by a certificate mismatch between the Service Provider (SP)
       and Identity Provider (IdP), by regenerating the SP KeyStore in the
       Users application, downloading the new KeyStore and SP metadata XML,

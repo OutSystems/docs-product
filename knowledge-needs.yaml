@@ -1001,6 +1001,9 @@ knowledge-needs:
     - name: Entity change behavior
       id: entity-change-behavior
       description: Wants to understand how OutSystems handles entity attribute additions, mandatory validation, delete behavior, and entity or static entity conversions, so they can change data models without breaking runtime behavior.
+    - name: Choose entity type
+      id: choose-entity-type
+      description: Wants to choose between an Entity and a Static Entity based on whether the data changes at runtime, and convert an entity to a static entity when predefined data fits better, so they can model data correctly in OutSystems 11.
     - name: Entity actions
       id: entity-actions
       description: Wants to understand the built-in CRUD actions generated for an entity, so they can choose the appropriate action for common entity operations.
@@ -5896,6 +5899,14 @@ knowledge-needs:
     description: Wants to choose a branching strategy and use a personal area for
       isolated debugging when collaborating on an OutSystems app, so that work
       stays short-lived and safe to share.
+    subtopics:
+    - name: Public and personal areas
+      id: public-and-personal-areas
+      description: Wants to understand how Public Area and Personal Area publishing
+        work in Traditional Web modules, including when changes become public,
+        how Personal Area debugging stays private, and which elements require a
+        Public Area publish first, so that they can test changes without affecting
+        other developers.
   - name: Version control workflows
     id: version-control-workflows
     description: Wants to use Visual Studio Team Explorer and Git repositories to

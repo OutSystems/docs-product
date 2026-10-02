@@ -86,6 +86,12 @@ knowledge-needs:
         in OutSystems 11 (OutSystems built-in actions, custom actions, and actions
         that handle system events) and when each applies, so that they can choose
         the right type of action when designing application logic.
+    - name: Actions and functions
+      id: actions-and-functions
+      description: Wants to understand how OutSystems actions and functions work,
+        including how to define reusable action logic, call an action from a flow
+        or screen widget, and use the Function property when an action returns a
+        value, so that they can structure app logic and reuse code.
     - name: Troubleshoot Code Mentor
       id: troubleshoot-code-mentor
       description: Wants to troubleshoot Code Mentor issues in Service Studio,
@@ -174,6 +180,13 @@ knowledge-needs:
         flow by breaking it into smaller reusable actions and adding comments
         when the flow exceeds the platform node-count limits, so that the
         logic stays maintainable.
+    - name: Control flow tools
+      id: control-flow-tools
+      description: Wants to use Assign, If, Switch, and For Each nodes in an
+        action flow to set values, branch execution, and iterate through list
+        items, including building a loop with an If condition when no dedicated
+        loop node exists, so that they can implement common control flow
+        patterns in OutSystems.
   - name: Calculation and algorithm examples
     id: calculation-and-algorithm-examples
     subtopics:
@@ -247,6 +260,12 @@ knowledge-needs:
   - name: Understanding Exceptions
     id: understanding-exceptions
     subtopics:
+    - name: Exception handling
+      id: exception-handling
+      description: Wants to understand how PHP and OutSystems handle
+        exceptions, including matching catch logic, bubbling to a more generic
+        handler, and adding exception handler flows to an action, so that they
+        can route errors to the right handler and create custom exceptions.
     - name: Fix empty OnException
       id: fix-empty-onexception
       description: Wants to fix the "Empty 'OnException'" error in Service Studio
@@ -468,6 +487,11 @@ knowledge-needs:
       description: Wants to look up the configurable properties of a Runtime Property
         element and which are mandatory, so they can correctly define a Runtime
         Property in Service Studio for OutSystems 11.
+    - name: Variable scope
+      id: variable-scope
+      description: Wants to understand input, output, and local variables in OutSystems,
+        including how each one shares data across scopes and when the variable is
+        destroyed, so they can choose the right variable type.
   - name: Using Structures
     id: using-structures
     subtopics:
@@ -612,12 +636,17 @@ knowledge-needs:
         server-side logic (a Service Studio logic flow), in OutSystems 11,
         so that role assignment can be automated instead of done manually
         through the Users application.
-    - name: Add role in Studio
-      id: add-role-in-studio
-      description: Wants to create a new application-specific role in a
-        module, using the Logic tab's Roles folder and Add Role option, so
-        that they can define a custom role (for example HRManager) to use
-        later in screen and logic access control.
+    - name: Create app role
+      id: create-app-role
+      description: Wants to create an application-specific role in an app, so
+        they can define a custom role to assign to end users and use for screen
+        and logic access control.
+    - name: Delete app role
+      id: delete-app-role
+      description: Wants to delete an application-specific role from a
+        module using the Logic tab's Roles folder and Delete option, so
+        that the role is removed when it is no longer needed for access
+        control.
     - name: Restrict screen access
       id: restrict-screen-access
       description: Wants to restrict which end-users can open specific
@@ -1075,8 +1104,9 @@ knowledge-needs:
         record and when.
     - name: Data types
       id: data-types
-      description: Wants to understand what data types are available in ODC, their
-        default values, and their minimum/maximum constraints, so that variables and
+      description: Wants to understand what data types are available in ODC,
+        including basic types, compound types, and lists, as well as their
+        default values and minimum/maximum constraints, so that variables and
         entity attributes can be correctly typed during app development.
     - name: Compound data types
       id: compound-data-types
@@ -1094,6 +1124,11 @@ knowledge-needs:
       description: Wants to understand that an OutSystems List stores elements of
         the same data type, so they can use list variables correctly when modeling
         app data.
+    - name: Create structures
+      id: create-structures
+      description: Wants to create structures and define their attributes in OutSystems,
+        and understand that a structure is a custom compound data type used to store
+        related data in memory, so they can model grouped data correctly.
     - name: Entity properties
       id: entity-properties
       description: Wants to look up the configurable properties of an Entity, including
@@ -2098,6 +2133,24 @@ knowledge-needs:
         single-system queries and performance considerations for mashup queries
         spanning multiple external systems — so they can write efficient and correct
         queries.
+    - name: Use SQL Tool in server-side flows
+      id: use-sql-tool-in-server-side-flows
+      description: Wants to use the SQL Tool in a server-side flow, so they can
+        query data from server-side logic.
+    - name: Configure SQL Tool parameters
+      id: configure-sql-tool-parameters
+      description: Wants to define input parameters and choose an output entity
+        or structure for a SQL Tool query, so the query accepts the required
+        inputs and returns data in the expected shape.
+    - name: Write SQL Tool statements
+      id: write-sql-tool-statements
+      description: Wants to write SQL statements in the SQL Tool and use syntax
+        checking to catch errors, so they can validate a statement before
+        running it.
+    - name: Test SQL Tool query
+      id: test-sql-tool-query
+      description: Wants to test a SQL Tool query, so they can inspect and
+        verify its results.
     - name: Update SQL statement
       id: update-sql-statement
       description: Wants to update records in an external entity using the ANSI-92
@@ -4699,6 +4752,9 @@ knowledge-needs:
     - name: Pattern layer overview
       id: pattern-layer-overview
       description: Wants to understand how the Architecture Patterns in OutSystems course groups patterns by architecture canvas layer, so they can follow the library module and core module sections in context.
+    - name: Canvas overview
+      id: canvas-overview
+      description: Wants to understand the Architecture Canvas framework in OutSystems, including its foundation, core, and end-user layers and its benefits for reusable services and lifecycle independence, so they can design application architecture with it.
   - name: Application composition
     id: application-composition
     subtopics:
@@ -5410,6 +5466,15 @@ knowledge-needs:
     - name: Conditional process start
       id: conditional-process-start-o11
       description: Wants to configure a conditional start in an OutSystems 11 process so it starts on create or update entity events and only listens after a dependency source activity has executed.
+    - name: Activity callbacks
+      id: bpt-activity-callbacks
+      description: Wants to understand how Human Activity and Wait Activity callbacks run in an OutSystems 11 BPT process, including when On Ready, On Open, On Close, and On Skip fire and that Automatic activities do not use callbacks, so they can place activity logic in the right callback.
+    - name: Conditional callbacks
+      id: bpt-conditional-callbacks
+      description: Wants to understand how Conditional Start callbacks run in an OutSystems 11 BPT process, including On Ready, On Start, Terminate, and dependency behavior, so they can control when listening starts and how repeat triggers behave.
+    - name: Process callbacks
+      id: bpt-process-callbacks
+      description: Wants to understand process-level callbacks in an OutSystems 11 BPT process, including On Process Start and the On Activity callbacks that run before matching activity callbacks, so they can centralize process-wide logic.
     - name: Design process flow
       id: design-process-flow
       description: Wants to design the behavior of a process using the Process
@@ -8434,6 +8499,11 @@ knowledge-needs:
         including that they are cross-device single-page applications built
         with React JS in ODC Studio and request data asynchronously, so that
         they can identify correct statements about the ODC web app model.
+    - name: ODC app types
+      id: odc-app-types
+      description: Wants to understand the main ODC app types and how to choose
+        the right one when selecting an app model, so they can orient themselves
+        before selecting one.
   - name: Creating Screens
     id: creating-screens
     subtopics:
@@ -9858,6 +9928,9 @@ knowledge-needs:
     - name: Forge overview
       id: forge-overview
       description: Wants to understand what Forge is, what kinds of reusable assets are available, and how the community-driven sharing model works in OutSystems, so they can decide whether Forge is a good place to find or share assets.
+    - name: Install Forge component
+      id: install-forge-component
+      description: Wants to install a Forge component from the Forge, follow its loading state in Service Studio, and find installed or system components in Manage Dependencies and Service Center, so that they can use the component in their app.
     - name: Forge project types
       id: forge-project-types
       description: Wants to understand the different types of Forge projects, so that they

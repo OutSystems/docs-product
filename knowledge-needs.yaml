@@ -4781,6 +4781,9 @@ knowledge-needs:
     - name: Apply portal configurations
       id: apply-portal-configurations
       description: Wants to apply settings, timer schedules, and REST endpoint values in the ODC Portal per stage, so that each app keeps separate configuration values and runtime changes update asynchronously.
+    - name: Review asset configurations
+      id: review-asset-configurations
+      description: Wants to review an asset's current configurations, define the values for the target stage, and store those values in a pipeline run context before deployment so the asset deploys with the intended settings.
     - name: Set app setting secret
       id: set-app-setting-secret
       description: Wants to mark or unmark an app setting as secret in ODC
@@ -5329,6 +5332,16 @@ knowledge-needs:
 - name: Asynchronous processes
   guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
   topics:
+  - name: Synchronous vs asynchronous processing
+    id: sync-vs-async-processing
+    description: Wants to understand how synchronous and asynchronous
+      execution differ in OutSystems, so that they can decide whether work
+      should run as part of a request or in the background.
+  - name: When to use asynchronous processing
+    id: when-to-use-async-processing
+    description: Wants to determine when to move work out of a user request
+      and into asynchronous processing in OutSystems, so that long-running
+      or non-immediate work can run without delaying the response.
   - name: How to process data using Timers
     id: process-data-timers
     subtopics:
@@ -5693,9 +5706,17 @@ knowledge-needs:
       description: Wants to create and activate an email test list for an app in
         ODC Portal, so that outgoing email during testing goes to test recipients
         instead of real users.
+    - name: Email widgets
+      id: email-widgets
+      description: Wants to identify the widgets available in ODC emails and the
+        limitations of those widgets, so that they can design lightweight
+        emails.
   - name: BPT
     id: bpt
     subtopics:
+    - name: Create BPT process
+      id: create-bpt-process
+      description: Wants to create a BPT process in Service Studio and start defining the process flow, so they can automate tasks and track work in their application.
     - name: Execute sub-process
       id: execute-sub-process
       description: Wants to execute a sub-process from a parent process by using the Execute
@@ -5889,6 +5910,11 @@ knowledge-needs:
         in Service Center before republishing the module, in OutSystems 11,
         so that a qualifying process runs faster without process/activity
         tracking overhead.
+    - name: Compare async processes
+      id: compare-async-processes
+      description: Wants to compare Timers, Processes, and Light Processes
+        across trigger, flow, timeout, retry, execution, and scalability so
+        they can choose the right asynchronous mechanism for a use case.
     - name: DST BPT bug overview
       id: dst-bpt-bug-overview
       description: Wants to understand why some BPT activities scheduled during
@@ -8965,6 +8991,30 @@ knowledge-needs:
       description: Wants to understand ODC domain types, the default domain,
         and how built-in and custom domains affect access and future domain
         changes, so they can plan domain-related decisions safely.
+    - name: Add custom domain
+      id: add-custom-domain
+      description: Wants to add a custom domain to an ODC app stage in the ODC
+        Portal, so that users can access the app through that domain.
+    - name: Set custom domain as default
+      id: set-custom-domain-default
+      description: Wants to set a custom domain as the default domain for an
+        ODC app stage in the ODC Portal, so that the stage uses it by default.
+    - name: Delete custom domain
+      id: delete-custom-domain
+      description: Wants to delete a custom domain from an ODC app stage in the
+        ODC Portal, so that it is no longer available for the stage.
+    - name: Manage default app
+      id: manage-default-app
+      description: Wants to set, change, or remove the default app for a
+        custom domain in ODC Portal, choose the redirect behavior for
+        root-path access, and republish the app so the selected app loads
+        from the domain root.
+    - name: Use custom domains in URLs
+      id: use-custom-domains-in-urls
+      description: Wants to generate app URLs with an active custom domain
+        in ODC, by using the stage default domain or a specific active
+        custom domain in URL expressions, so that links resolve to the
+        intended host.
     - name: Deployment error concept
       id: deployment-error-concept
       description: Wants to understand what a deployment error is in OutSystems
@@ -9822,6 +9872,12 @@ knowledge-needs:
       description: Wants to look up the Asset Configurations API reference,
         including the base URL and available endpoints, so they can call it
         correctly when managing ODC asset configuration data.
+    - name: Deployment Operations API
+      id: deployment-operations-api
+      description: Wants to look up the Deployment Operations API reference,
+        including the base URL, deployment-operation endpoints, and status
+        polling flow, so they can deploy an asset to a target stage, apply
+        pending configurations, and monitor the operation until it finishes.
     - name: Call API with token
       id: call-api-with-token
       description: Wants to call an ODC public REST API with an access token after
@@ -15525,6 +15581,11 @@ knowledge-needs:
       managing findings, dashboards, and maintenance operations, so that
       they can plan and troubleshoot IT user access to Code Quality in
       OutSystems 11.
+  - name: Code Quality overview
+    id: code-quality-overview
+    description: Wants to understand what Code Quality is, which issue areas
+      it analyzes, and how developers and technical leads use it to manage
+      technical debt, so that they can apply it in the development lifecycle.
 - name: Testing practice
   guid: 0e440c0c-7db6-41cd-a51c-0c00ccb15e72
   topics:
@@ -15886,6 +15947,9 @@ knowledge-needs:
         in OutSystems 11.
     - name: Passwords
       id: passwords
+    - name: Password recovery flow
+      id: password-recovery-flow
+      description: 'Wants to recover an ODC password for members or end users by using the Forgot password? flow or the RecoverPasswordRequest and RecoverPasswordReset screens with email verification, and making sure email delivery is configured, so that users can regain access when they forget a password.'
     - name: Password utility actions
       id: password-utility-actions
       description: Wants to use the PlatformPasswordUtils API to generate salted MD5 or SHA512 password hashes and validate passwords against salted hashes in O11, so that they can securely store and verify passwords.
@@ -16021,6 +16085,21 @@ knowledge-needs:
         as the Discovery endpoint, entering the Client ID/Secret, and
         confirming claim mapping, so that they can establish a secure OIDC
         handshake between ODC and Okta.
+    - name: Configure Microsoft Entra
+      id: configure-microsoft-entra
+      description: Wants to configure Microsoft Entra ID as an external
+        identity provider in ODC by creating the app registration, setting
+        the discovery endpoint, client ID, client secret, redirect URIs,
+        claim mapping, and assignment scope, so that end users can sign in
+        through Microsoft Entra.
+    - name: Add OIDC provider
+      id: add-oidc-provider
+      description: Wants to add an OpenID Connect identity provider in ODC
+        Portal by entering the discovery endpoint, client ID and secret,
+        choosing PKCE, and configuring claim mapping, email verification,
+        and profile matching, when the provider's discovery, token,
+        userinfo, and JWKS endpoints are reachable, so that users can sign
+        in through that provider.
     - name: Map AD Groups to Roles
       id: map-ad-groups-to-roles
       description: Wants to map Active Directory Groups to OutSystems Roles using
@@ -16925,12 +17004,11 @@ knowledge-needs:
         event actions and the app and library properties of a converted ODC app, after
         the code conversion tool has merged multiple O11 modules, so that the resulting
         app behaves as expected and has the correct settings.
-    - name: Configure converted apps
+    - name: Configure site properties and settings
       id: configure-converted-apps
-      description: Wants to configure a converted ODC app after code conversion —
-        including Site Properties/Settings (secret and non-secret), custom domains,
-        external databases, REST service endpoints, private gateways, and SMTP email
-        — so that the app works correctly in ODC before testing and deploying it.
+      description: Wants to configure secret and non-secret site properties and
+        settings in a converted ODC app after code conversion, so that the app has
+        the required configuration before testing and deployment.
     - name: Connect ODC to O11
       id: connect-odc-to-o11
       description: Wants to verify that their ODC organization is connected to the
@@ -16942,9 +17020,9 @@ knowledge-needs:
       id: conversion-prerequisites
       description: Wants to understand the prerequisites and limitations for executing
         an O11 to ODC app conversion — including required infrastructure type, LifeTime
-        version, prior preparation steps, and unsupported scenarios (self-managed,
-        hybrid, demo environments, ODC self-hosted) — so that they can confirm whether
-        their environment is ready before starting the conversion process.
+        version, prior preparation steps, and unsupported deployment scenarios — so
+        that they can confirm whether their environment is ready before starting the
+        conversion process.
   - name: Code Patterns
     id: code-patterns
     subtopics:
@@ -17005,10 +17083,10 @@ knowledge-needs:
     subtopics:
     - name: Data migration scope
       id: data-migration-scope
-      description: Wants to understand what is included in an O11 to ODC data migration
-        (entity data, repeat migrations, data model consistency requirements) and the
-        available migration types (non-production vs production final), so that they
-        can choose the right approach for their migration phase.
+      description: Wants to understand what is included in an O11 to ODC data migration,
+        including entity data, repeat migrations, and data model consistency requirements,
+        and how to choose the right migration type for their phase, so that they can choose
+        the right approach for their migration phase.
     - name: Migrate end users
       id: migrate-end-users
       description: Wants to understand how end-user migration works during O11 to ODC

@@ -334,6 +334,11 @@ knowledge-needs:
   - name: Using Expressions
     id: using-expressions
     subtopics:
+    - name: Expression operands
+      id: expression-operands
+      description: Wants to understand what counts as an operand in expressions,
+        including literals, variables, built-in functions, and user-defined
+        functions, so they can read and build expressions correctly.
     - name: Check string contains
       id: check-string-contains
       description: Wants to check whether one text string contains another using
@@ -407,6 +412,17 @@ knowledge-needs:
         data types, including the source and expected type mappings and the
         Decimal-to-Integer truncation behavior, so they can predict implicit
         conversion results in expressions.
+    - name: Expression operators
+      id: expression-operators
+      description: Wants to understand the arithmetic, logical, comparison,
+        equality, LIKE, and precedence operators available in expressions, so
+        they can choose the right operator and build valid expression logic.
+    - name: Access list items
+      id: access-list-items
+      description: Wants to access a specific list element with the []
+        operator, including using an integer expression for the index and
+        reading nested entity or structure members, so they can use list
+        indexes correctly and avoid out-of-range errors.
     - name: Format numbers rounding
       id: format-numbers-rounding
       description: Wants to know how to format Currency, Decimal, and Percent
@@ -1156,6 +1172,13 @@ knowledge-needs:
         UpdatedOn/ModifiedOn, and UpdatedBy/ModifiedBy, so the generated
         wrapper logic automatically fills in who created or last updated a
         record and when.
+    - name: Edit entity data
+      id: edit-entity-data
+      description: Wants to edit entity data in ODC Studio by adding,
+        deleting, and changing records, then applying or discarding the
+        pending changes, so they can manage app data during development when
+        the entity has an identifier, uses server-side data, and they have
+        Change permission.
     - name: Data types
       id: data-types
       description: Wants to understand what data types are available in ODC,
@@ -8902,6 +8925,12 @@ knowledge-needs:
       description: Wants to understand what a screen is, how templates and
         widgets build it, and how widgets adapt to smaller screens, so that
         they can recognize the main parts of a reactive UI screen.
+    - name: Screen template overview
+      id: screen-template-overview
+      description: Wants to understand what Screen Templates are in ODC Studio,
+        what predefined layouts, widgets, components, styles, and logic they
+        include, and how sample data helps them start a screen, so they can
+        choose the right template when creating a new screen.
     - name: Scaffold screens
       id: scaffold-screens
       description: Wants to create linked list and detail screens by dragging

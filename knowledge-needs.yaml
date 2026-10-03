@@ -250,11 +250,12 @@ knowledge-needs:
       description: Wants to create an event on a block and trigger it using a
         Trigger Event node in a client action, in ODC Studio, so that the block
         can notify its parent screen when something occurs inside it.
-    - name: Block events O11
+    - name: Block events
       id: block-events
-      description: Wants to expose an event on a block and handle it on a screen by
-        triggering the event in the block and mapping a screen action to it, so that
-        they can pass data and trigger logic across UI components.
+      description: Wants to expose and trigger an event on a block, map it to a
+        screen action, and pass event parameters, so that the parent screen can
+        respond to occurrences inside the block and pass data or trigger logic
+        across UI components.
     - name: Screen action as callback
       id: screen-action-as-callback
       description: Wants to assign a screen action as a callback for a UI component's
@@ -5732,10 +5733,9 @@ knowledge-needs:
         verify when an email was actually sent.
     - name: Attach file to email
       id: attach-file-to-email
-      description: Wants to attach a file to an outgoing email by configuring the Attach
-        File action's required and optional properties in Service Studio for
-        O11, so that recipients receive the supporting file directly within the
-        email rather than through a separate channel.
+      description: Wants to attach one or more files to an outgoing email by
+        configuring its attachment settings, so that recipients receive the
+        supporting files directly in the message.
     - name: Compose and send emails
       id: compose-and-send-emails
       description: Wants to create and configure an Email in a Traditional Web App,
@@ -10166,6 +10166,12 @@ knowledge-needs:
         form factor, input and output methods, processing power, and usage
         context, so that the app works well on mobile devices and matches
         user expectations.
+  - name: OutSystems overview
+    id: outsystems-overview
+    description: Wants to understand what OutSystems is, which tools and
+      components make up the platform, and which core capabilities it
+      provides, so they can get an overall introduction before diving into
+      individual features.
   - name: Using Service Studio
     id: using-service-studio
     subtopics:
@@ -15760,6 +15766,12 @@ knowledge-needs:
     description: Wants to understand what Code Quality is, which issue areas
       it analyzes, and how developers and technical leads use it to manage
       technical debt, so that they can apply it in the development lifecycle.
+    subtopics:
+    - name: Review code findings
+      id: review-code-findings
+      description: Wants to review individual Code Quality findings in the
+        Findings tab of the Code Quality dashboard, so they can understand each
+        issue before fixing it in ODC Studio.
 - name: Testing practice
   guid: 0e440c0c-7db6-41cd-a51c-0c00ccb15e72
   topics:

@@ -1592,6 +1592,24 @@ knowledge-needs:
         Extended Property on Container/Placeholder widgets in Traditional Web
         Apps, in Service Studio for O11, so the generated markup uses proper
         semantic tags instead of generic span/div elements.
+    - name: ARIA roles overview
+      id: aria-roles-overview
+      description: Wants to understand ARIA roles, states, and properties in
+        OutSystems and when to use them without overriding native HTML
+        semantics, so they can add the right accessibility metadata to
+        widgets.
+    - name: Set ARIA attributes
+      id: set-aria-attributes
+      description: Wants to add ARIA roles and attributes as static values or
+        conditional expressions on widgets, and use SetAriaHidden or
+        SetAccessibilityRole when they need to hide content or change a
+        role, so assistive technology receives the correct state at runtime.
+    - name: Accessible labels
+      id: accessible-labels
+      description: Wants to create readable labels, status messages, and
+        hidden text with ARIA labels and hidden attributes, so screen
+        readers announce the right text for buttons, links, and other UI
+        elements.
     - name: Accessible master detail
       id: accessible-master-detail
       description: Wants to make the Master Detail UI Pattern accessible to
@@ -1823,6 +1841,12 @@ knowledge-needs:
         Initialized client action, in Service Studio, so that the pattern
         meets WCAG 2.2 AA accessibility requirements, in mobile apps and
         reactive web apps (O11).
+  - name: Accessibility resources
+    id: accessibility-resources
+    description: Wants to find accessibility resources, tools, screen
+      readers, contrast checkers, and team practices for testing and
+      improving app accessibility, so they can validate accessibility work
+      and apply practical guidance.
   - name: Translating apps
     id: translating-apps
     subtopics:
@@ -2527,6 +2551,11 @@ knowledge-needs:
         endpoint path, authentication, method name, or a mandatory
         parameter/field's presence or type, so that existing consumers keep
         working on the old contract during a migration period.
+    - name: Post REST data
+      id: post-rest-data
+      description: Wants to write data to an external system by configuring a
+        consumed REST API method to use POST and handle the JSON request and
+        response bodies, so that the app can create a new record.
     - name: Customize REST callbacks
       id: customize-rest-callbacks
       description: Wants to customize a consumed REST API's requests and responses with OnBeforeRequest and OnAfterResponse callbacks, so they can adjust headers or payloads without extra development.
@@ -5672,6 +5701,12 @@ knowledge-needs:
         File action's required and optional properties in Service Studio for
         O11, so that recipients receive the supporting file directly within the
         email rather than through a separate channel.
+    - name: Compose and send emails
+      id: compose-and-send-emails
+      description: Wants to create and configure an Email in a Traditional Web App,
+        compose dynamic content with input parameters, widgets, Preparation
+        logic, and file attachments, and send it with the Send Email tool, so
+        that the app delivers customized emails.
     - name: Concatenate emails
       id: concatenate-email-addresses
       description: Wants to combine multiple email addresses (or lists of email
@@ -5725,9 +5760,19 @@ knowledge-needs:
       description: Wants to identify the widgets available in ODC emails and the
         limitations of those widgets, so that they can design lightweight
         emails.
+    - name: Email CSS compatibility
+      id: email-css-compatibility
+      description: Wants to understand that email clients support CSS
+        inconsistently and to test email content across clients with tools
+        such as Can I email, so that emails render as expected.
   - name: BPT
     id: bpt
     subtopics:
+    - name: BPT overview
+      id: bpt-overview
+      description: Wants to understand what Business Process Technology is, how a BPT
+        process runs in the background, and which core flow elements it uses, so they
+        can recognize the main building blocks before modeling a process.
     - name: Create BPT process
       id: create-bpt-process
       description: Wants to create a BPT process in Service Studio and start defining the process flow, so they can automate tasks and track work in their application.
@@ -15754,6 +15799,9 @@ knowledge-needs:
         federated single sign-on through OAuth or SAML, so that they can decide
         how to integrate identity systems that the built-in methods do not
         cover.
+    - name: Authentication management overview
+      id: authentication-management-overview
+      description: Wants to understand how ODC handles authentication and authorization at a high level, including built-in authentication, external identity providers, custom authentication flows, and role-based access control, so that they can explain the platform's sign-in model and choose the right approach for an app.
     - name: Create service account
       id: create-service-account
       description: Wants to create a LifeTime service account, choose its role and
@@ -15987,6 +16035,10 @@ knowledge-needs:
         or Service Center (for IT users) or the Users application (for end
         users), as an administrator, so the blocked user can sign in again,
         in OutSystems 11.
+    - name: Password policy overview
+      id: password-policy-overview
+      description: Wants to understand ODC password requirements and lockout behavior, so
+        that they can explain how password policy protects user accounts.
     - name: Passwords
       id: passwords
       description: Wants to understand how OutSystems 11 handles passwords, including hashing and validation, so that they can store and verify credentials securely.
@@ -16479,6 +16531,9 @@ knowledge-needs:
     - name: Add consent controls
       id: add-consent-controls
       description: Wants to add consent checkboxes and a Forge signature pad to a registration form, bind them to onboarding variables, and save the captured signature so users can confirm consent before submitting.
+    - name: Self-registration flow overview
+      id: self-registration-flow-overview
+      description: Wants to understand the ODC self-registration flow, including sign-up, registration form validation, and account activation, so that they can explain how end users create their own account.
     - name: Build self-reg form
       id: build-self-registration-form
       description: Wants to build the verification code and password inputs

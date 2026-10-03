@@ -21,7 +21,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - adding-a-block
+  - ajax-refresh-reference
+  - block-events
+  - on-parameters-changed
 ---
 
 # Pass Data Between Blocks

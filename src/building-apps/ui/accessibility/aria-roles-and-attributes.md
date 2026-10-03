@@ -15,8 +15,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - design-for-accessibility
-  - accessibility-screen-reader
+  - accessible-labels
+  - aria-roles-overview
+  - set-aria-attributes
 ---
 
 # Accessible Rich Internet Applications roles and attributes

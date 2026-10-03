@@ -23,7 +23,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - manage-tech-debt
+  - code-quality-overview
 isautopublish: true
 ---
 

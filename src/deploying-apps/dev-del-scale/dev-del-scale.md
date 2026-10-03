@@ -23,13 +23,9 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - hotfix-strategy-os
-  - lifecycle-independence-os
-  - progressive-release
-  - autonomous-team-structure
-  - scale-development-strategy
-  - canary-release-toggle
+  - code-quality-overview
   - domain-driven-design
+  - isolated-workspaces
 isautopublish: true
 ---
 

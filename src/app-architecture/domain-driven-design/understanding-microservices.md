@@ -15,8 +15,7 @@ coverage-type:
   - evaluate
   - understand
 topic:
-  - soa-and-microservices
-  - domain-driven-design
+  - microservices-tradeoffs
 ---
 
 # Understanding microservices

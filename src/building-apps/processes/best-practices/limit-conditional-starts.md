@@ -23,7 +23,7 @@ coverage-type:
   - apply
   - unblock
 topic:
-  - scalable-process-best-practices
+  - limit-conditional-starts
 ---
 
 # Limit the use of conditional starts

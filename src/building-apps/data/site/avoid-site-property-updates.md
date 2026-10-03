@@ -16,7 +16,7 @@ coverage-type:
   - understand
   - evaluate
 topic:
-  - site-properties-settings
+  - site-property-updates
 ---
 
 # Avoid site property updates

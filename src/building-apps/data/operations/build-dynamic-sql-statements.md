@@ -14,8 +14,8 @@ coverage-type:
   - apply
   - evaluate
 topic:
-  - query-parameters
-  - dynamic-sql-correctly
+  - prevent-sql-injection
+  - sql-best-practices
 ---
 
 # Best practices for building dynamic SQL statements

@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - how-to-create-emails
+  - email-widgets
 ---
 
 # Widgets in emails

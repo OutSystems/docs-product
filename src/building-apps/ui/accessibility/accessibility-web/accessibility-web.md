@@ -16,8 +16,8 @@ coverage-type:
   - remember
   - apply
 topic:
-  - design-for-accessibility
   - accessibility-screen-reader
+  - generate-html-tags
 ---
 
 # Accessibility in OutSystems Traditional Web Applications

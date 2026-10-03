@@ -18,7 +18,8 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - extend-processes-entities
+  - define-process-entities
+  - query-process-runtime-state
 ---
 
 # Use Process Entities

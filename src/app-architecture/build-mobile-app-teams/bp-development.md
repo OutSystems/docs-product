@@ -21,7 +21,9 @@ outsystems-tools:
 coverage-type:
   - evaluate
 topic:
-  - scale-development-strategy
+  - optimize-local-storage
+  - split-ui-modules
+  - use-sandboxes
 ---
 
 # Best practices for mobile development

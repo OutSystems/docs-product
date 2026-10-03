@@ -19,7 +19,9 @@ coverage-type:
   - apply
   - understand
 topic:
-  - how-to-send-emails
+  - email-delivery-behavior
+  - send-email-logic
+  - trigger-email-sending
 ---
 
 # Sending emails

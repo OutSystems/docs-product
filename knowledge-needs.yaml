@@ -9009,6 +9009,13 @@ knowledge-needs:
         custom domain in ODC Portal, choose the redirect behavior for
         root-path access, and republish the app so the selected app loads
         from the domain root.
+    - name: Default app limitations
+      id: default-app-limitations
+      description: Wants to understand the limitations of a default app for a
+        custom domain in ODC, including screen name collisions, cross-app
+        navigation failures, Open in browser behavior, URL function behavior,
+        and the impact of deleting or undeploying the default app, so they can
+        avoid routing issues and root URL errors.
     - name: Use custom domains in URLs
       id: use-custom-domains-in-urls
       description: Wants to generate app URLs with an active custom domain
@@ -12317,6 +12324,12 @@ knowledge-needs:
       description: Wants to share a generated mobile app package with testers and
         install it on devices when the package was created for development tests,
         using the QR code, installation link, or package file.
+    - name: Use package source code
+      id: use-package-source-code
+      description: Wants to run the source code downloaded from an ODC mobile
+        package in Xcode or Android Studio after installing dependencies, so
+        they can debug the app locally without syncing changes back to ODC
+        Studio.
     - name: Limited iOS package
       id: limited-ios-package
       description: Wants to generate an iOS mobile app package for a limited group
@@ -16100,6 +16113,9 @@ knowledge-needs:
         and profile matching, when the provider's discovery, token,
         userinfo, and JWKS endpoints are reachable, so that users can sign
         in through that provider.
+    - name: Set OIDC redirect URIs
+      id: set-oidc-redirect-uris
+      description: 'Wants to register the login and logout redirect URIs for an external OIDC identity provider in the provider''s app registration, so that ODC can send users back after sign-in and sign-out.'
     - name: Map AD Groups to Roles
       id: map-ad-groups-to-roles
       description: Wants to map Active Directory Groups to OutSystems Roles using

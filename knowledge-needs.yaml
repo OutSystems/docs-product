@@ -5073,8 +5073,8 @@ knowledge-needs:
         inherit common CSS, override base styles when needed, and reuse the same
         visual foundation across apps, so that related apps share a consistent
         look and feel.
-    - name: Share blocks across apps
-      id: share-blocks-across-apps
+    - name: Share blocks across apps (ODC)
+      id: blocks-across-apps-odc
       description: Wants to place business-agnostic blocks in a library, pass
         business data through input parameters or service actions, and reuse the
         block across multiple consumer apps, so that shared UI stays centralized
@@ -5742,6 +5742,11 @@ knowledge-needs:
         compose dynamic content with input parameters, widgets, Preparation
         logic, and file attachments, and send it with the Send Email tool, so
         that the app delivers customized emails.
+    - name: App email sending
+      id: app-email-sending
+      description: Wants to create emails in Reactive and Mobile apps, define
+        the email structure and expressions, and send the email through
+        Service Center, so the app sends the message correctly.
     - name: Concatenate emails
       id: concatenate-email-addresses
       description: Wants to combine multiple email addresses (or lists of email
@@ -6417,6 +6422,18 @@ knowledge-needs:
         handler that calls Session_GetMobileAppLoginInfo and then the system Login
         action, in Service Studio for O11, so that users don't need to log in
         separately to the web app inside the iframe.
+    - name: Create and reuse blocks (O11)
+      id: blocks-across-apps-o11
+      description: Wants to create a Block or Web Block in Service Studio, set it
+        to Public, and reuse it in another app through Manage Dependencies and
+        drag and drop, including the required Monitor and Add Dependencies
+        permission, so that the same UI component stays shared across multiple
+        apps.
+    - name: Block communication
+      id: block-communication
+      description: Wants to use block events and parent-passed input parameters to
+        communicate between a block, its parent screen or block, and sibling
+        blocks, so that related UI parts coordinate through the parent.
     - name: iframe link target
       id: iframe-link-target
       description: Wants to ensure links inside an embedded Traditional Web Screen
@@ -8925,6 +8942,18 @@ knowledge-needs:
   - name: Creating Screens
     id: creating-screens
     subtopics:
+    - name: Screen templates
+      id: screen-template
+      description: Wants to understand what Screen Templates are, how built-in
+        templates create screens with sample data, and how data replacement
+        works so they can use them effectively.
+    - name: Replace UI sample data
+      id: replace-ui-sample-data
+      description: Wants to replace the UI sample data in a screen template or
+        accelerator with app data, either automatically by dragging a
+        different entity onto supported widgets or manually by changing the
+        screen's data source and related UI logic, so the screen uses the app's
+        own data model.
     - name: Create screen templates
       id: create-screen-templates
       description: Wants to create custom Screen Templates in a Custom Screen
@@ -8937,6 +8966,17 @@ knowledge-needs:
       description: Wants to understand what a screen is, how templates and
         widgets build it, and how widgets adapt to smaller screens, so that
         they can recognize the main parts of a reactive UI screen.
+    - name: Create screen
+      id: create-screen
+      description: Wants to create a screen in Service Studio by opening the
+        UI Flows folder, adding a screen to MainFlow, selecting Empty or a
+        Screen Template, naming it, and clicking Create Screen, so they can
+        start building the screen's UI.
+    - name: Configure UI flow
+      id: configure-ui-flow
+      description: Wants to create a UI Flow in Service Studio, assign its
+        Theme, and mark a Screen as the default screen so the flow uses the
+        right styles and entry screen.
     - name: Screen template overview
       id: screen-template-overview
       description: Wants to understand what Screen Templates are in ODC Studio,

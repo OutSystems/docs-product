@@ -4938,6 +4938,9 @@ knowledge-needs:
     - name: Validate a domain-driven architecture
       id: validate-domain-driven-architecture
       description: Wants to validate an OutSystems domain-driven architecture, so they can confirm the design follows DDD principles and has sound domain boundaries.
+    - name: Microservices tradeoffs
+      id: microservices-tradeoffs
+      description: Wants to understand microservices tradeoffs in OutSystems, including the benefits of independently deployable services, the added complexity of communication, debugging, logging, security, and limited data mashup, and the platform capabilities that reduce some of that complexity, so they can judge when the architecture fits the problem.
   - name: Application composition
     id: application-composition
     subtopics:
@@ -5682,6 +5685,17 @@ knowledge-needs:
         Service Studio for O11 by adding the Send Email action, selecting an
         Email, and setting the required input parameters and To and From
         properties, so that the module sends the message successfully.
+    - name: Trigger email sending
+      id: trigger-email-sending
+      description: Wants to trigger an email-sending server action from the UI
+        or in response to a user action, so that emails send manually during
+        testing or automatically after app events.
+    - name: Email delivery behavior
+      id: email-delivery-behavior
+      description: Wants to understand how OutSystems queues emails, sends
+        them asynchronously through the Scheduler Service, retries failures,
+        and logs delivery status, so that they know when an email actually
+        sends and where to check it.
     - name: Add email MIME headers
       id: add-email-mime-headers
       description: Wants to add custom header properties (MIME headers) to an
@@ -5726,6 +5740,9 @@ knowledge-needs:
     - name: Conditional process start
       id: conditional-process-start-o11
       description: Wants to configure a conditional start in an OutSystems 11 process so it starts on create or update entity events and only listens after a dependency source activity has executed.
+    - name: Limit conditional starts
+      id: limit-conditional-starts
+      description: Wants to reduce deployment overhead in an OutSystems 11 BPT process by limiting Conditional Start activities, postponing their listening activity with a dependency connector when they are only needed after a later step, moving generic conditional starts to a separate process, and terminating replacement processes when the main process terminates, so that the process keeps the same behavior with less deployment overhead.
     - name: Activity callbacks
       id: bpt-activity-callbacks
       description: Wants to understand how Human Activity and Wait Activity callbacks run in an OutSystems 11 BPT process, including when On Ready, On Open, On Close, and On Skip fire and that Automatic activities do not use callbacks, so they can place activity logic in the right callback.
@@ -10774,6 +10791,12 @@ knowledge-needs:
         server-side logic as `Site.<SitePropertyName>`, and change its effective
         value in Service Center without republishing, so that application
         behavior can vary by environment at runtime.
+    - name: Site property updates
+      id: site-property-updates
+      description: Wants to avoid programmatically updating site properties when
+        the value changes frequently, so module cache invalidation does not
+        create unnecessary database overhead and mutable data can move to a
+        database table.
     - name: Republish compile-time changes
       id: republish-compile-time-changes
       description: Wants to republish modules after changing compile-time
@@ -15818,6 +15841,12 @@ knowledge-needs:
         Users component, and redirecting back to the original URL, so that the
         app can use an external identity system while keeping the local
         session.'
+    - name: Mobile external IdP login
+      id: mobile-external-idp-login
+      description: Wants to implement secure external identity provider login
+        in mobile apps using native OS browser containers instead of web views,
+        and handle fixed browser UI and deep-link confirmation behavior, so that
+        authentication completes reliably without page-expired failures.
     - name: Auth plugin methods
       id: auth-plugin-methods
       description: Wants to implement the OSPlatformAuthentication SOAP methods
@@ -15960,6 +15989,7 @@ knowledge-needs:
         in OutSystems 11.
     - name: Passwords
       id: passwords
+      description: Wants to understand how OutSystems 11 handles passwords, including hashing and validation, so that they can store and verify credentials securely.
     - name: Password recovery flow
       id: password-recovery-flow
       description: 'Wants to recover an ODC password for members or end users by using the Forgot password? flow or the RecoverPasswordRequest and RecoverPasswordReset screens with email verification, and making sure email delivery is configured, so that users can regain access when they forget a password.'
@@ -16696,6 +16726,9 @@ knowledge-needs:
   - name: Methods for accessing audit log data
     id: access-audit-logs
     subtopics:
+    - name: View audit logs
+      id: view-audit-logs
+      description: Wants to view, search, filter, and export audit logs in the ODC Portal so they can inspect recent platform activity and download CSV data.
     - name: Stream audit logs
       id: stream-audit-logs
       description: Wants to stream audit logs to an external destination so they can centralize audit data for compliance or troubleshooting.

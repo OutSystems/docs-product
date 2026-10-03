@@ -1951,6 +1951,12 @@ knowledge-needs:
         ODC events by using All Exceptions handlers in the producer and
         consumer apps, so that payload-size, queue-capacity, retry-limit, and
         handler-timeout failures are handled explicitly.
+    - name: ODC event architecture
+      id: odc-event-architecture
+      description: Wants to understand how ODC event-driven architecture uses
+        a publisher/subscriber model to let loosely coupled apps define,
+        trigger, and handle events asynchronously, so that they can build
+        event-based communication between apps.
   - name: ODC cloud architecture
     id: odc-cloud-architecture
     description: Wants to understand how OutSystems Developer Cloud (ODC) separates
@@ -2635,6 +2641,12 @@ knowledge-needs:
         Portal, select a supported provider, and reference the external
         entities in an app, so they can use external database data in ODC
         Studio.
+    - name: Query external data
+      id: query-external-data
+      description: Wants to query external data in ODC by creating an
+        external database connection in ODC Portal and using Aggregates or
+        SQL nodes in ODC Studio, so they can work with data from external
+        systems in an app.
     - name: Manage ODC external database connections
       id: manage-odc-external-database-connections
       description: Wants to identify the permissions required to manage
@@ -8931,6 +8943,11 @@ knowledge-needs:
         what predefined layouts, widgets, components, styles, and logic they
         include, and how sample data helps them start a screen, so they can
         choose the right template when creating a new screen.
+    - name: Replace data in screens
+      id: replace-data-in-screens
+      description: Wants to replace the data in screens created from templates
+        or accelerators by using automatic entity drag and drop or manual
+        editing, so that the screen uses the app's own data model.
     - name: Scaffold screens
       id: scaffold-screens
       description: Wants to create linked list and detail screens by dragging
@@ -10318,6 +10335,13 @@ knowledge-needs:
         failures in ODC Studio by matching the SQL Server, Oracle, SAP OData,
         or Salesforce error message to the cause and recommended action, so
         that they can fix the failed connection test.
+    - name: External entity behavior
+      id: external-entity-behavior
+      description: Wants to understand how ODC handles external entity requests
+        in separate transactions, including that each read or write request
+        commits or rolls back independently and Exception Handlers only
+        control the OutSystems database transaction, so they can predict
+        rollback behavior in error scenarios.
   - name: Development artifacts
     id: development-artifacts
     subtopics:
@@ -16512,6 +16536,12 @@ knowledge-needs:
         completing a custom self-registration flow outside the standard
         self-registration screens, so that a new user account becomes
         usable immediately.
+    - name: Handle signup errors
+      id: handle-signup-errors
+      description: Wants to map StartUserRegistration failure reasons to
+        user-facing messages in a custom self-registration server action,
+        so that sign-up fails with clear feedback when the email, name, or
+        existing-account checks fail.
     - name: End-user management
       id: end-user-management
       description: Wants to understand how end-users are managed in ODC
@@ -16519,6 +16549,13 @@ knowledge-needs:
         and that each end-user needs at least one application role to
         access protected screens, so that they can identify the correct
         statement about ODC user administration and access rules.
+    - name: User management overview
+      id: user-management-overview
+      description: Wants to understand the main ODC user management
+        concepts, including members, end-users, API clients, groups, and
+        access scopes, when planning how people and non-human users access
+        apps and platform resources, so they can choose the right
+        management path for each account type.
     - name: Create an end-user group
       id: create-end-user-group
       description: Wants to create an end-user group in ODC, so roles can be

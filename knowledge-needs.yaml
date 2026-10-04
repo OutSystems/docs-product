@@ -3387,6 +3387,24 @@ knowledge-needs:
         already activated private gateway by selecting that gateway in the O11
         infrastructure connection configuration, so that traffic stays on a
         private network path.
+    - name: Private gateway overview
+      id: private-gateway-overview
+      description: Wants to understand what an ODC Private Gateway is, why it
+        exists, and how it securely connects specific ODC apps to specific
+        internal endpoints without exposing the full private network, so they
+        can evaluate when to use it.
+    - name: Private gateway benefits
+      id: private-gateway-benefits
+      description: Wants to understand the security, flexibility, and
+        integration benefits of ODC Private Gateway, so they can explain why
+        it is preferable to traditional VPN or public exposure for cloud apps
+        that need private network access.
+    - name: Private gateway use cases
+      id: private-gateway-use-cases
+      description: Wants to identify the private resources and systems an ODC
+        Private Gateway can reach, such as databases, internal services,
+        private REST APIs, and specialized systems, so they can choose the
+        feature for the right integration scenario.
   - name: Generate PDF reports
     id: generate-pdf-reports
     subtopics:
@@ -16836,6 +16854,11 @@ knowledge-needs:
         an existing end-user in the End-user access tab, so that role-based
         access control (RBAC) updates the end-user's access to app features
         and data after external IdP login or sign-up completion.
+    - name: Share registration link
+      id: share-registration-link
+      description: Wants to share a group registration link with others through
+        supported sharing methods, so they can register and join a specific
+        group.
     - name: Grant/revoke role action
       id: grant-revoke-role-action-odc
       description: Wants to grant or revoke an end-user's application role

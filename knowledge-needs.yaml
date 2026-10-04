@@ -19150,6 +19150,12 @@ knowledge-needs:
         General, and switch off auditing when the logging is no longer needed,
         in OutSystems 11, so that they can inspect runtime behavior without
         republishing the application.
+    - name: Service Center logs
+      id: service-center-logs
+      description: Wants to use Service Center Monitoring logs and log details to
+        troubleshoot an OutSystems 11 app by opening the Monitoring tab,
+        selecting a log entry, and reading the message and call stack, so they
+        can identify the cause of runtime issues.
   - name: Log source catalog
     id: log-source-catalog
     description: Wants to know which log or report file to collect for a

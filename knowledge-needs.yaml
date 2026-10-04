@@ -2237,6 +2237,12 @@ knowledge-needs:
         and how to run multiple statements in a single SQL node with transaction
         semantics — so they can write correct queries against external entities without
         syntax errors.
+    - name: SQL syntax differences
+      id: sql-syntax-differences
+      description: Wants to compare SQL query syntax between OutSystems 11 and ODC,
+        including time comparisons, string concatenation, INSERT, LIMIT, RANDOM,
+        selecting attributes, UPDATE, and case- and accent-insensitive LIKE
+        patterns, so they can rewrite queries for ODC.
     - name: SELECT statement syntax
       id: select-statement-syntax
       description: Wants to understand how to write ANSI-92 SELECT queries in ODC SQL
@@ -2899,6 +2905,12 @@ knowledge-needs:
         invocation, and that the calling app must save the returned File
         reference to an entity to promote it to permanent storage, so they
         can correctly manage file retention and access from custom code.
+    - name: External library safety
+      id: external-library-safety
+      description: Wants to implement logging, resource disposal, and input-size
+        safeguards in an external library by using ILogger, disposing IDisposable
+        objects, and keeping inputs within the allowed size limit, so they can
+        diagnose problems without leaking sensitive data or exhausting memory.
     - name: Consume via extension
       id: consume-webservice-via-extension
       description: Wants to consume a Web Service that can't be natively imported
@@ -4855,6 +4867,17 @@ knowledge-needs:
         Studio and configure its per-stage value in the ODC Portal, so that
         sensitive setting values stay encrypted and hidden, understanding
         that reverting to non-secret clears the value on publish.
+    - name: Manage app settings
+      id: manage-app-settings
+      description: Wants to create or change app settings in ODC Studio,
+        organize them into folders, and review their properties, including
+        secret and default-value behavior, so they can manage app settings
+        correctly.
+    - name: Edit app setting values
+      id: edit-app-setting-values
+      description: Wants to view and edit app setting default values in the
+        ODC Portal per stage, including inherited library settings, so each
+        stage uses the intended configuration.
     - name: Configure app properties
       id: configure-app-properties
       description: Wants to configure an app, library, or mobile library's general
@@ -6429,6 +6452,11 @@ knowledge-needs:
         drag and drop, including the required Monitor and Add Dependencies
         permission, so that the same UI component stays shared across multiple
         apps.
+    - name: Create reusable blocks
+      id: create-reusable-blocks
+      description: Wants to create Blocks and Web Blocks in Service Studio and
+        reuse them on screens or other blocks in OutSystems 11, so common UI
+        stays centralized and updates propagate from one place.
     - name: Block communication
       id: block-communication
       description: Wants to use block events and parent-passed input parameters to
@@ -9409,6 +9437,11 @@ knowledge-needs:
         another stage in LifeTime by choosing Deploy Custom, selecting the
         module, validating the deployment, and continuing the plan, so that
         they update only the changed module instead of the whole application.
+    - name: Deployment plans overview
+      id: deployment-plans-overview
+      description: Wants to understand what a deployment plan contains and where
+        to create one in LifeTime, so that they can start a deployment from the
+        Deployment Plans screen.
     - name: Block app deployment
       id: block-app-deployment
       description: Wants to block an app from being deployed to specific
@@ -9422,6 +9455,19 @@ knowledge-needs:
         self-managed or cloud location for the setting and recording the
         required reason for change, so that new apps are blocked by
         default.
+    - name: Reuse or retry plan
+      id: reuse-or-retry-plan
+      description: Wants to reuse a finished deployment plan or retry an aborted
+        one in LifeTime, including choosing the source and target environments
+        and adjusting tagged versions when some apps or tags are unavailable, so
+        that they can continue a previous deployment without rebuilding it from
+        scratch.
+    - name: Parallel deployment plans
+      id: parallel-deployment-plans
+      description: Wants to create, edit, and execute deployment plans in
+        parallel for the same target environment, including checking the
+        prerequisites and environment limit, so that multiple teams can deploy
+        to the same environment at the same time.
     - name: Deployment flow
       id: deployment-flow
       description: Wants to understand how a LifeTime deployment runs after
@@ -9431,6 +9477,25 @@ knowledge-needs:
         scripts, distribute code, update the database, hot deploy versions,
         and synchronize environments, so that they can explain or monitor
         the deployment.
+    - name: Hotfix in QA
+      id: hotfix-in-qa
+      description: Wants to fix a production defect by applying the hotfix in a
+        Pre-Production environment synchronized with Production, downloading
+        the affected module in Service Studio, publishing the fix, and
+        testing it before deployment to Production, so that the app is ready
+        for release without downtime.
+    - name: Deploy hotfix to production
+      id: deploy-hotfix-production
+      description: Wants to deploy a hotfix from Pre-Production to Production
+        in LifeTime by using the suggested Tag and Deploy action and
+        confirming the version is tagged as the hotfix release, so that
+        Production receives the fix.
+    - name: Portback hotfix
+      id: portback-hotfix
+      description: Wants to propagate a hotfix back to Quality Assurance and
+        Development by merging the changed modules, publishing the new
+        versions in each earlier environment, and marking the hotfix as
+        solved, so that every stage contains the fix.
     - name: Republish vs redeploy
       id: republish-vs-redeploy
       description: Wants to understand the difference between republishing an
@@ -9981,6 +10046,18 @@ knowledge-needs:
       description: Wants to delete an ODC asset through the Asset Repository
         API after the deletion analysis is approved and they have the
         assetKey, so they can remove the asset permanently.
+    - name: Release library via API
+      id: release-library-via-api
+      description: Wants to release a library by tagging one of its revisions
+        through the Asset Repository API, after generating an access token
+        and gathering the required permissions, asset key, and revision
+        number, so they can release the library.
+    - name: List template assets
+      id: list-template-assets-via-api
+      description: Wants to list template assets through the Asset Repository API by
+        filtering assets with metadata.templateType=ApplicationTemplate and, when
+        needed, repeating the assetTypes query parameter, so they can choose a
+        templateKey before creating an asset from a template.
   - name: ODC public REST APIs
     id: odc-public-rest-apis
     subtopics:
@@ -10079,6 +10156,11 @@ knowledge-needs:
         settings, start iOS and Android native builds, monitor build status, and
         download build outputs and logs, so they can automate native mobile package
         generation in ODC.
+    - name: CI/CD API mapping
+      id: cicd-api-mapping
+      description: Wants to map each ODC CI/CD step to the right public API or
+        portal action when automating delivery with third-party tools, so they can
+        build, test, configure, deploy, and release apps from code to production.
 - name: DevOps and ALM
   guid: a8f0bc19-a180-4f83-b28e-8c786568516c
   topics:
@@ -19110,6 +19192,13 @@ knowledge-needs:
         connected device, but always confirm the fix on a real device before
         considering it resolved, in OutSystems 11, so that they debug
         efficiently without missing device-only behavior differences.
+    - name: Debug mobile apps
+      id: debug-mobile-apps-o11
+      description: Wants to debug a mobile app by choosing the right workflow
+        for browser emulation, device installation, or native tools, so they
+        can use Chrome when native plugins are not required, test on a real
+        device when performance or device behavior matters, and switch to
+        Android Studio or Xcode for crashes or plugin issues.
     - name: Debug producer modules
       id: debug-producer-modules
       description: Wants to debug a producer module's exposed logic from a
@@ -19123,6 +19212,13 @@ knowledge-needs:
         and the call stack, and selecting the correct entry module when the
         code runs from another module, so that they can trace execution and
         find the failing logic.
+    - name: Debug routing issues
+      id: debug-routing-issues
+      description: Wants to debug an app when a proxy, load balancer, or
+        redirect rule changes the request path or origin IP address, so they
+        can keep breakpoints working by using a stable client IP, trusted
+        proxy addresses, the any-IP debugger settings, or the correct
+        redirected URL.
     - name: Debugger tab reference
       id: debugger-tab-reference
       description: Wants to understand the Service Studio Debugger tab layout

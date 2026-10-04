@@ -110,6 +110,12 @@ knowledge-needs:
         in OutSystems 11 (OutSystems built-in actions, custom actions, and actions
         that handle system events) and when each applies, so that they can choose
         the right type of action when designing application logic.
+    - name: Server and client logic
+      id: server-and-client-logic
+      description: Wants to understand how application logic runs on the server
+        or the client in traditional web, service, reactive web, and mobile apps,
+        so they can choose the right execution context for each action and know
+        when client logic needs a server request.
     - name: Actions and functions
       id: actions-and-functions
       description: Wants to understand how OutSystems actions and functions work,
@@ -2365,6 +2371,11 @@ knowledge-needs:
         entities, INSERT, UPDATE, DELETE, and CALL statements commit
         immediately when running Test Query in ODC Studio, so they can
         avoid unintended data changes while validating a SQL node's logic.
+    - name: Avoid inline expansion
+      id: avoid-inline-expansion
+      description: Wants to avoid expand inline parameters in SQL queries when
+        dynamic values would change the generated SQL text, so the database can
+        reuse execution plans and improve performance.
   - name: PostgreSQL upgrades
     id: postgresql-upgrades
     description: Wants to understand PostgreSQL major-version upgrades in ODC environments, including how to stage the rollout and review compatibility changes, so they can upgrade safely.
@@ -9144,6 +9155,13 @@ knowledge-needs:
         deploy the solution to another environment, or keep a copy for
         troubleshooting, so that they can use the solution after creating
         it.
+    - name: Rollback solution version
+      id: rollback-solution-version
+      description: Wants to restore a previous app release by creating and
+        versioning a Service Center solution before deploying a new version,
+        then publishing that earlier solution version when the newer release
+        causes a problem, so that they can roll back without using LifeTime
+        tags.
     - name: Tag milestone versions
       id: tag-milestone-versions
       description: Wants to mark specific published versions as milestones,
@@ -9503,6 +9521,28 @@ knowledge-needs:
       description: Wants to understand what a deployment plan contains and where
         to create one in LifeTime, so that they can start a deployment from the
         Deployment Plans screen.
+    - name: Deploy applications
+      id: deploy-applications
+      description: Wants to deploy tagged application versions in LifeTime by
+        selecting the applications in a deployment plan, validating the plan,
+        and starting the deployment from one environment to another, so that
+        the chosen versions move between environments.
+    - name: Two-stage deployment
+      id: two-stage-deployment
+      description: Wants to split a LifeTime deployment into preparation and
+        continuation stages when the deployment window is too short, so that
+        they can prepare the target environment before the window and finish
+        the deployment later without business impact.
+    - name: Change target environment
+      id: change-target-environment
+      description: Wants to change the target environment of a LifeTime
+        deployment by selecting a different environment before running the
+        deployment plan, so that the deployment goes to the intended pipeline.
+    - name: Refresh applications
+      id: refresh-applications
+      description: Wants to refresh the applications in a LifeTime deployment
+        plan after source or target environment changes are detected, so that
+        the plan uses the latest versions and deployment options.
     - name: Block app deployment
       id: block-app-deployment
       description: Wants to block an app from being deployed to specific
@@ -11078,6 +11118,12 @@ knowledge-needs:
         server-side logic as `Site.<SitePropertyName>`, and change its effective
         value in Service Center without republishing, so that application
         behavior can vary by environment at runtime.
+    - name: Configure site properties during deployment
+      id: configure-site-properties-during-deployment
+      description: Wants to set effective values for new or secret site
+        properties in the deployment plan wizard during deployment, and review
+        existing settings when needed, so that the target environment receives
+        the intended values after the apps are published.
     - name: Site property updates
       id: site-property-updates
       description: Wants to avoid programmatically updating site properties when
@@ -19860,9 +19906,9 @@ knowledge-needs:
         exception behavior, so that they can pause execution where needed.
     - name: Manage watches
       id: manage-watches
-      description: Wants to add and remove watches in ODC Studio during a
-        debug session, so they can inspect parameters, variables, and screen
-        widgets in the Watches tab regardless of scope.
+      description: Wants to add and remove watches during a debug session, so
+        they can inspect parameters, variables, and screen widgets in the
+        Watches tab regardless of scope.
   - name: Resource capacity
     id: resource-capacity
     description: Wants to understand ODC resource capacity limits, scaling

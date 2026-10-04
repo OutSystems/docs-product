@@ -19,8 +19,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - webservice-authentication
-  - customize-headers
+  - customize-rest-callbacks
 ---
 
 # Advanced Customizations

@@ -16,8 +16,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - legacy-systems-integration
-  - custom-code-integration
+  - extension-source-files
 ---
 
 # Extension Source Files

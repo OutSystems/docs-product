@@ -15,7 +15,7 @@ coverage-type:
   - remember
   - apply
 topic:
-  - define-methods
+  - rest-api-customization
 ---
 
 # Customize REST URLs

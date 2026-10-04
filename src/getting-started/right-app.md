@@ -18,7 +18,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - choose-app-type
+  - choose-app-type-o11
 ---
 
 # Choose the right app for your project

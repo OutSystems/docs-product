@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - consume-refresh-methods
+  - refresh-rest-service
 ---
 
 # Refresh a REST web service

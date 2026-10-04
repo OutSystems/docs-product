@@ -19,7 +19,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - deploy-dependency-management
+  - deployment-flow
+  - republish-vs-redeploy
 ---
 
 # Deploy an application with dependencies

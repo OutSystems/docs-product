@@ -15,7 +15,7 @@ coverage-type:
   - understand
 topic:
   - screen-level-actions
-  - server-actions-when-use
+  - use-server-actions
 ---
 
 # Actions in Web Applications

@@ -21,8 +21,8 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - reuse-ui
-  - adding-a-block
+  - block-communication
+  - create-reusable-blocks
 ---
 
 # Reuse UI

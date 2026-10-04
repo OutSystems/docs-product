@@ -21,8 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - adding-a-block
-  - ui-elements-events
+  - block-events
 ---
 
 # Use Events to Propagate Changes From a Block to the Parent

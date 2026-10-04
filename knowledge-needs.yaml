@@ -10424,9 +10424,9 @@ knowledge-needs:
         screen, so they can start from a working app shell.
     - name: Application templates overview
       id: application-templates-overview
-      description: Wants to understand what application templates are, what types are
-        available (built-in, custom, and Forge), and what predefined elements they
-        provide, when starting to create an OutSystems app in Service Studio, so that
+      description: Wants to understand what application templates are, what kinds of
+        application templates are available, and what predefined elements they
+        provide when starting to create an OutSystems app in Service Studio, so that
         they can choose the right template for their project.
     - name: Create use-case app
       id: create-use-case-app

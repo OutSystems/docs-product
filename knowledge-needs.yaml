@@ -2955,6 +2955,9 @@ knowledge-needs:
     - name: Extension life cycle
       id: extension-life-cycle
       description: Wants to create an extension in Integration Studio, define its actions, structures, entities, and resources, keep its source code synchronized, publish it, and then use it in a Service Studio module, so that they can follow the full extension life cycle from setup to consumption.
+    - name: Extension source files
+      id: extension-source-files
+      description: Wants to understand which source files Integration Studio generates for an extension after it creates the extension, where those files are stored, and which generated files they should not edit in the .NET IDE, so they can work with the extension bootstrap files correctly.
     - name: Use extension in module
       id: use-extension-in-module
       description: Wants to add a published extension as a reference in a Service Studio module and use the referenced actions, structures, and entities after selecting them in Manage Dependencies, so that the module can call the extension functionality and data model.
@@ -9054,10 +9057,15 @@ knowledge-needs:
         with React JS in ODC Studio and request data asynchronously, so that
         they can identify correct statements about the ODC web app model.
     - name: ODC app types
-      id: odc-app-types
+      id: choose-app-type-odc
       description: Wants to understand the main ODC app types and how to choose
         the right one when selecting an app model, so they can orient themselves
         before selecting one.
+    - name: Choose app type
+      id: choose-app-type-o11
+      description: Wants to understand the main OutSystems 11 app types and how
+        to choose the right one when starting a new app in Service Studio, so
+        they can select the app model that fits the project.
   - name: Creating Screens
     id: creating-screens
     subtopics:
@@ -9096,6 +9104,11 @@ knowledge-needs:
       description: Wants to create a UI Flow in Service Studio, assign its
         Theme, and mark a Screen as the default screen so the flow uses the
         right styles and entry screen.
+    - name: UI flow editor
+      id: ui-flow-editor
+      description: Wants to use the UI Flow editor to review screen
+        relationships and drag screens or blocks from the toolbox, so they
+        can organize the flow and scaffold screens from entities.
     - name: Screen template overview
       id: screen-template-overview
       description: Wants to understand what Screen Templates are in ODC Studio,
@@ -11046,12 +11059,10 @@ knowledge-needs:
         servers.
     - name: Configure HTTP proxy
       id: configure-http-proxy
-      description: Wants to configure a HTTP proxy server so Service Studio
-        can reach the Internet on a restricted network, by setting the proxy
-        in the operating system (Windows or macOS) and, if the proxy
-        requires it, enabling proxy authentication in Service Studio's
-        Preferences dialog, so that Service Studio can connect to their
-        OutSystems 11 environment.
+      description: Wants to configure an HTTP proxy so their development
+        studio can connect to an OutSystems environment on a restricted
+        network, by setting the proxy in Windows or macOS and, if required,
+        enabling proxy authentication in the studio's Preferences dialog.
     - name: Fix proxy auth 401
       id: fix-proxy-auth-401
       description: Wants to fix the 401 Unauthorized error (or missing app templates)
@@ -11228,6 +11239,59 @@ knowledge-needs:
     description: Wants to know which Azure resources each OutSystems AI component
       and connector requires, so they can provision the right Azure services
       before configuring the integration.
+    subtopics:
+    - name: Set up Azure ML connector
+      id: set-up-azure-ml-connector
+      description: Wants to install, reference, and configure the Azure ML Connector in
+        an OutSystems app after creating an Azure Machine Learning predictive
+        experiment, getting the API key and endpoint, so that the app can call
+        the scoring service.
+    - name: Use Azure ML connector
+      id: use-azure-ml-connector
+      description: Wants to prepare the request and response structures, serialize the
+        execution request, call PredictResults, and deserialize the response
+        after the Azure ML Connector is configured, so that the app can send
+        data to Azure Machine Learning and read prediction results.
+    - name: Set up language analysis
+      id: set-up-language-analysis
+      description: Wants to install and configure the OutSystems.AI Language
+        Analysis component and its required Azure resources, so they can perform
+        language analysis in an OutSystems app.
+    - name: Extract key phrases
+      id: extract-key-phrases
+      description: Wants to extract key phrases from text using the OutSystems.AI
+        Language Analysis component, so they can identify its main ideas in an
+        OutSystems app.
+    - name: Analyze sentiment
+      id: analyze-sentiment
+      description: Wants to analyze the sentiment of text using the OutSystems.AI
+        Language Analysis component, so they can determine its overall tone in
+        an OutSystems app.
+    - name: Detect language
+      id: detect-language
+      description: Wants to identify the language of text using the OutSystems.AI
+        Language Analysis component, so they can process it appropriately in an
+        OutSystems app.
+    - name: Recognize entities
+      id: recognize-entities
+      description: Wants to recognize entities in text using the OutSystems.AI
+        Language Analysis component, so they can identify relevant people,
+        places, and other information in an OutSystems app.
+    - name: Check spelling
+      id: check-spelling
+      description: Wants to check text spelling using the OutSystems.AI Language
+        Analysis component, so they can help users correct text in an
+        OutSystems app.
+    - name: Transcribe speech
+      id: transcribe-speech
+      description: Wants to transcribe speech using the OutSystems.AI Language
+        Analysis component, so they can use spoken input as text in an
+        OutSystems app.
+    - name: Translate text
+      id: translate-text
+      description: Wants to translate text using the OutSystems.AI Language
+        Analysis component, so they can provide translated content in an
+        OutSystems app.
   - name: Document Conversion
     id: document-conversion
     subtopics:
@@ -16877,6 +16941,9 @@ knowledge-needs:
     - name: Self-registration flow overview
       id: self-registration-flow-overview
       description: Wants to understand the ODC self-registration flow, including sign-up, registration form validation, and account activation, so that they can explain how end users create their own account.
+    - name: Create sign-up screen
+      id: create-sign-up-screen
+      description: Wants to create and customize the ODC self-registration sign-up screen in ODC Studio by copying the Login screen, renaming the form and local variables, removing the password controls, and adding the Sign up and Cancel buttons, so that users can enter their name and email to start registration.
     - name: Build self-reg form
       id: build-self-registration-form
       description: Wants to build the verification code and password inputs
@@ -16898,6 +16965,11 @@ knowledge-needs:
         running a FinishSignUp server action to grant the app role, and
         redirecting to the Login screen on success or showing an error for
         an invalid verification code or failed password policy.
+    - name: Build verification email
+      id: build-verification-email
+      description: Wants to create and customize the self-registration
+        verification email and wire the signup flow so users receive the
+        code and see success or error messages when they register.
     - name: Configure user domains
       id: configure-user-domains
       description: Wants to configure internal user domains in the ODC Portal
@@ -19314,6 +19386,11 @@ knowledge-needs:
       description: Wants to use the Debugger scope tabs in Service Studio during a
         debug session to inspect runtime values while execution is suspended, so
         that they can review runtime state during debugging.
+    - name: Debug Service Studio apps
+      id: debug-service-studio-apps
+      description: Wants to debug an app in Service Studio by setting breakpoints,
+        starting a debug session, and stepping through suspended execution while
+        inspecting runtime values, so they can isolate logic issues.
     - name: Capture HAR file
       id: capture-har-file
       description: Wants to capture a Network HAR file for troubleshooting an
@@ -20230,6 +20307,24 @@ knowledge-needs:
       id: seo-benefits-overview
       description: Wants to understand the benefits of implementing SEO in OutSystems apps,
         so that they can decide to adopt SEO strategies for their app.
+  - name: SEO best practices
+    id: seo-best-practices
+    subtopics:
+    - name: Crawlability requirements
+      id: crawlability-requirements
+      description: Wants to understand the crawlability requirements for a public
+        ODC app, so that search engines can discover and crawl the app correctly.
+    - name: URL standardization
+      id: url-standardization
+      description: Wants to standardize public ODC URLs, including lowercase paths, slash
+        endings, hyphen replacement, HTTPS, www handling, and canonical redirects, so that
+        search engines treat each page as a single canonical URL.
+    - name: Indexability requirements
+      id: indexability-requirements
+      description: Wants to understand the indexability requirements for public ODC pages,
+        including unique titles, meta descriptions, H1 tags, image alt text, schema
+        markups, and interstitial handling, so that search engines can index and present
+        the pages correctly.
   - name: SEO rules performance
     id: seo-rules-performance
     subtopics:

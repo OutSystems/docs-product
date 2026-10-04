@@ -1129,6 +1129,9 @@ knowledge-needs:
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
+    - name: Database entities
+      id: database-entities
+      description: Wants to understand how database entities store app data and connect to aggregates, forms, and widgets in web apps, so they can use entities correctly in OutSystems 11 applications.
     - name: Create entity
       id: create-entity
       description: Wants to create an entity in ODC Studio by using the Entity Diagram or Data tab, adding attributes, and publishing the app, so they can persist data in a database table.
@@ -1431,6 +1434,12 @@ knowledge-needs:
         the UI asynchronously, by using an Assign node to set a filter parameter
         followed by a Refresh Data node inside a client action triggered by a UI
         event, so that the Screen displays updated data without a full page reload.
+    - name: AJAX interactions
+      id: ajax-interactions
+      description: Wants to understand how AJAX interactions refresh part of a
+        page without a full reload by using screen aggregates, blocks, and
+        events, so they can update screen content without reloading the whole
+        page.
     - name: Refresh Data properties
       id: refresh-data-properties-reference
       description: Wants to look up the properties of the Refresh Data node and understand
@@ -1486,6 +1495,11 @@ knowledge-needs:
       description: Wants to create an aggregate to fetch data from the database
         using the Search field or drag-and-drop entity placement in the
         Aggregate editor, so a screen can display the records it needs.
+    - name: Advanced aggregate queries
+      id: advanced-aggregate-queries
+      description: Wants to understand how advanced aggregates query data with
+        filters, joins, and sorting, so they can use aggregates to power
+        complex web app screens in OutSystems 11.
     - name: Sort aggregate data
       id: sort-aggregate-data
       description: Wants to sort an Aggregate's returned records in ascending
@@ -2288,6 +2302,11 @@ knowledge-needs:
         nodes, including the SELECT, WITH, FROM, WHERE, GROUP BY, HAVING, WINDOW,
         UNION, ORDER BY, LIMIT, and OFFSET clauses and mashup-query behavior, so they
         can build correct read queries against external entities.
+    - name: Advanced SQL queries
+      id: advanced-sql-queries
+      description: Wants to use a SQL node to perform advanced data queries that
+        retrieve and manipulate data beyond aggregates in OutSystems 11 web apps,
+        so they can choose SQL when aggregates are not enough.
     - name: SQL query execution
       id: sql-query-execution
       description: Wants to understand how ODC parses, normalizes, and executes SQL
@@ -10623,6 +10642,12 @@ knowledge-needs:
       description: Wants to understand the patient self-service portal they will
         build in the guided path, so they know the app purpose and scope before
         starting the course.
+    - name: Web apps wrap-up
+      id: web-apps-wrap-up
+      description: Wants to review the main screens, aggregates, forms,
+        debugging, themes, and role-based security concepts covered in the
+        Developing Web Apps course, so they can reinforce the course scope
+        before moving on.
     - name: Create custom app template
       id: create-custom-app-template
       description: Wants to create a reusable custom app template in ODC Studio by

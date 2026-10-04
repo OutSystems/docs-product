@@ -846,6 +846,24 @@ knowledge-needs:
         Gateway to OutSystems lists, structures, screens, actions, variables,
         and service actions, so they can translate common PHP architecture
         concepts into OutSystems equivalents.
+    - name: Software quality
+      id: software-quality
+      description: Wants to understand how application architecture supports
+        software quality dimensions such as usability, portability,
+        functionality, reliability, efficiency, maintainability, security,
+        and compatibility, so they can design solutions that meet quality
+        goals.
+    - name: Architectural concerns
+      id: architectural-concerns
+      description: Wants to recognize the problems caused by poor service
+        abstraction and unmanageable dependencies, so they can avoid
+        spaghetti architecture and cascading change failures.
+    - name: Architecture benefits
+      id: architecture-benefits
+      description: Wants to explain the main benefits of architecture,
+        including consensus, complexity management, risk reduction, planning,
+        change facilitation, and cost reduction, so they can justify
+        architecture work to stakeholders.
   - name: Modules
     id: modules
     subtopics:
@@ -984,6 +1002,10 @@ knowledge-needs:
       description: Wants to add a List widget to an ODC screen, bind it to an
         Aggregate as its data source, and configure item attributes so fetched
         records display in the list.
+    - name: Search and filter data
+      id: search-and-filter-data
+      description: Wants to add search and filter controls to a list-based screen
+        so users can narrow the displayed records by query and criteria.
     - name: Customize table columns
       id: customize-table-columns
       description: Wants to customize the columns of a Table widget — adding, deleting,
@@ -1095,9 +1117,15 @@ knowledge-needs:
   - name: Modeling Data
     id: modeling-data
     subtopics:
+    - name: Data model stages
+      id: data-model-stages
+      description: Wants to understand how a data model progresses from conceptual to logical and physical stages, so they can design the right level of detail at each step.
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
+    - name: Create entity
+      id: create-entity
+      description: Wants to create an entity in ODC Studio by using the Entity Diagram or Data tab, adding attributes, and publishing the app, so they can persist data in a database table.
     - name: Entity change behavior
       id: entity-change-behavior
       description: Wants to understand how OutSystems handles entity attribute additions, mandatory validation, delete behavior, and entity or static entity conversions, so they can change data models without breaking runtime behavior.
@@ -1358,6 +1386,11 @@ knowledge-needs:
         to work with data (retrieving results, performing calculations, combining
         data from different entities, and adding, deleting, or changing data), so
         they can choose the right query approach for a data task in OutSystems.
+    - name: Join types
+      id: join-types
+      description: Wants to understand the aggregate join types available in ODC
+        Studio and when to use each one when combining entity records, so they
+        can choose the right join behavior for a data query.
     - name: Mashup query guidance
       id: mashup-query-guidance
       description: Wants to write ODC data mashup queries that join entities across
@@ -2592,6 +2625,12 @@ knowledge-needs:
       description: Wants to write data to an external system by configuring a
         consumed REST API method to use POST and handle the JSON request and
         response bodies, so that the app can create a new record.
+    - name: PUT REST data
+      id: put-rest-data
+      description: Wants to write data to an external system by configuring a
+        consumed REST API method to use PUT, loading the current contact by
+        email, and saving form changes when the Email input parameter has a
+        value, so that the app can update an existing record.
     - name: Customize REST callbacks
       id: customize-rest-callbacks
       description: Wants to customize a consumed REST API's requests and responses with OnBeforeRequest and OnAfterResponse callbacks, so they can adjust headers or payloads without extra development.
@@ -2608,6 +2647,18 @@ knowledge-needs:
       description: Wants to create and expose REST services from an app so
         external systems can consume the data through JSON-based REST
         methods.
+    - name: Update REST data
+      id: update-rest-data
+      description: Wants to expose a PUT REST API method that updates an
+        existing employee record from request-body data, returns success or
+        error output, and handles the case where the target employee email is
+        missing from the database.
+    - name: Delete REST data
+      id: delete-rest-data
+      description: Wants to expose a DELETE REST API method that deletes an
+        employee record by email, so an external system can remove existing
+        app data and get the correct success or error response when the
+        record is missing.
     - name: REST API method flow
       id: rest-api-method-flow
       description: Wants to understand the execution flow of an exposed REST
@@ -2911,6 +2962,13 @@ knowledge-needs:
         safeguards in an external library by using ILogger, disposing IDisposable
         objects, and keeping inputs within the allowed size limit, so they can
         diagnose problems without leaking sensitive data or exhausting memory.
+    - name: External library runtime
+      id: external-library-runtime
+      description: Wants to understand how server actions in external libraries
+        run in a separate HTTPS-hosted runtime, including stateless calls,
+        added latency, limited app access, and isolated assembly loading
+        constraints, so they can design external libraries that behave
+        correctly in ODC.
     - name: Consume via extension
       id: consume-webservice-via-extension
       description: Wants to consume a Web Service that can't be natively imported
@@ -8363,6 +8421,9 @@ knowledge-needs:
     - name: Use input widgets
       id: use-input-widgets
       description: Wants to choose input widgets in a reactive web form based on the kind of value they collect, and bind each field to a screen variable, so the form collects, edits, and submits user data correctly.
+    - name: Use Button Group widget
+      id: use-button-group-widget
+      description: Wants to add the Button Group widget to a reactive web form and bind it to a screen variable, so users can choose one of several mutually exclusive options in OutSystems 11.
     - name: Automatic form validation
       id: automatic-form-validation
       description: Wants to identify which input validations the Form widget
@@ -11655,6 +11716,11 @@ knowledge-needs:
         persistent and that agentic development capabilities evolve, so
         they save work frequently and check documentation for current
         constraints before relying on an open Mentor Studio session.
+    - name: AI Mentor Studio demo
+      id: ai-mentor-studio-demo
+      description: Wants to run the AI Mentor Studio demo by opening the demo
+        site and following the scripted Sikuli flow, so that they can see AI
+        Mentor Studio analyze application architecture and suggest fixes.
   - name: Mentor Studio prompts
     id: mentor-studio-prompts
     subtopics:
@@ -15691,6 +15757,12 @@ knowledge-needs:
   - name: Code Quality setup
     id: code-quality-setup
     subtopics:
+    - name: Activate Code Quality
+      id: activate-code-quality
+      description: Wants to activate Code Quality in an ODC organization and
+        open the dashboard after the initial analysis completes, so that they
+        can start reviewing findings for performance, architecture,
+        maintainability, and security.
     - name: Set up Code Quality
       id: setup-code-quality
       description: Wants to register their infrastructure in OutSystems 11 Code

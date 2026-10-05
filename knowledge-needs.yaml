@@ -2815,6 +2815,12 @@ knowledge-needs:
         Oracle entities in ODC apps, including single-space placeholders, quoted
         default Email and Phone values, and empty-string filters in data mashup
         queries, so they can avoid unexpected query results and UI output.
+    - name: Data interoperability overview
+      id: data-interoperability-overview
+      description: Wants to understand how ODC directly consumes O11 entities
+        through Data Fabric, including stage mapping, security, lifecycle,
+        limitations, prerequisites, performance, and licensing, so they can
+        plan the integration.
     - name: Connect O11 infrastructure
       id: connect-o11-infrastructure
       description: Wants to connect their ODC organization to an O11
@@ -2822,6 +2828,17 @@ knowledge-needs:
         its LifeTime base URL and creating a bound LifeTime service account
         with the Administrator role and ODC organization ID, so that they
         can consume O11 entities and logic in their ODC apps.
+    - name: Configure O11 connection
+      id: configure-o11-connection
+      description: Wants to create and map an O11 data connection in ODC
+        Portal, including choosing the OutSystems 11 provider, selecting the
+        infrastructure, and configuring stage mappings or self-managed
+        database details, so that the connection is set up successfully.
+    - name: Import O11 entities
+      id: import-o11-entities
+      description: Wants to import exposed O11 entities into an ODC
+        connection after it is created, so developers can use those entities
+        in ODC apps.
     - name: Fix org ID mismatch
       id: fix-org-id-mismatch
       description: Wants to resolve the OS-EBRG-40301 "authentication token
@@ -5827,6 +5844,11 @@ knowledge-needs:
       description: Wants to refresh a consumed REST service in ODC Studio after the
         API changes, so the app updates the consumed methods and stays aligned with
         the current API contract.
+    - name: Generated REST structures
+      id: generated-rest-structures
+      description: Wants to understand how OutSystems generates structures for consumed
+        REST API methods, including structure names and how example values map to
+        attribute data types, so they can predict the created structures.
     - name: REST structure reuse
       id: rest-structure-reuse
       description: Wants to know when OutSystems reuses an existing structure for a consumed REST API method based on compatible attributes and attribute coverage, so they can predict when a structure gets renamed or extended.
@@ -10327,6 +10349,11 @@ knowledge-needs:
       description: Wants to look up the Build Operations API reference, including
         the base URL and available endpoints, so they can call it correctly when
         managing ODC build operations.
+    - name: Select revision and build
+      id: select-revision-build
+      description: Wants to retrieve an asset revision number from the Asset Repository
+        API and the Release build key from the Build Operations API before
+        deployment, so they can prepare the asset for deployment.
     - name: Dependency Management API
       id: dependency-management-api
       description: Wants to look up the Dependency Management API reference,
@@ -10574,6 +10601,12 @@ knowledge-needs:
       id: odc-initial-setup
       description: Wants to complete the initial setup for ODC, so they can
         begin developing an app.
+    - name: ODC setup requirements
+      id: odc-setup-requirements
+      description: Wants to know the hardware, operating system, browser, time
+        synchronization, proxy, and network requirements for ODC Portal and ODC
+        Studio before they set up or sign in to ODC, so they can prepare a
+        supported environment.
     - name: Portal vs Studio
       id: portal-vs-studio
       description: Wants to distinguish ODC Studio from ODC Portal, so they know
@@ -10583,6 +10616,12 @@ knowledge-needs:
       description: Wants to know which ODC Portal area replaces LifeTime,
         Service Center, and Users for app and user management, so they can
         use the right console for each task.
+    - name: App user requirements
+      id: app-user-requirements
+      description: Wants to know the browser and platform requirements for web
+        apps, progressive web apps, and native mobile apps in ODC, plus the
+        client-side trace request limits, so they can verify end users use
+        supported software.
     - name: ODC deployment assets move one at a time
       id: odc-deployment-assets-one-at-a-time
       description: Wants to understand that ODC deployments move assets one at
@@ -10645,6 +10684,12 @@ knowledge-needs:
         expanding the Unexpected Error window or using the Give Us Feedback
         option, opening the report in a text editor, and saving it as a text
         file, so that Support has the information needed to investigate.
+    - name: ODC platform limits
+      id: odc-platform-limits
+      description: Wants to look up the platform limits for ODC, including logs
+        and traces, events, custom code, workflows, Mentor, ODC REST APIs, and
+        default timeout values, so they can plan app behavior within the
+        supported ceilings.
   - name: External integrations
     id: odc-external-integrations
     description: Wants to configure external integrations for an ODC app, so
@@ -16995,6 +17040,12 @@ knowledge-needs:
       description: Wants to add or remove users and external IdP group
         mappings from an ODC end-user group, so that users inherit the
         group roles through either direct membership or mapped IdP groups.
+    - name: Configure group claims
+      id: configure-group-claims
+      description: Wants to configure the IdP group claim name, value, and
+        delimiter that ODC uses for end-user group mapping, including
+        provider-specific length limits and the SAML comma delimiter, so
+        that ODC parses group memberships correctly.
     - name: Login actions
       id: login-actions
       description: Wants to know which built-in login actions are available in

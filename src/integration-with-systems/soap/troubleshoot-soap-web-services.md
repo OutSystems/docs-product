@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - troubleshoot-webservices
+  - view-soap-logs
 ---
 
 # Troubleshoot a SOAP Web Service

@@ -17,7 +17,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - machine-learning
+  - set-up-azure-ml-connector
+  - use-azure-ml-connector
 ---
 
 # Use the Azure ML Connector in your OutSystems applications

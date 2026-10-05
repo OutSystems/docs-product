@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - changing-endpoints
+  - configure-rest-runtime
 ---
 
 # Configure a Consumed REST API at Runtime

@@ -20,7 +20,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - debug-troubleshoot-app-logic
+  - debug-app-logic
+  - debug-mobile-apps-o11
+  - debug-routing-issues
 isautopublish: true
 ---
 

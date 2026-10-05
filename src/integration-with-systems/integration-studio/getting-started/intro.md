@@ -19,8 +19,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - legacy-systems-integration
-  - custom-code-integration
+  - add-language-extensions
+  - extension-life-cycle
 ---
 
 # Extend Logic with Your Own Code

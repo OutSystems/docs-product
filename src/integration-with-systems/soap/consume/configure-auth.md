@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - webservice-authentication
+  - configure-soap-auth
 ---
 
 # Configure Web Service Authentication

@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - unblock
 topic:
-  - troubleshoot-webservices
+  - troubleshoot-rest-logs
 ---
 
 # Troubleshoot a REST API

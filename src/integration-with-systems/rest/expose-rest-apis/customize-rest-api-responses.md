@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - custom-request-response
+  - customize-rest-responses
 isautopublish: true
 ---
 

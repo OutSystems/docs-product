@@ -18,7 +18,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - customize-headers
+  - add-soap-header
 ---
 
 # Add SOAP header

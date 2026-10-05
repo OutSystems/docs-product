@@ -16,7 +16,7 @@ coverage-type:
   - remember
   - apply
 topic:
-  - deployments-api-automation
+  - block-app-deployment
 ---
 # Block an app from deployment using the LifeTime API
 

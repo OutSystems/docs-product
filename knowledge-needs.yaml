@@ -572,6 +572,12 @@ knowledge-needs:
       description: Wants to use a Structure instead of an Entity in the output of a
         SELECT SQL Query, so they retrieve only the needed attributes and less
         data.
+    - name: REST API structures
+      id: rest-api-structures
+      description: Wants to understand how OutSystems creates and reuses structures for
+        consumed REST API methods, including how request and response parameters are
+        mapped into generated structures and when an existing structure is compatible
+        enough to reuse, so they can predict the structure that each method uses.
   - name: Logic performance tips
     id: logic-performance-tips
     description: Wants to apply best practices for optimizing OutSystems 11 application
@@ -2634,6 +2640,9 @@ knowledge-needs:
     - name: Add WS-Addressing
       id: add-ws-addressing
       description: Wants to add WS-Addressing elements to consumed SOAP requests in OutSystems 11 by creating an Integration Studio extension that changes the SOAP binding and calling it from the OnBeforeRequestAdvanced callback, so that the generated requests include the required WS-Addressing headers.
+    - name: Add SOAP header
+      id: add-soap-header
+      description: Wants to add a custom SOAP header to consumed SOAP requests in OutSystems 11 by creating an Integration Studio extension with a WCF endpoint behavior and message inspector and calling it from the OnBeforeRequestAdvanced callback, so that the generated requests include the custom header.
     - name: Choose log level
       id: choose-log-level
       description: Wants to choose the appropriate logging level for REST APIs and consumed
@@ -2642,6 +2651,12 @@ knowledge-needs:
         sensitive parameter values in the environment management console, so
         that they can balance troubleshooting needs against performance and
         security.
+    - name: Troubleshoot REST logs
+      id: troubleshoot-rest-logs
+      description: Wants to troubleshoot a REST API by viewing consumed and exposed logs in
+        Service Center or querying the log tables directly, so they can
+        inspect request and response details, stack traces, and errors when
+        diagnosing integration issues.
     - name: Secure REST APIs
       id: secure-rest-api
       description: Wants to secure an exposed REST API with basic or custom authentication,
@@ -2651,6 +2666,11 @@ knowledge-needs:
       description: Wants to customize an exposed REST API's endpoint URLs, custom HTTP
         status codes, and generated documentation with Markdown, so that the
         published API matches the intended contract and documentation style.
+    - name: Customize REST responses
+      id: customize-rest-responses
+      description: Wants to customize an exposed REST API's response body by setting
+        the On Response property and editing the OnResponse callback, so that the
+        API returns transformed content to clients for all exposed methods.
     - name: Custom REST errors
       id: custom-rest-errors
       description: Wants to throw a custom error from an exposed REST API by
@@ -5729,6 +5749,11 @@ knowledge-needs:
   - name: Consume webservices
     id: consume-webservices
     subtopics:
+    - name: Configure SOAP auth
+      id: configure-soap-auth
+      description: Wants to configure authentication for a consumed SOAP web service by
+        choosing the supported authentication method, so that requests use the
+        intended credentials.
     - name: Authenticate SOAP service
       id: authenticate-soap-service
       description: 'Wants to fix a 401 Unauthorized error when consuming an
@@ -5758,6 +5783,12 @@ knowledge-needs:
         switch and a listener file to Settings.xml, so that they can capture
         detailed logs when a SOAP import error message alone isn't enough to
         find the root cause, in OutSystems 11.
+    - name: View SOAP logs
+      id: view-soap-logs
+      description: Wants to view SOAP web service logs in Service Center by
+        opening Monitoring > Integrations, filtering by SOAP (Consume) or
+        SOAP (Expose), and opening the detail or error entry, so that they
+        can inspect request and response information while troubleshooting.
     - name: Fix SOAP name collision
       id: fix-soap-name-collision
       description: Wants to fix a SOAP web service import error in Service

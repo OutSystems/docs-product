@@ -486,6 +486,11 @@ knowledge-needs:
         elements to Public and publishing the module, then reuse those exposed
         elements in a consumer module through Manage Dependencies, so that one
         module can call functionality defined in another module.
+    - name: Find element usage
+      id: find-element-usage
+      description: Wants to identify which module a reused element belongs to and
+        where that element is used in Service Studio, so they can trace
+        dependencies and confirm reuse.
   - name: Library actions
     id: library-actions
     description: Wants to know which ODC library actions are available and what each
@@ -512,6 +517,9 @@ knowledge-needs:
     - name: Hard-coded statements
       id: hard-coded-statements
       description: Wants to identify and remove hard-coded True/False conditions when they make branches unreachable or dead code in ODC actions.
+    - name: Debug app logic
+      id: debug-app-logic
+      description: Wants to debug application logic in Service Studio by setting breakpoints, inspecting variable values, and following execution flow to find and fix errors.
   - name: Creating Variables
     id: creating-variables
     subtopics:
@@ -1244,6 +1252,12 @@ knowledge-needs:
       description: Wants to create structures and define their attributes in OutSystems,
         and understand that a structure is a custom compound data type used to store
         related data in memory, so they can model grouped data correctly.
+    - name: Data types and entities
+      id: data-types-and-entities
+      description: Wants to understand how structures and entity records differ in
+        OutSystems, including that structures hold related in-memory values and
+        entity records require explicit get and save actions, so they can choose
+        the right data container.
     - name: Entity properties
       id: entity-properties
       description: Wants to look up the configurable properties of an Entity, including
@@ -2494,13 +2508,6 @@ knowledge-needs:
         the calling application across all replicas in ODC, using the
         ApplicationInvalidateCache system action, so that stale cached data
         doesn't linger after underlying data changes.
-    - name: Connection pool usage
-      id: connection-pool-usage
-      description: Wants to understand when and how to use connection pooling when
-        connecting to external databases (SQL Server, Oracle, PostgreSQL, DB2, MySQL)
-        via extensions in OutSystems 11 — including connections from OutSystems
-        extensions back to the OutSystems database — so that frequent connections do
-        not degrade application performance as load scales up.
     - name: Optimize data transfer
       id: optimize-data-transfer
       description: Wants to understand how OutSystems 11 optimizes server-to-client
@@ -2644,6 +2651,12 @@ knowledge-needs:
       description: Wants to customize an exposed REST API's endpoint URLs, custom HTTP
         status codes, and generated documentation with Markdown, so that the
         published API matches the intended contract and documentation style.
+    - name: Custom REST errors
+      id: custom-rest-errors
+      description: Wants to throw a custom error from an exposed REST API by
+        creating a User Exception, adding a Raise Error element, and setting a
+        custom HTTP status code when the method needs to return a custom error
+        message instead of a built-in error.
     - name: New API version
       id: new-api-version
       description: Wants to create a new REST API version when changing an
@@ -5798,6 +5811,11 @@ knowledge-needs:
         field when consuming a single REST method so Service Studio infers request
         input parameters, structure fields, and content type for supported request
         formats.
+    - name: Unsupported REST imports
+      id: unsupported-rest-imports
+      description: Wants to identify unsupported OpenAPI patterns when consuming REST
+        services, so they can edit the Swagger specification and import the API
+        successfully.
     - name: Consume REST methods
       id: consume-rest-methods
       description: Wants to import REST API methods in Service Studio from an
@@ -5809,6 +5827,9 @@ knowledge-needs:
       description: Wants to refresh a consumed REST service in ODC Studio after the
         API changes, so the app updates the consumed methods and stays aligned with
         the current API contract.
+    - name: REST structure reuse
+      id: rest-structure-reuse
+      description: Wants to know when OutSystems reuses an existing structure for a consumed REST API method based on compatible attributes and attribute coverage, so they can predict when a structure gets renamed or extended.
     - name: Consume SAP OData
       id: consume-sap-odata
       description: Wants to consume an SAP OData service in OutSystems 11 by downloading
@@ -8532,6 +8553,9 @@ knowledge-needs:
       description: Wants to add the Search UI Pattern to a screen and configure
         its input variable in Service Studio, so that users can search for
         content by entering queries.
+    - name: UI patterns overview
+      id: ui-patterns-overview
+      description: Wants to understand what OutSystems UI patterns are, why the platform provides them, and how they group into adaptive, content, interaction, navigation, number, and utility patterns, so they can recognize the main pattern families and choose the right one for a screen need.
     - name: Identify reactive widgets
       id: identify-reactive-widgets
       description: Wants to identify which UI elements count as widgets in
@@ -8567,6 +8591,11 @@ knowledge-needs:
         does not appear in the Toolbox because unused references were
         removed, so that the screen shows how many characters a user has
         entered or has remaining.
+    - name: Use popover menu
+      id: use-popover-menu
+      description: Wants to add the Popover Menu widget to a screen and use it
+        to show context-sensitive overlay content, so users can see richer UI
+        without leaving the page.
     - name: Use widgets and patterns
       id: use-widgets-and-patterns
       description: Wants to build screens with OutSystems widgets and UI
@@ -8735,6 +8764,12 @@ knowledge-needs:
         of the Go To Destination node in Service Studio, so that they can
         navigate to a specific screen, in OutSystems 11 traditional web apps,
         mobile apps, and reactive web apps.
+    - name: Screen component flow
+      id: screen-component-flow
+      description: Wants to understand how screens, blocks, widgets, events,
+        and aggregates work together in an OutSystems web app, so they can
+        wire screen behavior and data flow correctly when building
+        interactive pages.
     - name: Navigate to detail screen
       id: navigate-to-detail-screen
       description: Wants to navigate from a list screen to a detail screen
@@ -9198,6 +9233,13 @@ knowledge-needs:
       description: Wants to publish modules and review the version history
         created by each publish in Service Center, so that they can trace
         releases.
+    - name: Java deploy comparison
+      id: java-deploy-comparison
+      description: Wants to compare Java build and deployment workflows with
+        OutSystems 1-Click Publish, including the configuration they require
+        and the built-in automation OutSystems provides, so they can
+        understand the difference between the two platforms' deployment
+        processes.
     - name: Publish solution in SC
       id: publish-a-solution-in-sc
       description: Wants to publish a Service Center solution or download
@@ -10405,6 +10447,12 @@ knowledge-needs:
       components make up the platform, and which core capabilities it
       provides, so they can get an overall introduction before diving into
       individual features.
+  - name: Java course overview
+    id: java-course-overview
+    description: Wants to understand the roadmap for the OutSystems for Java
+      developers course, including the platform mapping, development and code
+      reuse, and build, run, and debug sections, so they know what the course
+      covers before starting it.
   - name: Using Service Studio
     id: using-service-studio
     subtopics:
@@ -15878,13 +15926,6 @@ knowledge-needs:
         Quality, by changing its status from Default to Customized in the
         Maintenance area, so that technical debt priorities reflect their
         organization's specific needs.
-    - name: Resolve findings status
-      id: resolve-findings-status
-      description: Wants to resolve OutSystems 11 Code Quality technical debt
-        findings, by setting each finding's status to Already Fixed, False
-        Positive, Won't Fix, or Remind Me Later in the module findings view,
-        so that the finding is correctly counted or excluded from the
-        infrastructure's technical debt score after the next synchronization.
   - name: Technical debt dashboards
     id: tech-debt-dashboards
     subtopics:
@@ -16079,6 +16120,19 @@ knowledge-needs:
       description: Wants to review individual Code Quality findings in the
         Findings tab of the Code Quality dashboard, so they can understand each
         issue before fixing it in ODC Studio.
+    - name: Change finding status
+      id: change-finding-status
+      description: Wants to change a Code Quality finding's status by selecting
+        an available option in the findings view and completing any required
+        confirmation or snooze dialog, so that the finding's current state and
+        effect on Code Quality results are accurately reflected.
+    - name: Severity criteria
+      id: severity-criteria
+      description: Wants to understand how Code Quality classifies findings
+        into critical, high, medium, and low severity levels across security,
+        performance, maintainability, and architecture, and how those
+        severities affect score calculations, so that they can interpret
+        findings and prioritize fixes.
 - name: Testing practice
   guid: 0e440c0c-7db6-41cd-a51c-0c00ccb15e72
   topics:
@@ -17051,6 +17105,12 @@ knowledge-needs:
       description: Wants to govern asset creation in ODC by removing create permissions,
         reviewing requests, and automating approved asset creation with REST APIs,
         so that only approved assets are created.
+    - name: Manage asset permissions
+      id: manage-asset-permissions
+      description: Wants to grant a user access to a newly created asset by assigning
+        an organization role scoped to that asset through the Identity API when the
+        asset is created as part of a governed creation process, so that the asset
+        requester gets the correct scoped permissions.
     - name: Asset deletion governance
       id: asset-deletion-governance
       description: Wants to govern asset deletion in ODC by removing delete permissions,
@@ -18247,6 +18307,13 @@ knowledge-needs:
         stack, including how minimum and maximum connections behave under
         concurrent load, in OutSystems 11, so that they can plan capacity and
         avoid connection-pool exhaustion or timeouts.
+    - name: Connection pool usage
+      id: connection-pool-usage
+      description: Wants to understand when and how to use connection pooling
+        when connecting to external databases via extensions in OutSystems 11 —
+        including connections from OutSystems extensions back to the OutSystems
+        database — so that frequent connections do not degrade application
+        performance as load scales up.
   - name: Oracle Database Configuration
     id: oracle-database-configuration
     subtopics:

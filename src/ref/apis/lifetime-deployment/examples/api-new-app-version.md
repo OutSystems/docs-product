@@ -18,7 +18,7 @@ coverage-type:
   - remember
   - apply
 topic:
-  - deployments-api-automation
+  - deploy-app-via-lifetime-api
 ---
 
 # Create a new Application Version using the LifeTime API

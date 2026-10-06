@@ -19,7 +19,9 @@ coverage-type:
   - evaluate
   - understand
 topic:
-  - soa-and-microservices
+  - microservices-deployment
+  - microservices-tradeoffs
+  - new-api-version
 ---
 
 # Microservices Architecture in OutSystems

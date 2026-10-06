@@ -17,7 +17,7 @@ coverage-type:
   - evaluate
   - remember
 topic:
-  - bpmn-notation
+  - bpmn-notation-mapping
 ---
 
 # Notation Reference for BPMN Practitioners

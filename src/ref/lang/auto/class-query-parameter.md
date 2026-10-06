@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - query-parameters
+  - configure-sql-tool-parameters
 ---
 
 # Query Parameter

@@ -19,7 +19,9 @@ coverage-type:
   - evaluate
   - apply
 topic:
-  - how-to-create-emails
+  - compose-and-send-emails
+  - create-email-templates
+  - prevent-email-clipping
 ---
 
 # Managing emails

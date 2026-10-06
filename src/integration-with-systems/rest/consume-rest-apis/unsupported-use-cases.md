@@ -18,7 +18,7 @@ coverage-type:
   - remember
   - unblock
 topic:
-  - consume-refresh-methods
+  - unsupported-rest-imports
 ---
 
 # Unsupported REST Use Cases

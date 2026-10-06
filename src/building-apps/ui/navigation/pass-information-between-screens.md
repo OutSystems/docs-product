@@ -19,8 +19,8 @@ coverage-type:
   - understand
   - apply
 topic:
-  - navigate-screens
-  - input-parameters
+  - navigate-to-detail-screen
+  - use-input-parameters
 ---
 
 # Pass Data Between Screens With Input Parameters

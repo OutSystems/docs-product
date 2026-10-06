@@ -18,9 +18,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - webservice-authentication
-  - customize-headers
-  - custom-request-response
+  - customize-rest-callbacks
 ---
 
 # Simple customizations

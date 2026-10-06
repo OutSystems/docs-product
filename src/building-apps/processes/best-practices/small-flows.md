@@ -18,7 +18,7 @@ coverage-type:
   - apply
   - evaluate
 topic:
-  - scalable-process-best-practices
+  - split-process-flow
 ---
 
 # Design Processes with Small Flows

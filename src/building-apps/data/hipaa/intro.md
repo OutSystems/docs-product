@@ -15,7 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - data-encryption
+  - choose-encryption-type
+  - use-cryptography-services
 ---
 
 # Implement encryption and decryption for HIPAA compliance

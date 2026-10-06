@@ -17,7 +17,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - edit-data-service-studio
+  - edit-entity-data
 isautopublish: true
 ---
 

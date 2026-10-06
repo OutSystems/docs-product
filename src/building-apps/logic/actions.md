@@ -19,9 +19,9 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - client-actions-when-use
-  - server-actions-when-use
-  - server-vs-client-logic
+  - action-types-overview
+  - actions-and-functions
+  - server-and-client-logic
 ---
 
 # Actions in Reactive Web and Mobile Apps

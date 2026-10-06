@@ -20,7 +20,8 @@ coverage-type:
   - understand
   - apply
 topic:
-  - bind-data-to-a-ui-element
+  - fetch-screen-data
+  - show-fetched-data
 ---
 
 # Fetch and display data from an integration

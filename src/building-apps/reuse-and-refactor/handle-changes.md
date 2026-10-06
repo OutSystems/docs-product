@@ -19,7 +19,9 @@ coverage-type:
   - evaluate
   - apply
 topic:
-  - add-module-dependency
+  - incompatible-consumer-warning
+  - outdated-consumer-warning
+  - producer-runtime-impact
 ---
 
 # Handle Changes in Exposed Functionality

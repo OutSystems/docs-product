@@ -16,8 +16,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - data-syncronization
-  - offline-synch
+  - offline-sync-overview
 ---
 
 # Offline Data Sync Patterns

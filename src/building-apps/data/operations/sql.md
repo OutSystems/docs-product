@@ -18,8 +18,9 @@ coverage-type:
   - apply
   - remember
 topic:
-  - use-sql
-  - query-parameters
+  - configure-sql-tool-parameters
+  - convert-aggregate-to-sql-tool
+  - test-sql-tool-query
 ---
 
 # SQL Queries

@@ -19,7 +19,7 @@ coverage-type:
   - remember
   - apply
 topic:
-  - site-properties-settings
+  - site-properties
 isautopublish: true
 ---
 

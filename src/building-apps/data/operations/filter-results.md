@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - filter-data
+  - filter-aggregate-data
 ---
 
 # Filter Query Results

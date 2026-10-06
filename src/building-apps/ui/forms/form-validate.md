@@ -19,7 +19,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - changing-data-with-ui
+  - automatic-form-validation
+  - check-form-validity
+  - customize-validation-messages
 ---
 
 # Validate the fields of a form

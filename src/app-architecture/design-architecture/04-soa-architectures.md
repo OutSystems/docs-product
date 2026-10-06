@@ -18,7 +18,7 @@ coverage-type:
   - understand
   - evaluate
 topic:
-  - soa-and-microservices
+  - soa-architecture
 ---
 
 # Service-oriented architectures for OutSystems applications

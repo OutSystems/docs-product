@@ -889,6 +889,40 @@ knowledge-needs:
         including consensus, complexity management, risk reduction, planning,
         change facilitation, and cost reduction, so they can justify
         architecture work to stakeholders.
+  - name: Application best practices
+    id: application-best-practices
+    subtopics:
+    - name: Application element naming
+      id: application-element-naming-practices
+      description: Wants to apply consistent naming conventions to OutSystems app
+        elements, so that their purpose is clear to developers.
+    - name: Application code structure
+      id: application-code-structure-practices
+      description: Wants to organize an OutSystems app's code into a clear,
+        maintainable structure, so developers can understand and change it safely.
+    - name: Custom CSS best practices
+      id: application-custom-css-practices
+      description: Wants to follow best practices when adding custom CSS to an
+        OutSystems app, so that custom styling remains maintainable and does not
+        unintentionally affect other UI elements.
+    - name: Database usage
+      id: application-database-usage-practices
+      description: Wants to tune database queries in an OutSystems app, so that its
+        data operations remain reliable and performant.
+    - name: Application architecture
+      id: application-architecture-practices
+      description: Wants to apply architecture best practices when structuring an
+        OutSystems app, so that its components remain maintainable as the app
+        grows.
+    - name: Teamwork
+      id: application-teamwork-practices
+      description: Wants to coordinate application development with their team
+        using consistent practices, so that team members can collaborate
+        effectively.
+    - name: Application security
+      id: application-security-practices
+      description: Wants to apply least-privilege access to an OutSystems app, so
+        that the app and its data are protected.
   - name: Modules
     id: modules
     subtopics:
@@ -2688,6 +2722,11 @@ knowledge-needs:
 - name: Advanced integrations
   guid: fb5d71a9-9ac6-4fda-adea-e89546e0af89
   topics:
+  - name: Web services overview
+    id: web-services-overview
+    description: Wants to understand how OutSystems web services cover consuming and
+      exposing REST APIs and SOAP web services, so they can choose the right
+      integration approach.
   - name: Webservice customization
     id: webservice-customization
     subtopics:
@@ -6113,15 +6152,15 @@ knowledge-needs:
         on it, so they reduce the email's render time instead of trying to
         extend the timeout.
     - name: Configure email settings
-      id: configure-email-settings
+      id: configure-email-settings-odc
       description: Wants to configure SMTP settings for an app stage in ODC Portal,
         including the server, port, authentication type, and sender details, so
         that the app sends email from the correct stage.
     - name: Create test list
-      id: create-test-list
-      description: Wants to create and activate an email test list for an app in
-        ODC Portal, so that outgoing email during testing goes to test recipients
-        instead of real users.
+      id: email-test-list
+      description: Wants to create and activate an email test list and route
+        outgoing emails to it during testing, so that test messages go to safe
+        recipients instead of real users.
     - name: Email widgets
       id: email-widgets
       description: Wants to identify the widgets available in ODC emails and the
@@ -6132,6 +6171,22 @@ knowledge-needs:
       description: Wants to understand that email clients support CSS
         inconsistently and to test email content across clients with tools
         such as Can I email, so that emails render as expected.
+    - name: Configure SMTP server
+      id: configure-smtp-server-o11
+      description: Wants to configure the SMTP server in Service Center for an
+        OutSystems 11 environment, including the server address and port
+        choice, so that the environment can send emails.
+    - name: Configure SMTP authentication
+      id: configure-smtp-authentication
+      description: Wants to configure SMTP authentication in Service Center for
+        OutSystems 11, including the supported authentication method and required
+        credentials, so that the environment can authenticate with the email
+        provider.
+    - name: Set email environment hostname
+      id: set-email-environment-hostname
+      description: Wants to set the environment hostname used in email links in
+        OutSystems 11, so that links in test emails point to the right
+        environment.
   - name: BPT
     id: bpt
     subtopics:
@@ -9925,6 +9980,19 @@ knowledge-needs:
       description: Wants to understand which OutSystems and third-party tools support
         DevOps work across the application lifecycle, so that they can choose the
         right toolset for delivery and operations.
+    - name: Deploy app via API
+      id: deploy-app-via-lifetime-api
+      description: Wants to deploy an application between LifeTime environments
+        by using the LifeTime API to retrieve environment and application
+        version keys, create and start a deployment, and poll its status until
+        the execution reaches a terminal state, so that they can automate
+        application promotion.
+    - name: LifeTime API reference
+      id: lifetime-api-reference
+      description: Wants to look up the LifeTime API v2 reference, including its
+        base URL, supported resources, authentication guidance, examples, and
+        Swagger download, so they can use it when automating LifeTime
+        deployment-related tasks.
   - name: CI/CD pipelines
     id: ci-cd-pipelines
     subtopics:
@@ -11543,6 +11611,12 @@ knowledge-needs:
       description: Wants to install and configure the OutSystems.AI Language
         Analysis component and its required Azure resources, so they can perform
         language analysis in an OutSystems app.
+    - name: Use language analysis
+      id: use-language-analysis
+      description: Wants to use the OutSystems.AI Language Analysis component to
+        run its text-analysis capabilities in an OutSystems app after it is
+        configured, so they can process text with the right feature for each
+        case.
     - name: Extract key phrases
       id: extract-key-phrases
       description: Wants to extract key phrases from text using the OutSystems.AI
@@ -16419,6 +16493,12 @@ knowledge-needs:
         OutSystems 11, so that they can decide whether to adopt it for
         securing IT user access and centralize IT user authentication without
         deploying a separate IAM solution.
+    - name: OIDC token types
+      id: oidc-token-types
+      description: Wants to identify which tokens OpenID Connect issues and
+        which token ODC validates to sign users in, when reviewing the
+        external IdP authentication flow, so that they explain OIDC token
+        handling correctly.
     - name: OIDC discovery document
       id: oidc-discovery-document
       description: 'Wants to find the OIDC discovery document for an OutSystems ODC environment and understand which provider endpoints and metadata it exposes, so that they can configure OpenID Connect authentication against the correct authorization, token, userinfo, JWKS, and logout endpoints.'
@@ -17472,6 +17552,12 @@ knowledge-needs:
       description: Wants to manage a LifeTime team and its related users and
         applications, so that they can control team-based access across related
         applications.
+    - name: Manage IT users
+      id: manage-it-users
+      description: Wants to understand how to manage IT user access in LifeTime
+        through the User Management area, including roles, teams, and
+        app-specific permissions, so that they can control access for IT users
+        in a role-based security model.
 - name: Using audit logs for compliance and troubleshooting
   guid: c96ed7dd-90d2-406d-a816-c47269c0d20b
   topics:
@@ -19728,13 +19814,6 @@ knowledge-needs:
         connected device, but always confirm the fix on a real device before
         considering it resolved, in OutSystems 11, so that they debug
         efficiently without missing device-only behavior differences.
-    - name: Debug mobile apps
-      id: debug-mobile-apps-o11
-      description: Wants to debug a mobile app by choosing the right workflow
-        for browser emulation, device installation, or native tools, so they
-        can use Chrome when native plugins are not required, test on a real
-        device when performance or device behavior matters, and switch to
-        Android Studio or Xcode for crashes or plugin issues.
     - name: Debug producer modules
       id: debug-producer-modules
       description: Wants to debug a producer module's exposed logic from a
@@ -20327,6 +20406,14 @@ knowledge-needs:
       description: Wants to add and remove watches during a debug session, so
         they can inspect parameters, variables, and screen widgets in the
         Watches tab regardless of scope.
+    - name: Debug native mobile apps
+      id: debug-native-mobile-apps
+      description: Wants to debug a native mobile app by choosing the right
+        workflow that uses Chrome emulation for browser-side inspection when
+        native plugins aren't required, a connected Android or iOS device when
+        device behavior or performance matters, and native tools for crashes or
+        plugin issues, including device setup when needed, so they can
+        troubleshoot the app in the right environment.
   - name: Resource capacity
     id: resource-capacity
     description: Wants to understand ODC resource capacity limits, scaling

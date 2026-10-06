@@ -12,7 +12,6 @@ The following are the OutSystems product names. Use them verbatim.
 
 * For OutSystems 11:
 
-  * AI Mentor Studio 
   * Case Management framework
   * Factory Configuration
   * Forge 

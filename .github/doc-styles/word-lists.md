@@ -9,7 +9,6 @@ Not sure how to capitalize a product name or if you should use a certain word? C
 The following are the OutSystems product names. Use them verbatim.
 
 - **For OutSystems 11:**
-  - AI Mentor Studio
   - Case Management framework
   - Factory Configuration
   - Forge

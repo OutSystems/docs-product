@@ -4153,6 +4153,11 @@ knowledge-needs:
         scope, toggling individual rules, and the limit on how many IP addresses
         or CIDR entries a group can contain, so they can identify valid group
         behavior and constraints.
+    - name: Manage IP filter groups
+      id: manage-ip-filter-groups
+      description: Wants to create, edit, copy, and delete IP filter groups
+        and rules in ODC Portal, including associating apps with a group
+        before deployment, so they can control app access by stage.
     - name: Dual-stack IP filters
       id: dual-stack-ip-filters
       description: Wants to understand how IP filter rules behave on dual-stack
@@ -7987,25 +7992,10 @@ knowledge-needs:
         view, in Service Studio, so that UI elements animate dynamically in
         a Traditional Web App (O11).
     - name: Use Animate pattern
-      id: use-animate-pattern-odc
-      description: Wants to add the Animate UI Pattern to a screen and configure
-        its animation settings, so that content animates as it appears on
-        screen.
-    - name: Use Animate web pattern
-      id: use-animate-web-pattern-o11
-      description: Wants to add the Animate UI Pattern to a Traditional Web
-        App screen, add the OutSystemsUI dependency if the widget does not
-        display in the Toolbox, drag the widget into Main Content, and
-        configure EnterAnimation, LeaveAnimation, Speed, Delay, and
-        ExtendedClass in Service Studio, so that elements animate as they
-        appear on screen in a Traditional Web App (O11).
-    - name: Animate properties
-      id: animate-properties-reference
-      description: Wants to look up the properties of the Animate UI Pattern
-        in Service Studio, including AnimationType, Delay, and Speed, so
-        that they can correctly configure how and when an element's
-        entrance animation occurs, in mobile apps and reactive web apps
-        (O11).
+      id: use-animate-pattern
+      description: Wants to add the Animate UI Pattern to a screen, drag the
+        widget into Main Content, and configure its animation properties in
+        Studio, so that elements animate as they appear on screen.
     - name: Adaptive UI patterns
       id: adaptive-ui-patterns
       description: Wants to understand what adaptive UI patterns are and why to use them,
@@ -8934,6 +8924,11 @@ knowledge-needs:
         does not appear in the Toolbox because unused references were
         removed, so that the screen shows how many characters a user has
         entered or has remaining.
+    - name: Animate pattern reference
+      id: animate-pattern-reference
+      description: Wants to look up the Animate UI Pattern's configuration
+        properties, so that they can configure how its animations behave when
+        elements appear on screen.
     - name: Use popover menu
       id: use-popover-menu
       description: Wants to add the Popover Menu widget to a screen and use it

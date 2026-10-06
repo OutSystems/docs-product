@@ -1955,6 +1955,13 @@ knowledge-needs:
       readers, contrast checkers, and team practices for testing and
       improving app accessibility, so they can validate accessibility work
       and apply practical guidance.
+    subtopics:
+    - name: Test accessibility issues
+      id: test-accessibility-issues
+      description: Wants to identify and fix accessibility issues in an ODC
+        Studio screen with WAVE and Lighthouse, so they can confirm the
+        page has no accessibility errors after adding the missing title,
+        heading, language definition, and image alt text.
   - name: Translating apps
     id: translating-apps
     subtopics:
@@ -1967,6 +1974,25 @@ knowledge-needs:
         multilingual feature, in Service Studio for OutSystems 11, so that
         the app's translations and logic keep working without the
         unsupported Forge component.
+    - name: Use translation editor
+      id: use-translation-editor
+      description: Wants to open the translation editor in ODC Studio from the
+        Multilingual Locales folder, switch locale columns, search and filter
+        text, and review translation progress, so they can manage app
+        translations from one place.
+    - name: Export and import translations
+      id: export-import-translations
+      description: Wants to export translatable resources from an app to files,
+        import translated files back into the app, and understand the file
+        format ODC Studio uses for translation handoffs, so they can manage
+        translation files and keep app text up to date.
+    - name: Set text behavior
+      id: set-text-behavior
+      description: Wants to mark text as Translate, Don't translate, or Not
+        defined in the translation editor and understand which screen titles,
+        button labels, and screen text ODC Studio marks automatically as
+        translatable, so they can control how app text is exported and shown
+        in the UI.
     - name: Enable RTL support
       id: enable-rtl-support
       description: Wants to enable right-to-left layout in an OutSystems 11 app by
@@ -2722,6 +2748,12 @@ knowledge-needs:
       description: Wants to write data to an external system by configuring a
         consumed REST API method to use POST and handle the JSON request and
         response bodies, so that the app can create a new record.
+    - name: Create REST data
+      id: create-rest-data
+      description: Wants to expose a POST REST API method that creates a new
+        employee record only when the email does not already exist in the
+        database, so external systems can add application data and receive a
+        success or error response.
     - name: PUT REST data
       id: put-rest-data
       description: Wants to write data to an external system by configuring a
@@ -5689,6 +5721,11 @@ knowledge-needs:
         splitting pending records into non-overlapping chunks, tracking each
         chunk's state, and using a Timer plus Events to keep concurrency topped
         up, so that large independent datasets finish safely and resumably.
+    - name: Parallel batch practices
+      id: parallel-batch-practices
+      description: Wants to apply chunk sizing, idempotency, monitoring, and
+        off-peak scheduling practices when running parallel batch integrations,
+        so runs finish reliably and don't overload the system.
     - name: Configure timer settings (ODC)
       id: configure-timer-settings-odc
       description: Wants to configure a Timer's schedule, timeout, and active flag in ODC
@@ -5750,6 +5787,9 @@ knowledge-needs:
   - name: Expose webservices
     id: expose-webservices
     subtopics:
+    - name: Expose web services
+      id: expose-web-services
+      description: Wants to expose REST APIs and SOAP web services from an app so external systems can call the published endpoints.
     - name: Expose SOAP web service
       id: expose-soap-web-service
       description: Wants to expose a SOAP web service in OutSystems 11 by creating the service, adding methods, setting the module namespace, and checking the generated WSDL endpoint and bindings, so that clients can call the published service.
@@ -9524,6 +9564,12 @@ knowledge-needs:
         cluster, so that they can anticipate the build and deployment work
         triggered each time they publish a new revision in the Development
         stage.
+    - name: OutSystems publish flow
+      id: outsystems-publish-flow
+      description: Wants to compare PHP deployment approaches with the OutSystems
+        build-and-publish flow and understand the 1-Click Publish pipeline,
+        including code generation, database sync scripts, and built-in
+        automation, so they can explain how a change gets published.
     - name: ODC publish message
       id: odc-publish-message
       description: Wants to add an optional message describing their changes when 1-Click
@@ -9537,6 +9583,11 @@ knowledge-needs:
         immutable whole-number snapshot whose source code stays fixed, and how apps,
         libraries, and workflows handle revisions and builds differently, so that they
         can reason about publishing and deployment.
+    - name: ODC asset versioning
+      id: odc-asset-versioning
+      description: Wants to understand how ODC assigns versions to apps, workflows, and
+        libraries when a revision is ready to leave Development, so that they can
+        choose the right deploy or release path for each asset type.
     - name: IPP protection concept
       id: ipp-protection-concept
       description: Wants to understand what Intellectual Property Protection
@@ -10595,6 +10646,12 @@ knowledge-needs:
   - name: Java course overview
     id: java-course-overview
     description: Wants to understand the roadmap for the OutSystems for Java
+      developers course, including the platform mapping, development and code
+      reuse, and build, run, and debug sections, so they know what the course
+      covers before starting it.
+  - name: PHP course overview
+    id: php-course-overview
+    description: Wants to understand the roadmap for the OutSystems for PHP
       developers course, including the platform mapping, development and code
       reuse, and build, run, and debug sections, so they know what the course
       covers before starting it.

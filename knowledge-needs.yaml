@@ -4085,6 +4085,12 @@ knowledge-needs:
         scope, toggling individual rules, and the limit on how many IP addresses
         or CIDR entries a group can contain, so they can identify valid group
         behavior and constraints.
+    - name: Dual-stack IP filters
+      id: dual-stack-ip-filters
+      description: Wants to understand how IP filter rules behave on dual-stack
+        clients, including why ODC evaluates the IPv6 address when both IPv4
+        and IPv6 are available and why both address families need matching
+        rules, so they can configure access without losing traffic.
     - name: JWT REST authentication
       id: jwt-rest-authentication
       description: Wants to secure REST APIs exposed or consumed between O11
@@ -4451,6 +4457,11 @@ knowledge-needs:
         by detecting them, diagnosing the risk to critical assets and
         infrastructure, and determining the remediation steps that strengthen
         the security posture, so that they can respond appropriately.
+    - name: Sentry capabilities
+      id: sentry-capabilities
+      description: Wants to understand what Sentry for ODC includes and what
+        security controls and compliance features it provides, so that they
+        can evaluate the security add-on for an ODC organization.
 - name: ODC Workflows
   guid: 8f3c2a1d-6e4b-4a7f-9c0d-2b5e7f1a4c9e
   topics:
@@ -7869,14 +7880,10 @@ knowledge-needs:
         view, in Service Studio, so that UI elements animate dynamically in
         a Traditional Web App (O11).
     - name: Use Animate pattern
-      id: use-animate-pattern-o11
-      description: Wants to add the Animate UI Pattern to a screen, add the
-        OutSystemsUI dependency via Search in other modules if the widget
-        doesn't display in the Toolbox, add content to its Content
-        placeholder, and configure the AnimationType, Delay, and Speed
-        properties, in Service Studio, so that elements are emphasized with
-        an entrance animation as they appear on screen, in mobile apps and
-        reactive web apps (O11).
+      id: use-animate-pattern-odc
+      description: Wants to add the Animate UI Pattern to a screen and configure
+        its animation settings, so that content animates as it appears on
+        screen.
     - name: Use Animate web pattern
       id: use-animate-web-pattern-o11
       description: Wants to add the Animate UI Pattern to a Traditional Web
@@ -11071,6 +11078,9 @@ knowledge-needs:
     - name: Install Forge component
       id: install-forge-component
       description: Wants to install a Forge component from the Forge, follow its loading state in Service Studio, and find installed or system components in Manage Dependencies and Service Center, so that they can use the component in their app.
+    - name: Update Forge asset
+      id: update-forge-asset
+      description: Wants to update an installed Forge asset from Forge in ODC Portal, follow the update status labels, and open it in ODC Studio after the process completes, so they can use the latest version in their organization.
     - name: Forge project types
       id: forge-project-types
       description: Wants to understand the different types of Forge projects, so that they
@@ -14170,6 +14180,10 @@ knowledge-needs:
         variable references, or malformed merge/inject content in the build
         action configuration file, so that the mobile app build completes
         successfully.
+    - name: Android build actions
+      id: android-build-actions
+      description: Wants to configure Android build actions in ODC mobile apps
+        so they can customize behavior beyond standard low-code capabilities.
     - name: Fix empty file error
       id: fix-empty-extensibility-file-error
       description: 'Wants to resolve the "Binary file for <resource-type>
@@ -18497,6 +18511,13 @@ knowledge-needs:
         headers at the load balancer, or another upstream proxy, so that Gloo can
         identify the target runtime stage and route each inbound request correctly
         in a self-hosted ODC cluster.
+    - name: Self-hosted IP filtering
+      id: self-hosted-ip-filtering
+      description: Wants to understand how to apply IP filtering on self-hosted
+        ODC stages, including that the ODC Portal does not manage it there and
+        that they need to enforce restrictions in the load balancer, ingress
+        layer, firewall, or security group settings, so they can control access
+        in the correct layer.
     - name: Finish stage setup
       id: finish-stage-setup
       description: Wants to complete the final ODC Portal setup for a self-hosted

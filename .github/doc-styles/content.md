@@ -6,10 +6,38 @@ Write clearly and consistently.
 
 Use the appropriate tone and voice in your content. Your content must be:
 
-* Friendly and straightforward
 * Clear and concise
 * Inclusive and respectful
-* Free of jargon and sales talk
+* Free of jargon, sales talk, and marketing talk
+
+## Avoid conversational language
+
+Technical content should read as structured and precise, not as spoken conversation. Avoid casual connectors, hedging phrases, and slang verbs that creep in from everyday speech, and don't address the reader as if chatting with them.
+
+**Language to avoid:**
+
+* **Casual connectors:** so, well, now, just, basically, actually (as sentence openers)
+* **Hedging phrases:** it's worth noting that, keep in mind that, as you might expect
+* **Casual or slang verbs:** wire up, spin up, hook up, tackle
+* **Enthusiasm:** exclamation points, "Great!", "Awesome,"
+* **Rhetorical questions:** "Wondering how to configure X?"
+
+**Examples**
+
+**No:** The cache expires after 10 minutes, so requests made after that trigger a new query.
+**Yes:** The cache expires after 10 minutes. Requests made after that trigger a new query.
+
+**No:** Now you need to wire up the database connection.
+**Yes:** Configure the database connection.
+
+**No:** Just add the following code to your module.
+**Yes:** Add the following code to your module.
+
+**No:** Great! You're ready to deploy the app.
+**Yes:** You can now deploy the app.
+
+**No:** Wondering how to reset your password? Here's how.
+**Yes:** To reset your password, do the following.
 
 ## Be brief and concise
 
@@ -69,20 +97,31 @@ The active voice makes the sentence dynamic and clear. It also makes it clear wh
 
 This section applies to the modal verbs can, could, may, might, will, shall, would, should, and must. Modal verbs describe what you believe or think of the product, or they denote an ability or obligation. In contrast, technical content confidently describes what the product does. Using a modal instead of a stronger structure creates a weak and wordy sentence. It also makes your readers less confident about the content.
 
+**Modals we use:**
+
+* **can** — for genuine ability or a real choice the reader has
+* **must** — for a genuine requirement or obligation
+* **will**, used sparingly — use, for example, when pointing forward to something the reader needs later in a procedure, never as a softer substitute for the present tense
+
+**Modals to avoid:** could, may, might, shall, would, should. These introduce uncertainty, formality, or hedging that technical content doesn't need. Rephrase with can, must, the present tense, or a direct statement instead.
+
 **Examples**
 
-**Yes:** OutSystems lets you create several app types.
+**Yes:** You can export the report as a CSV or PDF file.
 
-**No:** There are several app types you can create. (Here, "can" means ability, all people are able to create an app.)
+**No:** You may export the report as a CSV or PDF file. ("May" suggests permission or uncertainty. This is a straightforward choice the reader has, so use "can".)
 
-**Yes:** All customers with a valid and active Subscription are eligible for OutSystems Support.
+**Yes:** OutSystems handles unforeseen or unhandled errors in apps.
 
-**No:** All customers with a valid and active Subscription can contact OutSystems Support. (All people can dial a phone number.)
+**No:** OutSystems handles unforeseen or unhandled errors that might occur in apps. (If errors do happen, there's nothing hypothetical about their existence.)
 
-**Yes:** OutSystems handles unforeseen or unhandled errors in applications.
+**Yes:** You must configure a valid license before deploying to production.
 
-**No:** OutSystems handles unforeseen or unhandled errors that might occur in applications. (If errors do happen, there's nothing hypothetical about their existence.)
+**No:** You should configure a valid license before deploying to production. ("Should" makes a requirement sound optional.)
 
+**Yes:** The migration deletes all records in the staging table.
+
+**No:** The migration will delete all records in the staging table. (Use the present tense for actions that happen as part of the current step, even if they technically run after you trigger them.)
 ## Use second person
 
 Use the second person "you" to address the reader or readers. However, don't overuse it.
@@ -171,6 +210,63 @@ Descriptive language is acceptable when:
 * Quoting UI labels or product names as they appear
 
 Focus on what the product does and how to use it, not on how good it is.
+
+### Avoid figurative jargon
+
+Use plain, literal verbs instead of figurative or trendy jargon. Figurative verbs are vague about what actually happens, and they're one of the more recognizable signs of unedited AI-generated text.
+
+| Words to avoid | Words to use instead |
+|---|---|
+| leverage | use, apply |
+| unlock | enable, provide access to |
+| harness | use |
+| scaffold | set up, create |
+| delve into, dive into | describe, cover |
+| supercharge, turbocharge | speed up, improve |
+| streamline | simplify, reduce the number of steps |
+
+Use "streamline" only for the literal act of simplifying a specific step.
+
+For "wire up", refer to [Avoid conversational language](#avoid-conversational-language).
+
+**Examples**
+
+**No:** Leverage the Data Grid component to unlock advanced filtering.
+**Yes:** Use the Data Grid component to add advanced filtering.
+
+**No:** This script supercharges the database connection setup.
+**Yes:** This script reduces the steps to set up the database connection.
+
+**No:** Let's dive into how log streaming works.
+**Yes:** Log streaming works as follows.
+
+### Avoid colons that join sentences
+
+Use a colon only to introduce a list, a code block, or a definition in the `**Term**: definition` form. Don't use a colon to join two clauses. Write each idea as a complete sentence, or connect the clauses with a conjunction or a relative clause. Colons that join clauses are a recognizable sign of unedited AI-generated text.
+
+**Patterns to avoid:**
+
+* **Explanation colon:** a statement, a colon, then the explanation, as in "X is Y: it does Z."
+* **Reveal colon:** a fragment, a colon, then the point, as in "The result: faster builds."
+
+**Examples**
+
+**No:** The cache improves speed: it stores results in memory.
+**Yes:** The cache stores results in memory, which improves speed.
+
+**No:** There's one requirement: the app must be published.
+**Yes:** The app must be published.
+
+**No:** Configuration is simple: add the key to the file.
+**Yes:** Add the key to the file.
+
+**Exceptions:**
+
+A colon is acceptable when:
+
+* It follows an introductory sentence before a list or code block. Refer to the list rules in [structure.md](structure.md).
+* It separates a term from its definition in the `**Term**: definition` form.
+* It appears in a time or ratio, such as 10:30 or 3:1.
 
 ## Keep accessibility in mind
 

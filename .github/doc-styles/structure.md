@@ -6,6 +6,16 @@ Use these rules when writing or reviewing documentation in this repository.
 
 Use sentence case for headings and titles. Use descriptive headings and titles because they help a reader navigate their browser and the page. It's easier to jump between pages and sections of a page if the headings and titles are unique.
 
+Make headings self-contained. A heading must convey its topic without the reader needing to recall the page title or a prior heading, since readers can land directly on a heading from search results, a table of contents, or an anchor link. Avoid vague pronouns (*it*, *this*, *these*) and generic phrases that only make sense in context (for example, *what's in it*, *how it works*, *overview*).
+
+**Yes:** Database execution plan structure
+
+**No:** What's in it
+
+**Yes:** How execution plans are generated
+
+**No:** How it works
+
 Write section headings based on the type of content that's in the section.
 
 For a task-based heading, start with a [*bare infinitive*](https://wikipedia.org/wiki/Infinitive#English), also known as a *plain form* or [*base form*](https://wikipedia.org/wiki/English_verbs#Base_form) verb. In English, the *imperative mood* also uses the base form verb, so it looks the same as the bare infinitive.
@@ -31,6 +41,20 @@ When possible, avoid using *\-ing* verb forms as the first word in any heading o
 **No**: Transferring data sets
 
 An *\-ing* verb form is a present participle or gerund. These verb forms are inconsistently translated when they're used as the first word in a title, and they increase character count in limited spaces.
+
+Avoid vague or conversational question-style headings. Use direct, descriptive headings whenever possible.
+
+Question headings are acceptable when they are self-explanatory and clearly identify the topic, such as:
+
+* What's a Web app?
+* What is a user session?
+* Why are extensibility configurations needed?
+
+Avoid vague headings that depend on surrounding context or sound conversational, such as:
+
+* Why is this happening?
+* How does it work?
+* What's in it?
 
 ## Heading and title format
 

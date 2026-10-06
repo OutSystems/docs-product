@@ -769,6 +769,18 @@ knowledge-needs:
         users, either programmatically with Grant/Revoke actions or manually
         in the Users app, so they can reason about how permissions are
         structured before implementing them.
+    - name: Set role persistence
+      id: set-role-persistence
+      description: Wants to configure whether roles granted or revoked at
+        runtime persist across sessions or only last for a single session in
+        Traditional Web Apps and Service Modules, so that role changes match
+        the app's authentication behavior.
+    - name: User role metamodel
+      id: user-role-metamodel
+      description: Wants to inspect the User_Role and User_Effective_Role
+        system entities and add them as dependencies before using them in an
+        app, so that the app can read direct and effective role assignments
+        correctly.
     - name: Built-in end-user access control choice
       id: builtin-end-user-access-control-choice
       description: Wants to decide whether to rely on OutSystems' built-in
@@ -932,6 +944,11 @@ knowledge-needs:
       description: Wants to coordinate application development with their team
         using consistent practices, so that team members can collaborate
         effectively.
+    - name: Multi-team mobile apps
+      id: multi-team-mobile-apps
+      description: Wants to build mobile apps with multiple independent teams
+        using shared architectural, development, and synchronization practices,
+        so that teams avoid conflicts and stay productive.
     - name: Application security
       id: application-security-practices
       description: Wants to apply least-privilege access to an OutSystems app, so
@@ -1736,333 +1753,341 @@ knowledge-needs:
         internal access-control action instead of the correct CaseServices_API
         action, by using the correct CaseServices_API action, so that Case
         Management Framework access control functions correctly.'
+  - name: ACL-based data access
+    id: acl-based-data-access
+    description: Wants to implement ACL-based data access in OutSystems 11 for
+      Core Services that need hierarchical permission control, by isolating ACL
+      logic in data retrieval methods, creating ACL records when data changes,
+      joining entities to ACL tables when reading data, and following ACL
+      performance and best-practice conventions, so that shared entities return
+      only data allowed by the ACL rules.
 - name: Accessibility
   guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
   topics:
-  - name: Implement accessibility features (screen readers, contrast...)
-    id: accessibility-screen-reader
-    subtopics:
-    - name: Generate HTML tags
-      id: generate-html-tags
-      description: Wants to generate semantic HTML tags (h1, nav, fieldset,
-        etc.) around UI elements for accessibility, using the HTML Element
-        widget's Tag property in Mobile/Reactive Web Apps or the OSTagName
-        Extended Property on Container/Placeholder widgets in Traditional Web
-        Apps, in Service Studio for O11, so the generated markup uses proper
-        semantic tags instead of generic span/div elements.
-    - name: ARIA roles overview
-      id: aria-roles-overview
-      description: Wants to understand ARIA roles, states, and properties in
-        OutSystems and when to use them without overriding native HTML
-        semantics, so they can add the right accessibility metadata to
-        widgets.
-    - name: Set ARIA attributes
-      id: set-aria-attributes
-      description: Wants to add ARIA roles and attributes as static values or
-        conditional expressions on widgets, and use SetAriaHidden or
-        SetAccessibilityRole when they need to hide content or change a
-        role, so assistive technology receives the correct state at runtime.
-    - name: Accessible labels
-      id: accessible-labels
-      description: Wants to create readable labels, status messages, and
-        hidden text with ARIA labels and hidden attributes, so screen
-        readers announce the right text for buttons, links, and other UI
-        elements.
-    - name: Accessible master detail
-      id: accessible-master-detail
-      description: Wants to make the Master Detail UI Pattern accessible to
-        assistive technologies, by mapping the list and detail content to
-        ARIA tabs roles (tablist/tab/tabpanel), aria-controls,
-        aria-labelledby, and tabindex attributes in Service Studio, so that
-        screen readers announce the relationship between selectable items
-        and the detail panel and keyboard users can navigate predictably, in
-        mobile apps and reactive web apps (O11).
-    - name: Accessible Alert pattern
-      id: accessible-alert-pattern
-      description: Wants to make the Alert UI Pattern accessible to assistive
-        technologies, by understanding its built-in ARIA role behavior (alert
-        for Error/Warning, status for Success/Info), changing the role with
-        the SetAccessibilityRole action, and toggling the aria-hidden
-        attribute with SetAriaHidden when showing or hiding the alert, in
-        Service Studio, so that the pattern meets WCAG 2.2 AA accessibility
-        requirements, in mobile apps and reactive web apps (O11).
-    - name: Accessible Notification pattern
-      id: accessible-notification-pattern
-      description: Wants to make the Notification UI Pattern accessible to
-        assistive technologies, by choosing between the alertdialog role
-        (for interactive notifications with buttons) and the alert role
-        with aria-live="assertive" (for non-interactive status messages),
-        and applying the correct ARIA attributes via a JavaScript node in
-        the Initialized client action when needed, in Service Studio, so
-        that the pattern meets WCAG 2.2 AA accessibility requirements, in
-        mobile apps and reactive web apps (O11).
-    - name: Table sort accessibility
-      id: table-sort-accessibility
-      description: Wants to make Table widget sorting accessible to screen readers
-        by enabling the WCAG 2.2 aria-sort attribute via Factory Configuration, and
-        to declare a non-default initial sort direction using the
-        default-sort-direction Extended Property on a Header Cell, in OutSystems 11,
-        so custom OnSort actions report the correct sort state.
-    - name: Accessible Card Background pattern
-      id: accessible-card-background-pattern
-      description: Wants to improve text contrast on the Card Background UI
-        Pattern by darkening the gradient mask applied to the lower half of
-        the card via custom theme CSS, in Service Studio, so that overlaid
-        text meets WCAG 2.2 AA contrast requirements (4.5:1 for normal text,
-        3:1 for large text) without altering the app's color palette, in
-        mobile apps and reactive web apps (O11).
-    - name: Accessible Tag pattern
-      id: accessible-tag-pattern
-      description: Wants to fix low-contrast color combinations on the Tag UI Pattern by
-        identifying the theme's low-contrast OutSystems UI colors and updating
-        the theme's CSS color variables in Service Studio, so that text and
-        background combinations meet WCAG 2.2 AA contrast requirements (4.5:1
-        for normal text, 3:1 for large text) without altering the app's color
-        palette, in mobile apps and reactive web apps (O11).
-    - name: Accessible Badge pattern
-      id: accessible-badge-pattern
-      description: Wants to fix low-contrast color combinations on the Badge UI
-        Pattern by identifying the theme's low-contrast OutSystems UI colors
-        and updating the theme's CSS color variables in Service Studio, so
-        that text and background combinations meet WCAG 2.2 AA contrast
-        requirements (4.5:1 for normal text, 3:1 for large text) without
-        altering the app's color palette, in mobile apps and reactive web
-        apps (O11).
-    - name: Accessible Animated Label pattern
-      id: accessible-animated-label-pattern
-      description: Wants to make the Animated Label UI Pattern accessible to
-        assistive technologies, by associating the Input widget with its
-        Label widget via the Label Properties' Input Widget dropdown, in
-        Service Studio, so that screen readers correctly announce the
-        input's purpose, meeting WCAG 2.2 AA accessibility requirements, in
-        mobile apps and reactive web apps (O11).
-    - name: Accessible Lightbox Image pattern
-      id: accessible-lightbox-image-pattern
-      description: Wants to make the Lightbox Image UI Pattern accessible to
-        assistive technologies, by providing a meaningful aria-label or alt
-        attribute for each image displayed within the lightbox dialog, in
-        Service Studio, so that screen readers announce an accessible name
-        for each image, meeting WCAG 2.2 AA Non-text Content (1.1.1) and
-        Name, Role, Value (4.1.2) requirements, in mobile apps and reactive
-        web apps (O11).
-    - name: Accessible Carousel
-      id: accessible-carousel-pattern
-      description: Wants to make the Carousel UI Pattern accessible to
-        assistive technologies by wrapping static content, images, and OutSystems
-        UI components in Containers, adding meaningful aria-label values to slide
-        containers, and keeping Image alt text on each image, so that screen
-        readers announce Carousel slides correctly in mobile apps and reactive
-        web apps (O11).
-    - name: Carousel WCAG fix
-      id: carousel-wcag-fix
-      description: Wants to update the Carousel UI Pattern for OutSystems UI by increasing
-        the pagination control target size, enclosing direct Image widgets in
-        Containers to prevent incorrect roles, and assigning list and listitem
-        roles to carousel lists in an OnReady client action, so that the pattern
-        meets WCAG 2.2 AA accessibility requirements in mobile apps and reactive
-        web apps (O11).
-    - name: Accessible Range Slider Interval
-      id: accessible-range-slider-interval-pattern
-      description: Wants to make the Range Slider Interval UI Pattern
-        accessible to assistive technologies, by adding a JavaScript node
-        to the OnReady client action that assigns distinct aria-label
-        attributes ("Lower value handle" and "Upper value handle") to each
-        .noUi-handle element, in Service Studio, so that screen readers can
-        distinguish between the lower and upper handles, meeting WCAG 2.2
-        AA accessibility requirements, in mobile apps and reactive web apps
-        (O11).
-    - name: Accessible Submenu pattern
-      id: accessible-submenu-pattern
-      description: Wants to increase the pointer target size of Submenu UI
-        Pattern headers, by adding a custom CSS rule (.osui-submenu__header)
-        that sets a minimum height and width of 24px in the theme's style
-        sheet, in Service Studio, so that the pattern meets WCAG 2.2 AA
-        accessibility requirements for touch and pointer target size, in
-        mobile apps and reactive web apps (O11).
-    - name: Accessible Breadcrumbs pattern
-      id: accessible-breadcrumbs-pattern
-      description: Wants to confirm the Breadcrumbs UI Pattern remains
-        accessible by relying on its default WCAG 2.2 AA-compliant behavior
-        and validating any custom changes in Service Studio for O11, so
-        that customized breadcrumbs continue to meet accessibility
-        requirements in mobile apps and reactive web apps.
-    - name: Accessible Wizard pattern
-      id: accessible-wizard-pattern
-      description: Wants to make the Wizard UI Pattern accessible to
-        assistive technologies, by removing redundant aria-label attributes
-        and hiding the icon wrapper from screen readers, assigning the
-        tabpanel role to each Wizard item when steps navigate between
-        panels, or setting aria-current="step" on the active item when the
-        Wizard is used as a progress tracker, via a JavaScript node in the
-        OnReady client action, in Service Studio, so that the pattern meets
-        WCAG 2.2 AA accessibility requirements, in mobile apps and reactive
-        web apps (O11).
-    - name: Accessible Counter pattern
-      id: accessible-counter-pattern
-      description: Wants to fix low-contrast color combinations on the Counter
-        UI Pattern by identifying the theme's low-contrast OutSystems UI
-        colors and updating the theme's CSS color variables in Service
-        Studio, so that text and background combinations meet WCAG 2.2 AA
-        contrast requirements (4.5:1 for normal text, 3:1 for large text)
-        without altering the app's color palette, in mobile apps and
-        reactive web apps (O11).
-    - name: Accessible Progress Circle pattern
-      id: accessible-progress-circle-pattern
-      description: Wants to make the Progress Circle UI Pattern accessible to
-        assistive technologies, by hiding the decorative circle with
-        aria-hidden="true" on an enclosing container and adding a
-        descriptive text alternative via an Expression widget styled with
-        the wcag-hide-text CSS class, in Service Studio, so that screen
-        readers announce accurate progress feedback, meeting WCAG 2.2 AA
-        accessibility requirements, in mobile apps and reactive web apps
-        (O11).
-    - name: Accessible Accordion
-      id: accessible-accordion-pattern
-      description: Wants to make the Accordion UI Pattern accessible to
-        assistive technologies when used with a List widget, by adding a
-        client action with a JavaScript node that assigns list and
-        listitem roles to the Accordion Item's list element via the
-        AccordionInitialized event, in Service Studio, so that screen
-        readers correctly announce list structure, meeting WCAG 2.2 AA
-        accessibility requirements, for OutSystems UI versions earlier
-        than 2.29.0, in mobile apps and reactive web apps (O11).
-    - name: Accessible Blank Slate pattern
-      id: accessible-blank-slate-pattern
-      description: Wants to make the Blank Slate UI Pattern accessible to
-        assistive technologies, by setting the correct ARIA role (region
-        for a static empty state, status for one that updates
-        dynamically) via a JavaScript node in the OnReady action, in
-        Service Studio, so that screen readers announce the pattern
-        correctly, meeting WCAG 2.2 AA accessibility requirements, for
-        OutSystems UI versions earlier than 2.29.0, in mobile apps and
-        reactive web apps (O11).
-    - name: Accessible User Avatar
-      id: accessible-user-avatar-pattern
-      description: Wants to make the User Avatar UI Pattern accessible to
-        assistive technologies, by adding a JavaScript node in the OnReady
-        client action to set an informative or empty alt attribute
-        depending on context, in Service Studio, so that the pattern
-        meets WCAG 2.2 AA accessibility requirements, for OutSystems UI
-        versions earlier than 2.29.0, in mobile apps and reactive web
-        apps (O11).
-    - name: Accessible User Avatar contrast
-      id: accessible-user-avatar-contrast
-      description: Wants to fix low-contrast color combinations on the
-        User Avatar UI Pattern by identifying the theme's low-contrast
-        OutSystems UI colors and updating the theme's CSS color
-        variables in Service Studio, so that text and background
-        combinations meet WCAG 2.2 AA contrast requirements (4.5:1 for
-        normal text, 3:1 for large text) without altering the app's
-        color palette, in mobile apps and reactive web apps (O11).
-    - name: Accessible Tooltip pattern
-      id: accessible-tooltip-pattern
-      description: Wants to make the Tooltip UI Pattern accessible to
-        assistive technologies, by configuring the Trigger property to
-        OnClick in Service Studio, so that the Tooltip opens automatically
-        on keyboard focus and closes with Esc, meeting WCAG 2.2 AA
-        accessibility requirements, in mobile apps and reactive web apps
-        (O11).
-    - name: Dropdown Tags NVDA behavior
-      id: dropdown-tags-nvda-esc
-      description: Wants to understand why NVDA screen reader users need to
-        press Esc twice to close the Dropdown Tags dropdown, since the first
-        Esc exits focus mode and the second collapses the control, so that
-        they can confirm this is expected behavior rather than a bug and
-        explain it to end users, in mobile apps and reactive web apps
-        (O11).
-    - name: Accessible Action Sheet pattern
-      id: accessible-action-sheet-pattern
-      description: Wants to make the Action Sheet UI Pattern accessible to
-        assistive technologies, by setting aria-expanded, aria-controls,
-        and aria-haspopup on the trigger button and removing the redundant
-        aria-expanded attribute from the Action Sheet container via a
-        JavaScript node in the OnRender client action, in Service Studio,
-        so that the pattern meets WCAG 2.2 AA accessibility requirements,
-        for OutSystems UI versions earlier than 2.29.0, in mobile apps and
-        reactive web apps (O11).
-    - name: Accessible Tabs pattern
-      id: accessible-tabs-pattern
-      description: Wants to make the Tabs UI Pattern accessible to assistive
-        technologies, by moving the tabpanel role and related ARIA
-        attributes from the article element to an inner container via
-        JavaScript nodes added to the OnReady and OnDestroy client actions,
-        in Service Studio, so that screen readers correctly associate tabs
-        with their panels, for OutSystems UI versions earlier than 2.29.0,
-        in mobile apps and reactive web apps (O11).
-    - name: Accessible Inline SVG pattern
-      id: accessible-inline-svg-pattern
-      description: Wants to make the Inline SVG UI Pattern accessible to
-        assistive technologies, by adding aria-hidden and focusable
-        attributes for decorative SVGs, a role and aria-label for
-        informative SVGs, or a role, tabindex, aria-label, and keyboard
-        event handlers for interactive SVGs, via a JavaScript node in the
-        Initialized client action, in Service Studio, so that the pattern
-        meets WCAG 2.2 AA accessibility requirements, in mobile apps and
-        reactive web apps (O11).
-  - name: Accessibility resources
-    id: accessibility-resources
-    description: Wants to find accessibility resources, tools, screen
-      readers, contrast checkers, and team practices for testing and
-      improving app accessibility, so they can validate accessibility work
-      and apply practical guidance.
-    subtopics:
-    - name: Test accessibility issues
-      id: test-accessibility-issues
-      description: Wants to identify and fix accessibility issues in an ODC
-        Studio screen with WAVE and Lighthouse, so they can confirm the
-        page has no accessibility errors after adding the missing title,
-        heading, language definition, and image alt text.
-  - name: Translating apps
-    id: translating-apps
-    subtopics:
-    - name: Migrate Multilingual
-      id: migrate-multilingual
-      description: Wants to migrate translations, clean up client-action logic
-        (GetLocale, SetLocale, GetTranslation, AddTranslations,
-        AddTranslationsFromResource), and remove the module dependency from
-        the deprecated Multilingual Forge component to the built-in
-        multilingual feature, in Service Studio for OutSystems 11, so that
-        the app's translations and logic keep working without the
-        unsupported Forge component.
-    - name: Use translation editor
-      id: use-translation-editor
-      description: Wants to open the translation editor in ODC Studio from the
-        Multilingual Locales folder, switch locale columns, search and filter
-        text, and review translation progress, so they can manage app
-        translations from one place.
-    - name: Export and import translations
-      id: export-import-translations
-      description: Wants to export translatable resources from an app to files,
-        import translated files back into the app, and understand the file
-        format ODC Studio uses for translation handoffs, so they can manage
-        translation files and keep app text up to date.
-    - name: Set text behavior
-      id: set-text-behavior
-      description: Wants to mark text as Translate, Don't translate, or Not
-        defined in the translation editor and understand which screen titles,
-        button labels, and screen text ODC Studio marks automatically as
-        translatable, so they can control how app text is exported and shown
-        in the UI.
-    - name: Enable RTL support
-      id: enable-rtl-support
-      description: Wants to enable right-to-left layout in an OutSystems 11 app by
-        setting the locale to an RTL language such as Arabic, so that the
-        platform automatically applies the is-rtl class and renders the UI
-        right to left without manual CSS injection.
-    - name: Fix RTL display
-      id: fix-rtl-display
-      description: Wants to fix right-to-left (RTL) languages displaying left-to-right in
-        apps, by creating a client action that adds or removes the CSS is-rtl
-        class based on the current locale and calling it from the OnRender
-        action of the Menu block used on all screens, in Service Studio for
-        OutSystems 11, until the official fix is applied.
-    - name: Use IsRTL action
-      id: use-isrtl-action
-      description: Wants to use the IsRTL action to branch screen logic based on
-        whether RTL is applied, including filling input parameters,
-        controlling container visibility, and driving If conditions and
-        client actions, so that the app adapts its content when the UI
-        switches between left-to-right and right-to-left.
+   - name: Implement accessibility features (screen readers, contrast...)
+     id: accessibility-screen-reader
+     subtopics:
+     - name: Generate HTML tags
+       id: generate-html-tags
+       description: Wants to generate semantic HTML tags (h1, nav, fieldset,
+         etc.) around UI elements for accessibility, using the HTML Element
+         widget's Tag property in Mobile/Reactive Web Apps or the OSTagName
+         Extended Property on Container/Placeholder widgets in Traditional Web
+         Apps, in Service Studio for O11, so the generated markup uses proper
+         semantic tags instead of generic span/div elements.
+     - name: ARIA roles overview
+       id: aria-roles-overview
+       description: Wants to understand ARIA roles, states, and properties in
+         OutSystems and when to use them without overriding native HTML
+         semantics, so they can add the right accessibility metadata to
+         widgets.
+     - name: Set ARIA attributes
+       id: set-aria-attributes
+       description: Wants to add ARIA roles and attributes as static values or
+         conditional expressions on widgets, and use SetAriaHidden or
+         SetAccessibilityRole when they need to hide content or change a
+         role, so assistive technology receives the correct state at runtime.
+     - name: Accessible labels
+       id: accessible-labels
+       description: Wants to create readable labels, status messages, and
+         hidden text with ARIA labels and hidden attributes, so screen
+         readers announce the right text for buttons, links, and other UI
+         elements.
+     - name: Accessible master detail
+       id: accessible-master-detail
+       description: Wants to make the Master Detail UI Pattern accessible to
+         assistive technologies, by mapping the list and detail content to
+         ARIA tabs roles (tablist/tab/tabpanel), aria-controls,
+         aria-labelledby, and tabindex attributes in Service Studio, so that
+         screen readers announce the relationship between selectable items
+         and the detail panel and keyboard users can navigate predictably, in
+         mobile apps and reactive web apps (O11).
+     - name: Accessible Alert pattern
+       id: accessible-alert-pattern
+       description: Wants to make the Alert UI Pattern accessible to assistive
+         technologies, by understanding its built-in ARIA role behavior (alert
+         for Error/Warning, status for Success/Info), changing the role with
+         the SetAccessibilityRole action, and toggling the aria-hidden
+         attribute with SetAriaHidden when showing or hiding the alert, in
+         Service Studio, so that the pattern meets WCAG 2.2 AA accessibility
+         requirements, in mobile apps and reactive web apps (O11).
+     - name: Accessible Notification pattern
+       id: accessible-notification-pattern
+       description: Wants to make the Notification UI Pattern accessible to
+         assistive technologies, by choosing between the alertdialog role
+         (for interactive notifications with buttons) and the alert role
+         with aria-live="assertive" (for non-interactive status messages),
+         and applying the correct ARIA attributes via a JavaScript node in
+         the Initialized client action when needed, in Service Studio, so
+         that the pattern meets WCAG 2.2 AA accessibility requirements, in
+         mobile apps and reactive web apps (O11).
+     - name: Table sort accessibility
+       id: table-sort-accessibility
+       description: Wants to make Table widget sorting accessible to screen readers
+         by enabling the WCAG 2.2 aria-sort attribute via Factory Configuration, and
+         to declare a non-default initial sort direction using the
+         default-sort-direction Extended Property on a Header Cell, in OutSystems 11,
+         so custom OnSort actions report the correct sort state.
+     - name: Accessible Card Background pattern
+       id: accessible-card-background-pattern
+       description: Wants to improve text contrast on the Card Background UI
+         Pattern by darkening the gradient mask applied to the lower half of
+         the card via custom theme CSS, in Service Studio, so that overlaid
+         text meets WCAG 2.2 AA contrast requirements (4.5:1 for normal text,
+         3:1 for large text) without altering the app's color palette, in
+         mobile apps and reactive web apps (O11).
+     - name: Accessible Tag pattern
+       id: accessible-tag-pattern
+       description: Wants to fix low-contrast color combinations on the Tag UI Pattern by
+         identifying the theme's low-contrast OutSystems UI colors and updating
+         the theme's CSS color variables in Service Studio, so that text and
+         background combinations meet WCAG 2.2 AA contrast requirements (4.5:1
+         for normal text, 3:1 for large text) without altering the app's color
+         palette, in mobile apps and reactive web apps (O11).
+     - name: Accessible Badge pattern
+       id: accessible-badge-pattern
+       description: Wants to fix low-contrast color combinations on the Badge UI
+         Pattern by identifying the theme's low-contrast OutSystems UI colors
+         and updating the theme's CSS color variables in Service Studio, so
+         that text and background combinations meet WCAG 2.2 AA contrast
+         requirements (4.5:1 for normal text, 3:1 for large text) without
+         altering the app's color palette, in mobile apps and reactive web
+         apps (O11).
+     - name: Accessible Animated Label pattern
+       id: accessible-animated-label-pattern
+       description: Wants to make the Animated Label UI Pattern accessible to
+         assistive technologies, by associating the Input widget with its
+         Label widget via the Label Properties' Input Widget dropdown, in
+         Service Studio, so that screen readers correctly announce the
+         input's purpose, meeting WCAG 2.2 AA accessibility requirements, in
+         mobile apps and reactive web apps (O11).
+     - name: Accessible Lightbox Image pattern
+       id: accessible-lightbox-image-pattern
+       description: Wants to make the Lightbox Image UI Pattern accessible to
+         assistive technologies, by providing a meaningful aria-label or alt
+         attribute for each image displayed within the lightbox dialog, in
+         Service Studio, so that screen readers announce an accessible name
+         for each image, meeting WCAG 2.2 AA Non-text Content (1.1.1) and
+         Name, Role, Value (4.1.2) requirements, in mobile apps and reactive
+         web apps (O11).
+     - name: Accessible Carousel
+       id: accessible-carousel-pattern
+       description: Wants to make the Carousel UI Pattern accessible to
+         assistive technologies by wrapping static content, images, and OutSystems
+         UI components in Containers, adding meaningful aria-label values to slide
+         containers, and keeping Image alt text on each image, so that screen
+         readers announce Carousel slides correctly in mobile apps and reactive
+         web apps (O11).
+     - name: Carousel WCAG fix
+       id: carousel-wcag-fix
+       description: Wants to update the Carousel UI Pattern for OutSystems UI by increasing
+         the pagination control target size, enclosing direct Image widgets in
+         Containers to prevent incorrect roles, and assigning list and listitem
+         roles to carousel lists in an OnReady client action, so that the pattern
+         meets WCAG 2.2 AA accessibility requirements in mobile apps and reactive
+         web apps (O11).
+     - name: Accessible Range Slider Interval
+       id: accessible-range-slider-interval-pattern
+       description: Wants to make the Range Slider Interval UI Pattern
+         accessible to assistive technologies, by adding a JavaScript node
+         to the OnReady client action that assigns distinct aria-label
+         attributes ("Lower value handle" and "Upper value handle") to each
+         .noUi-handle element, in Service Studio, so that screen readers can
+         distinguish between the lower and upper handles, meeting WCAG 2.2
+         AA accessibility requirements, in mobile apps and reactive web apps
+         (O11).
+     - name: Accessible Submenu pattern
+       id: accessible-submenu-pattern
+       description: Wants to increase the pointer target size of Submenu UI
+         Pattern headers, by adding a custom CSS rule (.osui-submenu__header)
+         that sets a minimum height and width of 24px in the theme's style
+         sheet, in Service Studio, so that the pattern meets WCAG 2.2 AA
+         accessibility requirements for touch and pointer target size, in
+         mobile apps and reactive web apps (O11).
+     - name: Accessible Breadcrumbs pattern
+       id: accessible-breadcrumbs-pattern
+       description: Wants to confirm the Breadcrumbs UI Pattern remains
+         accessible by relying on its default WCAG 2.2 AA-compliant behavior
+         and validating any custom changes in Service Studio for O11, so
+         that customized breadcrumbs continue to meet accessibility
+         requirements in mobile apps and reactive web apps.
+     - name: Accessible Wizard pattern
+       id: accessible-wizard-pattern
+       description: Wants to make the Wizard UI Pattern accessible to
+         assistive technologies, by removing redundant aria-label attributes
+         and hiding the icon wrapper from screen readers, assigning the
+         tabpanel role to each Wizard item when steps navigate between
+         panels, or setting aria-current="step" on the active item when the
+         Wizard is used as a progress tracker, via a JavaScript node in the
+         OnReady client action, in Service Studio, so that the pattern meets
+         WCAG 2.2 AA accessibility requirements, in mobile apps and reactive
+         web apps (O11).
+     - name: Accessible Counter pattern
+       id: accessible-counter-pattern
+       description: Wants to fix low-contrast color combinations on the Counter
+         UI Pattern by identifying the theme's low-contrast OutSystems UI
+         colors and updating the theme's CSS color variables in Service
+         Studio, so that text and background combinations meet WCAG 2.2 AA
+         contrast requirements (4.5:1 for normal text, 3:1 for large text)
+         without altering the app's color palette, in mobile apps and
+         reactive web apps (O11).
+     - name: Accessible Progress Circle pattern
+       id: accessible-progress-circle-pattern
+       description: Wants to make the Progress Circle UI Pattern accessible to
+         assistive technologies, by hiding the decorative circle with
+         aria-hidden="true" on an enclosing container and adding a
+         descriptive text alternative via an Expression widget styled with
+         the wcag-hide-text CSS class, in Service Studio, so that screen
+         readers announce accurate progress feedback, meeting WCAG 2.2 AA
+         accessibility requirements, in mobile apps and reactive web apps
+         (O11).
+     - name: Accessible Accordion
+       id: accessible-accordion-pattern
+       description: Wants to make the Accordion UI Pattern accessible to
+         assistive technologies when used with a List widget, by adding a
+         client action with a JavaScript node that assigns list and
+         listitem roles to the Accordion Item's list element via the
+         AccordionInitialized event, in Service Studio, so that screen
+         readers correctly announce list structure, meeting WCAG 2.2 AA
+         accessibility requirements, for OutSystems UI versions earlier
+         than 2.29.0, in mobile apps and reactive web apps (O11).
+     - name: Accessible Blank Slate pattern
+       id: accessible-blank-slate-pattern
+       description: Wants to make the Blank Slate UI Pattern accessible to
+         assistive technologies, by setting the correct ARIA role (region
+         for a static empty state, status for one that updates
+         dynamically) via a JavaScript node in the OnReady action, in
+         Service Studio, so that screen readers announce the pattern
+         correctly, meeting WCAG 2.2 AA accessibility requirements, for
+         OutSystems UI versions earlier than 2.29.0, in mobile apps and
+         reactive web apps (O11).
+     - name: Accessible User Avatar
+       id: accessible-user-avatar-pattern
+       description: Wants to make the User Avatar UI Pattern accessible to
+         assistive technologies, by adding a JavaScript node in the OnReady
+         client action to set an informative or empty alt attribute
+         depending on context, in Service Studio, so that the pattern
+         meets WCAG 2.2 AA accessibility requirements, for OutSystems UI
+         versions earlier than 2.29.0, in mobile apps and reactive web
+         apps (O11).
+     - name: Accessible User Avatar contrast
+       id: accessible-user-avatar-contrast
+       description: Wants to fix low-contrast color combinations on the
+         User Avatar UI Pattern by identifying the theme's low-contrast
+         OutSystems UI colors and updating the theme's CSS color
+         variables in Service Studio, so that text and background
+         combinations meet WCAG 2.2 AA contrast requirements (4.5:1 for
+         normal text, 3:1 for large text) without altering the app's
+         color palette, in mobile apps and reactive web apps (O11).
+     - name: Accessible Tooltip pattern
+       id: accessible-tooltip-pattern
+       description: Wants to make the Tooltip UI Pattern accessible to
+         assistive technologies, by configuring the Trigger property to
+         OnClick in Service Studio, so that the Tooltip opens automatically
+         on keyboard focus and closes with Esc, meeting WCAG 2.2 AA
+         accessibility requirements, in mobile apps and reactive web apps
+         (O11).
+     - name: Dropdown Tags NVDA behavior
+       id: dropdown-tags-nvda-esc
+       description: Wants to understand why NVDA screen reader users need to
+         press Esc twice to close the Dropdown Tags dropdown, since the first
+         Esc exits focus mode and the second collapses the control, so that
+         they can confirm this is expected behavior rather than a bug and
+         explain it to end users, in mobile apps and reactive web apps
+         (O11).
+     - name: Accessible Action Sheet pattern
+       id: accessible-action-sheet-pattern
+       description: Wants to make the Action Sheet UI Pattern accessible to
+         assistive technologies, by setting aria-expanded, aria-controls,
+         and aria-haspopup on the trigger button and removing the redundant
+         aria-expanded attribute from the Action Sheet container via a
+         JavaScript node in the OnRender client action, in Service Studio,
+         so that the pattern meets WCAG 2.2 AA accessibility requirements,
+         for OutSystems UI versions earlier than 2.29.0, in mobile apps and
+         reactive web apps (O11).
+     - name: Accessible Tabs pattern
+       id: accessible-tabs-pattern
+       description: Wants to make the Tabs UI Pattern accessible to assistive
+         technologies, by moving the tabpanel role and related ARIA
+         attributes from the article element to an inner container via
+         JavaScript nodes added to the OnReady and OnDestroy client actions,
+         in Service Studio, so that screen readers correctly associate tabs
+         with their panels, for OutSystems UI versions earlier than 2.29.0,
+         in mobile apps and reactive web apps (O11).
+     - name: Accessible Inline SVG pattern
+       id: accessible-inline-svg-pattern
+       description: Wants to make the Inline SVG UI Pattern accessible to
+         assistive technologies, by adding aria-hidden and focusable
+         attributes for decorative SVGs, a role and aria-label for
+         informative SVGs, or a role, tabindex, aria-label, and keyboard
+         event handlers for interactive SVGs, via a JavaScript node in the
+         Initialized client action, in Service Studio, so that the pattern
+         meets WCAG 2.2 AA accessibility requirements, in mobile apps and
+         reactive web apps (O11).
+   - name: Accessibility resources
+     id: accessibility-resources
+     description: Wants to find accessibility resources, tools, screen
+       readers, contrast checkers, and team practices for testing and
+       improving app accessibility, so they can validate accessibility work
+       and apply practical guidance.
+     subtopics:
+     - name: Test accessibility issues
+       id: test-accessibility-issues
+       description: Wants to identify and fix accessibility issues in an ODC
+         Studio screen with WAVE and Lighthouse, so they can confirm the
+         page has no accessibility errors after adding the missing title,
+         heading, language definition, and image alt text.
+   - name: Translating apps
+     id: translating-apps
+     subtopics:
+     - name: Migrate Multilingual
+       id: migrate-multilingual
+       description: Wants to migrate translations, clean up client-action logic
+         (GetLocale, SetLocale, GetTranslation, AddTranslations,
+         AddTranslationsFromResource), and remove the module dependency from
+         the deprecated Multilingual Forge component to the built-in
+         multilingual feature, in Service Studio for OutSystems 11, so that
+         the app's translations and logic keep working without the
+         unsupported Forge component.
+     - name: Use translation editor
+       id: use-translation-editor
+       description: Wants to open the translation editor in ODC Studio from the
+         Multilingual Locales folder, switch locale columns, search and filter
+         text, and review translation progress, so they can manage app
+         translations from one place.
+     - name: Export and import translations
+       id: export-import-translations
+       description: Wants to export translatable resources from an app to files,
+         import translated files back into the app, and understand the file
+         format ODC Studio uses for translation handoffs, so they can manage
+         translation files and keep app text up to date.
+     - name: Set text behavior
+       id: set-text-behavior
+       description: Wants to mark text as Translate, Don't translate, or Not
+         defined in the translation editor and understand which screen titles,
+         button labels, and screen text ODC Studio marks automatically as
+         translatable, so they can control how app text is exported and shown
+         in the UI.
+     - name: Enable RTL support
+       id: enable-rtl-support
+       description: Wants to enable right-to-left layout in an OutSystems 11 app by
+         setting the locale to an RTL language such as Arabic, so that the
+         platform automatically applies the is-rtl class and renders the UI
+         right to left without manual CSS injection.
+     - name: Fix RTL display
+       id: fix-rtl-display
+       description: Wants to fix right-to-left (RTL) languages displaying left-to-right in
+         apps, by creating a client action that adds or removes the CSS is-rtl
+         class based on the current locale and calling it from the OnRender
+         action of the Menu block used on all screens, in Service Studio for
+         OutSystems 11, until the official fix is applied.
+     - name: Use IsRTL action
+       id: use-isrtl-action
+       description: Wants to use the IsRTL action to branch screen logic based on
+         whether RTL is applied, including filling input parameters,
+         controlling container visibility, and driving If conditions and
+         client actions, so that the app adapts its content when the UI
+         switches between left-to-right and right-to-left.
 - name: Advanced app architecture
   guid: d59b4004-582f-44ee-a1ae-eb75787ba1e0
   topics:
@@ -6114,6 +6139,12 @@ knowledge-needs:
         email address using the EmailAddressValidate built-in function, which
         follows the HTML5 email validation spec, in Service Studio for O11, so
         that they can validate user input before using it in email operations.
+    - name: Create email address
+      id: create-email-address
+      description: Wants to build a full email address string from a display
+        name and email address by using the EmailAddressCreate built-in
+        function in Service Studio for O11, so that the result can be passed to
+        Send Email elements or activities.
     - name: Email link variable
       id: email-link-variable
       description: Wants to generate a direct link to a specific record by building

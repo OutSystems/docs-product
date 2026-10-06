@@ -22,7 +22,9 @@ coverage-type:
   - understand
   - evaluate
 topic:
-  - scale-development-strategy
+  - complex-mobile-sync
+  - structure-mobile-modules
+  - theme-inheritance
 ---
 
 # Best practices with multiple teams

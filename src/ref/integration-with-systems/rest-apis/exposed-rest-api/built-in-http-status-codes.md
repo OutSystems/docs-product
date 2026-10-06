@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - error-codes
+  - http-status-codes
 ---
 
 # Built-in HTTP Status Codes

@@ -16,7 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - define-methods
+  - expose-rest-api
+  - rest-api-method-flow
 isautopublish: true
 ---
 

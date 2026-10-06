@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - how-to-use-variables
+  - variable-basics
 ---
 
 # Variables

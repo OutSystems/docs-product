@@ -18,7 +18,8 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - write-expressions-guide
+  - expression-widget-reference
+  - use-expression-widget
 ---
 
 # Expression

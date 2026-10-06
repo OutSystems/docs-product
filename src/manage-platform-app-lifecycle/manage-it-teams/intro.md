@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - it-user-management-in-lt
+  - manage-it-users
 ---
 
 # Manage IT Users

@@ -13,7 +13,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - operands
+  - expression-operands
 ---
 
 # Operands

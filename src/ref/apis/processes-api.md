@@ -18,7 +18,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - extend-processes-entities
+  - process-api-entities
 ---
 
 # Processes API

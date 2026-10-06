@@ -16,8 +16,8 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - server-actions-when-use
-  - server-vs-client-logic
+  - action-properties-reference
+  - server-action-exposure
 ---
 
 # Server Action

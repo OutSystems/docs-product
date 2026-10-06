@@ -19,7 +19,9 @@ coverage-type:
   - understand
   - evaluate
 topic:
-  - scale-development-strategy
+  - architecture-canvas
+  - module-naming-by-layer
+  - structure-mobile-modules
 ---
 
 # Best practices for mobile architecture

@@ -20,7 +20,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - how-to-send-emails
+  - configure-smtp-authentication
+  - configure-smtp-server-o11
+  - email-test-list
 ---
 
 # Configure OutSystems to Send Emails

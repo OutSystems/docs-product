@@ -16,7 +16,8 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - operators
+  - access-list-items
+  - expression-operators
 ---
 
 # Operators

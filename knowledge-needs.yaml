@@ -397,6 +397,11 @@ knowledge-needs:
         including their parameters, return types, and availability in server-
         side logic, client-side logic, database aggregates, and Local Storage,
         so that they can perform date and time calculations in expressions.
+    - name: Oracle diff limits
+      id: oracle-diff-limits
+      description: Wants to understand the maximum interval lengths Oracle
+        allows for DiffMinutes and DiffSeconds, so they can predict the limit
+        on Oracle date and time difference calculations.
     - name: DST date calculations
       id: dst-date-calculations
       description: Wants to understand how Daylight Saving Time (DST) transitions
@@ -1515,6 +1520,12 @@ knowledge-needs:
       description: Wants to create an aggregate to fetch data from the database
         using the Search field or drag-and-drop entity placement in the
         Aggregate editor, so a screen can display the records it needs.
+    - name: Human language fetch
+      id: human-language-fetch
+      description: Wants to fetch data by entering a human-language request in
+        ODC Studio, so the platform generates an Aggregate and they can
+        validate the returned records when they need data without building the
+        query manually.
     - name: Advanced aggregate queries
       id: advanced-aggregate-queries
       description: Wants to understand how advanced aggregates query data with
@@ -2060,6 +2071,17 @@ knowledge-needs:
         installation, inbound traffic setup, and final portal configuration,
         so that they can plan and follow the installation in the correct
         order.
+    - name: Self-hosted system requirements
+      id: self-hosted-system-requirements
+      description: Wants to identify the Kubernetes, storage, PostgreSQL,
+        identity provider, APM, registry, and load balancer requirements for a
+        self-hosted ODC installation, so they can prepare the cluster before
+        setup.
+    - name: Self-hosted network requirements
+      id: self-hosted-network-requirements
+      description: Wants to identify the outbound and inbound connectivity,
+        ports, and endpoints required for a self-hosted ODC installation, so
+        they can configure networking before setup.
   - name: Data Fabric data handling
     id: data-fabric-data-handling
     description: Wants to understand how Data Fabric handles customer data
@@ -2552,6 +2574,12 @@ knowledge-needs:
       description: Wants to isolate large text and binary fields from
         frequently accessed data, so routine database queries transfer less
         data.
+    - name: Optimize entity data
+      id: optimize-entity-data
+      description: Wants to improve entity performance by choosing useful
+        indexes and isolating large text or binary fields from frequently
+        accessed data when query speed drops, so database access stays
+        efficient.
     - name: Avoid cross-server database joins
       id: avoid-cross-server-database-joins
       description: Wants to avoid joins across database servers when designing
@@ -2574,6 +2602,12 @@ knowledge-needs:
       description: Wants to know whether OutSystems supports read-only replica
         routing when evaluating database scaling options for OutSystems
         applications.
+    - name: Manage large data volumes
+      id: manage-large-data-volumes
+      description: Wants to manage large data volumes by using data purging,
+        data archiving, and batch processing when data growth or run size
+        threatens performance or execution limits, so processing stays
+        within platform limits.
     - name: Data archiving overview
       id: data-archiving-overview
       description: Wants to plan a data archiving strategy by understanding what
@@ -2762,6 +2796,31 @@ knowledge-needs:
         Portal, select a supported provider, and reference the external
         entities in an app, so they can use external database data in ODC
         Studio.
+    - name: Azure SQL connections
+      id: azure-sql-connections
+      description: Wants to configure an Azure SQL connection in ODC Portal,
+        including the username format and additional parameters for managed
+        and non-managed instances and Microsoft Entra ID service principal
+        authentication, so the connector works with Azure SQL databases and
+        respects Private Gateway limitations.
+    - name: Salesforce considerations
+      id: salesforce-considerations
+      description: Wants to understand Salesforce connection considerations in
+        ODC, including API names, data type mapping, null and whitespace
+        handling, case sensitivity, and query performance, so they can work
+        with Salesforce entities correctly.
+    - name: SAP OData considerations
+      id: sap-odata-considerations
+      description: Wants to understand SAP OData connection considerations in
+        ODC, including pagination and query performance, null and empty value
+        handling, entity actions, composite keys, and computed attributes, so
+        they can work with SAP OData entities correctly.
+    - name: PostgreSQL empty text
+      id: postgresql-empty-text
+      description: Wants to understand how PostgreSQL connections handle empty
+        text values when nulls are overwritten with default values, including
+        which data types are affected and which fallback values to set, so
+        they can avoid unexpected stored values.
     - name: Query external data
       id: query-external-data
       description: Wants to query external data in ODC by creating an
@@ -5032,6 +5091,12 @@ knowledge-needs:
         organize them into folders, and review their properties, including
         secret and default-value behavior, so they can manage app settings
         correctly.
+    - name: Store app settings
+      id: store-app-settings
+      description: Wants to store persistent app configuration in settings
+        when values change by deployment stage or need read-only runtime
+        access, so that configuration stays centralized and editable in the
+        portal.
     - name: Edit app setting values
       id: edit-app-setting-values
       description: Wants to view and edit app setting default values in the
@@ -5608,6 +5673,22 @@ knowledge-needs:
         chaining execution to continue processing when more records remain, and data
         integrity), so that the Timer never aborts due to timeout and all records are
         eventually processed without data corruption or repeated work.
+    - name: Choose batch approach
+      id: choose-batch-processing-approach
+      description: Wants to compare sequential and parallel batch processing, and choose
+        the approach that fits the workload, when the work must finish within a time
+        window and the records are independent.
+    - name: Track batch progress
+      id: track-batch-progress
+      description: Wants to track pending and completed records in a batch integration
+        with control columns, so that interrupted runs resume without reprocessing
+        records that already completed.
+    - name: Batch chunk orchestration
+      id: batch-chunk-orchestration
+      description: Wants to implement parallel batch integration in ODC by
+        splitting pending records into non-overlapping chunks, tracking each
+        chunk's state, and using a Timer plus Events to keep concurrency topped
+        up, so that large independent datasets finish safely and resumably.
     - name: Configure timer settings (ODC)
       id: configure-timer-settings-odc
       description: Wants to configure a Timer's schedule, timeout, and active flag in ODC
@@ -9450,6 +9531,12 @@ knowledge-needs:
         length and becomes a permanent, read-only record reviewable via App >
         View revisions, so that their team can track the intent behind each
         revision.
+    - name: ODC revision basics
+      id: odc-revision-basics
+      description: Wants to understand what an ODC revision is, that each revision is an
+        immutable whole-number snapshot whose source code stays fixed, and how apps,
+        libraries, and workflows handle revisions and builds differently, so that they
+        can reason about publishing and deployment.
     - name: IPP protection concept
       id: ipp-protection-concept
       description: Wants to understand what Intellectual Property Protection

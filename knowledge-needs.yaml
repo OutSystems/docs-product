@@ -1045,6 +1045,11 @@ knowledge-needs:
         both start running when the screen initializes and render the screen
         automatically when data arrives, so that they can display the results on
         the screen.
+    - name: Show fetched data
+      id: show-fetched-data
+      description: Wants to show data fetched from an Integration Builder data
+        action in a table, list, gallery, expression, or image widget, so
+        users can see external system records on the screen.
     - name: Header row widget behavior
       id: header-row-widget-behavior
       description: Wants to understand how the Header Row Widget automatically
@@ -2115,6 +2120,13 @@ knowledge-needs:
         they can track transaction state, emit compensation events, and
         recover consistent state after failure callbacks or exception
         flows.
+  - name: SOA architecture
+    id: soa-architecture
+    description: Wants to structure an OutSystems service-oriented architecture into external API, core services, and integration services layers when they need to expose shared business logic to multiple consumers and keep external systems isolated.
+    subtopics:
+    - name: Microservices deployment
+      id: microservices-deployment
+      description: Wants to decide when to keep microservices in the same infrastructure or split them into separate infrastructures, including how to isolate them with separate DB Catalogs and how central services fit multiple subsidiaries, so they can scale each service independently without tight coupling.
   - name: ODC Events
     id: odc-events
     subtopics:
@@ -4025,6 +4037,18 @@ knowledge-needs:
       description: Wants to use the Security library to protect data
         confidentiality, so that an app can encrypt and decrypt sensitive
         information in ODC.
+    - name: Use Cryptography Services
+      id: use-cryptography-services
+      description: Wants to use the Cryptography Services app in the OutSystems
+        Cloud HIPAA offering to encrypt and decrypt PHI through AWS Key
+        Management Service, so that the app keeps key management outside the
+        module.
+    - name: Choose encryption type
+      id: choose-encryption-type
+      description: Wants to choose between searchable and unsearchable
+        attribute encryption in the Cryptography Services app, so that
+        searchable data uses predictable encryption and unsearchable data uses
+        salted encryption with key rotation.
     - name: Create decryption action
       id: create-decryption-action
       description: Wants to create a decryption action in OutSystems 11 for
@@ -13802,6 +13826,9 @@ knowledge-needs:
   - name: Offline Synch
     id: offline-synch
     subtopics:
+    - name: Offline sync overview
+      id: offline-sync-overview
+      description: Wants to understand the common offline data sync patterns for mobile apps and download the sample module set, so they can explore the implementation examples before choosing a pattern.
     - name: Basic read-only sync
       id: basic-read-only-sync
       description: Wants to understand how the basic Read-Only Data

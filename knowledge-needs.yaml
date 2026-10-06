@@ -1458,6 +1458,9 @@ knowledge-needs:
         Service Studio by introducing a junction entity with the necessary
         foreign keys and any extra attributes, so that each record can relate to
         multiple records on both sides.
+    - name: Data relationships overview
+      id: data-relationships-overview
+      description: Wants to understand how entities, aggregates, and forms work together when modeling related data in OutSystems 11 web apps, so they can design the right relationship structure before building screens and queries.
   - name: Querying data
     id: querying-data
     subtopics:
@@ -4536,7 +4539,7 @@ knowledge-needs:
         adding parallel branches in ODC's Workflow editor, so that
         independent activities execute at the same time.
     - name: Add human activity
-      id: add-human-activity
+      id: add-human-activity-odc
       description: Wants to add a Human activity to an ODC workflow in the
         Workflow editor, configuring assignment, destination screen, display
         message, close conditions, and timeout so the workflow can pause for
@@ -5330,6 +5333,15 @@ knowledge-needs:
     - name: Canvas overview
       id: canvas-overview
       description: Wants to understand the Architecture Canvas framework in OutSystems, including its foundation, core, and end-user layers and its benefits for reusable services and lifecycle independence, so they can design application architecture with it.
+    - name: Foundation layer elements
+      id: foundation-layer-elements
+      description: Wants to identify which data, logic, and interface elements belong in Foundation layer modules, so they can place reusable integrations, exception handling, authentication, session logic, shared roles, and reusable UI patterns in the Foundation layer.
+    - name: Core layer elements
+      id: core-layer-elements
+      description: Wants to identify which data, logic, interface, and process elements belong in Core layer modules, so they can place core entities, CRUD actions, business blocks, integration logic, and asynchronous processing in the Core layer.
+    - name: End-user layer elements
+      id: end-user-layer-elements
+      description: Wants to identify which data, logic, interface, and process elements belong in End-user layer modules, so they can place temporary data, role-based UI, local business logic, and workflows in the End-user layer.
     - name: Concept granularity
       id: concept-granularity
       description: Wants to translate business concepts into application modules by choosing a granularity that keeps each module manageable and splits concepts when they are too complex, need independent life cycles, or require service isolation, so they can apply the Architecture Canvas recommendations.
@@ -6243,6 +6255,11 @@ knowledge-needs:
     - name: Process extended actions
       id: process-extended-actions
       description: Wants to use Process Extended Actions and Process Activities Extended Actions from the Processes layer in Service Studio to launch a process or close a process activity, and to pass input and output parameters when invoking them, in OutSystems 11, so that they can control process execution from an action flow.
+    - name: Use BPT actions
+      id: use-bpt-actions
+      description: Wants to use built-in system actions and the BPT API extension in
+        OutSystems 11 to manage process activity instances from an action flow, so
+        they can control BPT execution.
     - name: Define process entities
       id: define-process-entities
       description: Wants to understand what a Process Entity represents in
@@ -6321,6 +6338,14 @@ knowledge-needs:
         suspension and checking active instances via BAM, Service Center, or
         the platform database, so that they can safely remove deprecated
         activities without suspending running processes.
+    - name: Automatic activity overview
+      id: automatic-activity-overview
+      description: Wants to understand what an Automatic Activity is in
+        OutSystems 11 BPT processes, including how it runs logic without
+        human intervention, can start immediately or at a specific date and
+        time, and exposes a server action flow with outputs, local variables,
+        and access to process inputs and previous activity outputs, so they can
+        recognize how it behaves inside a process.
     - name: Automatic activity errors
       id: automatic-activity-errors
       description: Wants to understand how errors are handled in an Automatic
@@ -13756,6 +13781,18 @@ knowledge-needs:
         underlying database entity and local storage entity data model, so
         that they can implement one-way (server-to-device) sync for read-only
         offline data.
+    - name: Read-only sync accelerator
+      id: read-only-sync-accelerator
+      description: Wants to use the Read-Only Data Sync Accelerator to set up
+        one-way server-to-device synchronization for a mobile app without
+        allowing client writes, so they can configure read-only offline data
+        access in OutSystems 11.
+    - name: RW sync accelerator
+      id: rw-sync-accelerator
+      description: Wants to use the Read/Write Data Sync Accelerator to set up
+        bidirectional mobile app data synchronization, so they can scaffold
+        the sync actions and metadata needed for a last-write-wins offline
+        data pattern in OutSystems 11.
     - name: Generate sync action
       id: generate-sync-action
       description: Wants to automatically generate the client and server
@@ -17714,6 +17751,13 @@ knowledge-needs:
     description: Wants to understand what business processes are, why organizations
       use them, and common examples such as approval and support flows, so that they
       can recognize process-driven work in an organization.
+    subtopics:
+    - name: Add BPT human activity
+      id: add-human-activity-o11
+      description: Wants to add a Human activity to an OutSystems 11 business
+        process in Service Studio when the process needs manual user input, so
+        that the process pauses, assigns work to a user, and creates a Taskbox
+        item to continue the workflow.
   - name: Process decision patterns
     id: process-decision-patterns
     description: Wants to understand when to use Business Process Technology,

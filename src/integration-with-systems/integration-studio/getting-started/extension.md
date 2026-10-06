@@ -14,8 +14,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - legacy-systems-integration
-  - custom-code-integration
+  - define-extension-elements
 ---
 
 # Extensions

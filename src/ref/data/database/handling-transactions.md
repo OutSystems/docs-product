@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - data-isolation
+  - database-transactions
 ---
 
 # Handling transactions

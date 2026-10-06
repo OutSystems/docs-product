@@ -15,8 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - add-module-dependency
   - manage-sample-data
+  - service-studio-manage-dependencies
 ---
 
 # Sample data

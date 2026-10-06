@@ -20,7 +20,9 @@ coverage-type:
   - apply
   - remember
 topic:
-  - sentiment-analysis
+  - analyze-sentiment
+  - set-up-language-analysis
+  - use-language-analysis
 ---
 
 # Use the AI Language Analysis component in your OutSystems apps

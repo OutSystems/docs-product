@@ -17,8 +17,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - webservice-authentication
-  - rest-webservice-data
+  - jwt-rest-authentication
+  - manage-token-lifecycle
+  - protect-access-tokens
 helpids: 
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=4115-265
 ---

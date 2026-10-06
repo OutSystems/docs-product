@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - consume-refresh-methods
+  - generated-rest-structures
 ---
 
 # Mapping REST Data Types to OutSystems Data Types

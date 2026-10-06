@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - unblock
 topic:
-  - add-module-dependency
+  - modified-or-missing-reference-warning
 ---
 
 # Missing Dependency Warning

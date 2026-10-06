@@ -15,9 +15,9 @@ coverage-type:
   - remember
   - apply
 topic:
-  - aggregates
-  - create-screen-scratch
-  - how-to-create-an-action
+  - actions-and-functions
+  - create-aggregate
+  - create-screen
 ---
 
 # Developer cheat sheet

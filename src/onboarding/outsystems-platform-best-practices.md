@@ -21,7 +21,9 @@ outsystems-tools:
 coverage-type:
   - evaluate
 topic:
-  - scale-development-strategy
+  - application-code-structure-practices
+  - application-database-usage-practices
+  - logic-performance-tips
 ---
 
 # OutSystems Platform Best Practices

@@ -24,7 +24,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - deployments-api-automation
+  - lifetime-api-reference
 api-render: true
 ---
 

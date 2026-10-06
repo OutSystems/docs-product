@@ -16,7 +16,7 @@ coverage-type:
   - remember
   - apply
 topic:
-  - deployments-api-automation
+  - deploy-app-via-lifetime-api
 ---
 
 # Deploy an Application using the LifeTime API

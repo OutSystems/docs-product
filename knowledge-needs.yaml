@@ -5365,6 +5365,14 @@ knowledge-needs:
         Library module in OutSystems 11, including resolving disallowed elements
         and TrueChange errors before conversion, so that the module publishes
         successfully as a Library.
+    - name: Convert to service
+      id: convert-to-service
+      description: Wants to convert Web or Mobile modules, Server Actions, and
+        Web or Mobile applications to Services in Service Studio, including
+        removing disallowed elements, moving logic to the Service Actions
+        folder, updating consumer modules, and confirming irreversible
+        application conversion, so they can refactor existing assets into
+        Services safely.
   - name: Validating your application architecture
     id: validate-app-architecture
     subtopics:
@@ -6207,6 +6215,16 @@ knowledge-needs:
         compose dynamic content with input parameters, widgets, Preparation
         logic, and file attachments, and send it with the Send Email tool, so
         that the app delivers customized emails.
+    - name: Prevent email clipping
+      id: prevent-email-clipping
+      description: Wants to prevent email content from being clipped in email
+        readers by using a blank or dedicated email Theme and reducing extra CSS
+        and content size, so that the full message renders.
+    - name: Create email templates
+      id: create-email-templates
+      description: Wants to create and reuse email templates by installing
+        template components from Forge or building their own email templates, so
+        that email design stays consistent and development is faster.
     - name: App email sending
       id: app-email-sending
       description: Wants to create emails in Reactive and Mobile apps, define
@@ -6294,6 +6312,11 @@ knowledge-needs:
       description: Wants to understand what Business Process Technology is, how a BPT
         process runs in the background, and which core flow elements it uses, so they
         can recognize the main building blocks before modeling a process.
+    - name: BPMN notation mapping
+      id: bpmn-notation-mapping
+      description: Wants to map BPMN 1.2 events, tasks, gateways, and sub-processes to
+        their OutSystems 11 BPT equivalents, so they can recognize the right process
+        element while modeling a process from BPMN.
     - name: Create BPT process
       id: create-bpt-process
       description: Wants to create a BPT process in Service Studio and start defining the process flow, so they can automate tasks and track work in their application.
@@ -6325,6 +6348,11 @@ knowledge-needs:
       description: Wants to understand what a Process Entity represents in
         OutSystems 11, so that they can use process-specific data in application
         logic.
+    - name: Process entity attributes
+      id: process-entity-attributes
+      description: Wants to understand the fixed and dynamic attributes of a
+        Process Entity in OutSystems 11, so they can use process-specific data
+        and input parameters in application logic.
     - name: Scale process queries
       id: scale-process-queries
       description: Wants to store essential process runtime data in a custom
@@ -6377,6 +6405,11 @@ knowledge-needs:
         Flow editor after creating a process, selecting tools from the Process
         Flow Toolbox to be executed in the flow, so that the process's logic is
         defined.
+    - name: Split process flow
+      id: split-process-flow
+      description: Wants to split a BPT process flow into smaller subprocesses
+        and execute them from the main flow when too many activities make
+        deployment and upgrades slower, so that deployment impact stays lower.
     - name: Process upgrade impact
       id: process-upgrade-activity-impact
       description: Wants to understand how moving activities in a process flow

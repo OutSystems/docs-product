@@ -16,7 +16,8 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - server-vs-client-logic
+  - action-properties-reference
+  - screen-level-actions
 ---
 
 # Screen Action

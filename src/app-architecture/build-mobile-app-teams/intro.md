@@ -19,7 +19,7 @@ coverage-type:
   - understand
   - evaluate
 topic:
-  - scale-development-strategy
+  - multi-team-mobile-apps
 ---
 
 # Building mobile apps with multiple independent teams

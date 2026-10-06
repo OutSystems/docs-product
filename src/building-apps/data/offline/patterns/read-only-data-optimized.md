@@ -18,8 +18,8 @@ coverage-type:
   - understand
   - apply
 topic:
-  - data-syncronization
   - offline-synch
+  - read-only-sync-pattern
 ---
 
 # Read-Only Data Optimized

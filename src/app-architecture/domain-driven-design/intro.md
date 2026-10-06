@@ -17,8 +17,7 @@ coverage-type:
   - evaluate
   - understand
 topic:
-  - domain-driven-design
-  - good-architecture-value
+  - decide-when-to-adopt-ddd
 ---
 
 # OutSystems Domain Driven Architecture

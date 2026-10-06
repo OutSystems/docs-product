@@ -20,7 +20,7 @@ coverage-type:
   - evaluate
   - understand
 topic:
-  - acls
+  - acl-based-data-access
 ---
 
 # Use Access Control List to set up permission-based access to data

@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - functions
+  - built-in-function-groups
 ---
 
 # Built-in Functions

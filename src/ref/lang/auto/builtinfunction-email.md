@@ -15,7 +15,7 @@ coverage-type:
   - remember
 topic:
   - concatenate-email-addresses
-  - how-to-create-emails
+  - create-email-address
   - validate-email-address
 ---
 

@@ -18,8 +18,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - data-syncronization
-  - offline-synch
+  - sync-actions-procedure
+  - sync-conflict-avoidance
+  - sync-status-feedback-events
 ---
 
 # Offline Sync Checklist

@@ -18,7 +18,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - edit-data-service-studio
+  - edit-entity-data
 ---
 
 # Edit data while developing

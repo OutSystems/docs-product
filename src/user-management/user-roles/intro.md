@@ -23,8 +23,9 @@ coverage-type:
   - remember
   - apply
 topic:
-  - app-roles
-  - anonymous
+  - access-control-overview-o11
+  - set-role-persistence
+  - user-role-metamodel
 ---
 
 # User Roles

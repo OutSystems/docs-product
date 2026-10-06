@@ -2517,6 +2517,11 @@ knowledge-needs:
       description: Wants to create a custom INSERT SQL query in the ODC SQL Tool
         to add records in bulk to an entity, so they can populate data with a
         data-changing SQL node.
+    - name: Custom delete query
+      id: custom-delete-query
+      description: Wants to create a custom DELETE SQL query in Service
+        Studio's SQL node to remove records from a table, so they can delete
+        data with a data-changing SQL node.
     - name: Non-select query setup
       id: non-select-query-setup
       description: Wants to configure an ODC SQL Tool non-SELECT query with an
@@ -4570,10 +4575,9 @@ knowledge-needs:
         that they can choose the right component for each step.
     - name: Add decision activity
       id: add-decision-activity
-      description: Wants to add a Decision activity to an ODC workflow, defining
-        conditions on the outcomes to route execution down different paths
-        based on data values, in ODC's Workflow editor, so that the workflow
-        follows the correct path for each case.
+      description: Wants to add a Decision activity or node to a workflow,
+        define its outgoing conditions, and route execution based on data values,
+        so that each case follows the correct path.
     - name: Add automatic activity
       id: add-automatic-activity
       description: Wants to add an Automatic activity to an ODC workflow in the
@@ -4626,9 +4630,9 @@ knowledge-needs:
         a person can complete a required task before the workflow continues.
     - name: Add wait activity
       id: add-wait-activity
-      description: Wants to add a Wait activity to an ODC workflow in the
-        Workflow editor and configure its close event, conditions, and
-        timeout so the workflow pauses until the wait ends.
+      description: Wants to add and configure a Wait activity in a workflow,
+        including its close event, conditions, and timeout, so the workflow
+        pauses until the wait ends.
     - name: Close wait activity
       id: close-wait-activity
       description: Wants to close a Wait activity from an action flow by
@@ -6335,6 +6339,12 @@ knowledge-needs:
     - name: Activity callbacks
       id: bpt-activity-callbacks
       description: Wants to understand how Human Activity and Wait Activity callbacks run in an OutSystems 11 BPT process, including when On Ready, On Open, On Close, and On Skip fire and that Automatic activities do not use callbacks, so they can place activity logic in the right callback.
+    - name: Configure human activity
+      id: configure-human-activity
+      description: Wants to configure a Human activity in an OutSystems 11 BPT
+        process, setting end-user text, due date, start date, user access,
+        destination screen, skippable behavior, and automatic close behavior,
+        so that the task behaves as intended.
     - name: Process extended actions
       id: process-extended-actions
       description: Wants to use Process Extended Actions and Process Activities Extended Actions from the Processes layer in Service Studio to launch a process or close a process activity, and to pass input and output parameters when invoking them, in OutSystems 11, so that they can control process execution from an action flow.
@@ -6506,6 +6516,11 @@ knowledge-needs:
         tasks, instructions, and actions for end users in Reactive and
         Traditional Web Apps, in OutSystems 11, so that they know where users
         interact with pending process tasks.
+    - name: Pick taskbox task
+      id: pick-taskbox-task
+      description: Wants to open a task assigned to them in the Taskbox in an
+        OutSystems 11 BPT process, when the human activity appears there, so
+        that they can review the task and continue the workflow.
     - name: Reactive taskbox setup
       id: reactive-taskbox-setup
       description: Wants to install the Sample Reactive Taskbox component,
@@ -19984,6 +19999,11 @@ knowledge-needs:
       description: Wants to inspect, test, and troubleshoot JavaScript code in
         the browser console while debugging an OutSystems 11 app, so they can
         validate behavior and diagnose issues directly in the browser.
+    - name: Browser CSS debugging
+      id: browser-css-debugging
+      description: Wants to inspect and debug CSS styles applied to an
+        OutSystems 11 app's front-end with browser tools, so they can
+        diagnose styling issues in the browser.
     - name: Browser-first debugging
       id: browser-first-debugging
       description: Wants to troubleshoot a Mobile App faster by first trying

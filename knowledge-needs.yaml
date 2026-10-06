@@ -83,6 +83,9 @@ knowledge-needs:
     - name: Server action exposure
       id: server-action-exposure
       description: 'Wants to determine when a server action can be exposed, based on whether it is defined in an App or is a Library action that uses a parameter defined with a non-exposed static entity, so they can expose only valid server actions.'
+    - name: Client action exposure
+      id: client-action-exposure
+      description: Wants to determine when a client action can be exposed, based on whether its parameters use exposed entities or structures and whether producer and consumer modules run under different user providers, so they can expose only valid client actions.
     - name: Use AI logic suggestions
       id: use-ai-logic-suggestions
       description: Wants to understand what logic suggestions are and how to use
@@ -476,6 +479,11 @@ knowledge-needs:
         aggregates, so that they can generate passwords, evaluate conditional
         expressions, detect screen loading state, and check for a mobile
         theme in expressions.
+    - name: Built-in function groups
+      id: built-in-function-groups
+      description: Wants to know which built-in function groups are available
+        in OutSystems 11, so they can choose the right category in business
+        logic.
     - name: Use expression editor
       id: use-expression-editor
       description: Wants to open Service Studio's expression editor from an expression
@@ -559,6 +567,11 @@ knowledge-needs:
         action to store an input value and filter an aggregate, so that the
         value remains available only within its parent scope and is destroyed
         when execution leaves that scope.
+    - name: Variable basics
+      id: variable-basics
+      description: Wants to understand what variables store and where their
+        values are available in an app, so they can choose the right place to
+        keep data.
     - name: Runtime property fields
       id: runtime-property-fields
       description: Wants to look up the configurable properties of a Runtime Property
@@ -2776,6 +2789,9 @@ knowledge-needs:
         creating a User Exception, adding a Raise Error element, and setting a
         custom HTTP status code when the method needs to return a custom error
         message instead of a built-in error.
+    - name: HTTP status codes
+      id: http-status-codes
+      description: Wants to identify the built-in HTTP status codes that exposed REST API methods return, and use SetStatusCode to set a custom code when the default response is not enough, so they can predict and control REST responses.
     - name: New API version
       id: new-api-version
       description: Wants to create a new REST API version when changing an
@@ -6232,6 +6248,17 @@ knowledge-needs:
       description: Wants to understand what a Process Entity represents in
         OutSystems 11, so that they can use process-specific data in application
         logic.
+    - name: Scale process queries
+      id: scale-process-queries
+      description: Wants to store essential process runtime data in a custom
+        entity and populate it with process callbacks when native process
+        entity queries become slow at high volumes, so that reports stay
+        scalable.
+    - name: Process API entities
+      id: process-api-entities
+      description: Wants to use the Processes API to identify the system entities
+        that store process definitions, runtime data, and status codes so they
+        can customize process-related data access in OutSystems 11.
     - name: Expose process entity property
       id: expose-process-entity-property
       description: Wants to expose a process's Process Entity property in

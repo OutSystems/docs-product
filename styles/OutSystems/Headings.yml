@@ -45,6 +45,8 @@ exceptions:
   - UsersIdP
   - Build Operations API
   - Dependency Management API
+  - Enterprise Context Graph
+  - Mentor Agent
   - Data
   - Call Agent
   - StoreMemory
@@ -292,9 +294,13 @@ exceptions:
   - IBM
   - GPT-4o
   - Claude 3.7 Sonnet
+  - Claude Desktop
   - Claude Haiku 4.5
   - Amazon Nova Pro
   - Chrome DevTools
+  - Cursor
+  - GitHub Copilot
+  - AWS Kiro
   - Microsoft Visual Studio
   - Visual Studio Code
   - .NET

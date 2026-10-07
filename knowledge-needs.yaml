@@ -1238,6 +1238,9 @@ knowledge-needs:
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
+    - name: Delete rule options
+      id: delete-rule-options
+      description: Wants to understand how the Delete Rule property affects referential integrity in an entity relationship, so they can choose between Protect, Delete, and Ignore.
     - name: Database entities
       id: database-entities
       description: Wants to understand how database entities store app data and connect to aggregates, forms, and widgets in web apps, so they can use entities correctly in OutSystems 11 applications.
@@ -2795,6 +2798,12 @@ knowledge-needs:
         on query conditions, join usage, and data sparsity, in OutSystems
         11, so that query performance improves without excessively slowing
         down inserts and updates.
+    - name: Understand entity indexes
+      id: understand-entity-indexes
+      description: Wants to understand how entity indexes work in OutSystems
+        11, including custom indexes, unique indexes, write overhead, and
+        the fact that reference-attribute indexes can be deleted, so that
+        they can answer index-related statements correctly.
   - name: Enforcing data integrity
     id: enforcing-data-integrity
     subtopics:
@@ -4561,6 +4570,13 @@ knowledge-needs:
         vulnerabilities, specifically identity theft or data exposure, so
         they can recognize the impact of broken authentication in OWASP
         web security.
+    - name: Harden login flows
+      id: harden-login-flows
+      description: Wants to harden login flows against account enumeration,
+        brute-force attacks, and credential replay by using MFA, delayed
+        failed login attempts, consistent error messages, strong password
+        checks, secure password recovery, and CAPTCHA, so that attackers
+        cannot guess or reuse credentials.
     - name: ODC cookie behavior
       id: odc-cookie-behavior
       description: Wants to explain how ODC apps use cookies to identify end-users,
@@ -4820,6 +4836,10 @@ knowledge-needs:
         (core services, workflow, and optional UI) using the Case Management Framework
         in OutSystems 11, so that the basic app structure is in place and ready for
         further case development.
+    - name: Create CMF process
+      id: create-cmf-process
+      description: Wants to create a BPT process in a Case Management Framework app
+        in OutSystems 11, so they can define and run the case flow in their application.
     - name: Bootstrap case config
       id: bootstrap-case-config
       description: Wants to create a bootstrapping timer action that registers the
@@ -4831,12 +4851,23 @@ knowledge-needs:
       description: Wants to call Case_Initialize before inserting the Request record
         that starts a new BPT process so the Case ID exists and the record can be
         associated with the new case in OutSystems 11 Case Management Framework.
+    - name: Case entity identifier
+      id: case-entity-identifier
+      description: Wants to identify the correct identifier for a
+        Case Management Framework entity by using a Case Identifier and
+        modeling the entity as a 1:1 extension of the Case entity in
+        OutSystems 11, so that the entity can be associated with a case.
     - name: Define case status
       id: define-case-status
       description: Wants to define a new case status by adding a record to the
         CaseStatusConfiguration static entity in the core services module in
         OutSystems 11, so that the bootstrapping action can register it with the
         case definition and it becomes available for assignment to case instances.
+    - name: Define case state machine
+      id: define-case-state-machine
+      description: Wants to define the case state machine by configuring the
+        valid case statuses and transitions in OutSystems 11, so that cases can
+        move between the correct statuses at runtime.
     - name: Enable CMF milestones
       id: enable-cmf-milestones
       description: Wants to enable milestone definitions for a case definition
@@ -4894,6 +4925,12 @@ knowledge-needs:
         entity dependencies to the UI module and wiring a Data Action in
         OutSystems 11, so that the activity list can be used as the data source
         for a Table or List widget.
+    - name: List group activities
+      id: list-group-activities
+      description: Wants to retrieve a list of activities assigned to a user
+        group by filtering on group membership and wiring the result to a
+        Table or List widget in OutSystems 11, so that group members can see
+        their assigned activities.
     - name: Enrich activity list
       id: enrich-activity-list
       description: Wants to enrich an activity list with case business entity
@@ -6642,6 +6679,12 @@ knowledge-needs:
         in Service Center before republishing the module, in OutSystems 11,
         so that a qualifying process runs faster without process/activity
         tracking overhead.
+    - name: Bucketed data processing
+      id: bucketed-data-processing
+      description: Wants to process data in buckets with light process
+        execution by splitting a large data set into smaller groups and
+        running each group asynchronously, so they can handle large volumes
+        without a long-running process instance.
     - name: Compare async processes
       id: compare-async-processes
       description: Wants to compare Timers, Processes, and Light Processes
@@ -11011,7 +11054,7 @@ knowledge-needs:
         setup and app-building actions, so they can move through the tool without
         getting blocked by layout or navigation friction.
     - name: Install quickstart app
-      id: install-quickstart-app
+      id: install-quickstart-app-o11
       description: Wants to install a quickstart .oap in Service Studio, so they
         can open the app and continue the guided path.
     - name: First app setup
@@ -11127,6 +11170,11 @@ knowledge-needs:
       id: odc-initial-setup
       description: Wants to complete the initial setup for ODC, so they can
         begin developing an app.
+    - name: Install quick start app
+      id: install-quick-start-app-odc
+      description: Wants to install the quick start app by publishing the
+        supplied OML, opening it in ODC Studio, and running the install script,
+        so they can use the app for the walkthrough.
     - name: ODC setup requirements
       id: odc-setup-requirements
       description: Wants to know the hardware, operating system, browser, time
@@ -12345,6 +12393,12 @@ knowledge-needs:
         selecting the matching transport type, choosing an authentication
         method, and providing the required credentials, then testing the
         connection, so that the server's tools become available for import.
+    - name: MCP host overview
+      id: mcp-host-overview
+      description: Wants to understand what an MCP host is, including that it is the AI app you use and connects to OutSystems through OutSystems MCP, so that they can tell the host apart from the server and the tenant.
+    - name: OutSystems MCP flow
+      id: outsystems-mcp-flow
+      description: Wants to understand how an OutSystems MCP request moves from a natural-language prompt through Context, Mentor, and Platform tools, and what tenant-wide context and connected tools the host adds, so they can predict how the host changes an app.
     - name: Agent connection errors
       id: agent-connection-errors
       description: Wants to understand OS-ABRS agent connection errors in ODC
@@ -17407,20 +17461,29 @@ knowledge-needs:
         (Max Idle Time, Cookie Expiration) and session (Max Idle Time)
         authentication settings, so that app authentication behavior meets
         their environment's security and user-experience requirements.
-    - name: Authentication cookies
-      id: authentication-cookies
-      description: Wants to understand how OutSystems 11 authenticates app
-        requests, including the difference between session and persistent
-        authentication (the RememberLogin parameter), the purpose and
-        HttpOnly flags of the nr1 and nr2 authentication cookies, and how the
-        server verifies the X-CSRF-Token header and cookies on each request,
-        so that they can reason about how their app's login state is
-        maintained and validated.
+    - name: Authentication cookie login state
+      id: authentication-cookie-login-state
+      description: Wants to understand how authentication cookies maintain
+        login state across app requests, including the difference between
+        session and persistent authentication, so they can reason about when
+        users remain signed in.
     - name: Auth cache and session extension
       id: auth-cache-session-extension
-      description: Wants to understand how the OutSystems 11 authentication
-        cache window affects when a session's login expiration is extended, so
-        that they can predict session expiration behavior across their apps.
+      description: Wants to understand how authentication-cookie expiration
+        and authentication cache windows affect how long login state remains
+        valid and when active sessions are extended, so they can predict when
+        users are prompted to authenticate again.
+    - name: Authentication cookie purpose and security
+      id: authentication-cookie-security
+      description: Wants to understand what authentication cookies do and how
+        their security attributes, such as HttpOnly, protect login state, so
+        they can assess the security of authentication cookies in the browser.
+    - name: Authentication cookie logout and request security
+      id: authentication-cookie-logout-session-fixation-csrf
+      description: Wants to understand how logout invalidates authentication
+        cookies and how cookie-based requests are protected against session
+        fixation and cross-site request forgery, so they can maintain secure
+        session boundaries.
     - name: Logout propagation across app types
       id: logout-propagation-app-types
       description: Wants to understand how logging out of an app propagates
@@ -17825,6 +17888,11 @@ knowledge-needs:
         requiring request and approval flow, running deletion analysis, and
         deleting only after review, so that dependency and impact risk stays
         controlled.
+    - name: MCP host governance
+      id: mcp-host-governance
+      description: Wants to understand that app changes made from an MCP host use the
+        same identity, role permissions, and approval flows as ODC Portal, so that
+        they know there is no less-governed path into the tenant.
   - name: Multi-portfolio user management
     id: multi-portfolio-user-management
     subtopics:

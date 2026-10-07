@@ -20,6 +20,12 @@ knowledge-needs:
       description: Wants to find and use built-in system actions in the Logic tab
         in ODC Studio from the Client Actions and Server Actions folders, so
         they can build app logic with platform-provided actions.
+    - name: Run server action
+      id: run-server-action
+      description: Wants to run a server action from the action flow with the
+        Run Server Action element, provide input parameters, and use the
+        output parameters that follow the element, so they can execute
+        server-side logic and use the returned values.
     - name: Service actions overview
       id: service-actions-overview
       description: Wants to understand what service actions are in ODC, how
@@ -2930,6 +2936,9 @@ knowledge-needs:
     - name: External database options
       id: external-database-options
       description: Wants to understand the ways OutSystems integrates with external databases, using Integration Builder or Integration Studio, so they can choose the integration path to follow.
+    - name: Access external data
+      id: access-external-data
+      description: Wants to understand the main ways to get external data into an OutSystems 11 app, including external databases, systems of record, Excel imports, and custom integrations, so they can choose the right approach and use the data in the app.
     - name: Create ODC external database connection
       id: create-odc-external-database-connection
       description: Wants to create a new external database connection in ODC
@@ -6588,6 +6597,13 @@ knowledge-needs:
       description: Wants to compare Timers, Processes, and Light Processes
         across trigger, flow, timeout, retry, execution, and scalability so
         they can choose the right asynchronous mechanism for a use case.
+    - name: Process best practices
+      id: process-best-practices
+      description: Wants to identify the process design best practices
+        OutSystems recommends for efficient BPT processes, including small
+        flows, idle-process handling, conditional starts, separating
+        process logic, and scaling queries, so that performance stays
+        efficient.
     - name: DST BPT bug overview
       id: dst-bpt-bug-overview
       description: Wants to understand why some BPT activities scheduled during
@@ -7085,6 +7101,11 @@ knowledge-needs:
       description: Wants to identify the layout placeholder names reserved by the
         OutSystems platform, so they avoid naming conflicts when building a
         theme layout or block in OutSystems 11.
+    - name: Theme block requirements
+      id: theme-block-requirements
+      description: Wants to identify the required blocks and placeholders for
+        each screen type in a Theme, so they can structure web and mobile
+        layouts correctly.
     - name: BEM methodology
       id: bem-methodology
       description: Wants to understand the BEM (Block Element Modifier) approach used in OutSystems UI themes, including how blocks, elements, and modifiers keep CSS components small and reusable, so they can structure theme CSS without unintended side effects.
@@ -7119,6 +7140,11 @@ knowledge-needs:
         by using Theme Editor to adjust the app's theme settings and reset those
         changes when needed, so they can keep the app's look and feel consistent
         with their brand.
+    - name: Manage themes
+      id: manage-themes
+      description: Wants to set a module's default theme, create a blank theme,
+        or create a theme from a base theme in Service Studio, so they can
+        control how the app's styling is applied.
     - name: Combine CSS classes
       id: combine-css-classes
       description: Wants to assign multiple CSS classes to a single widget and
@@ -10040,6 +10066,17 @@ knowledge-needs:
         selecting the applications in a deployment plan, validating the plan,
         and starting the deployment from one environment to another, so that
         the chosen versions move between environments.
+    - name: Set mobile package version
+      id: set-mobile-package-version
+      description: Wants to set the mobile package version during LifeTime
+        tagging when an app needs a new native package, choosing a version
+        higher than any previous version, so that OutSystems generates the
+        correct mobile package for later distribution.
+    - name: Tag application version
+      id: tag-application-version
+      description: Wants to tag an application version in LifeTime by opening
+        the app details, setting the version and description, and saving the
+        tag, so that the exact build can be deployed later.
     - name: Two-stage deployment
       id: two-stage-deployment
       description: Wants to split a LifeTime deployment into preparation and
@@ -17378,6 +17415,11 @@ knowledge-needs:
         using the Applications tab in the Users application to add or remove
         specific users under a role, in OutSystems 11, so that end users
         gain or lose access to the app's associated screens and tasks.
+    - name: Grant app permissions
+      id: grant-app-permissions-o11
+      description: Wants to grant a role to selected applications in
+        LifeTime, using Monitor and Add Dependencies permission, so a
+        business user can monitor those apps without opening their modules.
     - name: Users app visibility
       id: users-app-visibility
       description: Wants to make an application appear in the Users
@@ -17602,6 +17644,19 @@ knowledge-needs:
         permissions, in OutSystems 11, so that they can implement a more
         granular security policy beyond the built-in Developer and
         Administrator roles.
+    - name: Create IT user
+      id: create-it-user
+      description: Wants to create a new IT user in the LifeTime console, set
+        a default role, and meet the password complexity rules, so that the
+        account is ready for centralized IT user management across registered
+        environments.
+    - name: IT user permissions
+      id: it-user-permissions
+      description: Wants to understand how LifeTime IT user permissions work
+        when managing roles for environments, teams, and applications,
+        including built-in roles, permission levels, and how default, team,
+        and application assignments combine, so that they can configure and
+        troubleshoot access policies.
     - name: Permission governance
       id: permission-governance
       description: Wants to know the recommended practices for managing permissions

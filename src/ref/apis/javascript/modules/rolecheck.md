@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - client-side-role-checks-o11
 ---
 
 # Role Check

@@ -21,9 +21,8 @@ coverage-type:
   - understand
   - remember
 topic:
-  - built-in-roles
-  - permission-model-in-lt
-  - role-assignment
+  - it-user-permissions
+  - permission-precedence
 ---
 
 # Understand the permission model for IT users

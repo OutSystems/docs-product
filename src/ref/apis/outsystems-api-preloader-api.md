@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - prefetch-static-resources
 ---
 
 # outsystems.api.preloader API

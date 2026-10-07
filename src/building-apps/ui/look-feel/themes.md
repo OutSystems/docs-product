@@ -20,8 +20,9 @@ coverage-type:
   - remember
   - apply
 topic:
-  - creating-a-theme
-  - layouts
+  - manage-themes
+  - theme-block-requirements
+  - theme-inheritance
 ---
 
 # Themes

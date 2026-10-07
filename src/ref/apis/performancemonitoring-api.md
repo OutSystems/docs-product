@@ -20,6 +20,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+topic:
+  - performance-monitoring-api
 ---
 
 # PerformanceMonitoring API

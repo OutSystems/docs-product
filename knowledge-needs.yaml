@@ -13238,6 +13238,13 @@ knowledge-needs:
         the plugin via window.CapacitorPlugins, using the library in the
         app, and building the mobile package, so that the plugin's native
         functionality becomes available to the app.
+    - name: Barcode plugin reference
+      id: barcode-plugin-reference
+      description: Wants to use the Barcode Plugin in an ODC app to scan 1D and
+        2D barcodes by configuring the ScanBarcode action, checking plugin
+        availability, reviewing supported formats and scanning options, and
+        handling known limitations, so that barcode scanning works in mobile,
+        PWA, and web apps.
     - name: Vet plugin security
       id: vet-plugin-security
       description: Wants to assess whether a Capacitor plugin is safe to

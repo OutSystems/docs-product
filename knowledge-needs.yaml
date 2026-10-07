@@ -1521,6 +1521,12 @@ knowledge-needs:
       description: Wants to understand the aggregate join types available in ODC
         Studio and when to use each one when combining entity records, so they
         can choose the right join behavior for a data query.
+    - name: Data mashup overview
+      id: data-mashup-overview
+      description: Wants to understand what data mashup is in ODC and when to
+        use it to combine OutSystems entities with external data sources in
+        aggregates or SQL nodes, so they can choose it for richer queries and
+        analysis.
     - name: Mashup query guidance
       id: mashup-query-guidance
       description: Wants to write ODC data mashup queries that join entities across
@@ -2832,6 +2838,9 @@ knowledge-needs:
     - name: Add SOAP header
       id: add-soap-header
       description: Wants to add a custom SOAP header to consumed SOAP requests in OutSystems 11 by creating an Integration Studio extension with a WCF endpoint behavior and message inspector and calling it from the OnBeforeRequestAdvanced callback, so that the generated requests include the custom header.
+    - name: SOAP extensibility API
+      id: soap-extensibility-api
+      description: Wants to use the SOAP Extensibility API to customize a consumed SOAP Web Service in OutSystems 11 by modifying the connection, request, or response in the On Before Request callback, so that the service call behaves as required.
     - name: Choose log level
       id: choose-log-level
       description: Wants to choose the appropriate logging level for REST APIs and consumed
@@ -5554,6 +5563,11 @@ knowledge-needs:
         inherit common CSS, override base styles when needed, and reuse the same
         visual foundation across apps, so that related apps share a consistent
         look and feel.
+    - name: Theme libraries
+      id: theme-libraries
+      description: Wants to use a theme library to centralize and reuse themes,
+        layouts, images, and common patterns across apps so they can keep the
+        look and feel consistent between apps.
     - name: Share blocks across apps (ODC)
       id: blocks-across-apps-odc
       description: Wants to place business-agnostic blocks in a library, pass
@@ -7176,6 +7190,10 @@ knowledge-needs:
         by using Theme Editor to adjust the app's theme settings and reset those
         changes when needed, so they can keep the app's look and feel consistent
         with their brand.
+    - name: Theme properties
+      id: theme-properties
+      description: Wants to configure a theme's properties and layout settings
+        so they can define how the theme looks and behaves in an app.
     - name: Manage themes
       id: manage-themes
       description: Wants to set a module's default theme, create a blank theme,
@@ -9612,9 +9630,16 @@ knowledge-needs:
       description: Wants to understand what a screen is, how templates and
         widgets build it, and how widgets adapt to smaller screens, so that
         they can recognize the main parts of a reactive UI screen.
-    - name: Create screen
-      id: create-screen
-      description: Wants to create a screen in Service Studio by opening the
+    - name: Create screens (ODC)
+      id: create-screens-odc
+      description: Wants to create screens in ODC Studio by choosing an empty
+        screen or a screen template, adding the screen to a UI flow, or using
+        scaffolding from an entity, so they can start building a consistent
+        app screen and keep editing its elements, styles, layout, and data
+        sources.
+    - name: Create screens (Service Studio)
+      id: create-screens-service-studio
+      description: Wants to create screens in Service Studio by opening the
         UI Flows folder, adding a screen to MainFlow, selecting Empty or a
         Screen Template, naming it, and clicking Create Screen, so they can
         start building the screen's UI.
@@ -9634,6 +9659,11 @@ knowledge-needs:
         what predefined layouts, widgets, components, styles, and logic they
         include, and how sample data helps them start a screen, so they can
         choose the right template when creating a new screen.
+    - name: Screen composition
+      id: screen-composition
+      description: Wants to understand how screens are composed from blocks
+        and placeholders, including built-in layout blocks like LayoutTopMenu,
+        so they can organize screen content and reuse layouts.
     - name: Replace data in screens
       id: replace-data-in-screens
       description: Wants to replace the data in screens created from templates
@@ -10984,6 +11014,11 @@ knowledge-needs:
       id: install-quickstart-app
       description: Wants to install a quickstart .oap in Service Studio, so they
         can open the app and continue the guided path.
+    - name: First app setup
+      id: first-app-setup
+      description: Wants to create an account, install the development environment,
+        start Service Studio, and begin a first app with an available guided
+        starter path, so they can get a working starter app.
     - name: Adopt visual paradigm
       id: adopt-visual-paradigm
       description: Wants to understand why the OutSystems visual, model-driven paradigm
@@ -11252,6 +11287,23 @@ knowledge-needs:
         accelerator, then customize it with their own data and use case-specific
         screens, so that they can get a working starter app for a real business
         scenario.
+    - name: Build an app in Service Studio
+      id: build-app-in-service-studio
+      description: Wants to build an app in Service Studio, so they can turn a
+        business need into a working app.
+    - name: Edit an app in Service Studio
+      id: edit-app-in-service-studio
+      description: Wants to edit an existing app in Service Studio, so they can
+        update its behavior or interface.
+    - name: Use templates and Forge components
+      id: use-templates-and-forge-components
+      description: Wants to use application templates and Forge components to
+        accelerate app creation, so they can reuse app structure and
+        functionality instead of building everything from scratch.
+    - name: Prototype workflows with Workflow Builder or MCP
+      id: prototype-workflows-with-builder-or-mcp
+      description: Wants to choose Workflow Builder or MCP to prototype an app
+        workflow, so they can evaluate the approach before implementing it.
     - name: Patient portal overview
       id: patient-portal-overview
       description: Wants to understand the patient self-service portal they will
@@ -11940,6 +11992,26 @@ knowledge-needs:
       through a describe-review-refine conversational workflow, and how AI
       agents, the OutSystems Model, and the compiler work together under the
       hood, so that they can decide whether it fits their use case.
+  - name: MCP server capabilities
+    id: outsystems-mcp-capabilities
+    description: Wants to understand what the Service Studio MCP server reads
+      and changes in an O11 module, including the data model, logic, screens,
+      web blocks, other module elements, write operations, and advanced read
+      operations, so they can judge whether a request fits the available
+      capabilities.
+    subtopics:
+    - name: Name platform in requests
+      id: name-platform-in-requests
+      description: Wants to state the O11 platform and the open module in requests when the MCP host also connects to ODC, so the request reaches the Service Studio MCP server instead of ODC.
+    - name: O11 vs ODC MCP
+      id: outsystems-mcp-o11-odc
+      description: Wants to compare how OutSystems MCP works in O11 and ODC,
+        including where the server runs, what scope the agent works in, how
+        app model changes happen, and how changes are reviewed, so that they
+        know which guidance applies on each platform.
+    - name: Restore missing O11 tools
+      id: restore-missing-o11-tools
+      description: Wants to restart the Service Studio MCP server and confirm the MCP host URL when O11 tools are missing, so the O11 tools are available again.
   - name: Agentic dev vs AI apps
     id: agentic-vs-ai-powered-apps
     description: Wants to distinguish agentic development (AI helping the
@@ -18414,6 +18486,59 @@ knowledge-needs:
         from the OutSystems 11 Configuration Tool's File menu, so that they can
         inspect the scripts before manually running them to set up the required
         on-premises databases and cache invalidation service.
+    - name: Create platform indexes
+      id: create-platform-indexes
+      description: Wants to create or retry platform database table indexes with
+        Configuration Tool, by running Create/Upgrade Database or the
+        createAsyncIndexes command with an increased timeout when the default
+        timeout window does not finish, so platform performance improves and
+        missing indexes are eventually created.
+    - name: Configure database tab
+      id: configure-database-tab
+      description: Wants to configure the Database tab in Configuration Tool for
+        SQL Server or Azure SQL by setting server, database, authentication,
+        advanced connection settings, and administrator/runtime credentials, so
+        the Platform Server uses the intended platform database.
+    - name: Create platform database
+      id: create-platform-database
+      description: Wants to create or upgrade the platform database objects with
+        Create/Upgrade Database after configuring the Database tab, so the
+        required tables, indexes, views, and stored procedures exist for the
+        Platform Server version being installed.
+    - name: Configuration Tool basics
+      id: configuration-tool-basics
+      description: Wants to understand what the Configuration Tool does in
+        basic and complex self-managed OutSystems 11 installations, so they
+        know when to use it and how to launch it from the Windows desktop.
+    - name: Configuration Tool menus
+      id: configuration-tool-menus
+      description: Wants to use the File and Help menus in the OutSystems 11
+        Configuration Tool to import and export settings and configuration
+        scripts and access help information, so they can work with the
+        tool's basic menu actions.
+    - name: Set admin password
+      id: set-admin-password
+      description: Wants to define or reset the Platform Server admin user's
+        password in the Configuration Tool Credentials tab, so that the
+        Platform Server uses the expected admin password.
+    - name: Configure log tab
+      id: configure-log-tab
+      description: Wants to configure the Log tab in Configuration Tool for
+        SQL Server or Azure SQL Database, including the server, database,
+        runtime applications, log service port, and log cycle period, so
+        that logging uses the intended database connection.
+    - name: Configure network tab
+      id: configure-network-tab
+      description: Wants to configure the Network tab in the OutSystems 11
+        Configuration Tool to clear the current internal network settings
+        and set the front-end server IP address that registers in the
+        deployment controller service, so that they can restore access and
+        register the intended IP on servers with multiple network adapters.
+    - name: Create log database
+      id: create-log-database
+      description: Wants to create or upgrade the logging database objects
+        from Configuration Tool, so that the log tables, views, and
+        indexes exist for logging.
   - name: Certificate Management
     id: certificate-management
     subtopics:
@@ -20132,11 +20257,6 @@ knowledge-needs:
       description: Wants to use the Debugger scope tabs in Service Studio during a
         debug session to inspect runtime values while execution is suspended, so
         that they can review runtime state during debugging.
-    - name: Debug Service Studio apps
-      id: debug-service-studio-apps
-      description: Wants to debug an app in Service Studio by setting breakpoints,
-        starting a debug session, and stepping through suspended execution while
-        inspecting runtime values, so they can isolate logic issues.
     - name: Capture HAR file
       id: capture-har-file
       description: Wants to capture a Network HAR file for troubleshooting an

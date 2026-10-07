@@ -63,6 +63,17 @@
     # Performance Best Practices - References
     - href: app-architecture/references.md
     - href: app-architecture/performance-top-10-rules.md
+# Agentic development
+- href: agentic-development/outsystems-mcp-overview.md
+- topics:
+    - href: agentic-development/get-started.md
+    - href: agentic-development/understand-a-module.md
+    - href: agentic-development/prompt-blueprints.md
+    - href: agentic-development/capabilities.md
+    - href: agentic-development/security-data-handling.md
+    - href: agentic-development/use-with-odc.md
+    - href: agentic-development/compare-o11-odc.md
+    - href: agentic-development/agentic-development-terminology.md
 # Building apps
 - href: building-apps/intro.md
 - topics:

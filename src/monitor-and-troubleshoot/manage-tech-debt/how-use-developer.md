@@ -2,10 +2,10 @@
 tags:
   - Mentor
   - Mentor Studio
-  - Monitoring
   - Quality Assurance
   - Refactoring
   - Technical Debt
+  - Troubleshooting
 summary: 'OutSystems 11 (O11) Code Quality developer guide: check module technical debt, analyze findings impact, and resolve issues by setting finding status.'
 locale: en-us
 guid: 8b0d91f3-f1ee-48c2-8b7e-8a82aeb27ae3
@@ -98,6 +98,12 @@ To open **Service Studio** and navigate to the element where a code patterns occ
 ![Screenshot of the 'Open in Service Studio' icon used to navigate to elements with technical debt in Code Quality](images/use-finding-open-ams.png "Open in Service Studio from Code Quality")
 
 Your browser may ask you to confirm that you want to open **Service Studio**. In Chrome, confirm that you want to open **Service Studio** by clicking **Open Service Studio**.
+
+<div class="info" markdown="1">
+
+With the module open in Service Studio, an AI agent connected through OutSystems MCP explains a finding and changes the module to resolve it. By default, each change from the agent reaches the module only after you review it in the **Compare and Merge** window. For prompts that report a module's technical debt, refer to [Generate a tech debt report](../../agentic-development/prompt-blueprints.md#generate-a-tech-debt-report).
+
+</div>
 
 You can change the status of the findings individually or in bulk.
 

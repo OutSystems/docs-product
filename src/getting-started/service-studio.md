@@ -1,10 +1,13 @@
 ---
-summary: Explore the capabilities of OutSystems 11 (O11) Service Studio, a low-code visual development environment for creating and managing applications.
+summary: Service Studio overview for OutSystems 11 (O11), connect to your environment, manage apps, and use the workspace and 1-Click Publish.
 tags:
   - 1-Click Publish
+  - Data Model
   - Debugging
   - Deploy
+  - Forge
   - Mobile app
+  - Traditional Web
 locale: en-us
 guid: 23af05a7-9a06-4b73-ad98-3a9edee4ca0d
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -18,12 +21,13 @@ outsystems-tools:
   - forge
 coverage-type:
   - understand
-  - remember
+  - apply
 topic:
   - service-studio-overview
+isautopublish: true
 ---
 
-# Service Studio Overview
+# Service Studio overview
 
 <div class="info" markdown="1">
 
@@ -82,6 +86,12 @@ Distribute tab
 ## The workspace
 
 The workspace of Service Studio is where you design, deploy, and debug the modules of your applications.
+
+<div class="info" markdown="1">
+
+To work on a module with an AI agent, go to the **Edit** menu > **MCP Server** and start the Service Studio MCP server. The server connects the agent in an AI application that supports MCP to the module you have open. For more information, refer to [Get started with OutSystems MCP](../agentic-development/get-started.md#start-the-service-studio-mcp-server).
+
+</div>
 
 ![Screenshot of the Service Studio workspace detailing the main editor, toolbar, toolbox, development tabs, status bar, application layer tabs, properties editor, and the 1-Click Publish button.](images/service-studio-workspace-details.png "Service Studio Workspace")
 

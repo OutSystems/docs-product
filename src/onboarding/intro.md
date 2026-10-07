@@ -1,6 +1,8 @@
 ---
 summary: Explore developer onboarding and IDE navigation for OutSystems 11 (O11) to enhance learning and productivity.
-tags: developer onboarding, ide navigation, visual development, learning curve, developer transition
+tags:
+  - Programming Model
+  - UI
 locale: en-us
 guid: 023dfb7e-0d99-4596-867e-14cb3e768142
 app_type: mobile apps, reactive web apps, traditional web apps
@@ -16,6 +18,7 @@ coverage-type:
   - understand
 topic:
   - adopt-visual-paradigm
+isautopublish: true
 ---
 
 # Onboarding developers
@@ -34,6 +37,12 @@ To assist with the "initial learning hump" that many traditional developers enco
 
 * [Developer Cheat Sheet](dev-cheat-sheet.md)
 * [OutSystems Main Concepts](os-language-concepts.md)
+
+<div class="info" markdown="1">
+
+If you already work with an AI application that supports MCP, connect it to Service Studio with OutSystems MCP. Then ask the agent in that application to summarize a module you're learning, for example, "Generate onboarding documentation for this module." For more information, refer to [Generate an onboarding summary](../agentic-development/prompt-blueprints.md#generate-an-onboarding-summary).
+
+</div>
 
 ## Related information
 

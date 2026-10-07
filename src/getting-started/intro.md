@@ -1,5 +1,5 @@
 ---
-summary: Explore the essentials of building web and mobile apps with OutSystems 11 (O11), including setup, development, and deployment tools.
+summary: OutSystems 11 (O11) getting started helps you create your first app, install Service Studio, and use training, extensions, and community support.
 locale: en-us
 guid: 036994b9-0656-4dc8-8b94-b0c4e9d71a1f
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -23,6 +23,7 @@ coverage-type:
 topic:
   - outsystems-overview
   - download-and-set-up
+isautopublish: true
 ---
 
 # Getting started
@@ -57,6 +58,12 @@ There are several prebuilt elements that you can use to build your apps faster. 
 You can also use OutSystems builder to prototype the front end of mobile apps or create workflows, if your product license includes these tools. With the builders you can start creating your apps without Service Studio.
 
 * [Workflow Builder](../building-apps/case-management-workflow/workflow-builder/intro.md) lets you create fully functional web apps to automate and manage simple workflows.
+
+<div class="info" markdown="1">
+
+With [OutSystems MCP](../agentic-development/outsystems-mcp-overview.md), the agent in an AI application that supports MCP explains, analyzes, and changes the module you have open in Service Studio. To connect your AI application, refer to [Get started with OutSystems MCP](../agentic-development/get-started.md).
+
+</div>
 
 ## Extensions
 

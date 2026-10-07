@@ -1,6 +1,11 @@
 ---
-summary: Code Mentor logic suggestions in OutSystems 11 (O11) use AI to predict next steps in action flows, helping you build logic faster with auto-completed elements.
-tags: ide usage, reactive web apps, tutorials for beginners, ai and machine learning integration, logic development
+summary: Code Mentor logic suggestions in OutSystems 11 (O11) show AI flow steps in Service Studio through the AI radar and Quick Search.
+tags:
+  - AI
+  - Logic
+  - Mentor
+  - Settings
+  - Troubleshooting
 locale: en-us
 guid: 9ca5abbb-ff2d-4aaf-9437-a6565e9df8f6
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -15,9 +20,10 @@ coverage-type:
   - understand
   - apply
   - unblock
+isautopublish: true
 ---
 
-# Code Mentor - Logic suggestions
+# Logic suggestions
 
 Speed up your app development with Code Mentor for logic. By analyzing millions
 of anonymized code samples using artificial intelligence and machine learning
@@ -36,7 +42,7 @@ shown as a pulsing blue circle.
 
 </div>
 
-## Prerequisites { #prerequisites }
+## Prerequisites {#prerequisites}
 
 These are the requirements for using Code Mentor feature:
 
@@ -49,7 +55,7 @@ These are the requirements for using Code Mentor feature:
 * Your operating system supports the Transport Layer Security (TLS) 1.2
   protocol.
 
-## Using Code Mentor - Logic suggestions
+## Using logic suggestions
 
 ### Starting the flow
 
@@ -73,7 +79,7 @@ There are several ways to get suggestions:
 
 * Click the AI radar (blue circle) on the flow connectors.
 
-    ![Screenshot of Code Mentor suggestions appearing after clicking the AI radar in Service Studio](images/ai-flow-node-click-ss.png "Interacting with AI suggestions")
+    ![Screenshot of Code Mentor suggestions appearing after clicking the AI radar in Service Studio](images/ai-flow-node-click-ss.png "AI Radar Suggestions")
 
 * Drag a connector from an existing element and drop it in the flow window.
 
@@ -148,7 +154,7 @@ particular:
   believe you need. They give valuable context to the assistant and enable it
   to auto-complete the parameters.
 
-### Intelligent Quick Search
+### Smart search
 
 When Code Mentor suggestions don’t fit your needs or you reach a dead-end, you
 have the ability to search for other elements, that can be used in your flow.
@@ -162,7 +168,7 @@ the suggestion selection with the keyboard arrow keys, or you can start typing
 to retrieve other elements. Select and insert the highlighted suggestion by
 pressing the Enter key.
 
-## Enabling and disabling the feature { #enable-disable }
+## Enabling and disabling the feature {#enable-disable}
 
 To enable or disable the feature, do the following:
 
@@ -196,7 +202,7 @@ allows searching for other elements. You can also manually edit the flow.
 If this keeps happening, check your internet connection and try again. You can
 still use the Intelligent Quick Search to search for other elements.
 
-![Screenshot showing the troubleshooting step when no suggestions are provided by Code Mentor in Service Studio](images/ai-flow-ts-tryagain-ss.png "Troubleshooting AI suggestions")
+![Screenshot showing the troubleshooting step when no suggestions are provided by Code Mentor in Service Studio](images/ai-flow-ts-tryagain-ss.png "No Suggestions Troubleshooting")
 
 ### Why isn't the AI radar showing up?
 

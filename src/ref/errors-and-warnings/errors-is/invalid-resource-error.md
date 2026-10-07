@@ -14,6 +14,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - fix-empty-extensibility-file-error
 ---
 
 # Invalid Resource Error

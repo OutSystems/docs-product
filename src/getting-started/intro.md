@@ -21,8 +21,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
+  - first-app-setup
   - outsystems-overview
-  - download-and-set-up
+  - use-templates-and-forge-components
 isautopublish: true
 ---
 

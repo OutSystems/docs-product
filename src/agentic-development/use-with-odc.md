@@ -9,7 +9,9 @@ coverage-type:
 content-type:
   - conceptual
 topic:
-  - outsystems-mcp-with-odc
+  - name-platform-in-requests
+  - outsystems-mcp-o11-odc
+  - restore-missing-o11-tools
 app_type: reactive web apps
 platform-version: o11
 audience:

@@ -17,6 +17,9 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - configure-log-tab
+  - create-log-database
 ---
 
 # Log tab in SQL Server and Azure SQL Database

@@ -16,6 +16,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+topic:
+  - create-platform-indexes
 ---
 
 # Creating indexes for platform database tables

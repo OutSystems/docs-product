@@ -14,6 +14,8 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - configuration-tool-menus
 ---
 
 # Configuration Tool Menus

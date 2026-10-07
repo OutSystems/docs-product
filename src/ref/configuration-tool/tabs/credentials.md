@@ -13,6 +13,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+topic:
+  - set-admin-password
 isautopublish: true
 ---
 

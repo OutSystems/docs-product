@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - data-types
 ---
 
 # Data Types

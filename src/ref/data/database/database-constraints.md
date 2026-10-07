@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - entity-schema-mapping
 ---
 
 # Database Constraints

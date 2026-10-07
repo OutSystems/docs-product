@@ -2,6 +2,9 @@
 summary: Explore SQL Server and Azure SQL database configurations in OutSystems 11 (O11), including server settings and advanced options.
 locale: en-us
 guid: 50bd26cf-d24f-4027-b172-46a02e30c0d6
+topic:
+  - configure-database-tab
+  - create-platform-database
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

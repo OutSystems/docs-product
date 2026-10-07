@@ -17,6 +17,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - remember
+topic:
+  - soap-extensibility-api
 ---
 
 # SOAP Extensibility API

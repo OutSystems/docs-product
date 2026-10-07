@@ -816,6 +816,11 @@ knowledge-needs:
         actions inside If conditions on server-side logic, or in a screen
         widget''s If condition, Enabled, and Visible properties, so they can
         enforce role-based authorization on both logic and UI elements.'
+    - name: Client-side role checks
+      id: client-side-role-checks-o11
+      description: Wants to check the current user's role in client-side
+        JavaScript so the app shows or hides UI elements, while keeping the
+        result out of security checks, in Mobile Apps and Reactive Web Apps.
     - name: Share public roles
       id: share-public-roles
       description: Wants to make an application role public and reference it from
@@ -1102,6 +1107,11 @@ knowledge-needs:
       description: Wants to implement user-triggered sorting on a List widget by
         using other widgets to capture the sort criteria and refresh the data
         source, so that end users can reorder the list at runtime in OutSystems 11.
+    - name: Configure list sorting
+      id: configure-list-sorting
+      description: Wants to configure interactive sorting for a List widget in
+        ODC Studio by setting sort attributes on the aggregate and list widget,
+        so users can reorder the displayed records at runtime.
     - name: Set up List widget
       id: set-up-list-widget
       description: Wants to add a List widget to an ODC screen, bind it to an
@@ -2720,6 +2730,9 @@ knowledge-needs:
       id: cache-repeatedly-accessed-database-data
       description: Wants to use platform caching for data that is accessed
         repeatedly, so the application makes fewer database calls.
+    - name: Prefetch static resources
+      id: prefetch-static-resources
+      description: Wants to prefetch static resources with the outsystems.api.preloader JavaScript API in a Traditional Web App, so the app loads CSS, JavaScript, images, and fonts from browser cache before navigation.
     - name: Follow database installation checklist
       id: follow-database-installation-checklist
       description: Wants to follow database-related recommendations in the
@@ -2799,6 +2812,11 @@ knowledge-needs:
     description: Wants to understand how OutSystems web services cover consuming and
       exposing REST APIs and SOAP web services, so they can choose the right
       integration approach.
+  - name: OutSystems API catalog
+    id: outsystems-api-catalog
+    description: Wants to find the available OutSystems 11 APIs by category, so they can
+      open the right API documentation for integration, automation, or
+      extension work.
   - name: Webservice customization
     id: webservice-customization
     subtopics:
@@ -4624,6 +4642,13 @@ knowledge-needs:
       description: Wants to run multiple workflow tasks in parallel by
         adding parallel branches in ODC's Workflow editor, so that
         independent activities execute at the same time.
+    - name: Parallel flow behavior
+      id: parallel-flow-behavior
+      description: Wants to understand how parallel flows behave in an ODC
+        workflow, including how data moves across paths, which options
+        appear for a Go to a previous step node, the absence of End and Terminate
+        nodes, and the nesting limits, so they can design parallel workflow
+        logic that works correctly.
     - name: Add human activity
       id: add-human-activity-odc
       description: Wants to add a Human activity to an ODC workflow in the
@@ -4792,6 +4817,11 @@ knowledge-needs:
         case definition and case status definitions into the Case Management Framework
         every time the core services module is published in OutSystems 11, so that
         the configuration is automatically kept in sync with the module.
+    - name: Initialize case record
+      id: initialize-case-record
+      description: Wants to call Case_Initialize before inserting the Request record
+        that starts a new BPT process so the Case ID exists and the record can be
+        associated with the new case in OutSystems 11 Case Management Framework.
     - name: Define case status
       id: define-case-status
       description: Wants to define a new case status by adding a record to the
@@ -6285,6 +6315,12 @@ knowledge-needs:
         them asynchronously through the Scheduler Service, retries failures,
         and logs delivery status, so that they know when an email actually
         sends and where to check it.
+    - name: Email API entities
+      id: email-api-entities
+      description: Wants to use the Emails API to identify the Email_Definition,
+        Sent_Email, Email_Content, and Email_Status system entities and add the
+        required dependencies before querying them in OutSystems 11, so they
+        can customize email-related data access and build reports.
     - name: Add email MIME headers
       id: add-email-mime-headers
       description: Wants to add custom header properties (MIME headers) to an
@@ -16643,6 +16679,17 @@ knowledge-needs:
       it analyzes, and how developers and technical leads use it to manage
       technical debt, so that they can apply it in the development lifecycle.
     subtopics:
+    - name: Code Quality basics
+      id: code-quality-basics
+      description: Wants to understand what Code Quality is, why teams use it
+        to manage technical debt, and how developers and technical leads use
+        it, so they can apply it in the development lifecycle.
+    - name: Code analysis process
+      id: code-analysis-process
+      description: Wants to understand how Code Quality runs regular analyses
+        on updated apps, checks security, performance, maintainability, and
+        architecture, and generates findings reports with pattern details and
+        fix guidance, so they can interpret analysis results.
     - name: Review code findings
       id: review-code-findings
       description: Wants to review individual Code Quality findings in the
@@ -16661,6 +16708,24 @@ knowledge-needs:
         performance, maintainability, and architecture, and how those
         severities affect score calculations, so that they can interpret
         findings and prioritize fixes.
+    - name: Identify training needs
+      id: identify-training-needs
+      description: Wants to use recurring Code Quality findings to identify
+        team training needs, so they can target learning to the issues their
+        team encounters.
+    - name: Define best-practice guidelines
+      id: define-best-practice-guidelines
+      description: Wants to define team best-practice guidelines based on Code
+        Quality findings, so developers have clear standards to follow.
+    - name: Review recurring issues
+      id: review-recurring-issues
+      description: Wants to review frequent Code Quality issues across the
+        team, so they can understand which problems need broader attention.
+    - name: Prevent recurring issues
+      id: prevent-recurring-issues
+      description: Wants to use Code Quality findings to prevent recurring
+        issues instead of relying on reactive fixes, so the team can improve
+        its development practices.
 - name: Testing practice
   guid: 0e440c0c-7db6-41cd-a51c-0c00ccb15e72
   topics:

@@ -17,7 +17,6 @@ audience:
 tags:
   - Agentic
   - AI
-  - MCP
   - Terminology
 outsystems-tools:
   - service studio

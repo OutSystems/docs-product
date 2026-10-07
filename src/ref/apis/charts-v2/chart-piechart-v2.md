@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - configure-chart-data-points
+  - configure-pie-chart
 ---
 
 # Pie Chart

@@ -22,7 +22,9 @@ coverage-type:
   - apply
   - understand
 topic:
-  - get-data-from-external-db
+  - configure-database-connections
+  - import-external-tables
+  - switch-database-connection-at-runtime
 ---
 
 # Integrate with an external database using Integration Studio

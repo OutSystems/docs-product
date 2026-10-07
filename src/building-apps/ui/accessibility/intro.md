@@ -19,7 +19,6 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - design-for-accessibility
   - accessibility-screen-reader
 isautopublish: true
 ---

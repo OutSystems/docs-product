@@ -16,7 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - tag-a-version
+  - set-mobile-package-version
+  - tag-application-version
 ---
 
 # Tag a Version

@@ -17,7 +17,8 @@ coverage-type:
   - remember
   - apply
 topic:
-  - server-actions-when-use
+  - action-properties-reference
+  - run-server-action
 ---
 
 # Run Server Action

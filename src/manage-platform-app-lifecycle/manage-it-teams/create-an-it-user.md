@@ -18,7 +18,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - create-it-users-in-lt
+  - create-it-user
 ---
 
 # Create an IT User

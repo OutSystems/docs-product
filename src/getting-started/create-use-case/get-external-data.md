@@ -18,7 +18,7 @@ coverage-type:
   - apply
   - understand
 topic:
-  - get-data-from-external-db
+  - access-external-data
 ---
 
 # Get external data in your app

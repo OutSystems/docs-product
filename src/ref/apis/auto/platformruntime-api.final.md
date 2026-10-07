@@ -21,6 +21,10 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - create-audit-log-records
+  - request-and-session-identifiers
+  - switch-database-connection-at-runtime
 ---
 
 # PlatformRuntime API

@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - evaluate
 topic:
-  - scalable-process-best-practices
+  - process-best-practices
 ---
 
 # Best Practices for Designing Processes

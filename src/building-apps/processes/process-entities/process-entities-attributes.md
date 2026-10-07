@@ -17,7 +17,7 @@ coverage-type:
   - remember
   - understand
 topic:
-  - extend-processes-entities
+  - process-entity-attributes
 ---
 
 # Process Entities Attributes

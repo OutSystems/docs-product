@@ -15,6 +15,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - regex-search-replace
+  - stringbuilder-large-strings
+  - text-api-actions
 ---
 
 # Text API

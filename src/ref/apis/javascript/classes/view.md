@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - detect-render-completion
+  - manipulate-screen-dom
 ---
 
 # View

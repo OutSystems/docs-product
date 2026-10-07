@@ -17,6 +17,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - detect-history-based-navigation
+  - navigate-with-animations
+  - override-back-navigation
 ---
 
 # Navigation

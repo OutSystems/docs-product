@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - chart-json-customization
+  - configure-pie-chart
 ---
 
 # Create Pie and Donut Charts

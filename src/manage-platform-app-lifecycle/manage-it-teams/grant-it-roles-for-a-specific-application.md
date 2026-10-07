@@ -20,7 +20,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - assign-a-role-for-an-app
+  - app-specific-permissions
 ---
 
 # Grant Permissions for Specific Applications

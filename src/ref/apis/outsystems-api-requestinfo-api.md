@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - request-and-session-identifiers
 ---
 
 # outsystems.api.requestInfo API

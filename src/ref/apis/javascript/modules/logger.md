@@ -18,6 +18,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - log-messages-with-logger
 ---
 
 # Logger

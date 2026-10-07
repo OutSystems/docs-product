@@ -17,8 +17,7 @@ coverage-type:
   - apply
   - remember
 topic:
-  - rest-webservice-data
-  - define-methods
+  - expose-rest-api
 isautopublish: true
 ---
 

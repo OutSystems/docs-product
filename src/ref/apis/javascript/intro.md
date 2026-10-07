@@ -16,6 +16,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - discover-js-api-modules
+  - handle-app-load-status
 ---
 
 # JavaScript API

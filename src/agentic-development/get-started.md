@@ -50,7 +50,7 @@ You start the Service Studio MCP server from the app list or from a module you h
 1. In Service Studio, go to the **Edit** menu > **MCP Server**. The **MCP Server** window opens.
 1. Select **Start MCP server**. The port status changes to **Running**, and the button changes to **Stop MCP server**.
 
-![The MCP Server window in Service Studio with the server running on port 41820](./images/mcp-service-studio-ss.png)
+![The MCP Server window in Service Studio with the server running on port 41820](images/mcp-service-studio-ss.png)
 
 The same window has two more settings:
 

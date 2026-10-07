@@ -979,6 +979,11 @@ knowledge-needs:
       description: Wants to split UI elements by functionality into separate
         modules in OutSystems mobile apps, so they avoid a monolithic UI
         module structure and keep the app easier to maintain.
+    - name: Split app into modules
+      id: split-app-into-modules
+      description: Wants to split an OutSystems 11 app into reusable modules
+        when the app grows beyond a single module, so they can develop
+        functionality independently and keep the app maintainable.
     - name: Module properties reference
       id: module-properties-reference
       description: Wants to look up the configuration properties available for
@@ -1241,6 +1246,9 @@ knowledge-needs:
     - name: Static entity setup
       id: static-entity-setup
       description: Wants to create a static entity and add country records with flag URLs and dial-in codes, so that a Dropdown Search screen uses fixed lookup data.
+    - name: Static entity basics
+      id: static-entity-basics
+      description: Wants to understand what static entities are, how their default and custom attributes and records work, and how the Get action exposes fixed data, so they can model values that do not change at runtime.
     - name: Static entity data migration
       id: static-entity-data-migration
       description: Wants to understand the considerations for migrating Static
@@ -3640,6 +3648,12 @@ knowledge-needs:
         integration benefits of ODC Private Gateway, so they can explain why
         it is preferable to traditional VPN or public exposure for cloud apps
         that need private network access.
+    - name: Private gateway considerations
+      id: private-gateway-considerations
+      description: Wants to understand the SSL certificate requirement, add-on
+        subscription, runtime-only testing, and token renewal implications
+        before using an ODC Private Gateway, so they can prepare the
+        connection and avoid setup issues.
     - name: Private gateway use cases
       id: private-gateway-use-cases
       description: Wants to identify the private resources and systems an ODC
@@ -4578,6 +4592,11 @@ knowledge-needs:
       description: Wants to add a Decision activity or node to a workflow,
         define its outgoing conditions, and route execution based on data values,
         so that each case follows the correct path.
+    - name: Configure decision node
+      id: configure-decision-node
+      description: Wants to configure a Decision node in an ODC workflow by
+        setting its description, fetched data, and outcome conditions, so that
+        the workflow follows the intended branch.
     - name: Add automatic activity
       id: add-automatic-activity
       description: Wants to add an Automatic activity to an ODC workflow in the
@@ -4851,9 +4870,8 @@ knowledge-needs:
     - name: Translate CMF entities
       id: translate-cmf-entities
       description: Wants to add locales to the Data tab and translate the CMF
-        static entities (CaseDefinitionConfiguration, CaseStatusConfiguration,
-        Milestones, CaseActions) in the core services module in OutSystems 11,
-        so that the Case Management Framework app displays text in the correct
+        static entities in the core services module in OutSystems 11, so that
+        the Case Management Framework app displays text in the correct
         supported language for end users.
     - name: Enable CMF locale
       id: enable-cmf-locale
@@ -17365,6 +17383,12 @@ knowledge-needs:
       description: Wants to make an application appear in the Users
         application so that application roles can be assigned, when the app
         has no Home module defined.
+    - name: Organizational roles overview
+      id: organizational-roles-overview
+      description: Wants to understand what organizational roles are in ODC,
+        where they are managed in the ODC Portal, and how built-in and custom
+        roles set organization-scope and asset-scope permissions, so they can
+        plan member access before assigning roles.
     - name: Assign org-scope role
       id: assign-org-scope-role
       description: Wants to grant or revoke a member's (IT-user's) role at
@@ -18397,9 +18421,9 @@ knowledge-needs:
     - name: Adjust keep-alive timeout
       id: adjust-keep-alive-timeout
       description: Wants to configure the keep-alive connection timeout on an Apache-based
-        reverse proxy to at least 30 seconds using the KeepAliveTimeout directive,
-        so that OutSystems Mobile and Reactive Web apps do not encounter connection
-        errors caused by the default 5-second timeout.
+        reverse proxy using the KeepAliveTimeout directive so that OutSystems Mobile
+        and Reactive Web apps do not encounter connection errors caused by an overly
+        short timeout.
     - name: Reverse proxy requirements
       id: reverse-proxy-requirements
       description: Wants to know the technical requirements to serve OutSystems

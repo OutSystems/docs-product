@@ -61,7 +61,7 @@ You can also use OutSystems builder to prototype the front end of mobile apps or
 
 <div class="info" markdown="1">
 
-With [OutSystems MCP](../agentic-development/outsystems-mcp-overview.md), the agent in an AI application that supports MCP explains, analyzes, and changes the module you have open in Service Studio. To connect your AI application, refer to [Get started with OutSystems MCP](../agentic-development/get-started.md).
+With [OutSystems MCP](../agentic-development/outsystems-mcp-overview.md) (also known as OutSystems Agent Experience), the agent in an AI application that supports MCP explains, analyzes, and changes the module you have open in Service Studio. To connect your AI application, refer to [Get started with OutSystems MCP](../agentic-development/get-started.md).
 
 </div>
 

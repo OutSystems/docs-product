@@ -30,6 +30,8 @@ isautopublish: true
 
 OutSystems MCP in OutSystems 11 (O11) connects the AI application you work in to the module you have open in Service Studio. You ask the AI agent in that application to explain, analyze, or change the module. OutSystems MCP works on applications you've already built in O11.
 
+OutSystems MCP is also known as OutSystems Agent Experience. For more information about the names, refer to [Agentic development terminology](agentic-development-terminology.md).
+
 OutSystems MCP uses the Model Context Protocol (MCP), an open protocol that connects AI applications to external tools. Two MCP terms describe your side of the connection:
 
 * **MCP host:** The AI application you work in.

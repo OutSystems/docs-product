@@ -34,6 +34,7 @@ The following terms name OutSystems MCP in O11 and the parts it consists of.
 
 | Term | Definition |
 | ---- | ---------- |
+| Agent Experience | Another name for OutSystems MCP. These pages use OutSystems MCP, which names the same capability in both O11 and ODC. The word agent in the name refers to the AI agent in your MCP host. Refer to [OutSystems MCP](outsystems-mcp-overview.md). |
 | MCP Server window | The Service Studio window where you start and stop the Service Studio MCP server, turn on **Start when Service Studio opens**, and set **Write permissions**. You open it from **Edit** > **MCP Server**. Refer to [Start the Service Studio MCP server](get-started.md#start-the-service-studio-mcp-server). |
 | OutSystems MCP | In O11, the OutSystems capability that lets the agent in an MCP host read and change the module you have open in Service Studio. OutSystems MCP in O11 has two parts: the Service Studio MCP server and the OutSystems skill for O11. Refer to [OutSystems MCP](outsystems-mcp-overview.md). |
 | OutSystems skill for O11 | The instructions that tell the agent how to use the Service Studio MCP server tools and how to write changes with the OutSystems Model API. The skill uses the `SKILL.md` format. Refer to [Install the OutSystems skill for O11](get-started.md#install-the-outsystems-skill-for-o11). |

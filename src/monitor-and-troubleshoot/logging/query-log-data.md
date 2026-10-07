@@ -1,11 +1,18 @@
 ---
-summary: Learn how to query log data in OutSystems 11 (O11) to monitor mobile requests and integrations, and understand the impact on system performance.
+summary: 'OutSystems 11 (O11) log data queries: Oracle SQL examples for oslog views covering mobile requests, integrations, extensions, and errors.'
 locale: en-us
 guid: c62b20a1-5cec-4050-9139-e46b4c55395f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: logging, performance monitoring, system administration, database queries, oracle sql
+tags:
+  - Extensions
+  - Logging
+  - Mobile app
+  - Monitoring
+  - REST
+  - SQL
+  - Troubleshooting
 audience:
   - Developer
   - Platform administrator
@@ -14,6 +21,7 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+isautopublish: true
 ---
 
 # Query log data
@@ -30,9 +38,9 @@ Also available: [Query log data in OutSystems 10](https://success.outsystems.com
 
 These examples are written for the databases running the Oracle SQL database management system.
 
-## Mobile app calls server-side logic to invoke an external integration (REST/SOAP)
+## Mobile and reactive web app calls to invoke external integrations (REST/SOAP)
 
-This SQL query enables you to list all integrations (SOAP, REST, SAP) called for a specific mobile request (in the example, the request_key is `9c35b89a-2ec3-4716-bb96-4e3ea41b664c`).
+This SQL query enables you to list all integrations (SOAP, REST, SAP) called for a specific request from a mobile application or reactive web app (in the example, the request_key is `9c35b89a-2ec3-4716-bb96-4e3ea41b664c`).
 
 ```sql
 select request_key, 'MOBILE REQUEST' log_type, instant,  
@@ -53,14 +61,14 @@ Here is a sample result set of the query.
 | REQUEST_KEY | LOG_TYPE | INSTANT | INFORMATION | DURATION |
 | --- | --- | --- | --- | --- |
 | 9c35b89a-2ec3-4716-bb96-4e3ea41b664c | MOBILE REQUEST | 01-AUG-18 01.22.01.378236000 PM | eSpace ID: 1234; Screen: Synchronize; Endpoint: LoginData_Sync; User ID: 123456 | 3015 |
-| 9c35b89a-2ec3-4716-bb96-4e3ea41b664c | INTEGRATION | 01-AUG-18 01.22.00.253199000 PM | Type: REST (Consume); Endpoint: <https://internalapi.example.com/v1/userData/Get>; Action: UserData.GetDate | 328 |
-| 9c35b89a-2ec3-4716-bb96-4e3ea41b664c | INTEGRATION | 01-AUG-18 01.22.00.628220000 PM | Type: REST (Consume); Endpoint: <https://internalapi.example.com/v1/UserDetails/Get>; Action: UserData.GetDetails | 375 |
-| 9c35b89a-2ec3-4716-bb96-4e3ea41b664c | INTEGRATION | 01-AUG-18 01.22.00.940738000 PM | Type: REST (Consume); Endpoint: <https://internalapi.example.com/v1/SaveChanges>; Action: UserData.SaveUserProfile | 296 |
-| 9c35b89a-2ec3-4716-bb96-4e3ea41b664c | INTEGRATION | 01-AUG-18 01.22.01.331361000 PM | Type: REST (Consume); Endpoint: <https://internalapi.example.com/v1/Refresh>; Action: UserData.RefreshInRepository | 390 |
+| 9c35b89a-2ec3-4716-bb96-4e3ea41b664c | INTEGRATION | 01-AUG-18 01.22.00.253199000 PM | Type: REST (Consume); Endpoint: `https://internalapi.example.com/v1/userData/Get`; Action: UserData.GetDate | 328 |
+| 9c35b89a-2ec3-4716-bb96-4e3ea41b664c | INTEGRATION | 01-AUG-18 01.22.00.628220000 PM | Type: REST (Consume); Endpoint: `https://internalapi.example.com/v1/UserDetails/Get`; Action: UserData.GetDetails | 375 |
+| 9c35b89a-2ec3-4716-bb96-4e3ea41b664c | INTEGRATION | 01-AUG-18 01.22.00.940738000 PM | Type: REST (Consume); Endpoint: `https://internalapi.example.com/v1/SaveChanges`; Action: UserData.SaveUserProfile | 296 |
+| 9c35b89a-2ec3-4716-bb96-4e3ea41b664c | INTEGRATION | 01-AUG-18 01.22.01.331361000 PM | Type: REST (Consume); Endpoint: `https://internalapi.example.com/v1/Refresh`; Action: UserData.RefreshInRepository | 390 |
 
-## Mobile app calls server-side logic to invoke custom code (Extensions)
+## Mobile and reactive web app calls to invoke custom code (Extensions)
 
-This SQL query enables you to list all extensions (created with Integration Studio) called for a specific mobile request.
+This SQL query enables you to list all extensions (created with Integration Studio) called for a specific request from a mobile application or reactive web app.
 
 ```sql
 select request_key, 'MOBILE REQUEST' log_type, instant,  
@@ -89,9 +97,9 @@ Here is a sample result set of the query.
 | d6aaad9c-1786-4f65-a5c9-b89b84397fd8 | EXTENSION | 01-AUG-18 01.24.00.031912000 PM | Extension ID: 31; eSpace ID: 122; Action: CurrTicks | 0 |
 | d6aaad9c-1786-4f65-a5c9-b89b84397fd8 | EXTENSION | 01-AUG-18 01.24.00.031912000 PM | Extension ID: 44; eSpace ID: 122; Action: HTTPPost | 750 |
 
-## Mobile app calls server-side logic and it fails, logging errors
+## Mobile and reactive web app calls fail, logging errors
 
-This SQL query enables you to list all errors related to a specific mobile request.
+This SQL query enables you to list all errors related to a specific request from a mobile application or reactive web app.
 
 ```sql
 select request_key, 'MOBILE REQUEST' log_type, instant,  

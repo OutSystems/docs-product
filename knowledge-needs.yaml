@@ -231,6 +231,12 @@ knowledge-needs:
         items, including building a loop with an If condition when no dedicated
         loop node exists, so that they can implement common control flow
         patterns in OutSystems.
+    - name: Fix invalid action flow
+      id: fix-invalid-action-flow
+      description: Wants to fix Invalid Action Flow errors in OutSystems 11
+        action flows by correcting For Each cycle paths, If and Switch
+        branches, Start nodes, and ambiguous path conflicts so the flow
+        compiles successfully.
   - name: Calculation and algorithm examples
     id: calculation-and-algorithm-examples
     subtopics:
@@ -1246,6 +1252,9 @@ knowledge-needs:
     - name: Database auto numbers
       id: database-auto-numbers
       description: Wants to understand how OutSystems implements an Integer attribute with IsAutoNumber set to Yes in SQL Server and Oracle, so they know which database objects are created and why the generated values can differ across environments.
+    - name: Fix invalid attribute
+      id: fix-invalid-attribute
+      description: 'Wants to fix the "''<attribute>'' data type is invalid" error family in Service Studio for OutSystems 11 by setting a valid data type for the entity or structure attribute, defining an entity Identifier, or using Integer for Auto Number, so the module compiles and publishes successfully.'
     - name: Delete rule options
       id: delete-rule-options
       description: Wants to understand how the Delete Rule property affects referential integrity in an entity relationship, so they can choose between Protect, Delete, and Ignore.
@@ -2289,6 +2298,10 @@ knowledge-needs:
     id: database-views
     description: Wants to create database views and integrate them as read-only entities in
       OutSystems, so that they can query database-side data through the platform.
+  - name: Database reference
+    id: database-reference
+    description: Wants to identify the OutSystems 11 database reference articles, so they
+      can open the right article for the database topic they need.
   - name: File data type
     id: file-data-type
     subtopics:
@@ -3355,6 +3368,9 @@ knowledge-needs:
         extension node in the Multi-tree Navigator or selecting its tab in the
         Multi-tab Editor, so that they can modify extension properties and
         manage its elements (actions, structures, entities, and resources).
+    - name: Fix invalid extension
+      id: fix-invalid-extension
+      description: 'Wants to resolve the "Application Server" <type> not supported invalid extension error in Integration Studio by using Microsoft .NET integration, so they can create or publish the extension successfully.'
     - name: Fix invalid assembly
       id: fix-invalid-assembly
       description: 'Wants to fix the OS-ELG-MODL-05001 error ("File does not
@@ -3495,6 +3511,9 @@ knowledge-needs:
         OutSystemsHubEdition prefix or a reserved system filename (for example,
         compressor or web.config), by renaming the resource file to remove the
         prefix or reserved name, so that the resource deploys correctly.'
+    - name: Resource in use error
+      id: resource-in-use-error
+      description: 'Wants to resolve the "The resources of the extension are being used by an external application. Close the external application and repeat the operation." error in Integration Studio by closing the external application that uses the extension resource, so that they can repeat the operation.'
     - name: Avoid DLL name clash
       id: avoid-dll-name-clash
       description: Wants to avoid runtime overwrite issues when a DLL resource
@@ -3649,6 +3668,12 @@ knowledge-needs:
       description: Wants to know what information the Select Server window requires in
         Integration Studio, so that they can connect to a specific Platform
         Server, in OutSystems 11.
+    - name: Fix platform server error
+      id: fix-platform-server-error
+      description: Wants to resolve the "An error occurred while connecting to Platform Server."
+        error in Integration Studio by checking the server parameters in the
+        Select Server window or contacting a System Administrator when the
+        connection fails, so that they can connect to the target Platform Server.
     - name: 1-Click Publish window
       id: 1-click-publish-window
       description: Wants to know what areas and action buttons the 1-Click Publish window
@@ -10385,6 +10410,12 @@ knowledge-needs:
         its cause and impact, and following the recommended fix action, so that
         they can resolve build failures when publishing mobile or reactive web
         apps.
+    - name: '1-Click Publish Required'
+      id: 1-click-publish-required
+      description: 'Wants to understand why the "1-Click Publish Required" error
+        appears when a module changes the database and must be republished
+        before it runs in a Personal Area, so that they know why the app does
+        not run until they publish it.'
   - name: Troubleshoot LifeTime deployments
     id: troubleshoot-lifetime-deployments
     subtopics:
@@ -10470,6 +10501,14 @@ knowledge-needs:
         to an action parameter that expects a consumed Web Service name, so
         that they understand why Service Studio can''t validate the web
         service reference at design time, in OutSystems 11.'
+    - name: Invalid parameter error
+      id: invalid-parameter-error
+      description: 'Wants to fix the "Invalid Parameter" error family in
+        Service Studio for OutSystems 11 by setting a valid data type for
+        the parameter, ensuring entity-backed parameters reference an
+        entity with an Identifier attribute, and setting Mandatory only on
+        Input parameters, so the module compiles and publishes
+        successfully.'
     - name: Invalid Blocks error
       id: invalid-blocks-error
       description: 'Wants to resolve the "Invalid Blocks" "Block loop detected"

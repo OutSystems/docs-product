@@ -347,6 +347,18 @@ knowledge-needs:
         error handling, by adding error handlers to the web flow or changing
         the Theme''s error handling Flow property to one that already
         implements error handling.'
+    - name: Fix invalid error handler
+      id: fix-invalid-error-handler
+      description: Wants to fix the Invalid Error Handler error in OutSystems
+        11 by correcting duplicate exception handlers, security error handler
+        destinations, mandatory screen parameters, and missing Exception
+        values, so the app publishes successfully.
+    - name: Fix invalid error handler flow
+      id: fix-invalid-error-handler-flow
+      description: Wants to fix the "Invalid Error Handler Flow" error in
+        OutSystems 11 when an error handler path crosses the main path or
+        another flow, by changing the error handler flow so it does not
+        cross the screen or action flow and the app publishes successfully.
     - name: Raise exception
       id: raise-exception
       description: Wants to use the Raise Exception element to stop the current
@@ -1745,6 +1757,12 @@ knowledge-needs:
         SQL during compilation, including how Sources, Filters, Sorting,
         and Test values map to SELECT, FROM, WHERE, and ORDER BY clauses, so
         they can reason about the generated query.
+    - name: Fix invalid group error
+      id: fix-invalid-group-error
+      description: 'Wants to fix the "Invalid Group" error in Service Studio for
+        OutSystems 11 when a grouped column does not use an entity attribute
+        in its formula, by deleting the grouped column or changing the formula
+        to use an entity attribute, so the aggregate compiles successfully.'
     - name: Test aggregate values
       id: test-aggregate-values
       description: Wants to set sample input parameter values in an Aggregate
@@ -3355,6 +3373,9 @@ knowledge-needs:
     - name: Fix parameter defaults
       id: fix-parameter-defaults
       description: 'Wants to fix the OS-ELG-MODL-05026 error ("The default value specified for <ParameterName> is unsupported.") by removing or changing unsupported default values in C# external library method signatures before uploading the library, so they can publish it successfully.'
+    - name: Fix literal defaults
+      id: fix-literal-defaults
+      description: Wants to resolve the Invalid Extension error in Integration Studio by setting extension action input parameter default values to literals and refreshing the Extension reference when a default value is not a literal, so they can publish the extension successfully.
     - name: Fix reference parameter
       id: fix-reference-parameter
       description: 'Wants to fix the OS-ELG-MODL-05016 error ("The parameter ''<ParamaterName>'' in action ''<ActionName>'' is passed by reference. Passing parameters by reference is not supported.") by changing ref or in parameters to pass by value and returning modified values if needed in their C# external library project, so they can successfully publish the external library.'
@@ -6250,6 +6271,14 @@ knowledge-needs:
         output parameter''s data type only being allowed to be received in
         the request body, by correcting the parameter''s ''Receive In''
         property, so that the REST API method compiles and publishes
+        successfully.'
+    - name: Fix GET body input
+      id: fix-get-body-input
+      description: 'Wants to fix the "Invalid HTTP Method" error for an
+        exposed REST API method in Service Studio for OutSystems 11 when a
+        GET method sends an input parameter in the request body, by changing
+        the method to a different HTTP method or removing the body input
+        parameter, so that the REST API method compiles and publishes
         successfully.'
     - name: Fix multipart invalid HTTP method
       id: fix-multipart-invalid-http-method
@@ -14794,6 +14823,9 @@ knowledge-needs:
         configurations, by checking the build logs on Service Center and
         fixing the configuration, so that the mobile app package generates
         successfully.'
+    - name: Fix extensibility syntax
+      id: fix-extensibility-syntax-error
+      description: 'Wants to resolve the "Invalid Extensibility Configurations" error caused by syntax errors in a module''s Extensibility Configurations JSON, by correcting the JSON in Service Studio, so that the app publishes successfully.'
     - name: Missing plugin variables error
       id: missing-plugin-variables-error
       description: 'Wants to resolve the OS-MABS-PLG-40002 "Couldn''t install
@@ -20865,6 +20897,9 @@ knowledge-needs:
         OutSystems 11 by shortening a Text property value to the allowed
         number of characters when the value exceeds the limit, so the app
         validates and publishes successfully.
+    - name: Fix invalid expression
+      id: fix-invalid-expression
+      description: 'Wants to fix the "Invalid Expression Error" in Service Studio by correcting expression syntax, operand references, literal formats, function arguments, nested function calls, and operator usage, so the module validates and publishes successfully.'
   - name: Troubleshoot infra issues
     id: troubleshoot-infra-issues
     description: Wants to find the right troubleshooting article for O11 infrastructure

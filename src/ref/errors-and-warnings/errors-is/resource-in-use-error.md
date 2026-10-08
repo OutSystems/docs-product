@@ -13,6 +13,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - resource-in-use-error
 ---
 
 # Resource in Use Error

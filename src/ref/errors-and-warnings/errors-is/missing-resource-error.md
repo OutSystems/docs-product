@@ -14,6 +14,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - missing-resource-error
 ---
 
 # Missing Resource Error

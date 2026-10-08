@@ -19,8 +19,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - legacy-systems-integration
-  - custom-code-integration
+  - define-extension-elements
+  - extension-life-cycle
 ---
 
 # Create an Extension

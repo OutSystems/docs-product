@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - 1-click-publish-required
 ---
 
 # 1-Click Publish Required Error

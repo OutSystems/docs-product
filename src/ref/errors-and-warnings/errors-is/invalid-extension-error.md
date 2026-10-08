@@ -16,6 +16,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - fix-invalid-extension
 ---
 
 # Invalid Extension Error

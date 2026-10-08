@@ -17,6 +17,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - fix-platform-server-error
 ---
 
 # Connection Error

@@ -1243,6 +1243,9 @@ knowledge-needs:
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
+    - name: Database auto numbers
+      id: database-auto-numbers
+      description: Wants to understand how OutSystems implements an Integer attribute with IsAutoNumber set to Yes in SQL Server and Oracle, so they know which database objects are created and why the generated values can differ across environments.
     - name: Delete rule options
       id: delete-rule-options
       description: Wants to understand how the Delete Rule property affects referential integrity in an entity relationship, so they can choose between Protect, Delete, and Ignore.
@@ -2464,6 +2467,11 @@ knowledge-needs:
         DECIMAL_TO_TEXT, TEXT_TO_INTEGER) are available and what behavior to expect
         when converting between data types in SQL queries with external entities in
         ODC, so they can avoid runtime errors and produce correct results.
+    - name: Database type mapping
+      id: database-type-mapping
+      description: Wants to look up how OutSystems 11 data types map to supported
+        database types, so they can predict the database column types generated
+        for entity attributes.
     - name: ANSI-92 data types
       id: ansi-92-data-types
       description: Wants to know which ANSI-92 SQL data types are available in ODC
@@ -2489,6 +2497,25 @@ knowledge-needs:
         including time comparisons, string concatenation, INSERT, LIMIT, RANDOM,
         selecting attributes, UPDATE, and case- and accent-insensitive LIKE
         patterns, so they can rewrite queries for ODC.
+    - name: Compatible SQL queries
+      id: compatible-sql-queries
+      description: 'Wants to write SQL queries that work across supported database servers in
+        OutSystems by using platform-provided replacements for database-specific features
+        such as the Dual table and getdate(), so they can keep one query working across all
+        supported database servers.'
+    - name: Commit before calling processes or consumed web services
+      id: oracle-sql-limits
+      description: Wants to commit a transaction before calling a process or consumed
+        web service in an Oracle-backed app, so that the call can run without
+        violating Oracle transaction requirements.
+    - name: Case- and accent-insensitive searches on large text objects
+      id: oracle-case-accent-insensitive-large-text-search
+      description: Wants to perform case- and accent-insensitive searches on large
+        text objects in Oracle, so they can find matching records without SQL errors.
+    - name: Compare long text values with LIKE
+      id: oracle-long-text-like-comparison
+      description: Wants to compare long text values in Oracle using LIKE instead
+        of =, so they can filter text fields without hitting Oracle SQL limitations.
     - name: SELECT statement syntax
       id: select-statement-syntax
       description: Wants to understand how to write ANSI-92 SELECT queries in ODC SQL
@@ -12050,6 +12077,12 @@ knowledge-needs:
       through a describe-review-refine conversational workflow, and how AI
       agents, the OutSystems Model, and the compiler work together under the
       hood, so that they can decide whether it fits their use case.
+  - name: MCP terminology
+    id: mcp-terminology
+    description: Wants to understand the terms used across OutSystems MCP in
+      O11, including the MCP host, agent, Service Studio MCP server,
+      OutSystems skill for O11, write-review terms, and context-dependent
+      meanings, so they can read the related pages correctly.
   - name: MCP server capabilities
     id: outsystems-mcp-capabilities
     description: Wants to understand what the Service Studio MCP server reads
@@ -18577,6 +18610,13 @@ knowledge-needs:
         SQL Server or Azure SQL by setting server, database, authentication,
         advanced connection settings, and administrator/runtime credentials, so
         the Platform Server uses the intended platform database.
+    - name: Configure session tab
+      id: configure-session-tab
+      description: Wants to configure the Session tab in Configuration Tool for
+        a supported database platform by setting the session database
+        connection, advanced parameters, and session user credentials, so
+        that Platform Server stores end user persistent sessions in the
+        intended database.
     - name: Create platform database
       id: create-platform-database
       description: Wants to create or upgrade the platform database objects with

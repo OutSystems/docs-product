@@ -1310,6 +1310,13 @@ knowledge-needs:
       description: Wants to fix the "Invalid Entity" error in Service Studio for
         OutSystems 11 when a web service requires a static entity by using a
         Text identifier, so the entity compiles and publishes successfully.
+    - name: Fix invalid SOAP static entity usage
+      id: fix-invalid-soap-static-entity-usage
+      description: Wants to fix the Invalid SOAP Static Entity Usage Error in
+        Service Studio for OutSystems 11 when a consumed SOAP static entity is
+        used as an entity attribute data type, aggregate source, combo box
+        source entity, or in an SQL clause, so the module compiles and
+        publishes successfully.
     - name: Delete rule options
       id: delete-rule-options
       description: Wants to understand how the Delete Rule property affects referential integrity in an entity relationship, so they can choose between Protect, Delete, and Ignore.
@@ -6276,6 +6283,19 @@ knowledge-needs:
         or missing Response Format property, by correcting the property or
         removing the output parameters, so that the REST API method compiles
         and publishes successfully.'
+    - name: Fix REST auth length
+      id: fix-rest-auth-length
+      description: 'Wants to fix the Invalid (property name) error in an exposed REST
+        API when the Username or Password property in the Basic Authentication
+        group exceeds the allowed length, by shortening the credentials or using
+        a different authentication type, so that the API compiles and publishes
+        successfully.'
+    - name: Fix invalid URL path
+      id: fix-invalid-url-path
+      description: 'Wants to fix the "Invalid URL Path" error for an exposed
+        REST API method in Service Studio for OutSystems 11 by correcting the
+        URL Path property and related input parameters, so that the REST API
+        method compiles and publishes successfully.'
     - name: Fix invalid receive in error
       id: fix-invalid-receive-in-error
       description: 'Wants to fix the "Invalid Receive In" error for a REST API
@@ -7547,6 +7567,14 @@ knowledge-needs:
         Width value or increasing the theme''s Grid property, in Service Studio
         for OutSystems 11, so they can continue publishing or running the app
         without the error.'
+    - name: Fix grid units error
+      id: fix-grid-units-error
+      description: 'Wants to resolve the "Invalid Use Of Grid Units" error
+        caused when a widget''s Width, Min. Height, Margin Left, or Margin Top
+        properties use grid columns without the theme''s Use Grid property set
+        to Yes, by changing those properties to px, pt, or %, or by enabling
+        Use Grid in the theme, in Service Studio for OutSystems 11, so the app
+        publishes or runs without the error.'
     - name: Uppercase input text
       id: uppercase-input-text
       description: 'Wants to display input text in uppercase at runtime while
@@ -9543,6 +9571,12 @@ knowledge-needs:
         of the Go To Destination node in Service Studio, so that they can
         navigate to a specific screen, in OutSystems 11 traditional web apps,
         mobile apps, and reactive web apps.
+    - name: Fix invalid transition
+      id: fix-invalid-transition
+      description: Wants to resolve the Invalid Transition error by setting
+        Reverse Transition only on Go To Destination nodes that target
+        Previous Screen, so that the screen transition validates in Service
+        Studio.
     - name: Screen component flow
       id: screen-component-flow
       description: Wants to understand how screens, blocks, widgets, events,
@@ -10668,6 +10702,12 @@ knowledge-needs:
         Area, by waiting and retrying the operation or restarting the
         Deployment Controller service if the lock persists, so that publishing
         or running can continue.'
+    - name: Module version error
+      id: module-version-error
+      description: 'Wants to resolve the "Module Version" error when a module
+        version is not found on the connected Platform Server, by contacting
+        the Service Center administrator to find out the cause, so that they
+        can determine how to fix the issue.'
     - name: Fix invoke ping error
       id: fix-invoke-ping-error
       description: 'Wants to resolve a "Could not invoke ping" deployment error
@@ -10748,6 +10788,14 @@ knowledge-needs:
         node, or by calling a non-function action inside another function, by
         changing the Function property of the relevant Client Action to Yes
         or No as appropriate, so that the module compiles and publishes
+        successfully.'
+    - name: Invalid user function
+      id: invalid-user-function
+      description: 'Wants to resolve the "Invalid User Function" error in
+        OutSystems 11, caused by a user-defined action marked as a function
+        having no output parameters or more than one output parameter, by
+        setting the Function property to No or reducing the action to exactly
+        one output parameter, so that the module compiles and publishes
         successfully.'
     - name: Invalid Combo Box error
       id: invalid-combo-box-error
@@ -10861,6 +10909,12 @@ knowledge-needs:
         or providing an alternative module as the User Provider, in
         OutSystems 11, so that the module compiles and publishes
         successfully.'
+    - name: Module name conflict error
+      id: module-name-conflict-error
+      description: 'Wants to resolve the "module Name Conflict" error in
+        OutSystems 11, caused by a module or tenant name already existing
+        in the connected Platform Server, by renaming the module or tenant
+        to a unique name, so that the module publishes successfully.'
     - name: Fix invalid screen error
       id: fix-invalid-screen-error
       description: 'Wants to fix the "Invalid Screen" error family in Service
@@ -20782,6 +20836,13 @@ knowledge-needs:
         delay connecting Service Studio and Chrome, by reusing the existing
         Chrome window or disabling "Automatically detect settings" in
         Chrome''s proxy settings, so debugging starts successfully.'
+    - name: Mobile debug errors
+      id: mobile-debug-errors
+      description: Wants to troubleshoot mobile debug errors in Service Studio by
+        checking Chrome installation, browser connection status, loading
+        timeouts, browser responsiveness, and Platform Server version
+        compatibility, so that they can start or continue debugging a mobile
+        app.
     - name: Inspect debugger context
       id: inspect-debugger-context
       description: Wants to inspect the Threads, Breakpoints, and Users tabs in the
@@ -20951,6 +21012,9 @@ knowledge-needs:
     - name: Fix invalid expression
       id: fix-invalid-expression
       description: 'Wants to fix the "Invalid Expression Error" in Service Studio by correcting expression syntax, operand references, literal formats, function arguments, nested function calls, and operator usage, so the module validates and publishes successfully.'
+    - name: Fix invalid variable
+      id: fix-invalid-variable
+      description: Wants to resolve the Invalid Variable Error in Service Studio by setting a valid value for the Variable property on affected widgets or Assign nodes after the referenced variable is deleted or unset, so TrueChange stops flagging the module.
   - name: Troubleshoot infra issues
     id: troubleshoot-infra-issues
     description: Wants to find the right troubleshooting article for O11 infrastructure
@@ -21176,6 +21240,12 @@ knowledge-needs:
       by releasing the previous environment, registering it with the new
       serial number on the Licensing portal, and installing the new
       license file.
+  - name: Resolve licensing error
+    id: resolve-licensing-error
+    description: Wants to resolve the OutSystems 11 Licensing error when a
+      server has no valid license, the license is expired or invalid, or
+      licensed resource limits are exceeded, so they can restore access to
+      licensed features and publish modules.
   - name: Retain VM MAC
     id: retain-vm-mac
     description: Wants to prevent a Virtual Machine hosting the Deployment

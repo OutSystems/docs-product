@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - invalid-argument-error
 ---
 
 # Invalid Argument Value Error

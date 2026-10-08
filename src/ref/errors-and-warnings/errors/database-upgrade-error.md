@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - database-upgrade-error
 ---
 
 # Database Upgrade Error

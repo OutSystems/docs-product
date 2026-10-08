@@ -15,6 +15,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - fix-merge-templates-error
 ---
 
 # Merge Templates Error

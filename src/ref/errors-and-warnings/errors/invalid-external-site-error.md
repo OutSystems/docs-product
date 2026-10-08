@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - external-site-reference
 ---
 
 # Invalid External Site Error

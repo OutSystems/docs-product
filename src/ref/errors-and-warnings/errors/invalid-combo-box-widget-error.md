@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - invalid-combo-box-error
 ---
 
 # Invalid Combo Box Widget Error

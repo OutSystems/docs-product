@@ -12,6 +12,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - excel-to-record-list
+  - export-data-to-excel
 ---
 
 # Invalid Excel Handling Error

@@ -16,6 +16,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - unblock
+topic:
+  - connection-error
 ---
 
 # Connection Error

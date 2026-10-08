@@ -6,6 +6,8 @@ tags:
   - Troubleshooting
 locale: en-us
 guid: d16fc208-4a45-4e8e-a4d1-d271d33f00a4
+topic:
+  - concurrent-publish-error
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

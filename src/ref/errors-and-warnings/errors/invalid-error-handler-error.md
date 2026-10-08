@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-invalid-error-handler
 ---
 
 # Invalid Error Handler Error

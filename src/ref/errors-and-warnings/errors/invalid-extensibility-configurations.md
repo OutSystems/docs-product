@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-extensibility-syntax-error
 ---
 
 # Invalid Extensibility Configurations

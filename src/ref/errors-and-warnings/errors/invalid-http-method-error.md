@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-get-body-input
 ---
 
 # Invalid HTTP Method Error

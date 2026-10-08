@@ -1440,6 +1440,9 @@ knowledge-needs:
     - name: Fix invalid structure
       id: fix-invalid-structure
       description: 'Wants to fix the "<structure> must have at least one attribute." and "<structure>.<attribute> defines a recursive Structure data type definition." errors in Service Studio by adding at least one attribute to the structure and removing recursive Record attribute definitions, so the structure compiles successfully.'
+    - name: Fix invalid record
+      id: fix-invalid-record
+      description: 'Wants to fix the "Record must have at least one attribute" Invalid Record error in Service Studio by adding at least one attribute to the record, so the module compiles successfully.'
     - name: Data types and entities
       id: data-types-and-entities
       description: Wants to understand how structures and entity records differ in
@@ -1677,6 +1680,12 @@ knowledge-needs:
         having duplicate join conditions on the same entities, or applying an
         aggregation function to a calculated column with an incompatible data
         type, so that the module compiles and publishes successfully.'
+    - name: Fix invalid join
+      id: fix-invalid-join
+      description: Wants to fix the Invalid Join error in Service Studio for
+        OutSystems 11 when the same entity appears twice in a join condition
+        or a structure is used in a join condition, so that the module
+        compiles and publishes successfully.
     - name: Fix column reference
       id: fix-column-reference
       description: 'Wants to fix the "Invalid Column Reference" error in Service
@@ -2587,6 +2596,9 @@ knowledge-needs:
         including time comparisons, string concatenation, INSERT, LIMIT, RANDOM,
         selecting attributes, UPDATE, and case- and accent-insensitive LIKE
         patterns, so they can rewrite queries for ODC.
+    - name: Fix invalid SQL
+      id: fix-invalid-sql
+      description: 'Wants to fix the "Invalid SQL" error in OutSystems 11 by correcting unknown entities, unknown attributes, missing or invalid output structures, reserved prefixes, parameter spacing, and database-mismatch issues, so the SQL query compiles and runs successfully.'
     - name: Compatible SQL queries
       id: compatible-sql-queries
       description: 'Wants to write SQL queries that work across supported database servers in
@@ -9511,6 +9523,12 @@ knowledge-needs:
         by JavaScript nodes that violate Strict Mode, by identifying the
         node named in the error message and correcting the unsupported
         JavaScript syntax or behavior, so that the app publishes successfully.
+    - name: Fix invalid JavaScript
+      id: fix-invalid-javascript
+      description: Wants to resolve the Invalid JavaScript error in Service
+        Studio by fixing syntax errors and invalid Parameter, Client Action,
+        and Role references in a JavaScript node, so the module validates
+        successfully.
     - name: Implement form validation
       id: implement-form-validation
       description: Wants to implement custom business-rule validation on a
@@ -9597,6 +9615,13 @@ knowledge-needs:
         client actions trigger navigation, external URLs, events, and
         client-side logic, so that they can choose the right screen interaction
         for each control.
+    - name: Fix invalid link error
+      id: fix-invalid-link-error
+      description: Wants to resolve invalid link errors in OutSystems 11 by
+        setting the Link widget Method and Destination properties correctly
+        for navigation or action execution, and by avoiding unsupported
+        destination argument types when Method is Navigate, so the screen
+        validates successfully.
     - name: Create popup widget
       id: create-popup-widget
       description: Wants to create and show a popup to display information or
@@ -10691,6 +10716,14 @@ knowledge-needs:
         to an action parameter that expects a consumed Web Service name, so
         that they understand why Service Studio can''t validate the web
         service reference at design time, in OutSystems 11.'
+    - name: Invalid image error
+      id: invalid-image-error
+      description: 'Wants to fix the "Invalid Image" error family in Service
+        Studio for OutSystems 11, caused by an Image widget Attribute not
+        being Binary Data, an Id value not being an Entity Identifier, a
+        missing File Name, or a missing URL, by setting the correct
+        property values and data types, so the module compiles and publishes
+        successfully.'
     - name: Invalid parameter error
       id: invalid-parameter-error
       description: 'Wants to fix the "Invalid Parameter" error family in
@@ -10724,6 +10757,14 @@ knowledge-needs:
         properties on a Combo Box widget, by editing the widget to set the
         correct combination of properties matching the specific error
         message, in OutSystems 11, so that the module compiles and publishes
+        successfully.'
+    - name: Invalid List Box error
+      id: invalid-list-box-error
+      description: 'Wants to resolve the "Invalid List Box Widget" error in
+        Service Studio, caused by a Selection Attribute that is not a
+        Boolean attribute or a Source Attribute that is missing, deleted, or
+        Binary Data, by setting a Boolean Selection Attribute and a suitable
+        Source Attribute, so that the module compiles and publishes
         successfully.'
     - name: Fix Empty Widget error
       id: fix-empty-widget-error
@@ -10875,6 +10916,9 @@ knowledge-needs:
         only in-module Entities/Structures, or adjusting/removing the
         Destination argument or the block''s Public property, in OutSystems
         11, so that the module compiles and publishes successfully.'
+    - name: Public structure error
+      id: public-structure-error
+      description: 'Wants to resolve the "Invalid Public Structure" error in Service Studio for OutSystems 11, caused by a public structure containing a record-type attribute that is not declared public or that references another module, by making the referenced Entity/Structure public or using only in-module Entities/Structures, so that the module compiles and publishes successfully.'
     - name: Incompatible consumer warning
       id: incompatible-consumer-warning
       description: 'Wants to resolve the "Consumer module has incompatible

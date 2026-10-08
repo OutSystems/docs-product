@@ -10702,6 +10702,12 @@ knowledge-needs:
         Area, by waiting and retrying the operation or restarting the
         Deployment Controller service if the lock persists, so that publishing
         or running can continue.'
+    - name: Generic publishing error
+      id: generic-publishing-error
+      description: 'Wants to resolve the generic "Publishing Error" in
+        OutSystems 11 by involving the System Administrator because the
+        failure can have multiple underlying causes, so that they can publish
+        the module successfully.'
     - name: Module version error
       id: module-version-error
       description: 'Wants to resolve the "Module Version" error when a module

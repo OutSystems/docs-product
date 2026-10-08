@@ -16,6 +16,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - verify-extension-definition
 ---
 
 # Integration Studio Errors

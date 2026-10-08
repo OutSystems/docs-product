@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - soap-extensibility-api
 ---
 
 # Incompatible Action Error

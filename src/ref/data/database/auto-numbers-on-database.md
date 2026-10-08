@@ -16,6 +16,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - database-auto-numbers
+
 ---
 
 # Auto Numbers on Database

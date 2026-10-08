@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - database-type-mapping
 ---
 
 # Database Data Types

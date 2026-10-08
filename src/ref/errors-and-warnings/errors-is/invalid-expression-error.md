@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - expression-operands
+  - expression-operators
 ---
 
 # Invalid Expression Error

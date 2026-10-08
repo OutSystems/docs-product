@@ -2843,6 +2843,11 @@ knowledge-needs:
         on query conditions, join usage, and data sparsity, in OutSystems
         11, so that query performance improves without excessively slowing
         down inserts and updates.
+    - name: Create unique index
+      id: create-unique-index
+      description: Wants to create a unique index on one or more entity
+        attributes in OutSystems 11 or ODC, so that duplicate values are
+        prevented and the entity enforces uniqueness.
     - name: Understand entity indexes
       id: understand-entity-indexes
       description: Wants to understand how entity indexes work in OutSystems
@@ -4621,6 +4626,12 @@ knowledge-needs:
         Top 10 Mobile Risks lists, so that they can use a recognized
         vulnerability baseline when assessing and securing their
         applications.
+    - name: OutSystems security approach
+      id: outsystems-security-approach
+      description: Wants to understand how OutSystems addresses web security
+        risks through built-in protection, guided development, and lifecycle
+        integration, so that they can explain the platform's security
+        approach and why it matters.
     - name: Authentication risks
       id: authentication-risks
       description: Wants to identify the primary risk of authentication
@@ -5550,6 +5561,22 @@ knowledge-needs:
       id: architecture-canvas-rules
       description: Wants to validate module architecture with the Architecture Canvas rules
         for modules, so they can keep module dependencies sound.
+    - name: Architecture design review
+      id: architecture-design-review
+      description: Wants to run architecture design review sessions before each sprint by
+        evaluating the proposed solution's context, NFRs, risks, and
+        architecture principles, so they can confirm development readiness.
+    - name: Code review sessions
+      id: code-review-sessions
+      description: Wants to run code review sessions for each User Story by reviewing
+        code quality and maintainability, so they can catch issues before
+        delivery.
+    - name: Architecture assessment sessions
+      id: architecture-assessment-sessions
+      description: Wants to run recurring architecture assessment sessions on a regular
+        sprint cadence by reviewing technical debt, architecture best practices,
+        and team alignment, so they can keep the architecture maintainable and
+        delivery-ready.
   - name: Architecture Canvas
     id: architecture-canvas
     subtopics:
@@ -7251,6 +7278,11 @@ knowledge-needs:
         client actions or provider instance and JavaScript, so they can work
         with the latest patterns and know when deprecated patterns use
         AdvancedFormat instead.
+    - name: Pattern selector scope
+      id: pattern-selector-scope
+      description: Wants to scope CSS selectors to a specific pattern instance by
+        using a wrapper container name and its runtime Id in JavaScript, so
+        class-based selectors do not affect every instance on the same screen.
     - name: Layout placeholder names
       id: layout-placeholder-names
       description: Wants to identify the layout placeholder names reserved by the
@@ -7270,6 +7302,11 @@ knowledge-needs:
         avoiding inline styles and ID selectors, centralizing CSS in the
         theme, and using CSS variables, in Service Studio, so their app's
         styling stays maintainable and scalable.
+    - name: CSS basics
+      id: css-basics
+      description: Wants to understand CSS classes, IDs, hierarchy, and how to
+        write and edit CSS in OutSystems, so they can style apps consistently
+        with themes and style guides.
     - name: CSS hierarchy
       id: css-hierarchy
       description: Wants to understand the order OutSystems loads CSS from different
@@ -9132,6 +9169,11 @@ knowledge-needs:
         dragging it from the Toolbox, in Service Studio for OutSystems 11, so
         that a complex, fully functional Screen layout scaffolds quickly with
         sample data instead of building each widget from scratch.
+    - name: Build UI with HTML
+      id: build-ui-with-html
+      description: Wants to build simple screens with HTML widgets, map HTML tags to
+        OutSystems widgets, and use scaffolding to create list and detail
+        screens, so they can turn web development knowledge into OutSystems UI.
     - name: Use Search pattern
       id: use-search-pattern
       description: Wants to add the Search UI Pattern to a screen and configure
@@ -9324,6 +9366,18 @@ knowledge-needs:
         and Mobile Apps, in OutSystems 11, so that they can decide whether
         JavaScript is the right solution and find the detailed instructions
         for their app type.
+    - name: Add and run JavaScript
+      id: add-run-javascript-reactive
+      description: Wants to add and run JavaScript in Reactive Applications, so they
+        can extend app behavior with client-side logic.
+    - name: Create and import JavaScript scripts
+      id: create-import-javascript-scripts
+      description: Wants to create and import JavaScript scripts in OutSystems, so they
+        can organize and reuse client-side code.
+    - name: Use OutSystems JavaScript APIs
+      id: use-outsystems-javascript-apis
+      description: Wants to use OutSystems JavaScript APIs, so they can interact with
+        platform features from client-side code.
     - name: JS best practices
       id: javascript-best-practices
       description: Wants to know the recommendations to follow before adding
@@ -11031,6 +11085,12 @@ knowledge-needs:
       lead time for changes, time to restore service, and change failure rate,
       so they can recognize the correct measure set for DevOps delivery
       effectiveness in an assessment.
+    subtopics:
+    - name: DORA elite performance
+      id: dora-elite-performance
+      description: Wants to identify the DORA benchmarks that define elite
+        performers, so they can distinguish elite teams from other delivery
+        performers.
   - name: DevOps reference model
     id: devops-reference-model
     description: Wants to understand how the DevOps reference model maps OutSystems
@@ -16644,6 +16704,11 @@ knowledge-needs:
 - name: Progressive Release
   guid: eb4c73d7-260f-4048-9a2f-f61333238db1
   topics:
+  - name: Feature flag rollout
+    id: feature-flag-rollout
+    description: Wants to use feature flags to decouple release from deployment, so
+      they can hide unfinished work, test versions with a subset of users, and
+      expand a release gradually before full rollout.
 - name: Static Code Analysis
   guid: 931dbd7f-f26d-4499-b25a-e60f5c268f9d
   topics:
@@ -17169,6 +17234,19 @@ knowledge-needs:
         Users component, and redirecting back to the original URL, so that the
         app can use an external identity system while keeping the local
         session.'
+    - name: Google app registration
+      id: google-app-registration
+      description: 'Wants to register the Employees application in Google APIs,
+        configure the OAuth consent screen and redirect URI, store the client
+        ID and client secret in site properties, and enable the People API, so
+        the sign-in flow can use Google.'
+    - name: Google REST integration
+      id: google-rest-integration
+      description: 'Wants to consume the Google OAuth token endpoint and People
+        API in OutSystems, configure the POST request and response samples, and
+        pass the authorization header and personFields parameter, so the
+        Employees application can fetch the signed-in user profile during the
+        callback.'
     - name: Mobile external IdP login
       id: mobile-external-idp-login
       description: Wants to implement secure external identity provider login

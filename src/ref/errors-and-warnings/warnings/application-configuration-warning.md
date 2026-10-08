@@ -14,6 +14,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - unblock
+topic:
+  - resolve-shared-config
 ---
 
 # Application Configuration Warning

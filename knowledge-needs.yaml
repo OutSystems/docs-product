@@ -970,6 +970,12 @@ knowledge-needs:
       description: Wants to understand what code maintainability means and
         which traits make code easy to modify, update, and extend without
         breaking functionality, so they can recognize maintainable code in ODC.
+    - name: Code maintainability practices
+      id: code-maintainability-practices
+      description: Wants to identify the practices that support code
+        maintainability, including architecture validation, development best
+        practices, peer review, and code review, so they can apply them
+        throughout development.
     - name: Custom CSS best practices
       id: application-custom-css-practices
       description: Wants to follow best practices when adding custom CSS to an
@@ -11343,6 +11349,12 @@ knowledge-needs:
     description: Wants to understand how the DevOps reference model maps OutSystems
       capabilities across delivery, governance, and operations, so that they can
       plan a DevOps approach for the platform.
+  - name: DevOps overview
+    id: devops-overview
+    description: Wants to understand DevOps in OutSystems 11, including the Three
+      Ways, enterprise readiness evidence, and official capabilities, so they
+      can explain how DevOps improves delivery flow and supports continuous
+      delivery.
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -18803,6 +18815,12 @@ knowledge-needs:
       description: Wants to use retrospectives at the end of projects and
         iterations to identify improvement actions and carry lessons into later
         releases and projects.
+    - name: User story lifecycle
+      id: user-story-lifecycle
+      description: Wants to understand how user stories move from backlog writing
+        and refinement through iteration planning, development, business
+        feedback, UAT, and final validation, so that they can follow the
+        end-to-end lifecycle across an iteration.
   - name: Project role allocation
     id: project-role-allocation
     description: Wants to understand how project roles are allocated across the

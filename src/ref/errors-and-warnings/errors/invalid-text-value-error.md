@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-text-length-error
 ---
 
 # Invalid Text Value Error

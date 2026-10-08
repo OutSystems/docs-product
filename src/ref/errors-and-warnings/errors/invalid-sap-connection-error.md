@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-sap-connection-error
 ---
 
 # Invalid SAP Connection Error

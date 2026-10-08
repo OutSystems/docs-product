@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - public-structure-error
 ---
 
 # Invalid Public Structure Error

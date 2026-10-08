@@ -10963,6 +10963,13 @@ knowledge-needs:
         missing placeholders or comply with Menu requirements, or choosing
         a different compliant Web Block, in OutSystems 11, so that the
         theme compiles and publishes successfully.'
+    - name: Fix invalid theme error
+      id: fix-invalid-theme-error
+      description: 'Wants to resolve the "Invalid Theme Error" in OutSystems
+        11, caused by a theme''s Error Handling Flow web flow having no
+        error handlers, by adding error handlers to that web flow or
+        switching the theme to a web flow that already implements them, so
+        that the app publishes successfully.'
     - name: Module name changed warning
       id: module-name-changed-warning
       description: 'Wants to resolve the "Module <name> was renamed to

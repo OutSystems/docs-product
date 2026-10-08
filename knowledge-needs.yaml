@@ -947,6 +947,12 @@ knowledge-needs:
       id: application-code-structure-practices
       description: Wants to organize an OutSystems app's code into a clear,
         maintainable structure, so developers can understand and change it safely.
+    - name: Maintainability benefits
+      id: maintainability-benefits
+      description: Wants to identify why code maintainability matters,
+        including reduced development costs and early detection and prevention
+        of unmaintainable apps, so they can answer maintainability questions
+        correctly in a quiz or review.
     - name: Custom CSS best practices
       id: application-custom-css-practices
       description: Wants to follow best practices when adding custom CSS to an
@@ -1255,6 +1261,38 @@ knowledge-needs:
     - name: Fix invalid attribute
       id: fix-invalid-attribute
       description: 'Wants to fix the "''<attribute>'' data type is invalid" error family in Service Studio for OutSystems 11 by setting a valid data type for the entity or structure attribute, defining an entity Identifier, or using Integer for Auto Number, so the module compiles and publishes successfully.'
+    - name: Fix invalid entity with no attributes
+      id: fix-invalid-entity-missing-attributes
+      description: Wants to fix the "Invalid Entity" error in Service Studio for
+        OutSystems 11 when an entity has no attributes by adding at least one,
+        so the entity compiles and publishes successfully.
+    - name: Fix conflicting entity AutoNumber or Binary Data attributes
+      id: fix-invalid-entity-conflicting-special-attributes
+      description: Wants to fix the "Invalid Entity" error in Service Studio for
+        OutSystems 11 caused by conflicting AutoNumber or Binary Data attributes
+        by keeping only one AutoNumber or Binary Data attribute, so the entity
+        compiles and publishes successfully.
+    - name: Fix invalid entity identifier data type
+      id: fix-invalid-entity-identifier-data-type
+      description: Wants to fix the "Invalid Entity" error in Service Studio for
+        OutSystems 11 caused by an invalid identifier data type by choosing a
+        supported data type, so the entity compiles and publishes successfully.
+    - name: Fix circular entity dependencies
+      id: fix-invalid-entity-circular-dependencies
+      description: Wants to fix the "Invalid Entity" error in Service Studio for
+        OutSystems 11 caused by circular dependencies by resolving the entity
+        dependency cycle, so the entity compiles and publishes successfully.
+    - name: Fix multi-tenant entity identifier requirements
+      id: fix-invalid-entity-multi-tenant-identifier
+      description: Wants to fix the "Invalid Entity" error in Service Studio for
+        OutSystems 11 when a multi-tenant entity does not meet identifier
+        requirements by configuring its identifier correctly, so the entity
+        compiles and publishes successfully.
+    - name: Fix static entity identifier for web service use
+      id: fix-invalid-entity-static-web-service-identifier
+      description: Wants to fix the "Invalid Entity" error in Service Studio for
+        OutSystems 11 when a web service requires a static entity by using a
+        Text identifier, so the entity compiles and publishes successfully.
     - name: Delete rule options
       id: delete-rule-options
       description: Wants to understand how the Delete Rule property affects referential integrity in an entity relationship, so they can choose between Protect, Delete, and Ignore.
@@ -1314,6 +1352,12 @@ knowledge-needs:
         importing a spreadsheet through Import New Entities from Excel, so
         that the data model exists without manually creating entities and
         attributes one by one.
+    - name: Fix Excel import
+      id: fix-excel-import
+      description: 'Wants to fix the "Invalid Excel Import" error when importing a
+        spreadsheet in OutSystems 11 by ensuring the file has at least one
+        worksheet with data, the column headers start at A1, and the file is
+        not encrypted, so they can import the spreadsheet successfully.'
     - name: Bootstrap Excel blanks
       id: bootstrap-excel-blanks
       description: Wants to import bootstrap data from Excel when blank cells
@@ -1376,6 +1420,9 @@ knowledge-needs:
       description: Wants to create structures and define their attributes in OutSystems,
         and understand that a structure is a custom compound data type used to store
         related data in memory, so they can model grouped data correctly.
+    - name: Fix invalid structure
+      id: fix-invalid-structure
+      description: 'Wants to fix the "<structure> must have at least one attribute." and "<structure>.<attribute> defines a recursive Structure data type definition." errors in Service Studio by adding at least one attribute to the structure and removing recursive Record attribute definitions, so the structure compiles successfully.'
     - name: Data types and entities
       id: data-types-and-entities
       description: Wants to understand how structures and entity records differ in
@@ -1613,6 +1660,13 @@ knowledge-needs:
         having duplicate join conditions on the same entities, or applying an
         aggregation function to a calculated column with an incompatible data
         type, so that the module compiles and publishes successfully.'
+    - name: Fix column reference
+      id: fix-column-reference
+      description: 'Wants to fix the "Invalid Column Reference" error in Service
+        Studio for OutSystems 11 when a column formula depends on another
+        column in a circular way, a sorted column uses only constants or
+        functions that always return the same result, or two columns share the
+        same formula, so that the module compiles and publishes successfully.'
     - name: Fix invalid dependency
       id: fix-invalid-dependency
       description: 'Wants to fix the "Invalid Data Dependency" error in Service
@@ -2848,6 +2902,9 @@ knowledge-needs:
       description: Wants to create a unique index on one or more entity
         attributes in OutSystems 11 or ODC, so that duplicate values are
         prevented and the entity enforces uniqueness.
+    - name: Fix invalid entity index
+      id: fix-invalid-entity-index
+      description: 'Wants to fix the "Invalid Entity Index" error family in Service Studio for OutSystems 11 by removing duplicated indexes, adding missing index attributes, and using supported attribute data types and lengths, so the entity compiles and publishes successfully.'
     - name: Understand entity indexes
       id: understand-entity-indexes
       description: Wants to understand how entity indexes work in OutSystems
@@ -3519,6 +3576,9 @@ knowledge-needs:
     - name: Resource in use error
       id: resource-in-use-error
       description: 'Wants to resolve the "The resources of the extension are being used by an external application. Close the external application and repeat the operation." error in Integration Studio by closing the external application that uses the extension resource, so that they can repeat the operation.'
+    - name: Fix merge templates error
+      id: fix-merge-templates-error
+      description: 'Wants to fix the "An error occurred while merging template with <error file>: <error detail>." error in Integration Studio by checking extension file permissions, available disk space, the extension folder, and the solution build for the exact error details, so they can complete the merge successfully.'
     - name: Avoid DLL name clash
       id: avoid-dll-name-clash
       description: Wants to avoid runtime overwrite issues when a DLL resource
@@ -5577,6 +5637,12 @@ knowledge-needs:
         sprint cadence by reviewing technical debt, architecture best practices,
         and team alignment, so they can keep the architecture maintainable and
         delivery-ready.
+    - name: Maintainability lifecycle
+      id: maintainability-lifecycle
+      description: Wants to understand the code maintainability lifecycle stages and the
+        responsibilities and effort required at each stage, so they can apply the
+        right review, monitoring, and process-improvement practices throughout
+        ODC development.
   - name: Architecture Canvas
     id: architecture-canvas
     subtopics:
@@ -6233,6 +6299,12 @@ knowledge-needs:
         XML namespace prefix), by editing the exported definition files to
         correct the schema and re-importing them, so that the web service
         imports successfully, in OutSystems 11.
+    - name: Fix SOAP import error
+      id: fix-soap-import-error
+      description: Wants to resolve Invalid Consumed Web Service errors when
+        first consuming a SOAP Web Service by checking the WSDL URL, WSDL
+        structure, and available methods, so that the service imports
+        successfully.
     - name: Enable OSTrace SOAP import
       id: enable-ostrace-soap-import
       description: Wants to enable OSTrace logging for SOAP web service
@@ -7283,6 +7355,13 @@ knowledge-needs:
       description: Wants to scope CSS selectors to a specific pattern instance by
         using a wrapper container name and its runtime Id in JavaScript, so
         class-based selectors do not affect every instance on the same screen.
+    - name: JavaScript in patterns
+      id: javascript-in-patterns
+      description: Wants to add client-side JavaScript to an OutSystems 11
+        pattern by running code in an action flow, loading supporting scripts
+        from the Scripts folder, and exposing extensibility hooks so developers
+        can extend the pattern's behavior when the pattern needs reusable
+        client-side logic.
     - name: Layout placeholder names
       id: layout-placeholder-names
       description: Wants to identify the layout placeholder names reserved by the
@@ -10504,6 +10583,9 @@ knowledge-needs:
   - name: Troubleshoot self-managed publish errors
     id: troubleshoot-self-managed-publish-errors
     subtopics:
+    - name: Extension publish error
+      id: extension-publish-error
+      description: 'Wants to resolve the "An error occurred while publishing the Extension <name>." error in OutSystems 11 by contacting the system administrator when the extension publish fails, so that they can publish the extension successfully.'
     - name: File access publish error
       id: file-access-publish-error
       description: 'Wants to resolve the "The process cannot access the file
@@ -10514,6 +10596,14 @@ knowledge-needs:
         antivirus scanning, or using tools like Process Explorer/Process
         Monitor to find and stop the conflicting process, so that publication
         completes successfully.'
+    - name: Concurrent publish error
+      id: concurrent-publish-error
+      description: 'Wants to resolve the "Your module is currently being locked
+        by another operation. Please try again later." error in OutSystems 11
+        when another developer is publishing or running the module in Personal
+        Area, by waiting and retrying the operation or restarting the
+        Deployment Controller service if the lock persists, so that publishing
+        or running can continue.'
     - name: Fix invoke ping error
       id: fix-invoke-ping-error
       description: 'Wants to resolve a "Could not invoke ping" deployment error
@@ -10539,6 +10629,13 @@ knowledge-needs:
         version that resolves the issue or increasing the Configuration
         Tool's Default Query Timeout, so that the deployment completes
         successfully.
+    - name: Database upgrade error
+      id: database-upgrade-error
+      description: Wants to fix database upgrade errors in OutSystems 11 when
+        site property types change after publish, entity columns or primary
+        keys no longer match the database, a single-tenant entity is
+        upgraded to multi-tenant, or an attribute value cannot be converted
+        during upgrade, so the module publishes successfully.
     - name: Invalid argument error
       id: invalid-argument-error
       description: 'Wants to fix the "Invalid Argument Value" error in Service
@@ -16704,11 +16801,21 @@ knowledge-needs:
 - name: Progressive Release
   guid: eb4c73d7-260f-4048-9a2f-f61333238db1
   topics:
+  - name: ODC delivery principles
+    id: odc-delivery-principles
+    description: Wants to understand ODC continuous delivery principles, including small
+      batches, frequent release, decoupled release and deployment, breaking changes
+      mitigation, code review, and test automation, so they can apply them to delivery
+      work.
   - name: Feature flag rollout
     id: feature-flag-rollout
     description: Wants to use feature flags to decouple release from deployment, so
       they can hide unfinished work, test versions with a subset of users, and
       expand a release gradually before full rollout.
+  - name: Release frequently
+    id: release-frequently
+    description: Wants to release work frequently so users give early feedback
+      and significant issues surface before a full rollout.
 - name: Static Code Analysis
   guid: 931dbd7f-f26d-4499-b25a-e60f5c268f9d
   topics:
@@ -17025,6 +17132,23 @@ knowledge-needs:
         and manual testers when implementing a test automation strategy with a
         team, so that the team plans, builds, triages, and maintains automated
         tests as a shared responsibility.
+    - name: Test suite canvas
+      id: test-suite-canvas
+      description: Wants to use a test suite canvas to align on dependencies,
+        constraints, data, failure response, maintainability, and execution when
+        planning automated tests with a team, so that they can agree on what a
+        test suite needs before implementation.
+    - name: Testing pyramid
+      id: testing-pyramid
+      description: Wants to apply the testing pyramid to choose component, API,
+        or UI tests when building an automation strategy, so that they favor
+        faster, more isolated tests first.
+    - name: Decision matrix
+      id: decision-matrix
+      description: Wants to use a decision matrix to score risk, value, cost
+        efficiency, and history when deciding what to automate, so that they
+        automate the most valuable scenarios instead of aiming for full
+        coverage.
     - name: Infra integration testing
       id: infra-integration-testing
       description: Wants to automate integration tests for non-API dependencies,
@@ -18293,11 +18417,24 @@ knowledge-needs:
         the kickoff, preparation, stage sequence, and two-week agenda, when setting
         up the workshop, so that participants align on activities, deliverables,
         and timing.
+    - name: Wrap-up presentation
+      id: wrap-up-presentation
+      description: Wants to prepare and deliver the wrap-up presentation for a Business
+        Vision by covering the current situation, discovery findings, proposed solution,
+        conclusions, and deliverables, so that they can secure business agreement
+        on the vision and next steps.
     - name: OutSystems 6 dimensions
       id: outsystems-6-dimensions
       description: Wants to identify the six dimensions used to optimize an
         OutSystems delivery methodology, including that speed is not one of them,
         so they can answer questions about the value-realization model.
+    - name: Alignment dimension
+      id: alignment-dimension
+      description: Wants to understand the alignment dimension of the OutSystems
+        6 dimensions model, including clear vision, stakeholder alignment,
+        business access, and product ownership, when planning and guiding
+        delivery, so that they can keep work aligned and focused on the right
+        priorities.
   - name: Business processes
     id: business-processes
     description: Wants to understand what business processes are, why organizations
@@ -18428,6 +18565,12 @@ knowledge-needs:
       release, and post-production, so that they can see how the overall delivery
       timeline is organized.
     subtopics:
+    - name: Project planning
+      id: project-planning
+      description: Wants to size and plan an Agile project by aligning goals,
+        milestones, MVP scope, and delivery phases with available information and
+        the architecture design, so that they can set a realistic timebox before
+        moving forward.
     - name: Product team lifecycle
       id: product-team-lifecycle
       description: Wants to understand how Product teams, CoE teams, release staging,
@@ -20635,12 +20778,23 @@ knowledge-needs:
     description: Wants to find the troubleshooting guides and known issues
       in the section, then check their causes and how to solve them, so
       that they can diagnose the issue from the right article.
+    subtopics:
+    - name: Fix text length error
+      id: fix-text-length-error
+      description: Wants to resolve the Invalid Text Value Error in
+        OutSystems 11 by shortening a Text property value to the allowed
+        number of characters when the value exceeds the limit, so the app
+        validates and publishes successfully.
   - name: Troubleshoot infra issues
     id: troubleshoot-infra-issues
     description: Wants to find the right troubleshooting article for O11 infrastructure
       issues, including installation, upgrade, configuration, connectivity,
       application server, database, and platform service problems, so that they can
       diagnose the problem in the correct section.
+    subtopics:
+    - name: Connection error
+      id: connection-error
+      description: 'Wants to resolve the generic "Connection" error in OutSystems 11 when an operation fails due to communication problems and the message says to try again later, so they can retry the action and contact the Service Center administrator if the problem persists.'
   - name: Fix cross-site cookies (O11)
     id: fix-cross-site-cookies-o11
     description: Wants to identify and fix cross-site cookie problems in

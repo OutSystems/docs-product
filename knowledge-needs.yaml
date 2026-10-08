@@ -624,6 +624,11 @@ knowledge-needs:
         their order, including On Initialize, On Ready, On Render, On Destroy,
         and On After Fetch, so they know when each event runs while a screen
         loads and re-renders.
+    - name: Block lifecycle events
+      id: block-lifecycle-events
+      description: Wants to understand block lifecycle events and their order,
+        including OnInitialize, OnReady, OnRender, and OnDestroy, so they know
+        when each event runs while a block loads and re-renders.
     - name: Optimize mobile loading
       id: optimize-mobile-loading
       description: Wants to reduce a mobile screen's loading time when it depends
@@ -7114,6 +7119,11 @@ knowledge-needs:
       description: Wants to create Blocks and Web Blocks in Service Studio and
         reuse them on screens or other blocks in OutSystems 11, so common UI
         stays centralized and updates propagate from one place.
+    - name: Create pattern blocks
+      id: create-pattern-blocks
+      description: Wants to create a new UI pattern as a Block in OutSystems 11,
+        either from scratch or by wrapping a JavaScript library, so the
+        pattern's behavior lives in a reusable block.
     - name: Block communication
       id: block-communication
       description: Wants to use block events and parent-passed input parameters to

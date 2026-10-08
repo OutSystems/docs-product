@@ -953,6 +953,11 @@ knowledge-needs:
         including reduced development costs and early detection and prevention
         of unmaintainable apps, so they can answer maintainability questions
         correctly in a quiz or review.
+    - name: Code maintainability
+      id: code-maintainability
+      description: Wants to understand what code maintainability means and
+        which traits make code easy to modify, update, and extend without
+        breaking functionality, so they can recognize maintainable code in ODC.
     - name: Custom CSS best practices
       id: application-custom-css-practices
       description: Wants to follow best practices when adding custom CSS to an
@@ -5626,6 +5631,11 @@ knowledge-needs:
       description: Wants to run architecture design review sessions before each sprint by
         evaluating the proposed solution's context, NFRs, risks, and
         architecture principles, so they can confirm development readiness.
+    - name: Architecture design overview
+      id: architecture-design-overview
+      description: Wants to understand an architecture design document by covering its
+        goals, solution overview, Architecture Canvas, and validation needs, so
+        they can review a solution before development starts.
     - name: Code review sessions
       id: code-review-sessions
       description: Wants to run code review sessions for each User Story by reviewing
@@ -16816,6 +16826,12 @@ knowledge-needs:
     id: release-frequently
     description: Wants to release work frequently so users give early feedback
       and significant issues surface before a full rollout.
+  - name: Collect business feedback
+    id: collect-business-feedback
+    description: Wants to collect business feedback through regular demos,
+      frequent releases, and production usage so that the team focuses on the
+      most valuable needs, avoids surprises during final testing, and finds
+      useful ideas from daily use.
 - name: Static Code Analysis
   guid: 931dbd7f-f26d-4499-b25a-e60f5c268f9d
   topics:
@@ -17122,6 +17138,15 @@ knowledge-needs:
     - name: Testing in iterations
       id: testing-in-iterations
       description: Wants to understand what a tester does during an iteration, including coordinating user acceptance testing, creating the next iteration test plan, and supporting shaping and build work, so that they can manage testing activities across the iteration.
+  - name: Quality planning
+    id: quality-planning
+    subtopics:
+    - name: Define quality plan
+      id: define-quality-plan
+      description: 'Wants to define a project quality plan that covers the testing strategy, execution model, metrics, quality targets, acceptable defect level, test automation scope, and testing responsibilities when planning delivery, so the team knows what quality to deliver.'
+    - name: QA team integration
+      id: qa-team-integration
+      description: 'Wants to involve the QA team from the start of a project and set their role in designing test cases and testing delivered stories and features, so they can avoid delays, rework, and a backlog of defects.'
   - name: Road to automation
     id: road-to-automation
     subtopics:
@@ -18423,6 +18448,11 @@ knowledge-needs:
         Vision by covering the current situation, discovery findings, proposed solution,
         conclusions, and deliverables, so that they can secure business agreement
         on the vision and next steps.
+    - name: Business vision agreement
+      id: business-vision-agreement
+      description: Wants to secure agreement on the proposed business vision and
+        apply the closing guidelines when wrapping up the Business Vision session,
+        so that the team aligns on the next steps.
     - name: OutSystems 6 dimensions
       id: outsystems-6-dimensions
       description: Wants to identify the six dimensions used to optimize an
@@ -18506,6 +18536,21 @@ knowledge-needs:
         user needs into themes, epics, and high-level user stories, sequencing the
         epics, and keeping the structure focused on the minimum viable product, so
         that they can shape the initial project scope.
+    - name: Backlog definition
+      id: backlog-definition
+      description: Wants to understand what a backlog contains and how much detail
+        its user stories need, including the role of a Definition of Ready, so that
+        they can keep the backlog usable for delivery.
+    - name: Backlog depth
+      id: backlog-depth
+      description: Wants to keep about two sprints of backlog ready and prioritize
+        the ready stories, so that delivery keeps pace when development moves
+        quickly.
+    - name: Backlog workflow
+      id: backlog-workflow
+      description: Wants to define the backlog workflow stages and ownership from
+        inception to closure, so that the project team and stakeholders follow the
+        same process.
     - name: Prioritize user stories
       id: prioritize-user-stories
       description: Wants to prioritize user stories with the MoSCoW technique by
@@ -18544,6 +18589,16 @@ knowledge-needs:
         prerequisites, next steps, acceptance criteria, examples, and a collaboration
         zone, so that the team can plan, test, and update it while keeping it as the
         single source of truth.
+  - name: Communication hub behavior
+    id: communication-hub-behavior
+    description: Wants to coordinate project communication so the team and
+      stakeholders stay connected and aligned, communication channels are
+      established, and bottlenecks are removed.
+  - name: Map stakeholder roles
+    id: map-stakeholder-roles
+    description: Wants to identify stakeholders, map their roles and interests in
+      the project, and spot blind spots or conflicts of interest so they can manage
+      risk.
   - name: Tech lead duties
     id: tech-lead-duties
     description: Wants to understand what is expected from a Tech Lead in an
@@ -18558,6 +18613,12 @@ knowledge-needs:
       delivery team, including solution architecture, team building, quality
       assurance, acting as the user, and project steering, so that they can guide
       delivery with a balance of architecture, quality, and business value.
+  - name: Organizational awareness
+    id: organizational-awareness
+    description: Wants to understand organizational awareness in OutSystems
+      delivery, including customer goals, team positioning, and keeping alignment
+      as the project evolves, so that they can guide delivery toward go-live and
+      high user adoption.
   - name: Project timebox phases
     id: project-timebox-phases
     description: Wants to understand the project timebox lifecycle in OutSystems
@@ -18593,6 +18654,12 @@ knowledge-needs:
       OutSystems project timebox, including development, analysis, stabilization,
       daily stand-ups, and retrospectives, so that they can follow the work tracks
       and ceremonies within each iteration.
+    subtopics:
+    - name: Improve with retrospectives
+      id: improve-with-retrospectives
+      description: Wants to use retrospectives at the end of projects and
+        iterations to identify improvement actions and carry lessons into later
+        releases and projects.
   - name: Project role allocation
     id: project-role-allocation
     description: Wants to understand how project roles are allocated across the
@@ -18627,6 +18694,19 @@ knowledge-needs:
       projects, including timeboxing, iteration-based feedback, and adapting
       delivery as requirements evolve, so that they can apply the approach in
       practice.
+  - name: Project governance
+    id: project-governance
+    description: Wants to understand the project governance areas in OutSystems
+      agile delivery, including user story and requirements quality, risk
+      management, estimation and capacity planning, issue management and
+      resolution, and go-live planning, so that they can keep delivery standards
+      solid and prepare the project for release.
+  - name: Agile coaching
+    id: agile-coaching
+    description: Wants to understand when an Agile coach helps a team establish
+      the right framework and improve over time, including involving the business
+      team and developing internal coaching skills, so that the team can mature
+      its Agile practice and adapt it over time.
 - name: O11 to ODC Migration
   guid: ''
   topics:

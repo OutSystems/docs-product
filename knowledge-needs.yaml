@@ -589,6 +589,9 @@ knowledge-needs:
     - name: Fix database integrity
       id: fix-database-integrity
       description: Wants to resolve database integrity suggestion warnings in Service Studio by matching entity definitions to database tables, adding missing attributes, fixing unsupported data types or table names, or ignoring the warning when appropriate, so the module stays consistent.
+    - name: Fix unused element
+      id: fix-unused-element-warning
+      description: 'Wants to resolve the "Unused Element Warning" by checking whether the element is still necessary and deleting it when it is not, so the module no longer warns about the unused element.'
   - name: Creating Variables
     id: creating-variables
     subtopics:
@@ -1754,6 +1757,13 @@ knowledge-needs:
         SQL query selecting all attributes individually instead of using the
         entity wildcard, by replacing the attribute list with <entity>.*, so
         that the query is easier to maintain, in OutSystems 11.
+    - name: Fix SQL warning
+      id: fix-sql-warning
+      description: Wants to fix SQL validation warnings in Service Studio for
+        OutSystems 11 when Expand Inline parameters, SELECT *, SELECT
+        {Entity}.* ordering, or unrecognized SQL text prevent OutSystems from
+        validating the query output structure or SQL statement, so the query
+        validates successfully.
     - name: Fix unused query warning
       id: fix-unused-query-warning
       description: Wants to remove an unused Aggregate or SQL query that is not
@@ -3502,6 +3512,12 @@ knowledge-needs:
       description: Wants to define an extension's actions, structures, entities,
         and resources in Integration Studio after creating the extension, so
         they can complete the extension definition before publishing.
+    - name: Element property lookup
+      id: element-property-lookup
+      description: Wants to find the Integration Studio reference pages for
+        extension, action, structure, entity, and resource properties, so
+        they can open the right property page for the element they are
+        configuring.
     - name: Action parameters
       id: action-parameters
       description: Wants to add, change, or delete action parameters in Integration
@@ -9904,6 +9920,13 @@ knowledge-needs:
         Delete event, in OutSystems 11, by adding the missing submit
         button/screen action or event action, so that end user input is
         saved instead of silently ignored.
+    - name: Fix send message warning
+      id: fix-send-message-warning
+      description: Wants to fix the warning that a Send Message element
+        ignores the Phone Slot when the message exceeds the SMS length limit,
+        by setting the Phone Slot property to Default or shortening the message
+        enough to stay within the limit, so the message uses the intended phone
+        slot.
     - name: JavaScript API keywords
       id: javascript-api-keywords
       description: Wants to use the JavaScript API keywords inside JavaScript nodes in
@@ -10923,6 +10946,12 @@ knowledge-needs:
         automatically detecting and recreating a corrupted widget, by
         reviewing and correcting the properties of the recreated widget, in
         OutSystems 11, so that the screen behaves as expected.'
+    - name: Fix unexpected widget warning
+      id: fix-unexpected-widget-warning
+      description: 'Wants to resolve the "<widget> widget has no content,
+        possible oversight" warning in Service Studio, caused by a widget
+        with no content or a record widget with no attributes, by adding the
+        missing content or attributes, so the warning clears.'
     - name: Invalid Data Action error
       id: invalid-data-action-error
       description: 'Wants to resolve the "Invalid Data Action" error in

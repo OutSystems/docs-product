@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-ignored-input
+  - fix-send-message-warning
 ---
 
 # Usability Suggestion Warning

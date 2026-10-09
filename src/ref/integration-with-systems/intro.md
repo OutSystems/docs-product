@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - access-external-data
+  - web-services-overview
 ---
 
 # Integration with external systems

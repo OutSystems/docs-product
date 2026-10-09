@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - element-property-lookup
 ---
 
 # Element Properties Reference

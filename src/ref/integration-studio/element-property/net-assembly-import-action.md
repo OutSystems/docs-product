@@ -16,6 +16,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - import-actions-from-dotnet-assembly
 ---
 
 # Imported Actions Properties

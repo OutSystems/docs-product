@@ -18,6 +18,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - fix-upgrade-warning
 ---
 
 # Upgrade Information Warning

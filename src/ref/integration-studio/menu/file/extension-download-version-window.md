@@ -16,6 +16,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+topic:
+  - download-version-window
 ---
 
 # Download Version from Server Window

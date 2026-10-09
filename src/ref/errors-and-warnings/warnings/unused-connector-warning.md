@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - resolve-unused-connector
 ---
 
 # Unused Connector Warning

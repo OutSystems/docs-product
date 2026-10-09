@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - remove-unused-action
 ---
 
 # Unused User Action Warning

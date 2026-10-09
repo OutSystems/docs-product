@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-abort-transaction-warning
 ---
 
 # Unexpected Error Handler Warning

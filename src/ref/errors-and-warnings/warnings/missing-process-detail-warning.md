@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-missing-detail-warning
 ---
 
 # Missing Process Detail Warning

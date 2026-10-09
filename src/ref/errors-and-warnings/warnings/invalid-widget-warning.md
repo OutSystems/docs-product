@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - invalid-widget-warning
 ---
 
 # Invalid Widget Warning

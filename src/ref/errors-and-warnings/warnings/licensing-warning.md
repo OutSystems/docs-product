@@ -17,6 +17,9 @@ outsystems-tools:
   - service center
 coverage-type:
   - unblock
+topic:
+  - license-limit-exceeded
+  - renew-server-license
 ---
 
 # Licensing Warning

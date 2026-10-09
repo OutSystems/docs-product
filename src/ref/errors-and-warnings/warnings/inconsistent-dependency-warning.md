@@ -18,6 +18,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - unblock
+topic:
+  - inconsistent-dependency-warning
 ---
 
 # Inconsistent Dependency Warning

@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-js-injection-warning
 ---
 
 # JavaScript Injection Warning

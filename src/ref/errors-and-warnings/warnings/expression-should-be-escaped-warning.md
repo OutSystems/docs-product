@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - escape-content-warning
 ---
 
 # Expression Should Be Escaped Warning

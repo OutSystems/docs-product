@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - module-name-changed-warning
 ---
 
 # Module Name Changed Warning

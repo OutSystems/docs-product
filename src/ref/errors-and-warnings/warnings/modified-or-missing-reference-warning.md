@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - modified-or-missing-reference-warning
 ---
 
 # Modified or Missing Reference Warning

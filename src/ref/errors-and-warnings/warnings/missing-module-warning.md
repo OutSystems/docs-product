@@ -17,6 +17,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - missing-module-warning
 ---
 
 # Missing Module Warning

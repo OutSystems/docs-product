@@ -19,6 +19,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - missing-provider-warning
 ---
 
 # Missing User Provider Warning

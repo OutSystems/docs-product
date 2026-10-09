@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-maintenance-suggestion-warning
 ---
 
 # Maintenance Suggestion Warning

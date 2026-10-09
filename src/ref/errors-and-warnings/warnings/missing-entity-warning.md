@@ -19,6 +19,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - fix-missing-entity-warning
 ---
 
 # Missing Entity Warning

@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-jquery-version-warning
 ---
 
 # Deprecated jQuery Version Warning

@@ -1205,6 +1205,7 @@
     - href: manage-platform-app-lifecycle/access-database-paas/access-database-paas.md
     - topics:
         - href: manage-platform-app-lifecycle/access-database-paas/temporary-access-database-backup.md
+        - href: manage-platform-app-lifecycle/access-database-paas/long-term-backup-retention.md
     - href: manage-platform-app-lifecycle/migrate-db-clone.md
     - href: manage-platform-app-lifecycle/database-replica.md   
     - href: manage-platform-app-lifecycle/database-optimization.md

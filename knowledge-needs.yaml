@@ -2421,6 +2421,9 @@ knowledge-needs:
     - name: Convert aggregate to SQL Tool
       id: convert-aggregate-to-sql-tool
       description: Wants to convert an Aggregate into a SQL Tool in OutSystems 11, including the conversion limitations and the conversion process, so they can replace an existing Aggregate with SQL when needed.
+    - name: Aggregate versus SQL
+      id: aggregate-versus-sql
+      description: Wants to compare the strengths and limitations of Aggregates and the SQL Tool in OutSystems 11, so they can choose the right data-fetching approach for a query.
     - name: SQL tool query
       id: sql-tool-query
       description: Wants to build a SQL Tool query that returns the top sold products by joining entities, grouping and summing quantities, sorting descending, limiting results, and defining an output structure, so they can return the most-sold products.
@@ -3532,6 +3535,26 @@ knowledge-needs:
         extension node in the Multi-tree Navigator or selecting its tab in the
         Multi-tab Editor, so that they can modify extension properties and
         manage its elements (actions, structures, entities, and resources).
+    - name: Studio toolbar buttons
+      id: studio-toolbar-buttons
+      description: Wants to understand what each button in the Integration Studio
+        toolbar does, so they can use the toolbar effectively while working with
+        extensions.
+    - name: Multi-tree navigator
+      id: multi-tree-navigator
+      description: Wants to understand the Multi-tree Navigator in Integration
+        Studio, including the Extension and Resources tabs and what each tree
+        contains, so they can find extension elements and resources in the
+        workspace.
+    - name: Manage multi-tab editors
+      id: manage-multi-tab-editors
+      description: Wants to close one tab or clear all tabs in Integration
+        Studio's Multi-tab Editors area by double-clicking or right-clicking
+        a tab and choosing Close or Close All, so they can remove open
+        elements from the editor workspace.
+    - name: Studio workspace layout
+      id: studio-workspace-layout
+      description: 'Wants to understand the Integration Studio workspace layout, including the toolbar, Multi-tree Navigator, status bar, Multi-tab Editors, Specific Editor, and Server Info areas, so they can find each area and know what it does.'
     - name: Fix invalid extension
       id: fix-invalid-extension
       description: 'Wants to resolve the "Application Server" <type> not supported invalid extension error in Integration Studio by using Microsoft .NET integration, so they can create or publish the extension successfully.'
@@ -3756,6 +3779,12 @@ knowledge-needs:
         Options Window, so that they can review and merge changes made
         outside the Resource Editor when Update Source Code can't
         auto-merge them.
+    - name: Manage resources
+      id: manage-resources
+      description: Wants to use Integration Studio's Resources tree to review
+        resource status, find the physical location of extension resources,
+        and include, exclude, or open resources in an extension, so they can
+        manage extension resources.
     - name: Update source code
       id: update-source-code
       description: Wants to update an extension's source code in Integration
@@ -3810,6 +3839,11 @@ knowledge-needs:
       description: Wants to know what operations the Help menu provides in Integration
         Studio, so that they can access help resources, product updates, and
         feedback tools while working on an extension.
+    - name: View menu operations
+      id: view-menu-operations
+      description: Wants to know what operations the View menu provides in Integration
+        Studio, so that they can show or hide toolbars and the status bar
+        while working on an extension.
     - name: Configure .NET SDK options
       id: configure-net-sdk-options
       description: Wants to configure the .NET IDE, .NET Compiler Tool, and
@@ -7532,6 +7566,11 @@ knowledge-needs:
       id: css-hierarchy
       description: Wants to understand the order OutSystems loads CSS from different
         scopes, so they know which style wins when selectors conflict.
+    - name: Define CSS variables
+      id: define-css-variables
+      description: Wants to define and use CSS variables in OutSystems style sheets by
+        declaring custom properties and referencing them with var(), so they can
+        reuse values across style definitions and customize app styling consistently.
     - name: Edit widget styles
       id: edit-widget-styles
       description: Wants to change a widget's visual properties in Styles Editor,
@@ -9416,6 +9455,11 @@ knowledge-needs:
       description: Wants to identify which HTML element built-in OutSystems widgets render as,
         including Container, Button, Expression, If, Block, and common supporting
         widgets, so they can predict the markup generated by each widget in OutSystems 11.
+    - name: Use widget tree
+      id: use-widget-tree
+      description: Wants to use the Widget Tree in Service Studio to find, move, and reorder
+        screen widgets, so they can place UI elements more precisely when building screens
+        in OutSystems 11.
     - name: Use Search pattern
       id: use-search-pattern
       description: Wants to add the Search UI Pattern to a screen and configure

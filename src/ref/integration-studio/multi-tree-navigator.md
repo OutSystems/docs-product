@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - multi-tree-navigator
 ---
 
 # Multi-tree Navigator

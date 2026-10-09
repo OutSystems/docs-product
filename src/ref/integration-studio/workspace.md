@@ -15,6 +15,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+topic:
+  - studio-workspace-layout
 ---
 
 # Integration Studio

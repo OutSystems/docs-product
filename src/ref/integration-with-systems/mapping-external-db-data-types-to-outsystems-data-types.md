@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - external-type-mapping
 ---
 
 # Mapping External DB Data Types to OutSystems Data Types

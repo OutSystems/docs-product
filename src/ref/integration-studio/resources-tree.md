@@ -13,6 +13,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - manage-resources
 ---
 
 # Resources Tree

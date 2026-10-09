@@ -16,6 +16,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - studio-toolbar-buttons
 ---
 
 # Toolbar

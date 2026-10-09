@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - manage-multi-tab-editors
 ---
 
 # Multi-tab Editors

@@ -1279,6 +1279,12 @@ knowledge-needs:
         the logs, increasing the SAP connection logging level for more detail,
         and using the Debugger when the logs are not enough, so that they can
         diagnose integration issues.
+    - name: SAP type mapping
+      id: sap-type-mapping
+      description: Wants to understand how OutSystems maps SAP data types to
+        OutSystems data types when integrating with a SAP system, so they can
+        choose the right target type and avoid runtime errors or Decimal
+        rounding.
   - name: Adding test data
     id: adding-test-data
     subtopics:
@@ -1316,6 +1322,9 @@ knowledge-needs:
     - name: Database auto numbers
       id: database-auto-numbers
       description: Wants to understand how OutSystems implements an Integer attribute with IsAutoNumber set to Yes in SQL Server and Oracle, so they know which database objects are created and why the generated values can differ across environments.
+    - name: Attribute type inference
+      id: attribute-type-inference
+      description: Wants to understand how OutSystems automatically infers an entity attribute's data type from names like Count, Date, and Is, so they can name attributes to get the intended type in O11.
     - name: Fix invalid attribute
       id: fix-invalid-attribute
       description: 'Wants to fix the "''<attribute>'' data type is invalid" error family in Service Studio for OutSystems 11 by setting a valid data type for the entity or structure attribute, defining an entity Identifier, or using Integer for Auto Number, so the module compiles and publishes successfully.'
@@ -1639,6 +1648,11 @@ knowledge-needs:
         Service Studio by introducing a junction entity with the necessary
         foreign keys and any extra attributes, so that each record can relate to
         multiple records on both sides.
+    - name: Relationship types
+      id: relationship-types
+      description: Wants to identify the entity relationship types supported in
+        OutSystems 11, including one-to-one, one-to-many, and many-to-many, so
+        they can choose the right model for related data.
     - name: Data relationships overview
       id: data-relationships-overview
       description: Wants to understand how entities, aggregates, and forms work together when modeling related data in OutSystems 11 web apps, so they can design the right relationship structure before building screens and queries.
@@ -3027,6 +3041,22 @@ knowledge-needs:
     description: Wants to understand how OutSystems web services cover consuming and
       exposing REST APIs and SOAP web services, so they can choose the right
       integration approach.
+  - name: REST API request formats
+    id: rest-api-request-formats
+    description: Wants to understand how exposed REST API requests handle supported media
+      types and default character encoding, so they can send requests with the
+      right payload format and read responses correctly.
+    subtopics:
+    - name: Supported media types
+      id: supported-media-types
+      description: Wants to understand which Content-Type values an exposed REST API accepts
+        for each input parameter data type, so they can send requests with the
+        right media type and avoid 415 errors.
+    - name: REST encoding defaults
+      id: rest-encoding-defaults
+      description: Wants to understand how OutSystems decodes incoming text, JSON, query,
+        and path data and encodes REST responses for exposed REST APIs, so
+        they can send and receive characters correctly.
   - name: OutSystems API catalog
     id: outsystems-api-catalog
     description: Wants to find the available OutSystems 11 APIs by category, so they can
@@ -3460,6 +3490,15 @@ knowledge-needs:
     - name: Extension life cycle
       id: extension-life-cycle
       description: Wants to create an extension in Integration Studio, define its actions, structures, entities, and resources, keep its source code synchronized, publish it, and then use it in a Service Studio module, so that they can follow the full extension life cycle from setup to consumption.
+    - name: Integration Studio basics
+      id: integration-studio-basics
+      description: Wants to understand what Integration Studio is and when to use it to extend OutSystems with custom .NET actions or external database entities, so they can recognize the tool's main extension scenarios.
+    - name: Set up Integration Studio
+      id: set-up-integration-studio
+      description: Wants to install Integration Studio from the OutSystems website and connect it with their OutSystems credentials, so they can start creating extensions.
+    - name: Configure Visual Studio
+      id: configure-visual-studio
+      description: Wants to install Microsoft Visual Studio with the .NET desktop development workload and have Integration Studio detect and use it, so they can develop C# extensions.
     - name: Extension source files
       id: extension-source-files
       description: Wants to understand which source files Integration Studio generates for an extension after it creates the extension, where those files are stored, and which generated files they should not edit in the .NET IDE, so they can work with the extension bootstrap files correctly.
@@ -6347,6 +6386,9 @@ knowledge-needs:
     - name: Expose SOAP web service
       id: expose-soap-web-service
       description: Wants to expose a SOAP web service in OutSystems 11 by creating the service, adding methods, setting the module namespace, and checking the generated WSDL endpoint and bindings, so that clients can call the published service.
+    - name: SOAP data mapping
+      id: soap-data-mapping
+      description: Wants to map OutSystems data types to XML Schema data types when exposing a SOAP web service in OutSystems 11, so they can define method input and output types correctly.
     - name: Test SOAP with SoapUI
       id: test-soap-soapui
       description: 'Wants to test a SOAP web service method built in OutSystems by installing
@@ -6478,9 +6520,21 @@ knowledge-needs:
         first consuming a SOAP Web Service by checking the WSDL URL, WSDL
         structure, and available methods, so that the service imports
         successfully.
+    - name: Consume SOAP web service
+      id: consume-soap-web-service
+      description: Wants to import a SOAP web service in Service Studio by providing the WSDL, choosing SOAP 1.1 or 1.2 bindings, selecting methods, and using the generated actions and structures, so that the app can call the external service.
     - name: Refresh SOAP web service
       id: refresh-soap-web-service
       description: Wants to refresh a consumed SOAP web service in OutSystems 11 when the WSDL changes or the service URL becomes inaccessible, so that the integrity warning clears and the service compiles again.
+    - name: Consumed SOAP elements
+      id: consumed-soap-elements
+      description: Wants to understand the elements of a consumed SOAP web service in OutSystems 11, so they can find the reference information for the service.
+    - name: SOAP type mapping
+      id: soap-type-mapping
+      description: Wants to understand how XML data types in a consumed SOAP web service map to OutSystems data types, including special cases like choices, enumerations, arrays, and complex types, so they can interpret generated service references correctly.
+    - name: Legacy SOAP implementation
+      id: legacy-soap-implementation
+      description: Wants to understand the deprecated SOAP implementation that supports up to SOAP 1.1 and is available only in modules upgraded from previous versions, so they can use the legacy reference when it applies.
     - name: Enable OSTrace SOAP import
       id: enable-ostrace-soap-import
       description: Wants to enable OSTrace logging for SOAP web service
@@ -6550,6 +6604,9 @@ knowledge-needs:
         properties, including binary dynamic lists and the auto-generated
         RequestPart data structure, so that they can correctly configure and use
         the consumed method's inputs.
+    - name: Multipart attr reference
+      id: multipart-attribute-reference
+      description: Wants to look up the properties of a structure attribute in a multipart/form-data REST API request in Service Studio, so they can configure the request part correctly.
     - name: Multipart content-disposition
       id: multipart-content-disposition
       description: Wants to understand how OutSystems generates the
@@ -9398,6 +9455,9 @@ knowledge-needs:
     - name: Use Button Group widget
       id: use-button-group-widget
       description: Wants to add the Button Group widget to a reactive web form and bind it to a screen variable, so users can choose one of several mutually exclusive options in OutSystems 11.
+    - name: Button Group variable
+      id: button-group-variable
+      description: Wants to identify that the Button Group Variable property belongs to the widget, not each Button Group Item, so they can distinguish widget-level and item-level properties when configuring a reactive web form in OutSystems 11.
     - name: Automatic form validation
       id: automatic-form-validation
       description: Wants to identify which input validations the Form widget
@@ -11608,6 +11668,11 @@ knowledge-needs:
       developers course, including the platform mapping, development and code
       reuse, and build, run, and debug sections, so they know what the course
       covers before starting it.
+  - name: Mobile architecture intro
+    id: mobile-architecture-intro
+    description: Wants to understand the roadmap for the Mobile Application
+      Architecture course, so they know what the course covers before starting
+      it.
   - name: Using Service Studio
     id: using-service-studio
     subtopics:
@@ -21055,6 +21120,12 @@ knowledge-needs:
         Service Studio by enabling module Debug Mode, checking debugger
         version compatibility, or verifying the browser instance that
         launched the module, so debugging starts successfully.
+    - name: Debugger commands
+      id: debugger-command-availability
+      description: Wants to identify which commands are available in the
+        Service Studio debugger in OutSystems 11, including when a command
+        such as Restart Debugging is not available, so they can answer
+        debugger command-availability questions.
     - name: Fix stopped debug session
       id: fix-stopped-debug-session
       description: 'Wants to fix the "The server has stopped the debug

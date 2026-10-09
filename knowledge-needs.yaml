@@ -10086,6 +10086,18 @@ knowledge-needs:
         Components solution or as a module solution with dependencies when
         they need to group components for republishing or troubleshooting,
         so that they can prepare the right solution package.
+    - name: Version control models
+      id: version-control-models
+      description: Wants to compare Java, SVN, and Git version control models with
+        OutSystems centralized version control and the files-and-folders versus
+        modules-and-applications work units, so that they can map the concepts
+        between Java and OutSystems.
+    - name: Version control operations
+      id: version-control-operations
+      description: Wants to map OutSystems version control operations to Git
+        commands, including Open Module, Save, Upload / Publish, and Compare and
+        Merge, so they can understand how the platform actions correspond to
+        Pull, Commit, Push, Fetch, Diff, and Merge/Update.
     - name: Open other version
       id: open-other-version
       description: Wants to switch to a previous published version of a
@@ -18867,6 +18879,12 @@ knowledge-needs:
       daily stand-ups, and retrospectives, so that they can follow the work tracks
       and ceremonies within each iteration.
     subtopics:
+    - name: Build track activities
+      id: build-track-activities
+      description: Wants to understand the Build track activities in an
+        iteration, including story development, daily scrums, demo preparation,
+        stakeholder demos, and retrospectives, so that they can follow the
+        team's work during iteration development.
     - name: Improve with retrospectives
       id: improve-with-retrospectives
       description: Wants to use retrospectives at the end of projects and
@@ -18926,6 +18944,14 @@ knowledge-needs:
         Definition of Done checklists gate iteration planning and UAT during
         project initiation, so that they can agree when stories are ready to
         enter development and when features are complete.
+    - name: Risk management
+      id: risk-management
+      description: Wants to understand risk management in OutSystems agile
+        projects, including risk, risk analysis, and risk management
+        definitions, the project outcomes risk avoids, the limitations of
+        relying on implicit agile practices, and the structured five-step
+        approach used when explicit management is needed, so that they can
+        decide how much structure to apply.
   - name: Agile coaching
     id: agile-coaching
     description: Wants to understand when an Agile coach helps a team establish

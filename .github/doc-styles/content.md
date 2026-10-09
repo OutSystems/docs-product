@@ -4,7 +4,9 @@ Write clearly and consistently.
 
 ## Tone and voice
 
-Use the appropriate tone and voice in your content. Your content must be:
+Write in a friendly, direct, and precise voice. For the full guidance, including the calibration table and self-check, refer to [tone.md](tone.md#tone-and-voice).
+
+Your content must be:
 
 * Clear and concise
 * Inclusive and respectful
@@ -12,7 +14,7 @@ Use the appropriate tone and voice in your content. Your content must be:
 
 ## Avoid conversational language
 
-Technical content should read as structured and precise, not as spoken conversation. Avoid casual connectors, hedging phrases, and slang verbs that creep in from everyday speech, and don't address the reader as if chatting with them.
+Technical content is friendly but structured and precise. It doesn't read as spoken conversation. Avoid casual connectors, hedging phrases, and slang verbs that creep in from everyday speech, and don't address the reader as if chatting with them.
 
 **Language to avoid:**
 
@@ -34,7 +36,7 @@ Technical content should read as structured and precise, not as spoken conversat
 **Yes:** Add the following code to your module.
 
 **No:** Great! You're ready to deploy the app.
-**Yes:** You can now deploy the app.
+**Yes:** You can deploy the app.
 
 **No:** Wondering how to reset your password? Here's how.
 **Yes:** To reset your password, do the following.
@@ -67,7 +69,7 @@ Use the present tense whenever possible. Using the present tense helps make sent
 
 Use common contractions instead of full forms. Some of the common contractions you need are: it's, doesn't, there's, can't/cannot.
 
-Contractions help create friendlier and informal sentences, as full forms are generally reserved for formal writing. Avoid making contractions from a noun and a verb, especially with nouns denoting OutSystems products.
+Contractions keep sentences natural and direct. Full forms read as stiff in technical content. Avoid making contractions from a noun and a verb, especially with nouns denoting OutSystems products.
 
 **Examples**
 
@@ -92,6 +94,36 @@ The active voice makes the sentence dynamic and clear. It also makes it clear wh
 **Yes:** After you validate the new SQL element, delete or deactivate the original Aggregate.
 
 **No:** The original Aggregate is kept in the flow editor for your manual deletion after validating the new SQL element.
+
+## Lead with the condition or goal
+
+Start the sentence with the circumstance, condition, or goal, and follow it with the action or result. Readers can then tell whether the sentence applies to them before they read the instruction, and they can skip it when it doesn't.
+
+This applies in three situations:
+
+* **Cross-references:** Put the purpose before the link.
+* **Instructions:** Put the goal before the action.
+* **Conditions:** Put the condition before the consequence.
+
+**Examples**
+
+**Yes:** For more information, refer to [Asset portfolios](portfolios-overview.md).
+
+**No:** Refer to [Asset portfolios](portfolios-overview.md) for more information.
+
+**Yes:** To implement your workflow, use the workflow editor.
+
+**No:** Use the workflow editor to implement your workflow.
+
+**Yes:** To delete the entire document, click **Delete**.
+
+**No:** Click **Delete** if you want to delete the entire document.
+
+**Yes:** If an app consumes service actions from an app in another portfolio, refactor the dependency into a REST API.
+
+**No:** Refactor the dependency into a REST API if an app consumes service actions from an app in another portfolio.
+
+Keep the opening clause short. If the condition is long, split it into its own sentence.
 
 ## Be careful with modal verbs
 
@@ -122,6 +154,7 @@ This section applies to the modal verbs can, could, may, might, will, shall, wou
 **Yes:** The migration deletes all records in the staging table.
 
 **No:** The migration will delete all records in the staging table. (Use the present tense for actions that happen as part of the current step, even if they technically run after you trigger them.)
+
 ## Use second person
 
 Use the second person "you" to address the reader or readers. However, don't overuse it.
@@ -150,7 +183,7 @@ When referring to OutSystems, don't use we.
 
 ## Be clear and precise
 
-The language in technical content must be clear and precise. Clarity and precision make content useful for the audience. Check out the examples that demonstrate how being vague, blaming users, or taking their time and skills for granted weakens clarity.
+The language in technical content must be clear and precise. Clarity and precision make content useful for the audience. The following examples demonstrate how being vague, blaming users, or taking their time and skills for granted weakens clarity.
 
 **Examples**
 
@@ -268,6 +301,30 @@ A colon is acceptable when:
 * It separates a term from its definition in the `**Term**: definition` form.
 * It appears in a time or ratio, such as 10:30 or 3:1.
 
+## Write for the user's problem, not the feature {#user-problem-first}
+
+Lead with what the reader needs to accomplish or the problem they're facing. Describe what the capability does for the user before, or instead of, describing how the capability itself works or what it's made of.
+
+**Why this matters:** A feature-first description reads as marketing copy and forces the reader to work out the relevance themselves. A problem-first description lets the reader immediately confirm this page answers their question.
+
+**Examples**
+
+**Yes:** If you need to detect suspicious account activity in real time, stream your transaction logs to your APM tool so you can flag unusual patterns as they happen.
+
+**No:** Log streaming is a feature that continuously sends log data from OutSystems to a third-party APM tool using the OpenTelemetry protocol.
+
+**Yes:** When a deployment fails partway through, roll it back instead of troubleshooting a partially deployed application.
+
+**No:** The rollback feature reverts a deployment to its previous state.
+
+This applies across document types, not only overview pages:
+
+* An overview leads with the problem the capability solves, not a description of the capability's parts.
+* A procedure's intro sentence states what the reader accomplishes by completing it, not just the mechanism they're using.
+* A troubleshooting doc's Symptoms section describes the impact on the user, not the internal cause (causes belong in the Causes section).
+
+**Exception:** Reference documentation describes settings and fields factually, since the reader has already found the specific item they need. Don't force a "why" framing onto a settings table.
+
 ## Keep accessibility in mind
 
 Your content should be accessible to all people, to those without and with disabilities. Be mindful of:
@@ -285,9 +342,9 @@ Your content should be accessible to all people, to those without and with disab
 
 **Examples**
 
-**Yes:** To view the document, click *View*.
+**Yes:** To view the document, click **View**.
 
-**No:** To view the document, please click *View*.
+**No:** To view the document, please click **View**.
 
 ## Use sentence case for titles
 
@@ -309,17 +366,17 @@ Capitalize the first letter in titles.
 
 ## Avoid overusing parentheses
 
-Don't put important information in parentheses. Unfortunately, some readers ignore any information that appears in parentheses.
+Don't put important information in parentheses. Some readers ignore any information that appears in parentheses.
 
-Whenever you're inclined to use parentheses, consider whether they're necessary. Maybe the sentence might work just as well if you remove the parentheses and set off the phrase or sentence by using commas, dashes, or periods.
+Whenever you're inclined to use parentheses, consider whether they're necessary. The sentence often works as well if you remove the parentheses and set off the phrase with commas or split it into two sentences.
 
 If you need to include parentheses in the middle of a sentence, keep the information in the parentheses short. Otherwise, consider using two sentences.
 
 **Examples**
 
-**Yes:** Enter a six-digit hex number, and then click *OK*. For example, if you want the color forest green, enter `228B22`.
+**Yes:** Enter a six-digit hex number, and then click **OK**. For example, if you want the color forest green, enter `228B22`.
 
-**No:** Enter a six-digit hex number (for example, if you want the color forest green, enter `228B22`), and then click *OK*.
+**No:** Enter a six-digit hex number (for example, if you want the color forest green, enter `228B22`), and then click **OK**.
 
 ## Serial comma
 
@@ -366,7 +423,7 @@ In Japan, the translators and editors removed the idiom "cost an arm and a leg" 
 
 You should make the gender visible only if it's important to understand the content. This means you shouldn't use words like he/she, himself/herself, man/woman, unless you're referring to a particular individual. Instead, use a non-gender alternative, like plural forms and "they". Furthermore, you shouldn't use language that reinforces stereotypes.
 
-For more details, see [Bias-free communication](https://docs.microsoft.com/en-us/style-guide/bias-free-communication) by Microsoft.
+For more details, refer to [Bias-free communication](https://docs.microsoft.com/en-us/style-guide/bias-free-communication) by Microsoft.
 
 **Examples**
 
@@ -384,7 +441,7 @@ For more details, see [Bias-free communication](https://docs.microsoft.com/en-us
 
 When providing examples of domain names, use one of the domains reserved for such use. For example, example.com. Don't use other domains nor any of our customer domains.
 
-See [RFC 6761 - Special-Use Domain Names](https://tools.ietf.org/html/rfc6761) for more information.
+Refer to [RFC 6761 - Special-Use Domain Names](https://tools.ietf.org/html/rfc6761) for more information.
 
 **Example**
 
@@ -394,7 +451,7 @@ See [RFC 6761 - Special-Use Domain Names](https://tools.ietf.org/html/rfc6761) f
 
 ## Check the readability scores
 
-A readability score shows the estimated education level needed to understand a given text. Our content should be understood by high school graduates.
+A readability score shows the estimated education level needed to understand a given text. Content must be understandable to high school graduates.
 
 ## Don't announce features and updates
 
@@ -440,15 +497,7 @@ Avoid documenting future features or products, even in innocuous ways. Don't pre
 
 ## Rules for Pronouns
 
-### Use "you" to address the reader
-The primary voice for documentation should be the second person ("you") to speak directly to the user. Avoid using "we" or "I."
-* **Yes:** "You can upload files up to 90 MB when creating an external library."
-* **No:** "We have made it possible to upload files up to 90 MB."
-
-### Use singular "they" as a gender-neutral pronoun
-When referring to a generic person, such as a user, use "they," "them," or "their." This avoids gender-specific pronouns like "he" or "she."
-**Yes:** "When a user logs in, they can access their assigned resources."
-**No:** "When a user logs in, he can access his resources."
+For when to use "you" and singular "they", refer to [Use second person](#use-second-person) and [Use gender-inclusive language](#use-gender-inclusive-language).
 
 ### Ensure pronoun references are unambiguous
 A pronoun should clearly refer to a specific noun (antecedent). If there is any potential for confusion, restate the noun.

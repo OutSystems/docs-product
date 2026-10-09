@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - unused-input-parameter
 ---
 
 # Unused Input Parameter Error

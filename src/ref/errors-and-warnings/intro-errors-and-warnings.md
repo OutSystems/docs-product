@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - errors-and-warnings
 ---
 
 # Errors and Warnings

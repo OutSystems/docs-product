@@ -18,6 +18,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - fix-incomplete-upgrade-error
 ---
 
 # Incomplete upgrade warning

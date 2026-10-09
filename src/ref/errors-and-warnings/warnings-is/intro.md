@@ -15,6 +15,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - extension-warnings-index
 ---
 
 # Integration Studio Warnings

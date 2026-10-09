@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - refresh-soap-web-service
 ---
 
 # Consumed Web Service Integrity Warning

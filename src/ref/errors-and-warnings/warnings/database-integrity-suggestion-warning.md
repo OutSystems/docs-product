@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-database-integrity
 ---
 
 # Database Integrity Suggestion Warning

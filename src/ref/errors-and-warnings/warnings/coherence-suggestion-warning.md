@@ -16,6 +16,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-input-property-warning
+  - fix-lifecycle-warning
+  - fix-list-binding-warning
 ---
 
 # Coherence Suggestion Warning

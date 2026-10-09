@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - incompatible-consumer-warning
 ---
 
 # Incompatible Consumer Warning

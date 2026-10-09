@@ -17,6 +17,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - unblock
+topic:
+  - required-permission-error
 ---
 
 # Required Permission Error

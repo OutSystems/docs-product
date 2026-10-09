@@ -514,6 +514,12 @@ knowledge-needs:
         widget, a property field, or a TrueChange error or warning, then use
         autocomplete, the toolbar, the scope pane, and the status indicator to
         confirm that the expression is valid.
+    - name: Escape content warning
+      id: escape-content-warning
+      description: Wants to set the Escape Content property on an Expression widget
+        to No when the expression contains HTML and should render as markup, or leave
+        it Yes when the text should display literally, so the expression appears
+        correctly on screen.
   - name: Core module patterns
     id: core-module-patterns-logic
     subtopics:
@@ -6881,6 +6887,11 @@ knowledge-needs:
         process and activity instances when it creates or updates a record, in
         OutSystems 11, so that a process can automatically launch or advance
         in reaction to an entity change.
+    - name: Entity filter warning
+      id: entity-filter-warning
+      description: Wants to fix the missing entity filter warning for a process
+        activity that handles an Entity Action event without filtering entity
+        attributes, so the activity only runs for the intended entity records.
     - name: Taskbox overview
       id: taskbox-overview
       description: Wants to understand what the Taskbox is and how it lists
@@ -11099,6 +11110,9 @@ knowledge-needs:
         to a production server), by publishing the extension or Producer
         module that exposes the entity to that Platform Server, so that
         the module publishes without the warning.'
+    - name: Fix association warning
+      id: fix-missing-entity-association-warning
+      description: Wants to fix the "Referenced Entity <entity> is not associated with this module" and "Foreign Entity <entity> is not associated with this module" warnings by restoring the module's entity references or confirming access to the producer module or extension, so the module compiles without the warning.
     - name: Missing module warning
       id: missing-module-warning
       description: 'Wants to resolve the "Module <module name> uses module
@@ -21135,6 +21149,12 @@ knowledge-needs:
     - name: Fix invalid variable
       id: fix-invalid-variable
       description: Wants to resolve the Invalid Variable Error in Service Studio by setting a valid value for the Variable property on affected widgets or Assign nodes after the referenced variable is deleted or unset, so TrueChange stops flagging the module.
+    - name: Fix jQuery version warning
+      id: fix-jquery-version-warning
+      description: Wants to resolve the warning that a module uses a deprecated or
+        unsupported jQuery version, by checking the supported jQuery versions,
+        updating affected module elements, and selecting a supported jQuery version
+        in Service Studio for OutSystems 11, so the module keeps working correctly.
   - name: Troubleshoot infra issues
     id: troubleshoot-infra-issues
     description: Wants to find the right troubleshooting article for O11 infrastructure

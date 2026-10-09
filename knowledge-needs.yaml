@@ -3437,6 +3437,11 @@ knowledge-needs:
         refreshing entities, and republishing and testing consumer modules, so
         that existing extensions and consumers keep working under the new
         supported connector.
+    - name: Build external library
+      id: build-external-library
+      description: Wants to build an external library package from an SDK template,
+        generate the ZIP file with the provided script, and prepare it for upload
+        to ODC Portal, so they can publish the custom C# logic.
     - name: Fix DataType mismatch
       id: fix-datatype-mismatch
       description: Wants to fix the OS-ELG-MODL-05017 error ("<ParameterName/StructureFieldName> has an incompatible DataType assigned and cannot be converted.") by changing the .NET type or DataType modifier so the field maps to a compatible OutSystems type before uploading the external library, so they can publish it successfully.

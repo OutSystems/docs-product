@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - entity-filter-warning
 ---
 
 # Missing Entity Filter Warning

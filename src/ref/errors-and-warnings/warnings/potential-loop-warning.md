@@ -19,6 +19,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-onafterfetch-loop-warning
+  - fix-onrender-loop-warning
 ---
 
 # Potential Loop at Runtime Warning

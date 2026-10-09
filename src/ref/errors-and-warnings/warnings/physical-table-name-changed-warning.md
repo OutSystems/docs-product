@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-table-name-changed
 ---
 
 # Physical Table Name Changed Warning

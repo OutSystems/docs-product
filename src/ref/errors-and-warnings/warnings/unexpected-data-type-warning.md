@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-unexpected-data-type-warning
 ---
 
 # Unexpected Data Type Warning

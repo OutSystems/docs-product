@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-database-type-warning
 ---
 
 # Unexpected Database Warning

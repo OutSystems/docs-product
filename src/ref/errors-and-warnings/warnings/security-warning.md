@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - secure-anonymous-screens
+  - use-server-actions
 ---
 
 # Security Warning

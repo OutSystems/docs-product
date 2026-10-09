@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - outdated-producer-warning
 ---
 
 # Outdated Producer Warning

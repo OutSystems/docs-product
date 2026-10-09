@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-sql-injection-warning
 ---
 
 # SQL Injection Warning

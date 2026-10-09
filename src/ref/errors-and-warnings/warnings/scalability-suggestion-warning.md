@@ -20,6 +20,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - avoid-complex-data-types
+  - fix-cross-join-warning
+  - index-fk-reference-attribute
 ---
 
 # Scalability Suggestion Warning

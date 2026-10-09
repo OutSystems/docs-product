@@ -557,6 +557,21 @@ knowledge-needs:
     - name: Debug app logic
       id: debug-app-logic
       description: Wants to debug application logic in Service Studio by setting breakpoints, inspecting variable values, and following execution flow to find and fix errors.
+    - name: Errors and warnings
+      id: errors-and-warnings
+      description: Wants to understand how OutSystems issues errors and warnings during development, how those messages appear in the TrueChange tab, and how double-clicking an error line opens the source of the problem, so they can find and fix module issues.
+    - name: Fix input property warning
+      id: fix-input-property-warning
+      description: Wants to fix coherence suggestion warnings where an Input or Input Password widget's Mandatory or Max. Length setting does not match the bound attribute, by aligning the widget property with the attribute metadata, so the field configuration stays consistent.
+    - name: Fix list binding warning
+      id: fix-list-binding-warning
+      description: Wants to fix coherence suggestion warnings where a Table Records or List Records widget uses the wrong current record, the query's Max. Records value does not match the displayed rows, or a Combo Box special variable is set without a Special List, by correcting the record binding or combo box configuration, so the widget uses the correct runtime data.
+    - name: Fix lifecycle warning
+      id: fix-lifecycle-warning
+      description: Wants to fix coherence suggestion warnings where an OnInitialize, OnReady, or OnRender action accesses an Aggregate or Data Action too early or assigns variables too late, by moving the data access to OnAfterFetch or the variable assignment to OnInitialize, so the fetch uses consistent values.
+    - name: Fix database integrity
+      id: fix-database-integrity
+      description: Wants to resolve database integrity suggestion warnings in Service Studio by matching entity definitions to database tables, adding missing attributes, fixing unsupported data types or table names, or ignoring the warning when appropriate, so the module stays consistent.
   - name: Creating Variables
     id: creating-variables
     subtopics:
@@ -3100,6 +3115,9 @@ knowledge-needs:
         validation, method execution, response serialization, and the
         response callback, so they can predict what happens when a request
         reaches the API.
+    - name: Unused input parameter
+      id: unused-input-parameter
+      description: Wants to fix the Unused Input Parameter error in a REST API method by using the input parameter in the URL path, changing its Send In property, or deleting it, so the method validates.
   - name: Database connections
     id: database-connections
     subtopics:
@@ -3595,6 +3613,9 @@ knowledge-needs:
         file can''t be found on the file system during extension creation,
         merge, or save in Integration Studio, by re-opening the extension to
         recover the files, so that the extension resource is restored.'
+    - name: Extension warnings index
+      id: extension-warnings-index
+      description: Wants to identify the warnings Integration Studio shows when verifying or publishing an extension and open the relevant warning article from the list, so they can troubleshoot the extension issue.
     - name: Overwritten file warning
       id: overwritten-file-warning
       description: 'Wants to resolve the "The file ''<file>'' was overridden"
@@ -6382,6 +6403,9 @@ knowledge-needs:
         first consuming a SOAP Web Service by checking the WSDL URL, WSDL
         structure, and available methods, so that the service imports
         successfully.
+    - name: Refresh SOAP web service
+      id: refresh-soap-web-service
+      description: Wants to refresh a consumed SOAP web service in OutSystems 11 when the WSDL changes or the service URL becomes inaccessible, so that the integrity warning clears and the service compiles again.
     - name: Enable OSTrace SOAP import
       id: enable-ostrace-soap-import
       description: Wants to enable OSTrace logging for SOAP web service
@@ -7581,6 +7605,9 @@ knowledge-needs:
         to Yes, by changing those properties to px, pt, or %, or by enabling
         Use Grid in the theme, in Service Studio for OutSystems 11, so the app
         publishes or runs without the error.'
+    - name: Fix unknown object error
+      id: fix-unknown-object-error
+      description: 'Wants to resolve the "Unknown Object" error caused by a Theme or Block Style Sheet referencing an unknown image or resource, or a resource with Deploy Action set to Do Nothing, by fixing the reference or setting Deploy Action to Deploy to Target Directory, so they can go to the source line and correct the problem in OutSystems 11.'
     - name: Uppercase input text
       id: uppercase-input-text
       description: 'Wants to display input text in uppercase at runtime while
@@ -10736,6 +10763,13 @@ knowledge-needs:
         rules, and applying the corresponding fix (disabling the injecting
         tool or removing the offending SEO/pathrule/siterule), in OutSystems
         11, so that deployment completes successfully.'
+    - name: Required permission error
+      id: required-permission-error
+      description: 'Wants to resolve the "Required Permission" error in
+        OutSystems 11 when running a module or choosing a User Provider
+        module by restoring the required Publish or Reference security level
+        on the referenced module in Service Center, so that the module runs
+        or the User Provider setting saves successfully.'
     - name: Slow deploy new attribute
       id: slow-deploy-new-attribute
       description: Wants to fix an application deployment that takes a long
@@ -11135,6 +11169,13 @@ knowledge-needs:
         than letters, digits, dash, tilde, or slash, by removing the invalid
         characters, in OutSystems 11, so that SEO-friendly URLs work
         correctly.'
+    - name: Reserved page name error
+      id: reserved-page-name-error
+      description: 'Wants to resolve the "Reserved Page Name" error in
+        Service Studio, caused by a Screen''s Page Name containing a
+        reserved string, by choosing a nonreserved Page Name after checking
+        the custom Screen URL reserved-string list, in OutSystems 11, so
+        that SEO-friendly URLs work correctly.'
     - name: Fix parameter order
       id: fix-parameter-order
       description: 'Wants to fix the "Invalid Parameter Order" error in
@@ -13334,7 +13375,7 @@ knowledge-needs:
         events, and configuring deep-link support for Android — so that the app can
         receive push notifications on both iOS and Android.
     - name: Send push notifications
-      id: send-push-notifications
+      id: send-push-notifications-o11
       description: Wants to implement server-side logic in an OutSystems O11 app to
         send push notifications via the OneSignalAPI — including adding the API dependency,
         building the send logic, configuring the notification icon, and defining
@@ -14378,7 +14419,7 @@ knowledge-needs:
         existing integration until they migrate to the Cloud Messaging plugin's
         server actions.
     - name: Cloud messaging setup
-      id: cloud-messaging-setup
+      id: send-push-notifications-odc
       description: Wants to set up Firebase Cloud Messaging server actions by creating
         the backend notification service, configuring service-account fields and
         access-token storage, and using the send and silent-send actions for users
@@ -16151,6 +16192,12 @@ knowledge-needs:
         after AppShield obfuscation, so that they can identify whether misconfigured
         dependencies, Gradle/JAR/AAR imports, or reflection-based code are causing
         the issue.
+    - name: AppShield obfuscation rules
+      id: appshield-obfuscation-rules
+      description: Wants to create AppShield obfuscation rules for non-OutSystems
+        plugins, including the base rules, syntax validation, base64 encoding, and
+        Extensibility Configuration settings, so that mobile apps obfuscate custom
+        code and logs correctly during build.
     - name: AppShield hardening
       id: appshield-hardening
       description: Wants to harden a high-security mobile app with AppShield by installing
@@ -17870,11 +17917,11 @@ knowledge-needs:
         are automatically reflected in OutSystems application roles.
     - name: Sync AD roles schedule
       id: sync-ad-roles-schedule
-      description: Wants to configure the schedule of the SyncRoles, SyncGroups,
-        and SyncUsers timers provided by the Active Directory Group Mapping component
-        — including setting timer schedules in Service Center and triggering on-demand
-        synchronisation — in OutSystems 11, so that changes to Active Directory Groups
-        are regularly propagated to OutSystems user roles without manual intervention.
+      description: Wants to configure the schedule of the timers provided by the Active
+        Directory Group Mapping component — including setting timer schedules in Service
+        Center and triggering on-demand synchronisation — in OutSystems 11, so that changes
+        to Active Directory Groups are regularly propagated to OutSystems user roles without
+        manual intervention.
     - name: Map O11-ODC groups
       id: map-o11-odc-groups
       description: Wants to map existing O11 end-user groups to their corresponding
@@ -18706,6 +18753,11 @@ knowledge-needs:
       description: Wants to define the backlog workflow stages and ownership from
         inception to closure, so that the project team and stakeholders follow the
         same process.
+    - name: Prepare iteration backlog
+      id: prepare-iteration-backlog
+      description: Wants to write and prioritize the backlog for an upcoming
+        iteration in the previous iteration, so that the team enters Iteration X
+        with ready stories.
     - name: Prioritize user stories
       id: prioritize-user-stories
       description: Wants to prioritize user stories with the MoSCoW technique by
@@ -18787,6 +18839,11 @@ knowledge-needs:
         milestones, MVP scope, and delivery phases with available information and
         the architecture design, so that they can set a realistic timebox before
         moving forward.
+    - name: Project initiation outputs
+      id: project-initiation-outputs
+      description: Wants to identify the outputs of the project initiation phase
+        in OutSystems agile methodology, so they can tell which deliverables
+        belong in initiation and which belong in later iterations.
     - name: Product team lifecycle
       id: product-team-lifecycle
       description: Wants to understand how Product teams, CoE teams, release staging,
@@ -18862,6 +18919,13 @@ knowledge-needs:
       management, estimation and capacity planning, issue management and
       resolution, and go-live planning, so that they can keep delivery standards
       solid and prepare the project for release.
+    subtopics:
+    - name: Definition of Ready and Done
+      id: definition-of-ready-and-done
+      description: Wants to understand how the Definition of Ready and
+        Definition of Done checklists gate iteration planning and UAT during
+        project initiation, so that they can agree when stories are ready to
+        enter development and when features are complete.
   - name: Agile coaching
     id: agile-coaching
     description: Wants to understand when an Agile coach helps a team establish
@@ -20843,6 +20907,12 @@ knowledge-needs:
         connection to the environment, by enabling the "Use One Connection
         per Request in Debugger" option in Service Studio's Preferences, so
         debugging can continue without the connection being dropped.
+    - name: Fix debugger not started warning
+      id: fix-debugger-not-started-warning
+      description: Wants to fix the "Debugger was not started" warning in
+        Service Studio by enabling module Debug Mode, checking debugger
+        version compatibility, or verifying the browser instance that
+        launched the module, so debugging starts successfully.
     - name: Fix stopped debug session
       id: fix-stopped-debug-session
       description: 'Wants to fix the "The server has stopped the debug
@@ -21617,6 +21687,22 @@ knowledge-needs:
         planning, status meetings, scrum, and retrospectives, so that they can
         discuss scope, estimation, productivity, quality, and lead-time findings
         in the right ceremony.
+    - name: Project metrics workflows
+      id: project-metrics-workflows
+      description: Wants to understand how to align story, feedback, and
+        internal feedback workflows, including the Definitions of Ready and
+        Done checkpoints, so that metric data stays consistent and reliable
+        across lifecycle transitions.
+    - name: Project metrics estimates
+      id: project-metrics-estimates
+      description: Wants to understand how to use both hours and story points
+        across epics, stories, and tasks, and how to log development time
+        daily, so that metrics have the estimate and actuals data they need.
+    - name: Project metrics feedback
+      id: project-metrics-feedback
+      description: Wants to understand how to classify feedback by root cause
+        and project impact after triage, so that they can track defects,
+        identify patterns, and take corrective actions.
 - name: Community and Training
   guid: 336189f2-2366-41d7-9dfa-6819b924a0ae
   topics:

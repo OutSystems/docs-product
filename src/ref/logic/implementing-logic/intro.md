@@ -8,6 +8,8 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
+topic:
+  - action-types-overview
 isautopublish: true
 outsystems-tools:
   - none

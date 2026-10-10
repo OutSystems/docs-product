@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - combo-box-widget-reference
 ---
 
 # Combo Box Widget

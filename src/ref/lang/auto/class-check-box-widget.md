@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - check-box-widget-reference
 ---
 
 # Check Box Widget

@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - comment-widget-reference
 ---
 
 # Comment Widget

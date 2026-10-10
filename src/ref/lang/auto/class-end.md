@@ -17,6 +17,9 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - end-process-activity
+  - terminate-process-property
 ---
 
 # End

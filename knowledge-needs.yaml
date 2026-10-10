@@ -1252,6 +1252,11 @@ knowledge-needs:
       description: Wants to understand the available Cell Widget properties and
         runtime Id in Service Studio for OutSystems 11, so they can configure
         table cells correctly.
+    - name: Row widget properties
+      id: row-widget-properties
+      description: 'Wants to look up the Row Widget''s properties and runtime Id
+        in Service Studio for OutSystems 11, so they can configure table rows
+        correctly when building a table layout.'
     - name: Set up Table widget
       id: set-up-table-widget
       description: Wants to add a Table widget to a Screen, bind it to an Aggregate
@@ -8486,6 +8491,13 @@ knowledge-needs:
         Structure record, uses a tabular layout, and exposes properties and
         runtime properties, so they can configure it or choose the Form widget
         when they need a more flexible layout.
+    - name: Show Record widget
+      id: show-record-widget
+      description: Wants to look up what the Show Record widget does in
+        Traditional Web Apps, including that it displays a single Entity or
+        Structure record, uses a tabular layout, and exposes properties and
+        runtime properties, so they can configure it or choose the Form widget
+        when they need a more flexible layout.
     - name: Use Label widget
       id: use-label-widget
       description: Wants to add and configure a Label widget in a reactive web
@@ -10213,6 +10225,12 @@ knowledge-needs:
         their element renders, in OutSystems 11 Mobile Apps and Reactive Web
         Apps, so that they can predict when JavaScript functions and objects
         become available at runtime.
+    - name: Script element reference
+      id: script-element-reference
+      description: Wants to look up the properties and runtime properties of the
+        Script element in Service Studio, including Name, Description, Public,
+        Runtime Path, Original Name, JavaScript, Required Scripts, and URL, so
+        they can configure a script element correctly in an OutSystems 11 app.
     - name: Override JS behavior
       id: override-js-behavior
       description: Wants to override default JavaScript behavior in an

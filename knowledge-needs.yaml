@@ -189,6 +189,13 @@ knowledge-needs:
       description: Wants to use a server action to read or manipulate entity
         data, wrap entity actions, and call it from a client action or timer,
         so the logic runs on the server.
+    - name: Action call rules
+      id: action-call-rules
+      description: Wants to understand which action types can call which other
+        action types in OutSystems 11, including that client and screen
+        actions can call server actions, screen actions stay screen-scoped,
+        and server actions do not call client actions, so they can structure
+        action flows correctly.
     - name: Define async action
       id: define-async-client-action
       description: Wants to make a client action asynchronous and signal its
@@ -4991,6 +4998,11 @@ knowledge-needs:
         Workflow editor, configuring assignment, destination screen, display
         message, close conditions, and timeout so the workflow can pause for
         manual input and continue when the activity completes.
+    - name: Close manual task
+      id: close-manual-task-event
+      description: Wants to create an event in the app, trigger it from a
+        server action, and configure a human activity to close on that event
+        so the workflow resumes when the manual task completes.
     - name: Human activity states
       id: human-activity-states
       description: Wants to understand the human activity statuses in an ODC
@@ -9455,6 +9467,9 @@ knowledge-needs:
     - name: Use input widgets
       id: use-input-widgets
       description: Wants to choose input widgets in a reactive web form based on the kind of value they collect, and bind each field to a screen variable, so the form collects, edits, and submits user data correctly.
+    - name: Boolean input widgets
+      id: boolean-input-widgets
+      description: Wants to choose a Check Box or Switch widget for boolean input in a reactive web form, and bind it to a Boolean screen variable, so the form stores true or false values correctly.
     - name: Use Button Group widget
       id: use-button-group-widget
       description: Wants to add the Button Group widget to a reactive web form and bind it to a screen variable, so users can choose one of several mutually exclusive options in OutSystems 11.

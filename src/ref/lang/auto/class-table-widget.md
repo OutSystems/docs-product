@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - set-up-table-widget
 ---
 
 # Table Widget

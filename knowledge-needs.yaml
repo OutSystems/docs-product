@@ -26,6 +26,19 @@ knowledge-needs:
         Run Server Action element, provide input parameters, and use the
         output parameters that follow the element, so they can execute
         server-side logic and use the returned values.
+    - name: Run client action
+      id: run-client-action
+      description: Wants to run a client action from the action flow with the
+        Run Client Action element in Reactive Web Apps or Mobile Apps,
+        selecting an existing action or creating a new one as needed, so that
+        they can execute client-side logic directly from the flow.
+    - name: Use message tool
+      id: use-message-tool
+      description: Wants to show a feedback message to the end user from a client
+        action by adding the Message logic tool, setting its Label, Message,
+        and Type properties, and choosing the appropriate message type, so
+        that the app displays the intended feedback in Mobile Apps and
+        Reactive Web Apps.
     - name: Service actions overview
       id: service-actions-overview
       description: Wants to understand what service actions are in ODC, how
@@ -817,6 +830,13 @@ knowledge-needs:
       description: Wants to create an application-specific role in an app, so
         they can define a custom role to assign to end users and use for screen
         and logic access control.
+    - name: Use role exceptions
+      id: use-role-exceptions
+      description: Wants to understand how OutSystems automatically creates role
+        exceptions from module roles, how the Not <role_name> name is formed,
+        and when to raise a role exception when a user without the required
+        role tries to perform an action, so they can decide when to use role
+        exceptions correctly in access-control logic.
     - name: Delete app role
       id: delete-app-role
       description: Wants to delete an application-specific role from a
@@ -1083,6 +1103,12 @@ knowledge-needs:
       description: Wants to split an OutSystems 11 app into reusable modules
         when the app grows beyond a single module, so they can develop
         functionality independently and keep the app maintainable.
+    - name: Create mobile module
+      id: create-mobile-module
+      description: Wants to create a new Mobile module in Service Studio by creating a
+        Mobile app or adding a module to an existing one and choosing Mobile
+        as the module type, so they have a working mobile module ready to
+        build screens and logic.
     - name: Module properties reference
       id: module-properties-reference
       description: Wants to look up the configuration properties available for
@@ -1090,6 +1116,12 @@ knowledge-needs:
         general settings (DBMS, user provider, icon), Web settings (theme,
         jQuery version, exception handler), validation and upgrade messages,
         and advanced settings (cookies, multi-tenancy, rendering mode),
+        including default values, so they can correctly configure and
+        understand module behavior.
+    - name: Mobile module properties
+      id: mobile-module-properties
+      description: Wants to look up the configuration properties available for a
+        Mobile module in OutSystems 11 Service Studio, grouped by category and
         including default values, so they can correctly configure and
         understand module behavior.
     - name: Reference element properties
@@ -4432,6 +4464,11 @@ knowledge-needs:
       description: Wants to use the Security library to protect data
         confidentiality, so that an app can encrypt and decrypt sensitive
         information in ODC.
+    - name: Identify sensitive data
+      id: identify-sensitive-data
+      description: Wants to identify which data an ODC app processes, stores,
+        or transmits as sensitive, so that the app classifies information
+        correctly before applying encryption, disposal, or caching controls.
     - name: Use Cryptography Services
       id: use-cryptography-services
       description: Wants to use the Cryptography Services app in the OutSystems
@@ -8364,6 +8401,11 @@ knowledge-needs:
         setting the Line Separator property of the List Records widget to None, in
         Service Studio for O11, so that records appear in a multi-column layout on
         the screen.
+    - name: Set up List Records
+      id: set-up-list-records
+      description: Wants to add a List Records widget to a Traditional Web App screen
+        in Service Studio, supply the record list, and configure the Line Separator
+        and display properties so the widget shows records in the intended layout.
     - name: Integrate jQuery plugin
       id: integrate-jquery-plugin
       description: Wants to integrate a third-party jQuery plugin into an OutSystems
@@ -8393,6 +8435,12 @@ knowledge-needs:
         Runtime Path, Original Filename, Original Format, and Public, so that
         they can correctly configure an image file resource in a Traditional
         Web App or Mobile App (O11).
+    - name: Localized image reference
+      id: localized-image-reference
+      description: Wants to look up the properties of the Localized Image
+        element in Service Studio, including OriginalFormat and Locale, so
+        they can associate an image resource with the correct language in
+        OutSystems 11.
     - name: Resource reference
       id: resource-reference
       description: Wants to look up the properties and runtime properties of the
@@ -9285,6 +9333,24 @@ knowledge-needs:
         behavior configuration options, so that they can correctly configure a
         value-selection dropdown field bound to an Entity, Structure, or special
         values list in a Traditional Web App (O11).
+    - name: List Box widget reference
+      id: list-box-widget-reference
+      description: Wants to look up the properties and runtime properties of the List Box
+        widget in Service Studio, including its data binding, selection mode,
+        selection attribute, and List runtime property, so that they can
+        configure a Traditional Web App List Box widget correctly.
+    - name: Read list box selection
+      id: read-list-box-selection
+      description: Wants to read the records selected in a List Box widget from the
+        widget's List runtime property after submit, so that they can access
+        the selected values and their updated selection state in a Traditional
+        Web App.
+    - name: Keep list box selection
+      id: keep-list-box-selection
+      description: Wants to keep the current selection in a List Box widget during
+        Ajax refreshes by copying the Aggregate list into a local variable and
+        reassigning the widget source in an On Change action, so that the
+        selected values do not clear when the widget refreshes.
     - name: Order combo box list
       id: order-combo-box-list
       description: Wants to control the order of items displayed in a Combo Box
@@ -9471,6 +9537,11 @@ knowledge-needs:
         in Service Studio, so that end users can drop a marker at the
         location they click on the map, in mobile apps and reactive web
         apps (O11).
+    - name: Populate map markers
+      id: populate-map-markers
+      description: Wants to populate Leaflet map markers from a list widget
+        using List Append and a latitude-longitude position expression in
+        OutSystems 11, so they can display multiple markers on a map.
     - name: Configure pie chart
       id: configure-pie-chart
       description: Wants to add the Pie Chart widget, populate its DataPointList, enable ShowDataPointValues,
@@ -9899,6 +9970,12 @@ knowledge-needs:
         states, default behavior, extended properties, On Click settings, and
         runtime Id, so that the button triggers actions, submits data, or
         navigates to another screen.
+    - name: Link widget reference
+      id: link-widget-reference
+      description: Wants to inspect and configure the Link widget in a
+        Traditional Web App, including its configurable properties, so that
+        the link triggers an action, submits data, or navigates to another
+        screen.
     - name: Screen interactions
       id: screen-interactions
       description: Wants to understand how buttons, links, screen actions, and
@@ -19094,6 +19171,11 @@ knowledge-needs:
       description: Wants to identify the outputs of the project initiation phase
         in OutSystems agile methodology, so they can tell which deliverables
         belong in initiation and which belong in later iterations.
+    - name: Gather requirements
+      id: gather-requirements
+      description: Wants to gather customer requirements and user roles during
+        project initiation and turn them into user stories so the team can
+        prepare the backlog.
     - name: Product team lifecycle
       id: product-team-lifecycle
       description: Wants to understand how Product teams, CoE teams, release staging,

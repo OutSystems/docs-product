@@ -70,6 +70,12 @@ knowledge-needs:
         action in OutSystems 11 Service Studio, including which are mandatory and
         their default values, so they can correctly configure and understand the
         action's behavior.
+    - name: Data action reference
+      id: data-action-reference
+      description: Wants to look up the properties, events, and runtime
+        properties of the Data Action element in Service Studio, so they can
+        configure when it fetches data and handle its output and error state in
+        an OutSystems 11 app.
     - name: Use input parameters
       id: use-input-parameters
       description: Wants to understand what an input parameter is and how to set
@@ -1209,6 +1215,11 @@ knowledge-needs:
         renaming, editing column expressions, and adjusting text alignment — in an
         OutSystems 11 Screen, so that the Table displays the right data fields with
         appropriate labels and formatting.
+    - name: Cell widget properties
+      id: cell-widget-properties
+      description: Wants to understand the available Cell Widget properties and
+        runtime Id in Service Studio for OutSystems 11, so they can configure
+        table cells correctly.
     - name: Set up Table widget
       id: set-up-table-widget
       description: Wants to add a Table widget to a Screen, bind it to an Aggregate
@@ -1660,6 +1671,14 @@ knowledge-needs:
       description: Wants to identify the entity relationship types supported in
         OutSystems 11, including one-to-one, one-to-many, and many-to-many, so
         they can choose the right model for related data.
+    - name: Relationship requirements
+      id: relationship-requirements
+      description: Wants to identify the requirements for creating data
+        relationships in OutSystems entities, including that every entity needs
+        an identifier, reference attributes do not need to be mandatory, an
+        entity can have multiple reference attributes, and the identifier does
+        not need to be an integer, so they can choose valid relationship
+        settings.
     - name: Data relationships overview
       id: data-relationships-overview
       description: Wants to understand how entities, aggregates, and forms work together when modeling related data in OutSystems 11 web apps, so they can design the right relationship structure before building screens and queries.
@@ -6839,6 +6858,9 @@ knowledge-needs:
     - name: Create BPT process
       id: create-bpt-process
       description: Wants to create a BPT process in Service Studio and start defining the process flow, so they can automate tasks and track work in their application.
+    - name: Decision outcome
+      id: decision-outcome
+      description: Wants to understand what a Decision Outcome element does in an OutSystems 11 BPT decision flow, including how the Connector property routes execution and ends the flow, so they can configure the correct branch.
     - name: Execute sub-process
       id: execute-sub-process
       description: Wants to execute a sub-process from a parent process by using the Execute
@@ -8409,6 +8431,13 @@ knowledge-needs:
         Input Widget in Service Studio, including Name, Variable, Mandatory,
         Max. Length, and Type, so that they can correctly configure a validated
         text input field in a Traditional Web App (O11).
+    - name: Edit Record widget
+      id: edit-record-widget
+      description: Wants to look up what the Edit Record widget does in
+        Traditional Web Apps, including that it edits a single Entity or
+        Structure record, uses a tabular layout, and exposes properties and
+        runtime properties, so they can configure it or choose the Form widget
+        when they need a more flexible layout.
     - name: Use Label widget
       id: use-label-widget
       description: Wants to add and configure a Label widget in a reactive web
@@ -9782,6 +9811,12 @@ knowledge-needs:
         of the Go To Destination node in Service Studio, so that they can
         navigate to a specific screen, in OutSystems 11 traditional web apps,
         mobile apps, and reactive web apps.
+    - name: Set screen transition
+      id: set-screen-transition
+      description: Wants to configure the Transition property on a Go To
+        Destination node in Service Studio so that navigation uses the
+        selected screen transition effect when the user moves to another
+        screen.
     - name: Fix invalid transition
       id: fix-invalid-transition
       description: Wants to resolve the Invalid Transition error by setting

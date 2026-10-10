@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - decision-outcome
 ---
 
 # Decision Outcome

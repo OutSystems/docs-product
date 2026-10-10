@@ -18,6 +18,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - go-to-destination
+  - set-screen-transition
 ---
 
 # Destination

@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - edit-record-widget
 ---
 
 # Edit Record Widget

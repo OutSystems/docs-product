@@ -12,6 +12,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - add-human-activity-o11
+  - configure-human-activity
 ---
 
 # Human Activity

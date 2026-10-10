@@ -8693,6 +8693,9 @@ knowledge-needs:
         responsive layout properties, in Service Studio for OutSystems 11, so
         that content is organized into an adaptive multi-column layout across
         different device types, in mobile apps and reactive web apps.
+    - name: Columns layout reference
+      id: columns-layout-reference
+      description: Wants to look up the layout and CSS classes of the Columns UI Pattern in Service Studio, so that they can correctly identify the pattern's structure for customization, in mobile apps and reactive web apps (O11).
     - name: Use Display on Device
       id: use-display-on-device
       description: Wants to add the Display on Device UI pattern to a screen and

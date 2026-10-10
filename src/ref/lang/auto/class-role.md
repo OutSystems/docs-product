@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - set-role-persistence
+  - use-role-exceptions
 ---
 
 # Role

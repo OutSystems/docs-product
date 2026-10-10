@@ -19,6 +19,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - create-mobile-module
+  - mobile-module-properties
 ---
 
 # Mobile Module

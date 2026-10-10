@@ -16,6 +16,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - compose-and-send-emails
 ---
 
 # Send Email

@@ -19,6 +19,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - keep-list-box-selection
+  - list-box-widget-reference
+  - read-list-box-selection
 ---
 
 # List Box Widget

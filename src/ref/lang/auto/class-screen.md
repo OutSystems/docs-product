@@ -3,6 +3,8 @@ summary: Explore the user interface properties and events of OutSystems 11 (O11)
 helpids: 4011
 locale: en-us
 guid: ca24e447-f946-4dd9-87d7-664e6d6ed848
+topic:
+  - screen-properties-reference
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

@@ -17,6 +17,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - json-serialize-action
+  - json-serialize-large-numbers
+  - json-serialize-consistency-optin
 ---
 
 # JSON Serialize

@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - json-deserialize-action
 ---
 
 # JSON Deserialize

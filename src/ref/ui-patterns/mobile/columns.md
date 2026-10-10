@@ -18,6 +18,8 @@ coverage-type:
 audience:
   - Developer
   - Front-end developer
+topic:
+  - columns-layout-reference
 ---
 
 # Columns Reference

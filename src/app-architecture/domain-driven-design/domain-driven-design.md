@@ -1,5 +1,5 @@
 ---
-summary: Explore Domain Driven Design in OutSystems 11 (O11) for effective complex software development.
+summary: Domain driven design in OutSystems 11 (O11) maps business processes to a shared model, core domain, and ubiquitous language for complex apps.
 tags:
   - Architecture
   - Best Practices

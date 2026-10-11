@@ -3134,6 +3134,12 @@ knowledge-needs:
     description: Wants to understand how OutSystems web services cover consuming and
       exposing REST APIs and SOAP web services, so they can choose the right
       integration approach.
+    subtopics:
+    - name: Method properties
+      id: method-properties
+      description: Wants to understand the Name and Description properties of a web
+        service method in OutSystems 11, so they can identify the method and
+        document it correctly.
   - name: REST API request formats
     id: rest-api-request-formats
     description: Wants to understand how exposed REST API requests handle supported media
@@ -10387,6 +10393,11 @@ knowledge-needs:
       description: Wants to create a UI Flow in Service Studio, assign its
         Theme, and mark a Screen as the default screen so the flow uses the
         right styles and entry screen.
+    - name: UI flow properties
+      id: ui-flow-properties
+      description: Wants to look up the configuration properties available for a
+        UI Flow in Service Studio, so they can configure and understand the
+        flow's behavior.
     - name: UI flow editor
       id: ui-flow-editor
       description: Wants to use the UI Flow editor to review screen

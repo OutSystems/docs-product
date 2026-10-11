@@ -5825,10 +5825,8 @@ knowledge-needs:
     - name: Platform configurations
       id: factory-configuration-platform-configs
       description: Wants to understand which internal platform configurations are available
-        in Factory Configuration's Platform Configurations tab (such as brute force
-        protection, slow query threshold, and remember login settings) and what database
-        parameters they control, so that they can tune platform-wide behavior in
-        OutSystems 11.
+        in Factory Configuration's Platform Configurations tab and what database
+        parameters they control, so that they can tune platform-wide behavior in OutSystems 11.
     - name: JSON Serialize consistency opt-in
       id: json-serialize-consistency-optin
       description: Wants to enable the "Enable Json Serialize consistency between

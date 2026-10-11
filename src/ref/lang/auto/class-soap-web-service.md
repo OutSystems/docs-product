@@ -21,6 +21,9 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+topic:
+  - soap-service-properties
+
 ---
 
 # SOAP Web Service

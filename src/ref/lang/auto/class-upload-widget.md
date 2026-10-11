@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - use-upload-widget-o11
 ---
 
 # Upload Widget

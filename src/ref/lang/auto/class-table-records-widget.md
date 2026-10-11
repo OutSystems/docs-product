@@ -21,6 +21,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - paginate-table-records
+  - set-up-table-records
 ---
 
 # Table Records Widget

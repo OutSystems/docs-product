@@ -18,6 +18,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - theme-exposure-rules
+  - theme-properties
 ---
 
 # Theme

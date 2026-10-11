@@ -263,6 +263,11 @@ knowledge-needs:
         action flows by correcting For Each cycle paths, If and Switch
         branches, Start nodes, and ambiguous path conflicts so the flow
         compiles successfully.
+    - name: Start node
+      id: start-node
+      description: Wants to understand what the Start node does in an
+        OutSystems 11 action flow, so they can identify where execution begins
+        when they build logic.
   - name: Calculation and algorithm examples
     id: calculation-and-algorithm-examples
     subtopics:
@@ -1186,6 +1191,17 @@ knowledge-needs:
       description: Wants to show data fetched from an Integration Builder data
         action in a table, list, gallery, expression, or image widget, so
         users can see external system records on the screen.
+    - name: Set up table records
+      id: set-up-table-records
+      description: Wants to add a Table Records widget to a Traditional Web
+        App screen, bind it to an entity or structure record list, and
+        configure its properties and layout so records display in a table.
+    - name: Paginate table records
+      id: paginate-table-records
+      description: Wants to page through a Table Records widget by using the
+        Line Count and Start Index properties, and by understanding the Max.
+        Records behavior when the widget reads from an Aggregate, so users can
+        move through large record sets one page at a time.
     - name: Header row widget behavior
       id: header-row-widget-behavior
       description: Wants to understand how the Header Row Widget automatically
@@ -1549,6 +1565,10 @@ knowledge-needs:
       description: Wants to create structures and define their attributes in OutSystems,
         and understand that a structure is a custom compound data type used to store
         related data in memory, so they can model grouped data correctly.
+    - name: Structure configuration
+      id: structure-configuration
+      description: Wants to inspect Structure element properties and exposure constraints,
+        so they can configure a structure correctly and know when it cannot be exposed.
     - name: Fix invalid structure
       id: fix-invalid-structure
       description: 'Wants to fix the "<structure> must have at least one attribute." and "<structure>.<attribute> defines a recursive Structure data type definition." errors in Service Studio by adding at least one attribute to the structure and removing recursive Record attribute definitions, so the structure compiles successfully.'
@@ -1572,6 +1592,11 @@ knowledge-needs:
       description: Wants to look up the configurable properties of an Entity Attribute,
         including which are mandatory, their default values, and constraints, so
         they can correctly define an attribute's behavior in Service Studio.
+    - name: Structure attribute properties
+      id: structure-attribute-properties
+      description: Wants to look up the configurable properties of a Structure Attribute,
+        including which are mandatory, their default values, and constraints, so
+        they can correctly define a structure attribute's behavior in Service Studio.
     - name: Entity diagram properties
       id: entity-diagram-properties
       description: Wants to look up the configurable properties of an Entity Diagram
@@ -2837,6 +2862,11 @@ knowledge-needs:
         instead of the whole entity, and defining an output structure that
         matches the expected result set — so their SQL queries stay secure,
         performant, and maintainable.
+    - name: SQL node reference
+      id: sql-node-reference
+      description: Wants to identify the SQL node properties and runtime
+        properties in Service Studio for OutSystems 11, so they can configure
+        the SQL statement and read its results.
     - name: Test Query differences
       id: test-query-runtime-differences
       description: Wants to understand why running Test Query on an Aggregate
@@ -6466,6 +6496,10 @@ knowledge-needs:
         SoapUI, generating a project from the service''s WSDL, submitting a sample request,
         and inspecting the success/error XML response, so that the method''s behavior can
         be verified before considering it complete.'
+    - name: SOAP service properties
+      id: soap-service-properties
+      description: Wants to understand how to configure an exposed SOAP web
+        service in OutSystems 11, so they can set it up correctly.
     - name: Fix REST param type
       id: fix-rest-param-type
       description: 'Wants to fix the "Cannot send a ''Binary Data''/''List''
@@ -7732,6 +7766,13 @@ knowledge-needs:
       id: theme-properties
       description: Wants to configure a theme's properties and layout settings
         so they can define how the theme looks and behaves in an app.
+    - name: Theme exposure rules
+      id: theme-exposure-rules
+      description: Wants to identify when a theme cannot be exposed because
+        its Web Block parameters use non-exposed or reused Entities and
+        Structures, or because it contains a Link, Button, or consumed Web
+        Screen with Binary Data, Record, or List arguments, so they can tell
+        whether the theme is valid for exposure.
     - name: Manage themes
       id: manage-themes
       description: Wants to set a module's default theme, create a blank theme,
@@ -8240,6 +8281,12 @@ knowledge-needs:
         Expression widget in Service Studio, including Value, Escape Content, and
         Id, so that they can correctly display a literal text or an evaluated
         expression on a screen in a Traditional Web App (O11).
+    - name: Text widget reference
+      id: text-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Text widget in Service Studio, including Text, Style Classes, Extended
+        Properties, and Id, so that they can correctly display text on a screen
+        or block in a Traditional Web App or Mobile App (O11).
     - name: Use Expression widget
       id: use-expression-widget
       description: Wants to add an Expression widget to a screen, set its

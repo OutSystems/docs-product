@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - output-parameter-reference
 ---
 
 # Output Parameter - REST API Callback

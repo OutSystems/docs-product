@@ -16,6 +16,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - web-block-exposure-rules
+  - web-block-reference
 ---
 
 # Web Block

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - output-parameter-reference
 ---
 
 # Output Parameter - SAP Remote Function

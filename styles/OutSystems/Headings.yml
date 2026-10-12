@@ -231,6 +231,7 @@ exceptions:
   - Google Cloud GAR
   - Google Kubernetes Engine
   - GKE
+  - App Store Connect
   - Apple Developer
   - AWS
   - AWS ECR
@@ -267,6 +268,7 @@ exceptions:
   - HIPPA
   - iOS
   - Integrated Authentication
+  - TestFlight
   - Kubernetes
   - TypeScript
   - Windows

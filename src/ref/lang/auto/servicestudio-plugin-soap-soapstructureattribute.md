@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - structure-attribute-properties
 ---
 
 # Structure Attribute - Consumed SOAP

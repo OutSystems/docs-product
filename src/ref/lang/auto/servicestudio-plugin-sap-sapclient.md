@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - sap-connection-properties
 ---
 
 # SAP Connection

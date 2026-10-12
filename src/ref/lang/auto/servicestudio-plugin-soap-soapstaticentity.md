@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - consumed-soap-elements
 ---
 
 # Static Entity - Consumed SOAP

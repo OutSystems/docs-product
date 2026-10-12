@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - soap-output-parameter
 ---
 
 # Output Parameter - Consumed SOAP Method

@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - soap-extensibility-api
 ---
 
 # SOAP Callback - Consumed SOAP

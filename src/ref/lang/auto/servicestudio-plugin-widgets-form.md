@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - form-widget-reference
 ---
 
 # Form Widget

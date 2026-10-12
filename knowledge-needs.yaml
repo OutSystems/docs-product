@@ -12426,6 +12426,12 @@ knowledge-needs:
         Fetch me a new environment, then republishing their apps in the
         new environment, so that they can keep developing after the old
         environment is gone.'
+    - name: Recover PE access
+      id: recover-pe-access
+      description: 'Wants to recover access to an OutSystems 11 personal
+        environment that is asleep or deleted due to inactivity, by waking
+        it up or fetching a new environment, so they can resume using
+        their apps.'
     - name: Set up PE access
       id: set-up-pe-access
       description: 'Wants to regain access to an OutSystems 11 personal

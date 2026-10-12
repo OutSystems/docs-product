@@ -452,35 +452,91 @@ Check the following code sample:
 
 ### Warning and information sections
 
-To insert a warning or information box, use a HTML `<div>` element with `class="warning"` or `class="info"`. Include a `markdown="1"` attribute in the `<div>` element so that the build script parses the text as Markdown-formatted content. Avoid using a **Note:** section.
+Use a HTML `<div>` element to insert a warning or information box, with a `markdown="1"` attribute so the build script parses its content as Markdown. Choose the class based on what the content is for:
+
+* `class="warning"`: content describes a risk of data loss, a broken configuration, or an error if the reader skips it.
+* `class="info"`: content is supplementary. It helps the reader but isn't critical to safely complete the task.
 
 Add a blank newline after the opening `<div>` tag and before the corresponding closing tag so that the VS Code previewer parses the `<div>` content as Markdown.
 
+Don't use **Note:**, **Important:**, **Warning:**, or similar bold text as a substitute for a warning or information box. Use the `<div>` element instead.
+
+Don't repeat the box's type as a label inside its content, for example **Note:** inside a `class="info"` box. The class already identifies the type of callout, so repeating it in the text is redundant.
+
 **Examples**
 
-An example of warning:
+Use a warning box for a risk:
 
-````html
-
-```
+```html
 <div class="warning" markdown="1">
- 
-Include your warning text here.
- 
+
+Deleting this Entity permanently erases all its data.
+
 </div>
 ```
 
-````
-An example of additional information:
+```html
+<div class="warning" markdown="1">
 
-````html
+Changing this REST API's base URL breaks every integration that calls it.
 
+</div>
 ```
+
+Use an info box for supplementary content:
+
+```html
 <div class="info" markdown="1">
- 
-Include your informational text here.
- 
+
+The Icon widget's new look and feel requires Service Studio 11.8.7.
+
 </div>
 ```
 
-````
+```html
+<div class="info" markdown="1">
+
+The upgrade process takes a few minutes for large apps.
+
+</div>
+```
+
+Don't use bold text instead of a box:
+
+**No:**
+
+```markdown
+**Note:** Save your changes before leaving the page.
+```
+
+**Yes:**
+
+```html
+<div class="info" markdown="1">
+
+Save your changes before leaving the page.
+
+</div>
+```
+
+Don't repeat the label inside a box:
+
+**No:**
+
+```html
+<div class="info" markdown="1">
+
+**Note:** Save your changes before leaving the page.
+
+</div>
+```
+
+**Yes:**
+
+```html
+<div class="info" markdown="1">
+
+Save your changes before leaving the page.
+
+</div>
+```

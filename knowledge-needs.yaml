@@ -9777,6 +9777,13 @@ knowledge-needs:
       description: Wants to create a Web Block in Service Studio for OutSystems 11,
         add input parameters, and bind an Aggregate to its UI so the block
         displays entity data as a reusable component.
+    - name: Web block exposure rules
+      id: web-block-exposure-rules
+      description: Wants to identify when a Web Block cannot be exposed in a
+        Traditional Web App (O11) because its parameters use non-exposed or
+        reused Entities or Structures, or because it contains a Link, Button,
+        or consumed Web Screen with Binary Data, Record, or List arguments, so
+        they can tell whether the block is valid for exposure.
   - name: Adding a Widget or OS UI pattern
     id: add-widget-ui-pattern
     subtopics:
@@ -19542,6 +19549,11 @@ knowledge-needs:
         including entity data, repeat migrations, and data model consistency requirements,
         and how to choose the right migration type for their phase, so that they can choose
         the right approach for their migration phase.
+    - name: Configure data migration
+      id: configure-data-migration-settings
+      description: Wants to configure the database connection, private gateway, encryption,
+        port, and permission settings for a self-managed O11 environment before migrating
+        its data to ODC, so the data migration can connect to each source environment.
     - name: Migrate end users
       id: migrate-end-users
       description: Wants to understand how end-user migration works during O11 to ODC

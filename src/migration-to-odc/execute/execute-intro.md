@@ -9,7 +9,6 @@ tags:
   - Data
   - End-users
   - Infrastructure
-  - Lifecycle
 audience:
   - Developer
   - Platform administrator
@@ -51,8 +50,6 @@ OutSystems is working to improve the app conversion capability. Meanwhile, consi
 
 * App conversion **isn't yet supported** for the following infrastructure setup:
 
-    * O11 self-managed infrastructures
-    * Hybrid O11 infrastructures
     * O11 infrastructures with additional pipelines
 
 * When executing app conversion to [ODC self-hosted](https://www.outsystems.com/tk/redirect?g=2433ca96-db20-493f-b04b-0e82e33c424e) organizations, [data migration](execute-how-to-migrate-data.md) isn't yet supported to self-hosted stages. Data migration can only be executed to the Development stage, managed in the OutSystems Cloud.
@@ -61,7 +58,11 @@ OutSystems is working to improve the app conversion capability. Meanwhile, consi
 
 Before you start converting your O11 apps to ODC, make sure the following requirements are met:
 
-* You have an enterprise [O11 cloud infrastructure](https://www.outsystems.com/tk/redirect?g=079418c8-7a3d-4b5e-9c13-c1ae7a1f122e). Take into account the [limitations](#limitations) for the O11 infrastructure setup.
+* Your O11 infrastructure is one of the following:
+
+    * An enterprise [O11 cloud infrastructure](https://www.outsystems.com/tk/redirect?g=079418c8-7a3d-4b5e-9c13-c1ae7a1f122e). Take into account the [limitations](#limitations) for the O11 infrastructure setup.
+
+    * A self-managed O11 infrastructure. [Additional prerequisites apply for data migration](execute-connect-to-tool.md#prerequisites).
 
 * Your O11 infrastructure has **LifeTime 11.29.0 or later**. Refer to [O11-ODC connectivity](https://www.outsystems.com/tk/redirect?g=b6c0c043-0b0a-4825-9271-afaa60bd2ee9) for further details.
 

@@ -1,11 +1,12 @@
 ---
-summary: Learn how to migrate O11 data and end users to ODC using the app conversion tool.
+summary: OutSystems 11 (O11) data migration in ODC Portal covers migration types, end-user mapping, and canceling a running migration.
 guid: 0ae16d20-7ffc-4894-9e95-254bd89c4353
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 tags:
   - Data
   - End-users
+  - Troubleshooting
 platform-version: o11
 figma:
 audience:
@@ -30,6 +31,8 @@ This article explains how to migrate O11 data and end users to ODC using the app
 Before you migrate the data and end users of the O11 apps in a [conversion plan](https://www.outsystems.com/tk/redirect?g=ab447daa-dffc-4374-8ae6-986c8f3d63c4), ensure you:
 
 * Have a valid infrastructure setup for data migration. For further details, see the [app conversion limitations](execute-intro.md#limitations).
+
+* If the O11 source environment is self-managed, [configure its data connectivity settings](execute-connect-to-tool.md#data-migration-settings).
 
 * [Converted the O11 apps code to ODC](execute-how-to-migrate-code.md).
 
@@ -63,6 +66,12 @@ To migrate O11 app data and end-users to ODC, follow these steps:
 1. Select the **Migration type**. App downtime depends on the [type of data migration](execute-about-migrate-data.md#types-of-migration) that you choose.
 
 1. Select the **O11** source environment to migrate data from.
+
+    <div class="info" markdown="1">
+
+    If the selected environment is self-managed and its data connectivity isn't configured, you can't continue the data migration. [Configure the data migration settings](execute-connect-to-tool.md#data-migration-settings) for that environment first.
+
+    </div>
 
 1. Select the **ODC** target stage to migrate the data to.
 

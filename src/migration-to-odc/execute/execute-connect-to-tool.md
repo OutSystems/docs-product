@@ -1,15 +1,16 @@
 ---
-summary: "OutSystems 11 (O11) to ODC conversion configuration: connect your O11 infrastructure to ODC and configure identity providers for end-user migration."
+summary: "OutSystems 11 (O11) to ODC conversion configuration: connect your O11 infrastructure to ODC, configure data migration settings for self-managed environments, and configure identity providers for end-user migration."
 guid: a4a2aea6-eee3-4224-8f6f-8f84da3057b2
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 tags:
-  - Authentication
-  - End-user Authentication
+  - Data
   - End-users
   - External Authentication
+  - External Databases
   - IdP
   - Infrastructure
+  - Private Gateway
 platform-version: o11
 figma:
 audience:
@@ -21,6 +22,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
+  - configure-data-migration-settings
   - configure-end-user-idp
   - connect-odc-to-o11
 isautopublish: true
@@ -32,6 +34,8 @@ Before you start converting your O11 apps and data to ODC, make sure the configu
 
 1. [Ensure connection between your ODC organization and the O11 infrastructure](#validate-connection) with the apps to convert to ODC.
 
+1. If your O11 infrastructure is self-managed, [configure the data migration settings](#data-migration-settings) for the environments you migrate data from.
+
 1. [Configure the end-user migration settings](#end-user).
 
 ## Prerequisites
@@ -39,6 +43,38 @@ Before you start converting your O11 apps and data to ODC, make sure the configu
 * You must have the **Organization management** > **Manage O11 infrastructures** permission in your ODC tenant.
 
 * The [Conversion Assessment Tool has been set up](https://www.outsystems.com/tk/redirect?g=29920fad-9efd-45ae-a4e4-212705fceb65) in your O11 infrastructure.
+
+* If your O11 infrastructure is self-managed, ensure the following:
+
+    * You've set up network connectivity from ODC to the database: [configure an ODC private gateway](https://www.outsystems.com/tk/redirect?g=9a023d82-da5b-4164-8f3f-9d6c35444b50) for a secure connection, or allowlist the [ODC public IP addresses](https://www.outsystems.com/tk/redirect?g=2356ff87-f2e9-4ab2-81bf-34ebcffe68c2) if the database is publicly accessible with IP restrictions. When allowlisting, include the runtime egress IP addresses of your ODC region for the **Development** stage type, which ODC uses to test the connection, and for every stage type you migrate data to.
+
+        * If you already have a private gateway configured for another purpose, configure a distinct reserved port for the data migration tunnel with your Cloud Connector. Each tunnel requires its own reserved port.
+
+    * Your database engine and version are supported for OutSystems 11 (refer to [OutSystems 11 system requirements](https://success.outsystems.com/documentation/11/setup_outsystems_infrastructure_and_platform/setting_up_outsystems/outsystems_11_system_requirements/#ps-database) for the supported database engines and versions), except for the following compatibility level exclusions specific to data migration:
+
+        * Microsoft SQL Server, Azure SQL, and Azure SQL Managed Instance databases at compatibility level 170 or higher aren't supported. The restriction applies to every database in the migration, including the main catalog and each additional catalog that your apps use.
+
+    * If you connect directly, without a private gateway, the database connection must be encrypted: SQL Server, Azure SQL, and Azure SQL Managed Instance require TLS (connections with `encrypt=false` are rejected), and Oracle requires server-side Native Network Encryption (`SQLNET.ENCRYPTION_SERVER` set to `REQUESTED` or `REQUIRED`).
+
+    * The database user for data migration needs the following permissions:
+
+        * Read and write permissions on the main catalog, and read-only permissions on each secondary catalog. Secondary catalogs are the additional databases or schemas of a multiple-catalog (MDC) setup.
+        * Permissions to create, alter, and drop tables and views in the main catalog. The migration job creates these temporary objects dynamically to map the attributes of O11 entities to ODC entities.
+        * Oracle: read-only permission to select any dictionary objects.
+        * SQL Server:
+            * In the main catalog, the `VIEW DATABASE STATE` and `VIEW DEFINITION` permissions.
+            * At the server level, the `VIEW SERVER STATE` permission.
+
+        A dedicated database user with these permissions is recommended over reusing an existing one, especially if your existing users have restrictive permissions. You can create a temporary user for the migration and delete it afterward.
+
+    * To connect to Azure SQL or Azure Managed Instance using a private gateway, the username follows the `USERNAME@INSTANCE_NAME` format. Replace the following:
+
+        * `USERNAME`: the username of the database user for data migration.
+        * `INSTANCE_NAME`: the first segment of the database server's host name. For example, if the host is `example12345.database.windows.net`, the instance name is `example12345`.
+
+    * For Azure Managed Instance through a private gateway, in the Azure portal, enable **Public Endpoint** and set **Connection Type** to **Proxy** for the instance. Then, in the instance, create a duplicate login user in the `USERNAME@INSTANCE_NAME` format, mapped to the same databases and permissions as an existing login user with permissions to perform data migration, and use this duplicate user as the username.
+
+    * You have the database connection details (server or host, port, and database or service name) and credentials for each O11 environment you migrate data from.
 
 ## Ensure connection between ODC and O11 infrastructure {#validate-connection}
 
@@ -72,7 +108,45 @@ Follow these steps to ensure that your ODC organization is connected to the O11 
 
 Having the connection to your O11 infrastructure configured, the [conversion plans](https://www.outsystems.com/tk/redirect?g=ab447daa-dffc-4374-8ae6-986c8f3d63c4) you've defined in the Conversion Assessment Tool are available in the ODC app conversion console. Thus, you can start [converting the apps' code](execute-about-migrate-code.md).
 
+If your O11 infrastructure is self-managed, [configure the data migration settings](#data-migration-settings) before you migrate data.
+
 When you are ready to migrate your apps' data and end users, make sure you [configure the end-user migration settings](#end-user).
+
+## Configure data migration settings for self-managed environments {#data-migration-settings}
+
+If your O11 infrastructure is self-managed, configure the database connection for each O11 environment before you migrate its data to ODC. ODC uses this connection to read data from the O11 environment during data migration.
+
+<div class="info" markdown="1">
+
+Skip this section if you have an O11 cloud infrastructure. ODC connects automatically to its environments.
+
+</div>
+
+Follow these steps to configure the data connectivity of a self-managed O11 environment:
+
+1. In the ODC Portal, go to **Management > OUTSYSTEMS 11 > Infrastructures**.
+
+1. Click the infrastructure card of your self-managed O11 infrastructure.
+
+1. In the **App conversion** tab, in the **Data migration settings** area, click **Edit**.
+
+1. For each O11 environment you want to enable for data migration, configure the database connection using the credentials and connection details for that database.
+
+    * Turn on **Private gateway** if you're connecting through one, and specify a port for each ODC stage you migrate data to. For Azure SQL or Azure Managed Instance, use the username format from the [prerequisites](#prerequisites).
+
+    * If your database requires it, add `encrypt=true;trustServerCertificate=true;` as an additional connection setting.
+
+    * Additional connection settings are `key=value` pairs separated by `;` for SQL Server, Azure SQL, and Azure SQL Managed Instance, and by `&` for Oracle. For Azure SQL and Azure SQL Managed Instance through a private gateway, you most likely need `encrypt=true;trustServerCertificate=true;`. For SQL Server with a self-signed certificate, add `trustServerCertificate=true`.
+
+1. Click **Test connection** to confirm ODC reaches the database.
+
+1. Click **Save**.
+
+<div class="warning" markdown="1">
+
+If a self-managed O11 environment doesn't have its data connectivity configured, the **Migrate data** action is unavailable for that environment.
+
+</div>
 
 ## Configure end-user migration settings {#end-user}
 

@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - sap-remote-function
 ---
 
 # SAP Remote Function

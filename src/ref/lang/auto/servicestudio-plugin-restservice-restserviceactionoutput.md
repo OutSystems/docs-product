@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - rest-output-parameter
 ---
 
 # Output Parameter - REST API Method

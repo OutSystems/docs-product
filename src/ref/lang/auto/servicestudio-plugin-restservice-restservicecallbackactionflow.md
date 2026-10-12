@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - exposed-rest-on-request
+  - exposed-rest-on-response
 ---
 
 # REST API Callback

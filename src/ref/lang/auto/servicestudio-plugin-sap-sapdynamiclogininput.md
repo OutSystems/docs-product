@@ -8,6 +8,8 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
+topic:
+  - input-parameter-reference
 tags: sap connections, dynamic login, input parameter, service studio, data type
 audience:
   - Developer

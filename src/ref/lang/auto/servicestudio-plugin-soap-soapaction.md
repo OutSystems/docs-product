@@ -12,6 +12,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - configure-web-service-timeout
+  - method-properties
 ---
 
 # Web Service Method - Consumed

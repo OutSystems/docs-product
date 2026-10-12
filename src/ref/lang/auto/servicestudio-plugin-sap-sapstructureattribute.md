@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - structure-attribute-properties
 ---
 
 # Structure Attribute - SAP Remote Function

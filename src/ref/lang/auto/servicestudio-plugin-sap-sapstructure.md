@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - structure-configuration
 ---
 
 # Structure - SAP Remote Function

@@ -950,6 +950,12 @@ knowledge-needs:
         how application-specific roles determine what an end user can do after
         signing in, so they can reason about permissions before implementing
         them.
+    - name: Permissions management
+      id: permissions-management
+      description: Wants to identify the Permissions Management component in
+        ODC when they need granular control over access to specific
+        application resources, so they can choose the right security feature
+        for resource-level access control.
     - name: Hierarchical roles choice
       id: hierarchical-roles-choice
       description: Wants to decide whether to use hierarchical roles instead
@@ -1367,6 +1373,12 @@ knowledge-needs:
         functions by choosing the OnBeforeConnection, OnBeforeCall, or
         OnAfterCall flow on the SAP Connection element, so they can customize
         every call made under the connection.
+    - name: SAP connection properties
+      id: sap-connection-properties
+      description: Wants to look up the properties of a SAP Connection
+        element in Service Studio, including the default connection settings
+        and advanced callback fields, so they can configure the connection
+        correctly.
   - name: Adding test data
     id: adding-test-data
     subtopics:
@@ -2800,6 +2812,10 @@ knowledge-needs:
       description: Wants to use a SQL node to perform advanced data queries that
         retrieve and manipulate data beyond aggregates in OutSystems 11 web apps,
         so they can choose SQL when aggregates are not enough.
+    - name: Filter and sort SQL
+      id: filter-and-sort-sql-results
+      description: Wants to filter and sort SQL query results in OutSystems 11 so
+        they can refine retrieved data before exposing it through a REST API.
     - name: SQL query execution
       id: sql-query-execution
       description: Wants to understand how ODC parses, normalizes, and executes SQL
@@ -6674,6 +6690,9 @@ knowledge-needs:
     - name: Consumed SOAP elements
       id: consumed-soap-elements
       description: Wants to understand the elements of a consumed SOAP web service in OutSystems 11, so they can find the reference information for the service.
+    - name: SOAP output parameter
+      id: soap-output-parameter
+      description: Wants to configure a consumed SOAP method's output parameter in Service Studio for OutSystems 11 by setting its name, data type, and WSDL metadata properties, so the generated service reference matches the WSDL.
     - name: SOAP type mapping
       id: soap-type-mapping
       description: Wants to understand how XML data types in a consumed SOAP web service map to OutSystems data types, including special cases like choices, enumerations, arrays, and complex types, so they can interpret generated service references correctly.
@@ -10328,6 +10347,9 @@ knowledge-needs:
         available in Service Studio, so that they can add custom JavaScript code
         to a screen, screen action, or module, in OutSystems 11 Traditional Web
         Apps, Mobile Apps, and Reactive Web Apps.
+    - name: Call client actions from JS
+      id: call-client-actions-from-js
+      description: Wants to call a Client Action from a JavaScript node in a Screen Action flow by prefixing the action name with $actions, so they can invoke current-module logic correctly in OutSystems 11 and distinguish it from screen actions that stay scoped to the current screen.
     - name: JavaScript execution order
       id: javascript-execution-order
       description: Wants to understand the runtime order in which JavaScript runs in

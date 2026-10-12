@@ -6737,6 +6737,11 @@ knowledge-needs:
       description: Wants to identify unsupported OpenAPI patterns when consuming REST
         services, so they can edit the Swagger specification and import the API
         successfully.
+    - name: REST method properties
+      id: rest-method-properties
+      description: Wants to look up the properties of a consumed REST API method in
+        Service Studio, including its configuration properties, so they can
+        configure the method correctly.
     - name: Consume REST methods
       id: consume-rest-methods
       description: Wants to import REST API methods in Service Studio from an
@@ -8010,6 +8015,12 @@ knowledge-needs:
       description: Wants to configure the List Action On-Click Destination to
         run a Client Action that executes the swipe logic, so that the list
         performs the intended swipe action in OutSystems 11 mobile screens.
+    - name: List Action reference
+      id: list-action-reference
+      description: Wants to look up the properties, events, and runtime
+        properties of the List Action widget in Service Studio, so they can
+        configure swipe actions on list items to run a screen action or
+        navigate to another screen in Mobile Apps and Reactive Web Apps (O11).
     - name: Reactive CRUD screens
       id: crud-screens-reactive-web
       description: Wants to build a list screen and a form screen for an entity,
@@ -8270,6 +8281,11 @@ knowledge-needs:
         including its identification, visibility, and lifecycle event handlers,
         in Service Studio, so that they can correctly configure a Block's
         behavior and lifecycle in a Traditional Web App (O11).
+    - name: Web block reference
+      id: web-block-reference
+      description: Wants to look up the properties and runtime properties of the Web
+        Block in Service Studio, so they can configure a Web Block correctly in a
+        Traditional Web App (O11).
     - name: Comment widget reference
       id: comment-widget-reference
       description: Wants to look up the properties of the Comment Widget in
@@ -8535,6 +8551,12 @@ knowledge-needs:
         Input Widget in Service Studio, including Name, Variable, Mandatory,
         Max. Length, and Type, so that they can correctly configure a validated
         text input field in a Traditional Web App (O11).
+    - name: Text area reference
+      id: text-area-reference
+      description: Wants to look up the properties, events, runtime properties, and
+        accessibility guidance of the Text area widget in Service Studio, so they
+        can correctly configure a multi-line text input field in mobile apps and
+        reactive web apps (O11).
     - name: Edit Record widget
       id: edit-record-widget
       description: Wants to look up what the Edit Record widget does in
@@ -9630,6 +9652,9 @@ knowledge-needs:
     - name: Use form widget
       id: use-form-widget
       description: Wants to understand what a Form widget is and how it groups input widgets to collect, submit, and validate user data in reactive web apps, so they can build detail screens that display and edit records.
+    - name: Form widget reference
+      id: form-widget-reference
+      description: Wants to look up the properties, events, runtime properties, and accessibility guidance of the Form widget in Service Studio, so they can configure a form that creates, shows, or edits a single record in OutSystems 11 apps.
     - name: Use input widgets
       id: use-input-widgets
       description: Wants to choose input widgets in a reactive web form based on the kind of value they collect, and bind each field to a screen variable, so the form collects, edits, and submits user data correctly.
@@ -9642,6 +9667,12 @@ knowledge-needs:
     - name: Button Group variable
       id: button-group-variable
       description: Wants to identify that the Button Group Variable property belongs to the widget, not each Button Group Item, so they can distinguish widget-level and item-level properties when configuring a reactive web form in OutSystems 11.
+    - name: Button Group widget ref
+      id: button-group-widget-reference
+      description: 'Wants to look up the Button Group widget''s properties, events, runtime properties, and accessibility guidance in Service Studio, so they can configure the widget correctly in mobile apps and reactive web apps.'
+    - name: Button Group Item reference
+      id: button-group-item-reference
+      description: Wants to look up the properties, events, and runtime properties of the Button Group Item widget in Service Studio, so they can configure each item correctly in mobile apps and reactive web apps.
     - name: Automatic form validation
       id: automatic-form-validation
       description: Wants to identify which input validations the Form widget
@@ -9704,6 +9735,11 @@ knowledge-needs:
       description: Wants to identify which HTML element built-in OutSystems widgets render as,
         including Container, Button, Expression, If, Block, and common supporting
         widgets, so they can predict the markup generated by each widget in OutSystems 11.
+    - name: HTML element widget
+      id: html-element-widget
+      description: Wants to look up the HTML Element widget's properties, events, and runtime Id in
+        Service Studio for OutSystems 11, so they can add a custom HTML element to a Mobile App or
+        Reactive Web App and configure nested HTML Element widgets correctly.
     - name: Use widget tree
       id: use-widget-tree
       description: Wants to use the Widget Tree in Service Studio to find, move, and reorder

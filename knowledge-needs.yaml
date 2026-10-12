@@ -12426,6 +12426,13 @@ knowledge-needs:
         Fetch me a new environment, then republishing their apps in the
         new environment, so that they can keep developing after the old
         environment is gone.'
+    - name: Set up PE access
+      id: set-up-pe-access
+      description: 'Wants to regain access to an OutSystems 11 personal
+        environment when the account is deactivated because the confirmation
+        email was not received or the environment is still being set up, by
+        confirming the email and checking the Trial Portal status until
+        access is available, so they can connect to the environment.'
     - name: Install Azure trial
       id: install-azure-trial
       description: Wants to install the OutSystems 11 trial on Microsoft Azure by

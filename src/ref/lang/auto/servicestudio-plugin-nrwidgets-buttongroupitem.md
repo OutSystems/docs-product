@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - button-group-item-reference
 ---
 
 # Button Group Item

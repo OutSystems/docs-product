@@ -3,6 +3,8 @@ summary: Explore the properties of input parameters in REST API Callback actions
 helpids: 30053
 locale: en-us
 guid: acb357eb-4100-486a-a9ba-e610ce1b52b2
+topic:
+  - input-parameter-reference
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

@@ -3,6 +3,8 @@ helpids: 30048
 summary: Explore custom HTML element configuration in OutSystems 11 (O11) for enhanced web and mobile app development.
 locale: en-us
 guid: b9f2d2f5-39f6-4709-936c-7518ac9d960a
+topic:
+  - html-element-widget
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:

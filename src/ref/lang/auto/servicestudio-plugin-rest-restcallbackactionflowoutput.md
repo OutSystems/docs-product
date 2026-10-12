@@ -3,6 +3,8 @@ summary: OutSystems 11 (O11) documentation details the properties of output para
 helpids: 30054
 locale: en-us
 guid: 9eaec8da-b414-45eb-b2cb-f41c10fa3241
+topic:
+  - output-parameter-reference
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

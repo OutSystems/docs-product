@@ -1356,6 +1356,17 @@ knowledge-needs:
         OutSystems data types when integrating with a SAP system, so they can
         choose the right target type and avoid runtime errors or Decimal
         rounding.
+    - name: SAP remote function
+      id: sap-remote-function
+      description: Wants to look up the properties of an SAP remote function
+        imported in Service Studio, so they can configure the function
+        correctly and understand what each property does.
+    - name: Configure SAP callback
+      id: configure-sap-callback
+      description: Wants to configure the SAP Callback action for SAP remote
+        functions by choosing the OnBeforeConnection, OnBeforeCall, or
+        OnAfterCall flow on the SAP Connection element, so they can customize
+        every call made under the connection.
   - name: Adding test data
     id: adding-test-data
     subtopics:
@@ -3197,6 +3208,11 @@ knowledge-needs:
       id: secure-rest-api
       description: Wants to secure an exposed REST API with basic or custom authentication,
         so that callers must authenticate before accessing its methods.
+    - name: REST auth inputs
+      id: rest-auth-inputs
+      description: Wants to understand which Username and Password input parameters Service Studio
+        adds or removes automatically when configuring an exposed REST API for Basic or Custom
+        authentication, so they can recognize how the authentication action inputs change.
     - name: REST API customization
       id: rest-api-customization
       description: Wants to customize an exposed REST API's endpoint URLs, custom HTTP
@@ -3207,6 +3223,15 @@ knowledge-needs:
       description: Wants to customize an exposed REST API's response body by setting
         the On Response property and editing the OnResponse callback, so that the
         API returns transformed content to clients for all exposed methods.
+    - name: Exposed REST OnRequest callback
+      id: exposed-rest-on-request
+      description: Wants to preprocess an incoming request in an exposed REST API by
+        using the OnRequest action flow, so they can add request-processing logic
+        in Service Studio.
+    - name: Exposed REST OnResponse callback
+      id: exposed-rest-on-response
+      description: Wants to understand how to use the OnResponse action flow in an
+        exposed REST API, so they can add response callback logic in Service Studio.
     - name: Custom REST errors
       id: custom-rest-errors
       description: Wants to throw a custom error from an exposed REST API by
@@ -6506,6 +6531,15 @@ knowledge-needs:
       id: soap-service-properties
       description: Wants to understand how to configure an exposed SOAP web
         service in OutSystems 11, so they can set it up correctly.
+    - name: REST API properties
+      id: rest-api-properties
+      description: Wants to understand how to configure an exposed REST API in
+        OutSystems 11 by using its properties, so they can set up the API
+        correctly.
+    - name: REST output parameter
+      id: rest-output-parameter
+      description: Wants to understand how to configure an exposed REST API method's
+        output parameter properties, so they can define the response contract correctly.
     - name: Fix REST param type
       id: fix-rest-param-type
       description: 'Wants to fix the "Cannot send a ''Binary Data''/''List''
@@ -12525,17 +12559,13 @@ knowledge-needs:
         installation completes.'
     - name: ODC shared trial
       id: odc-shared-trial
-      description: Wants to understand what the ODC shared space trial is, how long
-        it lasts (10 days), who shares it, and what limitations it has compared to
-        a paid license (no Forge submissions, no user invites, no connections, limited
-        apps, no official support), so they can decide whether it meets their learning
-        or exploration needs.
+      description: Wants to understand what the ODC shared space trial is, how long it
+        lasts, who shares it, and what limitations it has compared to a paid license,
+        so they can decide whether it meets their learning or exploration needs.
     - name: Shared space permissions
       id: shared-space-permissions
       description: Wants to know what permissions a developer has in an ODC shared
-        space, including access to the development stage, assets, logs, configurations,
-        end-user management, and Forge, so they can plan what they can build and manage
-        during the trial.
+        space, so they can plan what they can build and manage during the trial.
     - name: PE database space
       id: pe-database-space
       description: Wants to check how much database space (system data versus application
@@ -12607,10 +12637,9 @@ knowledge-needs:
         monitor, and receive alerts about errors in the platform.
     - name: O11 perf counters
       id: o11-perf-counters
-      description: Wants to use OutSystems Platform Server's Windows Performance Counters
-        to monitor asynchronous job execution, application error rates, screen access,
-        and web service access in a self-managed O11 environment, so that they can
-        track platform runtime performance using Windows Performance Monitor.
+      description: Wants to use OutSystems Platform Server's Windows Performance Counters to
+        monitor platform runtime performance in a self-managed O11 environment, so that
+        they can track platform runtime performance using Windows Performance Monitor.
     - name: O11 service error recovery
       id: o11-service-error-recovery
       description: Wants to diagnose and recover from errors in OutSystems 11 platform
@@ -18024,9 +18053,9 @@ knowledge-needs:
     - name: Custom auth screens
       id: custom-auth-screens
       description: Wants to use and edit the pre-built authentication screens and
-        blocks (Login, ChangePassword, RecoverPassword, UserProfile, UserInfo, PasswordPolicy)
-        available in the Common UI folder in ODC Studio, so that they can implement
-        a custom-branded authentication flow without building it from scratch.
+        blocks available in the Common UI folder in ODC Studio, so that they can
+        implement a custom-branded authentication flow without building it from
+        scratch.
     - name: External login redirect
       id: external-login-redirect
       description: Wants to configure the OnException global handler's

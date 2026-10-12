@@ -18,8 +18,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - evaluate
   - understand
+  - apply
+  - evaluate
 topic:
   - local-storage
 ---

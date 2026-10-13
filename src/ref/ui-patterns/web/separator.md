@@ -18,6 +18,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - separator-reference
+  - use-separator-pattern
 ---
 
 # Separator Reference

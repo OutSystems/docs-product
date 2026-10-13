@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - use-layout-popup
 ---
 
 # Layout Popup Reference

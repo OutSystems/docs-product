@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - section-index-reference
+  - customize-ui-patterns
 ---
 
 # Section Index Reference

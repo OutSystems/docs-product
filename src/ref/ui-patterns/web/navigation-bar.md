@@ -19,6 +19,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - navigation-bar-listrecords
+  - navigation-bar-reference
 ---
 
 # Navigation Bar Reference

@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - use-layout-side-menu
 ---
 
 # Layout Side Menu Reference

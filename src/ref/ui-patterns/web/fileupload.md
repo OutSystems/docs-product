@@ -18,6 +18,8 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - file-upload-reference
 ---
 
 # File Upload Reference

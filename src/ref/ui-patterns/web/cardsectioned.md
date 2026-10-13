@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - card-sectioned-reference
 ---
 
 # Card Sectioned Reference

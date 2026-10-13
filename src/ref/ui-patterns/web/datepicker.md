@@ -8,6 +8,8 @@ tags:
 summary: Explore the features and configurations of the Date Picker component in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: f0fe14e4-6f11-4000-aa5b-81344f784447
+topic:
+  - date-picker-reference
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A442&mode=design&t=Cx8ecjAITJrQMvRn-1

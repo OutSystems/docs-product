@@ -16,6 +16,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - stacked-cards-reference
+  - use-stacked-cards-pattern
 ---
 
 # Stacked Cards Reference

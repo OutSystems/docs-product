@@ -16,6 +16,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - card-background-layout-reference
+  - use-card-background-pattern
 ---
 
 # Card Background Reference

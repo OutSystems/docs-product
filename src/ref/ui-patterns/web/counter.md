@@ -18,6 +18,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - combine-css-classes
+  - counter-reference
 ---
 
 # Counter Reference

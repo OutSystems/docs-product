@@ -18,6 +18,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - blank-slate-reference
+  - use-if-widget
 ---
 
 # Blank Slate Reference

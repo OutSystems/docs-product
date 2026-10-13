@@ -19,6 +19,8 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - columns-layout-reference
 ---
 
 # Columns Reference

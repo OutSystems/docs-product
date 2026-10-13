@@ -19,6 +19,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - use-character-count-pattern
 ---
 
 # Character Count Reference

@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - use-layout-login
 ---
 
 # Layout Login Reference

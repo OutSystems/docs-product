@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - soap-password-input
 ---
 
 # Password Input Parameter - Consumed SOAP

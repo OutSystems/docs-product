@@ -8,6 +8,8 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
+topic:
+  - label-widget-reference
 tags:
   - Accessibility
   - Front-End

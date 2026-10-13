@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - soap-username-input
 ---
 
 # Username Input Parameter - Consumed SOAP

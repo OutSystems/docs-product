@@ -4657,6 +4657,12 @@ knowledge-needs:
         attacks by using HTTPS/SSL/TLS for Web Flows and Web Services and enabling
         secure cookies with HSTS headers, so that sensitive data and session cookies
         aren't transmitted in plain text.
+    - name: Configure HTTPS security
+      id: configure-https-security
+      description: Wants to configure HTTPS enforcement for Traditional Web Apps in LifeTime
+        or Service Center by enabling HSTS, forcing HTTPS for screens, and forcing HTTPS
+        for exposed integrations at the environment or application level, so that app
+        traffic is redirected over HTTPS when mandatory encryption is needed.
     - name: Enable TLS protocols
       id: enable-tls-protocols
       description: Wants to enable supported TLS protocols for OutSystems integrations by
@@ -4680,6 +4686,13 @@ knowledge-needs:
         modules, so that sensitive information in headers isn't
         unintentionally exposed to the server, logs, or network during
         transit, in OutSystems 11.
+    - name: Envelope encryption
+      id: envelope-encryption
+      description: Wants to use envelope encryption to protect sensitive data
+        at the application layer when storage-level encryption is not enough,
+        including generating a data encryption key, wrapping it with a key
+        encryption key, and storing the encrypted data with the wrapped key,
+        so that only authorized code can decrypt the information later.
   - name: External access control
     id: external-access-control
     subtopics:
@@ -5940,6 +5953,12 @@ knowledge-needs:
       description: Wants to understand which internal platform configurations are available
         in Factory Configuration's Platform Configurations tab and what database
         parameters they control, so that they can tune platform-wide behavior in OutSystems 11.
+    - name: Configure view state encryption
+      id: configure-view-state-encryption
+      description: Wants to confirm or enable Traditional Web view state encryption in
+        Factory Configuration, including the optional Use Session Token to Encrypt View
+        State setting and its login, auto-login, and logout limitations, so that page
+        state stays protected.
     - name: JSON Serialize consistency opt-in
       id: json-serialize-consistency-optin
       description: Wants to enable the "Enable Json Serialize consistency between
@@ -8524,6 +8543,16 @@ knowledge-needs:
         StartsOpen, Trigger, and ExtendedClass, so that they can correctly
         configure tooltip appearance and behavior in mobile apps and
         reactive web apps.
+    - name: Tooltip layout reference
+      id: tooltip-layout-reference
+      description: Wants to look up the Tooltip UI Pattern layout, events,
+        and CSS classes in a Traditional Web App, so they can understand
+        the component structure and customize its behavior.
+    - name: Change tooltip animation
+      id: change-tooltip-animation
+      description: Wants to change a tooltip animation in a Traditional
+        Web App by setting AdvancedFormat to a custom animation value, so
+        the tooltip uses a different transition effect.
     - name: Use Input with Icon pattern
       id: use-input-with-icon-pattern
       description: Wants to add the Input with Icon UI Pattern to a screen
@@ -16879,6 +16908,12 @@ knowledge-needs:
         development-time disablement, and setting the optional protection
         preferences that match its security needs, so that the app binary
         resists reverse engineering, repackaging, and tampering.
+    - name: Manage QUERY_ALL_PACKAGES
+      id: manage-query-all-packages
+      description: Wants to keep or remove the QUERY_ALL_PACKAGES permission in an
+        Android 11 or later AppShield app, providing the Google Play declaration
+        when PCI compliance requires it, so that the app stays compliant with
+        Play policy.
     - name: Protection features
       id: appshield-protection-features
       description: Wants to understand the AppShield protection features available for
@@ -17512,6 +17547,12 @@ knowledge-needs:
         (BAA), independent auditor attestation, and access to an audit trail, so
         that they can legally handle PHI in production and meet their
         organization's compliance obligations.
+    - name: HIPAA technical safeguards
+      id: hipaa-technical-safeguards
+      description: Wants to implement HIPAA technical safeguards in OutSystems 11
+        applications, including access control, audit controls, encryption,
+        authentication, session timeout, and transmission security, so that
+        ePHI is protected under the HIPAA Security Rule.
     - name: Achieve PCI compliance
       id: pci-compliance
       description: Wants to achieve PCI DSS compliance for an OutSystems application

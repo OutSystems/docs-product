@@ -976,6 +976,11 @@ knowledge-needs:
         ODC when they need granular control over access to specific
         application resources, so they can choose the right security feature
         for resource-level access control.
+    - name: Stage-scoped permissions
+      id: stage-scoped-permissions
+      description: Wants to understand that scoping permissions by stage in
+        ODC limits access to specific environments, so they can grant Dev or
+        QA access without exposing Production.
     - name: Hierarchical roles choice
       id: hierarchical-roles-choice
       description: Wants to decide whether to use hierarchical roles instead
@@ -12459,6 +12464,11 @@ knowledge-needs:
         application templates are available, and what predefined elements they
         provide when starting to create an OutSystems app in Service Studio, so that
         they can choose the right template for their project.
+    - name: Template authentication
+      id: template-authentication
+      description: Wants to understand that OutSystems application templates provide
+        complete UI and logic for authentication out of the box, so that they know
+        what authentication behavior their app inherits from the template.
     - name: Create use-case app
       id: create-use-case-app
       description: Wants to create a first app for a supported business use case by
@@ -18928,6 +18938,11 @@ knowledge-needs:
         programmatically via the Users module's actions, so that new
         employees, customers, or partners can be provisioned with app
         access without going through public self-registration.
+    - name: Users console access
+      id: users-console-access
+      description: Wants to know that the Users component includes a
+        web-based console at https://your-server/Users, so they can open
+        the correct interface for authentication management.
     - name: Register user actions
       id: register-user-system-actions-odc
       description: Wants to register a new end user in ODC's built-in

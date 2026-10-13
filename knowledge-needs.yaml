@@ -19284,6 +19284,11 @@ knowledge-needs:
       description: Wants to identify the user roles that matter when creating personas
         by grouping users with specific capabilities or different purposes, so that
         they can define personas with the right scope.
+    - name: Use system roles
+      id: use-system-roles
+      description: Wants to use non-human or system roles for third-party systems
+        when capturing user roles, so they can model external actors in the
+        requirements.
     - name: Workshop roles
       id: workshop-roles
       description: Wants to identify the key roles that drive a Business Vision workshop,

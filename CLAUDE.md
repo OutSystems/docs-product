@@ -115,6 +115,19 @@ Use `class="info"` for informational callouts.
 
 Product names: follow capitalization and naming in `.github/doc-styles/tone.md`.
 
+## Drafting content
+
+Before drafting any content (whether revising an existing section, writing a new document, or proposing alternative text), always check the relevant `.github/doc-styles/` files and project memories first. Draft options that already comply with the style guide rather than proposing content that requires style corrections after the fact.
+
+Workflow for all content work:
+
+1. Identify which style guide files are relevant (for example, `formatting.md`, `tone.md`, `content.md`)
+2. Check project memories for related rules
+3. Draft options that already comply with those rules
+4. Then propose to the user
+
+This applies uniformly to all content work (small edits, section rewrites, and complete new documents), so there's no ambiguity about when to check the rules. Style compliance is always the baseline, never an afterthought.
+
 ## Linting
 
 ### Vale (prose linting)

@@ -249,6 +249,11 @@ knowledge-needs:
   - name: Logic Flows
     id: logic-flows
     subtopics:
+    - name: Logic tools overview
+      id: logic-tools-overview
+      description: Wants to understand the logic tools available in the Service
+        Studio toolbox and what each one does, so they can choose the right
+        tool when building app logic.
     - name: Simplify long flows
       id: simplify-long-flows
       description: Wants to simplify a client action with a long, undocumented
@@ -289,6 +294,16 @@ knowledge-needs:
         executes and how to configure its Description property, in Service
         Studio, so that they can correctly document logic that runs on every
         server request in a Traditional Web App (O11).
+    - name: System events scope
+      id: system-events-scope
+      description: Wants to identify that the System Events page applies only
+        to Mobile Apps and Reactive Web Apps, so that they know the topic
+        scope in O11.
+    - name: Web system events scope
+      id: web-system-events-scope
+      description: Wants to identify that the Web System Events page applies
+        only to Traditional Web Apps in O11, so that they know the topic
+        scope.
     - name: On Application Ready
       id: on-application-ready
       description: Wants to use the On Application Ready system event to
@@ -9252,6 +9267,11 @@ knowledge-needs:
         File Name properties in Service Studio, so that the browser downloads
         binary content, such as an image, directly from an action, in a
         Traditional Web App or Reactive Web App.
+    - name: Download file limits
+      id: download-file-limits
+      description: Wants to understand that the Download Tool uses browser
+        memory on the client side and can fail with very large files, so they
+        can decide when it is appropriate for a Reactive Web App download.
     - name: Use Pagination pattern
       id: use-pagination-pattern
       description: 'Wants to add the Pagination UI Pattern to a screen and configure
@@ -9810,6 +9830,11 @@ knowledge-needs:
       description: Wants to build simple screens with HTML widgets, map HTML tags to
         OutSystems widgets, and use scaffolding to create list and detail
         screens, so they can turn web development knowledge into OutSystems UI.
+    - name: Widgets overview
+      id: widgets-overview
+      description: Wants to understand what OutSystems widgets are, how they help
+        design and organize screen content, and what common widget types do, so
+        they can choose the right widget for a screen.
     - name: Widget HTML output
       id: widget-html-output
       description: Wants to identify which HTML element built-in OutSystems widgets render as,

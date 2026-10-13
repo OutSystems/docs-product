@@ -5,6 +5,7 @@ tags:
   - Forge
   - iOS
   - Mobile app
+  - Native App
   - Plugins
   - Security
 locale: en-us
@@ -244,6 +245,7 @@ These are the values available in the **AppShield** configuration JSON.
 | AllowTapjacking | Boolean | true | Android | If set to false, the application will detect tapjacking attempts and remove the malicious overlay entirely for apps running on Android 12 and above or block inputs to the overlay for versions below Android 12. |
 | AllowIOSAppOnMacOSX | Boolean | false | iOS | If set to true, the application is allowed to run on macOS via Catalyst or as an iPhone app on Mac. When set to false (default), the application exits when it detects it is running on macOS. You can configure an exit URL to redirect users when the app exits. For more information, see the documentation on [configuring an exit URL for a blocked app](ExitOnUrl.md). macOS provides greater access to debugging and reverse engineering tools than a standard iOS device. Enable only if your app is designed to support macOS and your target audience requires it. |
 | ApplicationSignerCertificate | Text(Base64) | | iOS, Android | Adds the given certificate to the accepted signers whitelist of the final package. This option must be added for each certificate that you want to add to the whitelist. |
+| AppShieldDebugMode | Boolean | false | iOS, Android | If set to True, the shielding process is applied in debug mode, keeping debugging options used in Debug and Development builds. Used for extended developer troubleshooting. Builds with this option can't be uploaded to the Store, and, on Android, they need to be installed using `adb install` with the `-t` option. |
 | AppShieldObfuscationRules | Text(base64) | | Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
 | BlockDeveloperMode | Boolean | false | iOS, Android | If set to True, the application is blocked from running on iOS devices that have Developer Mode enabled and Android devices with Developer Options unlocked. |
 | BlockUntrustedKeyboards | Boolean | false | Android | If set to True, untrusted keyboards are detected and blocked. |

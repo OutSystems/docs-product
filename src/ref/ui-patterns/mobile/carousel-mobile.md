@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - carousel-reference
 ---
 
 # Carousel Reference

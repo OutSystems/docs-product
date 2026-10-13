@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - tabs-reference-o11
 ---
 
 # Tabs Reference

@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - use-touch-events-pattern
 ---
 
 # Touch Events Reference

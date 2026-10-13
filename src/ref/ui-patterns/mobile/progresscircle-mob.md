@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - progress-circle-api
+  - progress-circle-css-mobile-reactive
 ---
 
 # Progress Circle Reference

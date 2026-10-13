@@ -18,6 +18,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - rating-pattern-reference
+  - use-rating-pattern
 ---
 
 # Rating

@@ -20,6 +20,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - lightbox-image-properties
+  - lightbox-image-reference
+  - use-lightbox-image-pattern
 ---
 
 # Lightbox Image Reference

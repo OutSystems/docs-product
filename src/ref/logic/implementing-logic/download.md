@@ -16,6 +16,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - download-file-limits
+  - use-download-widget-o11
 ---
 
 # Download

@@ -4662,6 +4662,13 @@ knowledge-needs:
         attacks by using HTTPS/SSL/TLS for Web Flows and Web Services and enabling
         secure cookies with HSTS headers, so that sensitive data and session cookies
         aren't transmitted in plain text.
+    - name: Client certificate data
+      id: client-certificate-data
+      description: Wants to read the current client certificate's details and
+        property values with ClientCertificateGetDetails and
+        ClientCertificateValue in on-premises Traditional Web Apps, so that
+        server logic can inspect client certificate information when client
+        certificates are in use.
     - name: Configure HTTPS security
       id: configure-https-security
       description: Wants to configure HTTPS enforcement for Traditional Web Apps in LifeTime
@@ -20863,6 +20870,13 @@ knowledge-needs:
   - name: Platform Server Setup
     id: platform-server-setup
     subtopics:
+    - name: Infrastructure design
+      id: infrastructure-design
+      description: Wants to design an OutSystems Platform infrastructure for
+        on-premises or private cloud deployments by planning server
+        scaling, high availability, disaster recovery, and security, so
+        that they can choose a supported configuration before installing
+        Platform Server.
     - name: Install prerequisites
       id: platform-install-prerequisites
       description: Wants to understand the default hardware, software, and

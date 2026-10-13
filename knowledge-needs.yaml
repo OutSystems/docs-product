@@ -18140,6 +18140,11 @@ knowledge-needs:
         blocks available in the Common UI folder in ODC Studio, so that they can
         implement a custom-branded authentication flow without building it from
         scratch.
+    - name: Multi-IdP login screen
+      id: multi-idp-login-screen
+      description: Wants to configure the ODC login screen to show selection buttons
+        for multiple external identity providers, so users can choose an assigned
+        provider when more than one is available.
     - name: External login redirect
       id: external-login-redirect
       description: Wants to configure the OnException global handler's
@@ -18834,6 +18839,12 @@ knowledge-needs:
         delimiter that ODC uses for end-user group mapping, including
         provider-specific length limits and the SAML comma delimiter, so
         that ODC parses group memberships correctly.
+    - name: Group mapping errors
+      id: group-mapping-errors
+      description: Wants to identify that a missing external IdP group
+        mapping causes a permission error after successful login, so that
+        they can map the IdP groups to the correct ODC end-user group and
+        restore access.
     - name: Login actions
       id: login-actions
       description: Wants to know which built-in login actions are available in

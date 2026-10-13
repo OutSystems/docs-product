@@ -3338,6 +3338,12 @@ knowledge-needs:
       description: Wants to create and expose REST services from an app so
         external systems can consume the data through JSON-based REST
         methods.
+    - name: REST method settings
+      id: rest-method-settings
+      description: Wants to identify which settings can be specified when
+        defining an exposed REST method in ODC, including the URL path and
+        HTTP method, so they can configure the endpoint and ignore unrelated
+        options.
     - name: Update REST data
       id: update-rest-data
       description: Wants to expose a PUT REST API method that updates an
@@ -3654,6 +3660,17 @@ knowledge-needs:
       description: Wants to build an external library package from an SDK template,
         generate the ZIP file with the provided script, and prepare it for upload
         to ODC Portal, so they can publish the custom C# logic.
+    - name: Consume external library
+      id: consume-external-library
+      description: Wants to consume a published external library in ODC Studio,
+        so they can reuse its custom logic while managing versions and assessing
+        the impact of library updates.
+    - name: Supported interface types
+      id: supported-interface-types
+      description: Wants to identify which .NET types they can use for methods
+        exposed in the public interface of an External Library built with the
+        OutSystems External Libraries SDK, so they can define supported
+        signatures and avoid invalid types like Tuple.
     - name: Fix DataType mismatch
       id: fix-datatype-mismatch
       description: Wants to fix the OS-ELG-MODL-05017 error ("<ParameterName/StructureFieldName> has an incompatible DataType assigned and cannot be converted.") by changing the .NET type or DataType modifier so the field maps to a compatible OutSystems type before uploading the external library, so they can publish it successfully.
@@ -13243,6 +13260,17 @@ knowledge-needs:
       description: Wants to identify state persistence as the term for an AI
         agent's memory, so they understand how it retains context across
         multi-step processes.
+    - name: Grounding data purpose
+      id: grounding-data-purpose
+      description: Wants to understand how grounding data gives an AI agent
+        specific and accurate business context from private documents and
+        data sources, so that the agent returns business-relevant answers.
+    - name: System prompt purpose
+      id: system-prompt-purpose
+      description: Wants to identify a system prompt as the instruction that
+        defines an AI agent's personality and rules, so they can distinguish
+        it from grounding data, memory, and the LLM when configuring or
+        reading an agent.
   - name: Agentic Apps
     id: agentic-apps
     subtopics:
@@ -18908,6 +18936,11 @@ knowledge-needs:
         an existing end-user in the End-user access tab, so that role-based
         access control (RBAC) updates the end-user's access to app features
         and data after external IdP login or sign-up completion.
+    - name: End-user role management
+      id: end-user-role-management-odc
+      description: Wants to understand how end-user roles are managed in ODC,
+        whether by developers programmatically or by administrators in the
+        ODC Portal, so that they can choose the right way to assign roles.
     - name: Share registration link
       id: share-registration-link
       description: Wants to share a group registration link with others through

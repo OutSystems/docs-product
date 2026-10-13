@@ -8116,6 +8116,11 @@ knowledge-needs:
         properties of the List Action widget in Service Studio, so they can
         configure swipe actions on list items to run a screen action or
         navigate to another screen in Mobile Apps and Reactive Web Apps (O11).
+    - name: Swipe events reference
+      id: swipe-events-reference
+      description: Wants to look up the SwipeDown, SwipeLeft, SwipeRight,
+        and SwipeUp events in Service Studio, so they can wire the correct
+        swipe gesture handler in Mobile Apps and Reactive Web Apps (O11).
     - name: Reactive CRUD screens
       id: crud-screens-reactive-web
       description: Wants to build a list screen and a form screen for an entity,
@@ -8162,6 +8167,11 @@ knowledge-needs:
         the overlay directions, and configure the pattern's optional properties,
         in Service Studio for OutSystems 11, so that users can swipe cards in
         multiple directions in mobile apps and reactive web apps.
+    - name: Stacked Cards reference
+      id: stacked-cards-reference
+      description: Wants to look up the Stacked Cards UI Pattern's CSS selectors,
+        events, and layout details, so they can customize styling and wire swipe
+        behavior in mobile apps and reactive web apps (O11).
     - name: Use Stacked Icon pattern
       id: use-stacked-icon-pattern
       description: Wants to add the Stacked Icon UI Pattern to a screen,
@@ -8697,6 +8707,11 @@ knowledge-needs:
         via Toolbox or Search in other modules if the dependency isn't added,
         in Service Studio, so that numerical notifications like unread counts
         display in mobile apps and reactive web apps (O11).
+    - name: Blank Slate reference
+      id: blank-slate-reference
+      description: Wants to look up the Blank Slate UI Pattern layout and CSS
+        classes in a Traditional Web App (O11), so they can identify the
+        pattern's structure for styling and customization.
     - name: Use Blank Slate pattern
       id: use-blank-slate-pattern
       description: Wants to add the Blank Slate UI Pattern to a screen,
@@ -8809,6 +8824,12 @@ knowledge-needs:
         including UsePadding, IsVertical, ImagePadding, and ExtendedClass, so
         that the card layout, padding, image spacing, and custom styling match
         the screen design.
+    - name: Card Sectioned reference
+      id: card-sectioned-reference
+      description: Wants to look up the Card Sectioned UI Pattern's layout,
+        CSS selectors, and orientation-related behavior in a Traditional Web
+        App, so they can understand how the pattern is structured and when
+        the IsRight setting applies.
     - name: Use Card Item pattern
       id: use-card-item-pattern
       description: Wants to add the Card Item UI Pattern to a screen, add
@@ -8845,6 +8866,11 @@ knowledge-needs:
         Toolbox, and configure its content, background image, color, and
         height properties, in Service Studio, so that a small block of
         information is grouped and highlighted with a background image.
+    - name: Card Background layout reference
+      id: card-background-layout-reference
+      description: Wants to look up the Card Background UI Pattern's layout and
+        CSS classes in Service Studio, so they can map the alignment classes to
+        the content position in a Traditional Web App (O11).
     - name: Use Carousel pattern
       id: use-carousel-pattern
       description: Wants to add the Carousel UI Pattern to a screen, add the OutSystemsUI
@@ -9620,6 +9646,13 @@ knowledge-needs:
         the OnToggle event, so that they can correctly configure the
         pattern's expand/collapse behavior and appearance, in mobile apps
         and reactive web apps (O11).
+    - name: Accordion ListRecords
+      id: accordion-listrecords
+      description: Wants to combine the Accordion UI Pattern with a
+        ListRecords widget, by placing the ListRecords widget inside an
+        AccordionItem, setting the ListRecords Line Separator to None, and
+        using expressions to display database records, so that accordion
+        items display dynamic data in a Traditional Web App (O11).
     - name: Use Tabs pattern
       id: use-tabs-pattern-o11
       description: Wants to add the Tabs UI Pattern to a screen to divide
@@ -18832,6 +18865,11 @@ knowledge-needs:
         and that each end-user needs at least one application role to
         access protected screens, so that they can identify the correct
         statement about ODC user administration and access rules.
+    - name: Manage user status
+      id: manage-user-status
+      description: Wants to deactivate or reactivate users in ODC Portal, and
+        understand invited, pending registration, active, and inactive
+        states, so they can control sign-in without deleting the account.
     - name: User management overview
       id: user-management-overview
       description: Wants to understand the main ODC user management
@@ -18839,6 +18877,12 @@ knowledge-needs:
         access scopes, when planning how people and non-human users access
         apps and platform resources, so they can choose the right
         management path for each account type.
+    - name: Create ODC users
+      id: creating-users-odc
+      description: Wants to create members and end-users in ODC Portal, choose
+        built-in or external identity provider profiles, and assign
+        end-user groups and roles during onboarding, so they can provision
+        access for new accounts.
     - name: Create an end-user group
       id: create-end-user-group
       description: Wants to create an end-user group in ODC, so roles can be
@@ -18855,6 +18899,11 @@ knowledge-needs:
       id: delete-end-user-group
       description: Wants to delete an end-user group in ODC when it is no
         longer needed, so obsolete group access can be removed.
+    - name: Delete users
+      id: delete-users
+      description: Wants to delete users from ODC Portal and understand that
+        deletion permanently removes access and anonymizes the user record,
+        so they can retire accounts when access must end.
     - name: Assign to user groups
       id: assign-to-user-groups
       description: Wants to add or remove users and external IdP group

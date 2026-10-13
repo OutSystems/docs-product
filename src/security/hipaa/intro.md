@@ -15,6 +15,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - hipaa-compliance-requirements
+  - o11-compliance-offerings-overview
+  - use-cryptography-services
 ---
 
 # HIPAA compliance - how OutSystems can help

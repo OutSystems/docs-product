@@ -16,6 +16,9 @@ coverage-type:
   - evaluate
   - apply
   - remember
+topic:
+  - appshield-shutdown-reasons
+  - configure-exit-url
 ---
 
 # Configuring an exit URL for a blocked app

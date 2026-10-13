@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - customize-top-menu-layout
+  - use-layout-top-menu
 ---
 
 # Layout Top Menu Reference

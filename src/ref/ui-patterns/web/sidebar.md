@@ -17,6 +17,8 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - sidebar-reference
 ---
 
 # Sidebar Reference

@@ -16,6 +16,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - stacked-icon-reference
+  - use-stacked-icon-tooltip
 ---
 
 # Stacked Icon UI Pattern Reference

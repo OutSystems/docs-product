@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - search-pattern-reference
 ---
 
 # Search Reference

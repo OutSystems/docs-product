@@ -14,6 +14,9 @@ audience:
   - Developer
 coverage-type:
   - remember
+topic:
+  - appshield-protection-features
+  - get-application-hash
 outsystems-tools:
   - service studio
 ---

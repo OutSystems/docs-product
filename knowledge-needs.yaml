@@ -6475,6 +6475,17 @@ knowledge-needs:
         logic on a schedule compared with PHP cron jobs, including logs,
         retries, and DevOps-adjustable settings, so that they can use timers
         for background work.
+    - name: Timer use cases
+      id: timer-use-cases
+      description: Wants to identify common Timer use cases, such as recurring
+        tasks, bootstrap data operations after publish, and heavy background
+        processing, so they can choose Timers for non-interactive work.
+    - name: Start timer execution
+      id: start-timer-execution
+      description: Wants to identify the valid ways to initiate a Timer in ODC,
+        including a predefined schedule, an on-demand start, and application
+        logic, so they can choose the correct trigger instead of treating the
+        timer as a synchronous request.
     - name: Timer best practices
       id: timer-best-practices
       description: Wants to implement a long-running Timer correctly by applying best
@@ -8184,6 +8195,12 @@ knowledge-needs:
       description: Wants to look up the properties of the Stacked Icon UI Pattern in
         Service Studio, so that they can correctly configure a stacked icon in
         traditional web apps for OutSystems 11.
+    - name: Use stacked icon tooltip
+      id: use-stacked-icon-tooltip
+      description: Wants to add a tooltip to a stacked icon by placing the Stacked Icon
+        pattern inside the Tooltip pattern, configuring the tooltip behavior
+        and label, and publishing the page, so that users can get help text
+        from the icon in a Traditional Web App (O11).
     - name: Use Action Sheet pattern
       id: use-action-sheet-pattern
       description: Wants to add the Action Sheet UI Pattern to a screen, add
@@ -8533,6 +8550,11 @@ knowledge-needs:
         in Service Studio, so they can configure line color, spacing,
         orientation, and custom classes in mobile apps and reactive web apps
         (O11).
+    - name: Sidebar reference
+      id: sidebar-reference
+      description: Wants to look up the layout and CSS classes for the Sidebar
+        UI Pattern in a Traditional Web App, so they can understand the
+        sidebar structure and customize the open and closed states in O11.
     - name: Use Sidebar pattern
       id: use-sidebar-pattern
       description: Wants to add and configure the Sidebar UI Pattern in a
@@ -9168,6 +9190,12 @@ knowledge-needs:
         and advanced format options in Service Studio for OutSystems 11, so
         that they can correctly configure date selection behavior, disabled
         dates, default dates, and styling in Traditional Web Apps.
+    - name: Search Balloon reference
+      id: search-balloon-reference
+      description: Wants to look up the Search Balloon UI Pattern's layout, events, and
+        advanced format options in Service Studio for OutSystems 11, so that
+        they can configure the widget's appearance and behavior in Traditional
+        Web Apps.
     - name: Use Search Balloon pattern
       id: use-search-balloon-pattern
       description: Wants to add the Search Balloon UI Pattern to a Traditional Web App, wire its search input and results list, configure the preparation action, filter condition, and refresh logic, so that matching records update as the user types.
@@ -9477,6 +9505,11 @@ knowledge-needs:
         with Ajax Refresh to update a related button's Enabled state, in
         Service Studio, so that users can switch between two states before
         submitting.
+    - name: Toggle Button reference
+      id: toggle-button-reference
+      description: Wants to look up the layout, CSS selectors, and disabling
+        steps for the Toggle Button UI Pattern in a Traditional Web App, so
+        they can customize it correctly in Service Studio.
     - name: Use Video pattern
       id: use-video-pattern
       description: Wants to add a video to a screen using the OutSystems UI
@@ -9915,6 +9948,12 @@ knowledge-needs:
       description: Wants to add the Search UI Pattern to a screen and configure
         its input variable in Service Studio, so that users can search for
         content by entering queries.
+    - name: Search pattern reference
+      id: search-pattern-reference
+      description: Wants to look up the Search UI Pattern's layout, classes,
+        and reset-search button setup in a Traditional Web App, so they can
+        configure and extend the pattern's behavior when they need to
+        customize a search screen.
     - name: UI patterns overview
       id: ui-patterns-overview
       description: Wants to understand what OutSystems UI patterns are, why the platform provides them, and how they group into adaptive, content, interaction, navigation, number, and utility patterns, so they can recognize the main pattern families and choose the right one for a screen need.
@@ -10042,6 +10081,11 @@ knowledge-needs:
         adjusting its DeviceConfiguration, AccessibilityConfiguration, and
         ExtendedClass properties, so that screens use the built-in top menu
         layout.
+    - name: Customize top menu layout
+      id: customize-top-menu-layout
+      description: Wants to customize the Layout Top Menu responsive behavior by
+        setting device breakpoints and the content max-width, so screens use the
+        built-in top menu layout on desktop, tablet, and mobile devices.
   - name: UI performance best practices
     id: ui-performance-best-practices
     description: Wants to apply best practices for optimizing OutSystems 11

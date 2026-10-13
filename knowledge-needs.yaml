@@ -105,6 +105,11 @@ knowledge-needs:
         how to use them in action and process flows, and which properties
         output parameters expose, so they can configure them correctly in
         OutSystems 11.
+    - name: Output parameter scope
+      id: output-parameter-scope
+      description: Wants to understand that an output parameter is available
+        inside and outside its implementation scope once a value is assigned,
+        so they know where to read and set it in OutSystems 11.
     - name: Server action exposure
       id: server-action-exposure
       description: 'Wants to determine when a server action can be exposed, based on whether it is defined in an App or is a Library action that uses a parameter defined with a non-exposed static entity, so they can expose only valid server actions.'
@@ -1290,6 +1295,17 @@ knowledge-needs:
       description: Wants to add a Table widget to a Screen and bind it to an Aggregate
         as its data source, so that the screen displays database records in a tabular
         layout.
+    - name: Set up Editable Table
+      id: set-up-editable-table
+      description: Wants to add an Editable Table widget to a Traditional Web App
+        screen, bind it to an entity or structure record list, and configure its
+        row editing and keyboard behavior so users can create, update, and delete
+        records.
+    - name: Editable Table reference
+      id: editable-table-reference
+      description: Wants to look up the properties, events, and runtime properties
+        of the Editable Table widget in Service Studio, so they can configure its
+        data source, layout, and edit behavior in a Traditional Web App.
     - name: Fixed header table
       id: fixed-header-table
       description: Wants to create a vertically scrollable Table Records widget with
@@ -1930,6 +1946,12 @@ knowledge-needs:
         Aggregate, including the Current and CurrentRowNumber iterator
         values, the Length and Empty properties, and the Count output, so
         they can use aggregate results correctly in screen logic.
+    - name: Hidden aggregate columns
+      id: hidden-aggregate-columns
+      description: Wants to understand that hiding columns in an Aggregate only
+        changes the preview, while the hidden attributes remain available in
+        the output at runtime, so they can identify the correct behavior when
+        checking aggregate results.
     - name: Aggregate properties
       id: aggregate-properties
       description: Wants to understand the Aggregate properties that control
@@ -5482,10 +5504,9 @@ knowledge-needs:
     - name: Fix CMF email destination
       id: fix-cmf-email-destination
       description: 'Wants to fix the "Set a destination to send the email" error
-        by filling in at least one of the To, Cc, Bcc, ToGroupId, CcGroupId, or
-        BccGroupId inputs before calling Email_Send in the Case Management
-        Framework in OutSystems 11, so that the framework can successfully
-        execute the action.'
+        by filling in at least one recipient input before calling Email_Send
+        in the Case Management Framework in OutSystems 11, so that the
+        framework can successfully execute the action.'
     - name: Fix rule data type
       id: fix-rule-data-type
       description: 'Wants to fix the "There was an error processing this rule
@@ -6653,6 +6674,12 @@ knowledge-needs:
       description: Wants to configure authentication for a consumed SOAP web service by
         choosing the supported authentication method, so that requests use the
         intended credentials.
+    - name: SOAP password input
+      id: soap-password-input
+      description: Wants to define the password input parameter for a consumed SOAP web service method, so the call uses the correct authentication password.
+    - name: SOAP username input
+      id: soap-username-input
+      description: Wants to define the username input parameter for a consumed SOAP web service method when the method uses username/password authentication, so the call uses the correct authentication username.
     - name: Authenticate SOAP service
       id: authenticate-soap-service
       description: 'Wants to fix a 401 Unauthorized error when consuming an
@@ -8604,6 +8631,13 @@ knowledge-needs:
         Input Widget in Service Studio, including Name, Variable, Mandatory,
         Max. Length, and Type, so that they can correctly configure a validated
         text input field in a Traditional Web App (O11).
+    - name: Label widget reference
+      id: label-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Label widget in Service Studio, including Value, Input Widget, Style
+        Classes, Extended Properties, and Id, so they can correctly configure a
+        label that captions an input field and focuses the linked input when
+        clicked in a Traditional Web App (O11).
     - name: Text area reference
       id: text-area-reference
       description: Wants to look up the properties, events, runtime properties, and
@@ -8870,15 +8904,8 @@ knowledge-needs:
     - name: Use Columns pattern
       id: use-columns-pattern
       description: Wants to add the Columns UI Pattern to a screen and configure
-        its responsive layout properties — including GutterSize, TabletBehavior,
-        and PhoneBehavior — in ODC Studio, so that content is organized into an
+        its responsive layout properties, so that content is organized into an
         adaptive multi-column layout across different device types.
-    - name: Use Columns pattern (O11)
-      id: use-columns-pattern-o11
-      description: Wants to add the Columns UI Pattern to a screen and configure its
-        responsive layout properties, in Service Studio for OutSystems 11, so
-        that content is organized into an adaptive multi-column layout across
-        different device types, in mobile apps and reactive web apps.
     - name: Columns layout reference
       id: columns-layout-reference
       description: Wants to look up the layout and CSS classes of the Columns UI Pattern in Service Studio, so that they can correctly identify the pattern's structure for customization, in mobile apps and reactive web apps (O11).
@@ -12056,6 +12083,10 @@ knowledge-needs:
       id: service-studio-workspace-navigation
       description: Wants to navigate the Service Studio workspace with
         shortcuts, so they can move around the IDE faster.
+    - name: Keyboard shortcuts
+      id: keyboard-shortcuts
+      description: Wants to look up Service Studio keyboard shortcuts on
+        Windows and macOS, so they can work faster in the IDE.
     - name: Open files and modules
       id: service-studio-open-files-and-modules
       description: Wants to manage open Service Studio files and modules from
@@ -13031,6 +13062,12 @@ knowledge-needs:
       actions, grounding data, system prompts, and memory (state
       persistence), so that they have a foundational understanding of AI
       agents before building or configuring one.
+    subtopics:
+    - name: State persistence
+      id: state-persistence
+      description: Wants to identify state persistence as the term for an AI
+        agent's memory, so they understand how it retains context across
+        multi-step processes.
   - name: Agentic Apps
     id: agentic-apps
     subtopics:
@@ -22139,6 +22176,10 @@ knowledge-needs:
       description: Wants to add, remove, disable, and re-enable breakpoints in
         ODC Studio during a debug session, including keyboard shortcuts and
         exception behavior, so that they can pause execution where needed.
+    - name: Debug shortcuts
+      id: debug-shortcuts
+      description: Wants to look up Service Studio debug shortcuts, so they
+        can start, stop, step through, and control debugging sessions faster.
     - name: Manage watches
       id: manage-watches
       description: Wants to add and remove watches during a debug session, so

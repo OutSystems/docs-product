@@ -18,6 +18,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - configure-https-security
+  - secure-data-in-transit
 ---
 
 # Enforce HTTPS Security

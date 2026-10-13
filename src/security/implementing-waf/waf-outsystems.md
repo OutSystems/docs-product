@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - configure-customer-managed-waf
+  - recommended-waf-rules
+  - waf-mobile-integrity
 ---
 
 # Implementing a WAF for your applications on OutSystems Cloud

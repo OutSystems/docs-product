@@ -19,6 +19,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - restrict-internal-network-access
 ---
 
 # Restrict access to an internal network

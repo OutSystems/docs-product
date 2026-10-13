@@ -15,6 +15,9 @@ audience:
   - Developer
 outsystems-tools:
   - service studio
+topic:
+  - change-tooltip-animation
+  - tooltip-layout-reference
 coverage-type:
   - remember
 ---

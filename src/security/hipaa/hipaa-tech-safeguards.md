@@ -22,6 +22,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - hipaa-technical-safeguards
 ---
 
 # Checklist of HIPAA safeguards

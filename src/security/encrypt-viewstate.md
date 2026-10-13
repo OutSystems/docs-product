@@ -17,6 +17,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - configure-view-state-encryption
 ---
 
 # Encrypt web apps view state

@@ -16,6 +16,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - host-header-mismatch
 ---
 
 # Configuring secure endpoints

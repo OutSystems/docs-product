@@ -18,6 +18,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - app-server-certificates
+  - secure-data-in-transit
 ---
 
 # Use HTTPS by Enabling SSL

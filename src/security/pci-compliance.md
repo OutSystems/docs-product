@@ -15,6 +15,9 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - pci-compliance
+  - pci-security-checklist-o11
 ---
 
 # PCI compliance with OutSystems 11 Sentry

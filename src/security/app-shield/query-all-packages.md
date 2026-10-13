@@ -15,6 +15,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - manage-query-all-packages
 ---
 
 # Query All Packages permission in Android apps using AppShield

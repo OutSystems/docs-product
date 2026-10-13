@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - csp-directive-impacts
 ---
 
 # Impacts of removing unsafe directives (Reactive Web Apps Only)

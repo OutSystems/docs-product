@@ -16,6 +16,9 @@ outsystems-tools:
   - none
 coverage-type:
   - evaluate
+topic:
+  - envelope-encryption
+  - outsystems-cloud-duties
 ---
 
 # Securing data at rest with encryption

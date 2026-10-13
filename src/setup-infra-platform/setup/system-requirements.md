@@ -125,7 +125,7 @@ OutSystems supports Microsoft Azure SQL with the following considerations:
 
 OutSystems supports Microsoft Azure SQL Managed Instance with the following considerations:
 
-* The compatibility level must be 170, supported since Platform Server 11.43<sup>1</sup>
+* The compatibility level must be 170, supported since Platform Server 11.43.0<sup>1</sup>
 * The service tier must be at least General Purpose (vCore-based pricing model). Business Critical is also supported
 * The MDC (Multiple Database Catalogs) feature is supported
 * Windows Authentication is supported via Microsoft Entra ID, using Kerberos-based authentication. This requires Microsoft Entra Connect synchronization
@@ -297,7 +297,7 @@ The following systems are certified to integrate with OutSystems.
 
 ### Azure SQL Managed Instance database {#azure-sql-managed-instance}
 
-* Azure SQL Managed Instance with compatibility level 170, since Platform Server 11.43
+* Azure SQL Managed Instance with compatibility level 170, since Platform Server 11.43.0
 
 ### Oracle database {#oracle}
 

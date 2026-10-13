@@ -8851,6 +8851,11 @@ knowledge-needs:
         dependency if the widget doesn't display in the Toolbox, place content
         or a List widget inside the CarouselItems placeholder, and configure the
         carousel's optional settings, so that horizontal slides display.
+    - name: Carousel reference
+      id: carousel-reference
+      description: Wants to look up the Carousel UI Pattern's structure, events, API methods,
+        and advanced customization examples so they can configure and extend the pattern in
+        mobile apps and reactive web apps (O11).
     - name: Use Tag pattern
       id: use-tag-pattern
       description: Wants to add the Tag UI Pattern to a screen, add the
@@ -8952,6 +8957,12 @@ knowledge-needs:
         OutSystems 11, so that groups of images or content are displayed in a
         browsable, sequential grid across different device types, in mobile
         apps and reactive web apps.
+    - name: Gallery pattern reference
+      id: gallery-pattern-reference
+      description: Wants to look up the Gallery UI Pattern's structure, responsive
+        modifiers, and API methods in Service Studio for OutSystems 11, so they
+        can identify the pattern's classes and use its programmatic methods in
+        mobile apps and reactive web apps.
     - name: Use Floating Content
       id: use-floating-content
       description: Wants to add the Floating Content UI Pattern to a screen and
@@ -9078,6 +9089,11 @@ knowledge-needs:
       description: Wants to look up the Range Slider UI Pattern's properties and events in
         Service Studio for OutSystems 11, so that they can correctly configure
         the Range Slider in mobile apps and reactive web apps.
+    - name: Range Slider API
+      id: range-slider-api
+      description: Wants to look up the Range Slider API methods and call them after
+        initialization to change drag behavior and tooltip formatting in
+        mobile apps and reactive web apps (O11).
     - name: Use Month Picker
       id: use-month-picker
       description: Wants to add the Month Picker UI Pattern to a screen, including adding
@@ -9341,7 +9357,7 @@ knowledge-needs:
         background, in Service Studio, so that the progress bar's visual style
         matches app requirements, in a Traditional Web App (O11).
     - name: Progress Circle CSS reference
-      id: progress-circle-css-reference
+      id: progress-circle-css-traditional-web
       description: Wants to look up the CSS selectors and classes for the
         Progress Circle UI Pattern, including .progress-circle .progress-circle-content
         and .progress-circle .progress-semi-circle-content, so that they can
@@ -9367,6 +9383,17 @@ knowledge-needs:
       description: Wants to look up the configurable properties of the Progress Circle UI
         Pattern in Service Studio so that they can correctly configure a Progress
         Circle's appearance and behavior.
+    - name: Progress Circle API
+      id: progress-circle-api
+      description: Wants to look up the Progress Circle UI Pattern API in
+        OutSystems.OSUI.Patterns.ProgressCircleAPI so they can use the available
+        methods when they need advanced control in Mobile Apps and Reactive Web
+        Apps.
+    - name: Progress Circle CSS
+      id: progress-circle-css-mobile-reactive
+      description: Wants to look up the Progress Circle UI Pattern CSS selectors,
+        classes, and modifiers so they can understand the pattern's structure
+        in Mobile Apps and Reactive Web Apps.
     - name: Use Progress Circle pattern
       id: use-progress-circle-mobile-reactive-web
       description: Wants to add the Progress Circle UI Pattern to a screen and

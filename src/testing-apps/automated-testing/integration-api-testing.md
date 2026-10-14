@@ -18,6 +18,9 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - automated-api-tests
+  - infra-integration-testing
 ---
 
 # Integration/API Testing

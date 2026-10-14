@@ -18,6 +18,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+topic:
+  - server-hsconf-settings
 ---
 
 # server.hsconf Configuration File Reference

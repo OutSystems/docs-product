@@ -16,6 +16,8 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - publish-with-osp-tool
 ---
 
 # Solution Pack Tool Command Line Reference - OSPTool

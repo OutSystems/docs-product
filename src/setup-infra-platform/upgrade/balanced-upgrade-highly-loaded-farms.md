@@ -17,6 +17,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - balanced-farm-upgrade
 ---
 
 # Balanced Platform upgrade on highly loaded OutSystems farms

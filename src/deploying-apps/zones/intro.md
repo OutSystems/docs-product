@@ -21,7 +21,8 @@ coverage-type:
   - apply
   - evaluate
 topic:
-  - selective-deploy-zones
+  - app-zone-behavior
+  - deployment-zone-address
 isautopublish: true
 ---
 

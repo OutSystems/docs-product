@@ -19,6 +19,9 @@ coverage-type:
   - apply
   - understand
   - remember
+topic:
+  - deploy-all-feature-upgrade
+  - track-deployment-progress-upgrade
 ---
 
 # Modules deployment step during Platform Server upgrade

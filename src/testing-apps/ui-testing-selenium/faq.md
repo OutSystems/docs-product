@@ -17,6 +17,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - selenium-locators
+  - selenium-test-practices
 ---
 
 # How to do UI testing with Selenium

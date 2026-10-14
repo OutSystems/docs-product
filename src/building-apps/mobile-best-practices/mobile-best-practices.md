@@ -22,6 +22,10 @@ coverage-type:
   - apply
   - evaluate
 isautopublish: true
+topic:
+  - javascript-best-practices
+  - optimize-mobile-list-data-loading
+  - optimize-mobile-loading
 ---
 
 # OutSystems mobile best practices

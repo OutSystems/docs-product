@@ -17,6 +17,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - module-prep-errors
 ---
 
 # Possible errors related to modules preparation

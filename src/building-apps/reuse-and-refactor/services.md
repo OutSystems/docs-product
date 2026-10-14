@@ -1,6 +1,13 @@
 ---
-summary: OutSystems 11 (O11) supports scalable architecture through Service Modules and Service Applications for enhanced application reusability.
-tags: service-oriented architecture, api development, application scalability, business logic abstraction, service modules
+summary: OutSystems 11 (O11) Service Actions expose loosely-coupled service logic with independent release cycles, unlike Server Actions that run in a single process.
+tags:
+  - Architecture
+  - Logic
+  - Modular Programming
+  - Programming Model
+  - Refactoring
+  - REST
+  - Web services
 locale: en-us
 guid: 9fe307cf-1687-41f6-9a5b-b8f1484f57ee
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -17,15 +24,16 @@ coverage-type:
 topic:
   - soa-and-microservices
   - service-actions-when-use
+isautopublish: true
 ---
 
-# Use Services to Expose Functionality
+# Use services to expose functionality
 
 Designing the architecture of your application is an iterative and continuous process. As your application grows, you may need to abstract specific business concepts or business-agnostic services that extend the framework, and expose them to be reused by other applications.
 
 In OutSystems you can refactor your application and build a service-oriented architecture using **Service Modules** and **Service Applications**.
 
-## Service Modules and Service Applications
+## Service modules and service applications
 
 In OutSystems, you can use **Service modules** in your apps to enforce the separation of concerns and encapsulate the core service functionality.
 
@@ -48,7 +56,7 @@ Based on the nature of a core service, it is not possible to have UI related ele
 
 You should use Reactive Web, Mobile, or Traditional Web modules to implement UI related elements.
 
-## Implement the Logic of Your Service
+## Implement the logic of your service
 
 The way you implement a service in OutSystems will be different if your service exposes functionality to external systems or inside the same OutSystems environment:
 
@@ -70,7 +78,7 @@ Each time the implementation of an exposed Server Action changes, the consumer m
 
 In OutSystems, a **Service Action** is a REST based remote call to another process, but its usage is very similar to public Server Actions.
 
-![Conceptual illustration of service actions in OutSystems](images/services-2.png "Service Actions Conceptual Illustration")
+![Conceptual illustration of service actions in OutSystems](images/services-2-ss.png "Service Actions Conceptual Illustration")
 
 Exposing a Service Action generates a [weak dependency](strong-weak-dependencies.md#weak-dependencies) from the consumer to the producer module, in a **loosely-coupled** way.
 
@@ -108,16 +116,15 @@ Service Actions mix the advantages of loosely-coupled REST API methods with the 
 
 #### Dealing with transactionality and networking
 
-Since Service Actions don’t share the same process and transaction with the consumers, implementing fault-tolerant services using Service Actions requires additional logic on the consumer side.
+Since Service Actions don't share the same process and transaction with the consumers, implementing fault-tolerant services using Service Actions requires additional logic on the consumer side.
 
 If the operation executed in a Service Action fails, the consumer logic must handle the failure and evaluate the undo of that operation. Any rollback in a consumer will not rollback the logic executed in the Service Action. Also, a rollback within a Service Action does not rollback the logic executed in other Service Actions previously called by the consumer.
 
-Using Service Actions implies executing logic through remote calls, which can have significant performance penalties when compared to running the same logic in a single process. Therefore, your logic must take into account the amount of data passed through the remote requests.
-Also, if there is a communication failure, the consumer logic must be prepared to handle the communication exceptions.
+Using Service Actions implies executing logic through remote calls, which can have significant performance penalties when compared to running the same logic in a single process. Therefore, your logic must take into account the amount of data passed through the remote requests. Also, if there is a communication failure, the consumer logic must be prepared to handle the communication exceptions.
 
-The remote address used when calling Service Actions is determined by the [Deployment Zone Address](<../../deploying-apps/zones/reference.md>) of the producer. If the producer is in a different deployment zone from the consumer, then the consumer must be able to reach the producer. For more information check [Communication between applications in different Deployment Zones](<../../deploying-apps/zones/intro.md#communication-between-applications-in-different-deployment-zones>).
+The remote address used when calling Service Actions is determined by the deployment zone address of the producer. If the producer is in a [different deployment zone](../../deploying-apps/zones/intro.md) from the consumer, then the consumer must be able to reach the producer. For more information, refer to [Communication between applications in different deployment zones](<../../deploying-apps/zones/intro.md#communication-between-applications-in-different-deployment-zones>).
 
-### Choose Between Server Actions and Service Actions
+### Choose between Server Actions and Service Actions
 
 Both Server Actions and Service Actions have their own characteristics and should be used depending on the use case.
 

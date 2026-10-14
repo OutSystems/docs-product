@@ -71,6 +71,7 @@ The table below details the ports that need to be accessible in each server of a
 |Front-End|Controller|12100|TCP|OutSystems Deployment Controller Service connection. Applies to Platform Server 11.25.0 and higher.|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
 |Front-End|SQL Server / Oracle|1433 / 1521|TCP|Database connection|
+|Front-End (consumer)|Front-End (producer)|80 / 443|TCP|Runtime traffic between consumer and producer apps deployed to different [deployment zones](../../deploying-apps/zones/intro.md#communication-between-applications-in-different-deployment-zones). Default is port is 80. Port 443 is used when **Use HTTPS for internal communications** is enabled for the target deployment zone.|
 |Controller|Front-End|12101|TCP|OutSystems Deployment Service connection. Applies to Platform Server 11.24.0 and higher.|
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service connection|
 |Controller|SQL Server / Oracle|1433 / 1521|TCP|Database connection|

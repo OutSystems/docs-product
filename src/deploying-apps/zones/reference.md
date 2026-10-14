@@ -1,23 +1,26 @@
 ---
-summary: OutSystems 11 (O11) deployment zones feature customizable parameters for enhanced application management in on-premises installations.
+summary: Deployment zones reference for OutSystems 11 (O11), covering address, HTTPS, and server inclusion settings.
 locale: en-us
 guid: 73511ea5-c2d6-493a-9d84-bbc699e84fc5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: deployment zones, on-premises, application management, environment configuration, internal communications
+tags:
+  - Deploy
+  - Infrastructure
+  - Settings
 audience:
-  - Platform administrator
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - none
 coverage-type:
   - remember
+isautopublish: true
 ---
 
-# Deployment Zones Reference
+# Deployment zones reference
 
 <div class="info" markdown="1">
 
@@ -60,7 +63,7 @@ Deployment Zone Address
     Invalid examples: `192.168.42.23/site`, `192.168.42.23:8080/site`, `rincewind.lan/university`
 
 Use HTTPS for internal communications
-:   Boolean parameter that, when active, causes all communication made by OutSystems applications in another deployment zones to applications in the current deployment zone to be made via HTTPS.
+:   Boolean parameter that, when active, switches the communication from OutSystems applications in other deployment zones to applications in the current deployment zone from HTTP (port 80) to HTTPS (port 443).
 
 Includes all Servers
 :   Boolean parameter that, when active, makes the platform automatically include all servers in the current deployment zone, including those added later. When this parameter is active you can't manually add or remove servers from the deployment zone.

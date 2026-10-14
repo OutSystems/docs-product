@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) introduces deployment zones for selective application deployment across different server environments in on-premises installations.
-tags: deployment zones, application deployment, server configuration, front-end servers, server isolation
+tags:
+  - Deploy
+  - Front-End
+  - Infrastructure
+  - Platform Server
 locale: en-us
 guid: 48d98b80-8502-47b9-922e-147ba2e8c708
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -14,12 +18,14 @@ outsystems-tools:
   - service center
 coverage-type:
   - understand
+  - apply
   - evaluate
 topic:
   - selective-deploy-zones
+isautopublish: true
 ---
 
-# Selective Deployment Using Deployment Zones
+# Selective deployment using deployment zones
 
 <div class="info" markdown="1">
 
@@ -90,11 +96,15 @@ The platform deploys the applications to the three servers according to the foll
 
 ![Diagram illustrating the deployment of Application 1 to the 'Internal Apps' zone, Application 2 to the 'B2E' zone, and Application 3 to the 'Public' zone.](images/intro-applications-diag.png "Application Deployment Across Servers")
 
-## Communication Between Applications in Different Deployment Zones
+## Communication between applications in different deployment zones
 
 Sometimes applications need to communicate with other applications outside of their deployment zone. To achieve this they use the deployment zone address of the second application.
 
 This is required for features like [Services](<../../building-apps/reuse-and-refactor/services.md>), [Processes](<../../building-apps/processes/intro.md>), [Timers](<../../building-apps/timers/intro.md>), [Emails](<../../building-apps/sending-emails/emails.md>), and for management operations performed by Service Center.
+
+These cross-zone calls reach the target [Deployment Zone Address](reference.md) over HTTP on port 80 by default, or over HTTPS on port 443 when **Use HTTPS for internal communications** is enabled for the target deployment zone.
+
+For the complete connectivity details, refer to [OutSystems 11 network requirements](../../setup-infra-platform/setup/network-requirements.md).
 
 ### Example
 
@@ -104,11 +114,11 @@ The "Back-end Service" is discovered by the "Front-end App" through the deployme
 
 ![Diagram depicting the 'Front-end App' in the 'Public' deployment zone communicating with the 'Back-end Service' in the 'Internal Apps' deployment zone.](images/intro-ex-interzonecommunication-single-diag.png "Interzone Communication Between Front-end and Back-end Apps")
 
-## Example Use Cases
+## Example use cases
 
 In following examples we have an environment with multiple servers, one targeted at internal end users ("Internal Server") and one (or more) targeted at public end users ("Public-facing Servers").
 
-### Explicitly Segmented Servers
+### Explicitly segmented servers
 
 Consider a scenario with two servers configured in the environment, in which the default deployment zone only includes the Internal Server:
 
@@ -132,7 +142,7 @@ After these steps, the application you just configured is only deployed to the p
 
 If at a later stage you add a new module to the web application, it will be deployed to the same deployment zone ("Public").
 
-### Internal Web Application
+### Internal web application
 
 Consider a scenario with two servers configured in the environment, in which both are part of the default deployment zone:
 
@@ -155,7 +165,7 @@ After these steps, the application you just configured will only be deployed to 
 
 If at a later stage you add a new module to the web application, it's deployed to the same deployment zone ("Intranet").
 
-### Load Distribution for a Public Web Application
+### Load distribution for a public web application
 
 Consider a scenario with two public servers, accessible from the Internet, with all servers being part of the default deployment zone. You wish to deploy a web application for public access and distribute the load between the two available public servers. This requires that you set up a load balancer, a 3rd-party component, to split the load between the two.
 

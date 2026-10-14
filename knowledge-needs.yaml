@@ -4939,6 +4939,18 @@ knowledge-needs:
         attacks, specifically reflected, stored, and DOM-based XSS, including how each
         propagates and their relative severity, so that they can identify the type of
         XSS risk present in their application and apply the right mitigation.
+    - name: Server-side request forgery
+      id: server-side-request-forgery
+      description: Wants to understand server-side request forgery, how unvalidated
+        user-supplied URLs make the server fetch unintended destinations, and why that
+        can expose internal resources or cloud metadata, so that they can recognize
+        SSRF risk in ODC apps.
+    - name: Prevent SSRF attacks
+      id: prevent-ssrf-attacks
+      description: Wants to prevent server-side request forgery by validating
+        user-supplied URLs, persisting requests for batch processing when needed, and
+        restricting outbound requests with allowlists or proxies, so that internal
+        services and cloud metadata stay unreachable.
     - name: Encode custom HTML and JavaScript
       id: encode-custom-html-javascript
       description: Wants to safely include end-user input in custom HTML or
@@ -6102,6 +6114,12 @@ knowledge-needs:
     - name: Core layer elements
       id: core-layer-elements
       description: Wants to identify which data, logic, interface, and process elements belong in Core layer modules, so they can place core entities, CRUD actions, business blocks, integration logic, and asynchronous processing in the Core layer.
+    - name: Core app composition
+      id: core-app-composition
+      description: 'Wants to identify which module layers a Core Application can contain, so they can classify an application''s layer from the topmost module layer.'
+    - name: Foundation app composition
+      id: foundation-app-composition
+      description: 'Wants to identify that a Foundation Application contains only Foundation Modules and no End-user or Core Modules, so they can classify an application''s layer from the topmost module layer.'
     - name: End-user layer elements
       id: end-user-layer-elements
       description: Wants to identify which data, logic, interface, and process elements belong in End-user layer modules, so they can place temporary data, role-based UI, local business logic, and workflows in the End-user layer.
@@ -12232,6 +12250,11 @@ knowledge-needs:
     description: Wants to understand the roadmap for the Mobile Application
       Architecture course, so they know what the course covers before starting
       it.
+  - name: Coding challenge overview
+    id: coding-challenge-overview
+    description: Wants to understand the roadmap for the OutSystems 11 coding
+      challenge, including the app Neo builds and the extra challenge
+      chapter, so they know what the course covers before starting it.
   - name: Using Service Studio
     id: using-service-studio
     subtopics:
@@ -13990,6 +14013,12 @@ knowledge-needs:
       to an AI model call, so they can implement the
       Retrieval-augmented generation (RAG) pattern in app logic.
     subtopics:
+    - name: Add AI search service
+      id: add-ai-search-service
+      description: Wants to add an AI search service in ODC Studio by
+        connecting an existing search index to an app's AI models, so
+        the app can use indexed content for retrieval-augmented
+        generation responses.
     - name: Configure Azure AI Search
       id: configure-azure-ai-search
       description: Wants to create an Azure AI Search service backed by Azure Blob

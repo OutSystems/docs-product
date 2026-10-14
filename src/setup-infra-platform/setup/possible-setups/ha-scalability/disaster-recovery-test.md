@@ -15,6 +15,9 @@ coverage-type:
 outsystems-tools:
   - service center
 isautopublish: true
+topic:
+  - failover-test-report
+  - xrdr-failover-process
 ---
 # Perform a cross-region disaster recovery test
 

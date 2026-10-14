@@ -20,6 +20,8 @@ outsystems-tools:
 coverage-type:
   - remember
 isautopublish: true
+topic:
+  - public-actions-reference
 ---
 
 # Public Actions

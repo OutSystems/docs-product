@@ -19,6 +19,8 @@ tags:
   - Widgets
 outsystems-tools:
   - none
+topic:
+  - number-patterns-overview
 isautopublish: true
 ---
 # Numbers

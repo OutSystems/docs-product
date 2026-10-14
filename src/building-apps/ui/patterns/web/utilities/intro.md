@@ -16,5 +16,7 @@ outsystems-tools:
   - none
 coverage-type:
   - none
+topic:
+  - ui-patterns-overview
 ---
 # Utilities

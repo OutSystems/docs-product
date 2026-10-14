@@ -18,6 +18,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+topic:
+  - cdn-stale-cache
 ---
 # Preventing stale cache
 

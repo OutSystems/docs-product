@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-tag-pattern
+  - tag-reference
+  - use-tag-pattern
 isautopublish: true
 ---
 

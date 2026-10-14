@@ -15,6 +15,8 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - entity-schema-mapping
 ---
 
 # Modeling Data

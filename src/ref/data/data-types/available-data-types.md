@@ -11,6 +11,10 @@ audience:
   - Developer
 coverage-type:
   - remember
+topic:
+  - built-in-conversion-functions
+  - compound-data-types
+  - data-types
 outsystems-tools:
   - none
 isautopublish: true

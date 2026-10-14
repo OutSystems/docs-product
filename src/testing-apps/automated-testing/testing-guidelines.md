@@ -24,6 +24,10 @@ coverage-type:
   - apply
   - understand
   - evaluate
+topic:
+  - decision-matrix
+  - test-lifecycle-overview
+  - testing-pyramid
 isautopublish: true
 ---
 

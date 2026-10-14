@@ -1961,6 +1961,12 @@ knowledge-needs:
         or descending order using the Sorting tab's Add Sort feature, in
         Service Studio for OutSystems 11, so they can retrieve information
           such as the first or last record when data is ordered alphabetically.
+    - name: Aggregate sort directions
+      id: aggregate-sort-directions
+      description: Wants to configure aggregate sort criteria with an explicit
+        ascending or descending direction on each criterion, so they can
+        combine multiple sort levels correctly in Service Studio for OutSystems
+        11.
     - name: Dynamic aggregate sort
       id: dynamic-aggregate-sort
       description: Wants to configure a dynamic sort in an aggregate by

@@ -16,6 +16,9 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - environment-addresses
+  - infrastructure-setups
 ---
 
 # Possible setups for an OutSystems infrastructure

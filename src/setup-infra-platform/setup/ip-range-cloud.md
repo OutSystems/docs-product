@@ -14,6 +14,8 @@ audience:
   - Platform administrator
 outsystems-tools:
   - service center
+topic:
+  - find-private-ip-range
 ---
 # Find out internal IP address range of your OutSystems Cloud
 

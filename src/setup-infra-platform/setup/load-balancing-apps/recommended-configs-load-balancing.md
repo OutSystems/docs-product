@@ -20,6 +20,9 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - app-availability-checks
+  - load-balancer-strategy
 ---
 
 # Recommended configurations for Load Balancing

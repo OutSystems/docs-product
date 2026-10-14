@@ -18,6 +18,10 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - automate-server-scaling-o11
+  - load-balancer-strategy
+  - reverse-proxy-requirements
 ---
 
 # High availability and scalability strategies

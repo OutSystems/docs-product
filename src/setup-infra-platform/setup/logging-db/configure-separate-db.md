@@ -18,6 +18,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - configure-log-tab
+  - create-log-database
+  - o11-separate-log-database
 ---
 
 # Configure a separate database for log data

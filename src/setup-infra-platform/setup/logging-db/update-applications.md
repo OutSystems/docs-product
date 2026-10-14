@@ -19,6 +19,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - fix-invalid-aggregate
+  - o11-separate-log-database
 ---
 
 # Update applications that access OutSystems log data

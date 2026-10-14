@@ -20,6 +20,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - platform-install-prerequisites
+  - set-up-infrastructure
 ---
 
 # Setting up OutSystems

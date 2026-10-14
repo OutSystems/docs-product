@@ -22,8 +22,8 @@ coverage-type:
   - understand
   - evaluate
 topic:
-  - soa-and-microservices
-  - service-actions-when-use
+  - soa-architecture
+  - service-actions-overview
 isautopublish: true
 ---
 

@@ -19,6 +19,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+topic:
+  - log-access-limits
+  - platformlogs-migration
+  - separated-log-access
 ---
 
 # Using the CentralizedPlatformLogs extension to access separated logs

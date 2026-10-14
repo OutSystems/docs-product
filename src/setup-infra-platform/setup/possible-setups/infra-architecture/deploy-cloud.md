@@ -17,6 +17,10 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - cloud-ha-compliance
+  - cloud-maintenance-schedule
+  - cloud-network-architecture
 ---
 
 # Deploy an infrastructure on OutSystems Cloud

@@ -19,6 +19,10 @@ outsystems-tools:
   - configuration tool
 coverage-type:
   - remember
+topic:
+  - install-front-end-server-o11
+  - unattended-lifetime-setup
+  - unattended-platform-setup
 ---
 
 # Unattended Installation and Upgrade

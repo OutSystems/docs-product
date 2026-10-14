@@ -19,6 +19,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - cdn-brute-force-fix
+  - cdn-stale-cache
+  - configure-cdn
 ---
 
 # Using a CDN with OutSystems

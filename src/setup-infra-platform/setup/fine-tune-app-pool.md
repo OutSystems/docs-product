@@ -19,6 +19,8 @@ coverage-type:
   - evaluate
   - remember
   - understand
+topic:
+  - tune-app-pool-recycling
 ---
 
 # Understanding and fine tuning application pool recycling for use with OutSystems

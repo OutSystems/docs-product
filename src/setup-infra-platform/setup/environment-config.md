@@ -19,6 +19,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+topic:
+  - configure-debug-mode
+  - configure-environment-purpose
 ---
 
 # Configure your OutSystems environment

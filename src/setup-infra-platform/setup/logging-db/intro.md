@@ -18,6 +18,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+topic:
+  - o11-separate-log-database
 ---
 
 # Keep OutSystems log data in a separate database

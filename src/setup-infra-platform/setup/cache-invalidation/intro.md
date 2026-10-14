@@ -16,6 +16,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+topic:
+  - cache-invalidation-ha
+  - cache-invalidation-overview
 ---
 
 # Cache Invalidation in OutSystems 11

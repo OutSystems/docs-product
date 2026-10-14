@@ -20,6 +20,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+topic:
+  - azure-environment-setup
 ---
 
 # Quick Reference for OutSystems on Microsoft Azure

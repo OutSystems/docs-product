@@ -20,6 +20,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - disable-role-error-logs
 ---
 
 # Disable Registered Role Required error logs

@@ -18,6 +18,8 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - associate-azure-install
 ---
 
 # Plan to Associate your OutSystems Installation on Azure with OutSystems

@@ -16,6 +16,9 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - rabbitmq-cluster-setup
+  - rabbitmq-load-balancer
 ---
 
 # OutSystems cache invalidation with high-availability

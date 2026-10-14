@@ -16,6 +16,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - client-certificate-data
+  - configure-http-security
 ---
 
 # Secure HTTP Requests

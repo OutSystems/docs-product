@@ -16,6 +16,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - rabbitmq-service-issues
+  - rabbitmq-startup-issues
+  - rabbitmq-upgrade-issues
 ---
 
 # Troubleshoot OutSystems cache invalidation service

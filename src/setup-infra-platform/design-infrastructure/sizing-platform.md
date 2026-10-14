@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - remember
+topic:
+  - infrastructure-design
 ---
 
 # Sizing OutSystems Platform

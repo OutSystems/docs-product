@@ -17,6 +17,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - azure-environment-setup
+  - finish-azure-setup
+  - get-environment-license
 ---
 
 # Set up OutSystems on Microsoft Azure

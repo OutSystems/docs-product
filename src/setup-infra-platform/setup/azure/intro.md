@@ -15,6 +15,9 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - automate-server-scaling-o11
+  - azure-environment-setup
 ---
 
 # OutSystems on Microsoft Azure

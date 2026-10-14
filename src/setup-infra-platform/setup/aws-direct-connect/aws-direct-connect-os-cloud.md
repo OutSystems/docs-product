@@ -14,6 +14,8 @@ audience:
   - Platform administrator
 outsystems-tools:
   - none
+topic:
+  - aws-direct-connect
 ---
 # AWS Direct Connect on OutSystems Cloud
 

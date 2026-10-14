@@ -17,6 +17,9 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - enable-rabbitmq-tls
+  - set-canonical-name
 ---
 
 # Enable TLS communication in RabbitMQ

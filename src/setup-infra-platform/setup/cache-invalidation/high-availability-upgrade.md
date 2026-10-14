@@ -17,6 +17,10 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - choose-upgrade-strategy
+  - full-stop-cluster-upgrade
+  - rolling-cluster-upgrade
 ---
 
 # Upgrade OutSystems cache invalidation with high-availability

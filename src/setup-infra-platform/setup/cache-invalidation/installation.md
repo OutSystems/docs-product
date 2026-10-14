@@ -14,6 +14,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - set-up-cache-invalidation
 ---
 
 # Install and configure RabbitMQ using the command-line

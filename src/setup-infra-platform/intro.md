@@ -15,6 +15,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - none
+topic:
+  - setup-outsystems-env
 ---
 
 # Setup OutSystems infrastructure and platform

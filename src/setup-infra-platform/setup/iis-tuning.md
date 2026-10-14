@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - tune-iis-thread-pool
 ---
 
 # Tuning IIS for OutSystems

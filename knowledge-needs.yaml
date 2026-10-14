@@ -12772,6 +12772,16 @@ knowledge-needs:
         the Development, Test, Production, and LifeTime environments in LifeTime,
         and install the extended product components after the Azure infrastructure
         is deployed, so that the platform is ready for development.
+    - name: Associate Azure install
+      id: associate-azure-install
+      description: Wants to ensure a custom Azure installation is associated with
+        OutSystems by adding the required deployment resource to mainTemplate.json,
+        so support and usage data stay linked to the installation.
+    - name: Use jump server
+      id: use-jump-server
+      description: Wants to create a jump server with RDP enabled and use it to reach
+        Azure VMs by private IP, so that they can manage machines inside a
+        protected network.
     - name: Back up trial apps
       id: back-up-trial-apps
       description: Wants to back up their trial apps by creating a Personal Environment
@@ -20620,6 +20630,12 @@ knowledge-needs:
         OutSystems unattended installation commands or, on Microsoft Azure,
         Azure scale sets, so that new front-end servers can be provisioned
         without manual installation steps.
+    - name: Manage Azure scale sets
+      id: manage-azure-scale-sets
+      description: Wants to scale OutSystems 11 front-end servers on Microsoft Azure
+        with virtual machine scale sets and update the scale set image to the
+        matching Platform Server version after an upgrade, so that the
+        environment keeps the intended capacity and platform version.
   - name: Database Collation
     id: database-collation
     subtopics:
@@ -21046,6 +21062,12 @@ knowledge-needs:
         caching or Site Properties and cannot tolerate stale values while
         the service is unavailable, so they can decide when to add a
         RabbitMQ cluster and a TCP load balancer.
+    - name: Cache invalidation overview
+      id: cache-invalidation-overview
+      description: Wants to understand how cache invalidation works in
+        OutSystems 11, including how the Cache Invalidation Service marks
+        cached values dirty and uses RabbitMQ to notify front-end servers,
+        so they can explain when cached data is refreshed.
     - name: Choose upgrade strategy
       id: choose-upgrade-strategy
       description: Wants to choose between the full-stop and rolling

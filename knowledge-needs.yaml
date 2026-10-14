@@ -1988,6 +1988,11 @@ knowledge-needs:
         SQL during compilation, including how Sources, Filters, Sorting,
         and Test values map to SELECT, FROM, WHERE, and ORDER BY clauses, so
         they can reason about the generated query.
+    - name: Aggregate sources
+      id: aggregate-sources
+      description: Wants to understand that the Sources section of an
+        Aggregate defines the entities that supply its output records, so
+        they can distinguish it from Filters and Sorting.
     - name: Fix invalid group error
       id: fix-invalid-group-error
       description: 'Wants to fix the "Invalid Group" error in Service Studio for
@@ -3209,6 +3214,10 @@ knowledge-needs:
       description: Wants to understand the Name and Description properties of a web
         service method in OutSystems 11, so they can identify the method and
         document it correctly.
+    - name: Review REST docs
+      id: review-rest-docs
+      description: Wants to review a REST API's documentation before consuming it, so
+        they can understand the API contract before configuring the integration.
   - name: REST API request formats
     id: rest-api-request-formats
     description: Wants to understand how exposed REST API requests handle supported media

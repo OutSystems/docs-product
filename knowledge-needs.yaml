@@ -10874,6 +10874,13 @@ knowledge-needs:
         deploy the solution to another environment, or keep a copy for
         troubleshooting, so that they can use the solution after creating
         it.
+    - name: Publish with OSPTool
+      id: publish-with-osp-tool
+      description: Wants to publish a solution pack or an entire factory
+        from the command line in OutSystems 11 by using OSPTool's
+        `/Publish` and `/PublishFactory` commands with the correct
+        hostname, username, and password syntax, so that they can deploy
+        without the graphical console.
     - name: Rollback solution version
       id: rollback-solution-version
       description: Wants to restore a previous app release by creating and
@@ -11371,6 +11378,9 @@ knowledge-needs:
     - name: Configure app zone
       id: configure-app-zone
       description: Wants to configure an OutSystems application to use a specific deployment zone in Service Center by selecting the zone in the application's Operation tab and saving the change, so that the platform deploys the app to the chosen zone.
+    - name: Deployment zone address
+      id: deployment-zone-address
+      description: Wants to use a deployment zone address to let applications in different deployment zones communicate, so that services, processes, timers, emails, and Service Center operations reach the target zone over HTTP or HTTPS.
     - name: Unify deployment zones
       id: unify-deployment-zones
       description: Wants to unify modules under one deployment zone, so that
@@ -20117,6 +20127,12 @@ knowledge-needs:
         ConfigurationTool.exe /CreateUpgradeCacheInvalidationService from the
         Platform Server installation folder, so that RabbitMQ is installed and
         configured for cache invalidation.
+    - name: Server hsconf settings
+      id: server-hsconf-settings
+      description: Wants to understand the server.hsconf configuration file settings that
+        Configuration Tool reads and writes, including database, service, server,
+        network, cache invalidation, and other options, so that they can configure
+        the file correctly during setup.
     - name: Create platform indexes
       id: create-platform-indexes
       description: Wants to create or retry platform database table indexes with
@@ -21289,6 +21305,12 @@ knowledge-needs:
         upgrade against the multiple-front-end requirement and potential
         data loss of a zero-downtime upgrade, so that they select the
         go-live strategy that fits their availability needs.
+    - name: Balanced farm upgrade
+      id: balanced-farm-upgrade
+      description: Wants to upgrade Platform Server in a self-managed,
+        highly loaded farm without downtime by rotating traffic between
+        updating and loaded front-ends during the upgrade, so they can
+        execute a balanced go-live strategy.
     - name: Publish apps after upgrade
       id: publish-apps-after-upgrade
       description: Wants to know whether to publish all applications

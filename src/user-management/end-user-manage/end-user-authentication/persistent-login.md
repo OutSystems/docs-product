@@ -21,6 +21,9 @@ coverage-type:
   - understand
   - remember
   - apply
+topic:
+  - authentication-cookie-login-state
+  - configure-app-authentication-settings
 ---
 
 # Persistent Login

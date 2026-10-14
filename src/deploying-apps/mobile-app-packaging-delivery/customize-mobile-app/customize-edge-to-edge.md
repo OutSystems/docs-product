@@ -15,6 +15,9 @@ audience:
 coverage-type:
   - remember
   - apply
+topic:
+  - cordova-system-bars
+  - safe-area-insets
 outsystems-tools:
   - service studio
 isautopublish: true

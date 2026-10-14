@@ -20,6 +20,8 @@ outsystems-tools:
   - none
 coverage-type:
   - none
+topic:
+  - navigation-patterns-overview
 isautopublish: true
 ---
 # Navigation

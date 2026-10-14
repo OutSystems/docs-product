@@ -20,6 +20,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - keystore-plugin-actions
+  - migrate-keystore-secrets
+  - secure-keystore-access
 isautopublish: true
 ---
 

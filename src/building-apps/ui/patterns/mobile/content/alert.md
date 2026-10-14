@@ -20,6 +20,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-alert-pattern
+  - use-alert-pattern
 isautopublish: true
 ---
 

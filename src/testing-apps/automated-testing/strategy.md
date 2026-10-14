@@ -16,6 +16,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - assess-testability
+  - manage-test-data
+  - mock-external-services
 isautopublish: true
 ---
 

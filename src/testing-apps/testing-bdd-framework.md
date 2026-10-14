@@ -16,6 +16,9 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - bdd-test-templates
+  - install-bddframework
 ---
 
 # Component testing with BDDFramework tools

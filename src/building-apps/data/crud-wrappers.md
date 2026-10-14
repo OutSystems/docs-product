@@ -17,6 +17,10 @@ audience:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - crud-wrapper-accelerator
+  - crud-wrapper-auditing
+  - non-autonumber-crud-ids
 outsystems-tools:
   - service studio
 isautopublish: true

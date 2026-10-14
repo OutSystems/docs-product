@@ -20,6 +20,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - bdd-test-best-practices
+  - bdd-test-blocks
+  - shared-test-patterns
 isautopublish: true
 ---
 

@@ -2533,6 +2533,11 @@ knowledge-needs:
         by adding the public event, choosing a handler server action, and
         understanding where the handler runs, so that the event logic executes
         in the correct app.
+    - name: ODC event trigger location
+      id: odc-event-trigger-location
+      description: Wants to understand that ODC event triggers are defined
+        only in the application where the Event is created, so that they know
+        trigger control stays with the owning app.
     - name: Handle ODC event errors
       id: handle-odc-event-errors
       description: Wants to handle errors raised when triggering or consuming
@@ -10169,6 +10174,11 @@ knowledge-needs:
         health-status Tag, past-appointment and next-appointment cards, and
         blank-state messaging, so that a logged-in patient can review key
         appointment information at a glance.
+    - name: Build activity form
+      id: build-activity-form
+      description: Wants to build an activity form screen in Service Studio with
+        location, time, and notes fields, so users can create activities in
+        the app.
   - name: Layouts
     id: layouts
     subtopics:

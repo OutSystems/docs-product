@@ -1509,6 +1509,15 @@ knowledge-needs:
     - name: Database entities
       id: database-entities
       description: Wants to understand how database entities store app data and connect to aggregates, forms, and widgets in web apps, so they can use entities correctly in OutSystems 11 applications.
+    - name: Create Core module entities
+      id: create-core-module-entities
+      description: Wants to create entities in a Core module in OutSystems 11, so application data can be modeled in a reusable module.
+    - name: Bootstrap initial data from Excel
+      id: bootstrap-initial-data-excel
+      description: Wants to bootstrap initial entity data from an Excel spreadsheet in OutSystems 11, so the app starts with the required records.
+    - name: Create static entities and records
+      id: create-static-entities-and-records
+      description: Wants to create static entities and define their records in OutSystems 11, so they can model fixed lookup data.
     - name: Create entity
       id: create-entity
       description: Wants to create an entity in ODC Studio by using the Entity Diagram or Data tab, adding attributes, and publishing the app, so they can persist data in a database table.
@@ -1857,6 +1866,12 @@ knowledge-needs:
       description: Wants to implement a master-detail pattern in a Screen using two
         Aggregates with different Fetch properties (At start and Only on demand),
         so that a list loads immediately while detail data loads only when needed.
+    - name: Manage related records
+      id: manage-related-records
+      description: Wants to add related records to a parent record and display
+        them by role on the parent detail screen using aggregates and SQL
+        queries, so the screen shows the child records tied to the selected
+        item.
     - name: Trigger aggregate refresh
       id: trigger-aggregate-refresh
       description: Wants to trigger an on-demand Aggregate to refresh and update

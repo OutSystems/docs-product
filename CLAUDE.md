@@ -183,17 +183,17 @@ Validations run on PRs via `.github/workflows/`. Workflow names and checks vary 
 
 ## Training-internal overrides
 
-The following rules override the shared guidance above for this repository only.
+The rules in this section apply only to the `training-internal` repository. All other repositories follow the shared guidance above.
 
-### No HTML div callouts
+### HTML div callouts in training-internal
 
-Do not use `<div class="info">` or `<div class="warning">` callout blocks. The `attach-pdf` build tool used in this repo does not support HTML elements and fails with an "Unsupported HTML element found in attach-pdf" error.
-
-Use inline bold prefixes instead:
+The `attach-pdf` build tool in `training-internal` doesn't support HTML elements. It fails with an "Unsupported HTML element found in attach-pdf" error. In `training-internal`, write callouts as inline bold prefixes instead of `<div class="info">` or `<div class="warning">` blocks:
 
 * For informational notes: `**Note:** Your note text here.`
 * For bad-practice warnings: `**Bad practice:** Your warning text here.`
 * For key distinctions: `**Key distinction:** Your explanation here.`
+
+In every other repository, write callouts as HTML divs, as described in the shared guidance above.
 
 ## Shared files
 

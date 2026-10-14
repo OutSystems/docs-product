@@ -12776,6 +12776,13 @@ knowledge-needs:
         email was not received or the environment is still being set up, by
         confirming the email and checking the Trial Portal status until
         access is available, so they can connect to the environment.'
+    - name: Infrastructure setups
+      id: infrastructure-setups
+      description: Wants to understand the standard OutSystems 11
+        infrastructure layouts, including cloud and on-premises
+        deployments and the roles of the Development, Quality,
+        Production, and LifeTime environments, so that they can choose
+        the right setup.
     - name: Install Azure trial
       id: install-azure-trial
       description: Wants to install the OutSystems 11 trial on Microsoft Azure by
@@ -17326,6 +17333,12 @@ knowledge-needs:
         OutSystems Cloud on their firewall when connecting via VPN instead
         of a single IP, so that traffic isn't blocked due to the
         non-static nature of individual private IP addresses.
+    - name: Find private IP range
+      id: find-private-ip-range
+      description: Wants to find the internal IP address range of an
+        OutSystems Cloud environment by checking a front-end server IP in
+        Service Center and deriving the a.b.c.0/24 range, so that they can
+        use the correct range for network configuration.
   - name: Cloud architecture
     id: cloud-architecture
     description: Wants to understand the architecture and operational
@@ -20310,6 +20323,14 @@ knowledge-needs:
         (load balancing, SSL offloading, caching, compression, content switching,
         application firewall, server obfuscation, authentication, and single sign-on),
         so they can determine whether it fits their OutSystems infrastructure needs.
+    - name: Load balancer strategy
+      id: load-balancer-strategy
+      description: Wants to choose a load balancing strategy for a self-managed
+        OutSystems 11 farm, so they can match the load balancer configuration to
+        front-end hardware and traffic patterns.
+    - name: App availability checks
+      id: app-availability-checks
+      description: Wants to configure front-end availability checks for a self-managed OutSystems 11 farm by using TCP port checks or a custom screen with business validations, so they can confirm the server and app stay reachable behind the load balancer.
     - name: Custom 404 pages
       id: custom-404-pages
       description: Wants to serve a custom 404 page through a reverse proxy or
@@ -20331,6 +20352,12 @@ knowledge-needs:
         deployment scenarios such as plain HTTP redirection, end-to-end HTTPS, SSL
         offload, and multi-app path-based routing, so they can implement the correct
         configuration set for their specific setup.
+    - name: Environment addresses
+      id: environment-addresses
+      description: Wants to configure hostname, deployment-zone, and LifeTime
+        environment addresses in single-server, load-balanced, and multi-zone
+        setups, so that internal requests and LifeTime calls reach the correct
+        endpoints.
     - name: Configure Android HTTP/2
       id: configure-android-http2
       description: Wants to enable reverse proxy support with NGINX and HTTP/2 for
@@ -20831,6 +20858,12 @@ knowledge-needs:
         environment, with separate application servers and distinct database
         catalogs or schemas, rather than reusing an existing environment, so
         that they plan the installation correctly.
+    - name: LifeTime unattended setup
+      id: unattended-lifetime-setup
+      description: 'Wants to install or upgrade the LifeTime Management
+        Console unattended by using the LifeTime installation package and
+        publishing the LifeTime solution, so that LifeTime follows the same
+        automated setup flow as the application environments.'
     - name: Size LifeTime storage
       id: lifetime-storage-sizing
       description: Wants to estimate the storage capacity needed for the
@@ -21037,6 +21070,21 @@ knowledge-needs:
         accounts, so that they can prepare their on-premises infrastructure
         and grant the necessary file system, service, and port permissions
         before installing.
+    - name: Set up infrastructure
+      id: set-up-infrastructure
+      description: Wants to set up an OutSystems infrastructure by
+        downloading the Platform Server binaries, installing Platform
+        Server in each environment, installing LifeTime in a dedicated
+        environment, configuring the management console, and installing
+        the development tools, so that the infrastructure is ready for
+        development and administration.
+    - name: Unattended platform setup
+      id: unattended-platform-setup
+      description: 'Wants to install or upgrade Platform Server in an
+        application environment by using the unattended installer flow,
+        updating `server.hsconf`, running Configuration Tool, and uploading
+        the license file, so that the environment is ready without
+        interactive setup steps.'
     - name: Database requirements
       id: platform-database-requirements
       description: Wants to understand the database configuration
@@ -21851,6 +21899,24 @@ knowledge-needs:
     description: Wants to understand how to extend OutSystems monitoring with
       supported APIs and plugins so they can add custom logs and integrate
       third-party monitoring tools.
+    subtopics:
+    - name: Log access limits
+      id: log-access-limits
+      description: Wants to compare the CentralizedPlatformLogs paging, sorting,
+        query operators, and unsupported scenarios with PlatformLogs when they
+        build log queries, so that they stay within the API limits.
+    - name: PlatformLogs migration
+      id: platformlogs-migration
+      description: Wants to replace PlatformLogs extension actions with the
+        corresponding CentralizedPlatformLogs actions after enabling log
+        separation, so that existing apps continue to read log data from the
+        new API.
+    - name: Separated log access
+      id: separated-log-access
+      description: Wants to use the CentralizedPlatformLogs extension to
+        retrieve log data from the API when log separation is enabled and the
+        PlatformLogs extension no longer applies, so that they can query
+        separated logs from an app.
   - name: Cloud monitoring split
     id: cloud-monitoring-split
     description: Wants to understand how monitoring responsibilities differ

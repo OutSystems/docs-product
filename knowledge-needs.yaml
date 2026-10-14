@@ -952,6 +952,12 @@ knowledge-needs:
       description: Wants to expose role grant and revoke behavior through
         service actions, so that consumer apps can manage users' access to
         shared roles.
+    - name: Built-in role actions
+      id: built-in-role-actions
+      description: Wants to identify the built-in role actions available in
+        OutSystems 11, including CheckRole, GrantRole, and RevokeRole, so
+        they can distinguish those actions from nonexistent ones such as
+        CreateUserWithRole.
     - name: Manage menu access
       id: manage-menu-access
       description: Wants to hide menu entries with a Data Action that combines
@@ -4695,6 +4701,12 @@ knowledge-needs:
         ClientCertificateValue in on-premises Traditional Web Apps, so that
         server logic can inspect client certificate information when client
         certificates are in use.
+    - name: Configure HTTP security
+      id: configure-http-security
+      description: Wants to set the HTTP Security property on supported
+        Traditional Web App elements, choosing the appropriate request security
+        level where needed, so that each element uses the intended request
+        security level at design time.
     - name: Configure HTTPS security
       id: configure-https-security
       description: Wants to configure HTTPS enforcement for Traditional Web Apps in LifeTime
@@ -7936,6 +7948,11 @@ knowledge-needs:
         by using Theme Editor to adjust the app's theme settings and reset those
         changes when needed, so they can keep the app's look and feel consistent
         with their brand.
+    - name: Dark mode theme
+      id: dark-mode-theme
+      description: Wants to create a switchable dark mode theme for an
+        OutSystems 11 app by using Forge Dark Mode/Themes assets and PWA
+        styling techniques, so users can choose a darker interface.
     - name: Theme properties
       id: theme-properties
       description: Wants to configure a theme's properties and layout settings
@@ -9990,6 +10007,12 @@ knowledge-needs:
       description: Wants to build simple screens with HTML widgets, map HTML tags to
         OutSystems widgets, and use scaffolding to create list and detail
         screens, so they can turn web development knowledge into OutSystems UI.
+    - name: Configure list HTML
+      id: configure-list-html
+      description: Wants to configure a List widget to render as div, ul, or ol and
+        wrap each ListItem in an HTML widget with an li tag when they need
+        bullets or numbering, so the list output matches the desired HTML
+        structure.
     - name: Widgets overview
       id: widgets-overview
       description: Wants to understand what OutSystems widgets are, how they help
@@ -12569,6 +12592,9 @@ knowledge-needs:
     - name: Video call resources
       id: video-call-resources
       description: Wants to find curated resources for adding in-app video calls, including articles, sessions, and Forge assets, so they can choose an implementation path for their app.
+    - name: Game feature resources
+      id: game-feature-resources
+      description: Wants to find curated resources for adding a playable game feature to an OutSystems app by using Forge game assets and Server-Sent Events, so they can choose an implementation path for their app.
     - name: Add voice messaging
       id: add-voice-messaging
       description: Wants to add voice messaging to a chat app by using a Forge audio
@@ -12733,6 +12759,19 @@ knowledge-needs:
         completing the Azure Portal wizard (resource group, credentials, VM size),
         starting the deployed VM, and connecting Service Studio to the new environment,
         so that they have a working OutSystems trial up and running.
+    - name: Azure environment setup
+      id: azure-environment-setup
+      description: Wants to deploy an OutSystems 11 infrastructure on Microsoft Azure
+        through the Marketplace solution template, including the Development, Test,
+        Production, and LifeTime environments and the farm or standalone production
+        option, so that they have a configured infrastructure that follows
+        OutSystems best practices.
+    - name: Finish Azure setup
+      id: finish-azure-setup
+      description: Wants to install valid Application Gateway certificates, register
+        the Development, Test, Production, and LifeTime environments in LifeTime,
+        and install the extended product components after the Azure infrastructure
+        is deployed, so that the platform is ready for development.
     - name: Back up trial apps
       id: back-up-trial-apps
       description: Wants to back up their trial apps by creating a Personal Environment
@@ -17417,6 +17456,15 @@ knowledge-needs:
     description: Wants to understand the secure connection options between OutSystems Cloud
       and on-premises or AWS corporate systems, so that they can choose the
       right integration or troubleshooting path.
+    subtopics:
+    - name: AWS Direct Connect
+      id: aws-direct-connect
+      description: Wants to connect OutSystems Cloud to a corporate network using AWS Direct
+        Connect by establishing the dedicated link, requesting OutSystems to
+        associate the AWS account ID, creating a hosted virtual interface,
+        having OutSystems accept the hosted connection, and advertising
+        specific subnets instead of a 0.0.0.0/0 route, so that traffic uses
+        the dedicated circuit instead of the internet gateway.
   - name: Cloud infrastructure maintenance
     id: cloud-infrastructure-maintenance
     subtopics:
@@ -18634,6 +18682,11 @@ knowledge-needs:
         combinations, redirect URI values, and provider-specific setup for the
         selected external provider, so that the plugin can authenticate users
         through that provider.
+    - name: Social login pages
+      id: social-login-pages
+      description: Wants to update signup and login pages in an OutSystems 11
+        app so users can sign in with a social media account through the Forge
+        Social Login assets, when the app needs social sign-in.
     - name: Map users from external systems
       id: map-external-auth-users
       description: Wants to map IT users from an external authentication
@@ -19997,6 +20050,15 @@ knowledge-needs:
         from the OutSystems 11 Configuration Tool's File menu, so that they can
         inspect the scripts before manually running them to set up the required
         on-premises databases and cache invalidation service.
+    - name: Set up cache invalidation
+      id: set-up-cache-invalidation
+      description: Wants to set up the cache invalidation service from the command line
+        when installing RabbitMQ for a self-managed OutSystems 11 Platform Server,
+        by confirming the CacheInvalidationConfiguration section in server.hsconf,
+        optionally creating advanced.config for TLS, and running
+        ConfigurationTool.exe /CreateUpgradeCacheInvalidationService from the
+        Platform Server installation folder, so that RabbitMQ is installed and
+        configured for cache invalidation.
     - name: Create platform indexes
       id: create-platform-indexes
       description: Wants to create or retry platform database table indexes with
@@ -20949,6 +21011,62 @@ knowledge-needs:
         application source code and compiled applications are stored, so
         that they can prepare the application server layer before
         deployment.
+    - name: Enable RabbitMQ TLS
+      id: enable-rabbitmq-tls
+      description: Wants to enable TLS communication in RabbitMQ by editing
+        rabbitmq.conf to disable non-TLS listeners, set the TLS listener
+        port and certificate paths, and turn on TLS in Configuration Tool,
+        so that the cache invalidation service communicates securely in a
+        self-managed OutSystems 11 environment.
+    - name: Set canonical name
+      id: set-canonical-name
+      description: Wants to set TlsServerCanonicalName in the
+        CacheInvalidationConfiguration section of server.hsconf when the
+        certificate name does not match the RabbitMQ host name, creating
+        the section in Configuration Tool if needed, so that the cache
+        invalidation service uses the correct certificate name in a
+        self-managed OutSystems 11 environment.
+    - name: RabbitMQ cluster setup
+      id: rabbitmq-cluster-setup
+      description: Wants to set up a two-node RabbitMQ cluster for OutSystems
+        cache invalidation by configuring cluster partition handling,
+        joining the nodes, and confirming the cluster is ready, so that
+        cache invalidation stays available when one RabbitMQ node fails.
+    - name: RabbitMQ load balancer
+      id: rabbitmq-load-balancer
+      description: Wants to set up a TCP load balancer in front of a RabbitMQ
+        cluster for OutSystems cache invalidation by configuring NGINX,
+        updating the cache invalidation service address, and reapplying
+        module settings, so that connections keep flowing when a RabbitMQ
+        node stops responding.
+    - name: Cache invalidation HA
+      id: cache-invalidation-ha
+      description: Wants to determine whether to configure high availability
+        for the Cache Invalidation Service when applications use Object
+        caching or Site Properties and cannot tolerate stale values while
+        the service is unavailable, so they can decide when to add a
+        RabbitMQ cluster and a TCP load balancer.
+    - name: Choose upgrade strategy
+      id: choose-upgrade-strategy
+      description: Wants to choose between the full-stop and rolling
+        RabbitMQ upgrade strategies for a cache invalidation cluster, by
+        comparing downtime, safety, and version-compatibility
+        constraints, so that they pick the approach that fits the
+        environment.
+    - name: Full-stop cluster upgrade
+      id: full-stop-cluster-upgrade
+      description: Wants to perform a full-stop RabbitMQ cluster upgrade
+        for cache invalidation when downtime is acceptable, by stopping
+        all nodes, upgrading Erlang and RabbitMQ on each server in order,
+        restarting the cluster, and running health checks, so that the
+        queues and cluster data are updated safely.
+    - name: Rolling cluster upgrade
+      id: rolling-cluster-upgrade
+      description: Wants to perform a rolling RabbitMQ cluster upgrade
+        for cache invalidation when the version path supports mixed-
+        version clusters or after an intermediary upgrade to 3.7.18, by
+        upgrading one node at a time and checking health after each step,
+        so that they avoid downtime.
     - name: Platform Server storage folders
       id: platform-server-storage-folders
       description: Wants to identify the main Platform Server folders that
@@ -21979,6 +22097,24 @@ knowledge-needs:
     - name: Connection error
       id: connection-error
       description: 'Wants to resolve the generic "Connection" error in OutSystems 11 when an operation fails due to communication problems and the message says to try again later, so they can retry the action and contact the Service Center administrator if the problem persists.'
+    - name: RabbitMQ service issues
+      id: rabbitmq-service-issues
+      description: Wants to troubleshoot the Cache Invalidation Service by enabling
+        the RabbitMQ management plugin, checking RabbitMQ service and node status,
+        and resolving Erlang, cookie, port, log, startup, and connection issues
+        when RabbitMQ fails or applications cannot reach it, so the service runs
+        correctly.
+    - name: RabbitMQ startup issues
+      id: rabbitmq-startup-issues
+      description: Wants to troubleshoot cache invalidation high availability
+        startup failures when ERLANG_HOME is misconfigured or the RabbitMQ node
+        does not start after upgrading RabbitMQ and Erlang, so the node comes up
+        correctly.
+    - name: RabbitMQ upgrade issues
+      id: rabbitmq-upgrade-issues
+      description: Wants to troubleshoot cache invalidation service upgrades when
+        locked files or access denied errors prevent RabbitMQ and Erlang from
+        being removed from the installation directory, so the upgrade can finish.
   - name: Fix cross-site cookies (O11)
     id: fix-cross-site-cookies-o11
     description: Wants to identify and fix cross-site cookie problems in

@@ -5179,6 +5179,9 @@ knowledge-needs:
   - name: Security fundamentals
     id: security-fundamentals
     subtopics:
+    - name: Application security basics
+      id: application-security-basics
+      description: Wants to understand what application security is and why it matters when protecting applications from vulnerabilities, data breaches, service disruption, reputation damage, and legal consequences, so they can explain the purpose of secure development at a high level.
     - name: CIA security triad
       id: cia-security-triad
       description: Wants to understand the CIA (Confidentiality, Integrity,
@@ -5194,12 +5197,25 @@ knowledge-needs:
         Top 10 Mobile Risks lists, so that they can use a recognized
         vulnerability baseline when assessing and securing their
         applications.
+    - name: Vulnerability mitigations
+      id: vulnerability-mitigations
+      description: Wants to identify common application vulnerabilities and their
+        mitigations, including anonymous REST APIs, input validation, and access
+        control weaknesses, so they can reduce OWASP-style security risks in an
+        app.
     - name: OutSystems security approach
       id: outsystems-security-approach
       description: Wants to understand how OutSystems addresses web security
         risks through built-in protection, guided development, and lifecycle
         integration, so that they can explain the platform's security
         approach and why it matters.
+    - name: Security by design
+      id: security-by-design
+      description: Wants to apply security by design principles by building
+        security into every development stage, using OutSystems security
+        tools, and following rules like trusting no one, least privilege,
+        and secure coding practices, so that applications are designed
+        securely from the start.
     - name: Authentication risks
       id: authentication-risks
       description: Wants to identify the primary risk of authentication
@@ -5236,6 +5252,12 @@ knowledge-needs:
         those warnings help catch before deployment, so that they can evaluate
         whether the built-in guidance covers their team's secure coding
         baseline.
+    - name: Security lakes
+      id: security-lakes
+      description: Wants to segregate applications into security lakes based
+        on criticality, so that high mission-critical, medium and light
+        mission-critical, and regular apps receive the right level of ACL,
+        RBAC, and screen-access controls.
     - name: Security misconfigurations
       id: security-misconfigurations
       description: Wants to identify how to mitigate security misconfigurations
@@ -14520,6 +14542,12 @@ knowledge-needs:
         validating certificates with the RequireSSLPinning block, so that
         mobile app HTTPS communications are protected against
         man-in-the-middle attacks via client-side certificate verification.
+    - name: SSL pinning purpose
+      id: ssl-pinning-purpose
+      description: Wants to identify the purpose of SSL pinning in an
+        OutSystems Cordova mobile app when securing HTTPS communication, so
+        that they can recognize that it protects requests against
+        man-in-the-middle attacks by verifying the server certificate.
     - name: Check SSL Pinning validity
       id: check-ssl-pinning-hash-validity
       description: Wants to check whether a mobile app's bundled SSL Pinning
@@ -19328,6 +19356,12 @@ knowledge-needs:
       description: Wants to add or remove users and external IdP group
         mappings from an ODC end-user group, so that users inherit the
         group roles through either direct membership or mapped IdP groups.
+    - name: Multiple group membership
+      id: multiple-group-membership
+      description: Wants to know whether an ODC user can belong to multiple
+        groups at the same time and inherit the combined roles and
+        permissions from them, so they can predict access after assigning
+        the user to groups.
     - name: Configure group claims
       id: configure-group-claims
       description: Wants to configure the IdP group claim name, value, and

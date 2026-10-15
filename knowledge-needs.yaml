@@ -6718,6 +6718,12 @@ knowledge-needs:
         logic on a schedule compared with PHP cron jobs, including logs,
         retries, and DevOps-adjustable settings, so that they can use timers
         for background work.
+    - name: Timer runtime rules
+      id: timer-runtime-rules
+      description: Wants to identify core timer runtime rules in OutSystems 11,
+        including single-instance execution, effective schedule precedence,
+        timeout changes in Service Center and Service Studio, and the retry
+        limit, so they can judge timer statements correctly.
     - name: Timer use cases
       id: timer-use-cases
       description: Wants to identify common Timer use cases, such as recurring
@@ -6767,6 +6773,10 @@ knowledge-needs:
       description: Wants to configure a Timer's effective schedule, periodicity,
         priority, and timeout in Service Center per environment, so that the
         Timer runs at the right time and within execution limits.
+    - name: Timer interval options
+      id: timer-interval-options
+      description: Wants to identify the valid timer interval options in OutSystems
+        11, so they can distinguish supported schedules from invalid choices.
     - name: Configure timer timeout (O11)
       id: configure-timer-timeout-o11
       description: Wants to configure the `Timeout in Minutes` property for an
@@ -15475,6 +15485,16 @@ knowledge-needs:
       description: Wants to define local storage entities in ODC Studio by using
         the app's database entity structure as the basis for the local model, so
         mobile and native apps can store offline data.
+    - name: Local storage actions
+      id: local-storage-actions
+      description: Wants to identify that Local Storage Entities have the extra
+        CreateOrUpdateAll and DeleteAll Entity Actions that Database Entities
+        do not have, so they can answer comparison questions correctly in
+        OutSystems 11 mobile apps.
+    - name: Local storage behavior
+      id: local-storage-behavior
+      description: Wants to understand how Local Storage entities behave in
+        OutSystems 11, so they can answer basic comparison questions correctly.
     - name: Fetch local storage data
       id: fetch-local-storage-data
       description: Wants to display local storage data on a mobile screen by

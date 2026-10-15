@@ -284,6 +284,11 @@ knowledge-needs:
       description: Wants to understand what the Start node does in an
         OutSystems 11 action flow, so they can identify where execution begins
         when they build logic.
+    - name: Action flow structure
+      id: action-flow-structure
+      description: Wants to understand that a server action flow has only one
+        Start node but one or more End nodes or Raise Exception nodes, so they
+        can design valid action flows in OutSystems 11.
   - name: Calculation and algorithm examples
     id: calculation-and-algorithm-examples
     subtopics:
@@ -2441,6 +2446,11 @@ knowledge-needs:
    - name: Translating apps
      id: translating-apps
      subtopics:
+     - name: Make multilingual app
+       id: make-multilingual-app
+       description: Wants to make an OutSystems 11 app multilingual and plan the
+         translation and locale-switching approach before adding a language
+         switcher, so that members can navigate it in the right language.
      - name: Migrate Multilingual
        id: migrate-multilingual
        description: Wants to migrate translations, clean up client-action logic
@@ -2671,6 +2681,11 @@ knowledge-needs:
       description: Wants to look up the File data type's properties and restrictions,
         including its maximum size and where it isn't supported, so they can
         correctly configure File attributes in ODC Studio.
+    - name: File built-in functions
+      id: file-built-in-functions
+      description: Wants to look up the built-in functions that work with File
+        values in ODC Studio, so they can use File values correctly in
+        expressions.
     - name: Display cloud images
       id: display-cloud-images
       description: Wants to bind a File-typed entity attribute to the Image
@@ -2769,6 +2784,16 @@ knowledge-needs:
         on a long-idle screen when it fails silently without an ODC
         error code, so they can refresh URLs correctly on long-idle
         screens.
+    - name: Copy file ownership
+      id: copy-file-ownership
+      description: Wants to copy a File value that another app owns into a
+        temporary file the current app owns, so they can store the copy in
+        an entity attribute when they need to keep the file.
+    - name: Check file exists
+      id: check-file-exists
+      description: Wants to check whether a File value exists in cloud
+        storage with FileExists, so they can branch on missing files
+        before continuing.
     - name: Use ODC Upload widget
       id: use-upload-widget-odc
       description: Wants to add the Upload widget to a screen in ODC
@@ -5188,6 +5213,11 @@ knowledge-needs:
         data integrity failures in OWASP web security questions, so that
         they can distinguish risky dependency, CI/CD, auto-update, and
         deserialization practices from safe behavior.
+    - name: Delayed breach detection
+      id: delayed-breach-detection
+      description: Wants to recognize that insufficient logging, monitoring,
+        alerting, and response let breaches go undetected, so they can identify
+        the OWASP security logging and monitoring failure pattern.
     - name: Design-time security warnings overview
       id: design-time-security-warnings-overview
       description: Wants to understand which security warnings OutSystems
@@ -10212,6 +10242,11 @@ knowledge-needs:
         health-status Tag, past-appointment and next-appointment cards, and
         blank-state messaging, so that a logged-in patient can review key
         appointment information at a glance.
+    - name: Build homepage dashboard
+      id: build-homepage-dashboard
+      description: Wants to build a homepage dashboard in an OutSystems app
+        with upcoming events and summary charts, so that users can review
+        activity at a glance.
     - name: Build activity form
       id: build-activity-form
       description: Wants to build an activity form screen in Service Studio with
@@ -19200,6 +19235,11 @@ knowledge-needs:
         programmatically via the Users module's actions, so that new
         employees, customers, or partners can be provisioned with app
         access without going through public self-registration.
+    - name: Build sign-up flow
+      id: build-sign-up-flow
+      description: Wants to create an end-user sign-up flow in OutSystems 11
+        using the Users API and the User Registration Flow Reactive Forge
+        component, so that unauthenticated users can create an account.
     - name: Users console access
       id: users-console-access
       description: Wants to know that the Users component includes a

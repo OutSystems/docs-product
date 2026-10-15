@@ -19,7 +19,6 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
-  - evaluate
 topic:
   - process-decision-patterns
 ---

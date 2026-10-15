@@ -1107,6 +1107,7 @@
             - href: setup-infra-platform/setup/mobile-builder-connectivity-requirements.md
             - href: setup-infra-platform/setup/configure-http-proxy.md
             - href: setup-infra-platform/setup/ip-range-cloud.md
+        - href: setup-infra-platform/setup/cloud-timezones.md
         - href: setup-infra-platform/setup/default-configurations.md
         - href: setup-infra-platform/setup/environment-config.md
         - href: setup-infra-platform/setup/lifetime-configure.md

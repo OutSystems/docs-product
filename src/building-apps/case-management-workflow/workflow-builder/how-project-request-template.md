@@ -18,6 +18,8 @@ outsystems-tools:
   - workflow builder
 coverage-type:
   - apply
+topic:
+  - wfb-app-building-steps
 ---
 
 # Using the Project Request template

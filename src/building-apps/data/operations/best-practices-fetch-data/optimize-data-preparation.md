@@ -22,6 +22,8 @@ coverage-type:
   - understand
   - unblock
   - evaluate
+topic:
+  - logic-performance-tips
 ---
 
 # Optimize data preparation

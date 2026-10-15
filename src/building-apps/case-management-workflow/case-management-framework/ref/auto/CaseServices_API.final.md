@@ -22,6 +22,8 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - remember
+topic:
+  - case-services-api
 ---
 
 # Case Services API

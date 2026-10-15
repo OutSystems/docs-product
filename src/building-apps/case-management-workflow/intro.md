@@ -18,6 +18,8 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - understand
+topic:
+  - process-decision-patterns
 ---
 
 # Create case management and workflow apps

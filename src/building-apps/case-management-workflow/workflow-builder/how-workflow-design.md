@@ -4,6 +4,8 @@ tags:
   - Workflows
 summary: Explore app development with OutSystems 11 (O11) using the Workflow Builder for creating internal productivity applications.
 guid: e496117e-5c7f-43c8-9cf5-e728365bc531
+topic:
+  - wfb-app-templates
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11

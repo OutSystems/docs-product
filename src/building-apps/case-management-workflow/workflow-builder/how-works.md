@@ -22,6 +22,9 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - understand
+topic:
+  - wfb-app-architecture
+  - wfb-overview
 ---
 
 # How Workflow Builder works

@@ -11,6 +11,8 @@ tags:
   - Data Synchronization
   - Mobile app
   - Optimization
+topic:
+  - complex-mobile-sync
 audience:
   - Developer
   - Front-end developer

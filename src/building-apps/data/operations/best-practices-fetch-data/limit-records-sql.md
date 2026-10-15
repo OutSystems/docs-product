@@ -20,6 +20,8 @@ coverage-type:
   - understand
   - unblock
   - evaluate
+topic:
+  - limit-record-fetches
 ---
 
 # Control the number of records fetched from the DB

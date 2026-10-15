@@ -962,12 +962,6 @@
     - deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/development-tests.md
     - one-way: setup-infra-platform/setup/possible-setups/intro.md
 
-# Building apps with AndroidX
-- deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/androidx.md:
-    - deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/extensibility-configurations-json-schema.md
-    - deploying-apps/override-extensibility-configurations.md
-    - deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
-
 # Harden the protection of mobile apps with AppShield
 - deploying-apps/mobile-app-packaging-delivery/app-shield/intro.md:
     - external:

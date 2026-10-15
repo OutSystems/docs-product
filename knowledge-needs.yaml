@@ -2109,6 +2109,12 @@ knowledge-needs:
         Framework in OutSystems 11, including what it restricts, how the default-deny
         behavior works when enabled, and what read and write permissions mean, so
         that they can decide whether and how to apply it to their case app.
+    - name: Case action permissions
+      id: case-action-permissions
+      description: Wants to identify the read or write permission required for each
+        Case Management Framework API action, and understand how list-returning
+        service actions behave when the user lacks access to some cases, so that
+        they can call the right action with the required access.
     - name: Case access control
       id: case-access-control
       description: Wants to enable access control for a case definition in OutSystems
@@ -2613,7 +2619,7 @@ knowledge-needs:
         self-hosted ODC installation, so they can prepare the cluster before
         setup.
     - name: Self-hosted network requirements
-      id: self-hosted-network-requirements
+      id: self-hosted-network-requirements-odc
       description: Wants to identify the outbound and inbound connectivity,
         ports, and endpoints required for a self-hosted ODC installation, so
         they can configure networking before setup.
@@ -5480,6 +5486,13 @@ knowledge-needs:
         extends Business Process Technology, and its core features, in
         OutSystems 11, so that they can decide whether it fits their case
         management app.
+    - name: Case configurations API
+      id: case-configurations-api
+      description: Wants to look up the Case Configurations API reference, including
+        its actions, service actions, and structures, when they need to
+        configure case definitions, statuses, state machines, calendars,
+        delegations, templates, resources, rules, and related case data in
+        OutSystems 11, so they can call the right member.
     - name: CMf app examples
       id: cmf-app-examples
       description: Wants to understand the Simple, Medium, and Complex
@@ -5553,6 +5566,18 @@ knowledge-needs:
         MilestoneConfiguration static entity in OutSystems 11, so that the
         Bootstrap_CaseConfiguration timer automatically creates milestone
         instances for new case instances.
+    - name: Understand CMf milestones
+      id: understand-cmf-milestones
+      description: Wants to understand CMf milestones, including how they represent
+        intermediate goals, trigger actions, and differ between milestone
+        definitions and milestone instances in OutSystems 11, so that they can
+        model phases in a case lifecycle.
+    - name: Manage milestone status
+      id: manage-milestone-status
+      description: Wants to fetch milestone instances for a case, set a milestone
+        instance as achieved or unachieved, and check whether a milestone is
+        achieved using CaseServices_API actions, so that an app can track
+        milestone progress.
     - name: Update case status
       id: update-case-status
       description: Wants to update the status of an existing case instance using
@@ -5573,6 +5598,25 @@ knowledge-needs:
         when calling case and activity actions in OutSystems 11 using the
         CaseServices_API module, so that delegated actions are properly authorized
         and logged in case history.
+    - name: Manage activity lifecycle
+      id: manage-activity-lifecycle
+      description: Wants to manage a case activity in the Case Management
+        Framework by assigning it to a user or group, picking it up, blocking
+        or unblocking it, taking it over, releasing it, opening it, and closing
+        it in OutSystems 11, so that the activity follows the intended
+        lifecycle.
+    - name: Validate activity access
+      id: validate-activity-access
+      description: Wants to validate whether a user can act on a case activity
+        by calling Activity_CheckUserAccess or Activity_ValidateUserAccess,
+        including under delegation, before opening or completing the activity
+        in OutSystems 11, so that the action only runs when access exists.
+    - name: Assign multiple users
+      id: assign-multiple-users
+      description: Wants to assign multiple users to a case activity and choose
+        whether all or a selected subset must complete it before the case
+        advances in OutSystems 11, so that the activity runs as multiple
+        instances.
     - name: Understand GroupExtended
       id: understand-group-extended
       description: Wants to understand what the GroupExtended entity is in the
@@ -5899,6 +5943,11 @@ knowledge-needs:
         CalendarId input parameters of the Case_AssociateProcess action, in
         OutSystems 11's Case Management Framework, so that an event fires
         when the case's SLA time limit is exceeded.
+    - name: Define case calendars
+      id: define-case-calendars
+      description: Wants to define Case Management framework calendars with
+        working hours, holidays, and non-working days, and bootstrap the
+        calendar records, so that SLA due dates account for end-user schedules.
     - name: Set default case SLA
       id: set-default-case-sla
       description: Wants to set a default SLA response time for every new
@@ -12453,6 +12502,41 @@ knowledge-needs:
         ownership and permissions via Terminal or Finder on macOS, or the
         Security tab in Windows File Explorer, so that Studio can launch
         normally.
+    - name: Open a module from the command line
+      id: open-module-from-command-line
+      description: Wants to open a local module in Service Studio from the
+        command line on Windows in OutSystems 11, so they can start working on
+        it directly.
+    - name: Create a module from the command line
+      id: create-module-from-command-line
+      description: Wants to create a local module in Service Studio from the
+        command line on Windows in OutSystems 11, so they can initialize a
+        module without using the full UI.
+    - name: Merge modules from the command line
+      id: merge-modules-from-command-line
+      description: Wants to merge local modules in Service Studio from the
+        command line on Windows in OutSystems 11, so they can combine module
+        changes without using the full UI.
+    - name: Refresh a local app or module from the command line
+      id: refresh-local-apps-or-modules-from-command-line
+      description: Wants to refresh a locally saved app or module with
+        `-refresh`, so they can synchronize local changes from the command
+        line.
+    - name: Recover a module from the command line
+      id: recover-module-from-command-line
+      description: Wants to recover a local module in Service Studio from the
+        command line on Windows in OutSystems 11, so they can restore a usable
+        module without using the full UI.
+    - name: Export settings from the command line
+      id: export-service-studio-settings-from-command-line
+      description: Wants to export Service Studio settings from the command
+        line on Windows in OutSystems 11, so they can save those settings
+        without opening the full UI.
+    - name: Import settings from the command line
+      id: import-service-studio-settings-from-command-line
+      description: Wants to import Service Studio settings from the command
+        line on Windows in OutSystems 11, so they can apply saved settings
+        without opening the full UI.
   - name: Element shortcuts
     id: element-shortcuts
     subtopics:
@@ -12609,11 +12693,6 @@ knowledge-needs:
       description: 'Wants to open a remote app with `-openModuleFromUrl`, so
         that they can manage apps from the command line when working with
         remote locations.'
-    - name: Refresh local apps
-      id: refresh-local-apps
-      description: 'Wants to refresh a local app with `-refresh`, so that they
-        can manage apps from the command line when working with local
-        app updates.'
     - name: Recover local apps
       id: recover-local-apps
       description: 'Wants to recover a local app with `-recover`, so that they
@@ -21129,6 +21208,26 @@ knowledge-needs:
       installing the license, and registering it in the infrastructure
       management console (LifeTime), so that the new environment is ready for
       use.
+  - name: OutSystems 11 network requirements
+    id: o11-network-requirements
+    subtopics:
+    - name: Environment network requirements
+      id: environment-network-requirements-o11
+      description: Wants to identify the ports, protocols, and developer-tool
+        endpoints that must be reachable for an OutSystems 11 environment, so
+        they can configure deployment, runtime, monitoring, and workstation
+        access.
+    - name: Builder connectivity
+      id: builder-connectivity
+      description: Wants to identify the network connections Integration
+        Builder and Workflow Builder require, including source addresses and
+        LifeTime access, so they can allow those services through the firewall.
+    - name: Platform service connectivity
+      id: platform-service-connectivity
+      description: Wants to identify the LifeTime, Code Quality, and log
+        streaming connectivity and allowlisting requirements for an OutSystems
+        11 infrastructure, so they can configure platform-service networking
+        and observability.
   - name: Env registration error
     id: env-registration-error
     description: Wants to troubleshoot why registering a new environment in

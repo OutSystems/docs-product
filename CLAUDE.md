@@ -181,20 +181,6 @@ Validations run on PRs via `.github/workflows/`. Workflow names and checks vary 
 * Insert final newline
 * Soft-wrap at 80 columns (no hard line breaks in paragraphs)
 
-## Training-internal overrides
-
-The rules in this section apply only to the `training-internal` repository. All other repositories follow the shared guidance above.
-
-### HTML div callouts in training-internal
-
-The `attach-pdf` build tool in `training-internal` doesn't support HTML elements. It fails with an "Unsupported HTML element found in attach-pdf" error. In `training-internal`, write callouts as inline bold prefixes instead of `<div class="info">` or `<div class="warning">` blocks:
-
-* For informational notes: `**Note:** Your note text here.`
-* For bad-practice warnings: `**Bad practice:** Your warning text here.`
-* For key distinctions: `**Key distinction:** Your explanation here.`
-
-In every other repository, write callouts as HTML divs, as described in the shared guidance above.
-
 ## Shared files
 
 This file (`SHARED-CLAUDE.md` in `tk-cicd`) and all skills (Claude Code slash

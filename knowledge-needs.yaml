@@ -10124,6 +10124,11 @@ knowledge-needs:
     - name: UI patterns overview
       id: ui-patterns-overview
       description: Wants to understand what OutSystems UI patterns are, why the platform provides them, and how they group into adaptive, content, interaction, navigation, number, and utility patterns, so they can recognize the main pattern families and choose the right one for a screen need.
+    - name: Structure layout patterns
+      id: structure-layout-patterns
+      description: Wants to understand what Structure UI patterns are and when to use
+        Align Center, Columns, and Gallery patterns to organize Traditional Web App
+        layouts in O11.
     - name: Identify reactive widgets
       id: identify-reactive-widgets
       description: Wants to identify which UI elements count as widgets in
@@ -14516,6 +14521,11 @@ knowledge-needs:
       description: Wants to use the Common plugin's client actions to log to the device
         console and retrieve runtime environment information in an ODC mobile
         app, so that the app can identify its runtime environment.
+    - name: Common plugin library
+      id: common-plugin-library
+      description: Wants to replace the O11 Common Plugin app with the Common
+        Plugin Library before converting a mobile plugin to an ODC library, so
+        the plugin can be converted after its dependency is updated.
     - name: Plugin manager scopes
       id: plugin-manager-scopes
       description: Wants to create and destroy PluginManager scopes in a

@@ -32,6 +32,13 @@ knowledge-needs:
         Run Client Action element in Reactive Web Apps or Mobile Apps,
         selecting an existing action or creating a new one as needed, so that
         they can execute client-side logic directly from the flow.
+    - name: Update list items
+      id: update-list-items
+      description: Wants to update a displayed list by using list-manipulation
+        system actions from a client or screen action, choosing Run Client
+        Action in Reactive Web or Mobile, and using Ajax Submit plus Execute
+        Action in Traditional Web, so the widget refreshes only the affected
+        items without re-rendering the whole list.
     - name: Use message tool
       id: use-message-tool
       description: Wants to show a feedback message to the end user from a client
@@ -393,6 +400,11 @@ knowledge-needs:
         can handle JavaScript errors that occur during an Ajax refresh of an
         unescaped expression or during the RunJavaScript action of the
         HTTPRequestHandler extension, in Traditional Web Apps (O11).
+    - name: Default error pages
+      id: default-error-pages
+      description: Wants to identify the default OutSystems Platform pages for
+        internal, not found, temporary offline, and unavailable errors, so they
+        know what end users see when an error is unhandled.
     - name: Fix Log Error warning
       id: fix-log-error-warning
       description: 'Wants to fix the audit suggestion warning "''Log Error''
@@ -435,6 +447,14 @@ knowledge-needs:
         action flow and route execution to the exception handler, so they can
         raise an existing exception or a user exception message in OutSystems
         11.
+    - name: Customize error pages
+      id: customize-error-pages
+      description: Wants to customize unhandled error pages by editing the
+        corresponding files in the customHandlers folder on an OutSystems
+        on-premises installation, using the application unavailable page
+        parameters when needed, and copying the changed files to every
+        front-end node in a farm, so the pages match the application design and
+        stay consistent across the environment.
   - name: Using Expressions
     id: using-expressions
     subtopics:
@@ -5526,6 +5546,11 @@ knowledge-needs:
         callback action to the parent's Business Process Technology flow, in
         OutSystems 11's Case Management Framework, so that the parent case can
         react once the subcase finishes.
+    - name: Complete linked case
+      id: complete-linked-case
+      description: Wants to call Case_Completed from the last Automatic Activity
+        before terminating a BPT process linked with Case Management Framework,
+        so that the case is marked complete before the process ends.
     - name: Bootstrap CMF app
       id: bootstrap-cmf-app
       description: Wants to create the foundational modules of a case management app
@@ -12804,6 +12829,31 @@ knowledge-needs:
       description: Wants to understand how OutSystems stores application
         resources in OML files locally and on the server, so they know what
         gets saved, published, and tested where.
+  - name: Resource files
+    id: resource-files
+    subtopics:
+    - name: Add resource files
+      id: add-resource-files
+      description: Wants to add a resource file to an OutSystems 11 module and
+        configure its Deploy Action and Target Directory, so they can package
+        the file with the module and publish it correctly.
+    - name: Resource paths and security
+      id: resource-paths-and-security
+      description: Wants to understand how a resource file's settings determine
+        its deployed path and public accessibility in an OutSystems 11 module,
+        so they can reference it correctly without exposing it unintentionally.
+    - name: Display resource files
+      id: display-resource-files
+      description: Wants to display a deployed resource file such as a PDF
+        or video in a Traditional Web App screen by using an External Site
+        element or an Expression with the resource path, so the file opens
+        or embeds from the module.
+    - name: Download resource files
+      id: download-resource-files
+      description: Wants to let users download a deployed resource file by
+        adding a Button that opens a Screen Action with a Download element
+        and File Name, so the file is delivered from the module as a
+        download.
   - name: Publish and share apps
     id: publish-and-share-apps
     subtopics:
@@ -13399,6 +13449,12 @@ knowledge-needs:
         server-side logic as `Site.<SitePropertyName>`, and change its effective
         value in Service Center without republishing, so that application
         behavior can vary by environment at runtime.
+    - name: Choose site property
+      id: choose-site-property
+      description: Wants to choose a Site Property for application-wide runtime
+        settings like an API key, while avoiding user-specific or frequently
+        changing values, so they store the right kind of configuration in the
+        right place.
     - name: Configure site properties during deployment
       id: configure-site-properties-during-deployment
       description: Wants to set effective values for new or secret site
@@ -14285,6 +14341,11 @@ knowledge-needs:
       description: Wants to understand the roles of the external AI model, the
         agentic app, and grounding data in an ODC AI integration, so they can
         map each component to the correct part of the solution.
+    - name: AI models overview
+      id: ai-models-overview
+      description: Wants to understand what ODC AI models are, what tasks they
+        handle, and how they differ from AI agents, so they can choose when to
+        use an AI model in an app.
     - name: Function calling overview
       id: function-calling-overview
       description: Wants to understand what function calling is in AI Agent

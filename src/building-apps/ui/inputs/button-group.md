@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - add-radio-group-widget
+  - use-button-group-widget
 ---
 
 # Pick Only One Option in a Group of Choices

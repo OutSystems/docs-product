@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - apply
+topic:
+  - customize-error-pages
 ---
 
 # Customizing OutSystems Platform Pages for Unhandled Errors

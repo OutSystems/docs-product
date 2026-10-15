@@ -18,6 +18,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - css-best-practices
+  - javascript-best-practices
 ---
 
 # Avoid inline JavaScript or inline CSS style

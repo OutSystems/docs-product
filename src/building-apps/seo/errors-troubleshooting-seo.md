@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - troubleshoot-seo-friendly-urls
 ---
 
 # Errors and troubleshooting  

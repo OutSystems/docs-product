@@ -16,6 +16,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - add-resource-files
+  - display-resource-files
+  - download-resource-files
 ---
 
 # Use Resources

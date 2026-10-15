@@ -19,6 +19,8 @@ coverage-type:
   - understand
   - unblock
   - evaluate
+topic:
+  - optimize-image-size
 ---
 
 # Control image size

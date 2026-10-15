@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - update-list-items
 ---
 
 # Update List Items on a Screen

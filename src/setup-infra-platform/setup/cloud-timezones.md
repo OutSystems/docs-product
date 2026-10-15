@@ -1,5 +1,5 @@
 ---
-summary: OutSystems platform time zones use UTC, so you keep server, database, and display times consistent across O11 and ODC.
+summary: OutSystems 11 (O11) mandates UTC time zone settings across all servers, impacting application development.
 tags:
   - Data
   - Debugging
@@ -25,16 +25,12 @@ isautopublish: true
 
 # OutSystems Cloud and time zones
 
-The OutSystems platform requires the front-end servers and databases in an environment to use the same time, with only small offsets. For more details, refer to [Timezone considerations in the OutSystems platform](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Timezone_considerations_in_the_OutSystems_Platform).
+The OutSystems platform has a strong requirement regarding time settings for the involved parts (front-ends and databases): they all have to be in the same time, and with little offsets. This is explained in this [article](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Timezone_considerations_in_the_OutSystems_Platform).
 
-## OutSystems 11
+In the OutSystems Cloud all servers are set to work in the UTC time zone. This configuration cannot be changed.
 
-All servers in OutSystems Cloud are set to the UTC time zone. You cannot change this configuration.
+Applications that need to deal with time zone differences from UTC need to consider that from the early phases of development.
 
-Applications that must deal with time zone differences from UTC need to account for them from the early phases of development. You can use the Timezone forge component (unsupported) or other techniques to achieve the same result.
+Techniques for achieving the result can be found in components such as the (unsupported) [Timezone forge component](http://www.outsystems.com/forge/component/500/time-zone/).
 
-## OutSystems Developer Cloud
-
-OutSystems Developer Cloud (ODC) also uses UTC for date and time values. Date and time values are saved and retrieved in UTC, and ODC Studio shows UTC in the debugger.
-
-For self-hosted ODC environments, the database instance time zone must be set to UTC so that date and time handling stays consistent across all ODC components.
+Other techniques may be used to obtain the same effect.

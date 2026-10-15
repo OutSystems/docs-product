@@ -3016,6 +3016,12 @@ knowledge-needs:
         instead of the whole entity, and defining an output structure that
         matches the expected result set — so their SQL queries stay secure,
         performant, and maintainable.
+    - name: Record counting
+      id: record-counting
+      description: Wants to count records in aggregates and SQL queries
+        efficiently, including when to use an Aggregate's Count output, when
+        to use a dedicated count query for SQL, and when to use List.Empty
+        instead of Count = 0 to test for no results.
     - name: SQL node reference
       id: sql-node-reference
       description: Wants to identify the SQL node properties and runtime
@@ -7595,6 +7601,18 @@ knowledge-needs:
         Builder by setting up a form, defining workflow steps, publishing to test,
         and sharing it with end-users via IT, in OutSystems 11, so that they can
         turn a business process into a working app.
+    - name: WFB post-publish testing
+      id: wfb-post-publish-testing
+      description: Wants to test a published Workflow Builder app by opening it
+        in the browser, signing in with sample users, and reviewing the generated
+        requester and administrator screens in the development environment, so
+        that they can verify the workflow before handoff.
+    - name: WFB app management
+      id: wfb-app-management
+      description: Wants to manage a published Workflow Builder app from the My
+        Apps screen by checking its status, opening it in the browser, converting
+        it to Service Studio, or deleting it, so that they can handle the app
+        after publication.
     - name: WFB group naming
       id: wfb-group-naming
       description: Wants to understand how Workflow Builder automatically creates
@@ -7743,6 +7761,12 @@ knowledge-needs:
         and Module are correct and that the logged-in Workflow Builder user
         has download permission on those modules, in OutSystems 11, so that
         they can successfully publish the application.'
+    - name: WFB publish errors
+      id: wfb-publish-errors
+      description: Wants to troubleshoot Workflow Builder publish failures by
+        checking connectivity, app generation, publish permissions, missing
+        module, entity, or attribute references, and IIS configuration, so
+        the app publishes successfully.
     - name: WFB app templates
       id: wfb-app-templates
       description: Wants to choose a prebuilt app template that matches their business
@@ -7772,6 +7796,19 @@ knowledge-needs:
         completing the automatic Case Management framework installation, in
         OutSystems 11, so that they can then set up the governance model and
         end-user hierarchy for the workflow app.
+    - name: WFB governance setup
+      id: wfb-governance-setup
+      description: Wants to set up the users governance model in Workflow
+        Builder by creating the required teams, roles, and IT users in
+        LifeTime, entering the LifeTime environment address and service
+        account token, and saving the configuration, so that they can control
+        what users can do and which shared services or components they can use.
+    - name: WFB data privacy
+      id: wfb-data-privacy
+      description: 'Wants to understand what data Workflow Builder collects,
+        stores, and retains, how consent and erasure work, and how backup
+        and restore procedures affect that data, in OutSystems 11, so that
+        they can assess Workflow Builder''s privacy and retention behavior.'
     - name: WFB onboarding tour
       id: wfb-onboarding-tour
       description: Wants to revisit the onboarding carousel introducing Workflow

@@ -19,6 +19,8 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - apply
+topic:
+  - case-access-control
 ---
 
 # How to enable access control

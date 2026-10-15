@@ -22,6 +22,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - audit-trail-architecture
 ---
 
 # Audit Trail

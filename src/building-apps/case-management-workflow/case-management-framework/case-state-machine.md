@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - define-case-state-machine
 ---
 
 # Defining allowed case status transitions with a case state machine

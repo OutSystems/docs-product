@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - custom-app-architecture
 ---
 
 # How to Create Customized Versions of a Base Application

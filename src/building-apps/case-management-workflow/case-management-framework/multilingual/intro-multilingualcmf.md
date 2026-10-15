@@ -17,6 +17,9 @@ outsystems-tools:
 coverage-type:
   - apply
   - remember
+topic:
+  - adapt-cmf-bootstrap
+  - translate-cmf-entities
 ---
 
 # Introduction to multilingual Case Management framework

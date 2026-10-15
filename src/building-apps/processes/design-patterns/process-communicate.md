@@ -9,6 +9,9 @@ tags:
   - Asynchronous Processes
   - Business Processes
   - Entities
+  - Events
+  - Programming Model
+  - Triggers
   - Workflows
 audience:
   - Developer

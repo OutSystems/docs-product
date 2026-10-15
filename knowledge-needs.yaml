@@ -5493,6 +5493,12 @@ knowledge-needs:
         configure case definitions, statuses, state machines, calendars,
         delegations, templates, resources, rules, and related case data in
         OutSystems 11, so they can call the right member.
+    - name: Case services API
+      id: case-services-api
+      description: Wants to look up the Case Services API reference, including
+        its actions, service actions, and structures, when they need to
+        manage cases, activities, and related case data in OutSystems 11, so
+        they can call the right member.
     - name: CMf app examples
       id: cmf-app-examples
       description: Wants to understand the Simple, Medium, and Complex

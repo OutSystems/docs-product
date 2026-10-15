@@ -1111,6 +1111,11 @@ knowledge-needs:
       description: Wants to apply architecture best practices when structuring an
         OutSystems app, so that its components remain maintainable as the app
         grows.
+    - name: Custom app architecture
+      id: custom-app-architecture
+      description: Wants to design a base application architecture that supports
+        per-installation customizations without rebuilding the product and
+        still allows safe upgrades without breaking existing customizations.
     - name: Teamwork
       id: application-teamwork-practices
       description: Wants to coordinate application development with their team
@@ -2104,6 +2109,12 @@ knowledge-needs:
         Framework in OutSystems 11, including what it restricts, how the default-deny
         behavior works when enabled, and what read and write permissions mean, so
         that they can decide whether and how to apply it to their case app.
+    - name: Case access control
+      id: case-access-control
+      description: Wants to enable access control for a case definition in OutSystems
+        11 by setting HasAccessControl to True in the Bootstrap_CaseConfiguration
+        action, so that the case definition uses access control after the module
+        is published.
     - name: Grant case definition access
       id: grant-case-definition-access
       description: Wants to grant or revoke access to a case definition for a user
@@ -7292,6 +7303,12 @@ knowledge-needs:
         Flow editor after creating a process, selecting tools from the Process
         Flow Toolbox to be executed in the flow, so that the process's logic is
         defined.
+    - name: Process tools overview
+      id: process-tools-overview
+      description: Wants to understand the Service Studio process tools
+        available in the Process Flow Toolbox and what each one does, so they
+        can choose the right tool when designing a BPT process flow in
+        OutSystems 11.
     - name: Split process flow
       id: split-process-flow
       description: Wants to split a BPT process flow into smaller subprocesses
@@ -19637,6 +19654,12 @@ knowledge-needs:
     - name: Stream audit logs
       id: stream-audit-logs
       description: Wants to stream audit logs to an external destination so they can centralize audit data for compliance or troubleshooting.
+  - name: Audit trail architecture
+    id: audit-trail-architecture
+    description: Wants to understand what an audit trail is in OutSystems,
+      how business audit differs from platform audit, and how built-in,
+      centralized, or external audit logging patterns work, so that they can
+      choose the right audit design for an application.
 - name: Create audit log records
   id: create-audit-log-records
   description: Wants to create a secure audit log record when code needs to write to the

@@ -18,6 +18,10 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - update-cm-dependency
+  - wfb-prerequisites
+  - wfb-publish-errors
 ---
 
 # Troubleshooting Workflow Builder

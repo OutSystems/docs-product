@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - compare-app-revisions
+  - resolve-merge-conflicts
 ---
 
 # The merge feature and team collaboration

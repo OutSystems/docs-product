@@ -22,6 +22,10 @@ outsystems-tools:
 coverage-type:
   - unblock
   - understand
+topic:
+  - wfb-data-privacy
+  - wfb-governance-setup
+  - wfb-prerequisites
 ---
 
 # Workflow Builder FAQs

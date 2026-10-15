@@ -22,7 +22,9 @@ coverage-type:
   - remember
   - understand
 topic:
-  - download-and-set-up
+  - builder-connectivity
+  - environment-network-requirements-o11
+  - platform-service-connectivity
 isautopublish: true
 ---
 

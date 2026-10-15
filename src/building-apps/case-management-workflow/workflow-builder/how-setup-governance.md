@@ -18,6 +18,8 @@ outsystems-tools:
   - workflow builder
 coverage-type:
   - apply
+topic:
+  - wfb-governance-setup
 ---
 
 # How to set up the users governance model

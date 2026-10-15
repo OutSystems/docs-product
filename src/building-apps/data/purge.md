@@ -23,6 +23,10 @@ coverage-type:
   - evaluate
   - understand
   - apply
+topic:
+  - manage-large-data-volumes
+  - purge-safeguards
+  - timer-best-practices
 ---
 
 # Data Purging

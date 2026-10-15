@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - record-counting
 ---
 
 # Appropriate record counting

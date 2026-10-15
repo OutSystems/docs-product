@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - client-variables
 ---
 
 # Share a Client Variable between apps

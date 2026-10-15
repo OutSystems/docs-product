@@ -17,6 +17,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - wfb-app-management
+  - wfb-post-publish-testing
 ---
 
 # Publishing and testing your app

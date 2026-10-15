@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - ajax-refresh-reference
 ---
 
 # Use Ajax to Refresh Part of a Screen

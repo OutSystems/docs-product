@@ -16,6 +16,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - unblock
+topic:
+  - wfb-prerequisites
+  - wfb-publish-errors
 ---
 
 # Workflow Builder error reference

@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - session-variables
 ---
 
 # Avoid large session variables

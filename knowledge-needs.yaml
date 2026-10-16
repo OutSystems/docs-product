@@ -11562,6 +11562,26 @@ knowledge-needs:
       description: Wants to understand what a deployment plan contains and where
         to create one in LifeTime, so that they can start a deployment from the
         Deployment Plans screen.
+    - name: Create deployment plan
+      id: create-deployment-plan
+      description: Wants to create a deployment plan in LifeTime, so that they
+        can prepare an application deployment.
+    - name: Validate deployment plan
+      id: validate-deployment-plan
+      description: Wants to validate a LifeTime deployment plan before
+        deployment, so that they can identify and resolve issues with the plan.
+    - name: Annotate deployment plan
+      id: annotate-deployment-plan
+      description: Wants to add notes to a LifeTime deployment plan, so that
+        collaborators can understand its context.
+    - name: Edit deployment plan
+      id: edit-deployment-plan
+      description: Wants to edit a LifeTime deployment plan before deployment,
+        so that they can adjust it as needed.
+    - name: Discard deployment plan
+      id: discard-deployment-plan
+      description: Wants to discard a LifeTime deployment plan that is no
+        longer needed, so that it is not used for deployment.
     - name: Deploy applications
       id: deploy-applications
       description: Wants to deploy tagged application versions in LifeTime by
@@ -18663,6 +18683,12 @@ knowledge-needs:
       description: Wants to use a 3 amigos discussion to agree on what tasks
         to automate when planning test automation with a team, so that the
         team aligns on automation scope before implementation.
+    - name: Plan automation scope
+      id: plan-automation-scope
+      description: Wants to decide what to automate in a test automation
+        strategy by using the Test Suite canvas, a 3 amigos discussion, and a
+        decision matrix, so the team agrees on what belongs in automation
+        before implementation.
     - name: Infra integration testing
       id: infra-integration-testing
       description: Wants to automate integration tests for non-API dependencies,
@@ -19352,6 +19378,11 @@ knowledge-needs:
         OutSystems 11 and select one via the Configure Authentication dropdown
         in the Users application, so that they can choose and set up the
         appropriate identity source for their end users.
+    - name: Internal auth storage
+      id: internal-auth-storage
+      description: Wants to know where Internal authentication stores end-user usernames
+        and cryptographic hashes in the OutSystems database, so they understand what
+        data OutSystems keeps when users sign in with Internal authentication.
     - name: End-user login flow
       id: end-user-login-flow
       description: Wants to understand how OutSystems 11 handles end-user
@@ -19532,6 +19563,11 @@ knowledge-needs:
       description: Wants to know that the Users component includes a
         web-based console at https://your-server/Users, so they can open
         the correct interface for authentication management.
+    - name: Users sign-in provider
+      id: users-sign-in-provider
+      description: Wants to identify the Users component as the built-in
+        sign-in and authentication provider for OutSystems 11 apps, so
+        they know which platform component handles app access.
     - name: Register user actions
       id: register-user-system-actions-odc
       description: Wants to register a new end user in ODC's built-in

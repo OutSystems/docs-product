@@ -619,6 +619,11 @@ knowledge-needs:
         elements to Public and publishing the module, then reuse those exposed
         elements in a consumer module through Manage Dependencies, so that one
         module can call functionality defined in another module.
+    - name: Refresh module references
+      id: refresh-module-references
+      description: Wants to refresh and apply changes in Manage Dependencies
+        after a producer module changes, so that the consumer module updates
+        its references to the latest exposed elements.
     - name: Find element usage
       id: find-element-usage
       description: Wants to identify which module a reused element belongs to and
@@ -759,6 +764,11 @@ knowledge-needs:
         their order, including On Initialize, On Ready, On Render, On Destroy,
         and On After Fetch, so they know when each event runs while a screen
         loads and re-renders.
+    - name: Initialize event use case
+      id: initialize-event-use-case
+      description: Wants to set a screen local variable's default value in the
+        Initialize event so the screen starts with the right initial state
+        before rendering.
     - name: Block lifecycle events
       id: block-lifecycle-events
       description: Wants to understand block lifecycle events and their order,
@@ -18648,6 +18658,11 @@ knowledge-needs:
         efficiency, and history when deciding what to automate, so that they
         automate the most valuable scenarios instead of aiming for full
         coverage.
+    - name: Three amigos discussion
+      id: three-amigos-discussion
+      description: Wants to use a 3 amigos discussion to agree on what tasks
+        to automate when planning test automation with a team, so that the
+        team aligns on automation scope before implementation.
     - name: Infra integration testing
       id: infra-integration-testing
       description: Wants to automate integration tests for non-API dependencies,
@@ -20198,6 +20213,11 @@ knowledge-needs:
       description: Wants to identify the outputs of the project initiation phase
         in OutSystems agile methodology, so they can tell which deliverables
         belong in initiation and which belong in later iterations.
+    - name: Epic estimation
+      id: epic-estimation
+      description: Wants to identify that epic estimation belongs in project
+        initiation, so they can place estimation work in the right phase of the
+        OutSystems project timebox.
     - name: Gather requirements
       id: gather-requirements
       description: Wants to gather customer requirements and user roles during
@@ -20219,6 +20239,13 @@ knowledge-needs:
       description: Wants to validate a solution during the release phase by running
         business testing, load and stress tests, stabilization activities, and user
         acceptance testing, so that they can confirm it is ready to go live.
+    - name: Post-production phase
+      id: post-production-phase
+      description: Wants to understand the post-production phase after go-live,
+        including monitoring the live app with the business, tuning based on
+        production evidence, handling hotfixes and minor change requests,
+        reviewing retrospectives, and closing the project, so that they can
+        support the solution after release and wrap up the project.
   - name: Iteration structure
     id: iteration-structure
     description: Wants to understand how a single iteration is organized in the
@@ -23273,6 +23300,12 @@ knowledge-needs:
         grouped and what each category is used to monitor, so that they can
         interpret the overall metrics overview and choose the right metric
         family for a delivery problem.
+    - name: Estimation metrics
+      id: estimation-metrics
+      description: Wants to understand what the Estimation metrics measure and
+        how they differ from Scope, Productivity, and Lead Time metrics, so
+        they can interpret project risk mitigation and iteration planning
+        predictability correctly.
     - name: Project metrics tooling
       id: project-metrics-tooling
       description: Wants to understand how to collect, analyze, and visualize

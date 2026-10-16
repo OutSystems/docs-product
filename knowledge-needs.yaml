@@ -352,6 +352,11 @@ knowledge-needs:
         provider events using JavaScript and the OutSystems UI API (e.g., SetProviderEvent),
         in Service Studio, so that custom logic runs when a component fires events
         like open or close.
+    - name: Widget event handlers
+      id: handle-widget-events
+      description: Wants to recognize common widget DOM events in OutSystems and
+        assign or clear a screen action on a widget event, so they can run logic
+        when the event fires and remove the handler when it is no longer needed.
     - name: Call block action
       id: call-block-action
       description: Wants to expose a block action on the block DOM element and call
@@ -1392,6 +1397,17 @@ knowledge-needs:
         Studio for O11 Traditional Web Apps, including binding data to the
         placeholder and configuring the row behavior so the table header stays
         fixed while rows either scroll or expand.
+    - name: Sidebar pattern setup
+      id: sidebar-pattern-setup
+      description: Wants to add and configure the Sidebar UI Pattern in Service Studio
+        for Mobile Apps and Reactive Web Apps, including placing the widget, setting
+        the StartsOpen and optional properties, and wiring a button to open and close
+        the sidebar, so they can display extra content in the screen margin.
+    - name: Sidebar widget reference
+      id: sidebar-widget-reference
+      description: Wants to look up the Sidebar widget properties and events in Service
+        Studio for O11, so they can configure the pattern and understand its runtime
+        behavior.
     - name: Optimize mobile list data loading
       id: optimize-mobile-list-data-loading
       description: Wants to tune how a mobile app list fetches records on demand,
@@ -5263,6 +5279,18 @@ knowledge-needs:
         tools, and following rules like trusting no one, least privilege,
         and secure coding practices, so that applications are designed
         securely from the start.
+    - name: Insecure design basics
+      id: insecure-design-basics
+      description: Wants to recognize insecure design by identifying missing or
+        ineffective security controls in an application's architecture and
+        distinguishing it from insecure implementation, so they can understand
+        the risk in the design itself.
+    - name: NIST security principles
+      id: nist-security-principles
+      description: Wants to understand the NIST taxonomy of security design
+        principles by grouping the architectural and trustable principles and
+        using them to evaluate secure application design, so they can apply the
+        best practices in the lifecycle.
     - name: Authentication risks
       id: authentication-risks
       description: Wants to identify the primary risk of authentication
@@ -9235,11 +9263,11 @@ knowledge-needs:
         mobile apps and reactive web apps (O11).
     - name: Use Card Sectioned
       id: use-card-sectioned
-      description: Wants to add the Card Sectioned UI Pattern to a Traditional
-        Web App screen, add the OutSystemsUI dependency if the widget does not
-        display in the Toolbox, drag it into Main Content, and populate its
-        placeholders, so that users can group short pieces of information into
-        a noticeable block on screen.
+      description: Wants to add the Card Sectioned UI Pattern to a screen, add
+        the OutSystemsUI dependency if the widget does not display in the
+        Toolbox, drag it into Main Content, and populate its placeholders, so
+        that users can group short pieces of information into a noticeable
+        card block on screen.
     - name: Card Sectioned settings
       id: card-sectioned-settings
       description: Wants to configure the Card Sectioned widget settings,
@@ -9252,6 +9280,11 @@ knowledge-needs:
         CSS selectors, and orientation-related behavior in a Traditional Web
         App, so they can understand how the pattern is structured and when
         the IsRight setting applies.
+    - name: Card Sectioned WCAG
+      id: card-sectioned-wcag
+      description: Wants to confirm the Card Sectioned UI Pattern still
+        meets WCAG 2.2 AA accessibility requirements after customization, so
+        that the implementation remains accessible.
     - name: Use Card Item pattern
       id: use-card-item-pattern
       description: Wants to add the Card Item UI Pattern to a screen, add
@@ -10186,6 +10219,10 @@ knowledge-needs:
         does, which app types support it, and how it supports single or
         multiple locations, customization, location search, and route
         planning, when they need to build a map-enabled screen.
+    - name: Map properties reference
+      id: map-properties-reference
+      description: Wants to look up the Map component properties in Service
+        Studio, so they can configure a map in a mobile or reactive web app.
     - name: Static maps usage
       id: static-map-usage
       description: Wants to use a static map to show a simple,
@@ -10201,6 +10238,12 @@ knowledge-needs:
         in Service Studio, so that end users can drop a marker at the
         location they click on the map, in mobile apps and reactive web
         apps (O11).
+    - name: Drag marker coordinates
+      id: drag-marker-coordinates
+      description: Wants to let users drag a map marker, capture the updated
+        coordinates on DragEnd, and display the latitude and longitude in
+        Mobile Apps and Reactive Web Apps (O11), so they can keep the map’s
+        location in sync after the marker is dragged.
     - name: Populate map markers
       id: populate-map-markers
       description: Wants to populate Leaflet map markers from a list widget
@@ -11128,6 +11171,12 @@ knowledge-needs:
         Service Center's Versions tab or query via the Espace_CommitMessage
         entity, so that they can share app changes and track what was
         published, in OutSystems 11.
+    - name: Module publish flow
+      id: module-publish-flow
+      description: Wants to understand what happens when they publish a
+        module in Service Studio, including compiling it into HTML, CSS,
+        and JavaScript before browser testing, so that they know what the
+        publish action produces.
     - name: Create solution in SC
       id: create-a-solution-in-sc
       description: Wants to create a Service Center solution as an All

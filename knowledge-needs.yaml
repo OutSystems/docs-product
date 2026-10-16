@@ -6807,12 +6807,12 @@ knowledge-needs:
       description: Wants to configure the `Timeout in Minutes` property for an
         OutSystems 11 Timer in Service Studio, so that the platform allows the timer
         execution to run for an appropriate amount of time before aborting it.
-    - name: Monitor timer logs
-      id: monitor-timer-logs
-      description: Wants to monitor timer execution by viewing timer logs in the ODC
-        Portal, so that they can check whether a timer is running, review its last
-        execution time and duration, and investigate errors using log details and
-        related activities.
+    - name: Monitor timer execution
+      id: monitor-timer-execution
+      description: Wants to monitor timer execution by reviewing past executions and
+        scheduled run details, checking execution time and duration, and investigating
+        errors through log details and related activities, so they can verify what ran
+        and troubleshoot timer issues.
     - name: Holiday cache sync
       id: holiday-cache-sync
       description: Wants to use a timer to fetch public holiday data from a REST library
@@ -7432,6 +7432,13 @@ knowledge-needs:
       description: Wants to split a BPT process flow into smaller subprocesses
         and execute them from the main flow when too many activities make
         deployment and upgrades slower, so that deployment impact stays lower.
+    - name: Process upgrade overview
+      id: process-upgrade-overview
+      description: Wants to understand how OutSystems automatically upgrades
+        active process instances when you publish a modified process flow, how
+        impact analysis decides whether instances are upgraded or suspended,
+        and how to run the analysis in effective or preview mode in Service
+        Center.
     - name: Process upgrade impact
       id: process-upgrade-activity-impact
       description: Wants to understand how moving activities in a process flow
@@ -7453,6 +7460,13 @@ knowledge-needs:
         suspension and checking active instances via BAM, Service Center, or
         the platform database, so that they can safely remove deprecated
         activities without suspending running processes.
+    - name: Process parameter impact
+      id: process-parameter-impact
+      description: Wants to understand how changing a process activity's
+        output parameters or a process's input/output parameters affects
+        executing process instances after publishing in OutSystems 11, so
+        they know when instances suspend and when type-only changes keep
+        them running.
     - name: Automatic activity overview
       id: automatic-activity-overview
       description: Wants to understand what an Automatic Activity is in
@@ -7481,6 +7495,21 @@ knowledge-needs:
         a mirrored set of meta-model entities and using Process_Delete or
         Process_BulkDelete from the BPT_API extension, in OutSystems 11, so
         that BPT queries stay performant as Process volume grows.
+    - name: Avoid BPT ID limit
+      id: avoid-bpt-id-limit
+      description: Wants to avoid the integer limit in BPT table ID columns by
+        reseeding or restarting table values and using negative values when BPT
+        process data grows, so inserts keep succeeding.
+    - name: Reseed BPT tables in SQL Server
+      id: reseed-bpt-tables-sql-server
+      description: Wants to reseed BPT table identity values in SQL Server by
+        running DBCC CHECKIDENT and verifying the negative reseed for the
+        affected tables, so they can keep inserting rows after the ID limit.
+    - name: Restart BPT sequences in Oracle
+      id: restart-bpt-sequences-oracle
+      description: Wants to restart BPT table sequence values in Oracle by
+        running ALTER SEQUENCE with a negative MINVALUE and verifying NEXTVAL,
+        so they can keep inserting rows after the ID limit.
     - name: Fix BPT activity timeout
       id: fix-bpt-activity-timeout
       description: Wants to resolve a BPT automatic activity hitting the 5-minute
@@ -10464,6 +10493,11 @@ knowledge-needs:
       description: Wants to customize the Layout Top Menu responsive behavior by
         setting device breakpoints and the content max-width, so screens use the
         built-in top menu layout on desktop, tablet, and mobile devices.
+    - name: Responsive device behavior
+      id: responsive-device-behavior
+      description: Wants to understand how OutSystems UI detects the device type and screen
+        size, adds responsive CSS classes, and applies breakpoint rules, so they can adapt
+        layouts and content for phones, tablets, and desktops.
   - name: UI performance best practices
     id: ui-performance-best-practices
     description: Wants to apply best practices for optimizing OutSystems 11
@@ -23635,6 +23669,12 @@ knowledge-needs:
       description: 'Wants to configure SEO-friendly URLs for Traditional Web
         apps in OutSystems 11 by setting up Page Rules and Module Aliases in
         Service Center, so that URLs are simplified for search engines.'
+    - name: Configure site rules
+      id: configure-site-rules
+      description: Wants to create and manage site rules in Service Center
+        by setting the Base URL and Root Application, so that SEO-friendly
+        URLs route to the correct app and the platform sets the app language
+        locale when one is defined.
     - name: Manage SEO redirect rules
       id: manage-seo-redirect-rules
       description: 'Wants to create, edit, and bulk-import Redirect Rules in

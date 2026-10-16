@@ -8226,6 +8226,12 @@ knowledge-needs:
         client actions or provider instance and JavaScript, so they can work
         with the latest patterns and know when deprecated patterns use
         AdvancedFormat instead.
+    - name: Provider client actions
+      id: provider-client-actions
+      description: Wants to use provider client actions to add or remove provider
+        events and set provider-specific configuration for OutSystems UI
+        Patterns that use external providers, so they can customize pattern
+        behavior beyond the default exposed inputs in Service Studio.
     - name: Pattern selector scope
       id: pattern-selector-scope
       description: Wants to scope CSS selectors to a specific pattern instance by
@@ -9723,6 +9729,14 @@ knowledge-needs:
         if the dependency isn't added, in Service Studio for OutSystems 11,
         so that they can capture high-precision mouse drag events, such as
         drag distance, in mobile apps and reactive web apps.
+    - name: Use Swipe Events pattern
+      id: use-swipe-events-pattern
+      description: Wants to add the Swipe Events UI Pattern to a screen and
+        configure its WidgetId property and SwipeLeft and SwipeRight handler
+        properties, including adding the widget via Toolbox or Search in
+        other modules if the dependency isn't added, in Service Studio for
+        OutSystems 11, so that they can run client actions from swipe
+        gestures in mobile apps and reactive web apps.
     - name: Mouse Events reference
       id: mouse-events-reference
       description: Wants to look up the properties of the Mouse Events UI
@@ -10219,6 +10233,13 @@ knowledge-needs:
         does, which app types support it, and how it supports single or
         multiple locations, customization, location search, and route
         planning, when they need to build a map-enabled screen.
+    - name: Use Map component
+      id: use-map-component
+      description: Wants to add the OutSystems Map component to a mobile
+        or reactive web app in Service Studio by dragging the widget onto
+        a screen, binding a list of locations, adding marker blocks, and
+        setting the API key and optional properties, so they can show an
+        interactive map with markers.
     - name: Map properties reference
       id: map-properties-reference
       description: Wants to look up the Map component properties in Service
@@ -11637,6 +11658,12 @@ knowledge-needs:
         selecting the applications in a deployment plan, validating the plan,
         and starting the deployment from one environment to another, so that
         the chosen versions move between environments.
+    - name: Configure deployment zone
+      id: configure-deployment-zone
+      description: Wants to choose a Deployment Zone for an application during
+        a LifeTime deployment when the target environment has multiple zones
+        and the application is being deployed there for the first time, so that
+        the app and its modules are deployed to the intended zone.
     - name: Set mobile package version
       id: set-mobile-package-version
       description: Wants to set the mobile package version during LifeTime
@@ -11742,6 +11769,9 @@ knowledge-needs:
     - name: App zone behavior
       id: app-zone-behavior
       description: Wants to understand how application-level deployment zones work in OutSystems 11 so that existing mixed-mode apps keep their module-level settings after upgrade, new apps use application-wide zone configuration only, and changing an application's zone removes module-level zone settings.
+    - name: Create deployment zone
+      id: create-deployment-zone
+      description: Wants to create a new deployment zone in Service Center by filling in the basic parameters, associating front-end servers or including all servers, and saving the zone, so that the platform can deploy applications to that zone.
     - name: Configure app zone
       id: configure-app-zone
       description: Wants to configure an OutSystems application to use a specific deployment zone in Service Center by selecting the zone in the application's Operation tab and saving the change, so that the platform deploys the app to the chosen zone.
@@ -11850,6 +11880,13 @@ knowledge-needs:
         process instances in Service Center, in an OutSystems 11
         infrastructure, so that they can identify and resolve the cause of
         the stuck synchronization.
+    - name: Repair broken references
+      id: repair-broken-references
+      description: Wants to repair a deployed application that has broken
+        references by opening the consumer module in Service Studio,
+        checking the missing or incompatible references, and deploying the
+        required producer version to the target environment so the app
+        runs without conflicts.
   - name: Troubleshoot self-managed publish errors
     id: troubleshoot-self-managed-publish-errors
     subtopics:
@@ -12489,6 +12526,12 @@ knowledge-needs:
       description: Wants to look up the Dependency Management API reference,
         including the base URL and available endpoints, so they can call it
         correctly when managing dependency relationships in ODC.
+    - name: Analyze deployment impact
+      id: analyze-deployment-impact
+      description: Wants to start a deployment impact analysis for an asset
+        revision and target stage by calling the Deployment Analyses
+        endpoint, poll until the process finishes, and read the report, so
+        they can assess deployment risk before deployment.
     - name: Environment Configurations API
       id: environment-configurations-api
       description: Wants to look up the Environment Configurations API reference,
@@ -19238,6 +19281,28 @@ knowledge-needs:
         provider to matching LifeTime users, either manually or by using
         the LifeTime Services API, so that each external user can
         authenticate to LifeTime with an existing OutSystems account.
+    - name: Configure AD FS IdP
+      id: configure-ad-fs-idp
+      description: Wants to configure Active Directory Federation Services as
+        an OpenID Connect identity provider for OutSystems 11 tools by
+        creating the server, native, and Web API applications, setting
+        redirect URIs, scopes, and claim rules, so that Service Center,
+        LifeTime, Service Studio, and Integration Studio can sign in through
+        AD FS.
+    - name: Configure Microsoft Entra IdP
+      id: configure-microsoft-entra-idp
+      description: Wants to configure Microsoft Entra as an OpenID Connect
+        identity provider for OutSystems 11 tools by registering the app,
+        setting redirect URIs, adding the client secret and Microsoft Graph
+        delegated permissions, and finishing the provider setup in LifeTime,
+        so that IT users sign in through Microsoft Entra.
+    - name: Configure OIDC IdP
+      id: configure-oidc-idp
+      description: Wants to configure a generic external identity provider for
+        OutSystems 11 using OIDC discovery, the required email, openid, and
+        profile scopes, the authorization and refresh tokens, the
+        preferred_username claim, and the Service Center and Development Tools
+        redirect URIs, so users can authenticate through the provider.
     - name: External IDPs - Auth0
       id: idp-auth0
       description: Wants to integrate Auth0 as an external identity provider with

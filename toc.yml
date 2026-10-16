@@ -49,7 +49,7 @@
         - href: app-architecture/domain-driven-design/domain-driven-design.md
         - href: app-architecture/domain-driven-design/domain-driven-design-os.md
     - href: app-architecture/customizable-web-product.md
-    # Building mobile apps with multiple independent teams
+    # Building mobile apps with several independent teams
     - href: app-architecture/build-mobile-app-teams/intro.md
     - topics:
         - href: app-architecture/build-mobile-app-teams/bp-architecture.md

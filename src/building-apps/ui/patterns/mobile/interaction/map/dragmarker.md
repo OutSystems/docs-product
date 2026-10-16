@@ -21,6 +21,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - drag-marker-coordinates
 ---
 
 # How to get draggable marker coordinates  

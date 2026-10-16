@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - group-inputs-with-forms
 ---
 
 # Use a Form to Group Input Widgets

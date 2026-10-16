@@ -9,6 +9,9 @@ tags:
 summary: Sidebar UI Pattern in OutSystems 11 (O11) lets you display extra content in the screen margin, with toggle control via SidebarOpen and SidebarClose client actions.
 locale: en-us
 guid: d948b2a9-574a-43a1-bf6a-9465bdc22dfe
+topic:
+  - sidebar-pattern-setup
+  - sidebar-widget-reference
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:73

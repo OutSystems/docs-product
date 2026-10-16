@@ -4312,6 +4312,11 @@ knowledge-needs:
         integration benefits of ODC Private Gateway, so they can explain why
         it is preferable to traditional VPN or public exposure for cloud apps
         that need private network access.
+    - name: Outbound-only access
+      id: outbound-only-access
+      description: Wants to understand that the Cloud Connector only needs
+        outbound access from the private network, avoiding inbound
+        connections, so that ODC apps can securely reach private endpoints.
     - name: Private gateway considerations
       id: private-gateway-considerations
       description: Wants to understand the SSL certificate requirement, add-on
@@ -7075,10 +7080,9 @@ knowledge-needs:
     - name: Show webservice errors
       id: show-webservice-errors
       description: Wants to handle the outcome of a webservice method call in the
-        application logic by checking the method's Result.Success output and
-        displaying the Result.ErrorMessage in a feedback message when it's false,
-        so that end users are informed when an operation like deleting a record
-        fails.
+        application logic by checking whether the call succeeded and displaying
+        the returned error message in a feedback message when it fails, so that
+        end users are informed when an operation like deleting a record fails.
     - name: Handle REST status codes
       id: handle-rest-status-codes
       description: Wants to handle the outcome of a consumed REST web service call
@@ -9399,21 +9403,13 @@ knowledge-needs:
         mobile apps and reactive web apps.
     - name: Use Floating Content
       id: use-floating-content
-      description: Wants to add the Floating Content UI Pattern to a screen and
-        configure its properties, including Position, UseFullHeight, UseFullWidth,
-        UseMargin, and ExtendedClass, in ODC Studio, so that content overlays on
-        top of other screen elements like a map, in mobile apps and reactive web
-        apps.
-    - name: Use Floating Content (O11)
-      id: use-floating-content-o11
-      description: Wants to add the Floating Content UI Pattern to a screen,
-        drag it into the Main Content area, add content to its placeholder,
-        and set the mandatory Position property (plus optional UseFullHeight,
-        UseFullWidth, UseMargin, and ExtendedClass properties), including
-        adding the widget via Toolbox or Search in other modules if the
-        dependency isn't added, in Service Studio for OutSystems 11, so that
-        content overlays on top of other screen elements like a map, in
-        mobile apps and reactive web apps.
+      description: Wants to add the Floating Content UI Pattern to a screen by
+        dragging it into the Main Content area, adding content to its placeholder,
+        and configuring its Position, UseFullHeight, UseFullWidth, UseMargin, and
+        ExtendedClass properties, including finding it in the Toolbox or Search
+        when its dependency isn't available in the module, so that content overlays
+        on top of other screen elements like a map, in mobile apps and reactive
+        web apps.
     - name: Floating Content reference
       id: floating-content-reference
       description: Wants to look up the properties of the Floating Content UI Pattern in
@@ -9457,15 +9453,9 @@ knowledge-needs:
     - name: Use Align Center pattern
       id: use-align-center-pattern
       description: Wants to add the Align Center UI Pattern to a screen and configure
-        its IsHorizontal and ExtendedClass properties, in ODC Studio, so that content
-        is centered horizontally or vertically on the screen, in mobile apps and
-        reactive web apps.
-    - name: Use Align Center pattern (O11)
-      id: use-align-center-pattern-o11
-      description: Wants to add the Align Center UI Pattern to a screen and configure
-        its IsHorizontal and ExtendedClass properties, in Service Studio for
-        OutSystems 11, so that content is centered horizontally or vertically on
-        the screen, in mobile apps and reactive web apps.
+        its IsHorizontal and ExtendedClass properties, so that content is centered
+        horizontally or vertically on the screen, in mobile apps and reactive web
+        apps.
     - name: Align Center reference
       id: align-center-reference
       description: Wants to look up the CSS selectors and classes for the Align
@@ -20159,6 +20149,12 @@ knowledge-needs:
     description: Wants to coordinate project communication so the team and
       stakeholders stay connected and aligned, communication channels are
       established, and bottlenecks are removed.
+  - name: Be the user
+    id: be-the-user
+    description: Wants to understand the Be the user core behavior in OutSystems
+      delivery, including putting themselves in the customer's shoes and checking
+      project decisions against business needs and end-user value, so that they
+      can keep each release aligned with the expected business outcome.
   - name: Map stakeholder roles
     id: map-stakeholder-roles
     description: Wants to identify stakeholders, map their roles and interests in

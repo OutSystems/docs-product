@@ -5272,6 +5272,12 @@ knowledge-needs:
         risks through built-in protection, guided development, and lifecycle
         integration, so that they can explain the platform's security
         approach and why it matters.
+    - name: Vulnerability management
+      id: vulnerability-management
+      description: Wants to understand vulnerability management as a repeatable
+        process by using STRIDE and DREAD to categorize threats and by
+        identifying, analyzing, mitigating, and managing risks continuously,
+        so they can handle security issues systematically.
     - name: Security by design
       id: security-by-design
       description: Wants to apply security by design principles by building
@@ -6283,6 +6289,30 @@ knowledge-needs:
         folder, updating consumer modules, and confirming irreversible
         application conversion, so they can refactor existing assets into
         Services safely.
+    - name: Extract reusable elements
+      id: extract-reusable-elements
+      description: Wants to extract reusable elements into a core service module
+        while keeping consumer modules and URLs working, so that reusable
+        logic is split out without breaking dependent apps.
+    - name: Prioritize refactor fixes
+      id: prioritize-refactor-fixes
+      description: Wants to prioritize refactoring violations by impact and by
+        the number of consumers when several violations exist in the same
+        category, so they can fix the highest-impact module first.
+    - name: Promote loose coupling
+      id: promote-loose-coupling
+      description: Wants to reduce coupling by avoiding screen destinations in
+        upward and side references and by adding a business logic module or
+        event-based alternative when related entities need coordinated
+        updates, so the application stays loosely coupled.
+    - name: Move elements between modules
+      id: move-elements-between-modules
+      description: Wants to move elements between modules without losing
+        configurations or data, so they can refactor module boundaries safely.
+    - name: Extract elements without impacting consumers
+      id: extract-elements-without-impacting-consumers
+      description: Wants to extract elements from a module without impacting
+        consumers, so they can refactor module boundaries safely.
   - name: Validating your application architecture
     id: validate-app-architecture
     subtopics:
@@ -6332,6 +6362,9 @@ knowledge-needs:
     - name: Canvas overview
       id: canvas-overview
       description: Wants to understand the Architecture Canvas framework in OutSystems, including its foundation, core, and end-user layers and its benefits for reusable services and lifecycle independence, so they can design application architecture with it.
+    - name: Layer reusability
+      id: layer-reusability
+      description: Wants to identify which Architecture Canvas layer has the highest reusability rate, so they can select the Foundation layer when comparing End-User, Core, and Foundation layers.
     - name: Foundation layer elements
       id: foundation-layer-elements
       description: Wants to identify which data, logic, and interface elements belong in Foundation layer modules, so they can place reusable integrations, exception handling, authentication, session logic, shared roles, and reusable UI patterns in the Foundation layer.
@@ -7115,6 +7148,9 @@ knowledge-needs:
     - name: Write SOAP data
       id: write-soap-data
       description: 'Wants to create and update contact records through a consumed SOAP web service by loading an existing contact with GetContact when the Email input parameter is set, calling CreateContact when it is empty, and saving the form data back to the external system, so that users can maintain contacts in the SOAP service.'
+    - name: Delete SOAP data
+      id: delete-soap-data
+      description: Wants to delete contact records through a consumed SOAP web service by adding a delete link on the Contacts screen, calling DeleteContact with the selected contact email, and showing a feedback message when the call fails, so that users can remove contacts from the external system.
     - name: Show webservice errors
       id: show-webservice-errors
       description: Wants to handle the outcome of a webservice method call in the

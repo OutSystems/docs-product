@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - swipe-events-reference
+  - use-swipe-events-pattern
 ---
 
 # Swipe Events

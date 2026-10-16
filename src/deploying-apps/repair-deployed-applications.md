@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - repair-broken-references
 ---
 
 # Repair Deployed Applications

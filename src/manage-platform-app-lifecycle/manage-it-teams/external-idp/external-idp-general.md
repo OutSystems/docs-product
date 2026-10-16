@@ -22,6 +22,8 @@ coverage-type:
   - understand
   - apply
 isautopublish: true
+topic:
+  - configure-oidc-idp
 ---
 
 # Generic external identity provider supporting OIDC

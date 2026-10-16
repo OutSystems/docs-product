@@ -18,6 +18,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - configure-oidc-idp
 isautopublish: true
 ---
 

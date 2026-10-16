@@ -6,6 +6,9 @@ tags:
   - UI
   - UI Patterns
   - Widgets
+topic:
+  - map-properties-reference
+  - use-map-component
 summary: "OutSystems 11 (O11) Map component setup: add an interactive map with Markers, configure a Google Maps API key, and customize properties in Service Studio."
 locale: en-us
 guid: 3193c9d8-9711-4d4c-bf24-839f22a8052f

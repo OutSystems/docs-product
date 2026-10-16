@@ -21,6 +21,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - configure-ad-fs-idp
 isautopublish: true
 ---
 

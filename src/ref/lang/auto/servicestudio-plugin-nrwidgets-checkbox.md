@@ -3,6 +3,8 @@ helpids: 30038
 summary: Learn about the Checkbox component in OutSystems 11 (O11), which allows users to toggle options and stores values in a Boolean variable.
 locale: en-us
 guid: 4d0eddfa-fe0b-4811-8493-51c59d434c3e
+topic:
+  - check-box-widget-reference
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

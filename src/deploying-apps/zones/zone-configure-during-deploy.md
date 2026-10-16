@@ -14,6 +14,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - configure-deployment-zone
 ---
 
 # Configure the Deployment Zone during the deployment

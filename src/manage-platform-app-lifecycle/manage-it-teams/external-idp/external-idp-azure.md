@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - configure-microsoft-entra-idp
 isautopublish: true
 ---
 

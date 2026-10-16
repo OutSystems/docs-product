@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - create-deployment-zone
 ---
 
 # Create a New Deployment Zone

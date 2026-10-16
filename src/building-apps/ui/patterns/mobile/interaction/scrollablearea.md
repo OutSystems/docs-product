@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-scrollable-area-pattern
 ---
 
 # Scrollable Area

@@ -18,6 +18,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - process-upgrade-overview
 ---
 
 # Upgrade processes

@@ -22,6 +22,8 @@ coverage-type:
   - understand
   - apply
   - evaluate
+topic:
+  - configure-site-rules
 ---
 
 # Site rules for SEO-friendly URLs

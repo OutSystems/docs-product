@@ -18,6 +18,10 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - apply
+topic:
+  - avoid-bpt-id-limit
+  - reseed-bpt-tables-sql-server
+  - restart-bpt-sequences-oracle
 ---
 
 # Avoid maximum ID limits in BPT tables

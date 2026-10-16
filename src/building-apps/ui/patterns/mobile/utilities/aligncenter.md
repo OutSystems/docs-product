@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - use-align-center-pattern-o11
+  - use-align-center-pattern
 ---
 
 # Align Center

@@ -20,6 +20,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - adaptive-ui-patterns
+  - responsive-device-behavior
+  - use-columns-pattern
 ---
 
 # Responsive UI

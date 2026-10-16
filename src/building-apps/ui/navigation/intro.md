@@ -15,5 +15,8 @@ audience:
   - Front-end developer
 outsystems-tools:
   - none
+topic:
+  - go-to-destination
+  - screen-inputs-and-variables
 ---
 # Navigation

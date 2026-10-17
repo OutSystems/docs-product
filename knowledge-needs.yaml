@@ -2400,6 +2400,13 @@ knowledge-needs:
          contrast requirements (4.5:1 for normal text, 3:1 for large text)
          without altering the app's color palette, in mobile apps and
          reactive web apps (O11).
+     - name: Accessible Button widget
+       id: accessible-button-widget
+       description: Wants to keep the Button widget WCAG 2.2 AA compliant by
+         enabling built-in compliance in Platform Server and updating theme
+         color variables and hover styles when the default palette creates
+         low-contrast button states, so button text stays readable across
+         interaction states in mobile apps and reactive web apps (O11).
      - name: Accessible Progress Circle pattern
        id: accessible-progress-circle-pattern
        description: Wants to make the Progress Circle UI Pattern accessible to
@@ -10088,6 +10095,12 @@ knowledge-needs:
         behavior configuration options, so that they can correctly configure a
         value-selection dropdown field bound to an Entity, Structure, or special
         values list in a Traditional Web App (O11).
+    - name: Dropdown widget reference
+      id: dropdown-widget-reference
+      description: Wants to look up the Dropdown widget's properties, events,
+        runtime properties, special attributes, and accessibility guidance in
+        Service Studio, so they can configure a dropdown with text-only or
+        custom content correctly in OutSystems 11.
     - name: List Box widget reference
       id: list-box-widget-reference
       description: Wants to look up the properties and runtime properties of the List Box
@@ -13732,6 +13745,12 @@ knowledge-needs:
       description: Wants to choose between the Reactive Web App and Traditional
         Web App chatbot components, so they can use the compatible version for
         their app type and account for the documented differences.
+    - name: Chatbot architecture
+      id: chatbot-architecture
+      description: Wants to understand the chatbot architecture in OutSystems
+        11, including Azure Bot Service, Bot Framework, the webhook logic,
+        and the OutSystems.AI Chatbot component, so they can see how messages
+        flow and which Azure resources the solution uses.
   - name: Azure AI resources
     id: azure-ai-resources
     description: Wants to know which Azure resources each OutSystems AI component
@@ -19360,6 +19379,17 @@ knowledge-needs:
         profile scopes, the authorization and refresh tokens, the
         preferred_username claim, and the Service Center and Development Tools
         redirect URIs, so users can authenticate through the provider.
+    - name: PingFederate LDAP store
+      id: pingfederate-ldap-store
+      description: Wants to configure an Active Directory user datastore and
+        password credential validator in PingFederate, so OutSystems can
+        authenticate users against LDAP.
+    - name: PingFederate OIDC clients
+      id: pingfederate-oidc-clients
+      description: Wants to create PingFederate OIDC clients with the web,
+        desktop, and mobile redirect URIs required by OutSystems 11, so users
+        can sign in through PingFederate from the supported tools and
+        environments.
     - name: External IDPs - Auth0
       id: idp-auth0
       description: Wants to integrate Auth0 as an external identity provider with

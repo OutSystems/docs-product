@@ -2503,6 +2503,14 @@ knowledge-needs:
          aria-controls, and the panel role between the trigger and panel in
          OnReady and cleaning up the observer in OnDestroy, so the widget
          meets WCAG 2.2 AA accessibility requirements in OutSystems 11.
+     - name: Accessible Popup widget
+       id: accessible-popup-widget
+       description: Wants to make the Popup widget accessible by enabling
+         WCAG 2.2 behavior for automatic dialog naming and Escape handling
+         when the configuration is enabled, or by adding a focus trap,
+         return-focus handling, and trigger ARIA attributes on earlier
+         Platform Server versions, so keyboard and screen reader users can
+         use the popup.
      - name: Accessible Tabs pattern
        id: accessible-tabs-pattern
        description: Wants to make the Tabs UI Pattern accessible to assistive
@@ -3566,6 +3574,9 @@ knowledge-needs:
     - name: Access external data
       id: access-external-data
       description: Wants to understand the main ways to get external data into an OutSystems 11 app, including external databases, systems of record, Excel imports, and custom integrations, so they can choose the right approach and use the data in the app.
+    - name: MongoDB collection formats
+      id: mongodb-collection-formats
+      description: Wants to work with MongoDB documents stored in Structure Format or JSON Format by adding, fetching, and listing records, and by serializing or deserializing JSON when the collection stores JSON documents, so they can use the right workflow for each collection format.
     - name: Create ODC external database connection
       id: create-odc-external-database-connection
       description: Wants to create a new external database connection in ODC
@@ -4430,6 +4441,9 @@ knowledge-needs:
         version, and network access, and register the development infrastructure
         in Integration Builder, so that IT users can start using Integration
         Builder.
+    - name: Disable MongoDB API
+      id: disable-mongodb-api
+      description: Wants to disable the Enable_MongoDB_IntegrationBuilder_API site property in all environments except development, so the Integration Manager MongoDB Plugin API is only available where connection setup needs it and production attack surface stays reduced.
     - name: Install dependencies
       id: install-dependencies
       description: Wants to install the apps Integration Builder requires after
@@ -6415,6 +6429,9 @@ knowledge-needs:
     - name: Architecture canvas example
       id: architecture-canvas-example
       description: Wants to apply the Architecture Canvas to a doctors appointments app, disclosing requirements, organizing concepts into layers, assembling modules, and producing the architecture blueprint and reference map, so they can follow the design process on a concrete example.
+    - name: Architecture design steps
+      id: architecture-design-steps
+      description: Wants to identify the three steps in the OutSystems 11 Architecture Design Process and recognize that Plan is not one of them, so they can answer quiz questions about the process correctly.
   - name: Domain-driven design
     id: domain-driven-design
     subtopics:
@@ -10153,6 +10170,11 @@ knowledge-needs:
         properties of the List widget in Service Studio, so they can
         configure a List widget correctly in mobile apps and reactive web
         apps.
+    - name: List performance
+      id: list-performance
+      description: Wants to configure List widget virtualization, viewport thresholds,
+        disable virtualization, and the scroll threshold so long lists render
+        efficiently and load more data while the user scrolls.
     - name: List item reference
       id: list-item-reference
       description: Wants to look up the List Item widget properties, events, runtime
@@ -13808,6 +13830,12 @@ knowledge-needs:
         and Azure by setting MicrosoftClientId and MicrosoftClientSecret, copying
         the Request URL, and updating the bot messaging endpoint, so that Azure
         sends chatbot messages to the module.
+    - name: Reply with cards
+      id: reply-with-cards
+      description: Wants to reply to chatbot users with Azure Bot Framework cards
+        by building Attachment data in GetMessageResponse and adding it to
+        ResponseMessage.Attachments, so the chatbot can send download,
+        thumbnail, and suggestion cards from the webhook module.
     - name: Chatbot block settings
       id: chatbot-block-settings
       description: Wants to identify the chatbot block properties and what each one
@@ -13838,6 +13866,21 @@ knowledge-needs:
       description: Wants to test a QnA Maker knowledge base in the portal,
         publish it, and create the Azure bot service after validation, so they
         can deploy the chatbot.
+    - name: Create QnA Maker service
+      id: create-qna-maker-service
+      description: Wants to create a QnA Maker service in Azure by completing
+        the portal form and deployment, so they can provision the FAQ chatbot
+        resources.
+    - name: Configure Direct Line channel
+      id: configure-direct-line-channel
+      description: Wants to add a Direct Line channel to an Azure bot service
+        and copy a secret key, so the OutSystems chatbot component can
+        communicate with the Azure bot backend.
+    - name: Create bot service
+      id: create-bot-service
+      description: Wants to create a bot service in Azure and retrieve the
+        MicrosoftAppId and MicrosoftAppPassword from its configuration after
+        deployment, so they can configure the OutSystems Chatbot component.
   - name: Azure AI resources
     id: azure-ai-resources
     description: Wants to know which Azure resources each OutSystems AI component

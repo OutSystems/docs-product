@@ -8216,6 +8216,11 @@ knowledge-needs:
         and usability across an organization's applications, so they can
         recognize the Style Guide's purpose within the OutSystems UI
         architecture.
+    - name: Portal style guide
+      id: portal-style-guide
+      description: Wants to identify the Portal Style Guide use case where the
+        menu and login are defined in the theme, so they can distinguish it
+        from the Independent Apps and Intranet use cases.
     - name: UI architecture overview
       id: ui-architecture-overview
       description: Wants to understand the components of the OutSystems UI
@@ -8355,6 +8360,16 @@ knowledge-needs:
       description: Wants to set a module's default theme, create a blank theme,
         or create a theme from a base theme in Service Studio, so they can
         control how the app's styling is applied.
+    - name: Clone style guide
+      id: clone-style-guide
+      description: Wants to choose when to clone a built-in Style Guide instead
+        of making minor theme customizations, so they can start from the
+        closest base when extensive changes are needed.
+    - name: Specialize style guide
+      id: specialize-style-guide
+      description: Wants to choose when to specialize a built-in Style Guide
+        instead of cloning it or building one from scratch, so they can make
+        minor changes while keeping the base theme relationship.
     - name: Combine CSS classes
       id: combine-css-classes
       description: Wants to assign multiple CSS classes to a single widget and
@@ -16037,6 +16052,12 @@ knowledge-needs:
         synchronization procedure, in OutSystems 11 mobile apps, so that they
         can build the client-side and server-side logic needed to keep local
         storage and server data consistent.
+    - name: Trigger offline sync
+      id: trigger-offline-sync
+      description: Wants to use the TriggerOfflineDataSync built-in action to
+        run offline data synchronization asynchronously in the background, so
+        that the app stays responsive while sync runs in an OutSystems 11
+        mobile app.
     - name: Avoid sync trigger loops
       id: avoid-onsync-loop
       description: Wants to avoid triggering multiple simultaneous

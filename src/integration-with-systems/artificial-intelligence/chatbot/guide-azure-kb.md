@@ -13,6 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - create-qna-knowledge-base
+  - prepare-qna-data
+  - publish-qna-bot
 ---
 
 # Create and deploy a knowledge base in Azure

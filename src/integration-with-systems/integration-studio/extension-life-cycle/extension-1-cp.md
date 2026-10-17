@@ -15,6 +15,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+topic:
+  - extension-life-cycle
 ---
 
 # 1-Click Publish the Extension

@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - upload-widget-reference
 isautopublish: true
 ---
 

@@ -22,6 +22,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-popover-widget
+  - popover-widget-reference
 isautopublish: true
 ---
 

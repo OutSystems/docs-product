@@ -16,6 +16,10 @@ audience:
 outsystems-tools:
   - integration builder
   - service studio
+topic:
+  - authorize-dataverse-ib
+  - connect-dataverse
+  - edit-dataverse-connection
 coverage-type:
   - unblock
   - understand

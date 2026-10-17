@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - apply
 isautopublish: true
+topic:
+  - configure-pingfederate-oidc
+  - pingfederate-ldap-store
+  - pingfederate-oidc-clients
 ---
 
 # Configuring PingFederate as an external identity provider

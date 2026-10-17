@@ -19,6 +19,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+topic:
+  - radio-group-widget-ref
 isautopublish: true
 ---
 

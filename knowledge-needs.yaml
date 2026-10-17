@@ -1471,6 +1471,12 @@ knowledge-needs:
       description: Wants to look up the properties of an SAP remote function
         imported in Service Studio, so they can configure the function
         correctly and understand what each property does.
+    - name: Stateful SAP calls
+      id: stateful-sap-calls
+      description: Wants to make multiple SAP remote function calls in the
+        same transaction by using an extension module with the SAP
+        Extensibility API, so they can begin and end a stateful SAP
+        context and commit or roll back the changes.
     - name: Configure SAP callback
       id: configure-sap-callback
       description: Wants to configure the SAP Callback action for SAP remote
@@ -3528,6 +3534,12 @@ knowledge-needs:
         existing employee record from request-body data, returns success or
         error output, and handles the case where the target employee email is
         missing from the database.
+    - name: PATCH REST data
+      id: patch-rest-data
+      description: Wants to expose a PATCH REST API method that partially
+        updates an existing record by distinguishing sent fields from
+        default values and converting boolean text input when needed, so
+        unchanged data stays intact.
     - name: Delete REST data
       id: delete-rest-data
       description: Wants to expose a DELETE REST API method that deletes an
@@ -7152,6 +7164,9 @@ knowledge-needs:
     - name: Refresh SOAP web service
       id: refresh-soap-web-service
       description: Wants to refresh a consumed SOAP web service in OutSystems 11 when the WSDL changes or the service URL becomes inaccessible, so that the integrity warning clears and the service compiles again.
+    - name: SOAP schema compliance
+      id: soap-schema-compliance
+      description: Wants to enable extra schema compliance validations for consumed SOAP web services and use the resulting exceptions and logs to troubleshoot non-compliant responses when the returned XML no longer matches the imported service definition.
     - name: Consumed SOAP elements
       id: consumed-soap-elements
       description: Wants to understand the elements of a consumed SOAP web service in OutSystems 11, so they can find the reference information for the service.
@@ -7198,6 +7213,12 @@ knowledge-needs:
       description: Wants to identify SOAP WSDL constructs and action names that
         Service Studio cannot import, so they know when a service needs WSDL
         changes before consumption.
+    - name: Export SOAP definitions
+      id: export-soap-definitions
+      description: Wants to export the definition files for a consumed SOAP web
+        service in Service Studio so they can examine the WSDL and XSD files
+        locally when the service is unavailable, and work with the exported
+        copy for further analysis.
     - name: Edit exported WSDL
       id: edit-exported-wsdl
       description: Wants to export SOAP definition files from Service Studio,
@@ -7265,6 +7286,9 @@ knowledge-needs:
     - name: Redact REST inputs
       id: redact-rest-input-logs
       description: Wants to hide sensitive input parameter values in consumed REST API logs by setting Log Redaction to Yes on the parameter, so values such as salary or health data do not appear in logs.
+    - name: Redact REST logs
+      id: redact-rest-logs
+      description: Wants to hide sensitive input and output parameter values in exposed REST API logs by setting Log Redaction to Yes on each parameter, so values such as passwords or access codes do not appear in logs.
     - name: Consume REST methods
       id: consume-rest-methods
       description: Wants to import REST API methods in Service Studio from an
@@ -10450,6 +10474,9 @@ knowledge-needs:
     - name: Form widget reference
       id: form-widget-reference
       description: Wants to look up the properties, events, runtime properties, and accessibility guidance of the Form widget in Service Studio, so they can configure a form that creates, shows, or edits a single record in OutSystems 11 apps.
+    - name: Flexible form layout
+      id: flexible-form-layout
+      description: Wants to understand that a Form widget layout accepts more than input and label widgets, so they can organize other widget types inside the form when building a screen.
     - name: Use input widgets
       id: use-input-widgets
       description: Wants to choose input widgets in a reactive web form based on the kind of value they collect, and bind each field to a screen variable, so the form collects, edits, and submits user data correctly.
@@ -22797,6 +22824,11 @@ knowledge-needs:
         and reviewing the General section for Abort Activity Change Exception
         records, so they can investigate application exceptions in OutSystems
         11.
+    - name: Identify Service Center
+      id: identify-service-center
+      description: Wants to identify Service Center as the web console for
+        checking log reports and environment health in OutSystems 11, so they
+        can use the correct console for monitoring tasks.
   - name: Extend monitoring tools
     id: extend-monitoring-tools
     description: Wants to understand how to extend OutSystems monitoring with

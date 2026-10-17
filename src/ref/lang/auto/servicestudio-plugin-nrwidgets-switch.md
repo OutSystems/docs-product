@@ -21,6 +21,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - set-aria-attributes
 isautopublish: true
 ---
 

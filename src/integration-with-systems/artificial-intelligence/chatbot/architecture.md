@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - chatbot-architecture
 ---
 
 # The chatbot architecture

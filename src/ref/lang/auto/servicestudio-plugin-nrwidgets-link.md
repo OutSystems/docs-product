@@ -3,6 +3,8 @@ helpids: 30041
 summary: Explore the properties, events, and runtime attributes of the Link widget in OutSystems 11 (O11) for enhanced web development.
 locale: en-us
 guid: 21c2bb40-056c-4805-a231-63e5c40492f8
+topic:
+  - link-widget-reference
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

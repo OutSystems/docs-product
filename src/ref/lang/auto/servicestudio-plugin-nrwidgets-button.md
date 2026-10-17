@@ -22,6 +22,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-button-widget
+  - button-widget-reference
 isautopublish: true
 ---
 

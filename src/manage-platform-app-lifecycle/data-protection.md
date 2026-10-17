@@ -20,6 +20,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - data-masking-techniques
+  - identify-sensitive-data
 ---
 
 # Lifecycle Management and Data Protection

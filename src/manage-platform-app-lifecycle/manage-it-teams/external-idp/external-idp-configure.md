@@ -17,6 +17,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - configure-oidc-idp
 ---
 
 # Configuring IT Users Authentication with External IdP via OpenId Connect

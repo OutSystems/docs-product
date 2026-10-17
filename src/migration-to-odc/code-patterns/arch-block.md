@@ -23,6 +23,8 @@ coverage-type:
   - understand
   - apply
   - unblock
+topic:
+  - blocks-across-apps-odc
 ---
 
 # Asset consuming an ODC application Block

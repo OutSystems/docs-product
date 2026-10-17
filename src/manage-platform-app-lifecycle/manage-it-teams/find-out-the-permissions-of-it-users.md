@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - it-user-permissions
 ---
 
 # Find Out the Permissions of IT Users

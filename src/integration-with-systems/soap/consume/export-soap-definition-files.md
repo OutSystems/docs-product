@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - export-soap-definitions
 ---
 
 # Export definition files in a SOAP web service

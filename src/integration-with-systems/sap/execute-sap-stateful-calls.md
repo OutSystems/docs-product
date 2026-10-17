@@ -15,6 +15,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - stateful-sap-calls
 ---
 
 # Execute SAP Stateful Calls

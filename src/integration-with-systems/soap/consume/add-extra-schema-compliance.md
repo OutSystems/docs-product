@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - soap-schema-compliance
 ---
 
 # Add extra schema compliance validations

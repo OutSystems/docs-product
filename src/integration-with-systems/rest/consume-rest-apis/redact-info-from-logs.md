@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - redact-rest-input-logs
 ---
 
 # Redacting information from REST API logs

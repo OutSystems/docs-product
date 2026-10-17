@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - exposed-rest-on-request
 isautopublish: true
 ---
 

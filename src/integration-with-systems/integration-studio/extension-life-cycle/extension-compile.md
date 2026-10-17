@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - compile-extension
 ---
 
 # Compile the Extension

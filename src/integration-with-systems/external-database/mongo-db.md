@@ -16,6 +16,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - disable-mongodb-api
+  - mongodb-collection-formats
+  - use-mongodb-integration
 ---
 
 # Using MongoDB integration

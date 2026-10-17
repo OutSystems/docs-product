@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - secure-rest-api
 isautopublish: true
 ---
 

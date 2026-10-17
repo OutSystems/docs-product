@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - expose-soap-web-service
 ---
 
 # Exposing SOAP Web Services

@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - consume-soap-web-service
 ---
 
 # Consume a SOAP Web Service

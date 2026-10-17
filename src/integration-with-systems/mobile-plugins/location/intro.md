@@ -14,6 +14,8 @@ platform-version: o11
 coverage-type:
   - remember
   - apply
+topic:
+  - location-plugin-reference
 audience:
   - Developer
   - Front-end developer

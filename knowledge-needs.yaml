@@ -2055,6 +2055,12 @@ knowledge-needs:
         Aggregate, including the Current and CurrentRowNumber iterator
         values, the Length and Empty properties, and the Count output, so
         they can use aggregate results correctly in screen logic.
+    - name: Aggregate function output
+      id: aggregate-function-output
+      description: Wants to understand that using Sum, Average, Min, Max, or
+        Count on an attribute changes an Aggregate's output to the computed
+        attribute only, so they know the other entity attributes are not
+        returned.
     - name: Hidden aggregate columns
       id: hidden-aggregate-columns
       description: Wants to understand that hiding columns in an Aggregate only
@@ -2427,6 +2433,15 @@ knowledge-needs:
          readers correctly announce list structure, meeting WCAG 2.2 AA
          accessibility requirements, for OutSystems UI versions earlier
          than 2.29.0, in mobile apps and reactive web apps (O11).
+     - name: Accessible List widget
+       id: accessible-list-widget
+       description: Wants to make the List widget accessible to assistive
+         technologies by relying on the built-in WCAG 2.2 status announcements
+         when the configuration is enabled, or by adding list and listitem
+         roles and keyboard activation for interactive items on earlier
+         Platform Server versions, so that the widget meets WCAG 2.2 AA
+         accessibility requirements in mobile apps and reactive web apps
+         (O11).
      - name: Accessible Blank Slate pattern
        id: accessible-blank-slate-pattern
        description: Wants to make the Blank Slate UI Pattern accessible to
@@ -2481,6 +2496,13 @@ knowledge-needs:
          so that the pattern meets WCAG 2.2 AA accessibility requirements,
          for OutSystems UI versions earlier than 2.29.0, in mobile apps and
          reactive web apps (O11).
+     - name: Accessible Popover widget
+       id: accessible-popover-widget
+       description: Wants to make the Popover widget accessible to
+         assistive technologies, by wiring aria-expanded, aria-haspopup,
+         aria-controls, and the panel role between the trigger and panel in
+         OnReady and cleaning up the observer in OnDestroy, so the widget
+         meets WCAG 2.2 AA accessibility requirements in OutSystems 11.
      - name: Accessible Tabs pattern
        id: accessible-tabs-pattern
        description: Wants to make the Tabs UI Pattern accessible to assistive
@@ -9158,6 +9180,17 @@ knowledge-needs:
         Validation Parent, and Value, so that they can correctly configure a group
         of mutually exclusive options bound to the same variable in a Traditional
         Web App (O11).
+    - name: Radio Button widget ref
+      id: radio-button-widget-ref
+      description: Wants to look up the Radio Button widget's properties, events,
+        runtime properties, and accessibility guidance in Service Studio, so they
+        can configure the widget correctly in mobile apps and reactive web apps.
+    - name: Radio Group widget ref
+      id: radio-group-widget-ref
+      description: Wants to look up the properties, events, runtime properties,
+        and accessibility guidance of the Radio Group widget in Service Studio,
+        so they can correctly configure a group of radio buttons bound to the
+        same variable in OutSystems 11.
     - name: Input Password widget reference
       id: input-password-widget-reference
       description: Wants to look up the properties and runtime properties of the
@@ -9170,6 +9203,13 @@ knowledge-needs:
         Input Widget in Service Studio, including Name, Variable, Mandatory,
         Max. Length, and Type, so that they can correctly configure a validated
         text input field in a Traditional Web App (O11).
+    - name: Upload widget reference
+      id: upload-widget-reference
+      description: Wants to look up the properties, events, runtime properties,
+        file size limit, drag-and-drop behavior, and accessibility guidance of
+        the Upload widget in Service Studio, so that they can correctly
+        configure file upload behavior in a Traditional Web App or Reactive
+        Web App (O11).
     - name: Label widget reference
       id: label-widget-reference
       description: Wants to look up the properties and runtime properties of the
@@ -10107,6 +10147,17 @@ knowledge-needs:
         widget in Service Studio, including its data binding, selection mode,
         selection attribute, and List runtime property, so that they can
         configure a Traditional Web App List Box widget correctly.
+    - name: List widget reference
+      id: list-widget-reference
+      description: Wants to look up the properties, attributes, events, and runtime
+        properties of the List widget in Service Studio, so they can
+        configure a List widget correctly in mobile apps and reactive web
+        apps.
+    - name: List item reference
+      id: list-item-reference
+      description: Wants to look up the List Item widget properties, events, runtime
+        properties, and accessibility behavior in Service Studio, so they can
+        configure the widget correctly in mobile apps and reactive web apps.
     - name: Read list box selection
       id: read-list-box-selection
       description: Wants to read the records selected in a List Box widget from the
@@ -10448,6 +10499,11 @@ knowledge-needs:
       description: Wants to understand what OutSystems widgets are, how they help
         design and organize screen content, and what common widget types do, so
         they can choose the right widget for a screen.
+    - name: Toolbox widgets
+      id: toolbox-widgets
+      description: Wants to identify that OutSystems UI and Rich Widgets are available in the
+        Service Studio toolbox when designing screens, so they can drag prebuilt widgets
+        into a screen.
     - name: Widget HTML output
       id: widget-html-output
       description: Wants to identify which HTML element built-in OutSystems widgets render as,
@@ -10534,6 +10590,16 @@ knowledge-needs:
       description: Wants to add the Popover Menu widget to a screen and use it
         to show context-sensitive overlay content, so users can see richer UI
         without leaving the page.
+    - name: Popover widget reference
+      id: popover-widget-reference
+      description: Wants to look up the Popover widget's properties, events,
+        runtime properties, and accessibility guidance in Service Studio, so
+        they can configure the widget correctly in OutSystems 11.
+    - name: Popup widget reference
+      id: popup-widget-reference
+      description: Wants to look up the Popup widget properties, events,
+        runtime properties, and accessibility guidance in Service Studio, so
+        they can configure the widget correctly in OutSystems 11.
     - name: Use widgets and patterns
       id: use-widgets-and-patterns
       description: Wants to build screens with OutSystems widgets and UI
@@ -10740,6 +10806,12 @@ knowledge-needs:
         of the Go To Destination node in Service Studio, so that they can
         navigate to a specific screen, in OutSystems 11 traditional web apps,
         mobile apps, and reactive web apps.
+    - name: Current screen reset
+      id: current-screen-reset
+      description: Wants to understand how a screen action behaves when it ends
+        with an End element versus a Destination to the current screen, so
+        they know that End preserves screen variable and widget values while
+        the destination resets them.
     - name: Set screen transition
       id: set-screen-transition
       description: Wants to configure the Transition property on a Go To
@@ -13751,6 +13823,21 @@ knowledge-needs:
         11, including Azure Bot Service, Bot Framework, the webhook logic,
         and the OutSystems.AI Chatbot component, so they can see how messages
         flow and which Azure resources the solution uses.
+    - name: Prepare QnA data
+      id: prepare-qna-data
+      description: Wants to format questions and answers in a spreadsheet with
+        Question and Answer columns, and export it as XLSX, so they can upload
+        it to Azure QnA Maker.
+    - name: Create QnA knowledge base
+      id: create-qna-knowledge-base
+      description: Wants to create and populate an Azure QnA Maker knowledge
+        base by naming the KB, connecting the QnA service, and uploading the
+        XLSX file, so they can build the chatbot knowledge source.
+    - name: Publish QnA bot
+      id: publish-qna-bot
+      description: Wants to test a QnA Maker knowledge base in the portal,
+        publish it, and create the Azure bot service after validation, so they
+        can deploy the chatbot.
   - name: Azure AI resources
     id: azure-ai-resources
     description: Wants to know which Azure resources each OutSystems AI component
@@ -19384,6 +19471,12 @@ knowledge-needs:
       description: Wants to configure an Active Directory user datastore and
         password credential validator in PingFederate, so OutSystems can
         authenticate users against LDAP.
+    - name: Configure PingFederate OIDC
+      id: configure-pingfederate-oidc
+      description: Wants to configure PingFederate as an external OIDC identity
+        provider for OutSystems 11 by setting authorization server settings,
+        scopes, access token management, IdP adapter mappings, and LifeTime
+        provider settings, so users can sign in through PingFederate.
     - name: PingFederate OIDC clients
       id: pingfederate-oidc-clients
       description: Wants to create PingFederate OIDC clients with the web,

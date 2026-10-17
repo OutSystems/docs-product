@@ -15,6 +15,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - configure-direct-line-channel
+  - create-bot-service
+  - create-qna-maker-service
 ---
 
 # Create the chatbot resources in Azure

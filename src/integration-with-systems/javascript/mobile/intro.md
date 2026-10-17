@@ -17,6 +17,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - call-client-actions-from-js
+  - javascript-flow-element
+  - use-outsystems-javascript-apis
 ---
 
 # Extend Your Mobile and Reactive Apps Using JavaScript

@@ -14,6 +14,10 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+topic:
+  - extension-life-cycle
+  - extension-source-files
+  - update-source-code
 ---
 
 # Code the Extension

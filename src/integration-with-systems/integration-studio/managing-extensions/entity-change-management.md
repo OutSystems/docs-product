@@ -16,6 +16,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+topic:
+  - refresh-entity-definition
 ---
 
 # Entities Change Management

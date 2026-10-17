@@ -16,6 +16,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - handle-takephoto-migration-errors
+  - migrate-camera-actions-blocks
+  - update-camera-error-codes
 isautopublish: true
 ---
 

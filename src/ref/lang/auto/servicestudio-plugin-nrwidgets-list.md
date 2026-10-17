@@ -23,6 +23,10 @@ coverage-type:
   - remember
   - understand
   - apply
+topic:
+  - accessible-list-widget
+  - list-performance
+  - list-widget-reference
 isautopublish: true
 ---
 

@@ -14,6 +14,8 @@ audience:
 outsystems-tools:
   - service studio
   - service center
+topic:
+  - define-extension-elements
 coverage-type:
   - apply
 ---

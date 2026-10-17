@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - reply-with-cards
 ---
 
 # Reply with cards

@@ -18,6 +18,10 @@ coverage-type:
   - remember
   - apply
   - understand
+topic:
+  - cloud-messaging-actions
+  - cloud-messaging-apis
+  - cloud-messaging-limitations
 ---
 
 # Firebase Cloud Messaging Plugin using configurator APIs

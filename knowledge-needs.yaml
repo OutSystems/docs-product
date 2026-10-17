@@ -3577,6 +3577,9 @@ knowledge-needs:
     - name: MongoDB collection formats
       id: mongodb-collection-formats
       description: Wants to work with MongoDB documents stored in Structure Format or JSON Format by adding, fetching, and listing records, and by serializing or deserializing JSON when the collection stores JSON documents, so they can use the right workflow for each collection format.
+    - name: Use MongoDB integration
+      id: use-mongodb-integration
+      description: Wants to use a published MongoDB integration in an OutSystems 11 app by referencing the integration, understanding the driver and service modules, and calling the service module actions to query, read, create, replace, count, and delete MongoDB documents, so they can interact with MongoDB data in the app.
     - name: Create ODC external database connection
       id: create-odc-external-database-connection
       description: Wants to create a new external database connection in ODC
@@ -3870,6 +3873,9 @@ knowledge-needs:
     - name: Extension life cycle
       id: extension-life-cycle
       description: Wants to create an extension in Integration Studio, define its actions, structures, entities, and resources, keep its source code synchronized, publish it, and then use it in a Service Studio module, so that they can follow the full extension life cycle from setup to consumption.
+    - name: Compile extension
+      id: compile-extension
+      description: 'Wants to compile an extension in Integration Studio so the .NET Compiler Tool builds the extension''s main DLL according to the options set in the Options window, even when the extension contains only entities.'
     - name: Integration Studio basics
       id: integration-studio-basics
       description: Wants to understand what Integration Studio is and when to use it to extend OutSystems with custom .NET actions or external database entities, so they can recognize the tool's main extension scenarios.
@@ -3945,6 +3951,12 @@ knowledge-needs:
         extension, action, structure, entity, and resource properties, so
         they can open the right property page for the element they are
         configuring.
+    - name: Entity attributes
+      id: entity-attributes
+      description: Wants to add, change, or delete an extension entity's
+        attributes in Integration Studio's Attributes Editor and define them to
+        match the database table they access, so the entity maps correctly to
+        the source database.
     - name: Action parameters
       id: action-parameters
       description: Wants to add, change, or delete action parameters in Integration
@@ -7250,6 +7262,9 @@ knowledge-needs:
       description: Wants to look up the properties of a consumed REST API method in
         Service Studio, including its configuration properties, so they can
         configure the method correctly.
+    - name: Redact REST inputs
+      id: redact-rest-input-logs
+      description: Wants to hide sensitive input parameter values in consumed REST API logs by setting Log Redaction to Yes on the parameter, so values such as salary or health data do not appear in logs.
     - name: Consume REST methods
       id: consume-rest-methods
       description: Wants to import REST API methods in Service Studio from an
@@ -14943,6 +14958,12 @@ knowledge-needs:
       description: Wants to look up the Camera plugin's API reference so that they
         can implement camera and gallery functionality in a mobile app using this
         legacy plugin.
+    - name: Location plugin reference
+      id: location-plugin-reference
+      description: Wants to look up the Location plugin actions (CheckLocationPlugin,
+        GetLocation, WatchPosition, ClearWatch), iOS privacy usage descriptions, and
+        MABS compatibility so they can configure permissions, get the device GPS
+        location, monitor updates, and handle errors in an O11 mobile app.
     - name: Control device keyboard
       id: control-device-keyboard
       description: Wants to show or hide the device's keyboard programmatically

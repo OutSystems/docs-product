@@ -639,6 +639,16 @@ knowledge-needs:
       description: Wants to identify which module a reused element belongs to and
         where that element is used in Service Studio, so they can trace
         dependencies and confirm reuse.
+    - name: Weak image dependency
+      id: weak-image-dependency
+      description: Wants to move an O11 module that contains an Image into a
+        dedicated app or library when converting to ODC, so the image
+        dependency becomes weak and ODC consumers can use it.
+    - name: Weak screen dependency
+      id: weak-screen-dependency
+      description: Wants to move an O11 module that contains a Screen into a
+        dedicated app when converting to ODC, so the screen dependency becomes
+        weak and ODC consumers can use it.
   - name: Library actions
     id: library-actions
     description: Wants to know which ODC library actions are available and what each
@@ -6397,6 +6407,12 @@ knowledge-needs:
       id: move-elements-between-modules
       description: Wants to move elements between modules without losing
         configurations or data, so they can refactor module boundaries safely.
+    - name: Move module to app
+      id: move-module-to-app
+      description: Wants to move an OutSystems 11 module that uses a Local
+        Storage Entity into its own app before converting to ODC, so each app
+        keeps its own Local Storage Entities and the conversion avoids
+        cross-app dependencies.
     - name: Extract elements without impacting consumers
       id: extract-elements-without-impacting-consumers
       description: Wants to extract elements from a module without impacting
@@ -7673,6 +7689,11 @@ knowledge-needs:
         parameters, local variables, invoked actions' and queries' output
         parameters), so that they can select the right variable in the
         Expression Editor or Select Variable window.
+    - name: Automatic activity limits
+      id: automatic-activity-limits
+      description: Wants to know whether a BPT process can include multiple
+        Automatic activities and what timeout each one has in OutSystems 11,
+        so they can plan the process design correctly.
     - name: Archive BPT processes
       id: archive-bpt-processes
       description: Wants to archive old closed BPT Process instances by creating
@@ -20900,6 +20921,20 @@ knowledge-needs:
         so the dependency becomes valid for ODC, either by moving the theme into
         the consumer asset or by sharing it from an ODC Library before code
         conversion.
+    - name: Asset consuming extension
+      id: asset-consuming-extension
+      description: Wants to refactor an O11 asset that consumes an extension so
+        the extension's external database connections and custom C# code are
+        replaced with ODC-supported external data sources or an ODC Library
+        before code conversion, so that the asset keeps working after migration
+        to ODC.
+    - name: Consume Forge component
+      id: arch-forge-component
+      description: Wants to refactor an O11 asset that consumes a Forge component so the
+        dependency stays valid for ODC, either by using the ODC version when the
+        component is available there or by cloning and remapping the component
+        before code conversion, so that the asset keeps working after migration to
+        ODC.
     - name: Client action dependency
       id: client-action-dependency
       description: Wants to refactor an O11 asset that depends on a Client Action
@@ -20912,6 +20947,16 @@ knowledge-needs:
         private by default in ODC, so the asset keeps working after code conversion
         by copying the Structure into the consumer or exposing it through a Service
         Action.
+    - name: Internal service action
+      id: internal-service-action
+      description: Wants to refactor an O11 asset that consumes its own service
+        action after code conversion, so the logic uses a server action instead and
+        the asset runs correctly in ODC.
+    - name: Unsupported BPT elements
+      id: unsupported-bpt-elements
+      description: Wants to identify the O11 Business Process Technology actions and
+        system entities that ODC conversion does not support, so they can avoid or
+        refactor those dependencies before converting an asset.
     - name: Traditional Web modules
       id: trad-web-modules-pattern
       description: Wants to convert Traditional Web modules to Service or Reactive
@@ -20996,6 +21041,13 @@ knowledge-needs:
         and validating Code, Data, and Infrastructure pattern findings by reviewing
         solutions and rerunning the assessment, so that they can plan the refactoring
         effort needed before converting O11 apps to ODC.
+    - name: Resolve unmapped dependency
+      id: resolve-unmapped-dependency
+      description: Wants to resolve a conversion assessment finding where an ODC
+        asset consumes an O11 dependency that is not mapped to any ODC asset by
+        checking whether the functionality already exists in ODC and then fixing
+        the finding in ODC or mapping the O11 producer app to an ODC asset, so
+        the converted app keeps working.
   - name: Preparation
     id: preparation
     subtopics:

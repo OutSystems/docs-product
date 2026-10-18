@@ -17,6 +17,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - configure-scheduler-tab
 isautopublish: true
 ---
 

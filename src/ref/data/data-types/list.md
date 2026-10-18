@@ -16,6 +16,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - list-data-type
+  - list-runtime-reference
+  - pass-lists-as-input-parameters
 ---
 
 # List

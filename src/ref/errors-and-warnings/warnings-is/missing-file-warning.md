@@ -14,6 +14,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - missing-file-warning
 ---
 
 # Missing File Warning

@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - configure-oracle-platform
 ---
 
 # Platform Tab in Oracle

@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-invalid-entity-identifier-data-type
+  - fix-invalid-entity-missing-attributes
 ---
 
 # Invalid Entity Error

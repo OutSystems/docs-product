@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - customize-rest-callbacks
 ---
 
 # Unused Callback Error

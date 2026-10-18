@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - runtime-type-mapping
 ---
 
 # Data Types at Runtime

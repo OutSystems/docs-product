@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - unsupported-soap-imports
 ---
 
 # Unsupported Consumed Web Service Error

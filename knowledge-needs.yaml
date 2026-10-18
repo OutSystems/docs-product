@@ -684,6 +684,12 @@ knowledge-needs:
     - name: Debug app logic
       id: debug-app-logic
       description: Wants to debug application logic in Service Studio by setting breakpoints, inspecting variable values, and following execution flow to find and fix errors.
+    - name: Troubleshooting, debugging, and monitoring
+      id: troubleshooting-debugging-monitoring
+      description: Wants to distinguish troubleshooting, debugging, and monitoring and understand how each supports investigating application issues in OutSystems, so they can pick the right approach before fixing a problem.
+    - name: Troubleshooting process
+      id: troubleshooting-process
+      description: Wants to follow a methodical troubleshooting and debugging process by isolating the problem, gathering evidence, comparing behavior before and after changes, and validating the fix, so they can resolve application issues effectively.
     - name: Errors and warnings
       id: errors-and-warnings
       description: Wants to understand how OutSystems issues errors and warnings during development, how those messages appear in the TrueChange tab, and how double-clicking an error line opens the source of the problem, so they can find and fix module issues.
@@ -1546,6 +1552,9 @@ knowledge-needs:
     - name: Data model stages
       id: data-model-stages
       description: Wants to understand how a data model progresses from conceptual to logical and physical stages, so they can design the right level of detail at each step.
+    - name: Concepts as entities
+      id: concepts-as-entities
+      description: Wants to model business concepts as entities when they need to be stored and accessed in an application, so they can represent each concept as a persistent data object.
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
@@ -1639,6 +1648,9 @@ knowledge-needs:
     - name: Static entity basics
       id: static-entity-basics
       description: Wants to understand what static entities are, how their default and custom attributes and records work, and how the Get action exposes fixed data, so they can model values that do not change at runtime.
+    - name: Static entity enumeration
+      id: static-entity-enumeration
+      description: Wants to identify enumeration as the programming concept represented by static entities in ODC, so they can answer quiz questions about static entities correctly.
     - name: Static entity data migration
       id: static-entity-data-migration
       description: Wants to understand the considerations for migrating Static
@@ -7556,6 +7568,9 @@ knowledge-needs:
     - name: Decision outcome
       id: decision-outcome
       description: Wants to understand what a Decision Outcome element does in an OutSystems 11 BPT decision flow, including how the Connector property routes execution and ends the flow, so they can configure the correct branch.
+    - name: Decision activity outcomes
+      id: decision-activity-outcomes
+      description: Wants to understand how many outcomes a Decision activity can have in an OutSystems 11 BPT process, so they can branch execution into the required number of paths when modeling the process.
     - name: Execute sub-process
       id: execute-sub-process
       description: Wants to execute a sub-process from a parent process by using the Execute
@@ -12927,6 +12942,12 @@ knowledge-needs:
       components make up the platform, and which core capabilities it
       provides, so they can get an overall introduction before diving into
       individual features.
+    subtopics:
+    - name: Mobile app capabilities
+      id: mobile-app-capabilities
+      description: Wants to identify which statements about OutSystems mobile
+        apps are true or false, so they can answer basic capability questions
+        in O11.
   - name: Java course overview
     id: java-course-overview
     description: Wants to understand the roadmap for the OutSystems for Java
@@ -20426,6 +20447,9 @@ knowledge-needs:
     - name: View audit logs
       id: view-audit-logs
       description: Wants to view, search, filter, and export audit logs in the ODC Portal so they can inspect recent platform activity and download CSV data.
+    - name: View LifeTime audit logs
+      id: view-lifetime-audit-logs
+      description: Wants to open user activity, change, and infrastructure audit logs in the LifeTime console so they can inspect IT user actions in OutSystems 11.
     - name: Stream audit logs
       id: stream-audit-logs
       description: Wants to stream audit logs to an external destination so they can centralize audit data for compliance or troubleshooting.
@@ -22978,6 +23002,12 @@ knowledge-needs:
         for an environment, regenerate mobile apps when needed, and restrict
         feedback submission to a specific user group, so that selected users
         can send feedback from the app.
+    - name: App feedback integration
+      id: app-feedback-integration
+      description: Wants to connect App Feedback to external tracking tools
+        by consuming its public actions or using community components such as
+        the Asana, Jira, or Zendesk solutions, so they can route user
+        feedback into an existing workflow.
   - name: Built-in monitoring tools
     id: built-in-monitoring-tools
     description: Wants to use OutSystems built-in monitoring tools, including
@@ -23165,6 +23195,18 @@ knowledge-needs:
         connected device, but always confirm the fix on a real device before
         considering it resolved, in OutSystems 11, so that they debug
         efficiently without missing device-only behavior differences.
+    - name: View local storage data
+      id: view-local-storage-data
+      description: Wants to view local entity data in Chrome DevTools while
+        troubleshooting a mobile app, by opening the app WebSQL storage and
+        selecting a local entity, so they can inspect local records in the
+        browser.
+    - name: Inspect JS architecture
+      id: inspect-js-architecture
+      description: Wants to inspect generated JavaScript files and flow-node
+        mappings for a mobile app while troubleshooting in Chrome DevTools,
+        so they can trace how client actions, screens, and flow nodes are
+        represented in the browser.
     - name: Debug producer modules
       id: debug-producer-modules
       description: Wants to debug a producer module's exposed logic from a

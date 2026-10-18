@@ -107,6 +107,22 @@ knowledge-needs:
       description: Wants to understand what an input parameter is and how to set
         and pass values to an element, such as a client action, so the value is
         available in that element's scope.
+    - name: Map list items
+      id: map-list-items
+      description: Wants to map items from one list into a new list in an action
+        flow, so they can transform collection data for reuse in OutSystems logic.
+    - name: Append list items
+      id: append-list-items
+      description: Wants to append an item to a list in an action flow, so they
+        can build a collection as they process data in OutSystems logic.
+    - name: Iterate list items
+      id: iterate-list-items
+      description: Wants to iterate through list items in an action flow, so they
+        can apply logic to each value in an OutSystems collection.
+    - name: Pass lists as input parameters
+      id: pass-lists-as-input-parameters
+      description: Wants to pass a list into an action's input parameter, so they
+        can provide collection data to reusable OutSystems logic.
     - name: Input parameter reference
       id: input-parameter-reference
       description: Wants to look up which elements can use input parameters and
@@ -1760,6 +1776,11 @@ knowledge-needs:
       description: Wants to look up how external system data types map to ODC SQL node and
         app data types, so they can choose the correct ODC type when integrating
         external data.
+    - name: Runtime type mapping
+      id: runtime-type-mapping
+      description: Wants to understand how OutSystems maps its data types to .NET data
+        types at runtime, so they can use the right .NET type when they work with
+        values in OutSystems 11.
     - name: List data type
       id: list-data-type
       description: Wants to understand that an OutSystems List stores elements of
@@ -3998,6 +4019,9 @@ knowledge-needs:
     - name: Compile extension
       id: compile-extension
       description: 'Wants to compile an extension in Integration Studio so the .NET Compiler Tool builds the extension''s main DLL according to the options set in the Options window, even when the extension contains only entities.'
+    - name: Fix compiler errors
+      id: fix-compiler-errors
+      description: Wants to resolve compiler errors that occur when an extension build fails in Integration Studio by launching the IDE independently, building the solution to see the exact errors, and fixing the source code issues, so they can complete the extension compile successfully.
     - name: Integration Studio basics
       id: integration-studio-basics
       description: Wants to understand what Integration Studio is and when to use it to extend OutSystems with custom .NET actions or external database entities, so they can recognize the tool's main extension scenarios.
@@ -21276,6 +21300,12 @@ knowledge-needs:
         SQL Server or Azure SQL by setting server, database, authentication,
         advanced connection settings, and administrator/runtime credentials, so
         the Platform Server uses the intended platform database.
+    - name: Configure platform tab
+      id: configure-platform-tab
+      description: Wants to configure the Platform tab in Configuration Tool by
+        setting the Database Provider and related database, user, and timeout
+        settings, so the Platform Server uses the intended database during
+        installation.
     - name: Configure session tab
       id: configure-session-tab
       description: Wants to configure the Session tab in Configuration Tool for
@@ -21316,6 +21346,14 @@ knowledge-needs:
         SQL Server or Azure SQL Database, including the server, database,
         runtime applications, log service port, and log cycle period, so
         that logging uses the intended database connection.
+    - name: Configure Oracle log tab
+      id: configure-oracle-log-tab
+      description: Wants to configure the Log tab in Configuration Tool for
+        Oracle, including the database provider settings, advanced
+        connection settings, administrator and runtime credentials, log
+        service port, log cycle period, and Create/Upgrade Database action,
+        so that logging uses the intended Oracle database and the required
+        log objects exist.
     - name: Configure network tab
       id: configure-network-tab
       description: Wants to configure the Network tab in the OutSystems 11
@@ -21329,6 +21367,12 @@ knowledge-needs:
         Tool by setting the deployment controller server host or IP address
         and the deployment service ports, so that front-end servers
         communicate with the deployment controller.
+    - name: Configure scheduler tab
+      id: configure-scheduler-tab
+      description: Wants to configure the Scheduler tab in Configuration Tool
+        by setting the maximum number of concurrent timers and the scheduler
+        service ports, so the Scheduler Service runs with the intended
+        concurrency and network settings.
     - name: Create log database
       id: create-log-database
       description: Wants to create or upgrade the logging database objects
@@ -21929,6 +21973,13 @@ knowledge-needs:
         definition (following ADO.NET syntax on .NET or JDBC syntax on Java),
         so that extensions can connect to external Oracle databases without
         needing a tnsnames.ora file.
+    - name: Configure Oracle platform
+      id: configure-oracle-platform
+      description: Wants to configure the Oracle Platform tab in the
+        Configuration Tool, including the database connection, advanced
+        connection settings, administrator and runtime credentials, and the
+        Create/Upgrade Database action, so that the Oracle-backed platform
+        database is ready to use.
     - name: Configure Oracle sorting
       id: configure-oracle-linguistic-sorting
       description: Wants to change the linguistic sorting (NLS_SORT) of an

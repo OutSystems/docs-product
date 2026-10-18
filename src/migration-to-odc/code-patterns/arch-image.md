@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - unblock
   - understand
+topic:
+  - weak-image-dependency
 ---
 
 # Asset consuming an Image from an Application

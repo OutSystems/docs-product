@@ -12,6 +12,8 @@ helpids: 30549
 coverage-type:
   - apply
   - unblock
+topic:
+  - trad-web-modules-pattern
 audience:
   - Front-end developer
   - Developer

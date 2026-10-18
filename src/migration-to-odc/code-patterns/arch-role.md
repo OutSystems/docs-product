@@ -2,6 +2,8 @@
 summary: "OutSystems Developer Cloud (ODC) supports public roles, eliminating code changes for the deprecated asset consuming a role pattern."
 locale: en-us
 guid: 4751d001-d519-4214-ae71-bec2e5b72f24
+topic:
+  - share-public-roles
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

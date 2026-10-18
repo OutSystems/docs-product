@@ -6,7 +6,8 @@ figma:
 coverage-type:
   - unblock
   - understand
-topic: 
+topic:
+  - unsupported-bpt-elements
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:

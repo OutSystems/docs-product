@@ -20,6 +20,8 @@ coverage-type:
   - understand
   - apply
   - unblock
+topic:
+  - refactor-portfolio-dependencies
 ---
 
 # Asset consuming an ODC application server action

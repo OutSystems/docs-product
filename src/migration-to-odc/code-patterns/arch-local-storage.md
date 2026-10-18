@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - unblock
   - understand
+topic:
+  - move-module-to-app
 ---
 
 # Asset consuming a Local Storage Entity

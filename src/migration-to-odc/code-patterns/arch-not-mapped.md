@@ -18,6 +18,8 @@ coverage-type:
   - understand
   - apply
   - unblock
+topic:
+  - resolve-unmapped-dependency
 ---
 
 # Asset consuming an O11 app that is not mapped to any ODC asset

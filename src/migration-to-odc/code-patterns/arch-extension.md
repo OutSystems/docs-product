@@ -21,6 +21,8 @@ outsystems-tools:
 coverage-type:
   - unblock
   - understand
+topic:
+  - asset-consuming-extension
 ---
 # Asset consuming an extension
 

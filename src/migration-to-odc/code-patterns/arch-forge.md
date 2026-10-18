@@ -6,7 +6,8 @@ figma:
 coverage-type:
   - apply
   - unblock
-topic: 
+topic:
+  - arch-forge-component
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:

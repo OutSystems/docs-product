@@ -20,6 +20,8 @@ outsystems-tools:
 coverage-type:
   - unblock
   - understand
+topic:
+  - weak-screen-dependency
 ---
 
 # Asset consuming a Screen in mobile app

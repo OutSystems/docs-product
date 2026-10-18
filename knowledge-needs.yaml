@@ -1274,6 +1274,11 @@ knowledge-needs:
         both start running when the screen initializes and render the screen
         automatically when data arrives, so that they can display the results on
         the screen.
+    - name: Manage screen data
+      id: manage-screen-data
+      description: Wants to fetch data for a screen with Screen Aggregates or Data
+        Actions and refresh the displayed data when the screen needs current
+        records, so the UI shows up-to-date information from the source.
     - name: Show fetched data
       id: show-fetched-data
       description: Wants to show data fetched from an Integration Builder data
@@ -19123,6 +19128,11 @@ knowledge-needs:
         configuring it, testing it, propagating the settings, and applying
         them across environments, so that IT users sign in through the
         selected provider.
+    - name: Local administrator setup
+      id: local-administrator-setup
+      description: Wants to add a local administrator in LifeTime before or
+        after activating an external IdP and clear built-in passwords so
+        there is a fallback login path if the provider fails.
     - name: Configure user provider
       id: configure-user-provider
       description: Wants to configure an application module's
@@ -20270,6 +20280,11 @@ knowledge-needs:
       id: assign-team-role
       description: Wants to assign roles within a LifeTime team, so that they can
         control team members' access across the applications included in the team.
+    - name: Control app creation
+      id: control-app-creation
+      description: Wants to configure LifeTime team roles so that architects can
+        create applications in their teams while junior developers cannot create
+        new applications, so they can control app creation by role.
     - name: Delegate team permissions
       id: delegate-team-permissions
       description: Wants to let a LifeTime team manager add users and assign roles
@@ -20868,6 +20883,12 @@ knowledge-needs:
       description: Wants to refactor an O11 asset that consumes an Application Theme
         so the dependency becomes valid for ODC, either by moving the theme into
         the consumer asset or by sharing it from an ODC Library before code
+        conversion.
+    - name: Client action dependency
+      id: client-action-dependency
+      description: Wants to refactor an O11 asset that depends on a Client Action
+        so the dependency is valid for ODC, either by moving the Client Action
+        into the consumer asset or by sharing it from an ODC Library before code
         conversion.
     - name: Private structure asset
       id: arch-private-structure
@@ -21790,6 +21811,12 @@ knowledge-needs:
         all environments and for managing deployment, IT users, and security,
         so that they can control the application lifecycle across their
         infrastructure.
+    - name: Manage environments
+      id: manage-lifetime-environments
+      description: Wants to manage OutSystems environments in LifeTime by adding or
+        removing environments, renaming environments, changing the order of
+        environments, and opening each environment's health, configuration,
+        security, and edit links, so they can maintain the infrastructure.
     - name: Daily sync schedule
       id: daily-sync-schedule
       description: Wants to change LifeTime's daily synchronization schedule so it
@@ -21797,6 +21824,12 @@ knowledge-needs:
         in LifeTime Settings for self-managed infrastructures or OutSystems
         Cloud, so that LifeTime and the environments stay in sync at the
         preferred time.
+    - name: Maintenance mode
+      id: maintenance-mode
+      description: Wants to understand how maintenance mode stops LifeTime
+        synchronization and disables environment operations, and how to enable
+        or disable it in a self-managed environment during planned maintenance
+        so they can pause communication and resynchronize afterward.
   - name: Add new cloud environment
     id: add-new-cloud-environment
     description: Wants to add a new Cloud environment to their OutSystems
@@ -22259,6 +22292,19 @@ knowledge-needs:
       data and log files on separate storage for OutSystems 11
       self-managed installations, so that database files avoid
       fragmentation and storage contention as capacity grows.
+  - name: SQL Server storage design
+    id: sql-server-storage-design
+    description: Wants to plan SQL Server hardware and storage for an
+      OutSystems 11 self-managed database by choosing CPU, memory, RAID
+      level, stripe size, file placement, and defragmentation settings,
+      so that the database handles the expected I/O load efficiently.
+  - name: SQL maintenance plans
+    id: sql-maintenance-plans
+    description: Wants to configure SQL Server maintenance plans for an
+      OutSystems 11 self-managed database by scheduling integrity checks,
+      index reorganize/rebuild operations, statistics updates, backup
+      strategies, and avoiding shrink operations, so that the database
+      stays recoverable and performant.
   - name: Server performance tuning
     id: server-performance-tuning
     description: Wants to apply OutSystems 11 self-managed server-level

@@ -1641,6 +1641,12 @@ knowledge-needs:
     - name: Entity change behavior
       id: entity-change-behavior
       description: Wants to understand how OutSystems handles entity attribute additions, mandatory validation, delete behavior, and entity or static entity conversions, so they can change data models without breaking runtime behavior.
+    - name: Entity attribute renames
+      id: entity-attribute-renames
+      description: Wants to understand how OutSystems handles entity and attribute renames in the database, including unchanged physical entity names, new attribute columns, and mapping to existing columns when a name already exists, so they can rename data model items without losing data.
+    - name: Attribute type changes
+      id: attribute-type-changes
+      description: Wants to understand how OutSystems converts values or blocks deployment when an attribute data type or text length changes, so they can change attribute storage without data loss.
     - name: Choose entity type
       id: choose-entity-type
       description: Wants to choose between an Entity and a Static Entity based on whether the data changes at runtime, and convert an entity to a static entity when predefined data fits better, so they can model data correctly in OutSystems 11.
@@ -1754,6 +1760,12 @@ knowledge-needs:
       description: Wants to understand that an OutSystems List stores elements of
         the same data type, so they can use list variables correctly when modeling
         app data.
+    - name: List runtime reference
+      id: list-runtime-reference
+      description: Wants to look up a List's runtime properties and built-in
+        system actions, including Current, EOF, BOF, CurrentRowNumber, Length,
+        Empty, and ListAppend, so they can inspect and manipulate list variables
+        correctly in OutSystems 11.
     - name: Create structures
       id: create-structures
       description: Wants to create structures and define their attributes in OutSystems,
@@ -3016,6 +3028,24 @@ knowledge-needs:
         example, writing 0 for an undefined decimal), by using a SQL node with
         Expand Inline and EncodeSql, in OutSystems Service Studio (O11), so
         that null is correctly stored in the database.
+    - name: Insert data via API
+      id: insert-data-via-api
+      description: Wants to insert data into the application database with the
+        RuntimePublic.Db API by creating a transaction, creating a command and
+        parameters, and executing the command safely, so they can write records
+        from OutSystems 11 code.
+    - name: Query external database
+      id: query-external-database
+      description: Wants to query data from an external database with the
+        RuntimePublic.Db API by creating a transaction, creating a command,
+        setting parameters, and reading the command results, so they can
+        return external database records from OutSystems 11 code.
+    - name: RuntimePublic.Db API reference
+      id: runtimepublic-db-api-reference
+      description: Wants to look up the RuntimePublic.Db classes and members for
+        connecting to external databases from extension modules, so they can
+        create connections, transactions, commands, parameters, and SQL helpers
+        in OutSystems 11.
     - name: SQL operator reference
       id: sql-operator-reference
       description: Wants to know which ANSI-92 operators and functions — comparison,
@@ -21203,6 +21233,13 @@ knowledge-needs:
         ConfigurationTool.exe /CreateUpgradeCacheInvalidationService from the
         Platform Server installation folder, so that RabbitMQ is installed and
         configured for cache invalidation.
+    - name: Configure cache service
+      id: configure-cache-service
+      description: Wants to configure the cache invalidation service in the
+        Configuration Tool Cache tab by setting the host, port, virtual host,
+        username, password, and TLS option, then creating or upgrading the
+        service and testing the connection, so that applications and OutSystems
+        services can connect to RabbitMQ.
     - name: Server hsconf settings
       id: server-hsconf-settings
       description: Wants to understand the server.hsconf configuration file settings that
@@ -21269,6 +21306,12 @@ knowledge-needs:
         and set the front-end server IP address that registers in the
         deployment controller service, so that they can restore access and
         register the intended IP on servers with multiple network adapters.
+    - name: Configure controller tab
+      id: configure-controller-tab
+      description: Wants to configure the Controller tab in the Configuration
+        Tool by setting the deployment controller server host or IP address
+        and the deployment service ports, so that front-end servers
+        communicate with the deployment controller.
     - name: Create log database
       id: create-log-database
       description: Wants to create or upgrade the logging database objects

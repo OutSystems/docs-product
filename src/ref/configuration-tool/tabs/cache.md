@@ -16,6 +16,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - configure-cache-service
 isautopublish: true
 ---
 

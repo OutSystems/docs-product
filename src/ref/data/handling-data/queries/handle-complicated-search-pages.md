@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - evaluate
+topic:
+  - advanced-sql-queries
 ---
 
 # How to handle complicated search pages with multiple search fields

@@ -2,6 +2,8 @@
 summary: Explore the communication settings between front-end servers and the deployment controller server in OutSystems 11 (O11) using the Controller tab.
 locale: en-us
 guid: 34809e50-82d5-4e93-a02e-a3bab8811b5d
+topic:
+  - configure-controller-tab
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-122&p=f&t=pRvxEDvINAxPgBYK-0

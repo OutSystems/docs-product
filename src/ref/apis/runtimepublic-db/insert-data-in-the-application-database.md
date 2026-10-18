@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - insert-data-via-api
 ---
 
 # Insert data in the application database

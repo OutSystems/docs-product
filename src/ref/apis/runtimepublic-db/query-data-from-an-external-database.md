@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - query-external-database
 ---
 
 # Query data from an external database

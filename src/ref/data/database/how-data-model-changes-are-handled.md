@@ -19,6 +19,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+topic:
+  - attribute-type-changes
+  - entity-attribute-renames
+  - entity-change-behavior
 ---
 
 # How Data Model Changes are Handled

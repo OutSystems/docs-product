@@ -346,6 +346,11 @@ knowledge-needs:
         screen action, and pass event parameters, so that the parent screen can
         respond to occurrences inside the block and pass data or trigger logic
         across UI components.
+    - name: Block event handler
+      id: block-event-handler
+      description: Wants to know when a Block Event needs a handler in O11, so
+        that they define a client action only for mandatory events and not
+        because the event has input parameters or placeholders.
     - name: Screen action as callback
       id: screen-action-as-callback
       description: Wants to assign a screen action as a callback for a UI component's
@@ -2660,6 +2665,12 @@ knowledge-needs:
         by adding the public event, choosing a handler server action, and
         understanding where the handler runs, so that the event logic executes
         in the correct app.
+    - name: ODC event handler scope
+      id: odc-event-handler-scope
+      description: Wants to identify that ODC event handlers can be defined in
+        any application within the ODC environment, so that they can place
+        subscriber logic where it belongs regardless of where the event is
+        defined.
     - name: ODC event trigger location
       id: odc-event-trigger-location
       description: Wants to understand that ODC event triggers are defined
@@ -2671,6 +2682,11 @@ knowledge-needs:
         ODC events by using All Exceptions handlers in the producer and
         consumer apps, so that payload-size, queue-capacity, retry-limit, and
         handler-timeout failures are handled explicitly.
+    - name: Event handler order
+      id: event-handler-order
+      description: Wants to understand that ODC event handler execution order is
+        not guaranteed because events run asynchronously, so they do not rely
+        on trigger sequence or handler priority.
     - name: ODC event architecture
       id: odc-event-architecture
       description: Wants to understand how ODC event-driven architecture uses
@@ -10620,12 +10636,12 @@ knowledge-needs:
         the Main Content area, add List Records or images as content, and
         configure ItemsDesktop, ItemsTablet, and ItemsPhone, so that users can
         browse grouped content in a responsive grid.
-    - name: Web block characteristics
-      id: web-block-characteristics
-      description: Wants to understand the core characteristics of a Web Block in
-        OutSystems 11, including that it is reusable across screens,
-        encapsulates its own logic, and improves maintainability, so that they
-        can distinguish true and false statements about Web Blocks.
+    - name: Block characteristics
+      id: block-characteristics
+      description: Wants to understand the core characteristics of Blocks,
+        including that they are reusable across screens, encapsulate their own
+        logic, and improve maintainability, so that they can distinguish true
+        and false statements about Blocks.
     - name: Create web block
       id: create-web-block
       description: Wants to create a Web Block in Service Studio for OutSystems 11,

@@ -223,6 +223,11 @@ knowledge-needs:
         order total when the item or quantity changes on the order detail
         screen, so the form shows the current unit price and total amount
         automatically.
+    - name: Set save defaults
+      id: set-save-defaults
+      description: Wants to set default field values in the save action before
+        creating a new order record, so the order saves with the expected
+        status.
     - name: Build CRUD server action
       id: build-crud-server-action-odc
       description: Wants to create a server action in ODC Studio with an
@@ -2706,6 +2711,11 @@ knowledge-needs:
   - name: ODC Events
     id: odc-events
     subtopics:
+    - name: Event retry behavior
+      id: event-handler-retries
+      description: Wants to understand that ODC retries a failed event handler
+        with backoff intervals, so they know what happens when event execution
+        fails.
     - name: ODC event limits
       id: odc-event-limits
       description: Wants to look up the platform limits for ODC events — maximum payload
@@ -2808,6 +2818,13 @@ knowledge-needs:
       categories of platform features send data to it, so that they can
       reason about where their platform data lives and how to access it for
       monitoring and compliance.
+    subtopics:
+    - name: Monitoring permission
+      id: monitoring-permission
+      description: Wants to identify the Monitoring permission category in
+        ODC when they need read-only access to logs and performance metrics,
+        so they can choose the category that lets support users view
+        monitoring data without making changes.
   - name: ODC Portal log and metric filtering
     id: odc-portal-log-metric-filtering
     description: Wants to understand how logs and metrics are filtered by

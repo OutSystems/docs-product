@@ -206,12 +206,23 @@ knowledge-needs:
       description: Wants to create a client action with an output parameter in
         Service Studio when they need to return a retrieved value from the
         flow.
+    - name: Generate order code
+      id: generate-order-code
+      description: Wants to generate the next order code in a screen action when
+        the order detail screen opens, so the Code field fills automatically for
+        a new order.
     - name: Display price on select
       id: display-price-on-select
       description: Wants to display the selected product's price when the
         product selection changes in a Traditional Web screen, by wiring
         client-side logic to the selection event, so the price updates for
         the chosen product.
+    - name: Update order pricing
+      id: update-order-pricing
+      description: Wants to display the selected item's price and recalculate the
+        order total when the item or quantity changes on the order detail
+        screen, so the form shows the current unit price and total amount
+        automatically.
     - name: Build CRUD server action
       id: build-crud-server-action-odc
       description: Wants to create a server action in ODC Studio with an
@@ -12086,6 +12097,24 @@ knowledge-needs:
         version keys, create and start a deployment, and poll its status until
         the execution reaches a terminal state, so that they can automate
         application promotion.
+    - name: Register environment API
+      id: register-environment-api
+      description: Wants to register a LifeTime environment through the API by
+        retrieving the existing role keys, posting the environment details,
+        and setting per-role permissions, so that the new environment is added
+        with the intended access levels.
+    - name: Download source code
+      id: download-source-code
+      description: Wants to download source code from the LifeTime API by
+        requesting a package for an app or module, checking its status, and
+        using the download link when it is ready, so that they can retrieve
+        generated code for external analysis or storage.
+    - name: Source download errors
+      id: source-download-errors
+      description: Wants to troubleshoot why the LifeTime API source code
+        download fails by checking user permissions, environment and
+        application or module keys, download status, and package size
+        limits, so they can resolve source code download errors.
     - name: LifeTime API reference
       id: lifetime-api-reference
       description: Wants to look up the LifeTime API v2 reference, including its
@@ -20453,6 +20482,9 @@ knowledge-needs:
     - name: Stream audit logs
       id: stream-audit-logs
       description: Wants to stream audit logs to an external destination so they can centralize audit data for compliance or troubleshooting.
+  - name: Audit log retention
+    id: audit-log-retention
+    description: Wants to understand how long LifeTime audit logs are retained and how to adjust the retention period, so they can keep audit data available for troubleshooting and compliance.
   - name: Audit trail architecture
     id: audit-trail-architecture
     description: Wants to understand what an audit trail is in OutSystems,
@@ -23002,6 +23034,12 @@ knowledge-needs:
         for an environment, regenerate mobile apps when needed, and restrict
         feedback submission to a specific user group, so that selected users
         can send feedback from the app.
+    - name: App feedback overview
+      id: app-feedback-overview
+      description: Wants to understand how users submit feedback directly
+        from an app and what information each feedback item captures when
+        App Feedback is active in the environment, so they can review user
+        reports in the App Feedback app.
     - name: App feedback integration
       id: app-feedback-integration
       description: Wants to connect App Feedback to external tracking tools

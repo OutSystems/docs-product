@@ -1600,6 +1600,9 @@ knowledge-needs:
     - name: Delete rule options
       id: delete-rule-options
       description: Wants to understand how the Delete Rule property affects referential integrity in an entity relationship, so they can choose between Protect, Delete, and Ignore.
+    - name: Cross-app delete rule
+      id: cross-app-delete-rule
+      description: Wants to understand how to handle a Delete Rule for a foreign key between entities in different ODC apps, so they can adjust the app logic when the rule must be Ignore after conversion from O11.
     - name: Database entities
       id: database-entities
       description: Wants to understand how database entities store app data and connect to aggregates, forms, and widgets in web apps, so they can use entities correctly in OutSystems 11 applications.
@@ -5115,6 +5118,13 @@ knowledge-needs:
         server by reading the Discovery document, calling the token endpoint
         with the client credentials grant, and using the returned token to
         access public REST APIs.
+    - name: Implement REST OAuth
+      id: implement-rest-oauth-flow
+      description: Wants to manually implement OAuth 2.0 authentication for a
+        consumed REST API in ODC after converting an app from OutSystems 11,
+        including requesting and storing access tokens, adding the
+        Authorization header in OnBeforeRequest, and handling token
+        expiration, so the converted app can keep calling the API.
     - name: OAuth 2.0 grants
       id: oauth-2-grants
       description: Wants to understand the OAuth 2.0 grant types available for
@@ -6393,6 +6403,11 @@ knowledge-needs:
         folder, updating consumer modules, and confirming irreversible
         application conversion, so they can refactor existing assets into
         Services safely.
+    - name: Multi-tenant conversion
+      id: multi-tenant-conversion
+      description: Wants to identify which module elements ODC asset conversion
+        doesn't support, so they can avoid unsupported assets before proceeding
+        with the conversion.
     - name: Extract reusable elements
       id: extract-reusable-elements
       description: Wants to extract reusable elements into a core service module
@@ -7326,6 +7341,11 @@ knowledge-needs:
       description: Wants to look up the properties of a consumed REST API method in
         Service Studio, including its configuration properties, so they can
         configure the method correctly.
+    - name: Update consumed REST URLs
+      id: update-consumed-rest-urls
+      description: Wants to update a consumed REST API Base URL and each method URL
+        Path after converting an app to ODC, so the calls target the converted
+        exposed endpoint.
     - name: Redact REST inputs
       id: redact-rest-input-logs
       description: Wants to hide sensitive input parameter values in consumed REST API logs by setting Log Redaction to Yes on the parameter, so values such as salary or health data do not appear in logs.
@@ -21072,6 +21092,16 @@ knowledge-needs:
         checking whether the functionality already exists in ODC and then fixing
         the finding in ODC or mapping the O11 producer app to an ODC asset, so
         the converted app keeps working.
+    - name: Manual assessment setup
+      id: manual-assessment-setup
+      description: Wants to manually install the Conversion Assessment Tool solution
+        packs and configure LifeTime and probe access when the installer app cannot
+        be used, so that the tool is ready for assessment.
+    - name: Conversion assessment permissions
+      id: conversion-assessment-permissions
+      description: Wants to understand which LifeTime permissions are required to
+        use each Conversion Assessment Tool operation, so they can log in and work
+        with mapping, assessment, conversion plan, maintenance, and setup tasks.
   - name: Preparation
     id: preparation
     subtopics:

@@ -19,6 +19,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - download-source-code
+  - review-sast-findings
 ---
 
 # Download source code

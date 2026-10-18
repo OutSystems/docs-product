@@ -6,6 +6,8 @@ tags:
   - Roles
 locale: en-us
 guid: fa3c3a72-304f-4171-b85a-77e614a20326
+topic:
+  - register-environment-api
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

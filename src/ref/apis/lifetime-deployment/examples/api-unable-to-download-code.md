@@ -3,6 +3,8 @@ summary: Explore troubleshooting steps for downloading application source code i
 tags:
   - REST
   - Troubleshooting
+topic:
+  - source-download-errors
 locale: en-us
 guid: E542C662-6053-4758-A514-1A4117364DD0
 app_type: traditional web apps, mobile apps, reactive web apps

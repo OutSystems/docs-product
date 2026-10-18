@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - app-feedback-integration
+  - app-feedback-overview
 ---
 
 # Gather user feedback

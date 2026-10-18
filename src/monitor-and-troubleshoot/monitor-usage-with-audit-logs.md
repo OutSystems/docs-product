@@ -16,6 +16,9 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+topic:
+  - audit-log-retention
+  - view-lifetime-audit-logs
 ---
 
 # Monitor Usage with Audit Logs

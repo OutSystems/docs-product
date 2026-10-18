@@ -15,6 +15,10 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - configure-sap-callback
+  - integrate-with-sap
+  - stateful-sap-calls
 ---
 
 # SAP Extensibility API

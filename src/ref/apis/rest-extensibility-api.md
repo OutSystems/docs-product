@@ -16,6 +16,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - remember
+topic:
+  - customize-rest-callbacks
 ---
 
 # REST Extensibility API

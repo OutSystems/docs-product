@@ -18,6 +18,8 @@ coverage-type:
   - understand
   - apply
   - unblock
+topic:
+  - implement-rest-oauth-flow
 ---
 
 # Asset contains REST APIs using built-in OAuth 2.0 authentication flow

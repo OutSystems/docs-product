@@ -7,6 +7,7 @@ coverage-type:
   - apply
   - unblock
 topic:
+  - update-consumed-rest-urls
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:

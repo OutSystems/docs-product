@@ -6,7 +6,8 @@ figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?
 coverage-type:
   - remember
   - understand
-topic: 
+topic:
+  - conversion-assessment-permissions
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:

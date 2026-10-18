@@ -17,6 +17,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - configure-lifetime-log-streaming
 ---
 
 # Stream logs to Elastic

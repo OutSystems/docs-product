@@ -18,6 +18,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - debug-mobile-issues
+  - fix-missing-device-data
+  - simulate-mobile-network-conditions
 ---
 
 # Mobile app troubleshooting and debugging scenarios examples

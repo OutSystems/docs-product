@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - service-center-analytics
 ---
 
 # Monitor the Environment Daily Activity

@@ -6,7 +6,8 @@ figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?
 coverage-type:
   - apply
   - unblock
-topic: 
+topic:
+  - manual-assessment-setup
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:

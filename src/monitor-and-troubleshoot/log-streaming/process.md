@@ -17,6 +17,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - configure-lifetime-log-streaming
+  - log-streaming-overview-cloud
+  - set-up-open-telemetry-collector
 ---
 
 # Streaming log data

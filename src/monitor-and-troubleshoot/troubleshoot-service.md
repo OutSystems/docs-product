@@ -19,6 +19,8 @@ coverage-type:
   - remember
   - apply
   - unblock
+topic:
+  - choose-log-level
 ---
 
 # Troubleshoot Service Actions Using Logs

@@ -6,6 +6,7 @@ figma:
 coverage-type:
   - unblock
 topic:
+  - multi-tenant-conversion
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:

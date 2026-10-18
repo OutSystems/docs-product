@@ -2,6 +2,8 @@
 summary: This article provides guidance on refactoring dependencies to non read-only Entities in O11 apps to ensure compatibility with ODC.
 locale: en-us
 guid: 07ee973c-143e-44a5-9e3a-19b68cfdbfd5
+topic:
+  - entity-expose-read-only-pattern
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7253

@@ -16,6 +16,9 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - manage-lifetime-environments
+  - set-up-infrastructure
 ---
 
 # Manage your OutSystems infrastructure

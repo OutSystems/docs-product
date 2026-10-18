@@ -6,6 +6,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-6830
 helpids: 30520
+topic:
+  - client-action-dependency
 tags:
   - Architecture
   - Libraries

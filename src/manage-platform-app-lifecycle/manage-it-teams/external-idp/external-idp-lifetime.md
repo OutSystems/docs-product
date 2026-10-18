@@ -18,6 +18,10 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - change-authentication-provider
+  - local-administrator-setup
+  - map-external-auth-users
 ---
 
 # Configuring LifeTime authentication

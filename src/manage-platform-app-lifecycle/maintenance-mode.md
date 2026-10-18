@@ -20,6 +20,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - maintenance-mode
 ---
 
 # Environment in maintenance mode

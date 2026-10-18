@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - control-app-creation
 ---
 
 # Control Who Creates Applications

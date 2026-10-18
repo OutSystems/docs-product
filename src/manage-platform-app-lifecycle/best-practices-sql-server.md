@@ -16,6 +16,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - evaluate
+topic:
+  - sql-maintenance-plans
+  - sql-server-storage-design
 isautopublish: true
 ---
 

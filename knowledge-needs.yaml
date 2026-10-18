@@ -649,6 +649,12 @@ knowledge-needs:
       description: Wants to move an O11 module that contains a Screen into a
         dedicated app when converting to ODC, so the screen dependency becomes
         weak and ODC consumers can use it.
+    - name: Weak resource dependency
+      id: weak-resource-dependency
+      description: Wants to move an O11 module that contains a Resource into a
+        dedicated app or replicate the Resource in each ODC consumer asset when
+        converting to ODC, so the resource dependency becomes weak and ODC
+        consumers can use it.
   - name: Library actions
     id: library-actions
     description: Wants to know which ODC library actions are available and what each
@@ -20858,6 +20864,12 @@ knowledge-needs:
         referenced outside the scope where they were declared after converting
         an O11 Service module to ODC, so that each node is used only in the same
         scope where it runs.
+    - name: System element compatibility
+      id: system-element-compatibility
+      description: Wants to identify which O11 platform system actions and
+        system entities are available, changed, or unsupported in ODC, so they
+        can decide whether to keep, adapt, or remove those dependencies during
+        code conversion.
     - name: SQL conversion mapping
       id: sql-conversion-mapping
       description: Wants to understand the exact syntax mappings applied automatically
@@ -20915,6 +20927,11 @@ knowledge-needs:
         architecture, either restricted from use inside aggregates or removed
         entirely, after O11 to ODC code conversion, so that they can rework the
         affected logic instead of applying a direct fix.
+    - name: User management elements
+      id: user-management-elements
+      description: Wants to refactor an O11 asset that uses user management elements
+        unsupported in ODC, so the migrated app uses ODC user and access
+        management features instead.
     - name: Asset consuming an Application Theme
       id: arch-app-theme
       description: Wants to refactor an O11 asset that consumes an Application Theme
@@ -20928,6 +20945,13 @@ knowledge-needs:
         replaced with ODC-supported external data sources or an ODC Library
         before code conversion, so that the asset keeps working after migration
         to ODC.
+    - name: Asset consuming script
+      id: asset-consuming-script
+      description: Wants to refactor an O11 asset that consumes a Script from
+        another asset so the Script dependency becomes valid for ODC, either
+        by replicating the Script in each consumer or by moving the Script into
+        a dedicated O11 app before code conversion, so the asset keeps working
+        after migration to ODC.
     - name: Consume Forge component
       id: arch-forge-component
       description: Wants to refactor an O11 asset that consumes a Forge component so the

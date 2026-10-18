@@ -17,6 +17,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - manage-lifetime-environments
 ---
 
 # Unregister an Environment using the LifeTime API

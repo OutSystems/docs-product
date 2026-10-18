@@ -20,6 +20,9 @@ coverage-type:
   - understand
   - apply
   - evaluate
+topic:
+  - troubleshooting-debugging-monitoring
+  - troubleshooting-process
 ---
 
 # The troubleshooting, debugging and monitoring process

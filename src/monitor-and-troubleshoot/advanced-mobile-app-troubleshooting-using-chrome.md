@@ -20,6 +20,10 @@ coverage-type:
   - remember
   - understand
   - apply
+topic:
+  - browser-first-debugging
+  - inspect-js-architecture
+  - view-local-storage-data
 ---
 
 # Advanced Mobile App Troubleshooting Using Chrome

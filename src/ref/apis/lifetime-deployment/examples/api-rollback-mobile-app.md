@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - deploy-app-via-lifetime-api
 ---
 
 # Rollback a Mobile App using the LifeTime API

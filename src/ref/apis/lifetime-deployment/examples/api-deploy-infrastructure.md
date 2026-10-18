@@ -20,6 +20,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - deploy-app-via-lifetime-api
 ---
 
 # Publish an app across infrastructures using the LifeTime API

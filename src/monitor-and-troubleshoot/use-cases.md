@@ -7,7 +7,10 @@ coverage-type:
   - evaluate
   - understand
   - apply
-topic: 
+topic:
+  - built-in-monitoring-tools
+  - custom-alerts
+  - performance-monitoring-api
 app_type: traditional web apps,reactive web apps,mobile apps
 platform-version: o11
 audience:

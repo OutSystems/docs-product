@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - lifetime-analytics
 ---
 
 # Troubleshoot the Performance of an Application

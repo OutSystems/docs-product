@@ -16,6 +16,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - entity-properties
 ---
 
 # Entity Properties

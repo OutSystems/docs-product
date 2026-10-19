@@ -17,6 +17,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - file-menu-operations
 ---
 
 # File Menu

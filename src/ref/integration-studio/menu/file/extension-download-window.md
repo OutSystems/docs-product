@@ -12,6 +12,8 @@ audience:
   - Developer
 outsystems-tools:
   - integration studio
+topic:
+  - download-window
 coverage-type:
   - remember
 ---

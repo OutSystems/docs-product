@@ -15,6 +15,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+topic:
+  - select-server-window
 ---
 
 # Select Server Window

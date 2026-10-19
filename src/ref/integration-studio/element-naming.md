@@ -13,6 +13,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - integration-studio-element-naming
 ---
 
 # Naming Elements in Integration Studio

@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - 1-click-publish-window
 ---
 
 # 1-Click Publish Window

@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - action-parameters
 ---
 
 # Action Parameters Editor

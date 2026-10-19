@@ -13,6 +13,8 @@ audience:
   - Developer
 outsystems-tools:
   - service studio
+topic:
+  - entity-editor-properties
 coverage-type:
   - remember
 ---

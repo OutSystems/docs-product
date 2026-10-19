@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - unexpected-link-warning
 ---
 
 # Unexpected Link Warning

@@ -8,6 +8,8 @@ figma:
 tags:
   - Entities
   - Extensions
+topic:
+  - parameter-properties
 audience:
   - Developer
 outsystems-tools:

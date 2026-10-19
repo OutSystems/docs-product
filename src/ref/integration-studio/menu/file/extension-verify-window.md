@@ -16,6 +16,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - verify-window
 ---
 
 # Verify Window

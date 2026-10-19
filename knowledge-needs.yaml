@@ -15833,11 +15833,21 @@ knowledge-needs:
         users before general release, so that selected testers can install it
         through the supported limited-distribution methods.
     - name: App Store submission
-      id: app-store-submission
+      id: app-store-submission-ios
       description: Wants to generate an App Store iOS package in Service Studio
         or Service Center and submit it to App Store Connect with Transporter,
         after meeting the Apple Developer and signing prerequisites, so that
         the app can be reviewed and published in the Apple App Store.
+    - name: Google Play submission
+      id: app-store-submission-android
+      description: Wants to sign an Android mobile app with a release keystore,
+        upload the APK to Google Play, complete the store listing, and publish
+        the app, so that the app is available through the Android public store.
+    - name: Mobile distribution types
+      id: mobile-distribution-types
+      description: Wants to choose an appropriate distribution method for a mobile app
+        based on the intended audience and release goal, so that they use the method
+        that best fits their release.
     - name: iOS signing setup
       id: ios-signing-setup
       description: Wants to enroll in the Apple Developer Program or Apple Developer
@@ -19391,6 +19401,13 @@ knowledge-needs:
         central authentication server, an authentication library, and the
         SAML authentication flow, so that users sign in once and return to the
         original app URL.
+    - name: Federated authentication
+      id: federated-authentication
+      description: Wants to identify that a federated authentication system
+        displays its own login screen and performs authentication across
+        applications, when reviewing a federated authentication scenario in
+        OutSystems 11, so that they can distinguish it from authentication
+        handled by an OutSystems login screen.
     - name: Configure Okta SAML
       id: configure-okta-saml
       description: Wants to configure an Okta SAML application and the matching

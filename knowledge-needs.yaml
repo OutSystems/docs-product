@@ -85,7 +85,7 @@ knowledge-needs:
         the user and related patient records, and grants the Patient role so a
         new patient account is saved correctly.
     - name: Action properties reference
-      id: action-properties-reference
+      id: action-properties-service-studio
       description: Wants to look up the configuration properties available for an
         action in OutSystems 11 Service Studio, including which are mandatory and
         their default values, so they can correctly configure and understand the
@@ -4026,6 +4026,9 @@ knowledge-needs:
     - name: Extension life cycle
       id: extension-life-cycle
       description: Wants to create an extension in Integration Studio, define its actions, structures, entities, and resources, keep its source code synchronized, publish it, and then use it in a Service Studio module, so that they can follow the full extension life cycle from setup to consumption.
+    - name: Action properties
+      id: action-properties-integration-studio
+      description: Wants to look up the configuration properties available for an action in Integration Studio, including the Function property and icon setting, so they can configure an extension action correctly.
     - name: Compile extension
       id: compile-extension
       description: 'Wants to compile an extension in Integration Studio so the .NET Compiler Tool builds the extension''s main DLL according to the options set in the Options window, even when the extension contains only entities.'
@@ -4035,6 +4038,9 @@ knowledge-needs:
     - name: Integration Studio basics
       id: integration-studio-basics
       description: Wants to understand what Integration Studio is and when to use it to extend OutSystems with custom .NET actions or external database entities, so they can recognize the tool's main extension scenarios.
+    - name: Element naming
+      id: integration-studio-element-naming
+      description: Wants to name Integration Studio elements with letters, numbers, and underscores while following the starting-character and element-specific length limits, so they can create valid extension definitions without naming errors.
     - name: Set up Integration Studio
       id: set-up-integration-studio
       description: Wants to install Integration Studio from the OutSystems website and connect it with their OutSystems credentials, so they can start creating extensions.
@@ -4116,13 +4122,25 @@ knowledge-needs:
         attributes in Integration Studio's Attributes Editor and define them to
         match the database table they access, so the entity maps correctly to
         the source database.
+    - name: Entity editor properties
+      id: entity-editor-properties
+      description: Wants to configure an extension entity's properties in
+        Integration Studio, including its identifier and imported database
+        details, so they can define the entity that maps to an external
+        database table.
     - name: Action parameters
       id: action-parameters
-      description: Wants to add, change, or delete action parameters in Integration
-        Studio's Action Parameters Editor, create one action parameter for each C#
-        method parameter, and keep the parameter order aligned between the
-        extension action and the corresponding C# method, so the action maps
-        correctly.
+      description: Wants to add, change, or delete input or output action parameters
+        in Integration Studio's Action Parameters Editor, create one action
+        parameter for each C# method parameter, and keep the parameter order
+        aligned between the extension action and the corresponding C# method,
+        so the action maps correctly.
+    - name: Parameter properties
+      id: parameter-properties
+      description: Wants to look up the properties available for an action parameter
+        in Integration Studio, including mandatory or optional settings, default
+        values, data types, record types, and descriptions, so they can configure
+        extension action parameters correctly.
     - name: Open extension editor
       id: open-extension-editor
       description: Wants to open the Extension Editor in Integration Studio to
@@ -11160,6 +11178,13 @@ knowledge-needs:
         for navigation or action execution, and by avoiding unsupported
         destination argument types when Method is Navigate, so the screen
         validates successfully.
+    - name: Unexpected link warning
+      id: unexpected-link-warning
+      description: Wants to fix unexpected link warnings in OutSystems 11 by
+        setting Validation to '(none)' when Method is Navigate, changing the
+        Method to Submit when validation is required, and connecting the
+        destination screen or marking it as a frequent destination, so Link
+        widgets navigate and validate correctly.
     - name: Create popup widget
       id: create-popup-widget
       description: Wants to create and show a popup to display information or
@@ -12694,6 +12719,14 @@ knowledge-needs:
         Provider''s owner to determine the cause, or by changing the
         module''s User Provider property, so that runtime errors are
         avoided.'
+    - name: Outdated subscriber warning
+      id: outdated-subscriber-warning
+      description: 'Wants to resolve the "This module is no longer a User
+        Provider. Subscriber module ''<module>'' is outdated" warning in
+        OutSystems 11, caused by the module being used as a User Provider
+        while its Is User Provider property is set to No, by setting Is User
+        Provider to Yes or changing the subscriber module''s User Provider
+        property, so that the subscriber uses a valid User Provider.'
     - name: Fix reference warning
       id: modified-or-missing-reference-warning
       description: 'Wants to resolve the "''<element>'' <type> is incompatible

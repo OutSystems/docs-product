@@ -4029,6 +4029,9 @@ knowledge-needs:
     - name: Action properties
       id: action-properties-integration-studio
       description: Wants to look up the configuration properties available for an action in Integration Studio, including the Function property and icon setting, so they can configure an extension action correctly.
+    - name: Review action import
+      id: review-action-import
+      description: Wants to review the original .NET signature and corresponding Integration Studio action definition for an action imported from a .NET assembly, so they can verify how the action maps to the assembly member and parameters.
     - name: Compile extension
       id: compile-extension
       description: 'Wants to compile an extension in Integration Studio so the .NET Compiler Tool builds the extension''s main DLL according to the options set in the Options window, even when the extension contains only entities.'

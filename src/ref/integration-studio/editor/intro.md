@@ -14,6 +14,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - integration-studio-basics
 ---
 
 # Integration Studio Editors

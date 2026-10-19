@@ -15,6 +15,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - check-import-details
+  - compare-resource-template
+  - configure-deploy-action
 ---
 
 # Resource Editor

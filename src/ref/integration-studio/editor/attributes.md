@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - entity-attribute-properties
+  - structure-attribute-properties
 ---
 
 # Attributes Editor

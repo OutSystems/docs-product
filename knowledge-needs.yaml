@@ -6632,7 +6632,7 @@ knowledge-needs:
     id: application-composition
     subtopics:
     - name: Library module overview
-      id: library-module-overview
+      id: library-module-overview-o11
       description: Wants to understand what a Library module is in OutSystems 11, including
         its stateless, database-agnostic design principles, typical use cases
         such as UI/style guides and reusable connectors or logic utilities,
@@ -6660,7 +6660,7 @@ knowledge-needs:
         module to a consuming module when debugging it, so that they have a
         working Library ready to hold reusable stateless components.
     - name: ODC library overview
-      id: odc-library-overview
+      id: odc-library-overview-odc
       description: Wants to understand what a library is in OutSystems Developer
         Cloud (ODC), including its stateless design, common use cases such as
         wrapping an external system or centralizing style guides and themes, and
@@ -9762,18 +9762,9 @@ knowledge-needs:
     - name: Use Gallery pattern
       id: use-gallery-pattern
       description: Wants to add the Gallery UI Pattern to a screen and configure
-        its responsive layout properties — including RowItemsDesktop, RowItemsTablet,
-        RowItemsPhone, ItemsGap, and ExtendedClass — in ODC Studio, so that groups
-        of images or content are displayed in a browsable, sequential grid across
-        different device types.
-    - name: Use Gallery pattern (O11)
-      id: use-gallery-pattern-o11
-      description: Wants to add the Gallery UI Pattern to a screen and configure
-        its responsive layout properties — including RowItemsDesktop, RowItemsTablet,
-        RowItemsPhone, ItemsGap, and ExtendedClass — in Service Studio for
-        OutSystems 11, so that groups of images or content are displayed in a
-        browsable, sequential grid across different device types, in mobile
-        apps and reactive web apps.
+        its responsive layout properties, so that groups of images or content
+        are displayed in a browsable, sequential grid across different device
+        types.
     - name: Gallery pattern reference
       id: gallery-pattern-reference
       description: Wants to look up the Gallery UI Pattern's structure, responsive

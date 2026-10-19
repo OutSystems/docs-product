@@ -152,7 +152,10 @@ For every entry that is **not** cached:
    element but no red rectangle was added, that's a ⚠️ with the quoted
    verdict wording, not a ❌; only fail ❌ when there's neither a red
    rectangle nor a native selection state), rule 4 (numbered callouts),
-   rule 5 (arrows), rule 7 (PII), rule 8 (internal environment URLs).
+   rule 5 (arrows), rule 7 (PII), rule 8 (internal environment URLs), rule 9
+   (theme: compare the image's light or dark theme with the mandate for its
+   suffix in `visual-rules-screenshots.md` rule 9's table; a contradicted
+   mandate is ❌, and a suffix missing from the table is ⚠️).
 
    For `-ss`/`-odcs` files showing an entity or data-model layout (boxes
    connected by lines), check against `visual-rules-screenshots.md` rule 2's
@@ -160,6 +163,12 @@ For every entry that is **not** cached:
    Data-tab capture cropped tight with no toolbar chrome is not by itself a
    sign of a misfiled `-diag` diagram — don't fall back on the genuine-diagram
    checklist below as the only reference point for that judgment.
+
+   For `-ss`/`-odcs` files showing a Studio capture together with a
+   third-party app panel (for example a spreadsheet), check
+   `visual-rules-screenshots.md` rule 2's mixed-surface composite exception
+   before concluding the suffix is wrong. The third-party panel is not a
+   surface mismatch.
 
    For files ending in **`-diag`**: use vision to determine whether the
    content is a genuine diagram or a UI screenshot.
@@ -185,6 +194,13 @@ For every entry that is **not** cached:
    A UI screenshot shows product interface chrome with interactive elements
    (panels, toolbars, dropdowns, form fields, menus) from ODC Studio, ODC
    Portal, Service Studio, or similar tools.
+
+   A Studio capture shown next to a third-party app panel with no
+   connecting arrows, highlights or OutSystems-branded iconography is a UI
+   screenshot, not a diagram. Rule 2's mixed-surface composite exception
+   gives the correct suffix: `-ss` or `-odcs`, from the Studio panel. The
+   same layout **with** arrows, highlights or branded iconography is a
+   genuine diagram.
 
    * If the content is a genuine diagram → suffix is correct; no naming
      finding.

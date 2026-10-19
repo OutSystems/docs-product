@@ -107,6 +107,34 @@ suffix-vs-content mismatch in either direction:
 * See SKILL.md's genuine-diagram checklist for the matching exclusion that
   keeps this content from being misjudged as a `-diag` candidate.
 
+**Mixed-surface composite (Studio capture + third-party app) — a rare,
+deliberate exception:** the rubric has no suffix for third-party apps (a
+spreadsheet, a text editor, a browser page), and none is wanted. When one
+frame holds a native Studio capture plus a panel from a third-party app,
+classify the whole image by its Studio part. Use these traits to apply it:
+
+* The frame contains a native Service Studio or ODC Studio rendering (the
+  tool's own entity cards, icons and typography), side by side with one or
+  more third-party panels.
+* There are **no** connecting arrows or lines between the panels, **no** red
+  highlights or callouts, and **no** OutSystems-branded concept iconography.
+  The layout shows the two surfaces as they are, not a concept.
+* The suffix is the Studio surface: `-ss` for Service Studio, `-odcs` for ODC
+  Studio. Read which one from the Studio panel's own rendering and the
+  product the article covers. The third-party panel is not a suffix
+  mismatch and doesn't change the theme or shadow checks, which apply to
+  the whole frame as usual.
+* **Boundary with `-diag`:** the same two panels with connecting arrows or
+  lines, highlights, or OutSystems-branded iconography form a genuine
+  diagram. `-diag` is correct for those, and this exception doesn't apply.
+* Don't extend this to other mixed images. It covers a Studio capture
+  together with third-party content only.
+
+* **Pass example:** an entity tree captured from Service Studio next to a
+  spreadsheet panel, with no connectors, filed as `...-ss.png`.
+* **Fail example:** that same image filed as `...-diag.png` — Rule 2 ❌,
+  rename to the Studio suffix.
+
 ## 3. Highlight — red rectangle outline on the focal element
 
 * **Severity:** ❌ when the screenshot illustrates a specific click or focused
@@ -343,12 +371,13 @@ rectangle.
 | `-wb` | Workflow builder | light only |
 | `-we` | Workflow editor | dark only |
 | `-uidp` | User Identity Provider | light only |
+| `-at` | Assessment Tool | dark only |
 | `-ati` | Assessment Tool Installer | dark only |
 | `-shc` | Self-hosted controller | dark only |
 | `-sa` | Sample app | light only |
 | `-sol` | Solutions | dark only |
 
-  Surfaces not listed (e.g. `-at`, `-ams`, `-ib`, etc.) have no theme
+  Surfaces not listed (e.g. `-ams`, `-ib`, etc.) have no theme
   mandate yet — flag as ⚠️ and ask the designer. Confirmed mandates are
   added to the table as they come up.
 

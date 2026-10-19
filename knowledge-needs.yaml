@@ -13858,6 +13858,11 @@ knowledge-needs:
         by using Service Center's Monitoring area, querying the OutSystems Log Database
         directly, and reading Windows Event Viewer alerts, so that they can track,
         monitor, and receive alerts about errors in the platform.
+    - name: Logging in OutSystems
+      id: logging-in-outsystems
+      description: Wants to understand what OutSystems logs, how to read error details and
+        stack traces, how module logging is configured, and how the platform writes and
+        retains logs, so they can inspect and tune logging behavior.
     - name: O11 perf counters
       id: o11-perf-counters
       description: Wants to use OutSystems Platform Server's Windows Performance Counters to
@@ -23216,6 +23221,9 @@ knowledge-needs:
         and reviewing the General section for Abort Activity Change Exception
         records, so they can investigate application exceptions in OutSystems
         11.
+    - name: Environment health
+      id: environment-health
+      description: Wants to review an OutSystems 11 environment health in Service Center, including front-end server status, the Mobile Apps Build Service, running processes, queued emails, timers, and platform logs, so they can monitor the environment and troubleshoot issues.
     - name: Identify Service Center
       id: identify-service-center
       description: Wants to identify Service Center as the web console for

@@ -6545,6 +6545,11 @@ knowledge-needs:
       id: architecture-canvas-rules
       description: Wants to validate module architecture with the Architecture Canvas rules
         for modules, so they can keep module dependencies sound.
+    - name: Discovery validation scope
+      id: discovery-validation-scope
+      description: Wants to recognize that Discovery validates both app and module
+        architecture rules, so they can answer questions about Discovery validation
+        scope.
     - name: Architecture design review
       id: architecture-design-review
       description: Wants to run architecture design review sessions before each sprint by
@@ -6679,6 +6684,12 @@ knowledge-needs:
       description: Wants to identify business concepts and group them into bounded
         contexts before designing an ODC app architecture, so that the app
         structure follows the business domain.
+    - name: Validate app composition
+      id: validate-app-composition
+      description: Wants to validate application composition by checking that
+        common modules and services are isolated in a separate app that other
+        apps can reference, so they can confirm the app structure follows the
+        composition rules.
     - name: App ownership cadence
       id: app-ownership-cadence
       description: Wants to assign one business owner and sponsor per app, and
@@ -19351,6 +19362,9 @@ knowledge-needs:
     - name: Authentication management overview
       id: authentication-management-overview
       description: Wants to understand how ODC handles authentication and authorization at a high level, including built-in authentication, external identity providers, custom authentication flows, and role-based access control, so that they can explain the platform's sign-in model and choose the right approach for an app.
+    - name: Token lifecycle
+      id: token-lifecycle
+      description: Wants to understand how ODC issues short-lived access tokens and refresh tokens, validates requests before they reach services, and invalidates sessions and tokens on logout, so that they can explain the platform's token lifecycle and request security.
     - name: Create service account
       id: create-service-account
       description: Wants to create a LifeTime service account, choose its role and

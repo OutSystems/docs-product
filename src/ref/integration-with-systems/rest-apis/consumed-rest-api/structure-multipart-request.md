@@ -8,6 +8,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 helpids: 30451
 figma:
+topic:
+  - multipart-attribute-reference
 audience:
   - Developer
 outsystems-tools:

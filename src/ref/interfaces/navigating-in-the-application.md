@@ -2,6 +2,8 @@
 summary: OutSystems 11 (O11) application navigation covers Service Studio menus and screens for building reactive web and mobile apps.
 tags:
   - Screens
+topic:
+  - service-studio-overview
 locale: en-us
 guid: 2a31f77b-09dd-4bac-b3b8-bc286a684fc0
 app_type: traditional web apps, mobile apps, reactive web apps

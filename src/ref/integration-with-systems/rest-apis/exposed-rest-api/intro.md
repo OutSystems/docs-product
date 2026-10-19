@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - expose-rest-api
 ---
 
 # Exposed REST API

@@ -12,6 +12,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - help-menu-operations
 ---
 
 # Help Menu

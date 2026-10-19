@@ -7,6 +7,8 @@ platform-version: o11
 figma:
 coverage-type:
   - understand
+topic:
+  - adaptive-ui-patterns
 tags:
   - UI
   - UI Patterns

@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-parameter-expression
+  - fix-property-value-errors
 ---
 
 # Required Property Value Error

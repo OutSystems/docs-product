@@ -15,6 +15,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - fix-source-code-warning
 ---
 
 # Source Code Expected Warning

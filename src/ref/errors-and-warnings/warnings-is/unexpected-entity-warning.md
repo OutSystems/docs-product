@@ -17,6 +17,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - fix-database-integrity
 ---
 
 # Unexpected Entity Warning

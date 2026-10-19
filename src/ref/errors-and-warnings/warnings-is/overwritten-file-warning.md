@@ -14,6 +14,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - overwritten-file-warning
 ---
 
 # Overwritten File Warning

@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - fix-rest-date-format
 ---
 
 # Multiple Date Formats Error

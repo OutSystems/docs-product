@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+topic:
+  - outdated-consumer-warning
 ---
 
 # Outdated Consumer Info

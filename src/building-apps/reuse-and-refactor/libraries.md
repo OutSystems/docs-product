@@ -14,7 +14,7 @@ outsystems-tools:
   - service studio
 topic:
   - create-library-module
-  - library-module-overview
+  - library-module-overview-o11
 coverage-type:
   - understand
   - evaluate

@@ -16,6 +16,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - unblock
+topic:
+  - resolve-environment-fault
 ---
 
 # Environment Fault Error

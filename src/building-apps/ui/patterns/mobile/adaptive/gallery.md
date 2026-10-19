@@ -14,7 +14,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - use-gallery-pattern-o11
+  - use-gallery-pattern
 ---
 
 # Gallery

@@ -15,6 +15,10 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - action-parameters
+  - action-properties-integration-studio
+  - review-action-import
 ---
 
 # Action Editor

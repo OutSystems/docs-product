@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - soap-parameter-reference
 ---
 
 # Input Parameter - Deprecated SOAP

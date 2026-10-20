@@ -15,6 +15,10 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+topic:
+  - configure-application-comparison
+  - configure-is-proxy-auth
+  - configure-net-sdk-options
 ---
 
 # Options Window

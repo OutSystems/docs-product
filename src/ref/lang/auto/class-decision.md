@@ -16,6 +16,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - bpt-overview
+  - decision-activity-outcomes
+  - decision-outcome
 ---
 
 # Decision

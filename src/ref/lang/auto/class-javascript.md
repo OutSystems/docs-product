@@ -21,6 +21,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - javascript-flow-element
 ---
 
 # JavaScript

@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - conditional-process-start-o11
+  - design-process-flow
 ---
 
 # Process Start

@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - input-parameter-reference
 ---
 
 # Input Parameter - REST API Method

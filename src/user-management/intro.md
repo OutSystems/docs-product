@@ -13,6 +13,9 @@ platform-version: o11
 figma:
 coverage-type:
   - understand
+topic:
+  - multi-tenant-architecture
+  - understand-user-providers
 outsystems-tools:
   - user management app
 audience:

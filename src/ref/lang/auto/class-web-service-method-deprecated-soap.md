@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - consumed-soap-elements
+  - legacy-soap-implementation
 ---
 
 # Web Service Method - Deprecated SOAP

@@ -9,6 +9,8 @@ figma:
 tags:
   - SOAP
   - Web services
+topic:
+  - output-parameter-reference
 audience:
   - Developer
 outsystems-tools:

@@ -371,6 +371,11 @@ knowledge-needs:
         so that startup logic runs once when the app loads, does not rerun on
         in-app navigation, and reruns on direct reloads or when opening
         another app.
+    - name: On Session Start
+      id: on-session-start
+      description: Wants to understand when the On Session Start system event
+        runs and how to add it in a Traditional Web App, so that they can
+        configure logic that runs when a session is created or cleared.
     - name: Database event behavior
       id: database-event-behavior
       description: Wants to understand how database events trigger after entity record changes and a successful transaction commit, so that they can use OnCreate, OnUpdate, or OnDelete for automatic follow-up logic and know that each trigger event runs once without duplicates.
@@ -1672,10 +1677,15 @@ knowledge-needs:
       description: Wants to bootstrap initial entity data from an Excel spreadsheet in OutSystems 11, so the app starts with the required records.
     - name: Create static entities and records
       id: create-static-entities-and-records
-      description: Wants to create static entities and define their records in OutSystems 11, so they can model fixed lookup data.
+      description: Wants to create a static entity, define its attributes and records, add it to an entity diagram, and publish the app or module, so they can model fixed lookup data.
     - name: Create entity
       id: create-entity
-      description: Wants to create an entity in ODC Studio by using the Entity Diagram or Data tab, adding attributes, and publishing the app, so they can persist data in a database table.
+      description: Wants to create an entity by using an entity diagram or data view, adding attributes, and publishing the app or module, so they can persist data in a database table.
+    - name: Create entity diagrams
+      id: service-studio-create-entity-diagrams
+      description: Wants to create entity diagrams in Service Studio by adding
+        entities and publishing the app or module, so they can visualize the
+        data model.
     - name: Entity change behavior
       id: entity-change-behavior
       description: Wants to understand how OutSystems handles entity attribute additions, mandatory validation, delete behavior, and entity or static entity conversions, so they can change data models without breaking runtime behavior.
@@ -1973,10 +1983,7 @@ knowledge-needs:
         that each record has exactly one related record.
     - name: Many-to-many relationship
       id: many-to-many-relationship
-      description: Wants to create a many-to-many relationship between two entities in
-        Service Studio by introducing a junction entity with the necessary
-        foreign keys and any extra attributes, so that each record can relate to
-        multiple records on both sides.
+      description: Wants to create a many-to-many relationship between two entities by introducing a junction entity with the necessary reference attributes or foreign keys and any extra attributes, so that each record can relate to multiple records on both sides.
     - name: Relationship types
       id: relationship-types
       description: Wants to identify the entity relationship types supported in
@@ -9688,6 +9695,12 @@ knowledge-needs:
       description: Wants to confirm the Card Sectioned UI Pattern still
         meets WCAG 2.2 AA accessibility requirements after customization, so
         that the implementation remains accessible.
+    - name: Load on Visible reference
+      id: load-on-visible-reference
+      description: Wants to look up the Load on Visible UI Pattern's layout
+        and CSS classes in a Traditional Web App (O11), so they can understand
+        how to configure the pattern to defer content loading until it enters
+        the viewport and improve screen performance.
     - name: Use Card Item pattern
       id: use-card-item-pattern
       description: Wants to add the Card Item UI Pattern to a screen, add
@@ -10704,6 +10717,9 @@ knowledge-needs:
     - name: Use form widget
       id: use-form-widget
       description: Wants to understand what a Form widget is and how it groups input widgets to collect, submit, and validate user data in reactive web apps, so they can build detail screens that display and edit records.
+    - name: Build web form
+      id: build-web-form
+      description: Wants to build a Form widget, bind generated input widgets to an entity record, configure dropdown fields including static entity lookups, and set the Save button behavior, so they can create a detail screen that displays and edits employee or project member data.
     - name: Form widget reference
       id: form-widget-reference
       description: Wants to look up the properties, events, runtime properties, and accessibility guidance of the Form widget in Service Studio, so they can configure a form that creates, shows, or edits a single record in OutSystems 11 apps.
@@ -11660,11 +11676,7 @@ knowledge-needs:
         Pull, Commit, Push, Fetch, Diff, and Merge/Update.
     - name: Open other version
       id: open-other-version
-      description: Wants to switch to a previous published version of a
-        module from Service Studio's Module menu using Open Other Version,
-        reviewing the list of versions along with the publish date, time,
-        and publisher, so that they can revert to or inspect an earlier
-        version, in OutSystems 11.
+      description: Wants to open an earlier published app or module revision or version and review its publisher, publish date, and time, so they can inspect or return to an earlier state.
     - name: Publish modules and track versions
       id: publish-modules-version-history
       description: Wants to publish modules and review the version history
@@ -11930,6 +11942,11 @@ knowledge-needs:
         app, and revision, and how selecting a revision and running impact
         analysis fit into deploying an app to a stage in the ODC Portal, so
         they can follow ODC deployment documentation and workflows.
+    - name: Deploy app to stage (ODC)
+      id: deploy-app-to-stage-odc
+      description: Wants to promote an ODC app to an intended stage in ODC Portal
+        by selecting its revision, running impact analysis, and confirming
+        deployment, so that the app is available in the target environment.
   - name: ODC deployment inconsistencies
     id: odc-deployment-inconsistencies
     description: Wants to interpret and resolve ODC Portal deployment
@@ -12099,8 +12116,8 @@ knowledge-needs:
       id: discard-deployment-plan
       description: Wants to discard a LifeTime deployment plan that is no
         longer needed, so that it is not used for deployment.
-    - name: Deploy applications
-      id: deploy-applications
+    - name: Deploy applications (O11)
+      id: deploy-applications-o11
       description: Wants to deploy tagged application versions in LifeTime by
         selecting the applications in a deployment plan, validating the plan,
         and starting the deployment from one environment to another, so that
@@ -13279,10 +13296,6 @@ knowledge-needs:
       id: service-studio-inspect-screens-in-browser
       description: Wants to inspect a Service Studio screen in the browser,
         so they can preview how the app renders.
-    - name: Create entity diagrams
-      id: service-studio-create-entity-diagrams
-      description: Wants to create entity diagrams in Service Studio, so they
-        can visualize the data model.
     - name: Guess data types
       id: service-studio-guess-data-types
       description: Wants to guess data types in Service Studio, so they can
@@ -14903,9 +14916,9 @@ knowledge-needs:
     - name: Data model prompts
       id: mentor-studio-data-model-prompts
       description: Wants to write prompts for Mentor Studio to create or
-        modify entities, attributes, and relationships, using a
-        basic-to-detailed prompt progression, so that ODC Studio artifacts
-        are generated or modified correctly.
+        modify entities, attributes, relationships, and static entity records,
+        including existing elements, using a basic-to-detailed prompt progression,
+        so that ODC Studio artifacts and fixed lookup data match the intended data model.
     - name: TrueChange error and warning prompts
       id: mentor-studio-truechange-prompts
       description: Wants to write prompts for Mentor Studio to resolve
@@ -19429,6 +19442,12 @@ knowledge-needs:
         authentication component by opening the module and editing its
         User Provider module property, so that the module uses the intended
         provider.
+    - name: Understand user providers
+      id: understand-user-providers
+      description: Wants to understand how user providers supply user records
+        and active sessions for applications, including the default Users
+        provider and custom providers, so they can choose a provider
+        arrangement that supports shared authentication across modules.
     - name: Custom federated SSO
       id: custom-federated-sso
       description: Wants to understand how to integrate a centralized federated

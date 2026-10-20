@@ -534,7 +534,7 @@ knowledge-needs:
       description: Wants to know which built-in organization functions are available in ODC
         Studio, including their outputs and availability in server-side logic,
         client-side logic, and database aggregates, so that they can retrieve
-        session locale, user agent, and app name information in expressions.
+        organization-related information in expressions.
     - name: O11 math functions
       id: built-in-math-functions-o11
       description: Wants to know which built-in math functions are available
@@ -9993,9 +9993,8 @@ knowledge-needs:
         11, so that a list can be filtered by multiple categories at once.
     - name: Dropdown Search reference
       id: dropdown-search-ref
-      description: Wants to look up the properties and events of the Dropdown
-        Search widget in Service Studio, including OptionsList, StartingSelection,
-        Prompt, and OptionalConfigs, so that they can correctly configure a
+      description: Wants to look up the configurable properties and events of the Dropdown
+        Search widget in Service Studio, so that they can correctly configure a
         searchable dropdown selector in OutSystems 11 mobile apps and reactive
         web apps.
     - name: Use Dropdown Tags pattern

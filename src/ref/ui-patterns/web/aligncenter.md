@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - align-center-reference
 ---
 
 # Align Center Reference

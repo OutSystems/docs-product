@@ -10,6 +10,8 @@ tags:
   - REST
 audience:
   - Developer
+topic:
+  - input-parameter-reference
 outsystems-tools:
   - service studio
 coverage-type:

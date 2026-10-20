@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - rest-auth-callback
 ---
 
 # REST API Callback - Authentication

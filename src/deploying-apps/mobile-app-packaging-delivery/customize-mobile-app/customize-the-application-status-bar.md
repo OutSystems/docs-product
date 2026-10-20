@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - set-app-preferences
 isautopublish: true
 ---
 

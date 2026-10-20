@@ -18,6 +18,8 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - ui-patterns-overview
 ---
 
 # Patterns

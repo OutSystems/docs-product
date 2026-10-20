@@ -17,6 +17,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - range-slider-api
+  - range-slider-interval-reference
 ---
 
 # Range Slider Interval Reference

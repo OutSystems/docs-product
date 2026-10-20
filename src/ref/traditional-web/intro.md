@@ -14,6 +14,8 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - web-system-events-scope
 ---
 
 # Traditional Web

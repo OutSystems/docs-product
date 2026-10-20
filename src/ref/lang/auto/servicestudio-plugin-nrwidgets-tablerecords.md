@@ -19,6 +19,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - table-accessibility
+  - table-widget-reference
 isautopublish: true
 ---
 

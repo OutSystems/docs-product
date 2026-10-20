@@ -9356,6 +9356,12 @@ knowledge-needs:
         App, bind it to a UI element, enter pop-up content, and configure
         its position, trigger, and optional styling so that additional
         information appears next to the target element.
+    - name: Balloon reference
+      id: balloon-reference
+      description: Wants to look up the Balloon UI Pattern layout, CSS classes,
+        events, and AdvancedFormat options in Service Studio for Traditional
+        Web Apps (O11), so they can configure its display and animation
+        behavior.
     - name: Use Tooltip pattern
       id: use-tooltip-pattern
       description: Wants to add the Tooltip UI Pattern to a screen, add the
@@ -9812,6 +9818,13 @@ knowledge-needs:
         the Toolbox, enter the label text, and set a name and type for the
         Input variable, in Service Studio, so that an animated label
         displays for user input.
+    - name: Animated Label reference
+      id: animated-label-reference
+      description: Wants to look up the layout and CSS selectors for the Animated
+        Label UI Pattern, including the inline and active label classes, and
+        reposition the active label with custom CSS in Service Studio for an
+        OutSystems 11 Traditional Web App, so they can customize the pattern's
+        appearance.
     - name: Animate Alert pattern
       id: animate-alert-pattern
       description: Wants to add an enter animation to the Alert UI Pattern, using

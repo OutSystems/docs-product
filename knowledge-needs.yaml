@@ -32,6 +32,16 @@ knowledge-needs:
         Run Client Action element in Reactive Web Apps or Mobile Apps,
         selecting an existing action or creating a new one as needed, so that
         they can execute client-side logic directly from the flow.
+    - name: Use JavaScript node
+      id: use-o11-javascript-node
+      description: Wants to use a JavaScript node in an OutSystems 11 client
+        action to execute custom JavaScript and manipulate screen elements, so
+        they can extend client-side logic with browser-side behavior.
+    - name: Use ODC JavaScript node
+      id: use-odc-javascript-node
+      description: Wants to add and configure a JavaScript node in an ODC server
+        action flow, so they can extend server-side logic when built-in logic
+        elements do not provide the required behavior.
     - name: Update list items
       id: update-list-items
       description: Wants to update a displayed list by using list-manipulation
@@ -3161,6 +3171,11 @@ knowledge-needs:
         nodes, including the SELECT, WITH, FROM, WHERE, GROUP BY, HAVING, WINDOW,
         UNION, ORDER BY, LIMIT, and OFFSET clauses and mashup-query behavior, so they
         can build correct read queries against external entities.
+    - name: Custom SELECT query
+      id: custom-select-query
+      description: Wants to create a custom SELECT SQL query by adding and
+        configuring a SQL node, so they can retrieve data beyond what Aggregates
+        support.
     - name: Advanced SQL queries
       id: advanced-sql-queries
       description: Wants to use a SQL node to perform advanced data queries that
@@ -3229,6 +3244,11 @@ knowledge-needs:
       id: custom-delete-query
       description: Wants to create a custom DELETE SQL query in Service
         Studio's SQL node to remove records from a table, so they can delete
+        data with a data-changing SQL node.
+    - name: Custom update query
+      id: custom-update-query
+      description: Wants to create a custom UPDATE SQL query in Service
+        Studio's SQL node to modify records in a table, so they can update
         data with a data-changing SQL node.
     - name: Non-select query setup
       id: non-select-query-setup
@@ -10268,7 +10288,7 @@ knowledge-needs:
         Web App screen and place content in its placeholder so that content
         loads only when it becomes visible and page performance improves.
     - name: Use Button Group pattern
-      id: use-button-group-pattern
+      id: use-button-group-pattern-o11
       description: Wants to add the Button Group UI Pattern to a Traditional
         Web App screen and configure its radio-button items, labels, and
         IsJustified property, so that users can choose from a small set of
@@ -10684,8 +10704,10 @@ knowledge-needs:
       id: boolean-input-widgets
       description: Wants to choose a Check Box or Switch widget for boolean input in a reactive web form, and bind it to a Boolean screen variable, so the form stores true or false values correctly.
     - name: Use Button Group widget
-      id: use-button-group-widget
-      description: Wants to add the Button Group widget to a reactive web form and bind it to a screen variable, so users can choose one of several mutually exclusive options in OutSystems 11.
+      id: use-button-group-widget-odc
+      description: Wants to add and configure the Button Group widget in an ODC
+        reactive web form, so that users can choose one option from a grouped
+        set of buttons.
     - name: Button Group variable
       id: button-group-variable
       description: Wants to identify that the Button Group Variable property belongs to the widget, not each Button Group Item, so they can distinguish widget-level and item-level properties when configuring a reactive web form in OutSystems 11.
@@ -13136,8 +13158,9 @@ knowledge-needs:
         getting blocked by layout or navigation friction.
     - name: Install quickstart app
       id: install-quickstart-app-o11
-      description: Wants to install a quickstart .oap in Service Studio, so they
-        can open the app and continue the guided path.
+      description: Wants to install the Expenses Portal quickstart app from its
+        .oap file in Service Studio, so they can use it as a sample environment
+        to build business processes and continue the guided path.
     - name: First app setup
       id: first-app-setup
       description: Wants to create an account, install the development environment,

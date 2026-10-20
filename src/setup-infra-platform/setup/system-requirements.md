@@ -396,9 +396,9 @@ On Windows, the following versions are supported:
 
 On macOS (cross-platform Service Studio only), the following versions are supported:
 
+* macOS Golden Gate since Service Studio 11.55.93
 * macOS Tahoe since Service Studio 11.55.45
 * macOS Sequoia since Service Studio 11.55.0
-* macOS Sonoma since Service Studio 11.54.60
 
 #### Required software {#ss-software}
 

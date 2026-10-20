@@ -6,7 +6,7 @@ tags:
   - UI
   - UI Patterns
   - UX
-summary: Explore interaction features in OutSystems 11 (O11), designed exclusively for Mobile Apps and Reactive Web Apps.
+summary: OutSystems 11 (O11) interaction UI patterns apply to Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: 4f77c43f-3fbc-43d5-baf0-33784d6a1df0
 app_type: mobile apps, reactive web apps

@@ -18,6 +18,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - dropdown-link-list
+  - dropdown-reference
 ---
 
 # Dropdown Reference

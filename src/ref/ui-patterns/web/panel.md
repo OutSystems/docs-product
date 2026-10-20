@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - add-panel-shadow
 ---
 
 # Panel Reference

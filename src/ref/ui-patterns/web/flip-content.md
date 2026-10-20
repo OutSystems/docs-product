@@ -15,6 +15,9 @@ audience:
   - Developer
 outsystems-tools:
   - service studio
+topic:
+  - flip-content-reference
+  - toggle-flip-content
 coverage-type:
   - remember
   - apply

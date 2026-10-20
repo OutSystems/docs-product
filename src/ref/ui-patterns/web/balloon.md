@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - balloon-reference
 ---
 
 # Balloon Reference

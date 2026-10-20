@@ -20,6 +20,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - lightbox-image-reference
 ---
 
 # Light Box Image Reference

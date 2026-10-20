@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - add-sign-in-button
 ---
 
 # Login Form Reference

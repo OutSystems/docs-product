@@ -3551,6 +3551,11 @@ knowledge-needs:
       id: review-rest-docs
       description: Wants to review a REST API's documentation before consuming it, so
         they can understand the API contract before configuring the integration.
+    - name: Consume REST API
+      id: consume-rest-api
+      description: Wants to understand how to consume REST APIs in OutSystems 11 using
+        reference information about consumed REST API elements, so they can integrate
+        an app with external systems.
   - name: REST API request formats
     id: rest-api-request-formats
     description: Wants to understand how exposed REST API requests handle supported media
@@ -4067,6 +4072,12 @@ knowledge-needs:
     - name: Set up Integration Studio
       id: set-up-integration-studio
       description: Wants to install Integration Studio from the OutSystems website and connect it with their OutSystems credentials, so they can start creating extensions.
+    - name: Configure application comparison
+      id: configure-application-comparison
+      description: Wants to configure the application used to compare extensions in Integration Studio's Options window, so they can compare extension versions against the intended application.
+    - name: Configure server connection
+      id: configure-integration-studio-server-connection
+      description: Wants to configure the default Platform Server connection in Integration Studio's Options window, so they can connect to the intended server while working with extensions.
     - name: Resolve environment fault
       id: resolve-environment-fault
       description: Wants to resolve Environment Fault Error messages in Integration Studio by checking environment and setup issues, so they can open, compile, save, and update extensions.
@@ -7428,8 +7439,10 @@ knowledge-needs:
     - name: Unsupported SOAP imports
       id: unsupported-soap-imports
       description: Wants to identify SOAP WSDL constructs and action names that
-        Service Studio cannot import, so they know when a service needs WSDL
-        changes before consumption.
+        Service Studio cannot import, determine when an Integration Studio
+        extension is required, and choose between extension-based consumption
+        and WSDL changes, so they can consume services with unsupported SOAP
+        or XML Schema features.
     - name: Export SOAP definitions
       id: export-soap-definitions
       description: Wants to export the definition files for a consumed SOAP web

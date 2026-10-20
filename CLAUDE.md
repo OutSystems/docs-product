@@ -162,6 +162,11 @@ Validations run on PRs via `.github/workflows/`. Workflow names and checks vary 
 * `build.yml`: documentation build
 * `visual-assets-validate.yml` / `visual-assets-pr.yml`: image/diagram validation
 
+## Starting work
+
+* Before starting work, run `git fetch origin` and create the branch from `origin/main` (or update local `main` with `git pull --ff-only` first). A stale base causes avoidable rebase conflicts and can hide changes that already landed.
+* Never commit directly to `main`.
+
 ## Pull requests
 
 * Pull request titles must include the Jira ticket ID(s) relevant to the change. Valid Jira tickets ids contain the prefix `RDTKF-` or `TK-`, followed by a number (e.g. RDTKF-1234, TK-5678).

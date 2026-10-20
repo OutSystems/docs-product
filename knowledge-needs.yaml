@@ -1458,6 +1458,11 @@ knowledge-needs:
       description: Wants to add a Table widget to a Screen and bind it to an Aggregate
         as its data source, so that the screen displays database records in a tabular
         layout.
+    - name: Table widget reference
+      id: table-widget-reference
+      description: Wants to look up the properties, events, and runtime properties of
+        the Table widget in Service Studio for OutSystems 11, so they can correctly
+        configure the widget and understand its runtime behavior in a Reactive Web App.
     - name: Set up Editable Table
       id: set-up-editable-table
       description: Wants to add an Editable Table widget to a Traditional Web App
@@ -2423,6 +2428,12 @@ knowledge-needs:
          to declare a non-default initial sort direction using the
          default-sort-direction Extended Property on a Header Cell, in OutSystems 11,
          so custom OnSort actions report the correct sort state.
+     - name: Table accessibility
+       id: table-accessibility
+       description: Wants to configure a Table widget for accessible table semantics
+         by adding an accessible caption and overriding the default grid role with
+         the table role through Extended Properties, in Service Studio for Reactive
+         Web Apps, so screen readers announce the table structure correctly.
      - name: Accessible Card Background pattern
        id: accessible-card-background-pattern
        description: Wants to improve text contrast on the Card Background UI
@@ -3625,6 +3636,9 @@ knowledge-needs:
       description: Wants to understand which Username and Password input parameters Service Studio
         adds or removes automatically when configuring an exposed REST API for Basic or Custom
         authentication, so they can recognize how the authentication action inputs change.
+    - name: REST auth callback
+      id: rest-auth-callback
+      description: Wants to understand how the OnAuthentication action works for an exposed REST API configured with Basic or Custom authentication, so they can customize callback logic that authenticates callers before methods run.
     - name: REST API customization
       id: rest-api-customization
       description: Wants to customize an exposed REST API's endpoint URLs, custom HTTP
@@ -7732,6 +7746,9 @@ knowledge-needs:
     - name: Create BPT process
       id: create-bpt-process
       description: Wants to create a BPT process in Service Studio and start defining the process flow, so they can automate tasks and track work in their application.
+    - name: Configure process properties
+      id: configure-process-properties
+      description: Wants to configure a Process element's properties in Service Studio for OutSystems 11, including exposure, launch behavior, end-user labels, details, and the Process Entity, so that the process starts and appears as intended.
     - name: Decision outcome
       id: decision-outcome
       description: Wants to understand what a Decision Outcome element does in an OutSystems 11 BPT decision flow, including how the Connector property routes execution and ends the flow, so they can configure the correct branch.

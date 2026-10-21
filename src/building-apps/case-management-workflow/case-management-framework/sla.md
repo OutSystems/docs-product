@@ -1,5 +1,12 @@
 ---
-tags: sla enforcement, sla configuration, workflow automation, process management, business rules
+tags:
+  - 1-Click Publish
+  - Business Processes
+  - Case Management framework
+  - Events
+  - Logic
+  - Timers
+  - Workflows
 summary: OutSystems 11 (O11) Case Management framework SLA configuration sets case deadlines, calendar-aware timing, and overdue-event actions.
 guid: e745cd81-f50a-483d-a08d-4279288fceae
 locale: en-us

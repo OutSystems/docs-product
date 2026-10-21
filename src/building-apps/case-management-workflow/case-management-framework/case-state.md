@@ -1,5 +1,8 @@
 ---
-tags: case management, outsystems 11, application lifecycle management, status handling, workflow customization
+tags:
+  - 1-Click Publish
+  - Case Management framework
+  - Workflows
 summary: "Case Management framework case statuses in OutSystems 11 (O11): define statuses in CaseStatusConfiguration and update them with Case_UpdateStatus."
 guid: fc30b404-7533-4e75-9e88-392cf3f454b6
 locale: en-us

@@ -5,7 +5,14 @@ guid: 5a13a09e-6e8f-40b2-8ca3-eb7af13e3b40
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: database modeling, data persistence, entity management, primary keys, indexes
+tags:
+  - Data
+  - Data Integrity
+  - Data Model
+  - Entities
+  - Indexes
+  - Performance
+  - Sorting
 audience:
   - Developer
   - Front-end developer

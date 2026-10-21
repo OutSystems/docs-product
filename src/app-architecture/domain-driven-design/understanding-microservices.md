@@ -1,6 +1,13 @@
 ---
 summary: "Microservices architecture in OutSystems 11 (O11): key benefits, burdens, and how O11's single stack and query model reduce complexity."
-tags: microservices, application scaling, independent deployment, software modularization, network communication
+tags:
+  - Architecture
+  - Debugging
+  - Logging
+  - Microservices
+  - Modular Programming
+  - Monitoring
+  - Security
 guid: b161ae4a-7e15-4b76-93d8-f3096d4948c6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

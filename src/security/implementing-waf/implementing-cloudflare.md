@@ -16,6 +16,9 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - configure-cloudflare-waf
+  - customize-cloudflare-waf-rules
 ---
 
 # Implementing a Cloudflare WAF in an OutSystems web app

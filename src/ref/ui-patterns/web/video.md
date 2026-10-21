@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - customize-video-controls
 ---
 
 # Video Reference

@@ -15,6 +15,10 @@ audience:
   - Developer
 outsystems-tools:
   - platform server
+topic:
+  - platform-app-server-requirements
+  - platform-database-requirements
+  - platform-install-prerequisites
 coverage-type:
   - remember
   - understand

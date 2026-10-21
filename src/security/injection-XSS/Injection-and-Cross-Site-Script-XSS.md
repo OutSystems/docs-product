@@ -19,6 +19,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - configure-csp-o11
+  - encode-custom-html-javascript
+  - prevent-sql-injection
 ---
 
 # Injection and Cross Site Script - XSS

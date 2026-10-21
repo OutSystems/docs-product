@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - use-timeline-pattern
 ---
 
 # Timeline Reference

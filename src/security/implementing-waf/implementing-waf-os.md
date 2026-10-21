@@ -17,6 +17,9 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - owasp-top10-awareness
+  - waf-overview
 ---
 
 # Web Application Firewall in OutSystems

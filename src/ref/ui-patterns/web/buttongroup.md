@@ -18,6 +18,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - bind-button-group-radios
+  - use-button-group-with-listrecords
 ---
 
 # Button Group Reference

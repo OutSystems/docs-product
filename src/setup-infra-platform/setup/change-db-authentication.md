@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - change-db-authentication-mode
 ---
 
 # Change SQL Server database authentication mode

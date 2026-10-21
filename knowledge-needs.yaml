@@ -15708,8 +15708,9 @@ knowledge-needs:
       id: file-plugin-rebuild
       description: Wants to resolve the OS-PLUG-FILE-0002 warning by
         generating and distributing a new mobile package after updating the
-        File Plugin, so the installed native build uses the updated plugin
-        version instead of the older package.
+        File Plugin, including after an over-the-air update, so the installed
+        native build uses the updated plugin version instead of the older
+        package and new File Plugin client actions work at runtime.
   - name: File Viewer plugin reference
     id: file-viewer-plugin-reference
     description: Wants to understand the File Viewer plugin in O11 mobile apps,
@@ -20014,7 +20015,7 @@ knowledge-needs:
         LifeTime, Service Studio, and Integration Studio can sign in through
         AD FS.
     - name: Configure Microsoft Entra IdP
-      id: configure-microsoft-entra-idp
+      id: configure-microsoft-entra-o11
       description: Wants to configure Microsoft Entra as an OpenID Connect
         identity provider for OutSystems 11 tools by registering the app,
         setting redirect URIs, adding the client secret and Microsoft Graph
@@ -20068,12 +20069,14 @@ knowledge-needs:
         confirming claim mapping, so that they can establish a secure OIDC
         handshake between ODC and Okta.
     - name: Configure Microsoft Entra
-      id: configure-microsoft-entra
+      id: configure-microsoft-entra-odc
       description: Wants to configure Microsoft Entra ID as an external
         identity provider in ODC by creating the app registration, setting
         the discovery endpoint, client ID, client secret, redirect URIs,
-        claim mapping, and assignment scope, so that end users can sign in
-        through Microsoft Entra.
+        claim mapping and user-matching settings, assigning the provider to
+        an organization or app stage, and adding the generated redirect URLs
+        to Azure Portal, so that end users can sign in through Microsoft
+        Entra.
     - name: Add OIDC provider
       id: add-oidc-provider
       description: Wants to add an OpenID Connect identity provider in ODC

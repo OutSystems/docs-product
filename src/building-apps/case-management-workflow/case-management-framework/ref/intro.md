@@ -14,6 +14,7 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - remember
+  - understand
 ---
 
 # Case Management framework reference

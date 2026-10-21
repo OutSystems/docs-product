@@ -9085,7 +9085,7 @@ knowledge-needs:
         that they can correctly configure the pattern's open/close state
         and custom styling, in mobile apps and reactive web apps (O11).
     - name: Use Wizard pattern
-      id: use-wizard-pattern
+      id: use-wizard-pattern-reactive-web-o11
       description: Wants to add the Wizard UI Pattern to a screen and build
         multi-step navigation, by adding the Wizard and Wizard Item widgets,
         creating a CurrentStep Input Parameter, setting each Wizard Item's
@@ -9095,6 +9095,20 @@ knowledge-needs:
         in Service Studio, so that the wizard displays the active, past,
         and next steps correctly, in mobile apps and reactive web apps
         (O11).
+    - name: Traditional Web Wizard
+      id: use-wizard-pattern-traditional-web-o11
+      description: Wants to add the Wizard UI Pattern to a Traditional Web App
+        screen, use ListRecords for dynamic steps, and build navigation with
+        Continue and Back buttons, a step index variable, and conditional
+        content, so that the wizard displays the active, past, and next steps
+        correctly in Service Studio for OutSystems 11.
+    - name: Wizard pattern reference
+      id: wizard-pattern-reference
+      description: Wants to look up the Wizard UI Pattern's layout, CSS classes,
+        and selectors, including orientation and step-status classes, and
+        apply custom CSS to the active step, in Service Studio for Traditional
+        Web Apps (O11), so they can configure and customize the wizard's
+        appearance.
     - name: Add switch widget
       id: add-switch-widget
       description: Wants to add a Switch widget to a screen and bind a
@@ -21875,6 +21889,13 @@ knowledge-needs:
         adjusting attack group actions, and creating custom rules for
         specific rule IDs, so that they can tailor the WAF's blocking
         behavior to their application's needs.
+    - name: Monitor Akamai WAF
+      id: monitor-akamai-waf
+      description: Wants to test and monitor an Akamai WAF protecting an
+        OutSystems web app after policy changes, by checking application
+        behavior and reviewing Web Security Analytics to identify negative
+        impact, repeated attack patterns, and false positives, so that they
+        can fine-tune WAF rules without disrupting legitimate traffic.
     - name: Configure Cloudflare WAF
       id: configure-cloudflare-waf
       description: Wants to set up a Cloudflare account and integrate
@@ -22171,6 +22192,12 @@ knowledge-needs:
         with virtual machine scale sets and update the scale set image to the
         matching Platform Server version after an upgrade, so that the
         environment keeps the intended capacity and platform version.
+  - name: Database high availability
+    id: database-high-availability
+    description: Wants to evaluate high-availability options for the database
+      supporting an OutSystems 11 infrastructure, by reviewing supported
+      database vendor solutions, so that the database supports the required
+      failover and resilience.
   - name: Database Collation
     id: database-collation
     subtopics:
@@ -22572,11 +22599,9 @@ knowledge-needs:
     subtopics:
     - name: Infrastructure design
       id: infrastructure-design
-      description: Wants to design an OutSystems Platform infrastructure for
-        on-premises or private cloud deployments by planning server
-        scaling, high availability, disaster recovery, and security, so
-        that they can choose a supported configuration before installing
-        Platform Server.
+      description: Wants to choose the appropriate Platform Server roles and
+        infrastructure topology for an on-premises or private cloud deployment,
+        so that they can install a supported configuration.
     - name: Install prerequisites
       id: platform-install-prerequisites
       description: Wants to understand the default hardware, software, and
@@ -23699,6 +23724,12 @@ knowledge-needs:
       database) when preparing a support case, so they know where each
       log is available and which one applies to their issue.
     subtopics:
+    - name: Retrieve Azure logs
+      id: retrieve-azure-logs
+      description: Wants to retrieve the OutSystems configuration file,
+        infrastructure deployment logs, and Azure Portal error stack after
+        an OutSystems 11 deployment fails on Microsoft Azure, so that they
+        can troubleshoot the deployment.
     - name: Use OSDiagTool
       id: use-osdiagtool
       description: Wants to collect Windows server system information and logs for an

@@ -8934,6 +8934,13 @@ knowledge-needs:
         widget by setting Line Separator to None and placing a Bullet Item
         pattern inside the widget, in Service Studio for a Traditional Web
         App (O11), so that each record displays as a bullet.
+    - name: Use User Initials pattern
+      id: use-user-initials-pattern
+      description: Wants to add the User Initials UI Pattern to a Traditional
+        Web App screen, bind its name parameter to user data in a table, and
+        display the pattern conditionally with an If widget, in Service Studio
+        for OutSystems 11, so that users see initials or an image based on the
+        available user data.
     - name: Use Scrollable Area pattern
       id: use-scrollable-area-pattern
       description: Wants to add the Scrollable Area UI Pattern to a screen, drag
@@ -10282,6 +10289,13 @@ knowledge-needs:
         Service Studio, place Timeline Items on a screen, fill the Icon, Date, and
         Content placeholders, and configure the Timeline and Timeline Item
         properties, so that related events display in chronological order.
+    - name: Timeline ListRecords
+      id: timeline-listrecords
+      description: Wants to combine the Timeline UI Pattern with a ListRecords widget
+        by placing Timeline Items inside the widget, using expressions to display
+        database content, and configuring the Line Separator and timeline CSS, in
+        Service Studio for a Traditional Web App (O11), so that database records
+        display as a chronological timeline.
     - name: Use Progress Bar pattern
       id: use-progress-bar-pattern
       description: Wants to add the Progress Bar UI Pattern to a screen and configure
@@ -10393,6 +10407,11 @@ knowledge-needs:
         btn class, and setting Line Separator to None in Service Studio for a
         Traditional Web App, so that each record displays the grouped buttons
         correctly.
+    - name: Bind Button Group radios
+      id: bind-button-group-radios
+      description: Wants to manually add a name attribute to each radio button
+        in a Button Group used inside List Records or Table Records, so the
+        platform binds the radio buttons correctly in a Traditional Web App.
     - name: Button Group reference
       id: button-group-reference
       description: Wants to look up the Button Group UI Pattern's IsJustified
@@ -10423,6 +10442,13 @@ knowledge-needs:
         Video Pattern, configuring it with a URL-hosted video file or an
         uploaded Resource, in Service Studio, so that videos play within
         the app's UI.
+    - name: Customize Video controls
+      id: customize-video-controls
+      description: Wants to create custom Play and Pause buttons for the Video
+        UI Pattern in a Traditional Web App by using the PlayVideo and
+        PauseVideo actions with the pattern's WidgetId, so that users can
+        control video playback with application-specific controls in
+        OutSystems 11.
     - name: Video pattern reference
       id: video-pattern-reference
       description: Wants to look up the properties of the Video UI Pattern
@@ -10668,6 +10694,12 @@ knowledge-needs:
         so that they can correctly configure padding and custom CSS
         styling for the pattern, in mobile apps and reactive web apps
         (O11).
+    - name: Section reference Traditional Web
+      id: section-reference-traditional-web
+      description: Wants to look up the layout classes and CSS customization
+        for the Section UI Pattern, including removing the title border, in
+        Service Studio for an OutSystems 11 Traditional Web App, so they can
+        configure the pattern's layout and appearance.
     - name: Use Flip Content pattern
       id: use-flip-content-pattern
       description: Wants to add the Flip Content UI Pattern to a screen, drag

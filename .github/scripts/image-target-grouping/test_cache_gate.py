@@ -14,6 +14,7 @@ import json
 import os
 import sys
 import tempfile
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -31,6 +32,8 @@ def run(name, fn) -> bool:
 
 
 SEM = "9f2a1c4d"
+# Relative to now, so entries stay inside the 30d max age however old this file gets.
+RECENT = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def _record(tmp: Path, entries: dict) -> str:
@@ -91,7 +94,7 @@ def test_all_cached_skips_before_checkout() -> None:
             tmp,
             changed=["src/art.md"],
             record={"src/art.md": {
-                "hash": "AAA", "skill_version": SEM, "validated_at": "2026-09-20T10:00:00Z",
+                "hash": "AAA", "skill_version": SEM, "validated_at": RECENT,
                 "run_id": "1", "verdict": "clean", "findings": [],
                 "deps": {"src/images/x-ss.png": "XXX"},
             }},
@@ -112,7 +115,7 @@ def test_referenced_image_changed_blocks_the_skip() -> None:
             tmp,
             changed=["src/art.md"],
             record={"src/art.md": {
-                "hash": "AAA", "skill_version": SEM, "validated_at": "2026-09-20T10:00:00Z",
+                "hash": "AAA", "skill_version": SEM, "validated_at": RECENT,
                 "run_id": "1", "verdict": "clean", "findings": [],
                 "deps": {"src/images/x-ss.png": "XXX"},
             }},
@@ -130,7 +133,7 @@ def test_unresolvable_dep_blocks_the_skip() -> None:
             tmp,
             changed=["src/art.md"],
             record={"src/art.md": {
-                "hash": "AAA", "skill_version": SEM, "validated_at": "2026-09-20T10:00:00Z",
+                "hash": "AAA", "skill_version": SEM, "validated_at": RECENT,
                 "run_id": "1", "verdict": "clean", "findings": [],
                 "deps": {"src/images/x-ss.png": "XXX"},
             }},
@@ -144,7 +147,7 @@ def test_changed_file_and_skill_bump_block_the_skip() -> None:
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
         entry = {"src/art.md": {
-            "hash": "AAA", "skill_version": SEM, "validated_at": "2026-09-20T10:00:00Z",
+            "hash": "AAA", "skill_version": SEM, "validated_at": RECENT,
             "run_id": "1", "verdict": "clean", "findings": [], "deps": {},
         }}
 
@@ -171,7 +174,7 @@ def test_cached_findings_still_run_so_the_check_can_fail() -> None:
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
         base = {"hash": "AAA", "skill_version": SEM,
-                "validated_at": "2026-09-20T10:00:00Z", "run_id": "1"}
+                "validated_at": RECENT, "run_id": "1"}
 
         # The changed file itself carries findings.
         skip, survivors, _ = _invoke(
@@ -192,7 +195,7 @@ def test_cached_findings_still_run_so_the_check_can_fail() -> None:
                 "src/images/x-ss.png": {"hash": "XXX", "skill_version": SEM,
                                         "verdict": "findings",
                                         "findings": ["❌ no shadow"],
-                                        "validated_at": "2026-09-20T10:00:00Z",
+                                        "validated_at": RECENT,
                                         "run_id": "1", "deps": {}},
             },
             blobs={"src/art.md": "AAA", "src/images/x-ss.png": "XXX"},
@@ -208,7 +211,7 @@ def test_cached_findings_still_run_so_the_check_can_fail() -> None:
                                    deps={"src/images/x-ss.png": "XXX"}),
                 "src/images/x-ss.png": {"hash": "XXX", "skill_version": SEM,
                                         "verdict": "clean", "findings": [],
-                                        "validated_at": "2026-09-20T10:00:00Z",
+                                        "validated_at": RECENT,
                                         "run_id": "1", "deps": {}},
             },
             blobs={"src/art.md": "AAA", "src/images/x-ss.png": "XXX"},
@@ -224,9 +227,9 @@ def test_partial_hit_narrows_to_survivors() -> None:
             changed=["src/a.md", "src/b.md", "src/c.md"],
             record={
                 "src/a.md": {"hash": "A", "skill_version": SEM, "deps": {},
-                             "validated_at": "2026-09-20T10:00:00Z", "run_id": "1"},
+                             "validated_at": RECENT, "run_id": "1"},
                 "src/b.md": {"hash": "B", "skill_version": SEM, "deps": {},
-                             "validated_at": "2026-09-20T10:00:00Z", "run_id": "1"},
+                             "validated_at": RECENT, "run_id": "1"},
             },
             blobs={"src/a.md": "A", "src/b.md": "CHANGED", "src/c.md": "C"},
         )

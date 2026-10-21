@@ -18,6 +18,10 @@ audience:
 tags:
   - Agentic
   - AI
+  - Data
+  - Logging
+  - Security
+  - Site Properties
 outsystems-tools:
   - service studio
 helpids:
@@ -47,6 +51,12 @@ No OutSystems-hosted service receives your application model. For this reason, O
 The only model in the flow is the model your MCP host uses. Your agreement with that model provider and your MCP host's data settings govern how the provider processes your prompts, including any module content the agent adds to them.
 
 Treat the call from your MCP host to its model provider as the point where module content leaves your machine. OutSystems doesn't receive your prompts, transcripts, or module files, and doesn't use them for training, fine-tuning, evaluation, or product improvement. Service Studio also sends a limited set of telemetry to OutSystems. Refer to [Telemetry](#telemetry).
+
+<div class="warning" markdown="1">
+
+Don't include personally identifiable information (PII) in prompts or in module content that the agent reads, such as default values. PII includes real names, email addresses, phone numbers, and government IDs. Your MCP host sends this content to its model provider. Use placeholder or fictional data instead.
+
+</div>
 
 ## Telemetry
 

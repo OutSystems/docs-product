@@ -5,7 +5,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: OutSystems 11 (O11) enables block events to interact with parent elements by triggering notifications and handling data through input parameters.
-tags: ide usage, reactive web apps, tutorials for beginners, block events, data handling
+tags:
+  - Blocks
+  - Data
+  - Events
+  - Logic
+  - Triggers
 audience:
   - Developer
   - Front-end developer

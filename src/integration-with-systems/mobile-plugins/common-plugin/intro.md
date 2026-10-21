@@ -4,7 +4,12 @@ locale: en-us
 guid: 2af3ba6d-9a82-4f13-99a0-27f4f06779f8
 app_type: mobile apps
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=4144-58
-tags: plugin development,cordova integration,mobile app development,outsystems mobile,javascript modules
+tags:
+  - Cordova
+  - JavaScript
+  - Mobile app
+  - Plugins
+  - Screens
 audience:
   - Developer
 outsystems-tools:

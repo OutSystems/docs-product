@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) enables the extraction of distinct values from database tables by using aggregates with grouped columns.
-tags: database operations, data aggregation, entity modeling, data manipulation, aggregate functions
+tags:
+  - Aggregates
+  - Data
+  - Data Model
+  - Entities
+  - Front-End
+  - Table
 locale: en-us
 guid: 4ceecc67-9976-48c7-bcdb-fa895a141d81
 app_type: traditional web apps, mobile apps, reactive web apps

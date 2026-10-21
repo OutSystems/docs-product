@@ -1,6 +1,10 @@
 ---
 summary: Explore data manipulation techniques in OutSystems 11 (O11) for editing, filtering, sorting, and aggregating data to meet business requirements.
-tags: data manipulation, database queries, sql elements, data filtering, data sorting
+tags:
+  - Aggregates
+  - Data
+  - SQL
+  - Sorting
 locale: en-us
 guid: 82544d15-d937-4d47-9587-ce5a9c96d45b
 app_type: traditional web apps, mobile apps, reactive web apps

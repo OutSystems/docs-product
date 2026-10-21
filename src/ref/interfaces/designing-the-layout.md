@@ -1,6 +1,13 @@
 ---
 summary: Explore essential resources for designing app layouts with OutSystems 11 (O11), including guides on images, localized images, mobile themes, and UI flows.
-tags: layout design, ui design, app development, ui kits, design best practices
+tags:
+  - Layouts
+  - Mobile app
+  - Multi-language
+  - Themes
+  - Translation
+  - UI
+  - UX
 locale: en-us
 guid: 593e0def-f3b6-4046-a6d9-d71f3613e90a
 app_type: traditional web apps, mobile apps, reactive web apps

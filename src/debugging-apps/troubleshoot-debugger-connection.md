@@ -1,6 +1,12 @@
 ---
 summary: Explore common mobile app debugging issues and solutions in OutSystems 11 (O11) using Service Studio 11.5.44.2557 or later.
-tags: mobile app debugging, service studio configuration, debugging best practices, port configuration, android debugging
+tags:
+  - Android
+  - Debugging
+  - iOS
+  - Mobile app
+  - Settings
+  - Troubleshooting
 locale: en-us
 guid: dc4e00b1-34e4-4bf0-9fa6-b63c6d4f6719
 app_type: mobile apps

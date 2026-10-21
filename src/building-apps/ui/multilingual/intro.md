@@ -1,6 +1,11 @@
 ---
 summary: OutSystems 11 (O11) supports translating the UI of Traditional Web Apps into multiple languages using built-in localization mechanisms.
-tags: localization, multilingual support, ui translation, application development, outsystems
+tags:
+  - Multi-language
+  - Traditional Web
+  - Translation
+  - UI
+  - Web
 locale: en-us
 guid: 63d6ab36-1403-4f8f-9ba8-ee4450833e39
 app_type: traditional web apps

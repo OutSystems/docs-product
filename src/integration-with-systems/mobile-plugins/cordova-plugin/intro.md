@@ -1,6 +1,13 @@
 ---
 summary: Explore how to integrate Apache Cordova plugins into mobile apps using OutSystems 11 (O11) by wrapping them into modules.
-tags: apache cordova, mobile app development, plugin integration, outsystems platform, mobile app extensibility
+tags:
+  - Cordova
+  - Forge
+  - JavaScript
+  - Mobile app
+  - Native App
+  - Plugins
+  - Templates
 locale: en-us
 guid: 2d86818a-afda-4680-9090-8966faa38be9
 app_type: mobile apps

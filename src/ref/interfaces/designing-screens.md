@@ -1,6 +1,11 @@
 ---
 summary: Explore widget functionalities in OutSystems 11 (O11) for efficient UI screen design.
-tags: ui development, widgets, user interface design, ui components, screen design
+tags:
+  - Blocks
+  - Front-End
+  - Screens
+  - UI
+  - Widgets
 locale: en-us
 guid: 9a6e61ee-eaae-442e-bbb6-6edde598b908
 app_type: traditional web apps, mobile apps, reactive web apps

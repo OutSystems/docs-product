@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) enhances server-to-client data transfer optimization for Mobile and Reactive Web Apps by using a sophisticated data flow algorithm.
-tags: data transfer optimization, server-to-client data, mobile apps, reactive web apps, performance improvement
+tags:
+  - Aggregates
+  - Data
+  - Logic
+  - Mobile app
+  - Optimization
+  - Performance
+  - Platform Server
 locale: en-us
 guid: cad64443-6400-41a9-98e4-154162e790fa
 app_type: traditional web apps, mobile apps, reactive web apps

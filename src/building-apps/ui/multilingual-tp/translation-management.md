@@ -1,6 +1,9 @@
 ---
 summary: "OutSystems 11 (O11) translation management: export and import language resources using Excel or .resX files in Service Studio."
-tags: localization, internationalization, export and import data, excel, .resx
+tags:
+  - Multi-language
+  - Traditional Web
+  - Translation
 locale: en-us
 guid: f5ec781d-b346-4f47-b4cc-1ccb94a50312
 app_type: traditional web apps, mobile apps, reactive web apps

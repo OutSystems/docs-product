@@ -1,5 +1,10 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, event handling, javascript interop
+tags:
+  - Events
+  - JavaScript
+  - OutSystems UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) UI Pattern provider instance access via the Initialized event and SetProviderConfigs JavaScript API.
 locale: en-us
 guid: CD21A754-068E-4DA7-9B74-A5122B1AEC7D

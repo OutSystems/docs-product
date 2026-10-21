@@ -5,7 +5,14 @@ guid: be5be9b1-2021-4aef-919c-4b36b930255d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:27
-tags: ui design, user interface, service studio, outsystems, app development
+tags:
+  - Blocks
+  - Entities
+  - Layouts
+  - Screens
+  - Themes
+  - Traditional Web
+  - UI
 audience:
   - Front-end developer
   - Developer

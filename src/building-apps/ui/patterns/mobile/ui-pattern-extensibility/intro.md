@@ -1,6 +1,13 @@
 ---
 summary: Explore the extensibility of UI Patterns in OutSystems 11 (O11) using external providers and dedicated OutSystems features.
-tags: ui patterns, extensibility, external libraries, integration, design systems
+tags:
+  - Extensions
+  - Front-End
+  - JavaScript
+  - Libraries
+  - Mobile app
+  - OutSystems UI
+  - UI Patterns
 locale: en-us
 guid: E9183915-DC47-4192-ACE3-AE04472EFCB2
 app_type: mobile apps, reactive web apps

@@ -1,5 +1,11 @@
 ---
-tags: performance optimization, viewstate management, best practices, page load improvement, traditional web apps
+tags:
+  - Best Practices
+  - Front-End
+  - Optimization
+  - Performance
+  - Screens
+  - Traditional Web
 summary: OutSystems 11 (O11) article discusses best practices for managing scope information to optimize viewstate size and enhance page load performance.
 locale: en-us
 guid: 4e82f1f2-b9bd-4a92-a033-e9ec9cfb32ee

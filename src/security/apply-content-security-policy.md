@@ -1,6 +1,13 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates Content Security Policy (CSP) to enhance security for web and mobile applications.
-tags: security practices, csp implementation, web security, application lifecycle management
+tags:
+  - iOS
+  - Mobile app
+  - Monitoring
+  - Platform Server
+  - Security
+  - Traditional Web
+  - Web
 locale: en-us
 guid: e59d9233-7c2d-43ae-b8a2-f55d75263c68
 app_type: traditional web apps, mobile apps, reactive web apps

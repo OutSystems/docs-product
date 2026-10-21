@@ -1,6 +1,8 @@
 ---
 summary: Learn how to configure operational, runtime, and compile-time settings in OutSystems 11 (O11) via the Service Center to optimize application behavior.
-tags: configuration management, service center usage, platform optimization, application deployment, cache management
+tags:
+  - Deploy
+  - Settings
 locale: en-us
 guid: fd03d085-fcb8-4b45-939e-1931252ade2c
 app_type: traditional web apps, mobile apps, reactive web apps

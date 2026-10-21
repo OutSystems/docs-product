@@ -5,7 +5,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=269:1
 summary: Learn how to design sequential activities in OutSystems 11 (O11) by connecting them in the flow path according to their execution order.
-tags: workflow design, process modeling, flowchart, user guide
+tags:
+  - Business Processes
+  - Logic
+  - Workflows
 audience:
   - Developer
 outsystems-tools:

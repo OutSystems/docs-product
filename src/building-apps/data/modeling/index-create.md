@@ -1,6 +1,12 @@
 ---
 summary: "Entity index creation in OutSystems 11 (O11): define indexes in Service Studio to speed up searches or enforce attribute uniqueness across rows."
-tags: database management, entity modeling, performance optimization, application development, data uniqueness
+tags:
+  - Data Integrity
+  - Data Model
+  - Entities
+  - Indexes
+  - Optimization
+  - Performance
 locale: en-us
 guid: 0611c8e9-7cba-4812-8495-88165c39e20e
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,12 @@
 ---
-tags: configuration, data modeling, outsystems, case management applications, static entities
+tags:
+  - 1-Click Publish
+  - Aggregates
+  - Case Management framework
+  - Data Model
+  - Entities
+  - Logic
+  - Timers
 summary: OutSystems 11 (O11) enables milestone definitions in case management apps through configuration and data setup modules.
 guid: f27173b5-6489-408e-8259-6d429d569cba
 locale: en-us

@@ -5,7 +5,12 @@ guid: 88f8d860-47a8-4529-b137-e3d7e832b5b7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: process flows, process activities, output parameter management, data transfer in processes, process design
+tags:
+  - Business Processes
+  - Data
+  - Logic
+  - Programming Model
+  - Workflows
 audience:
   - Developer
 outsystems-tools:

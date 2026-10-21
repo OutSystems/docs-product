@@ -5,7 +5,11 @@ guid: b51a153e-2fe4-4721-ac98-8de123fdf804
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:29
-tags: process flows, process instance upgrade, outsystems platform, application lifecycle management, continuous deployment
+tags:
+  - Business Processes
+  - Development lifecycle
+  - Lifecycle
+  - Workflows
 audience:
   - Architect
   - Developer

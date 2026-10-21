@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) offline data sync for mobile apps and PWAs using SQLite, IndexedDB, local storage modeling, and a 4-step sync implementation process.
-tags: offline capabilities, data synchronization, progressive web apps, sqlite, indexeddb
+tags:
+  - Data Model
+  - Data Synchronization
+  - Entities
+  - Mobile app
+  - Performance
+  - Testing
+  - UX
 locale: en-us
 guid: ff508705-52d0-4d39-a319-fca0f74eb85f
 app_type: traditional web apps, mobile apps, reactive web apps

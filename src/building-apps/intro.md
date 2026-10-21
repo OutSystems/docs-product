@@ -1,6 +1,11 @@
 ---
 summary: Learn to develop apps using Service Studio in OutSystems 11 (O11) with tutorials and resources for both beginners and experienced developers.
-tags: ide usage, reactive web apps, tutorials for beginners, app development, user interface design
+tags:
+  - Front-End
+  - Mobile app
+  - Traditional Web
+  - UI
+  - Web
 locale: en-us
 guid: 42cf7257-546c-4760-b0b2-cb5c46dfa63e
 app_type: traditional web apps, mobile apps, reactive web apps

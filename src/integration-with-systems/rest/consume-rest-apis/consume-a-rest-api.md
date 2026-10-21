@@ -16,7 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - consume-refresh-methods
+  - consume-rest-api
+  - rest-encoding-defaults
 isautopublish: true
 ---
 

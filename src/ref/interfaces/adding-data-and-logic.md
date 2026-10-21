@@ -12,7 +12,7 @@ figma:
 audience:
   - Developer
 coverage-type:
-  - none
+  - understand
 isautopublish: true
 ---
 

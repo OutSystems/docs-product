@@ -15,7 +15,7 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
-  - none
+  - remember
 topic:
   - ui-patterns-overview
 ---

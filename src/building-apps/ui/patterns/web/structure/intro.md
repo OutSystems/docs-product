@@ -9,7 +9,7 @@ audience:
   - Developer
   - Front-end developer
 coverage-type:
-  - none
+  - understand
 tags:
   - Front-End
   - Layouts

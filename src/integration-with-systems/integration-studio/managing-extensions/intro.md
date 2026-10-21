@@ -15,7 +15,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - none
+  - understand
 topic:
   - extensions
 ---

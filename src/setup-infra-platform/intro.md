@@ -14,7 +14,7 @@ audience:
 outsystems-tools:
   - platform server
 coverage-type:
-  - none
+  - understand
 topic:
   - setup-outsystems-env
 ---

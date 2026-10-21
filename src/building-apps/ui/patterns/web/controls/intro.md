@@ -19,6 +19,6 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
-  - none
+  - remember
 ---
 # Controls

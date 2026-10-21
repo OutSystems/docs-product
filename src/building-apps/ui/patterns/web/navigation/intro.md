@@ -19,7 +19,8 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
-  - none
+  - remember
+  - understand
 topic:
   - navigation-patterns-overview
 isautopublish: true

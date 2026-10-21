@@ -17202,6 +17202,8 @@ knowledge-needs:
       id: non-cordova-module-load-error
       description: 'Wants to resolve the OS-MABS-GEN-40013 "Using
         requireCordovaModule to load a non-cordova module is not supported"
+        or OS-MABS-PLG-40015 "Couldn''t install the Cordova plugin. Using
+        requireCordovaModule to load a non-Cordova module is not supported"
         error, by checking the Service Center build logs to identify the
         custom plugin using requireCordovaModule and replacing it with
         require, so that the mobile app package generates successfully.'
@@ -17304,12 +17306,11 @@ knowledge-needs:
         files, so that the mobile app package generates successfully.'
     - name: Plugin SDK tag error
       id: plugin-sdk-tag-error
-      description: 'Wants to resolve the OS-MABS-PLG-40012 "Couldn''t install
-        the Cordova plugin because it''s not supported by MABS 6.0 and later
-        versions" error, caused by the plugin trying to change the
-        <uses-sdk> tag in the AndroidManifest.xml file, by updating the
-        plugin or changing the MABS version, so that the mobile app package
-        generates successfully.'
+      description: 'Wants to resolve the OS-MABS-PLG-40012 error indicating that
+        a Cordova plugin isn''t supported by the mobile app build system, caused
+        by the plugin trying to change the <uses-sdk> tag in the
+        AndroidManifest.xml file, by updating the plugin or changing the MABS
+        version, so that the mobile app package generates successfully.'
     - name: Missing XML node error
       id: missing-xml-node-error
       description: 'Wants to resolve the OS-MABS-PLG-40013 "Couldn''t install
@@ -17317,14 +17318,6 @@ knowledge-needs:
         node" error, caused by an XML selector not finding the target node
         in the config file, by checking the Service Center build logs and
         fixing the selector path, so that the mobile app package generates
-        successfully.'
-    - name: Non-Cordova module error
-      id: non-cordova-module-error
-      description: 'Wants to resolve the OS-MABS-PLG-40015 "Couldn''t install
-        the Cordova plugin. Using requireCordovaModule to load a non-Cordova
-        module is not supported" error, by checking the Service Center build
-        logs to identify the plugin using requireCordovaModule and replacing
-        it with require, so that the mobile app package generates
         successfully.'
     - name: Missing module dependency error
       id: missing-module-dependency-error

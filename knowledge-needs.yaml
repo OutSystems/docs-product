@@ -334,10 +334,15 @@ knowledge-needs:
         OutSystems 11 action flow, so they can identify where execution begins
         when they build logic.
     - name: Action flow structure
-      id: action-flow-structure
+      id: action-flow-structure-o11
       description: Wants to understand that a server action flow has only one
         Start node but one or more End nodes or Raise Exception nodes, so they
         can design valid action flows in OutSystems 11.
+    - name: ODC action flow structure
+      id: odc-action-flow-structure
+      description: Wants to understand that an ODC action flow has one Start
+        node and can have multiple End nodes, including Destination and
+        Download nodes for Screen Actions, so they can design valid flows.
   - name: Calculation and algorithm examples
     id: calculation-and-algorithm-examples
     subtopics:

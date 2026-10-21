@@ -8928,6 +8928,12 @@ knowledge-needs:
         the Toolbox, drag it into Main Content, and configure its optional
         properties in Service Studio, so that content is visually separated
         in O11.
+    - name: Use Bullets with ListRecords
+      id: use-bullets-with-listrecords
+      description: Wants to combine the Bullets UI Pattern with a ListRecords
+        widget by setting Line Separator to None and placing a Bullet Item
+        pattern inside the widget, in Service Studio for a Traditional Web
+        App (O11), so that each record displays as a bullet.
     - name: Use Scrollable Area pattern
       id: use-scrollable-area-pattern
       description: Wants to add the Scrollable Area UI Pattern to a screen, drag
@@ -9193,12 +9199,16 @@ knowledge-needs:
         in notifications or chat screens, in mobile apps and reactive web
         apps (O11).
     - name: Chat Message reference
-      id: chat-message-reference
-      description: Wants to look up the properties of the Chat Message UI
-        Pattern in Service Studio, including DisplayOnRight, Time,
-        MessageStatus, and ExtendedClass, so that they can correctly
-        configure the pattern's alignment, timestamp, status, and custom
-        styling, in mobile apps and reactive web apps (O11).
+      id: chat-message-mobile-reactive-reference
+      description: Wants to look up the configurable properties of the Chat
+        Message UI Pattern in Service Studio, so that they can correctly
+        configure the pattern in mobile apps and reactive web apps (O11).
+    - name: Chat Message web reference
+      id: chat-message-web-reference
+      description: Wants to look up the Chat Message UI Pattern's layout,
+        CSS classes, event, and actions in Service Studio, so that they can
+        configure its appearance and click behavior in a Traditional Web App
+        (O11).
     - name: Add Sign In button
       id: add-sign-in-button
       description: Wants to add a second Sign In button to the Login Form UI
@@ -9972,10 +9982,11 @@ knowledge-needs:
         Traditional Web App (O11).
     - name: Fieldset reference
       id: fieldset-reference
-      description: Wants to look up the CSS selectors and classes for the
-        Fieldset UI Pattern, including .fieldset and .fieldset-legend, and
-        see two example style overrides, so that they can correctly customize
-        the pattern's appearance in a Traditional Web App (O11).
+      description: Wants to look up the Fieldset UI Pattern's layout, CSS
+        selectors and classes, including .fieldset and .fieldset-legend, and see
+        examples of style overrides, so that they can apply custom CSS to
+        change its style and correctly customize the pattern's appearance in a
+        Traditional Web App (O11).
     - name: Flip Content reference
       id: flip-content-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -10375,6 +10386,13 @@ knowledge-needs:
         Web App screen and configure its radio-button items, labels, and
         IsJustified property, so that users can choose from a small set of
         options with grouped buttons.
+    - name: Use Button Group with ListRecords
+      id: use-button-group-with-listrecords
+      description: Wants to use the Button Group UI Pattern with a ListRecords
+        widget by placing ButtonGroupItem widgets inside it, applying the
+        btn class, and setting Line Separator to None in Service Studio for a
+        Traditional Web App, so that each record displays the grouped buttons
+        correctly.
     - name: Button Group reference
       id: button-group-reference
       description: Wants to look up the Button Group UI Pattern's IsJustified
@@ -10836,6 +10854,13 @@ knowledge-needs:
         and links, and create a breadcrumb trail in Service Studio for
         O11, so that users can navigate through a mobile, reactive, or
         Traditional Web App with location context.
+    - name: Breadcrumbs ListRecords
+      id: breadcrumbs-listrecords
+      description: Wants to combine the Breadcrumbs UI Pattern with a
+        ListRecords widget, by placing the ListRecords widget in the Content
+        placeholder, adding a Breadcrumbs Item, and using expressions to
+        display content, in Service Studio for a Traditional Web App (O11),
+        so that breadcrumb content is generated from records.
     - name: Use web navigation bar
       id: use-web-navigation-bar
       description: Wants to add the Navigation Bar UI Pattern to a

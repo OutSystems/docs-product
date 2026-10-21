@@ -1,5 +1,9 @@
 ---
-tags: access control, security, case management, user permission management, data protection
+tags:
+  - Authorization
+  - Case Management framework
+  - Groups
+  - Security
 summary: Explore how OutSystems 11 (O11) enhances case data security through tailored access control within its Case Management framework.
 guid: a598b60e-9acb-4e15-994b-36901873f2ee
 locale: en-us

@@ -1,5 +1,9 @@
 ---
-tags: access control, security configuration, user permissions, group permissions, case management implementation
+tags:
+  - Authorization
+  - Case Management framework
+  - Groups
+  - Security
 summary: Explore how to manage user and group access to case definitions in OutSystems 11 (O11) using server actions and permissions settings.
 guid: 32f3c433-fd1e-4bd3-861b-32e13f5d157d
 locale: en-us

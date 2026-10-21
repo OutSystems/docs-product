@@ -1,5 +1,12 @@
 ---
-tags: outsystems, data actions, dependencies, case management, data retrieval
+tags:
+  - Aggregates
+  - Case Management framework
+  - Data
+  - Entities
+  - Table
+  - UI
+  - Widgets
 summary: Learn how to display a list of cases created by a requester in OutSystems 11 (O11) using data actions and dependencies.
 guid: da294998-4af8-4fb5-acf8-939d4d2d5a06
 locale: en-us

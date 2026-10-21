@@ -1,5 +1,10 @@
 ---
-tags: access control, security, permissions, workflow management, user management
+tags:
+  - Authorization
+  - Case Management framework
+  - Groups
+  - Security
+  - Workflows
 summary: "Case Management Framework access control in OutSystems 11 (O11): grant a user or group access to a specific case instance using Case_GrantAccessToUser and Case_GrantAccessToGroup."
 guid: a2fd36f7-6635-4e07-a09e-a46b2e64987b
 locale: en-us

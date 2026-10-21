@@ -1,6 +1,9 @@
 ---
 summary: Explore various application templates including built-in, custom, and Forge options in OutSystems 11 (O11) to accelerate app development.
-tags: application templates, outsystems ui, custom templates, forge community, service studio guide
+tags:
+  - Forge
+  - OutSystems UI
+  - Templates
 guid: 5a669286-c41f-49c6-afe6-00a911f5f162
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

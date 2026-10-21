@@ -1,5 +1,8 @@
 ---
-tags: business rules, rules engine, application logic, outsystems platform, web development
+tags:
+  - Case Management framework
+  - Groups
+  - Logic
 summary: Learn how to set up and use the rules engine in OutSystems 11 (O11) to evaluate business rules effectively.
 locale: en-us
 guid: c994832b-31a9-4ee0-9ac3-96a1023d5b23

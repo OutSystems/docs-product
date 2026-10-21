@@ -1,5 +1,12 @@
 ---
-tags: user management, entities, permissions, hierarchies, case management framework configuration
+tags:
+  - 1-Click Publish
+  - Authorization
+  - Case Management framework
+  - Data Model
+  - Entities
+  - Groups
+  - Timers
 summary: Learn how to manage user groups in case management apps using the GroupExtended entity in OutSystems 11 (O11).
 guid: d8d7450e-afb2-4019-95a2-92ffc7a31acf
 locale: en-us

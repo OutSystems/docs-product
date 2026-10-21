@@ -1,5 +1,12 @@
 ---
-tags: ui development, data handling, outsystems development, case activities management, application development
+tags:
+  - Aggregates
+  - Case Management framework
+  - Entities
+  - Screens
+  - Table
+  - UI
+  - Workflows
 summary: Learn how to display a list of activities assigned to a case worker in OutSystems 11 (O11) using UI module dependencies and data actions.
 guid: 826bbac1-ea6d-46e0-9e43-3581d214331c
 locale: en-us

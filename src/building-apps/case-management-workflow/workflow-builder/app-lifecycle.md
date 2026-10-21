@@ -1,5 +1,12 @@
 ---
-tags: app lifecycle management, user management, deployment, permissions, collaboration
+tags:
+  - Deploy
+  - Development lifecycle
+  - Groups
+  - IT Teams
+  - IT Users
+  - Lifecycle
+  - Workflows
 summary: Explore app lifecycle management and user group handling in OutSystems 11 (O11) with Workflow Builder for efficient production deployment.
 guid: 816ecd33-ab29-49d0-ae42-648840ac1251
 locale: en-us

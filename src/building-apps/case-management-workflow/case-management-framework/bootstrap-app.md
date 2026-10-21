@@ -1,5 +1,12 @@
 ---
-tags: case management framework, application development, process automation, software architecture, business processes
+tags:
+  - Architecture
+  - Business Processes
+  - Case Management framework
+  - Data Model
+  - Entities
+  - Timers
+  - Workflows
 summary: "OutSystems 11 (O11) Case Management framework app setup: create CS and WF modules, define case definitions, statuses, and BPT processes."
 guid: 5f7f8979-4c04-41d2-9737-15210d38d660
 locale: en-us

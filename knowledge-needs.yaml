@@ -1435,7 +1435,7 @@ knowledge-needs:
         so users can reorder the displayed records at runtime.
     - name: Set up List widget
       id: set-up-list-widget
-      description: Wants to add a List widget to an ODC screen, bind it to an
+      description: Wants to add a List widget to a screen, bind it to an
         Aggregate as its data source, and configure item attributes so fetched
         records display in the list.
     - name: Search and filter data
@@ -1696,11 +1696,13 @@ knowledge-needs:
       description: Wants to create a static entity, define its attributes and records, add it to an entity diagram, and publish the app or module, so they can model fixed lookup data.
     - name: Create entity
       id: create-entity
-      description: Wants to create an entity by using an entity diagram or data view, adding attributes, and publishing the app or module, so they can persist data in a database table.
+      description: Wants to create an entity by using an entity diagram or data
+        view, defining its attributes, and publishing the app or module, so they
+        can model persistent application data.
     - name: Create entity diagrams
-      id: service-studio-create-entity-diagrams
-      description: Wants to create entity diagrams in Service Studio by adding
-        entities and publishing the app or module, so they can visualize the
+      id: create-entity-diagrams
+      description: Wants to create entity diagrams by adding entities and
+        publishing the app or module, so they can visualize the application's
         data model.
     - name: Entity change behavior
       id: entity-change-behavior

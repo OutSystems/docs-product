@@ -1491,8 +1491,6 @@
                     - href: ref/lang/auto/class-run-client-action.md
                     - href: ref/lang/auto/class-run-server-action.md
                     - href: ref/lang/auto/class-refresh-data.md
-                    #- href: ref/lang/auto/class-aggregate.md
-                    #- href: ref/lang/auto/class-sql.md
                     - href: ref/lang/auto/class-if.md
                     - href: ref/lang/auto/class-switch.md
                     - href: ref/lang/auto/class-for-each.md
@@ -1516,8 +1514,6 @@
             # Adding Data and Logic
             - href: ref/interfaces/adding-data-and-logic.md
             - topics:
-                #- href: ref/lang/auto/class-aggregate.md
-                #- href: ref/lang/auto/class-client-action.md
                 - href: ref/lang/auto/class-data-action.md
                 - href: ref/lang/auto/class-script.md
             # Designing Screens
@@ -1584,7 +1580,6 @@
             - href: ref/interfaces/navigating-in-the-application.md
             - topics:
                 - href: ref/lang/auto/class-block.md
-                #- href: ref/lang/auto/class-comment.md
                 - href: ref/lang/auto/class-event.md
                 - href: ref/lang/auto/class-external-site.md
                 - href: ref/lang/auto/class-screen.md
@@ -1639,7 +1634,6 @@
                     - href: ref/lang/auto/class-expression-widget.md
                     - href: ref/lang/auto/servicestudio-plugin-widgets-form.md
                     - href: ref/lang/auto/class-header-row-widget.md
-                    #- href: ref/lang/auto/class-if-widget.md
                     - href: ref/lang/auto/class-image-widget.md
                     - href: ref/lang/auto/class-input-password-widget.md
                     - href: ref/lang/auto/class-input-widget.md
@@ -1647,13 +1641,11 @@
                     - href: ref/lang/auto/class-link-widget.md
                     - href: ref/lang/auto/class-list-box-widget.md
                     - href: ref/lang/auto/class-list-records-widget.md
-                    #- href: ref/lang/auto/class-placeholder-widget.md
                     - href: ref/lang/auto/class-radio-button-widget.md
                     - href: ref/lang/auto/class-row-widget.md
                     - href: ref/lang/auto/class-show-record-widget.md
                     - href: ref/lang/auto/class-table-records-widget.md
                     - href: ref/lang/auto/class-table-widget.md
-                    #- href: ref/lang/auto/class-text-widget.md
                     - href: ref/lang/auto/class-upload-widget.md
                     - href: ref/lang/auto/class-web-block-widget.md
                 # Patterns
@@ -1724,45 +1716,20 @@
                 # Designing the Layout
                 - href: ref/traditional-web/web-interfaces/designing-the-layout/intro.md
                 - topics:
-                    #- href: ref/lang/auto/class-image.md
-                    #- href: ref/lang/auto/class-localized-image.md
                     - href: ref/lang/auto/class-theme.md
-                    #- href: ref/lang/auto/class-ui-flow.md
                 # Navigating in the Application
                 - href: ref/traditional-web/web-interfaces/navigating-in-the-application/intro.md
                 - topics:
-                    #- href: ref/lang/auto/class-comment.md
                     - href: ref/lang/auto/class-email.md
                     - href: ref/lang/auto/class-entry.md
-                    #- href: ref/lang/auto/class-external-site.md
                     - href: ref/lang/auto/class-go-to-destination.md
                     - href: ref/lang/auto/class-web-block.md
                     - href: ref/lang/auto/class-web-screen.md
             # Web Logic Tools
             - href: ref/traditional-web/web-logic-tools/intro.md
             - topics:
-                #- href: ref/lang/auto/class-aggregate.md
-                #- href: ref/lang/auto/class-assign.md
-                #- href: ref/lang/auto/class-run-server-action.md
-                #- href: ref/lang/auto/class-sql.md
-                #- href: ref/lang/auto/class-excel-to-record-list.md
-                #- href: ref/lang/auto/class-json-deserialize.md
-                #- href: ref/lang/auto/class-json-serialize.md
                 - href: ref/lang/auto/class-ajax-refresh.md
-                #- href: ref/lang/auto/class-record-list-to-excel.md
-                #- href: ref/lang/auto/class-refresh-data.md
                 - href: ref/lang/auto/class-attach-file.md
-                #- href: ref/lang/auto/class-download.md
-                #- href: ref/lang/auto/class-send-email.md
-                #- href: ref/lang/auto/class-destination.md
-                #- href: ref/lang/auto/class-if.md
-                #- href: ref/lang/auto/class-for-each.md
-                #- href: ref/lang/auto/class-switch.md
-                #- href: ref/lang/auto/class-comment.md
-                #- href: ref/lang/auto/class-exception-handler.md
-                #- href: ref/lang/auto/class-raise-exception.md
-                #- href: ref/lang/auto/class-end.md
-                #- href: ref/lang/auto/class-start.md
             # Web System Events
             - href: ref/traditional-web/web-system-events/intro.md
             - topics:

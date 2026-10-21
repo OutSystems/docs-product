@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - chat-message-web-reference
 ---
 
 # Chat Message Reference

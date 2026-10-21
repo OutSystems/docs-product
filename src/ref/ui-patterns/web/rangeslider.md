@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - range-slider-reference
 ---
 
 # Range Slider Reference

@@ -17,6 +17,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - customize-progress-circle-css
+  - progress-circle-css-traditional-web
 ---
 
 # Progress Circle Reference

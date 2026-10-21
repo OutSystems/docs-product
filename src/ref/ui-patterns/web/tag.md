@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - tag-reference
 ---
 
 # Tag Reference

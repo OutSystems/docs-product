@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - responsive-table-setup
 ---
 
 # Responsive Table Reference

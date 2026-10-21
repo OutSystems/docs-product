@@ -19,6 +19,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - customize-progress-bar-css
+  - progress-bar-css-reference
 ---
 
 # Progress Bar Reference

@@ -15,7 +15,4 @@ jobs:
   metadata-refresh:
     name: Metadata
     uses: OutSystems/tk-cicd/.github/workflows/evergreen.yml@main
-    with:
-      path: "src"
-      required-key: "guid"
     secrets: inherit

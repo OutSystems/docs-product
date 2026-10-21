@@ -15376,6 +15376,13 @@ knowledge-needs:
         building the send logic, configuring the notification icon, and defining
         multi-language message content — so that the app can deliver targeted push
         notifications to users.
+    - name: Migrate OneSignal tokens
+      id: migrate-onesignal-api-tokens
+      description: Wants to migrate an OutSystems O11 app from a deprecated OneSignal
+        authentication method to the supported app-token method by overriding the
+        Service Center REST API base URL or upgrading the OneSignal component, so that
+        the app continues sending push notifications after the legacy authentication
+        method is retired.
     - name: Set up Pushwoosh
       id: set-up-pushwoosh-notifications
       description: Wants to set up push notifications in an OutSystems O11 mobile app

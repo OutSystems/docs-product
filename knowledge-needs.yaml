@@ -993,6 +993,11 @@ knowledge-needs:
       description: Wants to create an application-specific role in an app, so
         they can define a custom role to assign to end users and use for screen
         and logic access control.
+    - name: Add role in ODC Studio
+      id: add-role-in-studio
+      description: Wants to add an application-specific role in ODC Studio,
+        so they can assign the role to end users and use it for screen and
+        server-side logic access control.
     - name: Use role exceptions
       id: use-role-exceptions
       description: Wants to understand how OutSystems automatically creates role
@@ -7309,6 +7314,9 @@ knowledge-needs:
         SoapUI, generating a project from the service''s WSDL, submitting a sample request,
         and inspecting the success/error XML response, so that the method''s behavior can
         be verified before considering it complete.'
+    - name: Delete exposed SOAP data
+      id: delete-exposed-soap-data
+      description: Wants to delete existing application records through an exposed SOAP web service in OutSystems 11 by filtering the target record, deleting its related data, and returning a success or error result, so that external systems can remove data from the application.
     - name: SOAP service properties
       id: soap-service-properties
       description: Wants to understand how to configure an exposed SOAP web
@@ -11035,6 +11043,11 @@ knowledge-needs:
       description: Wants to create a Web Block in Service Studio for OutSystems 11,
         add input parameters, and bind an Aggregate to its UI so the block
         displays entity data as a reusable component.
+    - name: Create ODC block
+      id: create-odc-block
+      description: Wants to create a Block in ODC Studio, add an input parameter,
+        fetch related entity data with an Aggregate, and bind the data to UI
+        elements, so the block displays details for a selected record.
     - name: Web block exposure rules
       id: web-block-exposure-rules
       description: Wants to identify when a Web Block cannot be exposed in a

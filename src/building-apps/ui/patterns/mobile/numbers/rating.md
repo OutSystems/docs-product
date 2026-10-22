@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, user experience, ui customization, application development, service studio
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to implement and customize the Rating UI Pattern in OutSystems 11 (O11) for enhancing user interaction in mobile and reactive web apps.
 locale: en-us
 guid: f0a35dfd-ff8e-4e04-8a4b-2407efaca4f6

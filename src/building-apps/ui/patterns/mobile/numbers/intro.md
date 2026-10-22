@@ -1,5 +1,10 @@
 ---
-tags: user interface design, user experience, data visualization, mobile development, web development
+tags:
+  - Front-End
+  - Mobile app
+  - UI
+  - UI Patterns
+  - UX
 summary: OutSystems 11 (O11) enhances user experience by offering diverse number patterns for displaying numerical data in mobile and reactive web apps.
 locale: en-us
 guid: 3ec6b9d0-a32e-4142-b4fc-700bb4835278

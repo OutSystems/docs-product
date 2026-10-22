@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, user interface patterns, user experience enhancements
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - UX
+  - Widgets
 summary: Explore the Button Loading UI Pattern in OutSystems 11 (O11) for enhancing user experience by providing visual feedback during action execution.
 locale: en-us
 guid: 9117e011-39f7-442f-b00b-9ac846acab63

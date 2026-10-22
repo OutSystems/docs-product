@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: performance optimization, system monitoring, efficient logic, code best practices, application troubleshooting
+tags:
+  - Best Practices
+  - Logic
+  - Monitoring
+  - Optimization
+  - Performance
+  - Timers
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

@@ -1,5 +1,12 @@
 ---
-tags: user feedback management, application lifecycle management, environment configuration, permissions management, user experience
+tags:
+  - Authorization
+  - Deploy
+  - End-users
+  - Monitoring
+  - Roles
+  - Screens
+  - Testing
 summary: OutSystems 11 (O11) App Feedback application lets you review user-submitted feedback, open the affected screen in Service Studio, and close resolved requests.
 locale: en-us
 guid: b8db2ed6-0551-41c8-b16d-3063670c0417

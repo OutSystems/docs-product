@@ -1,6 +1,13 @@
 ---
 summary: Explore table creation and editing features in OutSystems 11 (O11) for Reactive Web Apps and Mobile/Progressive Web Apps.
-tags: ide usage, reactive web apps, tutorials for beginners, table widget, data presentation
+tags:
+  - Data
+  - Pagination
+  - Screens
+  - Sorting
+  - Table
+  - UI
+  - Widgets
 locale: en-us
 guid: 4fbaf92c-a4a3-4acd-9453-c8502ee36d8f
 app_type: reactive web apps

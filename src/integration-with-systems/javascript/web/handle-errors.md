@@ -1,6 +1,11 @@
 ---
 summary: Explore how to manage JavaScript errors in OutSystems 11 (O11) for Traditional Web Apps by defining and registering custom error handler functions.
-tags: error handling, javascript, ajax, outsystems platform, custom error
+tags:
+  - Debugging
+  - Extensions
+  - JavaScript
+  - Traditional Web
+  - Web
 locale: en-us
 guid: d3888e3a-fb8d-44cf-8ec2-b97cd5caa87e
 app_type: traditional web apps

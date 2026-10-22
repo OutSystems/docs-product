@@ -1,6 +1,11 @@
 ---
 summary: Learn to integrate external JavaScript libraries in OutSystems 11 (O11) while avoiding DOM manipulation.
-tags: integration, javascript, script management, external libraries, best practices
+tags:
+  - Best Practices
+  - Front-End
+  - JavaScript
+  - Libraries
+  - Mobile app
 locale: en-us
 guid: 8a9bb94e-0720-4c91-ae99-8ed14c8ed6cc
 app_type: mobile apps, reactive web apps

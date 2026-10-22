@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, drag and drop, widget configuration, dependency management
+tags:
+  - Accessibility
+  - Events
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI Patterns
+  - Widgets
 summary: Explore high-precision element selection in OutSystems 11 (O11) using the Mouse Events UI Pattern for Mobile and Reactive Web Apps.
 locale: en-us
 guid: 95bf7d02-e8a6-4ca9-a080-cc4e80cb1629

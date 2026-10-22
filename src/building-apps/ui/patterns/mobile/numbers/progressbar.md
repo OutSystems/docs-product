@@ -1,5 +1,12 @@
 ---
-tags: ui components, user interface patterns, outsystems ui, ui development, widget configuration
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to implement and customize the Progress Bar in OutSystems 11 for mobile and reactive web apps.
 locale: en-us
 guid: 024aef71-32e0-490d-8bb9-3e2a45845b91

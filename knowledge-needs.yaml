@@ -2687,6 +2687,11 @@ knowledge-needs:
          Studio screen with WAVE and Lighthouse, so they can confirm the
          page has no accessibility errors after adding the missing title,
          heading, language definition, and image alt text.
+   - name: Design for accessibility
+     id: design-for-accessibility
+     description: Wants to plan keyboard navigation and focus order for app screens
+       before implementation, so people who use keyboards or switch devices
+       can complete the same tasks.
    - name: Translating apps
      id: translating-apps
      subtopics:

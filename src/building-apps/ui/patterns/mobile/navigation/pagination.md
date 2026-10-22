@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui pattern implementation, pagination
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Pagination
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to implement and configure the Pagination UI pattern in OutSystems 11 (O11) for efficient data handling in mobile and reactive web apps.
 locale: en-us
 guid: 20819218-aa75-441f-b2e6-6796dc14f1d8

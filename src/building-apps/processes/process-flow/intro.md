@@ -5,7 +5,9 @@ guid: ead753b9-93a1-468a-9949-0eca55faa765
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: process flow design, process modeling, low-code development, outsystems platform, process automation
+tags:
+  - Business Processes
+  - Workflows
 audience:
   - Developer
   - Front-end developer

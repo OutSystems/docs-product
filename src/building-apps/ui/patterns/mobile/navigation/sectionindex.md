@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui design patterns, navigation
+tags:
+  - Accessibility
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore the Section Index UI pattern in OutSystems 11 (O11) for efficient content organization and navigation on screens.
 locale: en-us
 guid: f2009318-b804-4f98-88b9-3a654a6835b7

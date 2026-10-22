@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, chronological display, event management, design systems, user interface
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) features the Timeline Item UI Pattern for displaying events in chronological order in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: ae0bd8db-c13e-4c6d-83f8-dabc43562bb6

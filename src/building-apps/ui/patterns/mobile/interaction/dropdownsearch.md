@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, dropdown implementation, ui design, service studio widgets, dependency management
+tags:
+  - Accessibility
+  - Aggregates
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore the Dropdown Search UI Pattern in OutSystems 11 (O11) for enhanced user selection capabilities in mobile and reactive web apps.
 locale: en-us
 guid: 5dc860b5-4361-4991-8c3a-4ffba28c55ff

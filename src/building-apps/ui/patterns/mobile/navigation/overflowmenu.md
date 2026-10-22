@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, database handling
+tags:
+  - Aggregates
+  - Logic
+  - Mobile app
+  - OutSystems UI
+  - Table
+  - UI Patterns
+  - Widgets
 summary: Learn how to implement the Overflow Menu in OutSystems 11 (O11) to manage UI space constraints effectively.
 locale: en-us
 guid: 82d11a7a-6ee9-4f81-a7a6-36a8950f0de3

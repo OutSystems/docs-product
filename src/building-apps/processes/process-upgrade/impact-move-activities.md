@@ -5,7 +5,11 @@ guid: 64eb9856-d396-4d2b-8df4-a0b23f520787
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:38
-tags: process flows, process upgrade, service center, process instance management, outsystems best practices
+tags:
+  - Best Practices
+  - Business Processes
+  - Troubleshooting
+  - Workflows
 audience:
   - Developer
   - Front-end developer

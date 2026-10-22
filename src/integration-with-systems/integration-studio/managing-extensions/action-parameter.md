@@ -5,7 +5,9 @@ guid: aa5d5bee-561a-4103-9644-898f9eb7ffc7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ide usage, reactive web apps, tutorials for beginners, action parameters editor, extension actions
+tags:
+  - C#
+  - Extensions
 audience:
   - Developer
 outsystems-tools:

@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, navigation design, mobile app development, ui widgets, outsystems ui framework
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore the Bottom Bar Item UI Pattern in OutSystems 11 (O11) for enhanced mobile and reactive web app navigation.
 locale: en-us
 guid: 68ecb55f-4372-4f1f-910e-46129f456bf8

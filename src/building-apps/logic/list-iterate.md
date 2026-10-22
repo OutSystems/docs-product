@@ -1,6 +1,7 @@
 ---
 summary: Explore how to iterate lists using the For Each logic node in OutSystems 11 (O11).
-tags: ide usage, reactive web apps, tutorials for beginners, list iteration, logic loops
+tags:
+  - Logic
 locale: en-us
 guid: 15a9d0fc-aef0-4d69-bfaa-edeefbecad36
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -5,7 +5,13 @@ guid: 272cf76e-1e15-4cd0-8fc8-ea8107d9a8fe
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: database integration, data management, external database, entity management, outsystems integration
+tags:
+  - Data
+  - Data Model
+  - Entities
+  - Extensions
+  - External Databases
+  - Table
 audience:
   - Developer
   - Architect

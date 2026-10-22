@@ -20,9 +20,8 @@ coverage-type:
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=4096-444
 topic:
   - choose-jwt-signing-key-type
-  - document-apis
   - jwk-key-rotation-practices
-  - rest-webservice-data
+  - store-jwt-signing-keys
 helpids: 
 ---
 

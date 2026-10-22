@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) manages state in traditional web apps through sessions, enabling context persistence across user requests.
-tags: session management, web development, authentication, single sign-on, application state
+tags:
+  - Asynchronous Processes
+  - Lifecycle
+  - Logic
+  - Platform Server
+  - Timers
+  - Traditional Web
+  - Web services
 locale: en-us
 guid: a6784b12-4617-437f-b5e5-ec8c8b579006
 app_type: traditional web apps

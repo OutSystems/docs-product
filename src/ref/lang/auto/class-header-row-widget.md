@@ -5,7 +5,12 @@ app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:329
 summary: Explore the Header Row Widget in OutSystems 11, which automatically integrates with the Table Records Widget for Traditional Web Apps.
-tags: widget customization, ui components, table records, web development, web design
+tags:
+  - Front-End
+  - Table
+  - Traditional Web
+  - UI
+  - Widgets
 audience:
   - Front-end developer
   - Developer

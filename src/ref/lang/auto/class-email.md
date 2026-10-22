@@ -5,7 +5,11 @@ guid: 35c72b23-7903-43b0-be96-1e10933d3f17
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: email configuration, user interface design, web development, web applications, styling
+tags:
+  - CSS
+  - Front-End
+  - UI
+  - Web
 audience:
   - Front-end developer
   - Developer

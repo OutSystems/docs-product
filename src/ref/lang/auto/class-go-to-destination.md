@@ -5,7 +5,9 @@ guid: cf74bb79-fd4f-4dd9-8e41-36bfb60cedab
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: screen navigation, outsystems ui patterns, traditional web apps, screen lifecycle, ui/ux design
+tags:
+  - Screens
+  - UI
 audience:
   - Developer
   - Front-end developer

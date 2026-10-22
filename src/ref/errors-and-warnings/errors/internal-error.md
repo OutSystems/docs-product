@@ -1,6 +1,7 @@
 ---
 summary: Explore troubleshooting steps for resolving internal errors in OutSystems 11 (O11) by submitting feedback or contacting support.
-tags: troubleshooting, support, error handling, user feedback, application errors
+tags:
+  - Troubleshooting
 locale: en-us
 guid: b206df3a-c286-4468-aa80-a70e9af8b0f7
 app_type: traditional web apps, mobile apps, reactive web apps

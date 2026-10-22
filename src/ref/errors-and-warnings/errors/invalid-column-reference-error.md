@@ -5,7 +5,13 @@ guid: ed240efa-1b90-4ce9-9263-a9bbfee1c90b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, database design, data modeling, circular dependencies, sorting data
+tags:
+  - Data Model
+  - Debugging
+  - Entities
+  - Logic
+  - Sorting
+  - Troubleshooting
 audience:
   - Developer
 outsystems-tools:

@@ -5,7 +5,9 @@ guid: 3e5e54ef-a2af-4c15-b331-6f6651f44401
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error resolution, platform server configuration, licensing, service management, technical support
+tags:
+  - Platform Server
+  - Troubleshooting
 audience:
   - Platform administrator
   - Developer

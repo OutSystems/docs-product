@@ -5,7 +5,14 @@ guid: 072552a6-e5f9-42cf-9335-aa58681bea15
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error resolution, database management, entity modeling, index configuration, data types
+tags:
+  - Data Integrity
+  - Data Model
+  - Debugging
+  - Entities
+  - Indexes
+  - SQL
+  - Troubleshooting
 audience:
   - Developer
 outsystems-tools:

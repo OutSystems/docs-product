@@ -5,7 +5,10 @@ guid: 36e85bdb-7275-41cf-85eb-6a25b9b89e97
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, web services, soap protocol, troubleshooting, integration issues
+tags:
+  - SOAP
+  - Troubleshooting
+  - Web services
 audience:
   - Developer
 outsystems-tools:

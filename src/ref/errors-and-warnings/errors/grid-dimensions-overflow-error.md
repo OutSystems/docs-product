@@ -5,7 +5,13 @@ guid: c2b5c213-e7d5-4ddf-b8ef-445dd2612288
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, ui design, grid layout, outsystems theme customization, widget configuration
+tags:
+  - Front-End
+  - Layouts
+  - Themes
+  - Troubleshooting
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer

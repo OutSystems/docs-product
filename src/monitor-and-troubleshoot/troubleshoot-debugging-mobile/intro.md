@@ -1,6 +1,12 @@
 ---
 summary: Explore debugging and troubleshooting for mobile and reactive web apps using OutSystems 11's integrated tools and extensive documentation.
-tags: debugging, troubleshooting, application logs, developer tools, documentation
+tags:
+  - Debugging
+  - Front-End
+  - Logging
+  - Mobile app
+  - Monitoring
+  - Troubleshooting
 guid: 3ccd01d8-e072-4219-8547-cb105941bfca
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

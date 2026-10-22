@@ -5,7 +5,12 @@ guid: d8955d06-9233-4ded-a916-e748837e3bfb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, dropdown widgets, user interface components, debugging, service studio
+tags:
+  - Debugging
+  - Front-End
+  - Troubleshooting
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer

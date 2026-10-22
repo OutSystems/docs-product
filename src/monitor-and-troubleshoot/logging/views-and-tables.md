@@ -5,7 +5,14 @@ guid: 76cb90a0-8399-4aab-a5de-279278094c1e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: logging, database optimization, data management, error handling, performance tuning
+tags:
+  - Data Model
+  - Indexes
+  - Logging
+  - Monitoring
+  - Optimization
+  - Performance
+  - Table
 audience:
   - Developer
   - Platform administrator

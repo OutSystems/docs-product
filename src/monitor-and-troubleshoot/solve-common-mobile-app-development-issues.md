@@ -1,6 +1,13 @@
 ---
 summary: Explore common mobile app development issues and solutions in OutSystems 11 (O11), including element flicker and slow screen transitions.
-tags: mobile app troubleshooting, ui/ux best practices, front-end performance, outsystems mobile, debugging techniques
+tags:
+  - Data Synchronization
+  - Debugging
+  - Mobile app
+  - Performance
+  - Screens
+  - Troubleshooting
+  - UI
 locale: en-us
 guid: 2e4ff1b0-9813-4931-9a9e-c265df4c74f9
 app_type: mobile apps

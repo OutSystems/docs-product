@@ -12,7 +12,9 @@ app_type: mobile apps, reactive web apps
 platform-version: o11
 audience:
   - Developer
-tags: rest api, rest consume, outsystems conversion, odc conversion
+tags:
+  - REST
+  - Web services
 outsystems-tools:
   - conversion assessment tool
 helpids: "30690"

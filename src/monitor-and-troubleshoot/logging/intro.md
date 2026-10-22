@@ -5,7 +5,14 @@ guid: 08c5585e-6eef-4467-98a7-5fe02a6d6d53
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=267%3A136&mode=design&t=rzWSTBJIapfhmERp-1
-tags: logging architecture, performance monitoring, application troubleshooting, database optimization, security
+tags:
+  - Architecture
+  - Asynchronous Processes
+  - Logging
+  - Monitoring
+  - Optimization
+  - Performance
+  - Troubleshooting
 audience:
   - Developer
   - Platform administrator

@@ -14,7 +14,13 @@ platform-version: o11
 audience:
   - Front-end developer
   - Developer
-tags: cloud-native applications,system entities,api development,data integration,platform version
+tags:
+  - Aggregates
+  - Architecture
+  - Entities
+  - Logic
+  - Programming Model
+  - Refactoring
 outsystems-tools:
   - service studio
 helpids: 30630

@@ -13,7 +13,14 @@ audience:
   - Front-end developer
   - Developer
   - Tech lead
-tags: reactive web apps, module conversion, conversion guide, outsystems 11, traditional web apps
+tags:
+  - Front-End
+  - Logic
+  - Modular Programming
+  - Refactoring
+  - Traditional Web
+  - UI
+  - Web
 outsystems-tools: 
   - service studio
 helpids: 

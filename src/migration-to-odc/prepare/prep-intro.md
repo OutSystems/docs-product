@@ -5,7 +5,13 @@ guid: 14a67d54-aa12-45bc-8262-48c9f2a2780c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: app conversion, application architecture, code refactoring, outsystems platform
+tags:
+  - Architecture
+  - Deploy
+  - Development lifecycle
+  - Quality Assurance
+  - Refactoring
+  - Testing
 audience:
   - Architect
   - Developer

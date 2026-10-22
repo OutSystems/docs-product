@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) supports feedback submission in web apps through an interactive glowing circle feature.
-tags: feedback feature, user experience, user interface, application lifecycle management, troubleshooting
+tags:
+  - End-users
+  - Front-End
+  - Traditional Web
+  - UI
+  - UX
+  - Web
 locale: en-us
 guid: da4d09df-8c2f-4c23-9a16-837f5e3206f6
 app_type: traditional web apps, reactive web apps

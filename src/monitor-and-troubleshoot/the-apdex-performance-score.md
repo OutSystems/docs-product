@@ -1,6 +1,9 @@
 ---
 summary: Explore how OutSystems 11 (O11) utilizes the APDEX metric to evaluate application performance and user satisfaction.
-tags: performance monitoring, user experience, application performance management, apdex, application optimization
+tags:
+  - Monitoring
+  - Performance
+  - UX
 locale: en-us
 guid: 4322a32a-812e-4357-be20-ce1693dd2968
 app_type: traditional web apps, mobile apps, reactive web apps

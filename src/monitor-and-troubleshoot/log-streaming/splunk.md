@@ -1,6 +1,8 @@
 ---
 summary: Explore how to stream logs from OutSystems 11 (O11) applications to Splunk using OpenTelemetry Collector setup and configuration.
-tags: outsystems, splunk, opentelemetry, logging, application performance management
+tags:
+  - Logging
+  - Monitoring
 locale: en-us
 guid: 55b2e20c-fcbb-41d0-b01b-af9f007132b8
 app_type: traditional web apps, mobile apps, reactive web apps

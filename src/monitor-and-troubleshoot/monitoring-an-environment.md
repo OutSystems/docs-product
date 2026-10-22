@@ -1,6 +1,12 @@
 ---
 summary: Explore environment monitoring and log management features in OutSystems 11 (O11) through the Service Center console.
-tags: environment monitoring, log management, service center, application lifecycle management, operations
+tags:
+  - Logging
+  - Mobile app
+  - Monitoring
+  - Native App
+  - Platform Server
+  - Troubleshooting
 locale: en-us
 guid: 70ae67ba-01d3-4434-aa0c-c4dd0a18a337
 app_type: traditional web apps, mobile apps, reactive web apps

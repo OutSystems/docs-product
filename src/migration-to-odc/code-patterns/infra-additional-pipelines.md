@@ -13,7 +13,9 @@ audience:
   - Architect
   - Tech lead
   - Platform administrator
-tags: infrastructure conversion, additional pipelines, odc conversion, outsystems 11, platform setup
+tags:
+  - Architecture
+  - Infrastructure
 outsystems-tools:
   - none
 helpids: 30662

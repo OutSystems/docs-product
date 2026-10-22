@@ -1,6 +1,13 @@
 ---
 summary: Explore how to enhance Traditional Web Apps with JavaScript in OutSystems 11 (O11) for dynamic user experiences and efficient server communication.
-tags: javascript integration, dynamic web content, ajax, client-side scripting, performance optimization
+tags:
+  - Front-End
+  - JavaScript
+  - Performance
+  - Traditional Web
+  - UI
+  - Web
+  - Widgets
 locale: en-us
 guid: ade87f50-8404-4392-88d0-e33397418fe9
 app_type: traditional web apps

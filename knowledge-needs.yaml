@@ -7172,6 +7172,13 @@ knowledge-needs:
       description: Wants to identify common Timer use cases, such as recurring
         tasks, bootstrap data operations after publish, and heavy background
         processing, so they can choose Timers for non-interactive work.
+    - name: Queue integration work
+      id: queue-integration-work
+      description: Wants to implement a queue for slow external integrations
+        by storing requests, processing them with a Timer, showing completion
+        status through screen polling or a BPT Wait construct, and cleaning up
+        completed requests, so that users and processes don't remain blocked
+        by long-running integration calls.
     - name: Start timer execution
       id: start-timer-execution
       description: Wants to identify the valid ways to initiate a Timer in ODC,

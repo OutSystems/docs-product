@@ -3780,6 +3780,12 @@ knowledge-needs:
     - name: External database options
       id: external-database-options
       description: Wants to understand the ways OutSystems integrates with external databases, using Integration Builder or Integration Studio, so they can choose the integration path to follow.
+    - name: Use Integration Builder
+      id: use-integration-builder
+      description: Wants to integrate a supported external relational or MongoDB database with an OutSystems 11 app by configuring a connection, selecting tables or collections, publishing the integration, and consuming the generated entities or actions, so they can use external data in the app.
+    - name: Create DB connection
+      id: create-o11-external-database-connection
+      description: Wants to create or request an external database connection in OutSystems 11 Integration Builder based on the database provider and their permissions, so the integration can access the required database.
     - name: Access external data
       id: access-external-data
       description: Wants to understand the main ways to get external data into an OutSystems 11 app, including external databases, systems of record, Excel imports, and custom integrations, so they can choose the right approach and use the data in the app.
@@ -23295,11 +23301,15 @@ knowledge-needs:
         Tenants, Multi-Tenant Entities, BPT) that applicational entities have
         foreign key dependencies on, so that they can map and align those
         dependencies between environments before migrating application data.
-    - name: Match migration identifiers
-      id: match-migration-identifiers
-      description: Wants to match entity and attribute physical names, static
-        entity record identifiers, and build a foreign keys map between source
-        and destination O11 environments, so that migrated data correctly
+    - name: Match migration physical names
+      id: match-migration-physical-names
+      description: Wants to match entity and attribute physical names between
+        source and destination O11 environments, so that migrated data aligns
+        with the corresponding schema objects after an O11 data migration.
+    - name: Build migration foreign-key map
+      id: build-migration-foreign-key-map
+      description: Wants to build a foreign-key map between source and
+        destination O11 environments, so that migrated data correctly
         references the right records after an O11 data migration.
     - name: BPT entity model
       id: bpt-entity-model

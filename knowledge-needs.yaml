@@ -5057,6 +5057,11 @@ knowledge-needs:
       description: Wants to use the Security library to protect data
         confidentiality, so that an app can encrypt and decrypt sensitive
         information in ODC.
+    - name: Encrypt sensitive data
+      id: encrypt-sensitive-data
+      description: Wants to protect stored sensitive data in OutSystems 11 by
+        using AES encryption, CryptoAPI, and a key management system, so that
+        unauthorized access doesn't reveal the data.
     - name: Identify sensitive data
       id: identify-sensitive-data
       description: Wants to identify which data an ODC app processes, stores,
@@ -15777,6 +15782,12 @@ knowledge-needs:
       description: Wants to resolve the OS-PLUG-FLVW-0007 error by ensuring the
         URL passed to the File Viewer action is non-empty before the action
         runs, so the app opens or downloads the file successfully.
+    - name: Invalid File Viewer URL
+      id: invalid-file-viewer-url
+      description: Wants to resolve the OS-PLUG-FLVW-0005 malformed URL error by
+        verifying the URL format, protocol, and encoding, and by passing a
+        remote URL instead of a local file path, so the app opens or downloads
+        the document successfully.
     - name: Remote download error
       id: remote-download-error
       description: 'Wants to resolve the OS-PLUG-FLVW-0012 "The download failed." error by verifying the remote file URL is reachable, checking for server errors and request timeouts, retrying intermittent failures, and opening a support case if the problem persists, so the File Viewer plugin can download the file successfully.'

@@ -1,11 +1,18 @@
 ---
-summary: This article provides guidelines for refactoring O11 apps to ensure compatibility with OutSystems Developer Cloud (ODC), highlighting various specific areas for manual refactoring in preparation for future automated conversion to ODC.
+summary: OutSystems 11 to OutSystems Developer Cloud (ODC) conversion patterns cover code, data, configuration, and unsupported app limitations.
 locale: en-us
 guid: 469bbfc7-8121-4cd8-8e4f-22b882f8e821
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: app conversion, outsystems developer cloud, code refactoring, application lifecycle management, outsystems platform
+tags:
+  - Data
+  - Multi-Tenant
+  - Refactoring
+  - REST
+  - SOAP
+  - SQL
+  - Traditional Web
 audience:
   - Developer
   - Front-end developer
@@ -14,7 +21,9 @@ outsystems-tools:
   - app conversion kit
   - service studio
 coverage-type:
-  - none
+  - remember
+  - understand
+  - apply
 isautopublish: true
 ---
 
@@ -113,5 +122,4 @@ Conversion to ODC **isn't yet supported** for the following patterns.
 
 ### Infrastructure
 
-* [Self-managed infrastructures](infra-self-managed.md)
 * [Additional pipelines](infra-additional-pipelines.md)

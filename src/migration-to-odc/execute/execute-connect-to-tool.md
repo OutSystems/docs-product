@@ -34,7 +34,7 @@ Before you start converting your O11 apps and data to ODC, make sure the configu
 
 1. [Ensure connection between your ODC organization and the O11 infrastructure](#validate-connection) with the apps to convert to ODC.
 
-1. If your O11 infrastructure is self-managed, [configure the data migration settings](#data-migration-settings) for the environments you migrate data from.
+1. If any environment you migrate data from is self-managed, [configure the data migration settings](#data-migration-settings) for those environments.
 
 1. [Configure the end-user migration settings](#end-user).
 
@@ -44,7 +44,7 @@ Before you start converting your O11 apps and data to ODC, make sure the configu
 
 * The [Conversion Assessment Tool has been set up](https://www.outsystems.com/tk/redirect?g=29920fad-9efd-45ae-a4e4-212705fceb65) in your O11 infrastructure.
 
-* If your O11 infrastructure is self-managed, ensure the following:
+* If any environment you migrate data from is self-managed, ensure the following:
 
     * You've set up network connectivity from ODC to the database: [configure an ODC private gateway](https://www.outsystems.com/tk/redirect?g=9a023d82-da5b-4164-8f3f-9d6c35444b50) for a secure connection, or allowlist the [ODC public IP addresses](https://www.outsystems.com/tk/redirect?g=2356ff87-f2e9-4ab2-81bf-34ebcffe68c2) if the database is publicly accessible with IP restrictions. When allowlisting, include the runtime egress IP addresses of your ODC region for the **Development** stage type, which ODC uses to test the connection, and for every stage type you migrate data to.
 
@@ -108,17 +108,17 @@ Follow these steps to ensure that your ODC organization is connected to the O11 
 
 Having the connection to your O11 infrastructure configured, the [conversion plans](https://www.outsystems.com/tk/redirect?g=ab447daa-dffc-4374-8ae6-986c8f3d63c4) you've defined in the Conversion Assessment Tool are available in the ODC app conversion console. Thus, you can start [converting the apps' code](execute-about-migrate-code.md).
 
-If your O11 infrastructure is self-managed, [configure the data migration settings](#data-migration-settings) before you migrate data.
+If any environment you migrate data from is self-managed, [configure the data migration settings](#data-migration-settings) before you migrate data.
 
 When you are ready to migrate your apps' data and end users, make sure you [configure the end-user migration settings](#end-user).
 
 ## Configure data migration settings for self-managed environments {#data-migration-settings}
 
-If your O11 infrastructure is self-managed, configure the database connection for each O11 environment before you migrate its data to ODC. ODC uses this connection to read data from the O11 environment during data migration.
+For each self-managed O11 environment, configure the database connection before you migrate its data to ODC. ODC uses this connection to read data from the O11 environment during data migration.
 
 <div class="info" markdown="1">
 
-Skip this section if you have an O11 cloud infrastructure. ODC connects automatically to its environments.
+Skip this section for environments hosted in O11 Cloud. ODC connects automatically to those environments. In a hybrid infrastructure, configure only the self-managed environments.
 
 </div>
 
@@ -126,11 +126,11 @@ Follow these steps to configure the data connectivity of a self-managed O11 envi
 
 1. In the ODC Portal, go to **Management > OUTSYSTEMS 11 > Infrastructures**.
 
-1. Click the infrastructure card of your self-managed O11 infrastructure.
+1. Click the infrastructure card of your O11 infrastructure.
 
 1. In the **App conversion** tab, in the **Data migration settings** area, click **Edit**.
 
-1. For each O11 environment you want to enable for data migration, configure the database connection using the credentials and connection details for that database.
+1. For each self-managed O11 environment you want to enable for data migration, configure the database connection using the credentials and connection details for that database.
 
     * Turn on **Private gateway** if you're connecting through one, and specify a port for each ODC stage you migrate data to. For Azure SQL or Azure Managed Instance, use the username format from the [prerequisites](#prerequisites).
 

@@ -1,13 +1,15 @@
 ---
-summary: "OutSystems 11 (O11) to ODC app conversion: prerequisites, limitations, and the three-step process to migrate code, data, and end users."
+summary: "OutSystems 11 (O11) to ODC app conversion covers prerequisites, limitations, code conversion, app configuration, and data migration."
 guid: 903fe9c6-5b0c-4c22-929a-abd06a3763e7
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma:
 tags:
+  - Architecture
   - Data
   - End-users
+  - Entities
   - Infrastructure
 audience:
   - Developer
@@ -48,9 +50,7 @@ Consider the following limitations:
 
 OutSystems is working to improve the app conversion capability. Meanwhile, consider these additional limitations:
 
-* App conversion **isn't yet supported** for the following infrastructure setup:
-
-    * O11 infrastructures with additional pipelines
+* App conversion **isn't yet supported** for O11 infrastructures with additional pipelines.
 
 * When executing app conversion to [ODC self-hosted](https://www.outsystems.com/tk/redirect?g=2433ca96-db20-493f-b04b-0e82e33c424e) organizations, [data migration](execute-how-to-migrate-data.md) isn't yet supported to self-hosted stages. Data migration can only be executed to the Development stage, managed in the OutSystems Cloud.
 
@@ -58,11 +58,9 @@ OutSystems is working to improve the app conversion capability. Meanwhile, consi
 
 Before you start converting your O11 apps to ODC, make sure the following requirements are met:
 
-* Your O11 infrastructure is one of the following:
+* Your O11 infrastructure has an OutSystems subscription. If you're an OutSystems Partner, an O11 Cloud demo environment also meets this requirement. O11 Personal environments aren't supported.
 
-    * An enterprise [O11 cloud infrastructure](https://www.outsystems.com/tk/redirect?g=079418c8-7a3d-4b5e-9c13-c1ae7a1f122e). Take into account the [limitations](#limitations) for the O11 infrastructure setup.
-
-    * A self-managed O11 infrastructure. [Additional prerequisites apply for data migration](execute-connect-to-tool.md#prerequisites).
+    For self-managed environments, [additional prerequisites apply for data migration](execute-connect-to-tool.md#prerequisites).
 
 * Your O11 infrastructure has **LifeTime 11.29.0 or later**. Refer to [O11-ODC connectivity](https://www.outsystems.com/tk/redirect?g=b6c0c043-0b0a-4825-9271-afaa60bd2ee9) for further details.
 

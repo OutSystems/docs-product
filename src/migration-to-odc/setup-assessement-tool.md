@@ -7,20 +7,24 @@ platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2336-2236
 tags:
   - Authentication
-  - IdP
-  - LDAP
-  - OIDC
-  - SSO
+  - External Authentication
+  - Forge
+  - Infrastructure
+  - IT Users
+  - Platform Server
   - Troubleshooting
 audience:
+  - Architect
   - Developer
   - Platform administrator
+  - Tech lead
 outsystems-tools:
   - lifetime
   - platform server
   - conversion assessment tool
 coverage-type:
   - apply
+  - unblock
 isautopublish: true
 ---
 
@@ -28,7 +32,7 @@ isautopublish: true
 
 The Conversion Assessment Tool helps you evaluate the readiness of O11 apps for the ODC conversion and guides you through the necessary code adjustments to ensure that your apps can be converted.
 
-![Screenshot of the Conversion Assessment Tool showing the ODC blueprint and assessment findings for various apps.](images/assessment-tool-setup-overview-at.png "Conversion Assessment Tool overview")
+![Screenshot of the Conversion Assessment Tool showing the ODC blueprint and assessment findings for various apps.](images/assessment-tool-setup-overview-at.png "Conversion Assessment Tool Overview")
 
 In the Conversion Assessment Tool you can:
 
@@ -93,11 +97,7 @@ Additionally, you can trigger an assessment at any time in the Conversion Assess
 
 Before setting up the Conversion Assessment Tool, make sure the following requirements are met:
 
-* You have an enterprise [O11 cloud or self-managed infrastructure](https://www.outsystems.com/tk/redirect?g=079418c8-7a3d-4b5e-9c13-c1ae7a1f122e).
-
-    * The Conversion Assessment Tool isn't supported for O11 Personal environments.
-
-    * OutSystems Partners can use the Conversion Assessment Tool in Cloud demo environments.
+* Your O11 infrastructure has an OutSystems subscription. If you're an OutSystems Partner, an O11 Cloud demo environment also meets this requirement. O11 Personal environments aren't supported.
 
 * Your O11 environments use Platform Server 11.18.1 or later.
 
@@ -172,7 +172,7 @@ Follow the installer wizard to set up the Conversion Assessment Tool components:
 
 1. Set the **Authentication token** of the [service account](../ref/apis/lifetime-deployment/rest-api-authentication.md) you’ll use to access the LifeTime environment.
 
-    ![Screenshot of the Conversion Assessment Tool Installer wizard to configure access to LifeTime, showing fields for LifeTime URL and authentication token.](images/setup-mat-wizard-access-lt-mati.png "Configure access to LifeTime in Conversion Assessment Tool Installer")
+    ![Screenshot of the Conversion Assessment Tool Installer wizard to configure access to LifeTime, showing fields for LifeTime URL and authentication token.](images/setup-mat-wizard-access-ati.png "LifeTime Access Settings")
 
 1. Click **Access LifeTime** to validate the connection.
 
@@ -186,13 +186,13 @@ Follow the installer wizard to set up the Conversion Assessment Tool components:
 
     <div class="info" markdown="1">
 
-    * The installation of the **Development probe** and the **Conversion Assessment Tool console** is mandatory. Outsystems recommends the installation of these components in your O11 Development environment.
+    * The installation of the **Development probe** and the **Conversion Assessment Tool console** is mandatory. OutSystems recommends the installation of these components in your O11 Development environment.
 
     * Optionally, you can install additional probes in the environments where you also want to assess the ODC-readiness of your apps, for example, the QA environment. You can opt to [install additional probes](#additional-probes) at a later phase. Code conversion and data migration are only available from O11 environments with installed probes.
 
     </div>
 
-    ![Screenshot of the Conversion Assessment Tool Installer wizard to configure the O11 environments where the tool components are installed.](images/setup-mat-wizard-011-env-mati.png "Configure O11 environments in Conversion Assessment Tool Installer")
+    ![Screenshot of the Conversion Assessment Tool Installer wizard to configure the O11 environments where the tool components are installed.](images/setup-mat-wizard-011-env-ati.png "O11 Environment Selection")
 
 1. Click **Validate URLs** to validate the connection with the chosen environments.
 
@@ -200,9 +200,9 @@ Follow the installer wizard to set up the Conversion Assessment Tool components:
 
 1. Click **Continue**.
 
-1. The last step of the wizard shows a summary of the Conversion Assessment Tool components that will be installed in each environment. Click **Install**.
+1. The last step of the wizard shows a summary of the Conversion Assessment Tool components to install in each environment. Click **Install**.
 
-    ![Screenshot of the Conversion Assessment Tool Installer wizard showing a summary of the components to install.](images/setup-mat-wizard-summary-mati.png "See the installation summary in Conversion Assessment Tool Installer")
+    ![Screenshot of the Conversion Assessment Tool Installer wizard showing a summary of the components to install.](images/setup-mat-wizard-summary-ati.png "Installation Summary")
 
 <div class="info" markdown="1">
 
@@ -222,9 +222,9 @@ This operation [requires the **Administrator** role](plan/mat-permissions.md#set
 
 </div>
 
-The Conversion Assessment Tool will show a notification when a new version is available.
+The Conversion Assessment Tool shows a notification when an update is available.
 
-![Screenshot of the Conversion Assessment Tool showing a notification of update availability.](images/mat-update-available-at.png "Conversion Assessment Tool update available")
+![Screenshot of the Conversion Assessment Tool showing a notification of update availability.](images/mat-update-available-at.png "Update Notification")
 
 Follow these steps to update the Conversion Assessment Tool:
 
@@ -234,7 +234,7 @@ Follow these steps to update the Conversion Assessment Tool:
 
 1. Click **Update** to install the latest version of the Conversion Assessment Tool in each component.
 
-    ![Screenshot of the Conversion Assessment Tool Installer wizard showing a summary of the components to update.](images/update-mat-wizard-summary-mati.png "See the update summary in Conversion Assessment Tool Installer")
+    ![Screenshot of the Conversion Assessment Tool Installer wizard showing a summary of the components to update.](images/update-mat-wizard-summary-ati.png "Update Summary")
 
 ## Install an additional probe {#additional-probes}
 
@@ -244,7 +244,7 @@ This operation [requires the **Administrator** role](plan/mat-permissions.md#set
 
 </div>
 
-After the initial setup, you can always install an additional probe in another O11 environment of your infrastructure. For example, when you are ready to execute the conversion of your apps to ODC, you need to have a probe running in the O11 environment that will be the source for code conversion or data migration (for example, the Production environment).
+After the initial setup, you can always install an additional probe in another O11 environment of your infrastructure. For example, when you are ready to execute the conversion of your apps to ODC, you need to have a probe running in the O11 environment that's the source for code conversion or data migration (for example, the Production environment).
 
 Follow these steps to install an additional probe using the Conversion Assessment Tool Installer:
 
@@ -286,7 +286,7 @@ Follow these steps to change the code assessment cycle for an environment:
 
     The change is automatically saved.
 
-    ![Screenshot of the Probe connection area in the Maintenance area of the Conversion Assessment Tool showing the code assessment cycle dropdown.](images/change-code-assessment-cycle-mat.png "Change the code assessment cycle")
+    ![Screenshot of the Probe connection area in the Maintenance area of the Conversion Assessment Tool showing the code assessment cycle dropdown.](images/change-code-assessment-cycle-at.png "Code Assessment Cycle")
 
 ## Troubleshooting
 
@@ -294,7 +294,7 @@ This section describes some common issues you may encounter during the setup of 
 
 If you encounter any other limitation or issue using the Conversion Assessment Tool Installer, try the [manual setup process](manual-setup-assessement-tool.md).
 
-Please also tell us about the issue you faced using the **Give feedback** option. This will help us improve the installer tool and support more scenarios.
+Also report the issue you faced using the **Give feedback** option. Your feedback helps OutSystems improve the installer tool and support more scenarios.
 
 ### Can't log in to the Conversion Assessment Tool installer {#cannot-login-cati}
 

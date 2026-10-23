@@ -5376,6 +5376,11 @@ knowledge-needs:
       description: Wants to understand the meaning of API client statuses and what
         happens when secrets expire or the client is revoked, so they can decide
         when to generate a new secret or request a new access token in ODC.
+    - name: Authenticate LifeTime API
+      id: authenticate-lifetime-api
+      description: Wants to authenticate LifeTime REST API requests by including
+        the active service account authentication token in the Authorization
+        header, so they can invoke API methods securely.
   - name: Prevent CSRF attacks
     id: prevent-csrf-attacks
     description: Wants to prevent cross-site request forgery attacks in OutSystems
@@ -12476,10 +12481,9 @@ knowledge-needs:
       id: cd-pipeline-stages
       description: Wants to build an automated continuous delivery pipeline for
         O11 applications by using the outsystems-pipeline accelerator with a
-        CI/CD platform (Jenkins or Azure DevOps) so that release candidates
-        progress automatically through Development, Regression, Acceptance,
-        and Pre-production/Production stages with governance and impact
-        analysis from LifeTime.
+        supported CI/CD platform, so that release candidates progress
+        automatically through the required deployment stages with governance
+        and impact analysis from LifeTime.
     - name: GitHub pipeline upload
       id: github-pipeline-upload
       description: Wants to add an upload-to-GitHub step to a Jenkins CI/CD
@@ -19666,14 +19670,18 @@ knowledge-needs:
       description: Wants to understand how ODC issues short-lived access tokens and refresh tokens, validates requests before they reach services, and invalidates sessions and tokens on logout, so that they can explain the platform's token lifecycle and request security.
     - name: Create service account
       id: create-service-account
-      description: Wants to create a LifeTime service account, choose its role and
-        token duration, and generate its authentication token, so that REST API
-        integrations can authenticate to LifeTime.
-    - name: Use service account token
-      id: use-service-account-token
-      description: Wants to authenticate LifeTime REST API calls with a service
-        account token, rotating or revoking the token when needed, so that the
-        calls stay authorized and the token stays secure.
+      description: Wants to create a LifeTime service account, choose its role,
+        token duration, and consumer settings, and generate its authentication
+        token, so it can provide machine-to-machine access to OutSystems REST APIs.
+    - name: Rotate service account token
+      id: rotate-service-account-token
+      description: Wants to rotate a LifeTime service account token by generating
+        a replacement and managing the period in which both tokens remain valid,
+        so integrations stay authorized during the transition.
+    - name: Revoke service account token
+      id: revoke-service-account-token
+      description: Wants to revoke a LifeTime service account token to invalidate
+        access, so integrations or users can no longer authenticate with it.
     - name: Configure MFA login
       id: configure-mfa-login
       description: Wants to configure multi-factor authentication for end-user

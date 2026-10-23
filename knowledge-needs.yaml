@@ -5529,6 +5529,11 @@ knowledge-needs:
         adding the outsystems:// scheme alongside https:// when iframe content
         works on Android but is blocked on iOS, so that CSP-protected
         resources and iframes load successfully in native mobile apps.
+    - name: Configure CSP for iOS
+      id: configure-csp-for-ios
+      description: Wants to configure CSP in ODC mobile apps for iOS by adding
+        explicit https:// protocols to external domains in the required
+        directives, so resources load successfully in iOS WebViews.
     - name: CSP mobile app propagation
       id: csp-mobile-app-propagation
       description: Wants to understand how activating, updating, or
@@ -14817,6 +14822,12 @@ knowledge-needs:
         include prior conversation turns and grounding data in each system
         message, so that the agent maintains contextual memory across
         multiple user prompts in a conversational agentic app.
+    - name: Enable agent traces
+      id: enable-agent-traces
+      description: Wants to enable detailed execution traces for an AI agent in
+        the ODC Portal, confirm regional availability, and understand the
+        captured data and retention period, so they can diagnose production
+        responses without reproducing the issue.
     - name: Agent monitoring overview
       id: agent-monitoring-overview
       description: Wants to understand what agent monitoring in ODC shows, including its
@@ -20375,6 +20386,11 @@ knowledge-needs:
   - name: Authorization
     id: authorization
     subtopics:
+    - name: ODC authorization flow
+      id: odc-authorization-flow
+      description: Wants to understand how ODC validates authenticated requests
+        and checks organization and app permissions for Platform services and
+        apps, so that they can explain authorization across ODC.
     - name: Manage end-user roles
       id: assign-roles-o11
       description: Wants to grant or revoke an end user's application role,

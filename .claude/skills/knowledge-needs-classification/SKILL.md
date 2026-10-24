@@ -118,6 +118,18 @@ The local copy read in Step 2 is a synced duplicate, not the source of
 truth — before using it for matching, confirm it hasn't drifted from the
 canonical copy.
 
+**Unattended runs with a pre-synced canonical copy.** If
+`.sync-tk-cicd/knowledge-needs.yaml` exists, an automated run has already
+checked out `tk-cicd` and copied its register over the local one before this
+skill started, and the session has no credentials to reach `tk-cicd`
+itself. Don't call `gh api` and don't ask the user: run
+`diff <local-path> .sync-tk-cicd/knowledge-needs.yaml`. No output means the
+local copy is the canonical one; use it and go to Step 4. If they differ,
+keep the local copy (the run may have edited it) and go to Step 4. In both
+cases, treat `tk-cicd` as unreachable for the rest of this skill: the
+approved additions go into the local file, and the harness opens the pull
+request. Otherwise, follow the steps below.
+
 1. Try fetching `knowledge-needs.yaml` from the `OutSystems/tk-cicd` GitHub
    repository into a scratch file (e.g. in the session's scratchpad
    directory), by running:
@@ -264,7 +276,8 @@ the matching option above.
 **Handling each response:**
 
 - **Add** — finalize: if Step 3 already found `OutSystems/tk-cicd`
-  unreachable this run, skip straight to the unreachable handling below.
+  unreachable this run (or a pre-synced `.sync-tk-cicd/` copy was used),
+  skip straight to the unreachable handling below.
   Otherwise, fetch the current `knowledge-needs.yaml` from the
   `OutSystems/tk-cicd` GitHub repository — the canonical source — using the
   same `gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml`
@@ -272,9 +285,13 @@ the matching option above.
   Whichever copy you insert into below, validate it immediately after
   inserting and before saving, committing, or pushing it, by running the
   bundled validator against that file:
-  `python3 .github/skills/knowledge-needs-classification/scripts/validate_register.py <path>`
+  `python3 <skill-dir>/scripts/validate_register.py <path>`
   (the `scripts/` folder next to this `SKILL.md`; use `python` if `python3`
-  isn't available). It checks that the file parses as YAML **and** that the
+  isn't available). Where `<skill-dir>` lives depends on the repo, so use
+  the first of these that exists rather than guessing:
+  `.sync-tk-cicd/ai-skills/knowledge-needs-classification`,
+  `.github/skills/knowledge-needs-classification`,
+  `ai-skills/knowledge-needs-classification`. It checks that the file parses as YAML **and** that the
   register structure is valid — exactly 3 levels with subtopics as leaves,
   unique `id`s, required `name`s — and prints every problem it finds.
   **If it fails, fix the file yourself and re-run it; repeat until it exits

@@ -14541,6 +14541,11 @@ knowledge-needs:
       based on app type (new web app vs existing apps, libraries, or agentic
       apps), complexity, and access point (ODC Portal vs ODC Studio), so that
       they pick the right tool for their development task.
+  - name: Mentor asset support
+    id: mentor-asset-support
+    description: Wants to understand which ODC asset elements Mentor Studio
+      can edit, including why it doesn't add screens to libraries, so they can
+      predict when a requested change is unsupported.
   - name: What is an AI agent
     id: what-is-an-ai-agent
     description: Wants to understand what an AI agent is and what makes it

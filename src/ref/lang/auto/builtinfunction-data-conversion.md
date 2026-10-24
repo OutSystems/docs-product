@@ -5,7 +5,11 @@ guid: 97603ff0-1f23-42e0-aaad-0e566af8eeec
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: data conversion, data types, boolean, integer, decimal, date, text
+tags:
+  - Aggregates
+  - Data
+  - Logic
+  - Programming Model
 audience:
   - Developer
   - Front-end developer

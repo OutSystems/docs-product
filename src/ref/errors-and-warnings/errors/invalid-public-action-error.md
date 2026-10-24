@@ -5,7 +5,13 @@ guid: f55fcb70-f968-4223-9b1c-8f9136349e41
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: outsystems, error handling, public actions, module references, entity/structure accessibility
+tags:
+  - Data Model
+  - Debugging
+  - Entities
+  - Modular Programming
+  - Programming Model
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

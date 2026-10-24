@@ -5,7 +5,11 @@ guid: cb5587c1-009b-4ef4-bf65-297a48c62902
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: text formatting, string manipulation, data types, localization, server-side logic, client-side logic
+tags:
+  - Data
+  - Front-End
+  - Logic
+  - Multi-language
 audience:
   - Developer
   - Front-end developer

@@ -5,7 +5,12 @@ guid: 63bbdcba-14e9-4a53-82af-ba32f92139bb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, public blocks, navigation logic, debugging, outsystems platform
+tags:
+  - Blocks
+  - Debugging
+  - Logic
+  - Screens
+  - Troubleshooting
 audience:
   - Front-end developer
   - Developer

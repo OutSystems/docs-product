@@ -5,7 +5,12 @@ guid: 88c149c0-76f4-49ab-b7ad-328a35be02ea
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: math functions, server-side logic, client-side logic, database functions, data manipulation
+tags:
+  - Aggregates
+  - Data
+  - Logic
+  - Programming Model
+  - SQL
 audience:
   - Developer
   - Front-end developer

@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) requires mandatory parameters to precede optional ones in path settings to avoid the "Invalid Parameter Order" error.
-tags: ide usage, reactive web apps, tutorials for beginners, seo-friendly urls, error handling, screen configuration, parameter management
+tags:
+  - Screens
+  - Troubleshooting
 locale: en-us
 guid: b7f0d19c-a092-4b06-9cf1-56d3fd23ab88
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -7,7 +7,11 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
-tags: date manipulation, time manipulation, server-side functions, client-side functions, outsystems 11
+tags:
+  - Mobile app
+  - Platform Server
+  - Traditional Web
+  - Web
 topic:
   - built-in-date-functions-o11
   - dst-date-calculations

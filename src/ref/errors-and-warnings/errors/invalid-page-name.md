@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) displays an "Invalid Page Name Error" when a page name contains characters other than letters, digits, dash, tilde, or slash.
-tags: seo-friendly urls, error handling, web development best practices, application configuration, user experience enhancement
+tags:
+  - Best Practices
+  - Troubleshooting
+  - Web
 locale: en-us
 guid: 6237e558-882b-40a4-9276-64dff7b6b16d
 app_type: traditional web apps, mobile apps, reactive web apps

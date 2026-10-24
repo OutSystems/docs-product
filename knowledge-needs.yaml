@@ -13691,6 +13691,11 @@ knowledge-needs:
       description: Wants to create a web app from scratch by selecting a web app
         option, naming the app, uploading an icon, and opening the starter
         screen, so they can start from a working app shell.
+    - name: Create app with AI
+      id: create-app-with-ai
+      description: Wants to create and publish a web app in ODC using AI-assisted
+        app-generation tools, so they can use AI-assisted app generation while
+        learning the platform workflow.
     - name: Application templates overview
       id: application-templates-overview
       description: Wants to understand what application templates are, what kinds of
@@ -14668,6 +14673,11 @@ knowledge-needs:
         Agent, StoreMemory) and what each step does by default in an agentic
         app template, so that they know the out-of-the-box logic before
         customizing any component.
+    - name: Reason-act loop
+      id: reason-act-loop
+      description: Wants to understand how the ReAct reason-act loop cycles
+        through thought, action, and observation, so they can explain how an
+        autonomous AI agent adapts its behavior while pursuing a goal.
     - name: Combine grounding sources
       id: combine-grounding-sources
       description: Wants to combine data from multiple entities into an AI
@@ -19692,8 +19702,9 @@ knowledge-needs:
     - name: Rotate service account token
       id: rotate-service-account-token
       description: Wants to rotate a LifeTime service account token by generating
-        a replacement and managing the period in which both tokens remain valid,
-        so integrations stay authorized during the transition.
+        a replacement, managing the period in which both tokens remain valid, and
+        revoking the previous token, so integrations stay authorized during the
+        transition.
     - name: Revoke service account token
       id: revoke-service-account-token
       description: Wants to revoke a LifeTime service account token to invalidate

@@ -5,7 +5,12 @@ guid: 594c9e1f-93d8-41f6-8b30-18a257bd6ea0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A2&mode=design&t=98kL4vRdGIKpuwQm-1
-tags: ci/cd integration, deployment process, application lifecycle management, version tagging, deployment plan
+tags:
+  - CI/CD
+  - Deploy
+  - Development lifecycle
+  - Lifecycle
+  - Refactoring
 audience:
   - Developer
   - Front-end developer

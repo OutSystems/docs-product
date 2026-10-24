@@ -5,7 +5,13 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3739-245&t=KH2Hic1Sntl2FDe9-1
 summary: OutSystems 11 (O11) allows manual addition of entities to extensions and offers a wizard for importing multiple entities from a database.
-tags: entity management, database integration, extensions, data modeling, entity properties
+tags:
+  - Data Model
+  - Entities
+  - Extensions
+  - External Databases
+  - Platform Server
+  - Table
 audience:
   - Developer
 outsystems-tools:

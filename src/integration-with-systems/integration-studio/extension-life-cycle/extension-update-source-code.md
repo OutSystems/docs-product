@@ -5,7 +5,13 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: Learn how to synchronize and update extension source code in OutSystems 11 (O11) using Integration Studio's automated operations.
-tags: ide usage, extension development, source code management, outsystems, .net development
+tags:
+  - .NET
+  - 1-Click Publish
+  - C#
+  - Extensions
+  - Lifecycle
+  - Templates
 audience:
   - Developer
 outsystems-tools:

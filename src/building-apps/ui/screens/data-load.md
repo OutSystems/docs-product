@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5635-965&t=xcQSQSso5jOwfdlo-1
-tags: data loading, performance optimization, asynchronous programming, network optimization, mobile application development
+tags:
+  - Asynchronous Processes
+  - Best Practices
+  - Data
+  - Mobile app
+  - Optimization
+  - Performance
+  - Screens
 audience:
   - Developer
 outsystems-tools:

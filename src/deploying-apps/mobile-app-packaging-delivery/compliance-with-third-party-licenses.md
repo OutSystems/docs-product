@@ -1,6 +1,11 @@
 ---
 summary: "OutSystems 11 (O11) third-party license compliance for mobile apps: add the OutSystems UI Licenses block and plug-in License blocks to your app."
-tags: license compliance, mobile app development, open source licenses, application compliance, outsystems ui
+tags:
+  - Blocks
+  - Mobile app
+  - OutSystems UI
+  - Plugins
+  - Screens
 locale: en-us
 guid: a1e335a8-d8f0-4039-bd89-67590def7910
 app_type: mobile apps

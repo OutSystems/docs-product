@@ -1,6 +1,13 @@
 ---
 summary: (Version 7) Explore the Camera Plugin functionalities in OutSystems 11 (O11), including client actions, web blocks, and error handling.
-tags: mobile app development, plugin integration, camera functionality, error handling, pwa compatibility
+tags:
+  - Android
+  - Cordova
+  - iOS
+  - Mobile app
+  - Native App
+  - Plugins
+  - Troubleshooting
 locale: en-us
 guid: c3adc87b-34b2-4a97-855f-b9e1572deaa7
 app_type: mobile apps

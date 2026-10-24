@@ -16,6 +16,7 @@ tags:
 audience:
   - Front-end developer
   - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

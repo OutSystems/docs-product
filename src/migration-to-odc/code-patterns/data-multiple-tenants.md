@@ -11,7 +11,9 @@ platform-version: o11
 audience:
   - Architect
   - Developer
-tags: multi-tenancy,outsystems developer cloud,o11 modules,non-supported patterns,data migration
+tags:
+  - Data
+  - Multi-Tenant
 outsystems-tools:
   - conversion assessment tool
 helpids: "30737"

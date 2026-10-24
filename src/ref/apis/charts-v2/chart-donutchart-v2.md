@@ -1,5 +1,10 @@
 ---
-tags: data visualization, widgets, chart configuration, ui design, outsystems ui framework
+tags:
+  - Data
+  - Front-End
+  - Traditional Web
+  - UI
+  - Widgets
 summary: Learn how to create a Donut Chart in OutSystems 11 (O11) using the Donut Chart widget and customizing data points and chart properties.
 locale: en-us
 guid: 728922B7-1DEF-4E55-AB59-7641DAA85C21

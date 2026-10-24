@@ -1,5 +1,10 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, chart visualization, data binding
+tags:
+  - Data
+  - Front-End
+  - Traditional Web
+  - UI
+  - Widgets
 summary: Learn how to create and customize a Bar Chart with a legend in OutSystems 11 (O11) using fixed or variable data.
 locale: en-us
 guid: 63FB9BE0-A9BA-4173-8BF2-8049B69DCC6B

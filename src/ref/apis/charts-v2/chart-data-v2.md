@@ -1,5 +1,12 @@
 ---
-tags: chart implementation, data visualization, outsystems ui, outsystems data layer, user interface design
+tags:
+  - Data
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - Widgets
 summary: Learn how to add fixed and variable data to charts in OutSystems 11 (O11) using the DataPointList property.
 locale: en-us
 guid: 5891D247-9954-4FF7-A2EB-2888EC827A54

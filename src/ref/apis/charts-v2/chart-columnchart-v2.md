@@ -1,5 +1,10 @@
 ---
-tags: chart visualization, data visualization, ui components, web development, outsystems widgets
+tags:
+  - Data
+  - Front-End
+  - Traditional Web
+  - UI
+  - Widgets
 summary: Learn how to create a column chart with data labels in OutSystems 11 (O11) using the Column Chart widget and configuring properties for data visualization.
 locale: en-us
 guid: A1458CB9-862F-4F78-B823-E1D0A3453FDE

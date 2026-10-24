@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) features an EnhancedWebReferences API for dynamically customizing SOAP web services and web reference requests.
-tags: soap web services, web service integration, api deprecation, web reference customization, outsystems platform
+tags:
+  - SOAP
+  - Web services
 locale: en-us
 guid: aa9f7cd6-bf5d-4cd6-8079-df516cd3277c
 app_type: traditional web apps, mobile apps, reactive web apps

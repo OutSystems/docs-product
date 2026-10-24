@@ -1,6 +1,10 @@
 ---
 summary: Explore how OutSystems 11 (O11) manages and categorizes various types of exceptions to enhance application error handling.
-tags: error handling, exception hierarchy, application development, error management, application troubleshooting
+tags:
+  - Logging
+  - Logic
+  - Mobile app
+  - Security
 locale: en-us
 guid: 7215bc5b-f7dd-4da9-9c09-c4be569b9992
 app_type: traditional web apps, mobile apps, reactive web apps

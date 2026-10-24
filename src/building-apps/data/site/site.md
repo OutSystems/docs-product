@@ -1,6 +1,9 @@
 ---
 summary: Explore how OutSystems 11 (O11) utilizes Site Properties to configure application behaviors dynamically at runtime without republishing.
-tags: configuration management, environment management, global variables, runtime behavior, application deployment
+tags:
+  - Aggregates
+  - Caching
+  - Site Properties
 locale: en-us
 guid: cab950c5-aaec-4e83-a318-9d74a7e789b4
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) features the PlatformPasswordUtils API for secure password validation and storage using cryptographic hashing.
-tags: cryptography, security, password management, hashing algorithms, api documentation
+tags:
+  - Authentication
+  - Security
 locale: en-us
 guid: 0c8970c5-42b4-4ab0-8e87-7d88223f2789
 app_type: traditional web apps, mobile apps, reactive web apps

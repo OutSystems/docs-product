@@ -5,7 +5,12 @@ guid: 0b89d709-a914-4f96-8869-3c653149576d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2168-1376
-tags: app conversion, odc architecture, platform updates, conversion process, architecture assessment
+tags:
+  - Architecture
+  - Infrastructure
+  - IT Users
+  - Refactoring
+  - Testing
 audience:
   - Developer
   - Front-end developer

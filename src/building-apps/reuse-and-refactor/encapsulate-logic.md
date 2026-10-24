@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) enhances application maintainability by allowing logic encapsulation within actions that can be reused across modules.
-tags: ide usage, reactive web apps, tutorials for beginners, application maintenance, logic reusability
+tags:
+  - Best Practices
+  - Logic
+  - Modular Programming
+  - Refactoring
 locale: en-us
 guid: cd22e454-c0cf-4a69-809f-6d6463f67e4c
 app_type: traditional web apps, mobile apps, reactive web apps

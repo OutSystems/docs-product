@@ -5,7 +5,14 @@ guid: dcf82210-2b59-420c-9014-81f80f0d907a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: api, application deployment, application versioning, environment management, database connection mapping
+tags:
+  - CI/CD
+  - Deploy
+  - External Databases
+  - Infrastructure
+  - Lifecycle
+  - Mobile app
+  - REST
 audience:
   - Developer
   - Platform administrator

@@ -14872,11 +14872,11 @@ knowledge-needs:
     subtopics:
     - name: Choose tool source
       id: choose-tool-source
-      description: Wants to decide whether to import external tools into an
-        ODC app via a custom MCP server or a prebuilt connector,
-        understanding that both produce callable server actions, so that
-        they can choose based on portability and reuse versus faster
-        guided setup.
+      description: Wants to decide how to extend ODC apps and AI agents with
+        external capabilities by importing tools via a custom MCP server or a
+        prebuilt connector, understanding that both produce callable server
+        actions, so that they can choose based on portability and reuse versus
+        faster guided setup.
     - name: Set up prebuilt connector
       id: set-up-prebuilt-connector
       description: Wants to create a connection to an external service using

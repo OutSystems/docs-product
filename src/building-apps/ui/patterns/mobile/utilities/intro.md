@@ -1,5 +1,12 @@
 ---
-tags: outsystems utilities, mobile app development, reactive web development, design systems, ui/ux design
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - UX
+  - Web
 summary: Explore the utilities available in OutSystems 11 (O11) for Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: 40cc0cb9-22c3-43eb-a930-106067fda21c

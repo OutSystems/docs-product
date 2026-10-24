@@ -6,7 +6,14 @@ guid: 1189b6d2-baf6-4b9f-bfc7-e88033ba8e7b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: outsystems, module properties, database configuration, user management, entity documentation
+tags:
+  - JavaScript
+  - Multi-Tenant
+  - SQL
+  - Settings
+  - Themes
+  - Traditional Web
+  - Web
 audience:
   - Developer
   - Platform administrator

@@ -6,7 +6,12 @@ guid: e2cc47cf-825c-475d-b989-952f2dbf90d3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: resource management, element properties, ide usage, reactive web apps, mobile app development
+tags:
+  - Deploy
+  - Mobile app
+  - Programming Model
+  - Traditional Web
+  - Web
 audience:
   - Developer
   - Front-end developer

@@ -5,7 +5,10 @@ guid: d11d552e-fcfc-42b8-8690-a058f4c74dae
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: server request handling, web applications, server-side logic, outsystems platform, lifecycle events
+tags:
+  - Events
+  - Lifecycle
+  - Web
 audience:
   - Developer
   - Front-end developer

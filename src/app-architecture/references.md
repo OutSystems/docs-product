@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: module architecture, software architecture, deployment best practices, performance optimization, entity management
+tags:
+  - Architecture
+  - Best Practices
+  - External Databases
+  - Modular Programming
+  - Optimization
+  - Performance
+  - Web services
 audience:
   - Architect
   - Developer

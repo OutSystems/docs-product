@@ -5,7 +5,8 @@ guid: 6cabc6e6-e10d-4777-96ef-894020476cd1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: data refresh, synchronous operations, data fetching, outsystems service studio, data manipulation
+tags:
+  - Data
 audience:
   - Developer
   - Front-end developer

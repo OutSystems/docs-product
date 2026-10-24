@@ -5,7 +5,13 @@ guid: 33e63dcb-e047-49d9-ad6b-e14efd20ed46
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: module reusability, modular design, application scalability, logic encapsulation, code integration
+tags:
+  - Extensions
+  - Libraries
+  - Logic
+  - Mobile app
+  - Modular Programming
+  - Traditional Web
 audience:
   - Developer
   - Front-end developer

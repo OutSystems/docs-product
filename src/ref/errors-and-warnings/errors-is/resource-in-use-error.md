@@ -5,7 +5,9 @@ guid: b12ff345-5101-4765-997c-97c7150f70a5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error resolution, integration studio, application lifecycle management, debugging, application deployment
+tags:
+  - Extensions
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer

@@ -1,6 +1,9 @@
 ---
 summary: Invalid Action Flow error in OutSystems 11 (O11) covers causes and fixes for Cycle, If, Switch, and Start element issues in Action flows.
-tags: error handling, logic flows, best practices, debugging, ide usage
+tags:
+  - Debugging
+  - Logic
+  - Troubleshooting
 locale: en-us
 guid: b477089c-5ad9-4310-9978-a7367e20e7de
 app_type: traditional web apps, mobile apps, reactive web apps

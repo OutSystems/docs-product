@@ -5,7 +5,10 @@ guid: 2bcfc8f0-9630-4a74-a218-fcd00359bdb2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: http methods, rest api, error handling, outsystems development, service studio troubleshooting
+tags:
+  - REST
+  - Troubleshooting
+  - Web services
 audience:
   - Developer
 outsystems-tools:

@@ -5,7 +5,13 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: iis configuration, performance optimization, thread management, system administration, on-premises deployment
+tags:
+  - .NET
+  - Infrastructure
+  - Optimization
+  - Performance
+  - Platform Server
+  - Settings
 audience:
   - Platform administrator
   - Developer

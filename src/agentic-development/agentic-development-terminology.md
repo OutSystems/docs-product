@@ -17,7 +17,6 @@ audience:
 tags:
   - Agentic
   - AI
-  - Terminology
 outsystems-tools:
   - service studio
 helpids:

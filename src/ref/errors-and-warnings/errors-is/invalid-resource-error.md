@@ -5,7 +5,11 @@ guid: dcd74051-5eb0-49fd-af03-3a2553dc978e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, outsystems platform, platform server, application deployment, extension verification
+tags:
+  - Deploy
+  - Extensions
+  - Platform Server
+  - Troubleshooting
 audience:
   - Developer
   - Platform administrator

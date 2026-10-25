@@ -5,7 +5,14 @@ guid: cc983a8d-46d2-4fad-b6f3-eaf1148dba44
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:40
-tags: application architecture, code reusability, module dependencies, stateless modules, database agnosticism
+tags:
+  - Architecture
+  - Best Practices
+  - Extensions
+  - Libraries
+  - Logic
+  - Modular Programming
+  - Style Guides
 audience:
   - Developer
   - Front-end developer

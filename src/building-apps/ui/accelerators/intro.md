@@ -4,7 +4,9 @@ tags:
   - Forge
   - Mobile app
   - Screens
+  - Templates
   - UI
+  - UI Patterns
   - Widgets
 locale: en-us
 guid: fc130f38-3ed2-46f5-a1d1-4319f3e37dfb

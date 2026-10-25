@@ -2,10 +2,8 @@
 tags:
   - Data Synchronization
   - Infrastructure
-  - Lifecycle
   - Monitoring
-  - Technical Debt
-  - Troubleshooting
+  - Plugins
 summary: Explore how to request unscheduled data synchronizations in OutSystems 11 using Code Quality.
 locale: en-us
 guid: b67d9ffc-b28f-4e00-8ffc-6544f9d66812

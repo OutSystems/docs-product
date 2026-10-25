@@ -7,7 +7,6 @@ platform-version: o11
 figma:
 tags:
   - Developer
-  - Front-end developer
   - Logic
   - Mobile app
   - Traditional Web

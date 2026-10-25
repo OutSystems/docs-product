@@ -3,8 +3,11 @@ summary: OutSystems 11 (O11) emphasizes early testing and fixing of accessibilit
 tags:
   - Accessibility
   - Front-End
+  - OutSystems UI
+  - Screens
   - Testing
   - UI
+  - Web
 locale: en-us
 guid: 4d847458-cdd8-40ec-848a-aa9af7e1d2ea
 app_type: reactive web apps

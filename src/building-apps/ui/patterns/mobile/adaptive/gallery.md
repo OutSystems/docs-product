@@ -1,5 +1,11 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, gallery pattern
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to implement and customize the Gallery UI Pattern in OutSystems 11 (O11) for displaying content in mobile and reactive web apps.
 locale: en-us
 guid: 18e4696c-aeb1-4c7f-bb06-40590738797a

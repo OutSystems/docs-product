@@ -1,5 +1,9 @@
 ---
-tags: case management, business process technology, framework architecture, api modules, core services
+tags:
+  - Architecture
+  - Business Processes
+  - Case Management framework
+  - Logic
 summary: Explore the architecture and capabilities of the Case Management framework in OutSystems 11 (O11) for streamlined business process app development.
 guid: 8149ad32-7c20-458b-92d4-2e2dac78f781
 locale: en-us

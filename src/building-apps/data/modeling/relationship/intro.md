@@ -1,6 +1,12 @@
 ---
 summary: Explore how OutSystems 11 (O11) manages entity relationships through reference attributes and ensures data integrity and performance optimization.
-tags: entity relationships, database integrity, data modeling, performance optimization, service studio
+tags:
+  - Data Integrity
+  - Data Model
+  - Entities
+  - Indexes
+  - Performance
+  - Service Studio
 locale: en-us
 guid: 108f5fa9-feae-4eb4-805e-7c49be5b1e98
 app_type: traditional web apps, mobile apps, reactive web apps

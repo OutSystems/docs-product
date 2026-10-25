@@ -2,7 +2,11 @@
 summary: OutSystems 11 (O11) supports the development of Section 508 compliant applications, as detailed in its Voluntary Product Accessibility Template (VPAT).
 tags:
   - Accessibility
+  - Forms
+  - Front-End
   - Traditional Web
+  - UI
+  - Web
 locale: en-us
 guid: c61481b5-bfd8-4d06-9024-e3185659b455
 app_type: traditional web apps

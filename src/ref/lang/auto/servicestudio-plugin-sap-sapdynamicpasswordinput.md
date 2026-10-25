@@ -8,8 +8,9 @@ platform-version: o11
 figma:
 tags:
   - Authentication
-  - Developer
+  - Plugins
   - Security
+  - Web services
 audience:
   - Developer
 outsystems-tools:

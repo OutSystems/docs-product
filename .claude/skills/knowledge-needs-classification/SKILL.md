@@ -26,7 +26,11 @@ questions) it actually answers, check them against the team's
 genuinely new ones to the register at a sensible placement.
 
 **Input:** the path to a local markdown file — e.g. `src/some-section/some-
-article.md` — pointing to an actual markdown source file on disk.
+article.md` — pointing to an actual markdown source file on disk. A `.yaml`
+content asset (some repos keep training assets as YAML) is also accepted:
+wherever this skill says "frontmatter", a `.yaml` asset's top-level keys
+play that role (its identifier key and `topic` are top-level keys), and
+there is no `---` block to look for.
 
 This skill does not accept a submitted list of questions to validate — for
 that, use the `knowledge-need-validator` skill instead. This skill always
@@ -48,9 +52,32 @@ attempting a partial or improvised version.
 This skill does update the input file's own frontmatter, but only the
 `topic` field, and only at the very end — see Step 9.
 
+**The documentation style guides don't apply here.** The skill never
+writes or rewrites the content itself: it only sets the `topic` list and
+adds register entries, whose wording rules are in Step 7. Don't load the
+repository's style guides (for example the files under `doc-styles/`) for
+these edits, even when the repository's instructions say to apply them
+whenever a content file is edited.
+
 ## Step 1 — Read the content
 
-1. Read the markdown file at the given path directly from disk.
+1. Read the markdown (or `.yaml`) file at the given path directly from disk.
+   A `.yaml` asset is a recorded demo whose narration lives in a separate
+   JSON transcript; the YAML itself mostly holds metadata and a list of
+   steps. Find the transcript(s), read them, and use them as the primary
+   source for what the content covers:
+   * a `subtitles` field (older assets) → the JSON file it references;
+   * otherwise (recorder-version 4 assets have no such field), each `steps`
+     entry with `action: sikulix` and a `source` (for example
+     `./demo.sikuli`) → the JSON file next to it named after the source plus
+     `.json` (`./demo.sikuli.json`).
+
+   Both kinds of JSON hold a `captions` list; use the `text` of its entries
+   and ignore the other keys (such as `software`). If neither gives a file,
+   classify from the YAML alone and say so when presenting the result.
+   These JSON files, and every other file you read for context, are for
+   observation only: never modify or delete them. The only files this skill
+   writes are the input file's `topic` field and the register.
 2. If the path doesn't exist or can't be read, stop and ask the user to
    provide the correct path — don't guess at a different path or proceed
    without the content.
@@ -91,6 +118,21 @@ knowledge-needs:
       id: <slug>
       description: <optional>
 ```
+
+**Don't read or parse the whole register to look things up.** It's tens of
+thousands of lines. Search it with the bundled helper, from the same
+`<skill-dir>` Step 8 resolves for the validator:
+`python3 <skill-dir>/scripts/search_register.py [--file <path>] <keyword> [<keyword> ...]`
+prints one line per matching entry — `id | category > topic > subtopic |
+description` — where every keyword must appear in the id, path or
+description (`--id <id>` matches one entry exactly; use `python` if
+`python3` isn't available). Try a few distinct keywords from the content
+rather than one broad one. If you do write your own code against the file,
+note that a topic may have no `subtopics` key, or a null one, and that only
+subtopics (or topics without any) carry ids. When editing the register,
+change one entry at a time, anchoring on its `id:` line — entries that look
+related are often far apart in the file, so an edit spanning two of them
+fails to match.
 
 **The nesting is exactly 3 levels — category > topic > subtopic — and a
 subtopic is always a leaf.** A subtopic entry must never have a `subtopics`
@@ -367,8 +409,9 @@ the matching option above.
 ## Step 9 — Update the input file's frontmatter
 
 Once Add has fully completed (regardless of whether a PR was opened or
-declined), update the input markdown file's own frontmatter. This is
-separate from, and happens after, everything above.
+declined), update the input file's own frontmatter (for a `.yaml` asset,
+its top-level `topic` key). This is separate from, and happens after,
+everything above.
 
 1. Check the frontmatter of the file read in Step 1 for a `topic` field.
    This is the prior for the hysteresis in step 3 below — its existing
@@ -391,6 +434,14 @@ separate from, and happens after, everything above.
      it was removed or rewritten). Don't drop a prior id just because this
      run's chunking didn't happen to revisit it. (Vacuous when the field
      was missing — there's nothing to keep.)
+   - **Drop** a prior id that doesn't exist in the register (Step 2's
+     flattened list). A prior id this run re-identified as a `NEW` entry
+     that passed validation and was added to the register is kept, since
+     it now exists there. A dropped id was renamed,
+     merged or removed there, so it can't be covered and would stay in the
+     file as a value matching no register entry. When it was replaced by an
+     id this run matched, the replacement takes its place; mention each
+     dropped id in the Step 9 summary so the change is visible.
    - **Add** an id not already in the prior only when this run backs it
      with a solid `REUSE` match or a `NEW` candidate that passed full
      validation (Step 5) — the same bar Step 5 already applies, so no

@@ -9725,9 +9725,8 @@ knowledge-needs:
     - name: Icon Badge reference
       id: icon-badge-reference
       description: Wants to look up the properties of the Icon Badge UI Pattern
-        in Service Studio, including Number, Color, IsLight, and ExtendedClass,
-        so that they can correctly configure a numerical notification badge in
-        a Mobile App or Reactive Web App for OutSystems 11.
+        in Service Studio, so that they can correctly configure a numerical
+        notification badge in a Mobile App or Reactive Web App for OutSystems 11.
     - name: Add icon widget
       id: add-icon-widget-odc
       description: Wants to add an Icon widget to a screen and select the icon and weight,
@@ -10365,11 +10364,10 @@ knowledge-needs:
         reactive web apps.
     - name: Progress Bar reference
       id: progress-bar-reference
-      description: Wants to look up the properties of the Progress Bar UI Pattern
-        in Service Studio, including Progress, ProgressColor, TrailColor, Thickness,
-        and OptionalConfigs (Shape, AnimateInitialProgress), so that they can
-        correctly configure a progress bar's appearance and behavior in OutSystems
-        11 mobile apps and reactive web apps.
+      description: Wants to look up the configurable properties of the Progress Bar
+        UI Pattern in Service Studio, so that they can correctly configure a progress
+        bar's appearance and behavior in OutSystems 11 mobile apps and reactive web
+        apps.
     - name: Progress Bar CSS reference
       id: progress-bar-css-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -10438,10 +10436,9 @@ knowledge-needs:
     - name: Rating pattern reference
       id: rating-pattern-reference
       description: Wants to look up the properties and events of the Rating UI
-        Pattern in Service Studio, including RatingScale, IsEdit, Size,
-        ExtendedClass, and OnSelect, so that they can correctly configure a
-        rating pattern's scale, editability, and appearance in OutSystems 11
-        mobile apps and reactive web apps.
+        Pattern in Service Studio, so that they can correctly configure a rating
+        pattern's scale, editability, and appearance in OutSystems 11 mobile
+        apps and reactive web apps.
     - name: Use Button Loading pattern
       id: use-button-loading-pattern
       description: Wants to add the Button Loading UI Pattern to a screen and
@@ -11846,6 +11843,11 @@ knowledge-needs:
         Components solution or as a module solution with dependencies when
         they need to group components for republishing or troubleshooting,
         so that they can prepare the right solution package.
+    - name: Deploy app dependencies
+      id: deploy-app-dependencies
+      description: Wants to deploy an OutSystems 11 application with its
+        dependencies in Service Center, so that all required components are
+        included and the application deploys successfully.
     - name: Version control models
       id: version-control-models
       description: Wants to compare Java, SVN, and Git version control models with

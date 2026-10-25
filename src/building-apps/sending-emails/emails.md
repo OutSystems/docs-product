@@ -20,8 +20,8 @@ coverage-type:
   - understand
   - apply
 topic:
-  - how-to-create-emails
-  - how-to-send-emails
+  - compose-and-send-emails
+  - email-delivery-behavior
 ---
 
 # Send an Email From a Traditional Web Application

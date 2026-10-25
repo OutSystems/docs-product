@@ -17,7 +17,8 @@ coverage-type:
   - understand
 isautopublish: true
 topic:
-  - integration-pattern-basics
+  - consume-rest-api
+  - expose-web-services
 ---
 
 # REST

@@ -22,7 +22,9 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - how-to-create-emails
+  - app-email-sending
+  - email-css-compatibility
+  - prevent-email-clipping
 ---
 
 # Sending emails from apps

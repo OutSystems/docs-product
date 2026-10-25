@@ -17,8 +17,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - deploy-apps-in-lt-portal
-  - track-work-tag-deploy
+  - change-target-environment
+  - deploy-applications-o11
+  - refresh-applications
 ---
 
 # Deploy an Application

@@ -22,7 +22,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - config-app-after-deploy
+  - configure-application-settings
 ---
 
 # Configure application settings after deployment

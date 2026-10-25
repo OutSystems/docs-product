@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - install-client-side-cert
+  - install-client-side-cert-cloud
 isautopublish: true
 ---
 

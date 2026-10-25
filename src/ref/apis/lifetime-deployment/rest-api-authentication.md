@@ -21,7 +21,9 @@ coverage-type:
   - remember
   - apply
 topic:
-  - service-accounts-deploy
+  - authenticate-lifetime-api
+  - create-service-account
+  - rotate-service-account-token
 isautopublish: true
 ---
 

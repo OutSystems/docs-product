@@ -21,7 +21,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - get-data-from-external-db
+  - use-integration-builder
 ---
 
 # Integrate with an external database using Integration Builder

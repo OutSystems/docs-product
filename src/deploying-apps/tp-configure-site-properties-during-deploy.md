@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - config-app-before-deploy
+  - configure-site-properties-during-deployment
 ---
 
 # Configure site properties during deployment

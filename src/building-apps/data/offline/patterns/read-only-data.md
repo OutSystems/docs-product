@@ -1,6 +1,13 @@
 ---
 summary: Read-Only Data sync pattern in OutSystems 11 (O11) downloads server data to device local storage for offline read access, with no write-back to the server.
-tags: data synchronization, offline data handling, local storage, performance optimization, outsystems patterns
+tags:
+  - Data
+  - Data Model
+  - Data Synchronization
+  - Entities
+  - Logic
+  - Mobile app
+  - Performance
 locale: en-us
 guid: b671dd23-9977-4a68-97f4-82cd56bc6b4d
 app_type: mobile apps

@@ -1,6 +1,13 @@
 ---
 summary: Explore essential development tasks in OutSystems 11 (O11) with this developer cheat sheet, covering data structures, screen creation, actions, and more.
-tags: ide usage, reactive web apps, traditional web apps, data modeling, ui development
+tags:
+  - Aggregates
+  - Data Model
+  - Entities
+  - Logic
+  - REST
+  - Screens
+  - UI
 locale: en-us
 guid: 055b0d0b-4275-47e8-873a-17e034b6c312
 app_type: mobile apps, reactive web apps, traditional web apps

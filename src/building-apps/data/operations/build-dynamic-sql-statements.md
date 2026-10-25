@@ -5,7 +5,11 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: sql injection prevention, security best practices, database queries, sql parameterization, sql best practices
+tags:
+  - Best Practices
+  - Security
+  - Sorting
+  - SQL
 audience:
   - Developer
 outsystems-tools:

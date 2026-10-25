@@ -1,6 +1,10 @@
 ---
 summary: Explore how operands, literals, variables, and functions are utilized in expressions within OutSystems 11 (O11).
-tags: expressions, data types, variable naming best practices, expression editor usage, service studio tips
+tags:
+  - Best Practices
+  - Data
+  - Logic
+  - Programming Model
 locale: en-us
 guid: 6f93f5d0-94ad-4ced-bd8c-ea8b7599ca05
 app_type: traditional web apps, mobile apps, reactive web apps

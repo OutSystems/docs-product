@@ -1,6 +1,13 @@
 ---
 summary: "OutSystems 11 (O11) Traditional Web App accessibility: apply ARIA roles, keyboard navigation, color contrast, and tabindex to reach WCAG compliance."
-tags: accessibility, wcag standards, aria roles, html/css customization, best practices
+tags:
+  - Accessibility
+  - Best Practices
+  - CSS
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI Patterns
 locale: en-us
 guid: b5635533-5774-4a83-b2ed-6c207d5d8db8
 app_type: traditional web apps

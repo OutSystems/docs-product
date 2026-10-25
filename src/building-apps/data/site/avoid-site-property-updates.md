@@ -1,5 +1,10 @@
 ---
-tags: performance optimization, caching strategies, database management, configuration management, application scaling
+tags:
+  - Best Practices
+  - Caching
+  - Optimization
+  - Performance
+  - Site Properties
 summary: Explore best practices for managing site properties in OutSystems 11 (O11) to optimize application performance and reduce database overhead.
 locale: en-us
 guid: b50a081a-6a39-46aa-acc6-23909bcf0247

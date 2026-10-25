@@ -1,6 +1,13 @@
 ---
 summary: ARIA roles and attributes in OutSystems 11 (O11) let you set dynamic states, hide elements, and create readable labels for assistive technology.
-tags: accessibility, aria, web accessibility, screen readers, dynamic content
+tags:
+  - Accessibility
+  - Front-End
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 locale: en-us
 guid: e4cd9450-4fe2-4145-8f1b-0852ab8c081d
 app_type: traditional web apps, mobile apps, reactive web apps

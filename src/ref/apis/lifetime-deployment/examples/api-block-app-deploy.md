@@ -5,7 +5,13 @@ guid: bcd187f6-c00a-409b-9e57-86c9781fb88a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: api integration, deployment automation, continuous delivery, software lifecycle management, outsystems api
+tags:
+  - Blocks
+  - Deploy
+  - Development lifecycle
+  - Lifecycle
+  - REST
+  - Web services
 audience:
   - Platform administrator
   - Developer

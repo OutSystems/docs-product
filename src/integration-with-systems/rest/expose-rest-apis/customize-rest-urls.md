@@ -1,6 +1,9 @@
 ---
 summary: Learn how to customize REST API method URLs in OutSystems 11 (O11) to enhance API endpoint structures.
-tags: api design, url customization, api development, rest services, endpoint configuration
+tags:
+  - Best Practices
+  - REST
+  - Web services
 locale: en-us
 guid: 3e4b997b-6c2c-4ccb-ae1a-31d4ed3ad0a8
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,13 @@
 ---
 summary: Explore the functionality of Preparation, Screen, and Server Actions in Traditional Web Apps using OutSystems 11 (O11).
-tags: traditional web development, action logic, data fetching, ui interaction, contact management
+tags:
+  - Blocks
+  - Data
+  - Front-End
+  - Logic
+  - Screens
+  - Traditional Web
+  - Web
 locale: en-us
 guid: 8536c396-e702-492a-8a07-ab8c8bc0334c
 app_type: traditional web apps

@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) mobile app data security best practices covering keystore use, Local Storage encryption, and server-side re-validation.
-tags: security best practices, data encryption, https, local storage, keystore
+tags:
+  - Best Practices
+  - Data
+  - Data Integrity
+  - Forge
+  - Mobile app
+  - Plugins
+  - Security
 locale: en-us
 guid: 5b81d4aa-2da0-4e88-9d14-c17a753a79fa
 app_type: mobile apps

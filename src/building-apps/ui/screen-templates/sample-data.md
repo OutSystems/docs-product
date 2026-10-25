@@ -5,7 +5,14 @@ guid: 075fbf61-e674-4e7e-bda6-612dbd61fc44
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:19
-tags: sample data, database integration, prototyping, proof of concept, outsystems platform
+tags:
+  - Data
+  - Entities
+  - Forge
+  - Platform Server
+  - Screens
+  - Templates
+  - Timers
 audience:
   - Developer
   - Front-end developer

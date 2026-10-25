@@ -6927,6 +6927,12 @@ knowledge-needs:
       description: Wants to understand the external core service (ECS) pattern and its
         variations in OutSystems 11, so that the right caching and synchronization strategy
         can be selected when an external system is the system of records.
+    - name: Integration wrapper
+      id: integration-wrapper
+      description: Wants to wrap calls to external systems in an OutSystems Integration
+        Service by validating inputs, handling authentication, mapping data, auditing calls,
+        and normalizing errors and outputs, so that consumers use a stable API without
+        integration-specific complexity.
     - name: Transparency service
       id: transparency-service-pattern
       description: Wants to understand the transparency service pattern in OutSystems 11,
@@ -7324,6 +7330,9 @@ knowledge-needs:
     - name: Create SOAP data
       id: create-exposed-soap-data
       description: Wants to expose a SOAP web service method in OutSystems 11 that creates a new employee record only when the email does not already exist in the database, and returns a success or error result, so that external systems can add application data.
+    - name: Update exposed SOAP data
+      id: update-exposed-soap-data
+      description: Wants to expose a SOAP web service method in OutSystems 11 that updates an existing employee record identified by email, returns a success or error result, and handles a missing employee, so that external systems can change application data.
     - name: Delete exposed SOAP data
       id: delete-exposed-soap-data
       description: Wants to delete existing application records through an exposed SOAP web service in OutSystems 11 by filtering the target record, deleting its related data, and returning a success or error result, so that external systems can remove data from the application.
@@ -8450,6 +8459,9 @@ knowledge-needs:
     - name: BDD test templates
       id: bdd-test-templates
       description: Wants to create BDD Framework test apps and screen suites from the provided application and screen templates, with the required blocks and actions, so that they can start component tests quickly.
+    - name: Gherkin functional criteria
+      id: gherkin-functional-criteria
+      description: Wants to translate acceptance criteria written in Gherkin's Given-When-Then format into BDD Framework component tests, so the expected behavior maps directly to test scenarios.
     - name: BDD test best practices
       id: bdd-test-best-practices
       description: Wants to implement BDD Framework component tests by separating test code from business code, mirroring only relevant dependencies, organizing suites and blocks, using consistent names, and selecting the right assert type, so that the tests stay readable and maintainable.
@@ -19194,6 +19206,11 @@ knowledge-needs:
     description: Wants to use feature flags to decouple release from deployment, so
       they can hide unfinished work, test versions with a subset of users, and
       expand a release gradually before full rollout.
+  - name: Feature flag hotfixes
+    id: feature-flag-hotfixes
+    description: Wants to use feature flags to disable a released feature when a
+      critical issue is found and deploy fixes alongside unfinished work, so that
+      users regain access only after the issue is addressed.
   - name: Release frequently
     id: release-frequently
     description: Wants to release work frequently so users give early feedback

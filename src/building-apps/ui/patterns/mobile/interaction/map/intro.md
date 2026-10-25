@@ -5,7 +5,6 @@ tags:
   - OutSystems UI
   - UI
   - UI Patterns
-  - UX
 summary: Explore the customizable Map component in OutSystems 11 (O11), designed for adding interactive and static maps to mobile and reactive web apps.
 locale: en-us
 guid: fe14ee83-cb5a-428d-bc6f-16d3857bf3ca

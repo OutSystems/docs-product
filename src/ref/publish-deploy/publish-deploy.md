@@ -20,7 +20,7 @@ coverage-type:
   - remember
   - understand
 topic:
-  - deploy-apps-in-lt-portal
+  - deploy-applications-o11
   - publish-an-app-o11
   - republish-vs-redeploy
 isautopublish: true

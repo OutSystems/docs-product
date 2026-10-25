@@ -23,7 +23,7 @@ coverage-type:
   - unblock
 topic:
   - accessible-wizard-pattern
-  - use-wizard-pattern
+  - use-wizard-pattern-reactive-web-o11
 isautopublish: true
 ---
 

@@ -24,7 +24,7 @@ coverage-type:
 topic:
   - accessible-progress-circle-pattern
   - progress-circle-reference
-  - use-progress-circle-pattern
+  - use-progress-circle-mobile-reactive-web
 isautopublish: true
 ---
 

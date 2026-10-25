@@ -20,7 +20,8 @@ outsystems-tools:
   - service studio
 topic:
   - css-best-practices
-  - customize-app-styles
+  - css-basics
+  - css-hierarchy
 coverage-type:
   - understand
   - apply

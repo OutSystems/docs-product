@@ -17,7 +17,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - zero-downtime-deployments
+  - two-stage-deployment
 ---
 
 # Deploy in a Short Deployment Window

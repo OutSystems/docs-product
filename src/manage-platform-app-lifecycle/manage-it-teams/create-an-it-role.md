@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - assign-a-role-for-an-app
+  - app-specific-permissions
   - assign-team-role
   - create-it-role
 ---

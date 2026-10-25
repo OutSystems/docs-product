@@ -22,10 +22,9 @@ coverage-type:
   - apply
   - understand
 topic:
-  - add-widget-ui-pattern
+  - create-mobile-module
   - crud-screens-mobile
   - import-data-model-excel
-  - test-share-app-users
 ---
 
 # Create your first Mobile App

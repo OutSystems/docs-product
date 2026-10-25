@@ -22,7 +22,7 @@ coverage-type:
   - apply
 topic:
   - auth-cache-session-extension
-  - authentication-cookies
+  - authentication-cookie-login-state
   - configure-app-authentication-settings
 ---
 

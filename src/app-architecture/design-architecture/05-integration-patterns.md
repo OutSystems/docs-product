@@ -21,8 +21,9 @@ coverage-type:
   - understand
   - evaluate
 topic:
-  - integration-pattern-basics
-  - integration-patterns
+  - ecs-pattern-variations
+  - integration-wrapper
+  - transparency-service-pattern
 ---
 
 # Integration Patterns for Core Services Abstraction

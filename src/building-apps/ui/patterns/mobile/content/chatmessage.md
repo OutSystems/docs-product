@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - chat-message-reference
+  - chat-message-mobile-reactive-reference
   - use-chat-message-pattern
 ---
 

@@ -22,9 +22,9 @@ outsystems-tools:
 coverage-type:
   - evaluate
 topic:
-  - data-archiving-cold-data
-  - data-isolation
+  - data-archiving-overview
   - entity-index-selection
+  - isolate-large-database-fields
 isautopublish: true
 ---
 

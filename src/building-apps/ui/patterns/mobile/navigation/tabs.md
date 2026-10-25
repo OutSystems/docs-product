@@ -25,8 +25,8 @@ coverage-type:
 isautopublish: true
 topic:
   - accessible-tabs-pattern
-  - tabs-reference
-  - use-tabs-pattern
+  - tabs-reference-o11
+  - use-tabs-pattern-o11
 ---
 
 # Tabs

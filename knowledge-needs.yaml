@@ -8450,6 +8450,9 @@ knowledge-needs:
   - name: Automated component testing
     id: component-test-automation
     subtopics:
+    - name: Component tests overview
+      id: component-tests-overview
+      description: Wants to understand what component testing is and which public server actions to target in ODC, so they can test reusable business logic directly without driving the UI.
     - name: Thin screen actions
       id: thin-screen-actions
       description: Wants to keep screen actions focused on UI validations and user interactions by moving business validations and business logic into reusable server or public actions, so the logic can be tested without UI tests.
@@ -8610,6 +8613,12 @@ knowledge-needs:
       description: Wants to create Blocks and Web Blocks in Service Studio and
         reuse them on screens or other blocks in OutSystems 11, so common UI
         stays centralized and updates propagate from one place.
+    - name: Web block characteristics
+      id: web-block-characteristics
+      description: Wants to identify the characteristics and benefits of Web
+        Blocks in OutSystems 11, including reuse, encapsulated logic, and
+        maintainability, so they can recognize when a Web Block is appropriate
+        for reusable UI.
     - name: Use block placeholders
       id: use-block-placeholders
       description: Wants to define and populate Block placeholders in Service
@@ -8737,6 +8746,11 @@ knowledge-needs:
         avoiding inline styles and ID selectors, centralizing CSS in the
         theme, and using CSS variables, in Service Studio, so their app's
         styling stays maintainable and scalable.
+    - name: Customize theme CSS
+      id: customize-theme-css
+      description: Wants to add custom CSS to an OutSystems 11 theme style sheet
+        in Service Studio to style application elements consistently with the
+        app's theme.
     - name: CSS basics
       id: css-basics
       description: Wants to understand CSS classes, IDs, hierarchy, and how to
@@ -11016,8 +11030,7 @@ knowledge-needs:
     - name: Use Search pattern
       id: use-search-pattern
       description: Wants to add the Search UI Pattern to a screen and configure
-        its input variable in Service Studio, so that users can search for
-        content by entering queries.
+        its input variable, so users can search for content by entering queries.
     - name: Search pattern reference
       id: search-pattern-reference
       description: Wants to look up the Search UI Pattern's layout, classes,
@@ -19206,6 +19219,11 @@ knowledge-needs:
     description: Wants to use feature flags to decouple release from deployment, so
       they can hide unfinished work, test versions with a subset of users, and
       expand a release gradually before full rollout.
+  - name: Isolate work in progress
+    id: isolate-work-in-progress
+    description: Wants to use feature flags to isolate unfinished work and let teams
+      deploy independently without exposing incomplete features, so that teams can
+      collaborate without coordinating every deployment.
   - name: Feature flag hotfixes
     id: feature-flag-hotfixes
     description: Wants to use feature flags to disable a released feature when a
@@ -23257,7 +23275,7 @@ knowledge-needs:
         version, and registering the collector endpoint and credentials in
         LifeTime, so that logs stream to Splunk in near real time.
     - name: Datadog log streaming
-      id: datadog-log-streaming
+      id: stream-to-datadog-o11
       description: Wants to set up log streaming to Datadog by configuring the
         OpenTelemetry Collector with the Datadog exporter, providing the
         Datadog API key and collector endpoint credentials, and registering
@@ -23359,6 +23377,13 @@ knowledge-needs:
         Collector with an HTTP or gRPC receiver and Splunk Exporter, updating the
         collector image version, and registering the stream in the ODC Portal,
         so that observability data reaches Splunk.
+    - name: Stream to Datadog
+      id: stream-to-datadog-odc
+      description: Wants to stream observability data from ODC apps to Datadog by
+        getting the Datadog API key, setting up the OpenTelemetry Collector with
+        the Datadog exporter, getting the collector endpoint and authentication
+        credentials, and configuring the stream in the ODC Portal, so that
+        observability data reaches Datadog.
     - name: Stream status meanings
       id: stream-status-meanings
       description: Wants to understand what the Active, Active with errors, and

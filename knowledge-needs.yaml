@@ -3724,11 +3724,6 @@ knowledge-needs:
       description: Wants to add descriptions to exposed REST API methods and
         parameters, publish the app, and open the generated documentation in
         ODC Studio so external developers can inspect the API contract.
-    - name: Expose REST API
-      id: expose-rest-api
-      description: Wants to create and expose REST services from an app so
-        external systems can consume the data through JSON-based REST
-        methods.
     - name: REST method settings
       id: rest-method-settings
       description: Wants to identify which settings can be specified when
@@ -7311,7 +7306,9 @@ knowledge-needs:
     subtopics:
     - name: Expose web services
       id: expose-web-services
-      description: Wants to expose REST APIs and SOAP web services from an app so external systems can call the published endpoints.
+      description: Wants to expose REST APIs and SOAP web services from an app so
+        internal or external systems can consume application data and
+        functionality through the published endpoints.
     - name: Expose SOAP web service
       id: expose-soap-web-service
       description: Wants to expose a SOAP web service in OutSystems 11 by creating the service, adding methods, setting the module namespace, and checking the generated WSDL endpoint and bindings, so that clients can call the published service.
@@ -11819,6 +11816,15 @@ knowledge-needs:
 - name: Deployment Management
   guid: 2d8be9e7-a1a1-4c3b-943e-93ad568b32b0
   topics:
+  - name: Application rollback
+    id: application-rollback
+    subtopics:
+    - name: Rollback app version
+      id: rollback-app-version
+      description: Wants to restore an application to a known working version after
+        a bad release by creating a LifeTime tag from an earlier version and
+        deploying it, or by publishing a previously saved Service Center Solution
+        version, so the application returns to a known working state.
   - name: Manual deployment without an infrastructure management console
     id: manual-deploy-no-console
     subtopics:
@@ -11889,21 +11895,10 @@ knowledge-needs:
         `/Publish` and `/PublishFactory` commands with the correct
         hostname, username, and password syntax, so that they can deploy
         without the graphical console.
-    - name: Rollback solution version
-      id: rollback-solution-version
-      description: Wants to restore a previous app release by creating and
-        versioning a Service Center solution before deploying a new version,
-        then publishing that earlier solution version when the newer release
-        causes a problem, so that they can roll back without using LifeTime
-        tags.
     - name: Tag milestone versions
       id: tag-milestone-versions
       description: Wants to mark specific published versions as milestones,
         so that they can identify important release checkpoints.
-    - name: Roll back to a previous tagged version
-      id: rollback-to-previous-tagged-version
-      description: Wants to restore an app to a previously tagged version,
-        so that they can recover from a bad release.
   - name: Package Manager Service errors
     id: package-manager-service-errors
     description: Wants to locate and resolve ODC Package Manager Service errors by finding the
@@ -14898,12 +14893,18 @@ knowledge-needs:
         a prebuilt connector in ODC Portal, providing authentication and
         importing selected tools as server actions, so that the tools
         become available for use in apps and agents.
+    - name: MCP server concepts
+      id: mcp-server-concepts
+      description: Wants to compare the MCP transport types available for ODC
+        connections and understand their differences, so they can choose a
+        transport that fits their MCP server.
     - name: Set up MCP connection
       id: set-up-mcp-connection
       description: Wants to configure a connection to a custom MCP server in ODC Portal by
         selecting the matching transport type, choosing an authentication
         method, and providing the required credentials, then testing the
-        connection, so that the server's tools become available for import.
+        connection, so that they can connect ODC to the server securely and
+        make its tools available for import.
     - name: MCP host overview
       id: mcp-host-overview
       description: Wants to understand what an MCP host is, including that it is the AI app you use and connects to OutSystems through OutSystems MCP, so that they can tell the host apart from the server and the tenant.

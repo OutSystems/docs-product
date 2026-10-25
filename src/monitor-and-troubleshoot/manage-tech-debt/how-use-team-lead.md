@@ -22,9 +22,9 @@ coverage-type:
   - apply
 isautopublish: true
 topic:
+  - change-finding-status
   - investigate-finding-causes
-  - manage-tech-debt
-  - resolve-findings-status
+  - interpret-overview-dashboard
 ---
 
 # Getting started as a team lead

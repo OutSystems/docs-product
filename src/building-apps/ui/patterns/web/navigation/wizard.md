@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - use-wizard-pattern
+  - use-wizard-pattern-traditional-web-o11
 ---
 
 # Wizard

@@ -20,7 +20,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - manage-tech-debt
+  - enable-auto-classification
 isautopublish: true
 ---
 

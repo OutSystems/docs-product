@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - animate-properties-reference
+  - animate-pattern-reference
   - use-animate-pattern
 ---
 

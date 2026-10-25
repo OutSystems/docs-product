@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - use-carousel-tw
+  - use-carousel-pattern
 ---
 
 # Carousel

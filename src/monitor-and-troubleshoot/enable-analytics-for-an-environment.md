@@ -16,7 +16,7 @@ outsystems-tools:
   - lifetime
   - forge
 topic:
-  - analytics-data-retention
+  - analytics-data-retention-o11
   - enable-environment-analytics
 coverage-type:
   - apply

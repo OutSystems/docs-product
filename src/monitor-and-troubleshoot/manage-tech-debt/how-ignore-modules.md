@@ -19,7 +19,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - manage-tech-debt
+  - ignore-modules
 isautopublish: true
 ---
 

@@ -18,7 +18,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - deployment-plan
+  - create-deployment-plan
+  - deploy-applications-o11
+  - edit-deployment-plan
 ---
 
 # Plan a Deployment for the Operations Team

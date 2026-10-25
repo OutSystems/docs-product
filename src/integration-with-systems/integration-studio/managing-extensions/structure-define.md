@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - how-to-create-structures
+  - define-extension-elements
 ---
 
 # Define Extension Structures

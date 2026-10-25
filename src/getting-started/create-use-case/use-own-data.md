@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - get-data-from-external-db
+  - access-external-data
   - replace-ui-sample-data
 ---
 

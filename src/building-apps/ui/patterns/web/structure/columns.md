@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - use-columns-pattern-o11
+  - use-columns-pattern
 ---
 
 # Columns

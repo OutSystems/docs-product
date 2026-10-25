@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - use-search-pattern-o11
+  - use-search-pattern
 ---
 
 # Search

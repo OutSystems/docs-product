@@ -16,9 +16,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - app-store-submission
+  - app-store-submission-android
   - google-play-data-safety
-  - limited-android-package
+  - prepare-app-store-submission
 ---
 
 # Publish Your Mobile Android Application to the Google Play Store

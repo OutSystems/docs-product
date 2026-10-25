@@ -21,9 +21,9 @@ coverage-type:
   - apply
 isautopublish: true
 topic:
+  - filter-overview-dashboard-data
   - ignore-modules
   - interpret-overview-dashboard
-  - manage-tech-debt
 ---
 
 # Getting started as an architect

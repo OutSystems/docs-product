@@ -1,6 +1,13 @@
 ---
 summary: Explore app customization options in OutSystems 11 (O11) using the Theme Editor for style adjustments in Service Studio.
-tags: ui customization, style guide, design systems, color schemes, branding
+tags:
+  - CSS
+  - Front-End
+  - OutSystems UI
+  - Screens
+  - Themes
+  - UI
+  - Widgets
 locale: en-us
 guid: 5ee100a0-6f04-4289-8f48-5ceff38331e7
 app_type: traditional web apps, mobile apps, reactive web apps

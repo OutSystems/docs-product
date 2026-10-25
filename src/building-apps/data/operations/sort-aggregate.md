@@ -1,6 +1,10 @@
 ---
 summary: "OutSystems 11 (O11) aggregate sorting: add fixed or dynamic sort to display records in ascending or descending order at runtime."
-tags: data sorting, aggregates, dynamic sorting, fixed sorting, data presentation
+tags:
+  - Aggregates
+  - Data
+  - Sorting
+  - Widgets
 locale: en-us
 guid: 1a92a987-8550-4f9c-9772-177373a40e2f
 app_type: traditional web apps, mobile apps, reactive web apps

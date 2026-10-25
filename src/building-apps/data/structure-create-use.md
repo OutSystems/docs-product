@@ -1,6 +1,12 @@
 ---
 summary: Explore how to use structures and records for compound data types in OutSystems 11 (O11) for efficient app development.
-tags: data structures, variables, app development best practices, compound data types, data modeling
+tags:
+  - Aggregates
+  - Best Practices
+  - Data
+  - Data Model
+  - Entities
+  - REST
 locale: en-us
 guid: eb3ff661-0b92-4f55-9bf3-cceb8dd2c0b9
 app_type: traditional web apps, mobile apps, reactive web apps

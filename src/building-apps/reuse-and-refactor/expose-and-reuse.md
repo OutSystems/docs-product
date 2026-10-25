@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) enables the exposure and reuse of module functionalities, distinguishing between producer and consumer modules.
-tags: module interactions, service architecture, application development, dependencies management, functionality exposure
+tags:
+  - Modular Programming
+  - Programming Model
 locale: en-us
 guid: 4b07ffa2-b09c-4ce8-a7b0-7b18aef4ca47
 app_type: traditional web apps, mobile apps, reactive web apps

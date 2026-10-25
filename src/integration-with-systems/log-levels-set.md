@@ -5,7 +5,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: This article explains how to configure the logging level for REST and SOAP integrations in OutSystems 11 (O11).
-tags: web services, api configuration, logging, troubleshooting, security
+tags:
+  - Logging
+  - REST
+  - Settings
+  - SOAP
+  - Web services
 audience:
   - Developer
   - Platform administrator

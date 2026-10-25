@@ -5,7 +5,10 @@ guid: 3b85b1ca-c60b-4109-8b41-64d006328f17
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: error handling, web flow, theme customization, troubleshooting, outsystems development
+tags:
+  - Themes
+  - Troubleshooting
+  - Web
 audience:
   - Developer
   - Front-end developer

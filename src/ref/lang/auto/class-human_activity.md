@@ -5,7 +5,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=607:517
 summary: Explore how OutSystems 11 (O11) implements Human Activity to manage user tasks within process flows.
-tags: process flow, task management, user task assignment, workflow processes, human-centric bpm
+tags:
+  - Business Processes
+  - Roles
+  - Taskbox
+  - Workflows
 audience:
   - Developer
 outsystems-tools:

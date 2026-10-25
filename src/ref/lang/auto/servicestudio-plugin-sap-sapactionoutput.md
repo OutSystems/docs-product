@@ -6,7 +6,10 @@ guid: 4ce0e5f5-6bad-48f9-9685-88693679ab22
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: sap integration, data mapping, data types, api documentation, system integration
+tags:
+  - Data
+  - Plugins
+  - Web services
 audience:
   - Developer
 outsystems-tools:

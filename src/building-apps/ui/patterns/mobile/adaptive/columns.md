@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui design patterns, layout management
+tags:
+  - Front-End
+  - Layouts
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to effectively use the Columns UI Pattern in OutSystems 11 (O11) to enhance content layout in mobile and reactive web apps.
 locale: en-us
 guid: 1c4edd42-f577-4475-ad7c-72fbe2a849a8

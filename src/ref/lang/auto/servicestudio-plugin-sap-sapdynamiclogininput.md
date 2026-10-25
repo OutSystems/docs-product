@@ -10,7 +10,11 @@ coverage-type:
   - remember
 topic:
   - input-parameter-reference
-tags: sap connections, dynamic login, input parameter, service studio, data type
+tags:
+  - Authentication
+  - Data
+  - Programming Model
+  - Web services
 audience:
   - Developer
 outsystems-tools:

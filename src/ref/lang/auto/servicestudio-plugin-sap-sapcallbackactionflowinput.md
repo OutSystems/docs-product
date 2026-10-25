@@ -6,7 +6,9 @@ guid: 03cdc256-d569-4d64-b280-eea6b54e24bb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: sap integration, input parameters, service studio configuration, web services, outsystems development
+tags:
+  - SOAP
+  - Web services
 audience:
   - Developer
 outsystems-tools:

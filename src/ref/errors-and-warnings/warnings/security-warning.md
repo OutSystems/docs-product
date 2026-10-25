@@ -5,7 +5,14 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=846%3A1646&mode=design&t=Ix2yojgoXorQvo4C-1
 summary: OutSystems 11 (O11) security warning covers causes and fixes for exposing database operations and Anonymous Server Actions in Service Studio.
-tags: application security, database operations, server-side validation, access controls, security best practices
+tags:
+  - Authentication
+  - Authorization
+  - Data Integrity
+  - Roles
+  - Screens
+  - Security
+  - Troubleshooting
 audience:
   - Front-end developer
   - Developer

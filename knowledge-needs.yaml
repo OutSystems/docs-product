@@ -100,6 +100,12 @@ knowledge-needs:
         action in OutSystems 11 Service Studio, including which are mandatory and
         their default values, so they can correctly configure and understand the
         action's behavior.
+    - name: ODC action properties
+      id: odc-action-properties
+      description: Wants to look up the configuration properties available for a
+        server action in ODC Studio, including which are mandatory and their
+        default values, so they can correctly configure and understand the
+        action's behavior.
     - name: Public actions reference
       id: public-actions-reference
       description: Wants to look up the public actions, input parameters, and
@@ -878,6 +884,19 @@ knowledge-needs:
         caching infrequently changing data locally, and fetching additional list
         items with infinite scroll, so that the screen renders faster and stays
         responsive.
+    - name: Place logic by device
+      id: place-logic-by-device
+      description: Wants to decide whether computationally heavy logic belongs in
+        client actions or server actions for an OutSystems mobile app, based on
+        the target devices, network conditions, and offline requirements, so that
+        the app remains responsive without shifting inappropriate load to the
+        server.
+    - name: Preconnect known domains
+      id: preconnect-known-domains
+      description: Wants to reduce initial network latency in an OutSystems mobile
+        app by opening connections to known external domains before the first
+        request, using client-side JavaScript and a preconnect resource hint, so
+        that DNS, TCP, and TLS negotiation finishes before the domain is needed.
     - name: Multiple server calls in a client action
       id: multiple-server-calls-client-action
       description: Wants to reduce multiple server requests in a client action by
@@ -1381,6 +1400,11 @@ knowledge-needs:
       description: Wants to show data fetched from an Integration Builder data
         action in a table, list, gallery, expression, or image widget, so
         users can see external system records on the screen.
+    - name: Bind data to widgets
+      id: bind-data-to-widgets
+      description: Wants to bind Screen Aggregate or Data Action outputs to List
+        and Expression widgets, so fetched records and individual attributes
+        display on the screen.
     - name: Set up table records
       id: set-up-table-records
       description: Wants to add a Table Records widget to a Traditional Web
@@ -3724,6 +3748,9 @@ knowledge-needs:
       description: Wants to add descriptions to exposed REST API methods and
         parameters, publish the app, and open the generated documentation in
         ODC Studio so external developers can inspect the API contract.
+    - name: Expose REST API
+      id: expose-rest-api
+      description: Wants to create an exposed REST API service and methods in ODC Studio, assign HTTP verbs, and implement actions, so external systems can retrieve or manipulate app data through deployed endpoints.
     - name: REST method settings
       id: rest-method-settings
       description: Wants to identify which settings can be specified when
@@ -5506,6 +5533,13 @@ knowledge-needs:
       description: Wants to keep GetUserId and other identity values out of
         client-side action parameters so server-side logic retrieves identity on
         the server, preventing tampering and impersonation.
+    - name: Secure client writes
+      id: secure-client-writes
+      description: Wants to fix a security finding for a database create, update,
+        or delete operation in client-side logic by moving it into a server
+        action and validating its inputs and the user's permission for the
+        specific record, so unauthorized or invalid changes cannot reach the
+        database.
   - name: Content security policy
     id: content-security-policy
     subtopics:
@@ -6774,6 +6808,10 @@ knowledge-needs:
         which Service Studio elements are available or restricted in a Library,
         and what reference restrictions apply to it, so that they can decide
         when and how to use Libraries in their application architecture.
+    - name: ODC library tabs
+      id: odc-library-tabs
+      description: Wants to identify which tabs are available in an ODC Library app,
+        so they can determine where to define reusable elements and resources.
     - name: Library module patterns
       id: library-module-patterns
       description: Wants to understand the extension and connector patterns used in
@@ -12508,6 +12546,13 @@ knowledge-needs:
   - name: CI/CD pipelines
     id: ci-cd-pipelines
     subtopics:
+    - name: Apply production hotfix
+      id: apply-production-hotfix
+      description: Wants to apply a targeted code hotfix to the exact revision
+        running in an ODC production stage by pausing pipeline changes,
+        publishing and promoting the fix through the pipeline, and merging it
+        back to development when simpler incident responses cannot restore
+        service, so future deployments retain the correction.
     - name: ODC CI/CD pipeline model
       id: odc-cicd-pipeline-model
       description: Wants to understand that ODC apps are built once in the
@@ -23308,7 +23353,7 @@ knowledge-needs:
         versions with OTLP/HTTP, and sending logs to Dynatrace, so that
         application logs reach the Dynatrace APM tool.
     - name: New Relic log streaming
-      id: new-relic-log-streaming
+      id: stream-to-new-relic-o11
       description: Wants to set up log streaming to New Relic by retrieving
         the New Relic API key and account ingestion endpoint, configuring the
         stream, and sending application logs to New Relic, so that application
@@ -23404,6 +23449,12 @@ knowledge-needs:
         the Datadog exporter, getting the collector endpoint and authentication
         credentials, and configuring the stream in the ODC Portal, so that
         observability data reaches Datadog.
+    - name: Stream to New Relic
+      id: stream-to-new-relic-odc
+      description: Wants to stream observability data from ODC apps to New Relic
+        by retrieving the New Relic API key and account location and configuring
+        the stream in the ODC Portal, so that observability data reaches New
+        Relic.
     - name: Stream status meanings
       id: stream-status-meanings
       description: Wants to understand what the Active, Active with errors, and

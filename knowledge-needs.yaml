@@ -9285,9 +9285,8 @@ knowledge-needs:
         isn't added, add content such as an avatar and text to the Image and
         Content placeholders (or bind a List to an entity to display a
         message per record), and customize its look and feel via optional
-        properties, in Service Studio, so that conversational posts display
-        in notifications or chat screens, in mobile apps and reactive web
-        apps (O11).
+        properties in Service Studio, so that conversational posts display in
+        notifications or chat screens.
     - name: Chat Message reference
       id: chat-message-mobile-reactive-reference
       description: Wants to look up the configurable properties of the Chat
@@ -10057,10 +10056,11 @@ knowledge-needs:
         appears when none is uploaded.
     - name: Use Align Center pattern
       id: use-align-center-pattern
-      description: Wants to add the Align Center UI Pattern to a screen and configure
-        its IsHorizontal and ExtendedClass properties, so that content is centered
-        horizontally or vertically on the screen, in mobile apps and reactive web
-        apps.
+      description: Wants to add the Align Center UI Pattern to a screen, add the
+        widget through the Toolbox or Search in other modules when its dependency
+        is missing, add content to the pattern, and configure its orientation and
+        ExtendedClass properties in Service Studio, so that content is centered
+        horizontally or vertically.
     - name: Align Center reference
       id: align-center-reference
       description: Wants to look up the CSS selectors and classes for the Align
@@ -12328,6 +12328,14 @@ knowledge-needs:
         selecting the applications in a deployment plan, validating the plan,
         and starting the deployment from one environment to another, so that
         the chosen versions move between environments.
+    - name: Balanced app deployment
+      id: balanced-app-deployment
+      description: Wants to execute a blue-green deployment for OutSystems 11
+        applications in a self-managed farm by dividing front-end servers into
+        updating and loaded groups, shifting load-balancer traffic, deploying
+        and testing the new version, and synchronizing the remaining front-ends,
+        so that the application remains available and the release can be
+        validated before all end users receive it.
     - name: Configure deployment zone
       id: configure-deployment-zone
       description: Wants to choose a Deployment Zone for an application during
@@ -19293,6 +19301,12 @@ knowledge-needs:
         layer in the module details area and confirming the override, so
         that the app's classification and technical debt score are
         recalculated to reflect the change.
+    - name: Enable auto-classification
+      id: enable-auto-classification
+      description: Wants to enable or disable AI auto-classification in
+        OutSystems 11 Code Quality by using the Maintenance > Configurations
+        settings after meeting the probe version and permissions prerequisites,
+        so that modules are classified into the appropriate architecture layer.
     - name: Customize pattern impact
       id: customize-pattern-impact
       description: Wants to customize the impact level (weight) that a specific
@@ -22986,6 +23000,12 @@ knowledge-needs:
         services, and standalone or server-farm configurations, so that
         they can plan and troubleshoot the runtime topology for each
         environment.
+    - name: Deployment options
+      id: deployment-options
+      description: Wants to compare OutSystems Cloud and self-managed
+        deployment options, including customer responsibilities and
+        supported infrastructure providers, so that they can choose an
+        appropriate hosting model.
     - name: Schedule index/statistics maintenance
       id: schedule-index-statistics-maintenance
       description: Wants to schedule regular index reorganize/rebuild

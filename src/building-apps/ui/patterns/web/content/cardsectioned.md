@@ -18,7 +18,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - card-sectioned-properties
+  - card-sectioned-reference
   - use-card-sectioned
 ---
 

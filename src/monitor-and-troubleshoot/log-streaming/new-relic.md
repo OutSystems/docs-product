@@ -18,7 +18,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - new-relic-log-streaming
+  - stream-to-new-relic-o11
 ---
 
 # Stream logs to New Relic

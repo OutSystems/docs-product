@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - consume-refresh-methods
+  - refresh-soap-web-service
 ---
 
 # Refresh a SOAP Web Service

@@ -23,7 +23,7 @@ coverage-type:
   - remember
 topic:
   - create-it-role
-  - it-user-management-in-lt
+  - manage-it-users
   - manage-teams
 ---
 

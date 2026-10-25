@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - map-os-to-global-concepts
+  - programming-model-intro
 ---
 
 # OutSystems main concepts

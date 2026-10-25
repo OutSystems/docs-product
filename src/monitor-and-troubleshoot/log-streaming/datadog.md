@@ -20,7 +20,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - datadog-log-streaming
+  - stream-to-datadog-o11
 ---
 
 # Stream logs to Datadog

@@ -20,8 +20,8 @@ coverage-type:
   - understand
   - apply
 topic:
+  - browser-first-debugging
   - debug-app-logic
-  - debug-mobile-apps-o11
   - debug-routing-issues
 isautopublish: true
 ---

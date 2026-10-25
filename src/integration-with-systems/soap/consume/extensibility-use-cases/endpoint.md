@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - changing-endpoints
+  - soap-extensibility-api
 ---
 
 # Change service endpoint at runtime

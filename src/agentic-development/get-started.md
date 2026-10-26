@@ -33,7 +33,7 @@ The Service Studio MCP server runs inside Service Studio on your machine, so the
 
 Before you connect, gather the following:
 
-* An MCP host installed. Refer to [Supported MCP hosts](outsystems-mcp-overview.md#supported-mcp-hosts).
+* An MCP host installed, with an account or plan that includes agent features and MCP server support. Some MCP hosts require a paid account. For the requirements of each MCP host, refer to [Supported MCP hosts](outsystems-mcp-overview.md#supported-mcp-hosts).
 * Service Studio 11.55.91 or later running, with the module you want to work on open.
 * Network access for your MCP host's own connection to its model provider. The module itself stays on your machine.
 
@@ -88,6 +88,8 @@ If your MCP host reports that it can't find the server, confirm the following:
 
 1. The Service Studio MCP server is running.
 1. The port in your MCP host matches the port in the **MCP Server** window.
+
+If the agent in your MCP host can't call any tools, confirm that your account or plan with the MCP host's provider includes MCP server support.
 
 To start the server every time you open Service Studio, turn on **Start when Service Studio opens**.
 

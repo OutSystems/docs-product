@@ -104,6 +104,8 @@ Any other MCP-compatible host connects on a best-effort basis, without documente
 
 Each MCP host reads its instructions and its MCP configuration from a different location on your machine, because no single file format covers every MCP host. For the registration steps, refer to [Register the server in your MCP host](get-started.md#register-the-server-in-your-mcp-host).
 
+Each MCP host sets its own account and plan requirements. To use the Service Studio MCP server, your account or plan with the provider of your MCP host must include agent features and MCP server support. Claude Code requires a Claude subscription, a Claude Console account, or access through a supported cloud provider. GitHub Copilot requires a plan that includes agent mode and MCP tools. For the requirements of the other MCP hosts, refer to the documentation of each MCP host.
+
 ## Environment fit
 
 The Service Studio MCP server runs inside Service Studio on your machine, using the O11 installation you already have. OutSystems MCP works for cloud, on-premises, and air-gapped O11 environments.

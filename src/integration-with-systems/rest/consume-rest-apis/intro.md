@@ -50,7 +50,7 @@ Every REST API you consume has its own security and authentication process, whic
 
 OutSystems has built-in support for REST APIs with:
 
-* Basic authentication
+* [Basic authentication](rest-basic-authentication.md)
 * [OAuth 2.0 client credentials flow](rest-oauth2-authorization.md)
 
 You can use the REST customization capabilities to add support for other authentication methods:

@@ -822,6 +822,7 @@
             - href: integration-with-systems/rest/consume-rest-apis/consume-a-rest-api.md
             - href: integration-with-systems/rest/consume-rest-apis/consume-multipart-form-data.md
             - href: integration-with-systems/rest/consume-rest-apis/consume-rest-payload-examples.md
+            - href: integration-with-systems/rest/consume-rest-apis/rest-basic-authentication.md
             - href: integration-with-systems/rest/consume-rest-apis/rest-oauth2-authorization.md
             - href: integration-with-systems/rest/consume-rest-apis/token-based-auth-consume-dev-pattern.md
             - href: integration-with-systems/rest/consume-rest-apis/refresh-rest-service.md

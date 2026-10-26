@@ -7171,6 +7171,17 @@ knowledge-needs:
         portfolio's stages and access controls while apps keep referencing
         the original until updated, so they can safely customize Forge
         assets without affecting other portfolios.
+    - name: Move an asset to another portfolio
+      id: move-asset-to-portfolio
+      description: Wants to determine the supported way to move one or more assets
+        from one portfolio to another in a multi-portfolio ODC organization, so
+        they can plan a portfolio reorganization without disrupting dependent
+        apps.
+    - name: What a portfolio move doesn't carry over
+      id: portfolio-move-limitations
+      description: Wants to know what doesn't carry over when they manually move an
+        app to another portfolio in a multi-portfolio ODC organization, so that
+        they can prepare the app and its data before they delete the original.
     - name: Asset & config scope
       id: asset-and-config-scope
       description: Wants to know which types of assets and platform configurations are

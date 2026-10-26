@@ -7367,6 +7367,9 @@ knowledge-needs:
     - name: Expose SOAP web service
       id: expose-soap-web-service
       description: Wants to expose a SOAP web service in OutSystems 11 by creating the service, adding methods, setting the module namespace, and checking the generated WSDL endpoint and bindings, so that clients can call the published service.
+    - name: Document SOAP service
+      id: document-soap-service
+      description: Wants to document an exposed SOAP web service in OutSystems 11 by filling the Description properties for the service and its methods, publishing the module, and opening the generated documentation, so external developers can understand the service contract.
     - name: SOAP data mapping
       id: soap-data-mapping
       description: Wants to map OutSystems data types to XML Schema data types when exposing a SOAP web service in OutSystems 11, so they can define method input and output types correctly.
@@ -12547,11 +12550,16 @@ knowledge-needs:
         application or module keys, download status, and package size
         limits, so they can resolve source code download errors.
     - name: LifeTime API reference
-      id: lifetime-api-reference
+      id: lifetime-api-v2-reference
       description: Wants to look up the LifeTime API v2 reference, including its
         base URL, supported resources, authentication guidance, examples, and
         Swagger download, so they can use it when automating LifeTime
         deployment-related tasks.
+    - name: LifeTime API v1 reference
+      id: lifetime-api-v1-reference
+      description: Wants to look up the LifeTime API v1 reference, including
+        its available endpoints and response structures, so they can maintain
+        integrations with legacy LifeTime infrastructure.
   - name: CI/CD pipelines
     id: ci-cd-pipelines
     subtopics:
@@ -14666,6 +14674,12 @@ knowledge-needs:
   - name: Agentic Apps
     id: agentic-apps
     subtopics:
+    - name: Image input requirements
+      id: image-input-requirements
+      description: Wants to identify the supported image formats, file size, resolution, and content restrictions for AI model image inputs, so they can provide images that the model accepts without runtime errors.
+    - name: Build image prompts
+      id: build-image-prompts
+      description: Wants to build multimodal UserMessage content in an agentic app by passing an image URL or Base64 data with ContentUrl or ContentBinaryData and FileFormat, so that an AI model processes image and text content together.
     - name: Consume AI agent
       id: consume-ai-agent
       description: Wants to understand what a consumer app is and how to integrate it with an AI agent by passing UserInput and SessionId parameters, so that the app can send user requests to the agent and maintain conversation context across interactions.
@@ -14760,6 +14774,13 @@ knowledge-needs:
         Agent, StoreMemory) and what each step does by default in an agentic
         app template, so that they know the out-of-the-box logic before
         customizing any component.
+    - name: Agentic patterns overview
+      id: agentic-patterns-overview
+      description: Wants to understand common agentic architecture patterns,
+        including sequential, loop, parallel, aggregator, router, supervisor,
+        hierarchical, shared memory, network, and human-in-the-loop designs,
+        so they can choose an appropriate pattern for coordinating agents in
+        an ODC agentic app.
     - name: Reason-act loop
       id: reason-act-loop
       description: Wants to understand how the ReAct reason-act loop cycles
@@ -14964,6 +14985,11 @@ knowledge-needs:
         truncation fallback (e.g., Substr) before saving the response, so
         that the app avoids DB string-truncation errors and constraint
         violations.
+    - name: Manage agentic apps
+      id: manage-agentic-apps
+      description: Wants to open an existing agentic app or start creating a
+        new one from the Agents page in ODC Portal, so they can manage their
+        agentic apps and continue development in ODC Studio.
   - name: Tools and connectors
     id: tools-and-connectors
     subtopics:
@@ -14992,6 +15018,13 @@ knowledge-needs:
         method, and providing the required credentials, then testing the
         connection, so that they can connect ODC to the server securely and
         make its tools available for import.
+    - name: Set up A2A connection
+      id: set-up-a2a-connection
+      description: Wants to configure an A2A connection to an external agent
+        in ODC Portal by providing the agent URL, reviewing its agent card and
+        skills, selecting a supported authentication method, testing the
+        connection, and saving it, so that the external agent is available in
+        ODC applications and workflows.
     - name: MCP host overview
       id: mcp-host-overview
       description: Wants to understand what an MCP host is, including that it is the AI app you use and connects to OutSystems through OutSystems MCP, so that they can tell the host apart from the server and the tenant.
@@ -15035,6 +15068,12 @@ knowledge-needs:
         dependencies in ODC Studio and use them as tools in an agent's
         Call Agent element, configuring parameters and mapping values, so
         that MCP capabilities can be invoked within an agentic app.
+    - name: Use A2A agent action
+      id: use-a2a-agent-action
+      description: Wants to add an external agent's SendMessage action from
+        an A2A connection as a public element and configure it in an agentic
+        app's action calling flow with a unique task ID and message
+        parameters, so that the app can communicate with the remote agent.
     - name: MCP unavailable patterns
       id: mcp-unavailable-patterns
       description: Wants to identify which JSON schema input patterns
@@ -15429,6 +15468,12 @@ knowledge-needs:
       description: Wants to review guardrail violation events in the ODC
         Portal's Monitor > Logs area, so that policy effectiveness can
         be assessed.
+    - name: Understand guardrail behavior
+      id: understand-guardrail-behavior
+      description: Wants to understand how agent guardrails enforce safety
+        rules, including filter categories, response actions, regional
+        limitations, and custom policies, so they can choose an appropriate
+        guardrail configuration for an ODC environment.
 - name: Integrating with Plugins
   guid: 1af9eece-e820-40ec-8483-b1243267b038
   topics:
@@ -16002,6 +16047,12 @@ knowledge-needs:
         following the plugin decision flow and reviewing source,
         maintenance activity, and security posture when no supported
         plugin fits.
+    - name: Supported mobile plugins
+      id: supported-mobile-plugins
+      description: Wants to identify OutSystems-supported mobile plugins for
+        ODC apps by reviewing the supported plugin catalog, framework
+        compatibility, and PWA support, so they can choose a plugin that
+        works with their target app platforms.
     - name: Integrate plugin in app
       id: integrate-plugin-in-app
       description: Wants to integrate a Capacitor plugin (official, community,
@@ -16131,6 +16182,13 @@ knowledge-needs:
         publish them alongside the main app when they need independent testing,
         and avoid deploying them to production, so teams can validate features
         without affecting other work.
+    - name: Push best practices
+      id: push-best-practices
+      description: Wants to apply push notification best practices in an ODC mobile
+        app, including permission timing, token lifecycle, foreground and
+        background handling, access-token caching, audience scaling, and
+        physical-device testing, so that notifications are delivered reliably
+        and users receive an appropriate experience.
   - name: MABS build process
     id: mabs-build-process
     description: Wants to understand how MABS turns an OutSystems mobile app into a
@@ -23604,7 +23662,7 @@ knowledge-needs:
       so that performance metrics appear in LifeTime once the environment meets
       the version prerequisites and LifeTime Analytics is enabled.
   - name: App performance analytics
-    id: app-performance-analytics
+    id: app-performance-analytics-o11
     description: Wants to understand how LifeTime performance analytics measures Reactive
       and Mobile app performance, so they can interpret the metrics correctly.
   - name: LifeTime analytics
@@ -23616,6 +23674,12 @@ knowledge-needs:
   - name: PerformanceMonitoring API
     id: performance-monitoring-api
     description: Wants to use the PerformanceMonitoring API in Traditional Web apps to read metrics stored in the platform database and add custom metrics to applications, so they can build dashboards and extend application performance measurement.
+  - name: ODC app analytics
+    id: app-performance-analytics-odc
+    description: Wants to interpret ODC Analytics app health scores and drill-down performance metrics, so they can assess app health and identify performance trends.
+  - name: AI model analytics
+    id: ai-model-analytics
+    description: Wants to understand ODC Analytics metrics for AI model requests, consumers, token usage, response times, and errors, so they can monitor AI model usage and troubleshoot operational issues.
   - name: Custom alerts
     id: custom-alerts
     subtopics:

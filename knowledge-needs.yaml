@@ -10372,15 +10372,13 @@ knowledge-needs:
     - name: Use Pagination pattern
       id: use-pagination-pattern
       description: 'Wants to add the Pagination UI Pattern to a screen and configure
-        its StartIndex, MaxRecords, TotalCount, ShowGoToPage, and ExtendedClass
-        properties, in Service Studio for OutSystems 11, so that users can
+        its properties in Service Studio for OutSystems 11, so that users can
         navigate through long listings such as e-commerce category pages, search
         engines, and article archives, in mobile apps and reactive web apps.'
     - name: Pagination reference
       id: pagination-reference
       description: Wants to look up the properties of the Pagination UI Pattern
-        in Service Studio, including StartIndex, MaxRecords, TotalCount, ShowGoToPage,
-        and ExtendedClass, so that they can correctly configure pagination
+        in Service Studio, so that they can correctly configure pagination
         behavior and appearance in OutSystems 11 mobile apps and reactive web apps.
     - name: Use Section Index pattern
       id: use-section-index-pattern
@@ -10398,13 +10396,13 @@ knowledge-needs:
         the pattern's scrolling behavior and appearance, in OutSystems 11 mobile
         apps and reactive web apps.
     - name: Use Timeline Item pattern
-      id: use-timeline-item-pattern
+      id: use-timeline-item-pattern-reactive-web-o11
       description: Wants to add the Timeline Item UI Pattern to a screen and configure
         its IsActive, Color, and ExtendedClass properties, in Service Studio for
         OutSystems 11, so that related events display in chronological order, in
         mobile apps and reactive web apps.
     - name: Use Timeline pattern
-      id: use-timeline-pattern
+      id: use-timeline-pattern-traditional-web-o11
       description: Wants to add the Timeline UI Pattern to a Traditional Web App in
         Service Studio, place Timeline Items on a screen, fill the Icon, Date, and
         Content placeholders, and configure the Timeline and Timeline Item

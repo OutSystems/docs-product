@@ -13,7 +13,7 @@ description: >
   of questions. For validating a list or table of questions the user
   already wrote, use the knowledge-need-validator skill instead — this
   skill's job starts from a file, not a list.
-allowed-tools: Bash(gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml:*),Bash(gh repo view:*),Bash(git branch --show-current:*),Bash(gh api repos/OutSystems/tk-cicd --jq '.default_branch':*),Bash(gh api repos/OutSystems/tk-cicd/git/ref/heads/:*),Bash(gh api repos/OutSystems/tk-cicd/git/matching-refs/heads/add-knowledge-needs:*),Bash(gh api repos/OutSystems/tk-cicd/commits/add-knowledge-needs:*),Bash(gh pr list --repo OutSystems/tk-cicd --head add-knowledge-needs:*),Bash(diff:*),Bash(python3 .github/skills/knowledge-needs-classification/scripts/validate_register.py:*),Bash(python .github/skills/knowledge-needs-classification/scripts/validate_register.py:*)
+allowed-tools: Bash(gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml:*),Bash(gh repo view:*),Bash(git branch --show-current:*),Bash(gh api repos/OutSystems/tk-cicd --jq '.default_branch':*),Bash(gh api repos/OutSystems/tk-cicd/git/ref/heads/:*),Bash(gh api repos/OutSystems/tk-cicd/git/matching-refs/heads/add-knowledge-needs:*),Bash(gh api repos/OutSystems/tk-cicd/commits/add-knowledge-needs:*),Bash(gh pr list --repo OutSystems/tk-cicd --head add-knowledge-needs:*),Bash(diff:*),Bash(python3 .github/skills/knowledge-needs-classification/scripts/validate_register.py:*),Bash(python .github/skills/knowledge-needs-classification/scripts/validate_register.py:*),Bash(python3 .sync-tk-cicd/ai-skills/knowledge-needs-classification/scripts/validate_register.py:*),Bash(python3 .sync-tk-cicd/ai-skills/knowledge-needs-classification/scripts/search_register.py:*)
 ---
 
 # Knowledge needs content classification
@@ -35,6 +35,27 @@ there is no `---` block to look for.
 This skill does not accept a submitted list of questions to validate — for
 that, use the `knowledge-need-validator` skill instead. This skill always
 starts by reading real content.
+
+## Locating the bundled scripts (`<skill-dir>`)
+
+The helper scripts (`search_register.py`, `validate_register.py`) live in
+`<skill-dir>/scripts/`. **Where `<skill-dir>` is depends on the repo, and the
+folder `SKILL.md` was loaded from often does not contain `scripts/`**, so
+never assume it. Resolve it once, before the first script call, and reuse
+the result:
+
+```bash
+SKILL_DIR=$(for d in \
+  .sync-tk-cicd/ai-skills/knowledge-needs-classification \
+  .github/skills/knowledge-needs-classification \
+  ai-skills/knowledge-needs-classification; do
+  [ -f "$d/scripts/validate_register.py" ] && echo "$d" && break
+done)
+```
+
+Then run `python3 "$SKILL_DIR/scripts/validate_register.py" <path>` (use
+`python` if `python3` isn't available). Don't try one location and search
+for the script after it fails.
 
 ## Not yet implemented (by explicit request)
 
@@ -120,8 +141,8 @@ knowledge-needs:
 ```
 
 **Don't read or parse the whole register to look things up.** It's tens of
-thousands of lines. Search it with the bundled helper, from the same
-`<skill-dir>` Step 8 resolves for the validator:
+thousands of lines. Search it with the bundled helper, with the
+`<skill-dir>` resolved in "Locating the bundled scripts":
 `python3 <skill-dir>/scripts/search_register.py [--file <path>] <keyword> [<keyword> ...]`
 prints one line per matching entry — `id | category > topic > subtopic |
 description` — where every keyword must appear in the id, path or
@@ -328,12 +349,7 @@ the matching option above.
   inserting and before saving, committing, or pushing it, by running the
   bundled validator against that file:
   `python3 <skill-dir>/scripts/validate_register.py <path>`
-  (the `scripts/` folder next to this `SKILL.md`; use `python` if `python3`
-  isn't available). Where `<skill-dir>` lives depends on the repo, so use
-  the first of these that exists rather than guessing:
-  `.sync-tk-cicd/ai-skills/knowledge-needs-classification`,
-  `.github/skills/knowledge-needs-classification`,
-  `ai-skills/knowledge-needs-classification`. It checks that the file parses as YAML **and** that the
+  (`<skill-dir>` is resolved in "Locating the bundled scripts" above). It checks that the file parses as YAML **and** that the
   register structure is valid — exactly 3 levels with subtopics as leaves,
   unique `id`s, required `name`s — and prints every problem it finds.
   **If it fails, fix the file yourself and re-run it; repeat until it exits

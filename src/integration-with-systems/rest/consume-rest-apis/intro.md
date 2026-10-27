@@ -19,8 +19,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - consume-refresh-methods
-  - webservice-authentication
+  - consume-rest-api
 isautopublish: true
 ---
 

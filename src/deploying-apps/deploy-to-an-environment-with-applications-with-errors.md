@@ -20,7 +20,7 @@ coverage-type:
   - remember
   - unblock
 topic:
-  - deploy-dependency-management
+  - repair-broken-references
 ---
 
 # Deploy to an Environment with Applications with Errors

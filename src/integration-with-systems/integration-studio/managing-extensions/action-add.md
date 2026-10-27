@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - action-properties-reference
+  - action-properties-integration-studio
   - define-extension-elements
 ---
 

@@ -24,7 +24,7 @@ coverage-type:
 topic:
   - actions-and-functions
   - create-aggregate
-  - create-screen
+  - create-screens-service-studio
 ---
 
 # Developer cheat sheet

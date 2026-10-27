@@ -22,7 +22,7 @@ coverage-type:
   - understand
 topic:
   - action-types-overview
-  - server-vs-client-logic
+  - server-and-client-logic
 ---
 
 # Application Logic

@@ -19,7 +19,7 @@ coverage-type:
   - remember
 topic:
   - add-email-mime-headers
-  - how-to-create-emails
+  - compose-and-send-emails
 ---
 
 # Email

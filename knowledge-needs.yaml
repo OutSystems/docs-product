@@ -6924,6 +6924,12 @@ knowledge-needs:
         business data between apps via public entities when the data does not
         need complex business-rule encapsulation, so that consumer apps can use
         the entities directly and development effort stays low.
+    - name: Service action data sharing
+      id: service-action-data-sharing
+      description: Wants to choose service actions to share business data between
+        apps when the data has complex business rules, changes frequently, or
+        requires business encapsulation, so that the rules remain centralized
+        and consumer apps avoid direct dependencies on the underlying entities.
     - name: Assess producer changes
       id: assess-producer-changes
       description: Wants to determine whether a producer change is immediate or
@@ -7064,6 +7070,16 @@ knowledge-needs:
       description: Wants to release a new library version in ODC using semantic
         versioning and release notes, so that consumers can adopt updates with
         clear compatibility expectations.
+    - name: Select a library version
+      id: select-library-version
+      description: Wants to select an available released version of an ODC
+        library in a consuming app, so the app uses the intended library
+        interface and behavior.
+    - name: Manage library update lifecycles
+      id: manage-library-update-lifecycles
+      description: Wants to coordinate when library producers release updates
+        and when consuming apps adopt them, so each app can update on its own
+        schedule without disrupting other consumers.
     - name: Deploy library version
       id: deploy-library-version
       description: Wants to understand whether a new library version in ODC can
@@ -8508,6 +8524,21 @@ knowledge-needs:
     - name: Component tests overview
       id: component-tests-overview
       description: Wants to understand what component testing is and which public server actions to target in ODC, so they can test reusable business logic directly without driving the UI.
+    - name: Estimate component test implementation effort
+      id: estimate-component-test-effort
+      description: Wants to estimate the effort to implement a component test
+        based on the action's dependencies and granularity, so they can plan
+        the work required to test reusable logic.
+    - name: Assess component test execution speed
+      id: assess-component-test-execution-speed
+      description: Wants to assess how an action's dependencies and granularity
+        affect component test execution speed, so they can choose an appropriate
+        level of test coverage.
+    - name: Plan component test data
+      id: plan-component-test-data
+      description: Wants to identify the test data required by a component test
+        based on the action's dependencies, so they can prepare data that
+        exercises the behavior being tested.
     - name: Thin screen actions
       id: thin-screen-actions
       description: Wants to keep screen actions focused on UI validations and user interactions by moving business validations and business logic into reusable server or public actions, so the logic can be tested without UI tests.
@@ -9404,6 +9435,11 @@ knowledge-needs:
         Block widget in Service Studio, including Name, Source Block, and Id, so
         that they can correctly display a Block with input parameters on a screen
         in a Traditional Web App or Mobile App (O11).
+    - name: Add Block to screen
+      id: add-block-to-screen
+      description: Wants to add a Block to a screen and link its input parameter
+        to a local variable in Service Studio, so that the Block displays product
+        details in an OutSystems 11 app.
     - name: Block element reference
       id: block-element-reference
       description: Wants to look up the properties and events of the Block element,
@@ -10497,12 +10533,11 @@ knowledge-needs:
         classes, and modifiers so they can understand the pattern's structure
         in Mobile Apps and Reactive Web Apps.
     - name: Use Progress Circle pattern
-      id: use-progress-circle-mobile-reactive-web
+      id: use-progress-circle-pattern
       description: Wants to add the Progress Circle UI Pattern to a screen and
         configure its Progress property using a local variable and increment
-        button, in Service Studio for OutSystems 11, so that they can display
-        the current progress of an operation flow as a fraction, in mobile
-        apps and reactive web apps.
+        button, so that they can display the current progress of an operation
+        flow as a fraction in mobile apps and reactive web apps.
     - name: Use Rating pattern
       id: use-rating-pattern
       description: Wants to add the Rating UI Pattern to a screen and configure its
@@ -10528,7 +10563,7 @@ knowledge-needs:
         Web App screen and place content in its placeholder so that content
         loads only when it becomes visible and page performance improves.
     - name: Use Button Group pattern
-      id: use-button-group-pattern-o11
+      id: use-button-group-pattern-traditional-web
       description: Wants to add the Button Group UI Pattern to a Traditional
         Web App screen and configure its radio-button items, labels, and
         IsJustified property, so that users can choose from a small set of
@@ -10972,10 +11007,11 @@ knowledge-needs:
       id: boolean-input-widgets
       description: Wants to choose a Check Box or Switch widget for boolean input in a reactive web form, and bind it to a Boolean screen variable, so the form stores true or false values correctly.
     - name: Use Button Group widget
-      id: use-button-group-widget-odc
-      description: Wants to add and configure the Button Group widget in an ODC
-        reactive web form, so that users can choose one option from a grouped
-        set of buttons.
+      id: use-button-group-pattern-mobile-reactive-o11
+      description: Wants to add and configure the Button Group widget in
+        Service Studio for OutSystems 11, bind it to a variable, and set each
+        item's value and label, so that users can choose one option from a
+        grouped set of buttons in mobile apps and reactive web apps.
     - name: Button Group variable
       id: button-group-variable
       description: Wants to identify that the Button Group Variable property belongs to the widget, not each Button Group Item, so they can distinguish widget-level and item-level properties when configuring a reactive web form in OutSystems 11.
@@ -11785,9 +11821,10 @@ knowledge-needs:
         they can identify correct statements about the ODC web app model.
     - name: ODC app types
       id: choose-app-type-odc
-      description: Wants to understand the main ODC app types and how to choose
-        the right one when selecting an app model, so they can orient themselves
-        before selecting one.
+      description: Wants to understand the available ODC app container types,
+        how Mentor Studio scaffolds their app structure, and how they differ
+        from OutSystems 11 modules, so they can choose the right app model when
+        designing an app.
     - name: Choose app type
       id: choose-app-type-o11
       description: Wants to understand the main OutSystems 11 app types and how
@@ -13789,6 +13826,11 @@ knowledge-needs:
       description: Wants to create a web app from scratch by selecting a web app
         option, naming the app, uploading an icon, and opening the starter
         screen, so they can start from a working app shell.
+    - name: Create mobile app
+      id: create-mobile-app
+      description: Wants to create a mobile app in ODC Studio by naming the app,
+        adding a screen, assigning an application role, and using 1-Click
+        Publish, so they can start building and deploy a working mobile app.
     - name: Create app with AI
       id: create-app-with-ai
       description: Wants to create and publish a web app in ODC using AI-assisted
@@ -16316,10 +16358,11 @@ knowledge-needs:
     - name: MABS build errors
       id: mabs-build-errors
       description: Wants to locate and resolve OutSystems Mobile Apps Build
-        Service (MABS) build errors by finding the error code in the
-        reference, understanding its cause and impact, and following the
-        recommended action, so that they can resolve native mobile app
-        build failures.
+        Service (MABS) build errors by reviewing native build logs, finding
+        the error code in the reference, understanding its cause and impact,
+        and following the recommended action, including for dependency or
+        configuration errors, so they can generate a working mobile app
+        package.
     - name: Cordova bootstrap error
       id: cordova-bootstrap-error
       description: 'Wants to resolve the OS-MABS-PLF-50000 "Something
@@ -16533,14 +16576,23 @@ knowledge-needs:
         messages with the LogMessage system action (viewable in ODC
         Portal's Monitoring > Logs), so that they can trace the sequence
         of events behind an issue without direct device access.
-    - name: Debug mobile issues
-      id: debug-mobile-issues
-      description: Wants to choose the right debugging and diagnostics tool
-        for a mobile app issue, using browser DevTools for web-layer
-        problems, native IDEs for plugin crashes or build issues, network
-        simulation for connectivity problems, and client-side logging or
-        Crashlytics for production issues, so that they can inspect the
-        layer that matches the problem.
+    - name: Choose a mobile debugging environment
+      id: choose-mobile-debugging-environment
+      description: Wants to choose between browser inspection and debugging on
+        a connected device based on whether an issue involves browser behavior
+        or native device behavior and hardware, so they can investigate it in
+        the appropriate environment.
+    - name: Diagnose mobile crashes
+      id: diagnose-mobile-crashes
+      description: Wants to analyze native crash reports and device logs for a
+        mobile app, so they can identify the cause of a crash that browser
+        inspection cannot explain.
+    - name: Diagnose mobile plugin issues
+      id: diagnose-mobile-plugin-issues
+      description: Wants to inspect native runtime logs and plugin
+        configuration when a mobile app feature that depends on a plugin
+        fails, so they can identify whether the issue is in the plugin or its
+        integration.
     - name: Debug port conflicts
       id: debug-port-conflicts
       description: Wants to start a mobile debug session in Service Studio
@@ -24606,14 +24658,6 @@ knowledge-needs:
       description: Wants to add and remove watches during a debug session, so
         they can inspect parameters, variables, and screen widgets in the
         Watches tab regardless of scope.
-    - name: Debug native mobile apps
-      id: debug-native-mobile-apps
-      description: Wants to debug a native mobile app by choosing the right
-        workflow that uses Chrome emulation for browser-side inspection when
-        native plugins aren't required, a connected Android or iOS device when
-        device behavior or performance matters, and native tools for crashes or
-        plugin issues, including device setup when needed, so they can
-        troubleshoot the app in the right environment.
   - name: Resource capacity
     id: resource-capacity
     description: Wants to understand ODC resource capacity limits, scaling

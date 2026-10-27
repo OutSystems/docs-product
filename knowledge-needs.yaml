@@ -3743,6 +3743,9 @@ knowledge-needs:
     - name: Configure REST runtime
       id: configure-rest-runtime
       description: Wants to change a consumed REST API's endpoint URL and authentication at runtime without extra development, so the integration can target the correct environment and credentials.
+    - name: Configure REST basic authentication
+      id: configure-rest-basic-auth
+      description: Wants to add basic authentication to a consumed REST API by entering a username and password in the method's headers and authentication settings, so the app can authenticate with the external API.
     - name: Document REST API
       id: document-rest-api
       description: Wants to add descriptions to exposed REST API methods and
@@ -23628,10 +23631,9 @@ knowledge-needs:
     - name: Users/Roles/Groups model
       id: users-roles-groups-entity-model
       description: Wants to understand the physical tables, producers, and
-        consumers for the User, Role, Group, User_Role, Group_Role, and
-        Group_User system entities, so that they can correctly interpret
-        this entity-relationship model when planning an O11 environment
-        data migration.
+        consumers for the Users/Roles/Groups system entities, so that they can
+        correctly interpret this entity-relationship model when planning an O11
+        environment data migration.
     - name: Trace BPT process data
       id: trace-bpt-process-data
       description: Wants to trace a BPT process instance across the Process,

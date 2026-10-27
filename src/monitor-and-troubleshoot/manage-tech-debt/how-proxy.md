@@ -1,12 +1,9 @@
 ---
 tags:
   - Infrastructure
-  - Mentor
-  - Mentor Studio
   - Plugins
   - Security
   - Settings
-  - Technical Debt
 summary: 'Code Quality forward proxy setup in OutSystems 11 (O11): enable proxy authentication and enter credentials in the LifeTime plugin.'
 locale: en-us
 guid: 06af3d66-f6c3-4827-aa17-36b1124f321b

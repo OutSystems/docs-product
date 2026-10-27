@@ -1,5 +1,6 @@
 ---
 tags:
+  - Front-End
   - OutSystems UI
   - Traditional Web
   - UI

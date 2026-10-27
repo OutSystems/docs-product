@@ -26,6 +26,11 @@ knowledge-needs:
         Run Server Action element, provide input parameters, and use the
         output parameters that follow the element, so they can execute
         server-side logic and use the returned values.
+    - name: Create action output
+      id: create-action-output
+      description: Wants to add an output parameter to a server action and
+        assign it on each logic branch, so a calling action can use the result
+        to provide feedback after the operation.
     - name: Run client action
       id: run-client-action
       description: Wants to run a client action from the action flow with the
@@ -2019,15 +2024,17 @@ knowledge-needs:
     subtopics:
     - name: One-to-many relationship
       id: one-to-many-relationship
-      description: Wants to create a one-to-many relationship between two entities in
-        Service Studio, with one entity as the master and the other as the
-        detail entity, so that each detail record belongs to one master record
-        and each master record can have many detail records.
+      description: Wants to create a one-to-many relationship between two entities by
+        adding a reference attribute to the detail entity and assigning related
+        records, so that each detail record belongs to one master record and
+        each master record can have many detail records.
     - name: One-to-one relationship
       id: one-to-one-relationship
-      description: Wants to create a one-to-one relationship between two entities in
-        Service Studio, with the dependent entity holding the foreign key, so
-        that each record has exactly one related record.
+      description: Wants to create a one-to-one relationship between two entities by
+        creating a dependent extension entity whose identifier matches the
+        related entity's identifier, using Mentor Studio when available and
+        validating the resulting relationship, so that each record has exactly
+        one related record.
     - name: Many-to-many relationship
       id: many-to-many-relationship
       description: Wants to create a many-to-many relationship between two entities by introducing a junction entity with the necessary reference attributes or foreign keys and any extra attributes, so that each record can relate to multiple records on both sides.
@@ -2900,6 +2907,13 @@ knowledge-needs:
       description: Wants to identify the outbound and inbound connectivity,
         ports, and endpoints required for a self-hosted ODC installation, so
         they can configure networking before setup.
+    - name: Shared responsibility
+      id: shared-responsibility-self-hosted
+      description: Wants to understand how responsibilities for an ODC
+        self-hosted deployment are divided between OutSystems and the customer
+        across cloud services, self-hosted platform services, infrastructure,
+        access, applications, observability, connectivity, and upgrades, so
+        that they can assign ownership and operate supported stages.
   - name: Data Fabric data handling
     id: data-fabric-data-handling
     description: Wants to understand how Data Fabric handles customer data
@@ -3940,6 +3954,12 @@ knowledge-needs:
         through Data Fabric, including stage mapping, security, lifecycle,
         limitations, prerequisites, performance, and licensing, so they can
         plan the integration.
+    - name: O11-ODC version needs
+      id: o11-odc-version-needs
+      description: Wants to identify the minimum LifeTime, Platform Server,
+        Service Studio, and ODC Studio versions required for O11-ODC
+        connectivity, data, logic, and user interoperability, so they can
+        verify compatible components before setup.
     - name: Connect O11 infrastructure
       id: connect-o11-infrastructure
       description: Wants to connect their ODC organization to an O11
@@ -10809,16 +10829,6 @@ knowledge-needs:
         AccordionItem, setting the ListRecords Line Separator to None, and
         using expressions to display database records, so that accordion
         items display dynamic data in a Traditional Web App (O11).
-    - name: Use Tabs pattern
-      id: use-tabs-pattern-o11
-      description: Wants to add the Tabs UI Pattern to a screen to divide
-        content into meaningful sections, by dragging the widget from the
-        Toolbox into the Main Content area (adding the OutSystemsUI
-        dependency via Search in other modules if it doesn't display),
-        adding content to the Header Item and Content Item placeholders,
-        and setting properties like TabsOrientation and StartingTab, in
-        Service Studio, so that users can switch between sections within
-        the same context, in mobile apps and reactive web apps (O11).
     - name: Tabs reference
       id: tabs-reference-o11
       description: Wants to look up the properties and events of the Tabs,
@@ -10834,9 +10844,10 @@ knowledge-needs:
         screen by dragging the widget from the Toolbox into the Main Content
         area, adding the OutSystemsUI dependency via Search in other modules
         if it doesn't display, filling the Header Item and Content Item
-        placeholders, and setting properties like ActiveTab and Orientation in
-        Service Studio, so that users can switch between sections within the
-        same context in OutSystems 11 traditional web apps.
+        placeholders, and setting properties like ActiveTab, Orientation,
+        starting tab, height, and vertical position in Service Studio, so
+        that users can switch between sections within the same context in
+        OutSystems 11 traditional web apps.
     - name: Tabs reference
       id: tabs-reference-traditional-web
       description: Wants to look up the properties of the Tabs, Tabs Header
@@ -18970,7 +18981,7 @@ knowledge-needs:
     id: cloud-shared-responsibility-model
     subtopics:
     - name: Shared responsibility overview
-      id: shared-responsibility-overview
+      id: shared-responsibility-cloud
       description: Wants to understand how security and infrastructure
         responsibilities are divided between OutSystems and the customer in
         OutSystems Cloud (ODC and OutSystems 11 Cloud) deployments, so that

@@ -29,13 +29,23 @@ Most OutSystems UI patterns and widgets are **WCAG 2.2 AA** compliant by default
 
 ## Known issues {#known-issues}
 
-This section indicates the UI patterns and widgets that might require manual effort to be fully compliant with WCAG 2.2 AA, according to your version of **OutSystems UI** and **Platform Server**. All other patterns and widgets are WCAG 2.2 compliant by default.
+This section indicates the UI patterns and widgets that might require manual effort to be fully compliant with WCAG 2.2 AA, according to your version of **OutSystems UI** and **Platform Server**.
 
 ### OutSystems UI patterns
 
 The table below lists the UI patterns that might require manual effort to be compliant with WCAG 2.2 AA, depending on your [OutSystems UI version](../patterns/intro.md#version). Follow the documentation link in the **UI pattern** column to see the detailed accessibility guidelines for each pattern.
 
 Patterns not listed in this table are compliant by default since **OutSystems UI 2.24.0**.
+
+<div class="info" markdown="1">
+
+The following components are built on top of external libraries, thus OutSystems hasn't assessed them for WCAG 2.2 AA compliance:
+
+* [OutSystems Data Grid](../patterns/mobile/interaction/data-grid/intro.md)
+* [OutSystems Maps](../patterns/mobile/interaction/map/intro.md)
+* [OutSystems Charts](https://charts.outsystems.com/)
+
+</div>
 
 <div class="info" markdown="1">
 

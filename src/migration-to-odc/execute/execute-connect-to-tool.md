@@ -59,7 +59,7 @@ Before you start converting your O11 apps and data to ODC, make sure the configu
     * The database user for data migration needs the following permissions:
 
         * Read and write permissions on the main catalog, and read-only permissions on each secondary catalog. Secondary catalogs are the additional databases or schemas of a multiple-catalog (MDC) setup.
-        * Permissions to create, alter, and drop tables and views in the main catalog. The migration job creates these temporary objects dynamically to map the attributes of O11 entities to ODC entities.
+        * Permissions to create, alter, and drop tables, views, and indexes in the main catalog. The migration job creates these temporary objects dynamically to map the attributes of O11 entities to ODC entities.
         * Oracle: read-only permission to select any dictionary objects.
         * SQL Server:
             * In the main catalog, the `VIEW DATABASE STATE` and `VIEW DEFINITION` permissions.

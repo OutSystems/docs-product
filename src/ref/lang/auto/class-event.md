@@ -19,7 +19,8 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - how-to-use-events
+  - block-event-handler
+  - o11-block-events
 ---
 
 # Event

@@ -22,7 +22,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - navigate-screens
+  - configure-ui-flow
+  - scaffold-screens
+  - ui-flow-editor
 ---
 
 # UI Flows

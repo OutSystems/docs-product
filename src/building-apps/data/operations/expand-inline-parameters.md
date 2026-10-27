@@ -18,7 +18,7 @@ outsystems-tools:
 coverage-type:
   - evaluate
 topic:
-  - dynamic-sql-correctly
+  - avoid-inline-expansion
 ---
 
 # Avoid expand inline parameters for dynamic values

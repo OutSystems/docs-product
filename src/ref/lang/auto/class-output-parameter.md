@@ -20,7 +20,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - output-parameters
+  - output-parameter-reference
 ---
 
 # Output Parameter

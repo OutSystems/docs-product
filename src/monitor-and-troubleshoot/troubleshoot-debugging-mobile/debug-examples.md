@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - unblock
 topic:
-  - debug-mobile-issues
+  - diagnose-mobile-crashes
   - fix-missing-device-data
   - simulate-mobile-network-conditions
 ---

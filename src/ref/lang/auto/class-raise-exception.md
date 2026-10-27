@@ -17,7 +17,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - how-to-handle-exceptions
+  - raise-exception
 ---
 
 # Raise Exception

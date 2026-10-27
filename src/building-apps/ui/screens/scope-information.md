@@ -22,7 +22,7 @@ coverage-type:
   - understand
   - evaluate
 topic:
-  - scope
+  - avoid-preparation-data-in-screen-actions
 ---
 
 # Don't abuse scope information

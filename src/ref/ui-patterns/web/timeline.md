@@ -20,7 +20,7 @@ coverage-type:
   - remember
   - apply
 topic:
-  - use-timeline-pattern
+  - timeline-listrecords
 ---
 
 # Timeline Reference

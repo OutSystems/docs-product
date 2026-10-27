@@ -22,7 +22,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - create-screen-scratch
+  - create-screens-service-studio
   - screen-template
 ---
 

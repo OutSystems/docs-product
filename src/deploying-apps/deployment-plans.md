@@ -21,7 +21,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - deployment-plan
+  - deployment-plans-overview
+  - parallel-deployment-plans
+  - reuse-or-retry-plan
 ---
 
 # Deployment Plans

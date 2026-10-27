@@ -21,8 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - use-timeline-item-pattern
-  - use-timeline-pattern
+  - use-timeline-pattern-traditional-web-o11
 ---
 
 # Timeline

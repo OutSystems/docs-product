@@ -16,7 +16,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - document-apis
+  - document-soap-service
 ---
 
 # Document an Exposed SOAP Web Service

@@ -20,7 +20,7 @@ coverage-type:
   - apply
 topic:
   - adjust-request-sampling
-  - app-performance-analytics
+  - app-performance-analytics-o11
   - enable-performance-analytics
 isautopublish: true
 ---

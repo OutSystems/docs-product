@@ -17,7 +17,7 @@ coverage-type:
   - remember
   - apply
 topic:
-  - action-properties-reference
+  - action-properties-service-studio
   - run-server-action
 ---
 

@@ -21,7 +21,9 @@ coverage-type:
   - unblock
   - apply
 topic:
-  - debug-troubleshoot-app-logic
+  - app-detection-issues
+  - debug-port-conflicts
+  - device-discovery-issues
 ---
 
 # Troubleshoot Debugger Connection Issues

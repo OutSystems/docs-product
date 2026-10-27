@@ -24,7 +24,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - lifetime-api-reference
+  - lifetime-api-v2-reference
 api-render: true
 ---
 

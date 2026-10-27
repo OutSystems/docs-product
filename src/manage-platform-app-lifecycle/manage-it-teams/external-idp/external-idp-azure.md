@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - configure-microsoft-entra-idp
+  - configure-microsoft-entra-o11
 isautopublish: true
 ---
 

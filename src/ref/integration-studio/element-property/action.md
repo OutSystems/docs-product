@@ -15,7 +15,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - action-properties-reference
+  - action-properties-integration-studio
 ---
 
 # Action Properties

@@ -23,8 +23,7 @@ coverage-type:
 isautopublish: true
 topic:
   - investigate-finding-causes
-  - manage-tech-debt
-  - resolve-findings-status
+  - change-finding-status
 ---
 
 # Getting started as a developer

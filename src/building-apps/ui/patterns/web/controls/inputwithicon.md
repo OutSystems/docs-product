@@ -7,7 +7,7 @@ tags:
   - UI Patterns
   - Web
   - Widgets
-summary: OutSystems 11 (O11) features the Input with Icon UI Pattern for enhanced data entry in Traditional Web Apps.
+summary: Input with Icon UI Pattern for OutSystems 11 (O11) shows how to configure prompts, local variables, icons, and custom styles in Traditional Web Apps.
 locale: en-us
 guid: 28c2a35c-1fad-450b-bb5f-a31926f49c1a
 app_type: traditional web apps

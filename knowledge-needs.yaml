@@ -14447,6 +14447,11 @@ knowledge-needs:
         Extension) in the OutSystems 11 log database, and how they're linked via
         the request_key field, so that they can correctly interpret how a drill
         log relates to the top-level access request that generated it.
+    - name: Log data reference
+      id: log-data-reference
+      description: Wants to look up the OutSystems 11 database views, PlatformLogs
+        entities, and field definitions for application and platform log types,
+        so they can query and interpret log records in Service Studio or the database.
     - name: Remove Log Service
       id: remove-log-service
       description: Wants to remove the OutSystems Log Service and its Microsoft
@@ -20557,6 +20562,14 @@ knowledge-needs:
         response verification to match their IdP's assertion signing setting,
         and exchanging SP/IdP metadata XML files, in OutSystems 11, so that
         end users can authenticate via their enterprise Identity Provider.
+    - name: Update reactive SAML
+      id: update-reactive-saml-flows
+      description: Wants to update the login and logout flows of an OutSystems
+        11 Reactive Web App by adding unified SAML login and logout
+        dependencies, modifying the DoLogout and OnException flows, and
+        updating the UserInfo block, when the app uses an older version of the
+        OutSystems UI Reactive Templates, so that end users can authenticate
+        and sign out through SAML 2.0.
     - name: Update SAML logout flow
       id: update-saml-logout-flow
       description: Wants to update the Logout Screen Action of a Traditional
@@ -20783,6 +20796,15 @@ knowledge-needs:
         programmatically via the Users module's actions, so that new
         employees, customers, or partners can be provisioned with app
         access without going through public self-registration.
+    - name: Create an O11 end-user group
+      id: create-end-user-group-o11
+      description: Wants to create an end-user group in the OutSystems 11
+        Users application, so that application roles can be assigned to a
+        set of users centrally.
+    - name: Assign application roles to an O11 group
+      id: assign-roles-to-end-user-group-o11
+      description: Wants to assign application roles to an OutSystems 11
+        end-user group, so its members receive the group's app access.
     - name: Model custom group data
       id: model-custom-group-data
       description: Wants to model the group and membership data needed to
@@ -20853,12 +20875,12 @@ knowledge-needs:
         built-in or external identity provider profiles, and assign
         end-user groups and roles during onboarding, so they can provision
         access for new accounts.
-    - name: Create an end-user group
-      id: create-end-user-group
+    - name: Create an ODC end-user group
+      id: create-end-user-group-odc
       description: Wants to create an end-user group in ODC, so roles can be
         assigned to a set of users centrally.
-    - name: Assign roles to an end-user group
-      id: assign-roles-to-end-user-group
+    - name: Assign roles to an ODC end-user group
+      id: assign-roles-to-end-user-group-odc
       description: Wants to assign end-user roles to an ODC group, so its
         members receive the group's app access.
     - name: Update end-user group details
@@ -20874,17 +20896,18 @@ knowledge-needs:
       description: Wants to delete users from ODC Portal and understand that
         deletion permanently removes access and anonymizes the user record,
         so they can retire accounts when access must end.
-    - name: Assign to user groups
+    - name: Manage end-user group membership
       id: assign-to-user-groups
-      description: Wants to add or remove users and external IdP group
-        mappings from an ODC end-user group, so that users inherit the
-        group roles through either direct membership or mapped IdP groups.
-    - name: Multiple group membership
-      id: multiple-group-membership
-      description: Wants to know whether an ODC user can belong to multiple
-        groups at the same time and inherit the combined roles and
-        permissions from them, so they can predict access after assigning
-        the user to groups.
+      description: Wants to add or remove end users and external IdP group
+        mappings from an end-user group, so that users inherit the group
+        roles through either direct membership or mapped IdP groups.
+    - name: Group role inheritance
+      id: group-role-inheritance
+      description: Wants to understand how end users inherit roles from group
+        membership, including combined roles and permissions across multiple
+        groups, revocation when removed from a group, and retention when a
+        role is assigned directly, so they can predict access after group
+        changes.
     - name: Configure group claims
       id: configure-group-claims
       description: Wants to configure the IdP group claim name, value, and
@@ -21754,6 +21777,17 @@ knowledge-needs:
       description: Wants to unblock an O11 to ODC code conversion when the app consumes
         a REST API using a multipart/form-data request, by removing that REST call
         in O11 before converting, since ODC doesn't yet support that request format.
+    - name: Replace exposed SOAP with REST
+      id: replace-exposed-soap-with-rest
+      description: Wants to migrate an O11 asset that exposes a SOAP web service
+        before O11 to ODC conversion by replacing it with a REST API, so the
+        exposed service does not block conversion.
+    - name: Handle consumed SOAP dependencies
+      id: handle-consumed-soap-dependencies
+      description: Wants to migrate an O11 asset that consumes a SOAP web service
+        before O11 to ODC conversion by routing the service through an ESB or API
+        gateway, or replacing the integration with ODC custom code, so the
+        dependency does not block conversion.
     - name: Incompatible built-in functions
       id: incompatible-built-in-functions
       description: Wants to identify O11 built-in functions incompatible with ODC

@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - app-brute-force-config
+  - it-brute-force-config
+  - unblock-user-login
 ---
 
 # Protection against brute force attacks

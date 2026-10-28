@@ -16,6 +16,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - build-custom-group-management
+  - enable-custom-group-management
 ---
 
 # Customize Groups

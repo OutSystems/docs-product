@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - register-environment
 ---
 
 # Configure the infrastructure management console

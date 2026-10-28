@@ -20,6 +20,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - app-extensibility-use-cases
+  - set-app-preferences
+  - set-app-resources
 isautopublish: true
 ---
 

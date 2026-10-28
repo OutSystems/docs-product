@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - excel-to-record-list
 isautopublish: true
 ---
 

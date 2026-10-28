@@ -8663,6 +8663,11 @@ knowledge-needs:
         shown in ODC's workflow comparison view, so that they can correctly
         identify what was added, modified, deleted, or in conflict between two
         workflow revisions.
+    - name: Merge workflow versions
+      id: merge-workflow-revisions
+      description: Wants to merge two workflow revisions when they have no conflicts,
+        and publish the merged revision when needed, so that they can combine
+        changes from both revisions without losing work.
     - name: Publish with message
       id: publish-with-message
       description: Wants to add a custom message when publishing a workflow in ODC,

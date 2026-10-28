@@ -420,6 +420,9 @@ exceptions:
   - Delivery Specialist exam
   - Web Developer Specialist exam
 
+# Conferences
+  - ONE Conference
+
 # Errors
   - \bOS-(?:[A-Z]+-){1,2}\d+\b
 

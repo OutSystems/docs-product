@@ -10866,8 +10866,9 @@ knowledge-needs:
       description: Wants to add the Tabs UI Pattern to a screen in ODC Studio,
         place content in its Header Item and Content Item placeholders, and
         configure its orientation, starting tab, height, and vertical position,
-        so that users can switch between sections within the same context in
-        mobile apps and reactive web apps.
+        customize its appearance with CSS, and handle tab-change events, so that
+        users can switch between sections within the same context in mobile apps
+        and reactive web apps.
     - name: Use Section pattern
       id: use-section-pattern
       description: Wants to add the Section UI Pattern to a screen, by

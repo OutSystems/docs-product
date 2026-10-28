@@ -8634,10 +8634,9 @@ knowledge-needs:
     - name: Compare workflow versions
       id: compare-workflow-versions
       description: Wants to compare different versions of a workflow (a previous
-        revision, unpublished changes, or a conflicting published revision) in ODC,
-        using the revision history panel, the reopen-workflow dialog, or the
-        publish-conflict dialog, so that they can review differences before choosing
-        which version to keep or restore.
+        revision, unpublished changes, or a conflicting published revision) in ODC
+        using its workflow comparison tools, so that they can review differences
+        before choosing which version to keep or restore.
     - name: Workflow diff color coding
       id: workflow-diff-color-coding-odc
       description: Wants to interpret the color-coded highlights and property-level changes
@@ -10856,6 +10855,19 @@ knowledge-needs:
         DataTab, so that they can correctly configure the pattern's layout,
         behavior, styling, and tab-item pairing in OutSystems 11 traditional
         web apps.
+    - name: Tabs reference ODC
+      id: tabs-reference-odc
+      description: Wants to look up the properties and events of the Tabs UI
+        Pattern in ODC Studio, so that they can correctly configure the
+        pattern's layout, behavior, and styling in mobile apps and reactive
+        web apps.
+    - name: Use Tabs pattern ODC
+      id: use-tabs-pattern-odc
+      description: Wants to add the Tabs UI Pattern to a screen in ODC Studio,
+        place content in its Header Item and Content Item placeholders, and
+        configure its orientation, starting tab, height, and vertical position,
+        so that users can switch between sections within the same context in
+        mobile apps and reactive web apps.
     - name: Use Section pattern
       id: use-section-pattern
       description: Wants to add the Section UI Pattern to a screen, by

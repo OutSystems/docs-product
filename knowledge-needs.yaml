@@ -2442,6 +2442,13 @@ knowledge-needs:
          hidden text with ARIA labels and hidden attributes, so screen
          readers announce the right text for buttons, links, and other UI
          elements.
+     - name: Accessible Image widget
+       id: accessible-image-widget
+       description: Wants to make the Image widget accessible to assistive
+         technologies by setting informative alt text for meaningful images
+         or an empty alt attribute for decorative images, in Service Studio,
+         so screen readers announce useful image descriptions or skip
+         decorative images in OutSystems 11 apps.
      - name: Accessible master detail
        id: accessible-master-detail
        description: Wants to make the Master Detail UI Pattern accessible to
@@ -2710,6 +2717,13 @@ knowledge-needs:
          Initialized client action, in Service Studio, so that the pattern
          meets WCAG 2.2 AA accessibility requirements, in mobile apps and
          reactive web apps (O11).
+     - name: Accessible Icon widget
+       id: accessible-icon-widget
+       description: Wants to make the Icon widget accessible to assistive
+         technologies by hiding decorative icons and adding an accessible name,
+         button role, keyboard focus, and keyboard event handling to clickable
+         icons in Service Studio, so that icons meet WCAG 2.2 AA accessibility
+         requirements in mobile apps and reactive web apps (O11).
    - name: Accessibility resources
      id: accessibility-resources
      description: Wants to find accessibility resources, tools, screen
@@ -9733,10 +9747,9 @@ knowledge-needs:
         Traditional Web App or Mobile App (O11).
     - name: Icon widget reference
       id: icon-widget-ref
-      description: Wants to look up the properties, events, and runtime properties
-        of the Icon widget in ODC Studio, so that they can correctly configure icon
-        display — including icon selection, size, visibility, CSS classes, HTML
-        attributes, and event handlers — in a Reactive Web App.
+      description: Wants to look up the Icon widget's properties, events, and
+        runtime behavior, so that they can correctly configure the widget in an
+        app.
     - name: Check Box widget reference
       id: check-box-widget-reference
       description: Wants to look up the properties and runtime properties of the
@@ -20765,6 +20778,21 @@ knowledge-needs:
         programmatically via the Users module's actions, so that new
         employees, customers, or partners can be provisioned with app
         access without going through public self-registration.
+    - name: Model custom group data
+      id: model-custom-group-data
+      description: Wants to model the group and membership data needed to
+        manage custom groups outside the built-in Users application, so that
+        group data can be managed according to the application's requirements.
+    - name: Build custom group management
+      id: build-custom-group-management
+      description: Wants to build a custom interface or external integration
+        for managing groups and memberships, so that custom groups can be
+        managed outside the built-in Users application.
+    - name: Enable custom group management
+      id: enable-custom-group-management
+      description: Wants to mark OutSystems 11 groups for custom management
+        by setting HasCustomManagement in OSSYS_Group, so that their
+        management is delegated outside the built-in Users application.
     - name: Build sign-up flow
       id: build-sign-up-flow
       description: Wants to create an end-user sign-up flow in OutSystems 11
@@ -20918,10 +20946,9 @@ knowledge-needs:
         code and see success or error messages when they register.
     - name: Configure user domains
       id: configure-user-domains
-      description: Wants to configure internal user domains in the ODC Portal
-        by adding organization email domains under Management > Admin >
-        Subscription, so that end users are correctly classified as internal
-        or external for separate licensing purposes.
+      description: Wants to add organization-owned email domains to the
+        internal user-domain configuration, so that end users are classified
+        as internal or external and licensing is calculated appropriately.
     - name: IT vs App Users
       id: it-vs-app-users
       description: Wants to understand the difference between IT Users and Application
@@ -20975,6 +21002,11 @@ knowledge-needs:
         including built-in roles, permission levels, and how default, team,
         and application assignments combine, so that they can configure and
         troubleshoot access policies.
+    - name: Map environment roles
+      id: map-environment-roles
+      description: Wants to map LifeTime roles to environment permission levels
+        during environment registration, from No Access to Full Control, so that
+        each role has the intended access to the registered environment.
     - name: Permission governance
       id: permission-governance
       description: Wants to know the recommended practices for managing permissions
@@ -21741,6 +21773,12 @@ knowledge-needs:
         replaced with ODC-supported external data sources or an ODC Library
         before code conversion, so that the asset keeps working after migration
         to ODC.
+    - name: Asset consuming process
+      id: asset-consuming-process
+      description: Wants to refactor an O11 asset that consumes a Process so the
+        dependency becomes valid for ODC, by replacing the Process consumption
+        with a placeholder Action or wrapping it in a REST Expose consumed by
+        the asset before code conversion, so the asset can be converted to ODC.
     - name: Asset consuming script
       id: asset-consuming-script
       description: Wants to refactor an O11 asset that consumes a Script from
@@ -21814,6 +21852,11 @@ knowledge-needs:
       description: Wants to configure the database connection, private gateway, encryption,
         port, and permission settings for a self-managed O11 environment before migrating
         its data to ODC, so the data migration can connect to each source environment.
+    - name: User-provider migration
+      id: user-provider-migration
+      description: Wants to determine whether O11 modules using a user provider other
+        than Users are eligible for O11 to ODC data migration, so that they can address
+        unsupported segregated user-provider configurations before migrating data.
     - name: Migrate end users
       id: migrate-end-users
       description: Wants to understand how end-user migration works during O11 to ODC
@@ -21851,6 +21894,11 @@ knowledge-needs:
         stop an O11 to ODC data migration — including missing entities or attributes,
         attribute property mismatches, and reference attribute mismatches — so that
         they can resolve the root cause and successfully retry the migration.
+    - name: Handle large text data
+      id: handle-large-text-data
+      description: Wants to move O11 text data that exceeds ODC’s supported text
+        length to an external repository before O11 to ODC data migration, so that
+        the migration can proceed within ODC text-length limits.
   - name: Conversion Assessment
     id: conversion-assessment
     subtopics:
@@ -22742,6 +22790,12 @@ knowledge-needs:
         environment, with separate application servers and distinct database
         catalogs or schemas, rather than reusing an existing environment, so
         that they plan the installation correctly.
+    - name: Register environment
+      id: register-environment
+      description: Wants to register an OutSystems environment in LifeTime by
+        providing connection details, positioning it in the infrastructure,
+        mapping role permissions, importing users, and confirming the
+        registration, so that the environment is centrally managed.
     - name: LifeTime unattended setup
       id: unattended-lifetime-setup
       description: 'Wants to install or upgrade the LifeTime Management

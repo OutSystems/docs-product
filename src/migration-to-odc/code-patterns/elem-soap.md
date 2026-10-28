@@ -20,6 +20,8 @@ outsystems-tools:
 coverage-type:
   - unblock
   - understand
+topic:
+  - handle-consumed-soap-dependencies
 isautopublish: true
 ---
 

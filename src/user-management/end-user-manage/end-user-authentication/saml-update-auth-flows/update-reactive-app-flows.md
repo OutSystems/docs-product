@@ -20,6 +20,8 @@ coverage-type:
   - understand
   - apply
   - remember
+topic:
+  - update-reactive-saml-flows
 ---
 
 # Updating the login and logout flows of your Reactive Web App to support SAML 2.0

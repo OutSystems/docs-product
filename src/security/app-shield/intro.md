@@ -10,6 +10,8 @@ tags:
   - Security
 locale: en-us
 guid: bacbf600-bd10-4caf-820a-205c16a58691
+topic:
+  - appshield-hardening
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:21

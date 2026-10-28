@@ -11,6 +11,10 @@ platform-version: o11
 figma:
 audience:
   - Platform administrator
+topic:
+  - assign-roles-to-end-user-group-o11
+  - assign-to-user-groups
+  - create-end-user-group-o11
 outsystems-tools:
   - service studio
 coverage-type:

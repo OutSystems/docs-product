@@ -4,6 +4,8 @@ tags:
   - Authentication
 locale: en-us
 guid: b367660c-65e1-45d5-a6c2-c4ea29a9c8ab
+topic:
+  - configure-http-proxy
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2252%3A3570&mode=design&t=iLJvc2VqD06T9g7F-1

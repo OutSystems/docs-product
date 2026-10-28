@@ -17,6 +17,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - retrieve-azure-logs
 ---
 
 # How to Get the Setup Logs of OutSystems on Microsoft Azure

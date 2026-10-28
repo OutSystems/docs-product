@@ -18,6 +18,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - evaluate
+topic:
+  - server-performance-tuning
+  - sql-maintenance-plans
 ---
 
 # Performance best practices for your OutSystems infrastructure

@@ -19,6 +19,10 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - configure-akamai-waf
+  - customize-akamai-waf-rules
+  - monitor-akamai-waf
 ---
 
 # Implementing a Akamai WAF for an OutSystems web app

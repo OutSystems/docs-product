@@ -22,7 +22,7 @@ coverage-type:
 topic:
   - fedramp-compliance-artifacts
   - fedramp-control-support
-  - shared-responsibility-overview
+  - shared-responsibility-cloud
 isautopublish: true
 ---
 

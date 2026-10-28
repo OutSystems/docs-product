@@ -16,8 +16,7 @@ coverage-type:
   - remember
 topic:
   - authenticate-soap-service
-  - custom-request-response
-  - customize-headers
+  - customize-web-references
 ---
 
 # EnhancedWebReferences API

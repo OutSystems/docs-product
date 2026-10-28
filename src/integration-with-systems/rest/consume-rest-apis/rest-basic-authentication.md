@@ -18,7 +18,6 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - webservice-authentication
   - configure-rest-basic-auth
 isautopublish: true
 ---

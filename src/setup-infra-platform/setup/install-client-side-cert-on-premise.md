@@ -19,6 +19,8 @@ coverage-type:
   - understand
   - apply
   - unblock
+topic:
+  - install-client-side-cert-o11
 ---
 
 # Installing client side certificates on self-managed environments

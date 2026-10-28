@@ -19,6 +19,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - cache-invalidation-ha
+  - database-high-availability
+  - infrastructure-design
 ---
 
 # Scaling and high availability for OutSystems Platform servers

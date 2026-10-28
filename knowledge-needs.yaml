@@ -13647,6 +13647,11 @@ knowledge-needs:
       id: keyboard-shortcuts
       description: Wants to look up Service Studio keyboard shortcuts on
         Windows and macOS, so they can work faster in the IDE.
+    - name: Platform limitations
+      id: platform-limitations
+      description: Wants to identify features unavailable in the cross-platform
+        Service Studio for OutSystems 11, so they can understand platform
+        differences and avoid unsupported workflows.
     - name: Open files and modules
       id: service-studio-open-files-and-modules
       description: Wants to manage open Service Studio files and modules from
@@ -21139,6 +21144,12 @@ knowledge-needs:
         through the User Management area, including roles, teams, and
         app-specific permissions, so that they can control access for IT users
         in a role-based security model.
+    - name: Import environment users
+      id: import-environment-users
+      description: Wants to import existing users from a newly registered
+        OutSystems environment into LifeTime and assign each user a LifeTime
+        role during environment registration, so that IT users are centrally
+        managed across the infrastructure.
 - name: Using audit logs for compliance and troubleshooting
   guid: c96ed7dd-90d2-406d-a816-c47269c0d20b
   topics:
@@ -22027,6 +22038,14 @@ knowledge-needs:
         domain certificate) and in self-managed environments, so that they
         know who's responsible for installation and renewal and which
         article to follow for their deployment type.
+    - name: Install app server SSL
+      id: install-app-server-ssl
+      description: Wants to install a CA-issued SSL certificate on a
+        self-managed OutSystems 11 Windows application server, by importing
+        the root and intermediate certificates into the Windows certificate
+        stores, completing the server certificate request in IIS, and binding
+        the certificate to the website on port 443, so that OutSystems
+        applications are accessible over HTTPS.
     - name: Trust self-signed cert
       id: trust-self-signed-cert-o11
       description: Wants to add a self-signed certificate to the trusted root

@@ -3671,6 +3671,12 @@ knowledge-needs:
     - name: Add SOAP header
       id: add-soap-header
       description: Wants to add a custom SOAP header to consumed SOAP requests in OutSystems 11 by creating an Integration Studio extension with a WCF endpoint behavior and message inspector and calling it from the OnBeforeRequestAdvanced callback, so that the generated requests include the custom header.
+    - name: Customize web references
+      id: customize-web-references
+      description: Wants to customize OutSystems 11 Web Reference requests with
+        the EnhancedWebReferences API by configuring their endpoint and
+        transport settings for the request duration, so that calls use the
+        intended endpoint and transport settings.
     - name: SOAP extensibility API
       id: soap-extensibility-api
       description: Wants to use the SOAP Extensibility API to customize a consumed SOAP Web Service in OutSystems 11 by modifying the connection, request, or response in the On Before Request callback, so that the service call behaves as required.
@@ -10838,7 +10844,7 @@ knowledge-needs:
         event, so that they can correctly configure the pattern's layout,
         behavior, and styling, in mobile apps and reactive web apps (O11).
     - name: Use Tabs pattern
-      id: use-tabs-pattern-traditional-web
+      id: use-tabs-pattern-traditional-web-o11
       description: Wants to add the Tabs UI Pattern to a Traditional Web App
         screen by dragging the widget from the Toolbox into the Main Content
         area, adding the OutSystemsUI dependency via Search in other modules
@@ -10847,6 +10853,16 @@ knowledge-needs:
         starting tab, height, and vertical position in Service Studio, so
         that users can switch between sections within the same context in
         OutSystems 11 traditional web apps.
+    - name: Use Tabs pattern
+      id: use-tabs-pattern-mobile-reactive-o11
+      description: Wants to add the Tabs UI Pattern to a screen by dragging
+        the widget from the Toolbox into the Main Content area, adding the
+        OutSystemsUI dependency via Search in other modules if it doesn't
+        display, adding content to the Header Item and Content Item
+        placeholders, and setting properties such as the active tab and
+        orientation in Service Studio, so that users can switch between
+        sections within the same context in mobile apps and reactive web apps
+        (O11).
     - name: Tabs reference
       id: tabs-reference-traditional-web
       description: Wants to look up the properties of the Tabs, Tabs Header
@@ -12588,6 +12604,11 @@ knowledge-needs:
       description: Wants to understand which OutSystems and third-party tools support
         DevOps work across the application lifecycle, so that they can choose the
         right toolset for delivery and operations.
+    - name: LifeTime API automation overview
+      id: lifetime-api-examples
+      description: Wants to understand how the LifeTime API can support
+        application lifecycle automation, so that they can plan an integration
+        for their delivery process.
     - name: Deploy app via API
       id: deploy-app-via-lifetime-api
       description: Wants to deploy an application between LifeTime environments

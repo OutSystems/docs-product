@@ -2,29 +2,51 @@
 name: validate-screenshots
 description: >-
   Validates PNG screenshots in an OutSystems docs article against the team's
-  visual rules (highlight components, shadow, naming, cropping).
-  Returns a short issues-only summary so the content developer knows whether
-  the images are ready for design review.
+  visual rules (highlight components, shadow, naming, cropping, width, PII)
+  and automatically fixes the findings that have a safe, verifiable remedy by
+  editing the source Figma frame and re-exporting the image. Returns a short
+  report: the issues still pending, then what was fixed. Without Figma access
+  it only validates.
 
-  Use when a content developer wants to check their screenshots before merging,
-  or asks to "review screenshots", "check my screenshots", "validate
-  screenshots", "screenshot review".
-
-  Trigger phrases: "validate screenshots", "review screenshots", "check my
-  screenshots", "are these screenshots good", "screenshot review".
-allowed-tools: Read,Bash,Edit,AskUserQuestion
+  Use when a content developer wants to check or fix their screenshots before
+  merging, or asks to "review screenshots", "check my screenshots", "validate
+  screenshots", "fix my screenshots", "fix the screenshot warnings", "apply the
+  shadow", "add the missing highlight" or "fix the highlight color".
+allowed-tools: Read,Bash,Edit,AskUserQuestion,mcp__claude_ai_Figma__whoami,mcp__claude_ai_Figma__get_metadata,mcp__claude_ai_Figma__get_design_context,mcp__claude_ai_Figma__get_screenshot,mcp__claude_ai_Figma__download_assets,mcp__claude_ai_Figma__search_design_system,mcp__claude_ai_Figma__use_figma
 ---
 
 # Validate screenshots
 
 Runs a design-system review on PNG screenshots a content developer added to an
 OutSystems docs article, so they can self-check before asking for manual design
-review.
+review. Where a finding has a safe, verifiable remedy, the skill then fixes it
+in the screenshot's source Figma frame, re-exports the image, and reports what
+it changed. Anything it can't fix safely stays pending for a human.
+
+## When to use
+
+* Checking or fixing the screenshots in a docs article before it merges,
+  locally or in CI.
+
+## When not to use
+
+* Diagrams and SVGs: use `validate-svgs`.
+* Judging article text or style.
+
+## Quick reference
+
+| Step | What happens |
+|---|---|
+| 1 | Collect the images to check, and find byte-identical duplicates |
+| 2 | Run the checker scripts, judge every rule, and print one NOTE per rule |
+| 3 | Classify the findings; ask once if a user is present, else just proceed |
+| 4 | Fix in Figma, re-export, verify; revert whatever fails |
+| 5 | Report the pending issues; print what was fixed as its own block |
 
 The rubric lives in `visual-rules-screenshots.md` next to this file — it is
 produced by running `scripts/calibrate.py` against a reference set of approved
 screenshots. If that file is still a placeholder, stop and tell the user to run
-calibration first (see the Calibration section below).
+calibration first (see `references/calibration.md`).
 
 ## Setup
 
@@ -52,7 +74,7 @@ It prints a JSON array to stdout. Each entry has:
   calling workflow already knows the image is referenced by more than
   one article changed in this same pull request; a list of those
   articles' absolute paths. Mutually exclusive with `article_path` being
-  set — see "Choosing the summary title" in Step 3.
+  set — see "Choosing the summary title" in Step 5.
 
 If the array is empty, stop with:
 
@@ -80,11 +102,17 @@ nowhere else; the cache keys on `blob_sha` instead.
 
 ## Step 2: Validate each target
 
+Detection is the same for every rule in the rubric, including the ones the
+automatic fixes never touch (rules 8 and 9, for example). Finish it for every
+target first. Don't open `references/auto-fix-*.md` or any `rule-*.md` file
+until Step 3 or 4 asks for it; the theme table behind rule 9 is in
+`visual-rules-screenshots.md`, not in `references/`.
+
 **Cached entries first.** If an entry has `"cached": true`, this exact file
 content already passed this rubric on an earlier run. Skip the numbered steps
 below for it entirely — no `Read` into vision, no checker scripts — and reuse
 its `cached_findings` array verbatim as that image's findings (an empty array
-means it passed clean). It still counts toward `N` in Step 3, and toward `M`
+means it passed clean). It still counts toward `N` in Step 5, and toward `M`
 when `cached_findings` is non-empty. Do not re-word, re-order, or re-judge a
 cached finding: it was produced by this same rubric and must read identically
 so the report stays stable across runs.
@@ -212,6 +240,27 @@ For every entry that is **not** cached:
 Keep per-image notes internal until every image is processed. Do not stream
 partial reports.
 
+### Gate: write down every verdict before moving on
+
+For each non-cached image, print one working-note line per rule below, in this
+exact shape, before anything else is printed. They exist so no rule is skipped;
+the calling workflow ignores everything printed before the verdict block.
+
+```
+NOTE <image relative path> | rule <N> | <evidence in a few words> | pass|fail
+```
+
+* Scripted rules (use the checker's verdict as the evidence): 1 (format), 2
+  (filename), 3 (highlight color), 6 (shadow), 10 (width).
+* Vision rules: 2 (suffix against content), 3 (placement), 4 (callouts), 5
+  (arrows), 7 (PII), 8 (internal URLs), 9 (theme). Write `pass (none present)`
+  for a rule that has nothing to judge. For rule 9 the evidence must state the
+  image's theme and the mandate for its suffix, for example `dark, suffix -odcs
+  mandates light`.
+
+A `fail` becomes a finding in Step 5, worded as this skill's rules say.
+Nothing moves to Step 3 until every non-cached image has all of these lines.
+
 ### Extract the Figma link (once per article)
 
 If any entry has a non-null `article_path`, open that markdown file once and
@@ -225,7 +274,34 @@ When multiple articles reference different screenshots (branch-diff mode),
 collect the unique Figma URLs per article and emit them grouped under each
 article in the header. In the common single-article case, one line is enough.
 
-## Step 3: Emit the summary
+## Step 3: Decide what to fix
+
+Only when Step 2 is complete. Open `references/auto-fix-scope.md` and classify
+every finding of a non-cached entry as AUTO_FIX or FLAG_ONLY (a cached entry is
+never fixed: its findings are reused as they are). With no AUTO_FIX finding,
+skip to Step 5 and don't touch Figma.
+
+* **Interactive session** (a user is present): ask once with AskUserQuestion,
+  "N findings can be fixed automatically in Figma and the images re-exported.
+  Fix them now?", with "Yes, fix them (Recommended)" first and "No, just
+  report" second. On "No", go to Step 5 with everything pending.
+* **Unattended run** (the caller says to skip questions, or there is no user):
+  don't ask; the answer is yes.
+
+## Step 4: Apply the automatic fixes
+
+Skip when Step 3 left nothing to fix or the answer was no. Otherwise follow
+`references/auto-fix-procedure.md`, then verify as
+`references/auto-fix-verify.md` says. It starts with one `whoami` call: if
+Figma is unreachable or rejects the credential, skip this step, keep every
+finding pending and note it once in the report, so the run only validates.
+
+A fix that passes verification moves its finding from pending to **fixed**
+(what changed, and the checker verdict). A fix that fails is reverted and its
+finding stays pending with the reason added. Never commit or push: the changes
+stay in the working tree and the calling workflow collects them.
+
+## Step 5: Emit the summary
 
 ### Verdict block (always, before anything else)
 
@@ -238,8 +314,10 @@ before the `<!-- REPORT BEGIN -->` sentinel the calling workflow expects:
 ```
 
 Keys are repo-relative POSIX paths, values are exactly `clean` or `findings`
-(`findings` when that image has at least one ❌ or ⚠️ in this report). One
-line, valid JSON, no line breaks inside it. HTML comments don't render on
+(`findings` when that image still has at least one ❌ or ⚠️ pending in this
+report, after any automatic fixes; an image whose findings were all fixed is
+`clean`, and the verdict describes the image as it is left in the working
+tree). One line, valid JSON, no line breaks inside it. HTML comments don't render on
 GitHub, so this never shows up in the PR comment.
 
 **Print it even when the whole run is clean** — that is, print it immediately
@@ -260,15 +338,39 @@ Follow this exact format:
 
 Figma: <url from frontmatter — omit this line entirely when no figma key>
 
-Checked N screenshots. M need changes.
+Checked N screenshots. M need changes. F fixed automatically.
 
 ### <image relative path>
-- ❌ <short description of the failure — reference the rule>
-- ⚠️ <short description of a warning>
+- ❌ <short description of a failure still pending — reference the rule>
+- ⚠️ <short description of a warning still pending>
 
 ### <next image relative path>
 - ❌ <...>
+
 ```
+
+The report holds the pending issues, in the per-image format above. What was
+fixed does not go in it.
+
+### The fixes block
+
+When F > 0, print this block right after the report (and after its closing
+`</details>`):
+
+```
+<!-- FIXED BEGIN -->
+<details>
+<summary>TITLE — F fixed automatically</summary>
+
+- `<image relative path>` — ✅ rule <N> (<name>): <what changed>; <checker> now reports <verdict>.
+
+</details>
+<!-- FIXED END -->
+```
+
+The calling workflow posts this block as a comment of its own, which later runs
+leave alone, so what was fixed stays visible after a later run re-reports only
+what is still pending. Never repeat the fixed lines inside the report.
 
 ### Choosing the summary title
 
@@ -293,31 +395,51 @@ branch-diff mode it is "branch changes". For a single-image invocation,
 Rules:
 
 * `N` counts every target in this invocation, cached ones included; `M` counts
-  those with at least one finding, again cached ones included. A cached image
+  those with at least one finding **still pending after the automatic fixes**,
+  again cached ones included; `F` counts the fixes that were applied and
+  verified (leave "F fixed automatically." out when it is 0). A cached image
   is a validated image — never quietly drop it from the totals, or the counts
   will shrink as the cache warms up and the report will look like coverage
   was lost.
-* If N > 0 and M == 0: replace the body with `All N screenshots pass.` and skip
-  the per-image sections entirely. Keep the `Figma:` line in the header if it
-  was extracted.
+* If N > 0, M == 0 and F == 0: replace the body with `All N screenshots pass.`
+  and skip the per-image sections entirely. Keep the `Figma:` line in the
+  header if it was extracted.
+* If M == 0 and F > 0: replace the per-image pending sections with `All N
+  screenshots pass after the automatic fixes.` and still print the fixes block,
+  so the author can see what changed in Figma.
+* A finding whose automatic fix was attempted and reverted stays in the
+  pending list, with the reason appended: "— automatic fix reverted: <reason>".
+* If Step 4 was skipped because Figma was unavailable, and there were
+  AUTO_FIX findings, add one line under the counts: "Automatic fixes skipped:
+  Figma was unavailable."
 * Severity: `❌` means "must fix before the article ships"; `⚠️` means "a
-  designer should eyeball this, but it might be acceptable".
+  designer should eyeball this, but it might be acceptable". Lines in the fixes
+  block use ✅ and never ❌ or ⚠️.
+* Every fixed line quotes the actual post-fix checker verdict (or
+  "(vision-verified)" for rules 4 and 5) — never claim success without it. A
+  rule 2 line names the old and new file name and says the Figma frame was
+  renamed and the markdown references updated. A rule 7 line says whether the
+  cover was word-level or whole-line, and restates that it hides the text in
+  the published image only: the original pixels stay in the frame's raw image
+  asset in Figma.
+* Never echo a sensitive value (rule 7), pending or fixed: say where it is
+  and what kind of data it looks like, not the value itself.
 * Never list a rule that passed — the point is to be short.
 * Don't repeat the rubric text. Quote the rule name only if needed for clarity.
 
+## Common mistakes
+
+* Skipping a vision rule because the scripts passed. Every rule gets a NOTE
+  line per image (Step 2), rule 9's evidence included.
+* Reading the auto-fix scope as the detection scope. Rules 8 and 9 are always
+  detected and reported; they are just never fixed.
+* Fixing an entry marked `"cached": true`, or touching Figma on a run with
+  nothing to fix.
+* Putting ❌ or ⚠️ on a fixed line, or repeating the fixed lines inside the
+  report. The fixes block is posted separately so it survives the next run.
+* Committing or pushing. The changes stay in the working tree.
+
 ## Calibration (one-off)
 
-`visual-rules-screenshots.md` starts as a placeholder. To populate it:
-
-1. Gather a reference set of approved PNG screenshots from `docs-next`.
-1. Run `python3 <skill-dir>/scripts/calibrate.py <path-or-folder> [<path-or-folder> …]`.
-   The script walks the paths, prints one image per turn, and expects the
-   assistant to describe what it sees and cluster findings into concrete rules.
-1. When done, the script writes a draft `visual-rules-screenshots.md`. Review
-   and edit it — the skill uses whatever is in that file.
-1. Re-run calibration whenever the Figma library changes (new highlight
-   component, etc.) so the rubric stays current.
-
-If the calibration output looks thin or inconsistent across runs, switch to
-authoring the rules manually — the skill doesn't care how the file was
-produced, only that it describes checkable rules.
+`visual-rules-screenshots.md` starts as a placeholder and is populated by
+`scripts/calibrate.py`; the procedure is in `references/calibration.md`.

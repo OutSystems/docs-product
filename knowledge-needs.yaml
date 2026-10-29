@@ -1590,6 +1590,13 @@ knowledge-needs:
       so that the app can call SAP BAPIs and exchange data with the
       SAP system.
     subtopics:
+    - name: SAP integration overview
+      id: sap-integration-overview
+      description: Wants to understand how OutSystems 11 connects to SAP
+        through the SAP Connector for Microsoft .NET, including default
+        username and password authentication, alternative authentication,
+        and secure communication options, so they can plan an SAP
+        integration.
     - name: Troubleshoot SAP calls
       id: troubleshoot-sap-calls
       description: Wants to troubleshoot SAP remote function calls by checking
@@ -12612,6 +12619,11 @@ knowledge-needs:
     - name: Configure app zone
       id: configure-app-zone
       description: Wants to configure an OutSystems application to use a specific deployment zone in Service Center by selecting the zone in the application's Operation tab and saving the change, so that the platform deploys the app to the chosen zone.
+    - name: Configure zone settings
+      id: configure-zone-settings
+      description: Wants to configure deployment zone routing and server-membership
+        settings in Service Center, so that the zone routes application traffic
+        and manages server membership as intended.
     - name: Deployment zone address
       id: deployment-zone-address
       description: Wants to use a deployment zone address to let applications in different deployment zones communicate, so that services, processes, timers, emails, and Service Center operations reach the target zone over HTTP or HTTPS.
@@ -14745,6 +14757,12 @@ knowledge-needs:
       operations, so they can judge whether a request fits the available
       capabilities.
     subtopics:
+    - name: Explain module
+      id: explain-module
+      description: Wants to understand what an open O11 module does and how it
+        is structured by having the Service Studio MCP agent read its data
+        model, logic, and screens, so they can take over the module or plan
+        changes to it.
     - name: Name platform in requests
       id: name-platform-in-requests
       description: Wants to state the O11 platform and the open module in requests when the MCP host also connects to ODC, so the request reaches the Service Studio MCP server instead of ODC.
@@ -14757,6 +14775,26 @@ knowledge-needs:
     - name: Restore missing O11 tools
       id: restore-missing-o11-tools
       description: Wants to restart the Service Studio MCP server and confirm the MCP host URL when O11 tools are missing, so the O11 tools are available again.
+    - name: Review module security
+      id: review-module-security
+      description: Wants to review an open O11 module's logic for security
+        risks by having the Service Studio MCP agent inspect it, so they can
+        prioritize security fixes before changing the module.
+    - name: Review module performance
+      id: review-module-performance
+      description: Wants to review an open O11 module's logic for performance
+        bottlenecks by having the Service Studio MCP agent inspect it, so they
+        can prioritize performance improvements before changing the module.
+    - name: Review module compliance
+      id: review-module-compliance
+      description: Wants to review an open O11 module's logic for compliance
+        concerns by having the Service Studio MCP agent inspect it, so they can
+        prioritize compliance fixes before changing the module.
+    - name: Review module quality
+      id: review-module-quality
+      description: Wants to review an open O11 module's logic for maintainability
+        issues by having the Service Studio MCP agent inspect it, so they can
+        prioritize code-quality improvements before changing the module.
   - name: Agentic dev vs AI apps
     id: agentic-vs-ai-powered-apps
     description: Wants to distinguish agentic development (AI helping the
@@ -21907,6 +21945,11 @@ knowledge-needs:
       description: Wants to determine whether O11 modules using a user provider other
         than Users are eligible for O11 to ODC data migration, so that they can address
         unsupported segregated user-provider configurations before migrating data.
+    - name: Migrate tenant data
+      id: migrate-tenant-data
+      description: Wants to determine whether O11 modules with data in additional
+        tenants are eligible for O11 to ODC data migration, so that they can keep
+        data in the default tenant before migrating.
     - name: Migrate end users
       id: migrate-end-users
       description: Wants to understand how end-user migration works during O11 to ODC
@@ -21949,6 +21992,11 @@ knowledge-needs:
       description: Wants to move O11 text data that exceeds ODC’s supported text
         length to an external repository before O11 to ODC data migration, so that
         the migration can proceed within ODC text-length limits.
+    - name: Handle large binary data
+      id: handle-large-binary-data
+      description: Wants to move O11 binary data exceeding ODC’s supported
+        binary-data size limit to an external repository before O11 to ODC data
+        migration, so that the migration can proceed within ODC binary-data limits.
   - name: Conversion Assessment
     id: conversion-assessment
     subtopics:
@@ -21959,6 +22007,12 @@ knowledge-needs:
         and validating Code, Data, and Infrastructure pattern findings by reviewing
         solutions and rerunning the assessment, so that they can plan the refactoring
         effort needed before converting O11 apps to ODC.
+    - name: Resolve findings
+      id: resolve-findings
+      description: Wants to resolve Conversion Assessment Tool findings by opening
+        each pattern, using Learn more, opening the finding in Service Studio,
+        adapting and publishing the O11 code, and rerunning the assessment, so that
+        the apps are ready for conversion to ODC.
     - name: Resolve unmapped dependency
       id: resolve-unmapped-dependency
       description: Wants to resolve a conversion assessment finding where an ODC
@@ -21966,6 +22020,32 @@ knowledge-needs:
         checking whether the functionality already exists in ODC and then fixing
         the finding in ODC or mapping the O11 producer app to an ODC asset, so
         the converted app keeps working.
+    - name: Update assessment tool
+      id: update-assessment-tool
+      description: Wants to update the Conversion Assessment Tool in O11
+        environments, so that they can keep app assessments running with the
+        required functionality.
+    - name: Install additional probes
+      id: install-additional-probes
+      description: Wants to install additional probes for the Conversion Assessment
+        Tool in O11 environments, so that app assessments include the required
+        coverage.
+    - name: Change code assessment cycle
+      id: change-code-assessment-cycle
+      description: Wants to change the code assessment cycle in O11 environments,
+        so that app assessments run at the required frequency.
+    - name: Set up assessment tool
+      id: set-up-assessment-tool
+      description: Wants to install and configure the Conversion Assessment Tool by
+        using its installer wizard to connect LifeTime and deploy the required
+        components across O11 environments, so that O11 apps are ready for ODC
+        conversion assessment.
+    - name: Troubleshoot setup issues
+      id: troubleshoot-setup-issues
+      description: Wants to resolve Conversion Assessment Tool installer login and
+        setup failures by checking authentication, permissions, environment
+        connectivity, and network requirements, so that the tool can complete setup
+        and assess O11 apps for ODC conversion.
     - name: Manual assessment setup
       id: manual-assessment-setup
       description: Wants to manually install the Conversion Assessment Tool solution
@@ -23027,6 +23107,13 @@ knowledge-needs:
         backup through a support case when they need to recover data from a
         point in time within the backup retention window, so that they can
         extract data or run tests against the snapshot.
+    - name: LTBR retention
+      id: ltbr-retention
+      description: Wants to understand and use OutSystems Cloud long-term backup
+        retention for SQL Server production databases, including retention periods
+        suitable for compliance and audit requirements, support-case retrieval, and
+        temporary restored access, so that they can meet compliance and audit
+        requirements.
     - name: Permanent database access
       id: permanent-database-access
       description: Wants to request a permanent database user for an OutSystems Cloud

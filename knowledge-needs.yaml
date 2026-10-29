@@ -21367,6 +21367,13 @@ knowledge-needs:
       description: Wants to create a vision statement and vision cloud for a project,
         when conducting business analysis, so that they can articulate the primary
         business goals in an inspirational and actionable way.
+    - name: Survivor support apps
+      id: survivor-support-apps
+      description: Wants to understand how an app can let survivors and concerned
+        third parties request help and connect with support services, when exploring
+        digital solutions for child abuse, domestic violence, or sexual assault, so
+        they can recognize how an application addresses urgent community support
+        needs.
     - name: Process diagrams
       id: process-diagrams
       description: Wants to create and scope process diagrams for a business vision

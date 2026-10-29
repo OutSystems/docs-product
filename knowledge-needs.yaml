@@ -25435,6 +25435,146 @@ knowledge-needs:
         code of an OutSystems mobile native shell using the supported
         development tools, so that the application runs independently of
         OutSystems after detaching.
+- name: ODC production hotfixing
+  guid: facc0650-4e30-4a8b-bd88-73c9bb0d3bfd
+  topics:
+  - name: Decide hotfix or rollback
+    id: decide-hotfix-rollback
+    description: Platform administrator wants to know when a hotfix is the right
+      recovery strategy for a production issue, so they can select the strategy
+      that fits the issue.
+  - name: Known hotfix limitations
+    id: hotfix-limitations
+    description: Tech lead wants to know which ODC Studio changes are supported
+      in hotfix mode, so they can assess whether a hotfix is viable for their
+      issue.
+  - name: Apply a hotfix manually
+    id: apply-hotfix-manually
+    description: Developer wants to follow a step-by-step procedure to create,
+      validate, and deploy a hotfix in ODC Portal, so that they can fix a
+      production issue without rolling back.
+  - name: When deployments are out of order
+    id: out-of-order-deployment-cause
+    description: Tech lead wants to know when deployments occur out of order, so
+      they can recognize when a hotfix creates an out-of-order deployment.
+  - name: Assess out-of-order deployment risk
+    id: assess-ooo-deployment-risk
+    description: Tech lead wants to understand what regression risks an
+      out-of-order deployment creates, so they can decide whether to proceed or
+      choose a different strategy.
+  - name: Validate out-of-order deployments
+    id: validate-ooo-deployments
+    description: Developer wants to perform validation steps before deploying a
+      hotfix that creates out-of-order deployments, so they can mitigate
+      regression risk.
+  - name: Create a hotfix through the API
+    id: create-hotfix-api
+    description: Developer wants to create an ODC hotfix through REST APIs, so
+      they can automate hotfix creation in CI/CD pipelines.
+  - name: Validate a hotfix through the API
+    id: validate-hotfix-api
+    description: Developer wants to validate an ODC hotfix through REST APIs,
+      so they can confirm the fix before deployment.
+  - name: Deploy a validated hotfix through the API
+    id: deploy-hotfix-api
+    description: Developer wants to deploy or promote a validated ODC hotfix
+      through REST APIs, so they can release the fix to production through
+      automation.
+  - name: Hotfix API permissions
+    id: hotfix-api-permissions
+    description: Platform administrator wants to know which API permissions are
+      required for hotfixing operations, so they can configure access correctly
+      for automation users.
+  - name: Hotfix API authentication
+    id: hotfix-api-authentication
+    description: Platform administrator wants to know how automation users
+      authenticate to the ODC APIs for hotfixing, so they can set up token-based
+      access.
+  - name: Compare ODC and O11 hotfixing
+    id: compare-odc-o11-hotfix
+    description: Developer wants to understand how an ODC hotfix differs from
+      the O11 hotfix process, where fixes are merged backward through
+      Pre-Production, so they don't apply the O11 process to ODC.
+  - name: Hotfix and out-of-order terms in the Portal
+    id: hotfix-out-of-order-terms
+    description: Developer wants to know when the Portal uses the term hotfix
+      and when it uses out-of-order, so they can find the right information for
+      a deployment.
+  - name: Refresh dependencies during a hotfix
+    id: refresh-dependencies-hotfix
+    description: Developer wants to know how Refresh Dependencies resolves
+      app-to-app dependencies against the stage being fixed and library
+      dependencies by release, so they can predict which versions a hotfix uses.
+  - name: Validate a hotfix on a shared stage
+    id: validate-hotfix-shared-stage
+    description: Developer wants to know that validating a hotfix on a
+      non-production stage overwrites the build other developers have deployed
+      there, so they can choose a stage safely.
+  - name: Revisions hotfix mode can open
+    id: hotfix-mode-revisions
+    description: Developer wants to know which revisions a hotfix in ODC Studio
+      can open, so they can plan their work inside the hotfix branch.
+  - name: Duplicate hotfix records
+    id: avoid-duplicate-hotfix-records
+    description: Developer wants to know that closing a hotfix as unresolved and
+      reopening it creates a duplicate record, so they can keep one hotfix
+      record per incident.
+  - name: Find the Start Hotfix entry point
+    id: start-hotfix-entry-point
+    description: Developer wants to find the Start Hotfix entry point on the app
+      detail page, so they can start a hotfix without searching the Portal.
+  - name: Act on an active hotfix
+    id: act-on-active-hotfix
+    description: Developer wants to know which actions are available on an app
+      with an active hotfix, based on their permissions, so they can manage the
+      hotfix appropriately.
+  - name: Promote a validated hotfix
+    id: promote-validated-hotfix
+    description: Platform administrator wants to promote a validated hotfix to
+      Production without holding the permission to change the asset, so they can
+      separate fixing a problem from releasing the fix.
+  - name: Read out-of-order indicators
+    id: read-out-of-order-indicators
+    description: Tech lead wants to read the out-of-order indicators in the
+      deployment history and the regression warning shown before a promotion, so
+      they can assess whether a promotion would overwrite a hotfix.
+  - name: Identify the production revision
+    id: identify-production-revision
+    description: Developer wants to identify the revision running in Production,
+      using the ODC Portal or the Portfolio API, so they can branch the hotfix
+      from that revision.
+  - name: Create a hotfix branch through the API
+    id: create-hotfix-branch-api
+    description: Developer wants to create a hotfix branch from a revision
+      through the Asset Repository API, so they can script the first step of a
+      hotfix.
+  - name: Upload a modified OML file through the API
+    id: upload-oml-file-api
+    description: Developer wants to upload a modified OML file to a hotfix
+      branch through the ODC APIs, so they can deploy a fix made outside ODC
+      Studio.
+  - name: Label an API-created hotfix branch
+    id: label-api-hotfix-branch
+    description: Developer wants to label a branch created through the API as a
+      hotfix, so that ODC Portal recognizes it as a hotfix.
+  - name: Closed-branch revisions can't start a hotfix
+    id: closed-branch-hotfix-limit
+    description: Tech lead wants to know that a hotfix can't start from a
+      revision on a closed branch, so they can plan around this current
+      limitation.
+  - name: Merge a hotfix into development
+    id: merge-hotfix-into-development
+    description: Developer wants to merge the changed modules from a hotfix back
+      into development, so that the fix is included in later releases.
+  - name: Mark a hotfix as solved
+    id: mark-hotfix-solved
+    description: Developer wants to mark a hotfix as solved, so that the hotfix
+      record is closed after the fix is in production.
+  - name: Confirm hotfix permissions
+    id: confirm-hotfix-permissions
+    description: Platform administrator wants to confirm that users have change
+      permission on the asset and deploy permission on the stage before a hotfix
+      starts, so that the hotfix can be created and deployed.
 - name: ODC Platform Access Control
   guid: 114572e8-b46d-4e16-942b-b4d3842660d0
   topics:

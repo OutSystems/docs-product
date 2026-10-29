@@ -8636,6 +8636,9 @@ knowledge-needs:
     - name: Test lifecycle overview
       id: test-lifecycle-overview
       description: Wants to understand the main testing activities across the delivery lifecycle in OutSystems, including component, integration/API, system/E2E, regression, performance, acceptance, security, and smoke tests, so they can choose the right test type for each stage.
+    - name: Choose execution model
+      id: choose-execution-model
+      description: Wants to choose how automated tests run, including local, scheduled, or CI/CD execution, based on feedback speed, manual intervention, environment isolation, and team capabilities, so they can align test execution with their automation goals.
     - name: Manage test data
       id: manage-test-data
       description: Wants to manage test data for automated tests by separating master data, test-specific data, and external data, so tests stay idempotent, reliable, and fast.
@@ -11245,6 +11248,10 @@ knowledge-needs:
       description: Wants to create a Block, add an input parameter, fetch related
         entity data with an Aggregate, and bind the data to UI elements, so the
         block displays details for a selected record.
+    - name: Create ODC block
+      id: create-odc-block
+      description: Wants to create a reusable Block in ODC Studio, so that they
+        can build modular screen designs with centralized UI components.
     - name: Web block exposure rules
       id: web-block-exposure-rules
       description: Wants to identify when a Web Block cannot be exposed in a

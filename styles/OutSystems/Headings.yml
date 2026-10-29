@@ -1,6 +1,45 @@
 # Adapted from Microsoft.Headings
 # Changed: exceptions
 # Previous link: https://docs.microsoft.com/en-us/style-guide/capitalization
+#
+# Guidelines for the exceptions list
+#
+# An exception is a word or phrase that keeps its capitalization in a heading.
+# Add each term to exactly one group, and keep every group sorted alphabetically.
+# Before adding a term, search this file: it may already be
+# listed in another group.
+#
+# Choosing a group: use the first question you answer "yes" to.
+#   1. Is it an event name, a UI pattern or widget, a cloud region, a
+#      certification or boot camp, or a conference?
+#      -> Events, UI Patterns and Widgets, Regions, Certifications and Boot Camps,
+#         or Conferences
+#   2. Is it the proper name of an OutSystems product, component, or plugin?
+#      -> Product (for example Forge, LifeTime, Camera plugin)
+#   3. Is it the name of a vendor product, open-source project, platform, or AI tool?
+#      -> Third Party (for example GitHub, Docker, macOS, Claude Code)
+#   4. Is it a generic technology term that no single vendor owns: an acronym,
+#      protocol, standard, file format, language, SQL keyword, or regulation?
+#      -> Industry (for example HTML, JSON, TypeScript, SELECT, HIPAA)
+#   5. Otherwise, is it OutSystems development vocabulary or an example name?
+#      -> Concepts (for example Aggregate, Entity, Screen)
+#
+# Errors and Jira issue keys hold regex patterns only. Don't add plain terms there.
+#
+# Edge cases:
+#   * A format or language is Industry even when one vendor created it
+#     (JSON, CSS, TypeScript). A named product is Third Party (Docker, MongoDB).
+#   * If a plugin's name is a product or a generic technology term, list the name
+#     without "plugin" in that term's group: OneSignal and Firebase Cloud Messaging
+#     in Third Party, SSL Pinning in Industry. "plugin" is lowercase, so the name
+#     already covers "OneSignal plugin".
+#   * If the name is specific to the OutSystems plugin and is neither a product nor
+#     an industry term, list it with the lowercase "plugin" in Product (Camera
+#     plugin, File Transfer plugin). Don't list the bare name, because "Camera"
+#     alone would then be allowed capitalized anywhere in a heading.
+#   * Don't add a phrase when every capitalized word in it is already an exception
+#     on its own. Cordova already covers "Cordova-based", and OneSignal already
+#     covers "OneSignal plugin". Hyphens don't change this.
 extends: capitalization
 message: "'%s' should use sentence-style capitalization."
 level: error
@@ -11,75 +50,75 @@ indicators:
   - '.'
 exceptions:
 # Product
-  - Application Objects
-  - AO
+  - 1-Click Publish
   - Agent Workbench
   - Agentic Systems Engineering
+  - AIMS
+  - AO
+  - App Auth Service
+  - Application Objects
+  - Asset Configurations API
+  - Asset Repository API
+  - Build Operations API
+  - Call Agent
+  - Camera plugin
   - Case Management framework
-  - CMf
   - Center
+  - Cloud demo
+  - CMf
   - Code Quality
   - Common plugin
   - Conversion Assessment Tool
+  - Customer Portal
+  - Data
+  - Data Fabric
   - DbCleaner
+  - Dependency Management API
+  - Enterprise Context Graph
+  - EU Sovereign Cloud
+  - File Transfer plugin
+  - File Viewer plugin
+  - Forge
+  - Health and Fitness plugin
   - Integration Builder
-  - Service
-  - Studio
+  - Integration Studio
   - LifeTime
-  - Technical Preview
+  - MABS
+  - Mentor
+  - Mentor Agent
+  - Mentor Studio
+  - Mobile Apps Build Service
   - O11
   - ODC
+  - ODC Portal
   - OSPTool
   - OutSystems
   - OutSystems Cloud
   - OutSystems Developer Cloud
   - OutSystems Model
-  - EU Sovereign Cloud
   - Personal Edition
-  - ODC Portal
-  - Workflow Builder
-  - Mentor Studio
-  - AIMS
-  - MABS
-  - Mentor
-  - Mobile Apps Builder Service
-  - UsersIdP
-  - Build Operations API
-  - Dependency Management API
-  - Enterprise Context Graph
-  - Mentor Agent
-  - Data
-  - Call Agent
-  - StoreMemory
-  - Agent Workbench
-  - Asset Repository API
-  - Asset Configurations API
-  - Forge
-  - Self-hosted
-  - Cloud demo
-  - Data Fabric
-  - Integration Studio
   - Platform Server
   - Private Gateway
-  - 1-Click Publish
-  - TrueChange
-  - IdP
-  - IdPs
-  - Customer Portal
-  - Workflows Editor
-  - Workflows
-  - PWA
+  - Self-hosted
+  - Service Studio
   - SPM
+  - StoreMemory
+  - Technical Preview
+  - TrueChange
+  - UsersIdP
+  - Workflow Builder
+  - Workflows
+  - Workflows Editor
   
 # Concepts
   - Action
   - Activity
+  - Ad-Hoc
+  - AdvancedQuery
   - Agents
   - Aggregate
-  - Ajax
   - App
   - Application
-  - App Auth Service
   - Area
   - Attribute
   - Block
@@ -88,97 +127,69 @@ exceptions:
   - Business Process
   - Callback
   - Client
+  - Create/Upgrade
   - EC
   - Email
-  - Entity
   - Entities
+  - Entity
   - EPA_Taskbox
   - EPA_TaskboxExtension
+  - Epic
+  - Excel To Record List
   - Exception
+  - Form URL
   - GetUserId
-  - HMAC
   - Identifier
-  - IDE
-  - IT
-  - JWT
-  - JSON Web Keys
-  - JWK
+  - In-House
   - Library
   - Local
+  - MediaMetadata data
+  - MediaResult data
   - Method
   - Mobile
-  - Mobile Apps Build Service
   - Module
-  - OpenID Connect
   - Parameter
+  - Paula
   - Personal
+  - Plugin Manager
   - Process
   - Progressive
   - Public
   - Reactive
+  - Read-Only
+  - Read-Write
   - Record
+  - Record List To Excel
   - Refresh
+  - RequestPart
   - Resource
   - Role
-  - RSA
-  - RAG
   - Screen
   - Server
-  - Service
   - Session
-  - SQL
-  - SVG
   - Static
   - Structure
-  - Taskbox
   - Task
-  - Epic
+  - Taskbox
   - Template
   - Theme
   - Timer
   - Traditional
   - Variable
-  - Web
-  - Create/Upgrade
-  - JSON
-  - Cordova-based
-  - Cordova-only
-  - Cordova
-  - Capacitor
-  - Ad-Hoc
-  - In-House
   - ViewState
+  - Web
   - WorkflowNewCustomerLoan
-  - NSCameraUsageDescription
-  - Paula
-  - USB
-  - PC
-  - NaN
-  - EXTRACT
-  - AdvancedQuery
-  - Read-Only
-  - Read-Write
-  - LLM
-  - Web Application Firewall
-  - Plugin Manager
-  - MediaResult data
-  - MediaMetadata data
-  - RequestPart
-  - Form URL
-  - Create/Upgrade
-  - Excel To Record List
-  - Record List To Excel
 
 # Events
-  - On Click
-  - On Initialize
-  - On Ready
-  - On Render
   - On After Fetch
-  - On Parameters Changed
-  - On Destroy
   - On Application Ready
   - On Application Resume
+  - On Click
+  - On Destroy
+  - On Initialize
+  - On Parameters Changed
+  - On Ready
+  - On Render
 # UI Patterns and Widgets
   - Action Sheet
   - Animated Label
@@ -194,6 +205,8 @@ exceptions:
   - Gallery
   - Inline SVG
   - Lightbox Image
+  - Link
+  - List Item
   - Master Detail
   - Progress Circle
   - Range Slider
@@ -209,216 +222,224 @@ exceptions:
   - Tag
   - Touch Events
   - User Avatar
-  - Wizard Item
-# Widgets
   - Widget
-  - Link
-  - List Item
+  - Wizard Item
 # Third Party
+  - .NET
   - Active Directory
-  - Agency ATOs
-  - AgentFlow
   - Agent Flow
+  - AgentFlow
+  - AKS
   - Amazon
-  - Amazon Elastic Kubernetes Service
+  - Amazon Bedrock
   - Amazon EKS
+  - Amazon Elastic Kubernetes Service
   - Amazon Kendra
+  - Amazon Nova Pro
   - Android
-  - Safari Web Inspector
-  - CALL
-  - Google
-  - Google Cloud
-  - Google Cloud GAR
-  - Google Kubernetes Engine
-  - GKE
+  - APNs
   - App Store Connect
   - Apple Developer
   - AWS
   - AWS ECR
   - AWS Firehose
-  - FedRAMP
-  - JSON
-  - IIS
-  - IdP
-  - IdPs
+  - AWS Kiro
   - Azure
   - Azure ACR
   - Azure Kubernetes Service
   - Azure SQL Managed Instance
-  - AKS
-  - DOCX
-  - Markdown
+  - Capacitor
+  - Chrome
+  - Chrome DevTools
+  - Claude 3.7 Sonnet
+  - Claude Code
+  - Claude Desktop
+  - Claude Haiku 4.5
+  - Confluence
+  - Cordova
+  - Cursor
+  - DB2
+  - Docker
+  - Excel
+  - FCM
+  - Figma
+  - Firebase Analytics
+  - Firebase Cloud Messaging
+  - Firebase Crashlytics
+  - Firebase Performance
+  - Font Awesome
+  - Git
+  - GitHub
+  - GitHub Copilot
+  - GKE
+  - Google
+  - Google Cloud
+  - Google Cloud GAR
+  - Google Kubernetes Engine
+  - Google Play
+  - GPT-4o
+  - Health Connect
+  - HealthKit
+  - IBM
+  - IIS
+  - Integrated Authentication
+  - iOS
+  - Jira
+  - Kubernetes
+  - macOS
   - Mermaid
   - Microsoft Entra
   - Microsoft Entra ID
-  - Cascading Style Sheets
-  - CSS
-  - Chrome
-  - DELETE
-  - Docker
-  - DOM
-  - Excel
-  - Okta
-  - Git
-  - GitHub
-  - Figma
-  - Jira
-  - Confluence
-  - Google Play
-  - HIPPA
-  - iOS
-  - Integrated Authentication
-  - TestFlight
-  - Kubernetes
-  - TypeScript
-  - Windows
-  - Visual Studio
-  - URI
-  - URIs
-  - SAP
-  - SELECT
-  - XSS
-  - CSV
-  - Firebase Cloud Messaging plugin
-  - Firebase Performance
-  - Platform Tab in Oracle
-  - Privacy Policy file
-  - Health and Fitness plugin
-  - HealthKit
-  - Health Connect
-  - Firebase Analytics
-  - Firebase Crashlytics
-  - SSL Pinning plugin
-  - File Transfer plugin
-  - File Viewer plugin
-  - OneSignal plugin
-  - OpenTelemetry Collector
-  - Amazon Bedrock
-  - IBM
-  - GPT-4o
-  - Claude 3.7 Sonnet
-  - Claude Desktop
-  - Claude Haiku 4.5
-  - Amazon Nova Pro
-  - Chrome DevTools
-  - Cursor
-  - GitHub Copilot
-  - AWS Kiro
   - Microsoft Visual Studio
-  - Visual Studio Code
-  - .NET
-  - NuGet
-  - Key Store plugin
-  - Camera plugin
-  - SAML
-  - Phosphor
-  - Font Awesome
-  - OneSignal
-  - Oracle
-  - OWASP
-  - SQL Server
-  - MCP
-  - A2A
-  - INSERT
-  - UPSERT
-
-# Industry
-  - ATO
-  - AI
-  - API
-  - ARIA
-  - Accessible Rich Internet Applications
-  - APIs
-  - CDN
-  - Claude Code
-  - CI/CD
-  - CICD
-  - CI
-  - CSP
-  - Content Security Policy
-  - DB2
-  - DEV
-  - DNS
-  - DREAD
-  - DevOps
-  - EAP
-  - E2E
-  - FAQ
-  - FCM
-  - IP
-  - ID
-  - JavaScript
-  - LDAP
-  - macOS
-  - MCP
   - MongoDB
   - MySQL
   - Nginx
+  - NSCameraUsageDescription
+  - NuGet
+  - Okta
+  - OneSignal
+  - OpenTelemetry Collector
+  - Oracle
+  - Phosphor
+  - Platform Tab in Oracle
+  - Privacy Policy file
+  - Safari Web Inspector
+  - SAP
+  - SQL Server
+  - TestFlight
+  - Visual Studio
+  - Visual Studio Code
+  - Windows
+
+# Industry
+  - A2A
+  - Accessibility Conformance Report
+  - Accessible Rich Internet Applications
+  - ACR
+  - Agency ATOs
+  - AI
+  - Ajax
+  - API
+  - APIs
   - APM
+  - ARIA
+  - ATO
   - BDD
-  - RUM
-  - TLS
-  - TLS
-  - UI
-  - SAST
-  - REST
+  - CALL
+  - Cascading Style Sheets
+  - CDN
+  - CI
+  - CI/CD
+  - CICD
+  - Content Security Policy
+  - CPU
+  - CSP
+  - CSS
+  - CSV
+  - DELETE
+  - DEV
+  - DevOps
+  - DNS
+  - DOCX
+  - DOM
+  - DREAD
+  - E2E
+  - EAP
+  - EXTRACT
+  - FAQ
+  - FedRAMP
+  - HIPAA
+  - HMAC
   - HTML
   - HTTP
+  - ID
+  - IDE
+  - IdP
+  - IdPs
+  - INSERT
+  - IP
+  - IT
+  - JavaScript
+  - JSON
+  - JSON Web Keys
+  - JWK
+  - JWT
+  - Key Store
+  - LDAP
+  - LLM
+  - Markdown
+  - MCP
+  - OpenID Connect
+  - OWASP
+  - PC
   - PR
-  - UI
+  - PRD
+  - PWA
+  - QA
+  - RAG
+  - README
+  - REST
+  - RSA
+  - RUM
+  - SAML
+  - SAST
+  - SDK
+  - SELECT
+  - SEO
   - SMS
   - SOAP
-  - SDK
-  - QA
-  - PRD
-  - SEO
-  - VPN
-  - URL
-  - XML
-  - README
-  - CPU
-  - SSL
-  - APNs
-  - WCAG 2.2 AA
-  - Accessibility Conformance Report
-  - ACR
   - SOC 2
   - SOC 2 Type II
-# Country
-  - US East
-  - North Virginia
-  - Canada
-  - Central
-  - South America
-  - São Paulo
-  - Europe
-  - London
-  - Ireland
-  - Frankfurt
-  - South Africa
-  - Cape Town
-  - Middle East
-  - Tel Aviv
-  - UAE
+  - SQL
+  - SSL
+  - SSL Pinning
+  - SVG
+  - TLS
+  - TypeScript
+  - UI
+  - UPSERT
+  - URI
+  - URIs
+  - URL
+  - USB
+  - VPN
+  - WCAG 2.2 AA
+  - Web Application Firewall
+  - XML
+  - XSS
+# Regions
   - Asia Pacific
-  - Mumbai
-  - Singapore
-  - Seoul
-  - Tokyo
-  - Hong Kong
-  - Sydney
-  - Jakarta
+  - Canada
+  - Cape Town
+  - Central
   - Europe
+  - Frankfurt
+  - Hong Kong
+  - Ireland
+  - Jakarta
   - London
+  - Middle East
+  - Mumbai
+  - North Virginia
+  - Seoul
+  - Singapore
+  - South Africa
+  - South America
+  - Sydney
+  - São Paulo
+  - Tel Aviv
+  - Tokyo
+  - UAE
+  - US East
 
 # Certifications and Boot Camps
   - Associate Developer exam
   - Boot Camp
-  - Mobile Developer specialization
-  - Front-end Developer specialization
-  - Tech Lead exam
-  - Platform Ops exam
   - Delivery Specialist exam
+  - Front-end Developer specialization
+  - Mobile Developer specialization
+  - Platform Ops exam
+  - Tech Lead exam
   - Web Developer Specialist exam
 
 # Conferences

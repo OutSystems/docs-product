@@ -102,6 +102,9 @@ def parse_verdicts(text: str) -> dict | None:
 def findings_for(text: str, rel: str) -> list[str]:
     """The `- ❌ …` / `- ⚠️ …` bullets under that file's `### <path>` heading.
 
+    `*` bullets count too: the report's wording is the model's, and a `*` list
+    that read as "no findings" would be cached as clean and replayed as a pass.
+
     Matched on the heading's trailing path segment because the report writes
     paths relative to the article while the validation record keys on repo-relative
     ones.
@@ -115,7 +118,7 @@ def findings_for(text: str, rel: str) -> list[str]:
             capturing = stripped.rstrip().endswith(name)
             continue
         if capturing:
-            if stripped.startswith("- "):
+            if stripped.startswith(("- ", "* ")):
                 out.append(stripped[2:].strip())
             elif stripped.startswith("#") or stripped.startswith("</details>"):
                 capturing = False
@@ -204,13 +207,19 @@ def main(argv: list[str]) -> int:
         if not blob:
             # Couldn't hash it, so we could never match it again anyway.
             continue
+        findings = findings_for(text, rel) if verdict == "findings" else []
+        if verdict == "findings" and not findings:
+            # Flagged, but no bullet could be read back. Caching it would
+            # replay the image as a clean pass on the next run.
+            print(f"  ⚠️ {rel}: flagged but no findings could be read back; not cached.")
+            continue
         entry = {
             "hash": blob,
             "skill_version": args.skill_version,
             "validated_at": now,
             "run_id": args.run_id,
             "verdict": verdict,
-            "findings": findings_for(text, rel) if verdict == "findings" else [],
+            "findings": findings,
             "deps": deps if rel == target_rel else {},
         }
         if rel == target_rel and fragment is not None:

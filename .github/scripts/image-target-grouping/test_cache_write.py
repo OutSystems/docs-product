@@ -269,7 +269,56 @@ def test_no_report_skills_cache_on_a_clean_exit() -> None:
         ) == {}, "a failed no-report run must not cache"
 
 
+def test_star_bullets_are_read_as_findings() -> None:
+    """A `* ⚠️` list is read like a `- ⚠️` one, not cached as an empty finding."""
+    out = """
+<!-- VERDICTS {"src/images/b-ss.png":"findings","src/art.md":"clean"} -->
+<!-- REPORT BEGIN -->
+<details>
+<summary>art.md — 1 of 1 need changes</summary>
+
+## Screenshot review: art.md
+
+### src/images/b-ss.png
+
+* ⚠️ Image width is 1865 px, exceeding the 1200 px suggestion (rule 10).
+
+</details>
+"""
+    with tempfile.TemporaryDirectory() as d:
+        tmp = Path(d)
+        art, mpath, opath = _setup(tmp, out)
+        entries = _invoke(tmp, art, mpath, opath)
+    got = entries["src/images/b-ss.png"]["findings"]
+    assert got == ["⚠️ Image width is 1865 px, exceeding the 1200 px suggestion (rule 10)."], got
+
+
+def test_flagged_image_with_unreadable_findings_is_not_cached() -> None:
+    """verdict=findings but no readable bullet must not become a cached pass."""
+    out = """
+<!-- VERDICTS {"src/images/b-ss.png":"findings","src/art.md":"clean"} -->
+<!-- REPORT BEGIN -->
+<details>
+<summary>art.md — 1 of 1 need changes</summary>
+
+## Screenshot review: art.md
+
+### b-ss.png
+
+Width is too large.
+
+</details>
+"""
+    with tempfile.TemporaryDirectory() as d:
+        tmp = Path(d)
+        art, mpath, opath = _setup(tmp, out)
+        entries = _invoke(tmp, art, mpath, opath)
+    assert "src/images/b-ss.png" not in entries, entries.keys()
+
+
 TESTS = [
+    test_star_bullets_are_read_as_findings,
+    test_flagged_image_with_unreadable_findings_is_not_cached,
     test_verdict_block_gives_per_file_granularity,
     test_fragment_captured_regardless_of_sentinel_order,
     test_fragment_ignores_cli_preview_of_details,

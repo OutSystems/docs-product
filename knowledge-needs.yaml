@@ -14756,6 +14756,22 @@ knowledge-needs:
       O11, including the MCP host, agent, Service Studio MCP server,
       OutSystems skill for O11, write-review terms, and context-dependent
       meanings, so they can read the related pages correctly.
+  - name: MCP connection and security
+    id: mcp-connection-security
+    subtopics:
+    - name: Connect MCP host
+      id: connect-mcp-host
+      description: Wants to connect an MCP host to the Service Studio MCP
+        server in O11 by using the local loopback endpoint and the port shown
+        in the MCP Server window, reviewing the supported host and account
+        requirements, and approving the session connection, so that the agent
+        can read and change the open module.
+    - name: Understand MCP data flow
+      id: understand-mcp-data-flow
+      description: Wants to understand how module content and prompts move
+        between the MCP host, its model provider, and the Service Studio MCP
+        server in O11, including what stays on the machine and what leaves it,
+        so they can assess data handling before using OutSystems MCP.
   - name: MCP server capabilities
     id: outsystems-mcp-capabilities
     description: Wants to understand what the Service Studio MCP server reads
@@ -14770,6 +14786,12 @@ knowledge-needs:
         is structured by having the Service Studio MCP agent read its data
         model, logic, and screens, so they can take over the module or plan
         changes to it.
+    - name: Map module dependencies
+      id: map-module-dependencies
+      description: Wants to map the dependencies of an open O11 module and
+        identify which screens and actions use its elements by having the
+        Service Studio MCP agent trace references, so they can assess the
+        impact of changes to shared elements.
     - name: Name platform in requests
       id: name-platform-in-requests
       description: Wants to state the O11 platform and the open module in requests when the MCP host also connects to ODC, so the request reaches the Service Studio MCP server instead of ODC.
@@ -15803,6 +15825,13 @@ knowledge-needs:
       description: Wants to look up the Camera plugin's API reference so that they
         can implement camera and gallery functionality in a mobile app using this
         legacy plugin.
+    - name: Barcode plugin O11
+      id: barcode-plugin-o11
+      description: Wants to use the Barcode Plugin in an O11 mobile app by configuring
+        the ScanBarcode action, checking plugin availability and scan results,
+        reviewing supported barcode formats and scanning options, and handling
+        platform-specific limitations, so that the app can scan barcodes reliably
+        on native mobile apps and PWAs.
     - name: Location plugin reference
       id: location-plugin-reference
       description: Wants to look up the Location plugin actions (CheckLocationPlugin,
@@ -16236,8 +16265,8 @@ knowledge-needs:
         the plugin via window.CapacitorPlugins, using the library in the
         app, and building the mobile package, so that the plugin's native
         functionality becomes available to the app.
-    - name: Barcode plugin reference
-      id: barcode-plugin-reference
+    - name: Barcode plugin ODC
+      id: barcode-plugin-odc
       description: Wants to use the Barcode Plugin in an ODC app to scan 1D and
         2D barcodes by configuring the ScanBarcode action, checking plugin
         availability, reviewing supported formats and scanning options, and

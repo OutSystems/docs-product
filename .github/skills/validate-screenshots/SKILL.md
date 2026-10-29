@@ -258,7 +258,9 @@ NOTE <image relative path> | rule <N> | <evidence in a few words> | pass|fail
   image's theme and the mandate for its suffix, for example `dark, suffix -odcs
   mandates light`.
 
-A `fail` becomes a finding in Step 5, worded as this skill's rules say.
+A `fail` becomes a finding in Step 5, worded as this skill's rules say. A rule
+that only warns (⚠️, such as width) is a `fail` here too: the last field is
+always `pass` or `fail`, never `warning`.
 Nothing moves to Step 3 until every non-cached image has all of these lines.
 
 ### Extract the Figma link (once per article)
@@ -278,8 +280,16 @@ article in the header. In the common single-article case, one line is enough.
 
 Only when Step 2 is complete. Open `references/auto-fix-scope.md` and classify
 every finding of a non-cached entry as AUTO_FIX or FLAG_ONLY (a cached entry is
-never fixed: its findings are reused as they are). With no AUTO_FIX finding,
-skip to Step 5 and don't touch Figma.
+never fixed: its findings are reused as they are). Warnings (⚠️) are findings
+like any other: classify them too, and fix the ones the scope lists. Print one
+line per finding, before anything else of this step:
+
+```
+FIX DECISION <image relative path> | rule <N> | AUTO_FIX|FLAG_ONLY
+```
+
+A run with at least one `fail` NOTE and no FIX DECISION line has skipped this
+step. With no AUTO_FIX finding, skip to Step 5 and don't touch Figma.
 
 * **Interactive session** (a user is present): ask once with AskUserQuestion,
   "N findings can be fixed automatically in Figma and the images re-exported.
@@ -437,6 +447,8 @@ Rules:
   nothing to fix.
 * Putting ❌ or ⚠️ on a fixed line, or repeating the fixed lines inside the
   report. The fixes block is posted separately so it survives the next run.
+* Treating a ⚠️ finding as not worth a fix. Warnings go through Step 3 like
+  failures; only the scope file says what is fixed.
 * Committing or pushing. The changes stay in the working tree.
 
 ## Calibration (one-off)

@@ -5543,6 +5543,11 @@ knowledge-needs:
         VerifySqlLiteral() and avoiding Expand Inline on end-user input when
         inline SQL is unavoidable, so that attacker-controlled input can't
         alter the query's SQL structure.
+    - name: Avoid exposing literals in SQL nodes
+      id: parameterize-sql-nodes
+      description: Wants to parameterize SQL nodes instead of concatenating
+        literal values, so that those values aren't exposed to users with
+        view-source permission.
     - name: ODC injection defense overview
       id: odc-injection-defense-overview
       description: Wants to understand the main layers of injection defense
@@ -25435,6 +25440,97 @@ knowledge-needs:
         code of an OutSystems mobile native shell using the supported
         development tools, so that the application runs independently of
         OutSystems after detaching.
+- name: Database performance monitoring
+  guid: 6f4e7916-4dfa-4a7f-93b0-d67d722f1973
+  topics:
+  - name: Why monitor database performance
+    id: why-monitor-database-performance
+    description: Tech lead wants to understand why database performance
+      monitoring matters and how it fits with logs and traces, so that they can
+      decide when to use it to diagnose app performance problems.
+  - name: Choose a monitoring approach
+    id: choose-monitoring-approach
+    description: Tech lead wants to decide when to use an external APM tool to
+      monitor database performance proactively, so they can plan monitoring for
+      their apps.
+  - name: Streamed database metrics
+    id: streamed-database-metrics
+    description: Platform administrator wants to know which database metrics the
+      stream includes and excludes, so they can set up dashboards and alerts in
+      their APM tool.
+  - name: Interpret ACU and AAS
+    id: interpret-acu-aas
+    description: Architect wants to understand what ACU and AAS measure, so they
+      can interpret database capacity and load.
+  - name: Read ACU and AAS together
+    id: read-acu-aas-together
+    description: Architect wants to know how to read ACU and AAS together, so
+      they can assess database capacity and load.
+  - name: Data freshness
+    id: data-freshness
+    description: Tech lead wants to know how current each type of database
+      monitoring data is, so they can interpret what they see at a given time.
+  - name: Data retention
+    id: data-retention
+    description: Tech lead wants to know how long each type of database
+      monitoring data is kept, so they can review historical performance.
+  - name: Select an analysis window
+    id: select-analysis-window
+    description: Wants to choose an analysis period for database performance
+      monitoring, so they can see patterns over the time frame that matters.
+  - name: Find the highest-load queries
+    id: find-highest-load-queries
+    description: Tech lead wants to find the queries that drive the most load
+      across a stage or in one app, so they can focus their investigation.
+  - name: Prioritize queries by load and frequency
+    id: prioritize-queries-load-frequency
+    description: Tech lead wants to rank queries by load and how often they run,
+      so they can spend time on the queries with the most total impact.
+  - name: Decide whether to investigate a query
+    id: decide-investigate-query
+    description: Developer wants to decide whether a query needs investigation,
+      based on how often it runs and any reported performance problems, so they
+      don't spend time on rare, expensive queries.
+  - name: Locate the app and element behind a query
+    id: locate-app-element-query
+    description: Developer wants to find which app and element generated a
+      query, so they can find the code to investigate.
+  - name: Why some queries show Unknown element
+    id: unknown-element-queries
+    description: Developer wants to understand why some queries show Unknown
+      element, so they don't mistake a monitoring gap for a fault.
+  - name: Unknown element after redeploys
+    id: unknown-element-after-redeploy
+    description: Developer wants to know how the Unknown element label changes
+      after a redeploy, so they can tell when attribution has improved.
+  - name: Statement text visibility
+    id: statement-text-visibility
+    description: Platform administrator wants to know who can see statement text
+      and when it is redacted, so they can grant access correctly.
+  - name: When monitoring can't help
+    id: monitoring-limits-locks
+    description: Developer wants to know that monitoring doesn't detect lock
+      contention, so they know when to involve the database team.
+  - name: Escalate a query owned by another app
+    id: escalate-query-other-app
+    description: Tech lead wants to escalate a query owned by another app using
+      its asset and element name, without seeing its SQL text, so they can get
+      the owning team to investigate.
+  - name: Correlate load with request volume
+    id: correlate-load-request-volume
+    description: Tech lead wants to correlate database load with app request
+      volume by reading App Health and the database view over the same time
+      window, so they can tell whether load comes from more requests.
+  - name: Grant AppMonitor access
+    id: grant-appmonitor-access
+    description: Platform administrator wants to grant the AppMonitor permission
+      separately from the view-source permission, so that users see stage
+      metrics and ranked queries without seeing statement text.
+  - name: Diagnose missing queries or missing SQL
+    id: diagnose-missing-queries-sql
+    description: Platform administrator wants to tell apart a stage that shows
+      metrics but no queries from a query list that shows no SQL text, so they
+      can identify the correct cause.
 - name: ODC production hotfixing
   guid: facc0650-4e30-4a8b-bd88-73c9bb0d3bfd
   topics:

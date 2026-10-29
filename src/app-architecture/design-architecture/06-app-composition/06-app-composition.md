@@ -20,7 +20,7 @@ coverage-type:
   - understand
   - evaluate
 topic:
-  - application-composition
+  - validate-app-composition
 ---
 
 # Application composition

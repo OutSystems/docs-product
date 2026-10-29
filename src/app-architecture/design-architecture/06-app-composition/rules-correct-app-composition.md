@@ -21,7 +21,8 @@ coverage-type:
   - evaluate
   - understand
 topic:
-  - application-composition
+  - app-ownership-cadence
+  - validate-app-composition
 ---
 
 # The 4 Rules for Correct Application Composition

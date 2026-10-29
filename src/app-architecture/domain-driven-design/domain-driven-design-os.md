@@ -21,7 +21,10 @@ coverage-type:
   - evaluate
   - understand
 topic:
+  - decide-when-to-adopt-ddd
+  - decompose-business-areas-into-domains
   - domain-driven-design
+  - validate-domain-driven-architecture
 ---
 
 # Domain Driven Design with OutSystems

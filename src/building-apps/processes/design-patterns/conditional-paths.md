@@ -17,6 +17,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
+  - decision-activity-outcomes
   - process-decision-patterns
 ---
 

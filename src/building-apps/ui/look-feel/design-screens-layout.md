@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - layouts
+  - use-block-placeholders
 ---
 
 # Design the Layout of Screens Using Placeholders

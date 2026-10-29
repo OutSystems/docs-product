@@ -23,7 +23,7 @@ coverage-type:
   - apply
   - unblock
 topic:
-  - using-cordova-plugins
+  - barcode-plugin-o11
 isautopublish: true
 ---
 

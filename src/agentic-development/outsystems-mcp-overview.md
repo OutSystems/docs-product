@@ -8,6 +8,9 @@ coverage-type:
 content-type:
   - conceptual
 topic:
+  - connect-mcp-host
+  - mcp-terminology
+  - understand-mcp-data-flow
 app_type: reactive web apps
 platform-version: o11
 audience:

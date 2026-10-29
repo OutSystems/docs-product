@@ -8,6 +8,9 @@ coverage-type:
 content-type:
   - conceptual
 topic:
+  - explain-module
+  - map-module-dependencies
+  - review-module-quality
 app_type: reactive web apps
 platform-version: o11
 audience:

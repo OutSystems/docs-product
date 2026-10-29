@@ -6,7 +6,9 @@ description: >-
 
   Use when a content developer wants to create a specific diagram without going
   through article analysis. For auditing an article and deciding where diagrams
-  are needed, use /suggest-visuals instead.
+  are needed, use /suggest-visuals instead. For a process in which two or more
+  roles or tools hand work to each other across two or more phases, use
+  /process-swimlane-diagram instead.
 
   Trigger phrases: "create a diagram", "make a diagram", "I want a diagram",
   "new diagram", "create a mermaid diagram", "generate a diagram".
@@ -57,7 +59,13 @@ Ask the user two questions in a single AskUserQuestion call:
 
 ### Step 3: Select diagram type
 
-Using visual-rules.md, cross-reference the audience and purpose to select the most
+First, check whether the description is a swimlane process: two or more roles or
+tools hand work to each other, and the process has two or more phases. If it is,
+stop here and use the `process-swimlane-diagram` skill instead of generating
+Mermaid, because Mermaid can't align role lanes with phase columns. Tell the user
+why you switched.
+
+Otherwise, using visual-rules.md, cross-reference the audience and purpose to select the most
 appropriate Mermaid diagram type:
 
 * Process or workflow → `flowchart TD` / `flowchart LR` / `sequenceDiagram`

@@ -20,6 +20,7 @@
 ## High-level process
 
 * Add a high-level diagram (For example, sequence diagram, flow chart) to describe the tasks involved.
+* When two or more roles or tools take part and the process has phases, use a swimlane diagram, which the `process-swimlane-diagram` skill creates.
 * Use a lead-in sentence followed by a bulleted or numbered list of high-level tasks.
 * Focus on describing tasks, not detailed step-by-step instructions.
 * Answer key questions:

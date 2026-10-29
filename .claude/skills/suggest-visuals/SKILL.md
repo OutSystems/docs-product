@@ -10,7 +10,9 @@ description: >-
   Use when a content developer wants to audit an article for missing visuals, or
   when asked to "add diagrams", "suggest visuals", "diagram this article", or
   "add visuals to my article". For creating a standalone diagram without an article,
-  use /create-diagram instead.
+  use /create-diagram instead. When a section describes a process in which two or
+  more roles or tools hand work to each other across two or more phases, it proposes
+  a swimlane diagram, created with /process-swimlane-diagram, instead of Mermaid.
 
   Trigger phrases: "add diagrams", "diagram this article", "suggest visuals",
   "add visuals to my article".
@@ -92,7 +94,14 @@ assess whether a diagram would materially aid comprehension:
 * Sections with fewer than 3 relationships or steps to show
 * Sections that already have a diagram
 
-For each good candidate, pick the Mermaid diagram type from the section content
+**Swimlane check:** if a candidate section describes a process in which two or more
+roles or tools hand work to each other, and the process has two or more phases, mark
+it as a swimlane candidate instead of picking a Mermaid type. Mermaid can't align role
+lanes with phase columns. In Step 5, propose it with **Diagram type:** `Swimlane (SVG and
+PNG)`. If the user answers **yes**, don't insert Mermaid. Use the
+`process-swimlane-diagram` skill to create the diagram and insert it.
+
+For each remaining good candidate, pick the Mermaid diagram type from the section content
 (process, interaction, hierarchy, topology, data model) using the Diagram Type
 Reference in visual-rules.md. Then use the audience row in visual-rules.md to
 shape the diagram's complexity and focus — which nodes to show, how abstract or

@@ -1,0 +1,49 @@
+{
+  "width": 1372,
+  "height": 640,
+  "card_width": 150,
+  "card_height": 60,
+  "phases": [
+    {"number": 1, "title": "Make content searchable", "x": 206},
+    {"number": 2, "title": "Add search to your app", "x": 798},
+    {"number": 3, "title": "Test the search", "x": 1174}
+  ],
+  "dividers": [748, 1154],
+  "lanes": [
+    {"label": "Administrator", "tool": "ODC Portal", "top": 96, "bottom": 208},
+    {"label": "ODC platform", "top": 212, "bottom": 410},
+    {"label": "Developer", "tool": "ODC Studio", "top": 414, "bottom": 604}
+  ],
+  "captions": [
+    {"x": 206, "y": 118, "text": "Knowledge base"},
+    {"x": 206, "y": 506, "text": "Text or File attributes"},
+    {"x": 1249, "y": 556, "text": "After indexing finishes", "anchor": "middle"}
+  ],
+  "cards": [
+    {"id": "create_kb", "x": 206, "y": 130, "lines": ["Create a", "knowledge base"]},
+    {"id": "upload", "x": 392, "y": 130, "lines": ["Upload files"]},
+    {"id": "generate", "x": 206, "y": 232, "lines": ["Generate the", "search action"]},
+    {"id": "index_files", "x": 578, "y": 232, "lines": ["Index the", "uploaded files"]},
+    {"id": "index_records", "x": 578, "y": 336, "lines": ["Index the", "entity records"]},
+    {"id": "add_action", "x": 798, "y": 430, "lines": ["Add the", "SearchKB action"]},
+    {"id": "select", "x": 206, "y": 520, "lines": ["Select searchable", "attributes"]},
+    {"id": "publish", "x": 392, "y": 520, "lines": ["Publish the app"]},
+    {"id": "add_node", "x": 798, "y": 520, "lines": ["Add the Semantic", "Search node"]},
+    {"id": "use", "x": 984, "y": 475, "lines": ["Use the results"]},
+    {"id": "run", "x": 1174, "y": 475, "lines": ["Publish and", "run a search"]},
+    {"id": "results", "x": 1174, "y": 283, "lines": ["Return ranked", "results"]}
+  ],
+  "edges": [
+    {"from": "create_kb", "from_side": "right", "to": "upload", "to_side": "left"},
+    {"from": "create_kb", "from_side": "bottom", "to": "generate", "to_side": "top"},
+    {"from": "upload", "from_side": "right", "via": [[653, 160]], "to": "index_files", "to_side": "top"},
+    {"from": "generate", "from_side": "bottom", "via": [[281, 313], [773, 313], [773, 460]], "to": "add_action", "to_side": "left"},
+    {"from": "select", "from_side": "right", "to": "publish", "to_side": "left"},
+    {"from": "publish", "from_side": "top", "via": [[467, 366]], "to": "index_records", "to_side": "left"},
+    {"from": "publish", "from_side": "right", "to": "add_node", "to_side": "left"},
+    {"from": "add_node", "from_side": "right", "via": [[966, 550], [966, 505]], "to": "use", "to_side": "left"},
+    {"from": "add_action", "from_side": "right", "via": [[966, 460], [966, 505]], "to": "use", "to_side": "left"},
+    {"from": "use", "from_side": "right", "to": "run", "to_side": "left"},
+    {"from": "run", "from_side": "top", "to": "results", "to_side": "bottom"}
+  ]
+}

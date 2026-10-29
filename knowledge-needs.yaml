@@ -5695,6 +5695,12 @@ knowledge-needs:
         tools, and following rules like trusting no one, least privilege,
         and secure coding practices, so that applications are designed
         securely from the start.
+    - name: Shared responsibility
+      id: shared-responsibility-overview
+      description: Wants to understand how OutSystems and organizations divide
+        responsibility for application security, including platform protections,
+        organizational controls, and secure development practices, so they can
+        apply the right safeguards when building ODC applications.
     - name: Insecure design basics
       id: insecure-design-basics
       description: Wants to recognize insecure design by identifying missing or
@@ -11065,11 +11071,11 @@ knowledge-needs:
       id: boolean-input-widgets
       description: Wants to choose a Check Box or Switch widget for boolean input in a reactive web form, and bind it to a Boolean screen variable, so the form stores true or false values correctly.
     - name: Use Button Group widget
-      id: use-button-group-pattern-mobile-reactive-o11
-      description: Wants to add and configure the Button Group widget in
-        Service Studio for OutSystems 11, bind it to a variable, and set each
-        item's value and label, so that users can choose one option from a
-        grouped set of buttons in mobile apps and reactive web apps.
+      id: use-button-group-widget
+      description: Wants to add and configure the Button Group widget, bind it
+        to a variable, and set each item's value and label, so that users can
+        choose one option from a grouped set of buttons in supported mobile apps
+        and reactive web apps.
     - name: Button Group variable
       id: button-group-variable
       description: Wants to identify that the Button Group Variable property belongs to the widget, not each Button Group Item, so they can distinguish widget-level and item-level properties when configuring a reactive web form in OutSystems 11.

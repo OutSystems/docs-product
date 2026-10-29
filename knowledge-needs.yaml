@@ -25429,3 +25429,89 @@ knowledge-needs:
         code of an OutSystems mobile native shell using the supported
         development tools, so that the application runs independently of
         OutSystems after detaching.
+- name: ODC Platform Access Control
+  guid: 114572e8-b46d-4e16-942b-b4d3842660d0
+  topics:
+  - name: Why IP filters matter
+    id: why-ip-filters-matter
+    description: Platform administrator wants to understand why IP filters are
+      necessary for protecting the ODC platform and infrastructure from external
+      attacks, so they can make informed security decisions.
+  - name: IP filter layers and scope
+    id: ip-filter-layers-scope
+    description: Platform administrator wants to understand the difference
+      between platform-level and app-level IP filters and their scope, so they
+      can plan an access control strategy.
+  - name: Plan IP filter implementation
+    id: plan-ip-filter-implementation
+    description: Platform administrator wants to assess organizational needs for
+      IP filters and gather the network information they need, so they can plan
+      the implementation.
+  - name: IP rule evaluation order
+    id: ip-rule-evaluation-order
+    description: Platform administrator wants to understand how IP filter rules
+      are evaluated, how rule order affects the result, and identify rules that
+      are shadowed by earlier rules, so they can order their rules correctly.
+  - name: Default actions for IP filter rules
+    id: ip-rule-default-actions
+    description: Platform administrator wants to know what happens when no IP
+      filter rule matches a request, so they can plan their default behavior.
+  - name: CIDR notation and IP formats
+    id: cidr-notation-ip-formats
+    description: Platform administrator wants to understand CIDR notation,
+      subnet masks, and how to convert between single IPs and IP ranges, so they
+      can correctly format IP addresses in rules.
+  - name: Configure platform-level IP filters
+    id: configure-platform-level-filters
+    description: Platform administrator wants to step-by-step configure
+      platform-level IP filters across the ODC platform, so they can restrict
+      access to internal networks only.
+  - name: Troubleshoot access denied errors
+    id: troubleshoot-access-denied
+    description: Platform administrator wants to diagnose why an IP is blocked
+      and verify rules are correctly configured, so they can resolve access
+      denied errors.
+  - name: Recover from lockout
+    id: recover-from-lockout
+    description: Platform administrator wants to understand how to regain access
+      if locked out by IP restrictions and when to contact support, so they can
+      restore platform access in an emergency.
+  - name: Verify IP restrictions are in place
+    id: verify-ip-restrictions
+    description: Platform administrator wants to confirm that IP restrictions
+      are active for the ODC Portal, Studio, and APIs, so they can show the
+      restrictions are in place.
+  - name: Track changes to IP rules
+    id: track-ip-rule-changes
+    description: Platform administrator wants to see who changed IP rules and
+      when, so they can review changes to access control.
+  - name: Find IP-filter denials in audit logs
+    id: find-ip-filter-denials
+    description: Platform administrator wants to find requests blocked by IP
+      filters in the audit logs, so they can investigate access problems.
+  - name: Export audit logs to a SIEM
+    id: export-audit-logs-siem
+    description: Platform administrator wants to export IP-related audit logs to
+      a SIEM tool, so they can keep logs longer than the product retains them.
+  - name: Generate IP compliance reports
+    id: generate-ip-compliance-reports
+    description: Platform administrator wants to generate a report of IP
+      restriction settings, so they can show compliance during audits.
+  - name: Apply IP filters to apps and app groups
+    id: apply-ip-filters-apps
+    description: Platform administrator wants to apply IP filters to individual
+      apps and app groups, so they can restrict access to specific apps.
+  - name: Identify access paths that bypass IP restrictions
+    id: identify-bypass-paths
+    description: Platform administrator wants to identify the access paths that
+      bypass IP restrictions, so they can close them before relying on the
+      restrictions.
+  - name: Restrict access from a VPN or jump host
+    id: restrict-vpn-jump-host
+    description: Platform administrator wants to restrict access to the ODC
+      Portal from a VPN or jump host, so that only trusted network paths can
+      reach the platform.
+  - name: Check whether a plan includes IP restrictions
+    id: check-plan-entitlement
+    description: Platform administrator wants to check whether their plan
+      includes IP restrictions, so they know whether they can use them.

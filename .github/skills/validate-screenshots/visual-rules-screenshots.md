@@ -392,7 +392,9 @@ rectangle.
 * **Check:** the PNG's pixel width is at most 1200 px. Wider captures render
   poorly on the docs site and are hard to re-use. Heights are not
   constrained. **Verdict comes from `scripts/check_metadata.py`
-  (`width.verdict` and `width.px`).**
+  (`width.verdict` and `width.px`).** Diagrams (`-diag`) are exempt: they can
+  be wider than 1200 px because their information would not fit otherwise,
+  and shrinking one makes it unreadable. Never report or resize their width.
 * **Pass example:** `aggregate-server-side-ss.png` (533 × 593).
 * **Fail example:** any export wider than 1200 px — e.g. a full retina
   editor grab at 2560 × 1440.

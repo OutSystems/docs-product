@@ -134,8 +134,9 @@ For every entry that is **not** cached:
 
    * `check_metadata.py` prints JSON covering rule 1 (PNG format), rule 2
      (filename regex + surface suffix, including double-suffix detection),
-     and rule 10 (width ≤ 1200 px). Parse the JSON and use each verdict
-     directly.
+     and rule 10 (width ≤ 1200 px; a `-diag` diagram is exempt and gets a
+     `skip` verdict, which is not a finding). Parse the JSON and use each
+     verdict directly.
    * `has_shadow.py` prints one of `shadow: true` / `shadow: wrong` /
      `shadow: false` / `shadow: inconclusive` / `shadow: unknown` for
      rule 6. Map them to severity as follows:
@@ -258,6 +259,9 @@ NOTE <image relative path> | rule <N> | <evidence in a few words> | pass|fail
   image's theme and the mandate for its suffix, for example `dark, suffix -odcs
   mandates light`.
 
+A rule whose verdict is `skip` (rule 10 on a `-diag` diagram) is written as
+`pass`, with `exempt diagram` as the evidence; it is never a finding and never
+reaches Step 3.
 A `fail` becomes a finding in Step 5, worded as this skill's rules say. A rule
 that only warns (⚠️, such as width) is a `fail` here too: the last field is
 always `pass` or `fail`, never `warning`.

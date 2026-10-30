@@ -21,6 +21,7 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+  - unblock
 isautopublish: true
 ---
 
@@ -34,7 +35,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Master Detail Pattern to display a master list of items and their related details, for example, a list of employees and their corresponding details.
 
-![Example of a Master Detail pattern interface showing a list of items and their details](images/masterdetail-2.png "Master Detail Pattern Example")
+![Example of a Master Detail pattern interface showing a list of items and their details](images/masterdetail-2-sa.png "Master Detail Pattern Example")
 
 ## How to use the Master Detail UI Pattern
 
@@ -186,7 +187,7 @@ Next, add the relationship between each tab and the content panel so screen read
 
 1. In the **Widget Tree**, select the **List** inside the **Master Detail**.
 
-1. In **List** **Properties** > **Attributes**, add the `aria-label` attribute and set its value for `Employee list navigation`, for example.
+1. In **List** **Properties** > **Attributes**, add the `aria-label` attribute and set its value for `Employee list navigation` (Name), for example.
 
     <div class="info" markdown="1">
 
@@ -200,7 +201,9 @@ Next, add the relationship between each tab and the content panel so screen read
     ToLower(GetEmployees.List.Current.IsSelected)
     ```
 
-    ![Example of how to set aria-selected attribute to a List Item in Service Studio](images/masterdetail-addariaselectedtolistitem-ss.png "Setting aria-selected attribute to List Item")
+1. Add the `data-id` attribute and set its value based on `Employee list navigation`. This attribute is used later to find the selected list item and link it to the detail content.
+
+    ![Example of how to set aria-selected and data-id attributes to a List Item in Service Studio](images/masterdetail-addariaselectedtolistitem-ss.png "Setting aria-selected and data-id attributes to List Item")
 
 ### Set aria-labelledby to Master Detail Content
 
@@ -210,7 +213,7 @@ Next, add the relationship between each tab and the content panel so screen read
 
 1. Create a **Client Action** and name it `SetSelected`.
 
-     ![Example of a Client Action in Service Studio](images/masterdetail-createsetselected-ss.png "Creating a Client Action")
+    ![Example of a Client Action in Service Studio](images/masterdetail-createsetselected-ss.png "Creating a Client Action")
 
 1. In the `SetSelected` action add an input parameter `EmployeeId`, `Sample_Employee Identifier` type.
 
@@ -232,17 +235,17 @@ Next, add the relationship between each tab and the content panel so screen read
 
 1. Add a **List Index Of** to the flow action, name it `GetNewSelectedIndex`, and set the **List** to `GetEmployees.List` and its condition to `Sample_Employee.Id = GetNewSelected.FilteredList.Current.Sample_Employee.Id`.
 
-       ![Example of how to add a LisIndexOf widget to the action flow in Service Studio](images/masterdetail-filternewselected-ss.png "Adding a ListIndexOf widget to the action flow") 
+    ![Example of how to add a LisIndexOf widget to the action flow in Service Studio](images/masterdetail-filternewselected-ss.png "Adding a ListIndexOf widget to the action flow")
 
 1. Add an **If** with the following condition: `GetNewSelectedIndex.Position > -1`.
 
 1. In the **If's** **True** branch add an **Assign** with the following assignment: `GetEmployees.List[GetNewSelectedIndex.Position].IsSelected=True`.
 
-     ![Example of how to add an assign in the action flow in Service Studio](images/masterdetail-setnewselected-ss.png "Adding an assign in the action flow")
+    ![Example of how to add an assign in the action flow in Service Studio](images/masterdetail-setnewselected-ss.png "Adding an assign in the action flow")
 
 1. In the **False** branch add a **List Filter**, and set SourceList as GetEmployees.List and its condition as `SelectedEmployee=GetNewSelected.FilteredList.Current.Sample_Employee`.
 
-     ![Example of how to set a List Filter in an action flow in Service Studio](images/masterdetail-selectedemployee-ss.png "Setting a List Filter in an action flow")
+    ![Example of how to set a List Filter in an action flow in Service Studio](images/masterdetail-selectedemployee-ss.png "Setting a List Filter in an action flow")
 
 1. Add a **JavaScript node** to the flow, name it `GetHtmlIdOfSelectedItem` and add an **Input Parameter** `CurrEmployeeId`.
 

@@ -1674,6 +1674,9 @@ knowledge-needs:
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
+    - name: Identifier defaults
+      id: identifier-defaults
+      description: Wants to understand the default data type and Auto Number setting for an entity Identifier in Service Studio for OutSystems 11, so they can recognize the generated identifier configuration when modeling data.
     - name: Database auto numbers
       id: database-auto-numbers
       description: Wants to understand how OutSystems implements an Integer attribute with IsAutoNumber set to Yes in SQL Server and Oracle, so they know which database objects are created and why the generated values can differ across environments.
@@ -3492,12 +3495,23 @@ knowledge-needs:
     id: data-performance-caching
     subtopics:
     - name: Invalidate app cache
-      id: invalidate-app-cache
-      description: Wants to invalidate server-side caches (from Aggregates,
-        Advanced SQL queries, and server actions using Cache in Minutes) for
-        the calling application across all replicas in ODC, using the
-        ApplicationInvalidateCache system action, so that stale cached data
-        doesn't linger after underlying data changes.
+      id: invalidate-odc-cache
+      description: Wants to invalidate server-side caches for the calling application
+        across all replicas in ODC, using the ApplicationInvalidateCache system
+        action, so that stale cached data doesn't linger after underlying data
+        changes.
+    - name: Invalidate O11 cache
+      id: invalidate-o11-cache
+      description: Wants to invalidate cached elements in OutSystems 11
+        multitenant applications by using the EspaceInvalidateCache and
+        TenantInvalidateCache system actions, so that stale cached data is
+        removed after application or tenant data changes.
+    - name: Configure element caching
+      id: configure-element-caching
+      description: Wants to configure caching for supported elements in
+        OutSystems 11 by setting the Cache in Minutes property and checking
+        input parameter restrictions, so that frequently accessed content
+        loads efficiently.
     - name: Optimize data transfer
       id: optimize-data-transfer
       description: Wants to understand how OutSystems 11 optimizes server-to-client
@@ -7968,6 +7982,11 @@ knowledge-needs:
         Process activity in OutSystems 11, so that the runtime creates a
         sub-process instance, pauses the parent until the sub-process terminates,
         and then resumes the parent flow.
+    - name: Design process patterns
+      id: design-process-patterns
+      description: Wants to apply process design patterns when designing an
+        OutSystems 11 process, so that the process flow is easier to read and
+        performs better.
     - name: Conditional process start
       id: conditional-process-start-o11
       description: Wants to configure a conditional start in an OutSystems 11 process so it starts on create or update entity events and only listens after a dependency source activity has executed.
@@ -8644,6 +8663,9 @@ knowledge-needs:
     - name: Choose execution model
       id: choose-execution-model
       description: Wants to choose how automated tests run, including local, scheduled, or CI/CD execution, based on feedback speed, manual intervention, environment isolation, and team capabilities, so they can align test execution with their automation goals.
+    - name: Define automation goals
+      id: define-automation-goals
+      description: Wants to define the goals and context for introducing test automation, including release speed, technical debt, testability, and continuous testing, so the team can choose suitable tactics and align its automation strategy.
     - name: Manage test data
       id: manage-test-data
       description: Wants to manage test data for automated tests by separating master data, test-specific data, and external data, so tests stay idempotent, reliable, and fast.
@@ -11180,6 +11202,11 @@ knowledge-needs:
       description: Wants to understand what OutSystems widgets are, how they help
         design and organize screen content, and what common widget types do, so
         they can choose the right widget for a screen.
+    - name: Button and link behavior
+      id: button-and-link-behavior
+      description: Wants to identify the navigation, submission, and enclosure
+        capabilities of Button and Link widgets in a Traditional Web App (O11),
+        so they can distinguish true and false statements about these widgets.
     - name: Toolbox widgets
       id: toolbox-widgets
       description: Wants to identify that OutSystems UI and Rich Widgets are available in the
@@ -25118,6 +25145,12 @@ knowledge-needs:
         or junk folders, by using the confirmation number and last name on
         the Prometric Score Report portal, so that they can see which exam
         topics they passed or failed.
+    - name: Exam format overview
+      id: exam-format-overview
+      description: Wants to understand the requirements, format, question
+        count, passing score, duration, and version-specific scope of an
+        OutSystems certification exam, by reviewing the exam detail sheet, so
+        that they know what to expect before registering or preparing.
     - name: Missing exam appointment
       id: missing-exam-appointment
       description: 'Wants to get their exam appointment details when they
@@ -25164,6 +25197,11 @@ knowledge-needs:
         and the reasons behind an "Invalid voucher" error (expired, wrong
         exam type, or already used), so that they can successfully apply the
         discount without registration issues.
+    - name: Prepare for certification exam
+      id: prepare-for-certification-exam
+      description: Wants to prepare for an OutSystems certification exam, by
+        reviewing its topic categories and recommended training, documentation,
+        and technical resources, so that they can plan their study.
   - name: Community account overview
     id: community-account-overview
     subtopics:

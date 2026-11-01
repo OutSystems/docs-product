@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) revolutionizes configuration management with automated versioning and streamlined deployment processes.
+summary: OutSystems 11 (O11) configuration management covers version tagging, deployment plans, and environment-specific settings without redeploying code.
 guid: 101e446d-c525-4d85-ad1a-2e4ca67c7045
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

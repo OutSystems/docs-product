@@ -1253,6 +1253,11 @@ knowledge-needs:
         maintainability, including architecture validation, development best
         practices, peer review, and code review, so they can apply them
         throughout development.
+    - name: Low-Code Review component
+      id: low-code-review-component
+      description: Wants to use the Low-Code Review component to manage
+        technical debt in an OutSystems app, so that code review findings are
+        tracked and addressed during development.
     - name: Custom CSS best practices
       id: application-custom-css-practices
       description: Wants to follow best practices when adding custom CSS to an
@@ -16812,8 +16817,8 @@ knowledge-needs:
         entities that have a large number of attributes, or complex queries
         returning many attributes, throw Out Of Memory exceptions due to a
         SQLite plugin limitation in how Android handles JSON objects
-        internally, so that they can keep entities under the 50-attribute
-        threshold and avoid the issue.
+        internally, so that they can keep entities within the plugin's
+        supported attribute limit and avoid the issue.
     - name: Persist screen state
       id: persist-screen-state
       description: Wants to maintain field values entered on a mobile screen (for
@@ -20012,6 +20017,13 @@ knowledge-needs:
         settings, proxy configuration, client secret and client ID values,
         redirect URIs, and IdP response codes, so that they can restore
         external IdP sign-in.
+    - name: Users app lockout
+      id: users-app-lockout
+      description: Wants to regain access to the OutSystems 11 Users app
+        after being locked out because an incorrectly configured external
+        authentication method prevents all logins, by using the default
+        Users app login page with a UserManager administrator account, so
+        that they can correct the authentication settings.
     - name: Change authentication provider
       id: change-authentication-provider
       description: Wants to change an OutSystems 11 environment's
@@ -24039,22 +24051,33 @@ knowledge-needs:
       id: gather-monitoring-api-data
       description: Wants to gather application operations data (request duration,
         browser load time, server time, error counts) using the Monitoring API's
-        GET RequestEvents method or by querying log data, and optionally register
-        custom events via POST RequestEvents or LogMessage, so that they have the
-        raw data needed to build custom alerts.
+        GET RequestEvents method or by querying log data, so that they have the raw
+        data needed to build custom alerts.
+    - name: Register custom monitoring events
+      id: register-custom-monitoring-events
+      description: Wants to register custom events via the Monitoring API's POST
+        RequestEvents method or LogMessage, so that they can include application-
+        specific events in custom alerts.
     - name: Define alert thresholds
       id: define-alert-thresholds
       description: Wants to consume Monitoring API data or log data and define custom
         logic with thresholds that trigger alerts, using OutSystems logic or a
         third-party application, so that they can detect when application metrics
         cross acceptable limits.
-    - name: Integrate alerts ITSM
-      id: integrate-alerts-itsm
-      description: Wants to trigger email notifications or call webservices when
-        an alert threshold is met, to create tickets in ITSM tools such as
-        ServiceNow, Zendesk, Jira, or Opsgenie, send Slack messages, or integrate
-        with any webservice-exposing external service, so that operational alerts
-        reach the right external system.
+    - name: Create ITSM tickets from alerts
+      id: create-itsm-tickets-from-alerts
+      description: Wants to send operational alerts to ITSM tools when an alert
+        threshold is met, so that the alerts create tickets for operational
+        follow-up.
+    - name: Send alerts to collaboration tools
+      id: send-alerts-to-collaboration-tools
+      description: Wants to send operational alerts to collaboration tools when
+        an alert threshold is met, so that the right teams receive notifications
+        for operational follow-up.
+    - name: Send alerts through webhooks
+      id: send-alerts-through-webhooks
+      description: Wants to send alert payloads through a webhook when an alert
+        threshold is met, so that operational alerts reach an external service.
   - name: App Feedback
     id: app-feedback
     subtopics:
@@ -25164,6 +25187,14 @@ knowledge-needs:
       description: Wants to understand which profile and account settings they
         can manage with an OutSystems community account, so they know where to
         update their personal details and account preferences.
+  - name: Developer career
+    id: developer-career
+    subtopics:
+    - name: Junior developer growth
+      id: junior-developer-growth
+      description: Wants to become a more productive junior OutSystems developer
+        by applying practical strategies to overcome early-career challenges, so
+        they can develop faster when starting their OutSystems career.
   - name: Support Portal
     id: support-portal
     subtopics:

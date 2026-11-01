@@ -18,7 +18,8 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - data-performance-caching
+  - configure-element-caching
+  - invalidate-o11-cache
 ---
 
 # Caching

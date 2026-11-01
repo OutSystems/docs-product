@@ -18,7 +18,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - process-decision-patterns
+  - process-best-practices
 ---
 
 # Patterns for Designing Processes

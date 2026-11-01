@@ -12,9 +12,10 @@ topic:
   - customize-mobile-apps
 app_type: mobile apps
 platform-version: o11
-audience: 
-  - Tech lead
+audience:
   - Developer
+  - Platform administrator
+  - Tech lead
 tags:
   - Mobile app
   - Native App

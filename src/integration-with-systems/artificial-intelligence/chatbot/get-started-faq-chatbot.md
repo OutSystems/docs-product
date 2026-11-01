@@ -3,6 +3,7 @@ summary: Explore how to create an FAQ chatbot using OutSystems 11 (O11) and Micr
 tags:
   - AI
   - Forge
+  - UI
 locale: en-us
 guid: f48545b1-eda8-4c71-80a0-53b79a4e8d08
 app_type: traditional web apps, mobile apps, reactive web apps

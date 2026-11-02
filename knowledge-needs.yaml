@@ -9236,6 +9236,19 @@ knowledge-needs:
       description: Wants to use a Container widget on a screen to group related
         elements and control the layout and visibility of UI sections, so that
         they can organize screen content in Service Studio for OutSystems 11.
+    - name: Configure flexbox layout
+      id: configure-flexbox-layout
+      description: Wants to configure a Container, Placeholder, or Form widget
+        with Flexbox layout properties, including direction, alignment,
+        wrapping, and child growth or shrink behavior, in ODC Studio, so that
+        child elements form responsive one-dimensional layouts without custom
+        CSS.
+    - name: Configure grid layout
+      id: configure-grid-layout
+      description: Wants to configure a Container, Placeholder, or Form widget
+        with Grid layout properties, including breakpoint-specific columns,
+        rows, gaps, and child spans, in ODC Studio, so that child elements form
+        responsive multi-column layouts without custom CSS.
     - name: List detail screens
       id: list-detail-screens
       description: Wants to create list and detail screens for entities from a core

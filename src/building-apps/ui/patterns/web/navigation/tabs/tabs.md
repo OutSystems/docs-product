@@ -22,7 +22,7 @@ coverage-type:
   - apply
 topic:
   - tabs-reference-traditional-web
-  - use-tabs-pattern-traditional-web
+  - use-tabs-pattern-traditional-web-o11
 ---
 
 # Tabs

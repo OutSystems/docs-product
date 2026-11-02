@@ -23,7 +23,6 @@ coverage-type:
   - understand
 topic:
   - fix-theme-mismatch
-  - manage-sample-data
   - replace-ui-sample-data
   - screen-template
 ---

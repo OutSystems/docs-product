@@ -9,6 +9,7 @@ tags:
   - Mobile app
   - Plugins
   - REST
+  - Web services
 audience:
   - Developer
 outsystems-tools:

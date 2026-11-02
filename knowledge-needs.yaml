@@ -1645,12 +1645,23 @@ knowledge-needs:
   - name: Adding test data
     id: adding-test-data
     subtopics:
-    - name: Manage sample data
-      id: manage-sample-data
-      description: Wants to export, import, and reset the sample data provided
-        by the OutSystemsSampleDataDB module using its public Server Actions
-        and Service Center timers, so they can customize or refresh the data
-        used by Screen Templates in Service Studio.
+    - name: Export sample data
+      id: export-sample-data
+      description: Wants to export the sample data provided by the
+        OutSystemsSampleDataDB module using its public Server Actions and
+        Service Center timers, so they can customize the data used by Screen
+        Templates in Service Studio.
+    - name: Import sample data
+      id: import-sample-data
+      description: Wants to import sample data into the OutSystemsSampleDataDB
+        module using its public Server Actions and Service Center timers, so
+        they can refresh the data used by Screen Templates in Service Studio.
+    - name: Reset sample data
+      id: reset-sample-data
+      description: Wants to reset the sample data provided by the
+        OutSystemsSampleDataDB module using its public Server Actions and
+        Service Center timers, so they can restore the data used by Screen
+        Templates in Service Studio.
     - name: Reference sample data
       id: reference-sample-data
       description: Wants to add the OutSystems Sample Data public elements to
@@ -11875,7 +11886,7 @@ knowledge-needs:
     id: using-external-javascript
     subtopics:
     - name: Add external JS library
-      id: add-external-js-library
+      id: add-external-js-library-o11
       description: Wants to add JavaScript code from an external library or a
         .js file to an app by importing or creating a script under the Scripts
         folder and setting it as the Required Scripts property on a screen or
@@ -17829,6 +17840,17 @@ knowledge-needs:
         incompatible Kotlin version, by updating the preference to a
         compatible version or checking whether a plugin is overriding it,
         so that the mobile app package generates successfully.'
+    - name: Kotlin metadata version error
+      id: kotlin-metadata-version-error
+      description: 'Wants to resolve the OS-MABS-GEN-40024 "Couldn''t generate
+        your app. A library used by your app was compiled with Kotlin metadata
+        version <library_version>, but your app expects version
+        <expected_version>." error, caused by a library or plugin using an
+        incompatible Kotlin version, by identifying the affected library and
+        plugin in the build log and updating or replacing the plugin, setting
+        the Android GradlePluginKotlinVersion preference, or selecting a
+        compatible MABS version, so that the mobile app package generates
+        successfully.'
     - name: Invalid CocoaPods spec error
       id: invalid-cocoapods-spec-error
       description: 'Wants to resolve the OS-MABS-PLG-40005 "Spec attribute in

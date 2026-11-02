@@ -1272,6 +1272,11 @@ knowledge-needs:
       description: Wants to apply architecture best practices when structuring an
         OutSystems app, so that its components remain maintainable as the app
         grows.
+    - name: Prioritize infractions
+      id: prioritize-architecture-infractions
+      description: Wants to identify which OutSystems 11 architecture infractions
+        to fix first, based on module dependency direction and upward references
+        to End-user modules, so they can prioritize architecture remediation.
     - name: Custom app architecture
       id: custom-app-architecture
       description: Wants to design a base application architecture that supports
@@ -3869,6 +3874,9 @@ knowledge-needs:
     - name: Import external tables
       id: import-external-tables
       description: Wants to import entities from external tables or views in Integration Studio by selecting the database connection, selecting the tables and views, defining the logical database, reviewing the data types, and publishing the extension so that they create entities from external database data.
+    - name: Sync external lookup data
+      id: sync-external-lookup-data
+      description: Wants to synchronize external lookup-table entities into local entities after importing them through Integration Studio, so they can join the synchronized data with local entities in an OutSystems 11 application.
     - name: Refresh entity definition
       id: refresh-entity-definition
       description: Wants to refresh an imported entity definition in Integration Studio after the source database table changes, so that the entity is updated from the database, any local changes are replaced except for the entity name, invalid attributes are ignored with a warning, and the extension remains connected to the server where it will be deployed.
@@ -11457,6 +11465,11 @@ knowledge-needs:
         screen expressions, deferring JavaScript that isn't needed at load
         time to the end of the page, and using minified JavaScript in
         production, so that screen size and page load time are reduced.
+    - name: Avoid inline CSS
+      id: avoid-inline-css
+      description: Wants to avoid using inline CSS in OutSystems 11 visual
+        elements in Traditional Web apps, so that page size and performance
+        remain manageable as screens grow.
     - name: Use CSS sprites
       id: use-css-sprites
       description: Wants to reduce the number of server requests for images
@@ -11777,6 +11790,12 @@ knowledge-needs:
         compiles them into separate .js files added via <script> tags in the
         page's <head> element and the code becomes reusable across Web
         Screens and Web Blocks, in Traditional Web Apps (O11).
+    - name: Place screen JavaScript
+      id: place-screen-javascript
+      description: Wants to place JavaScript code in a Traditional Web App's
+        Screen JavaScript property when the code is used only on one
+        frequently accessed Screen, so the browser can cache it and improve
+        performance.
     - name: Run JS code methods
       id: run-js-code-methods
       description: Wants to know the ways to run JavaScript code in a
@@ -16093,6 +16112,15 @@ knowledge-needs:
     - name: File transfer readiness
       id: file-transfer-readiness
       description: Wants to call File Transfer plugin actions only after the Cordova or Capacitor bridge has fully initialized, so file transfer operations do not fail with OS-PLUG-FLTR-0001 in supported mobile apps.
+    - name: Use file transfer plugin
+      id: use-file-transfer-plugin
+      description: Wants to install and use the File Transfer plugin in ODC Studio to download and upload files, add HandleDownload and HandleUpload blocks, and handle completion, error, and progress events in Mobile Apps and PWAs, so that apps can transfer files and report task status.
+    - name: Handle PWA file transfers
+      id: handle-pwa-file-transfers
+      description: Wants to understand how File Transfer plugin downloads determine the file name and type in a PWA, and why uploads aren't supported there, so that they can implement file transfers correctly across PWAs and Mobile Apps.
+    - name: File transfer reference
+      id: file-transfer-reference
+      description: Wants to look up File Transfer plugin client actions, events, result and error structures, error codes, deprecated actions, and platform limitations, so that they can implement and troubleshoot file transfers in OutSystems apps.
     - name: File transfer not loaded
       id: file-transfer-not-loaded
       description: Wants to resolve the OS-PLUG-FLTR-0003 error by confirming the File Transfer plugin is included in the mobile package, regenerating the package when it is missing from the build, and reinstalling the app so the client action can load the plugin at runtime.

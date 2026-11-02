@@ -465,6 +465,11 @@ knowledge-needs:
         exceptions, including matching catch logic, bubbling to a more generic
         handler, and adding exception handler flows to an action, so that they
         can route errors to the right handler and create custom exceptions.
+    - name: Service action rollback
+      id: service-action-rollback
+      description: Wants to understand how an exception raised by a Service
+        Action affects changes made earlier in the calling Action, so that they
+        can predict which database changes are rolled back and not committed.
     - name: Fix empty OnException
       id: fix-empty-onexception
       description: Wants to fix the "Empty 'OnException'" error in Service Studio
@@ -11899,12 +11904,11 @@ knowledge-needs:
     id: using-external-javascript
     subtopics:
     - name: Add external JS library
-      id: add-external-js-library-o11
+      id: add-external-js-library
       description: Wants to add JavaScript code from an external library or a
         .js file to an app by importing or creating a script under the Scripts
         folder and setting it as the Required Scripts property on a screen or
-        block, in Service Studio for OutSystems 11 Mobile Apps and Reactive Web
-        Apps, so that the script's functions and objects become available in
+        block, so that the script's functions and objects become available in
         JavaScript elements on that screen or block.
     - name: Script loading order
       id: script-loading-order
@@ -11912,9 +11916,8 @@ knowledge-needs:
         load and execute (module-level scripts first, then block-level, then
         screen-level), including that module scripts load before the On
         Application Ready system event and block/screen scripts load before
-        their element renders, in OutSystems 11 Mobile Apps and Reactive Web
-        Apps, so that they can predict when JavaScript functions and objects
-        become available at runtime.
+        their element renders, so that they can predict when JavaScript
+        functions and objects become available at runtime.
     - name: Script element reference
       id: script-element-reference
       description: Wants to look up the properties and runtime properties of the
@@ -25220,6 +25223,12 @@ knowledge-needs:
         didn''t receive the appointment confirmation email, by checking
         spam and junk folders and opening a support case if it''s still
         missing, so that they can continue with their exam registration.'
+    - name: Register for certification exam
+      id: register-certification-exam
+      description: Wants to register for an OutSystems certification exam, by
+        selecting the delivery method and exam language on the Certifications
+        page, pre-registering, and completing the registration form, so that
+        they can schedule the exam.
     - name: Exam refund eligibility
       id: exam-refund-eligibility
       description: Wants to cancel a scheduled certification exam and receive a refund, by

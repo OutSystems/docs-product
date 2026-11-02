@@ -21,6 +21,9 @@ coverage-type:
   - apply
   - remember
 topic:
+  - file-transfer-reference
+  - handle-pwa-file-transfers
+  - use-file-transfer-plugin
   - using-cordova-plugins
 isautopublish: true
 ---

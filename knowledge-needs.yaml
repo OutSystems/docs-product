@@ -26115,3 +26115,28 @@ knowledge-needs:
     id: check-plan-entitlement
     description: Platform administrator wants to check whether their plan
       includes IP restrictions, so they know whether they can use them.
+  - name: Sign-in endpoints follow IP rules
+    id: ip-rules-cover-sign-in
+    description: Platform administrator wants to know that a rule that blocks an
+      address also blocks it from signing in to the ODC Portal, so that they can
+      predict who can sign in.
+  - name: Disable an IP rule
+    id: disable-ip-rule
+    description: Platform administrator wants to disable an IP rule without
+      deleting it and re-enable it later, so that they can pause a rule without
+      losing its settings.
+  - name: Pipeline runner IP rules
+    id: pipeline-runner-ip-rules
+    description: Developer wants to add an IP rule when a CI/CD pipeline's
+      runner address changes, so that the pipeline can keep calling the platform
+      APIs.
+  - name: Internal platform traffic and IP rules
+    id: internal-traffic-ip-rules
+    description: Platform administrator wants to know that internal
+      platform-to-platform traffic isn't affected by IP rules, so that they
+      don't add rules for it.
+  - name: Opt-in IP restrictions
+    id: ip-restrictions-opt-in
+    description: Platform administrator wants to know that a tenant without
+      platform IP rules sees no change, so that they can adopt the restriction
+      safely.

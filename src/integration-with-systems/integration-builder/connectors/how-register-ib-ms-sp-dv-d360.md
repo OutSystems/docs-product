@@ -12,7 +12,6 @@ tags:
   - External Authentication
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - integration builder

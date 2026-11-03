@@ -16662,6 +16662,13 @@ knowledge-needs:
         and following the recommended action, including for dependency or
         configuration errors, so they can generate a working mobile app
         package.
+    - name: Fix missing credentials
+      id: fix-missing-credentials
+      description: Wants to resolve the OS-MABS-UPLD-40022 error that occurs
+        when uploading a mobile build without credentials for the matching
+        store, by saving the App Store Connect API key or Google Play service
+        account JSON key and uploading the build again, so that the upload
+        succeeds.
     - name: Fix App Store build
       id: fix-app-store-build
       description: Wants to resolve the OS-MABS-UPLD-40003 error that occurs
@@ -16682,6 +16689,27 @@ knowledge-needs:
         Google Play Console and granting it the permissions required to access
         the app and release it to the relevant testing track, so that ODC can
         upload the app bundle successfully.
+    - name: Fix upload in progress
+      id: fix-upload-in-progress
+      description: Wants to resolve the OS-MABS-UPLD-40020 error that occurs
+        when uploading a build while an earlier upload of the same build is
+        still in progress, by waiting for the earlier upload to finish,
+        checking its result, and retrying only if it failed, so that the build
+        is uploaded successfully.
+    - name: Fix unavailable package
+      id: fix-unavailable-package
+      description: Wants to resolve the OS-MABS-UPLD-40023 error that occurs
+        during a mobile app upload when ODC no longer has the signed package
+        because a newer build is available, by uploading the latest build or
+        generating the app again from the desired version and uploading it,
+        so that the upload succeeds.
+    - name: Fix running build
+      id: fix-running-build
+      description: Wants to resolve the OS-MABS-UPLD-40024 error that occurs
+        when uploading a mobile build while the latest build for the same
+        platform is still running, by waiting for the running build to finish
+        and uploading the build that finished when the signed package is
+        deleted, so that the upload succeeds.
     - name: Fix iOS key error
       id: fix-ios-key-error
       description: Wants to resolve the OS-MABS-UPLD-40001 invalid App Store
@@ -16703,6 +16731,41 @@ knowledge-needs:
         confirming the Key ID, Issuer ID, and .p8 file belong to the same
         active key and updating the configuration, so that the iOS app upload
         succeeds.
+    - name: Fix missing App Store app
+      id: fix-missing-app-store-app
+      description: Wants to resolve the OS-MABS-UPLD-40007 error that occurs
+        when App Store Connect has no app record for the bundle identifier or
+        the API key lacks access to it, by creating the app record and giving
+        the API key at least the App Manager role, so that the iOS app upload
+        succeeds.
+    - name: Fix App Store rejection
+      id: fix-app-store-rejection
+      description: Wants to resolve the OS-MABS-UPLD-40008 error that occurs
+        when App Store Connect rejects an iOS build without a specific error
+        code, by correcting the issue described in apple_detail and generating
+        and uploading the build again, so that App Store Connect accepts the
+        build.
+    - name: Fix duplicate version
+      id: fix-duplicate-version
+      description: Wants to resolve the OS-MABS-UPLD-40009 error that occurs
+        when App Store Connect already contains a build with the same or a
+        higher version, by increasing the app version, generating the app
+        again, and uploading the new build, so that App Store Connect accepts
+        the upload.
+    - name: Fix App Store role
+      id: fix-app-store-role
+      description: Wants to resolve the OS-MABS-UPLD-40010 error that occurs
+        when App Store Connect refuses an iOS upload because the API key lacks
+        the required App Manager role or its team membership is inactive, by
+        updating the key's role and confirming active team membership, so that
+        the upload succeeds.
+    - name: Fix agreement error
+      id: fix-agreement-error
+      description: Wants to resolve the OS-MABS-UPLD-40011 error that occurs
+        when App Store Connect blocks an iOS upload because a required Apple
+        Developer agreement is missing or expired, by signing the outstanding
+        agreement with an Account Holder account and uploading the app again,
+        so that the upload succeeds.
     - name: Enable Play Developer API
       id: enable-play-developer-api
       description: Wants to resolve the OS-MABS-UPLD-40014 error that occurs

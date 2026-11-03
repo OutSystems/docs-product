@@ -16601,6 +16601,13 @@ knowledge-needs:
         error during a Google Play internal release upload by verifying the
         private_key value and creating and configuring a new service account
         JSON key, so that the app bundle upload succeeds.
+    - name: Fix invalid service JSON
+      id: fix-invalid-service-json
+      description: Wants to resolve the OS-MABS-UPLD-40002 error during an
+        Android app bundle upload by verifying the required fields in the
+        Google Cloud service account JSON and creating and configuring a new
+        service account JSON key when needed, so that the app bundle upload
+        succeeds.
     - name: Fix Play upload error
       id: fix-play-upload-error
       description: Wants to resolve the OS-MABS-UPLD-40015 error during an
@@ -16621,6 +16628,12 @@ knowledge-needs:
         whose key is registered for the package name in Google Play Console, or
         registering a replacement key and rebuilding, so that ODC can upload
         the app bundle successfully.
+    - name: Fix AAB build type
+      id: fix-build-type-android
+      description: Wants to resolve the OS-MABS-UPLD-40004 error during an
+        Android app bundle upload by creating the build with the Google Play
+        (App Bundle) build type, so that ODC can upload the app bundle
+        successfully.
     - name: Fix version code error
       id: fix-version-code-error
       description: Wants to resolve the OS-MABS-UPLD-40017 error during an
@@ -16702,7 +16715,7 @@ knowledge-needs:
         account JSON key and uploading the build again, so that the upload
         succeeds.
     - name: Fix App Store build
-      id: fix-app-store-build
+      id: fix-build-type-ios
       description: Wants to resolve the OS-MABS-UPLD-40003 error that occurs
         when uploading an iOS build to App Store Connect, by generating the
         app again with the AppStore build type and uploading the resulting
@@ -16728,6 +16741,34 @@ knowledge-needs:
         still in progress, by waiting for the earlier upload to finish,
         checking its result, and retrying only if it failed, so that the build
         is uploaded successfully.
+    - name: Retry credential upload
+      id: retry-credential-upload
+      description: Wants to resolve the OS-MABS-UPLD-50001 error that occurs
+        when MABS cannot read the stored App Store Connect or Google Play
+        credentials during a mobile build upload, by retrying the upload, so
+        that the build upload succeeds.
+    - name: Fix upload start failure
+      id: fix-upload-start-failure
+      description: Wants to resolve the OS-MABS-UPLD-50006 error that occurs
+        when ODC accepts a mobile build upload request but cannot start sending
+        the build to the app store, by uploading the build again and, if it
+        fails again, generating the app again and uploading the new build, so
+        that the upload succeeds.
+    - name: Fix upload timeout
+      id: fix-upload-timeout
+      description: Wants to resolve the OS-MABS-UPLD-50007 error that occurs
+        when a mobile build upload exceeds its time limit or fails because the
+        app store rejects the build or an upload step fails, by reviewing the
+        upload log, following any reported OS-MABS-UPLD error action, and
+        retrying the build when no error is reported, so that the upload
+        succeeds.
+    - name: Fix unknown upload error
+      id: fix-unknown-upload-error
+      description: Wants to resolve the OS-MABS-UPLD-50008 error that occurs
+        when a mobile build upload fails for an unknown store-upload cause, by
+        retrying the upload, reviewing its upload log for more detailed store
+        messages, and opening a support case if the failure persists, so that
+        the build reaches App Store Connect or Google Play.
     - name: Fix unavailable package
       id: fix-unavailable-package
       description: Wants to resolve the OS-MABS-UPLD-40023 error that occurs
@@ -16784,6 +16825,19 @@ knowledge-needs:
         higher version, by increasing the app version, generating the app
         again, and uploading the new build, so that App Store Connect accepts
         the upload.
+    - name: Fix duplicate build
+      id: fix-duplicate-build
+      description: Wants to resolve the OS-MABS-UPLD-40025 error that occurs
+        when ODC already uploaded, or is uploading, a build with the same app
+        identifier, mobile version number, and mobile version code, by changing
+        the mobile version number or version code, generating the app again,
+        and uploading the new build, so that ODC accepts the upload.
+    - name: Fix missing app ID
+      id: fix-missing-app-id
+      description: Wants to resolve the OS-MABS-UPLD-40026 error that occurs
+        when uploading a mobile build with no app identifier, by setting the
+        app identifier, generating the app again, and uploading the new build,
+        so that ODC accepts the upload.
     - name: Fix App Store role
       id: fix-app-store-role
       description: Wants to resolve the OS-MABS-UPLD-40010 error that occurs

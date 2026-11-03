@@ -100,6 +100,7 @@ exceptions:
   - Platform Server
   - Private Gateway
   - Self-hosted
+  - Sentry
   - Service Studio
   - SPM
   - StoreMemory

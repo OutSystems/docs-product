@@ -16575,6 +16575,20 @@ knowledge-needs:
         Android app bundle upload by verifying the Google Play package name,
         app registration, and Google Cloud service account permissions, so that
         ODC can upload the app bundle successfully.
+    - name: Fix app identifier error
+      id: fix-app-identifier-error
+      description: Wants to resolve the OS-MABS-UPLD-50005 error during an
+        Android app bundle upload by checking that an app identifier is assigned
+        to the build and matches the package name in Google Play Console,
+        creating a new build when needed, so that ODC can upload the app bundle
+        successfully.
+    - name: Fix signing key mismatch
+      id: fix-signing-key-mismatch
+      description: Wants to resolve the OS-MABS-UPLD-40027 error during an
+        Android app bundle upload by configuring the ODC build with the keystore
+        whose key is registered for the package name in Google Play Console, or
+        registering a replacement key and rebuilding, so that ODC can upload
+        the app bundle successfully.
     - name: Fix version code error
       id: fix-version-code-error
       description: Wants to resolve the OS-MABS-UPLD-40017 error during an
@@ -25200,6 +25214,26 @@ knowledge-needs:
         plus the execution's overall duration and token counts, so they can
         inspect agent behavior in detail beyond what general trace search
         shows.
+    - name: Set budgets per agent and stage
+      id: budget-per-agent-and-stage
+      description: Wants to set a separate AI model spending budget for each
+        agent in each stage, so that a development budget can stay small while a
+        production budget reflects real use.
+    - name: Budget soft limit
+      id: budget-soft-limit
+      description: Wants to know that an AI agent keeps running after its
+        spending passes its budget limit, so that they decide whether to stop
+        the agent rather than assume it stops on its own.
+    - name: Budget alerts
+      id: budget-alerts
+      description: Wants to receive alerts by email and in the ODC Portal when
+        an AI agent crosses the percentage thresholds they set for its budget,
+        so that they hear about rising spending before it reaches the limit.
+    - name: Budget status
+      id: budget-status
+      description: Wants to read an AI agent's budget status level, from under
+        budget to at or over its limit, so that they can see which agents are
+        close to their limit.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:

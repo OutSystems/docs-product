@@ -1302,6 +1302,12 @@ knowledge-needs:
       description: Wants to build mobile apps with multiple independent teams
         using shared architectural, development, and synchronization practices,
         so that teams avoid conflicts and stay productive.
+    - name: Scale mobile apps
+      id: scale-mobile-apps
+      description: Wants to understand how to build enterprise mobile apps for
+        millions of users, considering data synchronization, monitoring, and
+        business-process requirements, so they can plan a scalable mobile
+        application architecture.
     - name: Application security
       id: application-security-practices
       description: Wants to apply least-privilege access to an OutSystems app, so
@@ -8695,6 +8701,9 @@ knowledge-needs:
     - name: Define automation goals
       id: define-automation-goals
       description: Wants to define the goals and context for introducing test automation, including release speed, technical debt, testability, and continuous testing, so the team can choose suitable tactics and align its automation strategy.
+    - name: Automate regression tests
+      id: automate-regression-tests
+      description: Wants to automate regression testing with BDD-based tests and apply lessons learned from quality challenges, so they can validate application behavior across changes.
     - name: Manage test data
       id: manage-test-data
       description: Wants to manage test data for automated tests by separating master data, test-specific data, and external data, so tests stay idempotent, reliable, and fast.
@@ -14033,6 +14042,12 @@ knowledge-needs:
       id: build-app-in-service-studio
       description: Wants to build an app in Service Studio, so they can turn a
         business need into a working app.
+    - name: Build full-stack apps
+      id: build-full-stack-apps
+      description: Wants to understand how to build a full-stack application with
+        OutSystems by combining data modeling, business logic, integrations, and
+        user interface design, so they can evaluate the platform's end-to-end app
+        development workflow.
     - name: Edit an app in Service Studio
       id: edit-app-in-service-studio
       description: Wants to edit an existing app in Service Studio, so they can

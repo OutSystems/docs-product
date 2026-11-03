@@ -5827,11 +5827,6 @@ knowledge-needs:
         by detecting them, diagnosing the risk to critical assets and
         infrastructure, and determining the remediation steps that strengthen
         the security posture, so that they can respond appropriately.
-    - name: Sentry capabilities
-      id: sentry-capabilities
-      description: Wants to understand what Sentry for ODC includes and what
-        security controls and compliance features it provides, so that they
-        can evaluate the security add-on for an ODC organization.
 - name: ODC Workflows
   guid: 8f3c2a1d-6e4b-4a7f-9c0d-2b5e7f1a4c9e
   topics:
@@ -19675,6 +19670,27 @@ knowledge-needs:
         Sentry to satisfy PCI DSS SAQ D attestation requirements, so that they
         can complete the required steps before pursuing attestation with a
         PCI Qualified Security Assessor.
+    - name: Sentry capabilities
+      id: sentry-capabilities-odc
+      description: Wants to understand what Sentry for ODC includes and what
+        security controls and compliance features it provides, so that they
+        can evaluate the security add-on for an ODC organization.
+    - name: Sentry capabilities O11
+      id: sentry-capabilities-o11
+      description: Wants to understand what OutSystems 11 Sentry includes and
+        what security controls and compliance features it provides, so that
+        they can evaluate the Sentry add-on for OutSystems 11 Cloud.
+    - name: Check Sentry subscription O11
+      id: check-sentry-subscription-o11
+      description: Wants to confirm that OutSystems 11 Sentry is active for
+        their infrastructure by checking the subscription in the Customer
+        Portal, so that they know whether the Sentry capabilities apply to
+        them.
+    - name: Access Sentry dashboard O11
+      id: access-sentry-dashboard-o11
+      description: Wants to access the Sentry Monitoring dashboard in the
+        Customer Portal and know which roles can open it, so that they can
+        review the security and audit events of their infrastructure.
     - name: Safe Harbor compliance
       id: safe-harbor-compliance
       description: Wants to understand why the Safe Harbor ECJ ruling doesn't apply

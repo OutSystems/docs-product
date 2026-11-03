@@ -866,11 +866,11 @@ knowledge-needs:
     subtopics:
     - name: Client event fetch
       id: client-event-fetch
-      description: Wants to avoid performing local data fetch inside client events
-        (On Initialize, On Ready, On Render) in OutSystems mobile apps, and instead
-        fetch data via data fetch calls, using the On After Fetch event for dependent
-        fetches, so that data fetching runs in parallel with screen rendering instead
-        of being fully serialized.
+      description: Wants to avoid performing local data fetches inside screen
+        lifecycle events such as On Initialize, On Ready, and On Render, and
+        instead use data fetch calls with On After Fetch for dependent fetches,
+        so data loads in parallel with screen rendering instead of being
+        serialized.
     - name: Screen lifecycle events
       id: screen-lifecycle-events
       description: Wants to understand the OutSystems screen lifecycle events and
@@ -1230,6 +1230,11 @@ knowledge-needs:
         including consensus, complexity management, risk reduction, planning,
         change facilitation, and cost reduction, so they can justify
         architecture work to stakeholders.
+    - name: Enterprise architecture fit
+      id: fit-outsystems-enterprise-architecture
+      description: Wants to determine OutSystems' role and responsibilities
+        within an existing enterprise architecture, so they can improve the
+        enterprise's digital resilience and agility.
   - name: Application best practices
     id: application-best-practices
     subtopics:
@@ -11448,9 +11453,10 @@ knowledge-needs:
         built-in top menu layout on desktop, tablet, and mobile devices.
     - name: Responsive device behavior
       id: responsive-device-behavior
-      description: Wants to understand how OutSystems UI detects the device type and screen
-        size, adds responsive CSS classes, and applies breakpoint rules, so they can adapt
-        layouts and content for phones, tablets, and desktops.
+      description: Wants to understand how OutSystems UI detects device type
+        and screen size, adds responsive CSS classes, and applies breakpoint
+        rules, and how to use responsive layouts in Reactive Web apps, so they
+        can adapt screens for phones, tablets, and desktops.
   - name: UI performance best practices
     id: ui-performance-best-practices
     description: Wants to apply best practices for optimizing OutSystems 11
@@ -14821,6 +14827,12 @@ knowledge-needs:
       through a describe-review-refine conversational workflow, and how AI
       agents, the OutSystems Model, and the compiler work together under the
       hood, so that they can decide whether it fits their use case.
+  - name: AI Mentor overview
+    id: ai-mentor-overview
+    description: Wants to understand how AI Mentor Systems augment software
+      development in OutSystems and how the platform uses them to deliver
+      next-generation development capabilities, so that they can assess how AI
+      will shape software delivery.
   - name: MCP terminology
     id: mcp-terminology
     description: Wants to understand the terms used across OutSystems MCP in
@@ -16457,6 +16469,16 @@ knowledge-needs:
         major releases, regular releases, and cumulative patches in
         OutSystems 11, so that they can tell what gets refreshed for each
         release type.
+  - name: ODC roadmap for adoption planning
+    id: odc-roadmap-adoption-planning
+    description: Wants to use the OutSystems Developer Cloud (ODC) roadmap to
+      plan platform adoption and align application architecture decisions with
+      planned capabilities, so they can make informed adoption choices.
+  - name: ODC product update impact
+    id: odc-product-update-impact
+    description: Wants to interpret OutSystems Developer Cloud (ODC) product
+      updates and assess their impact on existing application architecture and
+      adoption plans, so they can decide what changes or follow-up are needed.
 - name: Load testing
   guid: f816091c-1508-4da9-b5f6-cffebb845234
   topics:

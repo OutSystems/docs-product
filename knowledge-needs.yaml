@@ -10499,11 +10499,11 @@ knowledge-needs:
     - name: Use Mouse Events pattern
       id: use-mouse-events-pattern
       description: Wants to add the Mouse Events UI Pattern to a screen and
-        configure its WidgetId, PreventDefaults, and Handler properties,
-        including adding the widget via Toolbox or Search in other modules
-        if the dependency isn't added, in Service Studio for OutSystems 11,
-        so that they can capture high-precision mouse drag events, such as
-        drag distance, in mobile apps and reactive web apps.
+        configure its properties and event handler, including adding the
+        widget via Toolbox or Search in other modules if the dependency isn't
+        added, in Service Studio for OutSystems 11, so that they can capture
+        high-precision mouse drag events, such as drag distance, in mobile
+        apps and reactive web apps.
     - name: Use Swipe Events pattern
       id: use-swipe-events-pattern
       description: Wants to add the Swipe Events UI Pattern to a screen and
@@ -11523,10 +11523,6 @@ knowledge-needs:
         and Mobile Apps, in OutSystems 11, so that they can decide whether
         JavaScript is the right solution and find the detailed instructions
         for their app type.
-    - name: Add and run JavaScript
-      id: add-run-javascript-reactive
-      description: Wants to add and run JavaScript in Reactive Applications, so they
-        can extend app behavior with client-side logic.
     - name: Create and import JavaScript scripts
       id: create-import-javascript-scripts
       description: Wants to create and import JavaScript scripts in OutSystems, so they
@@ -11826,13 +11822,10 @@ knowledge-needs:
         frequently accessed Screen, so the browser can cache it and improve
         performance.
     - name: Run JS code methods
-      id: run-js-code-methods
-      description: Wants to know the ways to run JavaScript code in a
-        Traditional Web App, using an Extended Property event, an unescaped
-        Expression, or the RunJavaScript Server Action of the
-        HTTPRequestHandler API, in Service Studio for O11, so that they can
-        trigger custom JavaScript behavior in response to events or during
-        screen rendering.
+      id: run-js-code-methods-traditional
+      description: Wants to know the available ways to run JavaScript in a
+        Traditional Web App, so that they can trigger custom JavaScript behavior
+        in response to events or during screen rendering.
     - name: Set dynamic input value
       id: set-dynamic-input-value
       description: Wants to automatically update one input's value when another
@@ -16563,6 +16556,37 @@ knowledge-needs:
       description: Wants to sign an Android mobile app with a release keystore,
         upload the APK to Google Play, complete the store listing, and publish
         the app, so that the app is available through the Android public store.
+    - name: Fix cert expiry
+      id: fix-cert-expiry
+      description: Wants to resolve the OS-MABS-UPLD-40029 error during an Android
+        app bundle upload by creating a keystore with a certificate that meets
+        the required validity period, registering its SHA-256 fingerprint in
+        Google Play Console, and configuring the ODC build with the new keystore,
+        so that ODC can upload the app bundle successfully.
+    - name: Fix Google Play key error
+      id: fix-google-play-key-error
+      description: Wants to resolve the OS-MABS-UPLD-40012 invalid private key
+        error during a Google Play internal release upload by verifying the
+        private_key value and creating and configuring a new service account
+        JSON key, so that the app bundle upload succeeds.
+    - name: Fix Play upload error
+      id: fix-play-upload-error
+      description: Wants to resolve the OS-MABS-UPLD-40015 error during an
+        Android app bundle upload by verifying the Google Play package name,
+        app registration, and Google Cloud service account permissions, so that
+        ODC can upload the app bundle successfully.
+    - name: Fix version code error
+      id: fix-version-code-error
+      description: Wants to resolve the OS-MABS-UPLD-40017 error during an
+        Android app bundle upload by creating a new build with a version code
+        higher than any version code previously used for the app, so that ODC
+        can upload the app bundle successfully.
+    - name: Fix target SDK error
+      id: fix-target-sdk-error
+      description: Wants to resolve the OS-MABS-UPLD-40028 error during an
+        Android app bundle upload by creating a new build with a MABS version
+        that meets the current Google Play target API level requirement, so that
+        ODC can upload the app bundle successfully.
     - name: Mobile distribution types
       id: mobile-distribution-types
       description: Wants to choose an appropriate distribution method for a mobile app
@@ -16624,6 +16648,53 @@ knowledge-needs:
         and following the recommended action, including for dependency or
         configuration errors, so they can generate a working mobile app
         package.
+    - name: Fix App Store build
+      id: fix-app-store-build
+      description: Wants to resolve the OS-MABS-UPLD-40003 error that occurs
+        when uploading an iOS build to App Store Connect, by generating the
+        app again with the AppStore build type and uploading the resulting
+        build, so that the upload succeeds.
+    - name: Fix service key rejection
+      id: fix-service-key-rejection
+      description: Wants to resolve the OS-MABS-UPLD-40013 error that occurs
+        when Google Play rejects a service account key during an app bundle
+        upload, by checking that the service account and key are active and
+        generating and uploading a new service account JSON key when needed,
+        so that the app bundle upload succeeds.
+    - name: Fix Play service account
+      id: fix-play-service-account
+      description: Wants to resolve the OS-MABS-UPLD-40016 error during an
+        Android app bundle upload by adding the Google Cloud service account to
+        Google Play Console and granting it the permissions required to access
+        the app and release it to the relevant testing track, so that ODC can
+        upload the app bundle successfully.
+    - name: Fix iOS key error
+      id: fix-ios-key-error
+      description: Wants to resolve the OS-MABS-UPLD-40001 invalid App Store
+        Connect private key error when saving the iOS app configuration in
+        ODC Portal or through the public API, by downloading a valid .p8 file
+        and uploading it unchanged or Base64-encoding its contents, so that
+        ODC saves the configuration successfully.
+    - name: Fix iOS API key
+      id: fix-ios-api-key
+      description: Wants to resolve the OS-MABS-UPLD-40005 error indicating
+        that the App Store Connect API key is not a valid .p8 private key, by
+        uploading the original .p8 file downloaded from App Store Connect or
+        creating a new API key and updating the App Store Connect
+        configuration, so that the iOS app upload starts successfully.
+    - name: Fix API key mismatch
+      id: fix-api-key-mismatch
+      description: Wants to resolve the OS-MABS-UPLD-40006 error caused by
+        mismatched or inactive App Store Connect API credentials, by
+        confirming the Key ID, Issuer ID, and .p8 file belong to the same
+        active key and updating the configuration, so that the iOS app upload
+        succeeds.
+    - name: Enable Play Developer API
+      id: enable-play-developer-api
+      description: Wants to resolve the OS-MABS-UPLD-40014 error that occurs
+        when the Google Play Developer API is not enabled for the Google Cloud
+        project that owns the service account, by enabling the API, so that the
+        app bundle upload succeeds.
     - name: Cordova bootstrap error
       id: cordova-bootstrap-error
       description: 'Wants to resolve the OS-MABS-PLF-50000 "Something

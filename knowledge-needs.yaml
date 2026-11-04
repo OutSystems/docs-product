@@ -19740,6 +19740,11 @@ knowledge-needs:
         their infrastructure by checking the subscription in the Customer
         Portal, so that they know whether the Sentry capabilities apply to
         them.
+    - name: Check Sentry subscription ODC
+      id: check-sentry-subscription-odc
+      description: Wants to confirm that Sentry for ODC is active for their
+        organization by checking the Subscription page in ODC Portal, so that
+        they know whether the Sentry capabilities apply to them.
     - name: Access Sentry dashboard O11
       id: access-sentry-dashboard-o11
       description: Wants to access the Sentry Monitoring dashboard in the

@@ -6,6 +6,7 @@
 #
 # An exception is a word or phrase that keeps its capitalization in a heading.
 # Add each term to exactly one group, and keep every group sorted alphabetically.
+# The one exception is Months, which follows calendar order.
 # Before adding a term, search this file: it may already be
 # listed in another group.
 #
@@ -21,7 +22,9 @@
 #   4. Is it a generic technology term that no single vendor owns: an acronym,
 #      protocol, standard, file format, language, SQL keyword, or regulation?
 #      -> Industry (for example HTML, JSON, TypeScript, SELECT, HIPAA)
-#   5. Otherwise, is it OutSystems development vocabulary or an example name?
+#   5. Is it the name of a calendar month?
+#      -> Months (for example July, March)
+#   6. Otherwise, is it OutSystems development vocabulary or an example name?
 #      -> Concepts (for example Aggregate, Entity, Screen)
 #
 # Errors and Jira issue keys hold regex patterns only. Don't add plain terms there.
@@ -445,6 +448,20 @@ exceptions:
 
 # Conferences
   - ONE Conference
+
+# Months
+  - January
+  - February
+  - March
+  - April
+  - May
+  - June
+  - July
+  - August
+  - September
+  - October
+  - November
+  - December
 
 # Errors
   - \bOS-(?:[A-Z]+-){1,2}\d+\b

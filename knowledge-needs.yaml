@@ -1459,6 +1459,12 @@ knowledge-needs:
       description: Wants to add pagination and records-per-page control to a Table
         widget, so that users can navigate through large datasets in configurable
         page sizes.
+    - name: Refresh table pagination
+      id: refresh-table-pagination
+      description: Wants to determine the correct execution order for refreshing a
+        paginated Table Records widget and its List_Navigation widget in an OnNotify
+        action, so that page changes display the correct records in Traditional Web
+        Apps (O11).
     - name: Limit record fetches
       id: limit-record-fetches
       description: Wants to limit how many records a screen fetches and displays by
@@ -1806,6 +1812,9 @@ knowledge-needs:
     - name: Expose Read Only pattern
       id: entity-expose-read-only-pattern
       description: Wants to understand how to use the recommended Expose Read Only pattern for entity actions on both client and server sides, so they can access entity data through the appropriate layer.
+    - name: Read-only entity access
+      id: read-only-entity-access
+      description: Wants to understand how a public OutSystems 11 entity with Expose Read Only set to Yes can be queried by consumer modules through Aggregates, while consumer modules cannot modify its data or use its built-in delete action, so they can identify the allowed cross-module access.
     - name: Static entity setup
       id: static-entity-setup
       description: Wants to create a static entity and add country records with flag URLs and dial-in codes, so that a Dropdown Search screen uses fixed lookup data.
@@ -2370,6 +2379,37 @@ knowledge-needs:
         using syntax testing and multi-step test scenarios and structuring them
         as reusable, data-driven test blocks, so that the test suite stays
         maintainable and scalable as APIs evolve.
+    - name: API test transactions
+      id: api-test-transactions
+      description: Wants to test service actions in ODC by explicitly committing
+        setup or teardown data created by server actions outside the service
+        action's transaction scope, so that test data persists correctly.
+    - name: API test error handling
+      id: api-test-error-handling
+      description: Wants to test failure scenarios for imported REST and SOAP APIs
+        in ODC by raising custom exceptions from the OnAfterResponse handler and
+        asserting status and error details in BDD scenarios, so that API failures
+        are validated explicitly.
+  - name: API testing strategy
+    id: api-testing-strategy
+    subtopics:
+    - name: API contract
+      id: api-contract
+      description: Wants to understand what an API contract defines for requests,
+        responses, data changes, and logging, so they can verify that API tests
+        cover the API's functional, non-functional, security, and scalability
+        requirements.
+    - name: POISED strategy
+      id: poised-strategy
+      description: Wants to apply the POISED strategy to plan API tests for
+        parameters, output, interoperability, security, errors, and data, so
+        they can cover the key dimensions of API behavior.
+    - name: Choose API test tools
+      id: choose-api-test-tools
+      description: Wants to choose a tool for testing service actions, exposed
+        REST APIs, and consumed SOAP APIs in ODC based on each API type's access
+        constraints, so they can test each integration with the appropriate
+        BDD Framework or external tool.
 - name: Access Control and Privileges
   guid: ccc4b848-0f34-4854-bdc3-76e15fd4f42c
   topics:
@@ -4819,6 +4859,12 @@ knowledge-needs:
         support, by applying the page-break-inside CSS rule, passing header/footer
         URLs via OtherArgs, and adding pagination JavaScript, in OutSystems 11, so
         that the generated PDF report renders correctly and completely.
+  - name: Generate Word documents
+    id: generate-word-documents
+    subtopics:
+    - name: Use Aspose Words
+      id: use-aspose-words
+      description: Wants to manipulate and generate Word documents in OutSystems 11 using the Aspose Words tool together with available OutSystems features, so that they can implement document solutions ranging from simple to demanding requirements.
   - name: Integration Builder
     id: integration-builder
     subtopics:
@@ -21992,6 +22038,12 @@ knowledge-needs:
       delivery team, including solution architecture, team building, quality
       assurance, acting as the user, and project steering, so that they can guide
       delivery with a balance of architecture, quality, and business value.
+  - name: Decentralized leadership
+    id: decentralized-leadership
+    description: Wants to understand how decentralized leadership and shared
+      decision-making help delivery teams respond to uncertainty, complex
+      scenarios, and high-stakes situations, so that they can adapt and deliver
+      effectively.
   - name: Project steering
     id: project-steering
     description: Wants to identify the project steering core behavior from a
@@ -26349,3 +26401,14 @@ knowledge-needs:
     description: Platform administrator wants to know that a tenant without
       platform IP rules sees no change, so that they can adopt the restriction
       safely.
+- name: Digital transformation
+  guid: d603ee39-ab68-4192-80af-f708dfee4927
+  topics:
+  - name: Transformation at scale
+    id: transformation-at-scale
+    subtopics:
+    - name: Scale transformation
+      id: scale-transformation
+      description: Wants to understand approaches and examples for scaling
+        digital transformation across teams and delivery, so they can plan and
+        execute transformation at scale.

@@ -19350,11 +19350,18 @@ knowledge-needs:
         redirected to the Google Play Store or another URL instead of the
         app.
     - name: Deep link handling
-      id: deep-link-handling
+      id: deep-link-handling-odc
       description: Wants to handle incoming deep links and custom URL schemes
         in ODC mobile apps by relying on the MABS-generated scheme and routing
         the link in Capacitor or Cordova, so that browsers, apps, and
         notifications open the right screen.
+    - name: Customize deep links
+      id: customize-deep-links-o11
+      description: Wants to customize how an OutSystems 11 Mobile App handles
+        incoming deep links by setting the DeepLinksHandlerType preference in
+        extensibility configurations and defining the required event or
+        function handler, so that links navigate, fire an event, call a
+        function, or reload the page as intended.
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
   topics:

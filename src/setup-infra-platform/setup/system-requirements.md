@@ -5,6 +5,7 @@ tags:
   - External Databases
   - Infrastructure
   - Platform Server
+  - Security
   - SQL
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
@@ -155,6 +156,8 @@ The following table summarizes the differences between Azure SQL and Azure SQL M
 
 OutSystems supports Oracle with the following considerations:
 
+* Oracle 26ai (Standard Edition or Enterprise Edition), since Platform Server 11.45.1
+    * This version is also supported when running on [Amazon RDS](#amazon-database)
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
     * This version is also supported when running on [Amazon RDS](#amazon-database)
 
@@ -301,6 +304,7 @@ The following systems are certified to integrate with OutSystems.
 
 ### Oracle database {#oracle}
 
+* Oracle 26ai (Standard Edition or Enterprise Edition), since Platform Server 11.45.1
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
 
 The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.

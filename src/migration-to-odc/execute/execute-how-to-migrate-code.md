@@ -76,6 +76,8 @@ If the conversion is successful, the process ends with **Finished** status. The 
 
 Now, in ODC, you must [publish the ODC apps and libraries](#publish).
 
+If the conversion ends with **Finished with warnings** status because a producer is missing elements used by a consumer, refer to [Missing elements in converted producer assets](execute-missing-producer-elements.md).
+
 If the conversion is unsuccessful, the process ends with a **Finished with errors** status, and you cannot open the app or the library in ODC Studio. See how to [identify code conversion issues](execute-troubleshooting.md#code-issues).
 
 ### Publish ODC apps and libraries {#publish}
@@ -101,6 +103,8 @@ To publish an ODC app or a library, follow these steps:
     1. Select **App** > **Compare and Merge with another revision of file**, select **Choose a file**, and select the file you originally downloaded.
 
     1. Expand the **Dependencies** folder in the comparison to review the elements that changed. Once you're done, cancel instead of completing the merge.
+
+    If the comparison shows that a producer is missing elements that the app uses, refer to [Missing elements in converted producer assets](execute-missing-producer-elements.md).
 
     </div>
 

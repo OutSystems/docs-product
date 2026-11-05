@@ -1245,6 +1245,7 @@
         - href: migration-to-odc/execute/execute-about-migrate-code.md
         - topics:
             - href: migration-to-odc/execute/execute-how-to-migrate-code.md
+            - href: migration-to-odc/execute/execute-missing-producer-elements.md
             - href: migration-to-odc/execute/execute-adjust-converted-code.md
             - topics:
                 - href: migration-to-odc/execute/execute-sql-node-conversion-details.md

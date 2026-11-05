@@ -17049,6 +17049,12 @@ knowledge-needs:
         increase to API 28 that requires updated Android support
         libraries, so that they can update their app and plugins before
         or after upgrading the MABS version.
+    - name: MABS 5 release notes
+      id: mabs-5-release-notes
+      description: Wants to review the release notes for MABS 5, including new
+        features, bug fixes, and the known iOS 12 viewport-flicker issue, so
+        that they can troubleshoot mobile apps still running on a MABS 5
+        version.
     - name: MABS 11 upgrade overview
       id: mabs-11-upgrade-overview
       description: Wants to understand what's new in MABS 11, including iOS

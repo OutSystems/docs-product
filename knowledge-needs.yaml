@@ -3098,6 +3098,12 @@ knowledge-needs:
         from BinaryData in loading behavior, size limits, and reference
         semantics, so they can choose the right data type for large content in
         reactive web and mobile apps.
+    - name: Migrate BinaryData
+      id: migrate-binarydata
+      description: Wants to replace a BinaryData entity attribute with a File
+        attribute by adding a new attribute, migrating existing content, and
+        deleting the old attribute only after migration, so they can move large
+        content to cloud storage without losing data.
     - name: File type properties
       id: file-type-properties
       description: Wants to look up the File data type's properties and restrictions,

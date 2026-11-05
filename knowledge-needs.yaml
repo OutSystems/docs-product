@@ -2829,6 +2829,12 @@ knowledge-needs:
      description: Wants to plan keyboard navigation and focus order for app screens
        before implementation, so people who use keyboards or switch devices
        can complete the same tasks.
+     subtopics:
+     - name: Inclusive app design
+       id: inclusive-app-design
+       description: Wants to understand how inclusive design choices can support users
+         with different access, language, and communication needs, so they can
+         recognize and apply inclusive design in OutSystems apps.
    - name: Translating apps
      id: translating-apps
      subtopics:
@@ -3598,6 +3604,11 @@ knowledge-needs:
         outdated table statistics and checking and defragmenting the table in
         Oracle or SQL Server, in OutSystems 11, so that the query optimizer builds
         accurate access plans and performance recovers.
+    - name: Optimize Elasticsearch
+      id: optimize-elasticsearch
+      description: Wants to improve search performance by using Elasticsearch to index
+        and query data when searching multiple tables with complex business rules is
+        too slow, so search results return quickly.
     - name: Get AWR/ADDM reports
       id: get-awr-addm-reports
       description: Wants to generate and interpret Oracle AWR (Automatic Workload
@@ -21827,6 +21838,11 @@ knowledge-needs:
         digital solutions for child abuse, domestic violence, or sexual assault, so
         they can recognize how an application addresses urgent community support
         needs.
+    - name: Apps for good
+      id: apps-for-good
+      description: Wants to understand how OutSystems apps can create positive social
+        impact, when exploring technology-for-good initiatives and hackathons, so
+        they can identify opportunities to build apps that address community needs.
     - name: Process diagrams
       id: process-diagrams
       description: Wants to create and scope process diagrams for a business vision
@@ -21912,6 +21928,18 @@ knowledge-needs:
         process in Service Studio when the process needs manual user input, so
         that the process pauses, assigns work to a user, and creates a Taskbox
         item to continue the workflow.
+    - name: Employee sick-leave processes
+      id: employee-sick-leave-processes
+      description: Wants to understand how OutSystems can streamline employee
+        sick-leave processes by connecting employees with the right departments
+        and documents, so they can identify ways to improve the employee
+        sick-leave experience.
+    - name: Employee onboarding processes
+      id: employee-onboarding-processes
+      description: Wants to understand how OutSystems can streamline employee
+        onboarding processes by connecting new employees with the right
+        departments and documents, so they can identify ways to improve the
+        employee onboarding experience.
   - name: Process decision patterns
     id: process-decision-patterns
     description: Wants to understand when to use Business Process Technology,
@@ -25575,6 +25603,15 @@ knowledge-needs:
         subtitle files from the Training portal and playing them locally with
         a media player like VLC, so that they can continue training without
         guaranteed progress tracking.
+  - name: Education Program
+    id: education-program
+    subtopics:
+    - name: OutSystems education
+      id: outsystems-education
+      description: Wants to understand how the OutSystems Education Program
+        provides educational benefits and career opportunities for students and
+        teachers, so they can explore learning and career pathways with
+        OutSystems.
   - name: Certification exams
     id: certification-exams
     subtopics:

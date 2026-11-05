@@ -11763,6 +11763,13 @@ knowledge-needs:
         Service Studio for OutSystems 11 Traditional Web Apps, so that the
         confirmation dialog appears, which OutSystems doesn't show when
         navigating directly to a popup screen.
+    - name: Create styled dialogs
+      id: create-styled-dialogs
+      description: Wants to implement animated and styled confirmation dialogs in
+        an OutSystems 11 Reactive Web App, by importing the required JavaScript
+        libraries, creating a block and client action with the dialog
+        configuration, and wiring a button to the action, so that users can
+        respond to a styled confirmation message.
     - name: Resize popup window
       id: resize-popup-window
       description: Wants to dynamically resize a Popup_Editor window at runtime by
@@ -13690,6 +13697,12 @@ knowledge-needs:
       description: Wants to identify which statements about OutSystems mobile
         apps are true or false, so they can answer basic capability questions
         in O11.
+    - name: Humanitarian relief apps
+      id: humanitarian-relief-apps
+      description: Wants to understand how organizations use OutSystems to
+        develop applications for humanitarian relief and disaster response, so
+        they can evaluate the platform's viability when selecting a modern
+        application development platform for emergency programs.
   - name: Java course overview
     id: java-course-overview
     description: Wants to understand the roadmap for the OutSystems for Java
@@ -16429,6 +16442,12 @@ knowledge-needs:
         the plugin via window.CapacitorPlugins, using the library in the
         app, and building the mobile package, so that the plugin's native
         functionality becomes available to the app.
+    - name: Thermal camera triage
+      id: thermal-camera-triage
+      description: Wants to understand how an OutSystems mobile app can
+        integrate a thermal camera to identify potentially infected patients
+        during infectious-disease triage, so they can apply connected
+        technology to make patient screening faster and more affordable.
     - name: Barcode plugin ODC
       id: barcode-plugin-odc
       description: Wants to use the Barcode Plugin in an ODC app to scan 1D and

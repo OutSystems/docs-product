@@ -2,10 +2,11 @@
 summary: OutSystems 11 (O11) system requirements cover Platform Server hardware, Windows Server, SQL Server, Oracle, .NET, RabbitMQ, and development tools.
 tags:
   - .NET
+  - End-users
   - External Databases
   - Infrastructure
+  - Mobile app
   - Platform Server
-  - Security
   - SQL
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
@@ -318,11 +319,11 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 ### MySQL database {#mysql}
 
-* MySQL 8.4 (8.4.3 or later within the 8.3 version, all editions), since Platform Server 11.38.0
-* MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
+* MySQL 8.4 (8.4.3 or later within the 8.4 version, all editions), since Platform Server 11.38.0
 
 #### Out of support
 
+* MySQL 8.0 support ended in Platform Server version 11.45.1. It was initially supported from Platform Server 11.19.0
 * MySQL 5.7 support ended in Platform Server version 11.32.0
 * MySQL 5.6 support ended in Platform Server version 11.32.0
 

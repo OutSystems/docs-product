@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - customize-deep-links-o11
 ---
 
 # Customize Deeplink Behavior

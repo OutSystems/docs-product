@@ -1,6 +1,11 @@
 ---
 summary: Explore how to customize deeplink behavior in mobile apps using OutSystems 11 (O11) with various `DeepLinksHandlerType` preferences.
-tags: mobile app development, deep linking, extensibility configuration, mobile app building, mobile app distribution
+tags:
+  - Cordova
+  - Events
+  - Extensions
+  - JavaScript
+  - Mobile app
 locale: en-us
 guid: 411e538e-743c-4e9f-a78b-1a4c8fdf3932
 app_type: mobile apps

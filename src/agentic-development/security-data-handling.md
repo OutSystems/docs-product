@@ -42,7 +42,7 @@ The following traffic leaves your machine during an agent session:
 
 * Your MCP host's calls to its model provider.
 * Service Studio's calls to your O11 environment when you publish a change. These are the same calls a manual publish makes.
-* Service Studio's usage data to OutSystems. Refer to [Usage Data](#usage-data).
+* Service Studio's usage data to OutSystems. Refer to [Usage data](#usage-data).
 
 No OutSystems-hosted service receives your application model. For this reason, OutSystems MCP in O11 works in on-premises and air-gapped installations.
 
@@ -50,7 +50,7 @@ No OutSystems-hosted service receives your application model. For this reason, O
 
 The only model in the flow is the model your MCP host uses. Your agreement with that model provider and your MCP host's data settings govern how the provider processes your prompts, including any module content the agent adds to them.
 
-Treat the call from your MCP host to its model provider as the point where module content leaves your machine. OutSystems doesn't receive your prompts, transcripts, or module files, and doesn't use them for training, fine-tuning, evaluation, or product improvement. Service Studio also sends a limited set of usage data to OutSystems. Refer to [Usage Data](#usage-data).
+Treat the call from your MCP host to its model provider as the point where module content leaves your machine. OutSystems doesn't receive your prompts, transcripts, or module files, and doesn't use them for training, fine-tuning, evaluation, or product improvement. Service Studio also sends a limited set of usage data to OutSystems. Refer to [Usage data](#usage-data).
 
 <div class="warning" markdown="1">
 
@@ -58,7 +58,7 @@ Don't include personally identifiable information (PII) in prompts or in module 
 
 </div>
 
-## Usage Data
+## Usage data
 
 Service Studio sends usage and diagnostic data about OutSystems MCP to OutSystems. The following list describes what the data contains:
 
@@ -128,6 +128,6 @@ Service Center and LifeTime attribute a change from the agent to the developer w
 
 ## Compliance scope
 
-OutSystems MCP in O11 runs inside Service Studio on the developer's machine and adds no OutSystems-hosted service to the data flow. For the data that leaves your machine, refer to [Data flow](#data-flow) and [Usage Data](#usage-data).
+OutSystems MCP in O11 runs inside Service Studio on the developer's machine and adds no OutSystems-hosted service to the data flow. For the data that leaves your machine, refer to [Data flow](#data-flow) and [Usage data](#usage-data).
 
 OutSystems Cloud certifications cover OutSystems-hosted infrastructure. The machine that runs Service Studio sits in your infrastructure, so your organization manages its infrastructure and operational security controls, the same as for any other on-premises component.

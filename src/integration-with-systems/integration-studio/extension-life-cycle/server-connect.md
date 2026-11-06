@@ -17,6 +17,7 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - understand
+  - apply
 ---
 
 # Connect to an environment

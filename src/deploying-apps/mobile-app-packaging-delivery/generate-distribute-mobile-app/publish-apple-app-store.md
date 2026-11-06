@@ -11,6 +11,7 @@ tags:
   - Native App
 audience:
   - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

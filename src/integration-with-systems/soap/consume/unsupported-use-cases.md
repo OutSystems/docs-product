@@ -7,6 +7,7 @@ platform-version: o11
 figma:
 tags:
   - SOAP
+  - Troubleshooting
   - Web services
 audience:
   - Developer

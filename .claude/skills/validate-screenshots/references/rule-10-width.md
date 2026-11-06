@@ -4,6 +4,10 @@ Referenced from `auto-fix-procedure.md`. Read the apply procedure's general
 backup/re-export preamble in `auto-fix-procedure.md` before using this file — it covers the
 `defaultFormat`/`defaultScale` gotcha every rule here depends on.
 
+**Diagrams are exempt.** A `-diag` image never has a rule 10 finding (the checker
+reports `skip`), so this procedure never runs for one: a dense diagram can't
+be shrunk to the limit without becoming unreadable.
+
 ## Resolve which procedure applies
 
 1. If the frame map resolved an unambiguous **frame** for this image's stem, follow

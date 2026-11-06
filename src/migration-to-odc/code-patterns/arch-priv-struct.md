@@ -11,6 +11,7 @@ tags:
   - Modular Programming
   - Refactoring
 audience:
+  - Architect
   - Developer
 outsystems-tools:
   - service studio

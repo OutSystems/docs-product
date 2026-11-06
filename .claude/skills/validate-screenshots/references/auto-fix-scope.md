@@ -38,7 +38,7 @@ Figma source file.
 | 5 — arrow, wrong color | Vision spots a drag/connection arrow in a non-token color | Recolor the line's stroke (and arrowhead fill, if separate) to `#F22800` |
 | 6 — shadow | `has_shadow.py` → `wrong` (always in scope), or → `false` on a large-surface capture (vision judges crop size) | Apply the TK-shadow effect, copied from a passing sibling frame or the design-system library |
 | 7 — PII | Vision confirms the text is real (non-synthetic) PII, AND `redact_pii_region.py plan` or `plan-word-range` reports `safe: true` for every occurrence of it in the image | Cover each occurrence with a same-color rectangle in the Figma frame — by default just the PII word(s), whole line only when nothing else is worth keeping or the automatic fallback says so — then re-export; see the caveat above |
-| 10 — width | `check_metadata.py` → `width.verdict == "warn"` (> 1200px) | Resize the source frame (and its full-bleed background child, plus any qualifying overlay children) to 1180px wide, uniformly scaled, then re-export — or, when there's no enclosing frame at all, resize a matching bare shape sitting directly on the canvas instead |
+| 10 — width | `check_metadata.py` → `width.verdict == "warn"` (> 1200px; never for a `-diag` diagram, whose verdict is `skip`) | Resize the source frame (and its full-bleed background child, plus any qualifying overlay children) to 1180px wide, uniformly scaled, then re-export — or, when there's no enclosing frame at all, resize a matching bare shape sitting directly on the canvas instead |
 
 ## Classify each finding
 
@@ -54,7 +54,7 @@ the scope table above. Nothing else is ever auto-fixed.
   every occurrence of the PII in the image — see the rule 7 procedure
   below; `plan-word-range`'s own automatic whole-line fallback still counts
   as `safe: true`, so it never demotes a finding to FLAG_ONLY on its own);
-  rule 10 (⚠️, width > 1200px).
+  rule 10 (⚠️, width > 1200px, never on a `-diag` diagram).
 * **FLAG_ONLY**: rule 3's grid-alignment ⚠️; rule 4's sequencing/placement
   (a color-correct callout with a numbering gap or wrong corner stays
   untouched — see the reasoning below); rule 6's `false` on a close crop, or

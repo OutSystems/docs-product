@@ -6,6 +6,7 @@ tags:
   - Front-End
   - Screens
   - Troubleshooting
+  - UI
 locale: en-us
 guid: 4d218bfe-d4ed-474f-bc58-2b4573911a31
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -3,8 +3,11 @@ summary: Explore mobile app update mechanisms and scenarios in OutSystems 11 (O1
 tags:
   - 1-Click Publish
   - Caching
+  - Data Model
+  - Deploy
   - Mobile app
   - Plugins
+  - Troubleshooting
 locale: en-us
 guid: ce4f8a4d-d473-4b92-a448-cf39fde1f64d
 app_type: mobile apps

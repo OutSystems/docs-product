@@ -3,6 +3,8 @@ summary: OutSystems 11 (O11) UI patterns and widgets that require extra configur
 tags:
   - Accessibility
   - OutSystems UI
+  - Platform Server
+  - UI
   - UI Patterns
   - Widgets
 locale: en-us
@@ -39,16 +41,6 @@ Patterns not listed in this table are compliant by default since **OutSystems UI
 
 <div class="info" markdown="1">
 
-The following components are built on top of external libraries, thus OutSystems hasn't assessed them for WCAG 2.2 AA compliance:
-
-* [OutSystems Data Grid](../patterns/mobile/interaction/data-grid/intro.md)
-* [OutSystems Maps](../patterns/mobile/interaction/map/intro.md)
-* [OutSystems Charts](https://charts.outsystems.com/)
-
-</div>
-
-<div class="info" markdown="1">
-
 If you're upgrading OutSystems UI to a version that includes WCAG 2.2 AA compliance for a pattern, you must remove any manual workaround from that pattern before upgrading. See the pattern's accessibility guidelines for specific details.
 
 </div>
@@ -63,7 +55,7 @@ If you're upgrading OutSystems UI to a version that includes WCAG 2.2 AA complia
 | [Card Background](../patterns/mobile/content/cardbackground.md#accessibility) | No<br/> (requires manual effort) | - |
 | [Carousel](../patterns/mobile/interaction/carousel.md#accessibility) | Yes | 2.29.0 |
 | [Counter](../patterns/mobile/numbers/counter.md#accessibility) | No<br/> (requires manual effort) | - |
-| [Inline SVG](../patterns/mobile/utilities/inlinesvg.md#accessibility) | Yes | 2.29.0 |
+| [Inline SVG](../patterns/mobile/utilities/inlinesvg.md#accessibility) | Yes | 2.30.0 |
 | [Lightbox](../patterns/mobile/interaction/lightboximage.md#accessibility) | No<br/> (requires manual effort) | - |
 | [Master Detail](../patterns/mobile/adaptive/masterdetail.md#accessibility) | No<br/> (requires manual effort) | - |
 | [Notification](../patterns/mobile/interaction/notification.md#accessibility) | No<br/> (requires manual effort) | - |
@@ -75,6 +67,16 @@ If you're upgrading OutSystems UI to a version that includes WCAG 2.2 AA complia
 | [Tooltip](../patterns/mobile/content/tooltip.md#accessibility) | No<br/> (requires manual effort) | - |
 | [User Avatar](../patterns/mobile/content/useravatar.md#accessibility) | Yes | 2.29.0 |
 | [Wizard](../patterns/mobile/navigation/wizard.md#accessibility) | No<br/> (requires manual effort) | - |
+
+<div class="info" markdown="1">
+
+The following components are built on top of external libraries, thus OutSystems hasn't assessed them for WCAG 2.2 AA compliance:
+
+* [OutSystems Data Grid](../patterns/mobile/interaction/data-grid/intro.md)
+* [OutSystems Maps](../patterns/mobile/interaction/map/intro.md)
+* [OutSystems Charts](https://charts.outsystems.com/)
+
+</div>
 
 ### Widgets
 

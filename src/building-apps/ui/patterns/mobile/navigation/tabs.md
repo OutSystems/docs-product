@@ -26,7 +26,7 @@ isautopublish: true
 topic:
   - accessible-tabs-pattern
   - tabs-reference-o11
-  - use-tabs-pattern-o11
+  - use-tabs-pattern-mobile-reactive-o11
 ---
 
 # Tabs

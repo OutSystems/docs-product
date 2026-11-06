@@ -465,6 +465,11 @@ knowledge-needs:
         exceptions, including matching catch logic, bubbling to a more generic
         handler, and adding exception handler flows to an action, so that they
         can route errors to the right handler and create custom exceptions.
+    - name: Service action rollback
+      id: service-action-rollback
+      description: Wants to understand how an exception raised by a Service
+        Action affects changes made earlier in the calling Action, so that they
+        can predict which database changes are rolled back and not committed.
     - name: Fix empty OnException
       id: fix-empty-onexception
       description: Wants to fix the "Empty 'OnException'" error in Service Studio
@@ -861,11 +866,11 @@ knowledge-needs:
     subtopics:
     - name: Client event fetch
       id: client-event-fetch
-      description: Wants to avoid performing local data fetch inside client events
-        (On Initialize, On Ready, On Render) in OutSystems mobile apps, and instead
-        fetch data via data fetch calls, using the On After Fetch event for dependent
-        fetches, so that data fetching runs in parallel with screen rendering instead
-        of being fully serialized.
+      description: Wants to avoid performing local data fetches inside screen
+        lifecycle events such as On Initialize, On Ready, and On Render, and
+        instead use data fetch calls with On After Fetch for dependent fetches,
+        so data loads in parallel with screen rendering instead of being
+        serialized.
     - name: Screen lifecycle events
       id: screen-lifecycle-events
       description: Wants to understand the OutSystems screen lifecycle events and
@@ -1225,6 +1230,11 @@ knowledge-needs:
         including consensus, complexity management, risk reduction, planning,
         change facilitation, and cost reduction, so they can justify
         architecture work to stakeholders.
+    - name: Enterprise architecture fit
+      id: fit-outsystems-enterprise-architecture
+      description: Wants to determine OutSystems' role and responsibilities
+        within an existing enterprise architecture, so they can improve the
+        enterprise's digital resilience and agility.
   - name: Application best practices
     id: application-best-practices
     subtopics:
@@ -1253,6 +1263,11 @@ knowledge-needs:
         maintainability, including architecture validation, development best
         practices, peer review, and code review, so they can apply them
         throughout development.
+    - name: Low-Code Review component
+      id: low-code-review-component
+      description: Wants to use the Low-Code Review component to manage
+        technical debt in an OutSystems app, so that code review findings are
+        tracked and addressed during development.
     - name: Custom CSS best practices
       id: application-custom-css-practices
       description: Wants to follow best practices when adding custom CSS to an
@@ -1267,6 +1282,11 @@ knowledge-needs:
       description: Wants to apply architecture best practices when structuring an
         OutSystems app, so that its components remain maintainable as the app
         grows.
+    - name: Prioritize infractions
+      id: prioritize-architecture-infractions
+      description: Wants to identify which OutSystems 11 architecture infractions
+        to fix first, based on module dependency direction and upward references
+        to End-user modules, so they can prioritize architecture remediation.
     - name: Custom app architecture
       id: custom-app-architecture
       description: Wants to design a base application architecture that supports
@@ -1282,6 +1302,12 @@ knowledge-needs:
       description: Wants to build mobile apps with multiple independent teams
         using shared architectural, development, and synchronization practices,
         so that teams avoid conflicts and stay productive.
+    - name: Scale mobile apps
+      id: scale-mobile-apps
+      description: Wants to understand how to build enterprise mobile apps for
+        millions of users, considering data synchronization, monitoring, and
+        business-process requirements, so they can plan a scalable mobile
+        application architecture.
     - name: Application security
       id: application-security-practices
       description: Wants to apply least-privilege access to an OutSystems app, so
@@ -1433,6 +1459,12 @@ knowledge-needs:
       description: Wants to add pagination and records-per-page control to a Table
         widget, so that users can navigate through large datasets in configurable
         page sizes.
+    - name: Refresh table pagination
+      id: refresh-table-pagination
+      description: Wants to determine the correct execution order for refreshing a
+        paginated Table Records widget and its List_Navigation widget in an OnNotify
+        action, so that page changes display the correct records in Traditional Web
+        Apps (O11).
     - name: Limit record fetches
       id: limit-record-fetches
       description: Wants to limit how many records a screen fetches and displays by
@@ -1635,12 +1667,23 @@ knowledge-needs:
   - name: Adding test data
     id: adding-test-data
     subtopics:
-    - name: Manage sample data
-      id: manage-sample-data
-      description: Wants to export, import, and reset the sample data provided
-        by the OutSystemsSampleDataDB module using its public Server Actions
-        and Service Center timers, so they can customize or refresh the data
-        used by Screen Templates in Service Studio.
+    - name: Export sample data
+      id: export-sample-data
+      description: Wants to export the sample data provided by the
+        OutSystemsSampleDataDB module using its public Server Actions and
+        Service Center timers, so they can customize the data used by Screen
+        Templates in Service Studio.
+    - name: Import sample data
+      id: import-sample-data
+      description: Wants to import sample data into the OutSystemsSampleDataDB
+        module using its public Server Actions and Service Center timers, so
+        they can refresh the data used by Screen Templates in Service Studio.
+    - name: Reset sample data
+      id: reset-sample-data
+      description: Wants to reset the sample data provided by the
+        OutSystemsSampleDataDB module using its public Server Actions and
+        Service Center timers, so they can restore the data used by Screen
+        Templates in Service Studio.
     - name: Reference sample data
       id: reference-sample-data
       description: Wants to add the OutSystems Sample Data public elements to
@@ -1669,6 +1712,9 @@ knowledge-needs:
     - name: Entity schema mapping
       id: entity-schema-mapping
       description: Wants to understand how OutSystems represents database tables as entities, including attributes, identifiers, reference attributes, indexes, records, relationships, delete rules, and entity diagrams, so they can model database structures correctly in Service Studio.
+    - name: Identifier defaults
+      id: identifier-defaults
+      description: Wants to understand the default data type and Auto Number setting for an entity Identifier in Service Studio for OutSystems 11, so they can recognize the generated identifier configuration when modeling data.
     - name: Database auto numbers
       id: database-auto-numbers
       description: Wants to understand how OutSystems implements an Integer attribute with IsAutoNumber set to Yes in SQL Server and Oracle, so they know which database objects are created and why the generated values can differ across environments.
@@ -1766,6 +1812,9 @@ knowledge-needs:
     - name: Expose Read Only pattern
       id: entity-expose-read-only-pattern
       description: Wants to understand how to use the recommended Expose Read Only pattern for entity actions on both client and server sides, so they can access entity data through the appropriate layer.
+    - name: Read-only entity access
+      id: read-only-entity-access
+      description: Wants to understand how a public OutSystems 11 entity with Expose Read Only set to Yes can be queried by consumer modules through Aggregates, while consumer modules cannot modify its data or use its built-in delete action, so they can identify the allowed cross-module access.
     - name: Static entity setup
       id: static-entity-setup
       description: Wants to create a static entity and add country records with flag URLs and dial-in codes, so that a Dropdown Search screen uses fixed lookup data.
@@ -2330,6 +2379,37 @@ knowledge-needs:
         using syntax testing and multi-step test scenarios and structuring them
         as reusable, data-driven test blocks, so that the test suite stays
         maintainable and scalable as APIs evolve.
+    - name: API test transactions
+      id: api-test-transactions
+      description: Wants to test service actions in ODC by explicitly committing
+        setup or teardown data created by server actions outside the service
+        action's transaction scope, so that test data persists correctly.
+    - name: API test error handling
+      id: api-test-error-handling
+      description: Wants to test failure scenarios for imported REST and SOAP APIs
+        in ODC by raising custom exceptions from the OnAfterResponse handler and
+        asserting status and error details in BDD scenarios, so that API failures
+        are validated explicitly.
+  - name: API testing strategy
+    id: api-testing-strategy
+    subtopics:
+    - name: API contract
+      id: api-contract
+      description: Wants to understand what an API contract defines for requests,
+        responses, data changes, and logging, so they can verify that API tests
+        cover the API's functional, non-functional, security, and scalability
+        requirements.
+    - name: POISED strategy
+      id: poised-strategy
+      description: Wants to apply the POISED strategy to plan API tests for
+        parameters, output, interoperability, security, errors, and data, so
+        they can cover the key dimensions of API behavior.
+    - name: Choose API test tools
+      id: choose-api-test-tools
+      description: Wants to choose a tool for testing service actions, exposed
+        REST APIs, and consumed SOAP APIs in ODC based on each API type's access
+        constraints, so they can test each integration with the appropriate
+        BDD Framework or external tool.
 - name: Access Control and Privileges
   guid: ccc4b848-0f34-4854-bdc3-76e15fd4f42c
   topics:
@@ -2749,6 +2829,12 @@ knowledge-needs:
      description: Wants to plan keyboard navigation and focus order for app screens
        before implementation, so people who use keyboards or switch devices
        can complete the same tasks.
+     subtopics:
+     - name: Inclusive app design
+       id: inclusive-app-design
+       description: Wants to understand how inclusive design choices can support users
+         with different access, language, and communication needs, so they can
+         recognize and apply inclusive design in OutSystems apps.
    - name: Translating apps
      id: translating-apps
      subtopics:
@@ -3012,6 +3098,12 @@ knowledge-needs:
         from BinaryData in loading behavior, size limits, and reference
         semantics, so they can choose the right data type for large content in
         reactive web and mobile apps.
+    - name: Migrate BinaryData
+      id: migrate-binarydata
+      description: Wants to replace a BinaryData entity attribute with a File
+        attribute by adding a new attribute, migrating existing content, and
+        deleting the old attribute only after migration, so they can move large
+        content to cloud storage without losing data.
     - name: File type properties
       id: file-type-properties
       description: Wants to look up the File data type's properties and restrictions,
@@ -3487,12 +3579,23 @@ knowledge-needs:
     id: data-performance-caching
     subtopics:
     - name: Invalidate app cache
-      id: invalidate-app-cache
-      description: Wants to invalidate server-side caches (from Aggregates,
-        Advanced SQL queries, and server actions using Cache in Minutes) for
-        the calling application across all replicas in ODC, using the
-        ApplicationInvalidateCache system action, so that stale cached data
-        doesn't linger after underlying data changes.
+      id: invalidate-odc-cache
+      description: Wants to invalidate server-side caches for the calling application
+        across all replicas in ODC, using the ApplicationInvalidateCache system
+        action, so that stale cached data doesn't linger after underlying data
+        changes.
+    - name: Invalidate O11 cache
+      id: invalidate-o11-cache
+      description: Wants to invalidate cached elements in OutSystems 11
+        multitenant applications by using the EspaceInvalidateCache and
+        TenantInvalidateCache system actions, so that stale cached data is
+        removed after application or tenant data changes.
+    - name: Configure element caching
+      id: configure-element-caching
+      description: Wants to configure caching for supported elements in
+        OutSystems 11 by setting the Cache in Minutes property and checking
+        input parameter restrictions, so that frequently accessed content
+        loads efficiently.
     - name: Optimize data transfer
       id: optimize-data-transfer
       description: Wants to understand how OutSystems 11 optimizes server-to-client
@@ -3507,6 +3610,11 @@ knowledge-needs:
         outdated table statistics and checking and defragmenting the table in
         Oracle or SQL Server, in OutSystems 11, so that the query optimizer builds
         accurate access plans and performance recovers.
+    - name: Optimize Elasticsearch
+      id: optimize-elasticsearch
+      description: Wants to improve search performance by using Elasticsearch to index
+        and query data when searching multiple tables with complex business rules is
+        too slow, so search results return quickly.
     - name: Get AWR/ADDM reports
       id: get-awr-addm-reports
       description: Wants to generate and interpret Oracle AWR (Automatic Workload
@@ -3850,6 +3958,9 @@ knowledge-needs:
     - name: Import external tables
       id: import-external-tables
       description: Wants to import entities from external tables or views in Integration Studio by selecting the database connection, selecting the tables and views, defining the logical database, reviewing the data types, and publishing the extension so that they create entities from external database data.
+    - name: Sync external lookup data
+      id: sync-external-lookup-data
+      description: Wants to synchronize external lookup-table entities into local entities after importing them through Integration Studio, so they can join the synchronized data with local entities in an OutSystems 11 application.
     - name: Refresh entity definition
       id: refresh-entity-definition
       description: Wants to refresh an imported entity definition in Integration Studio after the source database table changes, so that the entity is updated from the database, any local changes are replaced except for the entity name, invalid attributes are ignored with a warning, and the extension remains connected to the server where it will be deployed.
@@ -4765,6 +4876,12 @@ knowledge-needs:
         support, by applying the page-break-inside CSS rule, passing header/footer
         URLs via OtherArgs, and adding pagination JavaScript, in OutSystems 11, so
         that the generated PDF report renders correctly and completely.
+  - name: Generate Word documents
+    id: generate-word-documents
+    subtopics:
+    - name: Use Aspose Words
+      id: use-aspose-words
+      description: Wants to manipulate and generate Word documents in OutSystems 11 using the Aspose Words tool together with available OutSystems features, so that they can implement document solutions ranging from simple to demanding requirements.
   - name: Integration Builder
     id: integration-builder
     subtopics:
@@ -5773,11 +5890,6 @@ knowledge-needs:
         by detecting them, diagnosing the risk to critical assets and
         infrastructure, and determining the remediation steps that strengthen
         the security posture, so that they can respond appropriately.
-    - name: Sentry capabilities
-      id: sentry-capabilities
-      description: Wants to understand what Sentry for ODC includes and what
-        security controls and compliance features it provides, so that they
-        can evaluate the security add-on for an ODC organization.
 - name: ODC Workflows
   guid: 8f3c2a1d-6e4b-4a7f-9c0d-2b5e7f1a4c9e
   topics:
@@ -7963,6 +8075,11 @@ knowledge-needs:
         Process activity in OutSystems 11, so that the runtime creates a
         sub-process instance, pauses the parent until the sub-process terminates,
         and then resumes the parent flow.
+    - name: Design process patterns
+      id: design-process-patterns
+      description: Wants to apply process design patterns when designing an
+        OutSystems 11 process, so that the process flow is easier to read and
+        performs better.
     - name: Conditional process start
       id: conditional-process-start-o11
       description: Wants to configure a conditional start in an OutSystems 11 process so it starts on create or update entity events and only listens after a dependency source activity has executed.
@@ -8639,6 +8756,12 @@ knowledge-needs:
     - name: Choose execution model
       id: choose-execution-model
       description: Wants to choose how automated tests run, including local, scheduled, or CI/CD execution, based on feedback speed, manual intervention, environment isolation, and team capabilities, so they can align test execution with their automation goals.
+    - name: Define automation goals
+      id: define-automation-goals
+      description: Wants to define the goals and context for introducing test automation, including release speed, technical debt, testability, and continuous testing, so the team can choose suitable tactics and align its automation strategy.
+    - name: Automate regression tests
+      id: automate-regression-tests
+      description: Wants to automate regression testing with BDD-based tests and apply lessons learned from quality challenges, so they can validate application behavior across changes.
     - name: Manage test data
       id: manage-test-data
       description: Wants to manage test data for automated tests by separating master data, test-specific data, and external data, so tests stay idempotent, reliable, and fast.
@@ -9190,6 +9313,19 @@ knowledge-needs:
       description: Wants to use a Container widget on a screen to group related
         elements and control the layout and visibility of UI sections, so that
         they can organize screen content in Service Studio for OutSystems 11.
+    - name: Configure flexbox layout
+      id: configure-flexbox-layout
+      description: Wants to configure a Container, Placeholder, or Form widget
+        with Flexbox layout properties, including direction, alignment,
+        wrapping, and child growth or shrink behavior, in ODC Studio, so that
+        child elements form responsive one-dimensional layouts without custom
+        CSS.
+    - name: Configure grid layout
+      id: configure-grid-layout
+      description: Wants to configure a Container, Placeholder, or Form widget
+        with Grid layout properties, including breakpoint-specific columns,
+        rows, gaps, and child spans, in ODC Studio, so that child elements form
+        responsive multi-column layouts without custom CSS.
     - name: List detail screens
       id: list-detail-screens
       description: Wants to create list and detail screens for entities from a core
@@ -10435,11 +10571,11 @@ knowledge-needs:
     - name: Use Mouse Events pattern
       id: use-mouse-events-pattern
       description: Wants to add the Mouse Events UI Pattern to a screen and
-        configure its WidgetId, PreventDefaults, and Handler properties,
-        including adding the widget via Toolbox or Search in other modules
-        if the dependency isn't added, in Service Studio for OutSystems 11,
-        so that they can capture high-precision mouse drag events, such as
-        drag distance, in mobile apps and reactive web apps.
+        configure its properties and event handler, including adding the
+        widget via Toolbox or Search in other modules if the dependency isn't
+        added, in Service Studio for OutSystems 11, so that they can capture
+        high-precision mouse drag events, such as drag distance, in mobile
+        apps and reactive web apps.
     - name: Use Swipe Events pattern
       id: use-swipe-events-pattern
       description: Wants to add the Swipe Events UI Pattern to a screen and
@@ -11175,6 +11311,11 @@ knowledge-needs:
       description: Wants to understand what OutSystems widgets are, how they help
         design and organize screen content, and what common widget types do, so
         they can choose the right widget for a screen.
+    - name: Button and link behavior
+      id: button-and-link-behavior
+      description: Wants to identify the navigation, submission, and enclosure
+        capabilities of Button and Link widgets in a Traditional Web App (O11),
+        so they can distinguish true and false statements about these widgets.
     - name: Toolbox widgets
       id: toolbox-widgets
       description: Wants to identify that OutSystems UI and Rich Widgets are available in the
@@ -11379,9 +11520,10 @@ knowledge-needs:
         built-in top menu layout on desktop, tablet, and mobile devices.
     - name: Responsive device behavior
       id: responsive-device-behavior
-      description: Wants to understand how OutSystems UI detects the device type and screen
-        size, adds responsive CSS classes, and applies breakpoint rules, so they can adapt
-        layouts and content for phones, tablets, and desktops.
+      description: Wants to understand how OutSystems UI detects device type
+        and screen size, adds responsive CSS classes, and applies breakpoint
+        rules, and how to use responsive layouts in Reactive Web apps, so they
+        can adapt screens for phones, tablets, and desktops.
   - name: UI performance best practices
     id: ui-performance-best-practices
     description: Wants to apply best practices for optimizing OutSystems 11
@@ -11425,6 +11567,11 @@ knowledge-needs:
         screen expressions, deferring JavaScript that isn't needed at load
         time to the end of the page, and using minified JavaScript in
         production, so that screen size and page load time are reduced.
+    - name: Avoid inline CSS
+      id: avoid-inline-css
+      description: Wants to avoid using inline CSS in OutSystems 11 visual
+        elements in Traditional Web apps, so that page size and performance
+        remain manageable as screens grow.
     - name: Use CSS sprites
       id: use-css-sprites
       description: Wants to reduce the number of server requests for images
@@ -11449,10 +11596,6 @@ knowledge-needs:
         and Mobile Apps, in OutSystems 11, so that they can decide whether
         JavaScript is the right solution and find the detailed instructions
         for their app type.
-    - name: Add and run JavaScript
-      id: add-run-javascript-reactive
-      description: Wants to add and run JavaScript in Reactive Applications, so they
-        can extend app behavior with client-side logic.
     - name: Create and import JavaScript scripts
       id: create-import-javascript-scripts
       description: Wants to create and import JavaScript scripts in OutSystems, so they
@@ -11637,6 +11780,13 @@ knowledge-needs:
         Service Studio for OutSystems 11 Traditional Web Apps, so that the
         confirmation dialog appears, which OutSystems doesn't show when
         navigating directly to a popup screen.
+    - name: Create styled dialogs
+      id: create-styled-dialogs
+      description: Wants to implement animated and styled confirmation dialogs in
+        an OutSystems 11 Reactive Web App, by importing the required JavaScript
+        libraries, creating a block and client action with the dialog
+        configuration, and wiring a button to the action, so that users can
+        respond to a styled confirmation message.
     - name: Resize popup window
       id: resize-popup-window
       description: Wants to dynamically resize a Popup_Editor window at runtime by
@@ -11745,14 +11895,17 @@ knowledge-needs:
         compiles them into separate .js files added via <script> tags in the
         page's <head> element and the code becomes reusable across Web
         Screens and Web Blocks, in Traditional Web Apps (O11).
+    - name: Place screen JavaScript
+      id: place-screen-javascript
+      description: Wants to place JavaScript code in a Traditional Web App's
+        Screen JavaScript property when the code is used only on one
+        frequently accessed Screen, so the browser can cache it and improve
+        performance.
     - name: Run JS code methods
-      id: run-js-code-methods
-      description: Wants to know the ways to run JavaScript code in a
-        Traditional Web App, using an Extended Property event, an unescaped
-        Expression, or the RunJavaScript Server Action of the
-        HTTPRequestHandler API, in Service Studio for O11, so that they can
-        trigger custom JavaScript behavior in response to events or during
-        screen rendering.
+      id: run-js-code-methods-traditional
+      description: Wants to know the available ways to run JavaScript in a
+        Traditional Web App, so that they can trigger custom JavaScript behavior
+        in response to events or during screen rendering.
     - name: Set dynamic input value
       id: set-dynamic-input-value
       description: Wants to automatically update one input's value when another
@@ -11828,8 +11981,7 @@ knowledge-needs:
       description: Wants to add JavaScript code from an external library or a
         .js file to an app by importing or creating a script under the Scripts
         folder and setting it as the Required Scripts property on a screen or
-        block, in Service Studio for OutSystems 11 Mobile Apps and Reactive Web
-        Apps, so that the script's functions and objects become available in
+        block, so that the script's functions and objects become available in
         JavaScript elements on that screen or block.
     - name: Script loading order
       id: script-loading-order
@@ -11837,9 +11989,8 @@ knowledge-needs:
         load and execute (module-level scripts first, then block-level, then
         screen-level), including that module scripts load before the On
         Application Ready system event and block/screen scripts load before
-        their element renders, in OutSystems 11 Mobile Apps and Reactive Web
-        Apps, so that they can predict when JavaScript functions and objects
-        become available at runtime.
+        their element renders, so that they can predict when JavaScript
+        functions and objects become available at runtime.
     - name: Script element reference
       id: script-element-reference
       description: Wants to look up the properties and runtime properties of the
@@ -13563,6 +13714,12 @@ knowledge-needs:
       description: Wants to identify which statements about OutSystems mobile
         apps are true or false, so they can answer basic capability questions
         in O11.
+    - name: Humanitarian relief apps
+      id: humanitarian-relief-apps
+      description: Wants to understand how organizations use OutSystems to
+        develop applications for humanitarian relief and disaster response, so
+        they can evaluate the platform's viability when selecting a modern
+        application development platform for emergency programs.
   - name: Java course overview
     id: java-course-overview
     description: Wants to understand the roadmap for the OutSystems for Java
@@ -13956,6 +14113,12 @@ knowledge-needs:
       id: build-app-in-service-studio
       description: Wants to build an app in Service Studio, so they can turn a
         business need into a working app.
+    - name: Build full-stack apps
+      id: build-full-stack-apps
+      description: Wants to understand how to build a full-stack application with
+        OutSystems by combining data modeling, business logic, integrations, and
+        user interface design, so they can evaluate the platform's end-to-end app
+        development workflow.
     - name: Edit an app in Service Studio
       id: edit-app-in-service-studio
       description: Wants to edit an existing app in Service Studio, so they can
@@ -14750,6 +14913,12 @@ knowledge-needs:
       through a describe-review-refine conversational workflow, and how AI
       agents, the OutSystems Model, and the compiler work together under the
       hood, so that they can decide whether it fits their use case.
+  - name: AI Mentor overview
+    id: ai-mentor-overview
+    description: Wants to understand how AI Mentor Systems augment software
+      development in OutSystems and how the platform uses them to deliver
+      next-generation development capabilities, so that they can assess how AI
+      will shape software delivery.
   - name: MCP terminology
     id: mcp-terminology
     description: Wants to understand the terms used across OutSystems MCP in
@@ -14977,6 +15146,12 @@ knowledge-needs:
         hierarchical, shared memory, network, and human-in-the-loop designs,
         so they can choose an appropriate pattern for coordinating agents in
         an ODC agentic app.
+    - name: Multi-agent modularity
+      id: multi-agent-modularity
+      description: Wants to understand how multi-agent workflows differ from
+        single-agent workflows in modularity, scalability, fault tolerance, and
+        governance, so they can identify the architectural trade-offs when
+        designing an ODC agentic app.
     - name: Reason-act loop
       id: reason-act-loop
       description: Wants to understand how the ReAct reason-act loop cycles
@@ -14990,6 +15165,11 @@ knowledge-needs:
         in GetGroundingData, so that the agent can compare more than one
         data source (for example, applicant data and policy rules) in a
         single grounding context.
+    - name: External data references
+      id: external-data-references
+      description: Wants to design an agentic flow that stores massive datasets
+        externally and returns only a unique reference or summary, so that the
+        agent can access the data without exhausting its context window.
     - name: Add additional agents
       id: add-additional-agents
       description: Wants to add more than one agent to an existing agentic app
@@ -15003,6 +15183,11 @@ knowledge-needs:
         writing clear action and parameter descriptions and marking parameters
         as Generated by AI, so that the agent can autonomously select and
         invoke the right action with correct inputs.
+    - name: Generate action schema
+      id: generate-action-schema
+      description: Wants to understand how ODC converts a Server Action's name,
+        description, and parameter types into a structured JSON schema, so that
+        an LLM can reliably interpret and call the action.
     - name: Set agent call condition
       id: set-call-condition
       description: Wants to define a call condition expression using ODC's internal
@@ -16061,6 +16246,15 @@ knowledge-needs:
     - name: File transfer readiness
       id: file-transfer-readiness
       description: Wants to call File Transfer plugin actions only after the Cordova or Capacitor bridge has fully initialized, so file transfer operations do not fail with OS-PLUG-FLTR-0001 in supported mobile apps.
+    - name: Use file transfer plugin
+      id: use-file-transfer-plugin
+      description: Wants to install and use the File Transfer plugin in ODC Studio to download and upload files, add HandleDownload and HandleUpload blocks, and handle completion, error, and progress events in Mobile Apps and PWAs, so that apps can transfer files and report task status.
+    - name: Handle PWA file transfers
+      id: handle-pwa-file-transfers
+      description: Wants to understand how File Transfer plugin downloads determine the file name and type in a PWA, and why uploads aren't supported there, so that they can implement file transfers correctly across PWAs and Mobile Apps.
+    - name: File transfer reference
+      id: file-transfer-reference
+      description: Wants to look up File Transfer plugin client actions, events, result and error structures, error codes, deprecated actions, and platform limitations, so that they can implement and troubleshoot file transfers in OutSystems apps.
     - name: File transfer not loaded
       id: file-transfer-not-loaded
       description: Wants to resolve the OS-PLUG-FLTR-0003 error by confirming the File Transfer plugin is included in the mobile package, regenerating the package when it is missing from the build, and reinstalling the app so the client action can load the plugin at runtime.
@@ -16265,6 +16459,12 @@ knowledge-needs:
         the plugin via window.CapacitorPlugins, using the library in the
         app, and building the mobile package, so that the plugin's native
         functionality becomes available to the app.
+    - name: Thermal camera triage
+      id: thermal-camera-triage
+      description: Wants to understand how an OutSystems mobile app can
+        integrate a thermal camera to identify potentially infected patients
+        during infectious-disease triage, so they can apply connected
+        technology to make patient screening faster and more affordable.
     - name: Barcode plugin ODC
       id: barcode-plugin-odc
       description: Wants to use the Barcode Plugin in an ODC app to scan 1D and
@@ -16361,6 +16561,16 @@ knowledge-needs:
         major releases, regular releases, and cumulative patches in
         OutSystems 11, so that they can tell what gets refreshed for each
         release type.
+  - name: ODC roadmap for adoption planning
+    id: odc-roadmap-adoption-planning
+    description: Wants to use the OutSystems Developer Cloud (ODC) roadmap to
+      plan platform adoption and align application architecture decisions with
+      planned capabilities, so they can make informed adoption choices.
+  - name: ODC product update impact
+    id: odc-product-update-impact
+    description: Wants to interpret OutSystems Developer Cloud (ODC) product
+      updates and assess their impact on existing application architecture and
+      adoption plans, so they can decide what changes or follow-up are needed.
 - name: Load testing
   guid: f816091c-1508-4da9-b5f6-cffebb845234
   topics:
@@ -16460,6 +16670,64 @@ knowledge-needs:
       description: Wants to sign an Android mobile app with a release keystore,
         upload the APK to Google Play, complete the store listing, and publish
         the app, so that the app is available through the Android public store.
+    - name: Fix cert expiry
+      id: fix-cert-expiry
+      description: Wants to resolve the OS-MABS-UPLD-40029 error during an Android
+        app bundle upload by creating a keystore with a certificate that meets
+        the required validity period, registering its SHA-256 fingerprint in
+        Google Play Console, and configuring the ODC build with the new keystore,
+        so that ODC can upload the app bundle successfully.
+    - name: Fix Google Play key error
+      id: fix-google-play-key-error
+      description: Wants to resolve the OS-MABS-UPLD-40012 invalid private key
+        error during a Google Play internal release upload by verifying the
+        private_key value and creating and configuring a new service account
+        JSON key, so that the app bundle upload succeeds.
+    - name: Fix invalid service JSON
+      id: fix-invalid-service-json
+      description: Wants to resolve the OS-MABS-UPLD-40002 error during an
+        Android app bundle upload by verifying the required fields in the
+        Google Cloud service account JSON and creating and configuring a new
+        service account JSON key when needed, so that the app bundle upload
+        succeeds.
+    - name: Fix Play upload error
+      id: fix-play-upload-error
+      description: Wants to resolve the OS-MABS-UPLD-40015 error during an
+        Android app bundle upload by verifying the Google Play package name,
+        app registration, and Google Cloud service account permissions, so that
+        ODC can upload the app bundle successfully.
+    - name: Fix app identifier error
+      id: fix-app-identifier-error
+      description: Wants to resolve the OS-MABS-UPLD-50005 error during an
+        Android app bundle upload by checking that an app identifier is assigned
+        to the build and matches the package name in Google Play Console,
+        creating a new build when needed, so that ODC can upload the app bundle
+        successfully.
+    - name: Fix signing key mismatch
+      id: fix-signing-key-mismatch
+      description: Wants to resolve the OS-MABS-UPLD-40027 error during an
+        Android app bundle upload by configuring the ODC build with the keystore
+        whose key is registered for the package name in Google Play Console, or
+        registering a replacement key and rebuilding, so that ODC can upload
+        the app bundle successfully.
+    - name: Fix AAB build type
+      id: fix-build-type-android
+      description: Wants to resolve the OS-MABS-UPLD-40004 error during an
+        Android app bundle upload by creating the build with the Google Play
+        (App Bundle) build type, so that ODC can upload the app bundle
+        successfully.
+    - name: Fix version code error
+      id: fix-version-code-error
+      description: Wants to resolve the OS-MABS-UPLD-40017 error during an
+        Android app bundle upload by creating a new build with a version code
+        higher than any version code previously used for the app, so that ODC
+        can upload the app bundle successfully.
+    - name: Fix target SDK error
+      id: fix-target-sdk-error
+      description: Wants to resolve the OS-MABS-UPLD-40028 error during an
+        Android app bundle upload by creating a new build with a MABS version
+        that meets the current Google Play target API level requirement, so that
+        ODC can upload the app bundle successfully.
     - name: Mobile distribution types
       id: mobile-distribution-types
       description: Wants to choose an appropriate distribution method for a mobile app
@@ -16521,6 +16789,157 @@ knowledge-needs:
         and following the recommended action, including for dependency or
         configuration errors, so they can generate a working mobile app
         package.
+    - name: Fix missing credentials
+      id: fix-missing-credentials
+      description: Wants to resolve the OS-MABS-UPLD-40022 error that occurs
+        when uploading a mobile build without credentials for the matching
+        store, by saving the App Store Connect API key or Google Play service
+        account JSON key and uploading the build again, so that the upload
+        succeeds.
+    - name: Fix App Store build
+      id: fix-build-type-ios
+      description: Wants to resolve the OS-MABS-UPLD-40003 error that occurs
+        when uploading an iOS build to App Store Connect, by generating the
+        app again with the AppStore build type and uploading the resulting
+        build, so that the upload succeeds.
+    - name: Fix service key rejection
+      id: fix-service-key-rejection
+      description: Wants to resolve the OS-MABS-UPLD-40013 error that occurs
+        when Google Play rejects a service account key during an app bundle
+        upload, by checking that the service account and key are active and
+        generating and uploading a new service account JSON key when needed,
+        so that the app bundle upload succeeds.
+    - name: Fix Play service account
+      id: fix-play-service-account
+      description: Wants to resolve the OS-MABS-UPLD-40016 error during an
+        Android app bundle upload by adding the Google Cloud service account to
+        Google Play Console and granting it the permissions required to access
+        the app and release it to the relevant testing track, so that ODC can
+        upload the app bundle successfully.
+    - name: Fix upload in progress
+      id: fix-upload-in-progress
+      description: Wants to resolve the OS-MABS-UPLD-40020 error that occurs
+        when uploading a build while an earlier upload of the same build is
+        still in progress, by waiting for the earlier upload to finish,
+        checking its result, and retrying only if it failed, so that the build
+        is uploaded successfully.
+    - name: Retry credential upload
+      id: retry-credential-upload
+      description: Wants to resolve the OS-MABS-UPLD-50001 error that occurs
+        when MABS cannot read the stored App Store Connect or Google Play
+        credentials during a mobile build upload, by retrying the upload, so
+        that the build upload succeeds.
+    - name: Fix upload start failure
+      id: fix-upload-start-failure
+      description: Wants to resolve the OS-MABS-UPLD-50006 error that occurs
+        when ODC accepts a mobile build upload request but cannot start sending
+        the build to the app store, by uploading the build again and, if it
+        fails again, generating the app again and uploading the new build, so
+        that the upload succeeds.
+    - name: Fix upload timeout
+      id: fix-upload-timeout
+      description: Wants to resolve the OS-MABS-UPLD-50007 error that occurs
+        when a mobile build upload exceeds its time limit or fails because the
+        app store rejects the build or an upload step fails, by reviewing the
+        upload log, following any reported OS-MABS-UPLD error action, and
+        retrying the build when no error is reported, so that the upload
+        succeeds.
+    - name: Fix unknown upload error
+      id: fix-unknown-upload-error
+      description: Wants to resolve the OS-MABS-UPLD-50008 error that occurs
+        when a mobile build upload fails for an unknown store-upload cause, by
+        retrying the upload, reviewing its upload log for more detailed store
+        messages, and opening a support case if the failure persists, so that
+        the build reaches App Store Connect or Google Play.
+    - name: Fix unavailable package
+      id: fix-unavailable-package
+      description: Wants to resolve the OS-MABS-UPLD-40023 error that occurs
+        during a mobile app upload when ODC no longer has the signed package
+        because a newer build is available, by uploading the latest build or
+        generating the app again from the desired version and uploading it,
+        so that the upload succeeds.
+    - name: Fix running build
+      id: fix-running-build
+      description: Wants to resolve the OS-MABS-UPLD-40024 error that occurs
+        when uploading a mobile build while the latest build for the same
+        platform is still running, by waiting for the running build to finish
+        and uploading the build that finished when the signed package is
+        deleted, so that the upload succeeds.
+    - name: Fix iOS key error
+      id: fix-ios-key-error
+      description: Wants to resolve the OS-MABS-UPLD-40001 invalid App Store
+        Connect private key error when saving the iOS app configuration in
+        ODC Portal or through the public API, by downloading a valid .p8 file
+        and uploading it unchanged or Base64-encoding its contents, so that
+        ODC saves the configuration successfully.
+    - name: Fix iOS API key
+      id: fix-ios-api-key
+      description: Wants to resolve the OS-MABS-UPLD-40005 error indicating
+        that the App Store Connect API key is not a valid .p8 private key, by
+        uploading the original .p8 file downloaded from App Store Connect or
+        creating a new API key and updating the App Store Connect
+        configuration, so that the iOS app upload starts successfully.
+    - name: Fix API key mismatch
+      id: fix-api-key-mismatch
+      description: Wants to resolve the OS-MABS-UPLD-40006 error caused by
+        mismatched or inactive App Store Connect API credentials, by
+        confirming the Key ID, Issuer ID, and .p8 file belong to the same
+        active key and updating the configuration, so that the iOS app upload
+        succeeds.
+    - name: Fix missing App Store app
+      id: fix-missing-app-store-app
+      description: Wants to resolve the OS-MABS-UPLD-40007 error that occurs
+        when App Store Connect has no app record for the bundle identifier or
+        the API key lacks access to it, by creating the app record and giving
+        the API key at least the App Manager role, so that the iOS app upload
+        succeeds.
+    - name: Fix App Store rejection
+      id: fix-app-store-rejection
+      description: Wants to resolve the OS-MABS-UPLD-40008 error that occurs
+        when App Store Connect rejects an iOS build without a specific error
+        code, by correcting the issue described in apple_detail and generating
+        and uploading the build again, so that App Store Connect accepts the
+        build.
+    - name: Fix duplicate version
+      id: fix-duplicate-version
+      description: Wants to resolve the OS-MABS-UPLD-40009 error that occurs
+        when App Store Connect already contains a build with the same or a
+        higher version, by increasing the app version, generating the app
+        again, and uploading the new build, so that App Store Connect accepts
+        the upload.
+    - name: Fix duplicate build
+      id: fix-duplicate-build
+      description: Wants to resolve the OS-MABS-UPLD-40025 error that occurs
+        when ODC already uploaded, or is uploading, a build with the same app
+        identifier, mobile version number, and mobile version code, by changing
+        the mobile version number or version code, generating the app again,
+        and uploading the new build, so that ODC accepts the upload.
+    - name: Fix missing app ID
+      id: fix-missing-app-id
+      description: Wants to resolve the OS-MABS-UPLD-40026 error that occurs
+        when uploading a mobile build with no app identifier, by setting the
+        app identifier, generating the app again, and uploading the new build,
+        so that ODC accepts the upload.
+    - name: Fix App Store role
+      id: fix-app-store-role
+      description: Wants to resolve the OS-MABS-UPLD-40010 error that occurs
+        when App Store Connect refuses an iOS upload because the API key lacks
+        the required App Manager role or its team membership is inactive, by
+        updating the key's role and confirming active team membership, so that
+        the upload succeeds.
+    - name: Fix agreement error
+      id: fix-agreement-error
+      description: Wants to resolve the OS-MABS-UPLD-40011 error that occurs
+        when App Store Connect blocks an iOS upload because a required Apple
+        Developer agreement is missing or expired, by signing the outstanding
+        agreement with an Account Holder account and uploading the app again,
+        so that the upload succeeds.
+    - name: Enable Play Developer API
+      id: enable-play-developer-api
+      description: Wants to resolve the OS-MABS-UPLD-40014 error that occurs
+        when the Google Play Developer API is not enabled for the Google Cloud
+        project that owns the service account, by enabling the API, so that the
+        app bundle upload succeeds.
     - name: Cordova bootstrap error
       id: cordova-bootstrap-error
       description: 'Wants to resolve the OS-MABS-PLF-50000 "Something
@@ -16636,6 +17055,12 @@ knowledge-needs:
         increase to API 28 that requires updated Android support
         libraries, so that they can update their app and plugins before
         or after upgrading the MABS version.
+    - name: MABS 5 release notes
+      id: mabs-5-release-notes
+      description: Wants to review the release notes for MABS 5, including new
+        features, bug fixes, and the known iOS 12 viewport-flicker issue, so
+        that they can troubleshoot mobile apps still running on a MABS 5
+        version.
     - name: MABS 11 upgrade overview
       id: mabs-11-upgrade-overview
       description: Wants to understand what's new in MABS 11, including iOS
@@ -16812,8 +17237,8 @@ knowledge-needs:
         entities that have a large number of attributes, or complex queries
         returning many attributes, throw Out Of Memory exceptions due to a
         SQLite plugin limitation in how Android handles JSON objects
-        internally, so that they can keep entities under the 50-attribute
-        threshold and avoid the issue.
+        internally, so that they can keep entities within the plugin's
+        supported attribute limit and avoid the issue.
     - name: Persist screen state
       id: persist-screen-state
       description: Wants to maintain field values entered on a mobile screen (for
@@ -17769,6 +18194,17 @@ knowledge-needs:
         incompatible Kotlin version, by updating the preference to a
         compatible version or checking whether a plugin is overriding it,
         so that the mobile app package generates successfully.'
+    - name: Kotlin metadata version error
+      id: kotlin-metadata-version-error
+      description: 'Wants to resolve the OS-MABS-GEN-40024 "Couldn''t generate
+        your app. A library used by your app was compiled with Kotlin metadata
+        version <library_version>, but your app expects version
+        <expected_version>." error, caused by a library or plugin using an
+        incompatible Kotlin version, by identifying the affected library and
+        plugin in the build log and updating or replacing the plugin, setting
+        the Android GradlePluginKotlinVersion preference, or selecting a
+        compatible MABS version, so that the mobile app package generates
+        successfully.'
     - name: Invalid CocoaPods spec error
       id: invalid-cocoapods-spec-error
       description: 'Wants to resolve the OS-MABS-PLG-40005 "Spec attribute in
@@ -18937,11 +19373,18 @@ knowledge-needs:
         redirected to the Google Play Store or another URL instead of the
         app.
     - name: Deep link handling
-      id: deep-link-handling
+      id: deep-link-handling-odc
       description: Wants to handle incoming deep links and custom URL schemes
         in ODC mobile apps by relying on the MABS-generated scheme and routing
         the link in Capacitor or Cordova, so that browsers, apps, and
         notifications open the right screen.
+    - name: Customize deep links
+      id: customize-deep-links-o11
+      description: Wants to customize how an OutSystems 11 Mobile App handles
+        incoming deep links by setting the DeepLinksHandlerType preference in
+        extensibility configurations and defining the required event or
+        function handler, so that links navigate, fire an event, call a
+        function, or reload the page as intended.
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
   topics:
@@ -19376,6 +19819,32 @@ knowledge-needs:
         Sentry to satisfy PCI DSS SAQ D attestation requirements, so that they
         can complete the required steps before pursuing attestation with a
         PCI Qualified Security Assessor.
+    - name: Sentry capabilities
+      id: sentry-capabilities-odc
+      description: Wants to understand what Sentry for ODC includes and what
+        security controls and compliance features it provides, so that they
+        can evaluate the security add-on for an ODC organization.
+    - name: Sentry capabilities O11
+      id: sentry-capabilities-o11
+      description: Wants to understand what OutSystems 11 Sentry includes and
+        what security controls and compliance features it provides, so that
+        they can evaluate the Sentry add-on for OutSystems 11 Cloud.
+    - name: Check Sentry subscription O11
+      id: check-sentry-subscription-o11
+      description: Wants to confirm that OutSystems 11 Sentry is active for
+        their infrastructure by checking the subscription in the Customer
+        Portal, so that they know whether the Sentry capabilities apply to
+        them.
+    - name: Check Sentry subscription ODC
+      id: check-sentry-subscription-odc
+      description: Wants to confirm that Sentry for ODC is active for their
+        organization by checking the Subscription page in ODC Portal, so that
+        they know whether the Sentry capabilities apply to them.
+    - name: Access Sentry dashboard O11
+      id: access-sentry-dashboard-o11
+      description: Wants to access the Sentry Monitoring dashboard in the
+        Customer Portal and know which roles can open it, so that they can
+        review the security and audit events of their infrastructure.
     - name: Safe Harbor compliance
       id: safe-harbor-compliance
       description: Wants to understand why the Safe Harbor ECJ ruling doesn't apply
@@ -20012,6 +20481,13 @@ knowledge-needs:
         settings, proxy configuration, client secret and client ID values,
         redirect URIs, and IdP response codes, so that they can restore
         external IdP sign-in.
+    - name: Users app lockout
+      id: users-app-lockout
+      description: Wants to regain access to the OutSystems 11 Users app
+        after being locked out because an incorrectly configured external
+        authentication method prevents all logins, by using the default
+        Users app login page with a UserManager administrator account, so
+        that they can correct the authentication settings.
     - name: Change authentication provider
       id: change-authentication-provider
       description: Wants to change an OutSystems 11 environment's
@@ -21374,6 +21850,11 @@ knowledge-needs:
         digital solutions for child abuse, domestic violence, or sexual assault, so
         they can recognize how an application addresses urgent community support
         needs.
+    - name: Apps for good
+      id: apps-for-good
+      description: Wants to understand how OutSystems apps can create positive social
+        impact, when exploring technology-for-good initiatives and hackathons, so
+        they can identify opportunities to build apps that address community needs.
     - name: Process diagrams
       id: process-diagrams
       description: Wants to create and scope process diagrams for a business vision
@@ -21459,6 +21940,18 @@ knowledge-needs:
         process in Service Studio when the process needs manual user input, so
         that the process pauses, assigns work to a user, and creates a Taskbox
         item to continue the workflow.
+    - name: Employee sick-leave processes
+      id: employee-sick-leave-processes
+      description: Wants to understand how OutSystems can streamline employee
+        sick-leave processes by connecting employees with the right departments
+        and documents, so they can identify ways to improve the employee
+        sick-leave experience.
+    - name: Employee onboarding processes
+      id: employee-onboarding-processes
+      description: Wants to understand how OutSystems can streamline employee
+        onboarding processes by connecting new employees with the right
+        departments and documents, so they can identify ways to improve the
+        employee onboarding experience.
   - name: Process decision patterns
     id: process-decision-patterns
     description: Wants to understand when to use Business Process Technology,
@@ -21611,6 +22104,12 @@ knowledge-needs:
       delivery team, including solution architecture, team building, quality
       assurance, acting as the user, and project steering, so that they can guide
       delivery with a balance of architecture, quality, and business value.
+  - name: Decentralized leadership
+    id: decentralized-leadership
+    description: Wants to understand how decentralized leadership and shared
+      decision-making help delivery teams respond to uncertainty, complex
+      scenarios, and high-stakes situations, so that they can adapt and deliver
+      effectively.
   - name: Project steering
     id: project-steering
     description: Wants to identify the project steering core behavior from a
@@ -24039,22 +24538,33 @@ knowledge-needs:
       id: gather-monitoring-api-data
       description: Wants to gather application operations data (request duration,
         browser load time, server time, error counts) using the Monitoring API's
-        GET RequestEvents method or by querying log data, and optionally register
-        custom events via POST RequestEvents or LogMessage, so that they have the
-        raw data needed to build custom alerts.
+        GET RequestEvents method or by querying log data, so that they have the raw
+        data needed to build custom alerts.
+    - name: Register custom monitoring events
+      id: register-custom-monitoring-events
+      description: Wants to register custom events via the Monitoring API's POST
+        RequestEvents method or LogMessage, so that they can include application-
+        specific events in custom alerts.
     - name: Define alert thresholds
       id: define-alert-thresholds
       description: Wants to consume Monitoring API data or log data and define custom
         logic with thresholds that trigger alerts, using OutSystems logic or a
         third-party application, so that they can detect when application metrics
         cross acceptable limits.
-    - name: Integrate alerts ITSM
-      id: integrate-alerts-itsm
-      description: Wants to trigger email notifications or call webservices when
-        an alert threshold is met, to create tickets in ITSM tools such as
-        ServiceNow, Zendesk, Jira, or Opsgenie, send Slack messages, or integrate
-        with any webservice-exposing external service, so that operational alerts
-        reach the right external system.
+    - name: Create ITSM tickets from alerts
+      id: create-itsm-tickets-from-alerts
+      description: Wants to send operational alerts to ITSM tools when an alert
+        threshold is met, so that the alerts create tickets for operational
+        follow-up.
+    - name: Send alerts to collaboration tools
+      id: send-alerts-to-collaboration-tools
+      description: Wants to send operational alerts to collaboration tools when
+        an alert threshold is met, so that the right teams receive notifications
+        for operational follow-up.
+    - name: Send alerts through webhooks
+      id: send-alerts-through-webhooks
+      description: Wants to send alert payloads through a webhook when an alert
+        threshold is met, so that operational alerts reach an external service.
   - name: App Feedback
     id: app-feedback
     subtopics:
@@ -24997,6 +25507,26 @@ knowledge-needs:
         plus the execution's overall duration and token counts, so they can
         inspect agent behavior in detail beyond what general trace search
         shows.
+    - name: Set budgets per agent and stage
+      id: budget-per-agent-and-stage
+      description: Wants to set a separate AI model spending budget for each
+        agent in each stage, so that a development budget can stay small while a
+        production budget reflects real use.
+    - name: Budget soft limit
+      id: budget-soft-limit
+      description: Wants to know that an AI agent keeps running after its
+        spending passes its budget limit, so that they decide whether to stop
+        the agent rather than assume it stops on its own.
+    - name: Budget alerts
+      id: budget-alerts
+      description: Wants to receive alerts by email and in the ODC Portal when
+        an AI agent crosses the percentage thresholds they set for its budget,
+        so that they hear about rising spending before it reaches the limit.
+    - name: Budget status
+      id: budget-status
+      description: Wants to read an AI agent's budget status level, from under
+        budget to at or over its limit, so that they can see which agents are
+        close to their limit.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:
@@ -25085,6 +25615,15 @@ knowledge-needs:
         subtitle files from the Training portal and playing them locally with
         a media player like VLC, so that they can continue training without
         guaranteed progress tracking.
+  - name: Education Program
+    id: education-program
+    subtopics:
+    - name: OutSystems education
+      id: outsystems-education
+      description: Wants to understand how the OutSystems Education Program
+        provides educational benefits and career opportunities for students and
+        teachers, so they can explore learning and career pathways with
+        OutSystems.
   - name: Certification exams
     id: certification-exams
     subtopics:
@@ -25095,12 +25634,24 @@ knowledge-needs:
         or junk folders, by using the confirmation number and last name on
         the Prometric Score Report portal, so that they can see which exam
         topics they passed or failed.
+    - name: Exam format overview
+      id: exam-format-overview
+      description: Wants to understand the requirements, format, question
+        count, passing score, duration, and version-specific scope of an
+        OutSystems certification exam, by reviewing the exam detail sheet, so
+        that they know what to expect before registering or preparing.
     - name: Missing exam appointment
       id: missing-exam-appointment
       description: 'Wants to get their exam appointment details when they
         didn''t receive the appointment confirmation email, by checking
         spam and junk folders and opening a support case if it''s still
         missing, so that they can continue with their exam registration.'
+    - name: Register for certification exam
+      id: register-certification-exam
+      description: Wants to register for an OutSystems certification exam, by
+        selecting the delivery method and exam language on the Certifications
+        page, pre-registering, and completing the registration form, so that
+        they can schedule the exam.
     - name: Exam refund eligibility
       id: exam-refund-eligibility
       description: Wants to cancel a scheduled certification exam and receive a refund, by
@@ -25141,6 +25692,11 @@ knowledge-needs:
         and the reasons behind an "Invalid voucher" error (expired, wrong
         exam type, or already used), so that they can successfully apply the
         discount without registration issues.
+    - name: Prepare for certification exam
+      id: prepare-for-certification-exam
+      description: Wants to prepare for an OutSystems certification exam, by
+        reviewing its topic categories and recommended training, documentation,
+        and technical resources, so that they can plan their study.
   - name: Community account overview
     id: community-account-overview
     subtopics:
@@ -25164,6 +25720,14 @@ knowledge-needs:
       description: Wants to understand which profile and account settings they
         can manage with an OutSystems community account, so they know where to
         update their personal details and account preferences.
+  - name: Developer career
+    id: developer-career
+    subtopics:
+    - name: Junior developer growth
+      id: junior-developer-growth
+      description: Wants to become a more productive junior OutSystems developer
+        by applying practical strategies to overcome early-career challenges, so
+        they can develop faster when starting their OutSystems career.
   - name: Support Portal
     id: support-portal
     subtopics:
@@ -25887,3 +26451,39 @@ knowledge-needs:
     id: check-plan-entitlement
     description: Platform administrator wants to check whether their plan
       includes IP restrictions, so they know whether they can use them.
+  - name: Sign-in endpoints follow IP rules
+    id: ip-rules-cover-sign-in
+    description: Platform administrator wants to know that a rule that blocks an
+      address also blocks it from signing in to the ODC Portal, so that they can
+      predict who can sign in.
+  - name: Disable an IP rule
+    id: disable-ip-rule
+    description: Platform administrator wants to disable an IP rule without
+      deleting it and re-enable it later, so that they can pause a rule without
+      losing its settings.
+  - name: Pipeline runner IP rules
+    id: pipeline-runner-ip-rules
+    description: Developer wants to add an IP rule when a CI/CD pipeline's
+      runner address changes, so that the pipeline can keep calling the platform
+      APIs.
+  - name: Internal platform traffic and IP rules
+    id: internal-traffic-ip-rules
+    description: Platform administrator wants to know that internal
+      platform-to-platform traffic isn't affected by IP rules, so that they
+      don't add rules for it.
+  - name: Opt-in IP restrictions
+    id: ip-restrictions-opt-in
+    description: Platform administrator wants to know that a tenant without
+      platform IP rules sees no change, so that they can adopt the restriction
+      safely.
+- name: Digital transformation
+  guid: d603ee39-ab68-4192-80af-f708dfee4927
+  topics:
+  - name: Transformation at scale
+    id: transformation-at-scale
+    subtopics:
+    - name: Scale transformation
+      id: scale-transformation
+      description: Wants to understand approaches and examples for scaling
+        digital transformation across teams and delivery, so they can plan and
+        execute transformation at scale.

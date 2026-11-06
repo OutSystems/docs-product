@@ -22,7 +22,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - deployments-api-automation
+  - lifetime-api-examples
 ---
 
 # LifeTime API Examples

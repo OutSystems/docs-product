@@ -19,7 +19,7 @@ coverage-type:
   - apply
 topic:
   - add-radio-group-widget
-  - use-button-group-pattern-mobile-reactive-o11
+  - use-button-group-widget
 ---
 
 # Pick Only One Option in a Group of Choices

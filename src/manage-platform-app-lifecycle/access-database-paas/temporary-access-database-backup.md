@@ -9,6 +9,7 @@ coverage-type:
   - understand
   - apply
 tags:
+  - External Databases
   - Infrastructure
   - Troubleshooting
 audience:

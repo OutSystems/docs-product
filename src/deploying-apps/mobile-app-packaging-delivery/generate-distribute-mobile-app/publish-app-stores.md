@@ -2,6 +2,7 @@
 summary: Learn how to generate and publish your mobile app to app stores using OutSystems 11 (O11).
 tags:
   - Android
+  - Deploy
   - iOS
   - Mobile app
 locale: en-us

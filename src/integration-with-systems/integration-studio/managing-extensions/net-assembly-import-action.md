@@ -10,7 +10,6 @@ tags:
   - Extensions
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

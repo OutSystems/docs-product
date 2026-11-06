@@ -11,8 +11,13 @@ platform-version: o11
 audience:
   - Platform administrator
 tags:
+  - Blocks
   - Deploy
   - Infrastructure
+  - IT Roles
+  - IT Users
+  - Lifecycle
+  - Settings
 outsystems-tools:
   - lifetime
 helpids:

@@ -3,6 +3,10 @@ summary: OutSystems 11 (O11) features a ChatbotAdvanced block for custom chatbot
 tags:
   - AI
   - Blocks
+  - Events
+  - Front-End
+  - Logic
+  - Screens
   - UI
 locale: en-us
 guid: 4a9fac26-25aa-4c53-a0fa-bb76b640c5e2

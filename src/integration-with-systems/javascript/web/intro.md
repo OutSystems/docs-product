@@ -23,7 +23,7 @@ coverage-type:
 topic:
   - add-external-js-file-o11
   - define-js-code-block-o11
-  - run-js-code-methods
+  - run-js-code-methods-traditional
 ---
 
 # Extend your Traditional Web App using JavaScript

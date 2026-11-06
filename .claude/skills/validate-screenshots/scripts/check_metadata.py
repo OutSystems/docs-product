@@ -5,11 +5,11 @@ Covers three rules from the rubric that don't require vision:
     rule 1  — file extension must be .png
     rule 2  — filename must be lowercase letters, digits and hyphens,
               and must end with one of the documented surface suffixes
-    rule 10 — pixel width must be <= 1200
+    rule 10 — pixel width must be <= 1200 (not for -diag diagrams)
 
 Output is a JSON object so the skill can merge this verdict with the
 vision-based ones. Every verdict has the shape
-    {"verdict": "pass" | "fail" | "warn", "reason": "..."}.
+    {"verdict": "pass" | "fail" | "warn" | "skip", "reason": "..."}.
 
 Usage:
     python3 check_metadata.py <path-to-image>
@@ -94,6 +94,14 @@ def png_width(path: Path) -> int | None:
 
 
 def check_width(path: Path) -> dict:
+    # A diagram is allowed to be wider: shrinking a dense one to the limit
+    # makes it unreadable on the page, so the width rule does not apply.
+    if path.stem.rsplit("-", 1)[-1] == DIAGRAM_SUFFIX:
+        return {
+            "verdict": "skip",
+            "reason": "diagrams (-diag) are exempt from the width limit",
+            "px": png_width(path),
+        }
     width = png_width(path)
     if width is None:
         return {

@@ -6,8 +6,13 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=4043-89
 tags:
+  - 1-Click Publish
+  - Best Practices
+  - Caching
   - Infrastructure
+  - Monitoring
   - Platform Server
+  - Troubleshooting
 audience:
   - Platform administrator
   - Developer

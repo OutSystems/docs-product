@@ -13,6 +13,7 @@ tags:
   - Plugins
 audience:
   - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - forge

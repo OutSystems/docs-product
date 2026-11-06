@@ -42,7 +42,7 @@ Before you enable performance analytics for Reactive and Mobile apps, verify you
 
 * LifeTime version is 11.31.0 or higher.
 
-* Platform Server version is 11.43.0 or higher.
+* Platform Server version is 11.43.0 or higher in the target environment.
 
 * LifeTime Analytics is enabled in the target environment.
 

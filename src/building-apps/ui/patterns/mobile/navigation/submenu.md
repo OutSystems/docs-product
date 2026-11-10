@@ -7,7 +7,7 @@ tags:
   - UI
   - UI Patterns
   - Widgets
-summary: OutSystems 11 (O11) documentation explains the Submenu UI Pattern integration for Mobile and Reactive Web Apps.
+summary: OutSystems 11 (O11) Submenu UI Pattern lets you build nested menus and increase touch target sizes in Mobile and Reactive Web Apps.
 locale: en-us
 guid: a4d2d0a7-47cf-4816-a3a4-c0861a5b59d7
 app_type: mobile apps, reactive web apps

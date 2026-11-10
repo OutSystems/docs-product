@@ -1,5 +1,5 @@
 ---
-summary: Explore command line functionalities in OutSystems 11 (O11) for efficient module management and application development.
+summary: Service Studio command-line tools in OutSystems 11 (O11) let you open, merge, refresh, export settings, and recover modules from the Windows CLI.
 locale: en-us
 guid: 23c2945f-211b-438d-b8c1-0aae40cd316d
 app_type: traditional web apps, mobile apps, reactive web apps

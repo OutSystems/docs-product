@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) supports mobile app development with Firebase plugins for enhanced features like analytics and crash reporting.
+summary: Firebase plugins in OutSystems 11 (O11) configure mobile app services, tracking permission, custom events, and ecommerce analytics.
 locale: en-us
 guid: 188c9757-ce29-4f78-9717-4e42226e0a4d
 app_type: mobile apps

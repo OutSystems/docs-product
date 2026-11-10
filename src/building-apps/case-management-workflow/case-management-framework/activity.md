@@ -1,6 +1,7 @@
 ---
 tags:
   - Authorization
+  - Blocks
   - Case Management framework
   - Workflows
 summary: OutSystems 11 (O11) provides APIs for managing human activities in case management, including assignments and access controls.

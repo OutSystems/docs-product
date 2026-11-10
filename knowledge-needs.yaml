@@ -321,6 +321,24 @@ knowledge-needs:
         items, including building a loop with an If condition when no dedicated
         loop node exists, so that they can implement common control flow
         patterns in OutSystems.
+    - name: Switch statement behavior
+      id: switch-statement-behavior
+      description: Wants to understand how a Switch statement evaluates its
+        branches in an OutSystems 11 action flow, including first-match
+        execution and the mandatory Otherwise fallback, so they can identify
+        correct and incorrect statements about Switch behavior.
+    - name: Create conditional paths
+      id: create-conditional-paths
+      description: Wants to create conditional paths in an ODC action flow by
+        adding an If node and configuring its condition, so app logic branches
+        based on runtime values.
+    - name: If statement behavior
+      id: if-statement-behavior
+      description: Wants to understand how an If statement in an ODC action
+        flow behaves, including its mandatory True and False branches,
+        single-branch execution, and inability to add extra branches or use it
+        as a loop, so they can identify correct and incorrect statements about
+        conditional logic.
     - name: Fix invalid action flow
       id: fix-invalid-action-flow
       description: Wants to fix Invalid Action Flow errors in OutSystems 11
@@ -3965,7 +3983,7 @@ knowledge-needs:
     id: database-connections
     subtopics:
     - name: Configure database connections
-      id: configure-database-connections
+      id: configure-database-connections-o11
       description: Wants to configure an external database connection per
         environment in Service Center and map the extension's logical database
         to it, so that applications using extension modules can read and write
@@ -4015,6 +4033,12 @@ knowledge-needs:
         Portal, select a supported provider, and reference the external
         entities in an app, so they can use external database data in ODC
         Studio.
+    - name: Per-stage DB connections
+      id: per-stage-db-connections-odc
+      description: Wants to configure a separate external database connection
+        string for each ODC stage, so applications in each stage use the
+        corresponding external database instance throughout the development
+        lifecycle.
     - name: Azure SQL connections
       id: azure-sql-connections
       description: Wants to configure an Azure SQL connection in ODC Portal,
@@ -5675,6 +5699,13 @@ knowledge-needs:
         user-supplied URLs, persisting requests for batch processing when needed, and
         restricting outbound requests with allowlists or proxies, so that internal
         services and cloud metadata stay unreachable.
+    - name: SSRF platform protection
+      id: platform-ssrf-protection-responsibility
+      description: Wants to know whether OutSystems 11 and ODC restrict outbound
+        requests or validate destination URLs on the platform side, and which SSRF
+        checks remain the app developer's responsibility, so that they can state
+        accurately where platform protection ends when assessing the platform against
+        the OWASP Top 10.
     - name: Encode custom HTML and JavaScript
       id: encode-custom-html-javascript
       description: Wants to safely include end-user input in custom HTML or
@@ -8475,10 +8506,10 @@ knowledge-needs:
     subtopics:
     - name: WFB overview
       id: wfb-overview
-      description: Wants to understand what Workflow Builder is and who it's for,
-        including business experts, analysts, process owners, IT managers, and
-        developers, in OutSystems 11, so that they can decide whether it's the
-        right tool for their business process app.
+      description: Wants to understand what Workflow Builder is, which kinds of
+        users and business process scenarios it supports, and whether it is the
+        right tool for their business process app in OutSystems 11, so that they
+        can decide whether to use it.
     - name: WFB form and workflow creation
       id: wfb-form-workflow-creation
       description: Wants to build a business process app in Workflow Builder by
@@ -21125,6 +21156,12 @@ knowledge-needs:
         an organization or app stage, and adding the generated redirect URLs
         to Azure Portal, so that end users can sign in through Microsoft
         Entra.
+    - name: Configure Azure AD B2C
+      id: configure-azure-ad-b2c
+      description: Wants to integrate Azure AD B2C with ODC as an external
+        identity provider when an ODC app uses Azure AD B2C for external
+        authentication, so that end users can authenticate through Azure AD
+        B2C.
     - name: Add OIDC provider
       id: add-oidc-provider
       description: Wants to add an OpenID Connect identity provider in ODC
@@ -22575,14 +22612,14 @@ knowledge-needs:
         from code conversion.
     - name: Additional pipelines pattern
       id: additional-pipelines-pattern
-      description: Wants to understand why O11 to ODC conversion isn't supported
-        yet for infrastructures with additional pipelines, so that they can focus
-        on preparing code and data for ODC instead of attempting conversion.
+      description: Wants to understand how infrastructures with additional pipelines affect
+        eligibility for O11 to ODC conversion, so that they can prepare code and data
+        appropriately before planning the conversion.
     - name: Self-managed infra pattern
       id: self-managed-infra-pattern
-      description: Wants to understand why O11 to ODC conversion isn't supported
-        yet for self-managed infrastructures, so that they can focus on preparing
-        code and data for ODC instead of attempting conversion.
+      description: Wants to understand how self-managed infrastructures affect eligibility
+        for O11 to ODC conversion, so that they can decide how to prepare their code
+        and data before choosing a supported migration approach.
     - name: Align persistent login
       id: align-persistent-login-timeout
       description: Wants to align an O11 Reactive Web or Mobile app's customizable
@@ -22667,10 +22704,10 @@ knowledge-needs:
     - name: Review assessment report
       id: review-assessment-report
       description: Wants to view and validate the ODC Conversion Assessment Tool's
-        report, including navigating to it via ODC Blueprint or a conversion plan,
-        and validating Code, Data, and Infrastructure pattern findings by reviewing
-        solutions and rerunning the assessment, so that they can plan the refactoring
-        effort needed before converting O11 apps to ODC.
+        report by opening it through the applicable conversion workflow, reviewing
+        pattern findings and their solutions, and rerunning the assessment, so that
+        they can plan the refactoring effort needed before converting O11 apps to
+        ODC.
     - name: Resolve findings
       id: resolve-findings
       description: Wants to resolve Conversion Assessment Tool findings by opening

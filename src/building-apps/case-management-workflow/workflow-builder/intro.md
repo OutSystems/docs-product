@@ -2,6 +2,7 @@
 tags:
   - Business Processes
   - IT Roles
+  - Platform Server
   - Templates
   - Workflows
 summary: OutSystems 11 (O11) enhances app development with Workflow Builder, enabling rapid, collaborative creation of workflow apps.

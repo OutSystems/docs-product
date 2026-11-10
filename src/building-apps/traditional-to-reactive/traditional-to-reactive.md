@@ -8,8 +8,8 @@ tags:
   - Entities
   - Programming Model
   - Roles
-  - Screens
   - Security
+  - Testing
   - Traditional Web
 audience:
   - Developer

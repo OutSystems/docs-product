@@ -1,8 +1,10 @@
 ---
 summary: Explore translation management features in OutSystems 11 (O11) using the translation editor in Service Studio.
 tags:
+  - Front-End
   - Multi-language
   - Translation
+  - UI
 locale: en-us
 guid: 507ea92c-761e-4ad0-aeee-ce029328c6b9
 app_type: traditional web apps, mobile apps, reactive web apps

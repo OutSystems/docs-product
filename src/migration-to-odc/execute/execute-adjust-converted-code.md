@@ -30,7 +30,7 @@ isautopublish: true
 
 After [converting your O11 apps to ODC](execute-how-to-migrate-code.md#code-conversion), you need to adjust the converted code for certain patterns that aren't handled automatically by the code conversion tool or require additional validation.
 
-## Validate and adapt SQL queries {adapt-sql-queries}
+## Validate and adapt SQL queries
 
 If your apps use SQL nodes, you need to validate and potentially adapt the SQL queries to ensure they are compatible with Aurora PostgreSQL and work as expected.
 

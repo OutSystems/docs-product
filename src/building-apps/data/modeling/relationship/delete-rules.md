@@ -17,6 +17,7 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+  - evaluate
 topic:
   - enforcing-data-integrity
   - data-relationships

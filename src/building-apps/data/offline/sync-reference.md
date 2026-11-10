@@ -15,6 +15,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - understand
 topic:
   - offline-synch
 ---

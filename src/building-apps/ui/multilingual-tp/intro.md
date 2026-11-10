@@ -20,7 +20,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - translating-apps
+  - make-multilingual-app
 ---
 
 # Multilingual Reactive Web and Mobile Apps

@@ -17,7 +17,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - translating-apps
+  - make-multilingual-app
+  - use-translation-editor
 ---
 
 # Translate your app

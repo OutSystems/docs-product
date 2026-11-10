@@ -18,7 +18,8 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - process-data-timers
+  - timer-overview
+  - timer-runtime-rules
 ---
 
 # Using Timers

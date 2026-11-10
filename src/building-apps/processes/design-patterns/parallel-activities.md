@@ -16,7 +16,7 @@ coverage-type:
   - evaluate
   - apply
 topic:
-  - process-decision-patterns
+  - design-process-patterns
 ---
 
 # Designing Parallel Activities

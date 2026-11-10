@@ -17,7 +17,7 @@ coverage-type:
   - understand
   - apply
 topic:
-  - agregating-data
+  - aggregation-functions
 ---
 
 # Aggregate a Column into a Single Value

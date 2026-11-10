@@ -3605,6 +3605,18 @@ knowledge-needs:
   - name: Data performance, caching
     id: data-performance-caching
     subtopics:
+    - name: Design Hot Cache
+      id: design-hot-cache
+      description: Wants to design a Hot Cache data pattern in an OutSystems 11 application by modeling active, pre-calculated data in optimized entities for dashboards, data mashups, and large calculations, so that frequently requested results load faster than real-time queries over source data.
+    - name: Run Hot Cache Lifecycle
+      id: run-hot-cache-lifecycle
+      description: Wants to run a Hot Cache lifecycle in an OutSystems 11 application by scheduling triggers, synchronizing only affected records, and purging expired or inactive data, so that cached data stays current and efficient without impacting application usage.
+    - name: Choose distributed cache
+      id: choose-distributed-cache
+      description: Wants to choose a distributed cache instead of a local cache in an OutSystems 11 application by evaluating shared state, front-end server scale, transient data, and synchronization requirements, so that cached data remains available and consistent across the infrastructure.
+    - name: Implement cache patterns
+      id: implement-cache-patterns
+      description: Wants to implement distributed cache population patterns in an OutSystems 11 application by using cache-aside logic or a scheduled Timer to load, refresh, invalidate, and expire cached data, so that applications retrieve shared data efficiently while controlling staleness.
     - name: Invalidate app cache
       id: invalidate-odc-cache
       description: Wants to invalidate server-side caches for the calling application
@@ -7527,6 +7539,11 @@ knowledge-needs:
   - name: How to process data using Timers
     id: process-data-timers
     subtopics:
+    - name: Create and run timers
+      id: create-and-run-timers
+      description: Wants to create a Timer, assign its action, and start it
+        manually with Wake<Timer Name> or from the management portal, so
+        background work can run without waiting for its schedule.
     - name: Timer overview
       id: timer-overview
       description: Wants to understand how OutSystems timers run asynchronous
@@ -7551,12 +7568,6 @@ knowledge-needs:
         status through screen polling or a BPT Wait construct, and cleaning up
         completed requests, so that users and processes don't remain blocked
         by long-running integration calls.
-    - name: Start timer execution
-      id: start-timer-execution
-      description: Wants to identify the valid ways to initiate a Timer in ODC,
-        including a predefined schedule, an on-demand start, and application
-        logic, so they can choose the correct trigger instead of treating the
-        timer as a synchronous request.
     - name: Timer best practices
       id: timer-best-practices
       description: Wants to implement a long-running Timer correctly by applying best
@@ -8182,6 +8193,13 @@ knowledge-needs:
       description: Wants to apply process design patterns when designing an
         OutSystems 11 process, so that the process flow is easier to read and
         performs better.
+    - name: Run multiple instances
+      id: run-multiple-instances
+      description: Wants to execute multiple instances of the same flow of
+        activities in an OutSystems 11 process when the number of instances is
+        known only at runtime, by using a new Process or Conditional Start and
+        waiting until all instances finish, so that the parent process
+        continues only after all work is complete.
     - name: Conditional process start
       id: conditional-process-start-o11
       description: Wants to configure a conditional start in an OutSystems 11 process so it starts on create or update entity events and only listens after a dependency source activity has executed.
@@ -8328,6 +8346,12 @@ knowledge-needs:
         stops and automatically retries from the beginning until it succeeds
         or the process is terminated, so that they can monitor and resolve
         failing process activities through Service Center.
+    - name: Safe activity retries
+      id: safe-activity-retries
+      description: Wants to design an OutSystems 11 Automatic Activity that
+        safely re-executes after failure by accounting for transaction rollback,
+        explicit commits, and external system calls, so that retries don't
+        create inconsistent or duplicate external records.
     - name: Automatic activity scope
       id: automatic-activity-scope
       description: Wants to know what elements are accessible when editing an
@@ -19010,6 +19034,14 @@ knowledge-needs:
         mobile app package using a deprecated MABS version, by switching to a
         MABS version that meets the minimum required version, so that the
         mobile app package generates successfully.
+    - name: MABS minimum version
+      id: mabs-minimum-version
+      description: 'Wants to resolve the OS-MCO-40008 "<AssetName> version
+        <AssetVersion> requires at least MABS <MabsVersion>." error, caused by
+        a mobile library requiring a higher MABS version than the app uses, by
+        updating MABS, removing the incompatible library, or downgrading it to
+        a compatible version, so that mobile compilation and the native mobile
+        build succeed.'
     - name: Too many plugins error
       id: too-many-plugins-error
       description: 'Wants to resolve the OS-MCO-40009 "The app includes too

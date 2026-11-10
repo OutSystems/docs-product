@@ -7,7 +7,11 @@ platform-version: o11
 figma:
 tags:
   - Asynchronous Processes
+  - Best Practices
   - Business Processes
+  - Data Integrity
+  - Extensions
+  - Logic
   - Workflows
 audience:
   - Developer

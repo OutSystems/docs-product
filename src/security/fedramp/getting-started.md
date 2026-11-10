@@ -1,14 +1,13 @@
 ---
 summary: Set up your OutSystems FedRAMP environment, configure IT user authentication through an external IdP, and prepare Service Studio for FIPS compliance.
 tags:
-  - Authentication
   - End-user Authentication
   - External Authentication
   - IdP
   - IT Users
   - OIDC
-  - Security
   - SAML
+  - Security
 locale: en-us
 guid: 4b1b0fcf-5012-476d-8631-eccb7e5da9ab
 app_type: traditional web apps, reactive web apps

@@ -12,7 +12,6 @@ topic:
   - permanent-database-access
   - temporary-database-access
 tags:
-  - Authentication
   - Authorization
   - Data
   - Infrastructure

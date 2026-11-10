@@ -1,7 +1,10 @@
 ---
 summary: OutSystems 11 (O11) supports maintaining UI in dedicated modules to enhance reuse and reduce merge conflicts.
 tags:
+  - Best Practices
   - Blocks
+  - Front-End
+  - Modular Programming
   - Screens
   - Themes
   - UI

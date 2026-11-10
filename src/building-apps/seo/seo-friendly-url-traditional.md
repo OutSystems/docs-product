@@ -138,7 +138,7 @@ http://www.example.com/AssetsManager
 http://www.example.com/EmailCampaignManager 
 ```
 
-### Redirect Rules
+### Redirect Rules {#redirect-rules}
 
 When domain changes occur make your old URLs point to the new ones using the Redirect Rules. It allows for old URL references to keep working, and for search engines to have a way of knowing that a replacement took place, thus not affecting their previous search engine ranking information.
 

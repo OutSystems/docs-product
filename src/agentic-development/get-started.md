@@ -1,7 +1,7 @@
 ---
 guid: 9fefed39-c894-483b-b625-0c88caf81f51
 locale: en-us
-summary: Install the OutSystems skill for O11, start the Service Studio MCP server, approve the connection from your MCP host, and confirm it with a first request.
+summary: OutSystems 11 (O11) MCP setup installs the skill, starts the Service Studio server, registers your MCP host, and verifies a first module request.
 figma: https://www.figma.com/design/ZHQuoL4EqX3GlbZV7r1xD2/Untitled?node-id=1-2&p=f&t=Qdn5XaDKDJIlcJxP-0
 coverage-type:
   - apply
@@ -16,6 +16,7 @@ audience:
 tags:
   - AI
   - Agentic
+  - Settings
   - Troubleshooting
 outsystems-tools:
   - service studio
@@ -50,6 +51,12 @@ You start the Service Studio MCP server **from the app list** or from **a module
 1. In the Service Studio menu bar, select **Edit** > **MCP Server**. The **MCP Server** window opens.
 
     ![The Edit menu in the Service Studio menu bar on macOS with the MCP Server option highlighted](images/outsystems-mcp-o11-settings-ss.png)
+
+    <div class="info" markdown="1">
+
+    Confirm you have Service Studio 11.55.91 or later running.
+
+    </div>
 
 1. Select **Start MCP server**. The port status changes to **Running**, and the button changes to **Stop MCP server**.
 

@@ -178,6 +178,7 @@ Validations run on PRs via `.github/workflows/`. Workflow names and checks vary 
 * Format: Jira ticket ID(s) first, space-separated, followed by a space and the plain-text short summary of the pull request. No colon, brackets, or other punctuation around the ticket ID, since automations that parse the title can break on non-ASCII characters or unexpected punctuation.
     * Single ticket: `RDTKF-25291 Fix heading hierarchy in MABS versions page`
     * Multiple tickets: `RDTKF-25291 TK-1234 Fix heading hierarchy in MABS versions page`
+* When you create a pull request, assign it to the current user (the GitHub account `gh` is authenticated as, for example `gh pr create --assignee "@me"`). If the pull request already exists, don't edit its assignees.
 
 ## Editor settings
 

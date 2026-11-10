@@ -218,18 +218,6 @@ knowledge-needs:
         For Each logic node in OutSystems 11, including setting the Record
         List, Start Index, and Maximum Iterations properties, so that they
         can perform logic recursively on each list item.
-    - name: Create conditional paths
-      id: create-conditional-paths
-      description: Wants to branch logic execution in a screen action based
-        on a condition, by using If and Switch nodes in Service Studio, in
-        OutSystems 11 (O11) apps, so that different logic paths run depending
-        on runtime values.
-    - name: Conditional paths (ODC)
-      id: create-conditional-paths-odc
-      description: Wants to branch logic execution in an action based on a
-        condition, by using If nodes in ODC Studio, in OutSystems Developer
-        Cloud (ODC) apps, so that different logic paths run depending on
-        runtime values.
     - name: Create action via widget
       id: create-action-from-widget-event
       description: Wants to create a new client action directly from a
@@ -1287,6 +1275,11 @@ knowledge-needs:
       description: Wants to identify which OutSystems 11 architecture infractions
         to fix first, based on module dependency direction and upward references
         to End-user modules, so they can prioritize architecture remediation.
+    - name: Recognize bad patterns
+      id: recognize-bad-patterns
+      description: Wants to recognize indicators of bad patterns in an OutSystems
+        application before opening Architecture Dashboard, so they can identify
+        and address code problems immediately.
     - name: Custom app architecture
       id: custom-app-architecture
       description: Wants to design a base application architecture that supports
@@ -1700,6 +1693,11 @@ knowledge-needs:
         server action and back office screen, so child entities are cleared
         before parent entities and foreign key relationships do not block the
         deletion.
+    - name: Create sample data
+      id: create-sample-data
+      description: Wants to create sample records for application entities
+        during development, so they can test database structures and
+        application behavior with representative data.
   - name: Modeling Data
     id: modeling-data
     subtopics:
@@ -2379,6 +2377,12 @@ knowledge-needs:
         using syntax testing and multi-step test scenarios and structuring them
         as reusable, data-driven test blocks, so that the test suite stays
         maintainable and scalable as APIs evolve.
+    - name: O11 API tests
+      id: o11-api-tests
+      description: Wants to create automated REST and SOAP API tests in OutSystems
+        11 with Test Framework, importing methods from Swagger or WSDL and
+        configuring inputs, expected outputs, and multi-step scenarios, so that
+        API behavior is validated consistently.
     - name: API test transactions
       id: api-test-transactions
       description: Wants to test service actions in ODC by explicitly committing
@@ -2410,6 +2414,11 @@ knowledge-needs:
         REST APIs, and consumed SOAP APIs in ODC based on each API type's access
         constraints, so they can test each integration with the appropriate
         BDD Framework or external tool.
+    - name: API testing overview
+      id: api-testing-overview
+      description: Wants to understand what API testing is, which practices make
+        it effective, and why it provides valuable feedback, so they can plan API
+        testing with a focus on useful results.
 - name: Access Control and Privileges
   guid: ccc4b848-0f34-4854-bdc3-76e15fd4f42c
   topics:
@@ -3764,6 +3773,21 @@ knowledge-needs:
       description: Wants to understand how to consume REST APIs in OutSystems 11 using
         reference information about consumed REST API elements, so they can integrate
         an app with external systems.
+    - name: Choose AWS services
+      id: choose-aws-services
+      description: Wants to choose AWS services for an OutSystems app when no suitable
+        Forge component exists, so they can plan a cloud integration that fits the
+        app's needs.
+    - name: Add image recognition
+      id: add-aws-image-recognition
+      description: Wants to add AWS image recognition to an OutSystems app when a
+        Forge component isn't available, so they can identify image content in
+        app workflows.
+    - name: Add a chatbot
+      id: add-aws-chatbot
+      description: Wants to add an AWS-powered chatbot to an OutSystems app when a
+        Forge component isn't available, so users can interact with the app
+        through a conversational interface.
   - name: REST API request formats
     id: rest-api-request-formats
     description: Wants to understand how exposed REST API requests handle supported media
@@ -3965,8 +3989,11 @@ knowledge-needs:
       id: refresh-entity-definition
       description: Wants to refresh an imported entity definition in Integration Studio after the source database table changes, so that the entity is updated from the database, any local changes are replaced except for the entity name, invalid attributes are ignored with a warning, and the extension remains connected to the server where it will be deployed.
     - name: External database options
-      id: external-database-options
+      id: external-database-options-o11
       description: Wants to understand the ways OutSystems integrates with external databases, using Integration Builder or Integration Studio, so they can choose the integration path to follow.
+    - name: ODC integrations overview
+      id: external-database-options-odc
+      description: Wants to understand how ODC integrations connect applications to external databases, so that they can choose an integration approach when extending application capabilities.
     - name: Use Integration Builder
       id: use-integration-builder
       description: Wants to integrate a supported external relational or MongoDB database with an OutSystems 11 app by configuring a connection, selecting tables or collections, publishing the integration, and consuming the generated entities or actions, so they can use external data in the app.
@@ -4228,9 +4255,29 @@ knowledge-needs:
         environment or a Platform Server version requirement error in
         LifeTime, so they can fix the connection or version issue and
         continue exposing O11 entities to ODC.
+    - name: Add SMS communication
+      id: add-sms-communication
+      description: Wants to integrate an external SMS service into a remote
+        business workflow, so they can send text notifications to participants.
+    - name: Add voice communication
+      id: add-voice-communication
+      description: Wants to integrate an external voice-calling service into a
+        remote business workflow, so they can place calls to participants.
+    - name: Add video communication
+      id: add-video-communication
+      description: Wants to integrate an external video-conferencing service
+        into a remote business workflow, so participants can meet face to face.
+    - name: Connect MQTT devices
+      id: connect-mqtt-devices
+      description: Wants to connect an ODC app to MQTT-enabled IoT devices by
+        configuring MQTT connectivity, so that the app can communicate with and
+        control IoT devices in an IoT solution.
   - name: Extensions
     id: extensions
     subtopics:
+    - name: ODC extension options
+      id: odc-extension-options
+      description: Wants to understand how traditional code extensions expand ODC application capabilities, so that they can decide when to use extensions alongside integrations.
     - name: Choose connector option
       id: choose-connector-option
       description: Wants to choose an approach for migrating from the third-party
@@ -4252,6 +4299,12 @@ knowledge-needs:
       description: Wants to build an external library package from an SDK template,
         generate the ZIP file with the provided script, and prepare it for upload
         to ODC Portal, so they can publish the custom C# logic.
+    - name: Consume SOAP in library
+      id: consume-soap-in-library
+      description: Wants to consume a SOAP web service from a C# external library
+        in ODC by generating a WCF client from a WSDL, implementing SDK interfaces
+        and actions, and publishing the library, so they can expose SOAP operations
+        to ODC apps.
     - name: Consume external library
       id: consume-external-library
       description: Wants to consume a published external library in ODC Studio,
@@ -4263,6 +4316,12 @@ knowledge-needs:
         exposed in the public interface of an External Library built with the
         OutSystems External Libraries SDK, so they can define supported
         signatures and avoid invalid types like Tuple.
+    - name: Configure SDK attributes
+      id: configure-sdk-attributes
+      description: Wants to configure the OutSystems External Libraries SDK
+        attributes and their metadata properties on .NET interfaces, methods,
+        parameters, structures, and structure fields, so they can expose
+        custom library logic as correctly described ODC actions and data.
     - name: Fix DataType mismatch
       id: fix-datatype-mismatch
       description: Wants to fix the OS-ELG-MODL-05017 error ("<ParameterName/StructureFieldName> has an incompatible DataType assigned and cannot be converted.") by changing the .NET type or DataType modifier so the field maps to a compatible OutSystems type before uploading the external library, so they can publish it successfully.
@@ -4317,6 +4376,13 @@ knowledge-needs:
     - name: Configure Visual Studio
       id: configure-visual-studio
       description: Wants to install Microsoft Visual Studio with the .NET desktop development workload and have Integration Studio detect and use it, so they can develop C# extensions.
+    - name: Use .NET Standard library
+      id: use-netstandard-library
+      description: Wants to use .NET Standard libraries in an OutSystems 11
+        extension by targeting a supported .NET Framework version, configuring
+        Visual Studio and Integration Studio, and excluding unnecessary system
+        assemblies, so the extension builds and runs without runtime issues
+        when it depends on those libraries.
     - name: Extension source files
       id: extension-source-files
       description: Wants to understand which source files Integration Studio generates for an extension after it creates the extension, where those files are stored, and which generated files they should not edit in the .NET IDE, so they can work with the extension bootstrap files correctly.
@@ -4792,6 +4858,11 @@ knowledge-needs:
       description: Wants to access data from a legacy Lotus Notes/Domino application
         using ODBC and a SQL Server Linked Server, on a 64-bit SQL Server environment,
         so that OutSystems applications can query that legacy data at runtime.
+    - name: Integrate mainframes
+      id: integrate-mainframes
+      description: Wants to integrate mainframe back-end systems with modern
+        OutSystems applications using a component that bridges the two, so they can
+        digitize user experiences across current technologies and devices.
   - name: Private Gateway
     id: private-gateway
     subtopics:
@@ -8408,12 +8479,11 @@ knowledge-needs:
         including business experts, analysts, process owners, IT managers, and
         developers, in OutSystems 11, so that they can decide whether it's the
         right tool for their business process app.
-    - name: WFB app building steps
-      id: wfb-app-building-steps
-      description: Wants to build and publish a business process app in Workflow
-        Builder by setting up a form, defining workflow steps, publishing to test,
-        and sharing it with end-users via IT, in OutSystems 11, so that they can
-        turn a business process into a working app.
+    - name: WFB form and workflow creation
+      id: wfb-form-workflow-creation
+      description: Wants to build a business process app in Workflow Builder by
+        setting up a form and defining workflow steps in OutSystems 11, so that
+        they can turn a business process into a working app.
     - name: WFB post-publish testing
       id: wfb-post-publish-testing
       description: Wants to test a published Workflow Builder app by opening it
@@ -8735,6 +8805,12 @@ knowledge-needs:
     - name: BDD test setup
       id: bdd-test-setup
       description: Wants to set up a BDD Framework test app in ODC Studio by adding the component as a public element, creating a screen and BDD scenario, and implementing the test actions, so they can start component testing.
+    - name: O11 unit tests
+      id: o11-unit-tests
+      description: Wants to create automated unit tests for OutSystems 11 server
+        actions with BDD Framework and Test Framework, using Given, When, and
+        Then actions, isolated test data, and assertions, so that application
+        behavior is validated through maintainable regression tests.
     - name: Shared test patterns
       id: shared-test-patterns
       description: Wants to extract common component test logic into a SharedTestPatterns module and reuse it across test modules and test applications when the dependency rules allow it.
@@ -9086,6 +9162,12 @@ knowledge-needs:
       description: Wants to choose when to clone a built-in Style Guide instead
         of making minor theme customizations, so they can start from the
         closest base when extensive changes are needed.
+    - name: Create custom style guide
+      id: create-custom-style-guide
+      description: Wants to choose when to implement a custom Style Guide by
+        starting from the most basic template when an application cannot
+        benefit from an existing theme, so they can establish the minimum
+        structure needed to start.
     - name: Specialize style guide
       id: specialize-style-guide
       description: Wants to choose when to specialize a built-in Style Guide
@@ -9481,31 +9563,28 @@ knowledge-needs:
         its option list and selected value, in Service Studio, so that end
         users can choose one option in a form for mobile apps and reactive
         web apps (O11).
-    - name: Use Bottom Sheet pattern
-      id: use-bottom-sheet-pattern
+    - name: Use Bottom Sheet
+      id: use-bottom-sheet
       description: Wants to add the Bottom Sheet UI Pattern to a screen, add
         the widget via Toolbox or Search in other modules if the dependency
         isn't added, add content to the TopBar and Content placeholders,
         and wire Open and Close buttons using the BottomSheetOpen and
         BottomSheetClose client actions with the WidgetId property set to
-        BottomSheet.Id, in Service Studio, so that additional information
-        displays and dismisses from the bottom of the screen in mobile
-        apps (O11).
+        BottomSheet.Id, so that additional information displays and
+        dismisses from the bottom of the screen in mobile apps.
     - name: Use Floating Actions
       id: use-floating-actions
       description: Wants to add the Floating Actions UI Pattern to a screen,
         add the widget via Toolbox or Search in other modules if the
         dependency isn't added, add content to the Button and Items
-        placeholders, and configure IsExpanded and IsHover in Service
-        Studio, so that a floating action button opens additional actions
-        on mobile and reactive web screens (O11).
+        placeholders, and configure the IsExpanded and IsHover properties,
+        so that a floating action button opens additional actions on mobile
+        and reactive web screens.
     - name: Bottom Sheet reference
       id: bottom-sheet-reference
-      description: Wants to look up the properties and events of the Bottom
-        Sheet UI Pattern in Service Studio, including Shape, ShowHandler,
-        ExtendedClass, and the OnToggle event, so that they can correctly
-        configure the pattern's appearance and behavior, in mobile apps
-        (O11).
+      description: Wants to look up the available properties and events of the
+        Bottom Sheet UI Pattern, so that they can correctly configure the
+        pattern's appearance and behavior in mobile apps.
     - name: Add icon block
       id: add-icon-block
       description: Wants to add an Icon block from Rich Widgets to a screen
@@ -9695,13 +9774,12 @@ knowledge-needs:
         (O11).
     - name: Use Range Slider Interval
       id: use-range-slider-interval-pattern
-      description: Wants to add the Range Slider Interval UI Pattern to a
-        screen by dragging the widget into the Main Content area, setting
-        the MinValue, MaxValue, StartingValueFrom, and StartingValueTo
-        properties, and creating an OnValueChange client action to read the
-        IntervalStart and IntervalEnd values, in Service Studio, so that
-        users can select a value within a chosen range, in mobile apps and
-        reactive web apps (O11).
+      description: Wants to add and configure the Range Slider Interval UI
+        Pattern on a screen, set its range and initial values and other
+        required or optional properties, and handle its value-change event
+        through a client action to read the selected interval values, so that
+        users can select a value within a chosen range in mobile apps and
+        reactive web apps.
     - name: Slider Interval reference
       id: range-slider-interval-reference
       description: Wants to look up the configuration properties and events of the Range
@@ -10398,13 +10476,13 @@ knowledge-needs:
         in mobile apps and reactive web apps.
     - name: Use Range Slider
       id: use-range-slider-pattern
-      description: Wants to add the Range Slider UI Pattern to a screen,
-        including adding the dependency when the widget does not appear in
-        the Toolbox, setting the MinValue, MaxValue, and StartingValue
-        properties, wiring the OnValueChange event to a local variable
-        through an Assign action, and configuring optional properties, so
-        that users can select a single value within a defined range in
-        mobile apps and reactive web apps.
+      description: Wants to add and configure the Range Slider UI Pattern on a
+        screen, including adding the dependency when the widget does not appear
+        in the Toolbox, setting its minimum, maximum, and initial-value
+        properties, configuring optional properties, and wiring its
+        value-change event to a local variable through an Assign action or
+        client action, so that users can select a single value within a
+        defined range in mobile apps and reactive web apps.
     - name: Range Slider properties
       id: range-slider-properties
       description: Wants to look up the Range Slider UI Pattern's properties and events in
@@ -10571,11 +10649,12 @@ knowledge-needs:
     - name: Use Mouse Events pattern
       id: use-mouse-events-pattern
       description: Wants to add the Mouse Events UI Pattern to a screen and
-        configure its properties and event handler, including adding the
-        widget via Toolbox or Search in other modules if the dependency isn't
-        added, in Service Studio for OutSystems 11, so that they can capture
-        high-precision mouse drag events, such as drag distance, in mobile
-        apps and reactive web apps.
+        configure its WidgetId and PreventDefaults properties, including
+        adding the widget via Toolbox or Search in other modules if the
+        dependency isn't added, and handle mouse movement through a client
+        action with OffsetX and OffsetY inputs, so that they can capture
+        high-precision mouse drag distance in mobile apps and reactive web
+        apps.
     - name: Use Swipe Events pattern
       id: use-swipe-events-pattern
       description: Wants to add the Swipe Events UI Pattern to a screen and
@@ -10587,9 +10666,9 @@ knowledge-needs:
     - name: Mouse Events reference
       id: mouse-events-reference
       description: Wants to look up the properties of the Mouse Events UI
-        Pattern in Service Studio, including WidgetId and PreventDefaults,
-        so that they can correctly configure high-precision mouse event
-        handling in OutSystems 11 mobile apps and reactive web apps.
+        Pattern, including WidgetId and PreventDefaults, so that they can
+        correctly configure high-precision mouse event handling in mobile apps
+        and reactive web apps.
     - name: Use Touch Events pattern
       id: use-touch-events-pattern
       description: Wants to add the Touch Events UI Pattern to a screen and
@@ -13376,10 +13455,10 @@ knowledge-needs:
     - name: Fix SEO redirects
       id: fix-seo-redirects
       description: 'Wants to fix SEO-friendly URL redirect rules that don''t
-        work in a small number of OutSystems Cloud environments, by checking
-        the React version their app is running via the browser console and
-        contacting OutSystems Support if it''s lower than 16, in Reactive Web
-        Apps, so that redirects work correctly.'
+        work in affected OutSystems Cloud environments, by checking the React
+        version their app is running via the browser console and contacting
+        OutSystems Support if it is below the version required for the
+        environment, in Reactive Web Apps, so that redirects work correctly.'
     - name: Fix blocked external URL
       id: fix-blocked-external-url
       description: 'Wants to fix a blank page and "Content Security Policy
@@ -13709,6 +13788,11 @@ knowledge-needs:
       provides, so they can get an overall introduction before diving into
       individual features.
     subtopics:
+    - name: Platform capabilities
+      id: platform-capabilities-overview
+      description: Wants to understand how OutSystems supports building apps
+        across data and business processes, so they can decide which platform
+        capabilities to explore for their application needs.
     - name: Mobile app capabilities
       id: mobile-app-capabilities
       description: Wants to identify which statements about OutSystems mobile
@@ -15746,6 +15830,11 @@ knowledge-needs:
       description: Wants to understand what ODC AI models are, what tasks they
         handle, and how they differ from AI agents, so they can choose when to
         use an AI model in an app.
+    - name: LLM temperature
+      id: llm-temperature
+      description: Wants to identify the temperature setting as the parameter
+        that controls an LLM's output randomness, so that they can distinguish
+        it from settings that control response length or context.
     - name: Function calling overview
       id: function-calling-overview
       description: Wants to understand what function calling is in AI Agent
@@ -16554,6 +16643,12 @@ knowledge-needs:
         OutSystems 11 Cloud upgrades handled by the support team, and
         Service Studio auto-update, so that they know what to expect when
         updating the platform.
+    - name: Review O11 changes
+      id: review-o11-changes
+      description: Wants to review the breaking changes and side effects
+        introduced by OutSystems 11 Platform Server releases, so they can
+        assess application and infrastructure impact and apply the required
+        fixes before upgrading.
     - name: Update docs cadence
       id: update-docs-cadence
       description: Wants to know which documentation, training, installation
@@ -17287,6 +17382,12 @@ knowledge-needs:
       actions with their equivalents, so the app benefits from dedicated release
       cycles, OutSystems support, and new features.
     subtopics:
+    - name: Migrate Firebase plugin
+      id: migrate-firebase-plugin
+      description: Wants to migrate an OutSystems mobile app from unsupported
+        Firebase-based plugins to supported Firebase plugins by setting up the
+        supported replacements and replacing legacy actions with their
+        equivalents, so the app receives ongoing support and compatible updates.
     - name: Migrate LogEvent action
       id: migrate-analytics-logevent
       description: Wants to replace the LogEvent action of the unsupported Firebase
@@ -20426,12 +20527,18 @@ knowledge-needs:
     - name: Page object model
       id: page-object-model
       description: Wants to structure automated web UI tests around reusable page objects, page widgets, interactions, assertions, and templates so the test framework stays maintainable as the UI changes.
+    - name: Choose UI locators
+      id: choose-ui-locators
+      description: Wants to choose stable locators for automated web UI tests by using CSS or XPath selectors and assigning IDs to actionable elements, so tests remain resilient as the UI changes.
     - name: Selenium locators
       id: selenium-locators
       description: Wants to choose stable Selenium locators for OutSystems web elements by using CSS selectors, custom styles, and custom IDs instead of generated IDs.
     - name: Selenium test practices
       id: selenium-test-practices
       description: Wants to make Selenium UI tests more reliable and readable by replacing pauses with waits, adding asserts, using variables, and documenting scripts, so the scripts stay maintainable.
+    - name: UI testing strategies
+      id: ui-testing-strategies
+      description: Wants to choose between scripted, exploratory, and user experience testing techniques for web UI quality based on the testing goal and required coverage.
 - name: User Management
   guid: 30a6f6ca-c898-4e05-b5d6-88a6789ca36c
   topics:
@@ -20481,6 +20588,11 @@ knowledge-needs:
         settings, proxy configuration, client secret and client ID values,
         redirect URIs, and IdP response codes, so that they can restore
         external IdP sign-in.
+    - name: Troubleshoot ODC mobile sign-in errors
+      id: troubleshoot-odc-mobile-sign-in-errors
+      description: Wants to diagnose why an end user cannot sign in to an ODC
+        mobile app by checking the authentication flow and sign-in response, so
+        that they can restore mobile app access.
     - name: Users app lockout
       id: users-app-lockout
       description: Wants to regain access to the OutSystems 11 Users app
@@ -20547,6 +20659,9 @@ knowledge-needs:
     - name: Authentication management overview
       id: authentication-management-overview
       description: Wants to understand how ODC handles authentication and authorization at a high level, including built-in authentication, external identity providers, custom authentication flows, and role-based access control, so that they can explain the platform's sign-in model and choose the right approach for an app.
+    - name: Troubleshoot auth errors
+      id: troubleshoot-auth-errors
+      description: Wants to troubleshoot authentication and authorization errors affecting user access in ODC mobile and reactive web apps by identifying causes and following diagnostic and remediation steps, so they can restore access.
     - name: Token lifecycle
       id: token-lifecycle
       description: Wants to understand how ODC issues short-lived access tokens and refresh tokens, validates requests before they reach services, and invalidates sessions and tokens on logout, so that they can explain the platform's token lifecycle and request security.
@@ -21345,7 +21460,8 @@ knowledge-needs:
     - name: Fix ODC permissions
       id: fix-odc-permissions
       description: Wants to resolve the invalid permissions screen an end
-        user sees in an ODC app after O11-ODC SSO login, caused by a missing
+        user sees in an ODC app after O11-ODC SSO login, including when opening
+        a role-protected feature in an ODC reactive web app, caused by a missing
         or unassigned ODC app role for that end user.
   - name: Users in OutSystems
     id: users-in-os
@@ -22267,6 +22383,12 @@ knowledge-needs:
       portal, deployment, configuration, and monitoring differences between
       OutSystems 11 and ODC, so they can map concepts quickly when reading the
       cheatsheet or moving between platforms.
+    subtopics:
+    - name: Plan ODC coexistence
+      id: plan-odc-coexistence
+      description: Wants to understand how ODC and OutSystems 11 can coexist
+        through partial migration, scalable front ends, and existing core systems,
+        so they can plan ODC adoption without replacing those systems.
   - name: Code Conversion
     id: code-conversion
     subtopics:
@@ -24707,6 +24829,12 @@ knowledge-needs:
       logs, and modern browser developer tools, so that they know where to
       start when investigating unexpected application behavior.
     subtopics:
+    - name: Choose debugging tools
+      id: choose-debugging-tools
+      description: Wants to choose the right debugging tool for a problem in an OutSystems
+        application, based on whether the issue involves application logic, browser
+        behavior, mobile builds or plugins, or a custom extension, so they can
+        investigate issues without relying on printf statements.
     - name: Fix debugger Chrome issue
       id: fix-debugger-chrome-issue
       description: Wants to fix the Service Studio debugger failing to start (with an
@@ -25605,6 +25733,14 @@ knowledge-needs:
         for one, when planning to attend instructor-led training, so that they
         can enroll through a Training Partner and receive schedule, location,
         and payment details.
+  - name: Training and certification
+    id: training-and-certification
+    subtopics:
+    - name: Training options overview
+      id: training-options-overview
+      description: Wants to understand the available OutSystems training and
+        certification pathways, so that they can choose a learning or
+        certification path.
   - name: Training videos
     id: training-videos
     subtopics:

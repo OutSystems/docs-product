@@ -1461,11 +1461,6 @@ knowledge-needs:
       description: Wants to bind Screen Aggregate or Data Action outputs to List
         and Expression widgets, so fetched records and individual attributes
         display on the screen.
-    - name: Charts API reference
-      id: charts-api-reference
-      description: Wants to look up the Charts API widgets, actions, structures,
-        and static entities when building charts in Service Studio for OutSystems
-        11, so they can configure chart data and formatting.
     - name: Set up table records
       id: set-up-table-records
       description: Wants to add a Table Records widget to a Traditional Web
@@ -6261,6 +6256,66 @@ knowledge-needs:
       it, by triggering its execution from the app and reviewing instance
       details and errors in the Instances tab of the ODC Portal, so that
       issues are caught before the workflow reaches production.
+  - name: Call other workflows
+    id: call-other-workflows
+    description: Wants to make a workflow callable by another workflow, call it,
+      and understand how the call runs, returns its outcome, and affects
+      deployment, deletion, and termination, so that they can reuse workflow
+      logic across workflows.
+    subtopics:
+    - name: Make a workflow public
+      id: make-workflow-public
+      description: Wants to mark a workflow as Public on its Start node, so that
+        other workflows can call it, and understand that the Start event is still
+        required, so that the workflow still starts when triggered directly.
+    - name: Add a call to a public workflow
+      id: add-call-to-public-workflow
+      description: Wants to add a call to a Public workflow in the same portfolio
+        from the workflow editor, so that the current workflow can reuse the
+        called workflow's logic.
+    - name: Fill in call start inputs
+      id: fill-in-call-start-inputs
+      description: Wants to fill in the required Start inputs of the called
+        workflow when configuring the call, so that the call can start the called
+        workflow.
+    - name: Caller waits for the called workflow
+      id: caller-waits-for-called-workflow
+      description: Wants to understand that the calling workflow pauses until the
+        called workflow finishes, with no timeout, so that a long-running called
+        workflow is not mistaken for a stalled caller.
+    - name: Call outcomes
+      id: call-outcomes
+      description: Wants to understand the possible outcomes of a call, including
+        that it returns an outcome rather than values from the called workflow,
+        and that a terminated called workflow lets the caller continue, so that
+        they do not expect return values or treat a terminated call as a failure.
+    - name: Deployment and deletion impact of calls
+      id: deployment-deletion-impact-of-calls
+      description: Wants to know that deployment and deletion analysis warns about
+        calls between workflows, so that they see which callers a deletion would
+        affect before deleting a called workflow.
+    - name: Terminate scope for a triggered instance
+      id: terminate-scope-triggered-instance
+      description: Wants to choose between terminating only a triggered workflow
+        instance and terminating the chain that triggered it, and know that
+        terminating a parent stops its running sub-workflow instances, so that they
+        stop only the workflows they intend to.
+    - name: Diagnose a long call wait
+      id: diagnose-long-call-wait
+      description: Wants to find the called workflow instance that a waiting call is
+        waiting on and decide whether to terminate it, so that a caller that has
+        waited a long time for a stalled called workflow can be unblocked.
+    - name: Recognise a call recovered by a late start
+      id: recognise-call-recovered-late-start
+      description: Wants to recognise that an activity in Error from a call recovered
+        automatically when the called workflow started late, so that they do not
+        retry a call that is already running.
+    - name: Choose between a conditional start and a call
+      id: choose-conditional-start-or-call
+      description: Wants to decide whether a reaction should be a conditional start
+        inside the same workflow or a call to a separate public workflow, so that
+        the logic runs in the right place and can be reused when other workflows
+        need it.
   - name: Troubleshoot workflows
     id: troubleshoot-workflows
     description: Wants to troubleshoot workflow instances in ODC Portal by checking
@@ -11068,6 +11123,12 @@ knowledge-needs:
         Studio, including the available chart widgets, add-ons, and API actions,
         so that they can choose the right chart component and customization
         entry point.
+    - name: Charts API reference
+      id: charts-api-reference
+      description: Wants to look up available Charts API widgets, their inputs,
+        actions, structures, and static entities when building charts in Service
+        Studio for OutSystems 11, so they can choose the right chart type and
+        configure chart data and formatting.
     - name: Configure Line Chart
       id: configure-line-chart
       description: Wants to add the Line Chart widget to a screen and configure
@@ -11106,8 +11167,8 @@ knowledge-needs:
       id: configure-chart-data-points
       description: Wants to populate a chart's DataPointList with fixed or
         variable data, map Label and Value fields, and set SeriesName for
-        multiple series in ODC Studio, so that chart widgets display data
-        correctly in mobile apps and reactive web apps.
+        multiple series, including handling missing data, so that chart widgets
+        display the required values correctly.
     - name: Set donut inner size
       id: configure-donut-inner-size
       description: Wants to set the Donut Chart InnerSize property in ODC Studio,
@@ -11120,6 +11181,18 @@ knowledge-needs:
         so that they can choose the right chart component and customize it
         correctly in traditional web apps, mobile apps, and reactive web
         apps.
+    - name: Format chart data
+      id: format-chart-data
+      description: Wants to format chart data in Service Studio for OutSystems
+        11, so that chart values display as intended.
+    - name: Configure chart axes
+      id: configure-chart-axes
+      description: Wants to configure chart axes in Service Studio for OutSystems
+        11, so that chart values are presented with the intended scale and labels.
+    - name: Customize chart legends
+      id: customize-chart-legends
+      description: Wants to customize chart legends in Service Studio for
+        OutSystems 11, so that users can identify the chart's data series.
     - name: Combo Box widget reference
       id: combo-box-widget-reference
       description: Wants to look up the properties and runtime properties of the Combo Box

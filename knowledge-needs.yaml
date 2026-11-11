@@ -6041,6 +6041,51 @@ knowledge-needs:
         by detecting them, diagnosing the risk to critical assets and
         infrastructure, and determining the remediation steps that strengthen
         the security posture, so that they can respond appropriately.
+  - name: Runtime token storage
+    id: runtime-token-storage
+    subtopics:
+    - name: End a user session with Logout
+      id: end-user-session-with-logout
+      description: Wants to end a user's session with the Logout system action for built-in and external identity providers, so the user is signed out of the app and the provider.
+    - name: Replace the external logout pattern
+      id: replace-external-logout-pattern
+      description: Wants to find external logout logic that uses GetExternalLogoutURL and replace it with Logout, so the app uses the supported flow.
+    - name: Confirm a logout ended the session
+      id: confirm-logout-ended-session
+      description: Wants to check after logout that the provider session has ended, so a previous user cannot sign back in.
+    - name: Check cookie size before publishing
+      id: check-cookie-size-before-publishing
+      description: Wants to measure an app's cookies, including the new authentication cookies, before publishing to production against the per-domain cookie-size limit, so the app is not blocked by the web application firewall.
+    - name: Replace token reads in custom code
+      id: replace-token-reads-custom-code
+      description: Wants to replace custom JavaScript that reads tokens from browser storage with a supported platform call, so the code keeps working after the change.
+    - name: Read auth cookies in hybrid apps
+      id: read-auth-cookies-hybrid-apps
+      description: Wants to read the HttpOnly authentication cookies in an iOS native shell through the native cookie manager, so the app can access what it needs.
+    - name: Remove storeUserInfo for token storage
+      id: remove-storeuserinfo-token-storage
+      description: Wants to remove storeUserInfo calls that only existed to store tokens, so the app does not depend on a call that no longer does that job.
+    - name: Other tabs after a logout
+      id: other-tabs-after-logout
+      description: Wants to know when another open tab of the same app is signed out after a logout in one tab, so the user is not surprised by a stale tab.
+    - name: Concurrent refresh sign-outs
+      id: concurrent-refresh-sign-outs
+      description: Wants to diagnose a user being signed out in every tab after activity in several tabs, so the issue can be reported with its timing and tab count.
+    - name: 403 after republish
+      id: 403-after-republish
+      description: Wants to recognize a 403 from a customer's app after a republish as a possible cookie-size block, so the block is handled as a cookie issue.
+    - name: Mitigation options for cookie-size blocks
+      id: mitigation-options-cookie-size-blocks
+      description: Wants to compare the available mitigation options for a cookie-size block and their scope, so the right one is applied.
+    - name: Understand the authentication cookie model
+      id: understand-authentication-cookie-model
+      description: Wants to understand how ODC stores a signed-in user's authentication data in HttpOnly cookies and how those cookies are sent with app requests, so they can explain the authentication behavior of their apps.
+    - name: Republish apps for the authentication cookie change
+      id: republish-apps-authentication-cookie-change
+      description: Wants to know which apps must be republished for the authentication cookie change to take effect, so they republish the apps that need it and plan the rollout.
+    - name: Handle a session ended by refresh token reuse
+      id: handle-session-ended-refresh-token-reuse
+      description: Wants to handle a session that ODC has ended because a refresh token was reused, so the user is directed to sign in again.
 - name: ODC Workflows
   guid: 8f3c2a1d-6e4b-4a7f-9c0d-2b5e7f1a4c9e
   topics:

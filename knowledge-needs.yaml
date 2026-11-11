@@ -15999,6 +15999,166 @@ knowledge-needs:
         rules, including filter categories, response actions, regional
         limitations, and custom policies, so they can choose an appropriate
         guardrail configuration for an ODC environment.
+  - name: Evaluate legacy modernization
+    id: evaluate-legacy-modernization
+    subtopics:
+    - name: Assess modernization fit
+      id: assess-legacy-modernization-fit
+      description: Wants to decide whether a legacy app and its project suit
+        modernization with OutSystems MCP, including whether the app's
+        technology stack is eligible and which work falls outside generation,
+        so they can commit to the approach or plan alternatives before
+        starting.
+    - name: Generated app compiler standards
+      id: legacy-modernization-compiler-standards
+      description: Wants to understand which compiler standards apply to an
+        app Mentor generates from legacy specifications and how they compare
+        with standard ODC apps, so they can assess its platform compatibility.
+    - name: Generated app governance
+      id: legacy-modernization-app-governance
+      description: Wants to understand what review is required before a
+        generated app is approved in ODC, so they can prepare it for governance
+        review.
+    - name: Modernization agent permissions
+      id: legacy-modernization-agent-permissions
+      description: Wants to understand which permissions the modernization
+        agent uses during a run, so they can assess the access granted to it.
+    - name: Plan team effort by stage
+      id: plan-legacy-modernization-effort
+      description: Wants to know what the modernization process asks of their
+        team at each stage and what each stage produces, so they can plan who
+        needs to be involved and when.
+    - name: Plugin relationship
+      id: legacy-plugin-vs-outsystems-plugin
+      description: Wants to understand how the legacy modernization plugin
+        relates to the OutSystems plugin and its skills, so they can decide
+        which one to enable for a task without conflicting instructions.
+    - name: Choose modernization path
+      id: choose-legacy-modernization-route
+      description: Wants to decide between modernizing from external legacy
+        source and refactoring legacy code inside an existing ODC app, so they
+        can pick the route that matches where the code lives.
+    - name: Source data handling
+      id: legacy-source-data-handling
+      description: Wants to decide what legacy source and data they may upload
+        for extraction, given personal data and their organization's policy,
+        so they can protect sensitive information during the run.
+  - name: Run legacy modernization
+    id: run-legacy-modernization
+    subtopics:
+    - name: Connect MCP host and enable plugin
+      id: prepare-legacy-modernization-run
+      description: Wants to connect the OutSystems MCP host to the ODC tenant
+        and enable the legacy modernization plugin, so the agent can access the
+        modernization tools for a run.
+    - name: Judge spec readiness
+      id: judge-legacy-spec-readiness
+      description: Wants to decide whether the extracted specifications are
+        ready for generation, using the extraction outcome, the open
+        questions, and the business rules known to the team, so that errors
+        and gaps are resolved before Mentor builds from them.
+    - name: Scope source to one app
+      id: scope-legacy-source-to-one-app
+      description: Wants to scope the legacy source to exactly one app for a
+        run, including an app that spans several databases or has a separate
+        backend and front end, so that extraction analyzes the right sources.
+    - name: Gather business context
+      id: gather-legacy-business-context
+      description: Wants to gather business context such as process
+        flowcharts, architecture diagrams, and user workflow documentation
+        before extraction, so that the specifications reflect how the business
+        works.
+    - name: Resolve unknowns
+      id: resolve-legacy-unknowns
+      description: Wants to resolve each open question and derived rule in the
+        specifications by answering it, accepting the gap, or confirming the
+        rule, so that the build doesn't carry guesses.
+  - name: Generate legacy app
+    id: generate-legacy-app
+    subtopics:
+    - name: Choose a design option
+      id: choose-legacy-design-option
+      description: Wants to choose the design medium and select among the
+        proposed design options, including feeding back branding and user
+        experience changes, so that the generated screens reflect the
+        customer's design.
+    - name: Import Data screen
+      id: decide-legacy-import-data-screen
+      description: Wants to decide whether the generated app includes an Import
+        Data screen, so that the plan for loading real data matches how the
+        team intends to work.
+    - name: Interpret gates
+      id: interpret-legacy-generation-gates
+      description: Wants to interpret generation gate results, including a
+        pass, an item that fails more than once, and an exhausted gate, so they
+        can decide whether to correct a requirement or accept recorded gaps.
+    - name: Verify security mapping
+      id: verify-legacy-security-mapping
+      description: Wants to confirm that personal data redactions are
+        respected, sensitive fields are annotated, and legacy access rules map
+        to ODC roles, so that the generated app protects data as the legacy
+        app did.
+  - name: Hand over legacy app
+    id: hand-over-legacy-app
+    subtopics:
+    - name: Generated app deployment
+      id: legacy-modernization-app-deployment
+      description: Wants to understand how to deploy a generated app to an ODC
+        environment after approval, so they can plan its release.
+    - name: Decide what remains
+      id: decide-legacy-go-live-work
+      description: Wants to decide what must be implemented, tested,
+        regenerated, or approved before go-live, using the Implementation
+        Report and the team's knowledge of the business, so they can turn the
+        gaps into a backlog and approve the release.
+    - name: Compare data models
+      id: compare-legacy-data-models
+      description: Wants to compare the legacy data model with the generated
+        ODC data model, so they can identify mapping and type-conversion risks
+        before loading real data.
+    - name: Enable sign-in
+      id: enable-legacy-app-sign-in
+      description: Wants to switch on sign-in for the generated app and verify
+        it with a real tenant user, so that the app is safe to deploy beyond
+        Dev and Test.
+    - name: Replace seed data
+      id: replace-legacy-seed-data
+      description: Wants to replace the seed rows in the generated app with
+        real data without a later publish seeding them again, so that users
+        work with real data.
+    - name: Define REST integration requirements
+      id: define-legacy-rest-integration-requirements
+      description: Wants to identify the REST endpoints and request and
+        response data each generated integration stub must use, so they can
+        agree on the contract with legacy service owners before implementation.
+    - name: Implement generated REST integrations
+      id: implement-legacy-integrations
+      description: Wants to configure each generated REST stub with its legacy
+        service endpoint and map its request and response data, so the
+        generated app can call the required services.
+  - name: Troubleshoot legacy modernization
+    id: troubleshoot-legacy-modernization
+    subtopics:
+    - name: Fix gates_failed
+      id: resolve-legacy-extraction-gates-failed
+      description: Wants to resolve an extraction that ends with the status
+        gates_failed or with warnings, so they can decide whether to run
+        extraction again or continue with incomplete specifications.
+    - name: Fix enablement errors
+      id: fix-legacy-extraction-enablement-errors
+      description: Wants to resolve the extraction errors tenant_not_enabled
+        and stack_not_enabled, so that extraction can start for their tenant,
+        stack, and region.
+    - name: Restore missing tools
+      id: restore-missing-legacy-tools
+      description: Wants to resolve a session that lists no OutSystems tools
+        after attaching OutSystems MCP, so that the agent can run extraction
+        and generation.
+    - name: Fix NOT OBSERVABLE checks
+      id: fix-legacy-not-observable-checks
+      description: Wants to resolve checks that the agent marks as NOT
+        OBSERVABLE instead of passed or failed, so that testing of the
+        generated app gives a result.
 - name: Integrating with Plugins
   guid: 1af9eece-e820-40ec-8483-b1243267b038
   topics:

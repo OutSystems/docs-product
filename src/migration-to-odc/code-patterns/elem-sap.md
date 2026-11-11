@@ -1,7 +1,7 @@
 ---
 guid: 4a785cf2-70c2-4085-9923-7d5ac1d1eb6f
 locale: en-us
-summary: Learn how to handle SAP connections after converting from O11 to ODC.
+summary: OutSystems Developer Cloud (ODC) SAP BAPI connections use Data Fabric and Aggregates to fetch SAP data after O11 conversion.
 figma: 
 coverage-type:
   - understand

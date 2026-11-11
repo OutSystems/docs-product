@@ -1,7 +1,7 @@
 ---
 guid: 8dba8e8c-d3aa-4c9b-8a0f-16c7aa608aca
 locale: en-us
-summary: This article provides guidelines for refactoring your user management strategy to ensure compatibility with OutSystems Developer Cloud (ODC).
+summary: OutSystems Developer Cloud (ODC) migration replaces O11 User entities, authentication actions, and Users API dependencies with ODC patterns.
 figma: 
 coverage-type:
   - unblock

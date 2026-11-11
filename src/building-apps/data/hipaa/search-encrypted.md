@@ -18,6 +18,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+  - apply
 topic:
   - search-encrypted-attribute
 ---

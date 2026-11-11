@@ -11,6 +11,7 @@ coverage-type:
   - apply
 audience:
   - Platform administrator
+  - Architect
 topic:
   - setup-transit-gateway-connection
   - transit-gateway-benefits

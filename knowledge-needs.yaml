@@ -1183,15 +1183,24 @@ knowledge-needs:
         GetPermissionsByUserId, so they can apply the three authorization
         scenarios (screen access, content visibility, action permissions)
         using hierarchical roles in OutSystems 11.
-    - name: Implement hierarchical roles
-      id: hierarchical-roles-implementation
-      description: Wants to implement a hierarchical roles authorization solution in
-        OutSystems 11 by designing a supporting data model, structuring the app
-        architecture into layered modules, building BackOffice management
-        screens to manage functions and permissions, and creating server actions
-        for checking user permissions and function-level access, so they can
-        enforce granular, configurable authorization across their app without
-        relying on OutSystems' default static roles.
+    - name: Design hierarchical roles data model and architecture
+      id: hierarchical-roles-data-model-architecture
+      description: Wants to design the supporting data model and layered module
+        architecture for a hierarchical roles authorization solution in
+        OutSystems 11, so they can build a granular, configurable authorization
+        model without relying on OutSystems' default static roles.
+    - name: Manage hierarchical roles permissions
+      id: hierarchical-roles-permission-management
+      description: Wants to build BackOffice management screens for managing
+        functions and permissions in a hierarchical roles authorization solution
+        in OutSystems 11, so they can configure granular access across their app
+        without relying on OutSystems' default static roles.
+    - name: Check hierarchical roles authorization
+      id: hierarchical-roles-authorization-checks
+      description: Wants to create server actions that check user permissions and
+        function-level access in a hierarchical roles authorization solution in
+        OutSystems 11, so they can enforce granular, configurable authorization
+        across their app without relying on OutSystems' default static roles.
 - name: (Creating an Application) Architecture
   guid: 9ce4fe11-dcc9-4b0f-b3ea-545557accdec
   topics:
@@ -1447,6 +1456,11 @@ knowledge-needs:
       description: Wants to bind Screen Aggregate or Data Action outputs to List
         and Expression widgets, so fetched records and individual attributes
         display on the screen.
+    - name: Charts API reference
+      id: charts-api-reference
+      description: Wants to look up the Charts API widgets, actions, structures,
+        and static entities when building charts in Service Studio for OutSystems
+        11, so they can configure chart data and formatting.
     - name: Set up table records
       id: set-up-table-records
       description: Wants to add a Table Records widget to a Traditional Web
@@ -2891,6 +2905,11 @@ knowledge-needs:
          import translated files back into the app, and understand the file
          format ODC Studio uses for translation handoffs, so they can manage
          translation files and keep app text up to date.
+     - name: Translate app images
+       id: translate-app-images
+       description: Wants to export and import localized images for each language
+         in an OutSystems 11 Traditional Web App, so that the app displays the
+         correct image for the selected locale.
      - name: Set text behavior
        id: set-text-behavior
        description: Wants to mark text as Translate, Don't translate, or Not
@@ -4000,6 +4019,12 @@ knowledge-needs:
         environment in Service Center and map the extension's logical database
         to it, so that applications using extension modules can read and write
         data from the correct external database after deployment.
+    - name: Map DBs via LifeTime API
+      id: map-dbs-via-lifetime-api
+      description: Wants to map extension logical databases to destination
+        database connections during a LifeTime deployment by calling the
+        status, missing mappings, and configuration API endpoints, so that the
+        deployment can continue without manual configuration.
     - name: Grant publish access
       id: grant-publish-access
       description: Wants to let a developer publish an extension that uses a
@@ -6974,6 +6999,12 @@ knowledge-needs:
         Storage Entity into its own app before converting to ODC, so each app
         keeps its own Local Storage Entities and the conversion avoids
         cross-app dependencies.
+    - name: Split application modules
+      id: split-application-modules
+      description: Wants to split an OutSystems 11 application by isolating
+        reusable business logic in modules and moving those modules to a new
+        application, so the applications support autonomous development and
+        reuse.
     - name: Extract elements without impacting consumers
       id: extract-elements-without-impacting-consumers
       description: Wants to extract elements from a module without impacting
@@ -9343,9 +9374,9 @@ knowledge-needs:
     - name: Migrate CSS classes
       id: migrate-css-classes
       description: Wants to find the OutSystems Web UI CSS class equivalent for
-        each Silk Web UI CSS class (background colors, text colors, buttons, and
-        text styles), so that a Silk-based Traditional Web App keeps consistent
-        visual styling after migrating to the OutSystems 11 Web UI Framework.
+        each Silk Web UI CSS class, so that a Silk-based Traditional Web App
+        keeps consistent visual styling after migrating to the OutSystems 11 Web
+        UI Framework.
     - name: Migration rationale
       id: migration-rationale
       description: Wants to understand why they need to migrate a Silk UI Web
@@ -14894,6 +14925,11 @@ knowledge-needs:
       description: Wants to create a chatbot webhook module from the Chatbot Webhook
         app template in Service Studio and publish it, so that they can add custom
         chatbot logic and richer responses.
+    - name: Customize chatbot replies
+      id: customize-chatbot-replies
+      description: Wants to customize chatbot responses in an OutSystems webhook
+        module by querying a QnA knowledge base, detecting intents and entities,
+        and analyzing message text, so they can return context-aware replies.
     - name: Configure chatbot webhook module
       id: configure-chatbot-webhook-module
       description: Wants to configure a chatbot webhook module in Service Center
@@ -18966,6 +19002,14 @@ knowledge-needs:
       id: avs-deserialize-error
       description: 'Wants to resolve the OS-MCO-50011 "An error occurred
         while deserializing data from AVS. If the problem persists, open a
+        support case." error, an unspecified internal error with no more
+        specific cause, by retrying the mobile compilation and opening a
+        support case with OutSystems Support if the problem persists, so
+        that the native mobile build completes successfully.'
+    - name: AVS fetch error
+      id: avs-fetch-error
+      description: 'Wants to resolve the OS-MCO-50010 "An error occurred
+        while fetching data from AVS. If the problem persists, open a
         support case." error, an unspecified internal error with no more
         specific cause, by retrying the mobile compilation and opening a
         support case with OutSystems Support if the problem persists, so

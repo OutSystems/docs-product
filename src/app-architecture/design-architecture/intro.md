@@ -10,9 +10,8 @@ tags:
   - Best Practices
   - Microservices
 audience:
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

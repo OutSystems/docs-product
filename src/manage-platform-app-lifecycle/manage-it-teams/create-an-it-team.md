@@ -10,9 +10,8 @@ tags:
   - IT Teams
   - IT Users
 audience:
-  - Platform administrator
   - Developer
-  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - lifetime
 coverage-type:

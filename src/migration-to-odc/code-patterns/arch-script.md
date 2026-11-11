@@ -11,9 +11,8 @@ tags:
   - Modular Programming
   - Refactoring
 audience:
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -5856,6 +5856,13 @@ knowledge-needs:
         action and validating its inputs and the user's permission for the
         specific record, so unauthorized or invalid changes cannot reach the
         database.
+    - name: Protect access control
+      id: protect-access-control
+      description: Wants to protect OutSystems 11 applications from access
+        control and permissions vulnerabilities by checking permissions
+        server-side before executing actions or displaying information, rather
+        than relying on UI controls or stale values, so only authorized users
+        can perform actions or view data.
   - name: Content security policy
     id: content-security-policy
     subtopics:

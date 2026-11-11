@@ -52,6 +52,28 @@ Use these rules when writing or reviewing documentation in this repository.
     * Use "about" (not "on").
     * Use "refer to" (not "see") for cross-references.
 
+### Choose links selectively
+
+Each link asks the reader to decide whether to leave the page. A section that sends the reader to another page for its main point also doesn't answer a question by itself when search or an AI tool returns that section alone. Add a link only when it passes the following checks:
+
+* **The reader needs the target**: The reader needs the target page to complete the task or to understand the topic. Don't link a page only because the text mentions it.
+* **The text can't replace the link**: When one or two sentences answer the question, write them on the page. State the fact first, and link only for the details.
+* **The link is the only one to its target in the section**: Link to a target once in each section. Repeat a link in another section of the same page only when readers can land on that section directly, for example from search results or an anchor link.
+* **The link goes to the answer**: When the answer is in one section of the target page, link to that section and use its heading as the link text.
+
+Place each link where the reader decides what to do next:
+
+* Link a prerequisite to the procedure that meets it.
+* Link each phase of a process to its procedure once, not each task in the phase.
+* End a concept section with a link to the procedure that configures what the section describes.
+* Avoid links inside numbered steps. Add a link to a step only when the reader can't complete the step without the target.
+* In a procedure or a process, put links to the task that the reader does next in a **Next steps** section.
+* On any page, put links to background or external resources in a **Related resources** section.
+
+When you rename a page or a heading, update the link text of the links that point to it, so the link text keeps matching the title.
+
+These rules follow [Cross-references and linking](https://developers.google.com/style/cross-references) in the Google developer documentation style guide and [Search and writing](https://learn.microsoft.com/en-us/style-guide/search-writing) in the Microsoft Writing Style Guide.
+
 ## Placeholders
 
 Format placeholders consistently:

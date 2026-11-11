@@ -61,6 +61,7 @@ Key rules:
 * Bold for UI elements and property names; `inline code` for user-typed values
 * Do not use italic for emphasis (bold only); underscore `_` is the configured emphasis marker
 * Use "refer to" (not "see") for cross-references
+* Add a link only when the reader needs the target and a sentence can't replace it; link a target once per section, and avoid links inside numbered steps
 * American English, present tense, active voice, contractions allowed
 * Avoid modal verbs (can, may, should, etc.) when possible
 * Use second person ("you") to address the reader.

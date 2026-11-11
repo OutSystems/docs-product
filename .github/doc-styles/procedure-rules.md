@@ -41,7 +41,8 @@
 ## Use links judiciously
 
 * Limit the number of links in the procedure to avoid distractions.
-* Place additional resources in a "Related Resources" section at the end.
+* Place additional resources in a "Related resources" section at the end.
+* For when to add a link and where to place it, refer to [Choose links selectively](formatting.md#choose-links-selectively).
 
 ## Add a summary
 

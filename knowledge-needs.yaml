@@ -15335,6 +15335,13 @@ knowledge-needs:
         single-agent workflows in modularity, scalability, fault tolerance, and
         governance, so they can identify the architectural trade-offs when
         designing an ODC agentic app.
+    - name: Agentic solutions
+      id: agentic-solutions
+      description: Wants to understand what OutSystems agentic industry
+        solutions provide, including governed AI agents, human oversight, audit
+        trails, modular components, integrations, and sample data, so they can
+        evaluate which pre-built solution fits a banking or insurance business
+        problem.
     - name: Reason-act loop
       id: reason-act-loop
       description: Wants to understand how the ReAct reason-act loop cycles
@@ -15554,6 +15561,42 @@ knowledge-needs:
       description: Wants to open an existing agentic app or start creating a
         new one from the Agents page in ODC Portal, so they can manage their
         agentic apps and continue development in ODC Studio.
+    - name: Analyze claim evidence
+      id: analyze-claim-evidence
+      description: Wants to understand how an AI agent classifies submitted
+        claim photos and documents, extracts fields, assesses quality and
+        integrity, and returns a verdict during the evidence phase, so an
+        adjuster can review each submission's status and observations.
+    - name: Assess claim fraud
+      id: assess-claim-fraud
+      description: Wants to call a full policy and fraud analysis after a claim
+        is submitted by passing its ClaimsOccurrenceId, so the adjuster
+        receives claim-analysis decision support.
+    - name: Claims agent roles
+      id: claims-agent-roles
+      description: Wants to understand the roles and execution phases of the
+        specialized AI agents in a First Notice of Loss solution, so they can
+        identify which agent handles intake, evidence, claim summaries, policy
+        questions, and fraud decision support.
+    - name: Claims solution overview
+      id: claims-solution-overview
+      description: Wants to understand how a First Notice of Loss solution
+        combines the mobile app, AI agents, core services, and integration
+        wrappers with ACORD-aligned claim data and human-controlled governance,
+        so they can explain the solution's scope and responsibilities.
+    - name: Claim flow and statuses
+      id: claim-flow-and-statuses
+      description: Wants to understand the four phases, emergency route,
+        claim statuses, and handoff points in a First Notice of Loss solution,
+        so they can explain how a claim progresses from initiation to
+        adjuster review.
+    - name: Set up claims solution
+      id: claims-solution-setup
+      description: Wants to set up and test an installed First Notice of Loss
+        solution in an ODC tenant by configuring the development domain,
+        importing sample data, signing in as a demo user, and confirming that
+        the Claims Conversation Agent works, so they can verify the solution
+        before further development or demonstration.
   - name: Tools and connectors
     id: tools-and-connectors
     subtopics:

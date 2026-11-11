@@ -2,11 +2,11 @@
 tags:
   - Accessibility
   - Aggregates
-  - JavaScript
   - Mobile app
   - OutSystems UI
   - UI
   - UI Patterns
+  - Widgets
 summary: Learn how to display user initials or images in a circular badge using the User Avatar UI pattern in OutSystems 11 (O11).
 locale: en-us
 guid: ca179aae-31fe-4032-b523-167c3ba531e5

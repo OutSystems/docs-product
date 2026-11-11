@@ -11,7 +11,9 @@ tags:
   - Entities
   - Extensions
   - Refactoring
+  - REST
   - Security
+  - Traditional Web
 audience:
   - Developer
   - Front-end developer

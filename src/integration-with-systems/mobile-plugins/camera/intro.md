@@ -1,7 +1,10 @@
 ---
 summary: Camera plugin version 8 in OutSystems 11 (O11) guides you to capture photos, record videos, and select gallery media in mobile and PWA apps.
 tags:
+  - Android
   - Cordova
+  - Forge
+  - iOS
   - Mobile app
   - Native App
   - Plugins

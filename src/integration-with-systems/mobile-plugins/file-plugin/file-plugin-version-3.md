@@ -2,7 +2,9 @@
 summary: OutSystems 11 (O11) File Plugin version 3 covers legacy actions, binary data conversion, and storage types for mobile file management.
 tags:
   - Cordova
+  - Extensions
   - Forge
+  - Logic
   - Mobile app
   - Plugins
 locale: en-us

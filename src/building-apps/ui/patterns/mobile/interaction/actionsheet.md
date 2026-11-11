@@ -5,8 +5,8 @@ tags:
   - Mobile app
   - OutSystems UI
   - Screens
-  - UI
   - UI Patterns
+  - Widgets
 summary: Learn to implement the Action Sheet UI pattern in mobile and reactive web apps using OutSystems 11 (O11) in Service Studio.
 locale: en-us
 guid: 54f296bf-249a-425b-b54c-6d446248c228

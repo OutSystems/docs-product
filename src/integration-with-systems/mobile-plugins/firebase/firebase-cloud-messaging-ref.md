@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - cloud-messaging-plugin-reference
+  - cloud-messaging-actions
 isautopublish: true
 ---
 

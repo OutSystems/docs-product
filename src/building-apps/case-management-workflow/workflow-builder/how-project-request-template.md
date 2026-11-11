@@ -19,7 +19,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - wfb-app-building-steps
+  - wfb-app-templates
+  - wfb-form-workflow-creation
 ---
 
 # Using the Project Request template

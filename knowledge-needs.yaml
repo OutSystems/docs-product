@@ -334,11 +334,11 @@ knowledge-needs:
         based on runtime values.
     - name: If statement behavior
       id: if-statement-behavior
-      description: Wants to understand how an If statement in an ODC action
-        flow behaves, including its mandatory True and False branches,
-        single-branch execution, and inability to add extra branches or use it
-        as a loop, so they can identify correct and incorrect statements about
-        conditional logic.
+      description: Wants to understand how an If statement in an action flow
+        behaves, including its mandatory True and False branches, single-branch
+        execution, inability to add extra branches, and how an If node can
+        implement an ad-hoc loop, so they can identify correct and incorrect
+        statements about conditional logic.
     - name: Fix invalid action flow
       id: fix-invalid-action-flow
       description: Wants to fix Invalid Action Flow errors in OutSystems 11
@@ -1245,6 +1245,11 @@ knowledge-needs:
         including consensus, complexity management, risk reduction, planning,
         change facilitation, and cost reduction, so they can justify
         architecture work to stakeholders.
+    - name: Build real-time apps
+      id: build-real-time-apps
+      description: Wants to design a real-time OutSystems application with
+        synchronized player data, connection handling, and a fast, scalable
+        user interface, so they can build smooth gameplay for a public game.
     - name: Enterprise architecture fit
       id: fit-outsystems-enterprise-architecture
       description: Wants to determine OutSystems' role and responsibilities
@@ -15214,6 +15219,9 @@ knowledge-needs:
   - name: Agentic Apps
     id: agentic-apps
     subtopics:
+    - name: Agentic UI patterns
+      id: agentic-ui-patterns
+      description: Wants to understand how agentic AI changes app interfaces by using reasoning, evidence, and dynamic insights instead of button-driven interactions, so they can recognize user experience patterns for AI-powered OutSystems apps.
     - name: Image input requirements
       id: image-input-requirements
       description: Wants to identify the supported image formats, file size, resolution, and content restrictions for AI model image inputs, so they can provide images that the model accepts without runtime errors.

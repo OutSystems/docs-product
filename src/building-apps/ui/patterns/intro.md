@@ -1,5 +1,5 @@
 ---
-summary: Explore UI patterns and customization options in OutSystems 11 (O11) for enhanced mobile and web app development.
+summary: OutSystems UI patterns in OutSystems 11 (O11) cover CSS, structure, behavior customization, and version checks for mobile and web apps.
 locale: en-us
 guid: 8ba8f042-b63e-4dbf-b2b4-b05d61b7160c
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,7 +1,7 @@
 ---
 guid: 16151f20-2b8d-448b-8b51-ef3acc0fa311
 locale: en-us
-summary: Learn how to solve the findings for the conversion code pattern "Asset consuming its own service action".
+summary: OutSystems Developer Cloud (ODC) Service Action conversion replaces internal calls with Server Actions to fix self-referencing asset errors.
 figma:
 coverage-type:
   - apply

@@ -16,7 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - chatbots
+  - analyze-sentiment
+  - customize-chatbot-replies
 ---
 
 # Create advanced logic for more AI functionalities

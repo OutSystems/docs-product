@@ -17,7 +17,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - refactoring
+  - deploy-applications-o11
+  - split-application-modules
 ---
 
 # Refactor an application

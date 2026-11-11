@@ -17,7 +17,7 @@ audience:
 outsystems-tools:
   - lifetime
 topic:
-  - configure-database-connections
+  - map-dbs-via-lifetime-api
 ---
 # Map logical database to database connections using the LifeTime API
 

@@ -22,6 +22,10 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - physical-tenant-isolation
+  - secure-tenant-data
+  - set-is-multi-tenant
 ---
 
 # Designing Scalable Multi-Tenant Applications

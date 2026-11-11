@@ -18,7 +18,9 @@ coverage-type:
   - understand
   - apply
 topic:
-  - translating-apps
+  - export-import-translations
+  - make-multilingual-app
+  - translate-app-images
 ---
 
 # Multilingual Web Applications

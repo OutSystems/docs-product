@@ -21,6 +21,10 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - accessible-tooltip-pattern
+  - tooltip-reference
+  - use-tooltip-pattern
 isautopublish: true
 ---
 # Tooltip

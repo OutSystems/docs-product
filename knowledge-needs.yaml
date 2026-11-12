@@ -1283,6 +1283,15 @@ knowledge-needs:
         maintainability, including architecture validation, development best
         practices, peer review, and code review, so they can apply them
         throughout development.
+    - name: Application performance practices
+      id: application-performance-practices
+      description: Wants to identify the main causes of slow response in an
+        OutSystems application and choose the appropriate optimization
+        approach, so that it responds efficiently under its expected workload.
+    - name: Application usability practices
+      id: application-usability-practices
+      description: Wants to design clear navigation and task flows in an
+        OutSystems application, so users can complete common tasks intuitively.
     - name: Low-Code Review component
       id: low-code-review-component
       description: Wants to use the Low-Code Review component to manage
@@ -4154,6 +4163,15 @@ knowledge-needs:
       id: switch-database-connection-at-runtime
       description: Wants to switch the database connection for the current session at runtime,
         so that database actions use the intended connection.
+  - name: Integration fundamentals
+    id: integration-fundamentals
+    subtopics:
+    - name: Integration overview
+      id: integration-overview
+      description: Wants to compare REST APIs, external databases, and
+        event-driven integrations for connecting an OutSystems application to
+        another system, so they can choose an appropriate integration approach
+        for a specific application need.
   - name: Integration Patterns
     id: integration-patterns
     subtopics:
@@ -7691,6 +7709,11 @@ knowledge-needs:
       description: Wants to create a Timer, assign its action, and start it
         manually with Wake<Timer Name> or from the management portal, so
         background work can run without waiting for its schedule.
+    - name: Timer trigger methods
+      id: timer-trigger-methods
+      description: Wants to understand the different ways an ODC Timer can be
+        initiated, so they can choose an appropriate way to start background
+        work.
     - name: Timer overview
       id: timer-overview
       description: Wants to understand how OutSystems timers run asynchronous
@@ -22583,6 +22606,10 @@ knowledge-needs:
         user needs into themes, epics, and high-level user stories, sequencing the
         epics, and keeping the structure focused on the minimum viable product, so
         that they can shape the initial project scope.
+    - name: Add refactor requests
+      id: add-refactor-requests
+      description: Wants to add prioritized refactoring work to a backlog of
+        business requests, so they can track and schedule architecture remediation.
     - name: Backlog definition
       id: backlog-definition
       description: Wants to understand what a backlog contains and how much detail
@@ -26180,6 +26207,11 @@ knowledge-needs:
 - name: Community and Training
   guid: 336189f2-2366-41d7-9dfa-6819b924a0ae
   topics:
+  - name: OSDC talk show overview
+    id: osdc-talk-show-overview
+    description: Wants to understand the main topics and activities featured in
+      the OSDC Talk Show, so they can decide whether the event content is
+      relevant to them.
   - name: Boot Camps
     id: boot-camps
     subtopics:

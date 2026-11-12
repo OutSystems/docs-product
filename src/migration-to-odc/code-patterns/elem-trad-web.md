@@ -3,13 +3,13 @@ guid: e0247801-d291-4da0-8a7a-f20098ade92b
 locale: en-us
 summary: This article provides guidelines for handling Traditional Web modules before converting O11 apps to OutSystems Developer Cloud (ODC).
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2993-53
-coverage-type: 
+coverage-type:
   - unblock
 topic:
   - trad-web-modules-pattern
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
-audience: 
+audience:
   - Front-end developer
   - Developer
   - Tech lead
@@ -21,20 +21,25 @@ tags:
   - Traditional Web
   - UI
   - Web
-outsystems-tools: 
+outsystems-tools:
   - service studio
-helpids: 
+helpids:
+isautopublish: true
 ---
 
 # Asset cannot contain Traditional Web modules
 
-In ODC, all Web apps are reactive. Traditional Web apps aren't supported. This means that if your ODC asset is mapped to one or more O11 apps that include Traditional Web modules, you must convert these modules to Reactive Web modules.
+In ODC, all Web apps are reactive. Traditional Web apps aren't supported. This means that if your ODC asset is mapped to one or more O11 apps that include Traditional Web modules, you must either convert these modules to Reactive Web modules in O11 or use a conversion mode that doesn't convert the UI.
 
 ## How to solve
 
-You must solve this pattern in O11 before proceeding with the code conversion to ODC.
+Depending on your scenario, choose one of the following options:
 
-### Solve in O11
+* If you need the UI of the Traditional Web modules in ODC, [solve this pattern in O11](#solve-in-o11) before proceeding with the code conversion to ODC.
+
+* If you only need the data and logic, or you plan to rebuild the UI in ODC, select the **Data and logic** or **Data** mode for the ODC asset. The conversion removes the Traditional Web elements. For more information, refer to [Choose a conversion mode](../plan/plan-map-in-tool.md#choose-a-conversion-mode).
+
+### Solve in O11 {#solve-in-o11}
 
 Depending on your scenario, solve this pattern in one of the following ways:
 

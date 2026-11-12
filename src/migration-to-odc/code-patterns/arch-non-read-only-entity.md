@@ -20,6 +20,7 @@ outsystems-tools:
 coverage-type:
   - unblock
   - understand
+isautopublish: true
 ---
 
 # Application consuming a non-read only Entity
@@ -28,9 +29,11 @@ In ODC, only Apps can expose Entities. Furthermore, Apps can only expose weak de
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code conversion to ODC.
+This pattern is optional. You can [solve it in O11](#solve-in-o11) before proceeding with the code conversion to ODC.
 
-### Solve in O11
+If you don't solve this pattern in O11, you only need to configure interoperability in ODC. After an app is converted to ODC, it can read and write data in O11 through interoperability. For more information, refer to [Extending O11 with ODC](https://www.outsystems.com/tk/redirect?g=892fab92-4f45-413d-809e-0cb453e46039).
+
+### Solve in O11 {#solve-in-o11}
 
 Depending on your scenario, solve this pattern in one of the following ways:
 

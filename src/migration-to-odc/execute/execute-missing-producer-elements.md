@@ -42,6 +42,8 @@ The warning typically occurs in the following scenarios:
 
 * **The producer changed in ODC.** Developers changed the converted producer in ODC, so it no longer has all the elements of the O11 producer module. Consumers that use the missing elements fail the dependency update when you convert them.
 
+* **The producer was converted in a mode that removes elements.** You converted the producer in the **Data and logic** or **Data** mode, which don't convert all the elements of the O11 producer module. A consumer gets the warning only if it still uses the removed elements after its own conversion. For example, a producer converted in the **Data** mode has no service actions. A consumer that uses one of those service actions only in a screen gets the warning in the **Full** mode. In the **Data and logic** or **Data** mode, the conversion removes the consumer's screens, so no warning occurs. For more information, refer to [Choose a conversion mode](../plan/plan-map-in-tool.md#choose-a-conversion-mode).
+
 ## Solve the warning
 
 The dependency update of the consumer succeeds only if the published ODC producer contains all the elements that the consumer uses. To solve the warning, bring the missing elements from the O11 producer module into the published producer, and then convert the consumer again.
@@ -59,3 +61,5 @@ To do this, follow these steps:
 1. Open the conversion plan that includes the consumer and click **Convert code**.
 
 For more information about converting code, refer to [Code conversion using the tool](execute-how-to-migrate-code.md#code-conversion).
+
+These steps work only if the conversion mode of the producer converts the missing elements. A producer converted in the **Data and logic** or **Data** mode doesn't receive the elements that its mode removes.

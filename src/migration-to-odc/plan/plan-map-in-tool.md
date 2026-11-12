@@ -141,6 +141,32 @@ Currently, the **Forge component** and the **extension** aren't mapped to any OD
 
 </div>
 
+## Choose a conversion mode {#choose-a-conversion-mode}
+
+If you plan to rebuild part of an O11 app in ODC, you can convert only the parts you want to keep. For each ODC asset in your ODC blueprint, the Conversion Assessment Tool lets you choose how much of the mapped O11 apps the code conversion brings to ODC.
+
+The following conversion modes are available:
+
+| Conversion mode | What the code conversion brings to ODC |
+| --- | --- |
+| **Full** | All the elements of the O11 modules, including interface, logic, data, and processes. This is the default mode. |
+| **Data and logic** | Everything except the elements in the **Interface** tab of Service Studio and the UI elements that the modules consume from other modules. The logic, data, and processes are converted. |
+| **Data** | The database and static entities, entity diagrams, resources, and site properties. The conversion removes all other elements, such as logic, processes, structures, and local storage entities. |
+
+To set the conversion mode of an ODC asset, open the ellipsis menu (**...**) in the row of the asset, and under **Conversion modes**, select a mode.
+
+Keep the following in mind when you choose a conversion mode:
+
+* **Traditional Web:** You can convert them only in the **Data and logic** or **Data** mode. The conversion removes the Traditional Web elements, and the resulting ODC assets are Reactive. In the **Full** mode, Traditional Web modules block the conversion. For more information, refer to [Asset cannot contain Traditional Web modules](../code-patterns/elem-trad-web.md).
+
+* **SOAP, SAP, and processes:** In the **Data** mode, the conversion removes them, so they don't block it. In the **Data and logic** mode, SOAP and SAP elements block the conversion.
+
+* **Assessment findings:** The Conversion Assessment Tool shows only the findings that are relevant to the mode. In the **Data and logic** mode, the tool hides the findings that only affect the interface. In the **Data** mode, the tool shows only the findings that can block the data migration.
+
+* **References to removed elements:** The conversion doesn't fix references to the elements it removes. For each converted module, the conversion log lists the number of removed elements. After the conversion, fix the references in ODC Studio.
+
+* **Dependencies between assets:** If the conversion mode of a producer removes elements that a consumer still uses after its own conversion, the conversion of the consumer ends with warnings. For more information, refer to [Missing elements in converted producer assets](../execute/execute-missing-producer-elements.md).
+
 ## Assess and plan your conversion {#assess-plan}
 
 Every time you create or update a mapping, the Conversion Assessment Tool automatically queues an assessment for that ODC asset. When the assessment finishes, you can go through the report to [assess its architecture and ODC readiness](plan-assess-refactor.md).

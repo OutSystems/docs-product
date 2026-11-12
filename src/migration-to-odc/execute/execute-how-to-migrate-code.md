@@ -72,6 +72,12 @@ To convert O11 code to ODC, follow these steps:
 
     The code conversion process begins, and the status of apps moves to **Converting**.
 
+<div class="info" markdown="1">
+
+The conversion of each ODC app or library follows the conversion mode set for it in the Conversion Assessment Tool. For more information, refer to [Choose a conversion mode](../plan/plan-map-in-tool.md#choose-a-conversion-mode).
+
+</div>
+
 If the conversion is successful, the process ends with **Finished** status. The O11 apps mapped in the Assessment tool are converted to ODC apps and libraries. These ODC apps and libraries are still **Unpublished**.
 
 Now, in ODC, you must [publish the ODC apps and libraries](#publish).

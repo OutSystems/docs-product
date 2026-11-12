@@ -51,7 +51,7 @@ These are the patterns that require changes in the O11 apps before proceeding wi
 
 ### Code
 
-* [Application consuming a non-read only Entity](arch-non-read-only-entity.md)
+* [Application consuming a non-read only Entity](arch-non-read-only-entity.md) - Optionally, you can choose to configure interoperability in ODC after the conversion.
 * [Asset consuming a Local Storage Entity](arch-local-storage.md)
 * [Asset consuming a private Structure](arch-priv-struct.md)
 * [Asset consuming a Process](arch-process.md)

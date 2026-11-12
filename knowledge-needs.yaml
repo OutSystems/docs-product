@@ -15733,9 +15733,10 @@ knowledge-needs:
     - name: Claims solution overview
       id: claims-solution-overview
       description: Wants to understand how a First Notice of Loss solution
-        combines the mobile app, AI agents, core services, and integration
-        wrappers with ACORD-aligned claim data and human-controlled governance,
-        so they can explain the solution's scope and responsibilities.
+        combines the mobile app, AI agents, core services, integration wrappers,
+        and custom or shared components with ACORD-aligned claim data and
+        human-controlled governance, so they can explain the solution's scope
+        and responsibilities and identify which components to adapt or reuse.
     - name: Claim flow and statuses
       id: claim-flow-and-statuses
       description: Wants to understand the four phases, emergency route,

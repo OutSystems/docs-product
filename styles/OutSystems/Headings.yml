@@ -312,6 +312,7 @@ exceptions:
   - Safari Web Inspector
   - SAP
   - SQL Server
+  - Storage Access API
   - TestFlight
   - Visual Studio
   - Visual Studio Code
@@ -378,6 +379,7 @@ exceptions:
   - MCP
   - OpenID Connect
   - OWASP
+  - OAuth 2.0
   - PC
   - PR
   - PRD

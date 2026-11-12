@@ -4157,6 +4157,10 @@ knowledge-needs:
   - name: Integration Patterns
     id: integration-patterns
     subtopics:
+    - name: ODC integration options
+      id: odc-integration-options
+      description: Wants to understand which integration approaches ODC supports for
+        external systems, so they can choose an approach that fits their requirements.
     - name: Consume O11 entities
       id: consume-o11-entities
       description: Wants to understand how an O11 entity's exposure settings determine
@@ -18472,6 +18476,10 @@ knowledge-needs:
       id: android-build-actions
       description: Wants to configure Android build actions in ODC mobile apps
         so they can customize behavior beyond standard low-code capabilities.
+    - name: iOS build actions
+      id: ios-build-actions
+      description: Wants to configure iOS build actions in ODC mobile apps so
+        they can customize behavior beyond standard low-code capabilities.
     - name: Fix empty file error
       id: fix-empty-extensibility-file-error
       description: 'Wants to resolve the "Binary file for <resource-type>

@@ -18231,10 +18231,9 @@ knowledge-needs:
     subtopics:
     - name: App extensibility config
       id: app-extensibility-use-cases
-      description: Wants to customize a mobile app's runtime and build-time behavior beyond
-        the Mobile tab defaults, using the app extensibility configurations JSON
-        schema, so that functionality not exposed by the Mobile tab UI can be
-        configured.
+      description: Wants to determine when to use app extensibility configuration JSON instead
+        of Mobile tab settings, so that mobile app options unavailable in the Mobile tab
+        can be configured.
     - name: Accessible domains
       id: accessible-domains
       description: 'Wants to configure the `access` extensibility configuration entry for a
@@ -23708,6 +23707,13 @@ knowledge-needs:
         Redis Cluster or single Redis server with redis-cli and checking for the
         expected _Data and _Internal session keys, so they can validate their
         self-managed O11 Redis session configuration is working.
+    - name: Redis HA architecture
+      id: redis-ha-architecture
+      description: Wants to understand the 3-node Master/Replica Redis Cluster
+        high-availability architecture for OutSystems 11 self-managed infrastructures,
+        including how crossed replica placement enables automatic failover to a
+        surviving server, so that they can reason about Redis Cluster resilience
+        before deploying it.
   - name: CDN Configuration
     id: cdn-configuration
     subtopics:
@@ -23808,13 +23814,6 @@ knowledge-needs:
         ODC cluster via the ODC Portal's Self-hosted tab and configurator command,
         so that they can update APM tool, stage database connection, or container
         registry settings without rerunning the full installation wizard.
-    - name: Redis HA architecture
-      id: redis-ha-architecture
-      description: Wants to understand the 3-node Master/Replica Redis Cluster
-        high-availability architecture for OutSystems 11 self-managed infrastructures,
-        including how crossed replica placement enables automatic failover to a
-        surviving server, so that they can reason about Redis Cluster resilience
-        before deploying it.
   - name: Front-end server scaling
     id: front-end-server-scaling
     subtopics:

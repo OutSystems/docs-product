@@ -2,7 +2,7 @@
 
 In this file FLAG_ONLY means "leave the finding pending in the report": the
 reason given in the table is appended to that pending line. A fix that passes
-verification moves its finding to the fixes block (see `SKILL.md`, Step 5).
+verification moves its finding to the fixes data line (see `SKILL.md`, Step 5).
 
 ## Verify, or revert and flag
 

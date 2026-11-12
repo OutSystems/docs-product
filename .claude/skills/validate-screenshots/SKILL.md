@@ -366,25 +366,25 @@ Checked N screenshots. M need changes. F fixed automatically.
 The report holds the pending issues, in the per-image format above. What was
 fixed does not go in it.
 
-### The fixes block
+### The fixes data line
 
-When F > 0, print this block right after the report (and after its closing
-`</details>`):
+When F > 0, print this line right after the report (and after its closing
+`</details>`). It is an HTML comment, so it never shows in the PR; the workflow
+turns it into one review comment per fixed image, with what was fixed and the
+image before and after. Those comments are the only record of what was fixed,
+so every fix must be in it:
 
 ```
-<!-- FIXED BEGIN -->
-<details>
-<summary>TITLE — F fixed automatically</summary>
-
-- `<image relative path>` — ✅ rule <N> (<name>): <what changed>; <checker> now reports <verdict>.
-
-</details>
-<!-- FIXED END -->
+<!-- FIXED-DATA {"fixes":[{"path":"src/foo/images/a-ss.png","before_path":"src/foo/images/old-ss.png","fixed":["rule 10 (width): resized to 1080 px; check_metadata now reports pass"]}]} -->
 ```
 
-The calling workflow posts this block as a comment of its own, which later runs
-leave alone, so what was fixed stays visible after a later run re-reports only
-what is still pending. Never repeat the fixed lines inside the report.
+* One line, valid JSON, one entry per image fixed in this invocation.
+* `fixed` lists one plain-words line per fix, each starting with the rule
+  number and name: `rule <N> (<name>): <what changed>; <checker> now reports
+  <verdict>`. Never ❌ or ⚠️ on these lines.
+* `path` is the image's repo-relative path after the fixes. Add `before_path`
+  only when the fixes renamed it.
+* Print it only when F > 0, never with `<!-- NO REPORT -->`.
 
 ### Choosing the summary title
 
@@ -419,8 +419,8 @@ Rules:
   and skip the per-image sections entirely. Keep the `Figma:` line in the
   header if it was extracted.
 * If M == 0 and F > 0: replace the per-image pending sections with `All N
-  screenshots pass after the automatic fixes.` and still print the fixes block,
-  so the author can see what changed in Figma.
+  screenshots pass after the automatic fixes.` and still print the fixes data
+  line, so the author can see what changed in Figma.
 * A finding whose automatic fix was attempted and reverted stays in the
   pending list, with the reason appended: "— automatic fix reverted: <reason>".
 * If Step 4 was skipped because Figma was unavailable, and there were
@@ -450,7 +450,7 @@ Rules:
 * Fixing an entry marked `"cached": true`, or touching Figma on a run with
   nothing to fix.
 * Putting ❌ or ⚠️ on a fixed line, or repeating the fixed lines inside the
-  report. The fixes block is posted separately so it survives the next run.
+  report. The fixes data line carries them to the per-image review comments.
 * Treating a ⚠️ finding as not worth a fix. Warnings go through Step 3 like
   failures; only the scope file says what is fixed.
 * Committing or pushing. The changes stay in the working tree.

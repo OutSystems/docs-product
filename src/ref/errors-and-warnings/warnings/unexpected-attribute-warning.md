@@ -8,6 +8,7 @@ figma:
 tags:
   - Data Model
   - Entities
+  - External Databases
   - SQL
   - Troubleshooting
 audience:

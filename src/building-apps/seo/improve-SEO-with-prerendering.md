@@ -3,7 +3,6 @@ summary: OutSystems 11 (O11) integrates with prerender.io to enhance SEO for rea
 tags:
   - Front-End
   - JavaScript
-  - Mobile app
   - Optimization
   - Performance
   - Web

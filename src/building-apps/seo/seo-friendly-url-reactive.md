@@ -2,7 +2,6 @@
 summary: OutSystems 11 (O11) enables SEO-friendly URLs for Reactive Web apps, requiring specific server and studio versions.
 tags:
   - Best Practices
-  - Debugging
   - Front-End
   - Optimization
   - Platform Server

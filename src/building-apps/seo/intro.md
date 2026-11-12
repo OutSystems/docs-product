@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) enhances app visibility and user experience through SEO, with considerations for performance during SEO rules synchronization.
 tags:
+  - Optimization
+  - Performance
   - Traditional Web
   - Web
 locale: en-us

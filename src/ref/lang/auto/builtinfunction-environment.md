@@ -6,9 +6,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 tags:
+  - .NET
   - Logic
   - Multi-language
   - Multi-Tenant
+  - Platform Server
 audience:
   - Developer
   - Platform administrator

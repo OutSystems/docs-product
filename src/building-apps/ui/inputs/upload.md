@@ -1,6 +1,7 @@
 ---
 summary: OutSystems 11 (O11) enables end users to upload files using the Upload widget in both Reactive Web and Mobile, as well as Traditional Web applications.
 tags:
+  - End-users
   - Front-End
   - Mobile app
   - Screens

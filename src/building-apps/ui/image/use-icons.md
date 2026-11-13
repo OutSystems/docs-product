@@ -2,10 +2,11 @@
 summary: Discover using over 600 built-in icons in OutSystems 11 (O11) for application interfaces.
 tags:
   - Front-End
+  - Mobile app
   - OutSystems UI
   - Screens
+  - Traditional Web
   - UI
-  - UI Patterns
   - Widgets
 locale: en-us
 guid: ae0d2c36-c50f-4084-b986-d19572b31cc5

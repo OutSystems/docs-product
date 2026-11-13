@@ -10,7 +10,10 @@ tags:
   - Aggregates
   - Blocks
   - Data
+  - Entities
   - Screens
+  - Sorting
+  - Widgets
 audience:
   - Developer
   - Front-end developer

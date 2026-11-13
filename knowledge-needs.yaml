@@ -2304,9 +2304,9 @@ knowledge-needs:
         query manually.
     - name: Advanced aggregate queries
       id: advanced-aggregate-queries
-      description: Wants to understand how advanced aggregates query data with
-        filters, joins, and sorting, so they can use aggregates to power
-        complex web app screens in OutSystems 11.
+      description: Wants to filter and group employee data with an advanced
+        Aggregate, so they can build a dynamic Project Dashboard that summarizes
+        employees by project.
     - name: Sort aggregate data
       id: sort-aggregate-data
       description: Wants to sort an Aggregate's returned records in ascending
@@ -3417,6 +3417,12 @@ knowledge-needs:
       description: Wants to commit a transaction before calling a process or consumed
         web service in an Oracle-backed app, so that the call can run without
         violating Oracle transaction requirements.
+    - name: Use SQL Loader
+      id: use-sql-loader
+      description: Wants to use SQL Loader or another bulk utility to load large
+        amounts of data into an OutSystems database, so they can populate the
+        database efficiently without loading records individually through the
+        application.
     - name: Case- and accent-insensitive searches on large text objects
       id: oracle-case-accent-insensitive-large-text-search
       description: Wants to perform case- and accent-insensitive searches on large
@@ -16435,6 +16441,11 @@ knowledge-needs:
       description: Wants to resolve checks that the agent marks as NOT
         OBSERVABLE instead of passed or failed, so that testing of the
         generated app gives a result.
+  - name: AI service benefits
+    id: ai-service-benefits
+    description: Wants to understand how OutSystems AI services improve end-user
+      experience and satisfaction in support scenarios, so they can identify
+      opportunities to apply AI to improve service interactions.
 - name: Integrating with Plugins
   guid: 1af9eece-e820-40ec-8483-b1243267b038
   topics:
@@ -16800,6 +16811,11 @@ knowledge-needs:
       description: Wants to use the Common plugin's client actions to log to the device
         console and retrieve runtime environment information in an ODC mobile
         app, so that the app can identify its runtime environment.
+    - name: Use mobile plugins
+      id: use-mobile-plugins
+      description: Wants to use the OutSystems Camera plugin to let users
+        capture photos in a mobile app, so they can include device-generated
+        images in the app's user experience.
     - name: Common plugin library
       id: common-plugin-library
       description: Wants to replace the O11 Common Plugin app with the Common

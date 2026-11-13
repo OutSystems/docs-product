@@ -6,7 +6,9 @@ locale: en-us
 platform-version: o11
 figma:
 tags:
+  - Blocks
   - Front-End
+  - Multi-language
   - UI
   - Widgets
 audience:

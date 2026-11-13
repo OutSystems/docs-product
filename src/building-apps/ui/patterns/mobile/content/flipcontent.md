@@ -1,6 +1,7 @@
 ---
 summary: Learn how to use the Flip Content UI Pattern in OutSystems 11 (O11) to enhance interactive content display in mobile and reactive web apps.
 tags:
+  - Accessibility
   - Events
   - Front-End
   - Mobile app

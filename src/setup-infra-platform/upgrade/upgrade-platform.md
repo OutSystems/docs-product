@@ -8,7 +8,9 @@ figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%
 tags:
   - Deploy
   - Infrastructure
+  - Lifecycle
   - Platform Server
+  - Testing
 audience:
   - Platform administrator
   - Developer

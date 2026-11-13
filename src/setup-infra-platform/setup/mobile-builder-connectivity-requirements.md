@@ -6,8 +6,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 tags:
+  - Android
   - Infrastructure
   - IP Filters
+  - iOS
   - Mobile app
   - Native App
   - Security

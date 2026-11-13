@@ -2,6 +2,9 @@
 summary: OutSystems 11 (O11) enhances upgrades with a new modules preparation step for improved application publishing.
 tags:
   - Deploy
+  - Infrastructure
+  - Monitoring
+  - Performance
   - Platform Server
 locale: en-us
 guid: 5d1eb0f2-08dd-49d7-8937-32287cb489c4

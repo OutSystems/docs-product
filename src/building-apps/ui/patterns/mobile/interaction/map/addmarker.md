@@ -3,7 +3,6 @@ tags:
   - Events
   - Forge
   - Mobile app
-  - OutSystems UI
   - UI
   - UI Patterns
   - Widgets

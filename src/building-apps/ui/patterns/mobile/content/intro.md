@@ -5,7 +5,7 @@ tags:
   - OutSystems UI
   - UI
   - UI Patterns
-summary: OutSystems 11 (O11) offers diverse content patterns for mobile and reactive web apps, improving user interface design.
+summary: OutSystems UI content patterns in OutSystems 11 (O11) organize alerts, cards, accordions, and tooltips in mobile and reactive web apps.
 locale: en-us
 guid: 9690a50e-ac67-4e4a-9b4d-16821ac9e8b1
 app_type: mobile apps, reactive web apps

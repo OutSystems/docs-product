@@ -15,6 +15,7 @@ coverage-type:
   - apply
 audience:
   - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 topic:

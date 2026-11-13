@@ -1292,6 +1292,12 @@ knowledge-needs:
       id: application-usability-practices
       description: Wants to design clear navigation and task flows in an
         OutSystems application, so users can complete common tasks intuitively.
+    - name: Gamification UX design
+      id: gamification-ux-design
+      description: Wants to understand how to use gamification principles beyond
+        badges and leaderboards by designing core experiences and communicating
+        a message that keeps users engaged, so they can create engaging
+        application experiences.
     - name: Low-Code Review component
       id: low-code-review-component
       description: Wants to use the Low-Code Review component to manage
@@ -6143,6 +6149,12 @@ knowledge-needs:
       description: Wants to identify the workflow nodes available in the ODC
         Workflow editor and what each one does when building a workflow, so
         that they can choose the right component for each step.
+    - name: BPMN notation mapping
+      id: bpmn-notation-mapping
+      description: Wants to map BPMN events, tasks, gateways, and sub-processes to
+        the corresponding OutSystems process elements, including differences in
+        available elements and terminology, so they can adapt BPMN models to
+        OutSystems.
     - name: Add decision activity
       id: add-decision-activity
       description: Wants to add a Decision activity or node to a workflow,
@@ -8342,11 +8354,6 @@ knowledge-needs:
       description: Wants to understand what Business Process Technology is, how a BPT
         process runs in the background, and which core flow elements it uses, so they
         can recognize the main building blocks before modeling a process.
-    - name: BPMN notation mapping
-      id: bpmn-notation-mapping
-      description: Wants to map BPMN 1.2 events, tasks, gateways, and sub-processes to
-        their OutSystems 11 BPT equivalents, so they can recognize the right process
-        element while modeling a process from BPMN.
     - name: Create BPT process
       id: create-bpt-process
       description: Wants to create a BPT process in Service Studio and start defining the process flow, so they can automate tasks and track work in their application.
@@ -12045,6 +12052,14 @@ knowledge-needs:
         JavaScript API functions with optional transition animations, in ODC
         mobile apps and reactive web apps, so that users experience smoother
         in-app transitions between screens.
+    - name: Animate UI elements
+      id: build-mobile-animations
+      description: Wants to animate UI elements in an ODC mobile app when their
+        state changes, so that updates are visually clear to users.
+    - name: Animate interaction feedback
+      id: animate-interaction-feedback
+      description: Wants to provide visual animation feedback when users interact
+        with an ODC mobile app, so that they can see their actions were received.
     - name: Detect history-based navigation
       id: detect-history-based-navigation
       description: Wants to check whether the current screen was loaded from
@@ -13965,6 +13980,11 @@ knowledge-needs:
       Ways, enterprise readiness evidence, and official capabilities, so they
       can explain how DevOps improves delivery flow and supports continuous
       delivery.
+  - name: Lean operations monitoring
+    id: lean-operations-monitoring
+    description: Wants to use OutSystems monitoring data to identify operational
+      bottlenecks and prioritize improvements, so they can improve operational
+      efficiency.
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -15061,6 +15081,15 @@ knowledge-needs:
 - name: Integrate AI
   guid: a7056193-1048-45b9-ba65-37023127caab
   topics:
+  - name: Route support requests with AI
+    id: ai-service-use-cases
+    description: Wants to use AI to classify incoming support requests by issue
+      type and route them to the appropriate team, so support requests reach
+      the right people for resolution.
+  - name: Personalize in-app recommendations with AI
+    id: personalize-in-app-recommendations-ai
+    description: Wants to use AI to tailor in-app recommendations to a user's
+      context, so users see suggestions relevant to their needs.
   - name: Chatbots
     id: chatbots
     subtopics:
@@ -27140,3 +27169,14 @@ knowledge-needs:
       description: Wants to understand approaches and examples for scaling
         digital transformation across teams and delivery, so they can plan and
         execute transformation at scale.
+- name: Emerging technologies
+  guid: c3a122e9-b484-43bc-8428-76e937ab3af6
+  topics:
+  - name: Blockchain
+    id: blockchain
+    subtopics:
+    - name: Blockchain fundamentals
+      id: blockchain-fundamentals
+      description: Wants to understand what blockchain is, how it works, and
+        where to use it when evaluating blockchain-enabled applications in
+        OutSystems, so they can identify suitable use cases.

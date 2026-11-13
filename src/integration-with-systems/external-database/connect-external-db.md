@@ -22,7 +22,7 @@ coverage-type:
   - apply
   - understand
 topic:
-  - configure-database-connections
+  - configure-database-connections-o11
   - import-external-tables
   - switch-database-connection-at-runtime
 ---

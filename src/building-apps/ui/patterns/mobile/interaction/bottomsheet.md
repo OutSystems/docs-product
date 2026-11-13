@@ -22,7 +22,7 @@ coverage-type:
   - apply
 topic:
   - bottom-sheet-reference
-  - use-bottom-sheet-pattern
+  - use-bottom-sheet
 ---
 
 # Bottom Sheet

@@ -17,6 +17,7 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+  - understand
 topic:
   - integrated-windows-authentication
   - windows-auth-actions

@@ -12,7 +12,6 @@ platform-version: o11
 figma:
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

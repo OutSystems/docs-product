@@ -15904,6 +15904,36 @@ knowledge-needs:
     - name: Implement semantic search
       id: implement-semantic-search
       description: Wants to implement semantic search in ODC by marking entity attributes as searchable and adding a Semantic Search element to a server action flow, so that the app can retrieve results ranked by meaning rather than exact keywords.
+    - name: Configure text attributes
+      id: configure-text-attributes
+      description: Wants to configure entity text attributes for semantic search in ODC by selecting searchable attributes and chunk methods, so the app retrieves relevant passages from entity records.
+    - name: Monitor text indexing
+      id: monitor-text-indexing
+      description: Wants to monitor asynchronous semantic-search indexing for ODC text attributes by understanding reindexing events, processing delays, and Embedding sync logs, so they can determine when entity records are searchable.
+    - name: Choose search option
+      id: choose-search-option
+      description: Wants to choose an ODC semantic search option based on where the content lives and who manages it, so they can design an app or agent that searches the right content source.
+    - name: Semantic search regions
+      id: semantic-search-regions
+      description: Wants to understand the regional availability and processing location of ODC semantic search options based on a stage's runtime region, so they can choose a region that meets their data residency and feature availability requirements.
+    - name: Search language support
+      id: semantic-search-language-support
+      description: Wants to understand how language-specific processing, text extraction, and configurable text-selection conditions affect the support and retrieval quality of ODC semantic search across text attributes, File attributes, and knowledge bases, so they can choose suitable content and interpret result quality.
+    - name: Test semantic search
+      id: test-semantic-search
+      description: Wants to test semantic search in ODC by publishing the app, waiting for content indexing to finish, and running a search with content available in the target stage, so they can verify that the app returns ranked results.
+    - name: Configure search inputs
+      id: configure-search-inputs
+      description: Wants to configure the inputs and filters for ODC semantic search, including query, pagination, score thresholds, and knowledge base metadata, so the app retrieves the intended chunks from searchable content.
+    - name: Interpret search results
+      id: interpret-search-results
+      description: Wants to interpret the results returned by ODC semantic search, including matching records or documents, relevance scores, matched content, and chunk metadata, so they can use the returned content in app logic.
+    - name: Configure file attributes
+      id: configure-file-attributes
+      description: Wants to configure File attributes for semantic search in ODC by selecting searchable attributes and chunk methods, so the app retrieves relevant passages from entity files.
+    - name: Understand file search
+      id: understand-file-search
+      description: Wants to understand which file types semantic search indexes and how file uploads, replacements, deletions, and reindexing affect searchable File attributes, so they can account for file limits and indexing delays when building an app.
   - name: Troubleshoot Context Service
     id: troubleshoot-context-service
     subtopics:

@@ -4098,6 +4098,12 @@ knowledge-needs:
         Portal, select a supported provider, and reference the external
         entities in an app, so they can use external database data in ODC
         Studio.
+    - name: Custom DB certificates
+      id: custom-db-certificates
+      description: Wants to configure custom certificates for ODC external
+        database connections by uploading a valid PEM certificate or CA bundle
+        to each applicable stage in ODC Portal, so connections to databases
+        using private or self-signed certificates trust the database server.
     - name: Per-stage DB connections
       id: per-stage-db-connections-odc
       description: Wants to configure a separate external database connection

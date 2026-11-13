@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) images and icons intro covering how to add visuals from local files, URLs, or binary data in screens and blocks.
+summary: OutSystems 11 (O11) images overview for displaying visual content in screens and blocks.
 tags:
   - Blocks
   - Screens

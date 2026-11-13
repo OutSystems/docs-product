@@ -2710,6 +2710,13 @@ knowledge-needs:
          and validating any custom changes in Service Studio for O11, so
          that customized breadcrumbs continue to meet accessibility
          requirements in mobile apps and reactive web apps.
+     - name: Accessible Flip Content pattern
+       id: accessible-flip-content-pattern
+       description: Wants to confirm the Flip Content UI Pattern remains
+         accessible by relying on its default WCAG 2.2 AA-compliant behavior
+         and validating any custom changes in Service Studio for O11, so
+         that customized flip content continues to meet accessibility
+         requirements in mobile apps and reactive web apps.
      - name: Accessible Wizard pattern
        id: accessible-wizard-pattern
        description: Wants to make the Wizard UI Pattern accessible to
@@ -5701,8 +5708,8 @@ knowledge-needs:
     - name: Resume API client
       id: resume-api-client
       description: Wants to resume access to a suspended API client from the ODC
-        portal, so its secret and access token become valid again, or generate a
-        new secret if expired, restoring API access.
+        portal, so its secret and access token become valid again, restoring API
+        access.
     - name: Edit API client permissions
       id: edit-api-client-permissions
       description: Wants to edit the permissions of an existing API client in the
@@ -18309,15 +18316,36 @@ knowledge-needs:
         upgrading to supported LifeTime and Platform Server versions or by
         editing the JSON in Service Studio, so they can keep the configuration
         within limits.
-    - name: Library plugin config
-      id: plugin-extensibility-use-cases
-      description: Wants to customize a mobile library's plugin runtime and
-        build-time behavior, such as specifying Cordova and Capacitor plugin
-        sources, setting plugin preferences and configurations, declaring
-        permissions and usage descriptions, defining installation variables,
-        copying resources, and running build actions, using the library
-        extensibility configurations JSON schema, so that Cordova and
-        Capacitor plugins can be wrapped and configured for mobile apps.
+    - name: Library plugin sources
+      id: library-plugin-sources
+      description: Wants to specify Cordova and Capacitor plugin sources in a
+        mobile library's extensibility configurations JSON, so that plugins
+        can be wrapped and configured for mobile apps.
+    - name: Library plugin preferences
+      id: library-plugin-preferences
+      description: Wants to set plugin preferences and configurations in a
+        mobile library's extensibility configurations JSON, so that plugins
+        use the intended runtime and build-time settings in mobile apps.
+    - name: Library plugin permissions
+      id: library-plugin-permissions
+      description: Wants to declare plugin permissions and usage descriptions
+        in a mobile library's extensibility configurations JSON, so that
+        wrapped plugins can request the required access in mobile apps.
+    - name: Library plugin installation variables
+      id: library-plugin-installation-variables
+      description: Wants to define plugin installation variables in a mobile
+        library's extensibility configurations JSON, so that wrapped plugins
+        receive the required values when they are installed in mobile apps.
+    - name: Library plugin resources
+      id: library-plugin-resources
+      description: Wants to copy plugin resources through a mobile library's
+        extensibility configurations JSON, so that wrapped plugins include the
+        required files in mobile apps.
+    - name: Library plugin build actions
+      id: library-plugin-build-actions
+      description: Wants to run plugin build actions through a mobile library's
+        extensibility configurations JSON, so that wrapped plugins are built
+        with the required behavior for mobile apps.
     - name: Capacitor system bars
       id: capacitor-system-bars
       description: Wants to configure system bar style and status bar background settings in

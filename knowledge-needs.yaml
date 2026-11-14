@@ -1317,6 +1317,12 @@ knowledge-needs:
       description: Wants to apply architecture best practices when structuring an
         OutSystems app, so that its components remain maintainable as the app
         grows.
+    - name: Architecture governance
+      id: architecture-governance
+      description: Wants to establish architecture governance practices for growing
+        OutSystems applications, so they can streamline development, reduce
+        architectural risk, and support compliance as application portfolios
+        expand.
     - name: Prioritize infractions
       id: prioritize-architecture-infractions
       description: Wants to identify which OutSystems 11 architecture infractions
@@ -7174,6 +7180,11 @@ knowledge-needs:
       id: extract-elements-without-impacting-consumers
       description: Wants to extract elements from a module without impacting
         consumers, so they can refactor module boundaries safely.
+    - name: Avoid refactor pitfalls
+      id: avoid-refactor-pitfalls
+      description: Wants to understand how early entity and module architecture
+        decisions create refactoring problems, so they can avoid those pitfalls
+        when designing an OutSystems application.
   - name: Validating your application architecture
     id: validate-app-architecture
     subtopics:
@@ -9095,6 +9106,10 @@ knowledge-needs:
     - name: Mock external services
       id: mock-external-services
       description: Wants to mock external services in automated tests by using a shared MockingServices module and domain-specific wrappers for REST and SOAP integrations, so tests can isolate external dependencies.
+    - name: Automate ODC tests
+      id: odc-test-automation
+      description: Wants to configure ODC regression tests to run in a CI/CD
+        pipeline, so test failures are detected before changes are released.
 - name: Collaborative Development
   guid: ''
   topics:
@@ -11741,6 +11756,10 @@ knowledge-needs:
       id: create-odc-block
       description: Wants to create a reusable Block in ODC Studio, so that they
         can build modular screen designs with centralized UI components.
+    - name: Build a responsive app header
+      id: build-creative-ui
+      description: Wants to build a responsive app header as a reusable ODC Block,
+        so navigation stays consistent across screens on desktop and mobile.
     - name: Web block exposure rules
       id: web-block-exposure-rules
       description: Wants to identify when a Web Block cannot be exposed in a
@@ -16478,10 +16497,20 @@ knowledge-needs:
         OBSERVABLE instead of passed or failed, so that testing of the
         generated app gives a result.
   - name: AI service benefits
-    id: ai-service-benefits
-    description: Wants to understand how OutSystems AI services improve end-user
-      experience and satisfaction in support scenarios, so they can identify
-      opportunities to apply AI to improve service interactions.
+    subtopics:
+    - name: AI service benefits
+      id: ai-service-benefits
+      description: Wants to understand how OutSystems AI services improve end-user
+        experience and satisfaction in support scenarios, so they can identify
+        opportunities to apply AI to improve service interactions.
+  - name: Microsoft AI integrations
+    id: microsoft-ai-integrations
+    subtopics:
+    - name: Call Azure OpenAI from an OutSystems app
+      id: explore-microsoft-ai
+      description: Wants to send prompts from an OutSystems app to an Azure OpenAI
+        deployment and handle generated responses, so the app can provide
+        AI-assisted text generation.
 - name: Integrating with Plugins
   guid: 1af9eece-e820-40ec-8483-b1243267b038
   topics:
@@ -20694,12 +20723,14 @@ knowledge-needs:
 - name: Progressive Release
   guid: eb4c73d7-260f-4048-9a2f-f61333238db1
   topics:
-  - name: ODC delivery principles
-    id: odc-delivery-principles
-    description: Wants to understand ODC continuous delivery principles, including small
-      batches, frequent release, decoupled release and deployment, breaking changes
-      mitigation, code review, and test automation, so they can apply them to delivery
-      work.
+  - name: Decouple ODC release and deployment
+    id: odc-decouple-release-deployment
+    description: Wants to decouple ODC release from deployment, so they can deploy
+      changes without making them immediately available to users.
+  - name: Mitigate ODC breaking changes
+    id: odc-mitigate-breaking-changes
+    description: Wants to identify and mitigate breaking changes in ODC apps before
+      deployment, so existing consumers continue to work after changes.
   - name: Feature flag rollout
     id: feature-flag-rollout
     description: Wants to use feature flags to decouple release from deployment, so
@@ -20717,8 +20748,10 @@ knowledge-needs:
       users regain access only after the issue is addressed.
   - name: Release frequently
     id: release-frequently
-    description: Wants to release work frequently so users give early feedback
-      and significant issues surface before a full rollout.
+    description: Wants to deliver ODC changes in small batches and release work
+      frequently, so users give early feedback, significant issues surface before
+      a full rollout, and teams deliver high-quality software faster as delivery
+      demand grows.
   - name: Collect business feedback
     id: collect-business-feedback
     description: Wants to collect business feedback through regular demos,
@@ -20986,6 +21019,11 @@ knowledge-needs:
       description: Wants to understand what Code Quality is, why teams use it
         to manage technical debt, and how developers and technical leads use
         it, so they can apply it in the development lifecycle.
+    - name: Start with Code Quality
+      id: start-with-code-quality
+      description: Wants to choose the appropriate Code Quality
+        getting-started guide for their role after setup and initial
+        synchronization, so they can begin using Code Quality effectively.
     - name: Code analysis process
       id: code-analysis-process
       description: Wants to understand how Code Quality runs regular analyses

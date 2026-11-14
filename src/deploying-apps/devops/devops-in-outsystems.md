@@ -16,6 +16,8 @@ tags:
 audience:
   - Architect
   - Developer
+  - Platform administrator
+  - Tech lead
 outsystems-tools:
   - none
 coverage-type:

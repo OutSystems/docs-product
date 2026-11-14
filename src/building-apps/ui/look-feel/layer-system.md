@@ -20,6 +20,7 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+  - apply
 topic:
   - adjust-layer-system-scale
   - mitigate-layer-system-z-index-breaking-changes

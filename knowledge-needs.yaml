@@ -18530,13 +18530,6 @@ knowledge-needs:
         when the device already holds data for that entity, by rolling back
         the app and clearing the cache/data or reinstalling on affected
         devices, so that the OTA upgrade completes successfully.'
-    - name: Database close error
-      id: database-close-error
-      description: 'Wants to understand the informative "failed to close
-        database ... cannot be closed while a transaction is in progress"
-        error that occurs when a mobile app closes its database connection
-        on window unload while a transaction is still running, so that they
-        can confirm it''s safe to ignore since it has no impact on the app.'
     - name: Resource not found error
       id: resource-not-found-error
       description: 'Wants to understand the informative "Unable to find
@@ -20068,6 +20061,14 @@ knowledge-needs:
       event for resume handling and a JavaScript pause listener for
       background handling, so that lifecycle-specific logic runs in the
       correct layer.
+    subtopics:
+    - name: Database close error
+      id: database-close-error
+      description: 'Wants to understand the informative "failed to close
+        database ... cannot be closed while a transaction is in progress"
+        error that occurs when a mobile app closes its database connection
+        on window unload while a transaction is still running, so that they
+        can confirm it''s safe to ignore since it has no impact on the app.'
   - name: Deep linking
     id: deep-linking
     subtopics:

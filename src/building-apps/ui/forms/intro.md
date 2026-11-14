@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - group-inputs-with-forms
+  - use-form-widget
 ---
 
 # Forms

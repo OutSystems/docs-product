@@ -18,6 +18,8 @@ outsystems-tools:
   - code quality
 coverage-type:
   - apply
+topic:
+  - start-with-code-quality
 isautopublish: true
 ---
 

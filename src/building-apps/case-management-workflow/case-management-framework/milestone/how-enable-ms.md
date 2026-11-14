@@ -20,6 +20,9 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - apply
+topic:
+  - add-cmf-milestones
+  - enable-cmf-milestones
 ---
 
 # How to enable milestones

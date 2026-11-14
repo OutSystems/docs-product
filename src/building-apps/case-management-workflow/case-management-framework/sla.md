@@ -22,6 +22,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - act-on-overdue-case-sla
+  - configure-case-sla
+  - set-default-case-sla
 ---
 
 # Ensuring resolution times with SLAs

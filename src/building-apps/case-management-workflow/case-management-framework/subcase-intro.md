@@ -19,6 +19,9 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - understand
+topic:
+  - track-subcase-completion
+  - understand-subcases
 ---
 
 # Subcases introduction

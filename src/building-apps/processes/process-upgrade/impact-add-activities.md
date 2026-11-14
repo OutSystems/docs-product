@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - process-upgrade-add-activity-impact
 ---
 
 # Impact of Adding Activities to Process Flows

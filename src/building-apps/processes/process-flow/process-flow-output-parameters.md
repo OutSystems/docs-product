@@ -17,6 +17,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - output-parameter-access
+  - output-parameter-defaults
 ---
 
 # About Output Parameters in a Process Flow

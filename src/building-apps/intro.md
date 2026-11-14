@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - build-app-in-service-studio
 ---
 
 # Building apps

@@ -19,6 +19,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+topic:
+  - cmf-overview
 ---
 
 # Case Management framework reference

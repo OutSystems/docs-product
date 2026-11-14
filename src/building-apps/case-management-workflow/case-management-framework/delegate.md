@@ -15,6 +15,9 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - understand
+topic:
+  - manage-cmf-delegation
+  - use-cmf-delegation
 ---
 
 # Delegate activities

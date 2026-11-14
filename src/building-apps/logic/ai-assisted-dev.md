@@ -20,6 +20,10 @@ coverage-type:
   - understand
   - apply
   - unblock
+topic:
+  - enable-logic-suggestions
+  - troubleshoot-code-mentor
+  - use-ai-logic-suggestions
 isautopublish: true
 ---
 

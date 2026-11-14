@@ -2,6 +2,8 @@
 summary: Learn to reclassify modules in OutSystems 11 (O11) using Code Quality, impacting app classifications and technical debt scores.
 locale: en-us
 guid: 429d1c51-f248-425b-902e-2af8b6ec8a2e
+topic:
+  - reclassify-module
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:728

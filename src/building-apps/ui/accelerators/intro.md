@@ -22,6 +22,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - use-ui-accelerator
 ---
 
 # Accelerators to compose a screen

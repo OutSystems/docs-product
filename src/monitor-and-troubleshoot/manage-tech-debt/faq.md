@@ -1,8 +1,9 @@
 ---
 tags:
+  - Data Synchronization
   - Infrastructure
+  - IT Teams
   - IT Users
-  - Mentor
   - Mentor Studio
   - Technical Debt
   - Troubleshooting

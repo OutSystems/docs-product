@@ -16,6 +16,7 @@ audience:
   - Tech lead
 tags:
   - Authentication
+  - Authorization
   - End-user Authentication
   - Security
   - SSO

@@ -1,8 +1,10 @@
 ---
 tags:
   - Events
+  - Logic
   - Mobile app
   - OutSystems UI
+  - Screens
   - UI Patterns
   - Widgets
 summary: Explore the customizable Dropdown Server Side UI pattern in OutSystems 11 (O11) for managing complex dropdown use cases.

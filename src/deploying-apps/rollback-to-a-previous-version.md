@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - rollback-app-version
+  - rollback-app-version-o11
 ---
 
 # Rollback to a Previous Version

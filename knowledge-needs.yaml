@@ -17914,6 +17914,14 @@ knowledge-needs:
         mobile app issues, using Apple Configurator 2, Xcode, iTools, or
         iOSLogInfo, so that they can send the log file to OutSystems
         Support for diagnosis.
+    - name: Resource not found error
+      id: resource-not-found-error
+      description: 'Wants to understand the informative "Unable to find
+        resource <Resource>" error, visible only in Mobile Device Logs and
+        accessible through ADB, that occurs when WebView requests a resource
+        outside a cached frame or a locally-served Cordova plugin resource,
+        so that they can confirm it''s safe to ignore since it has no impact
+        on the end user.'
   - name: Mobile app testing practices
     id: mobile-app-testing-practices
     subtopics:
@@ -18565,14 +18573,6 @@ knowledge-needs:
         when the device already holds data for that entity, by rolling back
         the app and clearing the cache/data or reinstalling on affected
         devices, so that the OTA upgrade completes successfully.'
-    - name: Resource not found error
-      id: resource-not-found-error
-      description: 'Wants to understand the informative "Unable to find
-        resource <Resource>" error, visible only in Mobile Device Logs and
-        accessible through ADB, that occurs when WebView requests a resource
-        outside a cached frame or a locally-served Cordova plugin resource,
-        so that they can confirm it''s safe to ignore since it has no impact
-        on the end user.'
     - name: InputStream cache error
       id: inputstream-cache-error
       description: 'Wants to resolve the "Could not get InputStream while

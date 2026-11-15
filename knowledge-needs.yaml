@@ -9110,6 +9110,11 @@ knowledge-needs:
       id: odc-test-automation
       description: Wants to configure ODC regression tests to run in a CI/CD
         pipeline, so test failures are detected before changes are released.
+    - name: Set up load test
+      id: set-up-load-test
+      description: Wants to set up a load test for an OutSystems application
+        using a test plan template, so they can evaluate application behavior
+        under expected workload.
 - name: Collaborative Development
   guid: ''
   topics:
@@ -11760,6 +11765,11 @@ knowledge-needs:
       id: build-creative-ui
       description: Wants to build a responsive app header as a reusable ODC Block,
         so navigation stays consistent across screens on desktop and mobile.
+    - name: Build creative components
+      id: build-creative-components
+      description: Wants to build a reusable responsive UI component for a specific
+        screen need in ODC and OutSystems 11, so they can provide a consistent
+        front-end experience across screen sizes.
     - name: Web block exposure rules
       id: web-block-exposure-rules
       description: Wants to identify when a Web Block cannot be exposed in a
@@ -12544,11 +12554,16 @@ knowledge-needs:
     id: application-rollback
     subtopics:
     - name: Rollback app version
-      id: rollback-app-version
+      id: rollback-app-version-o11
       description: Wants to restore an application to a known working version after
         a bad release by creating a LifeTime tag from an earlier version and
         deploying it, or by publishing a previously saved Service Center Solution
         version, so the application returns to a known working state.
+    - name: Rollback ODC app
+      id: rollback-app-version-odc
+      description: Wants to roll an ODC app back to a previous revision in ODC
+        Portal after a deployment causes dependency or compatibility issues, so
+        that the app returns to a working state.
   - name: Manual deployment without an infrastructure management console
     id: manual-deploy-no-console
     subtopics:
@@ -13995,11 +14010,26 @@ knowledge-needs:
       so they can recognize the correct measure set for DevOps delivery
       effectiveness in an assessment.
     subtopics:
+    - name: DORA metrics overview
+      id: dora-metrics-overview
+      description: Wants to identify the DORA metrics, so they can recognize the
+        correct measure set for DevOps delivery effectiveness.
     - name: DORA elite performance
       id: dora-elite-performance
       description: Wants to identify the DORA benchmarks that define elite
         performers, so they can distinguish elite teams from other delivery
         performers.
+  - name: Continuous delivery
+    id: continuous-delivery
+    description: Wants to understand what continuous delivery is and how its
+      frequent, reliable production delivery reduces risk and improves speed,
+      so they can explain its value in software development.
+  - name: Factor accelerator
+    id: factor-accelerator
+    description: Wants to understand how Factor helps OutSystems platform teams
+      govern software factories, automate processes, and optimize quality
+      assurance, so they can support continuous innovation across their
+      software delivery lifecycle.
   - name: DevOps reference model
     id: devops-reference-model
     description: Wants to understand how the DevOps reference model maps OutSystems
@@ -16506,6 +16536,11 @@ knowledge-needs:
   - name: Microsoft AI integrations
     id: microsoft-ai-integrations
     subtopics:
+    - name: Microsoft AI in apps
+      id: microsoft-ai-in-apps
+      description: Wants to choose a Microsoft AI service for an OutSystems app's
+        AI-enabled feature, so they can select an integration approach that fits
+        the feature's requirements.
     - name: Call Azure OpenAI from an OutSystems app
       id: explore-microsoft-ai
       description: Wants to send prompts from an OutSystems app to an Azure OpenAI

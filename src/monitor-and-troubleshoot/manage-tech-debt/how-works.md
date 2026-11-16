@@ -2,8 +2,6 @@
 tags:
   - Authentication
   - IT Users
-  - Mentor
-  - Mentor Studio
   - Plugins
   - Roles
   - Technical Debt

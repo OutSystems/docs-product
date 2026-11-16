@@ -1,7 +1,6 @@
 ---
 tags:
   - Best Practices
-  - Mentor
   - Mentor Studio
   - Technical Debt
 summary: Code Quality technical debt formula in OutSystems 11 (O11) multiplies findings by pattern weight into a color-coded debt percentage.

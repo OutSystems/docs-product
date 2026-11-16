@@ -4,6 +4,7 @@ tags:
   - Mobile app
   - Monitoring
   - Performance
+  - Plugins
   - Technical Debt
   - Troubleshooting
 locale: en-us

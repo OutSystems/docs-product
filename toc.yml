@@ -1014,6 +1014,7 @@
 #security
 - href: security/intro.md
 - topics:
+    - href: security/sentry.md
     - href: security/pci-compliance.md
     - href: security/hipaa/intro.md
     - topics:

@@ -6,6 +6,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=267-92&t=Gt8bYIfSykukAq2d-1
 tags:
+  - Authentication
+  - Authorization
+  - Data Integrity
   - OWASP
   - Security
 audience:
@@ -91,7 +94,7 @@ Compliance is the set of practices, processes, and tools a company uses to ensur
 
 OutSystems 11 provides the following compliance offerings:
 
-* **[OutSystems 11 Sentry](https://security.outsystems.com/?product=o11sentry)**: An edition of OutSystems 11 Cloud with additional layers of compliance, including PCI DSS, HIPAA, and other certifications.
+* **[OutSystems 11 Sentry](sentry.md)**: An add-on for OutSystems 11 Cloud that provides additional layers of compliance, including PCI DSS, HIPAA, and other certifications.
     * **[HIPAA compliance](hipaa/intro.md)**: How OutSystems helps you develop and secure healthcare applications that comply with HIPAA security and privacy requirements.
     * **[PCI compliance](pci-compliance.md)**: How to build applications that handle payment card data in compliance with PCI DSS service provider standards.
 * **[OutSystems FedRAMP](fedramp/fedramp-overview.md)**: A FedRAMP Moderate-authorized version of OutSystems 11 for US federal agencies and regulated customers, hosted by Knox Systems.

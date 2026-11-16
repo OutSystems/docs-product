@@ -1,17 +1,22 @@
 ---
-summary: Explore the comprehensive cloud-based PaaS offerings of OutSystems 11 (O11), featuring robust security, high availability, and automated maintenance.
+summary: OutSystems 11 (O11) Cloud infrastructure covers AWS architecture, high availability, security, maintenance, backups, and secure external connections.
 locale: en-us
 guid: de7c085b-1c0b-4a1f-9d36-4a7e3f1c3ebc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 tags:
+  - Architecture
+  - Data
   - Deploy
+  - External Databases
   - Infrastructure
   - Security
+  - Web services
 audience:
-  - Platform administrator
+  - Architect
   - Developer
+  - Platform administrator
   - Tech lead
 outsystems-tools:
   - none
@@ -21,6 +26,7 @@ topic:
   - cloud-ha-compliance
   - cloud-maintenance-schedule
   - cloud-network-architecture
+isautopublish: true
 ---
 
 # Deploy an infrastructure on OutSystems Cloud
@@ -54,7 +60,7 @@ The available add ons include:
 * Additional non-production environment(s) for UAT, for example.
 * Additional [pipelines](https://success.outsystems.com/Support/Enterprise_Customers/Infrastructure_architecture_and_deployment_options#Pipelines), a full set of environments to enable independent development and release.
 * High availability add on that deploys a stand-by database replica and additional application servers in a distinct datacenter.
-* [Sentry](https://www.outsystems.com/sentry/) add-on, the high compliance OutSystems Cloud.
+* [Sentry](../../../../security/sentry.md) add-on, the high-compliance OutSystems Cloud.
 
 But you won’t be locked in an initial configuration, as needs evolve, so can your infrastructure. And in every step of the way, OutSystems automatic provisioning takes care of the full setup.
 
@@ -147,7 +153,7 @@ The OutSystems Cloud servers are provisioned automatically from malware-free vir
 The OutSystems Cloud servers are managed from OutSystems employee computers with centrally managed and regularly updated antivirus software. Only OutSystems support engineers have operating system access to the OutSystems Cloud servers; malware protection at their computers effectively protects the OutSystems Cloud servers as well.
 OutSystems Cloud is hosted on Amazon AWS, which implements additional malware defense mechanisms at the network layer.
 
-### Network Security
+### Network security
 
 The OutSystems Cloud dedicates a Virtual Private Cloud (VPC) to each Enterprise customer, ensuring complete isolation of each tenant’s environment from each other. Each tenant has a dedicated set of virtual machines and a dedicated database instance, both running on the dedicated Virtual Private Cloud.
 

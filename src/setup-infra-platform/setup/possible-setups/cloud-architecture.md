@@ -82,7 +82,7 @@ To set up a private connection between the OutSystems Cloud and other corporate 
 
 The OutSystems Cloud high-availability option enables customers to deploy front-end servers across different [AWS Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-availability-zones) and set up a database replica in a different Availability Zone than the primary database.
 
-Additionally, customers who need extra layers of compliance have the option to upgrade to a [high-compliance OutSystems Cloud](https://www.outsystems.com/sentry/), which reinforces security, risk management, and monitoring for a [SOC2 Type II compliant cloud platform](https://www.outsystems.com/trust/). From an infrastructure perspective, this option adds:
+Additionally, customers who need extra layers of compliance have the option to add the [Sentry add-on](../../../security/sentry.md), which reinforces security, risk management, and monitoring for a [SOC2 Type II compliant cloud platform](https://www.outsystems.com/trust/). From an infrastructure perspective, the Sentry add-on adds:
 
 * The deployment of [Trend Micro Deep Security](https://www.trendmicro.com/) anti-virus and intrusion detection software on all OutSystems Cloud servers.
 

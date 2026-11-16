@@ -1,7 +1,11 @@
 ---
-summary: OutSystems 11 (O11) facilitates HIPAA compliance by enabling secure healthcare application development and deployment across various platforms.
+summary: OutSystems 11 (O11) HIPAA compliance covers technical safeguards, encrypted PHI, secure hosting, and the Cryptographic Services app.
 tags:
+  - Architecture
+  - Infrastructure
+  - Mobile app
   - Security
+  - Web
 locale: en-us
 guid: 13c94c45-4142-48f8-a06b-733675577c1e
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -19,6 +23,7 @@ topic:
   - hipaa-compliance-requirements
   - o11-compliance-offerings-overview
   - use-cryptography-services
+isautopublish: true
 ---
 
 # HIPAA compliance - how OutSystems can help
@@ -72,13 +77,13 @@ We provide you with the proper tools and documentation to comply with HIPAA regu
 
 OutSystems gives you the flexibility to manage and host your HIPAA-compliant apps. Read more about [how OutSystems supports HIPAA compliance](https://www.outsystems.com/evaluation-guide/security/certifications/).
 
-![Diagram illustrating the OutSystems platform's HIPAA-compliant hosting architecture, including customer applications, OutSystems platform layers, and infrastructure components.](images/HIPAA.png "OutSystems HIPAA-Compliant Hosting Architecture")
+![Diagram illustrating the OutSystems platform's HIPAA-compliant hosting architecture, including customer applications, OutSystems platform layers, and infrastructure components.](images/hipaa-diag.png "OutSystems HIPAA-Compliant Hosting Architecture")
 
 Check next the [Checklist of HIPAA safeguards](hipaa-tech-safeguards.md).
 
 ### HIPAA compliant apps in the OutSystems Cloud { #hipaa-cloud }
 
-The OutSystems Cloud HIPAA offering is available for OutSystems Sentry and provides you:
+The OutSystems Cloud HIPAA offering is available with the [Sentry add-on](../sentry.md) and provides you:
 
 * A Business Associate Agreement (BAA) certifying that your OutSystems Cloud is compliant with HIPAA requirement.
 * Access to the **Cryptographic Services** app so that you can protect all sensitive data. You can build, deploy, and use business applications that utilize Protected Health Information (PHI).

@@ -19,6 +19,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - time-picker-reference
+  - use-time-picker-pattern
 ---
 
 # Time Picker

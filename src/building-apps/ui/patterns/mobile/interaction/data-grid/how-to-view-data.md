@@ -15,6 +15,9 @@ platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?type=design&node-id=1142%3A332&mode=design&t=bneC7SMvNg6A2EZ4-1
 coverage-type:
   - apply
+topic:
+  - data-grid-properties
+  - display-grid-data
 audience:
   - Front-end developer
   - Developer

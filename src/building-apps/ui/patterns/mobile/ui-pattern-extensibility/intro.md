@@ -21,6 +21,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+topic:
+  - ui-pattern-extensibility
 ---
 
 # OutSystems UI Pattern extensibility

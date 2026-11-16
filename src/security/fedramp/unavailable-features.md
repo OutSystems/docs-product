@@ -21,6 +21,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - evaluate
+topic:
+  - fedramp-feature-limits
+  - fips-service-studio-config
 isautopublish: true
 ---
 

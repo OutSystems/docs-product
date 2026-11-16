@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - ui-pattern-extensibility
 ---
 
 # Provider instance and JavaScript

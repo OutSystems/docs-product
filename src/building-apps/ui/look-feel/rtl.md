@@ -21,6 +21,10 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - enable-rtl-support
+  - fix-rtl-display
+  - use-isrtl-action
 ---
 
 # Right-to-Left

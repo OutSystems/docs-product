@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - month-picker-reference
+  - use-month-picker
 ---
 
 # Month Picker

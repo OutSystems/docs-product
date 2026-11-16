@@ -25,6 +25,9 @@ coverage-type:
   - understand
   - apply
   - remember
+topic:
+  - mobile-sso-login-flow
+  - mobile-sso-logout-flow
 isautopublish: true
 ---
 

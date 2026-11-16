@@ -10,6 +10,9 @@ tags:
 summary: Explore how to embed a native video player in your application using OutSystems 11 (O11).
 locale: en-us
 guid: 48653c19-7ef1-44ca-b625-226ca4af35d0
+topic:
+  - use-video-pattern
+  - video-pattern-reference
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1295:18325

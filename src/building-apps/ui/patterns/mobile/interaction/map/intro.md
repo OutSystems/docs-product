@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - map-component-overview
 ---
 
 # Map

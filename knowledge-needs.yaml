@@ -16746,13 +16746,9 @@ knowledge-needs:
         can control keyboard visibility on Android and iOS.
     - name: Customize keyboard appearance
       id: customize-keyboard-appearance
-      description: Wants to customize how the device's keyboard looks in a
-        mobile app, including setting the accessory bar visibility with
-        SetAccessoryBarVisible, changing the keyboard's light or dark style
-        with SetStyle, and configuring the KeyboardBackdropBehavior
-        extensibility setting to control the keyboard's background color on
-        iOS 26 and later, so that the keyboard's appearance matches the app's
-        design.
+      description: Wants to customize the device keyboard's available
+        appearance options in a mobile app, so that the keyboard's appearance
+        matches the app's design.
     - name: Handle keyboard events
       id: handle-keyboard-events
       description: Wants to detect when the device's keyboard is about to
@@ -23726,11 +23722,9 @@ knowledge-needs:
       id: reverse-proxy-requirements
       description: Wants to know the technical requirements to serve OutSystems
         Traditional Web, Mobile, and Reactive Web apps through a reverse proxy,
-        including maintaining the original host header, using only default HTTP/HTTPS
-        ports, disabling the NEGOTIATE protocol, keeping URL paths unchanged, exposing
-        apps via their Service Center domain over HTTPS, and not caching Mobile/Reactive
-        App resources, so that the reverse proxy setup doesn't break URL generation,
-        authentication, or app functionality.
+        including the host, port, authentication, URL path, public-domain, HTTPS, and
+        caching requirements, so that the reverse proxy setup doesn't break URL
+        generation, authentication, or app functionality.
     - name: Reverse proxy basics
       id: reverse-proxy-basics
       description: Wants to understand what a reverse proxy is and its capabilities

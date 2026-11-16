@@ -11897,6 +11897,11 @@ knowledge-needs:
         Traditional Web App by customizing its placeholders and widgets and
         adjusting its configuration properties, so that screens use the built-in
         side menu layout.
+    - name: Customize side menu
+      id: customize-side-menu-layout
+      description: Wants to customize the Layout Side Menu responsive behavior by
+        setting device breakpoints and the content max-width, so screens adapt
+        across desktop, tablet, and mobile devices in a Traditional Web App.
     - name: Use layout top menu
       id: use-layout-top-menu-traditional-web
       description: Wants to locate and reuse the Layout Top Menu web block in a
@@ -17672,6 +17677,16 @@ knowledge-needs:
         Service Center build logs, and opening a support case if the
         problem persists, so that the mobile app package generates
         successfully.'
+    - name: Platform dependency error
+      id: platform-dependency-error
+      description: 'Wants to resolve the OS-MABS-PLF-50001 "There was an issue
+        in the connection to a server. This might be caused by a server
+        downtime." error, caused by MABS failing to download external
+        dependencies while bootstrapping the base Cordova project with the
+        OutSystems native shell, by retrying application generation and
+        checking the Service Center build logs, escalating to OutSystems
+        Support if the problem persists, so that the mobile app package
+        generates successfully.'
   - name: MABS release notes
     id: mabs-release-notes
     subtopics:
@@ -19237,6 +19252,14 @@ knowledge-needs:
         the provisioning profile is valid and uses the .mobileprovision
         format and replacing it if needed, so that the mobile app package
         generates successfully.'
+    - name: Invalid profile error
+      id: invalid-profile-error
+      description: 'Wants to resolve the OS-MABS-SIG-40007 "Your provisioning
+        profile is invalid. Please choose another .mobileprovision file."
+        error, caused by MABS rejecting an invalid iOS provisioning profile
+        during app package generation, by checking that the profile is valid
+        and uses the .mobileprovision format and replacing it if needed, so
+        that the mobile app package generates successfully.'
     - name: Certificate keys error
       id: certificate-keys-error
       description: 'Wants to resolve the OS-MABS-SIG-40008 "There was an

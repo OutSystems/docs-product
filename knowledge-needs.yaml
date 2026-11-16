@@ -4210,6 +4210,18 @@ knowledge-needs:
       id: odc-integration-options
       description: Wants to understand which integration approaches ODC supports for
         external systems, so they can choose an approach that fits their requirements.
+    - name: Integrate Microsoft Graph API
+      id: integrate-microsoft-graph-api
+      description: Wants to connect ODC applications to Microsoft 365 using
+        Microsoft Graph API, so they can access Microsoft 365 data and services.
+    - name: Integrate Azure AI Bot Services
+      id: integrate-azure-ai-bot-services
+      description: Wants to integrate Azure AI Bot Services with ODC applications,
+        so they can add conversational AI capabilities.
+    - name: Integrate Microsoft 365 web add-ins
+      id: integrate-microsoft-365-web-add-ins
+      description: Wants to build web add-ins for Microsoft 365 with ODC, so they
+        can extend Microsoft 365 applications with ODC capabilities.
     - name: Consume O11 entities
       id: consume-o11-entities
       description: Wants to understand how an O11 entity's exposure settings determine
@@ -13251,6 +13263,11 @@ knowledge-needs:
         without recompilation, and that only Development supports
         publishing while other stages are only updated via a new
         deployment, so they understand ODC's CI/CD deployment flow.
+    - name: Integrate CI/CD into continuous delivery
+      id: integrate-ci-cd-into-continuous-delivery
+      description: Wants to integrate CI/CD practices into a continuous delivery
+        methodology, so teams can release changes faster and with fewer quality
+        issues.
     - name: Build O11 CD pipeline
       id: cd-pipeline-stages
       description: Wants to build an automated continuous delivery pipeline for
@@ -13837,6 +13854,11 @@ knowledge-needs:
         Portfolio API v2 REST endpoints, so they can discover deployed assets
         across portfolios and environments before automating asset
         administration.
+    - name: Portfolio API v1 docs
+      id: portfolio-api-v1-docs
+      description: Wants to look up the Portfolio API v1 REST endpoints for
+        retrieving deployed assets and environment status, so they can maintain
+        an existing integration before migrating to v2.
     - name: List libraries via Portfolio API
       id: list-libraries-via-portfolio-api
       description: Wants to list libraries programmatically by using the
@@ -16539,8 +16561,9 @@ knowledge-needs:
     - name: Microsoft AI in apps
       id: microsoft-ai-in-apps
       description: Wants to choose a Microsoft AI service for an OutSystems app's
-        AI-enabled feature, so they can select an integration approach that fits
-        the feature's requirements.
+        AI-enabled feature, considering how it works with low-code development,
+        so they can evaluate its capabilities and select an integration approach
+        that fits the feature's requirements.
     - name: Call Azure OpenAI from an OutSystems app
       id: explore-microsoft-ai
       description: Wants to send prompts from an OutSystems app to an Azure OpenAI
@@ -18930,6 +18953,15 @@ knowledge-needs:
         the Android GradlePluginKotlinVersion preference, or selecting a
         compatible MABS version, so that the mobile app package generates
         successfully.'
+    - name: Missing CocoaPods spec error
+      id: missing-cocoapods-spec-error
+      description: 'Wants to resolve the OS-MABS-PLG-40004 "Couldn''t install
+        the Cordova plugin <plugin_name> due to an error in the plugin.xml
+        file. There''s a missing Spec attribute in the Framework element
+        related to CocoaPods." error, by checking the Service Center build
+        logs to identify the affected plugin and adding the missing Spec
+        attribute to its plugin.xml, so that the iOS mobile app package
+        generates successfully.'
     - name: Invalid CocoaPods spec error
       id: invalid-cocoapods-spec-error
       description: 'Wants to resolve the OS-MABS-PLG-40005 "Spec attribute in
@@ -19719,6 +19751,15 @@ knowledge-needs:
         repository, by checking the Service Center build logs to identify
         the failing plugin and confirming access to the repository, so that
         the mobile app package generates successfully.'
+    - name: Maven repository outage
+      id: maven-repository-outage
+      description: 'Wants to resolve the OS-MABS-GEN-50001 "Your app wasn''t
+        generated because we couldn''t fetch its dependencies from the
+        repository server {0} due to a server error. Please try again."
+        error that blocks Android mobile app package generation, caused by
+        downtime on a Maven repository server, by checking the Service Center
+        build logs, retrying the operation, and changing the Maven repository
+        when possible, so that the mobile app package generates successfully.'
     - name: Blocked plugin action
       id: blocked-plugin-action-error
       description: 'Wants to resolve the OS-MABS-GEN-20000 "Your app wasn''t
@@ -25009,6 +25050,13 @@ knowledge-needs:
         so that they can restore data streaming by reviewing the APM server
         configuration and verifying the server URL in the ODC Portal or LifeTime
         Log Streaming destination configuration.
+    - name: Fix streaming HTTP 501
+      id: fix-streaming-http-501
+      description: Wants to understand and resolve the OS-DP-STREAM-50001 error,
+        where the destination server responds with HTTP 501 when streaming
+        audit/observability data in ODC or logs in O11, so that they can restore
+        data streaming by verifying the APM tool is working and re-establishing
+        the connection.
     - name: Fix streaming HTTP 503
       id: fix-streaming-http-503
       description: Wants to understand and resolve the OS-DP-STREAM-50003 "unknown

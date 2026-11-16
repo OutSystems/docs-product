@@ -763,7 +763,7 @@ knowledge-needs:
       description: Wants to identify and remove hard-coded True/False conditions when they make branches unreachable or dead code in ODC actions.
     - name: Debug app logic
       id: debug-app-logic
-      description: Wants to debug application logic in Service Studio by setting breakpoints, inspecting variable values, and following execution flow to find and fix errors.
+      description: Wants to debug application logic by publishing the latest changes, setting breakpoints, selecting a debugging target where available, starting the debugger, and stepping through execution while inspecting runtime values, so they can find and fix issues.
     - name: Troubleshooting, debugging, and monitoring
       id: troubleshooting-debugging-monitoring
       description: Wants to distinguish troubleshooting, debugging, and monitoring and understand how each supports investigating application issues in OutSystems, so they can pick the right approach before fixing a problem.

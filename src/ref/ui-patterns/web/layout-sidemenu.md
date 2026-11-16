@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - use-layout-side-menu
+  - customize-side-menu-layout
 ---
 
 # Layout Side Menu Reference

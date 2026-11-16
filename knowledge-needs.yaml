@@ -11864,6 +11864,9 @@ knowledge-needs:
   - name: Layouts
     id: layouts
     subtopics:
+    - name: Use reactive app layouts
+      id: use-reactive-app-layouts-reactive-web
+      description: Wants to choose and use an appropriate OutSystems UI layout block for a Reactive Web App in Service Studio, so the app has a consistent page structure, navigation, and main content area.
     - name: Customize layout block
       id: customize-layout-block
       description: Wants to customize a reactive app layout block by applying a CSS
@@ -11889,14 +11892,13 @@ knowledge-needs:
         so that screens can display reusable off-canvas content in the built-in
         popup layout.
     - name: Use layout side menu
-      id: use-layout-side-menu
+      id: use-layout-side-menu-traditional-web
       description: Wants to locate and reuse the Layout Side Menu web block in a
         Traditional Web App by customizing its placeholders and widgets and
-        adjusting its DeviceConfiguration, AccessibilityConfiguration, and
-        ExtendedClass properties, so that screens use the built-in side menu
-        layout.
+        adjusting its configuration properties, so that screens use the built-in
+        side menu layout.
     - name: Use layout top menu
-      id: use-layout-top-menu
+      id: use-layout-top-menu-traditional-web
       description: Wants to locate and reuse the Layout Top Menu web block in a
         Traditional Web App by customizing its placeholders and widgets and
         adjusting its DeviceConfiguration, AccessibilityConfiguration, and

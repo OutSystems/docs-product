@@ -15371,6 +15371,12 @@ knowledge-needs:
       through a describe-review-refine conversational workflow, and how AI
       agents, the OutSystems Model, and the compiler work together under the
       hood, so that they can decide whether it fits their use case.
+  - name: Apply AI with low-code
+    id: apply-ai-with-low-code
+    description: Wants to understand how generative AI and agentic AI combine
+      with low-code to accelerate innovation, streamline operations, and
+      enhance customer experience in banking, so they can evaluate similar
+      approaches for their organization.
   - name: AI Mentor overview
     id: ai-mentor-overview
     description: Wants to understand how AI Mentor Systems augment software
@@ -22719,6 +22725,25 @@ knowledge-needs:
         users in action and collecting statistics and context information for each,
         when conducting business analysis, so that they can understand each persona's
         contribution to strategic or tactical goals.
+    - name: Conduct user research
+      id: conduct-user-research
+      description: Wants to conduct user research for an OutSystems project by
+        gathering insights into users' needs, behaviors, and challenges, so they
+        can ground UX decisions in evidence.
+    - name: Map user journeys
+      id: map-user-journeys
+      description: Wants to map user journeys for an OutSystems project by identifying
+        users' goals, steps, and pain points, so they can design experiences that
+        address user needs.
+    - name: Iterate UX designs
+      id: iterate-ux-designs
+      description: Wants to iteratively improve UX designs for an OutSystems project
+        using user feedback, so they can make the experience more effective and usable.
+    - name: Align user needs with business goals
+      id: align-user-needs-business-goals
+      description: Wants to align user needs with business goals for an OutSystems
+        project, so they can prioritize solutions that create value for both users
+        and the business.
     - name: Identify user roles
       id: identify-user-roles
       description: Wants to identify the user roles that matter when creating personas

@@ -1293,6 +1293,11 @@ knowledge-needs:
       description: Wants to smooth animations that change width, height, or
         position by measuring layout changes in JavaScript and applying the CSS
         FLIP technique, so they can maintain smooth, consistent performance.
+    - name: Smooth mobile animations
+      id: smooth-mobile-animations
+      description: Wants to optimize CSS3 animations by using rendering-friendly
+        transform properties, so they can maintain smooth 60 FPS performance
+        on mobile devices.
     - name: Application usability practices
       id: application-usability-practices
       description: Wants to design clear navigation and task flows in an
@@ -25398,6 +25403,11 @@ knowledge-needs:
 - name: Application Monitoring and Alerts
   guid: 5a7f74cd-1f74-4499-a5db-c8761f47512f
   topics:
+  - name: Monitor web and mobile
+    id: monitor-web-and-mobile-o11
+    description: Wants to identify which performance metrics to monitor for
+      OutSystems 11 web and mobile applications and use them to diagnose slow
+      responses, so they can address application performance issues.
   - name: APDEX score explained
     id: apdex-score-explained
     description: Wants to understand what an OutSystems 11 APDEX score means and how it's

@@ -25710,13 +25710,12 @@ knowledge-needs:
         consumer module or by using the producer module as the entry module,
         so that breakpoints stop in the producer module for public client or
         server actions and Service Actions.
-    - name: Debug with breakpoints
-      id: debug-with-breakpoints
-      description: Wants to debug an OutSystems 11 app by setting breakpoints,
-        starting a debug session, stepping through code, inspecting variables
-        and the call stack, and selecting the correct entry module when the
-        code runs from another module, so that they can trace execution and
-        find the failing logic.
+    - name: Set up a debug session
+      id: set-up-debug-session
+      description: Wants to set up a breakpoint-based debug session by
+        publishing the latest changes, selecting the correct entry module or
+        debugging target, and starting the debugger, so they can begin
+        investigating an app's behavior.
     - name: Debug routing issues
       id: debug-routing-issues
       description: Wants to debug an app when a proxy, load balancer, or

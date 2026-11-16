@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - understand
 topic:
-  - use-layout-side-menu
+  - use-layout-side-menu-traditional-web
 ---
 
 # Layout Side Menu

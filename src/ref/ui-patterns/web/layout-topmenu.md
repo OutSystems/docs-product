@@ -22,7 +22,7 @@ coverage-type:
   - remember
 topic:
   - customize-top-menu-layout
-  - use-layout-top-menu
+  - use-layout-top-menu-traditional-web
 ---
 
 # Layout Top Menu Reference

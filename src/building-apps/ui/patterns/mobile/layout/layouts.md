@@ -22,6 +22,9 @@ audience:
 outsystems-tools:
   - service studio
 topic:
+  - customize-layout-block
+  - label-layout-navigation
+  - use-reactive-app-layouts-reactive-web
 ---
 
 # Reactive app layouts

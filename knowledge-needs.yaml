@@ -1288,6 +1288,11 @@ knowledge-needs:
       description: Wants to identify the main causes of slow response in an
         OutSystems application and choose the appropriate optimization
         approach, so that it responds efficiently under its expected workload.
+    - name: Optimize CSS animations
+      id: optimize-css-animations
+      description: Wants to smooth animations that change width, height, or
+        position by measuring layout changes in JavaScript and applying the CSS
+        FLIP technique, so they can maintain smooth, consistent performance.
     - name: Application usability practices
       id: application-usability-practices
       description: Wants to design clear navigation and task flows in an
@@ -7282,6 +7287,9 @@ knowledge-needs:
     - name: Concept granularity
       id: concept-granularity
       description: Wants to translate business concepts into application modules by choosing a granularity that keeps each module manageable and splits concepts when they are too complex, need independent life cycles, or require service isolation, so they can apply the Architecture Canvas recommendations.
+    - name: Identify app concepts
+      id: identify-app-concepts
+      description: Wants to identify the business requirements, user stories, non-functional requirements, and ownership considered when defining an application's concepts, so they can answer Architecture Design Process questions correctly.
     - name: Architecture canvas example
       id: architecture-canvas-example
       description: Wants to apply the Architecture Canvas to a doctors appointments app, disclosing requirements, organizing concepts into layers, assembling modules, and producing the architecture blueprint and reference map, so they can follow the design process on a concrete example.
@@ -11969,6 +11977,11 @@ knowledge-needs:
         screen expressions, deferring JavaScript that isn't needed at load
         time to the end of the page, and using minified JavaScript in
         production, so that screen size and page load time are reduced.
+    - name: Troubleshoot JS leaks
+      id: troubleshoot-js-leaks
+      description: Wants to understand how to identify and overcome JavaScript
+        memory leaks when troubleshooting front-end application performance,
+        so they can improve app responsiveness.
     - name: Avoid inline CSS
       id: avoid-inline-css
       description: Wants to avoid using inline CSS in OutSystems 11 visual
@@ -12126,6 +12139,11 @@ knowledge-needs:
       id: animate-interaction-feedback
       description: Wants to provide visual animation feedback when users interact
         with an ODC mobile app, so that they can see their actions were received.
+    - name: Animation best practices
+      id: animation-best-practices
+      description: Wants to understand best practices for using animations in
+        OutSystems 11 applications, including when and how to apply OutSystems
+        UI patterns, so they can improve app interactions and user experience.
     - name: Detect history-based navigation
       id: detect-history-based-navigation
       description: Wants to check whether the current screen was loaded from

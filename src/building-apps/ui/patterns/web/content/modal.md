@@ -7,7 +7,7 @@ tags:
   - UI
   - UI Patterns
   - Widgets
-summary: Explore how to implement and customize the Modal UI Pattern in OutSystems 11 (O11) for enhanced user interaction in Traditional Web Apps.
+summary: OutSystems 11 (O11) Modal UI Pattern, configure ToggleModal, buttons, placeholders, and display properties in Traditional Web Apps.
 locale: en-us
 guid: 64cf2199-6b69-480b-a63e-49b91965e777
 app_type: traditional web apps

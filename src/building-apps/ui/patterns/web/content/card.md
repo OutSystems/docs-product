@@ -7,7 +7,7 @@ tags:
   - UI
   - UI Patterns
   - Web
-summary: Explore how to effectively utilize the Cards UI Pattern in Traditional Web Apps with OutSystems 11 (O11).
+summary: OutSystems 11 (O11) Card UI Pattern groups content in Traditional Web Apps and configures the widget and ExtendedClass property in Service Studio.
 topic:
   - card-reference
   - use-card-pattern

@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) offers diverse content patterns for effective information display and organization.
+summary: OutSystems 11 (O11) content patterns organize Traditional Web App information with Accordion, Alert, Tooltip, Section, and list layouts.
 locale: en-us
 guid: 0b158172-2203-468c-8242-f48fcccc023c
 app_type: traditional web apps

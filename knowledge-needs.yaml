@@ -8963,6 +8963,13 @@ knowledge-needs:
         and Module are correct and that the logged-in Workflow Builder user
         has download permission on those modules, in OutSystems 11, so that
         they can successfully publish the application.'
+    - name: WFB API error
+      id: wfb-api-error
+      description: 'Wants to resolve the "API error. <OriginalErrorMessage>."
+        error that occurs when Workflow Builder can''t invoke an external API
+        while publishing an application in OutSystems 11, by logging out and
+        back in or contacting OutSystems Support if the problem persists, so
+        that they can successfully publish the application.'
     - name: WFB publish errors
       id: wfb-publish-errors
       description: Wants to troubleshoot Workflow Builder publish failures by
@@ -9167,6 +9174,12 @@ knowledge-needs:
       id: odc-test-automation
       description: Wants to configure ODC regression tests to run in a CI/CD
         pipeline, so test failures are detected before changes are released.
+    - name: Use automation standards
+      id: use-automation-standards
+      description: Wants to accelerate automated testing for OutSystems
+        applications by using generated-code standards and reusable automation
+        patterns when setting up a test automation framework, so they can
+        create tests efficiently.
     - name: Set up load test
       id: set-up-load-test
       description: Wants to set up a load test for an OutSystems application
@@ -14229,6 +14242,12 @@ knowledge-needs:
       description: Wants to understand how low-code and no-code platforms use
         AI and cloud services to accelerate application delivery, so they can
         evaluate whether this approach fits their app development needs.
+    - name: Low-code effectiveness
+      id: low-code-effectiveness
+      description: Wants to understand when low-code and no-code with OutSystems
+        is effective for agile development and microservice architectures
+        compared with traditional development and other tools, so they can
+        decide when to use the platform.
     - name: Civic service apps
       id: civic-service-apps
       description: Wants to understand how municipalities use OutSystems to
@@ -14547,6 +14566,11 @@ knowledge-needs:
       description: Wants to compare .NET object-oriented classes and
         OutSystems component-oriented visual elements and structured text, so
         they understand how the platform expresses logic and UI resources.
+    - name: Programming as art
+      id: programming-as-art
+      description: Wants to understand how programming expresses art through
+        its form, shape, and meaning in everyday IT work, so that they can
+        reflect on programming as a creative practice.
     - name: Resource storage
       id: resource-storage
       description: Wants to understand how OutSystems stores application
@@ -18557,6 +18581,13 @@ knowledge-needs:
       WebView, and pinning server certificates when the app loads external
       content or handles high-sensitivity data, so that the app resists common
       platform and network attacks.
+    subtopics:
+    - name: Cloud Cert Rotation
+      id: cloud-cert-rotation
+      description: Wants to prepare mobile apps for an OutSystems Cloud
+        certificate rotation, by replacing the default certificate pin with
+        a custom certificate or adding the new fingerprint while retaining
+        the current one, so that apps continue connecting without downtime.
   - name: Extensibility configurations
     id: extensibility-configurations
     subtopics:
@@ -20161,6 +20192,14 @@ knowledge-needs:
         modifying the AppShield library and escalating to OutSystems
         Support if the problem persists, so that the mobile compilation and
         native mobile build succeed.'
+    - name: Placeholder config error
+      id: placeholder-config-error
+      description: 'Wants to resolve the OS-MCO-40012 "Value for AppShield
+        configuration <ConfigName> can''t be a placeholder." error, caused by
+        using an extensibility settings placeholder in an AppShield
+        configuration that does not support placeholders, by replacing the
+        placeholder with a concrete value in every affected app or library
+        asset, so that the native mobile build succeeds.'
     - name: Invalid AppShield config
       id: invalid-appshield-config-error
       description: 'Wants to resolve the OS-MCO-50019 "Extensibility
@@ -26640,6 +26679,11 @@ knowledge-needs:
         architects, and developers on modeling data for OutSystems business
         processes, so they can support platform adoption as their organization
         expands OutSystems use.
+    - name: 14-day learning challenge
+      id: 14-day-learning-challenge
+      description: Wants to understand how the 14 Days of OutSystems challenge
+        uses daily concepts and community support to build consistent learning
+        habits, so they can decide whether to join or use the challenge.
   - name: Training videos
     id: training-videos
     subtopics:

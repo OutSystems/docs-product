@@ -11458,7 +11458,7 @@ knowledge-needs:
         users can switch between sections within the same context in mobile apps
         and reactive web apps.
     - name: Use Section pattern
-      id: use-section-pattern
+      id: use-section-pattern-mobile-reactive-o11
       description: Wants to add the Section UI Pattern to a screen, by
         dragging the widget from the Toolbox into the Main Content area
         (adding the OutSystemsUI dependency via Search in other modules if
@@ -11467,6 +11467,14 @@ knowledge-needs:
         ExtendedClass, in Service Studio, so that they can organize
         on-screen content into different sections, in mobile apps and
         reactive web apps (O11).
+    - name: Use Section Web pattern
+      id: use-section-pattern-traditional-web-o11
+      description: Wants to add the Section UI Pattern to a screen in an
+        OutSystems 11 Traditional Web App, add the widget through the Toolbox
+        or Search in other modules when the dependency is missing, add content
+        to the Title, Actions, and Content placeholders, and configure an
+        action in the Actions placeholder, so that they can organize
+        on-screen content into different sections.
     - name: Section reference
       id: section-reference
       description: Wants to look up the properties of the Section UI

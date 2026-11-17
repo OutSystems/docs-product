@@ -1250,6 +1250,11 @@ knowledge-needs:
       description: Wants to design a real-time OutSystems application with
         synchronized player data, connection handling, and a fast, scalable
         user interface, so they can build smooth gameplay for a public game.
+    - name: Build SSE event hub
+      id: build-sse-event-hub
+      description: Wants to implement a native Server-Sent Events event hub in
+        an OutSystems app, so they can deliver real-time notifications by using
+        SSE instead of third-party push services.
     - name: Enterprise architecture fit
       id: fit-outsystems-enterprise-architecture
       description: Wants to determine OutSystems' role and responsibilities
@@ -9451,6 +9456,11 @@ knowledge-needs:
       id: css-hierarchy
       description: Wants to understand the order OutSystems loads CSS from different
         scopes, so they know which style wins when selectors conflict.
+    - name: Interpret CSS styling
+      id: interpret-css-styling
+      description: Wants to determine the visual appearance of a block from its
+        applied CSS classes and variables in Service Studio, so they can identify
+        the resulting background and text colors.
     - name: Define CSS variables
       id: define-css-variables
       description: Wants to define and use CSS variables in OutSystems style sheets by
@@ -13361,6 +13371,11 @@ knowledge-needs:
         pipeline after tests run, so that deployment manifest files are
         uploaded to the repository and the deployment flow stays visible in
         GitHub.
+    - name: Build Jenkins pipeline
+      id: build-jenkins-pipeline
+      description: Wants to build an automated CI/CD pipeline for OutSystems
+        applications with Jenkins, so they can deploy applications and control
+        delivery workflows.
   - name: Troubleshoot 1-Click Publish
     id: troubleshoot-1-click-publish
     subtopics:

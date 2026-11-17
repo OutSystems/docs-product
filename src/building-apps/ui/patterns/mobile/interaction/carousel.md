@@ -1,11 +1,11 @@
 ---
 tags:
   - Accessibility
-  - Events
+  - CSS
   - Front-End
+  - JavaScript
   - Mobile app
   - OutSystems UI
-  - UI
   - UI Patterns
 summary: "Carousel UI Pattern in OutSystems 11 (O11): add, configure, and make accessible a horizontal slide widget with navigation controls in Service Studio."
 locale: en-us

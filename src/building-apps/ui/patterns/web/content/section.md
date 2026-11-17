@@ -22,7 +22,8 @@ coverage-type:
   - apply
 topic:
   - section-reference
-  - use-section-pattern
+  - section-reference-traditional-web
+  - use-section-pattern-traditional-web-o11
 ---
 
 # Section

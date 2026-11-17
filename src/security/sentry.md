@@ -23,7 +23,7 @@ coverage-type:
 topic:
   - sentry-capabilities-o11
   - check-sentry-subscription-o11
-  - find-sentry-dashboard-o11
+  - access-sentry-dashboard-o11
 isautopublish: true
 ---
 

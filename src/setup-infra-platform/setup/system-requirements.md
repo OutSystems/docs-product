@@ -175,6 +175,7 @@ OutSystems supports Oracle with the following considerations:
     * 4.7.2: supported by all Platform Server 11 versions
 * Microsoft Build Tools 2015<sup>3</sup>
 * .NET Runtime & Hosting Bundle for Windows in the following versions, depending on the Platform Server version:
+    * .NET 11.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.45.1 or newer<sup>4</sup>
     * .NET 8.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.27.0 or newer
     * .NET 6.0 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.17.1 and 11.26.0
     * .NET 3.1 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.12.2 and 11.17.0
@@ -193,6 +194,9 @@ Future revisions of OutSystems may require the installation of an update within 
 <br/>
 <br/>
 <sup>3</sup> Microsoft Build Tools is no longer required starting from Platform Server versions 11.35.0.
+<br/>
+<br/>
+<sup>4</sup> You can install .NET 11.0 manually from Platform Server 11.45.1. The Platform Server installer installs it automatically from version 11.46.0.
 
 </div>
 

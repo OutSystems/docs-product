@@ -10942,11 +10942,9 @@ knowledge-needs:
         on the UI, in mobile apps and reactive web apps.
     - name: Use Submenu pattern
       id: use-submenu-pattern
-      description: Wants to add the Submenu UI Pattern to a screen and populate
-        its Menu and Items placeholders with content and links, including
-        adding the widget via Toolbox or Search in other modules when the
-        dependency is missing, in Service Studio for OutSystems 11, so that
-        users get a menu nested within another menu, in mobile apps and
+      description: Wants to add the Submenu UI Pattern to a screen and place
+        content and navigation links in its Menu and Items placeholders, so
+        that users get a menu nested within another menu in mobile apps and
         reactive web apps.
     - name: Use Mouse Events pattern
       id: use-mouse-events-pattern

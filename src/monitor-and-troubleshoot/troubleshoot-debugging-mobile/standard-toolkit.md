@@ -23,7 +23,8 @@ coverage-type:
 isautopublish: true
 topic:
   - browser-first-debugging
-  - debugging-toolkit-overview
+  - debug-app-logic
+  - service-center-logs
 ---
 
 # Suggested standard toolkit

@@ -1,11 +1,13 @@
 ---
 summary: 'LifeTime Analytics for Reactive and Mobile apps (O11): activate the Technical Preview toggle, resume monitoring, republish, and adjust request sampling rates.'
 tags:
+  - Deploy
   - Mobile app
   - Monitoring
   - Performance
   - Platform Server
   - Troubleshooting
+  - Web
 topic:
   - adjust-request-sampling
   - enable-performance-analytics

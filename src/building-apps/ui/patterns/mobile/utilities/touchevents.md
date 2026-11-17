@@ -1,11 +1,11 @@
 ---
 tags:
+  - Accessibility
   - Events
   - Front-End
   - JavaScript
   - Mobile app
   - OutSystems UI
-  - UI
   - UI Patterns
 summary: Learn how to enable and customize touch events in mobile and reactive web apps using the Touch Events UI Pattern in OutSystems 11 (O11).
 locale: en-us

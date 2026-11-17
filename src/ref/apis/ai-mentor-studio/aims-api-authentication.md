@@ -2,10 +2,10 @@
 summary: Code Quality API authentication uses API keys over HTTPS in OutSystems 11 (O11), with steps to generate, replace, or revoke your key.
 tags:
   - Authentication
-  - Mentor
   - Mentor Studio
   - REST
   - Security
+  - Web services
 locale: en-us
 guid: FDBC3311-C94C-4C9C-8CC1-E7F26FC76F02
 app_type: traditional web apps, mobile apps, reactive web apps

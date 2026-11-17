@@ -1460,6 +1460,16 @@ knowledge-needs:
         controlling use of the "Show Tenant Identifier" property and the
         TenantSwitch action, and by auditing where these are referenced, so
         they can guard against accidental cross-tenant data exposure.
+    - name: Prevent cross-tenant defects
+      id: prevent-cross-tenant-defects
+      description: Wants to prevent cross-tenant defects in OutSystems 11 by
+        configuring tenant data isolation correctly, so they can protect each
+        tenant's data in a multi-tenant application.
+    - name: Manage multi-tenant test data
+      id: manage-multi-tenant-test-data
+      description: Wants to prepare and manage test data for OutSystems 11
+        multi-tenant applications, so they can verify tenant-specific behavior
+        without unreliable or cross-tenant test results.
 - name: (Modeling, Consuming and Using) Data
   guid: 184681b2-96da-4711-9efd-53172730bbed
   topics:
@@ -9463,6 +9473,11 @@ knowledge-needs:
       id: theme-properties
       description: Wants to configure a theme's properties and layout settings
         so they can define how the theme looks and behaves in an app.
+    - name: Theme styling overview
+      id: theme-styling-overview
+      description: Wants to understand how themes apply consistent styles across
+        screens, blocks, and widgets in an OutSystems 11 app, so they can
+        maintain a consistent visual design when styling the app.
     - name: Theme exposure rules
       id: theme-exposure-rules
       description: Wants to identify when a theme cannot be exposed because
@@ -14209,6 +14224,16 @@ knowledge-needs:
         develop applications for humanitarian relief and disaster response, so
         they can evaluate the platform's viability when selecting a modern
         application development platform for emergency programs.
+    - name: Low-code app delivery
+      id: low-code-app-delivery
+      description: Wants to understand how low-code and no-code platforms use
+        AI and cloud services to accelerate application delivery, so they can
+        evaluate whether this approach fits their app development needs.
+    - name: Civic service apps
+      id: civic-service-apps
+      description: Wants to understand how municipalities use OutSystems to
+        build digital administration apps through specialists or city
+        employees, so they can improve online access to citizen services.
   - name: Java course overview
     id: java-course-overview
     description: Wants to understand the roadmap for the OutSystems for Java
@@ -15225,6 +15250,11 @@ knowledge-needs:
     id: personalize-in-app-recommendations-ai
     description: Wants to use AI to tailor in-app recommendations to a user's
       context, so users see suggestions relevant to their needs.
+  - name: Enhance apps with AI
+    id: enhance-apps-with-ai
+    description: Wants to evaluate whether an AI agent is suitable for a
+      specific app workflow, so they can decide whether it will improve the
+      user experience.
   - name: Chatbots
     id: chatbots
     subtopics:
@@ -26582,6 +26612,11 @@ knowledge-needs:
     description: Wants to understand the main topics and activities featured in
       the OSDC Talk Show, so they can decide whether the event content is
       relevant to them.
+  - name: Neo mascot story
+    id: neo-mascot-story
+    description: Wants to understand Neo's origin, evolution, role, and memorable
+      moments as the OutSystems community mascot, so they can recognize the
+      mascot's significance in the community.
   - name: Boot Camps
     id: boot-camps
     subtopics:
@@ -27497,6 +27532,11 @@ knowledge-needs:
       description: Wants to understand approaches and examples for scaling
         digital transformation across teams and delivery, so they can plan and
         execute transformation at scale.
+    - name: Create outcome roadmap
+      id: create-outcome-roadmap
+      description: Wants to create a digital transformation roadmap by working
+        backward from goals and defining key outcomes, so they can simplify
+        adoption and guide transformation.
 - name: Emerging technologies
   guid: c3a122e9-b484-43bc-8428-76e937ab3af6
   topics:

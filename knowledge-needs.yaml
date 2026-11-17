@@ -4464,6 +4464,9 @@ knowledge-needs:
     - name: Fix missing assembly
       id: fix-missing-assembly
       description: 'Wants to fix the OS-ELG-MODL-05023 error ("The assembly <AssemblyName> is required and could not be found in your file.") by including the required referenced assembly in the external library ZIP, removing `PrivateAssets` from NuGet references when needed, and publishing with `dotnet publish`, so they can publish the external library successfully.'
+    - name: Fix library conflicts
+      id: fix-library-conflicts
+      description: Wants to resolve .NET extension library conflicts caused by different versions of the same DLL being included by producers, by comparing referenced DLL versions, aligning extensions to one version, and republishing affected consumers, so that the app deploys and runs without assembly-load errors.
     - name: Fix parameter defaults
       id: fix-parameter-defaults
       description: 'Wants to fix the OS-ELG-MODL-05026 error ("The default value specified for <ParameterName> is unsupported.") by removing or changing unsupported default values in C# external library method signatures before uploading the library, so they can publish it successfully.'
@@ -5944,6 +5947,19 @@ knowledge-needs:
         inline scripts/styles in Reactive Web Apps on OutSystems 11, so that
         they can identify what breaks and how to fix it before disabling these
         directives.
+    - name: Fix unsafe-inline errors
+      id: fix-unsafe-inline-errors
+      description: Wants to troubleshoot unsafe-inline Content Security Policy errors in an
+        OutSystems 11 Reactive Web app after disabling Enforce Unsafe Inline
+        Reactive in Factory Configuration, by using browser console errors and
+        Service Center logs to identify missing JavaScript resources and
+        restore the app's functionality.
+    - name: Gather unsafe-inline reproduction details for support
+      id: gather-unsafe-inline-support-details
+      description: Wants to gather reproduction details for support when
+        unsafe-inline Content Security Policy errors occur in an OutSystems 11
+        Reactive Web app after disabling Enforce Unsafe Inline Reactive in
+        Factory Configuration, so support can investigate the issue.
     - name: Configure CSP for mobile app iframes
       id: configure-csp-mobile-app-iframes
       description: Wants to configure Content Security Policy directives with the explicit
@@ -15024,6 +15040,12 @@ knowledge-needs:
         Service, Log Service, IIS, and Message Queue — by reading error messages,
         checking Service Center Monitoring, and restarting services in a self-managed
         environment, so that they can restore normal platform operation.
+    - name: Start O11 services
+      id: start-o11-services
+      description: Wants to manually start OutSystems 11 platform services in dependency
+        order and confirm each service initializes in Windows Event Viewer, so that
+        the platform services start without initialization errors in a self-managed
+        environment.
     - name: Service Center analytics
       id: service-center-analytics
       description: Wants to use Service Center's built-in analytics reports to review
@@ -15418,6 +15440,18 @@ knowledge-needs:
       development in OutSystems and how the platform uses them to deliver
       next-generation development capabilities, so that they can assess how AI
       will shape software delivery.
+    subtopics:
+    - name: Mentor developer guidance
+      id: mentor-developer-guidance
+      description: Wants to use AI Mentor Studio to improve developer
+        performance by focusing guidance on coding and best practices, so that
+        developers build stronger skills and address identified improvement
+        areas.
+    - name: Mentor API extensions
+      id: mentor-api-extensions
+      description: Wants to use AI Mentor APIs to extend AI Mentor Studio and
+        internal applications with custom technical debt guidance, so that
+        they can tailor the tool to their organization's needs.
   - name: MCP terminology
     id: mcp-terminology
     description: Wants to understand the terms used across OutSystems MCP in
@@ -16317,6 +16351,22 @@ knowledge-needs:
       description: Wants to understand the roles of the external AI model, the
         agentic app, and grounding data in an ODC AI integration, so they can
         map each component to the correct part of the solution.
+    - name: Explore AWS AI models
+      id: explore-aws-ai-models
+      description: Wants to explore and compare generative AI models with
+        SageMaker JumpStart and Amazon Bedrock when starting a generative AI
+        project with OutSystems, so they can identify models that fit their
+        use case.
+    - name: Fine-tune AI models
+      id: fine-tune-ai-models
+      description: Wants to fine-tune generative AI models with data from
+        OutSystems apps, so they can adapt model behavior to a specific use
+        case.
+    - name: Deploy AI models to production
+      id: deploy-ai-models-to-production
+      description: Wants to deploy fine-tuned generative AI models in
+        production, so they can use the customized model behavior in
+        OutSystems apps.
     - name: AI models overview
       id: ai-models-overview
       description: Wants to understand what ODC AI models are, what tasks they
@@ -18712,6 +18762,13 @@ knowledge-needs:
         configurations, by checking the build logs on Service Center and
         fixing the configuration, so that the mobile app package generates
         successfully.'
+    - name: Invalid NPM identifier
+      id: invalid-npm-identifier-error
+      description: 'Wants to resolve the OS-MCO-40007 "NPM identifier
+        <Identifier> is not valid" error, caused by an invalid NPM identifier
+        in a mobile app or library''s extensibility configuration, by finding
+        and correcting the identifier, so that the native mobile build
+        succeeds.'
     - name: Fix extensibility syntax
       id: fix-extensibility-syntax-error
       description: 'Wants to resolve the "Invalid Extensibility Configurations" error caused by syntax errors in a module''s Extensibility Configurations JSON, by correcting the JSON in Service Studio, so that the app publishes successfully.'
@@ -24666,6 +24723,12 @@ knowledge-needs:
         application source code and compiled applications are stored, so
         that they can prepare the application server layer before
         deployment.
+    - name: Build detached Scheduler
+      id: build-detached-scheduler
+      description: Wants to build and install the detached Scheduler Service
+        from its provided source code when applications use timers, BPT
+        activities, or email after leaving OutSystems, so that those
+        background capabilities continue to run independently.
     - name: Enable RabbitMQ TLS
       id: enable-rabbitmq-tls
       description: Wants to enable TLS communication in RabbitMQ by editing
@@ -25819,6 +25882,12 @@ knowledge-needs:
         server and locating the log files at their default installation
         paths for each app server, so that they can zip and attach them to
         a support case.
+    - name: Obtain IIS logs
+      id: obtain-iis-logs
+      description: Wants to obtain IIS Manager logs for a specific OutSystems
+        11 environment, by connecting via Remote Desktop, opening IIS Manager,
+        locating the website's logging directory, and zipping its contents,
+        so that they can attach the logs to a support case.
     - name: Export Windows event logs
       id: export-windows-event-logs
       description: Wants to export a copy of Windows event logs (Application, Security,
@@ -26544,6 +26613,12 @@ knowledge-needs:
       description: Wants to understand the available OutSystems training and
         certification pathways, so that they can choose a learning or
         certification path.
+    - name: Build and train team
+      id: build-and-train-team
+      description: Wants to create a role-based learning path for tech leads,
+        architects, and developers on modeling data for OutSystems business
+        processes, so they can support platform adoption as their organization
+        expands OutSystems use.
   - name: Training videos
     id: training-videos
     subtopics:
@@ -27054,6 +27129,16 @@ knowledge-needs:
         OutSystems 10/11, including what functionality is lost and the
         personnel skills needed, so that they can plan a full detach from
         the platform.
+    - name: O11 detachment overview
+      id: o11-detachment-overview
+      description: Wants to understand which OutSystems 11 web and mobile
+        applications and dependencies can be detached, so that they can plan
+        which applications to run independently of the platform.
+    - name: Test detached O11 applications
+      id: test-detached-o11-applications
+      description: Wants to test detached OutSystems 11 applications and their
+        dependencies outside the platform, so that they can confirm the
+        applications work independently of OutSystems.
     - name: Prepare detach infrastructure
       id: prepare-detach-infrastructure
       description: Wants to prepare the Application Server (IIS) and Database

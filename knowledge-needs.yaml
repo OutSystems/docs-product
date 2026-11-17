@@ -11474,15 +11474,11 @@ knowledge-needs:
         users can switch between sections within the same context in mobile apps
         and reactive web apps.
     - name: Use Section pattern
-      id: use-section-pattern-mobile-reactive-o11
+      id: use-section-pattern
       description: Wants to add the Section UI Pattern to a screen, by
-        dragging the widget from the Toolbox into the Main Content area
-        (adding the OutSystemsUI dependency via Search in other modules if
-        it doesn't display), adding content to the Title and Content
-        placeholders, and setting properties like UsePadding and
-        ExtendedClass, in Service Studio, so that they can organize
-        on-screen content into different sections, in mobile apps and
-        reactive web apps (O11).
+        adding content to the Title and Content placeholders and configuring
+        optional properties such as UsePadding and ExtendedClass, so that they
+        can organize on-screen content into different sections.
     - name: Use Section Web pattern
       id: use-section-pattern-traditional-web-o11
       description: Wants to add the Section UI Pattern to a screen in an
@@ -11493,11 +11489,9 @@ knowledge-needs:
         on-screen content into different sections.
     - name: Section reference
       id: section-reference
-      description: Wants to look up the properties of the Section UI
-        Pattern in Service Studio, including UsePadding and ExtendedClass,
-        so that they can correctly configure padding and custom CSS
-        styling for the pattern, in mobile apps and reactive web apps
-        (O11).
+      description: Wants to look up the properties of the Section UI Pattern,
+        including UsePadding and ExtendedClass, so that they can correctly
+        configure padding and custom CSS styling for the pattern.
     - name: Section reference Traditional Web
       id: section-reference-traditional-web
       description: Wants to look up the layout classes and CSS customization
@@ -14752,24 +14746,18 @@ knowledge-needs:
     - name: Document Forge asset
       id: document-forge-asset
       description: Wants to document a Forge asset before sharing it by outlining the introduction, best practices, and installation and setup guidance, so that readers know what the asset does and how to install and use it.
-    - name: Submit asset to Forge
-      id: submit-asset-to-forge
-      description: Wants to submit a new software asset (app or library) built in their
-        organization to the Forge repository from ODC Portal, meeting the
-        submission prerequisites and completing the submission wizard, so that
-        the asset can be reviewed and made available for other users to install.
     - name: Submit new Forge version
       id: submit-new-forge-version
       description: Wants to resubmit an updated version of an asset already
-        published to Forge, using the same asset name and updating the
-        description, images, release notes, license, and documentation as needed,
-        so that existing installers can update to the new version.
+        published to Forge, using the existing asset listing and updating its
+        details as needed, so that existing installers can update to the new
+        version.
     - name: Upload Forge asset
       id: upload-forge-asset
-      description: Wants to upload a prepared OutSystems asset to Forge by
-        completing the upload flow, including pre-upload checks, asset and demo
-        file selection, asset details, documentation, dependencies, and
-        confirmation, so that the asset is published for others to download.
+      description: Wants to submit a new software asset built in their
+        organization to the Forge repository from ODC Portal by meeting the
+        submission prerequisites and completing the upload flow, so that the
+        asset can be reviewed and made available for other users to install.
   - name: Troubleshoot Forge
     id: troubleshoot-forge
     subtopics:
@@ -16849,12 +16837,10 @@ knowledge-needs:
         matches the app's design.
     - name: Handle keyboard events
       id: handle-keyboard-events
-      description: Wants to detect when the device's keyboard is about to
-        show, has shown, is about to hide, or has hidden, by adding the
-        KeyboardEvents block to a screen and creating handler client actions
-        for the OnKeyboardWillShow, OnKeyboardDidShow, OnKeyboardWillHide, and
-        OnKeyboardDidHide events, so that the app can react to keyboard
-        visibility changes.
+      description: Wants to detect changes in the device keyboard's visibility
+        by adding the KeyboardEvents block to a screen and creating handler
+        client actions for its keyboard visibility events, so that the app can
+        react to keyboard visibility changes.
     - name: KeyStore plugin actions
       id: keystore-plugin-actions
       description: Wants to use the KeyStore Plugin's client actions

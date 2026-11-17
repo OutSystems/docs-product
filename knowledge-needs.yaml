@@ -23202,6 +23202,11 @@ knowledge-needs:
         iteration, including story development, daily scrums, demo preparation,
         stakeholder demos, and retrospectives, so that they can follow the
         team's work during iteration development.
+    - name: Shaping track steps
+      id: shaping-track-steps
+      description: Wants to identify the steps in the shaping track of
+        Iteration Development, including Backlog Refinement, so that they can
+        recognize which activities belong to the track.
     - name: Improve with retrospectives
       id: improve-with-retrospectives
       description: Wants to use retrospectives at the end of projects and
@@ -26638,6 +26643,11 @@ knowledge-needs:
       description: Wants to understand how to use both hours and story points
         across epics, stories, and tasks, and how to log development time
         daily, so that metrics have the estimate and actuals data they need.
+    - name: Defect aging metric
+      id: defect-aging-metric
+      description: Wants to use the Defect Aging metric to assess unresolved
+        defects and decide whether to schedule a stabilization Iteration when
+        defect volume rises after User Stories enter testing and acceptance.
     - name: Project metrics feedback
       id: project-metrics-feedback
       description: Wants to understand how to classify feedback by root cause

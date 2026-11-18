@@ -1348,6 +1348,11 @@ knowledge-needs:
       description: Wants to recognize indicators of bad patterns in an OutSystems
         application before opening Architecture Dashboard, so they can identify
         and address code problems immediately.
+    - name: Use Architecture Dashboard
+      id: use-architecture-dashboard
+      description: Wants to review architecture findings in Architecture
+        Dashboard and prioritize remediation, so they can address the most
+        important architecture issues in an application.
     - name: Custom app architecture
       id: custom-app-architecture
       description: Wants to design a base application architecture that supports
@@ -9702,6 +9707,11 @@ knowledge-needs:
   - name: Adding UI Elements to a Screen
     id: add-ui-elements
     subtopics:
+    - name: Build custom charts
+      id: build-custom-charts
+      description: Wants to build and use custom charts and graphs in Reactive
+        Web Apps with built-in chart options or custom JavaScript libraries, so
+        that complex business data is visualized for users.
     - name: Use Separator pattern
       id: use-separator-pattern
       description: Wants to add the Separator UI Pattern to a Traditional Web
@@ -18410,9 +18420,9 @@ knowledge-needs:
       id: fix-missing-device-data
       description: Wants to troubleshoot missing data on a mobile device, caused by
         offline synchronization errors, misconfigured sync filtering rules, or
-        aggregates with restrictive JOIN "Only With"/"With or Without" settings on
-        local storage entities, by checking server data, device local storage, and
-        sync/aggregate configuration, so that expected data appears on the device.
+        aggregates with restrictive join settings on local storage entities, by
+        checking server data, device local storage, and sync/aggregate configuration,
+        so that expected data appears on the device.
     - name: Conflict sync pattern
       id: conflict-detection-sync-pattern
       description: Wants to implement the Read/Write Data with Conflict Detection offline
@@ -21211,6 +21221,9 @@ knowledge-needs:
     - name: 'SAST support process'
       id: sast-support-process
       description: 'Wants to understand how OutSystems Support and Security handle third-party SAST findings by following the cloud and self-managed responsibility split, so they can escalate the right issues to the right team.'
+    - name: Add SAST quality gate
+      id: add-sast-quality-gate
+      description: Wants to add a SAST quality gate to an OutSystems CI/CD pipeline by using the SAST API, so they can embed continuous security checks in the delivery process.
     - name: Code Quality security scans overview
       id: code-quality-security-scans-overview
       description: Wants to understand which security issues OutSystems Code
@@ -23289,6 +23302,12 @@ knowledge-needs:
         relying on implicit agile practices, and the structured five-step
         approach used when explicit management is needed, so that they can
         decide how much structure to apply.
+    - name: Use delivery accelerators
+      id: use-delivery-accelerators
+      description: Wants to use reusable accelerators and internal repositories
+        with quality gates in OutSystems 11 and ODC projects, so they can
+        improve delivery speed, team engagement, and solution quality without
+        repeating work.
   - name: Agile coaching
     id: agile-coaching
     description: Wants to understand when an Agile coach helps a team establish

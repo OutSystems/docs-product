@@ -4,7 +4,7 @@ guid: b81a6225-e3c8-4d73-aa75-dfd6119c704b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A10&mode=design&t=KpVEJMvnBwiukqql-1
-summary: OutSystems 11 (O11) enhances app design consistency by utilizing Layout web blocks that integrate common elements across multiple screens.
+summary: OutSystems 11 (O11) Layout web blocks organize shared login, menu, popup, and form elements across Traditional Web App screens.
 tags:
   - Blocks
   - Front-End

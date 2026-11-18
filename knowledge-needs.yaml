@@ -10138,8 +10138,15 @@ knowledge-needs:
         .noUi-handle/.noUi-connect classes, so that they can correctly
         customize the handle and interval color, in a Traditional Web App
         (O11).
+    - name: Use Slider Interval
+      id: use-range-slider-interval-pattern-traditional-web-o11
+      description: Wants to add and configure the Range Slider Interval UI
+        Pattern on a screen in Service Studio, set its range, initial values,
+        and optional properties, and handle its OnChange event with a screen
+        action and Ajax Refresh, so that users can select a value within a
+        chosen range in a Traditional Web App (O11).
     - name: Use Range Slider Interval
-      id: use-range-slider-interval-pattern
+      id: use-range-slider-interval-pattern-mobile-reactive-o11
       description: Wants to add and configure the Range Slider Interval UI
         Pattern on a screen, set its range and initial values and other
         required or optional properties, and handle its value-change event
@@ -10241,7 +10248,14 @@ knowledge-needs:
       description: Wants to look up the properties of the Input with Icon UI
         Pattern in Service Studio, including AlignIconRight and
         ExtendedClass, so that they can correctly configure icon placement
-        and custom styling, in mobile apps and reactive web apps (O11).
+        and custom styling.
+    - name: Input Icon setup
+      id: use-input-icon-traditional-web
+      description: Wants to add and configure the Input with Icon UI Pattern
+        on a screen in Service Studio, recover its dependency when it is
+        missing from the Toolbox, set a local variable, configure the Prompt,
+        select an Icon, and publish the module, so that users get a visual
+        hint when entering data in a Traditional Web App (O11).
     - name: File Upload reference
       id: file-upload-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -10840,8 +10854,11 @@ knowledge-needs:
         its SVGCode and ExtendedClass properties, so that they can
         customize SVG fill and stroke properties and animate SVG paths,
         in mobile apps and reactive web apps.
+    - name: Use Traditional Slider
+      id: use-range-slider-pattern-traditional-web-o11
+      description: Wants to add and configure the Range Slider UI Pattern on a screen in Service Studio, add its dependency when the widget does not appear in the Toolbox, set its minimum, maximum, initial, and optional properties, handle its OnChange event with a screen action, local variable, Assign action, and Ajax Refresh, and display the selected value, so that users can select a single value within a defined range in a Traditional Web App (O11).
     - name: Use Range Slider
-      id: use-range-slider-pattern
+      id: use-range-slider-pattern-mobile-reactive-o11
       description: Wants to add and configure the Range Slider UI Pattern on a
         screen, including adding the dependency when the widget does not appear
         in the Toolbox, setting its minimum, maximum, and initial-value
@@ -18221,6 +18238,11 @@ knowledge-needs:
         configuration files as extensibility resources, and calling the plugin's
         client actions from Service Studio logic, so that the app can use
         Firebase services.
+    - name: Render Firebase updates
+      id: render-firebase-updates
+      description: Wants to render real-time updates from Firebase in an OutSystems
+        application by synchronizing changing location data and displaying it on a
+        map, so they can track moving assets in near real time.
     - name: Configure iOS tracking
       id: configure-ios-tracking-prompt
       description: Wants to configure the AppTrackingTransparency permission

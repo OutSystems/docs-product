@@ -1,5 +1,6 @@
 ---
 tags:
+  - Aggregates
   - Front-End
   - OutSystems UI
   - Traditional Web

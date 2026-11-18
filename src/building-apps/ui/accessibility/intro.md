@@ -4,8 +4,10 @@ tags:
   - Accessibility
   - Forms
   - Layouts
+  - OutSystems UI
   - Screens
   - UI
+  - Widgets
 locale: en-us
 guid: 845ea0d1-6110-4a9f-a4ca-19e53b178825
 app_type: mobile apps, reactive web apps
@@ -27,7 +29,7 @@ isautopublish: true
 
 <div class="info" markdown="1">
 
-Applies to Mobile Apps and Reactive Web Apps only
+Applies to Mobile Apps and Reactive Web Apps using **OutSystems UI** framework
 
 </div>
 
@@ -50,7 +52,7 @@ OutSystems UI is often updated to support more accessibility features. For more 
 
 ## Accessibility Conformance Report
 
-The Accessibility Conformance Report (ACR) documents how OutSystems UI conforms to the WCAG 2.2 Level A and AA, using the Voluntary Product Accessibility Template (VPAT) format. Refer to the latest [OutSystems UI Accessibility Conformance Report](resources/outsystems-ui-acr-2026-05-20-v2.pdf) for the full conformance details.
+The Accessibility Conformance Report (ACR) documents how reactive web apps using OutSystems UI conform to the WCAG 2.2 Level A and AA, using the Voluntary Product Accessibility Template (VPAT) format. Refer to the latest [OutSystems UI Accessibility Conformance Report](resources/outsystems-ui-acr-2026-05-20-v2.pdf) for the full conformance details.
 
 ## Enable the built-in accessibility features {#enable}
 

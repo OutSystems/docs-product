@@ -380,7 +380,7 @@ exceptions:
   - MCP
   - OpenID Connect
   - OWASP
-  - OAuth 2.0
+  - OAuth
   - PC
   - PR
   - PRD

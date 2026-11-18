@@ -17,6 +17,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - configure-code-quality-proxy
 isautopublish: true
 ---
 

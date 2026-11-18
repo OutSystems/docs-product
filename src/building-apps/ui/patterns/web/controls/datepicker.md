@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - date-picker-reference
+  - use-date-picker
 ---
 
 # Date Picker

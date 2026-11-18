@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-range-slider-interval-pattern-traditional-web-o11
 ---
 
 # Range Slider Interval

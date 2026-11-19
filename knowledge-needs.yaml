@@ -11127,8 +11127,11 @@ knowledge-needs:
         database content, and configuring the Line Separator and timeline CSS, in
         Service Studio for a Traditional Web App (O11), so that database records
         display as a chronological timeline.
+    - name: Use Web Progress Bar
+      id: use-progress-bar-pattern-traditional-web-o11
+      description: Wants to add and configure the Progress Bar UI Pattern in a Traditional Web App (O11), including binding aggregate-derived percentage expressions, title and value placeholders, dependencies, and appearance properties, so that users can display task completion progress.
     - name: Use Progress Bar pattern
-      id: use-progress-bar-pattern
+      id: use-progress-bar-pattern-mobile-reactive-o11
       description: Wants to add the Progress Bar UI Pattern to a screen and configure
         its Progress property using a local variable and increment button, in
         Service Studio for OutSystems 11, so that they can display percentage
@@ -15135,12 +15138,6 @@ knowledge-needs:
       description: Wants to understand which screen to check first in Service Center's
         Monitoring area for a given kind of issue, so they can locate the right
         diagnostic information without searching through every screen.
-    - name: Native app shell logs
-      id: native-app-shell-logs
-      description: Wants to understand how native app shell logs appear in the Errors and
-        General screens of Service Center's Monitoring area, including the
-        device information fields they contain, so they can diagnose errors
-        occurring on end users' mobile devices.
     - name: O11 platform services
       id: o11-platform-services
       description: Wants to understand the role of each OutSystems 11 platform service
@@ -15215,11 +15212,10 @@ knowledge-needs:
         that they can inspect log records without querying the database manually.
     - name: Top-level vs drill logs
       id: top-level-vs-drill-logs
-      description: Wants to distinguish top-level logs (Screen, exposed Integration,
-        Mobile Request, Cyclic Job) from drill logs (Error, General, consumed Integration,
-        Extension) in the OutSystems 11 log database, and how they're linked via
-        the request_key field, so that they can correctly interpret how a drill
-        log relates to the top-level access request that generated it.
+      description: Wants to understand how top-level and drill logs in the OutSystems 11
+        log database are related through the request_key field, so that they can
+        correctly interpret how a drill log relates to the top-level access request
+        that generated it.
     - name: Log data reference
       id: log-data-reference
       description: Wants to look up the OutSystems 11 database views, PlatformLogs
@@ -26016,6 +26012,12 @@ knowledge-needs:
         components by opening Windows Event Viewer and navigating to the Application
         folder, so they can inspect service errors, warnings, and informational messages
         in a self-managed environment.
+    - name: Native app shell logs
+      id: native-app-shell-logs
+      description: Wants to understand how native app shell logs appear in the Errors and
+        General screens of Service Center's Monitoring area, including the
+        device information fields they contain, so they can diagnose errors
+        occurring on end users' mobile devices.
     - name: LifeTime infrastructure report
       id: lifetime-infrastructure-report
       description: Wants to download the LifeTime infrastructure report to

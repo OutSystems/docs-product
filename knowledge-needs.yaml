@@ -1213,6 +1213,12 @@ knowledge-needs:
         reactive SPAs differ from traditional web models, so they can map Java
         web app concepts and client-side logic to OutSystems apps when choosing
         an app model.
+    - name: Plan reactive migration
+      id: plan-reactive-migration
+      description: Wants to plan a migration from Traditional Web to Reactive
+        Web by assessing existing apps and choosing a modernization path, so
+        they can modernize an application portfolio with an appropriate
+        strategy.
     - name: Application layers overview
       id: application-layers-overview
       description: Wants to understand how OutSystems organizes an application
@@ -5082,7 +5088,7 @@ knowledge-needs:
         private REST APIs, and specialized systems, so they can choose the
         feature for the right integration scenario.
   - name: Generate PDF reports
-    id: generate-pdf-reports
+    id: generate-pdfs-o11
     subtopics:
     - name: Set up HTML2PDF component
       id: setup-html2pdf-component
@@ -5099,13 +5105,27 @@ knowledge-needs:
         to an aggregate, then calling GeneratePDF with an absolute URL and a
         Download action from a separate screen, in OutSystems 11, so that end users
         can export screen data as a downloadable PDF file.
-    - name: Customize HTML2PDF output
-      id: customize-html2pdf-output
-      description: Wants to work around HTML2PDF/wkhtmltopdf rendering limitations,
-        such as table rows breaking across pages and missing header/footer/pagination
-        support, by applying the page-break-inside CSS rule, passing header/footer
-        URLs via OtherArgs, and adding pagination JavaScript, in OutSystems 11, so
-        that the generated PDF report renders correctly and completely.
+    - name: Prevent PDF table rows breaking across pages
+      id: prevent-pdf-table-row-breaks
+      description: Wants to keep HTML table rows from splitting across pages in
+        PDFs generated with HTML2PDF/wkhtmltopdf by applying the
+        page-break-inside CSS rule in OutSystems 11, so report tables remain
+        readable.
+    - name: Configure HTML2PDF header and footer URLs
+      id: configure-html2pdf-header-footer-urls
+      description: Wants to include headers and footers in PDFs generated with
+        HTML2PDF by passing their URLs through OtherArgs in OutSystems 11, so
+        generated reports include consistent header and footer content.
+    - name: Add pagination to HTML2PDF reports
+      id: add-html2pdf-report-pagination
+      description: Wants to add page numbers to PDFs generated with HTML2PDF by
+        using pagination JavaScript in OutSystems 11, so readers can navigate
+        multi-page reports.
+  - name: Generate client PDFs
+    id: generate-pdfs-mobile
+    description: Wants to generate downloadable PDFs from mobile app screen
+      content using client-side JavaScript, so users can save or share app
+      information without relying on server-side PDF generation.
   - name: Generate Word documents
     id: generate-word-documents
     subtopics:
@@ -9712,6 +9732,11 @@ knowledge-needs:
       description: Wants to build and use custom charts and graphs in Reactive
         Web Apps with built-in chart options or custom JavaScript libraries, so
         that complex business data is visualized for users.
+    - name: Tell stories with data
+      id: tell-stories-with-data
+      description: Wants to use charts, tables, and grids to communicate a clear
+        message from data through real-world OutSystems component examples, so
+        that users understand information more easily.
     - name: Use Separator pattern
       id: use-separator-pattern
       description: Wants to add the Separator UI Pattern to a Traditional Web
@@ -11890,6 +11915,12 @@ knowledge-needs:
         reused Entities or Structures, or because it contains a Link, Button,
         or consumed Web Screen with Binary Data, Record, or List arguments, so
         they can tell whether the block is valid for exposure.
+    - name: Use design-to-code plugins
+      id: use-design-to-code-plugins
+      description: Wants to understand how design-to-code plugins accelerate
+        front-end implementation from design concepts to working OutSystems
+        applications, so they can use the plugins when turning designs into
+        application interfaces.
   - name: Adding a Widget or OS UI pattern
     id: add-widget-ui-pattern
     subtopics:
@@ -17461,6 +17492,13 @@ knowledge-needs:
     description: Wants to use the OutSystems Developer Cloud (ODC) roadmap to
       plan platform adoption and align application architecture decisions with
       planned capabilities, so they can make informed adoption choices.
+    subtopics:
+    - name: Understand AI roadmap
+      id: understand-ai-roadmap
+      description: Wants to understand the planned OutSystems AI capabilities
+        that affect software development and app innovation, so they can decide
+        which AI-related platform capabilities their IT organization should
+        plan for.
   - name: ODC product update impact
     id: odc-product-update-impact
     description: Wants to interpret OutSystems Developer Cloud (ODC) product
@@ -22950,6 +22988,11 @@ knowledge-needs:
       id: iterate-ux-designs
       description: Wants to iteratively improve UX designs for an OutSystems project
         using user feedback, so they can make the experience more effective and usable.
+    - name: Select UX mockups
+      id: select-ux-mockups
+      description: Wants to select UX mockups for a Business Vision based on solution
+        coverage, value, innovation, and usage context, so stakeholders can discuss
+        and validate the proposed user experience.
     - name: Align user needs with business goals
       id: align-user-needs-business-goals
       description: Wants to align user needs with business goals for an OutSystems

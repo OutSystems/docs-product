@@ -10858,14 +10858,12 @@ knowledge-needs:
       id: use-range-slider-pattern-traditional-web-o11
       description: Wants to add and configure the Range Slider UI Pattern on a screen in Service Studio, add its dependency when the widget does not appear in the Toolbox, set its minimum, maximum, initial, and optional properties, handle its OnChange event with a screen action, local variable, Assign action, and Ajax Refresh, and display the selected value, so that users can select a single value within a defined range in a Traditional Web App (O11).
     - name: Use Range Slider
-      id: use-range-slider-pattern-mobile-reactive-o11
+      id: use-range-slider-pattern
       description: Wants to add and configure the Range Slider UI Pattern on a
-        screen, including adding the dependency when the widget does not appear
-        in the Toolbox, setting its minimum, maximum, and initial-value
-        properties, configuring optional properties, and wiring its
-        value-change event to a local variable through an Assign action or
-        client action, so that users can select a single value within a
-        defined range in mobile apps and reactive web apps.
+        screen, set its minimum, maximum, initial, and optional properties, and
+        handle its value-change event through an action that updates a local
+        variable, so that users can select a single value within a defined
+        range.
     - name: Range Slider properties
       id: range-slider-properties
       description: Wants to look up the Range Slider UI Pattern's properties and events in
@@ -22771,12 +22769,14 @@ knowledge-needs:
         delegate team permission management without giving broader access.
     - name: Create a team
       id: create-a-team
-      description: Wants to create a LifeTime team, so that they can organize
-        related applications and the people who manage them.
+      description: Wants to create a team in LifeTime or ODC Portal, so that
+        they can organize the applications, assets, and people managed by the
+        team.
     - name: Edit a team
       id: edit-a-team
-      description: Wants to edit an existing LifeTime team, so that they can
-        update the applications or people assigned to the team.
+      description: Wants to edit an existing team in LifeTime or ODC Portal, so
+        that they can update the applications, assets, or people assigned to
+        the team.
     - name: App-specific permissions
       id: app-specific-permissions
       description: Wants to assign an infrastructure role to a user for a specific
@@ -22794,11 +22794,29 @@ knowledge-needs:
       id: manage-teams
       description: Wants to add IT users and applications to a LifeTime team, so
         that they can keep the team membership and application scope aligned.
-    - name: Manage teams overview
-      id: manage-teams-overview
-      description: Wants to manage a LifeTime team and its related users and
-        applications, so that they can control team-based access across related
-        applications.
+    - name: Manage LifeTime team membership
+      id: manage-team-members-lifetime
+      description: Wants to add or remove users from a LifeTime team and assign
+        their team roles, so that they can control team members' access across
+        the team's applications.
+    - name: Manage LifeTime team application scope
+      id: manage-team-applications-lifetime
+      description: Wants to add or remove applications from a LifeTime team, so
+        that they can control which applications are included in the team's
+        access scope.
+    - name: Delete an ODC team
+      id: delete-team-odc
+      description: Wants to delete a team in ODC Portal, so that they can remove
+        a team that is no longer needed.
+    - name: Manage ODC team members and roles
+      id: manage-team-members-odc
+      description: Wants to manage ODC team members and their roles, so that
+        organization administrators can control team-based access to ODC assets.
+    - name: Manage ODC team asset ownership
+      id: manage-team-assets-odc
+      description: Wants to assign owned assets to or remove them from an ODC
+        team, so that organization administrators can manage asset ownership
+        through teams.
     - name: Manage IT users
       id: manage-it-users
       description: Wants to understand how to manage IT user access in LifeTime

@@ -20,7 +20,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - use-progress-bar-pattern
+  - use-progress-bar-pattern-traditional-web-o11
 ---
 
 # Progress Bar

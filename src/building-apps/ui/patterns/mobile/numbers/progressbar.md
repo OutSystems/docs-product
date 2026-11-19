@@ -22,7 +22,7 @@ coverage-type:
   - apply
 topic:
   - progress-bar-reference
-  - use-progress-bar-pattern
+  - use-progress-bar-pattern-mobile-reactive-o11
 ---
 
 # Progress Bar

@@ -21,7 +21,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - use-range-slider-pattern
+  - range-slider-properties
+  - use-range-slider-pattern-mobile-reactive-o11
 ---
 
 # Range Slider

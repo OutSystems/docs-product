@@ -22,7 +22,7 @@ coverage-type:
   - apply
 topic:
   - input-with-icon-reference
-  - use-input-icon-traditional-web
+  - use-input-with-icon-pattern
 ---
 
 # Input with Icon

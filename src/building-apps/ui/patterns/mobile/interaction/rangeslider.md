@@ -22,7 +22,7 @@ coverage-type:
   - apply
 topic:
   - range-slider-properties
-  - use-range-slider-pattern-mobile-reactive-o11
+  - use-range-slider-pattern
 ---
 
 # Range Slider

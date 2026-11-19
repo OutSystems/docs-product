@@ -2765,17 +2765,26 @@ knowledge-needs:
          and validating any custom changes in Service Studio for O11, so
          that customized flip content continues to meet accessibility
          requirements in mobile apps and reactive web apps.
-     - name: Accessible Wizard pattern
-       id: accessible-wizard-pattern
-       description: Wants to make the Wizard UI Pattern accessible to
-         assistive technologies, by removing redundant aria-label attributes
-         and hiding the icon wrapper from screen readers, assigning the
-         tabpanel role to each Wizard item when steps navigate between
-         panels, or setting aria-current="step" on the active item when the
-         Wizard is used as a progress tracker, via a JavaScript node in the
-         OnReady client action, in Service Studio, so that the pattern meets
-         WCAG 2.2 AA accessibility requirements, in mobile apps and reactive
-         web apps (O11).
+     - name: Accessible Wizard labels
+       id: accessible-wizard-labels
+       description: Wants to remove redundant aria-label attributes from the
+         Wizard UI Pattern, so that assistive technologies do not announce
+         redundant labels.
+     - name: Accessible Wizard icons
+       id: accessible-wizard-icons
+       description: Wants to hide decorative icon markup in the Wizard UI
+         Pattern from screen readers, so that assistive technologies do not
+         announce decorative icons.
+     - name: Accessible Wizard panels
+       id: accessible-wizard-panels
+       description: Wants to apply the tabpanel role to each Wizard item when
+         steps navigate between panels, so that assistive technologies
+         recognize each navigable Wizard panel.
+     - name: Accessible Wizard progress tracker
+       id: accessible-wizard-progress-tracker
+       description: Wants to set aria-current="step" on the active item when
+         the Wizard is used as a progress tracker, so that assistive
+         technologies identify the current step.
      - name: Accessible Counter pattern
        id: accessible-counter-pattern
        description: Wants to fix low-contrast color combinations on the Counter
@@ -6061,6 +6070,15 @@ knowledge-needs:
     - name: Application security basics
       id: application-security-basics
       description: Wants to understand what application security is and why it matters when protecting applications from vulnerabilities, data breaches, service disruption, reputation damage, and legal consequences, so they can explain the purpose of secure development at a high level.
+    - name: Fix Platform flaw
+      id: fix-platform-flaw
+      description: Wants to fix the RPM-7289 vulnerability in OutSystems 11 Platform Server by upgrading to a fixed version, so that low-privileged IT users cannot bypass Service Center authorization checks.
+    - name: Fix RPM-7369 flaw
+      id: fix-rpm-7369-flaw
+      description: Wants to fix the RPM-7369 vulnerability in OutSystems 11 Platform Server by upgrading to a version that includes the fix, so that low-privileged IT users cannot permanently delete saved application versions.
+    - name: Fix RPM-7373 flaw
+      id: fix-rpm-7373-flaw
+      description: Wants to fix the RPM-7373 vulnerability in OutSystems 11 Platform Server by upgrading to a version that includes the fix, so that low-privileged IT users cannot create or overwrite saved application versions.
     - name: CIA security triad
       id: cia-security-triad
       description: Wants to understand the CIA (Confidentiality, Integrity,
@@ -9919,9 +9937,8 @@ knowledge-needs:
         Status via an expression that checks CurrentStep, using If widgets
         to show step-specific content, and wiring Previous/Next buttons with
         Assign actions and Enclose in If conditions to move between steps,
-        in Service Studio, so that the wizard displays the active, past,
-        and next steps correctly, in mobile apps and reactive web apps
-        (O11).
+        so that the wizard displays the active, past, and next steps
+        correctly in mobile apps and reactive web apps.
     - name: Traditional Web Wizard
       id: use-wizard-pattern-traditional-web-o11
       description: Wants to add the Wizard UI Pattern to a Traditional Web App
@@ -10262,25 +10279,16 @@ knowledge-needs:
         the tooltip uses a different transition effect.
     - name: Use Input with Icon pattern
       id: use-input-with-icon-pattern
-      description: Wants to add the Input with Icon UI Pattern to a screen
-        via Toolbox or Search in other modules if the dependency isn't
-        added, set a local Variable for the Input widget, configure the
-        Prompt text, and select an Icon, in Service Studio, so that end
-        users get a visual hint when entering data, in mobile apps and
-        reactive web apps (O11).
+      description: Wants to add the Input with Icon UI Pattern to a screen,
+        make its dependency available if needed, set a local variable for the
+        Input widget, configure the Prompt text, select an Icon, and customize
+        optional properties, so that users get a visual hint when entering
+        data.
     - name: Input with Icon reference
       id: input-with-icon-reference
       description: Wants to look up the properties of the Input with Icon UI
-        Pattern in Service Studio, including AlignIconRight and
-        ExtendedClass, so that they can correctly configure icon placement
-        and custom styling.
-    - name: Input Icon setup
-      id: use-input-icon-traditional-web
-      description: Wants to add and configure the Input with Icon UI Pattern
-        on a screen in Service Studio, recover its dependency when it is
-        missing from the Toolbox, set a local variable, configure the Prompt,
-        select an Icon, and publish the module, so that users get a visual
-        hint when entering data in a Traditional Web App (O11).
+        Pattern that govern icon placement and custom styling, so that they
+        can correctly configure the pattern.
     - name: File Upload reference
       id: file-upload-reference
       description: Wants to look up the CSS selectors and classes for the
@@ -10551,11 +10559,10 @@ knowledge-needs:
         Web App (O11).
     - name: Use Alert pattern
       id: use-alert-pattern
-      description: Wants to add the Alert UI Pattern to a screen, add the OutSystemsUI
-        dependency if the widget doesn't display in the Toolbox, and set the
-        MessageText placeholder and the AlertType property to the appropriate
-        alert type, in Service Studio, so that important messages, errors, or
-        warnings display to users in mobile apps and reactive web apps (O11).
+      description: Wants to add the Alert UI Pattern to a screen, make its
+        dependency available if needed, set the MessageText placeholder and
+        AlertType property, and configure optional styling properties, so that
+        important messages, errors, or warnings display to users.
     - name: Alert reference
       id: alert-reference
       description: Wants to look up the CSS selectors and classes for the Alert
@@ -10901,18 +10908,16 @@ knowledge-needs:
         mobile apps and reactive web apps (O11).
     - name: Use Month Picker
       id: use-month-picker
-      description: Wants to add the Month Picker UI Pattern to a screen, including adding
-        the dependency when the widget does not appear in the Toolbox,
-        creating local variables for the input and selected month, wiring the
-        OnSelected event, and configuring its properties in Service Studio for
-        OutSystems 11, so that users can select a month and year in mobile
-        apps and reactive web apps.
+      description: Wants to add the Month Picker UI Pattern to a screen,
+        including adding the dependency when the widget does not appear in the
+        Toolbox, creating local variables for the input and selected month,
+        wiring its selection event, and configuring its properties, so that
+        users can select a month and year in mobile apps and reactive web apps.
     - name: Month Picker reference
       id: month-picker-reference
-      description: Wants to look up the Month Picker UI Pattern's configurable properties
-        and events in Service Studio for OutSystems 11, so that they can
-        correctly configure month selection behavior and styling in mobile apps
-        and reactive web apps.
+      description: Wants to look up the Month Picker UI Pattern's configurable
+        properties and events, so that they can correctly configure month
+        selection behavior and styling in mobile apps and reactive web apps.
     - name: Use Time Picker pattern
       id: use-time-picker-pattern
       description: Wants to add the Time Picker UI Pattern to a screen, including adding

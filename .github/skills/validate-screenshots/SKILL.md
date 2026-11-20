@@ -355,6 +355,7 @@ Figma: <url from frontmatter — omit this line entirely when no figma key>
 Checked N screenshots. M need changes. F fixed automatically.
 
 ### <image relative path>
+- ✅ <rule N (name): what was fixed automatically>
 - ❌ <short description of a failure still pending — reference the rule>
 - ⚠️ <short description of a warning still pending>
 
@@ -363,28 +364,12 @@ Checked N screenshots. M need changes. F fixed automatically.
 
 ```
 
-The report holds the pending issues, in the per-image format above. What was
-fixed does not go in it.
-
-### The fixes data line
-
-When F > 0, print this line right after the report (and after its closing
-`</details>`). It is an HTML comment, so it never shows in the PR; the workflow
-turns it into one review comment per fixed image, with what was fixed and the
-image before and after. Those comments are the only record of what was fixed,
-so every fix must be in it:
-
-```
-<!-- FIXED-DATA {"fixes":[{"path":"src/foo/images/a-ss.png","before_path":"src/foo/images/old-ss.png","fixed":["rule 10 (width): resized to 1080 px; check_metadata now reports pass"]}]} -->
-```
-
-* One line, valid JSON, one entry per image fixed in this invocation.
-* `fixed` lists one plain-words line per fix, each starting with the rule
-  number and name: `rule <N> (<name>): <what changed>; <checker> now reports
-  <verdict>`. Never ❌ or ⚠️ on these lines.
-* `path` is the image's repo-relative path after the fixes. Add `before_path`
-  only when the fixes renamed it.
-* Print it only when F > 0, never with `<!-- NO REPORT -->`.
+Under each image, list first what was fixed automatically, one `✅` line per
+verified fix, in plain words, starting with the rule number and name:
+`- ✅ rule <N> (<name>): <what changed>; <checker> now reports <verdict>`.
+Then list what is still pending (`❌`/`⚠️`). An image whose findings were all
+fixed still gets its heading, with only `✅` lines. The report is a normal
+comment, so nothing in it needs resolving; it is the record of what changed.
 
 ### Choosing the summary title
 
@@ -418,17 +403,17 @@ Rules:
 * If N > 0, M == 0 and F == 0: replace the body with `All N screenshots pass.`
   and skip the per-image sections entirely. Keep the `Figma:` line in the
   header if it was extracted.
-* If M == 0 and F > 0: replace the per-image pending sections with `All N
-  screenshots pass after the automatic fixes.` and still print the fixes data
-  line, so the author can see what changed in Figma.
+* If M == 0 and F > 0: replace the counts line with `All N screenshots pass
+  after the automatic fixes.` and keep the per-image sections, each with only
+  its `✅` lines, so the author can see what changed in Figma.
 * A finding whose automatic fix was attempted and reverted stays in the
   pending list, with the reason appended: "— automatic fix reverted: <reason>".
 * If Step 4 was skipped because Figma was unavailable, and there were
   AUTO_FIX findings, add one line under the counts: "Automatic fixes skipped:
   Figma was unavailable."
 * Severity: `❌` means "must fix before the article ships"; `⚠️` means "a
-  designer should eyeball this, but it might be acceptable". Lines in the fixes
-  block use ✅ and never ❌ or ⚠️.
+  designer should eyeball this, but it might be acceptable". Fixed lines use ✅
+  and never ❌ or ⚠️.
 * Every fixed line quotes the actual post-fix checker verdict (or
   "(vision-verified)" for rules 4 and 5) — never claim success without it. A
   rule 2 line names the old and new file name and says the Figma frame was
@@ -449,8 +434,8 @@ Rules:
   detected and reported; they are just never fixed.
 * Fixing an entry marked `"cached": true`, or touching Figma on a run with
   nothing to fix.
-* Putting ❌ or ⚠️ on a fixed line, or repeating the fixed lines inside the
-  report. The fixes data line carries them to the per-image review comments.
+* Putting ❌ or ⚠️ on a fixed line, or leaving a fix out of the report. The
+  ✅ lines are the only record of what was fixed.
 * Treating a ⚠️ finding as not worth a fix. Warnings go through Step 3 like
   failures; only the scope file says what is fixed.
 * Committing or pushing. The changes stay in the working tree.

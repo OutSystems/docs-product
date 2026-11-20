@@ -6,6 +6,8 @@ tags:
   - Mobile app
   - Screens
   - UI
+topic:
+  - customize-error-screens
 locale: en-us
 guid: bacb4f2b-e04b-4ecf-8ce0-1f9536afa095
 app_type: mobile apps

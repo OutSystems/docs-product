@@ -22,6 +22,7 @@ coverage-type:
   - evaluate
 topic:
   - create-screen-templates
+  - replace-data-in-screens
 ---
 
 # Guidelines for creating Screen Templates

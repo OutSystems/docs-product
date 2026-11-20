@@ -26,6 +26,10 @@ coverage-type:
   - remember
   - understand
   - apply
+topic:
+  - configure-csp-mobile-app-iframes
+  - configure-csp-o11
+  - csp-directive-impacts
 isautopublish: true
 ---
 

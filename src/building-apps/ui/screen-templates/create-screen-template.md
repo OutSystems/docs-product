@@ -21,6 +21,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - create-screen-templates
 ---
 
 # Creating Screen Templates

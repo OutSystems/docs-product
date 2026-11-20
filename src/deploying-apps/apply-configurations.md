@@ -17,6 +17,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - apply-runtime-settings
+  - configure-application-settings
+  - republish-compile-time-changes
 ---
 
 # Applying Configurations in Service Center

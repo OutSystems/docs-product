@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - deploy-single-module
 ---
 
 # Deploy a Single Module

@@ -22,6 +22,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - configure-database-connections-o11
+  - configure-site-properties-during-deployment
+  - deploy-applications-o11
 ---
 
 # ALM in OutSystems: configuration management

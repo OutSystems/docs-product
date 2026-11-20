@@ -7,7 +7,6 @@ platform-version: o11
 figma:
 tags:
   - Deploy
-  - Security
   - Troubleshooting
 audience:
   - Developer

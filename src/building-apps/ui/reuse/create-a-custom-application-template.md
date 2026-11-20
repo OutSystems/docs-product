@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) enables the creation of Custom Application Templates to streamline app development with predefined functionalities and aesthetics.
 tags:
+  - CSS
+  - Front-End
   - Mobile app
   - Templates
   - Themes

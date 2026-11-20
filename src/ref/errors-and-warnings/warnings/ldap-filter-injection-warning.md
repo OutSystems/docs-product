@@ -9,13 +9,13 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 tags:
+  - Developer
   - LDAP
   - OWASP
   - Security
   - Troubleshooting
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

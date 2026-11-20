@@ -5,6 +5,7 @@ tags:
   - Traditional Web
   - UI
   - UI Patterns
+  - Web
   - Widgets
 summary: Learn how to use the Display on Device UI pattern in OutSystems 11 (O11) to control element visibility across different devices.
 locale: en-us

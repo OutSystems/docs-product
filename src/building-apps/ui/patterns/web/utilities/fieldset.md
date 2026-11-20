@@ -7,7 +7,7 @@ tags:
   - UI
   - UI Patterns
   - Widgets
-summary: Explore how OutSystems 11 (O11) enhances Traditional Web Apps by utilizing the Fieldset UI Pattern for grouping related information.
+summary: OutSystems 11 (O11) Fieldset UI Pattern groups related information in Traditional Web Apps, with steps for titles, content, and custom CSS classes.
 locale: en-us
 guid: b22dd0ca-8b9a-4d0f-a848-384bec9e6bc9
 app_type: traditional web apps

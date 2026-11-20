@@ -4149,6 +4149,12 @@ knowledge-needs:
         Portal, select a supported provider, and reference the external
         entities in an app, so they can use external database data in ODC
         Studio.
+    - name: SQL Server permissions
+      id: sql-server-permissions
+      description: Wants to understand the database user permissions required
+        for an ODC SQL Server external database connection, differentiated by
+        SQL Server version, so ODC can read approximate table row counts and
+        optimize queries.
     - name: Custom DB certificates
       id: custom-db-certificates
       description: Wants to configure custom certificates for ODC external
@@ -6064,6 +6070,11 @@ knowledge-needs:
       description: Wants to understand what each CSP default value and required value does
         and the impact of removing them, so that they can safely customize their
         app's CSP without breaking functionality.
+    - name: ODC Content Security Policy
+      id: odc-content-security-policy
+      description: Wants to understand how Content Security Policy protects
+        ODC applications, so that they can assess its role in their security
+        posture.
   - name: Security fundamentals
     id: security-fundamentals
     subtopics:
@@ -6161,6 +6172,26 @@ knowledge-needs:
         data integrity failures in OWASP web security questions, so that
         they can distinguish risky dependency, CI/CD, auto-update, and
         deserialization practices from safe behavior.
+    - name: ODC token validation
+      id: odc-token-validation
+      description: Wants to understand how OutSystems Developer Cloud validates
+        tokens, so that they can assess how this protection applies to their
+        applications.
+    - name: ODC container image integrity
+      id: odc-container-image-integrity
+      description: Wants to understand how OutSystems Developer Cloud verifies
+        and reuses container images, so that they can assess how image integrity
+        is protected at runtime.
+    - name: ODC AppShield protection
+      id: odc-appshield-protection
+      description: Wants to understand how AppShield protects ODC applications,
+        so that they can assess whether it meets their application protection
+        needs.
+    - name: ODC integrity responsibilities
+      id: odc-integrity-responsibilities
+      description: Wants to determine which integrity-related security checks
+        they must configure or perform for applications in OutSystems Developer
+        Cloud, so that they can fulfill their security responsibilities.
     - name: Delayed breach detection
       id: delayed-breach-detection
       description: Wants to recognize that insufficient logging, monitoring,
@@ -20139,6 +20170,13 @@ knowledge-needs:
         updating it, finding an alternative, or building with the supported
         framework, escalating to OutSystems Support if the problem persists,
         so that the mobile compilation and native mobile build succeed.'
+    - name: Customize error screens
+      id: customize-error-screens
+      description: Wants to customize the error screen displayed by an
+        OutSystems 11 Mobile App after an unhandled exception, by editing the
+        errorPage messages, reload label, and CSS in the module's Extensibility
+        Configuration JSON in Service Studio, so that the error screen matches
+        the app's required content and appearance.
   - name: AppShield
     id: appshield
     subtopics:

@@ -11038,8 +11038,8 @@ knowledge-needs:
     - name: Use Dropdown Search
       id: use-dropdown-search
       description: Wants to add the Dropdown Search UI Pattern to a screen and configure
-        its properties, in Service Studio for OutSystems 11, so that users can
-        select an option from a searchable dropdown list, in mobile apps and
+        its properties, so that users can select an option from a searchable
+        dropdown list in mobile apps and
         reactive web apps.
     - name: Multi-select filter list
       id: multi-select-filter-list
@@ -11050,9 +11050,8 @@ knowledge-needs:
     - name: Dropdown Search reference
       id: dropdown-search-ref
       description: Wants to look up the configurable properties and events of the Dropdown
-        Search widget in Service Studio, so that they can correctly configure a
-        searchable dropdown selector in OutSystems 11 mobile apps and reactive
-        web apps.
+        Search widget, so that they can correctly configure a searchable
+        dropdown selector in mobile apps and reactive web apps.
     - name: Use Dropdown Tags pattern
       id: use-dropdown-tags-pattern
       description: Wants to add the Dropdown Tags UI Pattern to a screen, bind
@@ -25516,12 +25515,12 @@ knowledge-needs:
         Datadog API key and collector endpoint credentials, and registering
         the stream, so that logs reach Datadog.
     - name: Dynatrace log streaming
-      id: dynatrace-log-streaming
+      id: stream-to-dynatrace-o11
       description: Wants to set up log streaming from OutSystems 11 applications
         to Dynatrace by getting the Dynatrace SaaS endpoint and API token,
-        configuring LifeTime for version 11.22.0 or later or for earlier
-        versions with OTLP/HTTP, and sending logs to Dynatrace, so that
-        application logs reach the Dynatrace APM tool.
+        configuring LifeTime through a supported Dynatrace ingestion path, and
+        sending logs to Dynatrace, so that application logs reach the Dynatrace
+        APM tool.
     - name: New Relic log streaming
       id: stream-to-new-relic-o11
       description: Wants to set up log streaming to New Relic by retrieving
@@ -25619,6 +25618,12 @@ knowledge-needs:
         the Datadog exporter, getting the collector endpoint and authentication
         credentials, and configuring the stream in the ODC Portal, so that
         observability data reaches Datadog.
+    - name: Stream to Dynatrace
+      id: stream-to-dynatrace-odc
+      description: Wants to stream observability data from ODC apps to Dynatrace
+        by getting the Dynatrace SaaS endpoint and API token, and configuring
+        the stream in the ODC Portal, so that observability data reaches
+        Dynatrace.
     - name: Stream to New Relic
       id: stream-to-new-relic-odc
       description: Wants to stream observability data from ODC apps to New Relic

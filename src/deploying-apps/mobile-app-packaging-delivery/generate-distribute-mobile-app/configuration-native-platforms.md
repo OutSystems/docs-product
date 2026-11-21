@@ -11,6 +11,7 @@ platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=310:34
 audience:
   - Developer
+  - Platform administrator
 outsystems-tools:
   - service center
 coverage-type:

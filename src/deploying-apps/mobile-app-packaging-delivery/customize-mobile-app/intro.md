@@ -18,6 +18,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
 topic:
   - custom-splash-screens
   - override-app-config

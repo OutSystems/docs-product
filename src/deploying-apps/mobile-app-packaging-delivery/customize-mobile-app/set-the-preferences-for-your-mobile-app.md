@@ -5,6 +5,7 @@ tags:
   - Cordova
   - iOS
   - Mobile app
+  - Settings
 locale: en-us
 guid: 36e4b86b-db80-4a29-9c79-86cc1c4f7f66
 app_type: mobile apps

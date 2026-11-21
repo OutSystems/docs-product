@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - automatic-app-updates
+  - new-build-required
 ---
 
 # Mobile App Update Scenarios

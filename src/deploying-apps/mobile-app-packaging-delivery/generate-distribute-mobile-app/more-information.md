@@ -19,6 +19,9 @@ coverage-type:
   - apply
   - evaluate
   - understand
+topic:
+  - android-keystore-setup
+  - ios-signing-setup
 ---
 
 # More Information on Generating and Distributing Mobile Apps

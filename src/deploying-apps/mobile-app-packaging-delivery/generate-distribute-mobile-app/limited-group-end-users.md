@@ -19,6 +19,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - limited-android-package
+  - limited-app-distribution
+  - limited-ios-package
 ---
 
 # Generate and Distribute Your Mobile App to a Limited Group of End Users

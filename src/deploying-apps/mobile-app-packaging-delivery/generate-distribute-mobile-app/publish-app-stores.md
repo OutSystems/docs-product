@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - prepare-app-store-submission
 ---
 
 # Generate and Publish Your Mobile App to the Mobile App Stores

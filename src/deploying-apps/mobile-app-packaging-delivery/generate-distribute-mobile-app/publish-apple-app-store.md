@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - app-store-submission-ios
 ---
 
 # Publish Your Mobile iOS Application to the Apple App Store

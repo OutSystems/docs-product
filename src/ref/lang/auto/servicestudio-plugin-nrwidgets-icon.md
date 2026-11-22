@@ -3,6 +3,7 @@ helpids: 30044
 summary: "Icon widget in OutSystems 11 (O11): properties for adding scalable vector icons, and WCAG 2.2 AA accessibility guidance for Mobile Apps and Reactive Web Apps."
 tags:
   - Accessibility
+  - Events
   - Front-End
   - JavaScript
   - Mobile app

@@ -1,6 +1,8 @@
 ---
 summary: Override default mobile extensibility configurations in specific environments using OutSystems 11 (O11).
 tags:
+  - Deploy
+  - Extensions
   - Logging
   - Mobile app
   - Plugins

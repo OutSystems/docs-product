@@ -17,6 +17,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - understand
   - evaluate
 topic:
   - environment-architecture

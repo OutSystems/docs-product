@@ -755,6 +755,11 @@ knowledge-needs:
       description: Wants to know which Text API actions are available in OutSystems 11 and
         what each does, including how to add the Text module as a dependency, so they can
         pick and use the right text-manipulation action in a module.
+    - name: XML library actions
+      id: xml-library-actions
+      description: Wants to know which actions are available in the XML library and what
+        each does, so they can create, manipulate, query, and transform XML documents
+        in ODC Studio.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -2287,12 +2292,6 @@ knowledge-needs:
         only after the aggregate it depends on has data, using the On After Fetch
         event on each aggregate, so that dependent dropdowns and fields don't try
         to filter using data that isn't loaded yet when a screen first opens.
-    - name: Optional aggregate filter
-      id: optional-aggregate-filter
-      description: Wants to add an optional filter condition to an aggregate using
-        a NullIdentifier() comparison against a screen variable, in Service Studio
-        for OutSystems 11, so that filtering is skipped when no value is selected,
-        in traditional web apps, mobile apps, and reactive web apps.
     - name: Fix invalid aggregate
       id: fix-invalid-aggregate
       description: 'Wants to fix the "Invalid Aggregate" error in Service Studio
@@ -2405,6 +2404,12 @@ knowledge-needs:
       id: filter-aggregate-data
       description: Wants to add filter conditions to an aggregate in ODC Studio
         so that it returns only the records that match the selected criteria.
+    - name: Optional aggregate filter
+      id: optional-aggregate-filter
+      description: Wants to add an optional filter condition to an aggregate using
+        a NullIdentifier() comparison against a screen variable, in Service Studio
+        for OutSystems 11, so that filtering is skipped when no value is selected
+        across supported app types.
     - name: Aggregate SQL translation
       id: aggregate-sql-translation
       description: Wants to understand how an Aggregate is translated into
@@ -18419,6 +18424,9 @@ knowledge-needs:
     - name: Configure manifest in ODC
       id: configure-manifest-odc
       description: Wants to upload and configure a privacy manifest file in ODC Studio and the ODC Portal using extensibility settings, so that the file is packaged into their iOS app build.
+    - name: Configure manifest in O11
+      id: configure-manifest-o11
+      description: Wants to add a privacy manifest file to Service Studio resources and map it through extensibility configuration to PrivacyInfo.xcprivacy in an O11 iOS app, so that the manifest is included in generated mobile builds.
     - name: File plugin manifest
       id: file-plugin-manifest
       description: Wants to declare the correct API reason keys (NSPrivacyAccessedAPICategoryFileTimestamp, NSPrivacyAccessedAPICategoryDiskSpace) and recommended reason values for the File plugin in a PrivacyInfo.xcprivacy file, so that the app passes Apple App Store privacy validation when using the File plugin.

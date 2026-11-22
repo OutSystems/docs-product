@@ -18,6 +18,7 @@ coverage-type:
   - apply
 topic:
   - apple-privacy-manifest
+  - configure-manifest-o11
   - file-plugin-manifest
 ---
 

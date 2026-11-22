@@ -3115,6 +3115,12 @@ knowledge-needs:
       its development platform and app runtime into independent, multi-tenant
       Kubernetes clusters that auto-scale based on CPU and RAM usage, so that
       they can reason about how apps are built, deployed, and run in ODC.
+    subtopics:
+    - name: ODC Portal architecture
+      id: odc-portal-architecture
+      description: Wants to understand how ODC Portal is built as a set of independent,
+        stateless ODC applications that use APIs to manage platform information, so
+        that they can reason about designing portal-style applications in ODC.
   - name: ODC network architecture
     id: odc-network-architecture
     description: Wants to understand OutSystems Developer Cloud (ODC)'s network
@@ -11733,6 +11739,12 @@ knowledge-needs:
         does, which app types support it, and how it supports single or
         multiple locations, customization, location search, and route
         planning, when they need to build a map-enabled screen.
+    - name: Create Azure Maps widget
+      id: create-azure-maps-widget
+      description: Wants to create an Azure Maps component for OutSystems
+        projects using JavaScript and Azure Maps APIs, so they can display
+        maps, add markers, search addresses or points of interest, and zoom
+        when Google Maps is not an option.
     - name: Use Map component
       id: use-map-component
       description: Wants to add the OutSystems Map component to a mobile
@@ -22752,6 +22764,12 @@ knowledge-needs:
   - name: Governance principles
     id: governance-principles
     subtopics:
+    - name: Dev governance model
+      id: dev-governance-model
+      description: Wants to establish a governance model for multi-team OutSystems
+        development, defining who can publish, view applications, manage
+        dependencies, create applications, and make decisions, so teams
+        collaborate with appropriate access and accountability.
     - name: Create IT role
       id: create-it-role
       description: Wants to create a new custom IT role in the LifeTime
@@ -23094,6 +23112,11 @@ knowledge-needs:
       id: iterate-ux-designs
       description: Wants to iteratively improve UX designs for an OutSystems project
         using user feedback, so they can make the experience more effective and usable.
+    - name: Service Studio redesign
+      id: service-studio-redesign
+      description: Wants to understand the overall Service Studio redesign process
+        and how it shaped the product's user experience, so they can recognize the
+        decisions behind the redesigned experience.
     - name: Select UX mockups
       id: select-ux-mockups
       description: Wants to select UX mockups for a Business Vision based on solution
@@ -23178,6 +23201,16 @@ knowledge-needs:
         onboarding processes by connecting new employees with the right
         departments and documents, so they can identify ways to improve the
         employee onboarding experience.
+    - name: Assess RPA fit for a business process
+      id: evaluate-rpa-adoption
+      description: Wants to assess whether RPA is suitable for automating a specific
+        business process by evaluating its tasks, rules, and exceptions, so they can
+        decide whether to pursue RPA.
+    - name: Plan an RPA implementation
+      id: plan-rpa-implementation
+      description: Wants to plan implementation of an RPA approach selected for a
+        business process by defining its scope, integrations, and rollout, so they
+        can prepare for delivery.
   - name: Process decision patterns
     id: process-decision-patterns
     description: Wants to understand when to use Business Process Technology,
@@ -27048,6 +27081,21 @@ knowledge-needs:
       description: Wants to become a more productive junior OutSystems developer
         by applying practical strategies to overcome early-career challenges, so
         they can develop faster when starting their OutSystems career.
+    - name: Black tech inclusion
+      id: black-tech-inclusion
+      description: Wants to understand programs, initiatives, and organizational
+        strategies that support Black technology workers and improve diversity and
+        inclusion, so they can help create a more inclusive technology workplace.
+    - name: Reduce gender bias in technical hiring
+      id: gender-diversity-tech
+      description: Wants to identify and reduce gender bias in technical hiring
+        decisions, so organizations can create a fairer entry point into the
+        technology talent pipeline.
+    - name: Support women who code
+      id: support-women-who-code
+      description: Wants to identify ways to support women who code through mentoring,
+        community, or workplace practices, so they can foster participation and
+        retention in technology careers.
   - name: Support Portal
     id: support-portal
     subtopics:

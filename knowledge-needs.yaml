@@ -6387,6 +6387,16 @@ knowledge-needs:
         Workflow editor, configuring it to run a service action without manual
         intervention when the workflow reaches that node, so that the process
         continues automatically.
+    - name: Call agent from workflow
+      id: call-agent-from-workflow
+      description: Wants to add and configure an Agent activity in an ODC
+        workflow, mapping the agent input and output, so that the workflow can
+        send text to a published agent and continue when the agent responds.
+    - name: Configure agent timeout
+      id: configure-agent-timeout
+      description: Wants to configure the Close after timeout property on an
+        Agent activity, so that an ODC workflow stops waiting and enters an
+        error state when an agent call takes too long.
     - name: Configure automatic path
       id: configure-automatic-path
       description: Wants to configure an automatic path in an ODC workflow
@@ -14620,6 +14630,11 @@ knowledge-needs:
   - name: Using ODC Portal and Studio
     id: using-odc-portal-and-studio
     subtopics:
+    - name: ODC asset types
+      id: odc-asset-types
+      description: Wants to understand the types of assets in ODC and where each type
+        is built, so they can identify assets when managing their permissions
+        and lifecycle.
     - name: ODC Portal overview
       id: odc-portal-overview
       description: Wants to navigate the ODC Portal as a newcomer by understanding
@@ -15809,6 +15824,17 @@ knowledge-needs:
   - name: Agentic Apps
     id: agentic-apps
     subtopics:
+    - name: Understand agents and apps
+      id: understand-agents-and-apps
+      description: Wants to understand how ODC agents and agentic apps differ as objects, including where they are built, how they are extended, how callers invoke them, and how they deploy, so they can choose the right model for an agentic use case.
+    - name: Evaluate agent benefits
+      id: evaluate-agent-benefits
+      description: Wants to understand the benefits and trade-offs of using an
+        ODC agent instead of an agentic app, so they can decide when an agent is
+        the better fit.
+    - name: Move app to agent
+      id: move-app-to-agent
+      description: Wants to move agent behavior from an ODC agentic app to an agent by recreating it in the Agent editor, exposing dependent logic as tools, and repointing callers, so that the existing app integration keeps the same inputs and outputs.
     - name: Agentic UI patterns
       id: agentic-ui-patterns
       description: Wants to understand how agentic AI changes app interfaces by using reasoning, evidence, and dynamic insights instead of button-driven interactions, so they can recognize user experience patterns for AI-powered OutSystems apps.
@@ -15859,6 +15885,42 @@ knowledge-needs:
       description: Wants to add the CallAgent service action to their app in ODC
         Studio and configure its AgentId, ChatMessages, and TokenCount parameters,
         so the app can send requests to an AI agent and receive its response.
+    - name: Call agent from app
+      id: call-agent-from-app
+      description: Wants to call a published ODC agent from an app by referencing
+        it as a dependency and adding and configuring a Call Agent node in a server
+        action, so the app can send messages and continue agent sessions.
+    - name: Handle agent call results
+      id: handle-agent-call-results
+      description: Wants to choose and configure the Call Agent execution mode
+        and handle the possible outcomes of an agent call, so the app responds
+        correctly whether agent work finishes immediately or later.
+    - name: Continue agent session
+      id: continue-agent-session
+      description: Wants to continue an agent session across workflow calls by
+        passing the ContextId from one Agent activity to a later one, so that
+        the agent retains context across multiple steps.
+    - name: Agent session memory
+      id: agent-session-memory
+      description: Wants to understand how ODC agent session memory works,
+        including ContextId continuity, session expiration, agent and session
+        boundaries, and deployment stages, so they can design calls that
+        preserve or restart context correctly.
+    - name: Continue agent task
+      id: continue-agent-task
+      description: Wants to continue an ODC agent task after a Call Agent call
+        by using the available task-management actions with its session and task
+        identifiers, so the app can resume work that has not finished.
+    - name: Monitor agent task
+      id: monitor-agent-task
+      description: Wants to monitor an ODC agent task after a Call Agent call
+        by using the available task-management actions with its session and task
+        identifiers, so the app can respond appropriately as the task proceeds.
+    - name: Stop agent task
+      id: stop-agent-task
+      description: Wants to stop an ODC agent task after a Call Agent call by
+        using the available task-management actions with its session and task
+        identifiers, so the app can end work that should not continue.
     - name: Agent Builder overview
       id: ai-agent-builder-overview
       description: Wants to understand what the AI Agent Builder is, its core
@@ -16151,6 +16213,11 @@ knowledge-needs:
       description: Wants to open an existing agentic app or start creating a
         new one from the Agents page in ODC Portal, so they can manage their
         agentic apps and continue development in ODC Studio.
+    - name: Delete agent
+      id: delete-agent
+      description: Wants to delete an ODC agent from ODC Portal after
+        undeploying it from every stage and checking its consumers, so they can
+        remove the agent without leaving dependent apps failing.
     - name: Analyze claim evidence
       id: analyze-claim-evidence
       description: Wants to understand how an AI agent classifies submitted
@@ -16188,6 +16255,16 @@ knowledge-needs:
         importing sample data, signing in as a demo user, and confirming that
         the Claims Conversation Agent works, so they can verify the solution
         before further development or demonstration.
+    - name: Deploy agent to stage
+      id: deploy-agent-to-stage
+      description: Wants to deploy an ODC agent revision to a target stage after
+        confirming its model and tool dependencies are configured there, so they
+        can run the intended agent version without missing dependencies.
+    - name: Undeploy agent
+      id: undeploy-agent
+      description: Wants to undeploy an ODC agent from one stage while preserving
+        the agent, its revisions, and in-progress requests, so they can stop new
+        requests on that stage without affecting other stages.
   - name: Tools and connectors
     id: tools-and-connectors
     subtopics:
@@ -22512,6 +22589,11 @@ knowledge-needs:
         where they are managed in the ODC Portal, and how built-in and custom
         roles set organization-scope and asset-scope permissions, so they can
         plan member access before assigning roles.
+    - name: Create custom member role
+      id: create-custom-member-role-odc
+      description: Wants to create a custom member role in ODC by selecting
+        permissions and limiting them to stages, so that they can tailor
+        member access to their organization's needs.
     - name: Assign org-scope role
       id: assign-org-scope-role
       description: Wants to grant or revoke a member's (IT-user's) role at
@@ -22804,7 +22886,7 @@ knowledge-needs:
         dependencies, create applications, and make decisions, so teams
         collaborate with appropriate access and accountability.
     - name: Create IT role
-      id: create-it-role
+      id: create-it-role-o11
       description: Wants to create a new custom IT role in the LifeTime
         console, defining environment-specific permission levels,
         per-application permission toggles, and infrastructure-wide

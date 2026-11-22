@@ -1323,6 +1323,11 @@ knowledge-needs:
       id: application-usability-practices
       description: Wants to design clear navigation and task flows in an
         OutSystems application, so users can complete common tasks intuitively.
+    - name: Manage UX debt
+      id: manage-ux-debt
+      description: Wants to identify UX debt in an OutSystems app and prevent it
+        from harming users' experience, so they can address usability issues
+        early in the app lifecycle.
     - name: Gamification UX design
       id: gamification-ux-design
       description: Wants to understand how to use gamification principles beyond
@@ -1396,6 +1401,12 @@ knowledge-needs:
         millions of users, considering data synchronization, monitoring, and
         business-process requirements, so they can plan a scalable mobile
         application architecture.
+    - name: Build automotive apps
+      id: build-automotive-apps
+      description: Wants to assess whether OutSystems can build an in-vehicle
+        app for Android Automotive when evaluating automotive software
+        opportunities, so they can decide whether the platform fits the
+        project.
     - name: Application security
       id: application-security-practices
       description: Wants to apply least-privilege access to an OutSystems app, so
@@ -4504,6 +4515,11 @@ knowledge-needs:
       description: Wants to build a mobile app that uses voice commands to
         control a drone by integrating AI and IoT capabilities with OutSystems,
         so they can operate the drone through spoken instructions.
+    - name: Circuit breaker pattern
+      id: circuit-breaker-pattern
+      description: Wants to understand how the circuit breaker pattern handles
+        failing integrations and prevents cascading failures, so they can
+        design more resilient integrations.
   - name: Extensions
     id: extensions
     subtopics:
@@ -12630,6 +12646,12 @@ knowledge-needs:
         folder and setting it as the Required Scripts property on a screen or
         block, so that the script's functions and objects become available in
         JavaScript elements on that screen or block.
+    - name: TensorFlow recognition
+      id: tensorflow-recognition
+      description: Wants to add client-side offline object recognition to an
+        OutSystems app using TensorFlow and a model trained with Google
+        Teachable Machine, so that the app can identify objects without a
+        network connection.
     - name: Script loading order
       id: script-loading-order
       description: Wants to understand when and in what order required scripts
@@ -14406,6 +14428,11 @@ knowledge-needs:
       description: Wants to identify which statements about OutSystems mobile
         apps are true or false, so they can answer basic capability questions
         in O11.
+    - name: Start mobile app development
+      id: start-mobile-app-development
+      description: Wants to learn how low-code supports rapid mobile app
+        development, so they can start their OutSystems journey and work toward
+        mobile app developer certification.
     - name: Humanitarian relief apps
       id: humanitarian-relief-apps
       description: Wants to understand how organizations use OutSystems to
@@ -21999,6 +22026,12 @@ knowledge-needs:
     - name: Passwords
       id: passwords
       description: Wants to understand how OutSystems 11 handles passwords, including hashing and validation, so that they can store and verify credentials securely.
+    - name: Passwordless auth
+      id: passwordless-auth
+      description: Wants to build and use passwordless authentication in an OutSystems app
+        with an external passwordless authentication provider, so users can verify
+        their identity without memorized passwords and reduce credential-based
+        attacks.
     - name: Password recovery flow
       id: password-recovery-flow
       description: 'Wants to recover an ODC password for members or end users by using the Forgot password? flow or the RecoverPasswordRequest and RecoverPasswordReset screens with email verification, and making sure email delivery is configured, so that users can regain access when they forget a password.'

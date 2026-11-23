@@ -9542,6 +9542,10 @@ knowledge-needs:
   - name: Customize style
     id: customize-style
     subtopics:
+    - name: Edit application images
+      id: edit-application-images
+      description: Wants to edit images in OutSystems web and mobile applications with
+        Pixie, so they can meet application image-editing requirements.
     - name: Customize UI patterns
       id: customize-ui-patterns
       description: Wants to customize a built-in OutSystems UI pattern's look,

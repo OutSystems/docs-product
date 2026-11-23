@@ -1323,6 +1323,11 @@ knowledge-needs:
       id: application-usability-practices
       description: Wants to design clear navigation and task flows in an
         OutSystems application, so users can complete common tasks intuitively.
+    - name: User-centered design
+      id: user-centered-design
+      description: Wants to apply surveys, interviews, and usability testing when
+        designing ODC Portal experiences, so they can shape the portal UX around
+        end-user needs.
     - name: Manage UX debt
       id: manage-ux-debt
       description: Wants to identify UX debt in an OutSystems app and prevent it
@@ -4316,6 +4321,11 @@ knowledge-needs:
       id: odc-integration-options
       description: Wants to understand which integration approaches ODC supports for
         external systems, so they can choose an approach that fits their requirements.
+    - name: Callback endpoint
+      id: callback-endpoint
+      description: Wants to use a callback endpoint in an ODC near-real-time integration
+        pattern so an external system can notify the app when data updates occur and
+        keep the local cache synchronized without polling.
     - name: Integrate Microsoft Graph API
       id: integrate-microsoft-graph-api
       description: Wants to connect ODC applications to Microsoft 365 using
@@ -15509,6 +15519,12 @@ knowledge-needs:
     description: Wants to evaluate whether an AI agent is suitable for a
       specific app workflow, so they can decide whether it will improve the
       user experience.
+  - name: AI app delivery overview
+    id: ai-app-delivery-overview
+    description: Wants to understand how OutSystems AI development and
+      continuous delivery align product owners and developers to build and
+      deliver intelligent applications, so they can plan AI-enabled
+      application delivery.
   - name: Chatbots
     id: chatbots
     subtopics:
@@ -15706,6 +15722,12 @@ knowledge-needs:
       with low-code to accelerate innovation, streamline operations, and
       enhance customer experience in banking, so they can evaluate similar
       approaches for their organization.
+  - name: Contact center AI
+    id: contact-center-ai
+    description: Wants to understand how generative AI combines with OutSystems
+      low-code to optimize contact center operations, improve agent efficiency,
+      and enhance customer interactions, so they can evaluate a similar
+      solution for their organization.
   - name: AI Mentor overview
     id: ai-mentor-overview
     description: Wants to understand how AI Mentor Systems augment software
@@ -27266,6 +27288,12 @@ knowledge-needs:
       description: Wants to become a more productive junior OutSystems developer
         by applying practical strategies to overcome early-career challenges, so
         they can develop faster when starting their OutSystems career.
+    - name: OutSystems career path
+      id: outsystems-career-path
+      description: Wants to understand how an OutSystems developer progressed from
+        no IT background through Tech Lead to Presales leadership, so they can
+        explore a similar career path when entering or advancing in OutSystems
+        development.
     - name: Black tech inclusion
       id: black-tech-inclusion
       description: Wants to understand programs, initiatives, and organizational
@@ -27281,6 +27309,11 @@ knowledge-needs:
       description: Wants to identify ways to support women who code through mentoring,
         community, or workplace practices, so they can foster participation and
         retention in technology careers.
+    - name: IT career reskilling
+      id: it-career-reskilling
+      description: Wants to understand real-life experiences and common pitfalls
+        when reskilling into IT, from employee and employer perspectives, so they
+        can navigate career transitions and support effective reskilling.
   - name: Support Portal
     id: support-portal
     subtopics:

@@ -22,7 +22,7 @@ outsystems-tools:
 coverage-type:
   - remember
 topic:
-  - create-it-role
+  - create-it-role-o11
   - manage-it-users
   - manage-teams
 ---

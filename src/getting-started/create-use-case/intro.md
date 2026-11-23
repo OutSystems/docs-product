@@ -1,6 +1,7 @@
 ---
 summary: Explore how OutSystems 11 (O11) provides tutorials and accelerators for creating customized apps across various use cases.
 tags:
+  - Data
   - Employee Directory
   - External Databases
   - Mobile app

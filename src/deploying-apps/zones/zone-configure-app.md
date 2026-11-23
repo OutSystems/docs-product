@@ -3,6 +3,7 @@ summary: This guide explains how to configure an application in OutSystems 11 (O
 tags:
   - Deploy
   - Infrastructure
+  - Platform Server
 locale: en-us
 guid: eed19a98-c672-43ac-90c9-70b9f33d921a
 app_type: traditional web apps, mobile apps, reactive web apps

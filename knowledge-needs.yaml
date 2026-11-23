@@ -3391,6 +3391,12 @@ knowledge-needs:
         exceeds the Upload widget's size limit in ODC, by checking Size() on the
         selected File value before the form submits and showing a custom
         message, so end users get a friendlier size-limit warning.
+    - name: Handle large uploads
+      id: handle-large-uploads
+      description: Wants to implement large file uploads in a Reactive Web App by
+        transferring files in configurable chunks with pause, resume, abort, and
+        parallel-thread controls, so that uploads remain flexible and complete
+        faster.
   - name: Aggregating data
     id: agregating-data
     subtopics:
@@ -3537,6 +3543,11 @@ knowledge-needs:
       description: Wants to use a SQL node to perform advanced data queries that
         retrieve and manipulate data beyond aggregates in OutSystems 11 web apps,
         so they can choose SQL when aggregates are not enough.
+    - name: Recursive query patterns
+      id: recursive-query-patterns
+      description: Wants to understand and apply recursive SQL queries to retrieve
+        hierarchical data in OutSystems 11 and ODC apps, so they can handle
+        parent-child data structures with a single query.
     - name: Filter and sort SQL
       id: filter-and-sort-sql-results
       description: Wants to filter and sort SQL query results in OutSystems 11 so
@@ -3650,6 +3661,11 @@ knowledge-needs:
       description: Wants to avoid expand inline parameters in SQL queries when
         dynamic values would change the generated SQL text, so the database can
         reuse execution plans and improve performance.
+    - name: Use bitmask filtering
+      id: use-bitmask-filtering
+      description: Wants to use bitmasking to filter records selected through
+        multiple dropdown values without inline SQL parameters, in OutSystems
+        11, so they can simplify multi-select queries.
   - name: PostgreSQL upgrades
     id: postgresql-upgrades
     description: Wants to understand PostgreSQL major-version upgrades in ODC environments, including how to stage the rollout and review compatibility changes, so they can upgrade safely.
@@ -15831,6 +15847,9 @@ knowledge-needs:
     - name: Understand agents and apps
       id: understand-agents-and-apps
       description: Wants to understand how ODC agents and agentic apps differ as objects, including where they are built, how they are extended, how callers invoke them, and how they deploy, so they can choose the right model for an agentic use case.
+    - name: Choose agent call context
+      id: choose-agent-call-context
+      description: Wants to choose whether to call a published ODC agent from an app or a workflow based on where the surrounding process runs and whether the call needs synchronous or asynchronous behavior, so that they can integrate agent calls in the appropriate execution context.
     - name: Evaluate agent benefits
       id: evaluate-agent-benefits
       description: Wants to understand the benefits and trade-offs of using an
@@ -15943,7 +15962,7 @@ knowledge-needs:
         required role, so they can access the builder and start configuring an
         agent.
     - name: Create AI agent
-      id: create-ai-agent
+      id: create-agent-ai-agent-builder
       description: Wants to create and configure an AI agent in AI Agent Builder
         by choosing a template or starting from scratch, setting the model,
         instructions, and data source, testing the agent, and saving it, so
@@ -15965,6 +15984,28 @@ knowledge-needs:
         Create, selecting Agentic App, naming it, and selecting a previously
         configured AI model, so that they have a scaffolded AgentFlow
         template ready to customize.
+    - name: Create ODC agent
+      id: create-agent-odc-portal
+      description: Wants to create and configure an ODC agent in the ODC Portal
+        by naming it, adding instructions, selecting an AI model, and optionally
+        configuring available capabilities, so
+        that the agent is ready to publish.
+    - name: Publish agent revision
+      id: publish-agent-revision
+      description: Wants to publish an ODC agent revision from the Agent editor,
+        so that the Test agent panel and deployed stages use the intended
+        configuration.
+    - name: Review or restore published agent revisions
+      id: review-restore-agent-revisions
+      description: Wants to review an ODC agent's published revisions or restore
+        a previous revision, so that they can inspect or return to an earlier
+        published configuration.
+    - name: Test ODC agent
+      id: test-odc-agent
+      description: Wants to test an ODC agent in the Agent editor after
+        publishing by sending realistic messages and reviewing responses, token
+        and tool usage, and execution traces, so that they can improve
+        instructions before calling the agent from an app.
     - name: Build agent flow
       id: build-agent-flow
       description: Wants to create an AI agent in ODC Studio by configuring an
@@ -16134,6 +16175,11 @@ knowledge-needs:
         dataset versions across runs, and failure details for setup or
         teardown stages, so that they can interpret run outcomes and know
         where to investigate failures.
+    - name: Compare agent models
+      id: compare-agent-models
+      description: Wants to compare AI models by running the same agent evaluation
+        dataset against each candidate and reviewing quality and resource-use
+        metrics, so that they can choose a model before promoting the agent.
     - name: Understand A2A protocol
       id: understand-a2a-protocol
       description: Wants to understand what agent-to-agent (A2A) communication is in ODC,
@@ -16264,6 +16310,11 @@ knowledge-needs:
       description: Wants to deploy an ODC agent revision to a target stage after
         confirming its model and tool dependencies are configured there, so they
         can run the intended agent version without missing dependencies.
+    - name: Replace running agent
+      id: replace-running-agent
+      description: Wants to replace the version of an ODC agent running on a
+        stage while requests already in progress finish on the old version, so
+        the new version takes over without interrupting normal operation.
     - name: Undeploy agent
       id: undeploy-agent
       description: Wants to undeploy an ODC agent from one stage while preserving
@@ -16272,6 +16323,12 @@ knowledge-needs:
   - name: Tools and connectors
     id: tools-and-connectors
     subtopics:
+    - name: Add agent tools
+      id: add-agent-tools
+      description: Wants to give an ODC agent tools from service actions or
+        external connections by selecting tools in the ODC Portal Agent editor
+        and publishing the agent, so that the agent can act on business logic
+        and connected services.
     - name: Choose tool source
       id: choose-tool-source
       description: Wants to decide how to extend ODC apps and AI agents with
@@ -17716,6 +17773,11 @@ knowledge-needs:
 - name: Load testing
   guid: f816091c-1508-4da9-b5f6-cffebb845234
   topics:
+  - name: Analyze load test results
+    id: load-test-analysis
+    description: Wants to identify performance contention points and validate an
+      OutSystems application's scalability by analyzing Load Test results against
+      expected workload.
 - name: Native Mobile apps
   guid: f67965c4-a2ef-4076-8676-c8b8203ab671
   topics:
@@ -22593,6 +22655,12 @@ knowledge-needs:
         where they are managed in the ODC Portal, and how built-in and custom
         roles set organization-scope and asset-scope permissions, so they can
         plan member access before assigning roles.
+    - name: Cumulative permissions
+      id: permission-precedence-odc
+      description: Wants to understand how ODC combines member roles assigned
+        at organization, team, and asset scopes, including that narrower roles
+        add permissions but cannot revoke organization permissions, so they can
+        predict a member's effective access.
     - name: Create custom member role
       id: create-custom-member-role-odc
       description: Wants to create a custom member role in ODC by selecting
@@ -23064,7 +23132,7 @@ knowledge-needs:
         Access blocks sign-in, so they can control app-level access per
         environment.
     - name: Permission precedence
-      id: permission-precedence
+      id: permission-precedence-o11
       description: Wants to understand how LifeTime combines application-specific,
         team, and infrastructure-level permissions for a user, including which
         level overrides the others and how No Access affects sign-in, so they can

@@ -18102,10 +18102,10 @@ knowledge-needs:
     subtopics:
     - name: MABS 12 upgrade overview
       id: mabs-12-upgrade-overview
-      description: Wants to understand what's new in MABS 12, including Capacitor
-        support, the iOS 26 and Android API 36 SDK updates, build actions, and
-        universal extensibility, so that they can plan whether and how to
-        upgrade their mobile app's build service version.
+      description: Wants to understand what's new in MABS 12, including new
+        platform capabilities, SDK updates, build improvements, and extensibility
+        changes, so that they can plan whether and how to upgrade their mobile
+        app's build service version.
     - name: MABS 12 breaking changes
       id: mabs-12-breaking-changes
       description: Wants to understand the breaking changes introduced in MABS
@@ -22979,12 +22979,10 @@ knowledge-needs:
         resource consumption.
     - name: AO counting rules
       id: ao-counting-rules
-      description: Wants to know how application objects (AOs) are counted for
-        screens, entities/database tables, API methods, and events in
-        OutSystems 11 and OutSystems Developer Cloud, including special cases
-        such as libraries, imported Forge components, and objects reused
-        across multiple apps, so that they can accurately estimate the AO
-        footprint of their apps.
+      description: Wants to understand how application objects are counted across
+        different object types, reuse scenarios, and platform-specific rules in
+        OutSystems 11 and OutSystems Developer Cloud, so that they can accurately
+        estimate the AO footprint of their apps.
     - name: AO limits and usage
       id: ao-limits-usage
       description: Wants to check their licensed AO capacity and current AO

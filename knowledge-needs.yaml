@@ -2245,9 +2245,11 @@ knowledge-needs:
         they can choose the right query approach for a data task in OutSystems.
     - name: Join types
       id: join-types
-      description: Wants to understand the aggregate join types available in ODC
-        Studio and when to use each one when combining entity records, so they
-        can choose the right join behavior for a data query.
+      description: Wants to understand aggregate join types and when to use
+        each when combining entity records, including how a left join returns
+        all records from the primary entity and any matching records from the
+        joined entity, so they can predict query results and choose the right
+        join behavior.
     - name: Data mashup overview
       id: data-mashup-overview
       description: Wants to understand what data mashup is in ODC and when to
@@ -11909,11 +11911,6 @@ knowledge-needs:
         performs automatically in ODC, such as mandatory fields and data
         type checks, and which validation still requires custom logic, so
         they can recognize built-in validation behavior.
-    - name: Check form validity
-      id: check-form-validity
-      description: Wants to check a Form's Valid property after custom
-        validations run so execution branches correctly and invalid data is
-        not stored in the database in ODC.
     - name: Invalid widget feedback
       id: invalid-widget-feedback
       description: Wants to understand how an input widget behaves when its
@@ -12321,12 +12318,13 @@ knowledge-needs:
         successfully.
     - name: Implement form validation
       id: implement-form-validation
-      description: Wants to implement custom business-rule validation on a
-        screen's Save action, using an If condition to check a field's value
-        and an Assign to set the input's Valid property to False and its
-        ValidationMessage, so that
-        invalid data (such as a past due date or a malformed phone number) is
-        rejected before it's saved to the database.
+      description: Wants to implement form validation before saving, using
+        built-in validations on the Save button and checking the Form's Valid
+        property alongside custom business-rule validation in a screen's Save
+        action, such as an If condition to check a field's value and an Assign
+        to set the input's Valid property to False and its ValidationMessage,
+        so invalid data (such as a past due date or a malformed phone number)
+        is rejected before it's saved to the database.
     - name: Go To Destination
       id: go-to-destination
       description: Wants to look up the purpose and properties (Destination)
@@ -23367,6 +23365,12 @@ knowledge-needs:
       id: iterate-ux-designs
       description: Wants to iteratively improve UX designs for an OutSystems project
         using user feedback, so they can make the experience more effective and usable.
+    - name: Design for OutSystems
+      id: design-for-outsystems
+      description: Wants to collaborate with OutSystems developers on a practical
+        design process for personalized application experiences, when designing an
+        OutSystems solution, so they can create designs that are easier to develop
+        and aligned with customer needs.
     - name: Service Studio redesign
       id: service-studio-redesign
       description: Wants to understand the overall Service Studio redesign process
@@ -27347,6 +27351,11 @@ knowledge-needs:
       description: Wants to understand programs, initiatives, and organizational
         strategies that support Black technology workers and improve diversity and
         inclusion, so they can help create a more inclusive technology workplace.
+    - name: Transgender tech inclusion
+      id: transgender-tech-inclusion
+      description: Wants to understand the needs of transgender people on technology
+        teams and identify workplace practices that support them, so they can help
+        transgender teammates reach their full potential.
     - name: Reduce gender bias in technical hiring
       id: gender-diversity-tech
       description: Wants to identify and reduce gender bias in technical hiring

@@ -14,6 +14,7 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+  - understand
 topic:
   - add-qna-chatbots
   - configure-chatbot-wizard

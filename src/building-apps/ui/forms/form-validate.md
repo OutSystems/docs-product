@@ -20,8 +20,9 @@ coverage-type:
   - apply
 topic:
   - automatic-form-validation
-  - check-form-validity
   - customize-validation-messages
+  - implement-form-validation
+  - invalid-widget-feedback
 ---
 
 # Validate the fields of a form

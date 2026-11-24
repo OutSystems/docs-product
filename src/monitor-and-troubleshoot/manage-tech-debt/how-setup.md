@@ -3,9 +3,7 @@ tags:
   - Authentication
   - Infrastructure
   - IT Users
-  - Mentor Studio
   - Plugins
-  - Technical Debt
   - Troubleshooting
 summary: 'Code Quality setup in OutSystems 11 (O11): register your infrastructure, install code analysis and LifeTime probes, and associate your IT user.'
 locale: en-us

@@ -2,8 +2,10 @@
 summary: Explore the OutSystems 11 (O11) chatbot demo app and configuration details for integrating with Azure, available on Forge with complete setup instructions.
 tags:
   - AI
+  - Blocks
   - Forge
   - REST
+  - Settings
   - Traditional Web
 locale: en-us
 guid: 1368591d-1ec5-40e1-b9a1-60064fa6726b

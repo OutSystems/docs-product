@@ -1333,6 +1333,11 @@ knowledge-needs:
       description: Wants to identify UX debt in an OutSystems app and prevent it
         from harming users' experience, so they can address usability issues
         early in the app lifecycle.
+    - name: Design delightful UX
+      id: design-delightful-ux
+      description: Wants to understand how Reactive Web supports engaging digital
+        experiences during digital transformation, so they can design OutSystems
+        applications that keep users engaged.
     - name: Gamification UX design
       id: gamification-ux-design
       description: Wants to understand how to use gamification principles beyond
@@ -9708,6 +9713,11 @@ knowledge-needs:
         starting from the most basic template when an application cannot
         benefit from an existing theme, so they can establish the minimum
         structure needed to start.
+    - name: Create cross-platform style guide
+      id: create-cross-platform-style-guide
+      description: Wants to create a Style Guide that supports both mobile and
+        web applications, so they can maintain consistent styling across
+        platforms and improve development speed.
     - name: Specialize style guide
       id: specialize-style-guide
       description: Wants to choose when to specialize a built-in Style Guide
@@ -15935,6 +15945,11 @@ knowledge-needs:
       description: Wants to call a published ODC agent from an app by referencing
         it as a dependency and adding and configuring a Call Agent node in a server
         action, so the app can send messages and continue agent sessions.
+    - name: Configure app timeout
+      id: configure-app-timeout
+      description: Wants to configure the Timeout in Seconds property on a
+        synchronous Call Agent node in an ODC app, so the app gives a slow agent
+        enough time to respond without exceeding the request's limits.
     - name: Handle agent call results
       id: handle-agent-call-results
       description: Wants to choose and configure the Call Agent execution mode
@@ -17841,6 +17856,13 @@ knowledge-needs:
         the ODC Portal using MABS 12, by selecting the build type and native
         runtime that match the app's distribution goal, so that the package is
         ready for device installation or app store distribution.
+    - name: MABS build flow
+      id: mabs-build-flow
+      description: Wants to understand how MABS processes a mobile app build
+        request in an isolated sandbox, from creating the native app template
+        and processing resources to adding plugins, signing keys, and producing
+        the platform package, so they can follow the native package generation
+        flow.
     - name: Choose mobile framework
       id: choose-mobile-framework
       description: Wants to choose Cordova or Capacitor when creating a mobile package in
@@ -18717,6 +18739,9 @@ knowledge-needs:
     - name: Offline sync overview
       id: offline-sync-overview
       description: Wants to understand the common offline data sync patterns for mobile apps and download the sample module set, so they can explore the implementation examples before choosing a pattern.
+    - name: Prioritize offline UI
+      id: prioritize-offline-ui
+      description: Wants to identify which front-facing mobile UI features to synchronize offline based on customer importance, so they can enhance the user experience when the app is unavailable.
     - name: Basic read-only sync
       id: basic-read-only-sync
       description: Wants to understand how the basic Read-Only Data

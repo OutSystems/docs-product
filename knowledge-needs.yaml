@@ -17695,6 +17695,29 @@ knowledge-needs:
         availability, reviewing supported formats and scanning options, and
         handling known limitations, so that barcode scanning works in mobile,
         PWA, and web apps.
+    - name: Open InAppBrowser URLs
+      id: open-inappbrowser-urls
+      description: Wants to open external URLs in an ODC mobile app using
+        InAppBrowser actions and choose the appropriate browser context, so
+        that third-party content opens as intended.
+    - name: Handle InAppBrowser lifecycle events
+      id: handle-inappbrowser-events
+      description: Wants to handle InAppBrowser lifecycle events in ODC Studio,
+        so the app can respond to changes in the browser's state.
+    - name: Close InAppBrowser sessions
+      id: close-inappbrowser-sessions
+      description: Wants to close InAppBrowser web views or system browsers from
+        ODC Studio, so the app can end browser sessions when needed.
+    - name: Configure Android HTTP URL access
+      id: configure-inappbrowser-android-http-access
+      description: Wants to allow InAppBrowser to open HTTP URLs on Android by
+        configuring the required app extensibility preferences, so HTTP content
+        loads in the web view.
+    - name: Configure iOS media uploads
+      id: configure-inappbrowser-ios-media-uploads
+      description: Wants to enable media uploads in InAppBrowser on iOS by
+        configuring the required app extensibility preferences, so users can
+        upload media from the web view.
     - name: Vet plugin security
       id: vet-plugin-security
       description: Wants to assess whether a Capacitor plugin is safe to

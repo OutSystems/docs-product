@@ -20844,6 +20844,24 @@ knowledge-needs:
       description: Wants to understand the high-availability and compliance options for
         OutSystems Cloud environments, so that they can assess resilience and
         compliance posture.
+    - name: EU Sovereign limitations
+      id: eu-sovereign-limitations
+      description: Wants to understand which capabilities differ or are unavailable
+        in ODC EU Sovereign Cloud, including fixed capacity, observability,
+        connectivity, and subscription usage constraints, so they can assess
+        whether the offering fits their requirements.
+    - name: EU Sovereign overview
+      id: eu-sovereign-overview
+      description: Wants to understand what ODC EU Sovereign Cloud is, how it
+        differs from ODC Cloud, its EU-operated model, and its benefits, so
+        regulated organizations can assess whether the offering fits their
+        requirements.
+    - name: Use test data in Development
+      id: use-test-data-in-development
+      description: Wants to use only test data and test identities in the
+        Development stage of ODC EU Sovereign Cloud, because its data-residency
+        or infrastructure boundaries differ from those of other stages, so
+        they can avoid placing production data or identities in Development.
   - name: VPN setup
     id: vpn-setup
     subtopics:
@@ -22448,6 +22466,12 @@ knowledge-needs:
         and profile matching, when the provider's discovery, token,
         userinfo, and JWKS endpoints are reachable, so that users can sign
         in through that provider.
+    - name: Configure EU IdP
+      id: configure-eu-idp
+      description: Wants to configure an external OIDC identity provider for
+        each stage of ODC EU Sovereign Cloud, using the connector
+        configuration appropriate to whether the stage is cloud-hosted or
+        self-hosted, so that users can authenticate correctly in each stage.
     - name: Set OIDC redirect URIs
       id: set-oidc-redirect-uris
       description: 'Wants to register the login and logout redirect URIs for an external OIDC identity provider in the provider''s app registration, so that ODC can send users back after sign-in and sign-out.'
@@ -23806,6 +23830,12 @@ knowledge-needs:
       description: Wants to understand how ODC and OutSystems 11 can coexist
         through partial migration, scalable front ends, and existing core systems,
         so they can plan ODC adoption without replacing those systems.
+    - name: Move apps to EU Cloud
+      id: move-apps-to-eu-cloud
+      description: Wants to move existing OutSystems apps to ODC EU Sovereign
+        Cloud by exporting and importing the apps instead of using an in-place
+        migration, understanding what does not move with them, so they can plan
+        the migration correctly.
   - name: Code Conversion
     id: code-conversion
     subtopics:
@@ -27380,6 +27410,12 @@ knowledge-needs:
         by logging in, choosing the affected infrastructure, and selecting the
         appropriate case type, so that the case is routed to the right team and
         resolved quickly.
+    - name: EU Sovereign Cloud support
+      id: eu-sovereign-cloud-support
+      description: Wants to submit and track ODC EU Sovereign Cloud support requests
+        through the dedicated sovereign support portal, including infrastructure
+        change requests, so that OutSystems handles each request through the
+        EU-only support channel.
     - name: Add case followers
       id: add-case-followers
       description: Wants to add colleagues as followers to an OutSystems

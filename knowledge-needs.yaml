@@ -4328,6 +4328,12 @@ knowledge-needs:
       id: odc-integration-options
       description: Wants to understand which integration approaches ODC supports for
         external systems, so they can choose an approach that fits their requirements.
+    - name: Resilient event messaging
+      id: resilient-event-messaging
+      description: Wants to design resilient event messaging between OutSystems
+        applications and legacy databases by using Azure PaaS as a reliable
+        mediator, so they can create eventual consistency across their
+        application ecosystem.
     - name: Callback endpoint
       id: callback-endpoint
       description: Wants to use a callback endpoint in an ODC near-real-time integration
@@ -12530,6 +12536,13 @@ knowledge-needs:
         screens using the Wizard and Popup UI patterns in Service Studio, for
         OutSystems 11 Traditional Web Apps, so that orders are processed and
         displayed through a guided multi-step, multi-screen UI.
+    - name: Approve or reject order
+      id: approve-reject-order
+      description: Wants to approve or reject a submitted order by configuring
+        buttons and client actions to set the corresponding status, save the
+        order, show a success message, and redirect to the Orders screen in
+        Service Studio for OutSystems 11, so that users complete the order
+        workflow.
     - name: Save active tab state
       id: save-active-tab-state
       description: Wants to save and restore the active tab between page visits in
@@ -23287,6 +23300,11 @@ knowledge-needs:
         through the User Management area, including roles, teams, and
         app-specific permissions, so that they can control access for IT users
         in a role-based security model.
+    - name: Automate IT user onboarding
+      id: automate-it-user-onboarding
+      description: Wants to automate IT user onboarding by using the LifeTime API
+        v2 to prepare training environments and configure students, roles, and
+        team privileges, so that training environments are ready for use.
     - name: Import environment users
       id: import-environment-users
       description: Wants to import existing users from a newly registered

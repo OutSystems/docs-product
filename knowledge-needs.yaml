@@ -6320,6 +6320,31 @@ knowledge-needs:
         by detecting them, diagnosing the risk to critical assets and
         infrastructure, and determining the remediation steps that strengthen
         the security posture, so that they can respond appropriately.
+    - name: Secure identity and access across clouds
+      id: secure-identity-and-access-across-clouds
+      description: Wants to configure cross-cloud authentication and
+        authorization for OutSystems applications, so that user and service
+        identities receive only the permissions required in each environment.
+    - name: Configure private cloud connectivity
+      id: configure-private-cloud-connectivity
+      description: Wants to configure private connectivity for OutSystems
+        applications across cloud environments, so that application traffic
+        uses approved network paths.
+    - name: Protect APIs across clouds
+      id: protect-apis-across-clouds
+      description: Wants to protect APIs exposed by OutSystems applications
+        across cloud environments, so that only authorized and validated
+        requests can reach application services.
+    - name: Monitor and alert on cross-cloud security events
+      id: monitor-and-alert-on-cross-cloud-security-events
+      description: Wants to monitor security events from OutSystems
+        applications across cloud environments and configure alerts for
+        suspicious activity, so that potential threats are identified promptly.
+    - name: Respond to cross-cloud security incidents
+      id: respond-to-cross-cloud-security-incidents
+      description: Wants to triage and contain detected security incidents
+        affecting OutSystems applications across cloud environments, so that
+        their impact is limited and recovery can begin.
   - name: Runtime token storage
     id: runtime-token-storage
     subtopics:
@@ -23830,6 +23855,12 @@ knowledge-needs:
       description: Wants to understand how ODC and OutSystems 11 can coexist
         through partial migration, scalable front ends, and existing core systems,
         so they can plan ODC adoption without replacing those systems.
+    - name: Plan O11 to ODC
+      id: plan-o11-to-odc
+      description: Wants to decide whether and how to adopt ODC from an existing
+        OutSystems 11 application portfolio by evaluating migration timing,
+        preparation needs, transition strategy, and expected benefits, so they
+        can choose an appropriate adoption path.
     - name: Move apps to EU Cloud
       id: move-apps-to-eu-cloud
       description: Wants to move existing OutSystems apps to ODC EU Sovereign

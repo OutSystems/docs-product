@@ -1,9 +1,13 @@
 ---
 summary: 'File Plugin 4.0.0 migration in OutSystems 11 (O11): map deprecated v3 actions to new ones, handle PathDirectory, and ensure OTA-safe upgrades.'
 tags:
+  - Android
+  - File Storage
+  - iOS
   - Mobile app
   - Native App
   - Plugins
+  - Refactoring
 locale: en-us
 guid: c49995b1-cff9-48fb-ad82-c4d02e3dce66
 app_type: mobile apps

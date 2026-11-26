@@ -8,6 +8,7 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 tags:
   - Authentication
   - Authorization
+  - External Authentication
 audience:
   - Developer
   - Front-end developer

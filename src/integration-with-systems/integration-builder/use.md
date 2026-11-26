@@ -22,6 +22,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - create-and-publish-integration
+  - integration-modules
+  - manage-integration-connections
 ---
 
 # Use Integration Builder

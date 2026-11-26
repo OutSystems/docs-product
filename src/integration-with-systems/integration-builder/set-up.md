@@ -4,7 +4,7 @@ guid: 617ec597-a128-4b2a-872f-4a3a5856628c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:2309
-summary: Explore how to configure Integration Builder in OutSystems 11 (O11) for seamless SaaS connectivity and user authentication.
+summary: Integration Builder setup in OutSystems 11 (O11) registers infrastructure, installs dependencies, and configures on-premises environment connections.
 tags:
   - Authentication
   - Infrastructure

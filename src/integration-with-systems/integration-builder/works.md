@@ -1,5 +1,5 @@
 ---
-summary: Explore how Integration Builder in OutSystems 11 (O11) facilitates seamless integrations with external systems through a structured SaaS tool.
+summary: Integration Builder architecture in OutSystems 11 (O11) covers connections, users, and dependencies for generated integrations.
 locale: en-us
 guid: 8940670a-b3f2-4f06-af4a-c8eb7785153c
 app_type: traditional web apps, mobile apps, reactive web apps
